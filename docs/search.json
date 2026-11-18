@@ -1,0 +1,836 @@
+[
+  {
+    "objectID": "microscopy/credits.html",
+    "href": "microscopy/credits.html",
+    "title": "Image credits: seeing cells (microscopy)",
+    "section": "",
+    "text": "All diagrams (fig*.svg) were drawn for this course and use the course colour key. The photographs, micrographs and structure images below come from Wikimedia Commons; their licences were checked with the Commons API on 2026-11-18. Images were resized and recompressed for the slides; other changes are noted in the table.\n\n\n\nFile\nWhat it shows\nAuthor\nLicence\nSource\n\n\n\n\nimg04-onion-phase-vs-bright.jpg\nOnion root-tip cells, the same field in phase contrast (left) and bright field (right); scale bar 10 µm\nCatfaster\nCC BY-SA 4.0\nhttps://commons.wikimedia.org/wiki/File:Onion_Root_Tip_Cells_Phase_Contrast_and_Bright_Field_V2.jpg\n\n\nimg04-yeast-dic.jpg\nBudding yeast, Saccharomyces cerevisiae, DIC microscopy\nMasur\nPublic domain\nhttps://commons.wikimedia.org/wiki/File:S_cerevisiae_under_DIC_microscopy.jpg\n\n\nimg07-endothelial-cells.jpg\nBovine pulmonary artery endothelial cells: DAPI (DNA, blue), tubulin by indirect immunofluorescence (green), F-actin with phalloidin (red)\nImageJ sample image (NIH), made from a Molecular Probes demo slide\nPublic domain\nhttps://commons.wikimedia.org/wiki/File:FluorescentCells.jpg\n\n\nimg08-crystal-jelly.jpg\nThe crystal jelly, Aequorea victoria, the source of GFP. Cropped\nJulia Sumangil\nCC BY-SA 4.0\nhttps://commons.wikimedia.org/wiki/File:Crystal_jelly.jpg\n\n\nimg08-fp-beach.jpg\nBeach scene drawn on an agar plate with bacterial colonies expressing eight fluorescent proteins (GFP and DsRed variants), Tsien laboratory\nNathan Shaner\nCC BY-SA 3.0\nhttps://commons.wikimedia.org/wiki/File:FPbeachTsien.jpg\n\n\nimg09-hela-gfp-microtubules.jpg\nHeLa cells expressing a microtubule-binding domain fused to GFP. Cropped; the original 50 µm scale bar was redrawn at the same scale inside the crop\nDrBib\nCC BY 4.0\nhttps://commons.wikimedia.org/wiki/File:Microtubule_binding_domain_fused_with_GFP-tag_reveals_microtubule_network_of_HeLa_cell_line.jpg\n\n\nimg12-sted-vimentin.jpg\nVimentin filaments imaged by confocal (left) and STED (right) microscopy, raw data; scale bar 2 µm\nFabian Göttfert, Christian Wurm\nCC BY-SA 3.0\nhttps://commons.wikimedia.org/wiki/File:STED_microscopy_image_of_Vimentin_with_25nm_resolution.jpg\n\n\nimg13-pancreas-tem.jpg\nTEM of mammalian pancreatic acinar cells: nucleus, mitochondria, rough ER, zymogen granules; scale bar 500 nm\nLouisa Howard\nPublic domain\nhttps://commons.wikimedia.org/wiki/File:Pancreatic_acinar_cells_-_TEM.jpg\n\n\nimg14-sem-sars-cov-2.jpg\nColorized SEM of cells (teal) infected with SARS-CoV-2 particles (orange) isolated from a patient sample; NIAID Integrated Research Facility\nNIAID\nCC BY 2.0\nhttps://commons.wikimedia.org/wiki/File:Colorized_scanning_electron_micrograph_of_a_cell_(teal)_infected_with_SARS-CoV-2_virus_particles_(orange),_isolated_from_a_patient_sample.jpg\n\n\nimg15-cryo-em-map.jpg\nStructure of the bacterial Umb1 particle fitted into its 4.3 Å cryo-EM density map. Cropped, transparent background made white\nUyenbui05\nCC0\nhttps://commons.wikimedia.org/wiki/File:Structure_of_the_Umb1_particle_overlaid_with_the_4.3_%C3%85_cryo-EM_map.png\n\n\nimg18-spike-6vsb.jpg\nSARS-CoV-2 spike trimer, prefusion-stabilised (2P) form, PDB 6VSB, side view. Cropped to the side view, transparent background made white\n5-HT2AR\nCC0\nhttps://commons.wikimedia.org/wiki/File:6VSB_spike_protein_SARS-CoV-2_homotrimer.png\n\n\n\nOur diagrams in this unit: fig02-what-can-we-see.svg, fig03-two-points.svg, fig05-spectra.svg, fig06-filter-cube.svg, fig07-immunofluorescence.svg, fig09-gfp-fusion.svg, fig10-confocal-pinhole.svg, fig11-light-sheet.svg, fig15-single-particle.svg, fig16-read-a-figure.svg, fig18-spike-2p.svg. The spectra in fig05 are drawn to resemble EGFP (excitation peak about 488 nm, emission peak about 509 nm); they are not measured data. The cells in fig16 and the particle in fig15 are cartoons.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Image credits"
+    ]
+  },
+  {
+    "objectID": "courseplan.html",
+    "href": "courseplan.html",
+    "title": "Course syllabus: 3MB001",
+    "section": "",
+    "text": "Summary of the official syllabus. The syllabus itself is the binding version: https://www.umu.se/en/education/syllabus/3mb001/ (Swedish: https://www.umu.se/utbildning/kurs-och-utbildningsplan/3mb001/)\n\n\n\nEnglish title: Cell Biology\nSwedish title: Cellbiologi\nCourse code: 3MB001 (replaces the earlier 3MB038 Cellbiologi)\nCredits: 15 ECTS\nEducation level: First cycle\nMain fields of study: Molecular Biology; Biomedical Sciences (both first cycle, less than 60 credits of first-cycle courses as entry requirements)\nGrading scale: Three-grade scale (U / G / VG)\nResponsible department: Department of Molecular Biology\nEstablished: by PRBMT, 2025-10-27\nValidity: 2027-01-18 and until further notice\nFirst run: spring 2027, 18 January to 24 March 2027, on campus in Umeå, taught in English\n\n\n\n\n\nTheory. Fundamental theory in modern molecular cell biology. This site covers this module.\nPPT: Working Life and Career. Oral presentations, seminar discussions, problem solving, a poster on a biomedical problem for a commissioning party, and projects as a working method.\nLaboratory Work. Cell biology methods: planning and running experiments, analysing and presenting data, writing results in scientific form.\n\n\n\n\nKnowledge and Understanding. The student should be able to:\n\nDescribe the structure and function of the cell and explain methods used to study cell biological processes.\nExplain the structure and function of cell membranes and the principles of membrane transport.\nDescribe fundamental principles of cell communication and signal transduction.\nDescribe how proteins are handled and regulated in the cell.\nCompare the structure and function of different organelles and explain their roles in cellular homeostasis.\nExplain the basis of cell shape, motility, and intracellular transport, and give examples of methods used to study these processes.\nDescribe the regulation of the cell cycle and the mechanisms of cell division.\nDescribe different forms of programmed cell death and their regulation.\nExplain basic concepts of cell biological disease mechanisms.\n\nSkills and Abilities. The student should be able to:\n\nPresent scientific content orally in a clear and structured manner.\nCollaborate in groups to solve cell biological problems and communicate the results effectively.\nParticipate in structured scientific discussions and critically reflect on theoretical and practical content.\nPlan and conduct basic experiments in cell biology.\nApply good laboratory practice and follow established protocols.\nAnalyze and present experimental data in written form.\nInterpret results and draw conclusions based on scientific principles.\nDemonstrate skills and the ability to identify, formulate, and propose solutions to a problem relevant to the education, based on labor market needs\nDemonstrate the ability to define and describe projects as a working method.\n\nJudgement and Approach. The student should be able to:\n\nIdentify one’s own learning needs and take responsibility for further learning\n\n\n\n\n20 ECTS in chemistry, of which at least 5 ECTS in biochemistry (or 20 ECTS in chemistry combined with physics and/or mathematics, of which at least 5 ECTS in biochemistry); 20 ECTS in biology, including microbiology, molecular biology and genetics.\n\n\n\nLectures plus student-centred teaching: interactive seminars, case-based learning and practical work. All teaching except lectures is mandatory. Lab work requires knowing the lab safety rules and basic GLP. Taught in English (Swedish if no participant needs English).\n\n\n\n\n\n\nModule\nForm\nELOs\nGrades\n\n\n\n\n1 Theory\nIndividual written exam\n1–9\nU / G / VG\n\n\n2 PPT\nIndividual oral presentation\n10–12, 17–19\nU / G\n\n\n3 Lab\nWritten lab report\n13–16\nU / G\n\n\n\nHow the written exam is built (this shapes the course material):\n\nThe exam has one section per ELO (1–9). To pass an ELO, at least 60 % of its questions must be correct. All nine ELOs must be passed.\nEach ELO has one VG question, marked G or VG. Exam VG = at least 5 of the 9 VG questions at VG.\nA student who passes at least 6 ELOs but not the whole exam may take a group oral exam (assessed individually) on the failed ELOs, or retake the full exam.\nCourse VG = all mandatory parts done + written exam at VG.\n\n\n\n\nNot published online. The department uses Molecular Biology of the Cell (Alberts et al.). Students should not have to read the book to follow this course; each lecture ends with optional chapter pointers.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Course plan (3MB001)"
+    ]
+  },
+  {
+    "objectID": "courseplan.html#course-identification",
+    "href": "courseplan.html#course-identification",
+    "title": "Course syllabus: 3MB001",
+    "section": "",
+    "text": "English title: Cell Biology\nSwedish title: Cellbiologi\nCourse code: 3MB001 (replaces the earlier 3MB038 Cellbiologi)\nCredits: 15 ECTS\nEducation level: First cycle\nMain fields of study: Molecular Biology; Biomedical Sciences (both first cycle, less than 60 credits of first-cycle courses as entry requirements)\nGrading scale: Three-grade scale (U / G / VG)\nResponsible department: Department of Molecular Biology\nEstablished: by PRBMT, 2025-10-27\nValidity: 2027-01-18 and until further notice\nFirst run: spring 2027, 18 January to 24 March 2027, on campus in Umeå, taught in English",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Course plan (3MB001)"
+    ]
+  },
+  {
+    "objectID": "courseplan.html#modules",
+    "href": "courseplan.html#modules",
+    "title": "Course syllabus: 3MB001",
+    "section": "",
+    "text": "Theory. Fundamental theory in modern molecular cell biology. This site covers this module.\nPPT: Working Life and Career. Oral presentations, seminar discussions, problem solving, a poster on a biomedical problem for a commissioning party, and projects as a working method.\nLaboratory Work. Cell biology methods: planning and running experiments, analysing and presenting data, writing results in scientific form.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Course plan (3MB001)"
+    ]
+  },
+  {
+    "objectID": "courseplan.html#expected-learning-outcomes-verbatim",
+    "href": "courseplan.html#expected-learning-outcomes-verbatim",
+    "title": "Course syllabus: 3MB001",
+    "section": "",
+    "text": "Knowledge and Understanding. The student should be able to:\n\nDescribe the structure and function of the cell and explain methods used to study cell biological processes.\nExplain the structure and function of cell membranes and the principles of membrane transport.\nDescribe fundamental principles of cell communication and signal transduction.\nDescribe how proteins are handled and regulated in the cell.\nCompare the structure and function of different organelles and explain their roles in cellular homeostasis.\nExplain the basis of cell shape, motility, and intracellular transport, and give examples of methods used to study these processes.\nDescribe the regulation of the cell cycle and the mechanisms of cell division.\nDescribe different forms of programmed cell death and their regulation.\nExplain basic concepts of cell biological disease mechanisms.\n\nSkills and Abilities. The student should be able to:\n\nPresent scientific content orally in a clear and structured manner.\nCollaborate in groups to solve cell biological problems and communicate the results effectively.\nParticipate in structured scientific discussions and critically reflect on theoretical and practical content.\nPlan and conduct basic experiments in cell biology.\nApply good laboratory practice and follow established protocols.\nAnalyze and present experimental data in written form.\nInterpret results and draw conclusions based on scientific principles.\nDemonstrate skills and the ability to identify, formulate, and propose solutions to a problem relevant to the education, based on labor market needs\nDemonstrate the ability to define and describe projects as a working method.\n\nJudgement and Approach. The student should be able to:\n\nIdentify one’s own learning needs and take responsibility for further learning",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Course plan (3MB001)"
+    ]
+  },
+  {
+    "objectID": "courseplan.html#entry-requirements",
+    "href": "courseplan.html#entry-requirements",
+    "title": "Course syllabus: 3MB001",
+    "section": "",
+    "text": "20 ECTS in chemistry, of which at least 5 ECTS in biochemistry (or 20 ECTS in chemistry combined with physics and/or mathematics, of which at least 5 ECTS in biochemistry); 20 ECTS in biology, including microbiology, molecular biology and genetics.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Course plan (3MB001)"
+    ]
+  },
+  {
+    "objectID": "courseplan.html#instruction",
+    "href": "courseplan.html#instruction",
+    "title": "Course syllabus: 3MB001",
+    "section": "",
+    "text": "Lectures plus student-centred teaching: interactive seminars, case-based learning and practical work. All teaching except lectures is mandatory. Lab work requires knowing the lab safety rules and basic GLP. Taught in English (Swedish if no participant needs English).",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Course plan (3MB001)"
+    ]
+  },
+  {
+    "objectID": "courseplan.html#examination",
+    "href": "courseplan.html#examination",
+    "title": "Course syllabus: 3MB001",
+    "section": "",
+    "text": "Module\nForm\nELOs\nGrades\n\n\n\n\n1 Theory\nIndividual written exam\n1–9\nU / G / VG\n\n\n2 PPT\nIndividual oral presentation\n10–12, 17–19\nU / G\n\n\n3 Lab\nWritten lab report\n13–16\nU / G\n\n\n\nHow the written exam is built (this shapes the course material):\n\nThe exam has one section per ELO (1–9). To pass an ELO, at least 60 % of its questions must be correct. All nine ELOs must be passed.\nEach ELO has one VG question, marked G or VG. Exam VG = at least 5 of the 9 VG questions at VG.\nA student who passes at least 6 ELOs but not the whole exam may take a group oral exam (assessed individually) on the failed ELOs, or retake the full exam.\nCourse VG = all mandatory parts done + written exam at VG.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Course plan (3MB001)"
+    ]
+  },
+  {
+    "objectID": "courseplan.html#literature",
+    "href": "courseplan.html#literature",
+    "title": "Course syllabus: 3MB001",
+    "section": "",
+    "text": "Not published online. The department uses Molecular Biology of the Cell (Alberts et al.). Students should not have to read the book to follow this course; each lecture ends with optional chapter pointers.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Course plan (3MB001)"
+    ]
+  },
+  {
+    "objectID": "cell-methods/credits.html",
+    "href": "cell-methods/credits.html",
+    "title": "Image credits: Taking cells apart and perturbing them",
+    "section": "",
+    "text": "All diagrams (fig*.svg) were drawn for this course. The dot plots in fig11 and fig18 show simulated data. The photographs and micrographs below come from Wikimedia Commons. They were resized and recompressed; nothing else was changed.\n\n\n\nFile\nWhat it shows\nAuthor\nLicence\nSource\n\n\n\n\nimg02-hela-antibody-stain.jpg\nHeLa cells, immunofluorescence (β-tubulin, HSP60, fibrillarin, DNA)\nGerryShaw (EnCor Biotechnology)\nCC BY-SA 4.0\nhttps://commons.wikimedia.org/wiki/File:HeLa-Tubulin-HSP60-Fibrillarin-DNA.jpg\n\n\nimg03-biosafety-cabinet.jpg\nBiosafety cabinet in a BSL2 lab, University of Tartu\nDarja.Lavogina\nCC BY-SA 4.0\nhttps://commons.wikimedia.org/wiki/File:Laminaar_TYKI_DL20221105.jpg\n\n\nimg03-hela-phase-contrast.jpg\nLiving HeLa cells in a culture flask, phase contrast\nCatfaster\nCC BY-SA 4.0\nhttps://commons.wikimedia.org/wiki/File:HeLa_Cells_Culture_Phase_Contrast_1_v1.jpg\n\n\nimg04-intestinal-organoid.jpg\nMouse (ApcMin/+) small-intestine organoid; AKT (red), E-cadherin (green), nuclei (blue)\nAbhimanu.pandey\nCC BY 4.0\nhttps://commons.wikimedia.org/wiki/File:SI_organoid_1.tif\n\n\nimg07-ultracentrifuge.jpg\nBeckman-Coulter XL-100K ultracentrifuge\nMatylda Sęk (Cygaretka)\nCC BY-SA 3.0\nhttps://commons.wikimedia.org/wiki/File:Beckman-Coulter_ultracentrifuge_XL-100K_-01.jpg\n\n\nimg09-western-blot.jpg\nExample western blot, chemiluminescence on film\nMasur\nCC0\nhttps://commons.wikimedia.org/wiki/File:Western_blot_example.tif\n\n\nimg10-flow-cytometer.jpg\nFlow cytometer, front view\nBiol\nPublic domain\nhttps://commons.wikimedia.org/wiki/File:FACS-toestel.JPG\n\n\nimg17-384-well-plate.jpg\nNCATS biologist preparing a 384-well plate for high-throughput flow cytometry\nNational Center for Advancing Translational Sciences (photo: Daniel Soñé Photography)\nPublic domain\nhttps://commons.wikimedia.org/wiki/File:Well_Plate_(38997907884).jpg",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Taking cells apart and perturbing them",
+      "Image credits"
+    ]
+  },
+  {
+    "objectID": "microscopy/questions.html",
+    "href": "microscopy/questions.html",
+    "title": "Study questions: seeing cells (microscopy)",
+    "section": "",
+    "text": "Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged [VG] are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Study questions"
+    ]
+  },
+  {
+    "objectID": "microscopy/questions.html#g-level-questions",
+    "href": "microscopy/questions.html#g-level-questions",
+    "title": "Study questions: seeing cells (microscopy)",
+    "section": "G-level questions",
+    "text": "G-level questions\n1. Explain the difference between magnification and resolution. Why can a light microscope not separate two objects that are 50 nm apart, however much it magnifies? [ELO 1]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nMagnification is how much bigger the image is than the object. Resolution is the smallest distance at which two points can still be seen as two. Light is a wave, so a lens turns each point of the sample into a small blur spot. When two points are closer than about \\(0.61\\,\\lambda/\\mathrm{NA}\\), their blur spots merge into one. With visible light (about 500 nm) and the best objectives (NA about 1.4) this limit is about 200 nm. Two objects 50 nm apart give one blob, and magnifying the blob more adds no detail.\n\n\n\n\n2. Describe how a phase-contrast microscope and a DIC microscope make living, unstained cells visible. Why is staining with dyes usually not an option for living cells? [ELO 1]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nUnstained cells absorb almost no light, but dense structures (nucleus, membranes) have a higher refractive index and slow light down (phase shift). Phase contrast converts these phase shifts into differences in brightness. DIC uses polarised light to turn gradients in optical path into light and shadow, so edges look three-dimensional. Most dyes for bright-field microscopy need the cells to be fixed and often sectioned, and many dyes are toxic, so stained cells are dead.\n\n\n\n\n3. Draw and label the light path in an epifluorescence microscope with a filter cube for a green fluorophore. State what each filter and the dichroic mirror does. [ELO 1]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nLamp → excitation filter (passes only blue light that excites the fluorophore) → dichroic mirror (reflects blue light down through the objective onto the sample) → fluorophore absorbs blue and emits green → green light goes back up through the objective → passes through the dichroic mirror (it transmits longer wavelengths) → emission filter (passes green, blocks stray blue) → camera or eye. The design works because of the Stokes shift: emitted light has a longer wavelength than the excitation light.\n\n\n\n\n4. Describe the steps of indirect immunofluorescence to show where tubulin is in cultured cells. Why do we use a secondary antibody? [ELO 1] [ELO 6]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\n\nFix the cells (e.g. formaldehyde) so proteins are cross-linked and stay in place. 2. Permeabilise the membranes with a mild detergent so antibodies can enter. 3. Block free binding sites (e.g. with serum proteins) to reduce background. 4. Add the primary antibody against tubulin (e.g. made in mouse), wash. 5. Add a fluorescent secondary antibody against mouse antibodies, wash. 6. Often add a DNA dye (DAPI), mount and image. The secondary antibody amplifies the signal (several secondaries bind each primary), and one labelled secondary can be used with many different primaries from the same species.\n\n\n\n\n\n5. What is GFP, why was it so useful for cell biology, and how is a GFP fusion protein made? [ELO 1] [ELO 6]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nGFP is the green fluorescent protein from the jellyfish Aequorea victoria. Its chain of 238 amino acids folds into a barrel and forms its fluorescent group by itself (it needs only oxygen), so the gene works in any cell. To make a fusion protein you join the coding sequence of the protein of interest to the GFP coding sequence in the same reading frame, without a stop codon between them, and introduce the DNA into cells. The cell makes one chain, protein–GFP, so you can see where the protein is in a living cell and follow it over time. Mutants of GFP and proteins from corals give other colours, so several proteins can be followed at once.\n\n\n\n\n6. Explain how a confocal microscope gives sharper images of thick samples than a wide-field fluorescence microscope. What is the cost? [ELO 1]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nIn wide-field fluorescence the whole depth of the sample is lit, so out-of-focus light adds haze. A confocal microscope focuses a laser spot in the sample and places a pinhole in front of the detector at the point where light from the focal plane is focused. Light from other depths is out of focus at the pinhole and mostly blocked. The spot is scanned to build the image. This gives a thin optical section (about 0.5–1 µm), and a stack of sections gives a 3D image. Costs: it is slower (point by point), and the sample receives more light, so there is more photobleaching and phototoxicity.\n\n\n\n\n7. Name two problems you meet when you film living fluorescent cells for many hours, and one way to reduce each. [ELO 1]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nPhotobleaching: fluorophores are destroyed by repeated excitation, so the signal fades. Phototoxicity: excited fluorophores make reactive oxygen species that damage the cell, so it may behave abnormally or die. Both are reduced by using less light (lower intensity, shorter exposures, fewer time points, a more sensitive camera) and gentler methods such as spinning-disk confocal or light-sheet microscopy, which light less of the sample. The cells must also be kept at 37 °C with the right CO₂ and medium.\n\n\n\n\n8. Compare TEM and SEM: how is the image made, what does each show, and why can neither be used on living cells? [ELO 1]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nTEM: electrons pass through an ultrathin section (about 50–100 nm) stained with heavy metals; areas that scatter electrons look dark. It shows internal structure (membranes, organelles, ribosomes) at about 1–2 nm. SEM: a fine beam scans a metal-coated sample, and electrons knocked out of the surface are detected. It shows the 3D surface at a few nm. Both work in a vacuum, so samples are fixed and dried (and for TEM embedded and cut), which kills the cells.\n\n\n\n\n9. What is single-particle cryo-EM? Explain why averaging many images is needed and what the result is. [ELO 1]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nA purified protein or complex is frozen so quickly that water forms glass-like ice, keeping the molecules in their native, hydrated shape without stain. Only a low electron dose can be used, so each image of a single molecule is very noisy. A computer finds tens of thousands to millions of particle images, sorts them by viewing angle and averages them, so noise cancels and the signal remains. The 2D views are combined into a 3D density map, often at better than 0.3 nm, into which an atomic model is built.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Study questions"
+    ]
+  },
+  {
+    "objectID": "microscopy/questions.html#vg-style-questions",
+    "href": "microscopy/questions.html#vg-style-questions",
+    "title": "Study questions: seeing cells (microscopy)",
+    "section": "VG-style questions",
+    "text": "VG-style questions\n10. [VG] A research group makes a GFP fusion of a newly discovered protein, P. In living cells, P–GFP is spread evenly through the cytosol. But immunofluorescence with an antibody against P in fixed cells shows P on mitochondria. Give two possible explanations, and propose an experiment to decide between them. [ELO 1]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nPossible explanations:\n\nThe GFP tag disturbs targeting. If P has a mitochondrial targeting signal at its N-terminus and GFP was fused there, the signal may be hidden; or the fusion is overexpressed so much that the import machinery is saturated and the excess stays in the cytosol.\nThe antibody is not specific. It may bind another, mitochondrial protein, so the immunofluorescence result is wrong.\n(Also acceptable) Fixation artefact: soluble proteins can be extracted or moved during fixation and permeabilisation.\n\nExperiments: put GFP at the other end of P and express it at low level (e.g. from the gene’s own promoter, or by tagging the endogenous gene with CRISPR); check if it then goes to mitochondria (co-stain with a mitochondrial marker). Test the antibody on cells lacking P (knockout or knockdown): if mitochondria are still stained, the antibody is not specific. Biochemistry can add independent evidence: fractionate cells and test which fraction contains P on a western blot (next lecture).\n\n\n\n\n11. [VG] You want to know (a) how often vesicles carrying a GFP-tagged cargo move along microtubules in living cells, and (b) whether the cargo sits inside the vesicle or on its outer membrane. Design an imaging approach for each part, and explain why one method cannot answer both. [ELO 1] [ELO 6]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\n\nLive-cell fluorescence imaging of the GFP-cargo, ideally with microtubules labelled in a second colour (e.g. a red fluorescent tubulin fusion), using a fast, gentle method (spinning-disk confocal or light-sheet) and short exposures to limit bleaching and phototoxicity. Track vesicles over time and count runs along microtubules. Control: a drug that depolymerises microtubules should stop the directed runs.\nA vesicle is about 50–100 nm across, below the 200 nm light limit, so inside versus outside cannot be decided with ordinary light microscopy. Use immuno-electron microscopy: fix cells, label the cargo (anti-GFP antibody with gold particles) on thin sections, and see whether the gold is in the lumen or on the cytosolic face of the vesicle membrane. Cryo-electron tomography or super-resolution would also help.\n\nOne method cannot do both because live imaging needs light microscopy (low resolution, living cells), while the nanometre question needs EM (high resolution, but dead or frozen cells). Combining them on the same cells is called correlative light and electron microscopy (CLEM).\n\n\n\n\n12. [VG] Explain why the SARS-CoV-2 spike in the mRNA COVID-19 vaccines carries two extra prolines (the “2P” spike), and why cryo-EM was a good method to check this design quickly. [ELO 1]\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nThe spike is a fusion protein: it starts in a compact prefusion shape and, when it fuses the viral and cell membranes, S1 is lost and S2 refolds into a long postfusion rod. Many protective (neutralising) antibodies recognise the prefusion shape, but a spike made on its own can flip to the postfusion form. Two prolines, which are stiff, placed at a hinge in S2 block this refolding and keep the prefusion shape, so the immune system sees the right target. The idea came from structures of related coronavirus spikes (MERS, SARS). Cryo-EM was ideal because the spike is a large, flexible, glycosylated membrane-protein trimer that is hard to crystallise; cryo-EM needs only a small amount of purified protein, no crystals, and keeps it in a near-native state. In early 2020 a cryo-EM structure confirmed within weeks that the SARS-CoV-2 2P spike holds the prefusion shape.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Study questions"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Cell Biology",
+    "section": "",
+    "text": "A first-cycle course (3MB001, 15 ECTS, Umeå University) in modern molecular cell biology. We follow molecules, signals and decisions through the cell: how membranes and organelles work, how proteins reach their place, how cells communicate, move, divide and die, and what happens when these processes go wrong. Every lecture ends with a drug or a disease that depends on it.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#where-to-start",
+    "href": "index.html#where-to-start",
+    "title": "Cell Biology",
+    "section": "Where to start",
+    "text": "Where to start\n\nCourse plan: the official syllabus, outcomes and examination.\nLearning outcomes: what each outcome means and where it is taught.\nGlossary: key terms with short definitions.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-the-material",
+    "href": "index.html#how-to-use-the-material",
+    "title": "Cell Biology",
+    "section": "How to use the material",
+    "text": "How to use the material\nWork through the sidebar from top to bottom. Each lecture has:\n\nLecture slides: press f for full screen and s for speaker notes, which hold the explanations.\nQuiz: a quick self-check.\nStudy questions: the kind of questions the exam asks, including the harder VG-style questions.\n\nYou do not need to read the textbook (Molecular Biology of the Cell, Alberts et al., 7th ed.) to follow the course. Each lecture names the chapters if you want to read more.\nSee Canvas for the most up-to-date schedule and instructions.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "cell-tour/quiz.html",
+    "href": "cell-tour/quiz.html",
+    "title": "Quiz: a tour of the cell",
+    "section": "",
+    "text": "Short questions to check that you can use the map of the cell from the lecture. Try each on paper first, then open the hint, and only then the answer.\n\nQ1. [ELO 1] Name three structures that a eukaryotic animal cell has and a bacterium does not.\n\n\n\n\n\n\nHint\n\n\n\n\n\nThink of everything that is surrounded by its own membrane inside the cell.\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nAny three of: a nucleus with a double membrane (nuclear envelope), endoplasmic reticulum, Golgi apparatus, endosomes and lysosomes, mitochondria, peroxisomes, and a cytoskeleton with microtubules organised by a centrosome. A bacterium has a plasma membrane, ribosomes and DNA in a nucleoid, but almost no internal membranes.\n\n\n\n\nQ2. [ELO 1] Which of these spaces are on the same side of a membrane as the outside of the cell: cytosol, ER lumen, nucleoplasm, lysosome lumen, Golgi lumen?\n\n\n\n\n\n\nHint\n\n\n\n\n\nWhich compartments exchange material with the outside by vesicles that bud and fuse? Which are joined by open pores?\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nThe ER lumen, the Golgi lumen and the lysosome lumen are topologically equivalent to the outside of the cell: vesicles carry material between them and the outside without crossing a membrane. The cytosol and the nucleoplasm form the other side; they are joined through nuclear pores.\n\n\n\n\nQ3. [ELO 1] Put these in order from smallest to largest, and give a typical size for each: ribosome, mitochondrion (width), protein, nucleus, potassium ion, virus such as influenza.\n\n\n\n\n\n\nHint\n\n\n\n\n\nEach step on the scale ladder was roughly a factor of 3–10.\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nPotassium ion (~0.3 nm) &lt; protein (~5 nm) &lt; ribosome (~25 nm) &lt; influenza virus (~100 nm) &lt; mitochondrion (~1 µm wide) &lt; nucleus (~5–10 µm).\n\n\n\n\nQ4. [ELO 1] A protein diffuses across a 10 µm cell in a few seconds. About how long would it take to diffuse 100 µm? What does this tell you about very long cells such as nerve cells?\n\n\n\n\n\n\nHint\n\n\n\n\n\nDiffusion time grows with the square of the distance: \\(t \\approx x^2 / 6D\\).\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nTen times the distance means \\(10^2 = 100\\) times the time: a few hundred seconds, that is several minutes. Over a metre, the time becomes hundreds of years. So long cells such as nerve cells cannot rely on diffusion; they carry cargo with motor proteins along the cytoskeleton.\n\n\n\n\nQ5. [ELO 5] A cell type is packed with rough ER and Golgi. What does the cell probably spend most of its effort on? Give one example of such a cell.\n\n\n\n\n\n\nHint\n\n\n\n\n\nWhat does the rough ER make, and where do those proteins go?\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nIt probably secretes large amounts of protein. The rough ER makes proteins for secretion and the Golgi modifies and sorts them. Examples: a pancreatic acinar cell (digestive enzymes) or a plasma cell (antibodies).\n\n\n\n\nQ6. [ELO 1] A membrane receptor has a sugar chain on one domain. On which side of the plasma membrane do you expect to find that domain, and why?\n\n\n\n\n\n\nHint\n\n\n\n\n\nSugar chains are added in the lumen of the ER and Golgi. Follow the protein from the ER to the plasma membrane.\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nOn the outside of the cell. The sugar chain is added while that domain faces the ER and Golgi lumen. Vesicles bud and fuse without the protein flipping, so the lumen-facing side ends up facing the outside of the cell.\n\n\n\n\nQ7. [ELO 1] Give one advantage and one limitation of using HeLa cells to study a human protein.\n\n\n\n\n\n\nHint\n\n\n\n\n\nThink of what a cell line is, and where HeLa came from.\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nAdvantage: human cells that divide without limit, are cheap and easy to grow, image and perturb, and are used in many labs, so results can be compared. Limitation: HeLa cells are cancer cells with an abnormal genome (about 80 chromosomes) and an HPV infection that disables normal cell-cycle brakes; they grow flat on plastic, so they may not behave like a normal cell in a tissue. (Also acceptable: contamination of other cell lines, or the ethical questions about consent.)\n\n\n\n\nQ8. [ELO 1] Electron microscopy of thin sections first showed the ER and ribosomes. Why was another method also needed to understand what lysosomes do?\n\n\n\n\n\n\nHint\n\n\n\n\n\nWhat does a picture tell you, and what does it not tell you?\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nA micrograph shows where a structure is and what it looks like, but not what it does. Cell fractionation (breaking cells and separating their parts by centrifugation, then measuring enzyme activities in each fraction) showed that one fraction held digestive enzymes that work at acidic pH: the lysosomes.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Quiz"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#about-this-lecture",
+    "href": "cell-tour/lec.html#about-this-lecture",
+    "title": "A tour of the cell",
+    "section": "About this lecture",
+    "text": "About this lecture\nThis is the first lecture of the course. It gives you a map of the cell that every later lecture uses.\nAfter this lecture you can:\n\nName the main compartments of an animal cell and say in one sentence what each one does.\nExplain topology: which spaces are on the cytosol side of a membrane and which are on the lumen side.\nGive the size and number of the things inside a cell (ions, proteins, ribosomes, organelles, cells) to within a factor of ten.\nChoose a model system (yeast, a cell line such as HeLa, an organoid) for a question, and say what it cannot tell you.\n\nELO 1 (parts of the cell, methods) and ELO 5 (organelles compared; this lecture is the first look).\n\nWelcome to Cell Biology. This first lecture is a guided tour. We will not go deep into any one organelle today; every organelle you see here gets its own lecture later. The aim is a mental map that you can hang the rest of the course on. Keep three ideas in mind. First, the cell is divided into compartments by membranes, and the chemistry inside each compartment is different. Second, every membrane has two sides, and knowing which side is which, the topology, explains a lot of later material on protein sorting and vesicle traffic. Third, sizes and numbers matter: a protein is about five nanometres, a cell is about fifteen micrometres, and a cell holds billions of protein molecules. At the end we look at how we study cells, using model systems, and at HeLa cells: the most used human cells in research, and a story about consent that every biomedical scientist should know. This lecture belongs to ELO 1 and is the first step towards ELO 5.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#the-course-map-from-molecules-to-cells",
+    "href": "cell-tour/lec.html#the-course-map-from-molecules-to-cells",
+    "title": "A tour of the cell",
+    "section": "The course map: from molecules to cells",
+    "text": "The course map: from molecules to cells\n\nYou already think in molecules: DNA, proteins, enzymes, ΔG. This course moves you one level up: to compartments (where things are), machines (what moves and signals) and decisions (divide, move or die), and to disease when these go wrong.\n\nHere is the whole course on one slide. On the left is what you bring from biochemistry, molecular biology and chemistry: molecules, reactions, equilibria and the central dogma. We will not teach these again. The course moves you up one level of organisation. The first blocks are about compartments: what a cell is made of and how we study it, then membranes and transport, then how proteins are made, folded and sent to the right organelle. The middle blocks are about signals and machines: how a cell senses its surroundings and how the cytoskeleton gives it shape and movement. Then come decisions: when to divide and when to die. The last block is disease, seen as cell biology going wrong. Each block is one or more expected learning outcomes, ELOs, and the ELO numbers on the tiles are the same numbers as on the exam. Every lecture also ends with a drug or a disease, so you see why the mechanism matters for medicine and drug development.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#how-the-exam-works",
+    "href": "cell-tour/lec.html#how-the-exam-works",
+    "title": "A tour of the cell",
+    "section": "How the exam works",
+    "text": "How the exam works\n\n\n\n\n\n\n\nWritten exam\none section for each ELO 1–9\n\n\nTo pass\nat least 60 % correct in every section; all nine ELOs must be passed\n\n\nVG\neach section has one VG question; VG on at least 5 of the 9\n\n\nPartly passed?\nif you pass at least 6 ELOs, you can take an oral exam on the others, or retake the full exam\n\n\n\nHow to use this site: every quiz and study question is tagged with its ELO, for example [ELO 1]. Practise each ELO separately, because the exam passes each one separately.\n\nThe written exam is built in a way that shapes how you should study. There is one section for each of the nine theory outcomes, and you must pass every section on its own, with at least sixty per cent correct. A very good result in signalling cannot make up for a weak result in cell death. This is why every quiz and study question on this site carries an ELO tag: you can check that you can handle each outcome. Each section also has one harder question that is marked G or VG; to get VG on the exam you need VG on at least five of these nine. The VG questions ask you to predict, compare, explain an unexpected result or design an experiment, so the study questions include that kind of question for every lecture. If you pass at least six ELOs but not all nine, you do not need to redo everything: you can take an oral exam on the ELOs you missed. The exact rules are in the course plan and on Canvas. That is all the administration for today.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#the-question-how-does-one-small-drop-do-everything-at-once",
+    "href": "cell-tour/lec.html#the-question-how-does-one-small-drop-do-everything-at-once",
+    "title": "A tour of the cell",
+    "section": "The question: how does one small drop do everything at once?",
+    "text": "The question: how does one small drop do everything at once?\n\n\nA cultured animal cell holds about 2 picolitres of water, and in it:\n\nbillions of protein molecules, many thousands of different kinds,\nenzymes that make fats next to enzymes that burn them,\nenzymes that digest proteins at pH 5, in a cell whose cytosol is pH 7.2,\nDNA that must be copied once per division and never digested.\n\nHow does the cell keep incompatible chemistry apart, and still get every molecule to the place where it is needed?\n\n\n\n\n\n\nCultured endothelial cells. Blue: nucleus (DNA). Green: microtubules. Red: actin filaments.\n\n\nLook at the image. These are cultured cells from a cow blood vessel, stained with three fluorescent dyes: blue for DNA in the nucleus, green for microtubules and red for actin filaments. Even with only three stains you can see order: the nucleus sits in the middle, microtubules spread out from near the nucleus, and actin lines the cell edge. Now the puzzle. Each cell is a tiny volume, about two picolitres, but inside it there are billions of protein molecules doing thousands of reactions at once. Some of these reactions would destroy each other if they were mixed. Digestive enzymes that work best at pH 5 would attack the cell’s own proteins. Fat synthesis and fat breakdown would cancel each other out. DNA must be kept safe and copied exactly once per cycle. The answer, which the rest of this lecture develops, has three parts: compartments separated by membranes, transport routes between the compartments, and a cytoskeleton that organises space. Keep this question in mind; we come back to it in the summary.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#recap-prokaryote-and-eukaryote",
+    "href": "cell-tour/lec.html#recap-prokaryote-and-eukaryote",
+    "title": "A tour of the cell",
+    "section": "Recap: prokaryote and eukaryote",
+    "text": "Recap: prokaryote and eukaryote\n\n\n\n\n\n\n\n\n\n\nProkaryote (bacterium)\nEukaryote (animal cell)\n\n\n\n\nDNA\nin the cytosol (nucleoid)\ninside a nucleus with a double membrane\n\n\nInternal membranes\nalmost none\nmany: ER, Golgi, endosomes, lysosomes, mitochondria, …\n\n\nTypical volume\n~1 µm³\n~1000–4000 µm³ (about 1000× larger)\n\n\n\n\nThis is a recap of what you met in microbiology. A bacterium such as E. coli is about two micrometres long. It has a plasma membrane, usually a cell wall, ribosomes and its DNA in a region called the nucleoid, but no membrane around the DNA and almost no internal membranes. A eukaryotic cell is about a thousand times larger in volume. That is the key point on this slide: a bigger cell has a problem. Its surface is small compared with its volume, and molecules must travel further. Eukaryotes solve this with internal membranes, which add a large membrane area for reactions and divide the volume into compartments with different chemistry. Notice the mitochondria on the right: they are about the size of a bacterium. That is not a coincidence. Mitochondria come from a bacterium that was taken up by an ancestral cell, and they still have their own DNA and ribosomes. We come back to this in the mitochondria lecture.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#a-map-of-the-animal-cell",
+    "href": "cell-tour/lec.html#a-map-of-the-animal-cell",
+    "title": "A tour of the cell",
+    "section": "A map of the animal cell",
+    "text": "A map of the animal cell\n\n\nThis is the map we use in the whole course, and the colours are fixed: every later lecture uses the same colour for the same organelle. Purple is the nucleus, teal the endoplasmic reticulum, orange the Golgi apparatus, red the mitochondria, green the endosomes and lysosomes, blue the peroxisomes, grey the cytoskeleton, and brown the plasma membrane. Start in the centre. The nucleus holds the DNA, surrounded by the nuclear envelope, which is two membranes with pores through them. The outer nuclear membrane continues into the endoplasmic reticulum, the ER. The rough ER has ribosomes on its surface and makes membrane proteins and proteins for secretion; the smooth ER makes lipids and stores calcium. Proteins go from the ER to the Golgi, which modifies and sorts them, and then on to the plasma membrane in secretory vesicles, or to lysosomes. Material taken in from outside goes to endosomes and then to lysosomes for digestion. Mitochondria make most of the ATP. The centrosome organises the microtubules. Everything else, the fluid between the organelles, is the cytosol. The picture is a simplification: a real cell has hundreds of mitochondria and a much larger ER.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#what-each-compartment-does",
+    "href": "cell-tour/lec.html#what-each-compartment-does",
+    "title": "A tour of the cell",
+    "section": "What each compartment does",
+    "text": "What each compartment does\n\n\n\n\n\n\n\n\n\nCompartment\nMain job\nShare of cell volume*\nMore in\n\n\n\n\nCytosol\nprotein synthesis, most metabolism, signalling\n~50 %\nthroughout\n\n\nNucleus\nstores and reads DNA; makes ribosomes (nucleolus)\n~5–10 %\nprotein sorting; cell cycle\n\n\nER\nmakes membrane and secreted proteins, lipids; stores Ca²⁺\n~10–15 %\nthe ER\n\n\nGolgi apparatus\nadds sugars, sorts proteins\n~2–5 %\nGolgi and secretion\n\n\nEndosomes, lysosomes\nsort what was taken in; digest at pH ~5\n~1–2 %\nendocytosis and lysosomes\n\n\nMitochondria\nATP by oxidative phosphorylation; start apoptosis\n~20 % in a liver cell\nmitochondria; apoptosis\n\n\nPeroxisomes\noxidise fatty acids; break down H₂O₂\n~1 %\norganelles compared\n\n\n\n*Rough values for a liver cell. They change a lot between cell types: a pancreas cell that secretes enzymes is full of ER, a fat cell is mostly a lipid droplet.\n\nThis table is the text version of the map. Do not learn the percentages by heart; learn the pattern. About half of a typical cell is cytosol, and the cytosol is where proteins are made on free ribosomes and where much of metabolism happens, for example glycolysis. Each membrane-bound organelle has a special job, and each has its own lecture, shown in the right column. Notice that the amounts depend on what the cell does. A liver cell, which does a lot of metabolism, has many mitochondria, about a fifth of its volume. A pancreatic acinar cell, which secretes large amounts of digestive enzymes, is packed with rough ER. A plasma cell, which secretes antibodies, also has a lot of rough ER. So you can often guess what a cell does by looking at its organelles under an electron microscope, and the reverse is also true. Two jobs are worth noting now because they come back: mitochondria do not only make ATP, they also start one form of cell death; and the ER is the main calcium store of the cell, which matters for signalling.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#two-sides-of-every-membrane-topology",
+    "href": "cell-tour/lec.html#two-sides-of-every-membrane-topology",
+    "title": "A tour of the cell",
+    "section": "Two sides of every membrane: topology",
+    "text": "Two sides of every membrane: topology\n\n\nThis is the most important idea of today, because it explains much of protein sorting and vesicle traffic later. Every membrane separates two spaces. Look at the colours. The light yellow space is the cytosol side: the cytosol itself and the inside of the nucleus, the nucleoplasm. These two are joined through nuclear pores, which are large open channels, so they count as one space. The light blue space is the lumen side: the inside of the ER, the gap between the two nuclear membranes, the Golgi, the vesicles, endosomes and lysosomes. The lumen side is, in topology, the same as the outside of the cell. Why? Because these compartments are connected to the outside by vesicles that bud from one membrane and fuse with another, without a molecule ever crossing a membrane. A protein secreted from the ER lumen reaches the outside without ever being in the cytosol. Mitochondria are the exception: their inner space, the matrix, is a third space of its own, a legacy of their bacterial origin. Peroxisomes, not shown here, also import their proteins from the cytosol.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#inside-out-logic-a-protein-keeps-its-orientation",
+    "href": "cell-tour/lec.html#inside-out-logic-a-protein-keeps-its-orientation",
+    "title": "A tour of the cell",
+    "section": "Inside-out logic: a protein keeps its orientation",
+    "text": "Inside-out logic: a protein keeps its orientation\n\n\nThe part of a protein that is in the ER lumen ends up outside the cell.\nThis is why sugar chains (added in the ER and Golgi lumen) are found on the outer surface of the cell, and why receptors have their binding site outside.\n\n\nHere is topology in action. A membrane protein is made in the ER membrane. One part of it faces the ER lumen, and in the lumen the cell adds sugar chains to it. The other part, the tail, faces the cytosol. Now follow it. A vesicle buds from the ER: the lumen side of the protein now faces the inside of the vesicle. The vesicle fuses with the Golgi: the lumen side faces the Golgi lumen. A new vesicle carries it to the plasma membrane and fuses: now the lumen side faces the outside of the cell. At no step does the protein flip, and at no step does any part of it cross a membrane. So the rule is simple: lumen side equals outside. This explains why all the sugar chains of the cell surface face outwards, and why a hormone receptor made in the ER has its hormone-binding part outside the cell and its signalling part in the cytosol. When we study receptors and protein sorting, you will use this rule again and again. It is also a common exam question.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#the-scale-ladder-from-ion-to-cell",
+    "href": "cell-tour/lec.html#the-scale-ladder-from-ion-to-cell",
+    "title": "A tour of the cell",
+    "section": "The scale ladder: from ion to cell",
+    "text": "The scale ladder: from ion to cell\n\nEach step on the axis is a factor of 10. A cell is about 50,000× wider than an ion and about 3000× wider than a protein.\n\nCell biology covers about five orders of magnitude in size, so the axis is logarithmic: each tick is ten times the one before. An ion such as potassium is about a third of a nanometre across. A typical protein is about five nanometres. A ribosome, a large machine made of RNA and about eighty proteins, is about twenty-five nanometres. Many viruses, such as influenza or SARS coronavirus 2, are about a hundred nanometres. A bacterium and a mitochondrion are about one micrometre wide. The nucleus is a few micrometres, and a whole animal cell is ten to twenty micrometres. The bars at the bottom link to the next lecture. A light microscope cannot separate two objects closer than about two hundred nanometres, so with light you can see cells, nuclei and mitochondria, but not single ribosomes or proteins, unless you label them with a fluorescent tag. An electron microscope sees down to about a nanometre in a thin section of a cell. Remember these sizes: they let you check whether an answer is reasonable.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#numbers-worth-knowing",
+    "href": "cell-tour/lec.html#numbers-worth-knowing",
+    "title": "A tour of the cell",
+    "section": "Numbers worth knowing",
+    "text": "Numbers worth knowing\n\n\n\n\n\n\n\nQuantity\nTypical value (order of magnitude)\n\n\n\n\nDiameter of a cultured animal cell\n10–20 µm\n\n\nVolume of a mammalian cell\n~1–4 pL (1000–4000 µm³)\n\n\nCell mass that is water / protein\n~70 % / ~15–20 %\n\n\nProtein molecules per cell\n10⁹–10¹⁰ (about 10,000 different kinds)\n\n\nRibosomes per cell\n~10⁶–10⁷\n\n\nA protein diffuses across a cell (10 µm)\na few seconds\n\n\nA small molecule diffuses across a cell\n~0.1 s\n\n\nA protein diffuses 1 m (down a long nerve axon)\nhundreds of years, so the cell uses motors\n\n\nCells in a human body\n~3 × 10¹³\n\n\n\nRough values of the kind collected in BioNumbers (bionumbers.hms.harvard.edu) and Cell Biology by the Numbers (Milo and Phillips). Diffusion time: t \\approx x^2 / 6D with D \\approx 5–10\\ \\mu\\text{m}^2/\\text{s} for a protein in cytoplasm.\n\nThese are numbers to remember as orders of magnitude, not exact values. A cell holds about one to ten billion protein molecules. Spread over a volume of a few picolitres, that is a protein concentration of a few hundred milligrams per millilitre: the cytoplasm is crowded, more like a gel than like water. Now diffusion. For a molecule that moves randomly, the time to travel a distance x grows with x squared: t is roughly x squared divided by six times the diffusion coefficient. A protein in cytoplasm has a diffusion coefficient of about five to ten square micrometres per second, so it crosses a ten-micrometre cell in a few seconds. That is fast enough for most signals. But because of the x squared, diffusion becomes useless over long distances: to diffuse one metre, from your spinal cord to your foot along a nerve axon, would take hundreds of years. This is why cells have motor proteins that carry cargo along the cytoskeleton, which you meet in the cytoskeleton block. Small molecules such as glucose diffuse about ten to a hundred times faster than proteins.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#how-do-we-know-electron-microscopy-revealed-the-compartments",
+    "href": "cell-tour/lec.html#how-do-we-know-electron-microscopy-revealed-the-compartments",
+    "title": "A tour of the cell",
+    "section": "How do we know? Electron microscopy revealed the compartments",
+    "text": "How do we know? Electron microscopy revealed the compartments\n\n\n\nLight microscopy (from the 1600s) showed cells and nuclei, but nothing smaller than ~0.2 µm.\n1940s–1950s: the electron microscope and thin sections showed the ER, ribosomes, Golgi stacks and the inner structure of mitochondria.\nAt the same time, cell fractionation (breaking cells and separating parts by centrifugation) showed what each part does, for example lysosomes full of digestive enzymes.\nNobel Prize 1974: Claude, de Duve and Palade.\n\nLesson: one method shows where; another shows what it does. You need both.\n\n\n\n\n\n\nTransmission electron micrograph of a human B lymphocyte. Large nucleus with dark chromatin; mitochondria with folded inner membranes in the cytoplasm. Scale bar 500 nm.\n\n\nHow do we know that the map is true? Until the 1940s, the light microscope was the main tool, and it cannot resolve anything smaller than about two hundred nanometres. Cells and nuclei were visible, and mitochondria as tiny dots, but the ER and ribosomes were invisible. The electron microscope uses electrons instead of light, and electrons have a much shorter wavelength, so it resolves structures down to about a nanometre. When researchers learned to cut cells into very thin sections, they suddenly saw the membranes inside cells: the ER, ribosomes, the Golgi stacks and the folded inner membrane of mitochondria. In the image you see a human B lymphocyte: the large nucleus with dark, condensed chromatin, and mitochondria with their folded inner membrane. But a picture shows where things are, not what they do. At the same time, others broke cells open and separated their parts by centrifugation, then measured enzymes in each fraction. This is how lysosomes and peroxisomes were discovered. Combining the two methods won the Nobel Prize in 1974. Microscopy and fractionation are the topics of the next two lectures.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#model-systems-choose-the-simplest-system-that-can-answer-the-question",
+    "href": "cell-tour/lec.html#model-systems-choose-the-simplest-system-that-can-answer-the-question",
+    "title": "A tour of the cell",
+    "section": "Model systems: choose the simplest system that can answer the question",
+    "text": "Model systems: choose the simplest system that can answer the question\n\n\n\n\n\n\n\n\n\n\nSystem\nGood for\nCannot tell you\n\n\n\n\nBacteria (E. coli)\nfast genetics, basic machines\nanything about organelles\n\n\nBudding yeast (S. cerevisiae)\neukaryote; divides in ~90 min; easy genetics\nhow tissues and animals behave\n\n\nHuman cell lines (HeLa, HEK293, …)\nhuman proteins; easy to image and perturb\nnormal behaviour: most are cancer cells grown on plastic\n\n\nOrganoids\n3D tissue from stem cells, even from a patient\nblood supply, immune system, whole body\n\n\nMice\nwhole organism\nhuman biology exactly; slow, costly, ethics\n\n\n\nYeast genetics found the genes for the cell cycle (Nobel 2001), vesicle traffic (2013) and autophagy (2016).\n\n\n\n\n\n\nBudding yeast, Saccharomyces cerevisiae (DIC microscopy). Small buds are daughter cells growing out of the mother cells.\n\n\nNo single system answers every question, so cell biologists choose a model system. The rule is to use the simplest system that still has the feature you want to study. Bacteria are fast and simple but have no organelles. Budding yeast, the yeast used for baking and brewing, is the simplest common eukaryote: it has a nucleus, ER, Golgi and mitochondria, it divides in about ninety minutes, and its genes are easy to delete. Because most of the core machinery is shared with human cells, yeast genetics found the genes that control the cell cycle, the genes for vesicle traffic and the genes for autophagy, and each of these won a Nobel Prize. In the image you see yeast cells with buds; each bud is a new daughter cell. Human cell lines give human proteins in a dish. Organoids add three-dimensional tissue structure. Mice give a whole body. Each step up is closer to a patient but slower, more expensive and harder to control. In a VG question you may be asked to choose a system and to say what it cannot show.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#cell-lines-hela-the-first-human-cells-that-never-stopped-dividing",
+    "href": "cell-tour/lec.html#cell-lines-hela-the-first-human-cells-that-never-stopped-dividing",
+    "title": "A tour of the cell",
+    "section": "Cell lines: HeLa, the first human cells that never stopped dividing",
+    "text": "Cell lines: HeLa, the first human cells that never stopped dividing\n\n\n\nNormal human cells divide only about 40–60 times in culture, then stop.\nA cell line divides without limit. Most come from tumours.\nHeLa (1951) came from the cervical tumour of Henrietta Lacks. It was the first human cell line.\nHeLa cells carry human papillomavirus 18 (HPV-18). Viral proteins switch off two brakes on cell division (you meet them in the cell-cycle and cancer lectures).\nHeLa is not a normal cell: about 80 chromosomes instead of 46. And HeLa grows so well that it has contaminated many other cell lines, so labs now check the identity of their cells with a DNA test.\n\n\n\n\n\n\n\nLiving HeLa cells. Blue: nucleus. Green: microtubules. Red: mitochondria. Scale bar 10 µm.\n\n\nMost cells taken from a human body divide a limited number of times in a dish, about forty to sixty times, and then stop. A cell line is a population of cells that can divide without limit. Almost all human cell lines come from tumours, because cancer cells have lost the normal limits on division. The first human cell line came from Henrietta Lacks, a thirty-one-year-old African American woman treated for cervical cancer at Johns Hopkins Hospital in Baltimore in 1951. Her cells, named HeLa from her name, grew faster than any human cells before them. We now know why. Her tumour was caused by human papillomavirus type 18, and viral proteins in HeLa cells switch off two key brakes on cell division, proteins called p53 and Rb, which you meet in the cell-cycle and cancer lectures. HeLa cells also have an abnormal genome, with about eighty chromosomes. In the image you see living HeLa cells with three fluorescent labels: nucleus, microtubules and mitochondria. Note the scale bar: these cells are about twenty to forty micrometres long when they spread on glass.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#organoids-tissue-in-a-dish",
+    "href": "cell-tour/lec.html#organoids-tissue-in-a-dish",
+    "title": "A tour of the cell",
+    "section": "Organoids: tissue in a dish",
+    "text": "Organoids: tissue in a dish\n\n\n\nAn organoid is a small 3D structure that grows from stem cells in a gel, with the right growth factors.\nThe cells organise themselves: an intestinal organoid forms crypts and a lumen, with several cell types, like the real gut lining.\nOrganoids can be grown from one patient’s biopsy, so you can test drugs on that patient’s own cells.\nExample: in cystic fibrosis, a patient’s intestinal organoids swell when a drug restores the faulty chloride channel (CFTR). The test helps choose a drug for that patient.\n\n\n\n\n\n\n\nIntestinal organoid grown from Lgr5⁺ stem cells. The buds are crypt-like domains around a central lumen.\n\n\nCell lines grow as a flat layer on plastic, which is far from a real tissue. Organoids are a newer model, developed from about 2009. You take adult stem cells, for example from the base of an intestinal crypt, put them in a gel that mimics the material around cells in a tissue, and add the growth factors that the stem cells normally receive. The stem cells divide and organise themselves into a small three-dimensional structure with a central lumen and buds that look like crypts, with several cell types, much like the lining of the gut. The image shows such an intestinal organoid. Because organoids can be grown from a small biopsy, they can be made from one patient. A good example is cystic fibrosis, which is caused by a faulty chloride channel called CFTR. When a drug restores channel function in a patient’s intestinal organoids, chloride and water flow into the lumen and the organoids swell. The amount of swelling helps predict whether the drug will work in that patient. You meet ion channels in lecture six and cystic fibrosis again in the disease lectures.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#why-it-matters-hela-cells-changed-medicine",
+    "href": "cell-tour/lec.html#why-it-matters-hela-cells-changed-medicine",
+    "title": "A tour of the cell",
+    "section": "Why it matters: HeLa cells changed medicine",
+    "text": "Why it matters: HeLa cells changed medicine\n\n\nPolio vaccine: poliovirus grows in HeLa, so HeLa was mass-produced to test the Salk vaccine (1953–55).\nHPV and cervical cancer: HPV-18 DNA in HeLa helped show that a virus causes cervical cancer (Nobel 2008), which led to the HPV vaccine.\nDrug screening: cell lines like HeLa are the first test for thousands of drug candidates: does the compound kill cells, reach its target, change an organelle?\n\n\nHere is why HeLa cells matter for medicine, and why we tie them back to the cell-line slide. Because HeLa cells were the first human cells that could be grown in large amounts, they became a tool for everything. In the early 1950s, poliovirus was found to grow in HeLa cells. A laboratory at the Tuskegee Institute mass-produced HeLa cells and sent them across the United States to test whether the Salk polio vaccine produced protective antibodies. In the 1980s, researchers found DNA from human papillomavirus type 18 in HeLa cells and in many other cervical cancers. This helped prove that a virus causes cervical cancer, work that won the Nobel Prize in 2008, and it led to the HPV vaccine that is now given to children, including in Sweden. HeLa cells have been used in more than a hundred thousand research papers. Today, cell lines are the first step of drug development: before any animal or human test, a drug candidate is tested on cells. You meet the later phases in the later programme course on clinical trials and drug development.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#why-it-matters-consent-then-and-now",
+    "href": "cell-tour/lec.html#why-it-matters-consent-then-and-now",
+    "title": "A tour of the cell",
+    "section": "Why it matters: consent, then and now",
+    "text": "Why it matters: consent, then and now\n\n\n\nIn 1951 Henrietta Lacks was not asked whether her cells could be used. This was common practice at the time. She died the same year, aged 31.\nHer family learned about HeLa decades later. Companies sold HeLa cells; the family received nothing.\n2013: the HeLa genome was published without the family’s consent. It also says something about her relatives’ DNA. The US National Institutes of Health then agreed with the family on controlled access, with family members on the committee.\nToday, in Sweden: research on human tissue needs ethical approval and, as a rule, informed consent. Samples in biobanks are protected by law.\n\nAsk yourself: who should decide how cells from a patient are used, and who should benefit?\n\n\n\n\n\n\nHeLa cells, DNA stained with the blue dye Hoechst 33258.\n\n\nThe science of HeLa cannot be separated from the person. Henrietta Lacks was a mother of five who was treated for cervical cancer in a segregated hospital ward in 1951. A sample of her tumour was taken during treatment and given to a research laboratory without her knowledge. This was common practice then, but that does not make it right, and her family did not learn about the cells for more than twenty years. When the HeLa genome sequence was published in 2013, it again happened without asking the family, even though a genome also reveals information about relatives. After discussions, the US National Institutes of Health agreed with the family that the data should be in controlled access, with family members helping to decide who can use it. In 2021 the World Health Organization honoured Henrietta Lacks, and in 2023 the family reached a settlement with a company that had sold HeLa cells. In Sweden today, research on human tissue needs approval from the Swedish Ethical Review Authority, informed consent is the rule, and biobank samples are protected by law. Treat this as a question for discussion, not a closed story.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/lec.html#summary",
+    "href": "cell-tour/lec.html#summary",
+    "title": "A tour of the cell",
+    "section": "Summary",
+    "text": "Summary\n\nA eukaryotic cell is divided by membranes into compartments, each with its own chemistry and job: nucleus, ER, Golgi, endosomes and lysosomes, mitochondria, peroxisomes, and the cytosol between them.\nEvery membrane has two sides. The cytosol and nucleoplasm form one side; the lumen of the ER, Golgi, vesicles and lysosomes is topologically outside the cell. Mitochondria have a third space.\nSizes and numbers: protein ~5 nm, ribosome ~25 nm, cell 10–20 µm; 10⁹–10¹⁰ proteins per cell; diffusion is fast over a cell but useless over long distances.\nWe know this from microscopy (where) and fractionation (what), and we study cells in model systems (yeast, cell lines such as HeLa, organoids), each with its limits.\n\nRead more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch. 1 and ch. 12 (first section).\nImage credits\n\nLet us return to the opening question: how does one small drop of cytoplasm do everything at once? The answer is compartments. Membranes divide the cell into spaces with different chemistry, such as the acidic lysosome and the calcium-rich ER, and vesicles carry material between the lumen-side compartments without crossing a membrane. Topology is the rule to remember: the lumen side equals the outside of the cell, and the cytosol side includes the nucleus. Sizes and numbers let you check your reasoning, and the diffusion numbers explain why a large cell needs a cytoskeleton and motors. Finally, every fact on today’s map came from methods: electron microscopy showed where structures are, fractionation showed what they do, and model systems let us test ideas. The next two lectures are about these methods: microscopy, and how to take cells apart and perturb them. If you want to read more, chapter one and the first section of chapter twelve of Molecular Biology of the Cell cover today’s material, but the slides and notes are enough for the exam.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "cell-tour/questions.html",
+    "href": "cell-tour/questions.html",
+    "title": "Study questions: a tour of the cell",
+    "section": "",
+    "text": "Questions written the way the exam asks them. Each is tagged with its ELO. Questions marked [VG] are of the harder kind that the exam uses to decide between G and VG: they ask you to predict, compare, explain an unexpected result or design an experiment. Write your answer first, then open the model answer.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Study questions"
+    ]
+  },
+  {
+    "objectID": "cell-tour/questions.html#g-level-questions",
+    "href": "cell-tour/questions.html#g-level-questions",
+    "title": "Study questions: a tour of the cell",
+    "section": "G-level questions",
+    "text": "G-level questions\n1. [ELO 1] Draw a simple animal cell and label the plasma membrane, nucleus, nuclear envelope, rough ER, Golgi apparatus, a mitochondrion, a lysosome and the cytosol. Give one function for each labelled part.\n\n\n\n\n\n\nModel answer\n\n\n\n\n\n\nPlasma membrane: barrier between cell and outside; controls what enters and leaves.\nNucleus: stores the DNA; transcription happens here.\nNuclear envelope: two membranes with pores; separates nucleoplasm from cytosol but lets molecules pass through pores. The outer membrane continues into the ER.\nRough ER: has ribosomes on its surface; makes membrane proteins and proteins for secretion.\nGolgi apparatus: modifies proteins (adds and trims sugar chains) and sorts them to their destination.\nMitochondrion: makes most of the ATP by oxidative phosphorylation.\nLysosome: digests material at about pH 5.\nCytosol: the fluid between organelles; protein synthesis on free ribosomes and much of metabolism (for example glycolysis).\n\n\n\n\n\n2. [ELO 1] List three differences between a prokaryotic and a eukaryotic cell. Why is it an advantage for a large cell to have internal membranes?\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nDifferences: eukaryotes have a nucleus with a nuclear envelope (prokaryote DNA lies in the cytosol); eukaryotes have membrane-bound organelles (ER, Golgi, mitochondria, lysosomes); eukaryotic cells are about 1000 times larger in volume; eukaryotes have an extensive cytoskeleton with motor proteins. Advantage: internal membranes give more membrane area for membrane-bound reactions, and they divide the cell into compartments with different chemistry (for example acidic lysosomes, calcium-rich ER), so incompatible reactions can run at the same time.\n\n\n\n\n3. [ELO 1] Explain what is meant by the lumen of an organelle. Which compartments are topologically equivalent to the outside of the cell, and why?\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nThe lumen is the space inside a membrane-bound organelle, on the opposite side of its membrane from the cytosol. The lumens of the ER, the nuclear envelope (the gap between its two membranes), the Golgi, transport vesicles, endosomes and lysosomes are topologically equivalent to the outside of the cell. Material moves between them, and to and from the outside, by vesicles that bud from one membrane and fuse with another, so it never crosses a membrane and never enters the cytosol.\n\n\n\n\n4. [ELO 1] The nucleoplasm is surrounded by two membranes, yet it is said to be on the same side as the cytosol. Explain.\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nThe nuclear envelope has nuclear pores: large channels that join the nucleoplasm and the cytosol. Molecules move between them through the pores without crossing a lipid bilayer. The space between the two nuclear membranes, however, is continuous with the ER lumen and is on the lumen side.\n\n\n\n\n5. [ELO 1] Give typical sizes (order of magnitude) for: a protein, a ribosome, a virus, a bacterium, a nucleus and an animal cell. Which of these can you resolve in a light microscope without special methods?\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nProtein ~5 nm; ribosome ~25 nm; virus ~100 nm; bacterium ~1–2 µm; nucleus ~5–10 µm; animal cell ~10–20 µm. The light microscope resolves objects larger than about 0.2 µm, so the bacterium, nucleus and cell can be resolved (and mitochondria, about 1 µm wide). Proteins, ribosomes and most viruses are too small to resolve; single molecules can only be detected if they carry a fluorescent label.\n\n\n\n\n6. [ELO 1] A mammalian cell contains about \\(10^9\\)–\\(10^{10}\\) protein molecules in a volume of a few picolitres. What does this mean for the physical state of the cytoplasm, and how fast does a typical protein move across the cell?\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nThe protein concentration is a few hundred mg/mL, so the cytoplasm is crowded: more like a gel than a dilute solution. A typical protein diffuses with \\(D \\approx 5\\)–\\(10\\ \\mu\\text{m}^2/\\text{s}\\) in cytoplasm; with \\(t \\approx x^2/6D\\) it crosses a 10 µm cell in a few seconds.\n\n\n\n\n7. [ELO 5] Compare the mitochondrion and the lysosome: number of membranes, main function, and the chemistry of the inner space.\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nMitochondrion: two membranes (outer and folded inner membrane); main function ATP production by oxidative phosphorylation (also involved in starting apoptosis); the matrix is a separate space with its own DNA and ribosomes, not part of the lumen side. Lysosome: one membrane; digests proteins, lipids and other material; acidic lumen (pH about 4.5–5) full of digestive enzymes; part of the lumen side (reached by vesicles from endosomes).\n\n\n\n\n8. [ELO 1] What is a cell line? Give two reasons why HeLa cells became so widely used, and two reasons to be careful when interpreting results from them.\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nA cell line is a population of cells that divides without limit in culture; normal cells stop after about 40–60 divisions. HeLa became widely used because it was the first human cell line (1951), it grows fast and robustly, and it can be shipped and shared, for example to test the polio vaccine. Reasons for caution: HeLa cells are cancer cells with an abnormal genome (about 80 chromosomes) and HPV-18 proteins that disable cell-cycle brakes; they grow flat on plastic, not in a tissue; and HeLa has contaminated many other cell lines, so the identity of a cell line must be checked with a DNA test.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Study questions"
+    ]
+  },
+  {
+    "objectID": "cell-tour/questions.html#vg-style-questions",
+    "href": "cell-tour/questions.html#vg-style-questions",
+    "title": "Study questions: a tour of the cell",
+    "section": "VG-style questions",
+    "text": "VG-style questions\n9. [ELO 1] [VG] A membrane protein has its N-terminus in the ER lumen and its C-terminus in the cytosol. Predict the orientation of the protein (a) in the membrane of a transport vesicle, (b) in the Golgi membrane and (c) in the plasma membrane. A researcher adds an antibody against the N-terminus to living, intact cells. Will the antibody bind? Explain.\n\n\n\n\n\n\nModel answer\n\n\n\n\n\n\nIn the vesicle, the N-terminus faces the vesicle lumen, the C-terminus the cytosol. (b) In the Golgi, the N-terminus faces the Golgi lumen. (c) In the plasma membrane, the N-terminus faces the outside of the cell. The orientation never changes because vesicles bud and fuse without the protein flipping, and the lumen side is topologically equivalent to the outside. The antibody will bind on living cells, because the N-terminus is exposed on the cell surface and an antibody cannot cross the plasma membrane. An antibody against the C-terminus would not bind to intact cells; it would bind only after the membrane is made permeable (for example with a detergent). This is a standard experiment to determine membrane topology.\n\n\n\n\n\n10. [ELO 1] [VG] You want to know whether a drug that is toxic to the liver damages mitochondria. You can use HeLa cells, budding yeast or organoids grown from human liver cells. Choose a system, justify your choice, and name one thing your system cannot tell you. Suggest a first experiment.\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nA good answer chooses and justifies, and names a limitation. For example: human liver organoids are the best first choice because they are human, contain liver-like cells that metabolise drugs as the liver does (many liver toxins become toxic only after liver enzymes modify them), and can be grown from several donors. Limitation: no blood supply, immune system or other organs, so they cannot show effects that depend on the whole body (for example inflammation, or drug levels in blood). HeLa cells are easier but are cancer cells that may not metabolise the drug like liver cells and rely less on mitochondria. Yeast is good for finding which genes make cells sensitive, but is not human and has a cell wall that may block the drug. First experiment: treat organoids with a range of drug concentrations and an untreated control, then measure mitochondrial function (for example with a dye whose uptake depends on the mitochondrial membrane potential, viewed by fluorescence microscopy) and cell survival, with replicate cultures.\n\n\n\n\n11. [ELO 1] [VG] In a textbook from 1950, the cytoplasm of a cell is described as “a structureless gel with some granules”. Explain, with reference to sizes and methods, why scientists at that time could not see most of the structures on today’s cell map, and which two methods changed this.\n\n\n\n\n\n\nModel answer\n\n\n\n\n\nThe light microscope cannot resolve structures closer than about 0.2 µm. Ribosomes (~25 nm), ER membranes (a bilayer is ~5 nm thick, ER tubes ~50–100 nm across) and the inner structure of mitochondria are below this limit, and unstained membranes give little contrast. So the cytoplasm looked structureless, with mitochondria as small granules. Two methods changed this: electron microscopy of thin sections (resolution down to about a nanometre), which showed the ER, ribosomes, Golgi stacks and cristae; and cell fractionation by centrifugation, which separated the parts and showed what each did (for example lysosomes with digestive enzymes). Combining the two gave the modern map.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Study questions"
+    ]
+  },
+  {
+    "objectID": "dictionary.html",
+    "href": "dictionary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "Key terms used in the course. Definitions are short; follow the link for the full explanation. Add terms here as lectures are written.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "dictionary.html#the-cell-and-how-we-study-it",
+    "href": "dictionary.html#the-cell-and-how-we-study-it",
+    "title": "Glossary",
+    "section": "The cell and how we study it",
+    "text": "The cell and how we study it\n\nA tour of the cell\nSee A tour of the cell.\nCytosol: the fluid part of the cell between the organelles, where free ribosomes make proteins and much of metabolism takes place.\nCytoplasm: everything inside the plasma membrane except the nucleus: the cytosol plus the organelles.\nOrganelle: a membrane-bound compartment inside a eukaryotic cell with its own job, such as the ER or a mitochondrion.\nLumen: the space inside a membrane-bound organelle, on the other side of its membrane from the cytosol.\nTopology (membrane): which side of a membrane a space or a part of a protein lies on; the lumen of the ER, Golgi, vesicles and lysosomes is topologically equivalent to the outside of the cell.\nNuclear envelope: the two membranes around the nucleus, crossed by nuclear pores; the outer membrane continues into the ER.\nNuclear pore: a large protein channel in the nuclear envelope that joins the nucleoplasm to the cytosol.\nEndoplasmic reticulum (ER): a network of membrane sheets and tubes that makes membrane and secreted proteins (rough ER) and lipids (smooth ER), and stores Ca²⁺.\nGolgi apparatus: a stack of flattened membrane compartments that modifies proteins from the ER, for example by adding sugar chains, and sorts them to their destinations.\nLysosome: an acidic organelle (pH about 5) full of digestive enzymes that breaks down material taken up by the cell or from the cell itself.\nModel system: a simpler organism or cell type (yeast, a cell line, an organoid) chosen because it answers a question more easily than a human body can.\nInformed consent: a person’s voluntary agreement, after being told the purpose and risks, to let their tissue or data be used in research.\nCell fractionation: breaking cells open and separating their parts, usually by centrifugation, to find out what each part does.\n\n\nSeeing cells: microscopy\nSee Seeing cells: microscopy.\nResolution: the smallest distance at which two points can still be seen as two separate points.\nMagnification: how much larger the image is than the object; it adds no detail beyond the resolution limit.\nNumerical aperture, NA: how wide a cone of light an objective collects; a higher NA gives better resolution.\nPhase-contrast microscopy: turns small delays of light in dense cell parts into differences in brightness, so living unstained cells become visible.\nDifferential interference contrast, DIC: shows steep changes in optical path as light and shadow, so cells look three-dimensional.\nFluorophore: a molecule that absorbs light of one wavelength and emits light of a longer wavelength.\nStokes shift: the difference in wavelength between a fluorophore’s excitation peak and emission peak.\nDichroic mirror: a mirror that reflects light below a certain wavelength and lets longer wavelengths pass; it separates excitation light from emitted light.\nImmunofluorescence: labelling a protein in fixed, permeabilised cells with antibodies coupled, directly or through a secondary antibody, to a fluorophore.\nGreen fluorescent protein, GFP: a jellyfish protein that forms its own fluorescent group, used as a genetic tag to see proteins in living cells.\nFusion protein: one protein chain made from two genes joined in the same reading frame, for example a protein of interest joined to GFP.\nConfocal microscopy: fluorescence microscopy in which a pinhole blocks out-of-focus light, giving a sharp optical section of a thick sample.\nPhotobleaching: the permanent loss of fluorescence when a fluorophore is destroyed by repeated excitation.\nSuper-resolution microscopy: light-microscopy methods, such as STED and PALM/STORM, that resolve details below the ~200 nm limit.\nTransmission electron microscopy, TEM: electrons pass through an ultrathin, heavy-metal-stained section, showing structures inside the cell at about 1–2 nm.\nScanning electron microscopy, SEM: images the 3D surface of a metal-coated sample by scanning it with a fine electron beam.\nCryo-electron microscopy, cryo-EM: electron microscopy of rapidly frozen samples in glass-like ice; averaging many images of one protein gives its 3D structure.\n\n\nTaking cells apart and perturbing them\nCell line: a population of cells that has been made immortal and can be grown in culture without limit.\nPrimary cells: cells taken directly from a tissue, which divide only a limited number of times in culture.\nOrganoid: a small 3D structure grown from stem cells that contains several cell types of an organ, arranged roughly as in the tissue.\nMycoplasma: very small bacteria without a cell wall that often contaminate cell cultures unnoticed and change how the cells behave.\nDifferential centrifugation: separating cell components by spinning at increasing speeds, so larger and denser particles form a pellet first.\nDensity-gradient centrifugation: separating particles by spinning them through a solution that gets denser towards the bottom, so each stops at its own density.\nMarker protein: a protein known to be found in only one organelle, used to identify that organelle in a fraction.\nEpitope: the small part of a target molecule that an antibody binds.\nWestern blot: separates proteins by size, transfers them to a membrane and detects one protein with antibodies.\nImmunoprecipitation: using an antibody on beads to pull a protein, and the proteins bound to it, out of a cell lysate.\nFlow cytometry: measuring light scatter and fluorescence of single cells as they pass a laser one at a time.\nGating: choosing a region in a flow cytometry plot so that only one population of cells is analysed further.\nRNA interference, RNAi: lowering the amount of a protein with a short double-stranded RNA that leads to the matching mRNA being cut.\nKnockout: disabling a gene completely, for example by a CRISPR-Cas9 cut that causes a frameshift.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#about-this-lecture",
+    "href": "microscopy/lec.html#about-this-lecture",
+    "title": "Seeing cells: microscopy",
+    "section": "About this lecture",
+    "text": "About this lecture\nAlmost everything you will learn in this course about where things are in a cell was first seen in a microscope. Today is about how those pictures are made, and how far you can trust them.\nAfter this lecture you can:\n\nexplain the difference between magnification and resolution, and why a light microscope cannot separate two objects closer than about 200 nm;\nexplain how phase contrast, DIC and fluorescence make transparent cells visible;\ndescribe how we label one kind of protein: immunofluorescence (fixed cells) and fluorescent proteins such as GFP (living cells);\nsay what confocal, light-sheet, super-resolution and electron microscopy (TEM, SEM, cryo-EM, tomography) add;\nchoose a method for a question, and read a microscopy figure critically.\n\nELO 1 (cell and methods) and ELO 6 (methods to study the cytoskeleton).\n\nThis lecture follows the tour of the cell. In the tour we showed you organelles in pictures; today we ask how those pictures were made. Every microscope answers three questions in its own way. First, can it make small things big enough and sharp enough to separate them? That is resolution. Second, can it make a transparent cell stand out from the water around it? That is contrast. Third, can it show one particular molecule among thousands? That is specificity, or labelling. Keep these three words in mind; every method today improves one or more of them, and every method pays a price, usually that the cell must be dead, or that the picture is blurrier, or slower. A thread runs through the whole lecture: “How do we know?” A picture is evidence, and you need to know what a method can and cannot show before you believe it. This covers ELO 1, choosing a method, and supports ELO 6, because many of the examples are the cytoskeleton.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#the-question-how-do-you-see-one-protein-in-a-living-cell",
+    "href": "microscopy/lec.html#the-question-how-do-you-see-one-protein-in-a-living-cell",
+    "title": "Seeing cells: microscopy",
+    "section": "The question: how do you see one protein in a living cell?",
+    "text": "The question: how do you see one protein in a living cell?\nA human cell is about 20 µm across and almost transparent. A protein is about 5 nm: 4000 times smaller. The cell contains about 10 000 different proteins. Three problems:\n\nResolution: can we separate two things that are close together?\nContrast: can we see a cell that is mostly water?\nSpecificity: can we see one kind of molecule and not the others?\n\n\n\nLook at the scale. The horizontal axis is logarithmic: each step is ten times bigger. A human cell is around 20 micrometres, a mitochondrion about one micrometre wide, a virus about a hundred nanometres, a ribosome twenty-five, a typical protein five. The bars below show the smallest detail each tool can separate. Your eye stops at about a tenth of a millimetre, so it sees a human egg but not an ordinary cell. The light microscope reaches about 200 nanometres: enough for cells, nuclei and mitochondria, not enough for a ribosome or a single protein. Super-resolution light microscopy gets to about 20 nanometres, and electron microscopes go below a nanometre, down to individual atoms in purified proteins. But resolution is only the first problem. Most of a cell is water and barely changes light, so we also need contrast. And even a sharp, high-contrast picture shows all molecules at once, so we need a way to label one kind. The rest of the lecture solves these three problems in turn.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#magnification-is-not-resolution",
+    "href": "microscopy/lec.html#magnification-is-not-resolution",
+    "title": "Seeing cells: microscopy",
+    "section": "Magnification is not resolution",
+    "text": "Magnification is not resolution\n\nMagnification makes the image bigger. Resolution is the smallest distance at which two points still look like two.\nLight spreads when it passes through a lens. A point of light becomes a small blur spot. When two spots overlap too much, they merge into one.\nThe limit (Abbe, Rayleigh): \\;d \\approx \\dfrac{0.61\\,\\lambda}{\\mathrm{NA}}. Green light (\\lambda \\approx 500 nm) and the best oil objective (\\mathrm{NA} \\approx 1.4) give d \\approx 200 nm side to side, and about 500 nm along the optical axis (depth).\n\n\nEnlarging a blurred image more (“empty magnification”) adds no detail.\n\nStudents often think a better microscope is one that magnifies more. It is not. Magnification only makes the image bigger; resolution decides how much detail is in it. Because light is a wave, a lens cannot focus it to a perfect point. Each point in the sample becomes a small blur spot in the image. If two points are far apart, you see two spots. When they come closer, the spots overlap. At the Rayleigh limit the dip between them is just visible; closer than that you see one blob, and no amount of enlargement can split it again. The formula says d equals 0.61 times the wavelength divided by the numerical aperture. You do not need to derive it. Read it like this: shorter wavelength gives finer detail, and a lens that collects light from a wider angle, a higher NA, gives finer detail. NA is at most about 1.4 with immersion oil. Put in 500 nanometre light and you get about 200 nanometres. That is why a light microscope cannot show a ribosome, and why electron microscopes, with a much shorter wavelength, can.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#contrast-making-transparent-cells-visible",
+    "href": "microscopy/lec.html#contrast-making-transparent-cells-visible",
+    "title": "Seeing cells: microscopy",
+    "section": "Contrast: making transparent cells visible",
+    "text": "Contrast: making transparent cells visible\n\n\n\nThe same onion root-tip cells. Left: phase contrast. Right: bright field. Scale bar 10 µm.\n\n\nBright field: light passes straight through. Unstained cells are almost invisible. Tissues are stained (dyes), which needs dead, fixed cells.\nPhase contrast: light slowed by dense parts (nucleus, membranes) is turned into darker or brighter areas. Living cells, no stain.\nDIC: shows edges and slopes as light and shadow, so cells look 3D.\n\n\nYeast cells, DIC.\n\n\nMost of a living cell is water, proteins and lipids, which absorb very little visible light. In ordinary bright-field microscopy the light simply passes through, so an unstained cell is a faint ghost. One answer is to stain the cells with coloured dyes, which is what histology does, and you will use that in the course on organs and tissues. But staining usually means killing and fixing the cells. The other answer is to use something cells already do to light. Dense parts of the cell, such as the nucleus and membranes, have a higher refractive index, so light passing through them is slowed a little. The eye cannot see this delay, called a phase shift. A phase-contrast microscope converts the phase shift into a difference in brightness, so the same unstained living cells suddenly show their nucleus and edges. Compare the left and right halves of the image: same cells, same moment, two kinds of optics. Differential interference contrast, DIC, uses polarised light to show where the optical path changes steeply, so edges look like a relief map. These methods are used every day to check cultured cells.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#fluorescence-absorb-one-colour-emit-another",
+    "href": "microscopy/lec.html#fluorescence-absorb-one-colour-emit-another",
+    "title": "Seeing cells: microscopy",
+    "section": "Fluorescence: absorb one colour, emit another",
+    "text": "Fluorescence: absorb one colour, emit another\n\nA fluorophore absorbs light of one wavelength, loses a little energy as heat, and within nanoseconds emits light of a longer wavelength (lower energy).\nYou know absorption spectra from spectrophotometry. A fluorophore has two spectra: excitation and emission. The gap between the peaks is the Stokes shift.\nThe shift lets us filter away the excitation light and keep only the glow: a bright signal on a black background, so even a few molecules can be seen.\n\n\n\nYou measured absorption spectra in chemistry: a molecule absorbs some wavelengths more than others. A fluorophore is a molecule that, after absorbing a photon, gives some of the energy back as light. The electron is lifted to an excited state, loses a little energy as heat while the molecule relaxes, and then falls back, emitting a photon. Because some energy was lost, the emitted photon has less energy, which means a longer wavelength. Blue in, green out. The difference between the excitation peak and the emission peak is called the Stokes shift. This shift is the whole trick of fluorescence microscopy. The excitation light is millions of times brighter than the glow, but because the two colours differ, filters can block the excitation light and pass only the emitted light. What remains is a bright signal on a black background. That gives enormous contrast: you can detect a few hundred fluorophores, and with sensitive cameras even single molecules. The shaded boxes show the filters you would choose for this green fluorophore. Next slide: where these filters sit.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#inside-a-fluorescence-microscope-the-filter-cube",
+    "href": "microscopy/lec.html#inside-a-fluorescence-microscope-the-filter-cube",
+    "title": "Seeing cells: microscopy",
+    "section": "Inside a fluorescence microscope: the filter cube",
+    "text": "Inside a fluorescence microscope: the filter cube\n\n\n\n\n\nExcitation filter picks the colour that excites the fluorophore.\nDichroic mirror reflects that colour down onto the sample, but lets the longer emitted wavelength pass.\nThe objective both lights the sample and collects its glow.\nEmission filter removes the last stray excitation light.\n\nOne cube per fluorophore. To image blue, green and red labels, the microscope takes one picture per cube (channel) and combines them.\n\n\nFollow the light. The lamp or LED gives many colours. The excitation filter lets only blue through. The blue light reaches a special mirror called a dichroic mirror, which reflects short wavelengths and lets long wavelengths pass. It reflects the blue light down through the objective onto the sample. The fluorophores in the cell absorb blue and emit green in all directions. Some of the green light goes back up into the objective. Because it is green, it passes straight through the dichroic mirror. The emission filter then removes any blue light that was scattered back, so the camera sees only green. The objective does two jobs: it focuses the excitation light and collects the emission. This design is called epifluorescence. The three filters are mounted together in a filter cube, and each fluorophore needs its own cube. A three-colour image is therefore three separate black-and-white pictures, one per cube, which software colours and overlays. Remember this when you read figures: each colour is a separate channel, and the colours are chosen by the scientist.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#labelling-a-protein-in-fixed-cells-immunofluorescence",
+    "href": "microscopy/lec.html#labelling-a-protein-in-fixed-cells-immunofluorescence",
+    "title": "Seeing cells: microscopy",
+    "section": "Labelling a protein in fixed cells: immunofluorescence",
+    "text": "Labelling a protein in fixed cells: immunofluorescence\n\n\n\n\nA primary antibody binds the target protein. A secondary antibody carrying a fluorophore binds the primary. Several secondaries per primary make the signal brighter.\nAny protein you have a good antibody against can be shown, but only in dead cells.\n\n\n\nEndothelial cells. Blue: DNA (DAPI). Green: microtubules (antibody against tubulin). Red: actin filaments (phalloidin).\n\n\nFluorescence gives contrast, but we still need specificity: one kind of protein, not all of them. The classic answer is to use antibodies, which you know from biochemistry as proteins that bind one target very tightly. Antibodies are large and cannot cross the plasma membrane of a living cell. So we first fix the cells, usually with formaldehyde, which cross-links proteins and freezes everything in place. Then we permeabilise the membranes with a mild detergent so antibodies can get in. The primary antibody, made for example in a mouse, binds the target. A secondary antibody against mouse antibodies, coupled to a fluorophore, binds the primary. Because several secondaries can bind one primary, the signal is amplified. Other probes are not antibodies: DAPI binds DNA, and phalloidin, a toxin from a mushroom, binds actin filaments. In the image, three labels are imaged in three channels and merged. You can see microtubules spreading out from the centre and actin bundles near the edges. The price: the cells are dead, and fixation can move or extract things, so we need controls.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#fluorescent-proteins-a-gift-from-a-jellyfish",
+    "href": "microscopy/lec.html#fluorescent-proteins-a-gift-from-a-jellyfish",
+    "title": "Seeing cells: microscopy",
+    "section": "Fluorescent proteins: a gift from a jellyfish",
+    "text": "Fluorescent proteins: a gift from a jellyfish\n\n\n\nAequorea victoria, the crystal jelly.\n\n\nThe jellyfish makes green fluorescent protein (GFP): 238 amino acids that fold into a barrel and build their own light-emitting group inside. No other molecule is needed.\nThe GFP gene works in any cell: bacteria, worms, mice, human cells (1994).\nMutations changed its colour: blue, cyan, yellow. Red proteins (e.g. mCherry) came from corals.\nNobel Prize in Chemistry 2008 (Shimomura, Chalfie, Tsien).\n\n\n\nA beach scene painted with bacteria that make eight different fluorescent proteins.\n\n\nThe second way to label a protein started with a jellyfish from the Pacific coast of North America. Osamu Shimomura purified its light-making proteins in the 1960s. The jellyfish glows green because a protein, GFP, takes energy from a blue light-producing protein and emits green light. What makes GFP special is that it needs nothing else. The chain of 238 amino acids folds into a barrel, and three amino acids in the middle react with each other and with oxygen to form the fluorescent group, the chromophore, protected inside the barrel. So when Martin Chalfie put the GFP gene into bacteria and worms in 1994, they glowed. Roger Tsien and others then mutated GFP to make it brighter and to change its colour, giving blue, cyan and yellow versions. Red fluorescent proteins were later found in corals and improved in the same way. The beach picture on the right was painted with bacterial colonies, each making a different fluorescent protein. With several colours you can follow several proteins in the same cell at the same time.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#gfp-fusion-proteins-watching-a-protein-in-a-living-cell",
+    "href": "microscopy/lec.html#gfp-fusion-proteins-watching-a-protein-in-a-living-cell",
+    "title": "Seeing cells: microscopy",
+    "section": "GFP fusion proteins: watching a protein in a living cell",
+    "text": "GFP fusion proteins: watching a protein in a living cell\n\n\n\n\n\n\n\n\nJoin the gene for your protein to the GFP gene, in frame, and put it into cells.\nThe cell makes one chain, protein X–GFP, which usually goes where X normally goes.\nLiving cells, no antibody. Check that the tag does not disturb X: does X–GFP still work, and is it in the same place as the untagged protein?\n\n\n\n\n\n\n\nHeLa cells with a GFP-tagged microtubule-binding protein: the microtubule network.\n\n\nHere is how GFP is used in practice. You take the DNA for your protein of interest, call it X, and join it to the DNA for GFP so that the two reading frames continue without a stop codon in between. You put this DNA into cells, for example with a plasmid. The cell transcribes and translates it into one long chain: X with GFP attached at one end. GFP folds on its own and glows, and X usually still folds and goes where it normally goes. Now the green light tells you where X is, in a living cell, in real time. The image shows HeLa cells making a microtubule-binding protein fused to GFP: the green threads are the microtubule network, which you will meet in the cytoskeleton lectures. Some cells are bright and some dim, because after transfection each cell takes up a different amount of DNA and makes a different amount of fusion protein. Be critical: GFP is about 27 kilodaltons, so it can disturb a small protein, and too much fusion protein can end up in the wrong place. Good studies check that the tagged protein still works and matches antibody staining of the untagged protein.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#confocal-microscopy-a-sharp-optical-section",
+    "href": "microscopy/lec.html#confocal-microscopy-a-sharp-optical-section",
+    "title": "Seeing cells: microscopy",
+    "section": "Confocal microscopy: a sharp optical section",
+    "text": "Confocal microscopy: a sharp optical section\n\n\n\n\n\nIn a normal (wide-field) fluorescence microscope, light from above and below the focus adds a haze.\nA confocal microscope puts a pinhole where the in-focus light comes to a point. Light from other depths is spread out and blocked.\nA laser spot scans the sample point by point to build the image.\nResult: a thin optical section (about 0.5–1 µm). Refocus step by step to get a 3D stack, without cutting the sample.\n\n\n\nA cell is several micrometres thick, and tissue much more. In wide-field fluorescence, the whole depth is lit, so fluorophores above and below the focal plane also glow and their blurred light adds a haze to the image. The confocal microscope fixes this with a simple idea. Light coming from the focal plane is focused by the lens to a sharp point; we put a small hole, a pinhole, exactly there. That light goes through to the detector. Light from a plane above or below comes to a focus in a different place, so at the pinhole it is spread out, and most of it hits the metal around the hole and is blocked. Because the pinhole sees only one point, a laser spot is scanned across the sample, line by line, and a computer builds the image. What you get is an optical section: a thin slice, about half to one micrometre thick, taken without cutting. Step the focus up and down and you get a stack of sections, a z-stack, from which software builds a three-dimensional image. The price is speed and more light on the sample.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#live-cell-imaging-and-light-sheet-microscopy",
+    "href": "microscopy/lec.html#live-cell-imaging-and-light-sheet-microscopy",
+    "title": "Seeing cells: microscopy",
+    "section": "Live-cell imaging and light-sheet microscopy",
+    "text": "Live-cell imaging and light-sheet microscopy\n\n\nFilming living cells needs:\n\n37 °C, CO₂ and medium on the microscope stage;\nlittle light: strong light bleaches fluorophores (photobleaching) and makes reactive oxygen species that damage cells (phototoxicity);\na fast, sensitive camera.\n\n\nLight-sheet microscopy lights only a thin plane from the side, and the camera looks from above. It is gentle and fast, so whole embryos and organoids can be filmed in 3D for hours or days.\n\n\n\nFixed cells give you a snapshot. Many questions in cell biology are about change: how fast does a vesicle move, when does a cell divide, how long does a protein stay at a site. For these you need live-cell imaging. The cells must be kept happy on the microscope: warm, with the right gas and medium. The biggest enemy is light itself. Each time a fluorophore is excited there is a small chance it is destroyed, so the signal fades; this is photobleaching. Excited fluorophores can also react with oxygen to make reactive oxygen species, which damage the cell; this is phototoxicity. A cell that looks fine can still be stressed, so you must use as little light as possible. Light-sheet microscopy is one answer. In wide-field and confocal microscopes the light passes through the whole sample, even though you image one plane. In a light-sheet microscope a thin sheet of light enters from the side and lights only the plane the camera is looking at. Less light, less damage, and a whole plane at once, so it is fast. Later, in the cytoskeleton lectures, you will meet FRAP, a live-cell method that uses bleaching on purpose.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#super-resolution-beating-the-200-nm-limit",
+    "href": "microscopy/lec.html#super-resolution-beating-the-200-nm-limit",
+    "title": "Seeing cells: microscopy",
+    "section": "Super-resolution: beating the 200 nm limit",
+    "text": "Super-resolution: beating the 200 nm limit\n\n\n\nIntermediate filaments (vimentin), same area. Left: confocal. Right: STED. Insets: enlarged view of the dotted box. Scale bar 2 µm.\n\nThe limit is about separating neighbouring glowing molecules at the same time. Super-resolution methods get around it:\n\nSTED: a second, doughnut-shaped laser switches off fluorescence everywhere except a tiny centre.\nPALM/STORM: only a few molecules glow at a time; the centre of each blur spot is found precisely, then thousands of frames are combined.\nSIM: patterned light, about 2× better, gentle enough for live cells.\nExpansion microscopy: swell the sample in a gel, then image it.\n\nAbout 20–100 nm. Nobel Prize in Chemistry 2014.\n\n\nFor a hundred years the 200 nanometre limit was thought to be absolute. Super-resolution methods do not break the laws of optics; they get around them by making sure that neighbouring molecules do not glow at the same time. In STED, the sample is excited with a normal spot, and a second, doughnut-shaped laser immediately switches the fluorophores in the ring back off. Only the centre of the doughnut can still glow, and that centre can be made much smaller than 200 nanometres. In single-molecule methods called PALM and STORM, special fluorophores are switched on randomly so that only a few, far-apart molecules glow in each frame. Each one still makes a blur spot, but the centre of a spot can be found to within about 20 nanometres. Thousands of frames give a map of positions. SIM uses striped light and gains about a factor of two. Expansion microscopy physically swells the sample. The image shows the gain: the same filament network, confocal on the left and STED on the right. The prices: special dyes, more light, slower imaging, and harder data analysis.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#transmission-electron-microscopy-tem",
+    "href": "microscopy/lec.html#transmission-electron-microscopy-tem",
+    "title": "Seeing cells: microscopy",
+    "section": "Transmission electron microscopy (TEM)",
+    "text": "Transmission electron microscopy (TEM)\n\n\n\nTEM of a pancreatic acinar cell: large nucleus, parallel stacks of rough ER, mitochondria and round, dark secretory (zymogen) granules. Scale bar 500 nm.\n\n\nUses electrons instead of light. Their wavelength is about 100 000× shorter, so resolution reaches about 1–2 nm in cells.\nElectrons pass through a very thin slice (about 50–100 nm). Dense, heavy-metal-stained parts scatter electrons and look dark.\nPrice: the sample must be in a vacuum: cells are fixed, stained with heavy metals (osmium, uranium, lead), embedded in plastic and cut. No living cells.\nSpecific proteins: antibodies with gold particles (immunogold).\n\n\n\nTo see membranes, ribosomes and the inside of organelles we need a much shorter wavelength than light. Electrons accelerated through a high voltage behave as waves with a wavelength of a few thousandths of a nanometre. In practice, lens errors and the sample itself limit resolution in cell sections to about one or two nanometres, still a hundred times better than light. In a transmission electron microscope the beam passes through the sample, so the sample must be very thin, about 50 to 100 nanometres, which is thinner than a mitochondrion. Electrons are stopped by air, so the inside of the microscope is a vacuum, and the cell must be completely dry. That is why cells are fixed with glutaraldehyde, stained with salts of heavy metals that stick to membranes and proteins, dehydrated, embedded in plastic resin and cut with a diamond knife. Dark areas are where the heavy metals scattered electrons. Look at the image: a stack of rough ER, round secretory granules, the nucleus. These are the structures we draw in cartoons. To find one protein, antibodies are coupled to tiny gold particles that appear as black dots. Remember the price: dead, processed cells, so artefacts are possible.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#scanning-electron-microscopy-sem-the-surface",
+    "href": "microscopy/lec.html#scanning-electron-microscopy-sem-the-surface",
+    "title": "Seeing cells: microscopy",
+    "section": "Scanning electron microscopy (SEM): the surface",
+    "text": "Scanning electron microscopy (SEM): the surface\n\n\n\nSEM, colour added: cultured cells (teal) covered with SARS-CoV-2 particles (orange), virus isolated from a patient. Each particle is about 100 nm across.\n\n\nThe sample is coated with a thin layer of metal. A fine electron beam scans across it.\nElectrons knocked out of the surface are counted point by point.\nThe image shows shape and surface in 3D, with a large depth of focus. Resolution about a few nm.\nIt does not show the inside of the cell.\nColours in EM images are added afterwards by people. Electrons have no colour.\n\n\n\nThe scanning electron microscope answers a different question: what does the outside look like? The cells are fixed, dried and coated with a very thin layer of metal such as gold. A finely focused electron beam is moved across the surface, line by line. Where it hits, electrons are knocked out of the surface and collected by a detector. Surfaces facing the detector give more signal, so the picture looks like a lit three-dimensional object, with a large depth of focus. Resolution is a few nanometres. SEM shows the shape of cells, microvilli, cilia, bacteria on a surface, or, as here, virus particles budding from and sticking to an infected cell. It does not show the inside, unless you cut the sample open first. One important point for reading figures: electron images are black and white. The teal and orange here were painted on by a person to make the picture easier to read. That is fine, but it is not data. We will come back to this virus at the end of the lecture.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#cryo-em-and-electron-tomography",
+    "href": "microscopy/lec.html#cryo-em-and-electron-tomography",
+    "title": "Seeing cells: microscopy",
+    "section": "Cryo-EM and electron tomography",
+    "text": "Cryo-EM and electron tomography\n\n\n\n\n\n\n\n\nCryo-EM: freeze the sample so fast (about −180 °C) that water becomes glass-like ice, not crystals. No stain, no drying: molecules keep their native shape.\nSingle-particle analysis: average tens of thousands to millions of noisy images of one purified protein → a 3D density map, often better than 0.3 nm (atoms). Nobel Prize in Chemistry 2017.\nCryo-electron tomography: tilt a thin slice of a frozen cell and combine the views into a 3D image of the inside of the cell.\n\n\n\n\n\n\n\nCryo-EM density map (pale blue surface) of a bacterial protein complex at 0.43 nm, with the atomic model (spheres) fitted inside.\n\n\nClassical EM needs dead, dried, stained samples. Cryo-electron microscopy avoids most of this. A thin layer of sample is plunged into a very cold liquid so fast that water has no time to form ice crystals; it becomes a glass-like solid. Molecules are trapped in their natural, hydrated shape, without stain. The cost is very low contrast and a lot of noise, because we must use few electrons to avoid destroying the molecules. Single-particle analysis solves this by numbers. A purified protein is frozen in many copies, lying at random angles. A computer finds thousands of images of each view, aligns and averages them, so the noise cancels and the signal stays. Combining the views gives a three-dimensional density map, and an atomic model is built into it, as in the image. Since about 2013, better cameras made near-atomic structures routine. Cryo-electron tomography instead tilts one frozen slice of a cell and takes images from many angles, like a medical CT scan, giving a 3D view of molecules in their real place in the cell. This is how we know many protein structures, including the one in the next-but-one slide.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#how-do-we-know-reading-a-microscopy-figure",
+    "href": "microscopy/lec.html#how-do-we-know-reading-a-microscopy-figure",
+    "title": "Seeing cells: microscopy",
+    "section": "How do we know? Reading a microscopy figure",
+    "text": "How do we know? Reading a microscopy figure\n\nBefore you believe a microscopy figure, check:\n\nScale bar: how big is this? Compare with the resolution limit of the method.\nWhat is labelled, and how? Antibody (fixed cells) or fusion protein (living cells)? One cell or many? Is the cell typical?\nControls: no primary antibody, cells without the protein (knockout or knockdown), same camera settings. A merge is not proof that two proteins bind.\n\n\nA microscopy image is evidence, and like any evidence it must be read critically. Start with the scale bar: it tells you the size, and you can compare it with what the method can resolve. If two proteins look like they are in the same spot in a confocal image, remember that “same spot” means within about 200 nanometres, which is forty protein diameters. That is why yellow in a merge means “close”, not “bound to each other”. Next, ask what was labelled and how. Each channel is a separate black-and-white image, and the colours were chosen by the authors. Was it an antibody in fixed cells, or a GFP fusion in living cells? Then look for controls. For antibodies: a sample without the primary antibody shows background from the secondary, and cells that lack the protein, for example a knockout made with CRISPR, should show no signal. If they still glow, the antibody binds something else. Images should be taken with the same settings so brightness can be compared. Finally, a single beautiful cell may be the best of a hundred; look for numbers: how many cells, how many experiments, and a quantification.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#choosing-a-method",
+    "href": "microscopy/lec.html#choosing-a-method",
+    "title": "Seeing cells: microscopy",
+    "section": "Choosing a method",
+    "text": "Choosing a method\n\n\n\n\n\n\n\n\n\nMethod\nBest resolution\nLiving cells?\nWhat it shows best\n\n\n\n\nBright field, phase, DIC\n~200 nm\nyes\ncell shape, division, movement; no labels\n\n\nWide-field fluorescence\n~200 nm\nyes (GFP) / no (antibodies)\nwhere a labelled protein is; fast\n\n\nConfocal\n~200 nm, 0.5–1 µm deep\nyes\nsharp sections, 3D stacks of cells and tissue\n\n\nLight-sheet\n~300 nm\nyes, for days\nwhole embryos and organoids over time, gently\n\n\nSuper-resolution\n~20–100 nm\nmostly fixed\narrangement of proteins inside small structures\n\n\nTEM\n~1–2 nm\nno\nmembranes and organelles inside the cell\n\n\nSEM\na few nm\nno\nthe cell surface in 3D\n\n\nCryo-EM (single particle)\n&lt; 0.3 nm\nno (purified protein)\natomic structure of a protein or complex\n\n\nCryo-electron tomography\n~2–4 nm\nno (frozen cell)\nmolecules in place inside the cell\n\n\n\nStart from the question: what size, alive or not, which molecule?\n\nThis table is the summary of the methods part, and it is the kind of reasoning ELO 1 asks for. Do not learn it as a list of numbers; learn to ask three questions. How small is the thing I want to see? If it is a whole cell or an organelle, light microscopy is enough; if it is the shape of a protein, you need cryo-EM. Do I need the cell to be alive? If the question is about time, movement or dynamics, you need living cells, which means light microscopy with fluorescent proteins, and preferably gentle methods like spinning-disk confocal or light-sheet. Which molecule? Antibodies can label almost any protein but need fixed cells; fluorescent proteins need genetic engineering but work in living cells. Often the best answer combines methods: a GFP fusion to follow a protein over time, immunofluorescence to check it, and EM to see the membrane it sits on. Numbers in the table are typical values, not hard limits; they depend on the instrument and the sample. In the study questions you will practise choosing.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#why-it-matters-a-microscope-helped-design-covid-19-vaccines",
+    "href": "microscopy/lec.html#why-it-matters-a-microscope-helped-design-covid-19-vaccines",
+    "title": "Seeing cells: microscopy",
+    "section": "Why it matters: a microscope helped design COVID-19 vaccines",
+    "text": "Why it matters: a microscope helped design COVID-19 vaccines\n\n\n\n\nThe spike’s prefusion shape is the best target for protective antibodies, but it can spring into a postfusion rod.\nTwo prolines (2P) at a hinge in S2 lock it. The trick came from earlier cryo-EM work on related coronaviruses (MERS, SARS).\nFebruary 2020: a cryo-EM structure confirmed that the SARS-CoV-2 2P spike keeps the prefusion shape. The mRNA vaccines (Pfizer-BioNTech, Moderna) encode this 2P spike.\n\n\n\n\n\n\n\nCryo-EM structure of the SARS-CoV-2 2P spike (PDB 6VSB). Three chains in three colours, sugars red; grey block: virus membrane.\n\n\nHere the methods of this lecture met a pandemic. The SARS-CoV-2 spike is a trimer on the virus surface. Its S1 part binds the receptor ACE2 on our cells; its S2 part fuses the virus membrane with the cell membrane. To do that, the spike changes shape: S1 falls off and S2 springs from a compact prefusion shape into a long postfusion rod. Antibodies that block infection mostly recognise the prefusion shape, but a spike made on its own tends to flip into the postfusion form. Researchers studying related coronaviruses, MERS and the first SARS virus, had used cryo-EM structures to find that changing two amino acids at a hinge in S2 into prolines, which are stiff, locks the prefusion shape. This is called the 2P spike. In January 2020 the new virus sequence was published; within weeks a group made the 2P version of the SARS-CoV-2 spike and solved its structure by cryo-EM, shown on the right, confirming the prefusion shape. Both mRNA vaccines encode this 2P spike. You will meet how vaccines work in Immunologi, and how they are tested in Kliniska prövningar och läkemedelsutveckling.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/lec.html#summary",
+    "href": "microscopy/lec.html#summary",
+    "title": "Seeing cells: microscopy",
+    "section": "Summary",
+    "text": "Summary\n\nResolution, not magnification, sets what you can see. Light microscopes stop at about 200 nm; super-resolution reaches about 20 nm; electron microscopes reach nanometres, and cryo-EM reaches atoms in purified proteins.\nContrast comes from optics (phase contrast, DIC), from stains, or from fluorescence, where filters separate the emitted colour from the exciting colour.\nSpecificity comes from labels: antibodies in fixed cells, fluorescent proteins (GFP fusions) in living cells. Confocal and light-sheet microscopes give sharp optical sections and gentle live imaging.\nChoose a method from the question: size, living or fixed, which molecule. Every method has a price.\nRead figures critically: scale bar, channels, merge, controls.\n\nRead more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch. 9.\nImage credits: credits\n\nFive take-home points. First, resolution is what matters, and the light microscope’s limit of about 200 nanometres comes from the wave nature of light; the formula tells you shorter wavelength and higher numerical aperture help. Second, cells are transparent, so we need contrast: phase contrast and DIC for living unstained cells, stains for fixed tissue, and fluorescence for the highest contrast, with a filter cube separating colours. Third, to see one protein we label it: antibodies in fixed and permeabilised cells, or a GFP fusion in living cells; confocal removes out-of-focus haze, light-sheet is gentle enough for long films. Fourth, choose a method from your question, and remember the price of each: electron microscopy gives the finest detail but only in dead or frozen samples. Fifth, read every microscopy figure as evidence: check the scale, what was labelled, and whether the controls are there. In the next lecture we take cells apart and perturb them, and we use these tools to see the result.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "microscopy/quiz.html",
+    "href": "microscopy/quiz.html",
+    "title": "Quiz: seeing cells (microscopy)",
+    "section": "",
+    "text": "Short questions to check your understanding of the lecture Seeing cells: microscopy. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.\n\nQ1. A student says: “If I use a 100× objective and a 20× eyepiece instead of a 10× eyepiece, I will be able to see ribosomes in a light microscope.” Is the student right? [ELO 1]\n\n\n\n\n\n\nHint\n\n\n\n\n\nWhat does the eyepiece change: the size of the image or the amount of detail in it? How big is a ribosome compared with the resolution limit?\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nNo. A stronger eyepiece only magnifies the image more; it does not improve resolution. Resolution is set by the wavelength of light and the numerical aperture of the objective, and is about 200 nm for the best light microscope. A ribosome is about 25 nm, so it stays below the limit. Extra magnification just makes the blur bigger (“empty magnification”).\n\n\n\n\nQ2. Using \\(d \\approx 0.61\\,\\lambda / \\mathrm{NA}\\), which change gives better (smaller) resolution: (a) blue light (450 nm) instead of red light (650 nm), or (b) a dry objective with NA 0.75 instead of an oil objective with NA 1.4? [ELO 1]\n\n\n\n\n\n\nHint\n\n\n\n\n\nSmaller \\(\\lambda\\) and larger NA both make \\(d\\) smaller.\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n\nimproves resolution: shorter wavelength gives smaller \\(d\\) (about 196 nm with NA 1.4 instead of about 283 nm). (b) makes it worse: a lower NA collects light from a narrower cone, so \\(d\\) grows (for 500 nm light, about 407 nm with NA 0.75 instead of about 218 nm with NA 1.4).\n\n\n\n\n\nQ3. Why can unstained living cells be seen clearly in a phase-contrast microscope but hardly at all in a bright-field microscope? [ELO 1]\n\n\n\n\n\n\nHint\n\n\n\n\n\nCells absorb very little light. What else happens to light that passes through a nucleus or a membrane?\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nCells are mostly water and absorb little visible light, so in bright field the light passes through almost unchanged. But dense parts of the cell (higher refractive index) slow the light down, giving a phase shift that the eye cannot see. Phase-contrast optics turn these phase differences into differences in brightness, so the nucleus and the cell edges become visible without stain.\n\n\n\n\nQ4. A fluorophore is excited at 490 nm and emits at 520 nm. What is the Stokes shift, and why is it essential for fluorescence microscopy? [ELO 1]\n\n\n\n\n\n\nHint\n\n\n\n\n\nThink of the filter cube: what would happen if the emitted light had the same colour as the excitation light?\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nThe Stokes shift is the difference between the excitation and emission peaks, here 30 nm. Emitted light has a longer wavelength because some energy is lost as heat before emission. Because the colours differ, the dichroic mirror and emission filter can block the very bright excitation light and pass only the weak emitted light. Without the shift, the glow would be lost in the excitation light.\n\n\n\n\nQ5. You want to follow how fast a vesicle protein moves in a living neuron. Should you use immunofluorescence or a GFP fusion protein? Give one reason and one thing you must check. [ELO 1] [ELO 6]\n\n\n\n\n\n\nHint\n\n\n\n\n\nWhat must you do to cells before antibodies can get inside?\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nA GFP fusion protein. Immunofluorescence needs the cells to be fixed and permeabilised, so they are dead and nothing moves. A GFP fusion is made by the living cell itself. You must check that the GFP tag does not change the protein: it should still work and be in the same place as the untagged protein (for example, compare with antibody staining in fixed cells).\n\n\n\n\nQ6. What does the pinhole in a confocal microscope do, and what do you gain from it? [ELO 1]\n\n\n\n\n\n\nHint\n\n\n\n\n\nWhere is light from the focal plane focused, and where is light from other depths focused?\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nThe pinhole sits where light from the focal plane comes to a sharp point, so that light passes. Light from planes above and below is spread out at the pinhole and mostly blocked. You gain a sharp optical section (about 0.5–1 µm thick) without out-of-focus haze, and by refocusing step by step you can build a 3D stack without cutting the sample.\n\n\n\n\nQ7. Match each question to the best method: (i) the shape of microvilli on the surface of an intestinal cell; (ii) the atomic structure of a purified membrane pump; (iii) how the ER membrane is arranged next to a mitochondrion inside a cell, at nanometre detail. Methods: TEM, SEM, single-particle cryo-EM. [ELO 1]\n\n\n\n\n\n\nHint\n\n\n\n\n\nWhich method shows surfaces, which shows thin slices through a cell, and which averages many copies of one purified molecule?\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n\nSEM: a scanned beam shows the 3D surface. (ii) Single-particle cryo-EM: many images of the purified protein in thin ice are averaged into a map, often better than 0.3 nm. (iii) TEM of thin sections (or cryo-electron tomography of a frozen cell) shows membranes inside the cell at about 1–2 nm.\n\n\n\n\n\nQ8. In a figure, protein A (green) and protein B (red) give yellow in the merged confocal image. The authors conclude “A binds B”. What is wrong with this conclusion? [ELO 1]\n\n\n\n\n\n\nHint\n\n\n\n\n\nHow close must two proteins be to look like one spot in a confocal image? How big is a protein?\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nYellow only means the two signals are in the same spot within the resolution limit, about 200 nm, which is about 40 protein diameters. A and B could be in the same organelle without touching. To claim binding you need other evidence, for example co-immunoprecipitation (next lecture), or a method with much better resolution. You should also check the controls (for example cells lacking A) and that the signal does not leak from one channel into the other.",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "Seeing cells: microscopy",
+      "Quiz"
+    ]
+  },
+  {
+    "objectID": "cell-tour/credits.html",
+    "href": "cell-tour/credits.html",
+    "title": "Image credits: a tour of the cell",
+    "section": "",
+    "text": "All diagrams (fig*.svg) were drawn for this course and use the course colour key. The photographs and micrographs below come from Wikimedia Commons; their licences were checked on the file pages on 2026-11-18. Images were resized for the slides.\n\n\n\nFile\nWhat it shows\nAuthor\nLicence\nSource\n\n\n\n\nimg04-fluorescent-cells.jpg\nBovine pulmonary artery endothelial cells; DAPI (nucleus, blue), tubulin (green), F-actin (red)\nImageJ sample image (NIH), made from a Molecular Probes demo slide\nPublic domain\nhttps://commons.wikimedia.org/wiki/File:FluorescentCells.jpg\n\n\nimg12-tem-lymphocyte.jpg\nTransmission electron micrograph of a human B lymphocyte\nNIAID\nCC BY 2.0\nhttps://commons.wikimedia.org/wiki/File:Human_B_Lymphocyte_(28942386960).jpg\n\n\nimg13-yeast-dic.jpg\nBudding yeast, Saccharomyces cerevisiae, DIC microscopy\nMasur\nPublic domain\nhttps://commons.wikimedia.org/wiki/File:S_cerevisiae_under_DIC_microscopy.jpg\n\n\nimg14-hela-living.jpg\nLiving HeLa cells: nucleus, microtubules and mitochondria\n8x57is\nCC BY-SA 4.0\nhttps://commons.wikimedia.org/wiki/File:Multicolor_fluorescence_image_of_living_HeLa_cells.jpg\n\n\nimg15-intestinal-organoid.jpg\nIntestinal organoid grown from Lgr5+ stem cells (from St Johnston D, PLoS Biol 13(5): e1002149, 2015)\nMeritxell Huch\nCC BY 4.0\nhttps://commons.wikimedia.org/wiki/File:Intestinal_organoid.PNG\n\n\nimg17-hela-hoechst.jpg\nHeLa cells stained with Hoechst 33258 (DNA)\nTenOfAllTrades (English Wikipedia)\nPublic domain\nhttps://commons.wikimedia.org/wiki/File:HeLa_cells_stained_with_Hoechst_33258.jpg\n\n\n\nOur diagrams in this unit: fig02-course-map.svg, fig05-prokaryote-eukaryote.svg, fig06-animal-cell.svg, fig08-topology.svg, fig09-membrane-orientation.svg, fig10-scale-ladder.svg, fig16-hela-timeline.svg. Numbers in the scale ladder and on the “Numbers worth knowing” slide are standard order-of-magnitude values of the kind collected in BioNumbers (https://bionumbers.hms.harvard.edu).",
+    "crumbs": [
+      "Home",
+      "The cell and how we study it",
+      "A tour of the cell",
+      "Image credits"
+    ]
+  },
+  {
+    "objectID": "elo.html",
+    "href": "elo.html",
+    "title": "Expected learning outcomes",
+    "section": "",
+    "text": "A first-cycle course (3MB001, Umeå University) in modern molecular cell biology for year-2 biomedicine students. The verbatim outcomes are in courseplan.md. This page says what each outcome means and where it is taught.\n\n\nBy the end of the course, a student can follow a molecule, a signal or a cell decision through the cell: where a protein is made, how it reaches its compartment, how the cell senses and answers a signal, how it moves, divides and dies. They can also explain how a drug or a disease acts on that path.\n\n\n\nEach ELO is examined separately with a 60 % pass bar and one VG question, so each needs enough lectures, quiz questions and study questions of its own.\n\n\n\n\n\n\n\n\n\nELO\nShort name\nWhat a student can do\nTaught in\n\n\n\n\n1\nCell & methods\nDescribe the parts of a eukaryotic cell and choose a method (microscopy, fractionation, flow cytometry, perturbation) to answer a cell biology question\nThe cell and how we study it; a methods slide in every lecture\n\n\n2\nMembranes & transport\nExplain bilayer structure and fluidity, membrane proteins, passive and active transport, channels and membrane potential\nMembranes and transport\n\n\n3\nSignalling\nDescribe signal types, receptor classes, second messengers, kinase cascades, feedback and how signals are switched off\nCell signalling\n\n\n4\nProtein handling\nDescribe protein folding, sorting, translocation, modification, quality control and degradation\nProtein handling and organelles\n\n\n5\nOrganelles & homeostasis\nCompare organelles’ structure and function, and explain how they cooperate to keep the cell in balance (energy, Ca²⁺, pH, lipids, protein load)\nProtein handling and organelles (especially mitochondria and organelles compared)\n\n\n6\nCytoskeleton & motility\nExplain actin, microtubules and intermediate filaments, motors, migration and transport, and give examples of methods to study them\nCytoskeleton\n\n\n7\nCell cycle & division\nDescribe the cell-cycle control system, checkpoints, mitosis and cytokinesis, and control of cell numbers\nCell cycle and division\n\n\n8\nCell death\nDescribe apoptosis (intrinsic and extrinsic), necroptosis, pyroptosis and ferroptosis, and their regulation\nCell death\n\n\n9\nDisease mechanisms\nExplain disease as cell biology going wrong: cancer, misfolding, trafficking, channel and mitochondrial defects\nDisease mechanisms, plus every lecture’s “Why it matters” slides\n\n\n\nThe final lecture follows one drug through the cell and revisits all nine ELOs.\n\n\n\nThese are taught and assessed in the seminars, poster/PPT and labs, not the lectures. The site supports them with study questions and mini-cases (ELO 11, 12, 16).\n\nELO 10–12, 17–19 → Module 2 (PPT): oral presentation, group problem solving, discussion, poster for a commissioning party, projects as a working method, own learning needs.\nELO 13–16 → Module 3 (Lab): planning and running experiments, GLP, written report, interpreting results.\n\n\n\n\n\nQuiz per lecture: short self-check, each question tagged with its ELO.\nStudy questions per lecture (replacing the programming exercises of the scaffold course): G-level recall and explanation questions and one VG-style question (“predict what happens if…”, “compare…”, “design an experiment to…”), written the way the exam asks them.\nELO self-check page: before the exam, a list of the nine ELOs with links to the lectures and questions for each.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Learning outcomes"
+    ]
+  },
+  {
+    "objectID": "elo.html#overall-course-outcome",
+    "href": "elo.html#overall-course-outcome",
+    "title": "Expected learning outcomes",
+    "section": "",
+    "text": "By the end of the course, a student can follow a molecule, a signal or a cell decision through the cell: where a protein is made, how it reaches its compartment, how the cell senses and answers a signal, how it moves, divides and dies. They can also explain how a drug or a disease acts on that path.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Learning outcomes"
+    ]
+  },
+  {
+    "objectID": "elo.html#theory-outcomes-elo-19-written-exam-one-section-each",
+    "href": "elo.html#theory-outcomes-elo-19-written-exam-one-section-each",
+    "title": "Expected learning outcomes",
+    "section": "",
+    "text": "Each ELO is examined separately with a 60 % pass bar and one VG question, so each needs enough lectures, quiz questions and study questions of its own.\n\n\n\n\n\n\n\n\n\nELO\nShort name\nWhat a student can do\nTaught in\n\n\n\n\n1\nCell & methods\nDescribe the parts of a eukaryotic cell and choose a method (microscopy, fractionation, flow cytometry, perturbation) to answer a cell biology question\nThe cell and how we study it; a methods slide in every lecture\n\n\n2\nMembranes & transport\nExplain bilayer structure and fluidity, membrane proteins, passive and active transport, channels and membrane potential\nMembranes and transport\n\n\n3\nSignalling\nDescribe signal types, receptor classes, second messengers, kinase cascades, feedback and how signals are switched off\nCell signalling\n\n\n4\nProtein handling\nDescribe protein folding, sorting, translocation, modification, quality control and degradation\nProtein handling and organelles\n\n\n5\nOrganelles & homeostasis\nCompare organelles’ structure and function, and explain how they cooperate to keep the cell in balance (energy, Ca²⁺, pH, lipids, protein load)\nProtein handling and organelles (especially mitochondria and organelles compared)\n\n\n6\nCytoskeleton & motility\nExplain actin, microtubules and intermediate filaments, motors, migration and transport, and give examples of methods to study them\nCytoskeleton\n\n\n7\nCell cycle & division\nDescribe the cell-cycle control system, checkpoints, mitosis and cytokinesis, and control of cell numbers\nCell cycle and division\n\n\n8\nCell death\nDescribe apoptosis (intrinsic and extrinsic), necroptosis, pyroptosis and ferroptosis, and their regulation\nCell death\n\n\n9\nDisease mechanisms\nExplain disease as cell biology going wrong: cancer, misfolding, trafficking, channel and mitochondrial defects\nDisease mechanisms, plus every lecture’s “Why it matters” slides\n\n\n\nThe final lecture follows one drug through the cell and revisits all nine ELOs.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Learning outcomes"
+    ]
+  },
+  {
+    "objectID": "elo.html#skills-outcomes-taught-in-the-ppt-and-lab-modules",
+    "href": "elo.html#skills-outcomes-taught-in-the-ppt-and-lab-modules",
+    "title": "Expected learning outcomes",
+    "section": "",
+    "text": "These are taught and assessed in the seminars, poster/PPT and labs, not the lectures. The site supports them with study questions and mini-cases (ELO 11, 12, 16).\n\nELO 10–12, 17–19 → Module 2 (PPT): oral presentation, group problem solving, discussion, poster for a commissioning party, projects as a working method, own learning needs.\nELO 13–16 → Module 3 (Lab): planning and running experiments, GLP, written report, interpreting results.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Learning outcomes"
+    ]
+  },
+  {
+    "objectID": "elo.html#assessment-support-on-this-site",
+    "href": "elo.html#assessment-support-on-this-site",
+    "title": "Expected learning outcomes",
+    "section": "",
+    "text": "Quiz per lecture: short self-check, each question tagged with its ELO.\nStudy questions per lecture (replacing the programming exercises of the scaffold course): G-level recall and explanation questions and one VG-style question (“predict what happens if…”, “compare…”, “design an experiment to…”), written the way the exam asks them.\nELO self-check page: before the exam, a list of the nine ELOs with links to the lectures and questions for each.",
+    "crumbs": [
+      "Home",
+      "Course info",
+      "Learning outcomes"
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+# Quarto cache. The built site lives in docs/ and IS tracked (committed HTML).
+/.quarto/
+
+# OS cruft
+.DS_Store
+
+# Canvas quiz answers: never checked in (public repo)
+/canvas-quiz/private/

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="340" viewBox="0 0 1100 340" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig12: where each perturbation tool acts on the path gene -> mRNA -> protein -> activity -->
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1b2a3a"/>
+    </marker>
+    <marker id="arrP" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2e8b57"/>
+    </marker>
+  </defs>
+  <rect x="60" y="30" width="160" height="50" rx="10" fill="#f3f5f8" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="140" y="61" font-size="17" font-weight="bold" fill="#1b2a3a" text-anchor="middle">gene (DNA)</text>
+  <rect x="330" y="30" width="160" height="50" rx="10" fill="#f3f5f8" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="410" y="61" font-size="17" font-weight="bold" fill="#1b2a3a" text-anchor="middle">mRNA</text>
+  <rect x="600" y="30" width="160" height="50" rx="10" fill="#f3f5f8" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="680" y="61" font-size="17" font-weight="bold" fill="#1b2a3a" text-anchor="middle">protein</text>
+  <rect x="870" y="30" width="160" height="50" rx="10" fill="#f3f5f8" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="950" y="61" font-size="17" font-weight="bold" fill="#1b2a3a" text-anchor="middle">activity</text>
+  <line x1="222" y1="55" x2="326" y2="55" stroke="#1b2a3a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="275.0" y="104" font-size="14" font-style="italic" fill="#1b2a3a" text-anchor="middle">transcription</text>
+  <line x1="492" y1="55" x2="596" y2="55" stroke="#1b2a3a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="545.0" y="104" font-size="14" font-style="italic" fill="#1b2a3a" text-anchor="middle">translation</text>
+  <line x1="762" y1="55" x2="866" y2="55" stroke="#1b2a3a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="815.0" y="104" font-size="14" font-style="italic" fill="#1b2a3a" text-anchor="middle">folding, binding</text>
+  <rect x="22" y="160" width="236" height="122" rx="10" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+  <text x="140" y="190" font-size="17" font-weight="bold" fill="#1b2a3a" text-anchor="middle">CRISPR knockout</text>
+  <text x="140" y="218" font-size="15" fill="#1b2a3a" text-anchor="middle">cut the gene:</text>
+  <text x="140" y="240" font-size="15" fill="#1b2a3a" text-anchor="middle">permanent, all-or-none</text>
+  <text x="140" y="262" font-size="15" fill="#1b2a3a" text-anchor="middle">weeks to make a line</text>
+  <line x1="140" y1="158" x2="140" y2="92" stroke="#1b2a3a" stroke-width="3"/>
+  <line x1="122" y1="90" x2="158" y2="90" stroke="#1b2a3a" stroke-width="4"/>
+  <rect x="292" y="160" width="236" height="122" rx="10" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+  <text x="410" y="190" font-size="17" font-weight="bold" fill="#1b2a3a" text-anchor="middle">RNAi knockdown</text>
+  <text x="410" y="218" font-size="15" fill="#1b2a3a" text-anchor="middle">destroy the mRNA:</text>
+  <text x="410" y="240" font-size="15" fill="#1b2a3a" text-anchor="middle">partial (often 70–90 %)</text>
+  <text x="410" y="262" font-size="15" fill="#1b2a3a" text-anchor="middle">lasts a few days</text>
+  <line x1="410" y1="158" x2="410" y2="92" stroke="#1b2a3a" stroke-width="3"/>
+  <line x1="392" y1="90" x2="428" y2="90" stroke="#1b2a3a" stroke-width="4"/>
+  <rect x="562" y="160" width="236" height="122" rx="10" fill="#ffffff" stroke="#2e8b57" stroke-width="2.5"/>
+  <text x="680" y="190" font-size="17" font-weight="bold" fill="#2e8b57" text-anchor="middle">Overexpression</text>
+  <text x="680" y="218" font-size="15" fill="#1b2a3a" text-anchor="middle">add extra gene copies:</text>
+  <text x="680" y="240" font-size="15" fill="#1b2a3a" text-anchor="middle">more protein than normal</text>
+  <text x="680" y="262" font-size="15" fill="#1b2a3a" text-anchor="middle">tests 'sufficient'</text>
+  <rect x="832" y="160" width="236" height="122" rx="10" fill="#ffffff" stroke="#e8590c" stroke-width="2.5"/>
+  <text x="950" y="190" font-size="17" font-weight="bold" fill="#e8590c" text-anchor="middle">Inhibitor (drug)</text>
+  <text x="950" y="218" font-size="15" fill="#1b2a3a" text-anchor="middle">block the protein:</text>
+  <text x="950" y="240" font-size="15" fill="#1b2a3a" text-anchor="middle">fast (minutes), reversible,</text>
+  <text x="950" y="262" font-size="15" fill="#1b2a3a" text-anchor="middle">dose-dependent; off-targets</text>
+  <line x1="950" y1="158" x2="950" y2="92" stroke="#e8590c" stroke-width="3"/>
+  <line x1="932" y1="90" x2="968" y2="90" stroke="#e8590c" stroke-width="4"/>
+  <line x1="680" y1="158" x2="680" y2="92" stroke="#2e8b57" stroke-width="3" marker-end="url(#arrP)"/>
+  <text x="275" y="318" font-size="16" fill="#1b2a3a" text-anchor="middle">Remove or block a part → is it necessary?</text>
+  <text x="680" y="318" font-size="16" fill="#2e8b57" text-anchor="middle">Add more of it → is it sufficient?</text>
+</svg>

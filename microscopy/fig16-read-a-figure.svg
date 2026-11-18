@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="320" viewBox="0 0 840 320" font-family="Helvetica, Arial, sans-serif">
+<!-- fig16: how to read a fluorescence figure: channels, merge, scale bar, control. Cartoon cells, not real data. -->
+<text x="95.0" y="36" font-size="15" font-weight="bold" fill="#3d6cf0" text-anchor="middle">DNA</text>
+<g transform="translate(20,46)"><rect width="150" height="150" fill="#0b0d10"/>
+<ellipse cx="75" cy="76" rx="26" ry="20" fill="#3d6cf0"/>
+</g>
+<text x="259.0" y="36" font-size="15" font-weight="bold" fill="#1f9a3a" text-anchor="middle">protein X</text>
+<g transform="translate(184,46)"><rect width="150" height="150" fill="#0b0d10"/>
+<circle cx="27.5" cy="37.3" r="3" fill="#3fe05a"/><circle cx="35.0" cy="40.0" r="3" fill="#3fe05a"/><circle cx="42.5" cy="42.7" r="3" fill="#3fe05a"/>
+<circle cx="103.1" cy="39.0" r="3" fill="#3fe05a"/><circle cx="110.0" cy="35.0" r="3" fill="#3fe05a"/><circle cx="116.9" cy="31.0" r="3" fill="#3fe05a"/>
+<circle cx="110.3" cy="109.9" r="3" fill="#3fe05a"/><circle cx="118.0" cy="112.0" r="3" fill="#3fe05a"/><circle cx="125.7" cy="114.1" r="3" fill="#3fe05a"/>
+<circle cx="62.0" cy="22.0" r="3" fill="#3fe05a"/><circle cx="70.0" cy="22.0" r="3" fill="#3fe05a"/><circle cx="78.0" cy="22.0" r="3" fill="#3fe05a"/>
+<circle cx="24.3" cy="67.0" r="3" fill="#3fe05a"/><circle cx="25.0" cy="75.0" r="3" fill="#3fe05a"/><circle cx="25.7" cy="83.0" r="3" fill="#3fe05a"/>
+</g>
+<text x="423.0" y="36" font-size="15" font-weight="bold" fill="#d03030" text-anchor="middle">mitochondria</text>
+<g transform="translate(348,46)"><rect width="150" height="150" fill="#0b0d10"/>
+<line x1="21.8" y1="35.2" x2="48.2" y2="44.8" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="97.9" y1="42.0" x2="122.1" y2="28.0" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="23.0" y1="97.9" x2="37.0" y2="122.1" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="104.5" y1="108.4" x2="131.5" y2="115.6" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="56.0" y1="22.0" x2="84.0" y2="22.0" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="61.2" y1="132.6" x2="88.8" y2="137.4" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="23.8" y1="61.1" x2="26.2" y2="88.9" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="129.2" y1="58.1" x2="126.8" y2="85.9" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+</g>
+<text x="587.0" y="36" font-size="15" font-weight="bold" fill="#1b2a3a" text-anchor="middle">merge</text>
+<g transform="translate(512,46)"><rect width="150" height="150" fill="#0b0d10"/>
+<ellipse cx="75" cy="76" rx="26" ry="20" fill="#3d6cf0"/>
+<line x1="21.8" y1="35.2" x2="48.2" y2="44.8" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="97.9" y1="42.0" x2="122.1" y2="28.0" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="23.0" y1="97.9" x2="37.0" y2="122.1" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="104.5" y1="108.4" x2="131.5" y2="115.6" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="56.0" y1="22.0" x2="84.0" y2="22.0" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="61.2" y1="132.6" x2="88.8" y2="137.4" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="23.8" y1="61.1" x2="26.2" y2="88.9" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="129.2" y1="58.1" x2="126.8" y2="85.9" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="21.8" y1="35.2" x2="48.2" y2="44.8" stroke="#f2e33a" stroke-width="6" stroke-linecap="round"/>
+<line x1="97.9" y1="42.0" x2="122.1" y2="28.0" stroke="#f2e33a" stroke-width="6" stroke-linecap="round"/>
+<line x1="104.5" y1="108.4" x2="131.5" y2="115.6" stroke="#f2e33a" stroke-width="6" stroke-linecap="round"/>
+<line x1="56.0" y1="22.0" x2="84.0" y2="22.0" stroke="#f2e33a" stroke-width="6" stroke-linecap="round"/>
+<line x1="23.8" y1="61.1" x2="26.2" y2="88.9" stroke="#f2e33a" stroke-width="6" stroke-linecap="round"/>
+<line x1="94" y1="141" x2="142" y2="141" stroke="#ffffff" stroke-width="4"/>
+</g>
+<text x="751.0" y="36" font-size="15" font-weight="bold" fill="#1b2a3a" text-anchor="middle">control: no X</text>
+<g transform="translate(676,46)"><rect width="150" height="150" fill="#0b0d10"/>
+<ellipse cx="75" cy="76" rx="26" ry="20" fill="#3d6cf0"/>
+<line x1="21.8" y1="35.2" x2="48.2" y2="44.8" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="97.9" y1="42.0" x2="122.1" y2="28.0" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="23.0" y1="97.9" x2="37.0" y2="122.1" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="104.5" y1="108.4" x2="131.5" y2="115.6" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="56.0" y1="22.0" x2="84.0" y2="22.0" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="61.2" y1="132.6" x2="88.8" y2="137.4" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="23.8" y1="61.1" x2="26.2" y2="88.9" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+<line x1="129.2" y1="58.1" x2="126.8" y2="85.9" stroke="#e23b3b" stroke-width="6" stroke-linecap="round"/>
+</g>
+<text x="625" y="214" font-size="14" fill="#1b2a3a" text-anchor="middle">bar = 10 µm</text>
+<line x1="20" y1="226" x2="498" y2="226" stroke="#1b2a3a" stroke-width="1.2"/>
+<text x="20" y="246" font-size="14" fill="#1b2a3a" text-anchor="start">One channel per label, imaged one after another.</text>
+<text x="20" y="264" font-size="14" fill="#1b2a3a" text-anchor="start">The colours are chosen by the scientist (false colour).</text>
+<text x="20" y="282" font-size="14" fill="#1b2a3a" text-anchor="start">Ask: what was labelled, and how (antibody, GFP, dye)?</text>
+<line x1="512" y1="226" x2="662" y2="226" stroke="#1b2a3a" stroke-width="1.2"/>
+<text x="512" y="246" font-size="14" fill="#1b2a3a" text-anchor="start">Yellow = red and</text>
+<text x="512" y="264" font-size="14" fill="#1b2a3a" text-anchor="start">green in the same</text>
+<text x="512" y="282" font-size="14" fill="#1b2a3a" text-anchor="start">spot (within ~200 nm).</text>
+<text x="512" y="300" font-size="14" fill="#1b2a3a" text-anchor="start">Not proof of binding.</text>
+<line x1="676" y1="226" x2="826" y2="226" stroke="#1b2a3a" stroke-width="1.2"/>
+<text x="676" y="246" font-size="14" fill="#1b2a3a" text-anchor="start">Cells without X,</text>
+<text x="676" y="264" font-size="14" fill="#1b2a3a" text-anchor="start">same settings:</text>
+<text x="676" y="282" font-size="14" fill="#1b2a3a" text-anchor="start">no green, so the</text>
+<text x="676" y="300" font-size="14" fill="#1b2a3a" text-anchor="start">signal is specific.</text>
+</svg>

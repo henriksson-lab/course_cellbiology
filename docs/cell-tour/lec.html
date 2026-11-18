@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-662ae1889177880cb371f83234c0a158.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
+
+  <meta name="author" content="Cell Biology (3MB001)">
+  <title>Cell Biology – A tour of the cell</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bf56578b9c06c165c166475cd19dbcd1.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">A tour of the cell</h1>
+  <p class="subtitle">The cell and how we study it</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Cell Biology (3MB001) 
+</div>
+</div>
+</div>
+
+</section>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<p>This is the first lecture of the course. It gives you a <strong>map of the cell</strong> that every later lecture uses.</p>
+<p>After this lecture you can:</p>
+<ul>
+<li><strong>Name the main compartments</strong> of an animal cell and say in one sentence what each one does.</li>
+<li>Explain <strong>topology</strong>: which spaces are on the <em>cytosol side</em> of a membrane and which are on the <em>lumen side</em>.</li>
+<li>Give the <strong>size and number</strong> of the things inside a cell (ions, proteins, ribosomes, organelles, cells) to within a factor of ten.</li>
+<li>Choose a <strong>model system</strong> (yeast, a cell line such as HeLa, an organoid) for a question, and say what it cannot tell you.</li>
+</ul>
+<p><strong>ELO 1</strong> (parts of the cell, methods) and <strong>ELO 5</strong> (organelles compared; this lecture is the first look).</p>
+<aside class="notes">
+<p>Welcome to Cell Biology. This first lecture is a guided tour. We will not go deep into any one organelle today; every organelle you see here gets its own lecture later. The aim is a mental map that you can hang the rest of the course on. Keep three ideas in mind. First, the cell is divided into compartments by membranes, and the chemistry inside each compartment is different. Second, every membrane has two sides, and knowing which side is which, the topology, explains a lot of later material on protein sorting and vesicle traffic. Third, sizes and numbers matter: a protein is about five nanometres, a cell is about fifteen micrometres, and a cell holds billions of protein molecules. At the end we look at how we study cells, using model systems, and at HeLa cells: the most used human cells in research, and a story about consent that every biomedical scientist should know. This lecture belongs to ELO 1 and is the first step towards ELO 5.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-course-map-from-molecules-to-cells" class="slide level2">
+<h2>The course map: from molecules to cells</h2>
+
+<img data-src="fig02-course-map.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><p>You already think in <strong>molecules</strong>: DNA, proteins, enzymes, ΔG. This course moves you <strong>one level up</strong>: to <strong>compartments</strong> (where things are), <strong>machines</strong> (what moves and signals) and <strong>decisions</strong> (divide, move or die), and to <strong>disease</strong> when these go wrong.</p>
+<aside class="notes">
+<p>Here is the whole course on one slide. On the left is what you bring from biochemistry, molecular biology and chemistry: molecules, reactions, equilibria and the central dogma. We will not teach these again. The course moves you up one level of organisation. The first blocks are about compartments: what a cell is made of and how we study it, then membranes and transport, then how proteins are made, folded and sent to the right organelle. The middle blocks are about signals and machines: how a cell senses its surroundings and how the cytoskeleton gives it shape and movement. Then come decisions: when to divide and when to die. The last block is disease, seen as cell biology going wrong. Each block is one or more expected learning outcomes, ELOs, and the ELO numbers on the tiles are the same numbers as on the exam. Every lecture also ends with a drug or a disease, so you see why the mechanism matters for medicine and drug development.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-the-exam-works" class="slide level2">
+<h2>How the exam works</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Written exam</strong></td>
+<td>one section for <strong>each ELO 1–9</strong></td>
+</tr>
+<tr class="even">
+<td><strong>To pass</strong></td>
+<td>at least <strong>60 %</strong> correct in <strong>every</strong> section; <strong>all nine ELOs must be passed</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>VG</strong></td>
+<td>each section has one VG question; VG on at least 5 of the 9</td>
+</tr>
+<tr class="even">
+<td><strong>Partly passed?</strong></td>
+<td>if you pass at least 6 ELOs, you can take an oral exam on the others, or retake the full exam</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How to use this site:</strong> every quiz and study question is tagged with its ELO, for example <strong>[ELO 1]</strong>. Practise each ELO separately, because the exam passes each one separately.</p>
+<aside class="notes">
+<p>The written exam is built in a way that shapes how you should study. There is one section for each of the nine theory outcomes, and you must pass every section on its own, with at least sixty per cent correct. A very good result in signalling cannot make up for a weak result in cell death. This is why every quiz and study question on this site carries an ELO tag: you can check that you can handle each outcome. Each section also has one harder question that is marked G or VG; to get VG on the exam you need VG on at least five of these nine. The VG questions ask you to predict, compare, explain an unexpected result or design an experiment, so the study questions include that kind of question for every lecture. If you pass at least six ELOs but not all nine, you do not need to redo everything: you can take an oral exam on the ELOs you missed. The exact rules are in the course plan and on Canvas. That is all the administration for today.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-question-how-does-one-small-drop-do-everything-at-once" class="slide level2 smaller">
+<h2>The question: how does one small drop do everything at once?</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p>A cultured animal cell holds about <strong>2 picolitres</strong> of water, and in it:</p>
+<ul>
+<li><strong>billions</strong> of protein molecules, many thousands of different kinds,</li>
+<li>enzymes that make fats <strong>next to</strong> enzymes that burn them,</li>
+<li>enzymes that digest proteins at <strong>pH 5</strong>, in a cell whose cytosol is <strong>pH 7.2</strong>,</li>
+<li>DNA that must be copied <strong>once</strong> per division and never digested.</li>
+</ul>
+<p><strong>How does the cell keep incompatible chemistry apart, and still get every molecule to the place where it is needed?</strong></p>
+</div><div class="column" style="width:48%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img04-fluorescent-cells.jpg" class="quarto-figure quarto-figure-center" style="width:92.0%"></p>
+</figure>
+</div>
+<p><span style="font-size:0.7em">Cultured endothelial cells. Blue: nucleus (DNA). Green: microtubules. Red: actin filaments.</span></p>
+</div></div>
+<aside class="notes">
+<p>Look at the image. These are cultured cells from a cow blood vessel, stained with three fluorescent dyes: blue for DNA in the nucleus, green for microtubules and red for actin filaments. Even with only three stains you can see order: the nucleus sits in the middle, microtubules spread out from near the nucleus, and actin lines the cell edge. Now the puzzle. Each cell is a tiny volume, about two picolitres, but inside it there are billions of protein molecules doing thousands of reactions at once. Some of these reactions would destroy each other if they were mixed. Digestive enzymes that work best at pH 5 would attack the cell’s own proteins. Fat synthesis and fat breakdown would cancel each other out. DNA must be kept safe and copied exactly once per cycle. The answer, which the rest of this lecture develops, has three parts: compartments separated by membranes, transport routes between the compartments, and a cytoskeleton that organises space. Keep this question in mind; we come back to it in the summary.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="recap-prokaryote-and-eukaryote" class="slide level2 smaller">
+<h2>Recap: prokaryote and eukaryote</h2>
+
+<img data-src="fig05-prokaryote-eukaryote.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Prokaryote (bacterium)</th>
+<th>Eukaryote (animal cell)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DNA</td>
+<td>in the cytosol (nucleoid)</td>
+<td>inside a <strong>nucleus</strong> with a double membrane</td>
+</tr>
+<tr class="even">
+<td>Internal membranes</td>
+<td>almost none</td>
+<td><strong>many</strong>: ER, Golgi, endosomes, lysosomes, mitochondria, …</td>
+</tr>
+<tr class="odd">
+<td>Typical volume</td>
+<td>~1 µm³</td>
+<td>~1000–4000 µm³ (<strong>about 1000× larger</strong>)</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>This is a recap of what you met in microbiology. A bacterium such as E. coli is about two micrometres long. It has a plasma membrane, usually a cell wall, ribosomes and its DNA in a region called the nucleoid, but no membrane around the DNA and almost no internal membranes. A eukaryotic cell is about a thousand times larger in volume. That is the key point on this slide: a bigger cell has a problem. Its surface is small compared with its volume, and molecules must travel further. Eukaryotes solve this with internal membranes, which add a large membrane area for reactions and divide the volume into compartments with different chemistry. Notice the mitochondria on the right: they are about the size of a bacterium. That is not a coincidence. Mitochondria come from a bacterium that was taken up by an ancestral cell, and they still have their own DNA and ribosomes. We come back to this in the mitochondria lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-map-of-the-animal-cell" class="slide level2">
+<h2>A map of the animal cell</h2>
+
+<img data-src="fig06-animal-cell.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><aside class="notes">
+<p>This is the map we use in the whole course, and the colours are fixed: every later lecture uses the same colour for the same organelle. Purple is the nucleus, teal the endoplasmic reticulum, orange the Golgi apparatus, red the mitochondria, green the endosomes and lysosomes, blue the peroxisomes, grey the cytoskeleton, and brown the plasma membrane. Start in the centre. The nucleus holds the DNA, surrounded by the nuclear envelope, which is two membranes with pores through them. The outer nuclear membrane continues into the endoplasmic reticulum, the ER. The rough ER has ribosomes on its surface and makes membrane proteins and proteins for secretion; the smooth ER makes lipids and stores calcium. Proteins go from the ER to the Golgi, which modifies and sorts them, and then on to the plasma membrane in secretory vesicles, or to lysosomes. Material taken in from outside goes to endosomes and then to lysosomes for digestion. Mitochondria make most of the ATP. The centrosome organises the microtubules. Everything else, the fluid between the organelles, is the cytosol. The picture is a simplification: a real cell has hundreds of mitochondria and a much larger ER.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-each-compartment-does" class="slide level2 smaller">
+<h2>What each compartment does</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Compartment</th>
+<th>Main job</th>
+<th>Share of cell volume*</th>
+<th>More in</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cytosol</strong></td>
+<td>protein synthesis, most metabolism, signalling</td>
+<td>~50 %</td>
+<td>throughout</td>
+</tr>
+<tr class="even">
+<td><strong>Nucleus</strong></td>
+<td>stores and reads DNA; makes ribosomes (nucleolus)</td>
+<td>~5–10 %</td>
+<td>protein sorting; cell cycle</td>
+</tr>
+<tr class="odd">
+<td><strong>ER</strong></td>
+<td>makes membrane and secreted proteins, lipids; stores Ca²⁺</td>
+<td>~10–15 %</td>
+<td>the ER</td>
+</tr>
+<tr class="even">
+<td><strong>Golgi apparatus</strong></td>
+<td>adds sugars, sorts proteins</td>
+<td>~2–5 %</td>
+<td>Golgi and secretion</td>
+</tr>
+<tr class="odd">
+<td><strong>Endosomes, lysosomes</strong></td>
+<td>sort what was taken in; digest at pH ~5</td>
+<td>~1–2 %</td>
+<td>endocytosis and lysosomes</td>
+</tr>
+<tr class="even">
+<td><strong>Mitochondria</strong></td>
+<td>ATP by oxidative phosphorylation; start apoptosis</td>
+<td>~20 % in a liver cell</td>
+<td>mitochondria; apoptosis</td>
+</tr>
+<tr class="odd">
+<td><strong>Peroxisomes</strong></td>
+<td>oxidise fatty acids; break down H₂O₂</td>
+<td>~1 %</td>
+<td>organelles compared</td>
+</tr>
+</tbody>
+</table>
+<p>*Rough values for a liver cell. They change a lot between cell types: a pancreas cell that secretes enzymes is full of ER, a fat cell is mostly a lipid droplet.</p>
+<aside class="notes">
+<p>This table is the text version of the map. Do not learn the percentages by heart; learn the pattern. About half of a typical cell is cytosol, and the cytosol is where proteins are made on free ribosomes and where much of metabolism happens, for example glycolysis. Each membrane-bound organelle has a special job, and each has its own lecture, shown in the right column. Notice that the amounts depend on what the cell does. A liver cell, which does a lot of metabolism, has many mitochondria, about a fifth of its volume. A pancreatic acinar cell, which secretes large amounts of digestive enzymes, is packed with rough ER. A plasma cell, which secretes antibodies, also has a lot of rough ER. So you can often guess what a cell does by looking at its organelles under an electron microscope, and the reverse is also true. Two jobs are worth noting now because they come back: mitochondria do not only make ATP, they also start one form of cell death; and the ER is the main calcium store of the cell, which matters for signalling.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="two-sides-of-every-membrane-topology" class="slide level2">
+<h2>Two sides of every membrane: topology</h2>
+
+<img data-src="fig08-topology.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:86.0%"><aside class="notes">
+<p>This is the most important idea of today, because it explains much of protein sorting and vesicle traffic later. Every membrane separates two spaces. Look at the colours. The light yellow space is the cytosol side: the cytosol itself and the inside of the nucleus, the nucleoplasm. These two are joined through nuclear pores, which are large open channels, so they count as one space. The light blue space is the lumen side: the inside of the ER, the gap between the two nuclear membranes, the Golgi, the vesicles, endosomes and lysosomes. The lumen side is, in topology, the same as the outside of the cell. Why? Because these compartments are connected to the outside by vesicles that bud from one membrane and fuse with another, without a molecule ever crossing a membrane. A protein secreted from the ER lumen reaches the outside without ever being in the cytosol. Mitochondria are the exception: their inner space, the matrix, is a third space of its own, a legacy of their bacterial origin. Peroxisomes, not shown here, also import their proteins from the cytosol.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="inside-out-logic-a-protein-keeps-its-orientation" class="slide level2">
+<h2>Inside-out logic: a protein keeps its orientation</h2>
+
+<img data-src="fig09-membrane-orientation.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:96.0%"><ul>
+<li>The part of a protein that is in the <strong>ER lumen</strong> ends up <strong>outside the cell</strong>.</li>
+<li>This is why sugar chains (added in the ER and Golgi lumen) are found on the <strong>outer</strong> surface of the cell, and why receptors have their binding site outside.</li>
+</ul>
+<aside class="notes">
+<p>Here is topology in action. A membrane protein is made in the ER membrane. One part of it faces the ER lumen, and in the lumen the cell adds sugar chains to it. The other part, the tail, faces the cytosol. Now follow it. A vesicle buds from the ER: the lumen side of the protein now faces the inside of the vesicle. The vesicle fuses with the Golgi: the lumen side faces the Golgi lumen. A new vesicle carries it to the plasma membrane and fuses: now the lumen side faces the outside of the cell. At no step does the protein flip, and at no step does any part of it cross a membrane. So the rule is simple: lumen side equals outside. This explains why all the sugar chains of the cell surface face outwards, and why a hormone receptor made in the ER has its hormone-binding part outside the cell and its signalling part in the cytosol. When we study receptors and protein sorting, you will use this rule again and again. It is also a common exam question.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-scale-ladder-from-ion-to-cell" class="slide level2">
+<h2>The scale ladder: from ion to cell</h2>
+
+<img data-src="fig10-scale-ladder.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:94.0%"><p>Each step on the axis is a <strong>factor of 10</strong>. A cell is about <strong>50,000×</strong> wider than an ion and about <strong>3000×</strong> wider than a protein.</p>
+<aside class="notes">
+<p>Cell biology covers about five orders of magnitude in size, so the axis is logarithmic: each tick is ten times the one before. An ion such as potassium is about a third of a nanometre across. A typical protein is about five nanometres. A ribosome, a large machine made of RNA and about eighty proteins, is about twenty-five nanometres. Many viruses, such as influenza or SARS coronavirus 2, are about a hundred nanometres. A bacterium and a mitochondrion are about one micrometre wide. The nucleus is a few micrometres, and a whole animal cell is ten to twenty micrometres. The bars at the bottom link to the next lecture. A light microscope cannot separate two objects closer than about two hundred nanometres, so with light you can see cells, nuclei and mitochondria, but not single ribosomes or proteins, unless you label them with a fluorescent tag. An electron microscope sees down to about a nanometre in a thin section of a cell. Remember these sizes: they let you check whether an answer is reasonable.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="numbers-worth-knowing" class="slide level2 smaller">
+<h2>Numbers worth knowing</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Typical value (order of magnitude)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Diameter of a cultured animal cell</td>
+<td>10–20 µm</td>
+</tr>
+<tr class="even">
+<td>Volume of a mammalian cell</td>
+<td>~1–4 pL (1000–4000 µm³)</td>
+</tr>
+<tr class="odd">
+<td>Cell mass that is water / protein</td>
+<td>~70 % / ~15–20 %</td>
+</tr>
+<tr class="even">
+<td>Protein molecules per cell</td>
+<td><strong>10⁹–10¹⁰</strong> (about 10,000 different kinds)</td>
+</tr>
+<tr class="odd">
+<td>Ribosomes per cell</td>
+<td>~10⁶–10⁷</td>
+</tr>
+<tr class="even">
+<td>A protein diffuses across a cell (10 µm)</td>
+<td><strong>a few seconds</strong></td>
+</tr>
+<tr class="odd">
+<td>A small molecule diffuses across a cell</td>
+<td>~0.1 s</td>
+</tr>
+<tr class="even">
+<td>A protein diffuses 1 m (down a long nerve axon)</td>
+<td><strong>hundreds of years</strong>, so the cell uses motors</td>
+</tr>
+<tr class="odd">
+<td>Cells in a human body</td>
+<td>~3 × 10¹³</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size:0.75em">Rough values of the kind collected in BioNumbers (bionumbers.hms.harvard.edu) and <em>Cell Biology by the Numbers</em> (Milo and Phillips). Diffusion time: <span class="math inline">t \approx x^2 / 6D</span> with <span class="math inline">D \approx 5</span>–<span class="math inline">10\ \mu\text{m}^2/\text{s}</span> for a protein in cytoplasm.</span></p>
+<aside class="notes">
+<p>These are numbers to remember as orders of magnitude, not exact values. A cell holds about one to ten billion protein molecules. Spread over a volume of a few picolitres, that is a protein concentration of a few hundred milligrams per millilitre: the cytoplasm is crowded, more like a gel than like water. Now diffusion. For a molecule that moves randomly, the time to travel a distance x grows with x squared: t is roughly x squared divided by six times the diffusion coefficient. A protein in cytoplasm has a diffusion coefficient of about five to ten square micrometres per second, so it crosses a ten-micrometre cell in a few seconds. That is fast enough for most signals. But because of the x squared, diffusion becomes useless over long distances: to diffuse one metre, from your spinal cord to your foot along a nerve axon, would take hundreds of years. This is why cells have motor proteins that carry cargo along the cytoskeleton, which you meet in the cytoskeleton block. Small molecules such as glucose diffuse about ten to a hundred times faster than proteins.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-electron-microscopy-revealed-the-compartments" class="slide level2 smaller">
+<h2>How do we know? Electron microscopy revealed the compartments</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Light microscopy</strong> (from the 1600s) showed cells and nuclei, but nothing smaller than ~0.2 µm.</li>
+<li><strong>1940s–1950s:</strong> the <strong>electron microscope</strong> and thin sections showed the ER, ribosomes, Golgi stacks and the inner structure of mitochondria.</li>
+<li>At the same time, <strong>cell fractionation</strong> (breaking cells and separating parts by centrifugation) showed <strong>what each part does</strong>, for example lysosomes full of digestive enzymes.</li>
+<li>Nobel Prize 1974: Claude, de Duve and Palade.</li>
+</ul>
+<p><strong>Lesson:</strong> one method shows <em>where</em>; another shows <em>what it does</em>. You need both.</p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img12-tem-lymphocyte.jpg" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+<p><span style="font-size:0.7em">Transmission electron micrograph of a human B lymphocyte. Large nucleus with dark chromatin; mitochondria with folded inner membranes in the cytoplasm. Scale bar 500 nm.</span></p>
+</div></div>
+<aside class="notes">
+<p>How do we know that the map is true? Until the 1940s, the light microscope was the main tool, and it cannot resolve anything smaller than about two hundred nanometres. Cells and nuclei were visible, and mitochondria as tiny dots, but the ER and ribosomes were invisible. The electron microscope uses electrons instead of light, and electrons have a much shorter wavelength, so it resolves structures down to about a nanometre. When researchers learned to cut cells into very thin sections, they suddenly saw the membranes inside cells: the ER, ribosomes, the Golgi stacks and the folded inner membrane of mitochondria. In the image you see a human B lymphocyte: the large nucleus with dark, condensed chromatin, and mitochondria with their folded inner membrane. But a picture shows where things are, not what they do. At the same time, others broke cells open and separated their parts by centrifugation, then measured enzymes in each fraction. This is how lysosomes and peroxisomes were discovered. Combining the two methods won the Nobel Prize in 1974. Microscopy and fractionation are the topics of the next two lectures.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="model-systems-choose-the-simplest-system-that-can-answer-the-question" class="slide level2 smaller">
+<h2>Model systems: choose the simplest system that can answer the question</h2>
+<div class="columns">
+<div class="column" style="width:62%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>System</th>
+<th>Good for</th>
+<th>Cannot tell you</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Bacteria</strong> (<em>E. coli</em>)</td>
+<td>fast genetics, basic machines</td>
+<td>anything about organelles</td>
+</tr>
+<tr class="even">
+<td><strong>Budding yeast</strong> (<em>S. cerevisiae</em>)</td>
+<td>eukaryote; divides in ~90 min; easy genetics</td>
+<td>how tissues and animals behave</td>
+</tr>
+<tr class="odd">
+<td><strong>Human cell lines</strong> (HeLa, HEK293, …)</td>
+<td>human proteins; easy to image and perturb</td>
+<td>normal behaviour: most are cancer cells grown on plastic</td>
+</tr>
+<tr class="even">
+<td><strong>Organoids</strong></td>
+<td>3D tissue from stem cells, even from a patient</td>
+<td>blood supply, immune system, whole body</td>
+</tr>
+<tr class="odd">
+<td><strong>Mice</strong></td>
+<td>whole organism</td>
+<td>human biology exactly; slow, costly, ethics</td>
+</tr>
+</tbody>
+</table>
+<p>Yeast genetics found the genes for the <strong>cell cycle</strong> (Nobel 2001), <strong>vesicle traffic</strong> (2013) and <strong>autophagy</strong> (2016).</p>
+</div><div class="column" style="width:38%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img13-yeast-dic.jpg" class="quarto-figure quarto-figure-center" style="width:95.0%"></p>
+</figure>
+</div>
+<p><span style="font-size:0.7em">Budding yeast, <em>Saccharomyces cerevisiae</em> (DIC microscopy). Small buds are daughter cells growing out of the mother cells.</span></p>
+</div></div>
+<aside class="notes">
+<p>No single system answers every question, so cell biologists choose a model system. The rule is to use the simplest system that still has the feature you want to study. Bacteria are fast and simple but have no organelles. Budding yeast, the yeast used for baking and brewing, is the simplest common eukaryote: it has a nucleus, ER, Golgi and mitochondria, it divides in about ninety minutes, and its genes are easy to delete. Because most of the core machinery is shared with human cells, yeast genetics found the genes that control the cell cycle, the genes for vesicle traffic and the genes for autophagy, and each of these won a Nobel Prize. In the image you see yeast cells with buds; each bud is a new daughter cell. Human cell lines give human proteins in a dish. Organoids add three-dimensional tissue structure. Mice give a whole body. Each step up is closer to a patient but slower, more expensive and harder to control. In a VG question you may be asked to choose a system and to say what it cannot show.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cell-lines-hela-the-first-human-cells-that-never-stopped-dividing" class="slide level2 smaller">
+<h2>Cell lines: HeLa, the first human cells that never stopped dividing</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<ul>
+<li><strong>Normal human cells</strong> divide only about 40–60 times in culture, then stop.</li>
+<li>A <strong>cell line</strong> divides without limit. Most come from tumours.</li>
+<li><strong>HeLa</strong> (1951) came from the cervical tumour of <strong>Henrietta Lacks</strong>. It was the first human cell line.</li>
+<li>HeLa cells carry <strong>human papillomavirus 18 (HPV-18)</strong>. Viral proteins switch off two brakes on cell division (you meet them in the cell-cycle and cancer lectures).</li>
+<li>HeLa is <strong>not a normal cell</strong>: about 80 chromosomes instead of 46. And HeLa grows so well that it has <strong>contaminated</strong> many other cell lines, so labs now check the identity of their cells with a DNA test.</li>
+</ul>
+</div><div class="column" style="width:48%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img14-hela-living.jpg" class="quarto-figure quarto-figure-center" style="width:88.0%"></p>
+</figure>
+</div>
+<p><span style="font-size:0.7em">Living HeLa cells. Blue: nucleus. Green: microtubules. Red: mitochondria. Scale bar 10 µm.</span></p>
+</div></div>
+<aside class="notes">
+<p>Most cells taken from a human body divide a limited number of times in a dish, about forty to sixty times, and then stop. A cell line is a population of cells that can divide without limit. Almost all human cell lines come from tumours, because cancer cells have lost the normal limits on division. The first human cell line came from Henrietta Lacks, a thirty-one-year-old African American woman treated for cervical cancer at Johns Hopkins Hospital in Baltimore in 1951. Her cells, named HeLa from her name, grew faster than any human cells before them. We now know why. Her tumour was caused by human papillomavirus type 18, and viral proteins in HeLa cells switch off two key brakes on cell division, proteins called p53 and Rb, which you meet in the cell-cycle and cancer lectures. HeLa cells also have an abnormal genome, with about eighty chromosomes. In the image you see living HeLa cells with three fluorescent labels: nucleus, microtubules and mitochondria. Note the scale bar: these cells are about twenty to forty micrometres long when they spread on glass.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="organoids-tissue-in-a-dish" class="slide level2 smaller">
+<h2>Organoids: tissue in a dish</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<ul>
+<li>An <strong>organoid</strong> is a small 3D structure that grows from <strong>stem cells</strong> in a gel, with the right growth factors.</li>
+<li>The cells <strong>organise themselves</strong>: an intestinal organoid forms crypts and a lumen, with several cell types, like the real gut lining.</li>
+<li>Organoids can be grown from <strong>one patient’s</strong> biopsy, so you can test drugs on that patient’s own cells.</li>
+<li>Example: in <strong>cystic fibrosis</strong>, a patient’s intestinal organoids swell when a drug restores the faulty chloride channel (CFTR). The test helps choose a drug for that patient.</li>
+</ul>
+</div><div class="column" style="width:48%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img15-intestinal-organoid.jpg" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
+</figure>
+</div>
+<p><span style="font-size:0.7em">Intestinal organoid grown from Lgr5⁺ stem cells. The buds are crypt-like domains around a central lumen.</span></p>
+</div></div>
+<aside class="notes">
+<p>Cell lines grow as a flat layer on plastic, which is far from a real tissue. Organoids are a newer model, developed from about 2009. You take adult stem cells, for example from the base of an intestinal crypt, put them in a gel that mimics the material around cells in a tissue, and add the growth factors that the stem cells normally receive. The stem cells divide and organise themselves into a small three-dimensional structure with a central lumen and buds that look like crypts, with several cell types, much like the lining of the gut. The image shows such an intestinal organoid. Because organoids can be grown from a small biopsy, they can be made from one patient. A good example is cystic fibrosis, which is caused by a faulty chloride channel called CFTR. When a drug restores channel function in a patient’s intestinal organoids, chloride and water flow into the lumen and the organoids swell. The amount of swelling helps predict whether the drug will work in that patient. You meet ion channels in lecture six and cystic fibrosis again in the disease lectures.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-hela-cells-changed-medicine" class="slide level2 smaller">
+<h2>Why it matters: HeLa cells changed medicine</h2>
+
+<img data-src="fig16-hela-timeline.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><ul>
+<li><strong>Polio vaccine:</strong> poliovirus grows in HeLa, so HeLa was mass-produced to test the <strong>Salk vaccine</strong> (1953–55).</li>
+<li><strong>HPV and cervical cancer:</strong> HPV-18 DNA in HeLa helped show that a virus causes cervical cancer (Nobel 2008), which led to the <strong>HPV vaccine</strong>.</li>
+<li><strong>Drug screening:</strong> cell lines like HeLa are the first test for thousands of drug candidates: does the compound kill cells, reach its target, change an organelle?</li>
+</ul>
+<aside class="notes">
+<p>Here is why HeLa cells matter for medicine, and why we tie them back to the cell-line slide. Because HeLa cells were the first human cells that could be grown in large amounts, they became a tool for everything. In the early 1950s, poliovirus was found to grow in HeLa cells. A laboratory at the Tuskegee Institute mass-produced HeLa cells and sent them across the United States to test whether the Salk polio vaccine produced protective antibodies. In the 1980s, researchers found DNA from human papillomavirus type 18 in HeLa cells and in many other cervical cancers. This helped prove that a virus causes cervical cancer, work that won the Nobel Prize in 2008, and it led to the HPV vaccine that is now given to children, including in Sweden. HeLa cells have been used in more than a hundred thousand research papers. Today, cell lines are the first step of drug development: before any animal or human test, a drug candidate is tested on cells. You meet the later phases in the later programme course on clinical trials and drug development.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-consent-then-and-now" class="slide level2 smaller">
+<h2>Why it matters: consent, then and now</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<ul>
+<li>In 1951 Henrietta Lacks was <strong>not asked</strong> whether her cells could be used. This was common practice at the time. She died the same year, aged 31.</li>
+<li>Her family learned about HeLa decades later. Companies sold HeLa cells; the family received nothing.</li>
+<li><strong>2013:</strong> the HeLa genome was published without the family’s consent. It also says something about her relatives’ DNA. The US National Institutes of Health then agreed with the family on <strong>controlled access</strong>, with family members on the committee.</li>
+<li><strong>Today, in Sweden:</strong> research on human tissue needs <strong>ethical approval</strong> and, as a rule, <strong>informed consent</strong>. Samples in biobanks are protected by law.</li>
+</ul>
+<p><strong>Ask yourself:</strong> who should decide how cells from a patient are used, and who should benefit?</p>
+</div><div class="column" style="width:42%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img17-hela-hoechst.jpg" class="quarto-figure quarto-figure-center" style="width:95.0%"></p>
+</figure>
+</div>
+<p><span style="font-size:0.7em">HeLa cells, DNA stained with the blue dye Hoechst 33258.</span></p>
+</div></div>
+<aside class="notes">
+<p>The science of HeLa cannot be separated from the person. Henrietta Lacks was a mother of five who was treated for cervical cancer in a segregated hospital ward in 1951. A sample of her tumour was taken during treatment and given to a research laboratory without her knowledge. This was common practice then, but that does not make it right, and her family did not learn about the cells for more than twenty years. When the HeLa genome sequence was published in 2013, it again happened without asking the family, even though a genome also reveals information about relatives. After discussions, the US National Institutes of Health agreed with the family that the data should be in controlled access, with family members helping to decide who can use it. In 2021 the World Health Organization honoured Henrietta Lacks, and in 2023 the family reached a settlement with a company that had sold HeLa cells. In Sweden today, research on human tissue needs approval from the Swedish Ethical Review Authority, informed consent is the rule, and biobank samples are protected by law. Treat this as a question for discussion, not a closed story.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<ol type="1">
+<li>A eukaryotic cell is divided by membranes into <strong>compartments</strong>, each with its own chemistry and job: nucleus, ER, Golgi, endosomes and lysosomes, mitochondria, peroxisomes, and the cytosol between them.</li>
+<li>Every membrane has two sides. The <strong>cytosol</strong> and nucleoplasm form one side; the <strong>lumen</strong> of the ER, Golgi, vesicles and lysosomes is topologically <strong>outside</strong> the cell. Mitochondria have a third space.</li>
+<li><strong>Sizes and numbers:</strong> protein ~5 nm, ribosome ~25 nm, cell 10–20 µm; 10⁹–10¹⁰ proteins per cell; diffusion is fast over a cell but useless over long distances.</li>
+<li>We know this from <strong>microscopy</strong> (where) and <strong>fractionation</strong> (what), and we study cells in <strong>model systems</strong> (yeast, cell lines such as HeLa, organoids), each with its limits.</li>
+</ol>
+<p><em>Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch.&nbsp;1 and ch.&nbsp;12 (first section).</em></p>
+<p><a href="../cell-tour/credits.html" style="font-size:0.7em">Image credits</a></p>
+<aside class="notes">
+<p>Let us return to the opening question: how does one small drop of cytoplasm do everything at once? The answer is compartments. Membranes divide the cell into spaces with different chemistry, such as the acidic lysosome and the calcium-rich ER, and vesicles carry material between the lumen-side compartments without crossing a membrane. Topology is the rule to remember: the lumen side equals the outside of the cell, and the cytosol side includes the nucleus. Sizes and numbers let you check your reasoning, and the diffusion numbers explain why a large cell needs a cytoskeleton and motors. Finally, every fact on today’s map came from methods: electron microscopy showed where structures are, fractionation showed what they do, and model systems let us test ideas. The next two lectures are about these methods: microscopy, and how to take cells apart and perturb them. If you want to read more, chapter one and the first section of chapter twelve of Molecular Biology of the Cell cover today’s material, but the slides and notes are enough for the exam.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'visible',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

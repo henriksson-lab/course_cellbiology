@@ -1,0 +1,104 @@
+---
+title: "Quiz: a tour of the cell"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check that you can use the map of the cell from the lecture. Try each on paper first, then open the hint, and only then the answer.
+
+---
+
+**Q1.** [ELO 1] Name three structures that a eukaryotic animal cell has and a bacterium does not.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of everything that is surrounded by its own membrane inside the cell.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Any three of: a **nucleus** with a double membrane (nuclear envelope), **endoplasmic reticulum**, **Golgi apparatus**, **endosomes and lysosomes**, **mitochondria**, **peroxisomes**, and a cytoskeleton with microtubules organised by a **centrosome**. A bacterium has a plasma membrane, ribosomes and DNA in a nucleoid, but almost no internal membranes.
+:::
+
+---
+
+**Q2.** [ELO 1] Which of these spaces are on the **same side** of a membrane as the outside of the cell: cytosol, ER lumen, nucleoplasm, lysosome lumen, Golgi lumen?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which compartments exchange material with the outside by vesicles that bud and fuse? Which are joined by open pores?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The **ER lumen, the Golgi lumen and the lysosome lumen** are topologically equivalent to the outside of the cell: vesicles carry material between them and the outside without crossing a membrane. The **cytosol and the nucleoplasm** form the other side; they are joined through nuclear pores.
+:::
+
+---
+
+**Q3.** [ELO 1] Put these in order from smallest to largest, and give a typical size for each: ribosome, mitochondrion (width), protein, nucleus, potassium ion, virus such as influenza.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Each step on the scale ladder was roughly a factor of 3–10.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Potassium ion (~0.3 nm) < protein (~5 nm) < ribosome (~25 nm) < influenza virus (~100 nm) < mitochondrion (~1 µm wide) < nucleus (~5–10 µm).
+:::
+
+---
+
+**Q4.** [ELO 1] A protein diffuses across a 10 µm cell in a few seconds. About how long would it take to diffuse 100 µm? What does this tell you about very long cells such as nerve cells?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Diffusion time grows with the **square** of the distance: $t \approx x^2 / 6D$.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Ten times the distance means $10^2 = 100$ times the time: a few hundred seconds, that is several minutes. Over a metre, the time becomes hundreds of years. So long cells such as nerve cells cannot rely on diffusion; they carry cargo with **motor proteins** along the cytoskeleton.
+:::
+
+---
+
+**Q5.** [ELO 5] A cell type is packed with rough ER and Golgi. What does the cell probably spend most of its effort on? Give one example of such a cell.
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does the rough ER make, and where do those proteins go?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+It probably **secretes large amounts of protein**. The rough ER makes proteins for secretion and the Golgi modifies and sorts them. Examples: a **pancreatic acinar cell** (digestive enzymes) or a **plasma cell** (antibodies).
+:::
+
+---
+
+**Q6.** [ELO 1] A membrane receptor has a sugar chain on one domain. On which side of the plasma membrane do you expect to find that domain, and why?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Sugar chains are added in the lumen of the ER and Golgi. Follow the protein from the ER to the plasma membrane.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+On the **outside** of the cell. The sugar chain is added while that domain faces the ER and Golgi lumen. Vesicles bud and fuse without the protein flipping, so the lumen-facing side ends up facing the outside of the cell.
+:::
+
+---
+
+**Q7.** [ELO 1] Give one advantage and one limitation of using HeLa cells to study a human protein.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of what a cell line is, and where HeLa came from.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Advantage:** human cells that divide without limit, are cheap and easy to grow, image and perturb, and are used in many labs, so results can be compared. **Limitation:** HeLa cells are **cancer cells** with an abnormal genome (about 80 chromosomes) and an HPV infection that disables normal cell-cycle brakes; they grow flat on plastic, so they may not behave like a normal cell in a tissue. (Also acceptable: contamination of other cell lines, or the ethical questions about consent.)
+:::
+
+---
+
+**Q8.** [ELO 1] Electron microscopy of thin sections first showed the ER and ribosomes. Why was another method also needed to understand what lysosomes do?
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does a picture tell you, and what does it not tell you?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+A micrograph shows **where** a structure is and what it looks like, but not **what it does**. **Cell fractionation** (breaking cells and separating their parts by centrifugation, then measuring enzyme activities in each fraction) showed that one fraction held digestive enzymes that work at acidic pH: the lysosomes.
+:::

@@ -1,0 +1,32 @@
+---
+title: 'Cell Biology'
+title-block-banner: false
+---
+
+A first-cycle course (**3MB001**, 15 ECTS, Umeå University) in modern molecular
+cell biology. We follow molecules, signals and decisions through the cell: how
+membranes and organelles work, how proteins reach their place, how cells
+communicate, move, divide and die, and what happens when these processes go
+wrong. Every lecture ends with a drug or a disease that depends on it.
+
+## Where to start
+
+- [**Course plan**](courseplan.md): the official syllabus, outcomes and examination.
+- [**Learning outcomes**](elo.md): what each outcome means and where it is taught.
+- [**Glossary**](dictionary.qmd): key terms with short definitions.
+
+## How to use the material
+
+Work through the sidebar from top to bottom. Each lecture has:
+
+- **Lecture slides**: press `f` for full screen and `s` for speaker notes, which
+  hold the explanations.
+- **Quiz**: a quick self-check.
+- **Study questions**: the kind of questions the exam asks, including the harder
+  VG-style questions.
+
+You do not need to read the textbook (*Molecular Biology of the Cell*, Alberts et
+al., 7th ed.) to follow the course. Each lecture names the chapters if you want
+to read more.
+
+**See Canvas for the most up-to-date schedule and instructions.**

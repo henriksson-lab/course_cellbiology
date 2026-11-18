@@ -1,0 +1,107 @@
+---
+title: "Glossary"
+---
+
+Key terms used in the course. Definitions are
+short; follow the link for the full explanation. Add terms here as lectures are
+written.
+
+## The cell and how we study it
+
+### A tour of the cell
+
+See [A tour of the cell](cell-tour/lec.qmd).
+
+**Cytosol**: the fluid part of the cell between the organelles, where free ribosomes make proteins and much of metabolism takes place.
+
+**Cytoplasm**: everything inside the plasma membrane except the nucleus: the cytosol plus the organelles.
+
+**Organelle**: a membrane-bound compartment inside a eukaryotic cell with its own job, such as the ER or a mitochondrion.
+
+**Lumen**: the space inside a membrane-bound organelle, on the other side of its membrane from the cytosol.
+
+**Topology (membrane)**: which side of a membrane a space or a part of a protein lies on; the lumen of the ER, Golgi, vesicles and lysosomes is topologically equivalent to the outside of the cell.
+
+**Nuclear envelope**: the two membranes around the nucleus, crossed by nuclear pores; the outer membrane continues into the ER.
+
+**Nuclear pore**: a large protein channel in the nuclear envelope that joins the nucleoplasm to the cytosol.
+
+**Endoplasmic reticulum (ER)**: a network of membrane sheets and tubes that makes membrane and secreted proteins (rough ER) and lipids (smooth ER), and stores Ca²⁺.
+
+**Golgi apparatus**: a stack of flattened membrane compartments that modifies proteins from the ER, for example by adding sugar chains, and sorts them to their destinations.
+
+**Lysosome**: an acidic organelle (pH about 5) full of digestive enzymes that breaks down material taken up by the cell or from the cell itself.
+
+**Model system**: a simpler organism or cell type (yeast, a cell line, an organoid) chosen because it answers a question more easily than a human body can.
+
+**Informed consent**: a person's voluntary agreement, after being told the purpose and risks, to let their tissue or data be used in research.
+
+**Cell fractionation**: breaking cells open and separating their parts, usually by centrifugation, to find out what each part does.
+
+### Seeing cells: microscopy
+
+See [Seeing cells: microscopy](microscopy/lec.qmd).
+
+**Resolution**: the smallest distance at which two points can still be seen as two separate points.
+
+**Magnification**: how much larger the image is than the object; it adds no detail beyond the resolution limit.
+
+**Numerical aperture, NA**: how wide a cone of light an objective collects; a higher NA gives better resolution.
+
+**Phase-contrast microscopy**: turns small delays of light in dense cell parts into differences in brightness, so living unstained cells become visible.
+
+**Differential interference contrast, DIC**: shows steep changes in optical path as light and shadow, so cells look three-dimensional.
+
+**Fluorophore**: a molecule that absorbs light of one wavelength and emits light of a longer wavelength.
+
+**Stokes shift**: the difference in wavelength between a fluorophore's excitation peak and emission peak.
+
+**Dichroic mirror**: a mirror that reflects light below a certain wavelength and lets longer wavelengths pass; it separates excitation light from emitted light.
+
+**Immunofluorescence**: labelling a protein in fixed, permeabilised cells with antibodies coupled, directly or through a secondary antibody, to a fluorophore.
+
+**Green fluorescent protein, GFP**: a jellyfish protein that forms its own fluorescent group, used as a genetic tag to see proteins in living cells.
+
+**Fusion protein**: one protein chain made from two genes joined in the same reading frame, for example a protein of interest joined to GFP.
+
+**Confocal microscopy**: fluorescence microscopy in which a pinhole blocks out-of-focus light, giving a sharp optical section of a thick sample.
+
+**Photobleaching**: the permanent loss of fluorescence when a fluorophore is destroyed by repeated excitation.
+
+**Super-resolution microscopy**: light-microscopy methods, such as STED and PALM/STORM, that resolve details below the ~200 nm limit.
+
+**Transmission electron microscopy, TEM**: electrons pass through an ultrathin, heavy-metal-stained section, showing structures inside the cell at about 1–2 nm.
+
+**Scanning electron microscopy, SEM**: images the 3D surface of a metal-coated sample by scanning it with a fine electron beam.
+
+**Cryo-electron microscopy, cryo-EM**: electron microscopy of rapidly frozen samples in glass-like ice; averaging many images of one protein gives its 3D structure.
+
+### Taking cells apart and perturbing them
+
+**Cell line**: a population of cells that has been made immortal and can be grown in culture without limit.
+
+**Primary cells**: cells taken directly from a tissue, which divide only a limited number of times in culture.
+
+**Organoid**: a small 3D structure grown from stem cells that contains several cell types of an organ, arranged roughly as in the tissue.
+
+**Mycoplasma**: very small bacteria without a cell wall that often contaminate cell cultures unnoticed and change how the cells behave.
+
+**Differential centrifugation**: separating cell components by spinning at increasing speeds, so larger and denser particles form a pellet first.
+
+**Density-gradient centrifugation**: separating particles by spinning them through a solution that gets denser towards the bottom, so each stops at its own density.
+
+**Marker protein**: a protein known to be found in only one organelle, used to identify that organelle in a fraction.
+
+**Epitope**: the small part of a target molecule that an antibody binds.
+
+**Western blot**: separates proteins by size, transfers them to a membrane and detects one protein with antibodies.
+
+**Immunoprecipitation**: using an antibody on beads to pull a protein, and the proteins bound to it, out of a cell lysate.
+
+**Flow cytometry**: measuring light scatter and fluorescence of single cells as they pass a laser one at a time.
+
+**Gating**: choosing a region in a flow cytometry plot so that only one population of cells is analysed further.
+
+**RNA interference, RNAi**: lowering the amount of a protein with a short double-stranded RNA that leads to the matching mRNA being cut.
+
+**Knockout**: disabling a gene completely, for example by a CRISPR-Cas9 cut that causes a frameshift.

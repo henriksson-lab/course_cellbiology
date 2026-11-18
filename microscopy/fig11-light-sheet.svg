@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="400" viewBox="0 0 880 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig11: illumination geometry. Left: light comes through the objective and passes through the whole sample. Right: light-sheet, a thin sheet from the side, camera looks from above. -->
+  <defs>
+    <linearGradient id="cone" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2f6fdf" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#2f6fdf" stop-opacity="0.30"/>
+    </linearGradient>
+    <marker id="ag" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2a9d48"/>
+    </marker>
+  </defs>
+
+  <!-- ===== left panel ===== -->
+  <text x="210" y="24" font-size="18" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Wide-field or confocal</text>
+  <!-- objective -->
+  <path d="M160,50 L260,50 L245,92 L175,92 Z" fill="#dfe4ea" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="270" y="76" font-size="14" fill="#1b2a3a">objective (lights the</text>
+  <text x="270" y="93" font-size="14" fill="#1b2a3a">sample and collects light)</text>
+  <!-- light cone through whole sample: double cone focusing at the focal plane -->
+  <path d="M178,94 L242,94 L210,215 Z" fill="url(#cone)"/>
+  <path d="M210,215 L170,300 L250,300 Z" fill="#2f6fdf" fill-opacity="0.30"/>
+  <!-- sample: embryo -->
+  <ellipse cx="210" cy="215" rx="110" ry="70" fill="#fbfaf5" fill-opacity="0.35" stroke="#8a6a12" stroke-width="2"/>
+  <line x1="100" y1="215" x2="320" y2="215" stroke="#1b2a3a" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="326" y="220" font-size="14" fill="#1b2a3a">plane you image</text>
+  <text x="210" y="332" font-size="15" fill="#1b2a3a" text-anchor="middle">Light passes through every plane:</text>
+  <text x="210" y="352" font-size="15" fill="#1b2a3a" text-anchor="middle">all of them bleach and are stressed,</text>
+  <text x="210" y="372" font-size="15" fill="#1b2a3a" text-anchor="middle">even those you are not imaging.</text>
+
+  <!-- divider -->
+  <line x1="440" y1="20" x2="440" y2="380" stroke="#c9d3dd" stroke-width="1.5"/>
+
+  <!-- ===== right panel ===== -->
+  <text x="650" y="24" font-size="18" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Light-sheet</text>
+  <!-- detection objective from above -->
+  <path d="M600,50 L700,50 L685,92 L615,92 Z" fill="#dfe4ea" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="710" y="66" font-size="14" fill="#1b2a3a">detection</text>
+  <text x="710" y="83" font-size="14" fill="#1b2a3a">objective</text>
+  <!-- emitted light going up -->
+  <line x1="650" y1="208" x2="650" y2="98" stroke="#2a9d48" stroke-width="3" marker-end="url(#ag)"/>
+  <!-- illumination objective from the side -->
+  <path d="M462,190 L462,240 L500,228 L500,202 Z" fill="#dfe4ea" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="458" y="268" font-size="14" fill="#1b2a3a">illumination</text>
+  <text x="458" y="285" font-size="14" fill="#1b2a3a">objective</text>
+  <!-- sample -->
+  <ellipse cx="650" cy="215" rx="110" ry="70" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
+  <!-- thin sheet -->
+  <path d="M502,206 L800,211 L800,219 L502,224 Z" fill="#2f6fdf" fill-opacity="0.55"/>
+  <text x="806" y="211" font-size="14" fill="#2f6fdf">thin sheet</text>
+  <text x="806" y="228" font-size="14" fill="#2f6fdf">of light</text>
+  <text x="650" y="332" font-size="15" fill="#1b2a3a" text-anchor="middle">Only the plane you image is lit:</text>
+  <text x="650" y="352" font-size="15" fill="#1b2a3a" text-anchor="middle">gentle and fast, so a living embryo</text>
+  <text x="650" y="372" font-size="15" fill="#1b2a3a" text-anchor="middle">can be filmed for hours or days.</text>
+</svg>

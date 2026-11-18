@@ -1,0 +1,92 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    # Order is set by the sidebar below, not by these globs. One level deep per
+    # unit; plan/ holds internal working docs and is excluded from the site.
+    - "*.qmd"
+    - "*.md"
+    - "*/*.qmd"
+    - "*/*.md"
+    - "!plan/"
+    - "!unused-figures/"
+    - "!tools/"
+    - "!edit-notes/"
+    - "!node_modules/"
+    - "!canvas-quiz/"
+    # Teacher-only pages: kept in the repo (read them on GitHub), not published.
+    - "!README.md"
+    - "!audience.md"
+    - "!contentplan.md"
+    - "!designprinciples.md"
+    - "!authors.md"
+
+website:
+  title: "Cell Biology"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "Course info"
+        menu:
+          - text: Course plan
+            href: courseplan.md
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - text: Home
+        href: index.qmd
+      - section: "Course info"
+        contents:
+          - text: Course plan (3MB001)
+            href: courseplan.md
+          - text: Learning outcomes
+            href: elo.md
+          - text: Glossary
+            href: dictionary.qmd
+      # ----------------------------------------------------------------------
+      # Order is defined HERE, not in filenames. To reorder a unit, move its
+      # block; never rename its folder. Sections are topic blocks, not weeks.
+      # styles.css colours leaf links by filename: *lec* → green, *quiz* → blue.
+      # ----------------------------------------------------------------------
+      - section: "The cell and how we study it"
+        contents:
+          - section: "A tour of the cell"
+            contents:
+              - text: "Lecture (slides)"
+                href: cell-tour/lec.qmd
+              - text: "Quiz"
+                href: cell-tour/quiz.qmd
+              - text: "Study questions"
+                href: cell-tour/questions.qmd
+              - text: "Image credits"
+                href: cell-tour/credits.md
+          - section: "Seeing cells: microscopy"
+            contents:
+              - text: "Lecture (slides)"
+                href: microscopy/lec.qmd
+              - text: "Quiz"
+                href: microscopy/quiz.qmd
+              - text: "Study questions"
+                href: microscopy/questions.qmd
+              - text: "Image credits"
+                href: microscopy/credits.md
+          - section: "Taking cells apart and perturbing them"
+            contents:
+              # lec.qmd, quiz.qmd, questions.qmd not written yet
+              - text: "Image credits"
+                href: cell-methods/credits.md
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+# reveal.js navigation arrows for every lecture deck (lec.qmd). Plain top-level
+# keys, not a `format: revealjs:` block: html pages ignore them, so no page is
+# rendered as slides by accident. `controls: true` shows the arrows on desktop
+# too (Quarto's default `auto` shows them only on touch devices).
+controls: true
+controls-layout: edges
+controls-back-arrows: visible

@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-662ae1889177880cb371f83234c0a158.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
+
+  <meta name="author" content="Cell Biology (3MB001)">
+  <title>Cell Biology – Seeing cells: microscopy</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bf56578b9c06c165c166475cd19dbcd1.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Seeing cells: microscopy</h1>
+  <p class="subtitle">The cell and how we study it</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Cell Biology (3MB001) 
+</div>
+</div>
+</div>
+
+</section>
+<section id="about-this-lecture" class="slide level2 smaller">
+<h2>About this lecture</h2>
+<p>Almost everything you will learn in this course about <em>where</em> things are in a cell was first <strong>seen in a microscope</strong>. Today is about how those pictures are made, and how far you can trust them.</p>
+<p>After this lecture you can:</p>
+<ul>
+<li>explain the difference between <strong>magnification</strong> and <strong>resolution</strong>, and why a light microscope cannot separate two objects closer than about <strong>200 nm</strong>;</li>
+<li>explain how <strong>phase contrast</strong>, <strong>DIC</strong> and <strong>fluorescence</strong> make transparent cells visible;</li>
+<li>describe how we label one kind of protein: <strong>immunofluorescence</strong> (fixed cells) and <strong>fluorescent proteins such as GFP</strong> (living cells);</li>
+<li>say what <strong>confocal</strong>, <strong>light-sheet</strong>, <strong>super-resolution</strong> and <strong>electron microscopy</strong> (TEM, SEM, cryo-EM, tomography) add;</li>
+<li><strong>choose a method</strong> for a question, and <strong>read a microscopy figure</strong> critically.</li>
+</ul>
+<p><strong>ELO 1</strong> (cell and methods) and <strong>ELO 6</strong> (methods to study the cytoskeleton).</p>
+<aside class="notes">
+<p>This lecture follows the tour of the cell. In the tour we showed you organelles in pictures; today we ask how those pictures were made. Every microscope answers three questions in its own way. First, can it make small things big enough and sharp enough to separate them? That is resolution. Second, can it make a transparent cell stand out from the water around it? That is contrast. Third, can it show one particular molecule among thousands? That is specificity, or labelling. Keep these three words in mind; every method today improves one or more of them, and every method pays a price, usually that the cell must be dead, or that the picture is blurrier, or slower. A thread runs through the whole lecture: “How do we know?” A picture is evidence, and you need to know what a method can and cannot show before you believe it. This covers ELO 1, choosing a method, and supports ELO 6, because many of the examples are the cytoskeleton.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-question-how-do-you-see-one-protein-in-a-living-cell" class="slide level2 smaller">
+<h2>The question: how do you see one protein in a living cell?</h2>
+<p>A human cell is about <strong>20 µm</strong> across and almost <strong>transparent</strong>. A protein is about <strong>5 nm</strong>: 4000 times smaller. The cell contains about 10 000 different proteins. Three problems:</p>
+<ol type="1">
+<li><strong>Resolution</strong>: can we separate two things that are close together?</li>
+<li><strong>Contrast</strong>: can we see a cell that is mostly water?</li>
+<li><strong>Specificity</strong>: can we see <em>one kind</em> of molecule and not the others?</li>
+</ol>
+
+<img data-src="fig02-what-can-we-see.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><aside class="notes">
+<p>Look at the scale. The horizontal axis is logarithmic: each step is ten times bigger. A human cell is around 20 micrometres, a mitochondrion about one micrometre wide, a virus about a hundred nanometres, a ribosome twenty-five, a typical protein five. The bars below show the smallest detail each tool can separate. Your eye stops at about a tenth of a millimetre, so it sees a human egg but not an ordinary cell. The light microscope reaches about 200 nanometres: enough for cells, nuclei and mitochondria, not enough for a ribosome or a single protein. Super-resolution light microscopy gets to about 20 nanometres, and electron microscopes go below a nanometre, down to individual atoms in purified proteins. But resolution is only the first problem. Most of a cell is water and barely changes light, so we also need contrast. And even a sharp, high-contrast picture shows all molecules at once, so we need a way to label one kind. The rest of the lecture solves these three problems in turn.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="magnification-is-not-resolution" class="slide level2 smaller">
+<h2>Magnification is not resolution</h2>
+<ul>
+<li><strong>Magnification</strong> makes the image bigger. <strong>Resolution</strong> is the smallest distance at which two points still look like two.</li>
+<li>Light spreads when it passes through a lens. A point of light becomes a small <strong>blur spot</strong>. When two spots overlap too much, they merge into one.</li>
+<li>The limit (Abbe, Rayleigh): <span class="math inline">\;d \approx \dfrac{0.61\,\lambda}{\mathrm{NA}}</span>. Green light (<span class="math inline">\lambda \approx 500</span> nm) and the best oil objective (<span class="math inline">\mathrm{NA} \approx 1.4</span>) give <span class="math inline">d \approx</span> <strong>200 nm</strong> side to side, and about <strong>500 nm</strong> along the optical axis (depth).</li>
+</ul>
+
+<img data-src="fig03-two-points.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><p>Enlarging a blurred image more (“empty magnification”) adds no detail.</p>
+<aside class="notes">
+<p>Students often think a better microscope is one that magnifies more. It is not. Magnification only makes the image bigger; resolution decides how much detail is in it. Because light is a wave, a lens cannot focus it to a perfect point. Each point in the sample becomes a small blur spot in the image. If two points are far apart, you see two spots. When they come closer, the spots overlap. At the Rayleigh limit the dip between them is just visible; closer than that you see one blob, and no amount of enlargement can split it again. The formula says d equals 0.61 times the wavelength divided by the numerical aperture. You do not need to derive it. Read it like this: shorter wavelength gives finer detail, and a lens that collects light from a wider angle, a higher NA, gives finer detail. NA is at most about 1.4 with immersion oil. Put in 500 nanometre light and you get about 200 nanometres. That is why a light microscope cannot show a ribosome, and why electron microscopes, with a much shorter wavelength, can.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="contrast-making-transparent-cells-visible" class="slide level2 smaller">
+<h2>Contrast: making transparent cells visible</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img04-onion-phase-vs-bright.jpg" style="width:100.0%"></p>
+<p><em>The same onion root-tip cells. Left: phase contrast. Right: bright field. Scale bar 10 µm.</em></p>
+</div><div class="column" style="width:40%;">
+<ul>
+<li><strong>Bright field</strong>: light passes straight through. Unstained cells are almost invisible. Tissues are <strong>stained</strong> (dyes), which needs dead, fixed cells.</li>
+<li><strong>Phase contrast</strong>: light slowed by dense parts (nucleus, membranes) is turned into <strong>darker or brighter</strong> areas. Living cells, no stain.</li>
+<li><strong>DIC</strong>: shows <strong>edges and slopes</strong> as light and shadow, so cells look 3D.</li>
+</ul>
+<p><img data-src="img04-yeast-dic.jpg" style="width:55.0%"></p>
+<p><em>Yeast cells, DIC.</em></p>
+</div></div>
+<aside class="notes">
+<p>Most of a living cell is water, proteins and lipids, which absorb very little visible light. In ordinary bright-field microscopy the light simply passes through, so an unstained cell is a faint ghost. One answer is to stain the cells with coloured dyes, which is what histology does, and you will use that in the course on organs and tissues. But staining usually means killing and fixing the cells. The other answer is to use something cells already do to light. Dense parts of the cell, such as the nucleus and membranes, have a higher refractive index, so light passing through them is slowed a little. The eye cannot see this delay, called a phase shift. A phase-contrast microscope converts the phase shift into a difference in brightness, so the same unstained living cells suddenly show their nucleus and edges. Compare the left and right halves of the image: same cells, same moment, two kinds of optics. Differential interference contrast, DIC, uses polarised light to show where the optical path changes steeply, so edges look like a relief map. These methods are used every day to check cultured cells.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="fluorescence-absorb-one-colour-emit-another" class="slide level2 smaller">
+<h2>Fluorescence: absorb one colour, emit another</h2>
+<ul>
+<li>A <strong>fluorophore</strong> absorbs light of one wavelength, loses a little energy as heat, and within nanoseconds <strong>emits light of a longer wavelength</strong> (lower energy).</li>
+<li>You know <strong>absorption spectra</strong> from spectrophotometry. A fluorophore has two spectra: <strong>excitation</strong> and <strong>emission</strong>. The gap between the peaks is the <strong>Stokes shift</strong>.</li>
+<li>The shift lets us <strong>filter away</strong> the excitation light and keep only the glow: a bright signal on a <strong>black background</strong>, so even a few molecules can be seen.</li>
+</ul>
+
+<img data-src="fig05-spectra.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:72.0%"><aside class="notes">
+<p>You measured absorption spectra in chemistry: a molecule absorbs some wavelengths more than others. A fluorophore is a molecule that, after absorbing a photon, gives some of the energy back as light. The electron is lifted to an excited state, loses a little energy as heat while the molecule relaxes, and then falls back, emitting a photon. Because some energy was lost, the emitted photon has less energy, which means a longer wavelength. Blue in, green out. The difference between the excitation peak and the emission peak is called the Stokes shift. This shift is the whole trick of fluorescence microscopy. The excitation light is millions of times brighter than the glow, but because the two colours differ, filters can block the excitation light and pass only the emitted light. What remains is a bright signal on a black background. That gives enormous contrast: you can detect a few hundred fluorophores, and with sensitive cameras even single molecules. The shaded boxes show the filters you would choose for this green fluorophore. Next slide: where these filters sit.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="inside-a-fluorescence-microscope-the-filter-cube" class="slide level2 smaller">
+<h2>Inside a fluorescence microscope: the filter cube</h2>
+<div class="columns">
+<div class="column" style="width:66%;">
+<p><img data-src="fig06-filter-cube.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:34%;">
+<ol type="1">
+<li><strong>Excitation filter</strong> picks the colour that excites the fluorophore.</li>
+<li><strong>Dichroic mirror</strong> reflects that colour down onto the sample, but lets the longer emitted wavelength pass.</li>
+<li>The <strong>objective</strong> both lights the sample and collects its glow.</li>
+<li><strong>Emission filter</strong> removes the last stray excitation light.</li>
+</ol>
+<p>One <strong>cube per fluorophore</strong>. To image blue, green and red labels, the microscope takes one picture per cube (<strong>channel</strong>) and combines them.</p>
+</div></div>
+<aside class="notes">
+<p>Follow the light. The lamp or LED gives many colours. The excitation filter lets only blue through. The blue light reaches a special mirror called a dichroic mirror, which reflects short wavelengths and lets long wavelengths pass. It reflects the blue light down through the objective onto the sample. The fluorophores in the cell absorb blue and emit green in all directions. Some of the green light goes back up into the objective. Because it is green, it passes straight through the dichroic mirror. The emission filter then removes any blue light that was scattered back, so the camera sees only green. The objective does two jobs: it focuses the excitation light and collects the emission. This design is called epifluorescence. The three filters are mounted together in a filter cube, and each fluorophore needs its own cube. A three-colour image is therefore three separate black-and-white pictures, one per cube, which software colours and overlays. Remember this when you read figures: each colour is a separate channel, and the colours are chosen by the scientist.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="labelling-a-protein-in-fixed-cells-immunofluorescence" class="slide level2 smaller">
+<h2>Labelling a protein in fixed cells: immunofluorescence</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="fig07-immunofluorescence.svg" style="width:100.0%"></p>
+<ul>
+<li>A <strong>primary antibody</strong> binds the target protein. A <strong>secondary antibody</strong> carrying a fluorophore binds the primary. Several secondaries per primary make the signal <strong>brighter</strong>.</li>
+<li>Any protein you have a good antibody against can be shown, but <strong>only in dead cells</strong>.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img07-endothelial-cells.jpg" style="width:88.0%"></p>
+<p><em>Endothelial cells. Blue: DNA (DAPI). Green: microtubules (antibody against tubulin). Red: actin filaments (phalloidin).</em></p>
+</div></div>
+<aside class="notes">
+<p>Fluorescence gives contrast, but we still need specificity: one kind of protein, not all of them. The classic answer is to use antibodies, which you know from biochemistry as proteins that bind one target very tightly. Antibodies are large and cannot cross the plasma membrane of a living cell. So we first fix the cells, usually with formaldehyde, which cross-links proteins and freezes everything in place. Then we permeabilise the membranes with a mild detergent so antibodies can get in. The primary antibody, made for example in a mouse, binds the target. A secondary antibody against mouse antibodies, coupled to a fluorophore, binds the primary. Because several secondaries can bind one primary, the signal is amplified. Other probes are not antibodies: DAPI binds DNA, and phalloidin, a toxin from a mushroom, binds actin filaments. In the image, three labels are imaged in three channels and merged. You can see microtubules spreading out from the centre and actin bundles near the edges. The price: the cells are dead, and fixation can move or extract things, so we need controls.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="fluorescent-proteins-a-gift-from-a-jellyfish" class="slide level2 smaller">
+<h2>Fluorescent proteins: a gift from a jellyfish</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img data-src="img08-crystal-jelly.jpg" style="width:100.0%"></p>
+<p><em>Aequorea victoria, the crystal jelly.</em></p>
+</div><div class="column" style="width:32%;">
+<ul>
+<li>The jellyfish makes <strong>green fluorescent protein (GFP)</strong>: 238 amino acids that fold into a <strong>barrel</strong> and build their own light-emitting group inside. <strong>No other molecule is needed.</strong></li>
+<li>The GFP gene works in any cell: bacteria, worms, mice, human cells (1994).</li>
+<li>Mutations changed its colour: <strong>blue, cyan, yellow</strong>. Red proteins (e.g.&nbsp;mCherry) came from corals.</li>
+<li>Nobel Prize in Chemistry <strong>2008</strong> (Shimomura, Chalfie, Tsien).</li>
+</ul>
+</div><div class="column" style="width:34%;">
+<p><img data-src="img08-fp-beach.jpg" style="width:100.0%"></p>
+<p><em>A beach scene painted with bacteria that make eight different fluorescent proteins.</em></p>
+</div></div>
+<aside class="notes">
+<p>The second way to label a protein started with a jellyfish from the Pacific coast of North America. Osamu Shimomura purified its light-making proteins in the 1960s. The jellyfish glows green because a protein, GFP, takes energy from a blue light-producing protein and emits green light. What makes GFP special is that it needs nothing else. The chain of 238 amino acids folds into a barrel, and three amino acids in the middle react with each other and with oxygen to form the fluorescent group, the chromophore, protected inside the barrel. So when Martin Chalfie put the GFP gene into bacteria and worms in 1994, they glowed. Roger Tsien and others then mutated GFP to make it brighter and to change its colour, giving blue, cyan and yellow versions. Red fluorescent proteins were later found in corals and improved in the same way. The beach picture on the right was painted with bacterial colonies, each making a different fluorescent protein. With several colours you can follow several proteins in the same cell at the same time.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="gfp-fusion-proteins-watching-a-protein-in-a-living-cell" class="slide level2 smaller">
+<h2>GFP fusion proteins: watching a protein in a living cell</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig09-gfp-fusion.svg" class="quarto-figure quarto-figure-center" style="width:76.0%"></p>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="width:55%;">
+<ul>
+<li>Join the gene for your protein to the GFP gene, <strong>in frame</strong>, and put it into cells.</li>
+<li>The cell makes one chain, <strong>protein X–GFP</strong>, which usually goes where X normally goes.</li>
+<li><strong>Living cells</strong>, no antibody. <strong>Check</strong> that the tag does not disturb X: does X–GFP still work, and is it in the same place as the untagged protein?</li>
+</ul>
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img09-hela-gfp-microtubules.jpg" class="quarto-figure quarto-figure-center" height="250"></p>
+</figure>
+</div>
+<p><em>HeLa cells with a GFP-tagged microtubule-binding protein: the microtubule network.</em></p>
+</div></div>
+<aside class="notes">
+<p>Here is how GFP is used in practice. You take the DNA for your protein of interest, call it X, and join it to the DNA for GFP so that the two reading frames continue without a stop codon in between. You put this DNA into cells, for example with a plasmid. The cell transcribes and translates it into one long chain: X with GFP attached at one end. GFP folds on its own and glows, and X usually still folds and goes where it normally goes. Now the green light tells you where X is, in a living cell, in real time. The image shows HeLa cells making a microtubule-binding protein fused to GFP: the green threads are the microtubule network, which you will meet in the cytoskeleton lectures. Some cells are bright and some dim, because after transfection each cell takes up a different amount of DNA and makes a different amount of fusion protein. Be critical: GFP is about 27 kilodaltons, so it can disturb a small protein, and too much fusion protein can end up in the wrong place. Good studies check that the tagged protein still works and matches antibody staining of the untagged protein.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="confocal-microscopy-a-sharp-optical-section" class="slide level2 smaller">
+<h2>Confocal microscopy: a sharp optical section</h2>
+<div class="columns">
+<div class="column" style="width:66%;">
+<p><img data-src="fig10-confocal-pinhole.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:34%;">
+<ul>
+<li>In a normal (wide-field) fluorescence microscope, light from <strong>above and below</strong> the focus adds a <strong>haze</strong>.</li>
+<li>A confocal microscope puts a <strong>pinhole</strong> where the in-focus light comes to a point. Light from other depths is spread out and <strong>blocked</strong>.</li>
+<li>A <strong>laser spot scans</strong> the sample point by point to build the image.</li>
+<li>Result: a thin <strong>optical section</strong> (about 0.5–1 µm). Refocus step by step to get a <strong>3D stack</strong>, without cutting the sample.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>A cell is several micrometres thick, and tissue much more. In wide-field fluorescence, the whole depth is lit, so fluorophores above and below the focal plane also glow and their blurred light adds a haze to the image. The confocal microscope fixes this with a simple idea. Light coming from the focal plane is focused by the lens to a sharp point; we put a small hole, a pinhole, exactly there. That light goes through to the detector. Light from a plane above or below comes to a focus in a different place, so at the pinhole it is spread out, and most of it hits the metal around the hole and is blocked. Because the pinhole sees only one point, a laser spot is scanned across the sample, line by line, and a computer builds the image. What you get is an optical section: a thin slice, about half to one micrometre thick, taken without cutting. Step the focus up and down and you get a stack of sections, a z-stack, from which software builds a three-dimensional image. The price is speed and more light on the sample.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="live-cell-imaging-and-light-sheet-microscopy" class="slide level2 smaller">
+<h2>Live-cell imaging and light-sheet microscopy</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Filming living cells needs:</p>
+<ul>
+<li><strong>37 °C, CO₂ and medium</strong> on the microscope stage;</li>
+<li><strong>little light</strong>: strong light <strong>bleaches</strong> fluorophores (<strong>photobleaching</strong>) and makes reactive oxygen species that damage cells (<strong>phototoxicity</strong>);</li>
+<li>a <strong>fast, sensitive camera</strong>.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Light-sheet</strong> microscopy lights only a thin plane from the side, and the camera looks from above. It is gentle and fast, so whole embryos and organoids can be filmed in 3D for hours or days.</p>
+</div></div>
+
+<img data-src="fig11-light-sheet.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><aside class="notes">
+<p>Fixed cells give you a snapshot. Many questions in cell biology are about change: how fast does a vesicle move, when does a cell divide, how long does a protein stay at a site. For these you need live-cell imaging. The cells must be kept happy on the microscope: warm, with the right gas and medium. The biggest enemy is light itself. Each time a fluorophore is excited there is a small chance it is destroyed, so the signal fades; this is photobleaching. Excited fluorophores can also react with oxygen to make reactive oxygen species, which damage the cell; this is phototoxicity. A cell that looks fine can still be stressed, so you must use as little light as possible. Light-sheet microscopy is one answer. In wide-field and confocal microscopes the light passes through the whole sample, even though you image one plane. In a light-sheet microscope a thin sheet of light enters from the side and lights only the plane the camera is looking at. Less light, less damage, and a whole plane at once, so it is fast. Later, in the cytoskeleton lectures, you will meet FRAP, a live-cell method that uses bleaching on purpose.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="super-resolution-beating-the-200-nm-limit" class="slide level2 smaller">
+<h2>Super-resolution: beating the 200 nm limit</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="img12-sted-vimentin.jpg" style="width:100.0%"></p>
+<p><em>Intermediate filaments (vimentin), same area. Left: confocal. Right: STED. Insets: enlarged view of the dotted box. Scale bar 2 µm.</em></p>
+</div><div class="column" style="width:45%;">
+<p>The limit is about separating <strong>neighbouring glowing molecules at the same time</strong>. Super-resolution methods get around it:</p>
+<ul>
+<li><strong>STED</strong>: a second, doughnut-shaped laser switches off fluorescence everywhere except a tiny centre.</li>
+<li><strong>PALM/STORM</strong>: only a few molecules glow at a time; the centre of each blur spot is found precisely, then thousands of frames are combined.</li>
+<li><strong>SIM</strong>: patterned light, about 2× better, gentle enough for live cells.</li>
+<li><strong>Expansion microscopy</strong>: swell the sample in a gel, then image it.</li>
+</ul>
+<p>About <strong>20–100 nm</strong>. Nobel Prize in Chemistry <strong>2014</strong>.</p>
+</div></div>
+<aside class="notes">
+<p>For a hundred years the 200 nanometre limit was thought to be absolute. Super-resolution methods do not break the laws of optics; they get around them by making sure that neighbouring molecules do not glow at the same time. In STED, the sample is excited with a normal spot, and a second, doughnut-shaped laser immediately switches the fluorophores in the ring back off. Only the centre of the doughnut can still glow, and that centre can be made much smaller than 200 nanometres. In single-molecule methods called PALM and STORM, special fluorophores are switched on randomly so that only a few, far-apart molecules glow in each frame. Each one still makes a blur spot, but the centre of a spot can be found to within about 20 nanometres. Thousands of frames give a map of positions. SIM uses striped light and gains about a factor of two. Expansion microscopy physically swells the sample. The image shows the gain: the same filament network, confocal on the left and STED on the right. The prices: special dyes, more light, slower imaging, and harder data analysis.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="transmission-electron-microscopy-tem" class="slide level2 smaller">
+<h2>Transmission electron microscopy (TEM)</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="img13-pancreas-tem.jpg" style="width:100.0%"></p>
+<p><em>TEM of a pancreatic acinar cell: large nucleus, parallel stacks of rough ER, mitochondria and round, dark secretory (zymogen) granules. Scale bar 500 nm.</em></p>
+</div><div class="column" style="width:45%;">
+<ul>
+<li>Uses <strong>electrons</strong> instead of light. Their wavelength is about <strong>100 000× shorter</strong>, so resolution reaches <strong>about 1–2 nm</strong> in cells.</li>
+<li>Electrons pass <strong>through</strong> a very thin slice (about 50–100 nm). Dense, heavy-metal-stained parts scatter electrons and look <strong>dark</strong>.</li>
+<li>Price: the sample must be in a <strong>vacuum</strong>: cells are <strong>fixed</strong>, stained with heavy metals (osmium, uranium, lead), embedded in plastic and cut. <strong>No living cells.</strong></li>
+<li>Specific proteins: antibodies with <strong>gold particles</strong> (immunogold).</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>To see membranes, ribosomes and the inside of organelles we need a much shorter wavelength than light. Electrons accelerated through a high voltage behave as waves with a wavelength of a few thousandths of a nanometre. In practice, lens errors and the sample itself limit resolution in cell sections to about one or two nanometres, still a hundred times better than light. In a transmission electron microscope the beam passes through the sample, so the sample must be very thin, about 50 to 100 nanometres, which is thinner than a mitochondrion. Electrons are stopped by air, so the inside of the microscope is a vacuum, and the cell must be completely dry. That is why cells are fixed with glutaraldehyde, stained with salts of heavy metals that stick to membranes and proteins, dehydrated, embedded in plastic resin and cut with a diamond knife. Dark areas are where the heavy metals scattered electrons. Look at the image: a stack of rough ER, round secretory granules, the nucleus. These are the structures we draw in cartoons. To find one protein, antibodies are coupled to tiny gold particles that appear as black dots. Remember the price: dead, processed cells, so artefacts are possible.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="scanning-electron-microscopy-sem-the-surface" class="slide level2 smaller">
+<h2>Scanning electron microscopy (SEM): the surface</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="img14-sem-sars-cov-2.jpg" style="width:100.0%"></p>
+<p><em>SEM, colour added: cultured cells (teal) covered with SARS-CoV-2 particles (orange), virus isolated from a patient. Each particle is about 100 nm across.</em></p>
+</div><div class="column" style="width:45%;">
+<ul>
+<li>The sample is coated with a thin layer of <strong>metal</strong>. A fine electron beam <strong>scans</strong> across it.</li>
+<li>Electrons knocked out of the <strong>surface</strong> are counted point by point.</li>
+<li>The image shows <strong>shape and surface in 3D</strong>, with a large depth of focus. Resolution about <strong>a few nm</strong>.</li>
+<li>It does <strong>not</strong> show the inside of the cell.</li>
+<li>Colours in EM images are <strong>added afterwards</strong> by people. Electrons have no colour.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>The scanning electron microscope answers a different question: what does the outside look like? The cells are fixed, dried and coated with a very thin layer of metal such as gold. A finely focused electron beam is moved across the surface, line by line. Where it hits, electrons are knocked out of the surface and collected by a detector. Surfaces facing the detector give more signal, so the picture looks like a lit three-dimensional object, with a large depth of focus. Resolution is a few nanometres. SEM shows the shape of cells, microvilli, cilia, bacteria on a surface, or, as here, virus particles budding from and sticking to an infected cell. It does not show the inside, unless you cut the sample open first. One important point for reading figures: electron images are black and white. The teal and orange here were painted on by a person to make the picture easier to read. That is fine, but it is not data. We will come back to this virus at the end of the lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cryo-em-and-electron-tomography" class="slide level2 smaller">
+<h2>Cryo-EM and electron tomography</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig15-single-particle.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="width:58%;">
+<ul>
+<li><strong>Cryo-EM</strong>: freeze the sample so fast (about −180 °C) that water becomes <strong>glass-like ice</strong>, not crystals. No stain, no drying: molecules keep their <strong>native shape</strong>.</li>
+<li><strong>Single-particle analysis</strong>: average <strong>tens of thousands to millions</strong> of noisy images of one purified protein → a 3D <strong>density map</strong>, often better than <strong>0.3 nm</strong> (atoms). Nobel Prize in Chemistry <strong>2017</strong>.</li>
+<li><strong>Cryo-electron tomography</strong>: <strong>tilt</strong> a thin slice of a frozen cell and combine the views into a <strong>3D image of the inside</strong> of the cell.</li>
+</ul>
+</div><div class="column" style="width:42%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img15-cryo-em-map.jpg" class="quarto-figure quarto-figure-center" style="width:58.0%"></p>
+</figure>
+</div>
+<p><em>Cryo-EM density map (pale blue surface) of a bacterial protein complex at 0.43 nm, with the atomic model (spheres) fitted inside.</em></p>
+</div></div>
+<aside class="notes">
+<p>Classical EM needs dead, dried, stained samples. Cryo-electron microscopy avoids most of this. A thin layer of sample is plunged into a very cold liquid so fast that water has no time to form ice crystals; it becomes a glass-like solid. Molecules are trapped in their natural, hydrated shape, without stain. The cost is very low contrast and a lot of noise, because we must use few electrons to avoid destroying the molecules. Single-particle analysis solves this by numbers. A purified protein is frozen in many copies, lying at random angles. A computer finds thousands of images of each view, aligns and averages them, so the noise cancels and the signal stays. Combining the views gives a three-dimensional density map, and an atomic model is built into it, as in the image. Since about 2013, better cameras made near-atomic structures routine. Cryo-electron tomography instead tilts one frozen slice of a cell and takes images from many angles, like a medical CT scan, giving a 3D view of molecules in their real place in the cell. This is how we know many protein structures, including the one in the next-but-one slide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-reading-a-microscopy-figure" class="slide level2 smaller">
+<h2>How do we know? Reading a microscopy figure</h2>
+
+<img data-src="fig16-read-a-figure.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><p>Before you believe a microscopy figure, check:</p>
+<ul>
+<li><strong>Scale bar</strong>: how big is this? Compare with the resolution limit of the method.</li>
+<li><strong>What is labelled, and how?</strong> Antibody (fixed cells) or fusion protein (living cells)? One cell or many? Is the cell typical?</li>
+<li><strong>Controls</strong>: no primary antibody, cells without the protein (<strong>knockout</strong> or knockdown), same camera settings. A merge is <strong>not</strong> proof that two proteins bind.</li>
+</ul>
+<aside class="notes">
+<p>A microscopy image is evidence, and like any evidence it must be read critically. Start with the scale bar: it tells you the size, and you can compare it with what the method can resolve. If two proteins look like they are in the same spot in a confocal image, remember that “same spot” means within about 200 nanometres, which is forty protein diameters. That is why yellow in a merge means “close”, not “bound to each other”. Next, ask what was labelled and how. Each channel is a separate black-and-white image, and the colours were chosen by the authors. Was it an antibody in fixed cells, or a GFP fusion in living cells? Then look for controls. For antibodies: a sample without the primary antibody shows background from the secondary, and cells that lack the protein, for example a knockout made with CRISPR, should show no signal. If they still glow, the antibody binds something else. Images should be taken with the same settings so brightness can be compared. Finally, a single beautiful cell may be the best of a hundred; look for numbers: how many cells, how many experiments, and a quantification.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="choosing-a-method" class="slide level2 smaller">
+<h2>Choosing a method</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Best resolution</th>
+<th>Living cells?</th>
+<th>What it shows best</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bright field, phase, DIC</td>
+<td>~200 nm</td>
+<td>yes</td>
+<td>cell shape, division, movement; no labels</td>
+</tr>
+<tr class="even">
+<td>Wide-field fluorescence</td>
+<td>~200 nm</td>
+<td>yes (GFP) / no (antibodies)</td>
+<td>where a labelled protein is; fast</td>
+</tr>
+<tr class="odd">
+<td>Confocal</td>
+<td>~200 nm, 0.5–1 µm deep</td>
+<td>yes</td>
+<td>sharp sections, 3D stacks of cells and tissue</td>
+</tr>
+<tr class="even">
+<td>Light-sheet</td>
+<td>~300 nm</td>
+<td>yes, for days</td>
+<td>whole embryos and organoids over time, gently</td>
+</tr>
+<tr class="odd">
+<td>Super-resolution</td>
+<td>~20–100 nm</td>
+<td>mostly fixed</td>
+<td>arrangement of proteins inside small structures</td>
+</tr>
+<tr class="even">
+<td>TEM</td>
+<td>~1–2 nm</td>
+<td>no</td>
+<td>membranes and organelles inside the cell</td>
+</tr>
+<tr class="odd">
+<td>SEM</td>
+<td>a few nm</td>
+<td>no</td>
+<td>the cell surface in 3D</td>
+</tr>
+<tr class="even">
+<td>Cryo-EM (single particle)</td>
+<td>&lt; 0.3 nm</td>
+<td>no (purified protein)</td>
+<td>atomic structure of a protein or complex</td>
+</tr>
+<tr class="odd">
+<td>Cryo-electron tomography</td>
+<td>~2–4 nm</td>
+<td>no (frozen cell)</td>
+<td>molecules in place inside the cell</td>
+</tr>
+</tbody>
+</table>
+<p>Start from the <strong>question</strong>: what size, alive or not, which molecule?</p>
+<aside class="notes">
+<p>This table is the summary of the methods part, and it is the kind of reasoning ELO 1 asks for. Do not learn it as a list of numbers; learn to ask three questions. How small is the thing I want to see? If it is a whole cell or an organelle, light microscopy is enough; if it is the shape of a protein, you need cryo-EM. Do I need the cell to be alive? If the question is about time, movement or dynamics, you need living cells, which means light microscopy with fluorescent proteins, and preferably gentle methods like spinning-disk confocal or light-sheet. Which molecule? Antibodies can label almost any protein but need fixed cells; fluorescent proteins need genetic engineering but work in living cells. Often the best answer combines methods: a GFP fusion to follow a protein over time, immunofluorescence to check it, and EM to see the membrane it sits on. Numbers in the table are typical values, not hard limits; they depend on the instrument and the sample. In the study questions you will practise choosing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-a-microscope-helped-design-covid-19-vaccines" class="slide level2 smaller">
+<h2>Why it matters: a microscope helped design COVID-19 vaccines</h2>
+<div class="columns">
+<div class="column" style="width:64%;">
+<p><img data-src="fig18-spike-2p.svg" style="width:100.0%"></p>
+<ul>
+<li>The spike’s <strong>prefusion</strong> shape is the best target for protective antibodies, but it can spring into a <strong>postfusion</strong> rod.</li>
+<li>Two <strong>prolines (2P)</strong> at a hinge in S2 lock it. The trick came from earlier cryo-EM work on related coronaviruses (MERS, SARS).</li>
+<li>February 2020: a <strong>cryo-EM structure</strong> confirmed that the SARS-CoV-2 2P spike keeps the prefusion shape. The <strong>mRNA vaccines</strong> (Pfizer-BioNTech, Moderna) encode this 2P spike.</li>
+</ul>
+</div><div class="column" style="width:36%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img18-spike-6vsb.jpg" class="quarto-figure quarto-figure-center" height="430"></p>
+</figure>
+</div>
+<p><em>Cryo-EM structure of the SARS-CoV-2 2P spike (PDB 6VSB). Three chains in three colours, sugars red; grey block: virus membrane.</em></p>
+</div></div>
+<aside class="notes">
+<p>Here the methods of this lecture met a pandemic. The SARS-CoV-2 spike is a trimer on the virus surface. Its S1 part binds the receptor ACE2 on our cells; its S2 part fuses the virus membrane with the cell membrane. To do that, the spike changes shape: S1 falls off and S2 springs from a compact prefusion shape into a long postfusion rod. Antibodies that block infection mostly recognise the prefusion shape, but a spike made on its own tends to flip into the postfusion form. Researchers studying related coronaviruses, MERS and the first SARS virus, had used cryo-EM structures to find that changing two amino acids at a hinge in S2 into prolines, which are stiff, locks the prefusion shape. This is called the 2P spike. In January 2020 the new virus sequence was published; within weeks a group made the 2P version of the SARS-CoV-2 spike and solved its structure by cryo-EM, shown on the right, confirming the prefusion shape. Both mRNA vaccines encode this 2P spike. You will meet how vaccines work in Immunologi, and how they are tested in Kliniska prövningar och läkemedelsutveckling.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<ol type="1">
+<li><strong>Resolution, not magnification</strong>, sets what you can see. Light microscopes stop at about <strong>200 nm</strong>; super-resolution reaches about <strong>20 nm</strong>; electron microscopes reach <strong>nanometres</strong>, and cryo-EM reaches atoms in purified proteins.</li>
+<li><strong>Contrast</strong> comes from optics (phase contrast, DIC), from stains, or from <strong>fluorescence</strong>, where filters separate the emitted colour from the exciting colour.</li>
+<li><strong>Specificity</strong> comes from labels: <strong>antibodies</strong> in fixed cells, <strong>fluorescent proteins (GFP fusions)</strong> in living cells. Confocal and light-sheet microscopes give sharp optical sections and gentle live imaging.</li>
+<li><strong>Choose a method from the question</strong>: size, living or fixed, which molecule. Every method has a price.</li>
+<li><strong>Read figures critically</strong>: scale bar, channels, merge, controls.</li>
+</ol>
+<p><em>Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch.&nbsp;9.</em></p>
+<p><small>Image credits: <a href="../microscopy/credits.html">credits</a></small></p>
+<aside class="notes">
+<p>Five take-home points. First, resolution is what matters, and the light microscope’s limit of about 200 nanometres comes from the wave nature of light; the formula tells you shorter wavelength and higher numerical aperture help. Second, cells are transparent, so we need contrast: phase contrast and DIC for living unstained cells, stains for fixed tissue, and fluorescence for the highest contrast, with a filter cube separating colours. Third, to see one protein we label it: antibodies in fixed and permeabilised cells, or a GFP fusion in living cells; confocal removes out-of-focus haze, light-sheet is gentle enough for long films. Fourth, choose a method from your question, and remember the price of each: electron microscopy gives the finest detail but only in dead or frozen samples. Fifth, read every microscopy figure as evidence: check the scale, what was labelled, and whether the controls are there. In the next lecture we take cells apart and perturb them, and we use these tools to see the result.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'visible',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

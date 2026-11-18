@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="500" viewBox="0 0 1150 500" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig10: flow cytometer fluidics, optics and droplet sorting -->
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1b2a3a"/>
+    </marker>
+    <marker id="arrB" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1e88e5"/>
+    </marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2ca02c"/>
+    </marker>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#d62728"/>
+    </marker>
+  </defs>
+  <text x="20" y="28" font-size="17" font-weight="bold" fill="#1b2a3a">A. Fluidics and sorting (side view)</text>
+  <path d="M190,60 L330,60 L330,100 L267,175 L253,175 L190,100 Z" fill="#e6f0f8" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="254" y="44" width="12" height="80" fill="#fbfaf5" stroke="#1b2a3a" stroke-width="1.5"/>
+  <circle cx="260" cy="58" r="4" fill="#2ca02c"/>
+  <circle cx="260" cy="80" r="4" fill="#b9c2cc"/>
+  <circle cx="260" cy="102" r="4" fill="#2ca02c"/>
+  <text x="246" y="52" font-size="14" fill="#1b2a3a" text-anchor="end">cells in</text>
+  <line x1="370" y1="78" x2="335" y2="78" stroke="#1b2a3a" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="376" y="76" font-size="14" fill="#1b2a3a">sheath fluid</text>
+  <text x="376" y="93" font-size="14" fill="#1b2a3a">squeezes cells</text>
+  <text x="376" y="110" font-size="14" fill="#1b2a3a">into single file</text>
+  <rect x="255" y="175" width="10" height="105" fill="#e6f0f8" stroke="#1b2a3a" stroke-width="1"/>
+  <circle cx="260" cy="190" r="4.5" fill="#b9c2cc"/>
+  <circle cx="260" cy="222" r="4.5" fill="#2ca02c"/>
+  <circle cx="260" cy="256" r="4.5" fill="#b9c2cc"/>
+  <line x1="60" y1="222" x2="252" y2="222" stroke="#1e88e5" stroke-width="4"/>
+  <text x="60" y="210" font-size="14" fill="#1e88e5">laser</text>
+  <line x1="270" y1="222" x2="340" y2="222" stroke="#1e88e5" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrB)"/>
+  <text x="348" y="218" font-size="14" fill="#1b2a3a">scattered and</text>
+  <text x="348" y="235" font-size="14" fill="#1b2a3a">fluorescent light</text>
+  <text x="348" y="252" font-size="14" fill="#1b2a3a">to detectors (B)</text>
+  <text x="240" y="284" font-size="14" fill="#1b2a3a" text-anchor="end">stream breaks</text>
+  <text x="240" y="301" font-size="14" fill="#1b2a3a" text-anchor="end">into droplets</text>
+  <circle cx="260" cy="292" r="6" fill="#e6f0f8" stroke="#1b2a3a" stroke-width="1"/>
+  <circle cx="260" cy="310" r="6" fill="#e6f0f8" stroke="#1b2a3a" stroke-width="1"/>
+  <rect x="198" y="332" width="12" height="60" fill="#f3d6d6" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="204" y="325" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">+</text>
+  <rect x="310" y="332" width="12" height="60" fill="#d6e2f3" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="316" y="325" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">−</text>
+  <line x1="260" y1="320" x2="260" y2="440" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="260" cy="345" r="6" fill="#e6f0f8" stroke="#1b2a3a" stroke-width="1"/>
+  <circle cx="260" cy="345" r="3" fill="#b9c2cc"/>
+  <path d="M260,320 Q266,372 372,442" fill="none" stroke="#2ca02c" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="282" cy="378" r="7" fill="#e6f0f8" stroke="#1b2a3a" stroke-width="1"/>
+  <circle cx="282" cy="378" r="3.5" fill="#2ca02c"/>
+  <text x="294" y="372" font-size="14" font-weight="bold" fill="#1b2a3a">+</text>
+  <path d="M242,444 L242,470 Q242,484 260,484 Q278,484 278,470 L278,444" fill="#fbfaf5" stroke="#1b2a3a" stroke-width="1.5"/>
+  <path d="M357,444 L357,470 Q357,484 375,484 Q393,484 393,470 L393,444" fill="#fbfaf5" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="234" y="472" font-size="14" fill="#1b2a3a" text-anchor="end">waste</text>
+  <text x="401" y="462" font-size="14" fill="#2ca02c">green cells</text>
+  <text x="401" y="479" font-size="14" fill="#2ca02c">(sorted)</text>
+  <text x="332" y="352" font-size="14" fill="#1b2a3a">a droplet with a</text>
+  <text x="332" y="369" font-size="14" fill="#1b2a3a">wanted cell gets</text>
+  <text x="332" y="386" font-size="14" fill="#1b2a3a">a charge</text>
+  <line x1="560" y1="20" x2="560" y2="490" stroke="#c9d3dd" stroke-width="1.5"/>
+  <text x="580" y="28" font-size="17" font-weight="bold" fill="#1b2a3a">B. Optics (seen from above)</text>
+  <line x1="590" y1="380" x2="710" y2="380" stroke="#1e88e5" stroke-width="4"/>
+  <text x="590" y="368" font-size="14" fill="#1e88e5">laser</text>
+  <circle cx="720" cy="380" r="9" fill="#e6f0f8" stroke="#1b2a3a" stroke-width="1.5"/>
+  <circle cx="720" cy="380" r="4" fill="#2ca02c"/>
+  <text x="720" y="412" font-size="14" fill="#1b2a3a" text-anchor="middle">cell in the stream</text>
+  <text x="720" y="429" font-size="14" fill="#1b2a3a" text-anchor="middle">(stream comes out of the page)</text>
+  <line x1="732" y1="380" x2="895" y2="380" stroke="#1e88e5" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrB)"/>
+  <rect x="900" y="358" width="70" height="44" rx="6" fill="#ffffff" stroke="#1e88e5" stroke-width="2.5"/>
+  <text x="935.0" y="385.0" font-size="15" font-weight="bold" fill="#1e88e5" text-anchor="middle">FSC</text>
+  <text x="980" y="377.0" font-size="14" fill="#1b2a3a">forward scatter:</text>
+  <text x="980" y="394.0" font-size="14" fill="#1b2a3a">cell size</text>
+  <line x1="720" y1="368" x2="720" y2="92" stroke="#7a8794" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arr)"/>
+  <text x="708" y="310" font-size="14" fill="#1b2a3a" text-anchor="end">light at 90°</text>
+  <line x1="702" y1="288" x2="738" y2="252" stroke="#1b2a3a" stroke-width="4"/>
+  <line x1="738" y1="270" x2="895" y2="270" stroke="#2ca02c" stroke-width="2" marker-end="url(#arrG)"/>
+  <rect x="900" y="248" width="70" height="44" rx="6" fill="#ffffff" stroke="#2ca02c" stroke-width="2.5"/>
+  <text x="935.0" y="275.0" font-size="15" font-weight="bold" fill="#2ca02c" text-anchor="middle">FL1</text>
+  <text x="980" y="267.0" font-size="14" fill="#1b2a3a">green fluorescence:</text>
+  <text x="980" y="284.0" font-size="14" fill="#1b2a3a">antibody 1</text>
+  <line x1="702" y1="198" x2="738" y2="162" stroke="#1b2a3a" stroke-width="4"/>
+  <line x1="738" y1="180" x2="895" y2="180" stroke="#d62728" stroke-width="2" marker-end="url(#arrR)"/>
+  <rect x="900" y="158" width="70" height="44" rx="6" fill="#ffffff" stroke="#d62728" stroke-width="2.5"/>
+  <text x="935.0" y="185.0" font-size="15" font-weight="bold" fill="#d62728" text-anchor="middle">FL2</text>
+  <text x="980" y="177.0" font-size="14" fill="#1b2a3a">red fluorescence:</text>
+  <text x="980" y="194.0" font-size="14" fill="#1b2a3a">antibody 2</text>
+  <text x="696" y="225" font-size="14" fill="#1b2a3a" text-anchor="end">colour-splitting</text>
+  <text x="696" y="242" font-size="14" fill="#1b2a3a" text-anchor="end">mirrors</text>
+  <rect x="685" y="46" width="70" height="44" rx="6" fill="#ffffff" stroke="#1e88e5" stroke-width="2.5"/>
+  <text x="720.0" y="73.0" font-size="15" font-weight="bold" fill="#1e88e5" text-anchor="middle">SSC</text>
+  <text x="765" y="65.0" font-size="14" fill="#1b2a3a">side scatter: granules,</text>
+  <text x="765" y="82.0" font-size="14" fill="#1b2a3a">inner complexity</text>
+</svg>

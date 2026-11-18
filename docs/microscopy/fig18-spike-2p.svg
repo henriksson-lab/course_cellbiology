@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="380" viewBox="0 0 860 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig18: SARS-CoV-2 spike, simplified. Prefusion shape (target of neutralising antibodies) can spring into a long postfusion rod. Two prolines (2P) at a hinge in S2 block this change. Cartoon, not to scale. -->
+  <defs>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/>
+    </marker>
+  </defs>
+
+  <!-- ===== left: prefusion ===== -->
+  <text x="150" y="26" font-size="18" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Prefusion spike</text>
+  <text x="150" y="46" font-size="14" fill="#1b2a3a" text-anchor="middle">(shape seen by good antibodies)</text>
+  <!-- membrane -->
+  <rect x="40" y="318" width="230" height="16" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+  <text x="155" y="356" font-size="14" fill="#8a6a12" text-anchor="middle">virus membrane</text>
+  <!-- S2 stalk -->
+  <path d="M138,318 L134,250 L124,196 L176,196 L166,250 L162,318 Z" fill="#9fb3c8" stroke="#1b2a3a" stroke-width="2"/>
+  <!-- S1 head -->
+  <path d="M90,196 C78,150 96,82 150,76 C204,82 222,150 210,196 Z" fill="#d6dde5" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="150" y="146" font-size="18" font-weight="bold" fill="#1b2a3a" text-anchor="middle">S1</text>
+  <text x="150" y="166" font-size="13" fill="#1b2a3a" text-anchor="middle">binds ACE2</text>
+  <text x="150" y="292" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">S2</text>
+  <!-- 2P lock at the hinge -->
+  <circle cx="141" cy="236" r="8" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+  <circle cx="159" cy="236" r="8" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+  <line x1="168" y1="236" x2="232" y2="236" stroke="#e8590c" stroke-width="1.5"/>
+  <text x="238" y="232" font-size="15" font-weight="bold" fill="#e8590c">2P: two prolines</text>
+  <text x="238" y="250" font-size="14" fill="#e8590c">put at the hinge;</text>
+  <text x="238" y="267" font-size="14" fill="#e8590c">lock the shape</text>
+
+  <!-- ===== arrow ===== -->
+  <line x1="400" y1="170" x2="520" y2="170" stroke="#1b2a3a" stroke-width="3" marker-end="url(#a)"/>
+  <text x="460" y="148" font-size="14" fill="#1b2a3a" text-anchor="middle">S1 falls off,</text>
+  <text x="460" y="130" font-size="14" fill="#1b2a3a" text-anchor="middle">without 2P:</text>
+  <text x="460" y="196" font-size="14" fill="#1b2a3a" text-anchor="middle">S2 springs into</text>
+  <text x="460" y="213" font-size="14" fill="#1b2a3a" text-anchor="middle">a long rod</text>
+  <!-- blocked mark -->
+  <g stroke="#e8590c" stroke-width="5" stroke-linecap="round">
+    <line x1="446" y1="232" x2="474" y2="260"/>
+    <line x1="474" y1="232" x2="446" y2="260"/>
+  </g>
+  <text x="460" y="284" font-size="14" font-weight="bold" fill="#e8590c" text-anchor="middle">blocked by 2P</text>
+
+  <!-- ===== right: postfusion ===== -->
+  <text x="690" y="26" font-size="18" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Postfusion</text>
+  <text x="690" y="46" font-size="14" fill="#1b2a3a" text-anchor="middle">(fewer targets for protective antibodies)</text>
+  <rect x="580" y="318" width="230" height="16" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+  <path d="M680,318 L678,70 L702,70 L700,318 Z" fill="#9fb3c8" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="714" y="200" font-size="16" font-weight="bold" fill="#1b2a3a">S2</text>
+  <!-- detached S1 fragments -->
+  <path d="M590,110 C584,90 596,70 618,70 C640,70 650,92 642,112 Z" fill="#d6dde5" stroke="#1b2a3a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="616" y="134" font-size="13" fill="#1b2a3a" text-anchor="middle">S1 gone</text>
+</svg>

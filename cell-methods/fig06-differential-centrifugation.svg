@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="404" viewBox="0 0 1060 404" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig06: homogenisation and differential centrifugation -->
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1b2a3a"/>
+    </marker>
+  </defs>
+  <path d="M52.0,135 L52.0,242 Q52.0,270 80,270 Q108.0,270 108.0,242 L108.0,135 Z" fill="#fbfaf5"/>
+  <circle cx="70.6" cy="204.9" r="7" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.2"/>
+  <circle cx="75.3" cy="211.4" r="4" fill="#f8e9ec" stroke="#a8324a" stroke-width="1.2"/>
+  <circle cx="84.5" cy="152.2" r="3" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="1.2"/>
+  <circle cx="62.5" cy="237.1" r="3" fill="#e3f3ea" stroke="#2e8b57" stroke-width="1.2"/>
+  <circle cx="71.3" cy="170.8" r="1.5" fill="#555555" stroke="#555555" stroke-width="1.2"/>
+  <circle cx="97.8" cy="196.7" r="7" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.2"/>
+  <circle cx="92.1" cy="197.4" r="4" fill="#f8e9ec" stroke="#a8324a" stroke-width="1.2"/>
+  <circle cx="85.0" cy="161.6" r="3" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="1.2"/>
+  <circle cx="84.9" cy="240.5" r="3" fill="#e3f3ea" stroke="#2e8b57" stroke-width="1.2"/>
+  <circle cx="80.8" cy="226.5" r="1.5" fill="#555555" stroke="#555555" stroke-width="1.2"/>
+  <circle cx="86.2" cy="152.0" r="7" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.2"/>
+  <circle cx="89.3" cy="210.0" r="4" fill="#f8e9ec" stroke="#a8324a" stroke-width="1.2"/>
+  <circle cx="72.8" cy="148.4" r="3" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="1.2"/>
+  <circle cx="93.2" cy="197.0" r="3" fill="#e3f3ea" stroke="#2e8b57" stroke-width="1.2"/>
+  <circle cx="87.9" cy="241.7" r="1.5" fill="#555555" stroke="#555555" stroke-width="1.2"/>
+  <circle cx="87.7" cy="246.3" r="7" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.2"/>
+  <circle cx="76.2" cy="233.1" r="4" fill="#f8e9ec" stroke="#a8324a" stroke-width="1.2"/>
+  <circle cx="78.0" cy="247.9" r="3" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="1.2"/>
+  <circle cx="93.6" cy="155.7" r="3" fill="#e3f3ea" stroke="#2e8b57" stroke-width="1.2"/>
+  <circle cx="66.9" cy="168.9" r="1.5" fill="#555555" stroke="#555555" stroke-width="1.2"/>
+  <circle cx="96.8" cy="193.0" r="7" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.2"/>
+  <circle cx="84.6" cy="178.1" r="4" fill="#f8e9ec" stroke="#a8324a" stroke-width="1.2"/>
+  <circle cx="80.3" cy="187.4" r="3" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="1.2"/>
+  <circle cx="74.6" cy="209.4" r="3" fill="#e3f3ea" stroke="#2e8b57" stroke-width="1.2"/>
+  <circle cx="83.0" cy="244.5" r="1.5" fill="#555555" stroke="#555555" stroke-width="1.2"/>
+  <circle cx="86.6" cy="247.2" r="7" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.2"/>
+  <path d="M52.0,110 L52.0,242 Q52.0,270 80,270 Q108.0,270 108.0,242 L108.0,110" fill="none" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="80" y="62" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Homogenate</text>
+  <text x="80" y="82" font-size="14" fill="#1b2a3a" text-anchor="middle">broken cells</text>
+  <text x="80" y="298" font-size="14" fill="#1b2a3a" text-anchor="middle">all organelles</text>
+  <text x="80" y="316" font-size="14" fill="#1b2a3a" text-anchor="middle">mixed</text>
+  <path d="M232.0,135 L232.0,242 Q232.0,270 260,270 Q288.0,270 288.0,242 L288.0,135 Z" fill="#fbfaf5"/>
+  <path d="M233.5,248 Q233.5,268.5 260,268.5 Q286.5,268.5 286.5,248 Z" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+  <path d="M232.0,110 L232.0,242 Q232.0,270 260,270 Q288.0,270 288.0,242 L288.0,110" fill="none" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="260" y="62" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">1,000 g</text>
+  <text x="260" y="82" font-size="14" fill="#1b2a3a" text-anchor="middle">10 min</text>
+  <text x="260" y="298" font-size="14" fill="#6b4fa0" text-anchor="middle">nuclei</text>
+  <path d="M412.0,135 L412.0,242 Q412.0,270 440,270 Q468.0,270 468.0,242 L468.0,135 Z" fill="#fbfaf5"/>
+  <path d="M413.5,248 Q413.5,268.5 440,268.5 Q466.5,268.5 466.5,248 Z" fill="#f8e9ec" stroke="#a8324a" stroke-width="1.5"/>
+  <path d="M412.0,110 L412.0,242 Q412.0,270 440,270 Q468.0,270 468.0,242 L468.0,110" fill="none" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="440" y="62" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">20,000 g</text>
+  <text x="440" y="82" font-size="14" fill="#1b2a3a" text-anchor="middle">20 min</text>
+  <text x="440" y="298" font-size="14" fill="#a8324a" text-anchor="middle">mitochondria,</text>
+  <text x="440" y="316" font-size="14" fill="#a8324a" text-anchor="middle">lysosomes,</text>
+  <text x="440" y="334" font-size="14" fill="#a8324a" text-anchor="middle">peroxisomes</text>
+  <path d="M592.0,135 L592.0,242 Q592.0,270 620,270 Q648.0,270 648.0,242 L648.0,135 Z" fill="#fbfaf5"/>
+  <path d="M593.5,248 Q593.5,268.5 620,268.5 Q646.5,268.5 646.5,248 Z" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="1.5"/>
+  <path d="M592.0,110 L592.0,242 Q592.0,270 620,270 Q648.0,270 648.0,242 L648.0,110" fill="none" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="620" y="62" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">80,000 g</text>
+  <text x="620" y="82" font-size="14" fill="#1b2a3a" text-anchor="middle">1 h</text>
+  <text x="620" y="298" font-size="14" fill="#2a7f8f" text-anchor="middle">microsomes</text>
+  <text x="620" y="316" font-size="14" fill="#2a7f8f" text-anchor="middle">(ER, Golgi and</text>
+  <text x="620" y="334" font-size="14" fill="#2a7f8f" text-anchor="middle">membrane pieces)</text>
+  <path d="M772.0,135 L772.0,242 Q772.0,270 800,270 Q828.0,270 828.0,242 L828.0,135 Z" fill="#fbfaf5"/>
+  <path d="M773.5,248 Q773.5,268.5 800,268.5 Q826.5,268.5 826.5,248 Z" fill="#e5e5e5" stroke="#555555" stroke-width="1.5"/>
+  <path d="M772.0,110 L772.0,242 Q772.0,270 800,270 Q828.0,270 828.0,242 L828.0,110" fill="none" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="800" y="62" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">150,000 g</text>
+  <text x="800" y="82" font-size="14" fill="#1b2a3a" text-anchor="middle">3 h</text>
+  <text x="800" y="298" font-size="14" fill="#1b2a3a" text-anchor="middle">ribosomes,</text>
+  <text x="800" y="316" font-size="14" fill="#1b2a3a" text-anchor="middle">large protein</text>
+  <text x="800" y="334" font-size="14" fill="#1b2a3a" text-anchor="middle">complexes</text>
+  <path d="M952.0,135 L952.0,242 Q952.0,270 980,270 Q1008.0,270 1008.0,242 L1008.0,135 Z" fill="#fbfaf5"/>
+  <circle cx="992.8" cy="254.0" r="1.6" fill="#1b2a3a"/>
+  <circle cx="986.2" cy="162.9" r="1.6" fill="#1b2a3a"/>
+  <circle cx="993.0" cy="251.1" r="1.6" fill="#1b2a3a"/>
+  <circle cx="994.6" cy="207.6" r="1.6" fill="#1b2a3a"/>
+  <circle cx="987.7" cy="168.2" r="1.6" fill="#1b2a3a"/>
+  <circle cx="991.9" cy="208.1" r="1.6" fill="#1b2a3a"/>
+  <circle cx="972.3" cy="152.0" r="1.6" fill="#1b2a3a"/>
+  <circle cx="992.7" cy="253.9" r="1.6" fill="#1b2a3a"/>
+  <circle cx="965.2" cy="233.1" r="1.6" fill="#1b2a3a"/>
+  <circle cx="976.8" cy="161.6" r="1.6" fill="#1b2a3a"/>
+  <circle cx="972.6" cy="229.6" r="1.6" fill="#1b2a3a"/>
+  <circle cx="993.4" cy="149.9" r="1.6" fill="#1b2a3a"/>
+  <circle cx="984.1" cy="149.9" r="1.6" fill="#1b2a3a"/>
+  <circle cx="987.9" cy="181.4" r="1.6" fill="#1b2a3a"/>
+  <path d="M952.0,110 L952.0,242 Q952.0,270 980,270 Q1008.0,270 1008.0,242 L1008.0,110" fill="none" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="980" y="62" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Cytosol</text>
+  <text x="980" y="82" font-size="14" fill="#1b2a3a" text-anchor="middle">what is left</text>
+  <text x="980" y="298" font-size="14" fill="#1b2a3a" text-anchor="middle">soluble</text>
+  <text x="980" y="316" font-size="14" fill="#1b2a3a" text-anchor="middle">proteins</text>
+  <path d="M116,150 C146,118 192,118 222,150" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="170.0" y="112" font-size="14" font-style="italic" fill="#1b2a3a" text-anchor="middle">spin</text>
+  <path d="M296,150 C326,118 372,118 402,150" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="350.0" y="112" font-size="14" font-style="italic" fill="#1b2a3a" text-anchor="middle">supernatant</text>
+  <path d="M476,150 C506,118 552,118 582,150" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="530.0" y="112" font-size="14" font-style="italic" fill="#1b2a3a" text-anchor="middle">supernatant</text>
+  <path d="M656,150 C686,118 732,118 762,150" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="710.0" y="112" font-size="14" font-style="italic" fill="#1b2a3a" text-anchor="middle">supernatant</text>
+  <path d="M836,150 C866,118 912,118 942,150" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="890.0" y="112" font-size="14" font-style="italic" fill="#1b2a3a" text-anchor="middle">supernatant</text>
+  <line x1="230" y1="374" x2="840" y2="374" stroke="#e8590c" stroke-width="3" marker-end="url(#arrO)"/>
+  <defs><marker id="arrO" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#e8590c"/></marker></defs>
+  <text x="535" y="394" font-size="15" fill="#e8590c" text-anchor="middle">faster and longer spins pellet smaller particles</text>
+  <text x="196" y="236" font-size="14" font-style="italic" fill="#1b2a3a" text-anchor="end">pellet</text>
+  <line x1="168" y1="242" x2="230" y2="260" stroke="#1b2a3a" stroke-width="1.5" marker-end="url(#arr)"/>
+</svg>

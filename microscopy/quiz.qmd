@@ -1,0 +1,104 @@
+---
+title: "Quiz: seeing cells (microscopy)"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Seeing cells: microscopy*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** A student says: "If I use a 100× objective and a 20× eyepiece instead of a 10× eyepiece, I will be able to see ribosomes in a light microscope." Is the student right? `[ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does the eyepiece change: the size of the image or the amount of detail in it? How big is a ribosome compared with the resolution limit?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+No. A stronger eyepiece only **magnifies** the image more; it does not improve **resolution**. Resolution is set by the wavelength of light and the numerical aperture of the objective, and is about **200 nm** for the best light microscope. A ribosome is about 25 nm, so it stays below the limit. Extra magnification just makes the blur bigger ("empty magnification").
+:::
+
+---
+
+**Q2.** Using $d \approx 0.61\,\lambda / \mathrm{NA}$, which change gives better (smaller) resolution: (a) blue light (450 nm) instead of red light (650 nm), or (b) a dry objective with NA 0.75 instead of an oil objective with NA 1.4? `[ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Smaller $\lambda$ and larger NA both make $d$ smaller.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) improves resolution: shorter wavelength gives smaller $d$ (about 196 nm with NA 1.4 instead of about 283 nm). (b) makes it **worse**: a lower NA collects light from a narrower cone, so $d$ grows (for 500 nm light, about 407 nm with NA 0.75 instead of about 218 nm with NA 1.4).
+:::
+
+---
+
+**Q3.** Why can unstained living cells be seen clearly in a phase-contrast microscope but hardly at all in a bright-field microscope? `[ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Cells absorb very little light. What else happens to light that passes through a nucleus or a membrane?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Cells are mostly water and absorb little visible light, so in bright field the light passes through almost unchanged. But dense parts of the cell (higher refractive index) **slow the light down**, giving a phase shift that the eye cannot see. Phase-contrast optics turn these phase differences into **differences in brightness**, so the nucleus and the cell edges become visible without stain.
+:::
+
+---
+
+**Q4.** A fluorophore is excited at 490 nm and emits at 520 nm. What is the Stokes shift, and why is it essential for fluorescence microscopy? `[ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of the filter cube: what would happen if the emitted light had the same colour as the excitation light?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The Stokes shift is the difference between the excitation and emission peaks, here **30 nm**. Emitted light has a longer wavelength because some energy is lost as heat before emission. Because the colours differ, the **dichroic mirror and emission filter** can block the very bright excitation light and pass only the weak emitted light. Without the shift, the glow would be lost in the excitation light.
+:::
+
+---
+
+**Q5.** You want to follow how fast a vesicle protein moves in a living neuron. Should you use immunofluorescence or a GFP fusion protein? Give one reason and one thing you must check. `[ELO 1]` `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What must you do to cells before antibodies can get inside?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+A **GFP fusion protein**. Immunofluorescence needs the cells to be **fixed and permeabilised**, so they are dead and nothing moves. A GFP fusion is made by the living cell itself. You must check that the GFP tag does **not change** the protein: it should still work and be in the same place as the untagged protein (for example, compare with antibody staining in fixed cells).
+:::
+
+---
+
+**Q6.** What does the pinhole in a confocal microscope do, and what do you gain from it? `[ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Where is light from the focal plane focused, and where is light from other depths focused?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The pinhole sits where light **from the focal plane** comes to a sharp point, so that light passes. Light from planes **above and below** is spread out at the pinhole and mostly blocked. You gain a sharp **optical section** (about 0.5–1 µm thick) without out-of-focus haze, and by refocusing step by step you can build a **3D stack** without cutting the sample.
+:::
+
+---
+
+**Q7.** Match each question to the best method: (i) the shape of microvilli on the surface of an intestinal cell; (ii) the atomic structure of a purified membrane pump; (iii) how the ER membrane is arranged next to a mitochondrion inside a cell, at nanometre detail. Methods: TEM, SEM, single-particle cryo-EM. `[ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which method shows surfaces, which shows thin slices through a cell, and which averages many copies of one purified molecule?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(i) **SEM**: a scanned beam shows the 3D surface. (ii) **Single-particle cryo-EM**: many images of the purified protein in thin ice are averaged into a map, often better than 0.3 nm. (iii) **TEM** of thin sections (or cryo-electron tomography of a frozen cell) shows membranes inside the cell at about 1–2 nm.
+:::
+
+---
+
+**Q8.** In a figure, protein A (green) and protein B (red) give yellow in the merged confocal image. The authors conclude "A binds B". What is wrong with this conclusion? `[ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+How close must two proteins be to look like one spot in a confocal image? How big is a protein?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Yellow only means the two signals are in the **same spot within the resolution limit**, about 200 nm, which is about 40 protein diameters. A and B could be in the same organelle without touching. To claim binding you need other evidence, for example co-immunoprecipitation (next lecture), or a method with much better resolution. You should also check the controls (for example cells lacking A) and that the signal does not leak from one channel into the other.
+:::

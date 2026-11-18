@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="500" viewBox="0 0 860 500" font-family="Helvetica, Arial, sans-serif">
+<!-- fig10: confocal pinhole. Light from the focal plane focuses on the pinhole and passes; light from other planes is spread out and blocked. Right: optical sections stacked into a 3D image. -->
+<rect x="100" y="350" width="260" height="110" rx="6" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
+<line x1="100" y1="420" x2="360" y2="420" stroke="#1b2a3a" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="108" y="442" font-size="16" fill="#1b2a3a">focal plane</text>
+<text x="230" y="482" font-size="17" fill="#1b2a3a" text-anchor="middle">thick sample</text>
+<ellipse cx="230" cy="300" rx="72" ry="13" fill="#e9f3fb" stroke="#1b2a3a" stroke-width="2"/>
+<text x="148" y="305" font-size="17" fill="#1b2a3a" text-anchor="end">lens</text>
+<line x1="230" y1="390" x2="170" y2="300" stroke="#7a8794" stroke-width="2.5" stroke-dasharray="6 4"/>
+<line x1="170" y1="300" x2="189.7" y2="64" stroke="#7a8794" stroke-width="2.5" stroke-dasharray="6 4"/>
+<line x1="230" y1="390" x2="290" y2="300" stroke="#7a8794" stroke-width="2.5" stroke-dasharray="6 4"/>
+<line x1="290" y1="300" x2="270.3" y2="64" stroke="#7a8794" stroke-width="2.5" stroke-dasharray="6 4"/>
+<line x1="230" y1="420" x2="170" y2="300" stroke="#2a9d48" stroke-width="3"/>
+<line x1="170" y1="300" x2="230" y2="60" stroke="#2a9d48" stroke-width="3"/>
+<line x1="230" y1="60" x2="245.0" y2="35" stroke="#2a9d48" stroke-width="3"/>
+<line x1="230" y1="420" x2="290" y2="300" stroke="#2a9d48" stroke-width="3"/>
+<line x1="290" y1="300" x2="230" y2="60" stroke="#2a9d48" stroke-width="3"/>
+<line x1="230" y1="60" x2="215.0" y2="35" stroke="#2a9d48" stroke-width="3"/>
+<circle cx="230" cy="420" r="6" fill="#2a9d48" stroke="#1b2a3a"/>
+<circle cx="230" cy="390" r="6" fill="#b5bec7" stroke="#1b2a3a"/>
+<rect x="110" y="56" width="113" height="8" fill="#1b2a3a"/>
+<rect x="237" y="56" width="113" height="8" fill="#1b2a3a"/>
+<text x="102" y="65" font-size="17" font-weight="bold" fill="#1b2a3a" text-anchor="end">pinhole</text>
+<rect x="185" y="4" width="90" height="26" rx="4" fill="#dfe4ea" stroke="#1b2a3a" stroke-width="2"/>
+<text x="230" y="22" font-size="16" fill="#1b2a3a" text-anchor="middle">detector</text>
+<g font-size="17"><circle cx="380" cy="150" r="6" fill="#2a9d48" stroke="#1b2a3a"/><text x="392" y="146" fill="#1b2a3a">light from the focal plane:</text><text x="392" y="164" fill="#1b2a3a">focused on the pinhole, passes</text>
+<circle cx="380" cy="210" r="6" fill="#b5bec7" stroke="#1b2a3a"/><text x="392" y="206" fill="#1b2a3a">light from above or below:</text><text x="392" y="224" fill="#1b2a3a">spread out, mostly blocked</text></g>
+<text x="710" y="290" font-size="17" font-weight="bold" fill="#1b2a3a" text-anchor="middle">optical sections</text>
+<path d="M620,340 L670,320 L800,320 L750,340 Z" fill="#e6f3ea" stroke="#1b2a3a" stroke-width="1.5"/>
+<path d="M620,370 L670,350 L800,350 L750,370 Z" fill="#e6f3ea" stroke="#1b2a3a" stroke-width="1.5"/>
+<path d="M620,400 L670,380 L800,380 L750,400 Z" fill="#bfe5c9" stroke="#1b2a3a" stroke-width="1.5"/>
+<path d="M620,430 L670,410 L800,410 L750,430 Z" fill="#e6f3ea" stroke="#1b2a3a" stroke-width="1.5"/>
+<path d="M620,460 L670,440 L800,440 L750,460 Z" fill="#e6f3ea" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="710" y="482" font-size="16" fill="#1b2a3a" text-anchor="middle">refocus step by step → 3D image</text>
+<line x1="370" y1="417" x2="612" y2="393" stroke="#2a9d48" stroke-width="1.5" stroke-dasharray="3 3"/>
+</svg>

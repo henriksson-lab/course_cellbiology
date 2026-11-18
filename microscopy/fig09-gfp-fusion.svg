@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="230" viewBox="0 0 880 230" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig09: making a GFP fusion protein. Gene for protein X joined in frame to the GFP gene; the cell makes X-GFP, which goes where X normally goes. -->
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/>
+    </marker>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#b9f0b0"/>
+      <stop offset="1" stop-color="#2a9d48" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- step 1: DNA construct -->
+  <text x="20" y="30" font-size="16" font-weight="bold" fill="#1b2a3a">1. Join the genes (DNA)</text>
+  <line x1="20" y1="90" x2="300" y2="90" stroke="#1b2a3a" stroke-width="2"/>
+  <rect x="30" y="74" width="56" height="32" fill="#dfe4ea" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="58" y="96" font-size="14" fill="#1b2a3a" text-anchor="middle">prom.</text>
+  <rect x="90" y="74" width="120" height="32" fill="#c9cfd6" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="150" y="96" font-size="15" fill="#1b2a3a" text-anchor="middle">gene X</text>
+  <rect x="210" y="74" width="80" height="32" fill="#7fd08f" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="250" y="96" font-size="15" fill="#1b2a3a" text-anchor="middle">GFP</text>
+  <text x="20" y="136" font-size="14" fill="#1b2a3a">same reading frame, no stop</text>
+  <text x="20" y="153" font-size="14" fill="#1b2a3a">codon between X and GFP</text>
+
+  <!-- arrow 1 -->
+  <line x1="310" y1="90" x2="380" y2="90" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <text x="345" y="72" font-size="13" fill="#1b2a3a" text-anchor="middle">put into</text>
+  <text x="345" y="114" font-size="13" fill="#1b2a3a" text-anchor="middle">cells</text>
+
+  <!-- step 2: fusion protein -->
+  <text x="392" y="30" font-size="16" font-weight="bold" fill="#1b2a3a">2. The cell makes X–GFP</text>
+  <ellipse cx="440" cy="92" rx="38" ry="28" fill="#c9cfd6" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="440" y="97" font-size="15" fill="#1b2a3a" text-anchor="middle">X</text>
+  <line x1="478" y1="92" x2="498" y2="92" stroke="#1b2a3a" stroke-width="2"/>
+  <!-- GFP barrel -->
+  <rect x="498" y="68" width="40" height="48" rx="8" fill="#7fd08f" stroke="#1b2a3a" stroke-width="1.5"/>
+  <ellipse cx="518" cy="68" rx="20" ry="6" fill="#a8e2b6" stroke="#1b2a3a" stroke-width="1.5"/>
+  <circle cx="518" cy="94" r="5" fill="#2a9d48"/>
+  <text x="470" y="146" font-size="14" fill="#1b2a3a" text-anchor="middle">GFP folds into a barrel;</text>
+  <text x="470" y="163" font-size="14" fill="#1b2a3a" text-anchor="middle">its light-emitting group</text>
+  <text x="470" y="180" font-size="14" fill="#1b2a3a" text-anchor="middle">forms inside by itself</text>
+
+  <!-- arrow 2 -->
+  <line x1="560" y1="90" x2="630" y2="90" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- step 3: cell with labelled structure -->
+  <text x="644" y="30" font-size="16" font-weight="bold" fill="#1b2a3a">3. Watch it in a live cell</text>
+  <path d="M650,95 C650,50 700,46 750,52 C810,58 850,80 840,120 C832,160 780,170 730,165 C680,160 650,140 650,95 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
+  <ellipse cx="745" cy="108" rx="30" ry="22" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+  <g stroke="#2a9d48" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M745,86 C735,70 700,62 668,78"/>
+    <path d="M770,98 C795,80 820,78 834,92"/>
+    <path d="M770,120 C800,135 820,140 832,128"/>
+    <path d="M730,128 C710,145 690,148 664,128"/>
+    <path d="M760,88 C770,68 790,60 810,64"/>
+    <path d="M722,100 C700,95 676,100 656,106"/>
+  </g>
+  <text x="745" y="196" font-size="14" fill="#1b2a3a" text-anchor="middle">green signal shows where X is</text>
+  <text x="745" y="213" font-size="14" fill="#1b2a3a" text-anchor="middle">(here: X binds microtubules)</text>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="392" viewBox="0 0 1180 392" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig08: antibody, epitope, immunoprecipitation, link to immunofluorescence -->
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1b2a3a"/>
+    </marker>
+  </defs>
+  <text x="20" y="30" font-size="17" font-weight="bold" fill="#1b2a3a">A. What an antibody binds</text>
+  <ellipse cx="108" cy="122" rx="52" ry="32" fill="#eef0f3" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="104" y="119" font-size="14" fill="#1b2a3a" text-anchor="middle">target</text>
+  <text x="104" y="136" font-size="14" fill="#1b2a3a" text-anchor="middle">protein</text>
+<g transform="translate(200,292) rotate(0) scale(1.0)"><line x1="-6" y1="0" x2="-6" y2="-70" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="6" y1="0" x2="6" y2="-70" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="-6" y1="-70" x2="-50" y2="-128" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="6" y1="-70" x2="50" y2="-128" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="-22" y1="-70" x2="-60" y2="-120" stroke="#c3cfe0" stroke-width="9" stroke-linecap="round"/><line x1="22" y1="-70" x2="60" y2="-120" stroke="#c3cfe0" stroke-width="9" stroke-linecap="round"/></g>
+  <circle cx="148" cy="148" r="9" fill="#e8590c"/>
+  <text x="180" y="84" font-size="14" fill="#e8590c">epitope: the small patch</text>
+  <text x="180" y="101" font-size="14" fill="#e8590c">it binds (5–10 amino acids)</text>
+  <line x1="186" y1="107" x2="155" y2="140" stroke="#e8590c" stroke-width="1.5"/>
+  <text x="266" y="172" font-size="14" fill="#1b2a3a">second,</text>
+  <text x="266" y="189" font-size="14" fill="#1b2a3a">identical</text>
+  <text x="266" y="206" font-size="14" fill="#1b2a3a">binding site</text>
+  <text x="222" y="252" font-size="14" font-weight="bold" fill="#1b2a3a">antibody (IgG)</text>
+  <text x="222" y="269" font-size="14" fill="#6f86a6">dark: heavy chains</text>
+  <text x="222" y="286" font-size="14" fill="#8ea2bf">pale: light chains</text>
+  <text x="20" y="340" font-size="14" fill="#1b2a3a">One antibody = one epitope = one protein</text>
+  <text x="20" y="358" font-size="14" fill="#1b2a3a">(if it is specific: always check!)</text>
+  <line x1="372" y1="20" x2="372" y2="385" stroke="#c9d3dd" stroke-width="1.5"/>
+  <text x="390" y="30" font-size="17" font-weight="bold" fill="#1b2a3a">B. Immunoprecipitation (IP)</text>
+  <rect x="395" y="70" width="120" height="190" rx="14" fill="#fbfaf5" stroke="#1b2a3a" stroke-width="1.5"/>
+<circle cx="470" cy="210" r="22" fill="#d9dde3" stroke="#1b2a3a" stroke-width="1.5"/><g transform="translate(470,188) rotate(0) scale(0.42)"><line x1="-6" y1="0" x2="-6" y2="-70" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="6" y1="0" x2="6" y2="-70" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="-6" y1="-70" x2="-50" y2="-128" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="6" y1="-70" x2="50" y2="-128" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="-22" y1="-70" x2="-60" y2="-120" stroke="#c3cfe0" stroke-width="9" stroke-linecap="round"/><line x1="22" y1="-70" x2="60" y2="-120" stroke="#c3cfe0" stroke-width="9" stroke-linecap="round"/></g><ellipse cx="449" cy="125" rx="17" ry="12" fill="#e9eef8" stroke="#3b5bab" stroke-width="1.5"/><circle cx="449" cy="137" r="4" fill="#e8590c"/><rect x="422" y="96" width="26" height="20" rx="8" fill="#e3f3ea" stroke="#2e8b57" stroke-width="1.5"/>
+  <rect x="410" y="90" width="14" height="10" rx="4" fill="#eceff3" stroke="#9aa5b1" stroke-width="1.2"/>
+  <rect x="500" y="90" width="14" height="10" rx="4" fill="#eceff3" stroke="#9aa5b1" stroke-width="1.2"/>
+  <rect x="415" y="230" width="14" height="10" rx="4" fill="#eceff3" stroke="#9aa5b1" stroke-width="1.2"/>
+  <rect x="500" y="235" width="14" height="10" rx="4" fill="#eceff3" stroke="#9aa5b1" stroke-width="1.2"/>
+  <rect x="412" y="160" width="14" height="10" rx="4" fill="#eceff3" stroke="#9aa5b1" stroke-width="1.2"/>
+  <rect x="505" y="165" width="14" height="10" rx="4" fill="#eceff3" stroke="#9aa5b1" stroke-width="1.2"/>
+  <rect x="440" y="95" width="14" height="10" rx="4" fill="#eceff3" stroke="#9aa5b1" stroke-width="1.2"/>
+  <text x="455" y="282" font-size="14" fill="#1b2a3a" text-anchor="middle">1. Mix cell lysate</text>
+  <text x="455" y="299" font-size="14" fill="#1b2a3a" text-anchor="middle">with antibody on beads</text>
+  <line x1="525" y1="165" x2="575" y2="165" stroke="#1b2a3a" stroke-width="2" marker-end="url(#arr)"/>
+<circle cx="625" cy="210" r="22" fill="#d9dde3" stroke="#1b2a3a" stroke-width="1.5"/><g transform="translate(625,188) rotate(0) scale(0.42)"><line x1="-6" y1="0" x2="-6" y2="-70" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="6" y1="0" x2="6" y2="-70" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="-6" y1="-70" x2="-50" y2="-128" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="6" y1="-70" x2="50" y2="-128" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="-22" y1="-70" x2="-60" y2="-120" stroke="#c3cfe0" stroke-width="9" stroke-linecap="round"/><line x1="22" y1="-70" x2="60" y2="-120" stroke="#c3cfe0" stroke-width="9" stroke-linecap="round"/></g><ellipse cx="604" cy="125" rx="17" ry="12" fill="#e9eef8" stroke="#3b5bab" stroke-width="1.5"/><circle cx="604" cy="137" r="4" fill="#e8590c"/><rect x="577" y="96" width="26" height="20" rx="8" fill="#e3f3ea" stroke="#2e8b57" stroke-width="1.5"/>
+  <text x="625" y="282" font-size="14" fill="#1b2a3a" text-anchor="middle">2. Spin down beads,</text>
+  <text x="625" y="299" font-size="14" fill="#1b2a3a" text-anchor="middle">wash away the rest</text>
+  <text x="660" y="100" font-size="14" fill="#2e8b57">partner</text>
+  <line x1="656" y1="96" x2="605" y2="94" stroke="#2e8b57" stroke-width="1.2"/>
+  <text x="660" y="130" font-size="14" fill="#3b5bab">target</text>
+  <line x1="656" y1="126" x2="622" y2="126" stroke="#3b5bab" stroke-width="1.2"/>
+  <text x="660" y="214" font-size="14" fill="#1b2a3a">bead</text>
+  <line x1="656" y1="210" x2="648" y2="210" stroke="#1b2a3a" stroke-width="1.2"/>
+  <text x="390" y="340" font-size="14" fill="#1b2a3a">3. Run what is on the beads on a western blot.</text>
+  <text x="390" y="358" font-size="14" fill="#1b2a3a">The target comes down, and so do proteins</text>
+  <text x="390" y="376" font-size="14" fill="#1b2a3a">bound to it (<tspan font-weight="bold">co-IP</tspan>: who binds whom?)</text>
+  <line x1="742" y1="20" x2="742" y2="385" stroke="#c9d3dd" stroke-width="1.5"/>
+  <text x="760" y="30" font-size="17" font-weight="bold" fill="#1b2a3a">C. Same tool in a fixed cell</text>
+  <path d="M780,250 C770,170 840,110 920,120 C1000,128 1040,190 1020,250 C1005,300 900,320 840,305 C805,296 785,280 780,250 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+  <ellipse cx="900" cy="230" rx="50" ry="38" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+  <circle cx="830" cy="170" r="7" fill="#7bd36b" fill-opacity="0.85"/>
+  <circle cx="860" cy="150" r="7" fill="#7bd36b" fill-opacity="0.85"/>
+  <circle cx="960" cy="160" r="7" fill="#7bd36b" fill-opacity="0.85"/>
+  <circle cx="990" cy="215" r="7" fill="#7bd36b" fill-opacity="0.85"/>
+  <circle cx="975" cy="270" r="7" fill="#7bd36b" fill-opacity="0.85"/>
+  <circle cx="830" cy="275" r="7" fill="#7bd36b" fill-opacity="0.85"/>
+  <circle cx="810" cy="220" r="7" fill="#7bd36b" fill-opacity="0.85"/>
+  <circle cx="920" cy="140" r="7" fill="#7bd36b" fill-opacity="0.85"/>
+  <text x="900" y="235" font-size="14" fill="#6b4fa0" text-anchor="middle">nucleus</text>
+  <rect x="1010" y="56" width="100" height="0" fill="none"/>
+  <text x="760" y="340" font-size="14" fill="#1b2a3a">Primary antibody binds the target;</text>
+  <text x="760" y="358" font-size="14" fill="#1b2a3a">a fluorescent secondary binds the</text>
+  <text x="760" y="376" font-size="14" fill="#1b2a3a">primary = <tspan font-weight="bold">immunofluorescence</tspan></text>
+  <text x="1075" y="62" font-size="14" font-weight="bold" fill="#1b2a3a" text-anchor="middle">zoom</text>
+  <ellipse cx="1075" cy="94" rx="20" ry="12" fill="#e9eef8" stroke="#3b5bab" stroke-width="1.5"/>
+<g transform="translate(1075,160) rotate(0) scale(0.42)"><line x1="-6" y1="0" x2="-6" y2="-70" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="6" y1="0" x2="6" y2="-70" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="-6" y1="-70" x2="-50" y2="-128" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="6" y1="-70" x2="50" y2="-128" stroke="#7f95b3" stroke-width="11" stroke-linecap="round"/><line x1="-22" y1="-70" x2="-60" y2="-120" stroke="#c3cfe0" stroke-width="9" stroke-linecap="round"/><line x1="22" y1="-70" x2="60" y2="-120" stroke="#c3cfe0" stroke-width="9" stroke-linecap="round"/></g>
+<g transform="translate(1075,218) rotate(0) scale(0.42)"><line x1="-6" y1="0" x2="-6" y2="-70" stroke="#a9b4c2" stroke-width="11" stroke-linecap="round"/><line x1="6" y1="0" x2="6" y2="-70" stroke="#a9b4c2" stroke-width="11" stroke-linecap="round"/><line x1="-6" y1="-70" x2="-50" y2="-128" stroke="#a9b4c2" stroke-width="11" stroke-linecap="round"/><line x1="6" y1="-70" x2="50" y2="-128" stroke="#a9b4c2" stroke-width="11" stroke-linecap="round"/><line x1="-22" y1="-70" x2="-60" y2="-120" stroke="#d5dbe3" stroke-width="9" stroke-linecap="round"/><line x1="22" y1="-70" x2="60" y2="-120" stroke="#d5dbe3" stroke-width="9" stroke-linecap="round"/></g>
+  <polygon points="1075,222 1081,234 1094,235 1084,244 1087,257 1075,250 1063,257 1066,244 1056,235 1069,234" fill="#7bd36b" stroke="#1b2a3a" stroke-width="1"/>
+  <text x="1104" y="99" font-size="14" fill="#3b5bab">target</text>
+  <text x="1104" y="140" font-size="14" fill="#1b2a3a">primary</text>
+  <text x="1104" y="200" font-size="14" fill="#1b2a3a">secondary</text>
+  <text x="1104" y="250" font-size="14" fill="#1b2a3a">dye</text>
+  <line x1="1050" y1="100" x2="984" y2="206" stroke="#9aa5b1" stroke-width="1" stroke-dasharray="3 3"/>
+</svg>

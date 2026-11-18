@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="330" viewBox="0 0 560 330" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig07: indirect immunofluorescence. Primary antibody binds the target; fluorescent secondary antibodies bind the primary. -->
+  <defs>
+    <g id="ab1">
+      <line x1="0" y1="-40" x2="0" y2="0" stroke-linecap="round" stroke-width="9"/>
+      <line x1="0" y1="0" x2="-14" y2="28" stroke-linecap="round" stroke-width="9"/>
+      <line x1="0" y1="0" x2="14" y2="28" stroke-linecap="round" stroke-width="9"/>
+    </g>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#d8ffd8"/>
+      <stop offset="0.45" stop-color="#4fcf6a"/>
+      <stop offset="1" stop-color="#2a9d48" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- filament with target proteins -->
+  <line x1="40" y1="292" x2="420" y2="292" stroke="#555555" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="160" cy="276" r="16" fill="#c9cfd6" stroke="#1b2a3a" stroke-width="1.5"/>
+  <circle cx="300" cy="276" r="16" fill="#c9cfd6" stroke="#1b2a3a" stroke-width="1.5"/>
+
+  <!-- primary antibody on the right-hand target -->
+  <use href="#ab1" transform="translate(300,231)" stroke="#6b4fa0"/>
+  <!-- secondary antibodies binding the primary's stem -->
+  <use href="#ab1" transform="translate(276,186) rotate(-45)" stroke="#d9822b"/>
+  <use href="#ab1" transform="translate(324,186) rotate(45)" stroke="#d9822b"/>
+  <!-- fluorophores at the tails of the secondaries -->
+  <circle cx="245" cy="155" r="16" fill="url(#glow)"/>
+  <circle cx="355" cy="155" r="16" fill="url(#glow)"/>
+
+  <!-- labels -->
+  <g font-size="15" fill="#1b2a3a">
+    <text x="160" y="318" text-anchor="middle">target protein</text>
+    <text x="300" y="318" text-anchor="middle">target protein</text>
+
+    <line x1="306" y1="222" x2="420" y2="222" stroke="#6b4fa0" stroke-width="1.2"/>
+    <text x="426" y="218" fill="#6b4fa0" font-weight="bold">primary</text>
+    <text x="426" y="236">antibody: binds</text>
+    <text x="426" y="254">the target</text>
+
+    <line x1="342" y1="168" x2="420" y2="150" stroke="#d9822b" stroke-width="1.2"/>
+    <text x="426" y="128" fill="#d9822b" font-weight="bold">secondary</text>
+    <text x="426" y="146">antibody: binds</text>
+    <text x="426" y="164">the primary</text>
+
+    <line x1="370" y1="150" x2="420" y2="60" stroke="#2a9d48" stroke-width="1.2"/>
+    <text x="426" y="38" fill="#2a9d48" font-weight="bold">fluorophore</text>
+    <text x="426" y="56">attached to the</text>
+    <text x="426" y="74">secondary</text>
+
+    <text x="20" y="40" font-size="15">The cell is first fixed</text>
+    <text x="20" y="58" font-size="15">(killed, proteins cross-linked)</text>
+    <text x="20" y="76" font-size="15">and permeabilised (holes in</text>
+    <text x="20" y="94" font-size="15">membranes) so antibodies get in.</text>
+  </g>
+</svg>

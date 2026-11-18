@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="330" viewBox="0 0 860 330" font-family="Helvetica, Arial, sans-serif">
+<!-- fig02: log size scale of biological objects, and the smallest detail each imaging tool can separate (resolution). -->
+<line x1="127.6" y1="76" x2="127.6" y2="110" stroke="#7a8794" stroke-width="1.2"/>
+<circle cx="127.6" cy="110" r="4" fill="#1b2a3a"/>
+<text x="127.6" y="70" font-size="15" fill="#1b2a3a" text-anchor="middle">atom</text>
+<line x1="279.9" y1="76" x2="279.9" y2="110" stroke="#7a8794" stroke-width="1.2"/>
+<circle cx="279.9" cy="110" r="4" fill="#1b2a3a"/>
+<text x="279.9" y="70" font-size="15" fill="#1b2a3a" text-anchor="middle">protein</text>
+<line x1="349.8" y1="46" x2="349.8" y2="110" stroke="#7a8794" stroke-width="1.2"/>
+<circle cx="349.8" cy="110" r="4" fill="#1b2a3a"/>
+<text x="349.8" y="40" font-size="15" fill="#1b2a3a" text-anchor="middle">ribosome</text>
+<line x1="410.0" y1="76" x2="410.0" y2="110" stroke="#7a8794" stroke-width="1.2"/>
+<circle cx="410.0" cy="110" r="4" fill="#1b2a3a"/>
+<text x="410.0" y="70" font-size="15" fill="#1b2a3a" text-anchor="middle">virus</text>
+<line x1="510.0" y1="46" x2="510.0" y2="110" stroke="#7a8794" stroke-width="1.2"/>
+<circle cx="510.0" cy="110" r="4" fill="#1b2a3a"/>
+<text x="510.0" y="40" font-size="15" fill="#1b2a3a" text-anchor="middle">mitochondrion</text>
+<line x1="640.1" y1="76" x2="640.1" y2="110" stroke="#7a8794" stroke-width="1.2"/>
+<circle cx="640.1" cy="110" r="4" fill="#1b2a3a"/>
+<text x="640.1" y="70" font-size="15" fill="#1b2a3a" text-anchor="middle">human cell</text>
+<line x1="710.0" y1="46" x2="710.0" y2="110" stroke="#7a8794" stroke-width="1.2"/>
+<circle cx="710.0" cy="110" r="4" fill="#1b2a3a"/>
+<text x="710.0" y="40" font-size="15" fill="#1b2a3a" text-anchor="middle">human egg</text>
+<text x="20" y="20" font-size="15" font-weight="bold" fill="#1b2a3a">Size of the object</text>
+<line x1="110.0" y1="118" x2="810.0" y2="118" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="110.0" y1="118" x2="110.0" y2="125" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="110.0" y="143" font-size="14" fill="#1b2a3a" text-anchor="middle">0.1 nm</text>
+<line x1="210.0" y1="118" x2="210.0" y2="125" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="210.0" y="143" font-size="14" fill="#1b2a3a" text-anchor="middle">1 nm</text>
+<line x1="310.0" y1="118" x2="310.0" y2="125" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="310.0" y="143" font-size="14" fill="#1b2a3a" text-anchor="middle">10 nm</text>
+<line x1="410.0" y1="118" x2="410.0" y2="125" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="410.0" y="143" font-size="14" fill="#1b2a3a" text-anchor="middle">100 nm</text>
+<line x1="510.0" y1="118" x2="510.0" y2="125" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="510.0" y="143" font-size="14" fill="#1b2a3a" text-anchor="middle">1 µm</text>
+<line x1="610.0" y1="118" x2="610.0" y2="125" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="610.0" y="143" font-size="14" fill="#1b2a3a" text-anchor="middle">10 µm</text>
+<line x1="710.0" y1="118" x2="710.0" y2="125" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="710.0" y="143" font-size="14" fill="#1b2a3a" text-anchor="middle">100 µm</text>
+<line x1="810.0" y1="118" x2="810.0" y2="125" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="810.0" y="143" font-size="14" fill="#1b2a3a" text-anchor="middle">1 mm</text>
+<text x="20" y="182" font-size="15" font-weight="bold" fill="#1b2a3a">Smallest detail you can separate</text>
+<rect x="710.0" y="196" width="100.0" height="24" rx="3" fill="#9aa6b2"/>
+<text x="702.0" y="213" font-size="15" fill="#1b2a3a" text-anchor="end">Eye ≈ 0.1 mm</text>
+<rect x="440.1" y="228" width="369.9" height="24" rx="3" fill="#e8590c"/>
+<text x="448.1" y="245" font-size="15" font-weight="bold" fill="#ffffff">Light microscope ≈ 200 nm</text>
+<rect x="340.1" y="260" width="469.9" height="24" rx="3" fill="#6b7c8f"/>
+<text x="348.1" y="277" font-size="15" font-weight="bold" fill="#ffffff">Super-resolution ≈ 20 nm</text>
+<rect x="140.1" y="292" width="669.9" height="24" rx="3" fill="#1b2a3a"/>
+<text x="148.1" y="309" font-size="15" font-weight="bold" fill="#ffffff">Electron microscope ≈ 0.2–2 nm</text>
+</svg>
