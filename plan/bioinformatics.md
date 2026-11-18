@@ -1,11 +1,11 @@
-# Plan: one bioinformatics day per block
+# Plan: one bioinformatics module per block
 
-**Status:** planning document (2026-11-18). Nothing built yet.
+**Status:** all eight modules implemented (2026-11-18), with focused browser/report pages, student R Markdown templates, private worked solutions and dated API snapshots.
 
 **Decision from the course author.** 3MB001 becomes an experimental implementation
 that also teaches **bioinformatics linked to the lectures**. Each of the 8 blocks in
-[schedule.md](schedule.md) ends with one **bioinformatics day**: not a lecture, but a
-page of **step-by-step instructions** (browse a database, or run R) with tasks and
+[schedule.md](schedule.md) ends with one **bioinformatics module**: not a lecture, but a
+short sequence of pages with **step-by-step instructions** (browse a database, or run R) with tasks and
 checked answers, built on the proteins, drugs and diseases of that block.
 
 **Students** know the command line and R, and have **never used a bioinformatics
@@ -24,26 +24,27 @@ Out of scope here as everywhere in this repo: exam, revision, labs, module-2 sem
 
 ### Where the pages live
 
-- **One folder per day, non-week slug**, `bioinfo-<topic>/`, containing:
-  - `index.qmd`: the instruction page (no slides, no quiz).
+- **One folder per module, non-week slug**, `bioinfo-<topic>/`, containing:
+  - `index.qmd`: a short overview linking focused browser, report and answer pages (no slides, no quiz).
   - `bioinfo-<topic>.Rmd`: the **student template** (download link on the page).
   - `bioinfo-<topic>-solution.Rmd`: the knitted-and-checked solution. Keep it in the
-    repo; publish it only after the day (or never).
+    repo; publish it only after the module (or never).
   - `data/<name>-YYYY-MM-DD.csv`: a **snapshot** of every API result the template
     fetches, used as a fallback when a service is down (see robustness).
   - `_credits.md` if the page reuses any image or data (central credits page).
 - `.Rmd` files are **not rendered by Quarto** (the render globs only match
-  `*.qmd`/`*.md`; keep it that way, or the site build would call the APIs). Add
-  `"bioinfo-*/*.Rmd"` and `"bioinfo-*/data/*.csv"` to `project: resources:` in
-  `_quarto.yml` so they are copied to `docs/` and downloadable.
+  `*.qmd`/`*.md`; keep it that way, or the site build would call the APIs).
+  Publish student templates and snapshots through each page's explicit
+  `resources:` list. Do not use a project-wide `.Rmd` glob: it would expose
+  the worked solutions. Every instruction page uses `engine: markdown`.
 - **Sidebar:** the **last item of each block section**, at the same level as the
   lecture sub-sections, as a single leaf link:
-  `- text: "Bioinformatics day: <title>"` / `href: bioinfo-<topic>/index.qmd`.
+  `- text: "Bioinformatics module: <title>"` / `href: bioinfo-<topic>/index.qmd`.
   `styles.css` colours leaves by filename (`*lec*` green, `*quiz*` blue); give
-  `bioinfo-` links their own colour (one CSS rule) so the day is visible as a third
+  `bioinfo-` links their own colour (one CSS rule) so the module is visible as a third
   kind of material.
 - Page skeleton (fixed, so students learn the rhythm):
-  1. **Today** (2–3 lines: what you will find, which lectures it builds on, ELO tags).
+  1. **In this module** (2–3 lines: what you will find, which lectures it builds on, ELO tags).
   2. **Before you start** (download the `.Rmd`; check `rmarkdown`, `ggplot2`,
      `jsonlite`, later `httr2`, are installed; no logins needed).
   3. **Part A: in the browser** (numbered steps, each with a direct URL).
@@ -65,12 +66,12 @@ Out of scope here as everywhere in this repo: exam, revision, labs, module-2 sem
   or API call, the **date retrieved** (inline `` `r Sys.Date()` ``) and the release
   where the API reports one (e.g. UniProt's `X-UniProt-Release` header, Open
   Targets `meta { dataVersion }`). The last chunk is `sessionInfo()`.
-- The scaffold **shrinks over the course** (see the progression table): day 1 fills
-  three chunks in a nearly complete report; day 8 writes a report from a blank
+- The scaffold **shrinks over the course** (see the progression table): module 1 fills
+  three chunks in a nearly complete report; module 8 writes a report from a blank
   outline (question → data → code → plot → interpretation → sources).
 - **R style:** base R + `jsonlite::fromJSON()` for GET requests that return JSON,
-  `read.delim(url)` for TSV, `ggplot2` for every plot, `dplyr` allowed from day 3.
-  `httr2` from day 5 (POST, headers, retries). One idea per chunk; named chunks;
+  `read.delim(url)` for TSV, `ggplot2` for every plot, `dplyr` allowed from module 3.
+  `httr2` from module 5 (POST, headers, retries). One idea per chunk; named chunks;
   `snake_case`; no `setwd()`; no hard-coded paths. Plots get axis labels with units
   and a caption naming the source. **No Bioconductor needed** (see section 4 for
   why `biomaRt` is not used); `rentrez` (CRAN) is the only wrapper package.
@@ -82,7 +83,7 @@ Out of scope here as everywhere in this repo: exam, revision, labs, module-2 sem
 ### Keeping tasks robust when databases update
 
 - Write **"checked YYYY-MM-DD"** on every answer and re-check all answers before
-  each course run (≈ 1 h per day page; a small script can re-run the solution
+  each course run (≈ 1 h per module; a small script can re-run the solution
   `.Rmd`s and diff the numbers).
 - **Ask for stable things:** an accession number, a domain, a location, which tissue
   is highest, the sign of an effect, the order of magnitude, a named variant
@@ -94,17 +95,17 @@ Out of scope here as everywhere in this repo: exam, revision, labs, module-2 sem
 - **No screenshots of external sites** as instructions (they date fast); describe
   what to click by its label. Our own plots are fine.
 - Each template has `use_snapshot <- FALSE` in the setup chunk; set `TRUE` to read
-  the shipped CSV snapshot if an API is down on the day.
+  the shipped CSV snapshot if an API is down during teaching.
 
 ---
 
-## 2. The eight days
+## 2. The eight modules
 
 Time budget for each: **Part A ≈ 1.5 h, Part B ≈ 1.5–2 h**, plus slack. Build
 effort assumes the block's lectures exist and includes writing the page, template,
 solution, snapshot and checking answers.
 
-### Day 1 — The cell and how we study it: "Where does a protein live?"
+### Module 1 — The cell and how we study it: "Where does a protein live?"
 `bioinfo-protein-atlas/` · lectures cell-tour, microscopy, cell-methods · ELO 1, 5
 
 **Goals.** *Skills:* gene symbol vs UniProt accession vs Ensembl ID; read a UniProt
@@ -147,9 +148,9 @@ write 2 sentences with an inline R value.
 crowd searches (filter "Reviewed"); HPA location is antibody-based (check the
 reliability score); R: knitting runs in a fresh session, so objects from the console
 do not exist.
-**Effort.** 1.5 days (includes the Rmd primer section reused by all later days).
+**Effort.** 1.5 days (includes the Rmd primer section reused by all later modules).
 
-### Day 2 — Membranes and transport: "Membrane proteins, their tissues and their drugs"
+### Module 2 — Membranes and transport: "Membrane proteins, their tissues and their drugs"
 `bioinfo-membrane-proteins/` · membrane-structure, membrane-transport, ion-channels · ELO 2, 9
 
 **Goals.** *Skills:* UniProt features (transmembrane segments, topology); 3D
@@ -191,7 +192,7 @@ pLDDT is confidence, not flexibility measured; ClinVar has several records per
 variant.
 **Effort.** 1.5 days.
 
-### Day 3 — Protein handling (1): "Read the zip code"
+### Module 3 — Protein handling (1): "Read the zip code"
 `bioinfo-sorting-signals/` · protein-sorting, er, golgi-secretion, endocytosis-lysosomes · ELO 4, 5, 9
 
 **Goals.** *Skills:* sequence features (signal peptide, transit peptide, TM,
@@ -231,9 +232,9 @@ slide made from real data.
 **Pitfalls.** UniProt "Signal" is often predicted (check evidence); GO annotations
 mix experiment and inference; STRING score ≠ physical binding; HPA "Vesicles" for
 LDLR is coarse.
-**Effort.** 1.5 days (er lecture not built yet: adapt T3/T4 once it exists).
+**Effort.** 1.5 days.
 
-### Day 4 — Protein handling (2): "Genomes inside organelles, and drugs on machines"
+### Module 4 — Protein handling (2): "Genomes inside organelles, and drugs on machines"
 `bioinfo-mito-proteasome/` · protein-lifecycle, mitochondria, organelles-homeostasis · ELO 4, 5, 9
 
 **Goals.** *Skills:* NCBI nucleotide records and feature tables with `rentrez`;
@@ -268,7 +269,7 @@ genome as segments coloured by OXPHOS complex.
 include predictions; ChEMBL lists salt forms as separate molecules.
 **Effort.** 2 days (parser and helper need care).
 
-### Day 5 — Cell signalling: "How selective is a kinase inhibitor?"
+### Module 5 — Cell signalling: "How selective is a kinase inhibitor?"
 `bioinfo-drug-targets/` · signalling-principles, gpcr, kinase-signalling, fate-signalling · ELO 3, 9
 
 **Goals.** *Skills:* bioactivity data in ChEMBL (IC50, pChEMBL, assay types); target
@@ -307,7 +308,7 @@ ChEMBL API is sometimes slow or returns 500 (retry, cache); Open Targets **renam
 year; KEGG images may not be reused on our pages.
 **Effort.** 2 days.
 
-### Day 6 — Cytoskeleton: "One filament family per tissue, and a drug for the heart"
+### Module 6 — Cytoskeleton: "One filament family per tissue, and a drug for the heart"
 `bioinfo-cytoskeleton/` · actin, microtubules, myosin-if · ELO 6, 9
 
 **Goals.** *Skills:* gene families and isoforms; tissue expression across many genes
@@ -346,7 +347,7 @@ abundant genes dwarfs others (log scale); ClinicalTrials.gov `nextPageToken`
 paging; trial phases are lists ("PHASE2","PHASE3").
 **Effort.** 1.5 days.
 
-### Day 7 — Cell cycle and cell death: "Which genes does a cancer cell need?"
+### Module 7 — Cell cycle and cell death: "Which genes does a cancer cell need?"
 `bioinfo-essential-genes/` · cell-cycle-control, mitosis, cell-numbers, apoptosis · ELO 7, 8, 9
 
 **Goals.** *Skills:* CRISPR dependency data (DepMap: gene effect, what −1 means);
@@ -380,9 +381,9 @@ gene effect per gene; then BCL2 by tissue.
 **Pitfalls.** DepMap portal blocks scripted downloads (verification page), so R goes
 through Open Targets, which redistributes DepMap gene effects; cell lines ≠
 tumours; gene effect is relative (0 = no effect, −1 = typical essential gene).
-**Effort.** 1.5 days (lectures not built: adjust names when they exist).
+**Effort.** 1.5 days.
 
-### Day 8 — Cell death and disease: "Oncogene or tumour suppressor? Read the mutations" + own report
+### Module 8 — Cell death and disease: "Oncogene or tumour suppressor? Read the mutations" + own report
 `bioinfo-cancer-genomics/` · regulated-necrosis, cancer, disease-casebook, drug-journey · ELO 8, 9
 
 **Goals.** *Skills:* cancer genomics in cBioPortal (OncoPrint, lollipop plot,
@@ -429,7 +430,7 @@ changes frequencies; cBioPortal API uses Entrez gene IDs (BRAF 673, TP53 7157).
 
 ## 3. Progression across the course
 
-| Day | New database/browser skills | New R skills | R Markdown | Reuses |
+| Module | New database/browser skills | New R skills | R Markdown | Reuses |
 |---|---|---|---|---|
 | 1 | Identifiers; UniProt entry; HPA subcellular + single-cell; Cellosaurus | `read.delim(url)`; first ggplot; log axis | Knit; YAML; setup chunk; fill 3 chunks; inline R | — |
 | 2 | UniProt features; PDB + Mol*; AlphaFold pLDDT; GTEx; ClinVar; PubChem | `fromJSON(url)`; look up an ID then query | Write own chunk; chunk options; `fig.cap`; Data section with date | UniProt, HPA |
@@ -440,8 +441,8 @@ changes frequencies; cBioPortal API uses Entrez gene IDs (BRAF 673, TP53 7157).
 | 7 | DepMap concepts; HPA cell-cycle | Nested JSON → long table; distributions; facets | Headings only; student writes every chunk | Open Targets, HPA, Reactome |
 | 8 | cBioPortal | Combine ≥ 2 APIs | Blank outline → own structured report, handed in | All |
 
-Gentle slope: days 1–3 mostly point-and-click with R reading single URLs; days 4–6
-add packages and loops; days 7–8 are API-to-plot in R with student-structured
+Gentle slope: modules 1–3 mostly point-and-click with R reading single URLs; modules 4–6
+add packages and loops; modules 7–8 are API-to-plot in R with student-structured
 reports.
 
 ---
@@ -477,7 +478,7 @@ Tested with `curl` (generic User-Agent, a few requests each) or in R
 - **Ensembl REST** (`rest.ensembl.org`): connection timed out from our server
   (twice). The Ensembl website now redirects gene pages to a new "feature-explorer"
   and `/biomart` to the jun2026 archive: Ensembl is mid-transition. So **no
-  `biomaRt`**; get Ensembl IDs from UniProt or HPA. Re-check before day 4.
+  `biomaRt`**; get Ensembl IDs from UniProt or HPA. Re-check before module 4.
 - **DepMap portal**: scripted access gets a bot-verification page; fine in the
   browser, use Open Targets for R.
 - **OMIM API**: needs a registered key (400 without); browse OMIM only, use ClinVar
@@ -494,23 +495,23 @@ Tested with `curl` (generic User-Agent, a few requests each) or in R
 
 ## 5. Recommendation: pilot
 
-**Build Day 1 (`bioinfo-protein-atlas/`) first.** Its block is finished, its
+**Build Module 1 (`bioinfo-protein-atlas/`) first.** Its block is finished, its
 resources (UniProt TSV, HPA, Cellosaurus) are the most stable and need no
-packages beyond `ggplot2`, and it fixes everything later days reuse: page skeleton,
+packages beyond `ggplot2`, and it fixes everything later modules reuse: page skeleton,
 the `.Rmd` template format and R Markdown primer, answer callouts with check dates,
 snapshot fallback, sidebar entry and CSS colour, `_quarto.yml` resources line.
 Try it on 2–3 students or TAs and time Parts A and B before building more. Build
-**Day 2** next (block finished; tests the first JSON API and the GTEx version
+**Module 2** next (block finished; tests the first JSON API and the GTEx version
 pitfall), then the others in block order as their lectures are built.
 
 Total estimated build effort: about **13–14 days** for all eight, plus ~1 h per
-day page per year to re-check answers.
+module per year to re-check answers.
 
-## 6. Lessons from the day 1 pilot (2026-11-18)
+## 6. Lessons from the module 1 pilot (2026-11-18)
 
-Apply these to all remaining days:
+Apply these to all remaining modules:
 
-1. Publish downloads with front-matter `resources:` on each day's `index.qmd`
+1. Publish downloads with front-matter `resources:` on each module's download page
    (template + snapshot), **not** a `bioinfo-*/*.Rmd` glob in `_quarto.yml`: the
    glob would also publish the worked solution (`*-solution.Rmd`, kept out of `docs/`).
 2. Every template: `error = TRUE` in the setup chunk plus a "no errors at hand-in"
@@ -518,13 +519,13 @@ Apply these to all remaining days:
    R never breaks a knit; snapshot fallback that reads the local `data/` file or, if
    missing, the copy on the site.
 3. Don't name an R object `url` (it masks base R `url()`); use `uniprot_url` etc.
-4. Put `engine: markdown` on every day page (the site build never runs R or calls
+4. Put `engine: markdown` on every module page (the site build never runs R or calls
    an API); show inline-R examples as double-backtick code.
 5. Check that each planned protein actually has data in each database before
    writing a task (HPA has no subcellular data for LAMP1).
-6. Avoid wide tables on day pages (phones); prefer lists and code blocks.
+6. Avoid wide tables on module pages (phones); prefer lists and code blocks.
 7. Good VG pattern: two databases that disagree (e.g. catalase: UniProt
    peroxisome vs HPA "Vesicles"), with what to expect if one updates.
-8. Effort estimate held (≈1.5 days for day 1); most time goes into checking answers live.
+8. Effort estimate held (≈1.5 days for module 1); most time goes into checking answers live.
 9. Click paths: name buttons by their labels; no screenshots of external sites.
    Check the labels once by hand in a real browser.

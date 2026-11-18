@@ -56,7 +56,7 @@ programme coordinator.
 
 - **Computing (experimental run):** command line and R. They have **not**
   used bioinformatics tools or databases before. Each block has a
-  bioinformatics day (see `plan/bioinformatics.md`).
+  bioinformatics module (see `plan/bioinformatics.md`).
 
 ## What we should not assume
 

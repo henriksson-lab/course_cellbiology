@@ -42,14 +42,14 @@
     <line x1="832" y1="112" x2="832" y2="126"/><line x1="877" y1="112" x2="877" y2="126"/><line x1="922" y1="112" x2="922" y2="126"/>
     <circle cx="832" cy="142" r="16" fill="#fff"/><rect x="861" y="126" width="32" height="32" fill="#fff"/><circle cx="922" cy="142" r="16" fill="#fff"/>
   </g>
-  <text x="717" y="190" font-size="16" text-anchor="middle">mother carries it:</text>
-  <text x="717" y="210" font-size="16" text-anchor="middle">all children inherit</text>
-  <text x="877" y="190" font-size="16" text-anchor="middle">father carries it:</text>
-  <text x="877" y="210" font-size="16" text-anchor="middle">no child inherits</text>
+  <text x="717" y="190" font-size="16" text-anchor="middle">mtDNA from mother:</text>
+  <text x="717" y="210" font-size="16" text-anchor="middle">sons and daughters</text>
+  <text x="877" y="190" font-size="16" text-anchor="middle">mtDNA from father:</text>
+  <text x="877" y="210" font-size="16" text-anchor="middle">not transmitted</text>
   <g font-size="16">
     <text x="640" y="256">The egg has ~100 000 copies; the</text>
     <text x="640" y="278">sperm's few mitochondria are</text>
     <text x="640" y="300">destroyed after fertilisation.</text>
   </g>
-  <circle cx="650" cy="336" r="9" fill="#a8324a" stroke="#1b2a3a"/><text x="666" y="341" font-size="15">= carries the mtDNA variant</text>
+  <circle cx="650" cy="336" r="9" fill="#a8324a" stroke="#1b2a3a"/><text x="666" y="341" font-size="15">= illustrative mtDNA variant</text>
 </svg>

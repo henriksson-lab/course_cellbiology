@@ -1,0 +1,11 @@
+{
+  "urls": [
+    "https://gtexportal.org/api/v2/reference/gene?geneId=SLC5A1&datasetId=gtex_v8",
+    "https://gtexportal.org/api/v2/expression/medianGeneExpression?gencodeId=ENSG00000100170.9&datasetId=gtex_v8",
+    "https://gtexportal.org/api/v2/reference/gene?geneId=SLC5A2&datasetId=gtex_v8",
+    "https://gtexportal.org/api/v2/expression/medianGeneExpression?gencodeId=ENSG00000140675.12&datasetId=gtex_v8"
+  ],
+  "retrieved": "2026-11-18",
+  "dataset": "gtex_v8",
+  "rows": 108
+}

@@ -2,8 +2,8 @@
 // circuit across the inner mitochondrial membrane. The student injects oligomycin, an
 // uncoupler (FCCP, acts like DNP) and rotenone + antimycin A, in any order, and reads
 // basal, ATP-linked, proton-leak, maximal and spare respiration and non-mitochondrial O₂ use.
-// The proton circuit runs at 1× real time (Δp relaxes over a few seconds after an
-// injection); the trace is the assay record, one 6-minute measurement cycle per point.
+// The circuit is a slowed illustration; the assay starts at 1× real time,
+// one 6-minute measurement cycle per point, with optional faster playback.
 // Model: model.ts (qualitative proton circuit; the analysis follows the real assay).
 // Options (data-*): preset = healthy|complexI|metformin, seed.
 import { autoMount, htmlEl, svgEl, button, presets, slider, checkbox, rng } from "../lib/ui";
@@ -11,7 +11,7 @@ import * as M from "./model";
 
 const MITO = "#a8324a", MITOFILL = "#f8e9ec", INK = "#1b2a3a", HPLUS = "#1098ad", DRUG = "#e8590c";
 const ELEC = "#c99700";
-const POINT_EVERY = 1.6;        // real seconds between trace points (the assay record is compressed)
+const POINT_EVERY = 360;        // seconds per six-minute assay cycle at 1×
 const PHASES_MAX = 4;
 const DRUG_LABEL: Record<M.Drug, string> = { oligo: "oligomycin", unc: "FCCP", rotaa: "rotenone + antimycin A" };
 const DRUG_SHORT: Record<M.Drug, string> = { oligo: "oligomycin", unc: "FCCP", rotaa: "rot/AA" };
@@ -116,11 +116,13 @@ autoMount("mitostress", host => {
     rotaa: button(ports, "Inject rotenone + antimycin A", () => inject("rotaa")),
   };
   const ctrl = htmlEl("div", "ms-ports", "", boxT);
+  let assaySpeed = 1;
+  slider(ctrl, "Assay speed", 1, 240, 1, 1, v => { assaySpeed = v; }, v => v + "×");
   const cParts = checkbox(ctrl, "show the parts on the trace", true, () => drawTrace());
 
   // ---- right: proton circuit
   const boxC = htmlEl("div", "ms-box", "", row);
-  htmlEl("div", "ms-title", "The proton circuit across the inner membrane (real time)", boxC);
+  htmlEl("div", "ms-title", "The proton circuit across the inner membrane (illustration)", boxC);
   const CW = 560, CH = 340;
   const csvg = svgEl("svg", { viewBox: `0 0 ${CW} ${CH}`, class: "ms-svg", role: "img", "aria-label": "Proton circuit: respiratory chain pumping protons, ATP synthase, leak and uncoupler" }, boxC);
   const MEM0 = 122, MEM1 = 162;
@@ -244,9 +246,8 @@ autoMount("mitostress", host => {
     + "it runs backwards, using ATP, when Δp falls too low), through a leak that grows steeply with Δp, and through the "
     + "uncoupler. O₂ use is set where pumping and return balance. Δψ is taken as 85 % of Δp. All rates are illustrative "
     + "numbers for one well of cultured cells; glycolysis, substrate supply and the cell's own responses are left out. "
-    + "The circuit runs at real time after an injection (in a real well the drug takes a few minutes to mix in); each "
-    + "dot stands for very many ions, and the rotor turns far slower than the real ~100 turns per second. The trace is "
-    + "compressed: each point is one 6-minute measurement cycle (mix 3 min, measure 3 min).";
+    + "The circuit responds over illustrative seconds (not calibrated drug-mixing kinetics); each "
+    + "dot stands for very many ions, and the rotor turns far slower than the real ~100 turns per second. The trace starts at 1× assay time; choose a faster assay speed: each point is one 6-minute measurement cycle (mix 3 min, measure 3 min).";
 
   // ---- assay logic
   function keepGhost() {
@@ -487,8 +488,8 @@ autoMount("mitostress", host => {
     const f = stepCircuit(dt);
     drawCircuitState(f);
     if (measuring()) {
-      clock += dt;
-      if (clock >= POINT_EVERY) { clock = 0; addPoint(); update(); }
+      clock += dt * assaySpeed;
+      if (clock >= POINT_EVERY) { clock -= POINT_EVERY; addPoint(); update(); }
     }
     raf = requestAnimationFrame(frame);
   };

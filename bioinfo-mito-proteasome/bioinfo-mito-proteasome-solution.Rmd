@@ -1,0 +1,86 @@
+---
+title: "Genomes inside organelles"
+author: "Worked solution (course team)"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+options(HTTPUserAgent = "3MB001-course", timeout = 90)
+use_snapshot <- TRUE
+source("fetch-data.R")
+```
+
+# Question
+
+How does a small mitochondrial genome support a much larger protein machine network?
+
+# Browser notes
+
+Record a genome accession/version, one drug-target structure and the transcript-specific LMNA variant you investigated. Include the date viewed and distinguish a database annotation from a measurement.
+
+# Data
+
+```{r fetch-data}
+records <- fetch_organelle_data(use_snapshot)
+genes <- records$genes
+proteins <- records$proteins
+head(genes)
+```
+
+Data mode: `r records$mode`. Retrieval date: `r records$retrieved`.
+UniProtKB release: `r records$release`.
+
+- NCBI request: `r records$ncbi_url`
+- UniProt request: `r records$uniprot_url`
+- RefSeq genome: NC_012920.1, 16,569 bp. NCBI data reuse policy: <https://www.ncbi.nlm.nih.gov/home/about/policies/>.
+- UniProt data: CC BY 4.0, <https://www.uniprot.org/help/license>.
+
+Live requests are cached in `data/` under the retrieval date; re-knitting on that date reuses them. Snapshot mode requires the two downloaded CSVs and makes no web requests. The provided helper parses CDS/tRNA/rRNA features and matches them to gene features; coordinates are 1-based and inclusive. Overlapping genes remain separate features.
+
+# Counts
+
+Count genes by feature type and CDS genes by respiratory complex. Compare the number of reviewed human mitochondrial protein entries with the 13 mtDNA protein genes.
+
+```{r annotation-counts}
+table(genes$type)
+table(genes$complex[genes$type == "CDS"])
+import_fraction <- 1 - sum(genes$type == "CDS") / nrow(proteins)
+import_fraction
+stopifnot(nrow(genes) == 37L, sum(genes$type == "CDS") == 13L,
+          sum(genes$type == "tRNA") == 22L, sum(genes$type == "rRNA") == 2L)
+```
+
+# Genome map
+
+Draw one horizontal segment per annotated gene, from start to end. Colour by complex (or RNA) and separate the two strands. Keep the x axis in base pairs and label the reference accession in the caption.
+
+```{r genome-map, fig.width=9, fig.height=4}
+ggplot(genes, aes(x = start, xend = end, y = strand, yend = strand,
+                  colour = complex)) +
+  geom_segment(linewidth = 7, lineend = "butt") +
+  scale_x_continuous(limits = c(1, 16569), breaks = c(1, 5000, 10000, 16569)) +
+  labs(x = "Reference-genome coordinate (bp, 1-based)", y = "Strand", colour = "Complex / RNA",
+       caption = paste("NCBI RefSeq NC_012920.1; retrieved", records$retrieved,
+                       "— overlapping annotations are retained")) +
+  theme_minimal()
+```
+
+# Interpretation
+
+There are `r sum(genes$type == "CDS")` protein-coding genes and `r nrow(proteins)` reviewed mitochondrial protein entries in this UniProt query. The approximate nuclear-encoded fraction is `r round(100 * import_fraction, 1)`%. This comparison illustrates the need for import but is not an exact proteome census. Complex II has no mtDNA-encoded subunit. Most mitochondrial proteins must therefore be produced using nuclear genes and imported from the cytosol.
+
+A map of annotations shows where genes lie; it does not measure how strongly each gene is expressed. A CDS feature and a gene feature must not be counted twice. Overlaps mean summing feature lengths does not give the fraction of unique bases covered.
+
+# Sources from the browser
+
+Record the stable links you used for 5LF3, CHEMBL325041 and ClinVar variation 14500, with access dates. Explain in your own words how protein degradation and RNA splicing relate to disease.
+
+# Session info
+
+```{r session-info}
+sessionInfo()
+```

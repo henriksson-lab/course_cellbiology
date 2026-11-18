@@ -1,0 +1,43 @@
+---
+title: "Bioinformatics: membrane proteins, tissues and drugs"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+resources:
+  - bioinfo-membrane-proteins.Rmd
+  - data/*.csv
+  - data/*.json
+---
+
+## What you will learn
+
+Find a protein's membrane topology, inspect a bound drug in a structure, and compare gene expression across tissues. Then make two plots in an R Markdown report. This module builds on [membrane structure](../membrane-structure/lec.qmd), [transporters and pumps](../membrane-transport/lec.qmd) and [ion channels](../ion-channels/lec.qmd). **ELO 2, 9.**
+
+Work through these short pages in order:
+
+1. [In the browser: topology, structures and variants](browser.qmd) — about 90 minutes.
+2. [In R: tissue expression and membrane topology](report.qmd) — about 90–120 minutes.
+
+## Before you start
+
+No database accounts are needed. You need R, a working R Markdown installation, and the packages below. Install packages once in the R console, outside the report:
+
+```r
+install.packages(c("rmarkdown", "knitr", "ggplot2", "jsonlite"))
+```
+
+If R Markdown is new, read the [five-minute introduction](../bioinfo-protein-atlas/report.qmd#r-markdown-in-five-minutes).
+
+Download the [student report](bioinfo-membrane-proteins.Rmd) and put it in a new folder. Create a `data` subfolder and save these files there, keeping their names:
+
+- [UniProt membrane features](data/uniprot-features-2026-11-18.csv).
+- [GTEx tissue medians](data/gtex-medians-2026-11-18.csv).
+- [UniProt provenance](data/uniprot-provenance.json) and [GTEx provenance](data/gtex-provenance.json).
+
+The report can fetch current data; set `use_snapshot <- TRUE` to work from these saved datasets without internet access. Browser activities still need the websites. A failed API request falls back to the supplied snapshot and records that choice in the report.
+
+## Sources
+
+UniProtKB release 2026_04 and GTEx v8 data were downloaded on 2026-11-18. Links to source records and interpretation tasks are on the browser page; API addresses and data provenance are on the report page. [Data credits](../credits.qmd#bioinfo-membrane-proteins).

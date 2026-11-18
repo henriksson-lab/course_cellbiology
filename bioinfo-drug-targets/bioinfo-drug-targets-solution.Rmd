@@ -1,0 +1,135 @@
+---
+title: "How selective is a kinase inhibitor?"
+author: "Worked solution (course team)"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+options(HTTPUserAgent = "3MB001-course", timeout = 90)
+use_snapshot <- TRUE
+source("fetch-data.R")
+```
+
+# Question and browser evidence
+
+Compare structural, activity and clinical-development evidence for kinase inhibition. Record PDB accessions, the organisms/constructs represented, an EGFR pathway and examples of extracellular and intracellular inhibition. Give source URLs and dates.
+
+# Data
+
+```{r fetch-data}
+records <- fetch_target_data(use_snapshot)
+activities <- records$activities
+candidates <- records$candidates
+records$releases
+```
+
+Mode: `r records$mode`; retrieval date: `r records$retrieved`.
+
+```{r queries}
+records$chembl_query
+cat(records$opentargets_query)
+```
+
+The supplied helper uses `httr2` for GET requests to ChEMBL and a JSON GraphQL POST to Open Targets. It retries temporary failures and caches dated CSVs. It checks ChEMBL pagination and Open Targets row counts rather than silently plotting a partial result. Snapshot mode reads only the downloaded CSVs.
+
+- ChEMBL: <https://www.ebi.ac.uk/chembl/>, CC BY-SA 3.0. This query selects imatinib (CHEMBL941), IC50 and five targets. It is not a whole-kinome panel.
+- Open Targets: <https://platform.opentargets.org>, CC0. The query returns drug/candidate records and their `maxClinicalStage` for EGFR, ABL1 and KIT. This field is a **string**, not a numeric clinical phase.
+
+# Audit before plotting
+
+```{r audit}
+with(activities, table(target, standard_relation, useNA = "ifany"))
+activities[activities$target == "EGFR", c("activity_id", "standard_relation", "standard_value", "standard_units", "document_chembl_id", "assay_description")]
+```
+
+Do not replace `>` values with exact numbers or discard an inconvenient result without explaining it. In the shipped snapshot, EGFR includes one exact 0.11 nM record as well as >100000 nM and an unquantified low-inhibition record. These are conflicting assay observations, not a trustworthy pooled median. Read the source descriptions before interpreting the plot.
+
+# Exact activity measurements
+
+The filter below retains positive exact IC50s in nM, binding assays, records without a data-validity flag and without a potential-duplicate flag. The raw table remains available for auditing. A pChEMBL value is approximately -log10(IC50 in mol/L) here; IC50 is assay-dependent and is not a binding Kd.
+
+```{r filter-activities}
+validity_ok <- is.na(activities$data_validity_comment) | activities$data_validity_comment == ""
+exact <- subset(activities, standard_relation == "=" & standard_units == "nM" &
+                  standard_value > 0 & assay_type == "B" & validity_ok & potential_duplicate == 0)
+exact$pic50 <- -log10(exact$standard_value * 1e-9)
+```
+
+Make a strip plot. Add a dashed horizontal line at pIC50 = 6 (1 micromolar). Label the plot as **exact values only**; SRC may have no exact values, which does not mean no one measured it.
+
+```{r activity-plot, fig.width=8, fig.height=4.5}
+ggplot(exact, aes(x = target, y = pic50)) +
+  geom_jitter(width = 0.12, height = 0, alpha = 0.6) +
+  geom_hline(yintercept = 6, linetype = "dashed") +
+  labs(x = "Annotated target", y = "pIC50 (-log10 IC50 in mol/L)",
+       caption = paste("ChEMBL; retrieved", records$retrieved,
+         "— exact binding-assay values only; censored records excluded from this plot")) +
+  theme_minimal()
+```
+
+# Illustrative dose-response curves
+
+Summarise exact IC50s for ABL1, KIT and PDGFRA using medians, then draw inhibition = dose / (IC50 + dose). This is a Hill-slope-1 illustration, **not a fitted clinical dose-response**. Do not pool the conflicting EGFR records into a single curve.
+
+```{r curves, fig.width=8, fig.height=4.5}
+focus <- subset(exact, target %in% c("ABL1", "KIT", "PDGFRA"))
+medians <- aggregate(standard_value ~ target, focus, median)
+names(medians)[2] <- "ic50_nm"
+curves <- merge(medians, data.frame(dose_nm = 10^seq(-1, 5, length.out = 150)))
+curves$inhibition <- curves$dose_nm / (curves$ic50_nm + curves$dose_nm)
+ggplot(curves, aes(dose_nm, inhibition, colour = target)) +
+  geom_line(linewidth = 1) + scale_x_log10() +
+  labs(x = "Drug concentration (nM, log scale)", y = "Illustrative fraction inhibited",
+       caption = paste("ChEMBL median exact IC50; retrieved", records$retrieved,
+                        "— Hill slope fixed at 1; not a fit or clinical prediction")) +
+  theme_minimal()
+medians
+```
+
+# A matched-source comparison
+
+Use source document CHEMBL1130562 to compare the ABL1 record (38 nM) with the EGFR bound (>100000 nM). Inspect the assay descriptions: the ABL assay uses v-Abl; a common paper still does not guarantee identical assay conditions.
+
+```{r matched-source}
+matched <- subset(activities, document_chembl_id == "CHEMBL1130562")
+matched[, c("target", "standard_relation", "standard_value", "standard_units", "assay_description")]
+dose_nm <- 1000
+abl_ic50 <- subset(matched, target == "ABL1" & standard_relation == "=")$standard_value
+egfr_bound <- subset(matched, target == "EGFR" & standard_relation == ">")$standard_value
+stopifnot(length(abl_ic50) == 1L, length(egfr_bound) == 1L)
+abl_inhibition <- dose_nm / (abl_ic50 + dose_nm)
+egfr_upper_bound <- dose_nm / (egfr_bound + dose_nm)
+c(abl_illustration = abl_inhibition, egfr_upper_bound = egfr_upper_bound)
+```
+
+Under the stated Hill model, 1 µM gives about `r round(100 * abl_inhibition, 1)`% inhibition for the ABL record and **less than** `r round(100 * egfr_upper_bound, 2)`% for the EGFR bound. This is a comparison of those assays, not a resolution of the conflicting EGFR literature.
+
+# Clinical development records
+
+Count records by `target` and `stage`, then draw a bar plot. Preserve categorical stage names: `APPROVAL`, `PHASE_4` and `PHASE_2_3` are not one integer scale. Counts refer to returned records, not distinct approved drugs or independent trials.
+
+```{r stage-plot, fig.width=8, fig.height=5}
+stage_counts <- as.data.frame(table(candidates$target, candidates$stage), stringsAsFactors = FALSE)
+names(stage_counts) <- c("target", "stage", "records")
+ggplot(stage_counts, aes(stage, records, fill = target)) +
+  geom_col(position = "dodge") +
+  labs(x = "Maximum clinical stage (database category)", y = "Drug/candidate records (count)",
+       caption = paste("Open Targets; retrieved", records$retrieved,
+                        "— records can include related formulations and multiple mechanisms")) +
+  theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+table(candidates$target)
+```
+
+# Interpretation and limits
+
+The activity records support inhibition of several kinases, with large assay-to-assay variation. The conflicting EGFR observation deserves investigation rather than averaging into a false consensus. ABL1, KIT and PDGFRA activity connects to several disease mechanisms, but the plot does not predict patient response: exposure, tumour variants, resistance and clinical studies matter. Clinical-stage counts describe database records and are not a ranking of efficacy.
+
+# Session info
+
+```{r session-info}
+sessionInfo()
+```

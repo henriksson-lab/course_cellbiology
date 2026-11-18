@@ -28,7 +28,7 @@ Who gives the embryo its mitochondria? What is heteroplasmy?
 :::
 
 ::: {.callout-note collapse="true" title="Answer"}
-All children get mtDNA only from the **mother's egg**, so all of them (sons and daughters) will inherit some mutant mtDNA. But the **fraction** can differ a lot between children, because only a small number of copies pass through the egg "bottleneck": some children may be below the disease threshold, others above it. If only the father carries the mutation, **no child inherits it**: the few sperm mitochondria are destroyed after fertilisation.
+All children get mtDNA only from the **mother's egg**, so **both sons and daughters can inherit the variant**. The **fraction** can differ a lot between children, and the mother’s measured 70 % does not fix the fraction in each egg, because only a small number of copies pass through the egg "bottleneck": some children may be below the disease threshold, others above it. If only the father carries the mutation, **no child inherits it**: the few sperm mitochondria are destroyed after fertilisation.
 :::
 
 ---

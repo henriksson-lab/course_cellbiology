@@ -1,0 +1,64 @@
+---
+title: "Membrane proteins: in the browser"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+[Module overview](index.qmd) · **Browser** · [R report](report.qmd)
+
+Keep notes in Part A of your downloaded report. For every database record, record its identifier and the date you accessed it. Protein sequence annotations, predicted structures, experiments and patient variant classifications provide different kinds of evidence.
+
+## 1. Find transmembrane segments
+
+Open human CFTR in [UniProt, P13569](https://www.uniprot.org/uniprotkb/P13569/entry). Check the species and that the entry is **reviewed**. In **Subcellular location** and the sequence feature viewer, select **Transmembrane**. Count annotated membrane-spanning segments, rather than all helices in the sequence. Repeat for [ABCB1, P08183](https://www.uniprot.org/uniprotkb/P08183/entry) and [SGLT2/SLC5A2, P31639](https://www.uniprot.org/uniprotkb/P31639/entry). Open one evidence tag: is the assignment experimental or inferred?
+
+**T1.** `[ELO 2]` *Sequence annotation.* How many annotated transmembrane segments does each protein have? Does the count tell you whether the protein is a channel or a transporter?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+CFTR **12**, ABCB1 **12**, SGLT2 **14** in the downloaded UniProt features. CFTR is an ATP-regulated chloride channel; ABCB1 is an ATP-driven exporter; SGLT2 is a sodium/glucose cotransporter. A segment count describes topology, but does not establish the transport mechanism. The evidence tags describe support for individual annotations.
+:::
+
+## 2. See a drug in a structure
+
+Open [RCSB PDB 6O2P](https://www.rcsb.org/structure/6O2P), the human CFTR–ivacaftor complex. Read **Experimental Data Snapshot**: method and resolution. Open **3D View / Structure** to launch Mol*. Under **Small Molecules**, find **VX7**, the ligand code for ivacaftor. Use its 3D interaction view or select it in the viewer, zoom to the ligand, and show nearby protein residues. Compare its position with the two cytosolic nucleotide-binding domains.
+
+**T2.** `[ELO 2, 9]` *Structure.* Where does ivacaftor bind? Why is choosing ATP or digitonin from the ligand list the wrong way to answer this question?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+Ivacaftor (VX7) binds within CFTR’s **transmembrane region**, at the protein–lipid interface. The ATP ligands occupy nucleotide-binding sites, and digitonin is a detergent used in preparing the protein. A structure may contain several chemicals; the ligand identifier tells you which one you selected. 6O2P was determined by **cryo-electron microscopy at 3.3 Å**. The deposited construct includes a mutation, so it is not an unmodified protein in a living cell.
+:::
+
+## 3. Separate confidence from measurement
+
+Open [AlphaFold DB P13569](https://alphafold.ebi.ac.uk/entry/P13569). Read the confidence legend and locate a low-confidence region between the first nucleotide-binding domain and the second transmembrane half. Compare it with the R-domain annotation in UniProt. AlphaFold DB models describe a sequence-based prediction; the structure in 6O2P is an experimentally determined drug-bound construct.
+
+**T3.** `[ELO 2]` **[VG]** *Evidence.* Can low pLDDT establish that a region moves rapidly, or tell you whether ivacaftor binds there?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+No. pLDDT measures **confidence in the predicted local structure**. CFTR’s regulatory R region has low-confidence stretches, consistent with a region that lacks one stable structure, but pLDDT is not a measurement of motion. Low confidence can also reflect insufficient information. A drug-binding claim needs evidence such as a ligand-bound experimental structure and functional tests; the standard monomer prediction does not include ivacaftor.
+:::
+
+## 4. Connect a variant to a cellular defect
+
+Open [ClinVar variant 7105](https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/), CFTR p.Phe508del (F508del). Read the **germline classification**, disease and review status. If the page is unavailable, use [NCBI’s summary for record 7105](https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=clinvar&id=7105&retmode=json); search within the text for `germline_classification`. Different transcripts may number the same DNA deletion differently, so record the protein change and the accession.
+
+**T4.** `[ELO 9]` *Mechanism.* Why is a potentiator alone generally insufficient for F508del? Which extra step does a corrector address?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+The record classifies p.Phe508del as **pathogenic** for cystic fibrosis. F508del causes defective folding and processing: ER quality control removes much of the protein before it reaches the surface. A potentiator increases activity of channels already at the membrane; a **corrector** improves folding/processing so more channels arrive there. Clinical classification is evidence about a variant–disease relationship, not a direct measurement of the molecular mechanism in every patient.
+:::
+
+## 5. Relate compound properties to its binding site
+
+Open [PubChem ivacaftor, CID 16220172](https://pubchem.ncbi.nlm.nih.gov/compound/16220172). In **Chemical and Physical Properties**, find molecular weight and XLogP. Record whether each is computed or measured.
+
+**T5.** `[ELO 2, 9]` *Chemical properties.* Do these values fit a molecule that can reach a membrane-embedded binding site? Does XLogP prove that a drug will enter cells well?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+PubChem reports molecular weight **392.5 g/mol** and computed **XLogP3-AA 5.6**. The positive, high partition coefficient fits a lipophilic compound and a membrane-associated binding site. It does not by itself establish cellular uptake, solubility, exposure or clinical efficacy. Charge state, transporters, binding to proteins and metabolism also matter.
+:::
+
+Continue to [the R report](report.qmd).

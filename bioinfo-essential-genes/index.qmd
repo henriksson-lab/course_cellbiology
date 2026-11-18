@@ -1,0 +1,57 @@
+---
+title: "Bioinformatics: which genes does a cancer cell need?"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+resources:
+  - bioinfo-essential-genes.Rmd
+  - data/*.csv
+  - data/*.json
+---
+
+## What you will do
+
+Use CRISPR gene-dependency screens to compare core cell-cycle machinery with
+context-dependent survival genes. Interpret distributions and build an R Markdown
+report from a short outline. **ELO 7, 8, 9.**
+
+Builds on [cell-cycle control](../cell-cycle-control/lec.qmd),
+[mitosis](../mitosis/lec.qmd), [cell numbers](../cell-numbers/lec.qmd), and
+[apoptosis](../apoptosis/lec.qmd). Allow about 3–4 hours.
+
+1. [In the browser: dependencies, cyclin B1 and p53](browser.qmd).
+2. [In R: dependency distributions](report.qmd).
+
+## Before you start
+
+No account is needed. Use RStudio or R with `rmarkdown`, `ggplot2`, `jsonlite` and
+`httr2` installed. Install missing packages once in the console:
+
+```r
+install.packages(c("rmarkdown", "ggplot2", "jsonlite", "httr2"))
+```
+
+Download the report and all listed snapshots. Put the report in a new folder and
+CSV/JSON files in its `data/` subfolder. Keep the filenames. If an API is unavailable,
+set `use_snapshot <- TRUE`. A snapshot is a dated copy of real records, not simulated data.
+Knitting uses a fresh R session: create every object in the report and finish with
+`sessionInfo()`. Do not include your R console history as a substitute for code.
+
+## Downloads
+
+- [Student report outline](bioinfo-essential-genes.Rmd)
+- [Gene-effect snapshot](data/depmap-gene-effect-2026-11-18.csv)
+- [API release metadata](data/release-2026-11-18.json)
+- [Retrieval record](data/retrieval-manifest-2026-11-18.json)
+
+## Sources and licences
+
+[Open Targets Platform](https://platform.opentargets.org/) redistributes DepMap
+CRISPR screen data through its [GraphQL API](https://api.platform.opentargets.org/api/v4/graphql).
+Open Targets data are CC0 unless a contributing dataset has additional terms;
+retain the DepMap citation and check [DepMap terms](https://depmap.org/portal/terms/).
+Snapshot retrieved 2026-11-18; the included metadata records the Open Targets release.
+Cite the [DepMap portal](https://depmap.org/portal/) and [Chronos method](https://doi.org/10.1186/s13059-021-02540-7).
+HPA and UniProt annotations are CC BY 4.0. No external images are reproduced.

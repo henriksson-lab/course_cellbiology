@@ -13,8 +13,6 @@ project:
     - "*/*.qmd"
     - "*/*.md"
     - "!plan/"
-    # Unfinished unit (not in the sidebar yet).
-    - "!mitochondria/"
     - "!unused-figures/"
     - "!tools/"
     - "!edit-notes/"
@@ -91,7 +89,7 @@ website:
                 href: cell-methods/questions.qmd
               - text: "Demo: flow cytometry gating"
                 href: cell-methods/questions.qmd#explore
-          - text: "Bioinformatics day: where does a protein live?"
+          - text: "Bioinformatics: where does a protein live?"
             href: bioinfo-protein-atlas/index.qmd
       - section: "Membranes and transport"
         contents:
@@ -125,6 +123,8 @@ website:
                 href: ion-channels/questions.qmd
               - text: "Demo: the cell battery"
                 href: ion-channels/questions.qmd#explore
+          - text: "Bioinformatics: membrane proteins, tissues and drugs"
+            href: bioinfo-membrane-proteins/index.qmd
       - section: "Protein handling and organelles"
         contents:
           - section: "Sorting proteins to the right compartment"
@@ -167,6 +167,8 @@ website:
                 href: endocytosis-lysosomes/questions.qmd
               - text: "Demo: LDL receptor cycle"
                 href: endocytosis-lysosomes/questions.qmd#explore
+          - text: "Bioinformatics: read the zip code"
+            href: bioinfo-sorting-signals/index.qmd
           - section: "Protein life and death"
             contents:
               - text: "Lecture (slides)"
@@ -177,6 +179,16 @@ website:
                 href: protein-lifecycle/questions.qmd
               - text: "Demo: protein turnover"
                 href: protein-lifecycle/questions.qmd#explore
+          - section: "Mitochondria: energy conversion and more"
+            contents:
+              - text: "Lecture (slides)"
+                href: mitochondria/lec.qmd
+              - text: "Quiz"
+                href: mitochondria/quiz.qmd
+              - text: "Study questions"
+                href: mitochondria/questions.qmd
+              - text: "Demo: mito stress test"
+                href: mitochondria/questions.qmd#explore
           - section: "Organelles compared: keeping the cell in balance"
             contents:
               - text: "Lecture (slides)"
@@ -187,6 +199,8 @@ website:
                 href: organelles-homeostasis/questions.qmd
               - text: "Demo: measure the organelles"
                 href: organelles-homeostasis/questions.qmd#explore
+          - text: "Bioinformatics: genomes inside organelles and drugs on machines"
+            href: bioinfo-mito-proteasome/index.qmd
       - section: "Cell signalling"
         contents:
           - section: "Principles of cell communication"
@@ -229,6 +243,8 @@ website:
                 href: fate-signalling/questions.qmd
               - text: "Demo: Notch lateral inhibition"
                 href: fate-signalling/questions.qmd#explore
+          - text: "Bioinformatics: how selective is a kinase inhibitor?"
+            href: bioinfo-drug-targets/index.qmd
       - section: "Cytoskeleton"
         contents:
           - section: "Actin: cell shape and migration"
@@ -261,6 +277,8 @@ website:
                 href: myosin-if/questions.qmd
               - text: "Demo: sarcomere"
                 href: myosin-if/questions.qmd#explore
+          - text: "Bioinformatics: filaments, tissues and a drug for the heart"
+            href: bioinfo-cytoskeleton/index.qmd
       - section: "Cell cycle and cell death"
         contents:
           - section: "The cell-cycle control system"
@@ -303,6 +321,8 @@ website:
                 href: apoptosis/questions.qmd
               - text: "Demo: BCL-2 balance"
                 href: apoptosis/questions.qmd#explore
+          - text: "Bioinformatics: which genes does a cancer cell need?"
+            href: bioinfo-essential-genes/index.qmd
       - section: "Cell death and disease"
         contents:
           - section: "Beyond apoptosis: necroptosis, pyroptosis, ferroptosis"
@@ -335,6 +355,8 @@ website:
                 href: disease-casebook/questions.qmd
               - text: "Demo: diagnose the defect"
                 href: disease-casebook/questions.qmd#explore
+          - text: "Bioinformatics: read the mutations"
+            href: bioinfo-cancer-genomics/index.qmd
 
 format:
   html:

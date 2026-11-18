@@ -1,0 +1,225 @@
+---
+title: "Membrane proteins, tissues and drugs"
+author: "Course worked solution"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(knitr)
+options(HTTPUserAgent = "3MB001-course", timeout = 60)
+knitr::opts_chunk$set(error = FALSE, message = FALSE, warning = TRUE)
+use_snapshot <- FALSE
+snapshot_date <- "2026-11-18"
+dir.create("data", showWarnings = FALSE)
+provenance <- data.frame(dataset = character(), mode = character(),
+                         retrieved = character(), version = character())
+
+# Daily cache includes provenance. Failures use the named snapshot, never
+# unlabelled made-up data. Missing or malformed snapshots stop the report.
+load_data <- function(name, snapshot, fetch_fun, snapshot_version,
+                      snapshot_read = function(path) {
+                        read.csv(path, check.names = FALSE, stringsAsFactors = FALSE,
+                                 na.strings = character())
+                      }) {
+  cache <- file.path("data", paste0(name, "-", Sys.Date(), ".rds"))
+  if (use_snapshot) {
+    obj <- list(data = snapshot_read(snapshot), mode = "course snapshot",
+                retrieved = snapshot_date, version = snapshot_version)
+  } else if (file.exists(cache)) {
+    obj <- readRDS(cache)
+    obj$mode <- paste("cached", obj$mode)
+  } else {
+    obj <- tryCatch({
+      value <- fetch_fun()
+      version <- attr(value, "source_version")
+      if (is.null(version)) version <- "not reported"
+      result <- list(data = value, mode = "live API", retrieved = as.character(Sys.Date()),
+                     version = version)
+      saveRDS(result, cache)
+      result
+    }, error = function(e) {
+      warning(paste("API unavailable:", conditionMessage(e), "Using course snapshot."))
+      list(data = snapshot_read(snapshot), mode = "fallback snapshot",
+           retrieved = snapshot_date, version = snapshot_version)
+    })
+  }
+  provenance <<- rbind(provenance, data.frame(dataset = name, mode = obj$mode,
+                         retrieved = obj$retrieved, version = obj$version))
+  obj$data
+}
+uniprot_release <- function(url) {
+  headers <- tryCatch(curlGetHeaders(url), error = function(e) character())
+  h <- headers[grepl("^x-uniprot-release:", headers, ignore.case = TRUE)]
+  if (length(h)) trimws(sub("^[^:]+:", "", tail(h, 1))) else "not reported"
+}
+count_feature <- function(x, token) {
+  vapply(gregexpr(token, x, fixed = TRUE), function(pos) sum(pos > 0), integer(1))
+}
+```
+
+# Part A: browser notes
+
+Replace the dots with your observations. Record accession/record identifiers and
+access dates. See the course browser page for each task.
+
+| Task | Observation | Identifier and access date |
+|---|---|---|
+| T1: three topology counts | CFTR 12; ABCB1 12; SGLT2 14 | UniProt P13569/P08183/P31639; checked 2026-11-18 |
+| T2: ivacaftor location | Membrane region, protein–lipid interface; ligand VX7 | 6O2P; checked 2026-11-18 |
+| T3: confidence versus measurement | Low pLDDT is confidence, not a mobility measurement | AlphaFold P13569; checked 2026-11-18 |
+| T4: F508del and ER quality control | Pathogenic; folding/trafficking defect, corrector improves delivery | ClinVar 7105; checked 2026-11-18 |
+| T5: molecular weight and XLogP | 392.5 g/mol; computed XLogP 5.6 | PubChem CID 16220172; checked 2026-11-18 |
+
+# Data: GTEx tissue expression
+
+The code makes four small requests: a reference lookup and an expression query
+for each gene. Inspect `jsonlite::fromJSON()` on one URL to see how JSON maps to
+an R list. The query pins GTEx v8 and resolves each versioned GENCODE identifier.
+
+```{r fetch-gtex}
+library(jsonlite)
+gtex_base <- "https://gtexportal.org/api/v2/"
+gtex_dataset <- "gtex_v8"
+fetch_gtex <- function() {
+  result <- lapply(c("SLC5A1", "SLC5A2"), function(gene) {
+    gene_url <- paste0(gtex_base, "reference/gene?geneId=", gene,
+                       "&datasetId=", gtex_dataset)
+    reference <- jsonlite::fromJSON(gene_url)
+    genes <- reference$data
+    hit <- genes[genes$geneSymbol == gene, , drop = FALSE]
+    stopifnot(nrow(hit) == 1)
+    gene_id <- hit$gencodeId[1]
+    expression_url <- paste0(gtex_base, "expression/medianGeneExpression?gencodeId=",
+                              gene_id, "&datasetId=", gtex_dataset)
+    response <- jsonlite::fromJSON(expression_url)
+    # Never silently analyse only the first page.
+    if (!is.null(response$paging_info$numberOfPages) &&
+        response$paging_info$numberOfPages > 1) stop("GTEx response needs pagination")
+    x <- response$data
+    stopifnot(nrow(x) > 0, all(x$unit == "TPM"))
+    data.frame(gene = gene, gencode_id = gene_id,
+               tissue = x$tissueSiteDetailId, median_tpm = x$median)
+  })
+  value <- do.call(rbind, result)
+  attr(value, "source_version") <- gtex_dataset
+  value
+}
+expression <- load_data("gtex-medians", "data/gtex-medians-2026-11-18.csv",
+                        fetch_gtex, "gtex_v8")
+stopifnot(all(c("gene", "gencode_id", "tissue", "median_tpm") %in% names(expression)),
+          setequal(unique(expression$gene), c("SLC5A1", "SLC5A2")),
+          !anyDuplicated(expression[c("gene", "tissue")]),
+          all(is.finite(expression$median_tpm)), all(expression$median_tpm >= 0))
+head(expression)
+```
+
+## Plot tissue expression
+
+Only include tissues with a median above 10 TPM for either gene. These data are
+tissue medians of RNA abundance, not per-cell protein measurements.
+
+```{r select-tissues}
+plot_tissues <- unique(expression$tissue[expression$median_tpm > 10])
+plot_expression <- expression[expression$tissue %in% plot_tissues, ]
+```
+
+```{r expression-plot, fig.width=8, fig.height=6}
+ggplot(plot_expression, aes(tissue, median_tpm, colour = gene)) +
+  geom_point(position = position_dodge(width = 0.5), size = 3) +
+  coord_flip() + theme_minimal() +
+  labs(x = "Tissue", y = "Median RNA abundance (TPM)", colour = "Gene",
+       caption = paste("Source: GTEx v8;", provenance$mode[1],
+                       "retrieved", provenance$retrieved[1]))
+```
+
+```{r highest-tissue}
+highest <- do.call(rbind, lapply(split(expression, expression$gene),
+  function(x) x[which.max(x$median_tpm), c("gene", "tissue", "median_tpm")]))
+knitr::kable(highest)
+```
+
+The SLC5A2 maximum is `r round(max(expression$median_tpm[expression$gene == "SLC5A2"]), 1)`
+TPM in kidney cortex. SGLT2 participates in renal glucose reabsorption, consistent
+with kidney-enriched RNA. SLC5A1 is highest in terminal ileum (~98 TPM), fitting
+intestinal absorption; the substantial heart RNA is a reminder that familiar
+functions do not exhaust a gene's expression pattern. Bulk RNA does not identify
+the expressing cell type or the membrane surface containing the protein.
+
+# Data: UniProt membrane features
+
+This single query returns eight proteins. API feature names differ from the
+column labels in the response. `check.names = FALSE` preserves those labels.
+
+```{r fetch-uniprot}
+accessions <- c("P05023", "P11166", "P13866", "P31639", "P08183", "P13569",
+                "P29972", "Q09470")
+uniprot_url <- paste0("https://rest.uniprot.org/uniprotkb/accessions?accessions=",
+  paste(accessions, collapse = ","),
+  "&fields=accession,gene_primary,ft_transmem,ft_topo_dom,length&format=tsv")
+fetch_uniprot <- function() {
+  x <- read.delim(uniprot_url, check.names = FALSE, stringsAsFactors = FALSE,
+                  na.strings = character(), quote = "")
+  stopifnot(setequal(x$Entry, accessions))
+  attr(x, "source_version") <- uniprot_release(uniprot_url)
+  x
+}
+proteins <- load_data("uniprot-features", "data/uniprot-features-2026-11-18.csv",
+                      fetch_uniprot, "UniProtKB 2026_04")
+stopifnot(setequal(proteins$Entry, accessions),
+          all(c("Gene Names (primary)", "Transmembrane") %in% names(proteins)))
+proteins$gene <- proteins[["Gene Names (primary)"]]
+head(proteins[c("Entry", "gene", "Length")])
+```
+
+## Count and plot transmembrane segments
+
+Count `TRANSMEM ` occurrences, not semicolons (a feature has several qualifiers).
+The helper `count_feature()` shows how to handle the no-match value -1.
+
+```{r count-tm}
+proteins$tm_count <- count_feature(proteins$Transmembrane, "TRANSMEM ")
+knitr::kable(proteins[c("gene", "tm_count")])
+stopifnot(proteins$tm_count[proteins$gene == "CFTR"] == 12,
+          proteins$tm_count[proteins$gene == "SLC5A2"] == 14)
+```
+
+```{r topology-plot, fig.width=8, fig.height=4}
+ggplot(proteins, aes(reorder(gene, tm_count), tm_count)) +
+  geom_col(fill = "#207a72") + coord_flip() + theme_minimal() +
+  labs(x = "Gene", y = "Annotated transmembrane segments (count)",
+       caption = paste("Source: UniProtKB;", tail(provenance$version, 1),
+                       "retrieved", tail(provenance$retrieved, 1)))
+```
+
+CFTR and ABCB1 both have 12 annotated segments but CFTR is a channel and ABCB1 an ATP-driven exporter. Topology alone does not identify transport mechanism.
+
+# Data provenance and sources
+
+The analysis ran on `r Sys.Date()`. The table records the date the data were
+retrieved, which may differ from the knitting date. The snapshot was downloaded
+on 2026-11-18; a live request reports its own date and version. Cache files store
+this information alongside the data.
+
+```{r provenance}
+knitr::kable(provenance)
+cat("UniProt query:", uniprot_url, "\n")
+cat("GTEx reference endpoint:", paste0(gtex_base, "reference/gene"), "\n")
+cat("GTEx expression endpoint:", paste0(gtex_base, "expression/medianGeneExpression"),
+    "; dataset:", gtex_dataset, "\n")
+print(unique(expression[c("gene", "gencode_id")]))
+```
+
+UniProt data: CC BY 4.0, https://www.uniprot.org/help/license.
+GTEx public aggregate tissue expression: https://gtexportal.org/home/datasets.
+Browser records: UniProt P13569, P08183, P31639; RCSB PDB 6O2P;
+AlphaFold DB P13569; ClinVar 7105; PubChem CID 16220172.
+
+# Session information
+
+```{r session-info}
+sessionInfo()
+```

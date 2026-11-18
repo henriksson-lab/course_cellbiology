@@ -1,0 +1,37 @@
+---
+title: "Bioinformatics: how selective is a kinase inhibitor?"
+engine: markdown
+resources:
+  - bioinfo-drug-targets.Rmd
+  - fetch-data.R
+  - data/*.csv
+  - data/*.txt
+---
+
+## What you will learn
+
+A drug can act on several proteins, and a database can contain conflicting measurements. You will inspect signalling proteins in three dimensions, compare imatinib activity records and make a reproducible report that separates evidence from a simple dose–response model.
+
+Builds on [signalling principles](../signalling-principles/lec.qmd), [GPCRs](../gpcr/lec.qmd), [kinase signalling](../kinase-signalling/lec.qmd) and [cell-fate signalling](../fate-signalling/lec.qmd). `[ELO 3, 9]`
+
+1. [Database investigation](browser.qmd): structures, pathways and target–disease evidence.
+2. [R Markdown report](report.qmd): activity distributions, illustrative inhibition curves and clinical-stage records.
+
+Allow about 1.5 h for the browser work and 1.5–2 h for the report. No logins or API keys are needed.
+
+## Before you start
+
+Download these files together; put the CSVs in a subfolder named `data`:
+
+- [Student R Markdown template](bioinfo-drug-targets.Rmd).
+- [Provided API helper](fetch-data.R).
+- [Imatinib activity snapshot](data/imatinib-activities-2026-11-18.csv).
+- [Target–drug clinical-stage snapshot](data/clinical-candidates-2026-11-18.csv).
+- [Database release metadata](data/releases-2026-11-18.csv).
+- Optional: [the snapshot's Open Targets GraphQL query](data/opentargets-query-2026-11-18.txt).
+
+Install missing R packages once: `install.packages(c("rmarkdown", "ggplot2", "httr2"))`. Knit the downloaded template using RStudio or `rmarkdown::render("bioinfo-drug-targets.Rmd")`. For offline work, set `use_snapshot <- TRUE`; all three CSVs must already be in `data/`.
+
+## Sources and licences
+
+Data were retrieved 2026-11-18 from [ChEMBL](https://www.ebi.ac.uk/chembl/), release 37 ([CC BY-SA 3.0](https://chembl.gitbook.io/chembl-interface-documentation/about)), and the [Open Targets Platform](https://platform.opentargets.org), release 26.09 ([CC0](https://platform-docs.opentargets.org/licence)). The course ships selected fields and names the exact filters. No external figures are reproduced; the plots are generated from the records. [Full data credits](../credits.qmd#bioinfo-drug-targets).

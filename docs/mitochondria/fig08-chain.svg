@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1098ad"/></marker>
+    <marker id="e" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c99700"/></marker>
+    <marker id="k" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="180" fill="#fdf6f7"/>
+  <rect x="0" y="240" width="1000" height="200" fill="#f8e9ec"/>
+  <rect x="0" y="180" width="1000" height="60" fill="#ecc9d1"/>
+  <line x1="0" y1="180" x2="1000" y2="180" stroke="#a8324a" stroke-width="2.5"/><line x1="0" y1="240" x2="1000" y2="240" stroke="#a8324a" stroke-width="2.5"/>
+  <text x="14" y="28" font-size="18" font-weight="700" fill="#a8324a">intermembrane space: many H<tspan font-size="12.2" dy="-7.2">+</tspan><tspan dy="7.2">, positive side</tspan></text>
+  <text x="14" y="428" font-size="18" font-weight="700" fill="#a8324a">matrix: few H<tspan font-size="12.2" dy="-7.2">+</tspan><tspan dy="7.2">, negative side</tspan></text>
+  <text x="990" y="216" font-size="16" text-anchor="end" fill="#a8324a" font-weight="700">inner membrane</text>
+  <!-- electron path -->
+  <path d="M120,330 L130,215 L235,222 L300,212 L360,130 L455,212 L455,330" fill="none" stroke="#c99700" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#e)"/>
+  <!-- complexes -->
+  <g stroke="#a8324a" stroke-width="2.5" fill="#fff">
+    <rect x="95" y="160" width="70" height="100" rx="12"/>
+    <rect x="270" y="165" width="64" height="90" rx="12"/>
+    <rect x="425" y="165" width="60" height="90" rx="12"/>
+  </g>
+  <g font-size="22" font-weight="700" fill="#a8324a" text-anchor="middle"><text x="130" y="218">I</text><text x="302" y="218">III</text><text x="455" y="218">IV</text></g>
+  <circle cx="225" cy="222" r="16" fill="#fff3bf" stroke="#c99700" stroke-width="2.5"/><text x="225" y="228" font-size="16" font-weight="700" text-anchor="middle">Q</text>
+  <circle cx="360" cy="125" r="16" fill="#fff3bf" stroke="#c99700" stroke-width="2.5"/><text x="360" y="131" font-size="16" font-weight="700" text-anchor="middle">c</text>
+  <text x="120" y="356" font-size="18" font-weight="700" text-anchor="middle">NADH</text>
+  <text x="81.5" y="378" font-size="15" text-anchor="start">gives 2 e<tspan font-size="10.2" dy="-6.0">−</tspan><tspan dy="6.0">&#8203;</tspan></text>
+  <text x="371.3" y="356" font-size="18" font-weight="700" text-anchor="start">½ O<tspan font-size="12.2" dy="4.5">2</tspan><tspan dy="-4.5"> + 2 H</tspan><tspan font-size="12.2" dy="-7.2">+</tspan><tspan dy="7.2"> → H</tspan><tspan font-size="12.2" dy="4.5">2</tspan><tspan dy="-4.5">O</tspan></text>
+  <!-- H+ pumping arrows -->
+  <g stroke="#1098ad" stroke-width="4" marker-end="url(#h)">
+    <line x1="154" y1="300" x2="154" y2="90"/><line x1="326" y1="300" x2="326" y2="90"/><line x1="477" y1="300" x2="477" y2="90"/>
+  </g>
+  <g font-size="19" font-weight="700" fill="#1098ad"><text x="160" y="80">4 H<tspan font-size="10.9" dy="-6.4">+</tspan><tspan dy="6.4">&#8203;</tspan></text><text x="290" y="80">4 H<tspan font-size="10.9" dy="-6.4">+</tspan><tspan dy="6.4">&#8203;</tspan></text><text x="440" y="80">2 H<tspan font-size="10.9" dy="-6.4">+</tspan><tspan dy="6.4">&#8203;</tspan></text></g>
+  <text x="212.3" y="54" font-size="16" text-anchor="start">10 H<tspan font-size="10.9" dy="-6.4">+</tspan><tspan dy="6.4"> pumped per NADH</tspan></text>
+  <text x="525" y="118" font-size="15">e<tspan font-size="10.2" dy="-6.0">−</tspan><tspan dy="6.0"> lose energy step by step;</tspan></text>
+  <text x="525" y="138" font-size="15">each step pays for H<tspan font-size="10.2" dy="-6.0">+</tspan><tspan dy="6.0"> pumping</tspan></text>
+  <!-- ATP synthase -->
+  <rect x="740" y="168" width="80" height="84" rx="16" fill="#fff" stroke="#1b2a3a" stroke-width="2.5"/>
+  <line x1="780" y1="252" x2="780" y2="290" stroke="#1b2a3a" stroke-width="7"/>
+  <circle cx="780" cy="320" r="34" fill="#fff" stroke="#1b2a3a" stroke-width="2.5"/>
+  <text x="772.7" y="326" font-size="15" font-weight="700" text-anchor="start">F<tspan font-size="10.2" dy="3.8">1</tspan><tspan dy="-3.8">&#8203;</tspan></text>
+  <text x="784" y="216" font-size="15" font-weight="700" text-anchor="start">F<tspan font-size="10.2" dy="3.8">o</tspan><tspan dy="-3.8">&#8203;</tspan></text>
+  <line x1="760" y1="80" x2="760" y2="292" stroke="#1098ad" stroke-width="4" marker-end="url(#h)"/>
+  <text x="700" y="70" font-size="19" font-weight="700" fill="#1098ad">H<tspan font-size="12.9" dy="-7.6">+</tspan><tspan dy="7.6"> flow back</tspan></text>
+  <text x="826" y="300" font-size="16">ADP + P<tspan font-size="10.9" dy="4.0">i</tspan><tspan dy="-4.0">&#8203;</tspan></text>
+  <line x1="850" y1="308" x2="850" y2="336" stroke="#1b2a3a" stroke-width="2" marker-end="url(#k)"/>
+  <text x="836" y="358" font-size="18" font-weight="700" fill="#2b8a3e">ATP</text>
+  <text x="840" y="160" font-size="16" font-weight="700">ATP synthase</text>
+</svg>

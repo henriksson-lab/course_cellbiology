@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+<line x1="80" x2="740" y1="360.0" y2="360.0" stroke="#eceef0"/><text x="72" y="365.0" font-size="15" text-anchor="end">0</text>
+<line x1="80" x2="740" y1="310.0" y2="310.0" stroke="#eceef0"/><text x="72" y="315.0" font-size="15" text-anchor="end">50</text>
+<line x1="80" x2="740" y1="260.0" y2="260.0" stroke="#eceef0"/><text x="72" y="265.0" font-size="15" text-anchor="end">100</text>
+<line x1="80" x2="740" y1="210.0" y2="210.0" stroke="#eceef0"/><text x="72" y="215.0" font-size="15" text-anchor="end">150</text>
+<line x1="80" x2="740" y1="160.0" y2="160.0" stroke="#eceef0"/><text x="72" y="165.0" font-size="15" text-anchor="end">200</text>
+<line x1="80" x2="740" y1="110.0" y2="110.0" stroke="#eceef0"/><text x="72" y="115.0" font-size="15" text-anchor="end">250</text>
+<line x1="80" x2="740" y1="60.0" y2="60.0" stroke="#eceef0"/><text x="72" y="65.0" font-size="15" text-anchor="end">300</text>
+<line x1="80" x2="740" y1="360" y2="360" stroke="#1b2a3a" stroke-width="1.5"/><line x1="80" x2="80" y1="40" y2="360" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="410" y="392" font-size="16" text-anchor="middle">time (min)</text>
+<text x="80.0" y="378" font-size="14" text-anchor="middle">0</text>
+<text x="190.0" y="378" font-size="14" text-anchor="middle">12</text>
+<text x="300.0" y="378" font-size="14" text-anchor="middle">24</text>
+<text x="410.0" y="378" font-size="14" text-anchor="middle">36</text>
+<text x="520.0" y="378" font-size="14" text-anchor="middle">48</text>
+<text x="630.0" y="378" font-size="14" text-anchor="middle">60</text>
+<text x="740.0" y="378" font-size="14" text-anchor="middle">72</text>
+<text x="-48.7" y="200" font-size="16" text-anchor="start" transform="rotate(-90 22 200)">O<tspan font-size="10.9" dy="4.0">2</tspan><tspan dy="-4.0"> use (pmol/min)</tspan></text>
+<line x1="245.0" x2="245.0" y1="30" y2="360" stroke="#e8590c" stroke-width="2" stroke-dasharray="5 4"/><text x="250.0" y="28" font-size="15" font-weight="700" fill="#e8590c">oligomycin</text>
+<line x1="410.0" x2="410.0" y1="30" y2="360" stroke="#e8590c" stroke-width="2" stroke-dasharray="5 4"/><text x="415.0" y="28" font-size="15" font-weight="700" fill="#e8590c">FCCP</text>
+<line x1="575.0" x2="575.0" y1="30" y2="360" stroke="#e8590c" stroke-width="2" stroke-dasharray="5 4"/><text x="580.0" y="28" font-size="15" font-weight="700" fill="#e8590c">rotenone + antimycin A</text>
+<text x="85" y="28" font-size="15" font-weight="700">basal</text>
+<path d="M121.2,261.0 L176.2,261.0 L231.2,261.0 L286.2,320.0 L341.2,320.0 L396.2,320.0 L451.2,116.0 L506.2,116.0 L561.2,116.0 L616.2,346.0 L671.2,346.0 L726.2,346.0" fill="none" stroke="#a8324a" stroke-width="3"/>
+<circle cx="121.2" cy="261.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="176.2" cy="261.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="231.2" cy="261.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="286.2" cy="320.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="341.2" cy="320.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="396.2" cy="320.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="451.2" cy="116.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="506.2" cy="116.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="561.2" cy="116.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="616.2" cy="346.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="671.2" cy="346.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<circle cx="726.2" cy="346.0" r="5.5" fill="#a8324a" stroke="#fff" stroke-width="1.5"/>
+<line x1="80" x2="740" y1="346.0" y2="346.0" stroke="#868e96" stroke-dasharray="3 4" stroke-width="1.5"/>
+<line x1="231.25" x2="538.3333333333333" y1="261.0" y2="261.0" stroke="#a8324a" stroke-dasharray="3 4" stroke-width="1.5"/>
+<path d="M142.75,346.0 H148.75 V261.0 H142.75" fill="none" stroke="#a8324a" stroke-width="3.5"/>
+<text x="154.75" y="308.5" font-size="15" font-weight="700" fill="#a8324a" text-anchor="start">basal</text>
+<path d="M307.75,320.0 H313.75 V261.0 H307.75" fill="none" stroke="#2b8a3e" stroke-width="3.5"/>
+<text x="319.75" y="295.5" font-size="15" font-weight="700" fill="#2b8a3e" text-anchor="start">ATP-linked</text>
+<path d="M367.3333333333333,346.0 H373.3333333333333 V320.0 H367.3333333333333" fill="none" stroke="#e8590c" stroke-width="3.5"/>
+<text x="363.3333333333333" y="338.0" font-size="15" font-weight="700" fill="#e8590c" text-anchor="end">proton leak</text>
+<path d="M477.33333333333337,346.0 H483.33333333333337 V116.0 H472.75" fill="none" stroke="#1c4fa0" stroke-width="3.5"/>
+<text x="489.3" y="295" font-size="15" font-weight="700" fill="#1c4fa0">maximal</text>
+<path d="M518.5833333333334,261.0 H524.5833333333334 V116.0 H518.5833333333334" fill="none" stroke="#1c4fa0" stroke-width="3.5"/>
+<text x="530.5833333333334" y="193.5" font-size="15" font-weight="700" fill="#1c4fa0" text-anchor="start">spare</text>
+<path d="M651.5,360.0 H657.5 V346.0 H651.5" fill="none" stroke="#868e96" stroke-width="3.5"/>
+<text x="634.6" y="336" font-size="15" font-weight="700" fill="#868e96">non-mitochondrial</text>
+<text x="756" y="60" font-size="15" font-weight="700">ports</text>
+<text x="756" y="84" font-size="14">A oligomycin</text><text x="756" y="104" font-size="14">B FCCP</text><text x="756" y="124" font-size="14">C rotenone +</text><text x="770" y="142" font-size="14">antimycin A</text>
+<text x="756" y="182" font-size="14" font-style="italic">model values,</text><text x="756" y="200" font-size="14" font-style="italic">healthy cells</text>
+</svg>

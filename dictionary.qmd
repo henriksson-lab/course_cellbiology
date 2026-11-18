@@ -377,6 +377,30 @@ See [Protein life and death](protein-lifecycle/lec.qmd).
 
 **Molecular glue**: a small molecule, such as lenalidomide bound to cereblon, that makes an E3 ligase recognise and destroy new substrate proteins.
 
+### Mitochondria: energy conversion and more
+
+See [Mitochondria](mitochondria/lec.qmd).
+
+**Cristae**: folds of the inner mitochondrial membrane that provide area for respiratory complexes and ATP synthase.
+
+**Chemiosmosis**: coupling of an energy source to ATP synthesis through an electrochemical ion gradient across a membrane.
+
+**Proton-motive force**: the combined membrane potential and H⁺ concentration difference that drive protons into the mitochondrial matrix.
+
+**ATP synthase**: a rotary enzyme that uses downhill H⁺ movement to make ATP, and can run in reverse using ATP to pump H⁺.
+
+**ADP/ATP carrier**: an inner-membrane antiporter that exchanges matrix ATP for cytosolic ADP, driven partly by the membrane potential.
+
+**Mitochondrial fission and fusion**: division and joining of mitochondria, shaping the network and helping distribute and maintain its contents.
+
+**Uncoupler**: a substance that dissipates the proton gradient, allowing respiration without efficient ATP synthesis.
+
+**ATP-linked respiration**: the component of oxygen consumption estimated from the fall after ATP synthase inhibition by oligomycin.
+
+**Spare respiratory capacity**: maximal uncoupled mitochondrial respiration minus basal mitochondrial respiration.
+
+**Mitochondrial donation**: transfer of parental nuclear material into donor cytoplasm to reduce transmission of pathogenic maternal mtDNA.
+
 ### Organelles compared: keeping the cell in balance
 
 See [Organelles compared: keeping the cell in balance](organelles-homeostasis/lec.qmd).

@@ -1,0 +1,73 @@
+---
+title: "Sorting signals: the R report"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+resources:
+  - bioinfo-sorting-signals.Rmd
+  - data/*.csv
+  - data/*.json
+  - data/*.fasta
+---
+
+[Module overview](index.qmd) · [Browser](browser.qmd) · **R report**
+
+## 1. Start from a reproducible report
+
+Download the [template](bioinfo-sorting-signals.Rmd), enter your name and knit it. Complete the browser notes first. The report fetches **15 reviewed human proteins** from UniProt in one request and reads their sequences in FASTA format in a second request. The supplied fallback files allow offline work. A local RDS cache prevents repeated downloads when you re-knit.
+
+A FASTA file has one header line beginning with `>`, then sequence letters on one or more lines. The helper joins sequence lines and extracts the stable UniProt accession from each header. Match sequences by accession, never by row number: APIs may return records in a different order.
+
+## 2. Read the feature table
+
+Inspect `names(proteins)` and `head(proteins)`. The report has short internal names for accession, gene, signal peptide, transit peptide, transmembrane features, location and sequence. Empty annotations are empty strings, **not evidence that a route is impossible**.
+
+The proteins span several routes: secreted ALB, INS and PCSK9; ER proteins HSPA5, CANX and P4HB; lysosomal LAMP1 and GBA1; surface LDLR and TFRC; mitochondrial ATP5F1A and CS; nuclear-pore NUP62; peroxisomal receptor PEX5; cytosolic GAPDH. These destination labels are teaching groupings, not a claim that a protein has only one location.
+
+## 3. Extract sequence ends
+
+In `sequence-ends`, calculate the last four residues:
+
+```r
+substr(proteins$sequence, nchar(proteins$sequence) - 3,
+       nchar(proteins$sequence))
+```
+
+Store this as `proteins$last_four`. Check that FASTA and the sequence column in the downloaded feature table agree. `match()` in the supplied code aligns the accessions first.
+
+## 4. Make the feature matrix
+
+In `feature-table`, create logical columns for:
+
+- a nonempty signal-peptide annotation;
+- a nonempty transit-peptide annotation;
+- at least one annotated transmembrane segment;
+- an exact C-terminal `KDEL` sequence.
+
+Use `nzchar()` for nonempty strings and `== "KDEL"` for the terminal sequence. Use `knitr::kable()` to print accession, gene, destination, last four residues and the feature columns.
+
+**T6.** `[ELO 4, 5]` **[VG]** *Sequence interpretation.* Which proteins have a signal peptide but no membrane segment? Which have a transit peptide? Why would a rule “no signal peptide means cytosolic” fail?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+Signal peptide but no TM annotation: **ALB, INS, HSPA5, P4HB, GBA1 and PCSK9**. They include secreted proteins, ER lumen proteins and a lysosomal enzyme; further sorting signals and interactions distinguish their destinations. **ATP5F1A and CS** have mitochondrial transit peptides. The simplistic rule fails for **TFRC**, whose internal signal-anchor mediates ER targeting, and for mitochondrial and nuclear proteins, which use other import routes. PEX5 is a soluble import receptor, not a peroxisomal matrix cargo: do not expect it to end in SKL merely because it works with peroxisomes.
+:::
+
+## 5. Plot the features
+
+In `feature-plot`, reshape the four feature columns into a long table with columns `gene`, `destination`, `feature`, `present`. The supplied base-R hint is `stack()`, or you may use `tidyr::pivot_longer()` if you already know it and record the package. Plot with `geom_tile()`, `fill = present`, and `facet_grid(destination ~ ., scales = "free_y", space = "free_y")`. Label the legend “Annotation or motif present”; use a different colour for FALSE.
+
+The plot tests how signals combine. It does not predict all organelle locations from sequence alone. In particular, this table does not scan for nuclear localisation signals, lysosomal mannose-6-phosphate or all peroxisomal targeting signals.
+
+## 6. Write and check
+
+Use the plot to explain one pair of proteins with similar initial signals but different final destinations. Add one inline R value, such as the number of proteins ending in KDEL. Keep the accession IDs, Data provenance and final `sessionInfo()` output. Optional hand-in: the knitted HTML with your browser notes, table, plot and interpretation.
+
+## Sources and licences
+
+- **UniProtKB**, release 2026_04, retrieved 2026-11-18: [REST API](https://www.uniprot.org/help/api_queries), [FASTA format](https://www.uniprot.org/help/fasta-headers), [CC BY 4.0](https://www.uniprot.org/help/license). The CSV and FASTA retain the fetched sequences and feature strings. Exact URLs are in `data/uniprot-provenance.json`.
+- **QuickGO**, [CFTR annotations](https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=P13569), retrieved 2026-11-18. The snapshot is the IDA/IBA subset of the first 100 cellular-component results, not all CFTR annotations. GO data: [CC BY 4.0](https://geneontology.org/docs/go-citation-policy/). [Evidence-code definitions](https://geneontology.org/docs/guide-go-evidence-codes/).
+- **STRING**, [human LDLR network](https://string-db.org/cgi/network?identifiers=LDLR&species=9606), checked 2026-11-18. **Reactome**, [R-HSA-8856825](https://reactome.org/content/detail/R-HSA-8856825), checked 2026-11-18. These websites are viewed in the browser; their images are not copied here.
+
+[Module overview](index.qmd).

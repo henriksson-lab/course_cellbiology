@@ -1,0 +1,61 @@
+---
+title: "Organelle genomes: database investigation"
+engine: markdown
+---
+
+[Module overview and downloads](index.qmd) · Next: [R Markdown report](report.qmd)
+
+## 1. Read a reference genome
+
+1. Open [NC_012920.1 at NCBI Nucleotide](https://www.ncbi.nlm.nih.gov/nuccore/NC_012920.1). The accession before the dot identifies the record; `.1` identifies its sequence version. This is the human mitochondrial reference genome.
+2. In the **GenBank** display find **LOCUS** (length and circular topology), then **FEATURES**. Find one `CDS`, one `tRNA` and one `rRNA`. A `gene` feature and its `CDS` describe the same locus; do not count both as separate genes.
+3. Find `complement(...)` in a location. It places a feature on the opposite strand; it does not mean the feature is absent.
+
+**T1.** Record the genome length and the numbers of protein-coding, tRNA and rRNA genes. Why does a mitochondrial genome need RNA genes? `[ELO 5; skill: read a feature table]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+NC_012920.1 is **16,569 bp**, with **13 protein-coding genes, 22 tRNA genes and 2 rRNA genes**. The tRNAs and rRNAs support translation of the 13 proteins inside mitochondria. These 37 genes are not 37 proteins. The R report checks the three feature counts directly against the downloaded feature table.
+:::
+
+## 2. Compare two genomes' contributions
+
+1. Open [UniProt's human reviewed mitochondrial protein query](https://www.uniprot.org/uniprotkb?query=organism_id%3A9606%20AND%20reviewed%3Atrue%20AND%20cc_scl_term%3ASL-0173).
+2. Read the query: species human, reviewed entries and the subcellular location term **Mitochondrion**. Record the result count and retrieval date. This is an annotation query, not a direct measurement of the whole mitochondrial proteome.
+3. Open [ATP synthase subunit alpha, P25705](https://www.uniprot.org/uniprotkb/P25705/entry). Look for its gene, mitochondrial transit peptide and location. Contrast a nuclear gene such as ATP5F1A with the mitochondrial genes ATP6 and ATP8.
+
+**T2.** Compare the UniProt count with 13. Explain how a mitochondrion obtains the rest of its proteins and why the query count is not an exact census. `[ELO 4, 5; skill: define a database query]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18, UniProtKB 2026_04)"}
+The query returns **1,374 reviewed human entries**. Most mitochondrial proteins are encoded in the nucleus, made on cytosolic ribosomes and imported, often through TOM/TIM. A rough comparison gives 13/1,374 ≈ 1% encoded in mtDNA; the great majority are nuclear encoded. Annotation coverage, proteins with several locations and the choice of isoforms affect the count. Do not interpret 1,374 as the number expressed in every cell type.
+:::
+
+**T3.** Which respiratory-chain complex lacks an mtDNA-encoded subunit? Predict why a nuclear mutation can still cause mitochondrial disease. `[ELO 5, 9; skill: combine annotations]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+**Complex II**. The mtDNA protein genes contribute to I, III, IV and V (ATP synthase). Nuclear genes encode all of complex II and most subunits, import factors, assembly factors and maintenance machinery of mitochondria; a mutation in one of these can disrupt mitochondrial function.
+:::
+
+## 3. Find a drug in a protein machine
+
+1. Open [human 20S proteasome with bortezomib, PDB 5LF3](https://www.rcsb.org/structure/5LF3). Read the experimental method and resolution. Open **3D View**.
+2. In Mol*, select a bortezomib ligand from **Small Molecules** (the entry's ligand list identifies it). Zoom to its surroundings. Use the polymer/entity details to identify the neighbouring catalytic β subunit. The proteasome contains several catalytic sites, so the full structure can show more than one ligand copy.
+3. Open [ChEMBL bortezomib, CHEMBL325041](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL325041). Compare **Mechanism of action** with **Bioactivities**. An activity assay is not automatically evidence for the therapeutic mechanism. Record the maximum development phase with its date.
+
+**T4.** What is bortezomib's principal proteasome target, and why can blocking degradation kill a cell that makes many secreted proteins? `[ELO 4, 9; skill: connect structure to function]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+The principal target is the **β5 chymotrypsin-like site (PSMB5)** of the proteasome. Other catalytic sites can also be inhibited; 5LF3 is not proof of absolute β5 selectivity. Misfolded and regulatory proteins accumulate when proteasomal degradation is blocked. Antibody-producing myeloma cells carry a large protein-folding load and can undergo severe proteotoxic stress and apoptosis. ChEMBL reports maximum phase **4** for bortezomib; that label alone does not establish approval for every disease.
+:::
+
+## 4. A synonymous variant with a serious consequence
+
+1. Open [ClinVar variation 14500](https://www.ncbi.nlm.nih.gov/clinvar/variation/14500/), **LMNA c.1824C>T (p.Gly608=)**. Check the transcript accession, classification, review status and condition.
+2. Read the supporting submissions and the linked [GeneReviews explanation](https://www.ncbi.nlm.nih.gov/books/NBK1121/). Distinguish a protein consequence predicted from an unchanged codon from the consequence of abnormal RNA splicing.
+
+**T5. [VG]** The codon still encodes glycine. Explain how this variant produces progerin and why the name “silent mutation” can be misleading. `[ELO 4, 9; skill: interpret a variant in context]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+The classic progeria variant activates a **cryptic splice site** in LMNA exon 11. The abnormal RNA lacks a segment, producing progerin with a **50-amino-acid deletion** near the C terminus. It lacks the site for normal final processing and retains its farnesylated tail, disturbing the nuclear lamina. The codon-level substitution is synonymous; its RNA-processing consequence is not silent. ClinVar classifies this variant as pathogenic for Hutchinson–Gilford progeria syndrome.
+:::
+
+Continue to the [R Markdown report](report.qmd).

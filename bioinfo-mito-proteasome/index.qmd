@@ -1,0 +1,42 @@
+---
+title: "Bioinformatics: genomes inside organelles, and drugs on machines"
+engine: markdown
+format:
+  html:
+    toc: true
+resources:
+  - bioinfo-mito-proteasome.Rmd
+  - fetch-data.R
+  - data/*.csv
+  - data/*.txt
+---
+
+## What you will learn
+
+How much of a mitochondrion is encoded by its own genome? How does a drug stop a protein machine? You will read mitochondrial genome annotations, inspect a drug in the proteasome and connect a synonymous DNA variant to faulty RNA processing.
+
+Builds on [protein life and death](../protein-lifecycle/lec.qmd), [mitochondria](../mitochondria/lec.qmd) and [organelles and homeostasis](../organelles-homeostasis/lec.qmd). `[ELO 4, 5, 9]`
+
+Work through two short pages:
+
+1. [Database investigation](browser.qmd): NCBI, UniProt, PDB, ChEMBL and ClinVar.
+2. [R Markdown report](report.qmd): plot a mitochondrial genome map, count annotations and explain the result.
+
+Allow about 1.5 h for the browser investigation and 1.5–2 h for the report. No accounts are needed.
+
+## Before you start
+
+Download these files into one folder, keeping the CSV files in a subfolder called `data`:
+
+- [Report template](bioinfo-mito-proteasome.Rmd).
+- [Provided data-fetching and feature-table helper](fetch-data.R).
+- [Mitochondrial gene snapshot](data/mtdna-features-2026-11-18.csv).
+- [UniProt mitochondrial protein snapshot](data/uniprot-mitochondria-2026-11-18.csv).
+- [UniProt release metadata](data/uniprot-mitochondria-2026-11-18.csv.release.txt), also saved in `data/`.
+- Optional: [original NCBI feature table](data/NC_012920.1-2026-11-18.txt).
+
+In R, install missing packages once: `install.packages(c("rmarkdown", "ggplot2", "rentrez"))`. Open the template in RStudio and click **Knit**, or use `rmarkdown::render("bioinfo-mito-proteasome.Rmd")`. Set `use_snapshot <- TRUE` to work offline after downloading the files. Package installation needs internet; knitting in snapshot mode does not.
+
+## Sources and licences
+
+The snapshots were fetched on 2026-11-18 from [NCBI RefSeq NC_012920.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_012920.1) and [UniProtKB](https://www.uniprot.org), release 2026_04. NCBI records are available for unrestricted reuse under [NCBI's policy](https://www.ncbi.nlm.nih.gov/home/about/policies/); UniProt data are [CC BY 4.0](https://www.uniprot.org/help/license). The gene map is drawn from annotations, not experimental expression data. External structures are viewed on the PDB website. [Full data credits](../credits.qmd#bioinfo-mito-proteasome).

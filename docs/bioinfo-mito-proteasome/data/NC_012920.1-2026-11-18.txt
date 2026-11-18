@@ -1,0 +1,403 @@
+>Feature ref|NC_012920.1|
+576	1	D-loop
+16569	16024
+577	647	gene
+			gene	TRNF
+			db_xref	GeneID:4558
+			db_xref	HGNC:HGNC:7481
+			db_xref	MIM:590070
+577	647	tRNA
+			product	tRNA-Phe
+			anticodon	(pos:611..613,aa:Phe,seq:gaa)
+			note	NAR: 1455
+648	1601	gene
+			gene	RNR1
+			gene_syn	MTRNR1
+			db_xref	GeneID:4549
+			db_xref	HGNC:HGNC:7470
+			db_xref	MIM:561000
+648	1601	rRNA
+			product	s-rRNA
+			note	12S rRNA; 12S ribosomal RNA
+1602	1670	gene
+			gene	TRNV
+			gene_syn	MTTV
+			db_xref	GeneID:4577
+			db_xref	HGNC:HGNC:7500
+			db_xref	MIM:590105
+1602	1670	tRNA
+			product	tRNA-Val
+			anticodon	(pos:1633..1635,aa:Val,seq:tac)
+			note	NAR: 2053
+1671	3229	gene
+			gene	RNR2
+			gene_syn	MTRNR2
+			db_xref	GeneID:4550
+			db_xref	HGNC:HGNC:7471
+			db_xref	MIM:561010
+1671	3229	rRNA
+			product	l-rRNA
+			note	16S ribosomal RNA; 16S rRNA
+3107	3107	misc_feature
+			gene	-
+			note	preserves historical genome annotation numbering
+3230	3304	gene
+			gene	TRNL1
+			gene_syn	MTTL1
+			db_xref	GeneID:4567
+			db_xref	HGNC:HGNC:7490
+			db_xref	MIM:590050
+3230	3304	tRNA
+			product	tRNA-Leu
+			anticodon	(pos:3265..3267,aa:Leu,seq:taa)
+			note	NAR: 1054
+3307	4262	gene
+			gene	ND1
+			gene_syn	MTND1
+			db_xref	GeneID:4535
+			db_xref	HGNC:HGNC:7455
+			db_xref	MIM:516000
+3307	4262	CDS
+			product	NADH dehydrogenase subunit 1
+			prot_desc	NADH dehydrogenase, subunit 1 (complex I)
+			transl_except	(pos:4261..4262,aa:TERM)
+			transl_table	2
+			protein_id	ref|YP_003024026.1|
+			note	TAA stop codon is completed by the addition of 3' A residues to the mRNA
+4263	4331	gene
+			gene	TRNI
+			gene_syn	MTTI
+			db_xref	GeneID:4565
+			db_xref	HGNC:HGNC:7488
+			db_xref	MIM:590045
+4263	4331	tRNA
+			product	tRNA-Ile
+			anticodon	(pos:4292..4294,aa:Ile,seq:gat)
+			note	NAR: 0997
+4400	4329	gene
+			gene	TRNQ
+			gene_syn	MTTQ
+			db_xref	GeneID:4572
+			db_xref	HGNC:HGNC:7495
+			db_xref	MIM:590030
+4400	4329	tRNA
+			product	tRNA-Gln
+			anticodon	(pos:complement(4365..4367),aa:Gln,seq:ttg)
+			note	NAR: 0597
+4402	4469	gene
+			gene	TRNM
+			gene_syn	MTTM
+			db_xref	GeneID:4569
+			db_xref	HGNC:HGNC:7492
+			db_xref	MIM:590065
+4402	4469	tRNA
+			product	tRNA-Met
+			anticodon	(pos:4432..4434,aa:Met,seq:cat)
+			note	NAR: 1297
+4470	5511	gene
+			gene	ND2
+			gene_syn	MTND2
+			db_xref	GeneID:4536
+			db_xref	HGNC:HGNC:7456
+			db_xref	MIM:516001
+4470	5511	CDS
+			product	NADH dehydrogenase subunit 2
+			prot_desc	MTND2
+			transl_except	(pos:5511,aa:TERM)
+			transl_table	2
+			protein_id	ref|YP_003024027.1|
+			note	TAA stop codon is completed by the addition of 3' A residues to the mRNA
+5512	5579	gene
+			gene	TRNW
+			gene_syn	MTTW
+			db_xref	GeneID:4578
+			db_xref	HGNC:HGNC:7501
+			db_xref	MIM:590095
+5512	5579	tRNA
+			product	tRNA-Trp
+			anticodon	(pos:5544..5546,aa:Trp,seq:tca)
+			note	NAR: 1897
+5655	5587	gene
+			gene	TRNA
+			gene_syn	MTTA
+			db_xref	GeneID:4553
+			db_xref	HGNC:HGNC:7475
+			db_xref	MIM:590000
+5655	5587	tRNA
+			product	tRNA-Ala
+			anticodon	(pos:complement(5623..5625),aa:Ala,seq:tgc)
+			note	NAR: 0097
+5729	5657	gene
+			gene	TRNN
+			gene_syn	MTTN
+			db_xref	GeneID:4570
+			db_xref	HGNC:HGNC:7493
+			db_xref	MIM:590010
+5729	5657	tRNA
+			product	tRNA-Asn
+			anticodon	(pos:complement(5694..5696),aa:Asn,seq:gtt)
+			note	NAR: 0297
+5826	5761	gene
+			gene	TRNC
+			gene_syn	MTTC
+			db_xref	GeneID:4511
+			db_xref	HGNC:HGNC:7477
+			db_xref	MIM:590020
+5826	5761	tRNA
+			product	tRNA-Cys
+			anticodon	(pos:complement(5796..5798),aa:Cys,seq:gca)
+			note	NAR: 0497
+5891	5826	gene
+			gene	TRNY
+			gene_syn	MTTY
+			db_xref	GeneID:4579
+			db_xref	HGNC:HGNC:7502
+			db_xref	MIM:590100
+5891	5826	tRNA
+			product	tRNA-Tyr
+			anticodon	(pos:complement(5860..5862),aa:Tyr,seq:gta)
+			note	NAR: 1997
+5904	7445	gene
+			gene	COX1
+			gene_syn	COI
+			gene_syn	MTCO1
+			db_xref	GeneID:4512
+			db_xref	HGNC:HGNC:7419
+			db_xref	MIM:516030
+5904	7445	CDS
+			product	cytochrome c oxidase subunit I
+			transl_table	2
+			protein_id	ref|YP_003024028.1|
+			note	cytochrome c oxidase I
+7514	7446	gene
+			gene	TRNS1
+			gene_syn	MTTS1
+			db_xref	GeneID:4574
+			db_xref	HGNC:HGNC:7497
+			db_xref	MIM:590080
+7514	7446	tRNA
+			product	tRNA-Ser
+			anticodon	(pos:complement(7482..7484),aa:Ser,seq:tga)
+			note	NAR: 1697
+7518	7585	gene
+			gene	TRND
+			gene_syn	MTTD
+			db_xref	GeneID:4555
+			db_xref	HGNC:HGNC:7478
+			db_xref	MIM:590015
+7518	7585	tRNA
+			product	tRNA-Asp
+			anticodon	(pos:7548..7550,aa:Asp,seq:gtc)
+			note	NAR: 0397
+7586	8269	gene
+			gene	COX2
+			gene_syn	COII
+			gene_syn	MTCO2
+			db_xref	GeneID:4513
+			db_xref	HGNC:HGNC:7421
+			db_xref	MIM:516040
+7586	8269	CDS
+			product	cytochrome c oxidase subunit II
+			transl_table	2
+			protein_id	ref|YP_003024029.1|
+			note	cytochrome c oxidase II
+8295	8364	gene
+			gene	TRNK
+			gene_syn	MTTK
+			db_xref	GeneID:4566
+			db_xref	HGNC:HGNC:7489
+			db_xref	MIM:590060
+8295	8364	tRNA
+			product	tRNA-Lys
+			anticodon	(pos:8323..8325,aa:Lys,seq:ttt)
+			note	NAR: 1197
+8366	8572	gene
+			gene	ATP8
+			gene_syn	ATPase8
+			gene_syn	MTATP8
+			db_xref	GeneID:4509
+			db_xref	HGNC:HGNC:7415
+			db_xref	MIM:516070
+8366	8572	CDS
+			product	ATP synthase F0 subunit 8
+			transl_table	2
+			protein_id	ref|YP_003024030.1|
+			note	ATP synthase 8; ATPase subunit 8
+8527	9207	gene
+			gene	ATP6
+			gene_syn	ATPase6
+			gene_syn	MTATP6
+			db_xref	GeneID:4508
+			db_xref	HGNC:HGNC:7414
+			db_xref	MIM:516060
+8527	9207	CDS
+			product	ATP synthase F0 subunit 6
+			transl_table	2
+			protein_id	ref|YP_003024031.1|
+			note	ATP synthase 6; ATPase subunit 6
+9207	9990	gene
+			gene	COX3
+			gene_syn	COIII
+			gene_syn	MTCO3
+			db_xref	GeneID:4514
+			db_xref	HGNC:HGNC:7422
+			db_xref	MIM:516050
+9207	9990	CDS
+			product	cytochrome c oxidase subunit III
+			prot_desc	cytochrome c oxidase III
+			transl_except	(pos:9990,aa:TERM)
+			transl_table	2
+			protein_id	ref|YP_003024032.1|
+			note	TAA stop codon is completed by the addition of 3' A residues to the mRNA
+9991	10058	gene
+			gene	TRNG
+			gene_syn	MTTG
+			db_xref	GeneID:4563
+			db_xref	HGNC:HGNC:7486
+			db_xref	MIM:590035
+9991	10058	tRNA
+			product	tRNA-Gly
+			anticodon	(pos:10021..10023,aa:Gly,seq:tcc)
+			note	NAR: 0797
+10059	10404	gene
+			gene	ND3
+			gene_syn	MTND3
+			db_xref	GeneID:4537
+			db_xref	HGNC:HGNC:7458
+			db_xref	MIM:516002
+10059	10404	CDS
+			product	NADH dehydrogenase subunit 3
+			prot_desc	NADH dehydrogenase, subunit 3 (complex I)
+			transl_except	(pos:10404,aa:TERM)
+			transl_table	2
+			protein_id	ref|YP_003024033.1|
+			note	TAA stop codon is completed by the addition of 3' A residues to the mRNA
+10405	10469	gene
+			gene	TRNR
+			gene_syn	MTTR
+			db_xref	GeneID:4573
+			db_xref	HGNC:HGNC:7496
+			db_xref	MIM:590005
+10405	10469	tRNA
+			product	tRNA-Arg
+			anticodon	(pos:10435..10437,aa:Arg,seq:tcg)
+			note	NAR: 0197
+10470	10766	gene
+			gene	ND4L
+			gene_syn	MTND4L
+			db_xref	GeneID:4539
+			db_xref	HGNC:HGNC:7460
+			db_xref	MIM:516004
+10470	10766	CDS
+			product	NADH dehydrogenase subunit 4L
+			prot_desc	NADH dehydrogenase, subunit 4L (complex I)
+			transl_table	2
+			protein_id	ref|YP_003024034.1|
+10760	12137	gene
+			gene	ND4
+			gene_syn	MTND4
+			db_xref	GeneID:4538
+			db_xref	HGNC:HGNC:7459
+			db_xref	MIM:516003
+10760	12137	CDS
+			product	NADH dehydrogenase subunit 4
+			prot_desc	NADH dehydrogenase, subunit 4 (complex I)
+			transl_except	(pos:12137,aa:TERM)
+			transl_table	2
+			protein_id	ref|YP_003024035.1|
+			note	TAA stop codon is completed by the addition of 3' A residues to the mRNA
+12138	12206	gene
+			gene	TRNH
+			gene_syn	MTTH
+			db_xref	GeneID:4564
+			db_xref	HGNC:HGNC:7487
+			db_xref	MIM:590040
+12138	12206	tRNA
+			product	tRNA-His
+			anticodon	(pos:12168..12170,aa:His,seq:gtg)
+			note	NAR: 0897
+12207	12265	gene
+			gene	TRNS2
+			gene_syn	MTTS2
+			db_xref	GeneID:4575
+			db_xref	HGNC:HGNC:7498
+			db_xref	MIM:590085
+12207	12265	tRNA
+			product	tRNA-Ser
+			anticodon	(pos:12226..12228,aa:Ser,seq:gct)
+			note	NAR: 1656
+12266	12336	gene
+			gene	TRNL2
+			gene_syn	MTTL2
+			db_xref	GeneID:4568
+			db_xref	HGNC:HGNC:7491
+			db_xref	MIM:590055
+12266	12336	tRNA
+			product	tRNA-Leu
+			anticodon	(pos:12298..12300,aa:Leu,seq:tag)
+			note	NAR: 1097
+12337	14148	gene
+			gene	ND5
+			gene_syn	MTND5
+			db_xref	GeneID:4540
+			db_xref	HGNC:HGNC:7461
+			db_xref	MIM:516005
+12337	14148	CDS
+			product	NADH dehydrogenase subunit 5
+			prot_desc	NADH dehydrogenase, subunit 5 (complex I)
+			transl_table	2
+			protein_id	ref|YP_003024036.1|
+14673	14149	gene
+			gene	ND6
+			gene_syn	MTND6
+			db_xref	GeneID:4541
+			db_xref	HGNC:HGNC:7462
+			db_xref	MIM:516006
+14673	14149	CDS
+			product	NADH dehydrogenase subunit 6
+			prot_desc	NADH dehydrogenase, subunit 6 (complex I)
+			transl_table	2
+			protein_id	ref|YP_003024037.1|
+14742	14674	gene
+			gene	TRNE
+			gene_syn	MTTE
+			db_xref	GeneID:4556
+			db_xref	HGNC:HGNC:7479
+			db_xref	MIM:590025
+14742	14674	tRNA
+			product	tRNA-Glu
+			anticodon	(pos:complement(14710..14712),aa:Glu,seq:ttc)
+			note	NAR: 0697
+14747	15887	gene
+			gene	CYTB
+			gene_syn	MTCYB
+			db_xref	GeneID:4519
+			db_xref	HGNC:HGNC:7427
+			db_xref	MIM:516020
+14747	15887	CDS
+			product	cytochrome b
+			transl_except	(pos:15887,aa:TERM)
+			transl_table	2
+			protein_id	ref|YP_003024038.1|
+			note	TAA stop codon is completed by the addition of 3' A residues to the mRNA
+15888	15953	gene
+			gene	TRNT
+			gene_syn	MTTT
+			db_xref	GeneID:4576
+			db_xref	HGNC:HGNC:7499
+			db_xref	MIM:590090
+15888	15953	tRNA
+			product	tRNA-Thr
+			anticodon	(pos:15919..15921,aa:Thr,seq:tgt)
+			note	NAR: 1797
+16023	15956	gene
+			gene	TRNP
+			gene_syn	MTTP
+			db_xref	GeneID:4571
+			db_xref	HGNC:HGNC:7494
+			db_xref	MIM:590075
+16023	15956	tRNA
+			product	tRNA-Pro
+			anticodon	(pos:complement(15990..15992),aa:Pro,seq:tgg)
+			note	NAR: 1597
+

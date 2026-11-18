@@ -1,0 +1,117 @@
+---
+title: "Read the mutations: BRAF and TP53"
+author: "Worked solution"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+---
+
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(jsonlite)
+library(httr2)
+options(HTTPUserAgent = "3MB001-course", timeout = 90)
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+use_snapshot <- identical(Sys.getenv("BIOINFO_SNAPSHOT"), "true")
+dir.create("data", showWarnings = FALSE)
+retrieved <- if (use_snapshot) "2026-11-18" else as.character(Sys.Date())
+get_json <- function(url, ...) {
+  req <- req_url_query(request(url), ...)
+  resp_body_json(req_perform(req_retry(req, max_tries = 3)), simplifyVector = FALSE)
+}
+cache_csv <- function(name, fetch) {
+  file <- file.path("data", paste0(name, "-", retrieved, ".csv"))
+  if (file.exists(file)) return(read.csv(file, stringsAsFactors = FALSE))
+  if (use_snapshot) stop("Missing snapshot: ", file)
+  value <- fetch()
+  write.csv(value, file, row.names = FALSE)
+  value
+}
+```
+
+# Question
+
+Do BRAF and TP53 show the same positional mutation pattern in this melanoma cohort?
+
+# Data
+
+```{r mutations-fetch}
+study <- "skcm_tcga_pan_can_atlas_2018"
+profile <- paste0(study, "_mutations")
+sample_list <- paste0(study, "_sequenced")
+metadata_file <- file.path("data", paste0("study-metadata-", retrieved, ".json"))
+if (!file.exists(metadata_file)) {
+  if (use_snapshot) stop("Missing sample-list snapshot")
+  metadata <- get_json(paste0("https://www.cbioportal.org/api/sample-lists/", sample_list))
+  write_json(metadata, metadata_file, auto_unbox = TRUE)
+}
+metadata <- fromJSON(metadata_file)
+fetch_mutations <- function() {
+  ids <- c(BRAF = 673, TP53 = 7157)
+  rows <- list()
+  for (gene in names(ids)) {
+    result <- get_json(paste0("https://www.cbioportal.org/api/molecular-profiles/", profile, "/mutations"),
+      sampleListId = sample_list, entrezGeneId = ids[[gene]], projection = "DETAILED", pageSize = 10000000)
+    for (record in result) {
+      pos <- function(x) if (is.null(x)) NA_real_ else as.numeric(x)
+      text <- function(x) if (is.null(x)) "" else x
+      rows[[length(rows) + 1]] <- data.frame(gene = gene,
+        sample_id = record$sampleId, patient_id = record$patientId,
+        protein_change = text(record$proteinChange), protein_start = pos(record$proteinPosStart),
+        protein_end = pos(record$proteinPosEnd), mutation_type = record$mutationType,
+        study = record$studyId)
+    }
+  }
+  do.call(rbind, rows)
+}
+mutations <- cache_csv("skcm-mutations", fetch_mutations)
+stopifnot(all(mutations$sample_id %in% metadata$sampleIds))
+```
+
+Study `r study`, profile `r profile`, sample list `r sample_list`,
+`r metadata$sampleCount` mutation-profiled samples; retrieved `r retrieved`.
+
+```{r mutation-lollipops, fig.width=9, fig.height=4}
+mapped <- mutations[!is.na(mutations$protein_start) & mutations$protein_start > 0, ]
+counts <- aggregate(rep(1L, nrow(mapped)), mapped[c("gene", "protein_start")], sum)
+names(counts)[3] <- "records"
+ggplot(counts, aes(protein_start, records)) +
+  geom_segment(aes(xend = protein_start, y = 0, yend = records), colour = "#a8324a") +
+  geom_point(colour = "#a8324a", size = 1.4) + facet_wrap(~ gene, scales = "free_x") +
+  labs(x = "Amino-acid position", y = "Mutation records at position",
+       caption = paste("cBioPortal / TCGA SKCM PanCancer Atlas 2018; retrieved", retrieved)) + theme_minimal()
+summary_table <- do.call(rbind, lapply(split(mutations, mutations$gene), function(x) data.frame(
+  gene = x$gene[1], records = nrow(x), mutated_samples = length(unique(x$sample_id)),
+  mutated_patients = length(unique(x$patient_id)))))
+summary_table
+```
+
+# Interpretation
+
+BRAF has `r sum(mutations$gene == "BRAF")` records including
+`r sum(mutations$gene == "BRAF" & mutations$protein_change == "V600E")`
+exact V600E records. TP53 has `r sum(mutations$gene == "TP53")` records.
+The positional plot excludes `r nrow(mutations) - nrow(mapped)` calls without a
+usable mapped position. The BRAF hotspot is consistent with selective activation;
+the dispersed TP53 changes are compatible with several routes to loss of function.
+These patterns alone do not establish the effect of each individual variant.
+
+# Limitations
+
+Records are not patients; coverage and sample selection affect frequencies. Protein
+plots omit unmapped positions and cannot summarise every structural alteration.
+These observations concern one selected cancer cohort, not all cancers.
+
+# Sources
+
+cBioPortal API: https://www.cbioportal.org/api/ ; TCGA SKCM PanCancer Atlas 2018;
+cBioPortal paper, doi:10.1158/2159-8290.CD-12-0095 .
+UniProt BRAF P15056 and TP53 P04637 supply functional context.
+
+# Reproducibility
+
+```{r session-info}
+sessionInfo()
+```

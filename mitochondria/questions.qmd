@@ -1,0 +1,317 @@
+---
+title: "Study questions: mitochondria"
+format:
+  html:
+    toc: true
+---
+
+Practise explaining the mechanisms in [the lecture](lec.qmd), then use the
+[quiz](quiz.qmd) for a shorter self-check. G questions cover the core outcomes;
+VG questions ask you to predict, interpret data or design a test. Try each answer
+before opening the model answer.
+
+## G-level questions
+
+**1.** Draw a mitochondrion and label its outer membrane, intermembrane space,
+inner membrane, cristae and matrix. Place the TCA cycle, respiratory chain,
+ATP synthase head and cytochrome c. Why do the two membranes have different
+permeabilities? `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The **matrix** lies inside the inner membrane and contains most TCA-cycle enzymes
+(succinate dehydrogenase is complex II in the inner membrane). The respiratory
+complexes and ATP synthase sit in the **inner membrane**, including its cristae;
+the synthase head faces the matrix. **Cytochrome c** carries electrons along the
+intermembrane-space side of the inner membrane. The **outer membrane** contains
+porins that pass small solutes. The inner membrane requires specific carriers and
+has low proton permeability, so it can store an **electrochemical H⁺ gradient**.
+Cristae increase the area available for energy conversion.
+:::
+
+---
+
+**2.** Explain how electrons from NADH reach oxygen, which complexes pump H⁺,
+and how the resulting gradient drives ATP synthesis. Why does succinate-linked
+entry through complex II yield less ATP per electron pair? `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Electrons pass **I → ubiquinone (Q) → III → cytochrome c → IV → O₂**, reducing
+oxygen to water. Complexes **I, III and IV** move H⁺ from matrix to intermembrane
+space: about **10 H⁺ per NADH**. The matrix becomes negative and alkaline; both
+components favour H⁺ return. Return through ATP synthase turns its c-ring and
+central stalk. The fixed β catalytic sites change conformation to bind ADP and
+phosphate, form ATP and release it. Electron transport and ATP synthesis are
+coupled through the gradient (**chemiosmosis**). Complex II transfers electrons
+from succinate to Q without pumping H⁺, bypassing I: about **6 H⁺** are pumped per
+electron pair instead of 10.
+:::
+
+---
+
+**3.** The matrix is 160 mV negative relative to the intermembrane space and
+0.5 pH unit more alkaline. Estimate the magnitude of the proton-motive force
+at 37 °C, taking 61.5 mV per pH unit. What happens if H⁺ can freely cross the
+inner membrane? `[ELO 2, ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Both electrical and chemical components favour H⁺ entry, so their magnitudes add:
+**160 + 0.5 × 61.5 ≈ 191 mV**. This is the magnitude; Δψ is negative when defined
+as matrix minus intermembrane-space potential. H⁺ leakage dissipates the stored
+energy. Electron transport can continue, and often accelerates, but less of its
+energy is captured in ATP and more becomes heat. A gradient is energy stored
+across the membrane, not a large reservoir of free protons.
+:::
+
+---
+
+**4.** How does ATP made in the matrix become available in the cytosol? Explain
+why the ADP/ATP carrier depends on the membrane potential and why ATP synthesis
+also needs phosphate transport. `[ELO 2, ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The inner membrane does not freely pass ATP or ADP. The **ADP/ATP antiporter**
+exports ATP⁴⁻ in exchange for ADP³⁻, moving one net negative charge out of the
+negative matrix: the voltage favours export. The **phosphate carrier** imports
+phosphate with H⁺ (equivalently, phosphate/OH⁻ exchange). These carriers spend
+part of the proton-motive force, adding roughly one proton-equivalent to the
+cost per ATP delivered. Porins allow the nucleotides to cross the outer membrane.
+The mammalian synthase itself uses **8/3 H⁺ per ATP**; delivery and proton leaks
+help explain why practical ATP yields are lower than the ideal rotor ratio.
+:::
+
+---
+
+**5.** What does human mtDNA encode? Why do mitochondria still need protein
+import? Distinguish maternal inheritance of mtDNA from inheritance of a
+mitochondrial disease caused by a nuclear gene. `[ELO 4, ELO 5, ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Human mtDNA has **37 genes: 13 proteins, 22 tRNAs and 2 rRNAs**. The 13 proteins
+are core subunits of complexes I, III, IV and ATP synthase; complex II is entirely
+nuclear encoded. Most mitochondrial proteins are encoded in the nucleus, made
+on cytosolic ribosomes and imported, often through **TOM/TIM**. Mitochondrial DNA
+is normally inherited from the egg, so fathers do not transmit mtDNA variants.
+Nuclear genes follow their own Mendelian inheritance patterns and can be
+transmitted by either parent. A mitochondrial disease is therefore **not
+necessarily maternally inherited**.
+:::
+
+---
+
+**6.** Explain heteroplasmy, the threshold effect and the mitochondrial genetic
+bottleneck. Why can siblings have different symptoms, and why are brain,
+heart and skeletal muscle often affected? `[ELO 5, ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Heteroplasmy** means that different mtDNA variants coexist in a cell or person,
+here normal and disease-causing copies. During egg development, sampling and
+amplification of mtDNA produce eggs with different mutant fractions (the
+**bottleneck**). Fractions can also differ between tissues. Dysfunction becomes
+apparent when the remaining capacity cannot meet tissue needs: the **threshold**
+depends on the variant and tissue, not one universal percentage. Siblings can
+therefore inherit different mutant loads and have different disease severity;
+maternal heteroplasmy does not mean that every child must be affected. High
+energy demand makes brain, heart and muscle particularly vulnerable.
+:::
+
+---
+
+**7.** Compare mitochondrial fission and fusion. How do they cooperate with
+mitophagy to maintain the network? `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Fission**, involving DRP1, divides tubules; **fusion** joins outer membranes
+through mitofusins and inner membranes through OPA1. Fusion mixes contents and
+can complement local defects. Fission helps segregate damaged regions and
+provides mitochondria for distribution during cell division. Selected damaged
+mitochondria can be enclosed by autophagosomes and degraded in lysosomes
+(**mitophagy**). Fragmentation alone does not prove that mitophagy or cell death
+has occurred: removal must be measured separately.
+:::
+
+---
+
+**8.** Give two roles of mitochondria beyond ATP production. Explain why both
+Ca²⁺ uptake and ROS can be useful at moderate levels and harmful in excess.
+What changes when cytochrome c reaches the cytosol? `[ELO 5, ELO 8]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+At **ER–mitochondria contacts**, released Ca²⁺ enters the matrix through the
+mitochondrial calcium uniporter, driven by the negative matrix potential. This
+shapes Ca²⁺ signals and activates metabolic enzymes. Ca²⁺ overload can promote
+permeability transition and injury. Electron leakage makes **ROS**: controlled
+levels participate in signalling, whereas excessive ROS damage lipids, proteins
+and DNA. Cytochrome c normally transfers electrons between III and IV. After
+**BAX/BAK** permeabilise the outer membrane, cytosolic cytochrome c binds APAF1,
+helping assemble the apoptosome and activate caspase-9 and executioner caspases.
+Location changes its effect.
+:::
+
+---
+
+**9.** Compare chemiosmosis in mitochondria and chloroplasts. Which membrane
+holds the gradient, which side accumulates H⁺, and where does the ATP synthase
+head face? `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Mitochondria use the **inner membrane**: H⁺ are pumped from the matrix into the
+intermembrane space and return to the matrix-facing synthase head. Chloroplasts
+use the **thylakoid membrane**: light-driven electron transport accumulates H⁺
+in the thylakoid lumen; H⁺ return to the **stroma**, where ATP is made. The envelope
+around a chloroplast is not the membrane across which photosynthetic ATP
+synthesis is coupled. Both use an electrochemical gradient and a rotary synthase.
+:::
+
+## VG-level questions
+
+**10. [VG]** A stress test gives the following representative oxygen consumption
+rates from equal numbers of viable cells. Assume each phase has reached a stable
+rate and FCCP has been optimised. Calculate basal mitochondrial respiration,
+ATP-linked respiration, proton leak, maximal respiration, spare capacity and
+coupling efficiency. Is maximal respiration also maximal ATP production?
+`[ELO 1, ELO 5]`
+
+| Phase | OCR (pmol O₂/min) |
+|---|---:|
+| Before drugs | 120 |
+| After oligomycin | 40 |
+| After FCCP | 200 |
+| After rotenone + antimycin A | 20 |
+
+::: {.callout-note collapse="true" title="Model answer"}
+Non-mitochondrial OCR is **20**. Subtract it where appropriate:
+
+- Basal mitochondrial respiration: 120 − 20 = **100 pmol O₂/min**.
+- ATP-linked respiration: 120 − 40 = **80 pmol O₂/min**.
+- Proton leak: 40 − 20 = **20 pmol O₂/min**.
+- Maximal respiration: 200 − 20 = **180 pmol O₂/min**.
+- Spare capacity: 180 − 100 = **80 pmol O₂/min**.
+- Coupling efficiency: 80/100 = **80 %**.
+
+FCCP allows proton return independently of ATP synthase, and oligomycin is still
+present. Therefore the high OCR is **not high mitochondrial ATP production**.
+OCR measures oxygen use; converting it into ATP production needs additional
+assumptions. In real experiments use replicates, normalise to cell number or
+protein, and optimise drug concentrations.
+:::
+
+---
+
+**11. [VG]** Predict the immediate effects of oligomycin, an uncoupler and
+cyanide on electron flow, proton-motive force and mitochondrial ATP synthesis
+in oxygenated cells supplied with fuel. Why can FCCP increase OCR after
+oligomycin but not after cyanide? What could maintain some cellular ATP?
+`[ELO 5, ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+| Treatment | Electron flow / mitochondrial OCR | Proton-motive force | ATP synthesis |
+|---|---|---|---|
+| Oligomycin | Falls as the gradient opposes further pumping | Initially rises | Blocked at synthase |
+| Uncoupler | Usually rises if respiratory capacity and fuel remain | Falls | Falls strongly |
+| Cyanide | Falls: complex IV cannot reduce O₂ | Decays as H⁺ return without replenishment | Falls as the gradient is lost |
+
+FCCP bypasses the blocked proton return pathway after oligomycin: pumping and
+electron flow resume through an intact chain. It cannot bypass **blocked electron
+transfer** at IV. The same distinction explains heat production by DNP.
+**Glycolysis** can maintain some ATP; a fall in mitochondrial ATP production does
+not mean all cellular ATP instantly becomes zero. Severe uncoupling eventually
+impairs cellular function, so the early OCR prediction need not hold indefinitely.
+:::
+
+---
+
+**12. [VG]** Design a test of the claim that a proton gradient is sufficient to
+couple an unrelated proton pump to ATP synthesis. Include controls. Then explain
+why mitochondrial donation can reduce the risk of mtDNA disease but cannot
+correct a pathogenic nuclear allele. `[ELO 1, ELO 5, ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Reconstitute a light-driven H⁺ pump and ATP synthase into sealed lipid vesicles,
+with orientations that let the pump create a gradient driving H⁺ through the
+synthase. Supply ADP and phosphate on the synthase-head side. Compare **light vs
+dark**, vesicles missing either protein, and complete vesicles with an **uncoupler**.
+Measure ATP accumulation and check the gradient independently with a suitable
+probe. ATP should accumulate when both proteins and light generate a usable
+gradient, and should fall when that gradient is dissipated. The controls exclude
+ATP contamination and demonstrate that shared electron-transfer machinery is
+unnecessary.
+
+Donation transfers the parents' nuclear material to donor cytoplasm containing
+mostly donor mtDNA. It reduces transmission of maternal mutant mtDNA, although
+some may be carried over. A **nuclear allele moves with the nuclear material**,
+so donation does not remove it. This is a change of cellular compartment/genome
+source, not repair of the mutation.
+:::
+
+## Explore {#explore}
+
+**Demo: mito stress test.** Predict the trace, then measure a simulated well and
+watch the proton circuit. It starts at **1× assay time**: one point per six
+minutes, three points per phase. Select **240×** for a quick run (about 4.5 seconds
+per phase). The particles and rotor are slowed illustrations; the values are
+from a qualitative model, not patient data. Drug additions persist until you
+start a new well. The model assumes adequate fuel, an optimised FCCP dose and a
+fixed non-mitochondrial OCR; it omits glycolytic ATP and long-term cell responses.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="mitostress"></div>
+<script src="../demos/dist/mitostress.js"></script>
+```
+
+**E1.** Run **Healthy cell**. After the basal phase, inject **oligomycin → FCCP →
+rotenone + antimycin A**, waiting for each phase to finish. Explain the change in
+OCR and Δp after every injection. `[ELO 5]`
+
+**E2.** Use the completed trace to calculate ATP-linked respiration and spare
+capacity yourself. Compare your calculations with the table. Why do you subtract
+the final residual OCR? `[ELO 1, ELO 5]`
+
+**E3. [VG]** Predict, then compare **Complex I defect** with Healthy cell at the
+same ATP demand. Which results suggest reduced respiratory capacity? Does OCR
+alone prove a defect in complex I? `[ELO 1, ELO 5, ELO 9]`
+
+**E4. [VG]** Start a new well and inject **FCCP before oligomycin**, then finish
+with rotenone + antimycin A. Which quantities can you still estimate, and which
+are lost? Repeat with rotenone + antimycin A first. `[ELO 1, ELO 5]`
+
+**E5. [VG]** Increase **ATP demand** and repeat the standard sequence in Healthy
+cell. Predict basal respiration and spare capacity. Compare the high-concentration
+metformin preset: what conclusion about therapeutic metformin can this model
+support? `[ELO 5, ELO 9]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+**E1.** Oligomycin closes the ATP synthase proton route: Δp rises, pumping faces
+more back-pressure, and OCR falls. FCCP opens a proton bypass: Δp falls and OCR
+rises even though the synthase is still blocked. Rotenone + antimycin A stop
+chain flux: only non-mitochondrial OCR remains, and the gradient decays.
+
+**E2.** ATP-linked = last basal OCR − lowest oligomycin OCR; maximal = highest
+FCCP OCR − final residual; basal mitochondrial = last basal OCR − residual;
+spare = maximal − basal mitochondrial. The residual comes from oxygen-consuming
+processes outside the respiratory chain. Seeded measurement noise causes small
+variation, so calculate from your well rather than expecting exact fixed values.
+
+**E3.** The preset lowers chain capacity: maximal and spare respiration fall,
+and ATP production is harder to sustain. Similar traces can arise from other
+respiratory defects, fuel limitation or fewer viable cells. Check cell number,
+viability and mitochondrial abundance; use substrate-specific or biochemical
+tests to locate the defect. The model assumes a complex I defect; it does not
+diagnose one from the trace.
+
+**E4.** FCCP before oligomycin preserves an uncoupled maximum and the final
+residual, but loses the coupled oligomycin comparison: **ATP-linked respiration,
+proton leak and coupling efficiency cannot be recovered** by the standard method.
+Rotenone + antimycin A first stop electron flow, so subsequent injections cannot
+reveal ATP-linked or maximal respiratory capacity. Basal and residual OCR remain
+available.
+
+**E5.** Higher ATP demand increases proton return through synthase and raises
+basal OCR; with the same chain maximum, spare capacity falls. The metformin preset
+illustrates what partial respiratory-chain inhibition *could* do. Its parameters
+are chosen, not measured at therapeutic exposure; it cannot establish metformin's
+clinical mechanism or predict a patient's response.
+:::
+
+The calculation conventions follow the
+[Agilent assay guide](https://www.agilent.com/cs/library/usermanuals/public/XF_Cell_Mito_Stress_Test_Kit_User_Guide.pdf).

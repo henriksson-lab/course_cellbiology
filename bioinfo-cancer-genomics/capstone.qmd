@@ -1,0 +1,67 @@
+---
+title: "Your report: follow one mechanism through the databases"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+[Module overview](index.qmd) · [Guided R activity](report.qmd)
+
+## Choose a focused question
+
+Write a **1–2-page report** (figures and references can be extra) explaining one
+protein–drug or protein–disease relationship. Use at least **three databases** and
+at least **one plot made from API-fetched data**. This is an independent synthesis;
+choose a question that your sources can answer.
+
+Possible starting points:
+
+| Pair | A question you can answer |
+|---|---|
+| CFTR and ivacaftor | Why can a gating drug fail when little channel reaches the surface? |
+| SLC5A2 and gliflozins | How do tissue expression and transporter mechanism explain the site of action? |
+| LDLR and PCSK9 | Why can an extracellular antibody alter receptor abundance? |
+| BCR–ABL1 and imatinib | How do a fusion and kinase inhibition connect to growth signalling? |
+| MYH7 and mavacamten | How do motor biology and clinical-trial design address excessive contraction? |
+| BCL2 and venetoclax | When might apoptosis dependency support a targeted strategy? |
+| GPX4 and ferroptosis | How does lipid-peroxide defence distinguish this death route? |
+
+## Build an argument
+
+1. Write one question and a predicted mechanism before collecting data.
+2. Choose complementary evidence: UniProt for molecular function, PDB for an
+   experimental structure, GTEx/HPA for tissue context, ClinVar for a named variant,
+   ChEMBL for assay activity, cBioPortal/DepMap for cancer data, or ClinicalTrials.gov
+   for what was tested in people. Three websites repeating the same claim are weaker
+   than three different kinds of evidence.
+3. Make a new R Markdown file with headings **Question**, **Data**, **Analysis**,
+   **Plot**, **Interpretation**, **Limitations**, **Sources**. Write your own chunks.
+4. Fetch only what the question needs; save a dated cache and the exact API request.
+   Record the database release if supplied and whether you used live data or a snapshot.
+5. Make one labelled plot and use it in the argument. A plot of expression does not
+   prove drug efficacy; a structural contact does not establish clinical selectivity.
+6. Explain the link to a lecture mechanism in your own words. Include an alternative
+   explanation or a result that would weaken your interpretation.
+
+## Before sharing the HTML
+
+- The question is specific and answered by the evidence shown.
+- Each number and biological claim has a source and retrieval date.
+- Stable gene/protein/variant/study identifiers identify the records.
+- At least three databases contribute different evidence.
+- At least one plot comes from a reproducible API query, with units and source caption.
+- The report knits in a fresh R session and includes `sessionInfo()`.
+- Interpretation separates association, mechanism and therapeutic evidence.
+- Limitations discuss the actual data and assay, including relevant negative evidence.
+
+## How to review a report
+
+A strong report connects a molecular mechanism to a clear observation, makes
+appropriate comparisons, and states what remains uncertain. A satisfactory report
+has traceable sources and working analysis but may make a narrower claim. A report
+needs revision if identifiers/denominators are missing, copied plots substitute for
+analysis, code does not run, or expression/registry counts are treated as proof of
+treatment benefit. There is no single model answer: conclusions depend on the chosen
+question and evidence. **ELO 8, 9**, plus the ELO of your chosen mechanism.

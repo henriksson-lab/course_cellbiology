@@ -50,6 +50,10 @@ may be reused under the course licence (see the course authors page).
 
 {{< include protein-lifecycle/_credits.md >}}
 
+## Mitochondria: energy conversion and more {#mitochondria}
+
+{{< include mitochondria/_credits.md >}}
+
 ## Organelles compared: keeping the cell in balance {#organelles-homeostasis}
 
 {{< include organelles-homeostasis/_credits.md >}}
@@ -110,6 +114,34 @@ may be reused under the course licence (see the course authors page).
 
 {{< include disease-casebook/_credits.md >}}
 
-## Bioinformatics day: where does a protein live? {#bioinfo-protein-atlas}
+## Bioinformatics: where does a protein live? {#bioinfo-protein-atlas}
 
 {{< include bioinfo-protein-atlas/_credits.md >}}
+
+## Bioinformatics: membrane proteins, tissues and drugs {#bioinfo-membrane-proteins}
+
+{{< include bioinfo-membrane-proteins/_credits.md >}}
+
+## Bioinformatics: read the zip code {#bioinfo-sorting-signals}
+
+{{< include bioinfo-sorting-signals/_credits.md >}}
+
+## Bioinformatics: genomes inside organelles and drugs on machines {#bioinfo-mito-proteasome}
+
+{{< include bioinfo-mito-proteasome/_credits.md >}}
+
+## Bioinformatics: how selective is a kinase inhibitor? {#bioinfo-drug-targets}
+
+{{< include bioinfo-drug-targets/_credits.md >}}
+
+## Bioinformatics: filaments, tissues and a drug for the heart {#bioinfo-cytoskeleton}
+
+{{< include bioinfo-cytoskeleton/_credits.md >}}
+
+## Bioinformatics: which genes does a cancer cell need? {#bioinfo-essential-genes}
+
+{{< include bioinfo-essential-genes/_credits.md >}}
+
+## Bioinformatics: read the mutations {#bioinfo-cancer-genomics}
+
+{{< include bioinfo-cancer-genomics/_credits.md >}}

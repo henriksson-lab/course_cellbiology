@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <!-- mtDNA circle -->
+  <circle cx="160" cy="185" r="110" fill="none" stroke="#d8dde3" stroke-width="16"/>
+  <g fill="none" stroke-width="16">
+    <path d="M160,75 A110,110 0 0 1 255.3,130" stroke="#a8324a"/>
+    <path d="M262,150 A110,110 0 0 1 248,252" stroke="#a8324a"/>
+    <path d="M232,268 A110,110 0 0 1 120,288" stroke="#a8324a"/>
+    <path d="M100,277 A110,110 0 0 1 52,170" stroke="#a8324a"/>
+    <path d="M57,140 A110,110 0 0 1 88,102" stroke="#1c4fa0"/>
+    <path d="M98,95 A110,110 0 0 1 140,77" stroke="#1c4fa0"/>
+  </g>
+  <g stroke="#2b8a3e" stroke-width="4">
+    <line x1="160" y1="66" x2="160" y2="84"/><line x1="258" y1="139" x2="273" y2="134"/><line x1="241" y1="263" x2="254" y2="275"/>
+    <line x1="110" y1="282" x2="104" y2="298"/><line x1="54" y1="156" x2="38" y2="154"/><line x1="93" y1="98" x2="83" y2="86"/>
+    <line x1="146" y1="76" x2="143" y2="60"/>
+  </g>
+  <text x="160" y="180" font-size="20" font-weight="700" text-anchor="middle">mtDNA</text>
+  <text x="160" y="204" font-size="17" text-anchor="middle">16 569 bp</text>
+  <text x="160" y="226" font-size="16" text-anchor="middle">37 genes</text>
+  <g font-size="17">
+    <rect x="310" y="76" width="18" height="18" fill="#a8324a"/><text x="336" y="91"><tspan font-weight="700">13 proteins:</tspan> core subunits of</text>
+    <text x="336" y="113">complexes I, III, IV and ATP synthase</text>
+    <rect x="310" y="132" width="18" height="18" fill="#1c4fa0"/><text x="336" y="147"><tspan font-weight="700">2 rRNAs</tspan> and</text>
+    <rect x="310" y="160" width="18" height="6" fill="#2b8a3e"/><text x="336" y="169"><tspan font-weight="700">22 tRNAs</tspan>: to translate them</text>
+    <text x="336" y="191">on ribosomes in the matrix</text>
+    <text x="310" y="232" font-weight="700">100s–1000s of copies per cell</text>
+    <text x="310" y="256">The other ~1100 mitochondrial</text>
+    <text x="310" y="278">proteins are encoded in the nucleus</text>
+    <text x="310" y="300">and imported.</text>
+  </g>
+  <!-- pedigrees -->
+  <text x="790" y="34" font-size="18" font-weight="700" text-anchor="middle">only mothers pass on mtDNA</text>
+  <g stroke="#1b2a3a" stroke-width="2">
+    <!-- family 1: affected mother -->
+    <circle cx="690" cy="80" r="16" fill="#a8324a"/><rect x="728" y="64" width="32" height="32" fill="#fff"/>
+    <line x1="706" y1="80" x2="728" y2="80"/><line x1="717" y1="80" x2="717" y2="112"/><line x1="672" y1="112" x2="762" y2="112"/>
+    <line x1="672" y1="112" x2="672" y2="126"/><line x1="717" y1="112" x2="717" y2="126"/><line x1="762" y1="112" x2="762" y2="126"/>
+    <circle cx="672" cy="142" r="16" fill="#a8324a"/><rect x="701" y="126" width="32" height="32" fill="#a8324a"/><circle cx="762" cy="142" r="16" fill="#a8324a"/>
+    <!-- family 2: affected father -->
+    <circle cx="850" cy="80" r="16" fill="#fff"/><rect x="888" y="64" width="32" height="32" fill="#a8324a"/>
+    <line x1="866" y1="80" x2="888" y2="80"/><line x1="877" y1="80" x2="877" y2="112"/><line x1="832" y1="112" x2="922" y2="112"/>
+    <line x1="832" y1="112" x2="832" y2="126"/><line x1="877" y1="112" x2="877" y2="126"/><line x1="922" y1="112" x2="922" y2="126"/>
+    <circle cx="832" cy="142" r="16" fill="#fff"/><rect x="861" y="126" width="32" height="32" fill="#fff"/><circle cx="922" cy="142" r="16" fill="#fff"/>
+  </g>
+  <text x="717" y="190" font-size="16" text-anchor="middle">mtDNA from mother:</text>
+  <text x="717" y="210" font-size="16" text-anchor="middle">sons and daughters</text>
+  <text x="877" y="190" font-size="16" text-anchor="middle">mtDNA from father:</text>
+  <text x="877" y="210" font-size="16" text-anchor="middle">not transmitted</text>
+  <g font-size="16">
+    <text x="640" y="256">The egg has ~100 000 copies; the</text>
+    <text x="640" y="278">sperm's few mitochondria are</text>
+    <text x="640" y="300">destroyed after fertilisation.</text>
+  </g>
+  <circle cx="650" cy="336" r="9" fill="#a8324a" stroke="#1b2a3a"/><text x="666" y="341" font-size="15">= illustrative mtDNA variant</text>
+</svg>

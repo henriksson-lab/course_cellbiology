@@ -1,0 +1,64 @@
+---
+title: "Membrane proteins: the R report"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+resources:
+  - bioinfo-membrane-proteins.Rmd
+  - data/*.csv
+  - data/*.json
+---
+
+[Module overview](index.qmd) · [Browser](browser.qmd) · **R report**
+
+## 1. Knit the supplied report
+
+Open the [student template](bioinfo-membrane-proteins.Rmd), enter your name, and knit it untouched. The fetch and data-check chunks are supplied; empty analysis chunks produce no plot yet. Set `use_snapshot <- TRUE` if the APIs are unavailable. Keep the snapshot files in the `data` folder beside the `.Rmd`.
+
+The report records whether each dataset came from a live request, a dated cache or the course snapshot. Re-knitting uses a local RDS cache named with the date. Remove the cache only when you deliberately want to refresh the data.
+
+## 2. Read JSON from GTEx
+
+GTEx measures **mRNA expression**, not protein abundance or glucose transport. The report uses dataset `gtex_v8`, not whichever dataset the portal opens by default.
+
+The supplied `fetch_gtex()` function:
+
+1. Looks up SLC5A1 or SLC5A2 through the [reference gene API](https://gtexportal.org/api/v2/reference/gene?geneId=SLC5A2&datasetId=gtex_v8).
+2. Extracts the dataset-specific **versioned GENCODE ID**.
+3. Reads median tissue expression from the [expression API](https://gtexportal.org/api/v2/expression/medianGeneExpression?gencodeId=ENSG00000140675.12&datasetId=gtex_v8).
+4. Uses `jsonlite::fromJSON()` to turn JSON into an R list; `$data` contains the result table. It checks pagination before accepting the response.
+
+Inspect `head(expression)` and `str(expression)`. Each row is a gene/tissue median, in **transcripts per million (TPM)**. It is not one donor or one cell.
+
+## 3. Make an expression plot
+
+In `expression-plot`, plot `median_tpm` against `tissue`, colour by `gene`, and use `geom_point()` with `position_dodge(width = 0.5)` and `coord_flip()`. To keep the plot readable, filter to tissues with a median above 10 TPM for either gene (the supplied `plot_tissues` vector identifies them). Label the axes and caption the plot “GTEx v8 tissue medians; retrieved 2026-11-18” when using the snapshot. A sample median is not an estimate of every cell in that tissue.
+
+**T6.** `[ELO 2, 9]` *Expression and interpretation.* Find the highest tissue for each gene using `which.max()` on each gene’s rows. Explain the link to renal glucose reabsorption, and give one reason that this plot cannot establish which cell types carry the protein.
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+In the supplied snapshot, **SLC5A1** is highest in **small intestine, terminal ileum (~98 TPM)**. SLC5A2 is highest in **kidney cortex (~36 TPM)**, followed by kidney medulla (~25 TPM). The SLC5A2 pattern fits SGLT2’s renal role, where inhibiting it reduces glucose reabsorption. GTEx is bulk tissue RNA: a tissue mixes many cell types, mRNA is not protein, and the plot does not show which membrane surface contains a transporter. SLC5A1 expression in heart is also substantial (~45 TPM in left ventricle); a functional explanation needs more than tissue RNA alone.
+:::
+
+## 4. Count features and make a second plot
+
+The supplied UniProt query retrieves ATP1A1, SLC2A1, SLC5A1, SLC5A2, ABCB1, CFTR, AQP1 and KCNA1. In `count-tm`, fill in a function that counts occurrences of `TRANSMEM ` in each annotation string. Use `gregexpr(..., fixed = TRUE)`; **no match is returned as -1**, so count only positive match positions. Empty feature fields should give zero, not a missing value.
+
+In `topology-plot`, use `geom_col()` for `gene` versus `tm_count`. Add a y-axis label “Annotated transmembrane segments (count)” and a UniProt data caption. Ask whether equal segment counts imply equal transport mechanisms.
+
+## 5. Finish the report
+
+Write a short interpretation using at least one inline R value. Explain **expression**, **topology** and **drug binding** as separate observations, then connect them. Include the browser record identifiers and your access dates. Keep the Data and `sessionInfo()` sections.
+
+Optional hand-in: the knitted HTML with your name, both plots, no errors and the provenance table. Check that another person could identify which data you used.
+
+## Sources and licences
+
+- **UniProtKB**, release 2026_04, retrieved 2026-11-18: [REST documentation](https://www.uniprot.org/help/api_queries). Feature strings in `data/uniprot-features-2026-11-18.csv` were parsed from the original TSV response without changing their annotations. [CC BY 4.0](https://www.uniprot.org/help/license).
+- **GTEx**, dataset v8, retrieved 2026-11-18: [GTEx API](https://gtexportal.org/api/v2/redoc). The CSV contains all returned tissue medians for the two genes (108 rows); these are public aggregate data, not donor-level records. [GTEx data access policy](https://gtexportal.org/home/protectedDataAccess).
+- **RCSB PDB 6O2P**, Liu et al., *Science* 364:1184–1188 (2019), [structure and primary paper](https://www.rcsb.org/structure/6O2P).
+- **AlphaFold DB**, [confidence documentation](https://alphafold.ebi.ac.uk/faq); **ClinVar**, [record 7105](https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/); **PubChem**, [ivacaftor](https://pubchem.ncbi.nlm.nih.gov/compound/16220172).
+
+The JSON provenance files downloaded from the overview contain the exact query URLs and snapshot dates. No external images are copied into this module.

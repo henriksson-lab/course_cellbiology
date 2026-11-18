@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <defs>
+    <marker id="c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c2255c"/></marker>
+    <marker id="k" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+  </defs>
+  <text x="20" y="28" font-size="19" font-weight="700">Ca<tspan font-size="12.9" dy="-7.6">2+</tspan><tspan dy="7.6">: a buffer and a signal</tspan></text>
+  <!-- ER -->
+  <rect x="20" y="50" width="440" height="80" rx="30" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="3"/>
+  <text x="44" y="98" font-size="17" font-weight="700" fill="#2a7f8f">ER (Ca<tspan font-size="11.6" dy="-6.8">2+</tspan><tspan dy="6.8"> store)</tspan></text>
+  <g fill="#c2255c"><circle cx="230" cy="78" r="5"/><circle cx="260" cy="96" r="5"/><circle cx="300" cy="80" r="5"/><circle cx="340" cy="100" r="5"/><circle cx="380" cy="78" r="5"/><circle cx="420" cy="96" r="5"/></g>
+  <!-- mitochondrion -->
+  <rect x="20" y="172" width="440" height="130" rx="60" fill="#f8e9ec" stroke="#a8324a" stroke-width="3"/>
+  <rect x="38" y="186" width="404" height="102" rx="48" fill="#fdf6f7" stroke="#a8324a" stroke-width="2"/>
+  <text x="70" y="270" font-size="16" font-weight="700" fill="#a8324a">matrix, −160 mV</text>
+  <!-- contact and transfer -->
+  <rect x="300" y="126" width="24" height="12" fill="#2a7f8f"/>
+  <path d="M312,140 L312,176" stroke="#c2255c" stroke-width="3.5" marker-end="url(#c)"/>
+  <rect x="300" y="180" width="24" height="12" fill="#a8324a"/>
+  <text x="332" y="160" font-size="15">close contact: local Ca<tspan font-size="10.2" dy="-6.0">2+</tspan><tspan dy="6.0"> burst</tspan></text>
+  <text x="170" y="216" font-size="15" font-weight="700" fill="#c2255c">uniporter (MCU)</text>
+  <text x="170" y="236" font-size="15">Ca<tspan font-size="10.2" dy="-6.0">2+</tspan><tspan dy="6.0"> pulled in by Δψ</tspan></text>
+  <g font-size="16">
+    <text x="20" y="330">• matrix Ca<tspan font-size="10.9" dy="-6.4">2+</tspan><tspan dy="6.4"> <tspan font-weight="700">speeds up TCA enzymes</tspan>: more NADH</tspan></text>
+    <text x="20" y="352">  when the cell works harder</text>
+    <text x="20" y="376">• too much Ca<tspan font-size="10.9" dy="-6.4">2+</tspan><tspan dy="6.4"> (with ROS) opens a large pore: the cell dies</tspan></text>
+  </g>
+  <!-- ROS panel -->
+  <text x="520" y="28" font-size="19" font-weight="700">Reactive oxygen species (ROS)</text>
+  <rect x="520" y="50" width="460" height="64" fill="#ecc9d1"/>
+  <line x1="520" y1="50" x2="980" y2="50" stroke="#a8324a" stroke-width="2.5"/><line x1="520" y1="114" x2="980" y2="114" stroke="#a8324a" stroke-width="2.5"/>
+  <rect x="560" y="40" width="54" height="84" rx="10" fill="#fff" stroke="#a8324a" stroke-width="2.5"/><text x="587" y="89" font-size="20" font-weight="700" fill="#a8324a" text-anchor="middle">I</text>
+  <rect x="660" y="40" width="54" height="84" rx="10" fill="#fff" stroke="#a8324a" stroke-width="2.5"/><text x="687" y="89" font-size="20" font-weight="700" fill="#a8324a" text-anchor="middle">III</text>
+  <text x="740" y="80" font-size="15">inner membrane</text>
+  <path d="M600,126 L640,168" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <path d="M680,126 L652,168" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="700" y="150" font-size="15">a few e<tspan font-size="10.2" dy="-6.0">−</tspan><tspan dy="6.0"> escape to O</tspan><tspan font-size="10.2" dy="3.8">2</tspan><tspan dy="-3.8">&#8203;</tspan></text>
+  <text x="560" y="194" font-size="18" font-weight="700" fill="#e8590c">O<tspan font-size="12.2" dy="4.5">2</tspan><tspan dy="-4.5">&#8203;</tspan><tspan font-size="12.2" dy="-7.2">•−</tspan><tspan dy="7.2"> superoxide</tspan></text>
+  <path d="M640,204 L640,236" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="652" y="226" font-size="15">SOD2 enzyme</text>
+  <text x="560" y="260" font-size="18" font-weight="700" fill="#e8590c">H<tspan font-size="12.2" dy="4.5">2</tspan><tspan dy="-4.5">O</tspan><tspan font-size="12.2" dy="4.5">2</tspan><tspan dy="-4.5">&#8203;</tspan></text>
+  <path d="M640,270 L640,300" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="652" y="292" font-size="15">peroxidases, catalase</text>
+  <text x="560" y="322" font-size="18" font-weight="700">H<tspan font-size="12.2" dy="4.5">2</tspan><tspan dy="-4.5">O</tspan></text>
+  <g font-size="16">
+    <text x="520" y="354">• a little H<tspan font-size="10.9" dy="4.0">2</tspan><tspan dy="-4.0">O</tspan><tspan font-size="10.9" dy="4.0">2</tspan><tspan dy="-4.0">: a <tspan font-weight="700">signal</tspan></tspan></text>
+    <text x="520" y="376">• a lot: <tspan font-weight="700">damage</tspan> to mtDNA, lipids, proteins</text>
+  </g>
+  <text x="820" y="196" font-size="15">more ROS when Δp is</text>
+  <text x="820" y="214" font-size="15">high and the chain</text>
+  <text x="820" y="232" font-size="15">is "backed up"</text>
+</svg>

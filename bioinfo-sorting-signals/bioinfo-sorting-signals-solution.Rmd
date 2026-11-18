@@ -1,0 +1,220 @@
+---
+title: "Read the zip code: protein sorting features"
+author: "Course worked solution"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(knitr)
+options(HTTPUserAgent = "3MB001-course", timeout = 60)
+knitr::opts_chunk$set(error = FALSE, message = FALSE, warning = TRUE)
+use_snapshot <- FALSE
+snapshot_date <- "2026-11-18"
+dir.create("data", showWarnings = FALSE)
+provenance <- data.frame(dataset = character(), mode = character(),
+                         retrieved = character(), version = character())
+
+# Daily cache includes provenance. Failures use the named snapshot, never
+# unlabelled made-up data. Missing or malformed snapshots stop the report.
+load_data <- function(name, snapshot, fetch_fun, snapshot_version,
+                      snapshot_read = function(path) {
+                        read.csv(path, check.names = FALSE, stringsAsFactors = FALSE,
+                                 na.strings = character())
+                      }) {
+  cache <- file.path("data", paste0(name, "-", Sys.Date(), ".rds"))
+  if (use_snapshot) {
+    obj <- list(data = snapshot_read(snapshot), mode = "course snapshot",
+                retrieved = snapshot_date, version = snapshot_version)
+  } else if (file.exists(cache)) {
+    obj <- readRDS(cache)
+    obj$mode <- paste("cached", obj$mode)
+  } else {
+    obj <- tryCatch({
+      value <- fetch_fun()
+      version <- attr(value, "source_version")
+      if (is.null(version)) version <- "not reported"
+      result <- list(data = value, mode = "live API", retrieved = as.character(Sys.Date()),
+                     version = version)
+      saveRDS(result, cache)
+      result
+    }, error = function(e) {
+      warning(paste("API unavailable:", conditionMessage(e), "Using course snapshot."))
+      list(data = snapshot_read(snapshot), mode = "fallback snapshot",
+           retrieved = snapshot_date, version = snapshot_version)
+    })
+  }
+  provenance <<- rbind(provenance, data.frame(dataset = name, mode = obj$mode,
+                         retrieved = obj$retrieved, version = obj$version))
+  obj$data
+}
+uniprot_release <- function(url) {
+  headers <- tryCatch(curlGetHeaders(url), error = function(e) character())
+  h <- headers[grepl("^x-uniprot-release:", headers, ignore.case = TRUE)]
+  if (length(h)) trimws(sub("^[^:]+:", "", tail(h, 1))) else "not reported"
+}
+count_feature <- function(x, token) {
+  vapply(gregexpr(token, x, fixed = TRUE), function(pos) sum(pos > 0), integer(1))
+}
+```
+
+# Part A: browser evidence
+
+| Task | Observation | Record, evidence and access date |
+|---|---|---|
+| T1 LDLR route and disease | Signal 1–21, one TM, N-terminus outside; familial hypercholesterolaemia | UniProt P01130; checked 2026-11-18 |
+| T2 PCSK9 route and antibody accessibility | Signal 1–30, no TM, secreted; accessible outside cells | UniProt Q8NBP7; checked 2026-11-18 |
+| T3 BiP/PDI retention | Signal-mediated ER entry plus C-terminal KDEL retrieval | UniProt P11021/P07237; checked 2026-11-18 |
+| T4 three STRING partners and evidence | APOB, PCSK9 and APOE; experiments/databases/text-mining channels, not proof of direct binding | STRING human LDLR; checked 2026-11-18 |
+| Reactome event and membrane location | LDL–LDLR cargo recognition at plasma membrane for clathrin-mediated uptake | Reactome R-HSA-8856825; checked 2026-11-18 |
+| T5 one IDA and one IBA annotation | ER membrane GO:0005789 IDA PMID:11707463; plasma membrane GO:0005886 IBA GO_REF:0000033 | QuickGO P13569; checked 2026-11-18 |
+
+# Data: fifteen human proteins
+
+The labels below group teaching examples by their main role in these lectures;
+proteins can have additional locations. PEX5 is an import **receptor**, not a
+peroxisomal matrix cargo. The report is not a universal location predictor.
+
+```{r proteins-and-query}
+markers <- data.frame(
+  accession = c("P02768", "P01308", "P11021", "P27824", "P07237", "P11279",
+                "P04062", "P01130", "P02786", "Q8NBP7", "P25705", "O75390",
+                "P37198", "P50542", "P04406"),
+  destination = c("Secreted", "Secreted", "ER", "ER", "ER", "Lysosome",
+                  "Lysosome", "Cell surface", "Cell surface", "Secreted",
+                  "Mitochondrion", "Mitochondrion", "Nuclear pore",
+                  "Peroxisome import receptor", "Cytosol"))
+query_base <- paste0("https://rest.uniprot.org/uniprotkb/accessions?accessions=",
+                      paste(markers$accession, collapse = ","))
+uniprot_url <- paste0(query_base,
+  "&fields=accession,gene_primary,ft_signal,ft_transit,ft_transmem,cc_subcellular_location,sequence&format=tsv")
+fasta_url <- paste0(query_base, "&format=fasta")
+fetch_features <- function() {
+  x <- read.delim(uniprot_url, check.names = FALSE, stringsAsFactors = FALSE,
+                  na.strings = character(), quote = "")
+  stopifnot(setequal(x$Entry, markers$accession))
+  attr(x, "source_version") <- uniprot_release(uniprot_url)
+  x
+}
+raw_features <- load_data("uniprot-features", "data/uniprot-features-2026-11-18.csv",
+                          fetch_features, "UniProtKB 2026_04")
+expected_columns <- c("Entry", "Gene Names (primary)", "Signal peptide",
+                      "Transit peptide", "Transmembrane", "Subcellular location [CC]",
+                      "Sequence")
+stopifnot(setequal(raw_features$Entry, markers$accession),
+          identical(names(raw_features), expected_columns))
+proteins <- raw_features
+names(proteins) <- c("accession", "gene", "signal", "transit", "transmembrane",
+                     "location", "sequence")
+proteins$destination <- markers$destination[match(proteins$accession, markers$accession)]
+head(proteins[c("accession", "gene", "destination")])
+```
+
+## Read FASTA and align by accession
+
+Each header starts `>sp|ACCESSION|ENTRY_NAME`. One sequence can span several lines.
+This helper handles those line breaks and rejects duplicated accessions.
+
+```{r fasta-helper}
+parse_fasta <- function(lines) {
+  starts <- which(startsWith(lines, ">"))
+  stopifnot(length(starts) > 0, starts[1] == 1)
+  ends <- c(starts[-1] - 1, length(lines))
+  accession <- vapply(strsplit(sub("^>", "", lines[starts]), "|", fixed = TRUE),
+                       function(x) x[2], character(1))
+  sequence <- vapply(seq_along(starts), function(i) {
+    if (ends[i] <= starts[i]) stop("FASTA header without sequence")
+    paste0(trimws(lines[seq.int(starts[i] + 1, ends[i])]), collapse = "")
+  }, character(1))
+  stopifnot(!anyDuplicated(accession), all(nchar(sequence) > 0))
+  data.frame(accession = accession, sequence = sequence)
+}
+fetch_fasta <- function() {
+  lines <- readLines(fasta_url, warn = FALSE)
+  stopifnot(length(lines) > 0, startsWith(lines[1], ">"))
+  attr(lines, "source_version") <- uniprot_release(fasta_url)
+  lines
+}
+fasta_lines <- load_data("uniprot-fasta", "data/uniprot-sequences-2026-11-18.fasta",
+                         fetch_fasta, "UniProtKB 2026_04",
+                         snapshot_read = function(path) readLines(path, warn = FALSE))
+fasta <- parse_fasta(fasta_lines)
+stopifnot(setequal(fasta$accession, proteins$accession))
+fasta_sequence <- fasta$sequence[match(proteins$accession, fasta$accession)]
+# Do not compare rows until the records have been aligned by accession.
+stopifnot(identical(fasta_sequence, proteins$sequence))
+```
+
+# Extract and compare the features
+
+```{r sequence-ends}
+proteins$last_four <- substr(proteins$sequence,
+  nchar(proteins$sequence) - 3, nchar(proteins$sequence))
+```
+
+```{r feature-table}
+proteins$signal_peptide <- nzchar(proteins$signal)
+proteins$transit_peptide <- nzchar(proteins$transit)
+proteins$membrane_segment <- nzchar(proteins$transmembrane)
+proteins$terminal_kdel <- proteins$last_four == "KDEL"
+feature_cols <- c("signal_peptide", "transit_peptide", "membrane_segment", "terminal_kdel")
+knitr::kable(proteins[c("accession", "gene", "destination", "last_four", feature_cols)])
+stopifnot(proteins$last_four[proteins$gene == "HSPA5"] == "KDEL",
+          all(proteins$transit_peptide[proteins$gene %in% c("ATP5F1A", "CS")]))
+```
+
+# Plot a feature map
+
+Make one row per protein and one column per feature. `stack()` or a small loop
+can reshape the logical columns. Facet by destination to help compare routes.
+Label FALSE as "not annotated / motif absent", not "cannot use this route".
+
+```{r feature-plot, fig.width=9, fig.height=9}
+long <- do.call(rbind, lapply(feature_cols, function(feature) {
+  data.frame(gene = proteins$gene, destination = proteins$destination,
+             feature = feature, present = proteins[[feature]])
+}))
+ggplot(long, aes(feature, gene, fill = present)) +
+  geom_tile(colour = "white") +
+  facet_grid(destination ~ ., scales = "free_y", space = "free_y") +
+  scale_fill_manual(values = c("FALSE" = "#e6e6e6", "TRUE" = "#207a72"),
+                    labels = c("not annotated / motif absent", "present")) +
+  theme_minimal() + theme(axis.text.x = element_text(angle = 25, hjust = 1)) +
+  labs(x = "Sequence feature", y = "Gene", fill = "Annotation or motif",
+       caption = paste("Source: UniProtKB", provenance$version[1],
+                       "retrieved", provenance$retrieved[1]))
+```
+
+There are `r sum(proteins$terminal_kdel)` proteins ending in KDEL: HSPA5 and P4HB.
+Both enter the ER and are retrieved from the Golgi. ALB, INS and PCSK9 enter the
+same pathway but are secreted; GBA1 instead reaches lysosomes. Signal peptide but
+no TM: ALB, INS, HSPA5, P4HB, GBA1, PCSK9. Transit peptide: ATP5F1A and CS. TFRC has
+an internal signal-anchor and no cleaved signal peptide; nuclear and mitochondrial
+proteins use other import signals. Thus no N-terminal signal peptide does not
+establish a cytosolic final location.
+
+# Data provenance and sources
+
+Knitted on `r Sys.Date()`. The table records retrieval rather than knitting dates.
+The snapshots were retrieved 2026-11-18 from UniProtKB release 2026_04. Both CSV
+feature annotations and FASTA sequences must refer to the same protein set.
+
+```{r provenance}
+knitr::kable(provenance)
+cat("Feature query:", uniprot_url, "\nFASTA query:", fasta_url, "\n")
+```
+
+Sources: UniProt https://www.uniprot.org (CC BY 4.0),
+QuickGO https://www.ebi.ac.uk/QuickGO (GO data CC BY 4.0),
+Reactome R-HSA-8856825 https://reactome.org/content/detail/R-HSA-8856825,
+STRING human LDLR https://string-db.org/cgi/network?identifiers=LDLR&species=9606.
+Browser notes should include your individual access dates and evidence codes.
+
+# Session information
+
+```{r session-info}
+sessionInfo()
+```

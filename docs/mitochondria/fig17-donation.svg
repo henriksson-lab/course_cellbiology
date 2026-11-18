@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <defs><marker id="k" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+  <text x="20" y="28" font-size="19" font-weight="700">Heteroplasmy: a threshold</text>
+  <g font-size="15">
+    <g transform="translate(40 60)">
+      <circle cx="40" cy="40" r="38" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
+      <g fill="#f8e9ec" stroke="#a8324a" stroke-width="2"><ellipse cx="22" cy="28" rx="11" ry="6"/><ellipse cx="56" cy="24" rx="11" ry="6"/><ellipse cx="24" cy="56" rx="11" ry="6"/><ellipse cx="56" cy="54" rx="11" ry="6"/><ellipse cx="40" cy="40" rx="11" ry="6"/></g>
+      <text x="40" y="104" text-anchor="middle">low mutant load</text><text x="40" y="122" text-anchor="middle" font-weight="700" fill="#2b8a3e">below threshold</text>
+    </g>
+    <g transform="translate(170 60)">
+      <circle cx="40" cy="40" r="38" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
+      <g stroke="#a8324a" stroke-width="2"><ellipse cx="22" cy="28" rx="11" ry="6" fill="#a8324a"/><ellipse cx="56" cy="24" rx="11" ry="6" fill="#a8324a"/><ellipse cx="24" cy="56" rx="11" ry="6" fill="#f8e9ec"/><ellipse cx="56" cy="54" rx="11" ry="6" fill="#f8e9ec"/><ellipse cx="40" cy="40" rx="11" ry="6" fill="#f8e9ec"/></g>
+      <text x="40" y="104" text-anchor="middle">intermediate load</text><text x="40" y="122" text-anchor="middle" font-weight="700" fill="#2b8a3e">below threshold</text>
+    </g>
+    <g transform="translate(300 60)">
+      <circle cx="40" cy="40" r="38" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
+      <g stroke="#a8324a" stroke-width="2" fill="#a8324a"><ellipse cx="22" cy="28" rx="11" ry="6"/><ellipse cx="56" cy="24" rx="11" ry="6"/><ellipse cx="24" cy="56" rx="11" ry="6"/><ellipse cx="56" cy="54" rx="11" ry="6"/><ellipse cx="40" cy="40" rx="11" ry="6" fill="#f8e9ec"/></g>
+      <text x="40" y="104" text-anchor="middle">high mutant load</text><text x="40" y="122" text-anchor="middle" font-weight="700" fill="#c92a2a">above threshold</text>
+    </g>
+  </g>
+  <g font-size="16">
+    <text x="20" y="228">Illustrative threshold: varies with variant and tissue.</text>
+    <text x="20" y="250">High-demand tissues are often affected: brain, eye,</text>
+    <text x="20" y="272">heart, muscle. The fraction can jump between</text>
+    <text x="20" y="294">generations (the egg "bottleneck").</text>
+  </g>
+  <rect x="44" y="318" width="16" height="10" rx="5" fill="#f8e9ec" stroke="#a8324a" stroke-width="2"/><text x="68" y="328" font-size="15">normal mtDNA</text>
+  <rect x="190" y="318" width="16" height="10" rx="5" fill="#a8324a" stroke="#a8324a" stroke-width="2"/><text x="214" y="328" font-size="15">mutant mtDNA</text>
+  <!-- donation -->
+  <text x="500" y="28" font-size="19" font-weight="700">Mitochondrial donation (pronuclear transfer)</text>
+  <g transform="translate(560 120)">
+    <circle r="56" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
+    <g fill="#a8324a"><ellipse cx="-30" cy="-26" rx="9" ry="5"/><ellipse cx="28" cy="-34" rx="9" ry="5"/><ellipse cx="-36" cy="22" rx="9" ry="5"/><ellipse cx="34" cy="28" rx="9" ry="5"/><ellipse cx="0" cy="40" rx="9" ry="5"/></g>
+    <circle cx="-12" cy="0" r="12" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/><circle cx="14" cy="-2" r="12" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+  </g>
+  <text x="560" y="200" font-size="15" text-anchor="middle" font-weight="700">parents' embryo</text>
+  <text x="560" y="218" font-size="15" text-anchor="middle">mother's mtDNA mutant</text>
+  <g transform="translate(760 120)">
+    <circle r="56" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
+    <g fill="#f8e9ec" stroke="#a8324a" stroke-width="2"><ellipse cx="-30" cy="-26" rx="9" ry="5"/><ellipse cx="28" cy="-34" rx="9" ry="5"/><ellipse cx="-36" cy="22" rx="9" ry="5"/><ellipse cx="34" cy="28" rx="9" ry="5"/><ellipse cx="0" cy="40" rx="9" ry="5"/></g>
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#868e96" stroke-width="2" stroke-dasharray="4 3"/>
+  </g>
+  <text x="760" y="200" font-size="15" text-anchor="middle" font-weight="700">donor embryo</text>
+  <text x="760" y="218" font-size="15" text-anchor="middle">healthy mitochondria,</text>
+  <text x="760" y="236" font-size="15" text-anchor="middle">nuclei removed</text>
+  <path d="M590,100 Q660,60 744,108" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="608" y="66" font-size="15">move the two pronuclei</text>
+  <path d="M760,250 L760,282" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <g font-size="16">
+    <text x="520" y="310" font-weight="700">child: nuclear DNA from both parents,</text>
+    <text x="520" y="332" font-weight="700">mostly donor mtDNA</text>
+    <text x="520" y="356">Some maternal mtDNA can be carried over.</text>
+    <text x="500" y="380" font-size="15">UK law 2015; 8 children born in Newcastle reported in 2025</text>
+  </g>
+</svg>

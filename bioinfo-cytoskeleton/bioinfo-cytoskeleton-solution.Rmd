@@ -1,0 +1,145 @@
+---
+title: "Filaments, tissues and a drug for the heart"
+author: "Worked solution"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+params:
+  genes: [KRT5, KRT14, KRT8, KRT18, VIM, DES, GFAP, NEFL, LMNA, MYH6, MYH7, MYH2, MYH9]
+---
+
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(jsonlite)
+library(httr2)
+options(HTTPUserAgent = "3MB001-course", timeout = 90)
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+use_snapshot <- identical(Sys.getenv("BIOINFO_SNAPSHOT"), "true")
+dir.create("data", showWarnings = FALSE)
+retrieved <- if (use_snapshot) "2026-11-18" else as.character(Sys.Date())
+get_json <- function(url, ...) {
+  req <- req_url_query(request(url), ...)
+  resp_body_json(req_perform(req_retry(req, max_tries = 3)), simplifyVector = FALSE)
+}
+cache_csv <- function(name, fetch) {
+  file <- file.path("data", paste0(name, "-", retrieved, ".csv"))
+  if (file.exists(file)) return(read.csv(file, stringsAsFactors = FALSE))
+  if (use_snapshot) stop("Missing snapshot: ", file)
+  value <- fetch()
+  write.csv(value, file, row.names = FALSE)
+  value
+}
+```
+
+# Question
+
+How do tissue expression and trial records connect cytoskeletal biology to disease?
+
+# Browser evidence
+
+Taxol contacts β-tubulin in 1JFF; 5N69 contains omecamtiv mecarbil, an activator. Mavacamten is an inhibitor.
+
+# Data
+
+GTEx v8 median TPM and ClinicalTrials.gov intervention search `mavacamten`; retrieved `r retrieved`. API endpoints are recorded in the code.
+
+```{r gtex-fetch}
+genes <- params$genes
+tissues <- c("Skin_Not_Sun_Exposed_Suprapubic", "Esophagus_Mucosa",
+             "Muscle_Skeletal", "Heart_Left_Ventricle", "Brain_Cortex",
+             "Nerve_Tibial", "Liver", "Lung")
+fetch_expression <- function() {
+  rows <- lapply(genes, function(gene) {
+    ref <- get_json("https://gtexportal.org/api/v2/reference/gene",
+                    geneId = gene, datasetId = "gtex_v8")$data
+    exact <- Filter(function(x) identical(x$geneSymbol, gene), ref)
+    if (length(exact) != 1) stop("Ambiguous gene: ", gene)
+    id <- exact[[1]]$gencodeId
+    exp <- get_json("https://gtexportal.org/api/v2/expression/medianGeneExpression",
+                    gencodeId = id, datasetId = "gtex_v8", itemsPerPage = 250)$data
+    exp <- Filter(function(x) x$tissueSiteDetailId %in% tissues, exp)
+    do.call(rbind, lapply(exp, function(x) data.frame(
+      gene = gene, gencode_id = id, tissue = x$tissueSiteDetailId,
+      tpm = x$median, dataset = "gtex_v8")))
+  })
+  do.call(rbind, rows)
+}
+# Parameter-specific live cache avoids reusing results for another gene set.
+cache_name <- if (use_snapshot) "gtex-expression" else
+  paste0("gtex-expression-", paste(sort(genes), collapse = "_"))
+expression <- cache_csv(cache_name, fetch_expression)
+if (!all(genes %in% expression$gene)) stop("Requested genes absent from cache")
+expression <- expression[expression$gene %in% genes, ]
+stopifnot(nrow(expression) == length(genes) * length(tissues))
+```
+
+```{r expression-heatmap, fig.width=9, fig.height=5}
+ggplot(expression, aes(tissue, gene, fill = log10(tpm + 1))) +
+  geom_tile() + scale_fill_viridis_c(name = "log10(TPM + 1)") +
+  labs(x = "GTEx adult tissue", y = "Gene",
+       caption = paste("GTEx v8; retrieved", retrieved, "(bulk tissue medians)")) +
+  theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r trials-fetch}
+fetch_trials <- function() {
+  token <- NULL
+  rows <- list()
+  repeat {
+    args <- list(url = "https://clinicaltrials.gov/api/v2/studies",
+                 query.intr = "mavacamten", format = "json", pageSize = 100,
+                 countTotal = "true")
+    if (!is.null(token)) args$pageToken <- token
+    result <- do.call(get_json, args)
+    for (study in result$studies) {
+      p <- study$protocolSection
+      phase <- p$designModule$phases
+      if (is.null(phase) || !length(phase)) phase <- "NOT_APPLICABLE"
+      rows[[length(rows) + 1]] <- data.frame(
+        nct_id = p$identificationModule$nctId,
+        title = p$identificationModule$briefTitle,
+        phases = paste(unlist(phase), collapse = ";"),
+        conditions = paste(unlist(p$conditionsModule$conditions), collapse = ";"),
+        status = p$statusModule$overallStatus)
+    }
+    token <- result$nextPageToken
+    if (is.null(token)) break
+  }
+  do.call(rbind, rows)
+}
+trials <- cache_csv("mavacamten-trials", fetch_trials)
+stopifnot(!anyDuplicated(trials$nct_id))
+```
+
+```{r trial-phase-chart}
+phase_rows <- do.call(rbind, lapply(seq_len(nrow(trials)), function(i) {
+  data.frame(nct_id = trials$nct_id[i], phase = strsplit(trials$phases[i], ";", fixed = TRUE)[[1]])
+}))
+phase_rows$phase[phase_rows$phase %in% c("NA", "NOT_APPLICABLE", "")] <- "Not applicable"
+counts <- as.data.frame(table(phase_rows$phase))
+names(counts) <- c("phase", "studies")
+ggplot(counts, aes(phase, studies)) + geom_col(fill = "#a8324a") +
+  labs(x = "Registered study phase", y = "Study records",
+       caption = paste("ClinicalTrials.gov; intervention search mavacamten; retrieved", retrieved,
+                       "— multi-phase studies count in each applicable phase")) + theme_minimal()
+```
+
+# Interpretation
+
+The query contains `r nrow(trials)` distinct trial records. KRT14 is abundant in
+skin, DES in muscle, GFAP in brain and MYH7 in the heart. Bulk RNA data mix cell
+types, and registry counts describe research activity rather than efficacy.
+
+# Sources
+
+GTEx Consortium, Science 2020, doi:10.1126/science.aaz1776; https://gtexportal.org/api/v2/ .
+ClinicalTrials.gov: https://clinicaltrials.gov/api/v2/studies .
+RCSB PDB: https://www.rcsb.org/structure/1JFF and https://www.rcsb.org/structure/5N69 .
+
+# Reproducibility
+
+```{r session-info}
+sessionInfo()
+```

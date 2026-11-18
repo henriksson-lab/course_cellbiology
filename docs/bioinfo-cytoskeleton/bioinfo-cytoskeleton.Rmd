@@ -1,0 +1,110 @@
+---
+title: "Filaments, tissues and a drug for the heart"
+author: "Your name"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+params:
+  genes: [KRT5, KRT14, KRT8, KRT18, VIM, DES, GFAP, NEFL, LMNA, MYH6, MYH7, MYH2, MYH9]
+---
+
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(jsonlite)
+library(httr2)
+options(HTTPUserAgent = "3MB001-course", timeout = 90)
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+use_snapshot <- FALSE
+dir.create("data", showWarnings = FALSE)
+retrieved <- if (use_snapshot) "2026-11-18" else as.character(Sys.Date())
+get_json <- function(url, ...) {
+  req <- req_url_query(request(url), ...)
+  resp_body_json(req_perform(req_retry(req, max_tries = 3)), simplifyVector = FALSE)
+}
+cache_csv <- function(name, fetch) {
+  file <- file.path("data", paste0(name, "-", retrieved, ".csv"))
+  if (file.exists(file)) return(read.csv(file, stringsAsFactors = FALSE))
+  if (use_snapshot) stop("Missing snapshot: ", file)
+  value <- fetch()
+  write.csv(value, file, row.names = FALSE)
+  value
+}
+```
+
+# Question
+
+State the comparison you will make.
+
+# Browser evidence
+
+Record the PDB ligands and one named variant per gene, with accessions and dates.
+
+# Data
+
+Name the sources, GTEx release, and whether you used live data or a snapshot.
+
+```{r gtex-fetch}
+genes <- params$genes
+tissues <- c("Skin_Not_Sun_Exposed_Suprapubic", "Esophagus_Mucosa",
+             "Muscle_Skeletal", "Heart_Left_Ventricle", "Brain_Cortex",
+             "Nerve_Tibial", "Liver", "Lung")
+fetch_expression <- function() {
+  rows <- lapply(genes, function(gene) {
+    ref <- get_json("https://gtexportal.org/api/v2/reference/gene",
+                    geneId = gene, datasetId = "gtex_v8")$data
+    exact <- Filter(function(x) identical(x$geneSymbol, gene), ref)
+    if (length(exact) != 1) stop("Ambiguous gene: ", gene)
+    id <- exact[[1]]$gencodeId
+    exp <- get_json("https://gtexportal.org/api/v2/expression/medianGeneExpression",
+                    gencodeId = id, datasetId = "gtex_v8", itemsPerPage = 250)$data
+    exp <- Filter(function(x) x$tissueSiteDetailId %in% tissues, exp)
+    do.call(rbind, lapply(exp, function(x) data.frame(
+      gene = gene, gencode_id = id, tissue = x$tissueSiteDetailId,
+      tpm = x$median, dataset = "gtex_v8")))
+  })
+  do.call(rbind, rows)
+}
+# Parameter-specific live cache avoids reusing results for another gene set.
+cache_name <- if (use_snapshot) "gtex-expression" else
+  paste0("gtex-expression-", paste(sort(genes), collapse = "_"))
+expression <- cache_csv(cache_name, fetch_expression)
+if (!all(genes %in% expression$gene)) stop("Requested genes absent from cache")
+expression <- expression[expression$gene %in% genes, ]
+stopifnot(nrow(expression) == length(genes) * length(tissues))
+```
+
+# Plot tissue expression
+
+Make the heatmap described on the course page.
+
+```{r expression-heatmap, fig.width=9, fig.height=5}
+# Your plot code
+```
+
+# Fetch trial records
+
+Write the paginated ClinicalTrials.gov query; in snapshot mode read the shipped CSV. Cache live results.
+
+```{r trials-fetch}
+# Your API and caching code
+```
+
+```{r trial-phase-chart}
+# Split phase lists, count and plot
+```
+
+# Interpretation
+
+Include one inline R value and distinguish expression, study counts and clinical evidence.
+
+# Sources and retrieval dates
+
+List the exact API URLs and the retrieval date of the data used.
+
+# Reproducibility
+
+```{r session-info}
+sessionInfo()
+```

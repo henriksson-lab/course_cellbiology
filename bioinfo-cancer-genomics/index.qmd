@@ -1,0 +1,58 @@
+---
+title: "Bioinformatics: read the mutations"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+resources:
+  - bioinfo-cancer-genomics.Rmd
+  - data/*.csv
+  - data/*.json
+---
+
+## What you will do
+
+Compare mutation positions in an oncogene and a tumour suppressor, then write a
+short report that combines evidence from at least three databases. **ELO 8, 9.**
+
+Builds on [cell death beyond apoptosis](../regulated-necrosis/lec.qmd),
+[cancer](../cancer/lec.qmd), and the [disease casebook](../disease-casebook/lec.qmd).
+Allow about 3–4 hours for the guided activities; the independent report may need more time.
+
+1. [In the browser: mutation patterns and death proteins](browser.qmd).
+2. [In R: mutation positions in melanoma](report.qmd).
+3. [Your own report: one mechanism, several sources](capstone.qmd).
+
+## Before you start
+
+No account is needed. Use RStudio or R with `rmarkdown`, `ggplot2`, `jsonlite` and
+`httr2` installed. Install missing packages once in the console:
+
+```r
+install.packages(c("rmarkdown", "ggplot2", "jsonlite", "httr2"))
+```
+
+Download the report and all listed snapshots. Put the report in a new folder and
+CSV/JSON files in its `data/` subfolder. Keep the filenames. If an API is unavailable,
+set `use_snapshot <- TRUE`. A snapshot is a dated copy of real records, not simulated data.
+Knitting uses a fresh R session: create every object in the report and finish with
+`sessionInfo()`. Do not include your R console history as a substitute for code.
+
+## Downloads
+
+- [Guided report outline](bioinfo-cancer-genomics.Rmd)
+- [BRAF and TP53 mutation records](data/skcm-mutations-2026-11-18.csv)
+- [Sample-list metadata](data/study-metadata-2026-11-18.json)
+- [Retrieval record](data/retrieval-manifest-2026-11-18.json)
+
+## Sources and licences
+
+[cBioPortal](https://www.cbioportal.org/) API, TCGA Skin Cutaneous Melanoma,
+PanCancer Atlas 2018, study `skcm_tcga_pan_can_atlas_2018`. Public TCGA somatic calls,
+retrieved 2026-11-18. Cite the
+[cBioPortal paper](https://doi.org/10.1158/2159-8290.CD-12-0095) and the
+[TCGA PanCancer Atlas study collection](https://www.cell.com/pb-assets/consortium/pancanceratlas/pancani3/index.html).
+Retain the study identifier, sample selection and attribution with reused data.
+UniProt and HPA annotations are CC BY 4.0. No clinical identifiable data or external
+images are included.

@@ -1,0 +1,59 @@
+---
+title: "Cancer dependencies: browser evidence"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+[Module overview](index.qmd) · [Next: the R report](report.qmd)
+
+## 1. A CRISPR screen asks about growth after gene loss
+
+1. Open [DepMap](https://depmap.org/portal/) and search **CDK1** in its search box.
+   Select the gene, then inspect the CRISPR gene-effect distribution.
+2. Repeat for **CDK4**, **BCL2** and **MCL1**. Use the same dataset/release and scale.
+3. Record what a score near **0** and near **−1** mean. In this normalisation, 0 is
+   approximately no growth effect and −1 is the typical effect of reference essential genes.
+4. Compare the distributions, including their tails. One median can hide a sensitive subset.
+   Record the release name and which cell-line collection you used.
+
+If the portal asks you to verify browser access, complete it in your browser. The
+R activity uses Open Targets, which supplies a copy of these data without scraping the portal.
+
+## 2. A protein that changes through the cycle
+
+1. Open [HPA CCNB1](https://www.proteinatlas.org/ENSG00000134057-CCNB1/subcellular).
+2. Read its subcellular locations and **Cell cycle dependency** section. Distinguish
+   variation in protein abundance from variation in its location.
+3. Connect the images to cyclin B1–CDK1 activation and APC/C-dependent degradation
+   from the lectures. HPA staining alone does not prove the degradation mechanism.
+
+## 3. The checkpoint protein p53
+
+1. Open [UniProt TP53, P04637](https://www.uniprot.org/uniprotkb/P04637/entry).
+2. Find its DNA-binding domain, tetramerisation region and one post-translational modification.
+   Write down residue position, modification, evidence and source.
+3. Open [Reactome: Cell Cycle Checkpoints, R-HSA-69620](https://reactome.org/content/detail/R-HSA-69620).
+   Trace DNA damage to p53-dependent arrest. Is TP53 itself a cyclin-dependent kinase?
+
+## Tasks
+
+**T1.** What separates CDK1 from CDK4 dependency? `[ELO 7, 9]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+CDK1 loss strongly impairs growth across most screened lines, whereas CDK4 effects vary more by context. In the shipped Open Targets snapshot, median scores are about **−2.63 for CDK1** and **−0.56 for CDK4** across 1,258 screens each. These are growth effects in culture, not patient response rates.
+:::
+
+**T2.** Why is CCNB1 abundance cell-cycle dependent? `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+Cyclin B1 accumulates before mitosis and helps activate CDK1; APC/C-mediated ubiquitination promotes its destruction at the metaphase-to-anaphase transition, helping cells exit mitosis. Its partner CDK1 does not have to be destroyed on every cycle.
+:::
+
+**T3. [VG]** Would a strongly common-essential gene automatically be an ideal cancer drug target? `[ELO 7, 9]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+A strong growth effect is evidence of a vulnerability in the screened cells. Normal proliferating cells may need the same gene, limiting the therapeutic window. Gene knockout also differs from partial, time-limited drug inhibition. Compare normal-tissue biology, selectivity and exposure before predicting clinical usefulness.
+:::

@@ -5,22 +5,22 @@
     <g transform="translate(40 60)">
       <circle cx="40" cy="40" r="38" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
       <g fill="#f8e9ec" stroke="#a8324a" stroke-width="2"><ellipse cx="22" cy="28" rx="11" ry="6"/><ellipse cx="56" cy="24" rx="11" ry="6"/><ellipse cx="24" cy="56" rx="11" ry="6"/><ellipse cx="56" cy="54" rx="11" ry="6"/><ellipse cx="40" cy="40" rx="11" ry="6"/></g>
-      <text x="40" y="104" text-anchor="middle">10 % mutant</text><text x="40" y="122" text-anchor="middle" font-weight="700" fill="#2b8a3e">healthy</text>
+      <text x="40" y="104" text-anchor="middle">low mutant load</text><text x="40" y="122" text-anchor="middle" font-weight="700" fill="#2b8a3e">below threshold</text>
     </g>
     <g transform="translate(170 60)">
       <circle cx="40" cy="40" r="38" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
       <g stroke="#a8324a" stroke-width="2"><ellipse cx="22" cy="28" rx="11" ry="6" fill="#a8324a"/><ellipse cx="56" cy="24" rx="11" ry="6" fill="#a8324a"/><ellipse cx="24" cy="56" rx="11" ry="6" fill="#f8e9ec"/><ellipse cx="56" cy="54" rx="11" ry="6" fill="#f8e9ec"/><ellipse cx="40" cy="40" rx="11" ry="6" fill="#f8e9ec"/></g>
-      <text x="40" y="104" text-anchor="middle">40 % mutant</text><text x="40" y="122" text-anchor="middle" font-weight="700" fill="#2b8a3e">usually healthy</text>
+      <text x="40" y="104" text-anchor="middle">intermediate load</text><text x="40" y="122" text-anchor="middle" font-weight="700" fill="#2b8a3e">below threshold</text>
     </g>
     <g transform="translate(300 60)">
       <circle cx="40" cy="40" r="38" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
       <g stroke="#a8324a" stroke-width="2" fill="#a8324a"><ellipse cx="22" cy="28" rx="11" ry="6"/><ellipse cx="56" cy="24" rx="11" ry="6"/><ellipse cx="24" cy="56" rx="11" ry="6"/><ellipse cx="56" cy="54" rx="11" ry="6"/><ellipse cx="40" cy="40" rx="11" ry="6" fill="#f8e9ec"/></g>
-      <text x="40" y="104" text-anchor="middle">80 % mutant</text><text x="40" y="122" text-anchor="middle" font-weight="700" fill="#c92a2a">disease</text>
+      <text x="40" y="104" text-anchor="middle">high mutant load</text><text x="40" y="122" text-anchor="middle" font-weight="700" fill="#c92a2a">above threshold</text>
     </g>
   </g>
   <g font-size="16">
-    <text x="20" y="228">Symptoms appear above about <tspan font-weight="700">60–80 % mutant</tspan> mtDNA,</text>
-    <text x="20" y="250">first in tissues that use most ATP: brain, eye,</text>
+    <text x="20" y="228">Illustrative threshold: varies with variant and tissue.</text>
+    <text x="20" y="250">High-demand tissues are often affected: brain, eye,</text>
     <text x="20" y="272">heart, muscle. The fraction can jump between</text>
     <text x="20" y="294">generations (the egg "bottleneck").</text>
   </g>
@@ -48,8 +48,8 @@
   <path d="M760,250 L760,282" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
   <g font-size="16">
     <text x="520" y="310" font-weight="700">child: nuclear DNA from both parents,</text>
-    <text x="520" y="332" font-weight="700">mtDNA from the donor</text>
-    <text x="520" y="356">(37 of ~20 000 genes; a little mutant mtDNA can be carried over)</text>
-    <text x="520" y="380">UK law 2015; 8 children born in Newcastle reported in 2025</text>
+    <text x="520" y="332" font-weight="700">mostly donor mtDNA</text>
+    <text x="520" y="356">Some maternal mtDNA can be carried over.</text>
+    <text x="500" y="380" font-size="15">UK law 2015; 8 children born in Newcastle reported in 2025</text>
   </g>
 </svg>

@@ -14,24 +14,21 @@ first in a new session, then `plan/schedule.md`.
   ion-channels · protein-sorting, er, golgi-secretion, endocytosis-lysosomes,
   protein-lifecycle, organelles-homeostasis · signalling-principles, gpcr,
   kinase-signalling, fate-signalling · actin, microtubules, myosin-if.
-- **Draft, not published:** `mitochondria/` (lec.qmd, quiz.qmd, figures; no
-  questions.qmd or `_credits.md`) and `demos/src/mitostress/` (has a `DRAFT` file,
-  so `demos/build.sh` skips it). Excluded in `_quarto.yml` (`"!mitochondria/"`) and
-  not in the sidebar. The worker building it was stopped by Anthropic safeguards
-  (flagged as bio); Claude must not finish that work itself. The user decides:
-  finish by hand, another model, or `/feedback`.
+- **Mitochondria completed:** `mitochondria/` now includes study questions and
+  image credits, and `demos/src/mitostress/` is enabled. The section is included
+  in the site and sidebar. Inheritance, energetic estimates and mitochondrial
+  donation explanations were corrected; the demo starts at 1× assay time.
 - **Second session added:** cell-cycle-control, mitosis, cell-numbers, apoptosis,
-  regulated-necrosis, cancer, disease-casebook (all with demos), so 26 of 28
-  lectures are published.
+  regulated-necrosis, cancer, disease-casebook (all with demos), so 27 of 28
+  lectures are complete including mitochondria.
 - **Not built:** `drug-journey` (capstone). Its worker was also stopped by
-  safeguards before writing any files; sidebar entry removed. Same rule as
-  mitochondria: Claude does not do it; the user decides.
-- **Bioinformatics days:** planned in `plan/bioinformatics.md` (one per block, 8 in
-  total; browser steps + R Markdown templates knit to HTML). Day 1
-  `bioinfo-protein-atlas/` is built (pilot; sidebar: last item of the first block,
-  purple). Its lessons are in `plan/bioinformatics.md` section 6 (e.g. per-page
-  `resources:`, solution `.Rmd` kept out of `docs/`, `engine: markdown`). Days 2–8
-  not built.
+  safeguards before writing any files; sidebar entry removed. It remains outside this completion batch.
+- **Bioinformatics modules:** eight modules are linked to their teaching blocks,
+  following `plan/bioinformatics.md`. Use “module”, not “day”. Each module has a
+  short overview and separate browser/report pages, downloadable student R Markdown
+  templates and dated data snapshots. Solutions remain in source control, excluded
+  from published downloads. Page front matter uses `engine: markdown` and explicit
+  `resources:`; never add a wildcard that publishes solution files.
 
 ## Key planning docs
 
@@ -46,7 +43,7 @@ first in a new session, then `plan/schedule.md`.
 | `plan/parallel-round.md` | Rules for parallel workers (what each may write, shared-repo build/render rules, report format) |
 | `plan/demos.md` | Demo principles (incl. 1× real time, no flashing) + one demo per lecture (section 5) |
 | `plan/schedule.md` | Lecture order by block and build status |
-| `plan/bioinformatics.md` | The 8 bioinformatics days |
+| `plan/bioinformatics.md` | The 8 bioinformatics modules |
 
 ## Decisions by the course author (keep to these)
 
@@ -67,7 +64,7 @@ first in a new session, then `plan/schedule.md`.
   lecture (`<unit>/questions.qmd#explore`). Animations start at **1× real time**,
   faster only by choice, no flashing. WebGL allowed. Must work offline from
   `file://` (no CDN, no fetch).
-- Experimental run: each block gets a **bioinformatics day** (no lecture;
+- Experimental run: each block gets a **bioinformatics module** (no lecture;
   step-by-step browser + R). Any R is done in **R Markdown** (knit to HTML) to
   train report writing instead of Excel.
 - Commit and push when a batch is done; no LLM attribution in commit messages.
@@ -101,8 +98,8 @@ After a push, check the Pages run: `gh run list -R henriksson-lab/course_cellbio
 
 ## Open items / to check
 
-- Mitochondria draft and drug-journey (see above).
-- Day 1 bioinformatics: check the UniProt/HPA button labels by hand in a browser.
+- Drug-journey capstone lecture remains unbuilt (see above).
+- Protein-atlas module: check the UniProt/HPA button labels by hand in a browser.
 - Optional images not downloaded (Commons rate limits) are listed in the workers' units/credits notes (mitosis: ProphaseIF, fibroblast cytokinesis, meiosis I oocyte, H2B-GFP film; cancer: multipolar spindle, FDG-PET, microinvasive DCIS).
 - Notch demo opens at 1× real time but the pattern needs time-lapse; students
   are told to pick a speed. Author may prefer opening in time-lapse.

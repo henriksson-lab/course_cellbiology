@@ -1,0 +1,70 @@
+---
+title: "Sorting signals: in the browser"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+resources:
+  - data/quickgo-evidence-2026-11-18.csv
+---
+
+[Module overview](index.qmd) · **Browser** · [R report](report.qmd)
+
+Record your answers in Part A of the downloaded report. Keep accession numbers, evidence codes and access dates alongside your notes.
+
+## 1. Follow the LDL receptor
+
+Open [human LDLR, UniProt P01130](https://www.uniprot.org/uniprotkb/P01130/entry). Check the organism and reviewed status. In the sequence feature viewer, locate **Signal peptide**, **Transmembrane** and **Topological domain**. Read the disease annotation for familial hypercholesterolaemia. Annotated feature positions refer to the full precursor sequence, before its signal peptide is removed.
+
+**T1.** `[ELO 4, 9]` *Sequence features.* Predict which LDLR terminus is extracellular at the cell surface. Which sequence segment sends the precursor to the ER?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+LDLR has a signal peptide at **residues 1–21** and one transmembrane segment. The cleaved signal peptide starts ER translocation; the transmembrane segment stops it. The mature N-terminal ligand-binding domain is in the ER lumen and later **outside the cell**, while the C-terminal tail is cytosolic. A defect in this receptor can impair LDL clearance and cause familial hypercholesterolaemia.
+:::
+
+## 2. Find an accessible drug target
+
+Open [PCSK9, Q8NBP7](https://www.uniprot.org/uniprotkb/Q8NBP7/entry). Find its signal peptide, location and effect on LDLR. Compare its transmembrane annotation with LDLR’s. Review the [LDL receptor cycle](../endocytosis-lysosomes/lec.qmd) if needed.
+
+**T2.** `[ELO 4, 9]` *Route and therapy.* Why can an antibody reach PCSK9 without entering the cytosol? Does having a signal peptide always mean secretion into blood?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+PCSK9 has a signal peptide at **1–30**, no annotated transmembrane segment and is secreted. Extracellular PCSK9 promotes lysosomal routing of LDLR; an antibody can bind PCSK9 outside cells. A signal peptide alone does not establish the final destination: ER residents and lysosomal lumen proteins also enter the secretory pathway.
+:::
+
+## 3. Distinguish entry from retention
+
+Open [HSPA5/BiP, P11021](https://www.uniprot.org/uniprotkb/P11021/entry). Inspect the beginning and end of its sequence, signal peptide, and subcellular location. Compare [P4HB/PDI, P07237](https://www.uniprot.org/uniprotkb/P07237/entry).
+
+**T3.** `[ELO 4, 5]` *Sorting logic.* How does a soluble protein with an ER signal peptide remain in the ER? What would you predict if its last four residues were removed?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+BiP has an N-terminal signal peptide (**1–18**) and ends in **KDEL**. The signal peptide mediates entry into the ER; KDEL is a retrieval signal that returns escaped lumenal proteins from the Golgi to the ER. PDI also ends in KDEL. Removing the signal would weaken retrieval and increase escape/secretion, although other interactions can also retain a protein. Entry and final residence are separate steps.
+:::
+
+## 4. Interpret a network
+
+Open [STRING’s human LDLR network](https://string-db.org/cgi/network?identifiers=LDLR&species=9606). Confirm **Homo sapiens**, choose an evidence view if offered, and inspect the evidence legend. Select edges to APOB and PCSK9 and read the channels supporting them (experiments, databases, text mining, coexpression, etc.). Record three partners and one evidence channel for each.
+
+**T4.** `[ELO 4, 9]` **[VG]** *Network evidence.* Does an edge establish direct physical binding? Which additional experiment could test a binding claim?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+No. STRING displays **functional associations** assembled from several evidence types; its confidence score is not a binding affinity. The checked network includes **APOB** and **PCSK9** among the highest-scoring partners (scores 0.999), but an edge alone does not identify the underlying mechanism. To test direct binding, use purified components in a suitable binding assay, with negative controls and concentration dependence. Cellular co-immunoprecipitation supports association but can capture indirect complexes.
+:::
+
+## 5. Put the protein into a pathway
+
+Open [Reactome: cargo recognition for clathrin-mediated endocytosis, R-HSA-8856825](https://reactome.org/content/detail/R-HSA-8856825). Read the summary, then use the diagram viewer to find LDLR and LDL-containing cargo. Identify a membrane location and an event in the route. Draw your own three-step sketch: cargo binding → internalisation → receptor/cargo sorting. Do not copy the pathway image into your report; cite the stable pathway identifier instead.
+
+## 6. Read a GO evidence code
+
+Open [QuickGO CFTR annotations](https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=P13569). Filter **Aspect** to **Cellular component**. Find a row with **IDA** and one with **IBA**; open the cited reference or evidence details. Record the GO ID, label, qualifier, evidence code and reference. If the site is unavailable, use the provided [example rows](data/quickgo-evidence-2026-11-18.csv), then look up each GO term on QuickGO.
+
+**T5.** `[ELO 4, 5]` *Evidence.* Explain the difference between IDA and IBA. Why is recording only “CFTR: plasma membrane” incomplete?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}
+**IDA** means Inferred from Direct Assay; **IBA** means Inferred from Biological aspect of Ancestor (phylogenetic inference). The snapshot includes CFTR **GO:0005789** (ER membrane), IDA, **PMID:11707463**, and **GO:0005886** (plasma membrane), IBA, **GO_REF:0000033**. A GO annotation connects a gene product, term, qualifier and evidence. Different contexts and experimental constructs can yield several locations; a term without its evidence hides how the claim was obtained.
+:::
+
+Continue to [the R report](report.qmd).

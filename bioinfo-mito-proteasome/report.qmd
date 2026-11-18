@@ -1,0 +1,36 @@
+---
+title: "Organelle genomes: an R Markdown report"
+engine: markdown
+---
+
+[Module overview and downloads](index.qmd) · Previous: [database investigation](browser.qmd)
+
+## 1. Run the provided data section
+
+Download the template, helper and two CSV snapshots from the overview. Keep the helper beside the report and the CSVs in `data/`. Start by knitting the template untouched: the data table appears; your plotting chunks are empty. If a service is unavailable, change `use_snapshot <- TRUE` and knit again.
+
+The supplied `fetch-data.R` helper uses `rentrez::entrez_fetch()` to download the NCBI feature table, then parses its annotations. It queries UniProt's streaming endpoint for the full result set, rather than accidentally counting only the first page of search results. Open the helper and find the query. Locate the lines that save the response and read the cache.
+
+**What is cached?** The raw NCBI feature table, a derived feature CSV and the UniProt protein table, each with a date in its filename. UniProt's release header is recorded beside a newly fetched CSV. Re-knitting on the same date reads the cache. Snapshot mode uses the shipped files from 2026-11-18.
+
+## 2. Count the annotations
+
+In `annotation-counts`, use `table(genes$type)`. Filter CDS rows before counting proteins per complex: `genes$complex[genes$type == "CDS"]`. Use `nrow(proteins)` for the UniProt count. Calculate the approximate imported fraction as `1 - 13 / nrow(proteins)`. Explain the limits of this comparison.
+
+## 3. Draw the gene map
+
+In `genome-map`, use `ggplot(genes, aes(x = start, xend = end, y = strand, yend = strand, colour = complex)) + geom_segment(linewidth = 7)`. Add `labs()` with a coordinate axis in **bp**, a strand label and a caption naming **NC_012920.1** and the retrieval date. The circle is unrolled into a line at coordinate 1; this is a map, not a time course. Some genes overlap, which is biologically meaningful.
+
+**T6. [VG]** Which complexes have mtDNA-encoded subunits, how many subunits come from each, and what can this plot tell you about ATP production in a patient's muscle? `[ELO 5, 9; skill: plot and interpret annotations]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-18 against the downloaded feature table)"}
+Complex **I: 7**, **III: 1**, **IV: 3**, **V: 2**; total **13**. There are no complex-II genes in mtDNA. The map locates annotated genes and their strand. It does **not** measure expression, protein assembly, mutation burden or respiration. To test ATP production, add functional assays such as an oxygen-consumption stress test; to investigate an mtDNA variant, measure heteroplasmy in a relevant tissue as well as its molecular consequence.
+:::
+
+## 4. Write the results
+
+Use at least one inline R value in a paragraph comparing the two genomes' contributions. Distinguish **37 genes** from **13 protein genes**, and a protein's encoded origin from its final location. Finish the Data and browser-source sections, then knit in a fresh session.
+
+## Hand-in (optional)
+
+Submit the knitted HTML with your name, both counts, a labelled map, a results paragraph, source URLs, retrieval dates, release and `sessionInfo()`. There should be no R errors. Keep your `.Rmd`, helper and data together so another person can rerun it.

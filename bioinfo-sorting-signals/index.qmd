@@ -1,0 +1,39 @@
+---
+title: "Bioinformatics: read the zip code"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+resources:
+  - bioinfo-sorting-signals.Rmd
+  - data/*.csv
+  - data/*.json
+  - data/*.fasta
+---
+
+## What you will learn
+
+Use sequence features to explain where a protein goes, and distinguish observed locations from predictions. Build a feature table and a tile plot from real human sequences. This module builds on [protein sorting](../protein-sorting/lec.qmd), [the ER](../er/lec.qmd), [the Golgi](../golgi-secretion/lec.qmd) and [endocytosis and lysosomes](../endocytosis-lysosomes/lec.qmd). **ELO 4, 5, 9.**
+
+1. [In the browser: signals, pathways and evidence](browser.qmd) — about 90 minutes.
+2. [In R: a map of sorting features](report.qmd) — about 90–120 minutes.
+
+## Before you start
+
+No logins are needed. R packages: `rmarkdown`, `knitr`, `ggplot2`. The report uses base R for table operations; `dplyr` is optional.
+
+Download the [student report](bioinfo-sorting-signals.Rmd) to a new folder. Make a `data` subfolder and save:
+
+- [UniProt sequences and features](data/uniprot-features-2026-11-18.csv).
+- [FASTA sequences](data/uniprot-sequences-2026-11-18.fasta).
+- [UniProt provenance](data/uniprot-provenance.json).
+- [Example CFTR GO evidence rows](data/quickgo-evidence-2026-11-18.csv).
+
+Set `use_snapshot <- TRUE` in the report to work offline. The browser activities need internet access; the report’s sequence analysis works from the provided files.
+
+## What counts as evidence?
+
+A sequence motif suggests a route; it does not prove a location. A localisation experiment, a curated pathway and a predicted interaction address different questions. You will record these distinctions as carefully as the protein names.
+
+[Data and source credits](../credits.qmd#bioinfo-sorting-signals).

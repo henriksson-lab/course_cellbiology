@@ -8,6 +8,10 @@ Teacher information. This file is not part of the published site.
 - Each lecture is one folder (topic slug, never a week or day number): `lec.qmd`
   (slides), `quiz.qmd`, `questions.qmd` (study questions), `_credits.md` (image
   sources and licences), and its figures. Order lives only in `_quarto.yml`.
+- Each teaching block also has a `bioinfo-<topic>/` module with focused browser
+  and report pages, a student R Markdown template and dated data snapshots.
+  Worked solution reports stay in the repository and are excluded from published
+  resources. See [plan/bioinformatics.md](plan/bioinformatics.md).
 
 ## Building this site
 

@@ -1,0 +1,137 @@
+---
+title: "Where does a protein live? R Markdown report"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+# Plain Markdown page: nothing is run when the site is built.
+engine: markdown
+# Files students download. Listed here so Quarto copies them next to the page;
+# the worked solution (bioinfo-protein-atlas-solution.Rmd) is deliberately not listed.
+resources:
+  - bioinfo-protein-atlas.Rmd
+  - data/uniprot-proteins-2026-11-18.csv
+---
+
+[Module overview](index.qmd) · [Browser activities](browser.qmd) · [R Markdown report](report.qmd) · [Check your answers](questions.qmd)
+
+## R Markdown in five minutes
+
+An **R Markdown** file (`.Rmd`) is a plain text file that mixes **text** and **R
+code**. **Knitting** runs all the code from top to bottom and writes one HTML file
+with your text, code, tables and plots. Instead of copying numbers by hand into a
+spreadsheet and a document, the report *is* the analysis: anyone can re-run it and
+get the same result, and if the data change, the numbers in your text change with
+them. Every later bioinformatics module uses this format.
+
+The parts of the template:
+
+- **YAML header** between the two `---` lines at the top: title, author, date and
+  output format. Put your name in `author:`.
+- **Text** in Markdown: `# Heading`, `**bold**`, `*italic*`, lists with `-`,
+  tables with `|`.
+- **Code chunks** start with ```` ```{r chunk-name} ```` and end with ```` ``` ````.
+  Options go after the name, for example `fig.width = 7`.
+- **Inline R** in text: a backtick, `r`, a space, an R expression and a backtick.
+  Writing `` `r 2 + 2` `` in your text gives **4** in the HTML.
+
+**How to knit:**
+
+- In **RStudio**: open the file and click **Knit** (or Ctrl/Cmd+Shift+K).
+- From the **command line**, in the folder with the file:
+
+  ```bash
+  Rscript -e 'rmarkdown::render("bioinfo-protein-atlas.Rmd")'
+  ```
+
+  Then open `bioinfo-protein-atlas.html` in a browser.
+
+::: {.callout-important title="Knitting starts from an empty R session"}
+Objects you made in the R console **do not exist** while knitting. If the report
+needs an object, a chunk in the report must create it. "object 'x' not found" in
+the HTML almost always means this.
+:::
+
+## Part B: in R Markdown
+
+### B1. Knit the template untouched
+
+Open `bioinfo-protein-atlas.Rmd` and knit it before you change anything. You get
+an HTML report with a hidden setup chunk, the Part A table, a table of 13 proteins
+and red **Error** messages where your code is still missing ("object 'proteins' not
+found"). That is expected: the setup chunk sets `error = TRUE`, so the report knits
+even when a chunk fails. Look at the HTML and find each part of the `.Rmd` in it.
+Put your name in the YAML header and knit again.
+
+### B2. Fetch the data from UniProt (your chunk 1)
+
+UniProt has a **REST API**: an address that returns data instead of a web page.
+[This address](https://rest.uniprot.org/uniprotkb/accessions?accessions=P27824,Q15388&fields=accession,gene_primary,length,mass&format=tsv)
+returns the length and mass of two proteins as a tab-separated table (TSV). Open it
+in your browser to see what R will get. The address has three pieces:
+
+```text
+base:        https://rest.uniprot.org/uniprotkb/accessions?accessions=
+accessions:  P27824,Q15388,...        (separated by commas, no spaces)
+fields:      &fields=accession,gene_primary,protein_name,length,mass&format=tsv
+```
+
+In the chunk `uniprot-fetch`:
+
+1. Make the comma-separated accessions from the `markers` table with
+   `paste(markers$accession, collapse = ",")`.
+2. Glue the three pieces together with `paste0()` into `uniprot_url`.
+3. Read it: `proteins <- read.delim(uniprot_url)`. `read.delim()` reads a
+   tab-separated table from a file **or a web address**.
+4. Print `head(proteins)` and knit. The next (given) chunk saves a dated copy in a
+   `data/` folder, records the UniProt release and adds `mass_kda`.
+
+Look at the column names R made: `Gene.Names..primary.` R replaces spaces and
+brackets in column names with dots. The mass is in **daltons** (Da).
+
+### B3. Largest and smallest (your chunk 2)
+
+In the chunk `largest-smallest`, find the heaviest and the lightest protein:
+`which.max(proteins$Mass)` gives the **row number** of the largest value, so
+`proteins[which.max(proteins$Mass), ]` is that row. Store the two rows as `largest`
+and `smallest`, and `ratio <- largest$Mass / smallest$Mass`.
+
+### B4. Plot on a log scale (your chunk 3)
+
+In the chunk `mass-plot`, make a dot plot with `ggplot2`:
+
+- `aes(x = mass_kda, y = label, colour = compartment)` and `geom_point()`;
+- `scale_x_log10()` for a logarithmic x axis;
+- `labs()` with an x-axis label **with its unit** and a `caption` naming the source,
+  for example `paste("Data: UniProtKB release", uniprot_release)`.
+
+Try the plot **without** `scale_x_log10()` first and look at it. Then add it.
+Optional: `y = reorder(label, mass_kda)` sorts the rows by mass.
+
+### B5. Write the result
+
+Under "What the plot shows", write two or three sentences: which protein is largest
+and smallest, how many times heavier, and why the log axis was needed. Put at least
+one number in with inline R, for example the ratio as `` `r round(ratio)` ``.
+Knit, read your HTML, and fill in the date you used the websites in the "Data"
+section.
+
+::: {.callout-warning title="If UniProt is down"}
+In the setup chunk, change `use_snapshot <- FALSE` to `use_snapshot <- TRUE` and
+knit again. Your chunk 1 is then skipped and the report reads the course's saved
+copy of the same query (made on 2026-11-18, UniProt release 2026_04). It downloads
+the copy from this site; you can also save
+[the snapshot](data/uniprot-proteins-2026-11-18.csv){download="uniprot-proteins-2026-11-18.csv"}
+into a `data/` folder next to your `.Rmd`.
+:::
+
+## Hand-in (optional)
+
+Hand in the knitted **HTML** (not the `.Rmd`). Before you do, check: your name is in
+the header, there are **no red error messages**, the Part A table is filled, the plot
+has axis labels with units and a caption, the text has at least one inline R value,
+and the Data section has the dates.
+
+
+
+[Sources and licences](index.qmd#sources-and-licences)

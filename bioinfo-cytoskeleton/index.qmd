@@ -1,0 +1,58 @@
+---
+title: "Bioinformatics: filaments, tissues and a drug for the heart"
+engine: markdown
+format:
+  html:
+    toc: true
+    toc-depth: 2
+resources:
+  - bioinfo-cytoskeleton.Rmd
+  - data/*.csv
+  - data/*.json
+---
+
+## What you will do
+
+Compare cytoskeletal gene families across tissues, locate drugs in experimental
+structures, and read a clinical-trial record. Build a parameterised R Markdown
+report with a tissue heatmap and a trial-phase chart. **ELO 6, 9.**
+
+Builds on [actin](../actin/lec.qmd), [microtubules](../microtubules/lec.qmd), and
+[myosin and intermediate filaments](../myosin-if/lec.qmd). Allow about 3–4 hours.
+
+1. [In the browser: structures, variants and trials](browser.qmd).
+2. [In R: tissue expression and trial records](report.qmd).
+
+## Before you start
+
+No account is needed. Use RStudio or R with `rmarkdown`, `ggplot2`, `jsonlite` and
+`httr2` installed. Install missing packages once in the console:
+
+```r
+install.packages(c("rmarkdown", "ggplot2", "jsonlite", "httr2"))
+```
+
+Download the report and all listed snapshots. Put the report in a new folder and
+CSV/JSON files in its `data/` subfolder. Keep the filenames. If an API is unavailable,
+set `use_snapshot <- TRUE`. A snapshot is a dated copy of real records, not simulated data.
+Knitting uses a fresh R session: create every object in the report and finish with
+`sessionInfo()`. Do not include your R console history as a substitute for code.
+
+## Downloads
+
+- [Student report](bioinfo-cytoskeleton.Rmd)
+- [GTEx expression snapshot](data/gtex-expression-2026-11-18.csv)
+- [Mavacamten trial snapshot](data/mavacamten-trials-2026-11-18.csv)
+- [Retrieval record](data/retrieval-manifest-2026-11-18.json)
+
+For a second gene set, use the supplied tubulin isotypes TUBB, TUBB3 and TUBB4A.
+The snapshot contains these in addition to the 13 core genes.
+
+## Sources and licences
+
+GTEx v8, adult tissue median RNA expression (TPM), from the
+[GTEx API](https://gtexportal.org/api/v2/); cite the GTEx Consortium,
+*Science* 369:1318–1330 (2020), [doi:10.1126/science.aaz1776](https://doi.org/10.1126/science.aaz1776).
+Use only open summary data here; donor-level controlled data are not included.
+[ClinicalTrials.gov](https://clinicaltrials.gov/data-api/api) supplies public registry
+records, retrieved 2026-11-18. RCSB PDB coordinates are CC0; no external images are copied.

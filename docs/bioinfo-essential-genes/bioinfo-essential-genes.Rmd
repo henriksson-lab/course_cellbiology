@@ -1,0 +1,52 @@
+---
+title: "Which genes does a cancer cell need?"
+author: "Your name"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+---
+
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(jsonlite)
+library(httr2)
+options(HTTPUserAgent = "3MB001-course", timeout = 90)
+use_snapshot <- FALSE
+# Define input IDs, caching and the retrieval date in your analysis chunks.
+```
+
+# Question
+
+# Browser evidence
+
+# Data and release
+
+# Query, flatten and cache
+
+```{r dependencies-fetch}
+# Write your code
+```
+
+# Distributions
+
+```{r gene-distributions}
+# Write your code
+```
+
+# BCL2 by tissue
+
+```{r bcl2-by-tissue}
+# Write your code
+```
+
+# Interpretation and limitations
+
+# Sources and retrieval dates
+
+# Reproducibility
+
+```{r session-info}
+sessionInfo()
+```

@@ -35,13 +35,13 @@ export const NO_DRUGS: Drugs = { oligo: false, unc: false, rotaa: false };
 const VMAX = 230;        // maximal electron flux, in pmol O₂/min per well
 const P_HALF = 180;      // Δp (mV) at which the chain runs at half speed
 const P_SLOPE = 9.3;      // steepness of back-pressure (mV)
-export const H_PER_O = 10;      // H⁺ pumped per O (per 2 e⁻, NADH → ½O₂): 4 + 4 + 2
-const K_ATP = 18.6;      // ATP synthase conductance, × demand (H⁺ units per mV)
+export const H_PER_O = 20;      // H⁺ pumped per O₂ (two NADH): 2 × (4 + 4 + 2)
+const K_ATP = 37.2;      // ATP synthase conductance, × demand (H⁺ units per mV)
 export const E_ATP = 150;       // Δp (mV) where ATP synthesis is at equilibrium
-const REV_MAX = 160;     // largest reverse (ATP hydrolysis) current, × demand
-const L0 = 200;          // leak current at Δp = 185 mV (H⁺ units), × cell.leak
+const REV_MAX = 320;     // largest reverse (ATP hydrolysis) current, × demand
+const L0 = 400;          // leak current at Δp = 185 mV (H⁺ units), × cell.leak
 const L_SLOPE = 80;      // the leak rises faster than in proportion to Δp
-const K_UNC = 20;        // uncoupler conductance (H⁺ units per mV), optimal dose
+const K_UNC = 40;        // uncoupler conductance (H⁺ units per mV), optimal dose
 export const DPSI_FRACTION = 0.85; // part of Δp that is voltage (Δψ); the rest is ΔpH
 /** H⁺ needed per ATP delivered to the cytosol: 8 c-subunits / 3 ATP + 1 for transport */
 export const H_PER_ATP = 8 / 3 + 1;

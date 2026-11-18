@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "query": "query { target(ensemblId:\"ENSG00000170312\") { id approvedSymbol depMapEssentiality { tissueId tissueName screens { cellLineName geneEffect } } } }",
+    "retrieved": "2026-11-18"
+  },
+  {
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "query": "query { target(ensemblId:\"ENSG00000135446\") { id approvedSymbol depMapEssentiality { tissueId tissueName screens { cellLineName geneEffect } } } }",
+    "retrieved": "2026-11-18"
+  },
+  {
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "query": "query { target(ensemblId:\"ENSG00000105810\") { id approvedSymbol depMapEssentiality { tissueId tissueName screens { cellLineName geneEffect } } } }",
+    "retrieved": "2026-11-18"
+  },
+  {
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "query": "query { target(ensemblId:\"ENSG00000171791\") { id approvedSymbol depMapEssentiality { tissueId tissueName screens { cellLineName geneEffect } } } }",
+    "retrieved": "2026-11-18"
+  },
+  {
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "query": "query { target(ensemblId:\"ENSG00000143384\") { id approvedSymbol depMapEssentiality { tissueId tissueName screens { cellLineName geneEffect } } } }",
+    "retrieved": "2026-11-18"
+  },
+  {
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "query": "query { target(ensemblId:\"ENSG00000171552\") { id approvedSymbol depMapEssentiality { tissueId tissueName screens { cellLineName geneEffect } } } }",
+    "retrieved": "2026-11-18"
+  },
+  {
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "query": "{ meta { dataVersion { year month iteration } } }",
+    "retrieved": "2026-11-18"
+  }
+]
