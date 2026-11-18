@@ -1,0 +1,49 @@
+---
+title: "Explore a real HeLa cell"
+format:
+  html:
+    toc: false
+---
+
+The cell map in the lecture is a cartoon. This is the real thing: **one slice through a HeLa cell**, imaged by electron microscopy. The slice runs parallel to the culture dish, through the nucleus. It covers 48 × 26 µm; each pixel is 12 nm. The coloured outlines mark the organelles.
+
+**How to use it.** Drag to move; zoom with the mouse wheel, by pinching, or with the **+ / −** buttons (**⤢** shows the whole slice). The scale bar updates as you zoom. Tick the layers on and off. Tap or click an outlined organelle to read what it is, how to recognise it, and which lecture covers it. **Find the organelle** hides the outlines and asks you to find ten structures yourself.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="cellexplorer" data-img="../demos/assets/cellexplorer/hela-plane.jpg"></div>
+<script src="../demos/dist/cellexplorer.js"></script>
+```
+
+::: {.callout-note collapse="true" title="About the image and the outlines"}
+**The microscope.** The cell was frozen at high pressure, embedded in plastic with osmium and uranium stains, and imaged by **FIB-SEM**: a focused ion beam shaves off a few nanometres at a time and a scanning electron beam images each new surface. Stacking the images gives the whole cell in 3D at 4–5 nm; we show one plane of it. As in TEM, the heavy-metal stain makes membranes and ribosomes **dark**. FIB-SEM contrast is a little different from a classic thin-section TEM: each plane is only about 8 nm thick (a TEM section is 50–100 nm), so membranes look sharp but the image is noisier. Parts of neighbouring cells appear at the edges.
+
+**The outlines** are **machine-learning predictions** from the OpenOrganelle (COSEM) project, simplified and checked by eye by the course team. We removed predictions that were clearly wrong in this plane (most "lipid droplets" here were small vesicles; only one nucleolus prediction was real), and drew the centriole and the nuclear envelope by hand. Some outlines are still imperfect, especially the ER: a prediction is a hypothesis, not a fact. Smaller endosomes and vesicles below about 200 nm are not outlined. A band of damaged slices (about 0.2 µm) across the middle of the image was removed.
+
+**Credit.** Data: OpenOrganelle, dataset jrc_hela-2, Janelia Research Campus, CC BY 4.0 (Xu et al., *Nature* 2021; Heinrich et al., *Nature* 2021). Full citation in the [image credits](credits.md).
+:::
+
+## Tasks
+
+**E1.** `[ELO 1]` Zoom in on a mitochondrion until the scale bar shows 200 nm or 500 nm. How wide is it? Now look at the dark grains in the cytoplasm around it (ribosomes, about 25 nm). Which of the two could a light microscope (limit about 200 nm) show as separate objects, and which not?
+
+**E2.** `[ELO 5]` Find the Golgi apparatus (switch off all layers except Golgi to find it, then switch everything back on). What lies close to it? Why does it make sense that the Golgi sits next to the nucleus and the centrosome?
+
+**E3.** `[ELO 5]` Look along the edge of the nucleus and at the ER around it. Find a place where you can see that the nuclear envelope is **two** membranes. Can you find a mitochondrion that an ER tube touches?
+
+**E4. [VG]** `[ELO 1]` Mitochondria, ER and the centrosome seem to lie **inside** the nucleus in this picture. Use what you know about the nuclear envelope to explain what you are really seeing, and say how you could check it with the same dataset.
+
+**E5.** `[ELO 1, 5]` Switch to **Find the organelle** and play one round. Aim for at least 8 of 10 on the first try. Which organelles were hardest, and what feature finally gave them away?
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** Most mitochondria in this slice are about **0.3–0.6 µm** wide (measured on the outlines: median about 0.4 µm) and up to a few µm long, so they are above the 200 nm limit: a light microscope shows them as separate objects (but not their cristae). Ribosomes are about 25 nm, eight times below the limit: in a light microscope they would merge into a uniform haze. This is why the inside of organelles was unknown until electron microscopy.
+
+**E2.** The Golgi is a stack of curved, parallel membranes just to the right of the nucleus, with small vesicles around it. Close by are the nucleus and the ER around it; the centrosome lies about 8 µm to the left, inside the fold of the nucleus (in 3D the two are probably closer than in this single plane). Proteins leave the ER, which is continuous with the nuclear envelope, in vesicles and travel only a short way to the Golgi. The centrosome organises the microtubules, and the Golgi is held near it by microtubules and motor proteins; from there vesicles travel out along microtubules to the cell surface (lectures on the Golgi and on microtubules).
+
+**E3.** At high zoom the edge of the nucleus shows two thin dark lines with a narrow light gap between them, interrupted where nuclear pores are. In several places ER tubes continue from the outer nuclear membrane. ER tubes touching mitochondria are common in this cell (look at the red outlines with teal outlines right next to them): these are **ER–mitochondria contact sites**, where lipids and Ca²⁺ pass between the organelles (lecture: organelles compared).
+
+**E4.** The cytoplasm is **not** inside the nucleus. The nuclear envelope is a closed double membrane, and the nucleus here has a **deep fold (invagination)**: cytoplasm reaches into it like a finger pushed into a balloon. A slice through the fold shows a ring of nucleus with cytoplasm in the middle; the nuclear envelope runs all around the inner patch too. To check: look at neighbouring planes of the same 3D volume (for example in the OpenOrganelle viewer). Going up or down through the cell, the inner patch should connect to the main cytoplasm, which shows that it is a fold and not a separate compartment. A single 2D section can mislead; 3D data answers the question.
+
+**E5.** Your own answer. Typical difficulties: the centrosome (tiny: look for the cartwheel-like ring of nine triplets near the Golgi), the nucleolus (no membrane: look for the dense, evenly grey patch inside the nucleus), the lipid droplet (round, evenly grey, with no membrane line) and telling endosomes and lysosomes from ER or mitochondria (no cristae, round, often dark and dense or full of small vesicles).
+:::

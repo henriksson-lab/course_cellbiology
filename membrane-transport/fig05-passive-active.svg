@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="360" viewBox="0 0 1100 360" font-family="Helvetica, Arial, sans-serif">
+<!-- fig05: passive (downhill) versus active (uphill) transport. Same direction of movement, opposite gradients. -->
+<defs>
+<marker id="ar" markerWidth="16" markerHeight="16" refX="3" refY="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L14,8 L0,15 Z" fill="#1b2a3a"/></marker>
+<marker id="ao" markerWidth="12" markerHeight="12" refX="2" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L10,6 L0,11 Z" fill="#e8590c"/></marker>
+</defs>
+<rect x="20" y="50" width="500" height="100" fill="#eef3f8"/>
+<rect x="20" y="190" width="500" height="100" fill="#fbfaf5"/>
+<rect x="20" y="150" width="500" height="40" fill="#f6f0de"/>
+<line x1="20" y1="150" x2="520" y2="150" stroke="#8a6a12" stroke-width="3"/><line x1="20" y1="190" x2="520" y2="190" stroke="#8a6a12" stroke-width="3"/>
+<text x="270" y="30" font-size="19" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Passive: down the gradient</text>
+<text x="32" y="72" font-size="15" font-style="italic" fill="#1b2a3a">outside</text>
+<text x="32" y="282" font-size="15" font-style="italic" fill="#1b2a3a">cytosol</text>
+<circle cx="194" cy="118" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="114" cy="100" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="237" cy="112" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="232" cy="77" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="173" cy="86" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="434" cy="107" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="352" cy="84" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="393" cy="130" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="469" cy="80" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="350" cy="127" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="91" cy="219" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="502" cy="266" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<rect x="265" y="138" width="60" height="64" rx="12" fill="#9fb3c8" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="295" y1="90" x2="295" y2="240" stroke="#1b2a3a" stroke-width="4" marker-end="url(#ar)"/>
+<circle cx="295" cy="88" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<rect x="580" y="50" width="500" height="100" fill="#eef3f8"/>
+<rect x="580" y="190" width="500" height="100" fill="#fbfaf5"/>
+<rect x="580" y="150" width="500" height="40" fill="#f6f0de"/>
+<line x1="580" y1="150" x2="1080" y2="150" stroke="#8a6a12" stroke-width="3"/><line x1="580" y1="190" x2="1080" y2="190" stroke="#8a6a12" stroke-width="3"/>
+<text x="830" y="30" font-size="19" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Active: up the gradient</text>
+<text x="592" y="72" font-size="15" font-style="italic" fill="#1b2a3a">outside</text>
+<text x="592" y="282" font-size="15" font-style="italic" fill="#1b2a3a">cytosol</text>
+<circle cx="709" cy="132" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="994" cy="114" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="650" cy="255" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="745" cy="256" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="784" cy="223" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="680" cy="216" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="638" cy="211" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="611" cy="242" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="1019" cy="229" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="1052" cy="240" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="1063" cy="210" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<rect x="825" y="138" width="60" height="64" rx="12" fill="#9fb3c8" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="855" y1="90" x2="855" y2="240" stroke="#1b2a3a" stroke-width="4" marker-end="url(#ar)"/>
+<circle cx="855" cy="88" r="9" fill="#f2c14e" stroke="#1b2a3a" stroke-width="1.2"/>
+<text x="895" y="222" font-size="16" font-weight="bold" fill="#e8590c">ATP</text>
+<path d="M911,228 Q899,246 907,258" stroke="#e8590c" stroke-width="3" fill="none" marker-end="url(#ao)"/>
+<text x="895" y="280" font-size="16" font-weight="bold" fill="#e8590c">ADP + P<tspan dy="4" font-size="11">i</tspan></text>
+<text x="270" y="318" font-size="17" fill="#1b2a3a" text-anchor="middle">From high to low concentration: ΔG &lt; 0.</text>
+<text x="270" y="343" font-size="17" fill="#1b2a3a" text-anchor="middle">Happens by itself, if there is a path.</text>
+<text x="830" y="318" font-size="17" fill="#1b2a3a" text-anchor="middle">From low to high concentration: ΔG &gt; 0.</text>
+<text x="830" y="343" font-size="17" fill="#1b2a3a" text-anchor="middle">Needs energy: ATP, light or another gradient.</text>
+</svg>

@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="305" viewBox="0 0 1100 305" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig08: three ways to curve a membrane -->
+  <defs><marker id="arr" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker><marker id="arrh" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#e8590c"/></marker></defs>
+<text x="20.0" y="28.0" font-size="18" fill="#1b2a3a" text-anchor="start" font-weight="bold">1. Lipid shape</text>
+<polygon points="52.0,80.0 88.0,80.0 88.0,170.0 52.0,170.0" fill="#f2e6c4" stroke="#8a6a12" stroke-width="1.5"/>
+<circle cx="70.0" cy="78.0" r="18.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+<text x="70.0" y="196.0" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">PC</text>
+<text x="70.0" y="216.0" font-size="15" fill="#1b2a3a" text-anchor="middle">cylinder</text>
+<polygon points="166.0,80.0 184.0,80.0 201.0,170.0 149.0,170.0" fill="#f2e6c4" stroke="#8a6a12" stroke-width="1.5"/>
+<circle cx="175.0" cy="78.0" r="10.0" fill="#cfe0c3" stroke="#4f7a3a" stroke-width="2"/>
+<text x="175.0" y="196.0" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">PE</text>
+<text x="175.0" y="216.0" font-size="15" fill="#1b2a3a" text-anchor="middle">cone</text>
+<polygon points="258.0,80.0 302.0,80.0 287.0,170.0 273.0,170.0" fill="#f2e6c4" stroke="#8a6a12" stroke-width="1.5"/>
+<circle cx="280.0" cy="74.0" r="24.0" fill="#fde0cc" stroke="#e8590c" stroke-width="2"/>
+<text x="280.0" y="196.0" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">lysolipid</text>
+<text x="280.0" y="216.0" font-size="15" fill="#1b2a3a" text-anchor="middle">inverted cone</text>
+<text x="20.0" y="268.0" font-size="16" fill="#1b2a3a" text-anchor="start">Cone-shaped lipids gathered in one</text>
+<text x="20.0" y="289.0" font-size="16" fill="#1b2a3a" text-anchor="start">leaflet bend that leaflet.</text>
+<line x1="365.0" y1="14.0" x2="365.0" y2="300.0" stroke="#c9d3dd" stroke-width="1.5"/>
+<text x="385.0" y="28.0" font-size="18" fill="#1b2a3a" text-anchor="start" font-weight="bold">2. Curved protein scaffolds</text>
+<g transform="translate(545.0 330.0) rotate(-30.0)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-30.0)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-24.4)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-24.4)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-18.8)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-18.8)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-13.1)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-13.1)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-7.5)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-7.5)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-1.9)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(-1.9)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(3.8)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(3.8)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(9.4)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(9.4)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(15.0)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(15.0)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(20.6)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(20.6)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(26.2)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(545.0 330.0) rotate(26.2)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<path d="M 458.4 135.4 A 213 213 0 0 1 631.6 135.4 L 642.6 110.7 A 240 240 0 0 0 447.4 110.7 Z" fill="#c9d6e8" stroke="#3b5a80" stroke-width="2"/>
+<text x="484.6" y="121.5" font-size="15" fill="#3b5a80" text-anchor="middle" font-weight="bold">+</text>
+<text x="522.1" y="114.2" font-size="15" fill="#3b5a80" text-anchor="middle" font-weight="bold">+</text>
+<text x="560.3" y="113.5" font-size="15" fill="#3b5a80" text-anchor="middle" font-weight="bold">+</text>
+<text x="598.0" y="119.5" font-size="15" fill="#3b5a80" text-anchor="middle" font-weight="bold">+</text>
+<text x="545.0" y="66.0" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">BAR-domain protein</text>
+<text x="385.0" y="268.0" font-size="16" fill="#1b2a3a" text-anchor="start">A banana-shaped protein with a</text>
+<text x="385.0" y="289.0" font-size="16" fill="#1b2a3a" text-anchor="start">positive face binds and bends.</text>
+<text x="700.0" y="160.0" font-size="14" fill="#1b2a3a" text-anchor="end" font-style="italic">cytosol</text>
+<line x1="730.0" y1="14.0" x2="730.0" y2="300.0" stroke="#c9d3dd" stroke-width="1.5"/>
+<text x="750.0" y="28.0" font-size="18" fill="#1b2a3a" text-anchor="start" font-weight="bold">3. Wedge in one leaflet</text>
+<g transform="translate(910.0 330.0) rotate(-30.0)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-30.0)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-24.4)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-24.4)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-18.8)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-18.8)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-13.1)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-13.1)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-7.5)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-7.5)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-1.9)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(-1.9)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(3.8)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(3.8)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(9.4)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(9.4)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(15.0)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(15.0)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(20.6)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(20.6)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(26.2)"><path d="M -5.8 -194.0 L -1.4 -189.0 L -5.8 -184.0 L -1.4 -179.0 L -5.8 -174.0 L -1.4 -169.0 L -5.8 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -194.0 L 5.8 -189.0 L 1.4 -184.0 L 5.8 -179.0 L 1.4 -174.0 L 5.8 -169.0 L 1.4 -164.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-200.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<g transform="translate(910.0 330.0) rotate(26.2)"><path d="M -5.8 -128.0 L -1.4 -133.0 L -5.8 -138.0 L -1.4 -143.0 L -5.8 -148.0 L -1.4 -153.0 L -5.8 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1.4 -128.0 L 5.8 -133.0 L 1.4 -138.0 L 5.8 -143.0 L 1.4 -148.0 L 5.8 -153.0 L 1.4 -158.0" fill="none" stroke="#8a6a12" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-122.0" r="7.0" fill="#f6f0de" stroke="#8a6a12" stroke-width="1.5"/></g>
+<circle cx="913.5" cy="136.0" r="11.0" fill="#c9d6e8" stroke="#3b5a80" stroke-width="2"/>
+<path d="M 902.5 136.0 A 11 11 0 0 0 924.5 136.0 Z" fill="#e8590c" stroke="#3b5a80" stroke-width="1.5"/>
+<line x1="970.0" y1="92.0" x2="926.0" y2="132.0" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="974.0" y="90.0" font-size="15" fill="#1b2a3a" text-anchor="start">amphipathic</text>
+<text x="974.0" y="108.0" font-size="15" fill="#1b2a3a" text-anchor="start">helix</text>
+<text x="750.0" y="268.0" font-size="16" fill="#1b2a3a" text-anchor="start">A helix pushes between the head</text>
+<text x="750.0" y="289.0" font-size="16" fill="#1b2a3a" text-anchor="start">groups of one leaflet only.</text>
+</svg>

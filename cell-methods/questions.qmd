@@ -1,0 +1,130 @@
+---
+title: "Study questions: taking cells apart and perturbing them"
+format:
+  html:
+    toc: true
+---
+
+Questions written the way the exam asks them. Each is tagged with its ELO. Questions marked **[VG]** are of the harder kind that the exam uses to decide between G and VG: they ask you to predict, compare, explain an unexpected result or design an experiment. Write your answer first, then open the model answer.
+
+## G-level questions
+
+**1.** [ELO 1] Describe the difference between primary cells, cell lines and organoids. Give one research question for which each is the best choice.
+
+::: {.callout-note collapse="true" title="Model answer"}
+- **Primary cells** are taken directly from a tissue and divide a limited number of times. Best when you need normal behaviour, e.g. how freshly isolated T cells respond to a signal.
+- **Cell lines** divide without limit (usually from a tumour or immortalised). Best for large, repeated or reproducible experiments, e.g. a screen of many compounds, or a standard microscopy experiment.
+- **Organoids** are 3D structures grown from stem cells that contain several cell types of an organ. Best when tissue organisation or a patient's own cells matter, e.g. testing which drug works on gut organoids from a patient with cystic fibrosis.
+:::
+
+---
+
+**2.** [ELO 1] Explain why a researcher must check (a) the identity of a cell line and (b) whether the culture contains *Mycoplasma*. How is each checked?
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) Many cell lines have been taken over by other lines (often HeLa), so experiments may be done on the wrong cell type. Identity is checked with a **DNA fingerprint (STR profile)** compared with a reference. (b) *Mycoplasma* are tiny bacteria without a cell wall; they are invisible in the microscope and not killed by common antibiotics, but they change the cells' metabolism and gene expression. They are detected with a **PCR test**.
+:::
+
+---
+
+**3.** [ELO 1] Describe how you would separate nuclei, mitochondria and cytosol from a liver homogenate by differential centrifugation. Explain the principle.
+
+::: {.callout-note collapse="true" title="Model answer"}
+Break the cells gently in an isotonic buffer (homogenisation). Spin at low speed (around 1,000 *g*, ~10 min): **nuclei** pellet. Spin the supernatant faster (around 10,000–20,000 *g*): **mitochondria** (with lysosomes and peroxisomes) pellet. After a very strong spin (>100,000 *g*), which pellets microsomes and ribosomes, the remaining supernatant is the **cytosol**. Principle: larger and denser particles sediment faster, so increasing force and time pellets smaller and smaller particles.
+:::
+
+---
+
+**4.** [ELO 1] What is a marker protein, and why is it needed in a fractionation experiment?
+
+::: {.callout-note collapse="true" title="Model answer"}
+A marker protein is a protein known to be found in **only one organelle** (e.g. calnexin for ER, TOM20 for mitochondria). Fractions are not labelled and are never completely pure, so staining each fraction for markers (by western blot) shows **which organelle is in which fraction** and how pure it is. A new protein that follows one marker probably lives in that organelle.
+:::
+
+---
+
+**5.** [ELO 1] Describe the steps of a western blot, and say what the position and the intensity of a band tell you.
+
+::: {.callout-note collapse="true" title="Model answer"}
+Proteins in a cell lysate are separated by size with **SDS-PAGE**, **transferred** to a membrane, and the membrane is incubated with a **primary antibody** against the target and a **secondary antibody** with an enzyme that produces light (or a fluorophore). The **position** shows the size of the protein (checks that the right protein was detected); the **intensity**, compared between lanes and normalised to a **loading control**, shows the relative amount.
+:::
+
+---
+
+**6.** [ELO 1] Explain how a flow cytometer measures cells, and what forward scatter, side scatter and fluorescence tell you. How does a cell sorter collect one kind of cell?
+
+::: {.callout-note collapse="true" title="Model answer"}
+Cells in suspension are lined up by sheath fluid and pass a laser **one at a time**. **Forward scatter** relates to cell size, **side scatter** to internal granularity, and **fluorescence** in each colour to how much of a labelled molecule (antibody or fluorescent protein) the cell carries. In a sorter (FACS) the stream breaks into droplets; a droplet containing a wanted cell is given an **electric charge** and deflected by charged plates into a collection tube.
+:::
+
+---
+
+**7.** [ELO 1] Compare RNAi knockdown and CRISPR knockout: what each acts on, how complete and how lasting the effect is, and one pitfall of each.
+
+::: {.callout-note collapse="true" title="Model answer"}
+**RNAi** acts on the **mRNA**: the protein drops partly (often 70–90 %) for a few days; pitfall: incomplete loss and off-target effects on similar mRNAs. **CRISPR** acts on the **gene**: the cut, repaired with small insertions or deletions, shifts the reading frame, giving a **complete and permanent** loss; pitfall: it takes weeks to make a knockout line, so cells may adapt (compensate), and the guide can cut elsewhere (off-targets).
+:::
+
+---
+
+**8.** [ELO 1] Explain the difference between a correlation and a causal effect, using an example from cell biology. Which kind of experiment shows a causal effect?
+
+::: {.callout-note collapse="true" title="Model answer"}
+Example: cells with more protein X divide faster. This **correlation** may mean X drives division, that dividing cells make more X, or that a third factor (a growth signal) raises both. A **perturbation** experiment shows causation: change X (remove or add it) while keeping everything else the same, with proper controls, and see whether division changes.
+:::
+
+## VG-style questions
+
+**9.** [ELO 1] [VG] A student treats cells with siRNA against protein Y and finds that the cells die. The student concludes that Y is needed for survival. List three things that could make this conclusion wrong, and describe the experiments that would rule each of them out.
+
+::: {.callout-note collapse="true" title="Model answer"}
+1. **The treatment itself kills cells** (transfection is toxic). Control: a **non-targeting control siRNA** handled the same way.
+2. **Y was not actually reduced**, or the effect came from another protein (**off-target**). Controls: **western blot** for Y with a loading control; use a **second siRNA** with a different sequence, or a **CRISPR** knockout; do a **rescue** by expressing a version of Y that the siRNA cannot target: if the cells now survive, the effect was due to losing Y.
+3. **The result only holds for this cell line** (e.g. a cancer line that depends on Y). Test another cell type, ideally primary cells.
+A strong answer also notes that "needed for survival" means *necessary*, and says nothing about *how* Y acts.
+:::
+
+---
+
+**10.** [ELO 1] [VG] You want to know whether a newly found protein Z is in mitochondria or in peroxisomes, two organelles of similar size. Design an experiment using fractionation, and say how you would interpret the result. Name one weakness and one complementary method.
+
+::: {.callout-note collapse="true" title="Model answer"}
+Homogenise cells gently, remove nuclei with a low-speed spin, then separate the organelles on a **density gradient** (peroxisomes are denser than mitochondria). Collect fractions and run a **western blot** of each fraction for **Z**, a **mitochondrial marker** (e.g. TOM20) and a **peroxisome marker** (e.g. catalase). If the Z profile follows TOM20, Z is mitochondrial; if it follows catalase, peroxisomal. **Weakness:** fractions overlap and organelles can break or stick together, so the result is a distribution, not proof; Z could also be in both. **Complementary method:** **immunofluorescence** of Z together with a marker for each organelle (co-localisation), ideally with super-resolution, or a GFP-tagged Z in living cells.
+:::
+
+---
+
+**11.** [ELO 1] [VG] A drug kills a leukaemia cell line in a dish at low concentration. Explain why this is not enough to say that the drug will work in patients, using at least three differences between a cell line in culture and cancer cells in a body. Suggest one better model.
+
+::: {.callout-note collapse="true" title="Model answer"}
+Differences: (1) a cell line has **adapted to culture** and may have extra mutations; patients' tumours vary between people; (2) in a dish the drug reaches the cells **directly**, while in the body it must be absorbed, distributed and not broken down too fast (pharmacokinetics); (3) the body has **normal cells** that may also be harmed (toxicity), and the dish has none; (4) a tumour has a **microenvironment** (blood vessels, immune cells, stroma) that culture lacks. Better models: **primary cells or organoids from patients**, followed by animal studies, before **clinical trials**, the topic of the later course on drug development.
+:::
+
+## Explore {#explore}
+
+A simulated blood sample (white blood cells after the red cells were removed), stained with antibodies against **CD4** and **CD8**. Plot 1 shows every event by forward and side scatter; plot 2 shows only the events inside your **gate**, by CD4 and CD8 fluorescence, with **quadrant** lines and the percentage in each quadrant. Drag the corners of the gate or the whole gate, or press **Draw a new gate** and draw around a cloud. Drag the orange point to move the quadrant lines. **Check my gate** compares your result with the true composition of the sample (which a real experiment never tells you). The numbers are illustrative but of the right kind for human blood.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="flowgate" data-sample="healthy" data-seed="1"></div>
+<script src="../demos/dist/flowgate.js"></script>
+```
+
+**E1.** [ELO 1] Start with the **healthy donor** and the start gate. Which clouds in plot 1 are lymphocytes, monocytes, granulocytes and debris (use what you know about size and granularity, then tick "show the true cell types" to check)? Read the four quadrant percentages, then press **Check my gate**. What is wrong with the start gate, and in which direction does it push the CD4 T-cell percentage? Fix the gate and check again.
+
+**E2.** [ELO 1] With a good lymphocyte gate, move the vertical (CD4) line far to the left, to about $10^1$. What happens to the percentages, and why? How do you decide where a quadrant line belongs in a real experiment?
+
+**E3.** [ELO 1] [VG] *Predict first.* HIV infects and kills CD4 T cells. Before you switch to **Untreated HIV infection**, predict how plot 2 and the CD4/CD8 ratio will change. Then switch, gate properly and report the four percentages and the ratio. Now go back to the start gate (**Reset gate**): how wrong would the CD4 percentage be, and why is this error worse than in the healthy donor?
+
+**E4.** [ELO 1] [VG] A colleague draws a very small gate around the centre of the lymphocyte cloud (about a quarter of the lymphocytes). The gate is 100 % pure. Is the result wrong, or only less precise? When could a tight gate give a biased result?
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** Debris is the small, low-scatter cloud in the corner (low FSC and SSC). Lymphocytes are small and smooth (low FSC, low SSC), monocytes larger with a little more side scatter, and granulocytes large and very granular (high SSC). The start gate is too big: besides about 1175 lymphocytes it holds about 280 **monocytes** and a few granulocytes and debris particles (purity 80 %). Monocytes carry a little CD4, so with the quadrant line at $10^2$ they land in the CD4+ quadrant: the start gate reports **54 %** "CD4 T cells" against a true 46 %, and a CD4/CD8 ratio of 2.7 against a true 1.8. A gate drawn tightly around the lymphocyte cloud (FSC about 220–450, SSC below about 200) gives 45 % CD4, 25 % CD8, 28 % neither and 2 % both, within a point of the truth.
+
+**E2.** The CD4-negative cells (CD8 T cells, B and NK cells) are not at zero: they have some background fluorescence (autofluorescence and some non-specific antibody binding), spread around about $10^{0.75}$. A line at $10^1$ cuts through this cloud, so part of the CD8 T cells move into "both" (from 2 % to about 7 %) and part of the double-negative cells move into "CD4" (from 45 % to 50 %); the CD4/CD8 ratio goes from 1.8 to 2.4. A quadrant line belongs in the **gap** between the negative and the positive cloud, and in a real experiment its position is set with **controls**: unstained cells, cells stained with only one antibody, or "fluorescence-minus-one" controls (all antibodies except one).
+
+**E3.** Expected: far fewer cells in the lower-right (CD4) quadrant, more in the upper-left (CD8), and a CD4/CD8 ratio well below 1 (healthy is about 1–3). With a good gate: CD4 about **16 %**, CD8 about **54 %**, neither about 28 %, both about 2 %; ratio about **0.3**. With the start gate the CD4 value is about **33 %**: double the truth, because the about 290 monocytes are now counted next to only about 155 real CD4 T cells. The fewer real CD4 T cells there are, the larger the relative error from contaminating cells, which is exactly the situation in which the clinic needs an accurate number. (Clinics also report the absolute CD4 count per µL of blood, using counting beads.)
+
+**E4.** Mostly only less precise: if the cells in the centre of the cloud are a random sample of all lymphocytes, the percentages are right on average but have a larger random error, because fewer cells are counted (with about 330 cells the demo gives 48 % CD4 and 24 % CD8 instead of 46 % and 25 %). A tight gate becomes **biased** when the cells it leaves out differ from those it keeps. For example, activated or dividing lymphocytes are larger (higher FSC) and would be cut off at the edge of the cloud, so a study of activated cells would undercount them. That is why gates follow the shape of the whole population and are checked with backgating.
+:::

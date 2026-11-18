@@ -1,0 +1,12 @@
+{
+  "_comment": "Teacher QA of the machine segmentation in this plane (2026-11-18), checked by eye on close-ups. keep_near: keep only shapes whose centre lies within 40 px of one of these points (output image pixels, 12 nm/px). add_circle: [x, y, r] shapes drawn by hand. Reasons: the lipid-droplet layer marks mostly small vesicles here (one real droplet kept); only two Golgi predictions cover real stacks; only one nucleolus prediction is a nucleolus (the rest are heterochromatin clumps); the centrosome prediction misses the centriole, which is clearly visible in cross-section (nine-fold ring) at the point added.",
+  "keep_near": {
+    "ld": [[1308, 660]],
+    "golgi": [[2733, 1210], [2788, 1132]],
+    "nucleolus": [[1724, 628]]
+  },
+  "add_circle": {
+    "cent": [[2092, 943, 15]]
+  },
+  "replace": ["cent"]
+}

@@ -1,0 +1,104 @@
+---
+title: "Quiz: membrane structure"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Membrane structure*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** A student says: "Phospholipids form a bilayer because their tails attract each other strongly." What is the main driving force instead? `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think about $\Delta G = \Delta H - T\Delta S$. Whose entropy changes when tails come together?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The **hydrophobic effect**. A hydrocarbon tail in water forces the water molecules around it into an ordered cage (low entropy). When tails come together, most of this water is released, so the **entropy of the water rises**. The large positive $\Delta S$ makes $\Delta G$ negative, so assembly is spontaneous. Attractions between tails (van der Waals contacts) help, but they are not the main force.
+:::
+
+---
+
+**Q2.** Rank these membranes from least to most fluid at 25 °C: (a) tails of 18 carbons, all saturated; (b) tails of 18 carbons, each with one cis double bond; (c) tails of 14 carbons, all saturated. `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What reduces the contact between neighbouring tails?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**(a) < (c) < (b)** is the expected order. Long, straight, saturated tails (a) pack most tightly. Shorter tails (c) have less contact, so they are more fluid. A cis double bond (b) puts a kink in every tail, which disturbs packing strongly, so (b) is the most fluid. (For pure lipids: 18:0 PC melts at about 55 °C, 14:0 PC at about 24 °C, 18:1 PC far below 0 °C.)
+:::
+
+---
+
+**Q3.** Cholesterol is often called a "fluidity buffer". What does it do at 37 °C, and what does it do in the cold? `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Its rigid ring plate sits next to the first part of the tails.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+At **37 °C** the rigid rings stiffen the tails near the head groups, so the membrane becomes **less fluid** and **less leaky** to small water-soluble molecules. In the **cold**, cholesterol gets between the tails and stops them from packing into a gel, so the membrane stays **fluid** instead of freezing. It moves fluidity towards the middle in both cases.
+:::
+
+---
+
+**Q4.** Why is phosphatidylserine (PS) found almost only in the inner leaflet of the plasma membrane, and what does it mean when PS appears on the outside? `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Two kinds of enzyme: one uses ATP, one does not.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Spontaneous flip-flop is very slow, and **flippases** (P-type ATPases) use ATP to move any PS that reaches the outer leaflet back inside. When a **scramblase** is switched on (and, in apoptosis, the flippase is switched off by caspases), lipids mix and PS appears on the outside. On a dying cell it is an **"eat me" signal** for phagocytes. On activated platelets it forms a surface on which **clotting factors** assemble.
+:::
+
+---
+
+**Q5.** A protein comes off a membrane when you wash it with 1 M NaCl. Is it an integral or a peripheral protein? What would you need to release an integral protein? `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+High salt breaks ionic interactions. What holds an integral protein in the bilayer?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+It is a **peripheral** protein: it was held by ionic and other non-covalent contacts with head groups or other proteins, and high salt (or high pH) breaks them while the bilayer stays intact. An **integral** protein has hydrophobic segments inside the bilayer, so you need a **detergent** to dissolve the bilayer and coat those segments.
+:::
+
+---
+
+**Q6.** A hydropathy plot of a new protein of 420 amino acids shows one broad peak above the threshold near the N-terminus (residues 8–27) and none elsewhere. What is your best prediction, and what is the main alternative? `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What else is a stretch of hydrophobic residues at the very start of a protein? (You will meet it in the protein-sorting lectures.)
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+About 20 hydrophobic residues fit **one transmembrane α-helix**, so the best prediction is a **single-pass membrane protein** anchored near its N-terminus. The main alternative is that the hydrophobic stretch is an **ER signal sequence**, which is cut off after the protein enters the ER, giving a soluble secreted protein. A hydropathy plot is a prediction; check it, for example by testing whether the mature protein needs detergent to be released from membranes.
+:::
+
+---
+
+**Q7.** In a FRAP experiment on a GFP-tagged membrane protein, the fluorescence in the bleached spot comes back to only 50 % of the starting level. What does this tell you? `[ELO 1]` `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Where do the molecules that refill the spot come from?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Recovery happens when unbleached molecules diffuse into the spot. Here about half of the protein is **mobile** and half is **immobile** on the time scale of the experiment: those molecules stay where they are, for example because they are bound to the cortical cytoskeleton, to other proteins or to a neighbouring cell. The speed of recovery (t½) of the mobile half gives its diffusion coefficient.
+:::
+
+---
+
+**Q8.** The ionisable lipid in a lipid nanoparticle has a pKa of about 6.5. Explain why this pKa suits both the time in blood and the time in the endosome. `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Compare pH 7.4 (blood) and pH 5–6 (late endosome) with the pKa.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+At **pH 7.4**, above the pKa, most of the amine is **uncharged**, so the particle surface is close to neutral: fewer interactions with blood proteins and cell membranes, and less toxicity. In the **endosome** the pH falls to 5–6, below the pKa, so the lipid becomes **positively charged**. It then pairs with negatively charged lipids of the endosome membrane, disturbs that membrane, and lets some RNA **escape into the cytosol**. (During manufacture at pH 4 the positive charge is what binds the negative RNA.)
+:::

@@ -107,6 +107,16 @@ This is a recap of what you met in microbiology. A bacterium such as E. coli is 
 This is the map we use in the whole course, and the colours are fixed: every later lecture uses the same colour for the same organelle. Purple is the nucleus, teal the endoplasmic reticulum, orange the Golgi apparatus, red the mitochondria, green the endosomes and lysosomes, blue the peroxisomes, grey the cytoskeleton, and brown the plasma membrane. Start in the centre. The nucleus holds the DNA, surrounded by the nuclear envelope, which is two membranes with pores through them. The outer nuclear membrane continues into the endoplasmic reticulum, the ER. The rough ER has ribosomes on its surface and makes membrane proteins and proteins for secretion; the smooth ER makes lipids and stores calcium. Proteins go from the ER to the Golgi, which modifies and sorts them, and then on to the plasma membrane in secretory vesicles, or to lysosomes. Material taken in from outside goes to endosomes and then to lysosomes for digestion. Mitochondria make most of the ATP. The centrosome organises the microtubules. Everything else, the fluid between the organelles, is the cytosol. The picture is a simplification: a real cell has hundreds of mitochondria and a much larger ER.
 :::
 
+## Explore a real HeLa cell {.smaller}
+
+![](img06-cell-explorer.jpg){width="80%" fig-align="center"}
+
+One slice through a real HeLa cell (electron microscopy, 48 × 26 µm), with the organelles outlined in the same colours as the map. **[Open the cell explorer](explore.qmd)**: zoom in, tap an organelle to read what it is, then try **Find the organelle**.
+
+::: notes
+The map on the previous slide is a cartoon. This is one slice through a real HeLa cell, imaged with a focused-ion-beam scanning electron microscope by the OpenOrganelle project at Janelia; the coloured outlines come from their machine-learning segmentation, checked by us. Point out the purple nucleus with its dark chromatin, the red mitochondria scattered all around it, the teal ER everywhere, and the brown plasma membrane at the edges. Note the scale: the whole slice is about 48 micrometres wide, and there are about a hundred mitochondria in this one plane alone. Note also the strange patch of cytoplasm in the middle of the nucleus: a deep fold of the nucleus, cut across, which is a good reminder that a single section can mislead. Ask students to open the explorer after the lecture, zoom in on a mitochondrion and the Golgi, and play the "Find the organelle" quiz; we will come back to how this image was made in the microscopy lecture.
+:::
+
 ## What each compartment does {.smaller}
 
 | Compartment | Main job | Share of cell volume* | More in |
@@ -229,7 +239,7 @@ No single system answers every question, so cell biologists choose a model syste
 - A **cell line** divides without limit. Most come from tumours.
 - **HeLa** (1951) came from the cervical tumour of **Henrietta Lacks**. It was the first human cell line.
 - HeLa cells carry **human papillomavirus 18 (HPV-18)**. Viral proteins switch off two brakes on cell division (you meet them in the cell-cycle and cancer lectures).
-- HeLa is **not a normal cell**: about 80 chromosomes instead of 46. And HeLa grows so well that it has **contaminated** many other cell lines, so labs now check the identity of their cells with a DNA test.
+- HeLa is **not a normal cell**: around 76–80 chromosomes instead of 46, and the number varies. And HeLa grows so well that it has **contaminated** many other cell lines, so labs now check the identity of their cells with a DNA test.
 :::
 ::: {.column width="48%"}
 ![](img14-hela-living.jpg){width="88%" fig-align="center"}

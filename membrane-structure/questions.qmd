@@ -1,0 +1,148 @@
+---
+title: "Study questions: membrane structure"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** Explain, using $\Delta G = \Delta H - T\Delta S$, why phospholipids in water form a bilayer by themselves. Why does a bilayer form closed compartments rather than flat sheets with edges? `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Phospholipids are **amphipathic**: a polar head and two hydrophobic tails. Water cannot hydrogen-bond to a hydrocarbon tail, so the water molecules around a tail are held in an **ordered cage**, which lowers the entropy of the water. When the tails come together inside a bilayer, this water is released and its **entropy rises** ($\Delta S > 0$). $\Delta H$ is small, so $-T\Delta S$ dominates and $\Delta G < 0$: assembly is spontaneous. This is the **hydrophobic effect**. At the edge of a flat sheet the tails would be exposed to water again, which is unfavourable, so a bilayer **closes on itself** into a sealed compartment (and small tears reseal).
+:::
+
+---
+
+**2.** Name the three main classes of membrane lipid. For each, give one example and one feature of its structure that matters for the membrane. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+- **Glycerophospholipids**, e.g. phosphatidylcholine (PC) or phosphatidylserine (PS): glycerol backbone with two fatty-acid tails (often one unsaturated, kinked) and a phosphate-linked head; PS carries a **net negative charge**.
+- **Sphingolipids**, e.g. sphingomyelin or glycolipids: sphingosine backbone; **long, saturated tails** that pack tightly; glycolipids carry **sugars** and sit only in the outer leaflet.
+- **Sterols**: **cholesterol**, a small, **rigid ring** structure with an OH head; it regulates fluidity and makes the membrane less leaky. It is abundant in the plasma membrane (about one per phospholipid).
+:::
+
+---
+
+**3.** Describe the movements a phospholipid molecule makes in a bilayer, and explain why one of them is very rare. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A lipid **diffuses laterally** within its leaflet (it swaps places with a neighbour about 10⁷ times per second and moves about 2 µm per second), it **rotates** about its long axis, and its tails **flex**. **Flip-flop**, moving to the other leaflet, is very rare (about once a month for a phospholipid on its own), because the polar, often charged head group would have to pass through the hydrophobic core of about 3 nm, which costs a lot of energy. Cells use enzymes (flippases, scramblases) when lipids must move between leaflets.
+:::
+
+---
+
+**4.** List four factors that change membrane fluidity and say in which direction each one acts. How do bacteria respond when the temperature falls? `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+- **Shorter tails**: less contact between tails, **more fluid**.
+- **More cis double bonds** (unsaturation): kinks prevent tight packing, **more fluid**.
+- **Higher temperature**: **more fluid** (below a transition temperature a pure bilayer becomes a gel).
+- **Cholesterol**: at 37 °C **less fluid** (stiffens tails near the heads); at low temperature it **prevents** the gel state. It acts as a buffer.
+
+When the temperature falls, bacteria make **more unsaturated (and shorter) fatty acids**, so their membrane stays fluid enough for membrane proteins to work.
+:::
+
+---
+
+**5.** What is meant by lipid asymmetry in the plasma membrane? Explain how cells maintain it, and give two situations where it is lost on purpose. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The two leaflets have different lipids: the outer leaflet is rich in **PC, sphingomyelin and glycolipids**, the inner leaflet in **PS, PE and PI**. Asymmetry is set up when lipids are made (on the cytosolic face of the ER) and moved, and maintained because flip-flop is slow and **flippases** (P-type ATPases) use **ATP** to move PS and PE back to the inner leaflet. It is lost when **scramblases** are switched on, which move lipids both ways without energy: (1) in **apoptosis**, caspases switch the flippase off and a scramblase on, so PS on the surface acts as an **"eat me" signal** for phagocytes; (2) in **activated platelets**, Ca²⁺ switches on a scramblase, and the exposed PS forms a surface on which **clotting factors** assemble.
+:::
+
+---
+
+**6.** Draw a bilayer and show the main ways in which proteins can be associated with a membrane. Say how each kind can be removed from the membrane in the laboratory. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Sketch should show:
+
+- **Integral, single-pass**: one α-helix crossing the bilayer.
+- **Integral, multi-pass**: several α-helices (e.g. seven), or a **β-barrel** (in outer membranes of bacteria, mitochondria and chloroplasts).
+- **Lipid-anchored**: on the cytosolic side through a covalently attached fatty acid (myristoyl, palmitoyl) or prenyl group; on the outside through a **GPI anchor**.
+- **Peripheral**: bound non-covalently to head groups or to the exposed part of an integral protein.
+
+Removal: integral (and in practice lipid-anchored) proteins need a **detergent** that dissolves the bilayer (GPI-anchored proteins can also be cut off by a phospholipase). Peripheral proteins come off with **high salt or a change in pH**, which break non-covalent contacts while the membrane stays intact.
+:::
+
+---
+
+**7.** Why do the parts of membrane proteins that cross the bilayer form either α-helices or β-barrels? About how many amino acids does a transmembrane α-helix need, and why? `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Every peptide bond has polar C=O and N–H groups. In water these bond to water, but inside the bilayer there is no water, so they must bond to each other. In an **α-helix** each backbone group bonds to another within the same helix, and the side chains point outwards, where hydrophobic side chains contact the lipid tails. A single β-strand cannot satisfy its backbone, but in a **β-barrel** each strand bonds to its two neighbours and the sheet closes on itself. A helix rises 0.15 nm per residue, so about **20 hydrophobic amino acids** (20 × 0.15 nm = 3 nm) span the hydrophobic core of about 3 nm.
+:::
+
+---
+
+**8.** Explain how a hydropathy plot is made and how you read it. Give one limitation. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Each amino acid has a **hydropathy score** (e.g. Kyte–Doolittle: Ile +4.5, Arg −4.5). A **window of about 19 residues** slides along the sequence; the average score of the window is plotted at its central position. A broad peak of about 20 residues **above a threshold** (about +1.6 for this window) predicts a **transmembrane α-helix**; the number of peaks predicts the number of crossings (e.g. seven for a G-protein-coupled receptor). Limitations: it **misses β-barrels** (short strands alternating polar and non-polar); helices with polar residues (e.g. lining a pore) can fall below the threshold; an ER **signal sequence** gives a peak too; and it does not show which side of the membrane each loop is on. Predictions must be tested.
+:::
+
+---
+
+**9.** Describe the Frye–Edidin cell-fusion experiment and FRAP. What does each show about membrane proteins? `[ELO 1]` `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Frye–Edidin (1970)**: a mouse cell and a human cell were fused (with a virus) into one hybrid cell. Mouse surface proteins were labelled with a green-fluorescent antibody and human proteins with a red one. At first each colour covered half the cell; after about **40 min at 37 °C** the colours were **completely mixed**, but not at low temperature, and not prevented by blocking protein synthesis or ATP production. So membrane proteins **diffuse laterally** in a fluid bilayer.
+
+**FRAP**: a fluorescent membrane protein (e.g. a GFP fusion) is **bleached in a small spot** with a strong laser; fluorescence **recovers** as unbleached molecules diffuse in. The **rate** of recovery gives the **diffusion coefficient**; the part that does not recover is the **immobile fraction**, held by the cytoskeleton or other proteins. FRAP measures mobility in living cells and shows that many proteins move more slowly than lipids.
+:::
+
+---
+
+**10.** Explain the principle of freeze-fracture electron microscopy and what it showed about the structure of membranes. `[ELO 1]` `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Cells are frozen rapidly and cracked with a cold knife. The fracture runs **between the two leaflets** of the bilayer, where only weak contacts hold the tail ends together, exposing the inner faces of each half (the **P face**, cytosolic half, and the **E face**, outer half). The faces are shadowed with **platinum** from an angle, the biological material is removed, and the metal **replica** is examined in a TEM. Pure lipid bilayers give smooth faces, but cell membranes show many **intramembrane particles** (about 8–10 nm); their number rises with the protein content of the membrane, so they are **integral proteins** that cross the bilayer. This supported the **fluid mosaic model** (proteins embedded in a lipid bilayer), rather than a model in which proteins only coat the surface.
+:::
+
+---
+
+**11.** What is the glycocalyx? Use the ABO blood groups to explain how a small difference in the glycocalyx can matter clinically. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The **glycocalyx** is the coat of carbohydrate on the outside of the plasma membrane: sugar chains on glycoproteins, glycolipids and proteoglycans. Sugars are added in the ER and Golgi lumen, so they always face the **outside**. It protects the cell, holds water and takes part in **cell recognition**. On red blood cells, a sugar chain ends in the **H antigen** (galactose with fucose). One gene encodes a Golgi glycosyltransferase: the **A** form adds N-acetylgalactosamine, the **B** form adds galactose, the **O** form is inactive (H only). People make antibodies against the A or B sugar they lack (a type A person has anti-B). If a type A patient receives type B blood, the anti-B antibodies bind the donor red cells and destroy them (a **haemolytic transfusion reaction**). One sugar at the tip of a chain decides compatibility.
+:::
+
+## VG-style questions
+
+**12. [VG]** An *E. coli* culture is moved from 37 °C to 15 °C. (a) Predict what happens to the fatty-acid composition of its membrane over the next hours, and explain why this is needed. (b) A mutant cannot make unsaturated fatty acids unless they are added to the medium. Predict how the mutant behaves at 15 °C without added fatty acids, and design an experiment that tests your explanation using one method from the lecture. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) At lower temperature the bilayer becomes **less fluid** and may approach a gel state. Membrane proteins (transporters, enzymes of the respiratory chain) need a fluid membrane to change shape and diffuse, and a gel membrane can also become leaky at phase boundaries. The bacteria respond by making a higher proportion of **unsaturated** (cis-kinked) and somewhat **shorter** fatty acids, restoring fluidity (homeoviscous adaptation). *E. coli* has no cholesterol, so it cannot use a sterol buffer.
+
+(b) The mutant cannot raise unsaturation, so its membrane becomes too ordered at 15 °C: expect **slow or no growth**, poor transport of nutrients and possibly leakiness; adding an unsaturated fatty acid (e.g. oleic acid) to the medium should rescue growth.
+
+Experiment: measure membrane fluidity directly with **FRAP**. Label membranes with a fluorescent lipid probe (or express a GFP-tagged membrane protein), bleach a spot and measure recovery at 15 °C in wild-type cells, in the mutant without oleic acid and in the mutant with oleic acid. Prediction: slower recovery (smaller diffusion coefficient) in the mutant without oleic acid, restored by oleic acid, and the growth defect should track the fluidity. Fatty-acid analysis (gas chromatography of extracted lipids) would confirm the composition. Controls: same probe concentration, same temperature, and bleaching settings kept constant.
+:::
+
+---
+
+**13. [VG]** A lab expresses a new protein X fused to GFP in cultured epithelial cells grown as a sealed layer. X–GFP is found only on the apical surface. (a) Explain how X could stay apical even though the membrane is fluid. (b) The lab adds a drug that opens tight junctions, and after one hour X–GFP is on the basolateral surface too. A FRAP experiment before the drug shows full, fast recovery of a bleached spot on the apical surface. Explain both results together. (c) Suggest one experiment that tests whether X is held in place by the cortical cytoskeleton instead. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) The **tight junction** forms a ring around each cell near its apical end. Besides sealing the space between cells, it acts as a **fence**: integral membrane proteins (and outer-leaflet lipids) cannot diffuse past it. If X is delivered to the apical membrane, it stays in the apical domain even though it diffuses freely within that domain.
+
+(b) The FRAP result shows that X is **mobile within the apical membrane**: it is not anchored, it diffuses. So the only thing keeping it apical was the **fence**. When the drug opens the tight junctions, the fence is lost and X diffuses into the basolateral membrane. Both results fit "free diffusion inside a fenced domain".
+
+(c) Disrupt actin with a drug such as latrunculin or cytochalasin (with tight junctions intact) and repeat FRAP: if X were held by the cortical cytoskeleton, its immobile fraction would fall or its diffusion would speed up after actin disruption. Since X already recovers fully and fast, the prediction is little change. Controls: confirm actin is disrupted (phalloidin staining) and that the junctions stay closed (e.g. electrical resistance across the cell layer).
+:::
+
+---
+
+**14. [VG]** Compare liposomal doxorubicin (Doxil) and an mRNA lipid nanoparticle. For each, explain how the lipid composition serves its task, and explain why Doxil reduces damage to the heart. Why is the EPR effect not a full explanation of how Doxil works in patients? `[ELO 2]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Doxil** must keep a small drug **inside** for days and release it slowly. It is a **liposome** (aqueous core, one bilayer) of **saturated phospholipid plus cholesterol**, so the bilayer is rigid and not leaky; doxorubicin is loaded into the core with a gradient and **crystallises** there. A **PEG** coat hides the liposome from phagocytes, so it circulates for days. **mRNA LNP** must carry a large, negative RNA and **release it into the cytosol**. Its **ionisable lipid** is positive at low pH (binds RNA during manufacture; disrupts the acidic endosome membrane so RNA escapes) but nearly neutral at pH 7.4 (less toxic in blood). **DSPC and cholesterol** give structure, and a small amount of **PEG-lipid** controls particle size and stops aggregation; it is shed in the body, so the particle can be taken up (patisiran binds ApoE and enters liver cells through the LDL receptor).
+
+**Heart:** free doxorubicin is a small molecule that leaves the blood everywhere, including through heart capillaries, and the high peak level damages heart muscle. Heart capillaries have a **continuous, tight endothelium**, so 90 nm liposomes stay in the blood there, and the free-drug peak is low, so cardiotoxicity falls.
+
+**EPR caveat:** the enhanced permeability and retention effect (leaky tumour vessels, poor lymph drainage) was shown mainly in fast-growing **mouse tumours**. Human tumours vary a lot in leakiness, and in trials Doxil gave **similar survival** to free doxorubicin. So its main proven benefit is a **different side-effect profile** (less heart damage, but hand–foot syndrome in skin), not a much larger dose in the tumour.
+:::

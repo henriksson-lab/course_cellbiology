@@ -12,9 +12,14 @@ Teacher information. This file is not part of the published site.
 ## Building this site
 
 ```bash
-make           # render the whole site to docs/
+npm i          # once: installs esbuild + typescript for the demos
+make           # build the demos, render the whole site to docs/
 make preview   # start a live-reload preview server
+make demos     # build only the interactive demos (demos/src/ -> demos/dist/)
+make typecheck # type-check the demo TypeScript
 make clean     # delete docs/ and the Quarto cache
 ```
 
-You need [Quarto](https://quarto.org/docs/get-started/). No R or Python.
+You need [Quarto](https://quarto.org/docs/get-started/) and Node.js (for the demos;
+see [demos/README.md](demos/README.md)). No R. Python is only needed to re-run the
+one-off data scripts in `demos/data-scripts/`.

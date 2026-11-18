@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="390" viewBox="0 0 950 390" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig05: why the K+ channel filter passes K+ but not the smaller Na+ -->
+<defs><marker id="a1b2a3a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker><marker id="ae8590c" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#e8590c"/></marker></defs>
+<text x="100.8" y="34" font-size="19" text-anchor="start" font-weight="bold" fill="#1b2a3a">K<tspan font-size="12.9" dy="-8.0">+</tspan><tspan dy="8.0"> in water</tspan></text>
+<circle cx="202.0" cy="170.0" r="15" fill="#74c0fc" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="187.0" cy="170.0" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="186.8" cy="206.8" r="15" fill="#74c0fc" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="176.2" cy="196.2" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="150.0" cy="222.0" r="15" fill="#74c0fc" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="150.0" cy="207.0" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="113.2" cy="206.8" r="15" fill="#74c0fc" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="123.8" cy="196.2" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="98.0" cy="170.0" r="15" fill="#74c0fc" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="113.0" cy="170.0" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="113.2" cy="133.2" r="15" fill="#74c0fc" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="123.8" cy="143.8" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="150.0" cy="118.0" r="15" fill="#74c0fc" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="150.0" cy="133.0" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="186.8" cy="133.2" r="15" fill="#74c0fc" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="176.2" cy="143.8" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="150" cy="170" r="24" fill="#8e44ad" stroke="#1b2a3a" stroke-width="1"/><text x="140.0" y="175" font-size="16" text-anchor="start" font-weight="bold" fill="#ffffff">K<tspan font-size="10.9" dy="-6.7">+</tspan></text>
+<text x="150" y="305" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Water oxygens (red)</text>
+<text x="150" y="326" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">hug the ion. Taking</text>
+<text x="150" y="347" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">them off costs energy.</text>
+<text x="408.2" y="34" font-size="19" text-anchor="start" font-weight="bold" fill="#1b2a3a">K<tspan font-size="12.9" dy="-8.0">+</tspan><tspan dy="8.0"> in the filter</tspan></text>
+<rect x="390" y="70" width="34" height="200" rx="10" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/><rect x="516" y="70" width="34" height="200" rx="10" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/><line x1="424" y1="100" x2="444" y2="100" stroke="#1b2a3a" stroke-width="3"/><circle cx="444" cy="100" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="516" y1="100" x2="496" y2="100" stroke="#1b2a3a" stroke-width="3"/><circle cx="496" cy="100" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="424" y1="140" x2="444" y2="140" stroke="#1b2a3a" stroke-width="3"/><circle cx="444" cy="140" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="516" y1="140" x2="496" y2="140" stroke="#1b2a3a" stroke-width="3"/><circle cx="496" cy="140" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="424" y1="180" x2="444" y2="180" stroke="#1b2a3a" stroke-width="3"/><circle cx="444" cy="180" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="516" y1="180" x2="496" y2="180" stroke="#1b2a3a" stroke-width="3"/><circle cx="496" cy="180" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="424" y1="220" x2="444" y2="220" stroke="#1b2a3a" stroke-width="3"/><circle cx="444" cy="220" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="516" y1="220" x2="496" y2="220" stroke="#1b2a3a" stroke-width="3"/><circle cx="496" cy="220" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="470" cy="160" r="24" fill="#8e44ad" stroke="#1b2a3a" stroke-width="1"/><text x="460.0" y="165" font-size="16" text-anchor="start" font-weight="bold" fill="#ffffff">K<tspan font-size="10.9" dy="-6.7">+</tspan></text>
+<text x="470" y="305" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Carbonyl oxygens sit</text>
+<text x="470" y="326" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">where the water was:</text>
+<text x="470" y="347" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">the ion feels at home.</text>
+<text x="722.9" y="34" font-size="19" text-anchor="start" font-weight="bold" fill="#1b2a3a">Na<tspan font-size="12.9" dy="-8.0">+</tspan><tspan dy="8.0"> in the filter</tspan></text>
+<rect x="710" y="70" width="34" height="200" rx="10" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/><rect x="836" y="70" width="34" height="200" rx="10" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/><line x1="744" y1="100" x2="764" y2="100" stroke="#1b2a3a" stroke-width="3"/><circle cx="764" cy="100" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="836" y1="100" x2="816" y2="100" stroke="#1b2a3a" stroke-width="3"/><circle cx="816" cy="100" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="744" y1="140" x2="764" y2="140" stroke="#1b2a3a" stroke-width="3"/><circle cx="764" cy="140" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="836" y1="140" x2="816" y2="140" stroke="#1b2a3a" stroke-width="3"/><circle cx="816" cy="140" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="744" y1="180" x2="764" y2="180" stroke="#1b2a3a" stroke-width="3"/><circle cx="764" cy="180" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="836" y1="180" x2="816" y2="180" stroke="#1b2a3a" stroke-width="3"/><circle cx="816" cy="180" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="744" y1="220" x2="764" y2="220" stroke="#1b2a3a" stroke-width="3"/><circle cx="764" cy="220" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/><line x1="836" y1="220" x2="816" y2="220" stroke="#1b2a3a" stroke-width="3"/><circle cx="816" cy="220" r="7" fill="#e03131" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="790" cy="160" r="15" fill="#1c7ed6" stroke="#1b2a3a" stroke-width="1"/><text x="778.9" y="165" font-size="12" text-anchor="start" font-weight="bold" fill="#ffffff">Na<tspan font-size="8.2" dy="-5.0">+</tspan></text>
+<text x="790" y="208" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">too far</text>
+<text x="790" y="305" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Smaller ion: oxygens</text>
+<text x="790" y="326" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">are too far away.</text>
+<text x="721.0" y="347" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a">Na<tspan font-size="10.9" dy="-6.7">+</tspan><tspan dy="6.7"> keeps its water</tspan></text>
+<text x="790" y="368" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">and stays out.</text>
+</svg>

@@ -20,3 +20,31 @@ Our diagrams in this unit: `fig02-course-map.svg`, `fig05-prokaryote-eukaryote.s
 `fig10-scale-ladder.svg`, `fig16-hela-timeline.svg`. Numbers in the scale ladder and
 on the "Numbers worth knowing" slide are standard order-of-magnitude values of the
 kind collected in BioNumbers (<https://bionumbers.hms.harvard.edu>).
+
+## Cell explorer (`explore.qmd`) and its slide screenshot
+
+The electron micrograph and the organelle outlines in the [cell explorer](explore.qmd)
+(and the screenshot `img06-cell-explorer.jpg` on the slide "Explore a real HeLa cell")
+come from the OpenOrganelle dataset **jrc_hela-2**, "Interphase HeLa cell" (wild-type
+HeLa, ATCC CCL-2; high-pressure frozen, freeze-substituted, imaged by FIB-SEM at
+4 × 4 × 5.24 nm), Janelia Research Campus. Licence **CC BY 4.0**, checked on
+2026-11-18 on both dataset DOIs and on the AWS Open Data Registry entry
+(<https://registry.opendata.aws/janelia-cosem>).
+
+- EM data: FIB-SEM Technology Group, CellMap Project Team, D. Bennett, H. Hess,
+  A. Pasolli, G. Shtengel, A. Weigel, C. S. Xu et al. *Isotropic 3D electron
+  microscopy reference data of wild-type, interphase HeLa cell (jrc_hela-2).*
+  Janelia Research Campus, 2020. <https://doi.org/10.25378/janelia.13114211> (CC BY 4.0)
+- Segmentations: L. Heinrich, D. Bennett, D. Ackerman, W. Park, J. Bogovic,
+  N. Eckstein et al. *Automatic segmentation of organelles in isotropic electron
+  microscopy data of wild-type, interphase HeLa cell (jrc_hela-2).* Janelia Research
+  Campus, 2020. <https://doi.org/10.25378/janelia.13108343> (CC BY 4.0)
+- Papers: Xu C. S. et al. *Nature* 599, 147–151 (2021),
+  <https://doi.org/10.1038/s41586-021-03992-4>; Heinrich L. et al. *Nature* 599,
+  141–146 (2021), <https://doi.org/10.1038/s41586-021-03977-3>.
+
+Changes we made: one plane (y = 1.55 µm in the dataset coordinates, parallel to the
+coverslip) resampled to 12 nm pixels, contrast-adjusted, with a 0.2 µm band of
+damaged slices removed; outlines simplified from the machine segmentation, then
+checked by eye, with some predictions removed and the centriole and envelope drawn
+by hand (see `demos/data-scripts/` in the repository).

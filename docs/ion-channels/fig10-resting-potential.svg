@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="360" viewBox="0 0 950 360" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig10: how the resting potential arises: pump, K+ leak, charge separation -->
+<defs><marker id="a1b2a3a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker><marker id="a1c4fa0" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1c4fa0"/></marker><marker id="a1c7ed6" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1c7ed6"/></marker><marker id="a8e44ad" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#8e44ad"/></marker><marker id="ae8590c" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#e8590c"/></marker></defs>
+<text x="160" y="30" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">1. The pump builds the gradient</text>
+<rect x="15" y="120" width="290" height="60" fill="#f6f0de"/><line x1="15" y1="120" x2="305" y2="120" stroke="#8a6a12" stroke-width="4"/><line x1="15" y1="180" x2="305" y2="180" stroke="#8a6a12" stroke-width="4"/>
+<text x="305" y="80" font-size="14" text-anchor="end" font-weight="normal" fill="#1b2a3a" font-style="italic">outside</text>
+<text x="305" y="232" font-size="14" text-anchor="end" font-weight="normal" fill="#1b2a3a" font-style="italic">inside</text>
+<rect x="112" y="104" width="96" height="92" rx="22" fill="#fff3bf" stroke="#1b2a3a" stroke-width="2"/>
+<text x="160" y="144" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">pump</text>
+<text x="160" y="166" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">ATP → ADP</text>
+<circle cx="94" cy="70" r="15" fill="#1c7ed6" stroke="#1b2a3a" stroke-width="1"/><text x="82.9" y="75" font-size="12" text-anchor="start" font-weight="bold" fill="#ffffff">Na<tspan font-size="8.2" dy="-5.0">+</tspan></text>
+<line x1="94" y1="220" x2="94" y2="88" stroke="#1c7ed6" stroke-width="3" marker-end="url(#a1c7ed6)"/>
+<text x="116" y="76" font-size="16" text-anchor="start" font-weight="bold" fill="#1c7ed6">3×</text>
+<circle cx="226" cy="230" r="15" fill="#8e44ad" stroke="#1b2a3a" stroke-width="1"/><text x="218.3" y="235" font-size="12" text-anchor="start" font-weight="bold" fill="#ffffff">K<tspan font-size="8.2" dy="-5.0">+</tspan></text>
+<line x1="226" y1="80" x2="226" y2="212" stroke="#8e44ad" stroke-width="3" marker-end="url(#a8e44ad)"/>
+<text x="248" y="236" font-size="16" text-anchor="start" font-weight="bold" fill="#8e44ad">2×</text>
+<text x="107.5" y="300" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a">High K<tspan font-size="10.9" dy="-6.7">+</tspan><tspan dy="6.7"> inside,</tspan></text>
+<text x="101.2" y="321" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a">high Na<tspan font-size="10.9" dy="-6.7">+</tspan><tspan dy="6.7"> outside</tspan></text>
+<text x="413.4" y="30" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a">2. K<tspan font-size="12.2" dy="-7.6">+</tspan><tspan dy="7.6"> leaks out</tspan></text>
+<rect x="330" y="120" width="290" height="60" fill="#f6f0de"/><line x1="330" y1="120" x2="620" y2="120" stroke="#8a6a12" stroke-width="4"/><line x1="330" y1="180" x2="620" y2="180" stroke="#8a6a12" stroke-width="4"/>
+<text x="620" y="80" font-size="14" text-anchor="end" font-weight="normal" fill="#1b2a3a" font-style="italic">outside</text>
+<text x="620" y="232" font-size="14" text-anchor="end" font-weight="normal" fill="#1b2a3a" font-style="italic">inside</text>
+<rect x="424.0" y="106" width="36" height="88" rx="12" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/><rect x="490.0" y="106" width="36" height="88" rx="12" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="475" y1="228" x2="475" y2="76" stroke="#8e44ad" stroke-width="4" marker-end="url(#a8e44ad)"/>
+<circle cx="545" cy="220" r="15" fill="#8e44ad" stroke="#1b2a3a" stroke-width="1"/><text x="537.3" y="225" font-size="12" text-anchor="start" font-weight="bold" fill="#ffffff">K<tspan font-size="8.2" dy="-5.0">+</tspan></text>
+<text x="394.9" y="234" font-size="18" text-anchor="start" font-weight="bold" fill="#1c4fa0">A<tspan font-size="12.2" dy="-7.6">−</tspan></text>
+<text x="391.3" y="300" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a">Open K<tspan font-size="10.9" dy="-6.7">+</tspan><tspan dy="6.7"> leak channels.</tspan></text>
+<text x="389.1" y="321" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a">Big anions (A<tspan font-size="10.9" dy="-6.7">−</tspan><tspan dy="6.7">: proteins,</tspan></text>
+<text x="475" y="342" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">phosphates) cannot follow.</text>
+<text x="790" y="30" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">3. Charge builds up and stops it</text>
+<rect x="645" y="120" width="290" height="60" fill="#f6f0de"/><line x1="645" y1="120" x2="935" y2="120" stroke="#8a6a12" stroke-width="4"/><line x1="645" y1="180" x2="935" y2="180" stroke="#8a6a12" stroke-width="4"/>
+<text x="935" y="80" font-size="14" text-anchor="end" font-weight="normal" fill="#1b2a3a" font-style="italic">outside</text>
+<text x="935" y="232" font-size="14" text-anchor="end" font-weight="normal" fill="#1b2a3a" font-style="italic">inside</text>
+<rect x="739.0" y="106" width="36" height="88" rx="12" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/><rect x="805.0" y="106" width="36" height="88" rx="12" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/>
+<text x="665" y="110" font-size="18" text-anchor="middle" font-weight="bold" fill="#c92a2a">+</text>
+<text x="665" y="204" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">−</text>
+<text x="695" y="110" font-size="18" text-anchor="middle" font-weight="bold" fill="#c92a2a">+</text>
+<text x="695" y="204" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">−</text>
+<text x="725" y="110" font-size="18" text-anchor="middle" font-weight="bold" fill="#c92a2a">+</text>
+<text x="725" y="204" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">−</text>
+<text x="875" y="110" font-size="18" text-anchor="middle" font-weight="bold" fill="#c92a2a">+</text>
+<text x="875" y="204" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">−</text>
+<text x="905" y="110" font-size="18" text-anchor="middle" font-weight="bold" fill="#c92a2a">+</text>
+<text x="905" y="204" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">−</text>
+<line x1="784" y1="230" x2="784" y2="80" stroke="#8e44ad" stroke-width="3" marker-end="url(#a8e44ad)"/>
+<line x1="798" y1="80" x2="798" y2="230" stroke="#1c4fa0" stroke-width="3" marker-end="url(#a1c4fa0)"/>
+<text x="687.3" y="300" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a">Inside ≈ −70 mV, close to E<tspan font-size="10.9" dy="4.5">K</tspan><tspan dy="-4.5">.</tspan></text>
+<text x="790" y="321" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Fewer than 1 in 10 000</text>
+<text x="716.5" y="342" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a">K<tspan font-size="10.9" dy="-6.7">+</tspan><tspan dy="6.7"> ions had to leave.</tspan></text>
+</svg>

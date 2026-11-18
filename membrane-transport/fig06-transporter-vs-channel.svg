@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="400" viewBox="0 0 1100 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig06: channel (open pore, many ions per second) versus transporter (binding site, one side at a time) -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <!-- left panel: channel -->
+  <rect x="20" y="50" width="500" height="90" fill="#eef3f8"/>
+  <rect x="20" y="190" width="500" height="90" fill="#fbfaf5"/>
+  <rect x="20" y="140" width="500" height="50" fill="#f6f0de"/>
+  <line x1="20" y1="140" x2="520" y2="140" stroke="#8a6a12" stroke-width="3"/><line x1="20" y1="190" x2="520" y2="190" stroke="#8a6a12" stroke-width="3"/>
+  <text x="270" y="30" font-size="20" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Channel</text>
+  <path d="M215,118 L252,118 L258,165 L252,212 L215,212 Z" fill="#9fb3c8" stroke="#1b2a3a" stroke-width="2"/>
+  <path d="M325,118 L288,118 L282,165 L288,212 L325,212 Z" fill="#9fb3c8" stroke="#1b2a3a" stroke-width="2"/>
+  <circle cx="270" cy="74" r="9" fill="#1c4fa0" stroke="#1b2a3a"/>
+  <circle cx="270" cy="104" r="9" fill="#1c4fa0" stroke="#1b2a3a"/>
+  <circle cx="270" cy="134" r="9" fill="#1c4fa0" stroke="#1b2a3a"/>
+  <circle cx="270" cy="164" r="9" fill="#1c4fa0" stroke="#1b2a3a"/>
+  <circle cx="270" cy="194" r="9" fill="#1c4fa0" stroke="#1b2a3a"/>
+  <circle cx="270" cy="230" r="9" fill="#1c4fa0" stroke="#1b2a3a"/>
+  <line x1="350" y1="75" x2="350" y2="245" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="365" y="172" font-size="16" fill="#1b2a3a">stream of ions</text>
+  <text x="34" y="70" font-size="15" font-style="italic" fill="#1b2a3a">outside</text>
+  <text x="34" y="272" font-size="15" font-style="italic" fill="#1b2a3a">cytosol</text>
+  <text x="40" y="312" font-size="17" fill="#1b2a3a">• pore open to <tspan font-weight="bold">both sides at once</tspan></text>
+  <text x="40" y="337" font-size="17" fill="#1b2a3a">• up to <tspan font-weight="bold">10</tspan><tspan dy="-7" font-size="12" font-weight="bold">8</tspan><tspan dy="7" font-weight="bold"> ions per second</tspan></text>
+  <text x="40" y="362" font-size="17" fill="#1b2a3a">• always <tspan font-weight="bold">downhill</tspan> (passive)</text>
+  <text x="40" y="387" font-size="17" fill="#1b2a3a">• opens and closes (gating)</text>
+
+  <!-- right panel: transporter -->
+  <rect x="580" y="50" width="500" height="90" fill="#eef3f8"/>
+  <rect x="580" y="190" width="500" height="90" fill="#fbfaf5"/>
+  <rect x="580" y="140" width="500" height="50" fill="#f6f0de"/>
+  <line x1="580" y1="140" x2="1080" y2="140" stroke="#8a6a12" stroke-width="3"/><line x1="580" y1="190" x2="1080" y2="190" stroke="#8a6a12" stroke-width="3"/>
+  <text x="830" y="30" font-size="20" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Transporter</text>
+  <!-- outward-open V shape: two halves touching at the bottom -->
+  <path d="M770,112 L812,112 L828,200 L828,214 L770,214 Z" fill="#9fb3c8" stroke="#1b2a3a" stroke-width="2"/>
+  <path d="M890,112 L848,112 L832,200 L832,214 L890,214 Z" fill="#9fb3c8" stroke="#1b2a3a" stroke-width="2"/>
+  <polygon points="818,150 830,143 842,150 842,164 830,171 818,164" fill="#f2c14e" stroke="#1b2a3a"/>
+  <text x="900" y="160" font-size="16" fill="#1b2a3a">binding site</text>
+  <line x1="896" y1="155" x2="848" y2="157" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="830" y="244" font-size="16" fill="#1b2a3a" text-anchor="middle">closed to the cytosol</text>
+  <text x="594" y="70" font-size="15" font-style="italic" fill="#1b2a3a">outside</text>
+  <text x="594" y="272" font-size="15" font-style="italic" fill="#1b2a3a">cytosol</text>
+  <text x="600" y="312" font-size="17" fill="#1b2a3a">• binds the solute; open to <tspan font-weight="bold">one side at a time</tspan></text>
+  <text x="600" y="337" font-size="17" fill="#1b2a3a">• about <tspan font-weight="bold">10</tspan><tspan dy="-7" font-size="12" font-weight="bold">2</tspan><tspan dy="7" font-weight="bold">–10</tspan><tspan dy="-7" font-size="12" font-weight="bold">4</tspan><tspan dy="7" font-weight="bold"> molecules per second</tspan></text>
+  <text x="600" y="362" font-size="17" fill="#1b2a3a">• <tspan font-weight="bold">saturates</tspan>, like an enzyme</text>
+  <text x="600" y="387" font-size="17" fill="#1b2a3a">• can be coupled to energy: <tspan font-weight="bold">uphill</tspan> (active)</text>
+</svg>

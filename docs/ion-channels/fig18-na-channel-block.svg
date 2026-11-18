@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="375" viewBox="0 0 780 375" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig18: lidocaine blocks the Na+ channel from inside, tetrodotoxin from outside -->
+<defs><marker id="a1b2a3a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker><marker id="a1c7ed6" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1c7ed6"/></marker><marker id="ae8590c" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#e8590c"/></marker></defs>
+<rect x="20" y="170" width="740" height="70" fill="#f6f0de"/><line x1="20" y1="170" x2="760" y2="170" stroke="#8a6a12" stroke-width="4"/><line x1="20" y1="240" x2="760" y2="240" stroke="#8a6a12" stroke-width="4"/>
+<rect x="320" y="156" width="52" height="98" rx="12" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/>
+<rect x="408" y="156" width="52" height="98" rx="12" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/>
+<text x="30" y="40" font-size="17" text-anchor="start" font-weight="bold" fill="#1b2a3a">Outside</text>
+<text x="30" y="300" font-size="17" text-anchor="start" font-weight="bold" fill="#1b2a3a">Inside</text>
+<circle cx="330" cy="70" r="17" fill="#1c7ed6" stroke="#1b2a3a" stroke-width="1"/><text x="318.1" y="75" font-size="13" text-anchor="start" font-weight="bold" fill="#ffffff">Na<tspan font-size="8.8" dy="-5.5">+</tspan></text>
+<circle cx="450" cy="64" r="17" fill="#1c7ed6" stroke="#1b2a3a" stroke-width="1"/><text x="438.1" y="69" font-size="13" text-anchor="start" font-weight="bold" fill="#ffffff">Na<tspan font-size="8.8" dy="-5.5">+</tspan></text>
+<path d="M364,156 q26,-36 52,0 z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1.5"/>
+<line x1="414" y1="144" x2="520" y2="80" stroke="#5c6670" stroke-width="1.5"/>
+<text x="525" y="60" font-size="16" text-anchor="start" font-weight="bold" fill="#e8590c">Tetrodotoxin (TTX, pufferfish)</text>
+<text x="525" y="80" font-size="16" text-anchor="start" font-weight="bold" fill="#e8590c">plugs the outer mouth</text>
+<circle cx="120" cy="110" r="14" fill="#ffd8a8" stroke="#e8590c" stroke-width="2.5"/>
+<text x="120" y="80" font-size="15" text-anchor="middle" font-weight="bold" fill="#e8590c">lidocaine</text>
+<path d="M120,128 L150,265 Q240,310 384,222" fill="none" stroke="#e8590c" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#ae8590c)"/>
+<circle cx="390" cy="230" r="13" fill="#e8590c" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="390" y="235" font-size="15" text-anchor="middle" font-weight="bold" fill="#ffffff">+</text>
+<text x="170" y="300" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a">Lidocaine crosses the lipid bilayer, then binds</text>
+<text x="170" y="322" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a">inside the pore. It binds best to channels that</text>
+<text x="170" y="344" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a">open often: busy pain fibres are blocked first.</text>
+<text x="560" y="300" font-size="16" text-anchor="start" font-weight="bold" fill="#1b2a3a">No Na<tspan font-size="10.9" dy="-6.7">+</tspan><tspan dy="6.7"> entry →</tspan></text>
+<text x="560" y="322" font-size="16" text-anchor="start" font-weight="bold" fill="#1b2a3a">no action potential →</text>
+<text x="560" y="344" font-size="16" text-anchor="start" font-weight="bold" fill="#1b2a3a">no pain signal</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig03: what crosses a pure lipid bilayer. Arrow width = how fast. Qualitative, not to scale. -->
+  <defs>
+    <marker id="a10" markerWidth="26" markerHeight="26" refX="4" refY="13" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L22,13 L0,25 Z" fill="#1b2a3a"/></marker>
+    <marker id="a6" markerWidth="20" markerHeight="20" refX="4" refY="10" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L17,10 L0,19 Z" fill="#1b2a3a"/></marker>
+    <marker id="a3" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#1b2a3a"/><stop offset="1" stop-color="#e3e7ec"/></linearGradient>
+  </defs>
+  <rect x="10" y="88" width="1080" height="92" fill="#eef3f8"/>
+  <rect x="10" y="230" width="1080" height="90" fill="#fbfaf5"/>
+  <rect x="10" y="180" width="1080" height="50" fill="#f6f0de"/>
+  <line x1="10" y1="180" x2="1090" y2="180" stroke="#8a6a12" stroke-width="3"/>
+  <line x1="10" y1="230" x2="1090" y2="230" stroke="#8a6a12" stroke-width="3"/>
+  <text x="1080" y="211" font-size="15" fill="#8a6a12" text-anchor="end" font-weight="bold">lipid bilayer</text>
+
+  <text x="120" y="30" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold">Small hydrophobic</text>
+  <text x="50" y="52" font-size="15" fill="#1b2a3a">O<tspan dy="5" font-size="11">2</tspan><tspan dy="-5">, CO</tspan><tspan dy="5" font-size="11">2</tspan><tspan dy="-5">, N</tspan><tspan dy="5" font-size="11">2</tspan><tspan dy="-5">, steroids</tspan></text>
+  <text x="335" y="30" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold">Small uncharged polar</text>
+  <text x="335" y="52" font-size="15" fill="#1b2a3a" text-anchor="middle">water, urea, glycerol</text>
+  <text x="550" y="30" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold">Larger uncharged polar</text>
+  <text x="550" y="52" font-size="15" fill="#1b2a3a" text-anchor="middle">glucose, sucrose</text>
+  <text x="765" y="30" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold">Ions</text>
+  <text x="700" y="52" font-size="15" fill="#1b2a3a">Na<tspan dy="-6" font-size="11">+</tspan><tspan dy="6">, K</tspan><tspan dy="-6" font-size="11">+</tspan><tspan dy="6">, Ca</tspan><tspan dy="-6" font-size="11">2+</tspan><tspan dy="6">, Cl</tspan><tspan dy="-6" font-size="11">−</tspan><tspan dy="6">, H</tspan><tspan dy="-6" font-size="11">+</tspan></text>
+  <text x="980" y="30" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold">Large and charged</text>
+  <text x="980" y="52" font-size="15" fill="#1b2a3a" text-anchor="middle">ATP, amino acids, proteins</text>
+
+  <circle cx="92" cy="122" r="9" fill="#9aa5b1" stroke="#1b2a3a"/><circle cx="148" cy="134" r="9" fill="#9aa5b1" stroke="#1b2a3a"/>
+  <circle cx="307" cy="122" r="8" fill="#8ec5e8" stroke="#1b2a3a"/><circle cx="363" cy="134" r="8" fill="#8ec5e8" stroke="#1b2a3a"/>
+  <polygon points="508,120 520,113 532,120 532,134 520,141 508,134" fill="#f2c14e" stroke="#1b2a3a"/>
+  <polygon points="568,120 580,113 592,120 592,134 580,141 568,134" fill="#f2c14e" stroke="#1b2a3a"/>
+  <circle cx="735" cy="125" r="11" fill="#1c4fa0" stroke="#1b2a3a"/><circle cx="795" cy="125" r="11" fill="#8e44ad" stroke="#1b2a3a"/>
+  <rect x="948" y="110" width="64" height="30" rx="8" fill="#c9d3dd" stroke="#1b2a3a"/>
+
+  <line x1="120" y1="112" x2="120" y2="248" stroke="#1b2a3a" stroke-width="10" marker-end="url(#a10)"/>
+  <line x1="335" y1="112" x2="335" y2="254" stroke="#1b2a3a" stroke-width="6" marker-end="url(#a6)"/>
+  <line x1="550" y1="112" x2="550" y2="262" stroke="#1b2a3a" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#a3)"/>
+  <path d="M765,142 L765,166 Q765,174 773,170 L796,156" stroke="#1b2a3a" stroke-width="3" fill="none" marker-end="url(#a3)"/>
+  <path d="M980,146 L980,166 Q980,174 988,170 L1011,156" stroke="#1b2a3a" stroke-width="3" fill="none" marker-end="url(#a3)"/>
+  <path d="M756,248 L774,266 M774,248 L756,266" stroke="#e8590c" stroke-width="4"/>
+  <path d="M971,248 L989,266 M989,248 L971,266" stroke="#e8590c" stroke-width="4"/>
+
+  <text x="120" y="305" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">cross fast</text>
+  <text x="335" y="305" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">cross</text>
+  <text x="550" y="305" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">cross very slowly</text>
+  <text x="765" y="305" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">almost blocked</text>
+  <text x="980" y="305" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">blocked</text>
+
+  <rect x="40" y="342" width="1020" height="14" rx="7" fill="url(#g)"/>
+  <text x="40" y="382" font-size="16" fill="#1b2a3a">more permeable</text>
+  <text x="1060" y="382" font-size="16" fill="#1b2a3a" text-anchor="end">less permeable</text>
+  <text x="360" y="382" font-size="16" fill="#1b2a3a">water crosses about 10<tspan dy="-7" font-size="12">9</tspan><tspan dy="7"> times faster than Na</tspan><tspan dy="-7" font-size="12">+</tspan><tspan dy="7"> or K</tspan><tspan dy="-7" font-size="12">+</tspan></text>
+  <text x="550" y="410" font-size="15" fill="#1b2a3a" text-anchor="middle" font-style="italic">Arrows run from high to low concentration. Small and hydrophobic crosses; large, polar or charged needs a protein.</text>
+</svg>

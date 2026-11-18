@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-662ae1889177880cb371f83234c0a158.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
+
+  <meta name="author" content="Cell Biology (3MB001)">
+  <title>Cell Biology – Moving molecules across membranes: transporters and pumps</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bf56578b9c06c165c166475cd19dbcd1.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Moving molecules across membranes: transporters and pumps</h1>
+  <p class="subtitle">Membranes and transport</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Cell Biology (3MB001) 
+</div>
+</div>
+</div>
+
+</section>
+<section id="about-this-lecture" class="slide level2 smaller">
+<h2>About this lecture</h2>
+<p>A lipid bilayer keeps almost everything out. Yet a cell must take up sugars, amino acids and ions, throw out waste and drugs, and keep the inside very different from the outside. Today: the <strong>proteins that move molecules across membranes</strong>, and where the energy comes from.</p>
+<p>After this lecture you can:</p>
+<ul>
+<li>predict <strong>which molecules cross a pure lipid bilayer</strong>, and explain why most others need a protein;</li>
+<li>explain <strong>passive</strong> and <strong>active</strong> transport with <strong>ΔG</strong>, and why transporters <strong>saturate</strong> like enzymes;</li>
+<li>describe the <strong>alternating-access</strong> mechanism and <strong>uniport, symport and antiport</strong>;</li>
+<li>explain <strong>primary active transport</strong> (P-type, V-type and ABC pumps; the <strong>Na⁺/K⁺ pump</strong>) and <strong>secondary active transport</strong> driven by the Na⁺ gradient;</li>
+<li>explain how an <strong>epithelium</strong> moves glucose from the gut to the blood, and how drugs act on transporters.</li>
+</ul>
+<p><strong>ELO 2</strong> (membranes and transport).</p>
+<aside class="notes">
+<p>In the lecture on membrane structure you met the lipid bilayer: a thin, oily sheet that separates two water-filled spaces. Today we ask how anything gets through it. The answer has three parts. First, physics: a few small, uncharged molecules simply dissolve in the bilayer and cross on their own, but most of what a cell needs cannot. Second, proteins: transporters and channels give polar molecules and ions a path. Third, energy: to move something against its concentration gradient, the cell must pay, either directly with ATP or indirectly with another gradient. You already know the tools from chemistry and biochemistry: ΔG tells us which way a process goes, and Michaelis–Menten kinetics describes a protein with a limited number of binding sites. We will use both. Channels and the membrane potential get their own lecture next, so today channels appear only as a contrast to transporters. This lecture covers ELO 2, and it ends with drugs that act on transporters, which you meet again in drug development.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-question-how-does-sugar-get-from-your-gut-into-your-blood" class="slide level2 smaller">
+<h2>The question: how does sugar get from your gut into your blood?</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img02-intestinal-villi.jpg" class="quarto-figure quarto-figure-center" height="430"></p>
+</figure>
+</div>
+<p><em>Small intestine (rat), stained section. The finger-like villi are covered by one layer of epithelial cells.</em></p>
+</div><div class="column" style="width:55%;">
+<ul>
+<li>After a meal, the gut takes up <strong>hundreds of grams of glucose</strong> a day.</li>
+<li>Glucose is <strong>polar</strong>: it barely crosses a lipid bilayer.</li>
+<li>It must cross <strong>two membranes</strong>: into the epithelial cell from the gut, and out again on the blood side.</li>
+<li>Between meals the cell still takes up glucose when the gut has <strong>less glucose than the blood</strong>: uphill.</li>
+<li>And every one of your cells keeps <strong>Na⁺ low and K⁺ high</strong> inside, the opposite of the blood. A resting cell spends <strong>about a quarter of its ATP</strong> on this.</li>
+</ul>
+<p><strong>How, and why?</strong></p>
+</div></div>
+<aside class="notes">
+<p>Look at the picture. This is a section through the small intestine of a rat, stained with dyes. The finger-like folds are villi, and each villus is covered by a single layer of epithelial cells. Everything you absorb from food must pass through these cells: in through the membrane facing the gut, and out through the membrane facing the blood. Glucose is a polar molecule with many hydroxyl groups, so it hardly enters a lipid bilayer at all. Still, your gut absorbs it very efficiently, even towards the end of digestion when there is less glucose in the gut than in the blood. That means the cell can move glucose uphill, against its gradient. At the same time, every cell in your body keeps sodium low and potassium high inside, the reverse of the blood, and spends a large part of its ATP to do so. By the end of the lecture you will see that these two puzzles have the same answer: the sodium gradient made by one pump drives the uptake of glucose.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-crosses-a-pure-lipid-bilayer" class="slide level2 smaller">
+<h2>What crosses a pure lipid bilayer?</h2>
+
+<img data-src="fig03-permeability-ladder.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><ul>
+<li>The middle of the bilayer is <strong>hydrophobic</strong>. A molecule must leave water and dissolve in oil to cross.</li>
+<li><strong>Small and hydrophobic</strong> (O₂, CO₂, steroid hormones, many drugs): fast. <strong>Small polar</strong> (water, urea): slower. <strong>Glucose</strong>: very slow. <strong>Ions</strong>: practically never, because they carry a charge and a shell of water.</li>
+<li>So a cell needs <strong>membrane transport proteins</strong>: they make up about <strong>15–30 %</strong> of the membrane proteins in a cell.</li>
+</ul>
+<aside class="notes">
+<p>Imagine an artificial membrane made only of lipid, with no proteins, and ask what gets through. The answer depends on two things: size and how well the molecule dissolves in oil. Small hydrophobic molecules such as oxygen, carbon dioxide and nitrogen cross very fast, and so do steroid hormones and many drugs. This is why most drugs taken as tablets are designed to be fairly small and fairly lipophilic. Small uncharged polar molecules such as water, urea and glycerol also cross, more slowly. Larger polar molecules such as glucose cross very slowly, far too slowly for a cell’s needs. Ions almost never cross: a sodium ion carries a charge and holds a shell of water molecules, and pulling it into the oily core costs a great deal of energy. A pure bilayer lets water through about a billion times faster than sodium or potassium. So the bilayer is a barrier, and the cell controls traffic with proteins. In a typical cell, roughly 15 to 30 percent of membrane proteins are transport proteins, which shows how important this job is.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="inside-is-not-like-outside" class="slide level2 smaller">
+<h2>Inside is not like outside</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ion</th>
+<th>Inside a mammalian cell (cytosol)</th>
+<th>Outside (blood, tissue fluid)</th>
+<th>Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Na⁺</strong></td>
+<td>about 12 mM</td>
+<td>about 145 mM</td>
+<td>~10× higher outside</td>
+</tr>
+<tr class="even">
+<td><strong>K⁺</strong></td>
+<td>about 140 mM</td>
+<td>about 5 mM</td>
+<td>~30× higher inside</td>
+</tr>
+<tr class="odd">
+<td><strong>Ca²⁺</strong></td>
+<td>about 0.0001 mM (100 nM)</td>
+<td>about 2 mM</td>
+<td>~10 000× higher outside</td>
+</tr>
+<tr class="even">
+<td><strong>Cl⁻</strong></td>
+<td>about 5–15 mM</td>
+<td>about 110 mM</td>
+<td>~10× higher outside</td>
+</tr>
+<tr class="odd">
+<td><strong>H⁺</strong></td>
+<td>pH about 7.2</td>
+<td>pH 7.4</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Inside, the extra positive charge of K⁺ is balanced by <strong>negatively charged proteins, nucleic acids and metabolites</strong> that cannot leave.</li>
+<li>These differences are <strong>not equilibrium</strong>. Ions leak all the time, and pumps work all the time to restore them. <strong>Stop the pumps and the gradients run down.</strong></li>
+<li>Gradients store energy, like water behind a dam. Cells use them to <strong>drive transport</strong> and to <strong>send electrical signals</strong> (the ion-channels lecture).</li>
+</ul>
+<aside class="notes">
+<p>This table is worth learning, because almost everything in the next two lectures follows from it. Typical values for a mammalian cell: sodium is about 12 millimolar inside and 145 outside. Potassium is the reverse: about 140 inside and 5 outside. Free calcium in the cytosol is extremely low, about 100 nanomolar, ten thousand times lower than outside. Chloride is low inside. The cytosol is slightly more acidic than blood. Inside the cell, the positive charge of potassium is balanced mostly by large negatively charged molecules, proteins, nucleic acids and phosphorylated metabolites, which cannot leave. The key word is steady state, not equilibrium. Ions leak slowly across the membrane all the time, down their gradients, and pumps keep putting them back. If you poison the pumps, for example by blocking ATP production, the gradients slowly disappear and the cell swells and dies. Why keep these gradients? Because a gradient is stored energy. Today we see how cells spend the sodium gradient to move other molecules. In the ion-channels lecture you will see how the same gradients create the membrane potential and nerve signals.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="recap-δg-decides-the-direction" class="slide level2 smaller">
+<h2>Recap: ΔG decides the direction</h2>
+
+<img data-src="fig05-passive-active.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:76.0%"><p>For an uncharged solute moving from outside to inside, at 37 °C:</p>
+<p><span class="math display">\Delta G = RT \ln\frac{c_\text{in}}{c_\text{out}} \qquad (RT \approx 2.6\ \text{kJ/mol})</span></p>
+<ul>
+<li><strong>Passive transport</strong>: down the gradient, <span class="math inline">\Delta G &lt; 0</span>. A <strong>10-fold</strong> gradient is worth about <strong>5.9 kJ/mol</strong>.</li>
+<li><strong>Active transport</strong>: up the gradient, <span class="math inline">\Delta G &gt; 0</span>, so it must be <strong>coupled</strong> to a reaction with a larger negative ΔG. <strong>ATP hydrolysis</strong> in a cell gives about <strong>−50 kJ/mol</strong>.</li>
+<li>For an <strong>ion</strong>, the membrane voltage adds an electrical term: the <strong>electrochemical gradient</strong> (the ion-channels lecture).</li>
+</ul>
+<aside class="notes">
+<p>This is a recap from chemistry, applied to a membrane. Moving one mole of an uncharged solute from outside to inside changes free energy by RT times the natural log of the inside concentration over the outside concentration. If the inside is lower, the log is negative, ΔG is negative, and the movement can happen by itself, provided there is a path. That is passive transport, also called facilitated diffusion when a protein provides the path. If the inside is higher, ΔG is positive: the cell must pay. At body temperature RT is about 2.6 kilojoules per mole, so each tenfold difference in concentration is worth about 5.9 kilojoules per mole. Hydrolysis of ATP under cell conditions releases about 50 kilojoules per mole, enough to pump against large gradients. A pump couples the two reactions in one protein, so the total ΔG is negative. For ions there is one more term: the voltage across the membrane pushes or pulls charges. The sum is the electrochemical gradient, and we leave the electrical part to the ion-channels lecture, where it gives the Nernst equation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="two-kinds-of-transport-protein-transporters-and-channels" class="slide level2 smaller">
+<h2>Two kinds of transport protein: transporters and channels</h2>
+
+<img data-src="fig06-transporter-vs-channel.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><p>A <strong>channel</strong> is a gated hole: fast, but only downhill. A <strong>transporter</strong> (also called a carrier) binds its solute and changes shape: slower, but it can be <strong>coupled to energy</strong> and move things uphill.</p>
+<aside class="notes">
+<p>Membrane transport proteins come in two kinds. A channel forms a water-filled pore. When it is open, ions flow through it in single file, down their electrochemical gradient, at rates up to a hundred million ions per second. A channel cannot push anything uphill, because the pore is open to both sides at the same time. Channels open and close in response to signals, called gating, and they are the topic of the next lecture. A transporter works differently. It binds its solute at a specific site, like an enzyme binds its substrate, and then changes shape so that the site faces the other side. Each cycle moves one or a few molecules, so transporters are much slower, about a hundred to ten thousand molecules per second. But because each cycle is a defined series of shape changes, it can be linked to another event, such as ATP hydrolysis or the movement of a sodium ion. That is how transporters do active transport. Remember the rule: channels are fast and passive; transporters are slow, specific, saturable, and can be active.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-a-transporter-works-alternating-access" class="slide level2 smaller">
+<h2>How a transporter works: alternating access</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig07-alternating-access.svg" class="quarto-figure quarto-figure-center" style="width:74.0%"></p>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="width:62%;">
+<ul>
+<li>The binding site faces <strong>out</strong>, then <strong>in</strong>, never both at once.</li>
+<li>One cycle can run in either direction. With no energy input, net flow goes <strong>down the gradient</strong> (passive).</li>
+<li>Example: <strong>GLUT1</strong>, the glucose uniporter of red blood cells and the blood–brain barrier.</li>
+</ul>
+</div><div class="column" style="width:38%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img07-glut1.jpg" class="quarto-figure quarto-figure-center" height="190"></p>
+</figure>
+</div>
+<p><em>Human GLUT1 (PDB 4PYP), side view. Its 12 membrane helices form two halves (blue, red) around the sugar site.</em></p>
+</div></div>
+<aside class="notes">
+<p>How does a transporter move a molecule without ever making a hole in the membrane? The answer is alternating access. In step one the transporter is open to the outside, and its binding site is empty. A glucose molecule binds. The protein then closes behind it, so for a moment the glucose is trapped inside the protein, closed to both sides. Then the protein opens to the inside and the glucose leaves into the cytosol. Finally the empty transporter flips back. Nothing in this cycle has a preferred direction, so if glucose is higher inside, the same cycle runs the other way. Net flow is always down the gradient. This is passive transport, but much faster and more specific than diffusion through lipid. The structure on the right is the real protein, GLUT1, solved by X-ray crystallography in 2014. It has twelve helices crossing the membrane, arranged as two bundles, and the sugar binds between them. The two halves rock against each other like a seesaw to open one side and close the other. GLUT1 supplies glucose to red blood cells and to the brain.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-uptake-assays-show-that-transporters-saturate" class="slide level2 smaller">
+<h2>How do we know? Uptake assays show that transporters saturate</h2>
+
+<img data-src="fig08-uptake-saturation.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li>Diffusion through lipid rises <strong>linearly</strong> with concentration. Transport by a protein reaches a <strong>maximum (V<sub>max</sub>)</strong>: all binding sites are busy. <strong>K<sub>m</sub></strong> = concentration at half-maximal rate.</li>
+<li>Transporters are <strong>specific</strong>: GLUT1 takes D-glucose, not its mirror image L-glucose. They can be <strong>competed</strong> by similar molecules and <strong>blocked</strong> by inhibitors.</li>
+</ul>
+<aside class="notes">
+<p>How do we know that a protein is involved at all? Here is the classic experiment, and you can do it in a teaching lab. Cells, for example red blood cells, are given glucose labelled with a radioactive atom such as tritium, or with a fluorescent tag. After a short time, say thirty seconds, uptake is stopped by washing with ice-cold buffer, and the label inside the cells is measured. Repeat at many concentrations and plot the initial rate against concentration. If glucose simply diffused through lipid, the rate would rise in a straight line. Instead the curve bends and reaches a plateau. You know this shape from enzyme kinetics: it is the Michaelis–Menten curve. The plateau, Vmax, is reached when all transporter molecules are busy. Km is the concentration that gives half of Vmax, a measure of affinity. Two more results point to a protein. The transporter is stereospecific: it moves D-glucose, the natural form, but hardly L-glucose, which has the same size and polarity. And similar sugars compete for uptake, just as competitive inhibitors do for an enzyme.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-ways-to-couple-uniport-symport-antiport" class="slide level2 smaller">
+<h2>Three ways to couple: uniport, symport, antiport</h2>
+
+<img data-src="fig09-uniport-symport-antiport.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><ul>
+<li><strong>Uniport</strong>: one solute, passive (GLUT).</li>
+<li><strong>Symport</strong> (co-transport): two solutes cross <strong>in the same direction</strong>. Example: <strong>SGLT1</strong> carries <strong>2 Na⁺ + 1 glucose</strong> into gut cells.</li>
+<li><strong>Antiport</strong> (exchange): two solutes cross <strong>in opposite directions</strong>. <strong>Na⁺/Ca²⁺ exchanger</strong>: 3 Na⁺ in, 1 Ca²⁺ out. <strong>Na⁺/H⁺ exchanger</strong>: 1 Na⁺ in, 1 H⁺ out (controls cytosolic pH).</li>
+</ul>
+<aside class="notes">
+<p>Transporters are classified by how many solutes they move and in which direction. A uniporter moves one kind of molecule, like GLUT. It can only move it downhill. A symporter binds two different solutes and moves them together, in the same direction. The transporter only completes its cycle when both are bound, so the two movements are tightly coupled. In SGLT1, two sodium ions and one glucose molecule enter together. An antiporter, or exchanger, moves two solutes in opposite directions: it takes one in and carries the other out in the same cycle. The sodium–calcium exchanger lets three sodium ions in and pushes one calcium ion out; it is important in heart muscle. The sodium–proton exchanger lets one sodium in and pushes one proton out, which protects the cytosol from becoming acidic. The important point: in symport and antiport, one solute can go downhill and pay for the other going uphill. Notice that in all three examples, sodium enters the cell. That is not a coincidence, as the next slide shows.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="secondary-active-transport-the-na-gradient-is-a-battery" class="slide level2 smaller">
+<h2>Secondary active transport: the Na⁺ gradient is a battery</h2>
+
+<img data-src="fig10-sodium-battery.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><ul>
+<li><strong>Primary</strong> active transport uses ATP directly (a <strong>pump</strong>). <strong>Secondary</strong> active transport uses a gradient that a pump made.</li>
+<li>Na⁺ flowing in releases energy: about <strong>−13 kJ/mol</strong> (concentration plus voltage). With <strong>2 Na⁺</strong> per glucose, SGLT1 can in theory concentrate glucose <strong>more than 10 000-fold</strong>.</li>
+<li>Animal cells use <strong>Na⁺</strong>; bacteria, plants and fungi mostly use an <strong>H⁺</strong> gradient.</li>
+</ul>
+<aside class="notes">
+<p>Now we can solve the opening puzzle. The sodium–potassium pump, on the left, spends ATP to push sodium out. That keeps sodium about ten times higher outside than inside. In addition, the inside of the cell is electrically negative, which pulls positive sodium ions inwards. So sodium entering the cell is strongly downhill: about minus thirteen kilojoules per mole, about half from the concentration difference and half from the voltage. A symporter or antiporter can use this downhill flow to drive a second solute uphill. This is secondary active transport: no ATP is used by the transporter itself, but the energy came from ATP spent earlier by the pump. Think of the pump as charging a battery and the other transporters as devices running on it. Because SGLT1 couples two sodium ions to each glucose, it has twice that energy available and can, in theory, concentrate glucose more than ten thousand times. If you poison the pump, the battery runs down and glucose uptake stops too. Bacteria and plants do the same with a proton gradient instead of sodium.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="primary-active-transport-the-nak-pump" class="slide level2 smaller">
+<h2>Primary active transport: the Na⁺/K⁺ pump</h2>
+
+<img data-src="fig11-nak-pump-cycle.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><ul>
+<li>A <strong>P-type ATPase</strong>: it <strong>phosphorylates itself</strong> on an aspartate, and this switches its shape from inward-open to outward-open.</li>
+<li><strong>3 Na⁺ out, 2 K⁺ in per ATP</strong>. It uses about <strong>a quarter of a resting cell’s ATP</strong>, and much more in nerve cells.</li>
+<li>Found in <strong>every animal cell</strong>. Discovered by Jens Skou in crab nerves in 1957 (Nobel Prize in Chemistry 1997).</li>
+</ul>
+<aside class="notes">
+<p>Here is the battery charger. The sodium–potassium pump, also called the sodium–potassium ATPase, is a P-type pump: P for phosphorylation. Follow the cycle. In state one, the binding sites face the cytosol, where sodium is relatively low, but the sites have a high affinity for sodium, so three sodium ions bind. That triggers the pump to transfer the phosphate of ATP to one of its own aspartate residues. The phosphorylated pump changes shape: the sites now face the outside, and their affinity for sodium drops, so the three sodium ions are released, even though sodium outside is high. In this shape the sites bind two potassium ions from the outside. Potassium binding triggers removal of the phosphate, the pump flips back, and potassium is released into the cytosol. Each cycle uses one ATP. Because three positive charges go out and only two come in, the pump also makes a small electrical current: it is electrogenic. This single protein uses roughly a quarter of the ATP of a resting cell, and in the brain a much larger share. Jens Skou found it in crab nerves in 1957.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-rebuild-the-pump-and-block-it" class="slide level2 smaller">
+<h2>How do we know? Rebuild the pump, and block it</h2>
+
+<img data-src="fig12-liposome-ouabain.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li><strong>Reconstitution</strong>: purify the pump, put it into <strong>liposomes</strong> (artificial lipid vesicles), add ATP: Na⁺ and K⁺ move in a <strong>3 : 2</strong> ratio. No other protein is needed.</li>
+<li><strong>Inhibitors</strong>: <strong>ouabain</strong> (an arrow poison) and <strong>digoxin</strong> block the pump <strong>only from the outside</strong>. <strong>Resealed red-cell membranes</strong> (“ghosts”) showed that ATP and Na⁺ must be <strong>inside</strong>, K⁺ <strong>outside</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Two classic approaches prove that one protein does all of this. The first is reconstitution. You dissolve membranes with a mild detergent, purify the pump protein, and mix it with lipids. When the detergent is removed, the lipids form closed vesicles, liposomes, with pumps in their membranes. The pumps insert in both orientations, but only those whose ATP-binding part faces the outside can use ATP added to the outside. Those pumps move sodium into the liposome and potassium out, three to two. Since the liposome contains nothing but lipid and pump, the pump alone is sufficient. The second approach uses inhibitors. Ouabain, a plant toxin once used on arrow tips, binds the pump and stops it. Researchers made red blood cell ghosts: they let the cells swell until the haemoglobin leaked out, then resealed the empty membranes with chosen solutions inside. Ouabain worked only when it was outside; the pump needed ATP and sodium inside and potassium outside. That told us the pump’s orientation in the membrane. Digoxin, a heart drug from the foxglove plant, binds the same site.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="other-pumps-ca²-pumps-v-type-and-f-type" class="slide level2 smaller">
+<h2>Other pumps: Ca²⁺ pumps, V-type and F-type</h2>
+
+<img data-src="fig13-pumps-in-the-cell.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li><strong>Ca²⁺ pumps (P-type)</strong> keep cytosolic Ca²⁺ at about <strong>100 nM</strong>: out of the cell (<strong>PMCA</strong>) and into the ER (<strong>SERCA</strong>). A brief rise in Ca²⁺ is a signal (the signalling lectures).</li>
+<li><strong>V-type H⁺ pump</strong> acidifies <strong>lysosomes</strong> (pH 4.5–5), endosomes and secretory vesicles (the lysosome lecture).</li>
+<li><strong>F-type ATP synthase</strong> looks like a V-type pump but runs <strong>backwards</strong>: H⁺ flowing down its gradient <strong>makes ATP</strong> (the mitochondria lecture).</li>
+</ul>
+<aside class="notes">
+<p>The sodium–potassium pump is not alone. Calcium pumps are also P-type pumps, with the same phosphorylation cycle. One kind in the plasma membrane pushes calcium out of the cell. Another, SERCA, pumps calcium into the endoplasmic reticulum, so the ER lumen holds thousands of times more calcium than the cytosol. Because cytosolic calcium is kept so low, opening a calcium channel for a moment makes a large relative rise, which the cell uses as a signal for muscle contraction, secretion and much more. A second family, the V-type pumps, are large rotating machines that pump protons into lysosomes, endosomes and secretory vesicles. That makes the lysosome acidic, around pH 4.5 to 5, which its digestive enzymes need. A third family, the F-type ATPases, is built like the V-type but works in reverse. In the inner membrane of mitochondria, protons flow back into the matrix through the ATP synthase, and this flow turns a rotor that makes ATP from ADP and phosphate. Any pump can in principle run backwards if the gradient is steep enough. You meet both again in the organelle lectures.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="abc-transporters-atp-powered-exporters" class="slide level2 smaller">
+<h2>ABC transporters: ATP-powered exporters</h2>
+
+<img data-src="fig14-abc-transporter.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><ul>
+<li>Two membrane halves plus two <strong>ATP-binding cassettes</strong> (hence “ABC”). <strong>ATP binding</strong> brings the cassettes together and flips the transporter to face outward; <strong>hydrolysis</strong> resets it.</li>
+<li>The largest transporter family: humans have about <strong>48</strong> ABC genes. In our cells most are <strong>exporters</strong>: lipids, bile salts, toxins and <strong>drugs</strong>.</li>
+<li><strong>P-glycoprotein</strong> (ABCB1) pumps many different hydrophobic drugs out of cells. The CFTR chloride <strong>channel</strong> is an unusual member (the ion-channels lecture).</li>
+</ul>
+<aside class="notes">
+<p>The third big family of ATP-driven pumps is the ABC transporters, named after their ATP-binding cassettes. Each ABC transporter has two halves that cross the membrane, and two cassettes in the cytosol that bind ATP. Follow the cartoon. In the inward-facing state the cassettes are apart and a cavity opens towards the cytosol and the inner half of the membrane. A hydrophobic molecule, often coming from inside the membrane itself, enters the cavity. Two ATP molecules then bind between the cassettes and glue them together. This pulls the membrane halves into an outward-facing shape, and the substrate is released outside. Hydrolysis of ATP lets the cassettes separate, and the transporter resets. Bacteria use ABC transporters to import nutrients, but in human cells nearly all of them export. They move lipids between membrane leaflets, bile salts out of liver cells, and toxins and drugs out of cells. One of them, P-glycoprotein, is famous for having a large, greasy binding cavity that accepts many unrelated drugs. We come back to it at the end. CFTR, the protein defective in cystic fibrosis, belongs to this family but works as a channel.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="transcellular-transport-from-gut-to-blood" class="slide level2 smaller">
+<h2>Transcellular transport: from gut to blood</h2>
+<div class="columns">
+<div class="column" style="width:74%;">
+<p><img data-src="fig15-gut-epithelium.svg" style="width:100.0%"></p>
+<ul>
+<li><strong>Apical</strong> (gut side): <strong>SGLT1</strong> brings glucose in, uphill. <strong>Basolateral</strong> (blood side): <strong>GLUT2</strong> lets it out, downhill; the <strong>Na⁺/K⁺ pump</strong> removes the Na⁺.</li>
+<li><strong>Tight junctions</strong> seal the gaps between cells and keep apical and basolateral proteins apart.</li>
+</ul>
+</div><div class="column" style="width:26%;">
+<p><img data-src="img15-microvilli-tem.jpg" style="width:100.0%"></p>
+<p><em>Microvilli on a human gut epithelial cell (TEM). Scale bar 100 nm. They enlarge the apical surface many times.</em></p>
+</div></div>
+<aside class="notes">
+<p>Now we put the pieces together in an epithelium. An epithelial cell is polarised: its apical membrane faces the gut and its basolateral membrane faces the blood, and the two membranes carry different proteins. The apical side is folded into thousands of microvilli, shown in the electron micrograph, which increase the surface area. In the apical membrane, SGLT1 couples glucose entry to sodium entry, so glucose builds up inside the cell even when the gut contains little. In the basolateral membrane, GLUT2, a uniporter, lets glucose leave down its gradient into the blood. The sodium that came in with the glucose is pumped out on the basolateral side by the sodium–potassium pump, which keeps the battery charged. Tight junctions seal the spaces between neighbouring cells, so glucose cannot leak back, and they act as a fence that keeps apical and basolateral proteins in their own membrane. The same design works in the proximal tubule of the kidney, which takes back glucose, amino acids and salt from the urine. Oral rehydration solution, sugar and salt in water, uses SGLT1 to save the lives of children with severe diarrhoea.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="water-aquaporins" class="slide level2 smaller">
+<h2>Water: aquaporins</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="img16-aquaporin.jpg" style="width:100.0%"></p>
+<p><em>Aquaporin seen from outside the cell: four subunits, each with its own water pore (space-filling model, PDB 1FQY).</em></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li>Water crosses lipid slowly. Kidney, red cells and glands need it fast.</li>
+<li><strong>Aquaporins</strong> are water <strong>channels</strong>: about a <strong>billion water molecules per second</strong> per pore, in single file.</li>
+<li>They <strong>exclude ions, even H⁺</strong>, so they do not destroy gradients.</li>
+<li>Water always moves <strong>passively</strong>, by <strong>osmosis</strong>: towards the side with more dissolved particles. Cells move water by moving solutes.</li>
+<li><strong>AQP2</strong> in the kidney collecting duct is inserted into the membrane when the hormone <strong>vasopressin</strong> signals; this concentrates the urine. Peter Agre, Nobel Prize in Chemistry <strong>2003</strong>.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>One last passenger: water. Water does cross a lipid bilayer, but slowly. Cells that move a lot of water, such as kidney tubule cells, red blood cells and gland cells, add channels for it: aquaporins. Peter Agre found the first one in red blood cells. His team put its RNA into frog eggs, which normally take up very little water; in a dilute solution the eggs with aquaporin swelled and burst within minutes. Each aquaporin has four subunits, and each subunit has its own narrow pore, as you see in this view from outside the cell. Water passes in single file at up to a billion molecules per second. A clever feature of the pore stops protons, which could otherwise hop along a chain of water molecules; so aquaporins carry water without letting the proton gradient leak. Note that no pump moves water. Water always follows solutes by osmosis, so cells move water by moving salt first. In the kidney, the hormone vasopressin makes collecting-duct cells insert aquaporin 2 into their apical membrane, which lets water return to the blood and concentrates the urine. You meet this in the course on organs and tissues.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-sglt2-inhibitors-in-diabetes-and-heart-failure" class="slide level2 smaller">
+<h2>Why it matters: SGLT2 inhibitors in diabetes and heart failure</h2>
+
+<img data-src="fig17-kidney-sglt2.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li>The kidneys filter about <strong>180 g of glucose a day</strong>; <strong>SGLT2</strong> in the proximal tubule takes back about <strong>90 %</strong>, SGLT1 the rest. Above a blood glucose of about <strong>10 mM</strong> the transporters <strong>saturate</strong> and glucose appears in urine.</li>
+<li><strong>Gliflozins</strong> (dapagliflozin, empagliflozin) block <strong>SGLT2</strong>: glucose and some Na⁺ leave in the urine, and blood glucose falls in <strong>type 2 diabetes</strong>.</li>
+<li>In large trials they also <strong>reduced heart failure</strong> and slowed <strong>kidney disease</strong>, even in people without diabetes. Exactly why is still studied.</li>
+</ul>
+<aside class="notes">
+<p>Here the symporter from the gut slide becomes a drug target. The kidneys filter your blood plasma, about 180 litres a day, and with it about 180 grams of glucose. The proximal tubule takes nearly all of it back. The first part of the tubule uses SGLT2, a sodium–glucose symporter with one sodium per glucose, which takes about ninety percent; SGLT1 further along takes the rest. Basolateral GLUT2 lets glucose return to the blood, as in the gut. Remember saturation: when blood glucose is above about ten millimolar, the transporters are full and glucose spills into the urine. That is why untreated diabetes gives sweet urine. Gliflozins block SGLT2. The story started with phlorizin, a natural compound from apple tree bark known since the nineteenth century to cause glucose in the urine. A person on a gliflozin loses tens of grams of glucose a day in the urine, and blood glucose falls. Surprisingly, large clinical trials showed that these drugs also protect the heart and kidneys, even in people without diabetes. The mechanism is still debated. You meet trials like these in the course on clinical trials and drug development.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-pumps-as-drug-targets-and-drug-barriers" class="slide level2 smaller">
+<h2>Why it matters: pumps as drug targets and drug barriers</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<ul>
+<li><strong>Digoxin</strong> (from foxglove) blocks the <strong>Na⁺/K⁺ pump</strong> in heart muscle. Less Na⁺ gradient → the Na⁺/Ca²⁺ exchanger removes less Ca²⁺ → more Ca²⁺ → <strong>stronger contraction</strong>. Used in heart failure and atrial fibrillation; the safe dose range is <strong>narrow</strong>.</li>
+<li><strong>P-glycoprotein</strong> (ABCB1) pumps chemotherapy drugs out of cancer cells: <strong>multidrug resistance</strong>. In the gut, liver, kidney and <strong>blood–brain barrier</strong> it pumps drugs back out, which limits <strong>oral absorption</strong> and keeps many drugs <strong>out of the brain</strong>.</li>
+<li>A tablet must cross the <strong>gut epithelium</strong>: by diffusion through lipid (small, lipophilic drugs) or on a transporter, while escaping P-glycoprotein. More in <strong>drug development</strong> (Kliniska prövningar och läkemedelsutveckling).</li>
+</ul>
+</div><div class="column" style="width:22%;">
+<p><img data-src="img18-p-glycoprotein.jpg" style="width:100.0%"></p>
+<p><em>P-glycoprotein (mouse, PDB 3G5U). Lines: outer (blue) and inner (red) face of the membrane.</em></p>
+</div><div class="column" style="width:22%;">
+<p><img data-src="img18-foxglove.jpg" style="width:100.0%"></p>
+<p><em>Foxglove, Digitalis. Its leaves contain digitalis glycosides.</em></p>
+</div></div>
+<aside class="notes">
+<p>Two more examples of transport and medicine. Foxglove extracts were used for heart failure as early as 1785, by William Withering in England. The active compounds are digitalis glycosides, such as digoxin; digoxin itself is mostly made from a related species, the woolly foxglove. They bind the sodium–potassium pump from outside, as ouabain does. In heart muscle a partly blocked pump lets sodium rise a little inside. The smaller sodium gradient means the sodium–calcium exchanger removes less calcium, more calcium is stored in the sarcoplasmic reticulum, and each beat is stronger. The difference between a helpful and a toxic dose is small, so levels are monitored. The second example is P-glycoprotein, the ABC exporter from earlier. Cancer cells that make a lot of it pump out many unrelated chemotherapy drugs, which is called multidrug resistance. In healthy tissue it sits on the gut side of intestinal cells and in brain capillaries, where it pumps drugs back out. The diarrhoea drug loperamide, an opioid, does not reach the brain because P-glycoprotein removes it. Drug developers test early whether a candidate is a P-glycoprotein substrate.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<ol type="1">
+<li>A lipid bilayer lets <strong>small hydrophobic</strong> molecules through but blocks <strong>ions and most polar molecules</strong>; <strong>transport proteins</strong> give them a path.</li>
+<li><strong>Passive</strong> transport goes down the gradient (ΔG &lt; 0); <strong>active</strong> transport goes up and must be <strong>coupled</strong> to ATP or to another gradient. Cells keep large, non-equilibrium gradients of <strong>Na⁺, K⁺ and Ca²⁺</strong>.</li>
+<li><strong>Channels</strong> are fast pores, always passive. <strong>Transporters</strong> bind their solute, work by <strong>alternating access</strong>, <strong>saturate</strong> like enzymes, and can be <strong>uniporters, symporters or antiporters</strong>.</li>
+<li><strong>Pumps</strong> use ATP directly: <strong>P-type</strong> (Na⁺/K⁺ pump, 3 Na⁺ out, 2 K⁺ in; Ca²⁺ pumps), <strong>V-type</strong> (acidify organelles), <strong>ABC</strong> (export, including drugs); the <strong>F-type</strong> ATP synthase runs in reverse. The <strong>Na⁺ gradient</strong> drives <strong>secondary active transport</strong>.</li>
+<li><strong>Epithelia</strong> move solutes across the cell with different transporters on the apical and basolateral sides; <strong>drugs</strong> such as gliflozins and digoxin act on transporters, and P-glycoprotein pumps drugs away.</li>
+</ol>
+<p><em>Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch.&nbsp;11.</em></p>
+<p><small>Image credits: <a href="../membrane-transport/credits.html">credits</a></small></p>
+<aside class="notes">
+<p>Five take-home points. First, the bilayer is a barrier to ions and polar molecules; only small hydrophobic molecules, and water slowly, cross on their own. Second, ΔG tells you whether transport can be passive, and cells keep large gradients of sodium, potassium and calcium that are not at equilibrium; they cost energy to maintain and are a store of energy to use. Third, transporters and channels are different machines: channels are fast and only passive, transporters bind their solute, alternate between outward-open and inward-open shapes, saturate like enzymes and can couple two solutes. Fourth, primary active transport uses ATP directly in P-type, V-type and ABC pumps, while secondary active transport spends the sodium gradient made by the sodium–potassium pump. Fifth, an epithelium combines these proteins on two sides of a cell to move glucose from gut to blood, and many drugs act on transporters or are limited by them. Next lecture: ion channels, where the same gradients produce the membrane potential.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'visible',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

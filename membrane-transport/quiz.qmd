@@ -1,0 +1,104 @@
+---
+title: "Quiz: moving molecules across membranes"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Moving molecules across membranes: transporters and pumps*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Rank these by how fast they cross a pure lipid bilayer (no proteins), fastest first: glucose, O₂, Na⁺, water. `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Two things matter: size, and how well the molecule dissolves in the oily middle of the bilayer. A charge is the biggest obstacle.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**O₂ > water > glucose > Na⁺.** O₂ is small and hydrophobic and crosses fast. Water is small and uncharged, so it crosses, but more slowly. Glucose is larger and polar and crosses very slowly. Na⁺ is charged and surrounded by water molecules, so it practically does not cross (about 10⁹ times slower than water).
+:::
+
+---
+
+**Q2.** Na⁺ is about 12 mM inside a cell and 145 mM outside. K⁺ is about 140 mM inside and 5 mM outside. If you block all ATP production in a cell, what happens to these concentrations over time, and why? `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Are the gradients at equilibrium, or are they kept up by work?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The gradients **run down**: Na⁺ slowly rises inside and K⁺ falls. The gradients are a **steady state, not an equilibrium**: ions leak through the membrane all the time, and the **Na⁺/K⁺ pump** uses ATP to put them back. Without ATP the pump stops, but the leak continues.
+:::
+
+---
+
+**Q3.** Using $\Delta G = RT\ln(c_\text{in}/c_\text{out})$ with $RT \approx 2.6$ kJ/mol, estimate ΔG for moving glucose into a cell when glucose is 5 mM outside and 0.5 mM inside. Is this passive or active transport? `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+$\ln(0.1) \approx -2.3$.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+$\Delta G \approx 2.6 \times \ln(0.5/5) = 2.6 \times (-2.3) \approx -6$ kJ/mol. ΔG is negative, so glucose moves **downhill**: **passive** transport, for example by a GLUT uniporter. No energy input is needed.
+:::
+
+---
+
+**Q4.** You measure the initial rate of uptake of a radiolabelled amino acid into cells at many concentrations. The rate rises and then levels off at high concentration. What does this tell you about how the amino acid enters, and what do V~max~ and K~m~ mean here? `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Compare with Michaelis–Menten kinetics of an enzyme. What would simple diffusion through lipid look like?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Saturation** means a **transporter** with a limited number of binding sites carries the amino acid; diffusion through lipid would rise **linearly** without a maximum. **V~max~** is the rate when all transporters are busy (it depends on how many transporters there are). **K~m~** is the concentration that gives half of V~max~; a low K~m~ means high affinity.
+:::
+
+---
+
+**Q5.** Classify each as uniport, symport or antiport, and as passive, primary active or secondary active: (a) GLUT1; (b) SGLT1; (c) the Na⁺/Ca²⁺ exchanger; (d) the Na⁺/K⁺ pump. `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Does the protein use ATP itself? Does it move one solute or two, and in which directions?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) GLUT1: **uniport, passive**. (b) SGLT1: **symport** (2 Na⁺ + 1 glucose, both inwards), **secondary active**. (c) Na⁺/Ca²⁺ exchanger: **antiport** (Na⁺ in, Ca²⁺ out), **secondary active**. (d) Na⁺/K⁺ pump: **antiport** (3 Na⁺ out, 2 K⁺ in), **primary active**: it hydrolyses ATP itself (P-type pump).
+:::
+
+---
+
+**Q6.** Why is the Na⁺/K⁺ pump called a P-type pump, and how many ions does it move per ATP? `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Where does the phosphate of ATP go during the cycle?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+During its cycle the pump **phosphorylates itself** on an aspartate; this switches it from the inward-open to the outward-open shape. P stands for phosphorylation. Per ATP it moves **3 Na⁺ out and 2 K⁺ in**. One net positive charge leaves per cycle, so the pump is **electrogenic**.
+:::
+
+---
+
+**Q7.** In a gut epithelial cell, which transporter sits in the apical membrane and which in the basolateral membrane to absorb glucose? Why must they be in different membranes? `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+One brings glucose into the cell uphill; the other lets it out downhill. What would happen if both were on the same side?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Apical: SGLT1** (Na⁺–glucose symporter), which takes glucose into the cell even against its gradient. **Basolateral: GLUT2** (uniporter), which lets glucose leave down its gradient into the blood, plus the **Na⁺/K⁺ pump** to remove the Na⁺. If both transporters were on the same side, glucose would just go in and out on that side, and there would be no net movement across the cell. **Tight junctions** keep the two sets of proteins apart and seal the gaps between cells.
+:::
+
+---
+
+**Q8.** Gliflozins block SGLT2. What happens to glucose in the urine of a patient taking one, and why does this lower blood glucose? `[ELO 2]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Where in the body is SGLT2, and what does it normally do with filtered glucose?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+SGLT2 in the **proximal tubule** of the kidney normally takes back about 90 % of the glucose filtered from the blood. When it is blocked, much of that glucose (tens of grams a day) stays in the tubule and **leaves in the urine**. The body loses glucose, so **blood glucose falls**. Some Na⁺ is lost too, because SGLT2 is a Na⁺–glucose symporter.
+:::

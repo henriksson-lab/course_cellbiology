@@ -112,3 +112,32 @@ One method cannot do both because live imaging needs light microscopy (low resol
 ::: {.callout-note collapse="true" title="Model answer"}
 The spike is a fusion protein: it starts in a compact **prefusion** shape and, when it fuses the viral and cell membranes, S1 is lost and S2 refolds into a long **postfusion** rod. Many protective (neutralising) antibodies recognise the prefusion shape, but a spike made on its own can flip to the postfusion form. Two **prolines**, which are stiff, placed at a hinge in S2 block this refolding and keep the prefusion shape, so the immune system sees the right target. The idea came from structures of related coronavirus spikes (MERS, SARS). Cryo-EM was ideal because the spike is a large, flexible, glycosylated membrane-protein trimer that is hard to crystallise; cryo-EM needs only a small amount of purified protein, no crystals, and keeps it in a near-native state. In early 2020 a cryo-EM structure confirmed within weeks that the SARS-CoV-2 2P spike holds the prefusion shape.
 :::
+
+## Explore {#explore}
+
+Two glowing points (for example two fluorescent molecules) seen through a microscope. The lens turns each point into a blur spot with faint rings (an **Airy pattern**); the camera sees the sum of the two spots. The graph below the image shows the brightness along the line through both points: the dashed curves are the two single spots, the solid curve is what the camera records. Change the distance $d$ between the points (slider, or drag on the image), the wavelength $\lambda$ and the numerical aperture NA, or switch to **electrons**. The readout gives the Rayleigh limit $0.61\,\lambda/\mathrm{NA}$ and the depth of the dip between the two peaks.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="resolution" data-lambda="520" data-na="1.4" data-d="300"></div>
+<script src="../demos/dist/resolution.js"></script>
+```
+
+**E1.** Start with green light (520 nm) and the oil objective (NA 1.4), $d = 300$ nm. Move the points slowly together. At what distance does the readout say you reach the Rayleigh limit? Check it with the formula. How deep is the dip there, and at about what distance does the dip disappear completely? `[ELO 1]`
+
+**E2.** Set $d = 250$ nm. Try the three objectives: dry 10× (NA 0.25), dry 40× (NA 0.65) and oil 100× (NA 1.4). Which of them separate the two points? What is the limit for each? `[ELO 1]`
+
+**E3. [VG]** *Predict first, then check.* Keep $d = 250$ nm and NA 1.4. Will the two points be resolved in red light (650 nm)? In blue light (450 nm)? Then explain why a light microscope cannot be improved much further by choosing a shorter wavelength or a better lens. `[ELO 1]`
+
+**E4. [VG]** Switch to **Electrons (TEM)**. The wavelength is about 100 000 times shorter than green light. What is the limit with a 10 mrad aperture, and why is it much larger than the wavelength? Why do electron micrographs of cells still show only about 1–2 nm detail? `[ELO 1]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** The limit is $0.61 \times 520 / 1.4 \approx 227$ nm. At that distance the first dark ring of one spot falls on the centre of the other, and the solid curve has a dip of about **26 %** between the two peaks: just enough to see two spots. Closer, the dip becomes shallower and disappears at about 175 nm (about $0.47\,\lambda/\mathrm{NA}$, the Sparrow limit); below that the camera records one blob, and no magnification can split it again.
+
+**E2.** The limits are about **1270 nm** (NA 0.25), **490 nm** (NA 0.65) and **227 nm** (NA 1.4). Only the oil objective separates points 250 nm apart. A lens with a higher NA collects light from a wider cone, which makes the blur spot smaller.
+
+**E3.** Red light: limit $0.61 \times 650 / 1.4 \approx 283$ nm, larger than 250 nm, so **not resolved** (a faint dip only). Blue light: $0.61 \times 450 / 1.4 \approx 196$ nm, so **resolved**. Shorter wavelengths help, but visible light stops at about 400 nm (shorter UV light damages cells and is absorbed by glass). NA $= n \sin\theta$ cannot exceed the refractive index of the oil and glass (about 1.5), because $\sin\theta \le 1$. So the limit for a light microscope stays near 200 nm. Super-resolution methods get around it by making neighbouring molecules glow at different times, not by a better lens.
+
+**E4.** $0.61 \times 0.0037 / 0.01 \approx 0.23$ nm. The limit is about 60 times the wavelength because electron lenses have large errors (aberrations), so only electrons travelling at a very small angle can be used: the NA is about 0.01 instead of 1.4. In cells, the sample sets the limit: the section is fixed, stained with heavy metals and about 50–100 nm thick, and the stain grains and the overlapping material in the section blur the detail to about 1–2 nm. Purified proteins imaged frozen (cryo-EM) get much closer to the lens limit.
+:::

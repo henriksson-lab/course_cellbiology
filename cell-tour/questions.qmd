@@ -76,7 +76,7 @@ The protein concentration is a few hundred mg/mL, so the cytoplasm is **crowded*
 **8.** [ELO 1] What is a cell line? Give two reasons why HeLa cells became so widely used, and two reasons to be careful when interpreting results from them.
 
 ::: {.callout-note collapse="true" title="Model answer"}
-A cell line is a population of cells that **divides without limit** in culture; normal cells stop after about 40–60 divisions. HeLa became widely used because it was the **first human cell line** (1951), it **grows fast and robustly**, and it can be shipped and shared, for example to test the polio vaccine. Reasons for caution: HeLa cells are **cancer cells** with an abnormal genome (about 80 chromosomes) and HPV-18 proteins that disable cell-cycle brakes; they grow flat on plastic, not in a tissue; and HeLa has **contaminated** many other cell lines, so the identity of a cell line must be checked with a DNA test.
+A cell line is a population of cells that **divides without limit** in culture; normal cells stop after about 40–60 divisions. HeLa became widely used because it was the **first human cell line** (1951), it **grows fast and robustly**, and it can be shipped and shared, for example to test the polio vaccine. Reasons for caution: HeLa cells are **cancer cells** with an abnormal genome (around 76–80 chromosomes) and HPV-18 proteins that disable cell-cycle brakes; they grow flat on plastic, not in a tissue; and HeLa has **contaminated** many other cell lines, so the identity of a cell line must be checked with a DNA test.
 :::
 
 ## VG-style questions

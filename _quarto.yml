@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  # Built interactive demos (make demos) and their image assets, copied into docs/.
+  resources:
+    - demos/dist/
+    - demos/assets/
   render:
     # Order is set by the sidebar below, not by these globs. One level deep per
     # unit; plan/ holds internal working docs and is excluded from the site.
@@ -13,6 +17,7 @@ project:
     - "!tools/"
     - "!edit-notes/"
     - "!node_modules/"
+    - "!demos/"
     - "!canvas-quiz/"
     # Teacher-only pages: kept in the repo (read them on GitHub), not published.
     - "!README.md"
@@ -60,6 +65,8 @@ website:
                 href: cell-tour/quiz.qmd
               - text: "Study questions"
                 href: cell-tour/questions.qmd
+              - text: "Explore a real cell"
+                href: cell-tour/explore.qmd
               - text: "Image credits"
                 href: cell-tour/credits.md
           - section: "Seeing cells: microscopy"
@@ -74,9 +81,46 @@ website:
                 href: microscopy/credits.md
           - section: "Taking cells apart and perturbing them"
             contents:
-              # lec.qmd, quiz.qmd, questions.qmd not written yet
+              - text: "Lecture (slides)"
+                href: cell-methods/lec.qmd
+              - text: "Quiz"
+                href: cell-methods/quiz.qmd
+              - text: "Study questions"
+                href: cell-methods/questions.qmd
               - text: "Image credits"
                 href: cell-methods/credits.md
+      - section: "Membranes and transport"
+        contents:
+          - section: "Membrane structure"
+            contents:
+              - text: "Lecture (slides)"
+                href: membrane-structure/lec.qmd
+              - text: "Quiz"
+                href: membrane-structure/quiz.qmd
+              - text: "Study questions"
+                href: membrane-structure/questions.qmd
+              - text: "Image credits"
+                href: membrane-structure/credits.md
+          - section: "Transporters and pumps"
+            contents:
+              - text: "Lecture (slides)"
+                href: membrane-transport/lec.qmd
+              - text: "Quiz"
+                href: membrane-transport/quiz.qmd
+              - text: "Study questions"
+                href: membrane-transport/questions.qmd
+              - text: "Image credits"
+                href: membrane-transport/credits.md
+          - section: "Ion channels and membrane potential"
+            contents:
+              - text: "Lecture (slides)"
+                href: ion-channels/lec.qmd
+              - text: "Quiz"
+                href: ion-channels/quiz.qmd
+              - text: "Study questions"
+                href: ion-channels/questions.qmd
+              - text: "Image credits"
+                href: ion-channels/credits.md
 
 format:
   html:

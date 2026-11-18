@@ -1,6 +1,9 @@
 # Quarto cache. The built site lives in docs/ and IS tracked (committed HTML).
 /.quarto/
 
+# Demo build tooling (npm i)
+/node_modules/
+
 # OS cruft
 .DS_Store
 

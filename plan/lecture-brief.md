@@ -80,6 +80,11 @@ Only write inside the unit folder.
 | Cytoskeleton | `#555555` |
 | Drug / inhibitor | `#e8590c` |
 | Highlight | `#e8590c` |
+| K⁺ | `#8e44ad` (violet) |
+| Na⁺ | `#1c4fa0` (blue) |
+| Cl⁻ | `#2b8a3e` (green) |
+| Ca²⁺ | `#c2255c` (magenta) |
+| H⁺ | `#1098ad` (cyan) |
 
 ## Writing
 
@@ -92,8 +97,25 @@ Only write inside the unit folder.
 - Correct science. When numbers are given (sizes, copy numbers, resolution
   limits), use standard textbook values.
 
+## Screenshots of slides
+
+Use the repo tool, which drives one headless Chrome, screenshots every slide and
+lists slides whose content runs past the bottom edge:
+
+```sh
+quarto render <unit>/lec.qmd
+node --experimental-websocket tools/shoot-slides.mjs docs/<unit>/lec.html <scratch>/<unit>
+montage <scratch>/<unit>/s*.png -tile 4x -geometry 640x360+4+4 <scratch>/<unit>/all.png
+```
+
+Look at the montage, then at single slides where needed. Fix overflow by
+shrinking the figure (`width`, or `height="…px"` for tall photos), or by putting
+a wide figure across the full slide with the bullets below instead of in a
+narrow column. Text in the figures must stay readable.
+
 ## Check before you finish
 
+- Screenshot every slide and fix overflow at the bottom edge and unreadable figures.
 - `quarto render <unit>/lec.qmd`, `quarto render <unit>/quiz.qmd`,
   `quarto render <unit>/questions.qmd`, `quarto render <unit>/credits.md`
   all render without warnings about missing files.

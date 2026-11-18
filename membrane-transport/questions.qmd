@@ -1,0 +1,112 @@
+---
+title: "Study questions: moving molecules across membranes"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** Which kinds of molecules cross a pure lipid bilayer, and which do not? Explain the rule with the structure of the bilayer, and give one example of each kind. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The middle of the bilayer is a **hydrophobic** layer of fatty acid tails. A molecule crosses only if it can leave water and dissolve in this layer. **Small hydrophobic** molecules cross fast (O₂, CO₂, steroid hormones). **Small uncharged polar** molecules cross more slowly (water, urea). **Larger polar** molecules cross very slowly (glucose). **Ions** practically do not cross (Na⁺, K⁺), because their charge and their shell of water make it very costly to enter the oily core; a pure bilayer is about 10⁹ times more permeable to water than to Na⁺ or K⁺. Large and charged molecules (ATP, proteins) do not cross. Everything that does not cross fast enough needs a **transport protein**.
+:::
+
+---
+
+**2.** Give the typical concentrations of Na⁺, K⁺ and Ca²⁺ inside and outside a mammalian cell. Explain why these differences are called a steady state and not an equilibrium. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Na⁺**: about 12 mM inside, 145 mM outside. **K⁺**: about 140 mM inside, 5 mM outside. **Ca²⁺**: about 100 nM (0.0001 mM) free in the cytosol, about 2 mM outside. At equilibrium there would be no net movement and no energy needed. Here ions **leak** down their gradients all the time, and **pumps** (Na⁺/K⁺ pump, Ca²⁺ pumps) spend ATP all the time to move them back. The concentrations stay constant only because leak and pumping balance: a **steady state**. If ATP runs out, the gradients disappear.
+:::
+
+---
+
+**3.** Compare a channel and a transporter. Give at least four differences. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+| | Channel | Transporter |
+|---|---|---|
+| How it works | water-filled **pore**, open to both sides at once when open | **binds** the solute; **alternating access**, open to one side at a time |
+| Speed | up to about 10⁸ ions/s | about 10²–10⁴ molecules/s |
+| Direction | only **down** the (electro)chemical gradient | passive, or **active** when coupled to ATP or another gradient |
+| Kinetics | rate rises with the gradient, practically no saturation | **saturates** (V~max~, K~m~) like an enzyme |
+| Control | **gated** (opens and closes) | regulated, e.g. by number of transporters in the membrane |
+
+Examples: K⁺ channel; GLUT1, SGLT1, Na⁺/K⁺ pump.
+:::
+
+---
+
+**4.** Describe the alternating-access mechanism of a uniporter such as GLUT1. Why can GLUT1 not move glucose against its gradient? `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The transporter has a glucose-binding site in the middle of the membrane. (1) It is open to the outside; glucose binds. (2) The outer gate closes, so glucose is trapped (occluded). (3) The protein opens to the inside and glucose is released. (4) The empty transporter returns to the outward-open shape. The binding site is **never open to both sides at once**. Each step is reversible and no energy is put in, so the cycle runs equally well in both directions. The **net** flow is therefore from the side with more glucose to the side with less: always downhill.
+:::
+
+---
+
+**5.** Explain the difference between primary and secondary active transport. Use the Na⁺/K⁺ pump and SGLT1 as examples. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+In **primary** active transport the transport protein uses energy **directly**, usually by hydrolysing ATP. The **Na⁺/K⁺ pump** hydrolyses one ATP per cycle to move 3 Na⁺ out and 2 K⁺ in, against both gradients. In **secondary** active transport the protein uses the energy stored in **another ion gradient**, which a primary pump made. **SGLT1** lets 2 Na⁺ flow into the cell, down their electrochemical gradient, and couples this to moving 1 glucose into the cell, even against the glucose gradient. SGLT1 uses no ATP itself, but if the Na⁺/K⁺ pump stops, the Na⁺ gradient runs down and SGLT1 stops too.
+:::
+
+---
+
+**6.** Describe the reaction cycle of the Na⁺/K⁺ pump in four steps. Why is it called electrogenic? `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(1) Open to the cytosol, high affinity for Na⁺: **3 Na⁺ bind**. (2) ATP **phosphorylates an aspartate** in the pump; the pump switches to the outward-open shape with low Na⁺ affinity and **releases 3 Na⁺ outside**. (3) **2 K⁺ bind** from the outside; this triggers **removal of the phosphate**. (4) The pump returns to the inward-open shape and **releases 2 K⁺ into the cytosol**. Each cycle moves 3 positive charges out and 2 in, so one net positive charge leaves the cell: the pump produces a small electric current and is **electrogenic**.
+:::
+
+---
+
+**7.** Name three families of ATP-driven pumps and give one example and one function for each. Which related machine runs "backwards", and what does it make? `[ELO 2]` `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**P-type pumps** (phosphorylate themselves): the Na⁺/K⁺ pump, which keeps Na⁺ low and K⁺ high in the cell; the Ca²⁺ pumps (in the plasma membrane and SERCA in the ER), which keep cytosolic Ca²⁺ at about 100 nM. **V-type pumps**: the H⁺ pump that **acidifies lysosomes** (pH 4.5–5) and endosomes. **ABC transporters**: P-glycoprotein, which **exports drugs** and other hydrophobic molecules from cells. The **F-type ATP synthase** in the inner mitochondrial membrane is built like a V-type pump but runs in reverse: H⁺ flowing down its gradient into the matrix drives the **synthesis of ATP**.
+:::
+
+---
+
+**8.** Draw a gut epithelial cell and show how glucose is moved from the gut lumen to the blood. Label the apical and basolateral membranes, the transporters, the direction of each flow, and the tight junctions. `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Your sketch should show: **apical membrane** (with microvilli) facing the lumen, carrying **SGLT1**: 2 Na⁺ + 1 glucose into the cell. **Basolateral membrane** facing the blood, carrying **GLUT2**: glucose out of the cell, down its gradient; and the **Na⁺/K⁺ pump**: 3 Na⁺ out, 2 K⁺ in, using ATP. **Tight junctions** near the apical end between neighbouring cells, sealing the gap so glucose cannot leak back, and keeping apical and basolateral proteins in their own membrane. Glucose concentration in the cell is high enough to drive it out through GLUT2.
+:::
+
+---
+
+**9.** What are aquaporins, and how do cells move water if no pump for water exists? `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Aquaporins are **water channels**: four subunits, each with a narrow pore through which water passes in single file, up to about 10⁹ molecules per second. The pore **excludes ions, including H⁺**, so gradients are not lost. Water always moves **passively by osmosis**, towards the side with the higher concentration of dissolved particles. Cells therefore move water by **moving solutes first** (for example Na⁺ with pumps and transporters); water follows through aquaporins. In the kidney collecting duct, vasopressin causes AQP2 to be inserted into the membrane, so more water is taken back.
+:::
+
+## VG-style questions
+
+**10. [VG]** Researchers treat isolated intestinal epithelium with **ouabain** on the **blood side**. Predict what happens over the next hour to (a) Na⁺ inside the cells, (b) glucose uptake from the lumen, and (c) glucose transport into the blood. Explain each step. What result would you expect if ouabain were added only on the **lumen side**? `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Ouabain blocks the **Na⁺/K⁺ pump** from the extracellular side; in epithelial cells the pump is in the **basolateral** membrane, so ouabain on the blood side reaches it. (a) Na⁺ leaks in (including through SGLT1) but is no longer pumped out: **Na⁺ inside rises** and K⁺ falls; the membrane potential also becomes less negative. (b) SGLT1 depends on the inward Na⁺ gradient (and the negative inside). As the gradient runs down, **glucose uptake from the lumen falls**, and SGLT1 can no longer concentrate glucose. (c) Less glucose reaches the cell, so **less glucose crosses to the blood** through GLUT2, even though GLUT2 itself is not blocked. On the **lumen side only**, ouabain would have **little or no effect** at first, because there are no pumps in the apical membrane and tight junctions stop the drug from reaching the basolateral side. This experiment shows both the coupling of secondary to primary active transport and the polarity of the epithelium.
+:::
+
+---
+
+**11. [VG]** A new protein, X, is suspected to be a transporter for the amino acid leucine. Design experiments to show (a) that leucine uptake depends on X, (b) that X itself is enough to transport leucine, and (c) whether X is a uniporter or a Na⁺-coupled symporter. `[ELO 2]` `[ELO 1]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) Measure the **initial rate of uptake of radiolabelled (or fluorescent) leucine** at many concentrations in cells with X and in cells where X is **knocked out** (CRISPR) or knocked down, and in cells that **overexpress** X. If X is the transporter, uptake **saturates** (V~max~, K~m~), is lower without X and higher with more X, and is **competed** by unlabelled leucine but not by an unrelated molecule. (b) **Purify X** and **reconstitute it in liposomes**. Leucine should enter liposomes that contain X, but not empty liposomes; since nothing else is present, X is sufficient. (c) Repeat uptake with **Na⁺ replaced** by another cation (e.g. choline⁺ or K⁺) outside. A Na⁺-coupled symporter stops working (or slows strongly) without external Na⁺, and it can **accumulate** leucine above the outside concentration; in liposomes, uptake should depend on an imposed Na⁺ gradient. A uniporter works without Na⁺ and only brings the inside up to the outside concentration. Controls: same cell number, short time points (initial rates), cold or no-transporter background.
+:::
+
+---
+
+**12. [VG]** Explain how (a) digoxin makes the heart beat more strongly, and (b) P-glycoprotein can make a tumour resistant to several unrelated anticancer drugs at the same time. In each case, name the transport protein and say what it normally does. `[ELO 2]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) Digoxin partly blocks the **Na⁺/K⁺ pump** (normally: 3 Na⁺ out, 2 K⁺ in per ATP) in heart muscle cells. Na⁺ inside rises a little, so the **Na⁺ gradient is smaller**. The **Na⁺/Ca²⁺ exchanger**, which normally uses Na⁺ flowing in to push Ca²⁺ out, therefore removes **less Ca²⁺**. More Ca²⁺ stays in the cell and is stored in the sarcoplasmic reticulum, so more Ca²⁺ is released at each beat and **contraction is stronger**. Because the pump is in every cell, too much digoxin is toxic, and the safe dose range is narrow. (b) **P-glycoprotein (ABCB1)** is an **ABC transporter** that uses ATP to **export** hydrophobic molecules from cells; it normally protects tissues such as the gut, liver and the blood–brain barrier from toxins. Its binding cavity is large and accepts many different hydrophobic molecules. A cancer cell that makes a lot of P-glycoprotein pumps out several unrelated chemotherapy drugs, so their concentration inside the cell stays too low to kill it: **multidrug resistance**.
+:::

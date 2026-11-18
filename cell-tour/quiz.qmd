@@ -88,7 +88,7 @@ Think of what a cell line is, and where HeLa came from.
 :::
 
 ::: {.callout-note collapse="true" title="Answer"}
-**Advantage:** human cells that divide without limit, are cheap and easy to grow, image and perturb, and are used in many labs, so results can be compared. **Limitation:** HeLa cells are **cancer cells** with an abnormal genome (about 80 chromosomes) and an HPV infection that disables normal cell-cycle brakes; they grow flat on plastic, so they may not behave like a normal cell in a tissue. (Also acceptable: contamination of other cell lines, or the ethical questions about consent.)
+**Advantage:** human cells that divide without limit, are cheap and easy to grow, image and perturb, and are used in many labs, so results can be compared. **Limitation:** HeLa cells are **cancer cells** with an abnormal genome (around 76–80 chromosomes) and an HPV infection that disables normal cell-cycle brakes; they grow flat on plastic, so they may not behave like a normal cell in a tissue. (Also acceptable: contamination of other cell lines, or the ethical questions about consent.)
 :::
 
 ---

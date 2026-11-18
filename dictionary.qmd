@@ -8,6 +8,7 @@ written.
 
 ## The cell and how we study it
 
+
 ### A tour of the cell
 
 See [A tour of the cell](cell-tour/lec.qmd).
@@ -105,3 +106,109 @@ See [Seeing cells: microscopy](microscopy/lec.qmd).
 **RNA interference, RNAi**: lowering the amount of a protein with a short double-stranded RNA that leads to the matching mRNA being cut.
 
 **Knockout**: disabling a gene completely, for example by a CRISPR-Cas9 cut that causes a frameshift.
+
+## Membranes and transport
+
+### Membrane structure
+
+See [Membrane structure](membrane-structure/lec.qmd).
+
+**Amphipathic**: describes a molecule with one part that likes water (polar) and one part that avoids water (hydrophobic).
+
+**Hydrophobic effect**: the tendency of non-polar groups to gather together in water, driven mainly by the rise in entropy of the water molecules they release.
+
+**Lipid bilayer**: two layers of lipid molecules with their tails facing inwards, forming the basic sealed structure of every cell membrane.
+
+**Membrane fluidity**: how easily lipids and proteins move within the plane of a membrane, set by tail length, double bonds, cholesterol and temperature.
+
+**Flip-flop**: movement of a lipid from one leaflet of the bilayer to the other, which is very rare without the help of enzymes.
+
+**Flippase**: an ATP-driven enzyme that moves specific lipids, such as phosphatidylserine, from the outer to the inner leaflet of the plasma membrane.
+
+**Scramblase**: a membrane protein that, when switched on, lets lipids move in both directions between leaflets without using energy, so their asymmetry is lost.
+
+**Lipid raft**: a proposed small, short-lived membrane domain rich in sphingolipids and cholesterol that may gather certain proteins.
+
+**Integral membrane protein**: a protein with parts embedded in the hydrophobic core of the bilayer, which can be released only with a detergent.
+
+**GPI anchor**: a glycolipid attached to the end of a protein that holds the protein on the outer surface of the plasma membrane.
+
+**Hydropathy plot**: a graph of average hydrophobicity along a protein sequence, used to predict transmembrane α-helices.
+
+**Detergent**: a small amphipathic molecule with one tail that forms micelles and can dissolve membranes to extract membrane proteins.
+
+**FRAP**: fluorescence recovery after photobleaching; a laser bleaches a small spot and you measure how fast fluorescent molecules diffuse back in.
+
+**Freeze-fracture electron microscopy**: splitting a frozen membrane between its two leaflets, which shows the integral proteins as particles in a metal replica.
+
+**Glycocalyx**: the coat of sugar chains on glycoproteins, glycolipids and proteoglycans that covers the outside of the cell.
+
+**Lipid nanoparticle (LNP)**: a small particle of ionisable lipid, helper phospholipid, cholesterol and PEG-lipid that carries RNA into cells.
+
+### Transporters and pumps
+
+See [Transporters and pumps](membrane-transport/lec.qmd).
+
+**Simple diffusion**: movement of a molecule straight through the lipid bilayer, down its concentration gradient, without help from a protein.
+
+**Passive transport**: movement of a solute down its (electro)chemical gradient (ΔG < 0); it needs no energy input but may need a transport protein as a path.
+
+**Active transport**: movement of a solute against its (electro)chemical gradient (ΔG > 0), driven by ATP hydrolysis or by another gradient.
+
+**Electrochemical gradient**: the combined driving force on an ion from its concentration difference and from the voltage across the membrane.
+
+**Transporter (carrier)**: a membrane protein that binds a specific solute and changes shape to move it across the membrane, one or a few molecules per cycle.
+
+**Alternating access**: the mechanism by which a transporter's binding site faces first one side of the membrane and then the other, never both at once.
+
+**Uniport**: transport of a single kind of solute by a transporter, always down its gradient (e.g. GLUT1).
+
+**Symport**: coupled transport of two different solutes in the same direction by one transporter (e.g. SGLT1: 2 Na⁺ + 1 glucose).
+
+**Antiport**: coupled transport of two different solutes in opposite directions by one transporter (e.g. the Na⁺/Ca²⁺ exchanger).
+
+**Secondary active transport**: uphill transport of a solute driven by the downhill flow of another ion, usually Na⁺ or H⁺, whose gradient was made by a pump.
+
+**Na⁺/K⁺ pump (Na⁺/K⁺-ATPase)**: a P-type pump in all animal cells that uses one ATP to move 3 Na⁺ out and 2 K⁺ into the cell.
+
+**P-type pump**: an ATP-driven pump that phosphorylates itself on an aspartate during each transport cycle (e.g. the Na⁺/K⁺ pump and the Ca²⁺ pumps).
+
+**ABC transporter**: a pump with two ATP-binding cassettes that uses ATP to move substrates across a membrane; in human cells mostly exporters of lipids, toxins and drugs.
+
+**P-glycoprotein (ABCB1)**: an ABC exporter that pumps many hydrophobic drugs out of cells, causing multidrug resistance in cancer and limiting drug uptake into the gut and brain.
+
+**Aquaporin**: a water channel that lets water, but not ions or H⁺, cross the membrane rapidly by osmosis.
+
+**SGLT2 inhibitor (gliflozin)**: a drug that blocks the kidney Na⁺–glucose symporter SGLT2, so glucose leaves in the urine; used in type 2 diabetes, heart failure and kidney disease.
+
+### Ion channels and membrane potential
+
+See [Ion channels and membrane potential](ion-channels/lec.qmd).
+
+**Ion channel**: a membrane protein that forms a water-filled pore through which specific ions flow rapidly down their electrochemical gradient when the channel is open.
+
+**Selectivity filter**: the narrowest part of a channel pore, whose lining atoms decide which ion can pass; in K⁺ channels it is lined by backbone carbonyl oxygens.
+
+**Gating**: the switching of a channel between closed and open states in response to a signal such as voltage, a bound ligand or mechanical force.
+
+**Voltage sensor**: a transmembrane helix carrying positive charges that moves when the membrane potential changes, and so opens or closes a voltage-gated channel.
+
+**Equilibrium (Nernst) potential**: the membrane potential at which an ion's concentration and electrical forces balance, so its net flow through open channels is zero.
+
+**Nernst equation**: $E = \frac{RT}{zF}\ln\frac{c_\text{out}}{c_\text{in}}$, which gives the equilibrium potential of an ion from its concentrations and charge.
+
+**Resting membrane potential**: the steady voltage across the plasma membrane of an unstimulated cell, about −70 mV, set mainly by open K⁺ leak channels.
+
+**Depolarisation**: a change of the membrane potential towards less negative values.
+
+**Action potential**: a brief, all-or-none electrical signal in which voltage-gated Na⁺ channels open and then voltage-gated K⁺ channels restore the resting potential.
+
+**Refractory period**: the short time after an action potential when inactivated Na⁺ channels cannot reopen, so a new action potential cannot start.
+
+**Patch clamp**: a glass pipette sealed tightly onto a membrane records the tiny currents through single ion channels or a whole cell.
+
+**CFTR**: an ATP- and phosphorylation-gated Cl⁻ channel in epithelial cells whose loss of function causes cystic fibrosis.
+
+**CFTR potentiator**: a drug, such as ivacaftor, that increases the time a CFTR channel at the cell surface spends open.
+
+**CFTR corrector**: a drug, such as elexacaftor or tezacaftor, that helps misfolded CFTR fold and leave the ER so that it reaches the plasma membrane.

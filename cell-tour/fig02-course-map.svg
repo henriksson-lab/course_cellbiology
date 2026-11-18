@@ -12,37 +12,29 @@
   <text x="225.0" y="106" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Cell and</text>
   <text x="225.0" y="126" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">methods</text>
   <text x="225.0" y="170" font-size="15" fill="#1b2a3a" text-anchor="middle">ELO 1</text>
-  <text x="225.0" y="194" font-size="15" fill="#1b2a3a" text-anchor="middle">L1–L3</text>
   <rect x="294" y="70" width="118" height="150" rx="10" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
   <text x="353.0" y="106" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Membranes</text>
   <text x="353.0" y="126" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">and transport</text>
   <text x="353.0" y="170" font-size="15" fill="#1b2a3a" text-anchor="middle">ELO 2</text>
-  <text x="353.0" y="194" font-size="15" fill="#1b2a3a" text-anchor="middle">L4–L6</text>
   <rect x="422" y="70" width="118" height="150" rx="10" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2.5"/>
   <text x="481.0" y="106" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Proteins and</text>
   <text x="481.0" y="126" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">organelles</text>
   <text x="481.0" y="170" font-size="15" fill="#1b2a3a" text-anchor="middle">ELO 4, 5</text>
-  <text x="481.0" y="194" font-size="15" fill="#1b2a3a" text-anchor="middle">L7–L13</text>
   <rect x="550" y="70" width="118" height="150" rx="10" fill="#f3f5f8" stroke="#1b2a3a" stroke-width="2.5"/>
   <text x="609.0" y="116" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Signalling</text>
   <text x="609.0" y="170" font-size="15" fill="#1b2a3a" text-anchor="middle">ELO 3</text>
-  <text x="609.0" y="194" font-size="15" fill="#1b2a3a" text-anchor="middle">L14–L17</text>
   <rect x="678" y="70" width="118" height="150" rx="10" fill="#eeeeee" stroke="#555555" stroke-width="2.5"/>
   <text x="737.0" y="116" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Cytoskeleton</text>
   <text x="737.0" y="170" font-size="15" fill="#1b2a3a" text-anchor="middle">ELO 6</text>
-  <text x="737.0" y="194" font-size="15" fill="#1b2a3a" text-anchor="middle">L18–L20</text>
   <rect x="806" y="70" width="118" height="150" rx="10" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
   <text x="865.0" y="116" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Cell cycle</text>
   <text x="865.0" y="170" font-size="15" fill="#1b2a3a" text-anchor="middle">ELO 7</text>
-  <text x="865.0" y="194" font-size="15" fill="#1b2a3a" text-anchor="middle">L21–L23</text>
   <rect x="934" y="70" width="118" height="150" rx="10" fill="#f8e9ec" stroke="#a8324a" stroke-width="2.5"/>
   <text x="993.0" y="116" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Cell death</text>
   <text x="993.0" y="170" font-size="15" fill="#1b2a3a" text-anchor="middle">ELO 8</text>
-  <text x="993.0" y="194" font-size="15" fill="#1b2a3a" text-anchor="middle">L24–L25</text>
   <rect x="1062" y="70" width="118" height="150" rx="10" fill="#fdeee4" stroke="#e8590c" stroke-width="2.5"/>
   <text x="1121.0" y="116" font-size="16" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Disease</text>
   <text x="1121.0" y="170" font-size="15" fill="#1b2a3a" text-anchor="middle">ELO 9</text>
-  <text x="1121.0" y="194" font-size="15" fill="#1b2a3a" text-anchor="middle">L26–L28</text>
   <path d="M 170 62 L 170 52 L 536 52 L 536 62" fill="none" stroke="#1b2a3a" stroke-width="1.5"/>
   <text x="353.0" y="42" font-size="17" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Compartments</text>
   <path d="M 554 62 L 554 52 L 792 52 L 792 62" fill="none" stroke="#1b2a3a" stroke-width="1.5"/>
