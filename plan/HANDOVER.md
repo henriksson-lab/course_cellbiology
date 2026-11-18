@@ -19,10 +19,11 @@ first in a new session, then `plan/schedule.md`.
   in the site and sidebar. Inheritance, energetic estimates and mitochondrial
   donation explanations were corrected; the demo starts at 1× assay time.
 - **Second session added:** cell-cycle-control, mitosis, cell-numbers, apoptosis,
-  regulated-necrosis, cancer, disease-casebook (all with demos), so 27 of 28
-  lectures are complete including mitochondria.
-- **Not built:** `drug-journey` (capstone). Its worker was also stopped by
-  safeguards before writing any files; sidebar entry removed. It remains outside this completion batch.
+  regulated-necrosis, cancer, disease-casebook (all with demos), so all 28
+  lectures are complete including mitochondria and the drug-journey capstone.
+- **Drug-journey capstone completed:** application-focused slides, quiz, study
+  questions and an offline, manually stepped map compare mRNA–LNP delivery with
+  imatinib action. It connects ELO 1–9 without an exam walkthrough.
 - **Bioinformatics modules:** eight modules are linked to their teaching blocks,
   following `plan/bioinformatics.md`. Use “module”, not “day”. Each module has a
   short overview and separate browser/report pages, downloadable student R Markdown
@@ -98,7 +99,6 @@ After a push, check the Pages run: `gh run list -R henriksson-lab/course_cellbio
 
 ## Open items / to check
 
-- Drug-journey capstone lecture remains unbuilt (see above).
 - Protein-atlas module: check the UniProt/HPA button labels by hand in a browser.
 - Optional images not downloaded (Commons rate limits) are listed in the workers' units/credits notes (mitosis: ProphaseIF, fibroblast cytokinesis, meiosis I oocyte, H2B-GFP film; cancer: multipolar spindle, FDG-PET, microinvasive DCIS).
 - Notch demo opens at 1× real time but the pattern needs time-lapse; students

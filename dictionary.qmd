@@ -904,3 +904,17 @@ See [When cell biology goes wrong: a disease casebook](disease-casebook/lec.qmd)
 **Heteroplasmy**: the presence of both normal and mutant mitochondrial DNA in one cell; disease appears above a threshold fraction.
 
 **Primary ciliary dyskinesia**: an inherited loss of axonemal dynein function, so motile cilia do not beat.
+
+### The journey of a drug through the cell
+
+See [The journey of a drug through the cell](drug-journey/lec.qmd).
+
+**Productive RNA delivery**: delivery that makes intact RNA accessible to its intracellular machinery, demonstrated here by encoded protein production rather than carrier uptake alone.
+
+**Target engagement**: interaction of a drug with its intended molecular target; measuring a downstream response alone does not establish direct binding.
+
+**Drug efflux**: export of a drug from a cell by transport proteins, which can reduce intracellular exposure.
+
+**Surface antigen**: an antigen exposed at the outer cell surface, distinct from short antigen-derived peptides displayed by MHC molecules.
+
+**Pathway bypass**: maintenance of a downstream process through an alternative route despite inhibition of the intended target.

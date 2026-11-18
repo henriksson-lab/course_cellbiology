@@ -339,14 +339,19 @@ The exam passes each ELO separately, so no ELO should be thin.
   therapy.
 
 ### L28. Capstone: the journey of a drug through the cell
-· ELO 1–9 (revision)
-- Follow one mRNA–lipid nanoparticle from injection to immune response: membrane
-  (L4), endocytosis and endosomal escape (L10), translation on the ER (L8),
-  Golgi and secretion or display (L9), signalling in the immune cell (L14–16),
-  cell death of the transfected cell (L24–25).
-- Then follow one small-molecule kinase inhibitor the same way.
-- Exam format walk-through: one G and one VG question per ELO.
-- **Pictures:** one "journey" figure, built up over the lecture.
+· ELO 1–9 (integrated application)
+- Follow an mRNA–lipid nanoparticle from uptake and endosomal escape to cytosolic
+  translation, sequence-directed ER targeting, Golgi traffic, surface antigen and
+  peptide display; preview immune recognition without assuming every transfected
+  cell dies.
+- Follow imatinib to intracellular BCR–ABL1, kinase inhibition, changes in
+  proliferation/survival and possible resistance.
+- Connect membranes, protein sorting, motors, ATP, organelle homeostasis,
+  signalling, cell cycle and death. Distinguish exposure, molecular action and
+  cell response with appropriate measurements.
+- **Pictures:** linked journey diagrams and three real images reused from earlier
+  lectures. **Demo:** manually step through either route and perturb a barrier.
+- Application questions at G and VG level; no exam-format walkthrough.
 
 ## Candidate material (not scheduled)
 

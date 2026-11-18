@@ -1,0 +1,323 @@
+---
+title: "Study questions: the journey of a drug through the cell"
+format:
+  html:
+    toc: true
+---
+
+Use the two journeys to connect mechanisms from [the lecture](lec.qmd). Draw the
+compartments and label the molecule at each step before opening a model answer.
+The [quiz](quiz.qmd) gives a shorter self-check.
+
+## G-level questions
+
+**1.** Follow an mRNA–LNP from a particle outside a cell to productive translation.
+Name the two membrane barriers, explain endocytosis and escape, and distinguish
+the paths of the lipid carrier, mRNA and encoded protein. `[ELO 2, ELO 4, ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The plasma membrane separates extracellular space from cytosol. **Endocytosis**
+encloses the particle in an intracellular vesicle, so the cargo crosses the cell
+boundary without being released into cytosol. The **endosomal membrane** is a
+second barrier: intact mRNA must become accessible to cytosolic ribosomes before
+it is degraded. Ionisable carrier lipids can favour membrane interactions during
+acidification; the exact escape route depends on formulation and cell type.
+The **lipids** can traffic or be metabolised separately, the **mRNA** is translated
+in the cytoplasm and eventually degraded, and the **protein** follows its own
+sequence-dependent targeting route. Neither carrier uptake nor persistent lipid
+fluorescence demonstrates cytosolic delivery of functional mRNA.
+:::
+
+---
+
+**2.** A delivered mRNA encodes a protein with a cleavable ER signal peptide, a
+large antigen domain and a membrane anchor. Explain how the antigen domain
+reaches the ER lumen and what can happen if it fails to fold. Why must you inspect
+the remaining sequence before predicting the effect of deleting the signal peptide?
+`[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Translation begins on a cytosolic ribosome. **SRP** recognises the emerging signal,
+directs the ribosome to the ER, and translation feeds the chain through a
+**translocon**. The signal is cleaved; the antigen domain enters the lumen, where
+chaperones help it fold and N-glycans can be added. Its membrane anchor retains
+it in the bilayer. Failed folding causes retention and can lead to **ER-associated
+degradation**: export to cytosol, ubiquitination and proteasomal degradation.
+Deleting a cleavable signal does not necessarily prevent all ER targeting:
+a remaining hydrophobic segment may act as an **internal signal-anchor**, possibly
+with altered topology. A simple “cytosolic protein” prediction requires the
+assumption that no functional alternative targeting signal remains.
+:::
+
+---
+
+**3.** Trace a correctly folded membrane antigen from ER to cell surface. Mark
+which side contains its glycosylated antigen domain and which contains its
+cytosolic tail at each stage. Give a way to test the final orientation.
+`[ELO 1, ELO 2, ELO 4, ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+ER → transport carriers → Golgi → carriers from the trans-Golgi network → plasma
+membrane. The antigen domain faces the **lumen** of each compartment; the tail
+faces the **cytosol**. Fusion with the plasma membrane exposes the carrier lumen
+to the outside, placing antigen and glycans **extracellularly**. Test with
+antibodies against the external domain and cytosolic tail: in intact viable,
+non-permeabilised cells only the external epitope is accessible. Permeabilisation
+allows both to be detected. Include antibody-specificity and membrane-integrity
+controls. A total-protein measurement alone cannot establish surface orientation.
+:::
+
+---
+
+**4.** Explain how cytoskeletal transport and organelle homeostasis support the
+journey. Give two reasons a global ATP-depletion experiment cannot isolate a
+single failed step. `[ELO 5, ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Microtubules and motors position organelles and move many carriers; actin and
+myosins contribute to local traffic. Motor transport works with docking and
+fusion machinery rather than replacing it. Energy supports translation, chaperone
+cycles and motor activity. ATP-driven pumps establish organelle pH and calcium
+conditions, so mitochondria and glycolysis support several steps indirectly.
+ATP depletion can therefore impair **both protein production and trafficking**,
+while also disrupting compartment chemistry or damaging cells. A reduced surface
+signal does not distinguish these effects. Use a time course, viability controls
+and more focused perturbations, measuring the earliest affected event.
+:::
+
+---
+
+**5.** Compare whole-antigen display with classical peptide–MHC-I display. Which
+route uses secretory transport, and which uses the proteasome? Why does neither
+measurement alone establish a complete immune response? `[ELO 3, ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A whole membrane antigen folds and reaches the surface through **ER and Golgi
+traffic**. In the classical MHC-I route, the **proteasome** generates peptides;
+peptides are transported into the ER, loaded onto MHC-I, and peptide–MHC-I complexes
+also pass through the secretory pathway to the surface. Thus secretory transport
+contributes to both, while proteolysis is central to peptide generation. Folded
+antigen and peptide–MHC engage different immune receptors. Immune responses also
+depend on the presenting cell, receptor specificity, costimulation, cytokines
+and other interactions. Antigen production in one cell is evidence of expression,
+not proof of immune protection. Other presentation routes are covered in Immunologi.
+:::
+
+---
+
+**6.** Follow imatinib from outside a leukaemia cell to inhibition of BCR–ABL1.
+Explain why total cellular drug, target engagement and downstream phosphorylation
+are different measurements. `[ELO 1, ELO 2, ELO 3, ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Available extracellular drug enters the cell; entry, export, binding and
+sequestration determine the amount accessible at the target. Imatinib binds the
+BCR–ABL1 kinase domain and reduces its signalling. **Total cellular drug** includes
+bound or sequestered material and does not automatically give free target-site
+concentration. **Target engagement** tests interaction with the intended protein.
+**Phosphorylation** reports kinase or pathway action, which may change indirectly.
+A validated target-dependent readout, total-protein controls and an appropriate
+time course help connect the measurements. This route acts on an existing protein
+and does not require translation of a new therapeutic protein or Golgi export.
+:::
+
+---
+
+**7.** Explain how kinase inhibition can cause cell-cycle arrest or intrinsic
+apoptosis. Which measurements distinguish those outcomes, and why is a smaller
+cell population insufficient evidence of death? `[ELO 1, ELO 3, ELO 7, ELO 8]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Reduced mitogenic signalling can lower cyclin/CDK activity and prevent cell-cycle
+progression. Reduced survival signalling can shift BCL-2-family control towards
+BAX/BAK activation, mitochondrial outer-membrane permeabilisation, cytochrome c
+release and caspase activation. The outcome depends on cellular dependencies
+and the state of the death machinery. Measure **DNA synthesis or cell-cycle
+profiles** for proliferation and **caspase activation with complementary viability
+or membrane-integrity measurements** for death. Compare time courses and controls.
+A population can become smaller relative to control simply because it divides
+more slowly; this does not require cells to die.
+:::
+
+---
+
+**8.** Compare three resistance mechanisms: increased drug efflux, a resistant
+kinase and a downstream survival bypass. Predict whether each can preserve growth
+and whether it must prevent inhibition of the intended kinase. `[ELO 2, ELO 3, ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Increased efflux** can lower target-site exposure so kinase activity remains
+sufficient. **Target resistance**, such as a mutation reducing imatinib sensitivity,
+can preserve kinase activity despite adequate exposure. **A downstream bypass**
+can sustain growth or survival even when the intended kinase is inhibited.
+All can reduce treatment response, but only the third explicitly allows intact
+target inhibition with continued downstream function. Test exposure, target
+sequence/abundance and target action before assigning the mechanism; pathways
+can change together. Clinical resistance is not diagnosed from a cell count alone.
+:::
+
+## VG-level questions
+
+**9. [VG]** Two mRNA formulations give the following results in equal numbers of
+viable cells at the same time. Values are normalised to formulation A. Interpret
+the difference and design two measurements to distinguish competing explanations.
+`[ELO 1, ELO 2, ELO 4]`
+
+| Readout | A | B |
+|---|---:|---:|
+| Cell-associated lipid fluorescence | 100 | 180 |
+| Total encoded protein | 100 | 25 |
+
+::: {.callout-note collapse="true" title="Model answer"}
+B has **more cell-associated lipid label but less protein expression**. It does
+not follow that B delivered more intact mRNA to cytosol. Possibilities include
+more surface-bound or endosomally trapped carrier, separation of lipid and RNA,
+RNA degradation, or impaired translation. Measure (1) cargo location and cytosolic
+access, for example using a validated access reporter with membrane-damage
+controls, and (2) intact RNA and/or translation competence with an independent
+control mRNA delivered by another method. Surface-label removal or quenching and
+endosomal colocalisation can distinguish some uptake artefacts. Viability
+normalisation does not exclude sublethal stress. The table alone cannot uniquely
+locate the defect or establish which formulation would work better in vivo.
+:::
+
+---
+
+**10. [VG]** After a treatment, total antigen remains near control but surface
+antigen falls sharply. RNA delivery is unchanged. Compare an ER-folding defect
+with an ER-to-Golgi traffic block. Design a test that distinguishes them, including
+a control and a limitation. `[ELO 1, ELO 4, ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Both can lower surface delivery while leaving initial translation intact.
+A **folding defect** can retain antigen in the ER and eventually send it to ERAD;
+a **traffic block** can retain folded cargo before Golgi arrival. Use a time-resolved
+pulse-chase or equivalent synthesis/chase experiment, combined with ER/Golgi
+localisation and a folding- or conformation-sensitive assay. Include an unrelated
+secretory cargo: a general transport block should affect that cargo too, whereas
+a cargo-specific folding mutation may not. Endo-H sensitivity can support failure
+to acquire Golgi processing but cannot alone distinguish the two hypotheses,
+because both ER-retained proteins may remain sensitive. Check synthesis,
+membrane integrity and viability. Imaging localisation without a folding test
+cannot establish whether the retained cargo is correctly folded.
+:::
+
+---
+
+**11. [VG]** Three leukaemia cell lines receive the same extracellular inhibitor.
+A validated target-dependent phosphorylation readout and DNA synthesis are measured
+relative to vehicle controls. Propose a next test for each line. Do not assign a
+unique molecular mechanism from the table. `[ELO 1, ELO 3, ELO 7, ELO 8, ELO 9]`
+
+| Line | Target-dependent phosphorylation | DNA synthesis |
+|---|---:|---:|
+| X | 15 % | 20 % |
+| Y | 95 % | 95 % |
+| Z | 15 % | 90 % |
+
+::: {.callout-note collapse="true" title="Model answer"}
+**X:** pathway action and DNA synthesis both fall, consistent with target-dependent
+proliferation. Measure cell-cycle distribution and apoptosis separately to
+distinguish arrest from death. **Y:** little pathway inhibition; measure cellular
+exposure and target engagement, then test target sequence/abundance. Low exposure
+and a resistant or abundant target are alternatives, not conclusions. **Z:** the
+intended pathway readout falls while DNA synthesis persists; investigate alternative
+growth signalling, incomplete duration of inhibition or assay timing. Test a
+candidate bypass by an independent perturbation rather than merely correlating
+its expression. Use matched time courses, replicate wells, total-protein controls
+and viable-cell counts. Neither DNA synthesis nor phosphorylation alone establishes
+long-term response or clinical efficacy.
+:::
+
+## Explore {#explore}
+
+**Demo: drug journey.** Choose **mRNA–LNP** or **Imatinib** and use **Next** and
+**Previous**, or select a numbered stop. The map follows a mechanism one event at
+a time; it has no automatic biological clock. The endpoint readouts are
+**qualitative predictions**, not measured data or probabilities of treatment success.
+Choose a **What-if** scenario only after making your own prediction. Switching
+journeys returns to its first stop and Baseline; changing a scenario keeps the
+current stop so you can compare it directly.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="drugjourney"></div>
+<script src="../demos/dist/drugjourney.js"></script>
+```
+
+**E1.** Select **mRNA–LNP**, Baseline. Step through all seven stops. At **Escape**,
+**Translation**, **ER/Golgi** and **Surface/peptides**, name the molecule being
+followed and which side of a membrane it occupies. Does the mRNA pass through
+the Golgi? `[ELO 2, ELO 4, ELO 5]`
+
+**E2.** Predict, then select **Impaired endosomal escape**. Which readouts could
+still look successful even though protein expression falls? Why would increasing
+particle fluorescence not resolve the problem? `[ELO 1, ELO 2, ELO 4]`
+
+**E3. [VG]** Compare **No ER-targeting signal** with **Secretory traffic block**.
+Which early events can remain intact? Why must the signal scenario assume that
+no alternative signal-anchor redirects the protein? Does failed whole-antigen
+surface display necessarily eliminate every antigen-derived peptide?
+`[ELO 4, ELO 5]`
+
+**E4.** Switch to **Imatinib** and follow the five stops. Compare **Increased drug
+efflux** and **Resistant target**. Which measurement helps distinguish the two
+assumptions, and which would show whether kinase activity actually fell?
+`[ELO 1, ELO 2, ELO 3, ELO 9]`
+
+**E5. [VG]** The kinase readout falls but cells remain alive. Explain why this
+need not contradict the drug's molecular mechanism. Choose separate tests for
+cell-cycle arrest, apoptosis and a survival bypass, then explain what the map
+cannot decide for you. `[ELO 1, ELO 3, ELO 7, ELO 8, ELO 9]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+**E1.** Escape moves intact **mRNA from endosomal lumen to cytosol**, where
+ribosomes can translate it. Translation starts in cytosol. The emerging protein's
+ER signal directs the growing chain into/along the ER membrane; the antigen domain
+faces the **ER lumen**. The protein travels through Golgi and secretory carriers
+to the surface, where that domain faces **outside**. Peptide–MHC display is a
+separate processing route. The mRNA and LNP do not need to travel through the
+Golgi with the antigen.
+
+**E2.** Particle association and uptake can remain high, while cytosolic access
+and expression are low. A fluorescent lipid reports its own location, not
+necessarily that of intact mRNA. Measure cargo integrity and cytosolic access,
+with endosomal, membrane-damage and viability controls.
+
+**E3.** Both scenarios can preserve uptake, escape and initial translation.
+In the signal scenario, ER targeting is assumed to fail; in the traffic scenario,
+protein can enter the ER but fail to reach its later destination. Real sequences
+can contain internal signal-anchors, so deleting a signal peptide is not a
+universal way to prevent ER entry. A protein that fails to appear intact at the
+surface can still provide **proteasomal peptides**, depending on its synthesis,
+degradation and the cell's presentation machinery. The simple map cannot predict
+the full set of peptide–MHC complexes or an immune response.
+
+**E4.** Increased efflux assumes lower drug available at the target; target
+resistance assumes reduced inhibitor sensitivity. Compare exposure and target
+engagement, sequence/abundance and a validated kinase-action readout. Similar
+endpoint growth patterns do not distinguish the causes. The scenario selector
+chooses a mechanism for illustration; it has not diagnosed one from data.
+
+**E5.** Cells can arrest without immediately dying, persist through alternative
+survival routes, or respond on a different timescale. Assess DNA synthesis and
+cell-cycle profiles for arrest, caspase activation plus complementary viability
+measures for apoptosis, and controlled perturbation of a candidate pathway for
+a bypass. The map supplies a causal story and predictions; it does not model
+cell-state diversity, actual drug concentrations or clinical response.
+:::
+
+## Selected primary sources
+
+- [Gilleron et al., 2013](https://doi.org/10.1038/nbt.2612): imaging of LNP-delivered
+  **siRNA** uptake, trafficking and escape; used here for the distinction between
+  uptake and productive delivery, not as a numerical vaccine model.
+- [Pardi et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4624045/): expression
+  kinetics of LNP-delivered modified mRNA in mice; reporter expression is a
+  different measurement from particle uptake.
+- [Druker et al., 2001](https://pubmed.ncbi.nlm.nih.gov/11287972/): early clinical
+  evidence for inhibiting BCR–ABL in CML.
+- [Gorre et al., 2001](https://pubmed.ncbi.nlm.nih.gov/11423618/): target mutation
+  or amplification associated with imatinib resistance in the studied samples.
+
+[Image and diagram credits](../credits.qmd#drug-journey).

@@ -114,6 +114,10 @@ may be reused under the course licence (see the course authors page).
 
 {{< include disease-casebook/_credits.md >}}
 
+## The journey of a drug through the cell {#drug-journey}
+
+{{< include drug-journey/_credits.md >}}
+
 ## Bioinformatics: where does a protein live? {#bioinfo-protein-atlas}
 
 {{< include bioinfo-protein-atlas/_credits.md >}}

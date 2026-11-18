@@ -24,6 +24,7 @@ make typecheck     # tsc --noEmit (esbuild does not check types)
 | `frap` | `membrane-structure/questions.qmd#explore` (linked from "How do we know? Membrane proteins move") | Thousands of molecules doing 2D random walks (WebGL); tap to bleach, recovery curve fitted with the exact circular-spot curve (mobile fraction, t½, D); immobile fraction, qualitative fluidity sliders, follow one molecule; Frye–Edidin cell-fusion mode |
 | `uptake` | `membrane-transport/questions.qmd#explore` (linked from "How do we know? Uptake assays…") | Glucose and Na⁺ particles crossing the bilayer, GLUT or SGLT (4-state alternating-access cycle, detailed balance), side by side with the same model as concentrations and fluxes; pump/ouabain, outside Na⁺, gliflozin; seeded assay series with Michaelis–Menten fit |
 | `cellbattery` | `ion-channels/questions.qmd#explore` (linked from "The voltage follows the most open channels") | Exact Nernst and GHK: voltage scale with E lines and Vm marker, concentrations and permeabilities, presets (rest, hyperkalaemia, Na⁺ channels open, lidocaine, CFTR); optional particle panel (`particles.ts`, off by default, removable) |
+| `drugjourney` | `drug-journey/questions.qmd#explore` | Manually step through mRNA–LNP delivery or imatinib action; compare uptake, expression, surface display or target inhibition, with qualitative barrier/resistance scenarios |
 | `doseresponse` | not embedded yet (for the signalling lectures) | Occupancy and response curves; partial agonist, competitive and non-competitive antagonist |
 
 ## Layout

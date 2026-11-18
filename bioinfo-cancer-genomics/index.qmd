@@ -17,7 +17,8 @@ Compare mutation positions in an oncogene and a tumour suppressor, then write a
 short report that combines evidence from at least three databases. **ELO 8, 9.**
 
 Builds on [cell death beyond apoptosis](../regulated-necrosis/lec.qmd),
-[cancer](../cancer/lec.qmd), and the [disease casebook](../disease-casebook/lec.qmd).
+[cancer](../cancer/lec.qmd), the [disease casebook](../disease-casebook/lec.qmd),
+and [the drug-journey capstone](../drug-journey/lec.qmd).
 Allow about 3–4 hours for the guided activities; the independent report may need more time.
 
 1. [In the browser: mutation patterns and death proteins](browser.qmd).

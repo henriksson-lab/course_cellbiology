@@ -355,6 +355,16 @@ website:
                 href: disease-casebook/questions.qmd
               - text: "Demo: diagnose the defect"
                 href: disease-casebook/questions.qmd#explore
+          - section: "The journey of a drug through the cell"
+            contents:
+              - text: "Lecture (slides)"
+                href: drug-journey/lec.qmd
+              - text: "Quiz"
+                href: drug-journey/quiz.qmd
+              - text: "Study questions"
+                href: drug-journey/questions.qmd
+              - text: "Demo: drug journey"
+                href: drug-journey/questions.qmd#explore
           - text: "Bioinformatics: read the mutations"
             href: bioinfo-cancer-genomics/index.qmd
 

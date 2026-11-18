@@ -1,0 +1,146 @@
+---
+title: "Quiz: the journey of a drug through the cell"
+format:
+  html:
+    toc: true
+---
+
+Follow the two routes from [the lecture](lec.qmd). Try each question before opening
+the hint or answer. ELO tags show which mechanisms you are connecting.
+
+---
+
+**Q1.** A cell has many fluorescent LNP-labelled dots but little encoded protein.
+Why does this not prove that translation is defective? `[ELO 1, ELO 2, ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which side of the endosomal membrane can a ribosome reach? What exactly was labelled?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The label may be in **endosomes**, while the mRNA remains inaccessible to cytosolic
+ribosomes. Lipid and RNA labels may also separate. Other possibilities include RNA
+degradation or a later translation defect. Measure **cytosolic cargo access** and
+**intact RNA**, then encoded protein; intracellular fluorescence alone does not
+identify the failed step.
+:::
+
+---
+
+**Q2.** Does delivered mRNA need to enter the nucleus to make a membrane antigen?
+Where does translation begin, and what directs the protein into the ER? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Distinguish the route of the mRNA from the route of its growing protein.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+No nuclear entry is required. Translation starts on a **cytosolic ribosome**.
+An emerging **ER-targeting signal in the protein** is recognised by SRP, directing
+the ribosome to an ER translocon. Translation and translocation continue together.
+The mRNA's lipid carrier is not taken through the ER and Golgi with the antigen.
+:::
+
+---
+
+**Q3.** A membrane antigen's glycosylated domain faces the ER lumen. Which side
+will it face at the cell surface, and why? `[ELO 2, ELO 4, ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Do transport vesicles turn a membrane inside out?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The domain and its glycans face **outside the cell**. Budding and fusion preserve
+orientation: ER lumen → carrier lumen → Golgi lumen → carrier lumen → extracellular
+space. The cytosolic tail stays cytosolic. The protein does not flip across the
+bilayer on the way.
+:::
+
+---
+
+**Q4.** Give one way microtubules and one way ATP supply support this antigen's
+journey. Why might a severe energy deficit affect several steps? `[ELO 5, ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of carriers, motors, chaperones and pumps.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Microtubules are tracks for **motor-driven organelle and carrier movement**.
+ATP powers motors and chaperones and supports pumps maintaining pH and calcium
+stores; translation also requires energy. A severe deficit can therefore impair
+translation, folding, transport and compartment conditions at once. Low surface
+expression after ATP depletion does not isolate one delivery defect.
+:::
+
+---
+
+**Q5.** Is a whole antigen at the plasma membrane the same as an antigen peptide
+bound to MHC-I? Name one cellular process needed for each display. `[ELO 3, ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Folded protein versus a short fragment of a protein.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+No. The **whole membrane antigen** is a folded protein delivered through the
+secretory pathway. A **peptide–MHC-I complex** displays a short protein fragment;
+the classical pathway uses proteasomal peptide generation, transport into the ER
+and loading onto MHC-I before surface delivery. Antibody/B-cell recognition and
+T-cell recognition use different structures. Signalling, costimulation and cell
+context determine the response; this is a preview of Immunologi.
+:::
+
+---
+
+**Q6.** Why can measuring total intracellular imatinib fail to predict kinase
+inhibition? What additional measurement would help? `[ELO 1, ELO 2, ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Is all measured drug freely available beside the kinase?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Total cellular drug includes material bound or sequestered away from its target;
+the **free concentration at BCR–ABL1** may be different. A changed binding site
+can also lower sensitivity. Add a **target-engagement assay** or a validated
+kinase/phosphorylation readout, with total-protein and viability controls. A
+phosphorylation readout measures pathway action, not direct binding by itself.
+:::
+
+---
+
+**Q7.** Imatinib reduces a BCR–ABL1-dependent phosphorylation readout. Does that
+prove the cells have undergone apoptosis? Explain how you would distinguish
+arrest from death. `[ELO 1, ELO 7, ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Separate molecular action, proliferation and cell fate.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+No. Pathway inhibition may cause **cell-cycle arrest**, apoptosis or persistence,
+depending on the cell. Measure DNA synthesis or cell-cycle distribution to assess
+proliferation, and use caspase activation together with appropriate viability or
+membrane-integrity readouts to assess death. A lower cell count alone could reflect
+slower division rather than increased death.
+:::
+
+---
+
+**Q8.** A resistant cell has normal drug exposure but its BCR–ABL1 remains active.
+Suggest a target-level explanation. How would a downstream bypass differ?
+`[ELO 3, ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What can change at the kinase, and what can change after it?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+A **kinase-domain mutation**, such as T315I in the imatinib example, can reduce
+inhibitor sensitivity; increased target abundance is another possibility. Test
+sequence, protein abundance and inhibitor sensitivity. With a **downstream
+bypass**, the intended kinase could be inhibited while another route maintains
+growth or survival. Compare target action with downstream signals and cell fate.
+:::
