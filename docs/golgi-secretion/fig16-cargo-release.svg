@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a1b2a3a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect x="10.0" y="34.0" width="190.0" height="190.0" rx="6" fill="#0b0f14" stroke="#495057" stroke-width="2" />
+<ellipse cx="105.0" cy="129.0" rx="82" ry="72" fill="none" stroke="#495057" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="87.0" cy="135.0" r="26.0" fill="#0b0f14" stroke="#343a40" stroke-width="1.5" />
+<path d="M 46.0 101.1 L 53.4 83.2" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 83.0 81.3 L 55.2 89.4" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 137.7 119.0 L 130.2 136.6" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 47.4 141.6 L 45.0 140.4" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 126.2 137.8 L 137.5 129.0" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 90.7 103.3 L 97.5 113.6" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 60.1 114.2 L 41.6 125.6" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 96.9 167.3 L 75.8 176.2" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 71.2 188.3 L 67.3 191.8" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 104.9 187.2 L 94.2 200.2" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 120.1 112.8 L 109.7 114.9" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 107.9 158.1 L 115.0 155.7" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 142.0 136.0 L 136.2 129.1" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 107.2 97.7 L 98.7 95.6" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 77.5 107.3 L 90.9 117.8" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 86.9 83.4 L 55.0 83.2" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 52.5 167.7 L 77.8 167.2" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 114.1 184.7 L 135.2 180.1" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 144.9 111.7 L 136.6 106.3" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 29.3 127.3 L 23.5 148.0" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 104.9 85.2 L 74.8 73.2" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 123.6 155.1 L 129.9 164.7" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 53.0 180.5 L 53.7 175.5" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 71.5 164.5 L 87.1 159.0" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 62.4 83.0 L 51.9 101.0" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<path d="M 137.0 131.4 L 129.1 128.6" fill="none" stroke="#69db7c" stroke-width="2.2" stroke-opacity="0.85"/>
+<circle cx="87.0" cy="135.0" r="28" fill="none" stroke="#69db7c" stroke-width="3" stroke-opacity="0.9"/>
+<text x="105.0" y="24.0" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >0 min</text>
+<text x="105.0" y="250.0" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >biotin added: all in ER</text>
+<rect x="215.0" y="34.0" width="190.0" height="190.0" rx="6" fill="#0b0f14" stroke="#495057" stroke-width="2" />
+<ellipse cx="310.0" cy="129.0" rx="82" ry="72" fill="none" stroke="#495057" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="292.0" cy="135.0" r="26.0" fill="#0b0f14" stroke="#343a40" stroke-width="1.5" />
+<path d="M 314.0 107.0 q 22 -4 30 18 q 4 18 -10 30" fill="none" stroke="#69db7c" stroke-width="10" stroke-linecap="round"/>
+<path d="M 314.0 107.0 q 22 -4 30 18 q 4 18 -10 30" fill="none" stroke="#d3f9d8" stroke-width="3" stroke-linecap="round"/>
+<circle cx="292.0" cy="135.0" r="28" fill="none" stroke="#69db7c" stroke-width="1.5" stroke-opacity="0.35"/>
+<text x="310.0" y="24.0" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >≈ 15 min</text>
+<text x="310.0" y="250.0" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >Golgi (next to nucleus)</text>
+<rect x="420.0" y="34.0" width="190.0" height="190.0" rx="6" fill="#0b0f14" stroke="#495057" stroke-width="2" />
+<ellipse cx="515.0" cy="129.0" rx="82" ry="72" fill="none" stroke="#495057" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="497.0" cy="135.0" r="26.0" fill="#0b0f14" stroke="#343a40" stroke-width="1.5" />
+<ellipse cx="515.0" cy="129.0" rx="82" ry="72" fill="none" stroke="#69db7c" stroke-width="4"/>
+<circle cx="555.0" cy="99.0" r="3.5" fill="#69db7c" stroke="none" stroke-width="2" />
+<circle cx="567.0" cy="149.0" r="3.5" fill="#69db7c" stroke="none" stroke-width="2" />
+<circle cx="525.0" cy="173.0" r="3.5" fill="#69db7c" stroke="none" stroke-width="2" />
+<circle cx="545.0" cy="131.0" r="3.5" fill="#69db7c" stroke="none" stroke-width="2" />
+<path d="M 519.0 107.0 q 22 -4 30 18 q 4 18 -10 30" fill="none" stroke="#69db7c" stroke-width="4" stroke-opacity="0.35" stroke-linecap="round"/>
+<text x="515.0" y="24.0" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >≈ 45 min</text>
+<text x="515.0" y="250.0" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >plasma membrane</text>
+<text x="310.0" y="290.0" font-size="15" text-anchor="middle" font-weight="normal" fill="#868e96" >schematic frames of GFP-tagged cargo in a living cell</text>
+<rect x="640.0" y="10.0" width="350.0" height="310.0" rx="10" fill="#ffffff" stroke="#ced4da" stroke-width="1.5" />
+<text x="815.0" y="38.0" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >RUSH: hook and release</text>
+<rect x="655.0" y="50.0" width="320.0" height="100.0" rx="0" fill="#e6f3f5" stroke="none" stroke-width="2" />
+<path d="M 655 130 L 975 130" fill="none" stroke="#2a7f8f" stroke-width="11" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M 655 130 L 975 130" fill="none" stroke="#e6f3f5" stroke-width="4.5" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="940.0" y="152.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#2a7f8f" >ER membrane</text>
+<text x="940.0" y="68.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#2a7f8f" >ER lumen</text>
+<rect x="700.0" y="124.0" width="10.0" height="22.0" rx="3" fill="#868e96" stroke="none" stroke-width="2" />
+<rect x="690.0" y="90.0" width="30.0" height="30.0" rx="5" fill="#adb5bd" stroke="#495057" stroke-width="2" />
+<text x="705.0" y="110.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >S</text>
+<circle cx="750.0" cy="105.0" r="16.0" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1.5" />
+<rect x="720.0" y="100.0" width="16.0" height="10.0" rx="0" fill="#ffd43b" stroke="#1b2a3a" stroke-width="1" />
+<text x="780.0" y="84.0" font-size="14" text-anchor="start" font-weight="normal" fill="#1b2a3a" >cargo-GFP + SBP tag</text>
+<text x="780.0" y="102.0" font-size="14" text-anchor="start" font-weight="normal" fill="#1b2a3a" >stuck to streptavidin (S)</text>
+<rect x="655.0" y="180.0" width="320.0" height="100.0" rx="0" fill="#e6f3f5" stroke="none" stroke-width="2" />
+<path d="M 655 260 L 975 260" fill="none" stroke="#2a7f8f" stroke-width="11" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M 655 260 L 975 260" fill="none" stroke="#e6f3f5" stroke-width="4.5" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="940.0" y="282.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#2a7f8f" >ER membrane</text>
+<text x="940.0" y="198.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#2a7f8f" >ER lumen</text>
+<rect x="700.0" y="254.0" width="10.0" height="22.0" rx="3" fill="#868e96" stroke="none" stroke-width="2" />
+<rect x="690.0" y="220.0" width="30.0" height="30.0" rx="5" fill="#adb5bd" stroke="#495057" stroke-width="2" />
+<text x="705.0" y="240.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >S</text>
+<path d="M 706 214 l 7 -4 l 7 4 l 0 8 l -7 4 l -7 -4 z" fill="#ff922b" stroke="#1b2a3a" stroke-width="1"/>
+<text x="740.0" y="212.0" font-size="14" text-anchor="start" font-weight="normal" fill="#d9480f" >+ biotin binds S</text>
+<circle cx="890.0" cy="240.0" r="18.0" fill="#ffffff" stroke="#3b5bdb" stroke-width="4" />
+<circle cx="890.0" cy="240.0" r="18.0" fill="none" stroke="#ffffff" stroke-width="1.4" />
+<circle cx="890.0" cy="240.0" r="7.0" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1" />
+<line x1="780.0" y1="238.0" x2="862.0" y2="238.0" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#a1b2a3a)"/>
+<text x="660.0" y="286.0" font-size="14" text-anchor="start" font-weight="normal" fill="#1b2a3a" >cargo leaves in COPII vesicles</text>
+</svg>

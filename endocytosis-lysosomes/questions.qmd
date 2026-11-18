@@ -1,0 +1,144 @@
+---
+title: "Study questions: endocytosis, lysosomes and autophagy"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** Describe clathrin-mediated endocytosis in four steps. Name the protein that chooses the cargo and the protein that cuts the vesicle free. `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(1) **Adaptor proteins** (AP2) on the inner face of the plasma membrane bind short **sorting signals** in the cytosolic tails of receptors (for example NPxY in the LDL receptor). This is how cargo is chosen. (2) **Clathrin**, a three-legged protein, binds the adaptors and assembles into a curved lattice that **bends the membrane** into a coated pit. (3) **Dynamin**, a GTPase, forms a ring around the neck of the pit and, using GTP, **pinches off** the coated vesicle (about 100 nm). (4) The clathrin coat is **removed** (by an ATP-using chaperone), and the uncoated vesicle **fuses** with an early endosome. The whole process takes about a minute.
+:::
+
+---
+
+**2.** Describe the LDL receptor cycle, from LDL in the blood to cholesterol in the cell. Explain why one receptor can take in many LDL particles. `[ELO 4]` `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The **LDL receptor** in the plasma membrane binds **apoB** on an LDL particle. Its **NPxY** tail signal brings it into a **clathrin-coated pit**; dynamin pinches off the vesicle, which loses its coat and fuses with the **early (sorting) endosome**. The endosome is acidified by the **V-ATPase** to about pH 6; at this pH the receptor changes shape and **releases LDL**. The empty receptor is carried back to the surface in **recycling** tubules and vesicles, while LDL stays in the lumen, moves on through the late endosome to the **lysosome**, and is digested: cholesterol esters are split and **free cholesterol** leaves the lysosome for the ER and membranes. Because the receptor is **not degraded** with its cargo but recycles (a round trip of about 10 minutes, over 100 trips in its life), one receptor brings in many LDL particles.
+:::
+
+---
+
+**3.** Name the compartments of the endocytic pathway in order, with their approximate pH. Which protein sets the pH, and why does the pH matter? Give two examples. `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Endocytic vesicle (about 7.4, like the outside) → **early endosome** (6.0–6.5) → **late endosome / multivesicular body** (5.0–5.5) → **lysosome** (4.5–5). The **V-ATPase**, an ATP-driven proton pump, pumps H⁺ into the lumen (chloride channels balance the charge). The pH matters because (1) acid makes receptors **release their cargo**: LDL from the LDL receptor, iron from transferrin, lysosomal enzymes from the M6P receptor; so receptors can recycle; and (2) the lysosomal **acid hydrolases** work best at pH 4.5–5, so digestion needs the acid (and they are nearly inactive if they leak into the cytosol at pH 7.2).
+:::
+
+---
+
+**4.** In the early endosome, the LDL receptor, the transferrin receptor and the EGF receptor meet different fates. Describe what happens to each receptor and its ligand. `[ELO 4]` `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**LDL receptor**: acid releases LDL; the receptor **recycles** to the surface; LDL goes to the **lysosome** and is digested. **Transferrin receptor**: acid releases **iron**, which is transported to the cytosol; the empty transferrin stays bound to the receptor and **both recycle**; at pH 7.4 at the surface transferrin is released. **EGF receptor**: after binding EGF it is tagged with **ubiquitin**; the ESCRT machinery sorts it into the **internal vesicles** of the late endosome (multivesicular body), so it stops signalling, and it is **destroyed** in the lysosome together with EGF. This switches off the growth signal.
+:::
+
+---
+
+**5.** How do newly made lysosomal enzymes reach the lysosome? Explain what goes wrong in I-cell disease. `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Lysosomal enzymes are made on the **ER** and glycosylated like secreted proteins. In the **cis Golgi** an enzyme (GlcNAc phosphotransferase) recognises a patch on the folded lysosomal enzyme and adds a phosphate to mannose: the **mannose-6-phosphate (M6P)** tag. In the **trans Golgi network**, **M6P receptors** bind the tag at neutral pH and collect the enzymes into **clathrin-coated vesicles**, which fuse with **late endosomes**. At pH about 5.5 the enzyme **lets go**, the phosphate is removed, and the receptor **returns to the Golgi**. The endosome matures into or fuses with the lysosome. Enzymes that escape to the cell surface can be caught by M6P receptors there and endocytosed. In **I-cell disease** the phosphotransferase is defective, so no tag is added: the enzymes follow the default route and are **secreted** into the blood, and the lysosomes, lacking enzymes, fill with undigested material ("inclusions").
+:::
+
+---
+
+**6.** Compare clathrin-mediated endocytosis, macropinocytosis and phagocytosis: size, what is taken up, what drives it and which cells use it. `[ELO 4]` `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+| | Clathrin-mediated | Macropinocytosis | Phagocytosis |
+|---|---|---|---|
+| Vesicle size | ~0.1 µm | 0.2–5 µm | > 0.5 µm (as big as the particle) |
+| What | specific cargo bound to receptors with tail signals | extracellular fluid and what is dissolved in it, unselective | particles: bacteria, dead cells, debris |
+| Driven by | clathrin coat, adaptors, dynamin | actin-driven membrane ruffles that close | actin-driven pseudopods, triggered by receptors (Fc, complement, "eat-me" phosphatidylserine) |
+| Cells | all cells | most cells; very active in macrophages and some cancer cells | specialised phagocytes: macrophages, neutrophils |
+
+All three deliver their content to endosomes or lysosomes for digestion.
+:::
+
+---
+
+**7.** Describe autophagy from start to finish, and explain how it is controlled by nutrients. `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A flat **double-membrane** cup, the **phagophore**, forms in the cytosol (partly from ER membrane) and grows around a portion of cytosol or a specific target (damaged mitochondrion, protein aggregate, bacterium). It closes into an **autophagosome** with two membranes, which **fuses with a lysosome**. The acid hydrolases digest the inner membrane and the contents, and **amino acids, lipids and sugars** are exported back to the cytosol for reuse. The kinase **mTORC1**, on the lysosome surface, senses amino acids and growth signals: when nutrients are plentiful it is active and **blocks** autophagy; in **starvation** (or with **rapamycin**) it is inactive and autophagy is **switched on**, so the cell can recycle its own material to survive.
+:::
+
+---
+
+**8.** Explain how statins and PCSK9 inhibitors lower blood LDL. Name the molecular target of each and the effect on the LDL receptor. `[ELO 4]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Statins** inhibit **HMG-CoA reductase**, the rate-limiting enzyme of cholesterol synthesis in the ER of liver cells. Cholesterol in the ER falls, the transcription factor **SREBP2** is activated and **more LDL receptors** are made. More receptors at the liver cell surface take more LDL out of the blood (about 30–50 % lower LDL). **PCSK9** is a secreted protein that binds the LDL receptor at the surface; in the acidic endosome it stays bound and **prevents recycling**, so the receptor is sent to the **lysosome** and destroyed. **PCSK9 inhibitors** (antibodies such as evolocumab and alirocumab, which bind PCSK9 in the blood; or inclisiran, an siRNA that destroys PCSK9 mRNA) let the receptors **recycle** more times, so more receptors are at the surface (about 50–60 % lower LDL, also on top of statins).
+:::
+
+---
+
+**9.** What is a lysosomal storage disease? Explain how enzyme replacement therapy reaches the lysosome, and why it does not help the brain. `[ELO 5]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+An inherited disease in which **one lysosomal enzyme** (or transporter) is missing or defective, so its substrate cannot be broken down and **accumulates in lysosomes**, which swell and disturb the cell (about 70 diseases, together about 1 in 5000 births; for example Gaucher, Fabry, Pompe, Tay–Sachs). In **enzyme replacement therapy** the missing enzyme is made in cultured cells and infused into the blood. It carries **mannose-6-phosphate** (or exposed mannose), so it binds **M6P receptors** on the surface of target cells (or the **mannose receptor** of macrophages in Gaucher disease), is taken in by **receptor-mediated endocytosis**, and reaches the lysosome through endosomes. The enzyme is a large protein that **does not cross the blood–brain barrier**, so it cannot reach brain cells, and forms of the diseases that affect the brain are not helped.
+:::
+
+## VG-style questions
+
+**10. [VG]** Two patients have familial hypercholesterolaemia. Cells from patient A do not bind radioactive LDL at 4 °C. Cells from patient B bind LDL normally at 4 °C, but at 37 °C they take in and degrade almost none. Explain each result at the level of the LDL receptor, and describe what you would see in the electron microscope with ferritin-labelled LDL. Suggest where in the receptor the mutation of patient B lies. `[ELO 4]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+At 4 °C membranes do not bud, so binding measures receptors on the surface. **Patient A** has **no working receptor at the surface**: either none is made, it is misfolded and kept in the ER, or its LDL-binding part is defective. No LDL binds, so none is taken in or degraded. **Patient B** has receptors that reach the surface and **bind LDL**, so the binding domain is normal, but they are **not internalised**. In the EM, ferritin-LDL on normal cells collects in **coated pits** and appears in vesicles and endosomes a few minutes after warming; on patient B's cells it is spread **evenly over the surface, outside coated pits**, and stays outside. The mutation is most likely in the **cytosolic tail**, in the **internalisation signal (NPxY)** that the AP2 adaptor binds; this is the classic "J.D." patient, whose tyrosine of NPxY is replaced by cysteine. Without the signal, the adaptors cannot collect the receptor into pits, although clathrin endocytosis of other receptors (for example the transferrin receptor) works normally, which could be checked as a control.
+:::
+
+---
+
+**11. [VG]** Cells are treated with **bafilomycin**, which blocks the V-ATPase. Predict what happens over the next hours to (a) the number of LDL receptors at the cell surface, (b) LDL degradation, and (c) uptake of iron through transferrin. Explain each prediction. `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Without the V-ATPase, endosomes and lysosomes are no longer acidified; their pH rises towards that of the cytosol. (a) The LDL receptor needs acid to **release LDL**. Receptors that still hold LDL are not sorted normally into the recycling route; they are trapped in endosomes or sent on with their ligand, so **fewer receptors return to the surface** and the number at the surface falls (some FH mutations do the same: receptors that cannot release LDL are degraded). (b) **LDL degradation stops**, because the lysosomal acid hydrolases need low pH; LDL that reaches lysosomes accumulates undigested. (c) **Iron uptake falls**, because iron is released from transferrin only at acid pH; transferrin and its receptor may still cycle, but they bring back the iron instead of leaving it in the cell. (In the demo, an endosome pH of 6.5 or above makes the surface receptors collapse to a few per cent and blood LDL rise five-fold.)
+:::
+
+---
+
+**12. [VG]** An mRNA medicine in a lipid nanoparticle works poorly. A chemist proposes to replace the ionisable lipid (pKa 6.4) with a lipid that is **always positively charged**. Predict the effects on (a) binding of the RNA in the particle, (b) escape from the endosome, (c) behaviour in the blood and toxicity, and (d) overall delivery. What would you suggest instead? `[ELO 5]` `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) The RNA would still be bound well, because the positive lipid pairs with the negative RNA. (b) Escape from the endosome would be at least as good, because the lipid is positive from the start and can pair with negative lipids of the endosome membrane. (c) In the blood (pH 7.4) a permanently positive particle **sticks to negatively charged blood proteins and cell surfaces**, is cleared quickly and is **more toxic** (it disturbs membranes everywhere, not only in endosomes). (d) Fewer particles reach the target cells, so **overall delivery falls** even though escape per particle is higher. The point of an ionisable lipid is that its charge **switches** with pH: at pKa about 6.2–6.5, only a few per cent is charged in blood but most is charged in the late endosome (pH 5–5.5). Better suggestions: tune the pKa within that range, use a lipid that disrupts membranes better when charged, or target the particle to cells with better uptake; in any case measure both escape and toxicity. (The demo's second tab shows this trade-off.)
+:::
+
+## Explore {#explore}
+
+**Tab 1, LDL receptor cycle.** On the left is a liver cell at **real time**: LDL receptors (dark Y shapes) sit on the surface facing the blood, bind LDL (yellow), gather in **clathrin-coated pits**, and are pinched off in coated vesicles to the **sorting endosome**. If the endosome is acid enough, LDL lets go and moves on to the lysosome, and the empty receptor recycles to the surface. A receptor that carries **PCSK9** (pink), that still holds its LDL, or by chance (1 trip in 200) is sent to the lysosome instead, and new receptors come from the Golgi. Use **10×** or **60×** to see more trips, and **Skip ahead 6 hours** to let the cell settle after a change. On the right, the **same model** is used to calculate what happens in the body over weeks: the LDL in the blood and the receptors at the liver cell surface, compared with the same person without drugs. **Tab 2, LNP escape** shows 100 lipid nanoparticles in one endosome that acidifies, and calculates how much RNA reaches the cytosol for each pKa of the ionisable lipid. Both tabs are a **qualitative compartment model** with round numbers: the behaviour is right, the exact numbers are not patient data. The cell view is random, so its counts differ from run to run; the solutions use the calculated values.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="ldlcycle" data-tab="ldl" data-seed="1"></div>
+<script src="../demos/dist/ldlcycle.js"></script>
+```
+
+**E1.** Choose **Healthy** and watch the cell at real time for a minute, then at 60× for a few minutes. Describe the route of one receptor and one LDL particle. Where do they part, and why? What do the readouts say about how long a receptor lives and how many trips it makes? `[ELO 4]`
+
+**E2.** *Predict first.* Raise the **PCSK9 level** to 3× (or choose **PCSK9 gain of function**). What will happen to the receptor lifetime, the receptors at the surface and the blood LDL? Check. Then tick **PCSK9 antibody**. Explain the result with the words *recycling* and *lysosome*. `[ELO 4]` `[ELO 9]`
+
+**E3.** Choose **FH: one faulty LDLR gene**. Read the blood LDL. Tick **statin**, then also **PCSK9 antibody**. How much does each step lower LDL? Then choose **FH: two faulty LDLR genes** and repeat. Why do the drugs work so much less well in this patient? `[ELO 4]` `[ELO 9]`
+
+**E4. [VG]** *Predict first.* Choose **Healthy** and raise the **endosome pH** step by step from 6.0 to 7.0 (as if the V-ATPase were partly blocked). At which pH does blood LDL start to rise, and why does it rise so steeply? Why does the cell lose its receptors, although nothing is wrong with the receptor itself? `[ELO 5]`
+
+**E5. [VG]** Open the **LNP escape** tab. With the lowest endosome pH at 5.5, move the **pKa** from 5 to 9 and read the two curves. Which pKa gives the most RNA in the cytosol, and how much? Explain why a lower and a higher pKa are both worse. Then choose **V-ATPase blocked**: what happens, and what does it tell you about how LNPs escape? `[ELO 5]` `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** A receptor at the surface binds an LDL particle, drifts until it is caught in a **clathrin-coated pit** (on average after about 7 minutes at the surface), and the pit is pinched off as a coated vesicle within about 40 seconds. The coat comes off, and the vesicle delivers the receptor and its LDL to the **sorting endosome**. There, at pH 6.0, **99.7 %** of the LDL lets go of the receptor. The LDL stays in the endosome lumen and is passed on to the **lysosome**, where it slowly fades (digested); the empty receptor leaves the endosome after a few minutes and **returns to the surface**. They part in the endosome because the acid makes the receptor release LDL, and only the receptor, which is in the membrane, is taken into the recycling vesicles. The readouts say a receptor lives about **11 hours** and makes about **60 round trips** (the real number is of the same order: more than a hundred). Only about 1 trip in 60 ends in the lysosome, by chance or because the receptor carried PCSK9.
+
+**E2.** With PCSK9 at 3× (gain of function), more receptors pick up PCSK9 at the surface and are destroyed in the lysosome after a single trip. The receptor lifetime falls from about 11 to about **5 hours** (about 27 trips), the receptors at the surface fall to about **46 %** of healthy, and blood LDL rises from 2.6 to about **4.9 mmol/L** within two to three weeks: an FH-like level, as in families with gain-of-function PCSK9 mutations. With the **antibody**, 95 % of PCSK9 is caught in the blood before it can bind, so receptors are no longer sent to the lysosome; they keep **recycling** (lifetime about 24 hours, over 120 trips). Receptors at the surface rise to about **214 %** and LDL falls to about **1.3 mmol/L** (−73 %). The antibody does not touch the receptor or LDL itself: it only stops receptors being sent to the lysosome.
+
+**E3.** One faulty gene: about half the receptors (**49 %**), LDL about **4.6 mmol/L**. With a **statin**: receptors rise to about 77 % and LDL falls to about **3.2 mmol/L (−30 %)**. With **statin + PCSK9 antibody**: receptors about 240 %, LDL about **1.2 mmol/L (−74 %)**. Both drugs need working receptors: the statin makes the one working gene produce more receptors, and the antibody lets each receptor make more trips. The statin effect is limited partly because the same switch (SREBP2) that makes more receptors also makes more PCSK9 (1.5× in the model), which the antibody removes. With **two faulty genes** almost no working receptors are made (2 %): LDL is about **16 mmol/L**. A statin lowers it only to about 15.5 (−5 %) and statin + antibody to about 12.4 (−24 %, from 2 % to 8 % of the normal receptors). There is (almost) nothing for the drugs to increase or save. Real patients with no working receptors respond little to statins or PCSK9 inhibitors and need other treatment, such as removing LDL from the blood (apheresis) or drugs that act without the receptor.
+
+**E4.** Up to about pH 6.1 almost nothing happens. From about **pH 6.2** LDL starts to rise: at 6.2 only 96.9 % of the LDL lets go, receptors fall to about 45 % and LDL nearly doubles (about 4.9 mmol/L). At **6.3**, 91 % lets go, receptors are about 19 % and LDL about 8.5; at **6.5** only half lets go, receptors are about 4 % and LDL about 14.5 mmol/L, close to two faulty genes. It is steep because a receptor that still holds its LDL is sent to the lysosome on **every** trip, and a receptor makes about 60 trips in its life: a 3 % failure to let go per trip already more than doubles the chance of being destroyed per trip (from about 1.7 % to about 3.7 %, so the lifetime falls from about 60 to about 27 trips). Small changes per trip add up over many trips. The receptor itself is normal; it is lost because the endosome is not acid enough for it to let go of LDL, and a loaded receptor is not recycled (the same happens with FH mutations in the part of the receptor that releases LDL). In the real cell the lysosome would also stop digesting LDL.
+
+**E5.** The most RNA in the cytosol is reached at a pKa of about **6.2**, about **1.9 %** of the dose (at pKa 6.4, about 1.7 %; approved LNPs use pKa about 6.2–6.7). With a **low pKa** (5.0–5.5) the lipid is hardly charged even in the late endosome (at pKa 5 and pH 5.5 only about 24 %), so it cannot disturb the endosome membrane before the contents reach the lysosome: escape is below 1 %. With a **high pKa** (7–9) the lipid is already charged in the blood (at pKa 7, about 28 % at pH 7.4), so escape per particle is higher (4–6 %), but most particles stick to blood proteins and cells and are removed before they reach the target cells (11 % reach the cells at pKa 7, 1 % at pKa 9); overall only 0.1–0.5 % of the dose arrives in the cytosol. With the **V-ATPase blocked** (lowest pH 7.2) the lipid stays mostly uncharged in the endosome and escape falls to about **0.1 %** at pKa 6.4. The escape depends on **acidification**: the lipid becomes positive only when the endosome pH falls below its pKa. Even at best, about 97 % of the particles end in the lysosome, which is why better endosomal escape is a major goal of RNA medicine.
+:::

@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="340" viewBox="0 0 1100 340" font-family="Helvetica, Arial, sans-serif">
+<!-- fig06: centrosome with centrioles, pericentriolar material and gamma-tubulin ring complexes; zoom on one ring. Cartoon. -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arO" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arB" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1f77b4"/></marker><marker id="arP" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7b3f99"/></marker><marker id="arG" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2f9e44"/></marker><marker id="arR" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker></defs>
+<text x="290" y="28" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Centrosome (the main microtubule-organising centre)</text>
+<line x1="270.4" y1="193.8" x2="346.5" y2="211.2" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="258.5" y1="218.7" x2="291.3" y2="244.8" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="236.9" y1="235.9" x2="255.1" y2="273.7" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="210.0" y1="242.0" x2="210.0" y2="284.0" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="183.1" y1="235.9" x2="164.9" y2="273.7" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="161.5" y1="218.7" x2="128.7" y2="244.8" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="149.6" y1="193.8" x2="73.5" y2="211.2" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="149.6" y1="166.2" x2="73.5" y2="148.8" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="161.5" y1="141.3" x2="128.7" y2="115.2" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="183.1" y1="124.1" x2="164.9" y2="86.3" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="210.0" y1="118.0" x2="210.0" y2="76.0" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="236.9" y1="124.1" x2="255.1" y2="86.3" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="258.5" y1="141.3" x2="291.3" y2="115.2" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<line x1="270.4" y1="166.2" x2="346.5" y2="148.8" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="210" cy="180" rx="62" ry="60" fill="#efe6cf" stroke="#b49b5a" stroke-width="1.5" stroke-dasharray="5 4"/>
+<rect x="170" y="166" width="46" height="28" rx="4" fill="#d8dde3" stroke="#1b2a3a" stroke-width="1.5"/>
+<line x1="174.0" y1="168" x2="174.0" y2="192" stroke="#1b2a3a" stroke-width="1.2"/>
+<line x1="183.5" y1="168" x2="183.5" y2="192" stroke="#1b2a3a" stroke-width="1.2"/>
+<line x1="193.0" y1="168" x2="193.0" y2="192" stroke="#1b2a3a" stroke-width="1.2"/>
+<line x1="202.5" y1="168" x2="202.5" y2="192" stroke="#1b2a3a" stroke-width="1.2"/>
+<line x1="212.0" y1="168" x2="212.0" y2="192" stroke="#1b2a3a" stroke-width="1.2"/>
+<circle cx="236" cy="180" r="16" fill="#d8dde3" stroke="#1b2a3a" stroke-width="1.5"/>
+<circle cx="247.0" cy="180.0" r="2.6" fill="#1b2a3a" stroke="#1b2a3a" stroke-width="0.5"/>
+<circle cx="244.4" cy="187.1" r="2.6" fill="#1b2a3a" stroke="#1b2a3a" stroke-width="0.5"/>
+<circle cx="237.9" cy="190.8" r="2.6" fill="#1b2a3a" stroke="#1b2a3a" stroke-width="0.5"/>
+<circle cx="230.5" cy="189.5" r="2.6" fill="#1b2a3a" stroke="#1b2a3a" stroke-width="0.5"/>
+<circle cx="225.7" cy="183.8" r="2.6" fill="#1b2a3a" stroke="#1b2a3a" stroke-width="0.5"/>
+<circle cx="225.7" cy="176.2" r="2.6" fill="#1b2a3a" stroke="#1b2a3a" stroke-width="0.5"/>
+<circle cx="230.5" cy="170.5" r="2.6" fill="#1b2a3a" stroke="#1b2a3a" stroke-width="0.5"/>
+<circle cx="237.9" cy="169.2" r="2.6" fill="#1b2a3a" stroke="#1b2a3a" stroke-width="0.5"/>
+<circle cx="244.4" cy="172.9" r="2.6" fill="#1b2a3a" stroke="#1b2a3a" stroke-width="0.5"/>
+<circle cx="270.4" cy="193.8" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="258.5" cy="218.7" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="236.9" cy="235.9" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="210.0" cy="242.0" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="183.1" cy="235.9" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="161.5" cy="218.7" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="149.6" cy="193.8" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="149.6" cy="166.2" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="161.5" cy="141.3" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="183.1" cy="124.1" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="210.0" cy="118.0" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="236.9" cy="124.1" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="258.5" cy="141.3" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="270.4" cy="166.2" r="5.5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<text x="303.0" y="261.2" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a">+</text>
+<text x="158.4" y="294.2" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a">+</text>
+<text x="58.9" y="152.5" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a">+</text>
+<text x="210.0" y="68.0" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a">+</text>
+<text x="361.1" y="152.5" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a">+</text>
+<line x1="380" y1="180" x2="256" y2="180" stroke="#1b2a3a" stroke-width="1.5" marker-end="url(#ar)"/>
+<text x="390" y="176" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">two centrioles at right angles</text>
+<text x="390" y="196" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">(each: 9 triplet microtubules)</text>
+<line x1="380" y1="92" x2="269.5" y2="151.4" stroke="#1b2a3a" stroke-width="1.5" marker-end="url(#ar)"/>
+<text x="390" y="88" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">pericentriolar material</text>
+<text x="390" y="108" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">with many γ-tubulin rings (gold)</text>
+<text x="30" y="330" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">Microtubules grow out in all directions: an aster.</text>
+<text x="830" y="28" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">γ-tubulin ring complex</text>
+<circle cx="777.6" cy="262.6" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="789.6" cy="256.7" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="810.9" cy="252.9" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="836.5" cy="252.1" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="860.7" cy="254.5" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="877.8" cy="259.5" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<ellipse cx="782" cy="246" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="782" cy="226" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="782" cy="206" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="782" cy="186" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="782" cy="166" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="782" cy="146" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="782" cy="126" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="782" cy="106" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="782" cy="86" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="798" cy="246" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="798" cy="226" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="798" cy="206" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="798" cy="186" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="798" cy="166" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="798" cy="146" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="798" cy="126" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="798" cy="106" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="798" cy="86" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="814" cy="246" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="814" cy="226" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="814" cy="206" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="814" cy="186" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="814" cy="166" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="814" cy="146" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="814" cy="126" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="814" cy="106" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="814" cy="86" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="830" cy="246" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="830" cy="226" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="830" cy="206" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="830" cy="186" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="830" cy="166" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="830" cy="146" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="830" cy="126" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="830" cy="106" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="830" cy="86" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="846" cy="246" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="846" cy="226" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="846" cy="206" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="846" cy="186" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="846" cy="166" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="846" cy="146" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="846" cy="126" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="846" cy="106" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="846" cy="86" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="862" cy="246" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="862" cy="226" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="862" cy="206" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="862" cy="186" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="862" cy="166" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="862" cy="146" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="862" cy="126" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="862" cy="106" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="862" cy="86" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="878" cy="246" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="878" cy="226" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="878" cy="206" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="878" cy="186" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="878" cy="166" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="878" cy="146" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="878" cy="126" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="878" cy="106" rx="7.5" ry="9.5" fill="#6f8fae" stroke="#1b2a3a" stroke-width="0.8"/>
+<ellipse cx="878" cy="86" rx="7.5" ry="9.5" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="0.8"/>
+<circle cx="884.0" cy="266.0" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="877.8" cy="272.5" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="860.7" cy="277.5" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="836.5" cy="279.9" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="810.9" cy="279.1" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="789.6" cy="275.3" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="777.6" cy="269.4" r="8" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<text x="922" y="82" font-size="15" text-anchor="start" font-weight="bold" fill="#1b2a3a">+ end grows</text>
+<text x="922" y="102" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">out into the cell</text>
+<text x="922" y="252" font-size="15" text-anchor="start" font-weight="bold" fill="#1b2a3a">− end capped by</text>
+<text x="922" y="272" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">the ring, anchored</text>
+<text x="922" y="292" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">in the centrosome</text>
+<text x="830" y="326" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">The ring is a template for 13 protofilaments.</text>
+</svg>

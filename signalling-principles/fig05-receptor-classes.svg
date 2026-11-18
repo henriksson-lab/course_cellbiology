@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 322" width="1140" height="322" font-family="Helvetica, Arial, sans-serif">
+<rect width="1140" height="322" fill="#ffffff"/>
+<defs>
+<marker id="a" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+<marker id="ah" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#e8590c"/></marker>
+<marker id="as" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#c92a2a"/></marker>
+<marker id="bar" markerWidth="4" markerHeight="20" refX="2" refY="10" orient="auto" markerUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="20" fill="#1b2a3a"/></marker>
+</defs>
+<text x="190.0" y="26.0" font-size="18" text-anchor="middle" fill="#1b2a3a" font-weight="bold" >ion-channel-coupled</text>
+<rect x="20" y="110" width="340" height="60" fill="#f6f0de" stroke="none"/>
+<line x1="20" y1="110" x2="360" y2="110" stroke="#8a6a12" stroke-width="3"/><line x1="20" y1="170" x2="360" y2="170" stroke="#8a6a12" stroke-width="3"/>
+<text x="30.0" y="98.0" font-size="14" text-anchor="start" fill="#8a8f98" font-weight="normal" >outside</text>
+<text x="30.0" y="194.0" font-size="14" text-anchor="start" fill="#8a8f98" font-weight="normal" >cytosol</text>
+<text x="190.0" y="292.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >signal opens a channel:</text>
+<text x="190.0" y="312.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >ions flow in milliseconds</text>
+<line x1="380" y1="10" x2="380" y2="315" stroke="#e3e6ea" stroke-width="2"/>
+<text x="570.0" y="26.0" font-size="18" text-anchor="middle" fill="#1b2a3a" font-weight="bold" >G-protein-coupled (GPCR)</text>
+<rect x="400" y="110" width="340" height="60" fill="#f6f0de" stroke="none"/>
+<line x1="400" y1="110" x2="740" y2="110" stroke="#8a6a12" stroke-width="3"/><line x1="400" y1="170" x2="740" y2="170" stroke="#8a6a12" stroke-width="3"/>
+<text x="410.0" y="98.0" font-size="14" text-anchor="start" fill="#8a8f98" font-weight="normal" >outside</text>
+<text x="410.0" y="194.0" font-size="14" text-anchor="start" fill="#8a8f98" font-weight="normal" >cytosol</text>
+<text x="570.0" y="292.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >receptor activates a G protein,</text>
+<text x="570.0" y="312.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >which switches on enzymes or channels</text>
+<line x1="760" y1="10" x2="760" y2="315" stroke="#e3e6ea" stroke-width="2"/>
+<text x="950.0" y="26.0" font-size="18" text-anchor="middle" fill="#1b2a3a" font-weight="bold" >enzyme-coupled</text>
+<rect x="780" y="110" width="340" height="60" fill="#f6f0de" stroke="none"/>
+<line x1="780" y1="110" x2="1120" y2="110" stroke="#8a6a12" stroke-width="3"/><line x1="780" y1="170" x2="1120" y2="170" stroke="#8a6a12" stroke-width="3"/>
+<text x="790.0" y="98.0" font-size="14" text-anchor="start" fill="#8a8f98" font-weight="normal" >outside</text>
+<text x="790.0" y="194.0" font-size="14" text-anchor="start" fill="#8a8f98" font-weight="normal" >cytosol</text>
+<text x="950.0" y="292.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >receptor is (or recruits) an enzyme,</text>
+<text x="950.0" y="312.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >often a kinase: P on tyrosines</text>
+<path d="M130,90 h44 v100 h-44 z M206,90 h44 v100 h-44 z" fill="#d8dee6" stroke="#1b2a3a" stroke-width="2.5"/>
+<circle cx="152.0" cy="80.0" r="7" fill="#c92a2a"/>
+<circle cx="228.0" cy="80.0" r="7" fill="#c92a2a"/>
+<circle cx="190" cy="70" r="7" fill="#1c4fa0"/>
+<circle cx="190" cy="130" r="7" fill="#1c4fa0"/>
+<circle cx="190" cy="215" r="7" fill="#1c4fa0"/>
+<line x1="190.0" y1="82.0" x2="190.0" y2="205.0" stroke="#1c4fa0" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="204.0" y="222.0" font-size="15" text-anchor="start" fill="#1c4fa0" font-weight="bold" >Na⁺ in</text>
+<text x="190.0" y="258.0" font-size="14" text-anchor="middle" fill="#8a8f98" font-weight="normal" >example: acetylcholine receptor</text>
+<path d="M470,80 L482,100 L482,180 Q493,192 504,180 L504,180 L504,100 Q515,88 526,100 L526,100 L526,180 Q537,192 548,180 L548,180 L548,100 Q559,88 570,100 L570,100 L570,180 Q581,192 592,180 L592,180 L592,100 Q603,88 614,100 L614,100 L614,180 " fill="none" stroke="#1b2a3a" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="550.0" cy="92.0" r="7" fill="#c92a2a"/>
+<ellipse cx="650" cy="196" rx="30" ry="20" fill="#e8590c" opacity="0.85"/><text x="650.0" y="202.0" font-size="17" text-anchor="middle" fill="#fff" font-weight="bold" >α</text>
+<ellipse cx="702" cy="190" rx="20" ry="16" fill="#e9b48a"/><text x="702.0" y="196.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >β</text>
+<ellipse cx="730" cy="182" rx="11" ry="9" fill="#e9b48a"/><text x="748.0" y="187.0" font-size="15" text-anchor="start" fill="#1b2a3a" font-weight="normal" >γ</text>
+<text x="680.0" y="236.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="bold" >G protein</text>
+<text x="550.0" y="220.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >7 helices</text>
+<text x="570.0" y="258.0" font-size="14" text-anchor="middle" fill="#8a8f98" font-weight="normal" >example: β-adrenergic receptor</text>
+<rect x="878" y="45" width="34" height="55" rx="12" fill="#d8dee6" stroke="#1b2a3a" stroke-width="2.5"/>
+<rect x="890" y="100" width="10" height="80" fill="#1b2a3a"/>
+<rect x="878" y="180" width="34" height="45" rx="10" fill="#2a7f8f" opacity="0.85"/>
+<circle cx="872" cy="208" r="11" fill="#e8590c"/><text x="872.0" y="213.0" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold" >P</text>
+<rect x="938" y="45" width="34" height="55" rx="12" fill="#d8dee6" stroke="#1b2a3a" stroke-width="2.5"/>
+<rect x="950" y="100" width="10" height="80" fill="#1b2a3a"/>
+<rect x="938" y="180" width="34" height="45" rx="10" fill="#2a7f8f" opacity="0.85"/>
+<circle cx="978" cy="208" r="11" fill="#e8590c"/><text x="978.0" y="213.0" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold" >P</text>
+<circle cx="925.0" cy="58.0" r="9" fill="#c92a2a"/>
+<text x="996.0" y="208.0" font-size="15" text-anchor="start" fill="#2a7f8f" font-weight="bold" >kinase</text>
+<text x="925.0" y="258.0" font-size="14" text-anchor="middle" fill="#8a8f98" font-weight="normal" >example: insulin, EGF receptors</text>
+
+</svg>

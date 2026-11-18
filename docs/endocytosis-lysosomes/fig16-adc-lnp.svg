@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c92a2a"/></marker>
+    <g id="ab"><path d="M0,16 L0,0 L-11,-13 M0,0 L11,-13" fill="none" stroke="#e8590c" stroke-width="4.5" stroke-linecap="round"/></g>
+    <g id="tox"><path d="M0,-7 L2,-2 L7,-2 L3,1 L5,6 L0,3 L-5,6 L-3,1 L-7,-2 L-2,-2 Z" fill="#c92a2a"/></g>
+    <g id="lnp"><circle r="17" fill="#c9b37a" stroke="#8a6a12" stroke-width="2"/><path d="M-9,-2 q4,-6 8,0 t8,0" fill="none" stroke="#c92a2a" stroke-width="2.5"/></g>
+    <g id="her"><line x1="0" y1="14" x2="0" y2="-12" stroke="#3d4f63" stroke-width="5"/></g>
+  </defs>
+  <rect width="1000" height="440" fill="#fff"/>
+  <!-- panel A -->
+  <text x="20" y="26" font-weight="bold">A. Antibody–drug conjugate (e.g. trastuzumab emtansine)</text>
+  <rect x="10" y="90" width="480" height="340" fill="#fbfaf5"/>
+  <line x1="10" y1="90" x2="490" y2="90" stroke="#8a6a12" stroke-width="6"/>
+  <use href="#her" x="90" y="90"/><use href="#ab" transform="translate(90 60) rotate(180)"/><use href="#tox" x="80" y="40"/><use href="#tox" x="100" y="40"/>
+  <text x="125" y="58">binds HER2 on a</text>
+  <text x="125" y="78">cancer cell</text>
+  <path d="M95,110 L130,175" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <circle cx="165" cy="215" r="44" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/>
+  <use href="#ab" transform="translate(165 212) rotate(180)"/><use href="#tox" x="156" y="194"/><use href="#tox" x="174" y="194"/>
+  <text x="165" y="282" text-anchor="middle">endosome</text>
+  <path d="M212,225 L298,250" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <circle cx="345" cy="265" r="46" fill="#b9dfc8" stroke="#2e8b57" stroke-width="4"/>
+  <path d="M330,258 l10,8 M345,250 l-6,12 M352,270 l8,4" stroke="#e8590c" stroke-width="3"/>
+  <use href="#tox" x="360" y="252"/><use href="#tox" x="335" y="280"/>
+  <text x="345" y="333" text-anchor="middle">lysosome digests</text>
+  <text x="345" y="353" text-anchor="middle">the antibody</text>
+  <path d="M385,240 L430,190" stroke="#c92a2a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <use href="#tox" x="440" y="178"/>
+  <text x="480" y="135" text-anchor="end" fill="#c92a2a">toxin freed:</text>
+  <text x="480" y="155" text-anchor="end" fill="#c92a2a">kills the cell</text>
+  <!-- panel B -->
+  <text x="520" y="26" font-weight="bold">B. Lipid nanoparticle with RNA</text>
+  <rect x="510" y="90" width="480" height="340" fill="#fbfaf5"/>
+  <line x1="510" y1="90" x2="990" y2="90" stroke="#8a6a12" stroke-width="6"/>
+  <use href="#lnp" x="600" y="55"/>
+  <text x="630" y="50">taken up by endocytosis</text>
+  <text x="630" y="70">(in liver: via the LDL receptor)</text>
+  <path d="M605,95 L640,160" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <circle cx="700" cy="230" r="70" fill="#d3ebdd" stroke="#2e8b57" stroke-width="3"/>
+  <use href="#lnp" x="680" y="215"/><use href="#lnp" x="720" y="248"/><use href="#lnp" x="705" y="200"/>
+  <g fill="#1098ad" font-weight="bold" font-size="14"><text x="650" y="262">H<tspan font-size="11" dy="-5">+</tspan></text><text x="740" y="212">H<tspan font-size="11" dy="-5">+</tspan></text><text x="668" y="185">+</text><text x="740" y="270">+</text></g>
+  <text x="700" y="325" text-anchor="middle">endosome acidifies:</text>
+  <text x="700" y="345" text-anchor="middle">ionisable lipid becomes +</text>
+  <text x="700" y="365" text-anchor="middle">and disturbs the membrane</text>
+  <path d="M768,210 L840,180" stroke="#c92a2a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <path d="M850,175 q6,-8 12,0 t12,0 t12,0" fill="none" stroke="#c92a2a" stroke-width="3"/>
+  <text x="975" y="140" text-anchor="end" fill="#c92a2a" font-weight="bold">a few % escape:</text>
+  <text x="975" y="160" text-anchor="end" fill="#c92a2a">RNA in the cytosol</text>
+  <path d="M755,275 L840,320" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <circle cx="880" cy="340" r="36" fill="#b9dfc8" stroke="#2e8b57" stroke-width="4"/>
+  <text x="880" y="400" text-anchor="middle">most: lysosome,</text>
+  <text x="880" y="420" text-anchor="middle">RNA destroyed</text>
+</svg>

@@ -1,0 +1,104 @@
+---
+title: "Quiz: signalling that shapes tissues and decides fates"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Signalling that shapes tissues and decides fates*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** In the Wnt pathway, what happens to β-catenin in a cell that receives **no** Wnt, and what happens when Wnt arrives? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+β-catenin is made all the time. The question is whether it survives.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Without Wnt, the **destruction complex** (APC, Axin, GSK3) phosphorylates β-catenin; it is **ubiquitylated and destroyed by the proteasome**, so it never reaches the nucleus, and TCF keeps its target genes **off** with a repressor. When Wnt binds **Frizzled** and its co-receptor, the destruction complex is blocked, β-catenin **builds up**, enters the nucleus and turns TCF into an **activator** (targets such as MYC and cyclin D1).
+:::
+
+---
+
+**Q2.** Hedgehog signalling is called a "double negative". Explain what this means with Patched and Smoothened. `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which protein inhibits which, and what does Hedgehog inhibit?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Patched inhibits Smoothened** (keeps it out of the primary cilium), and **Hedgehog inhibits Patched**. So Hedgehog activates Smoothened by inhibiting its inhibitor. Active Smoothened in the cilium stops Gli from being cut into a repressor, and whole Gli activates the target genes. A consequence: a cell that **loses Patched** behaves as if Hedgehog were always present.
+:::
+
+---
+
+**Q3.** Notch signalling has no second messenger and no kinase cascade. How does the signal reach the nucleus, and why can it not be amplified? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Two proteases are involved. What happens to the receptor itself?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Delta on the neighbouring cell binds Notch and pulls on it. Notch is then cut twice: by an **ADAM protease** outside the membrane and by **γ-secretase** inside the membrane. The freed **Notch intracellular domain** goes to the nucleus and, with **CSL**, activates target genes (the Hes repressors). Each receptor is **cut once and used up**: one ligand–receptor contact gives one signalling molecule, and no enzyme in between multiplies it.
+:::
+
+---
+
+**Q4.** Put these steps of TGF-β signalling in order: (a) SMAD2/3 binds SMAD4; (b) the type II receptor phosphorylates the type I receptor; (c) the SMAD complex binds DNA with a partner transcription factor; (d) TGF-β binds and brings the two receptors together; (e) the type I receptor phosphorylates SMAD2/3. `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+The receptors are serine/threonine kinases. Which one is activated first?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**d → b → e → a → c.** The ligand brings the receptors together, type II activates type I, type I phosphorylates SMAD2/3, phosphorylated SMAD2/3 binds SMAD4, and the complex enters the nucleus and binds DNA together with other transcription factors.
+:::
+
+---
+
+**Q5.** A patient takes a **proteasome inhibitor** (used against multiple myeloma). Predict the effect on NF-κB signalling after TNF-α stimulation, and explain. `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What holds NF-κB in the cytosol, and how is it removed?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+NF-κB stays **in the cytosol** and its target genes stay **off**. TNF-α still activates IKK, which phosphorylates IκB, and IκB gets ubiquitylated, but the **proteasome cannot destroy it**. So IκB keeps covering the nuclear entry signal of NF-κB. (Blocking NF-κB, whose targets include anti-apoptosis genes, is thought to be part of how such drugs kill myeloma cells.)
+:::
+
+---
+
+**Q6.** Why can cortisol act on a receptor inside the cell, while adrenaline needs a receptor on the cell surface? How does this affect how fast each acts? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think about which molecules cross a lipid bilayer, and what the receptor does after binding.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Cortisol is a **small, fat-soluble steroid** that diffuses across the plasma membrane and binds a **nuclear receptor** (the glucocorticoid receptor), which is itself a transcription factor. Adrenaline is **polar** and cannot cross the membrane, so it acts on a **GPCR** on the surface. Adrenaline's effects come in **seconds** (second messengers change existing proteins). Cortisol's effects need **transcription and translation**, so they start after an **hour or more** and last longer.
+:::
+
+---
+
+**Q7.** What is a **morphogen**, and how can one morphogen give three different cell types in a row of identical cells? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Concentration falls with distance from the source; target genes have thresholds.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+A morphogen is a signal made by a group of **source cells** that spreads and forms a **concentration gradient**. Cells read the local concentration. If target genes need **different threshold** concentrations, cells close to the source (above both thresholds) switch on one set of genes, cells in the middle another, and distant cells a third. Example: **Sonic hedgehog** from the floor of the neural tube gives different neuron types in order.
+:::
+
+---
+
+**Q8.** Tamoxifen and oestradiol bind the **same pocket** of the oestrogen receptor. Why does tamoxifen block the receptor in breast cancer cells instead of activating it? `[ELO 3]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What must the receptor recruit, besides binding DNA, to switch genes on?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Oestradiol makes a part of the receptor (a helix, the "lid") close over the pocket, which forms the binding site for **coactivators**. Tamoxifen fills the pocket but its long side arm **pushes the lid aside**, so no coactivator can bind; the receptor cannot switch on the growth genes, and oestradiol is kept out. ER-positive breast cancer cells that depend on oestrogen stop growing.
+:::

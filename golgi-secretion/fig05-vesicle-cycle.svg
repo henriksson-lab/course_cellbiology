@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a1b2a3a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect x="0.0" y="30.0" width="1000.0" height="200.0" rx="0" fill="#fbfaf5" stroke="none" stroke-width="2" />
+<rect x="0.0" y="230.0" width="440.0" height="70.0" rx="0" fill="#eef3f6" stroke="none" stroke-width="2" />
+<rect x="560.0" y="230.0" width="440.0" height="70.0" rx="0" fill="#eef3f6" stroke="none" stroke-width="2" />
+<text x="20.0" y="52.0" font-size="17" text-anchor="start" font-weight="normal" fill="#868e96" >cytosol</text>
+<text x="220.0" y="290.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#868e96" >lumen of donor compartment</text>
+<text x="780.0" y="290.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#868e96" >lumen of target compartment</text>
+<path d="M 0 230 L 80 230 C 95 230 90 175 120 172 C 150 175 145 230 160 230 L 440 230" fill="none" stroke="#5c6b7a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 0 230 L 80 230 C 95 230 90 175 120 172 C 150 175 145 230 160 230 L 440 230" fill="none" stroke="#e9edf1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="84.9" y1="197.0" x2="75.2" y2="194.8" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="91.9" y1="182.6" x2="84.0" y2="176.3" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="104.4" y1="172.6" x2="100.0" y2="163.6" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="120.0" y1="169.0" x2="120.0" y2="159.0" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="135.6" y1="172.6" x2="140.0" y2="163.6" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="148.1" y1="182.6" x2="156.0" y2="176.3" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="155.1" y1="197.0" x2="164.8" y2="194.8" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<circle cx="112.0" cy="205.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="128.0" cy="212.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="60.0" cy="250.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="250.0" cy="262.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<text x="120.0" y="112.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >1 coat bends the</text>
+<text x="120.0" y="132.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >membrane, collects cargo</text>
+<circle cx="285.0" cy="150.0" r="26.0" fill="#eef3f6" stroke="#5c6b7a" stroke-width="8" />
+<circle cx="285.0" cy="150.0" r="26.0" fill="none" stroke="#ffffff" stroke-width="1.4" />
+<circle cx="278.0" cy="146.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="292.0" cy="158.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<line x1="250" y1="108" x2="258.7" y2="103.0" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="322" y1="110" x2="329.7" y2="116.4" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="330" y1="182" x2="339.4" y2="185.4" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<text x="285.0" y="90.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >2 pinch off, coat falls off</text>
+<line x1="160.0" y1="168.0" x2="245.0" y2="155.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)"/>
+<line x1="330.0" y1="150.0" x2="410.0" y2="150.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)"/>
+<path d="M 820 236 C 835 236 838 196 860 196 C 882 196 885 236 900 236 Z" fill="#eef3f6" stroke="none" stroke-width="2" />
+<path d="M 560 230 L 820 230 C 835 230 838 196 860 196 C 882 196 885 230 900 230 L 1000 230" fill="none" stroke="#5c6b7a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 560 230 L 820 230 C 835 230 838 196 860 196 C 882 196 885 230 900 230 L 1000 230" fill="none" stroke="#e9edf1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="650.0" cy="130.0" r="26.0" fill="#eef3f6" stroke="#5c6b7a" stroke-width="8" />
+<circle cx="650.0" cy="130.0" r="26.0" fill="none" stroke="#ffffff" stroke-width="1.4" />
+<circle cx="645.0" cy="128.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="657.0" cy="137.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="668.0" cy="110.0" r="7.0" fill="#f03e3e" stroke="none" stroke-width="2" />
+<path d="M 700 226 C 705 180 700 130 680 112" fill="none" stroke="#495057" stroke-width="4" />
+<text x="712.0" y="100.0" font-size="16" text-anchor="start" font-weight="normal" fill="#c92a2a" >Rab</text>
+<text x="712.0" y="170.0" font-size="16" text-anchor="start" font-weight="normal" fill="#495057" >tether</text>
+<text x="650.0" y="52.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >4 Rab + tether</text>
+<text x="650.0" y="72.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >catch the vesicle</text>
+<text x="525.0" y="135.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#868e96" >3 moves</text>
+<circle cx="852.0" cy="212.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="868.0" cy="222.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="880.0" cy="250.0" r="4.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<path d="M 830 214 l -6 -14" fill="none" stroke="#f59f00" stroke-width="6" stroke-linecap="round"/>
+<path d="M 890 214 l 6 -14" fill="none" stroke="#f59f00" stroke-width="6" stroke-linecap="round"/>
+<text x="860.0" y="134.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >5 SNAREs zip,</text>
+<text x="860.0" y="154.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >membranes fuse</text>
+<line x1="450.0" y1="150.0" x2="600.0" y2="150.0" stroke="#1b2a3a" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#a1b2a3a)"/>
+<line x1="700.0" y1="205.0" x2="815.0" y2="205.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)"/>
+</svg>

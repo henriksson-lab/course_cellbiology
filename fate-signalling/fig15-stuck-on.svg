@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b8a3e"/></marker>
+  </defs>
+  <!-- Wnt panel -->
+  <rect x="5" y="5" width="485" height="320" rx="14" fill="#fbfaf5" stroke="#ccc"/>
+  <text x="20" y="32" font-weight="700" font-size="18">Colorectal cancer: Wnt stuck on</text>
+  <circle cx="60" cy="96" r="16" fill="#cfd8dc" stroke="#1b2a3a" stroke-width="1.5"/>
+  <circle cx="92" cy="96" r="16" fill="#b0bec5" stroke="#1b2a3a" stroke-width="1.5"/>
+  <path d="M106,80 L124,92 L110,100 L126,112" fill="none" stroke="#c92a2a" stroke-width="3"/>
+  <text x="140" y="90" font-size="15">APC broken (truncated):</text>
+  <text x="140" y="109" font-size="15">no working destruction complex</text>
+  <ellipse cx="80" cy="160" rx="30" ry="14" fill="#e8b923" stroke="#1b2a3a" stroke-width="1.5"/>
+  <ellipse cx="140" cy="172" rx="30" ry="14" fill="#e8b923" stroke="#1b2a3a" stroke-width="1.5"/>
+  <ellipse cx="200" cy="158" rx="30" ry="14" fill="#e8b923" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="246" y="166" font-size="15">β-catenin builds up</text>
+  <text x="246" y="185" font-size="15">without any Wnt</text>
+  <path d="M140,190 L140,232" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="40" y="240" width="200" height="30" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="140" y="261" text-anchor="middle" font-size="15">MYC, cyclin D1 on</text>
+  <text x="260" y="252" font-size="15">gut cells keep</text>
+  <text x="260" y="271" font-size="15">dividing → polyps</text>
+  <text x="20" y="306" font-size="14">No drug yet: hard to block a missing brake.</text>
+  <!-- Hedgehog panel -->
+  <rect x="510" y="5" width="485" height="320" rx="14" fill="#fbfaf5" stroke="#ccc"/>
+  <text x="525" y="32" font-weight="700" font-size="18">Basal cell carcinoma: Hedgehog stuck on</text>
+  <rect x="540" y="78" width="20" height="36" rx="5" fill="#9bc5e8" stroke="#1b2a3a" stroke-width="1.5"/>
+  <line x1="534" y1="72" x2="566" y2="120" stroke="#c92a2a" stroke-width="4"/>
+  <line x1="566" y1="72" x2="534" y2="120" stroke="#c92a2a" stroke-width="4"/>
+  <text x="580" y="90" font-size="15">Patched lost (mutated), or</text>
+  <text x="580" y="109" font-size="15">Smoothened mutated: always on</text>
+  <rect x="600" y="140" width="20" height="36" rx="5" fill="#69db7c" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="634" y="158" font-size="15">Smoothened active</text>
+  <path d="M584,152 L604,156" stroke="#e8590c" stroke-width="3"/>
+  <circle cx="574" cy="150" r="11" fill="#e8590c" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="634" y="182" font-size="15" fill="#e8590c" font-weight="700">vismodegib binds Smoothened</text>
+  <text x="634" y="201" font-size="15" fill="#e8590c" font-weight="700">and switches it off</text>
+  <path d="M610,184 L610,232" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="545" y="240" width="200" height="30" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="645" y="261" text-anchor="middle" font-size="15">Gli target genes on</text>
+  <text x="765" y="252" font-size="15">skin basal cells</text>
+  <text x="765" y="271" font-size="15">keep dividing</text>
+  <text x="525" y="306" font-size="14">Works if Patched is lost; not if the fault is below, in Gli.</text>
+</svg>

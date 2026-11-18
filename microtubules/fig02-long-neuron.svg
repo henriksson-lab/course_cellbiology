@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="300" viewBox="0 0 1100 300" font-family="Helvetica, Arial, sans-serif">
+<!-- fig02: a motor neuron from the spinal cord to a foot muscle. Not to scale. -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arO" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arB" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1f77b4"/></marker><marker id="arP" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7b3f99"/></marker><marker id="arG" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2f9e44"/></marker><marker id="arR" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker></defs>
+<ellipse cx="130" cy="150" rx="105" ry="88" fill="#f1f1ef" stroke="#888" stroke-width="2"/>
+<text x="130" y="52" font-size="16" text-anchor="middle" font-weight="normal" fill="#555">spinal cord</text>
+<path d="M150,120 L176,132 L200,128 L184,150 L196,176 L166,170 L146,190 L138,164 L104,160 L128,142 L110,116 L140,128 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="152" cy="150" r="13" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<path d="M196,146 L560,146 M582,146 L960,146" fill="none" stroke="#8a6a12" stroke-width="9" stroke-linecap="round"/>
+<path d="M196,146 L560,146 M582,146 L960,146" fill="none" stroke="#fbfaf5" stroke-width="4.5" stroke-linecap="round"/>
+<line x1="552" y1="128" x2="566" y2="164" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="574" y1="128" x2="588" y2="164" stroke="#1b2a3a" stroke-width="2"/>
+<ellipse cx="1030" cy="150" rx="58" ry="70" fill="#f3dcd6" stroke="#a0522d" stroke-width="2"/>
+<path d="M960,146 Q985,124.4 1000,110" fill="none" stroke="#8a6a12" stroke-width="4"/>
+<circle cx="1003" cy="110" r="6" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+<path d="M960,146 Q985,146.0 1000,146" fill="none" stroke="#8a6a12" stroke-width="4"/>
+<circle cx="1003" cy="146" r="6" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+<path d="M960,146 Q985,167.6 1000,182" fill="none" stroke="#8a6a12" stroke-width="4"/>
+<circle cx="1003" cy="182" r="6" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+<text x="1030" y="62" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">muscle in the foot</text>
+<text x="560" y="112" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">axon: about 1 m long, but only about 10 µm thick</text>
+<text x="160" y="266" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">cell body: proteins, membranes</text>
+<text x="160" y="285" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">and mitochondria are made here</text>
+<text x="960" y="285" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">… and needed here, at the synapses</text>
+<line x1="160" y1="248" x2="156" y2="196" stroke="#1b2a3a" stroke-width="1.5" marker-end="url(#ar)"/>
+<line x1="990" y1="268" x2="1000" y2="196" stroke="#1b2a3a" stroke-width="1.5" marker-end="url(#ar)"/>
+<text x="560" y="200" font-size="17" text-anchor="middle" font-weight="bold" fill="#e8590c">Diffusing 1 m would take hundreds to thousands of years.</text>
+<text x="560" y="222" font-size="17" text-anchor="middle" font-weight="bold" fill="#e8590c">Yet new material arrives within days. How?</text>
+</svg>

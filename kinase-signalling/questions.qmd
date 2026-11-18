@@ -1,0 +1,158 @@
+---
+title: "Study questions: enzyme-coupled receptors and kinase cascades"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** Describe, step by step, how binding of EGF to its receptor leads to activation of Ras. Name the proteins and domains involved. `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+1. EGF binds the extracellular part of the EGF receptor and brings two receptor chains together (**dimerisation**).
+2. The two kinase domains, now close together, **phosphorylate each other** (*trans*-autophosphorylation): first in the activation loop, which makes the kinases fully active, then on several **tyrosines in the cytosolic tails**.
+3. The phosphotyrosines are **docking sites**. The adaptor **Grb2** binds one with its **SH2 domain**. Grb2 holds the GEF **SOS**, which is thereby brought to the plasma membrane.
+4. At the membrane SOS meets **Ras**, which is held there by a lipid anchor. SOS makes Ras release GDP; GTP, which is abundant in the cytosol, binds. **Ras-GTP** is active.
+:::
+
+---
+
+**2.** Compare the two kinds of molecular switch used in RTK signalling, phosphorylation and GTP binding. For each, say what turns it on and what turns it off, with one example from the lecture. `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Phosphorylation:** a **kinase** transfers a phosphate from ATP to a Ser, Thr or Tyr; a **phosphatase** removes it. The phosphate changes the shape of the protein or creates a binding site. Example: MEK phosphorylates ERK on a Thr and a Tyr; dual-specificity phosphatases (DUSPs) remove them. Or: RTK tyrosines phosphorylated, then bound by SH2 proteins.
+
+**GTP binding:** a GTPase is **on with GTP** and **off with GDP**. A **GEF** turns it on by exchanging GDP for GTP; a **GAP** turns it off by speeding up GTP hydrolysis. Example: Ras, turned on by SOS and off by GAPs such as neurofibromin.
+
+In both, the "off" state is reached by an enzyme reaction, so the length of the signal is controlled by the balance of the two enzymes.
+:::
+
+---
+
+**3.** Draw the Ras–MAP kinase cascade from the receptor to the nucleus. For each step, say what kind of molecule it is and how it activates the next. What does ERK do in the nucleus? `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Active **RTK** (phosphotyrosines) → **Grb2** (adaptor, SH2) → **SOS** (GEF) → **Ras** (small GTPase; Ras-GTP binds RAF) → **RAF** (Ser/Thr kinase, MAPKKK; phosphorylates MEK on two serines) → **MEK** (dual-specificity kinase, MAPKK; phosphorylates ERK on a Thr and a Tyr) → **ERK** (MAP kinase; active only when both sites are phosphorylated).
+
+Active ERK phosphorylates many proteins in the cytosol and enters the **nucleus**, where it phosphorylates **transcription factors**. Immediate early genes (e.g. FOS, MYC) are transcribed within minutes; their products turn on later genes, including **cyclin D**, which lets the cell enter the cell cycle.
+:::
+
+---
+
+**4.** Explain how the PI3K–Akt pathway helps a cell survive and grow. Include PIP₃, the PH domain, PTEN and two targets of Akt. `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+PI3K docks on phosphotyrosines of an active RTK (SH2 domains of its regulatory subunit; Ras-GTP also helps) and phosphorylates the membrane lipid PIP₂ to **PIP₃**. Akt binds PIP₃ with its **PH domain**, is brought to the membrane, and is phosphorylated and activated by PDK1 and mTORC2. Active Akt (1) phosphorylates and inactivates **BAD** and other pro-apoptotic proteins, so the cell **survives**; (2) activates **mTORC1** (via TSC and Rheb), which increases **protein synthesis and cell growth**; (in muscle and fat cells it also sends GLUT4 to the surface after insulin). **PTEN** removes the 3-phosphate from PIP₃ and so switches the pathway off; loss of PTEN in cancer keeps Akt active.
+:::
+
+---
+
+**5.** Describe the JAK–STAT pathway. How does it differ from the Ras–MAP kinase pathway? `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Cytokine receptors (e.g. for interferons, IL-6, erythropoietin) have no kinase domain; a **JAK** tyrosine kinase is bound to each receptor tail. The cytokine brings two receptor chains together; the JAKs phosphorylate each other and tyrosines on the receptor. A **STAT** protein docks on a phosphotyrosine with its **SH2 domain** and is phosphorylated by JAK on one tyrosine. Two phosphorylated STATs bind each other (each SH2 domain binds the other's phosphotyrosine), the dimer enters the nucleus and binds DNA as a **transcription factor**.
+
+Differences: the kinase is **associated**, not part of the receptor; there is **no GTPase and no kinase cascade**: the protein phosphorylated at the receptor is itself the transcription factor. The route is shorter and amplifies less.
+:::
+
+---
+
+**6.** List four ways in which a growth-factor signal through the Ras–MAP kinase pathway is switched off. Which of them is a negative feedback, and what does it do to the time course of ERK activity? `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(1) **Receptor endocytosis** and degradation in lysosomes (and dephosphorylation of the receptor by tyrosine phosphatases). (2) **GAPs** speed up GTP hydrolysis by Ras. (3) **Phosphatases** remove the phosphates from MEK and ERK (e.g. DUSPs). (4) **Negative feedback**: active ERK phosphorylates SOS and RAF and makes them less active; ERK also induces transcription of DUSP genes.
+
+The feedback (4, and the induced DUSPs) is driven by the output itself. It makes ERK activity **rise to a peak** within minutes and then **fall to a lower plateau** although the growth factor is still there.
+:::
+
+---
+
+**7.** What is a phospho-specific antibody? Describe a western blot experiment that shows that EGF activates ERK within minutes, and name the controls. `[ELO 1]` `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A phospho-specific antibody is raised against a peptide that carries a phosphate at a particular site, and selected so that it binds the protein only when that site is phosphorylated. It therefore reports the **active form** (e.g. ERK phosphorylated on Thr202 and Tyr204).
+
+Experiment: starve cultured cells of serum (so that the pathway is off), add EGF, and lyse dishes of cells at 0, 2, 5, 10, 30 and 60 min. Run equal amounts of protein on SDS-PAGE, blot, and stain with **anti-phospho-ERK**. Controls: the same blot (or a parallel one) stained with **anti-total-ERK**, to show that the amount of ERK does not change and only its phosphorylation does; a **loading control** (actin or tubulin); a lane without EGF; optionally a lane with a MEK inhibitor, which should remove phospho-ERK. Expected: phospho-ERK appears within 2 min, peaks at about 5–10 min and then declines.
+:::
+
+---
+
+**8.** Explain how imatinib works in chronic myeloid leukaemia. Start with the chromosome change. `[ELO 3]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+In CML, chromosomes 9 and 22 exchange pieces (translocation t(9;22)); the shortened chromosome 22 is the **Philadelphia chromosome**. At the joint, the start of the **BCR** gene is fused to most of the **ABL** tyrosine kinase gene. The BCR part makes the fusion protein form oligomers, so the kinase is **always active**; the cells divide and survive without the normal signals, and too many white blood cells are made. **Imatinib** is a small molecule that binds the **ATP pocket** of ABL (in its inactive shape). Without ATP, BCR-ABL cannot phosphorylate its substrates, so the signal stops and the leukaemia cells stop dividing and die. Normal cells, which do not depend on ABL, are largely spared. Imatinib (2001) was the first targeted cancer drug; most patients now survive long term.
+:::
+
+## VG-style questions
+
+**9. [VG]** A tumour carries a **KRAS G12V** mutation. (a) Explain at the molecular level why this Ras is "stuck on". (b) Predict whether an EGFR inhibitor, a RAF inhibitor (vemurafenib) or a MEK inhibitor will reduce ERK activity in these cells, and explain why. `[ELO 3]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) Ras switches off by hydrolysing GTP, which is very slow unless a **GAP** puts a catalytic arginine into the active site. Glycine 12 lies next to that site; any larger side chain (here valine) blocks the GAP's arginine, so GAP-stimulated hydrolysis no longer works. Ras stays GTP-bound (active) without any input from the receptor.
+
+(b) **EGFR inhibitor**: little effect, because the block is **upstream** of the mutation; Ras is active without the receptor. **RAF inhibitor (vemurafenib)**: does not work, and can even **increase** ERK. Vemurafenib is made for the monomeric BRAF V600E; with active Ras, RAF works as dimers, and drug binding to one RAF in a dimer can activate the other (paradoxical activation). **MEK inhibitor**: reduces ERK, because MEK lies **downstream** of Ras. General rule: an inhibitor must act at or below the mutated step. (In practice, MEK inhibitors alone work poorly in KRAS-mutant tumours, partly because of feedback relief and the PI3K branch; new KRAS G12C inhibitors such as sotorasib target the mutant protein itself.)
+:::
+
+---
+
+**10. [VG]** BRAF V600E melanomas often respond to vemurafenib, but BRAF V600E colon cancers hardly do. Colon cells have much more EGFR signalling than melanocytes. Use the idea of negative feedback to explain the difference, and propose a better treatment for the colon cancer. Then describe an experiment with cultured colon cancer cells that would test your explanation. `[ELO 1]` `[ELO 3]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Explanation:** In BRAF V600E cells, ERK is very active, so the **negative feedback** from ERK keeps SOS, Ras and wild-type RAF strongly suppressed; the mutant BRAF itself ignores the feedback. Vemurafenib blocks V600E-BRAF and ERK falls. Lower ERK means **less feedback**, so the brake on the upstream pathway is released. In a melanoma cell there is little receptor input, so not much happens. In a colon cancer cell, **EGFR** is active: with the brake released, EGFR activates Ras, Ras makes RAF **dimers**, and vemurafenib inhibits these poorly. ERK comes back, and the tumour keeps growing.
+
+**Better treatment:** combine the BRAF inhibitor with an **EGFR blocker** (e.g. the antibody cetuximab; this combination, with encorafenib, is now used) and/or a **MEK inhibitor**, which acts below RAF.
+
+**Experiment:** treat BRAF V600E colon cancer cells with vemurafenib and lyse them at 0, 1, 4 and 24 h. Western blot with phospho-ERK, total ERK, **phospho-EGFR** and a loading control (and a Ras-GTP pull-down assay if available). Prediction: phospho-ERK falls first, then **rises again**, while phospho-EGFR and Ras-GTP **increase**. Add an EGFR inhibitor (or knock EGFR down by siRNA/CRISPR): the rebound should disappear and the cells should stop dividing (count cells or measure proliferation). Compare with a melanoma cell line, which should show little rebound.
+:::
+
+---
+
+**11. [VG]** Students compare two signals: receptor occupancy and active (doubly phosphorylated) ERK, both measured over a range of growth-factor concentrations. ERK is half-maximal at a ten times lower growth-factor concentration than the receptor, and its curve is much steeper. (a) Explain both observations. (b) Why could a steep, switch-like response be useful for a decision such as cell division? (c) Predict how a strong negative feedback would change the ERK dose–response curve. `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) **Sensitivity (left shift):** amplification. Each active kinase activates many molecules of the next, so a small fraction of active receptors is enough to switch on a large fraction of ERK. **Steepness:** MEK and ERK each need two phosphorylations, and the kinases and phosphatases work close to saturation, so at each level a small change in input tips the balance from mostly off to mostly on. The steepness compounds level by level (Hill coefficient about 4–5 for ERK versus 1 for binding).
+
+(b) Division is an all-or-none decision. A switch-like response ignores small, noisy changes in growth factor, but gives a clear "go" above a threshold, so cells do not start the cell cycle halfway.
+
+(c) Negative feedback reduces the maximum ERK level and makes the curve **less steep (more graded)** and shifts it, because the more ERK is active, the more it suppresses its own input. (In the demo: Hill coefficient falls from about 4 to about 1.3.) Feedback trades switch-like behaviour for robustness.
+:::
+
+## Explore {#explore}
+
+The demo is a small model of the cascade **growth factor → RTK → Ras → RAF → MEK → ERK**. On the left, the cascade is coloured by how much of each protein is active at the time you choose. The upper plot shows activity over 90 minutes after growth factor is added; tap or drag in the plot (or use the slider) to move the time cursor. The table gives the percentage active and the number of active molecules per cell. The lower plot shows the **steady state** at every growth-factor dose, with the half-maximal dose and steepness (Hill coefficient $n_H$) below it. You can add three **inhibitors** (dose in multiples of their IC₅₀), before or 30 min after the growth factor, switch the **negative feedback** (active ERK slowly inhibits SOS and RAF) on and off, and add an **oncogenic mutation**. When a drug is present, a dotted line shows ERK without the drugs, and the box under the table gives the effect at steady state.
+
+*A qualitative model with illustrative numbers.* MEK and ERK are each phosphorylated twice by enzymes near saturation, in the spirit of Huang and Ferrell (1996). It is one pathway out of a network: no PI3K branch, scaffolds or nuclear transport, one lumped feedback, simple drug binding. The RAF inhibitor blocks BRAF V600E well, but Ras-driven RAF dimers about 100 times less, and at moderate doses it activates them up to 1.5 times (paradoxical activation). The curves are computed at once; there is no animation.
+
+::: {.column-page}
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="kinasecascade" data-preset="normal"></div>
+<script src="../demos/dist/kinasecascade.js"></script>
+```
+:::
+
+**E1.** Choose **Feedback off**. In the lower plot, compare the receptor and ERK curves. At what growth-factor dose is each half-maximal, and what are their Hill coefficients? Set the dose to 0.1 ng/mL: what percentage of receptors and of ERK is active? Explain both differences with two properties of the cascade. `[ELO 3]`
+
+**E2.** Choose **Normal cell + growth factor** (feedback on). Read ERK at the peak and at 60 min, and when the peak occurs. Then untick the feedback. What changes in the time course and in the dose–response curve? What would you expect to see on a phospho-ERK western blot with and without the feedback? `[ELO 1]` `[ELO 3]`
+
+**E3. [VG]** *Predict first:* a MEK inhibitor at its IC₅₀ is added 30 min after the growth factor. Will it remove a larger or a smaller fraction of ERK activity in a cell **with** feedback than in one **without**? Then run **MEK inhibitor at 30 min, no feedback** and **… with feedback**. Read the percentage of ERK activity removed, and look at RAF and Ras before and after the drug. Explain what you see. `[ELO 3]`
+
+**E4.** Choose **Ras G12V (stuck on)**. Is ERK active without growth factor? Now try each inhibitor alone at 10× IC₅₀ (use **Remove all drugs** between tries). Which one works, which one does nothing, and which one makes ERK *more* active? Explain each with where the drug acts relative to the mutation. `[ELO 3]` `[ELO 9]`
+
+**E5. [VG]** Choose **BRAF V600E melanoma** (no growth factor) and add the RAF inhibitor at 10× IC₅₀. Then choose **BRAF V600E + vemurafenib, with EGF**. Compare ERK. Untick the feedback in the second case: what happens, and what does this tell you about *why* the drug fails? Find two ways (one or two drugs) to bring ERK below 30 %. Relate this to the treatment of BRAF V600E colon cancer. `[ELO 3]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** Receptor: half-maximal at **about 1 ng/mL** (the K_d), $n_H$ = **1.0**. ERK: half-maximal at **about 0.09 ng/mL** (11 times less) with $n_H$ ≈ **4**. At 0.1 ng/mL only **9 %** of the receptors are bound, but **53 %** of ERK is active (and at 0.2 ng/mL, 17 % against 80 %). The left shift comes from **amplification**: each active kinase activates many molecules of the next, so a few active receptors are enough to switch on much of the ERK. The steepness comes from the **double phosphorylations** of MEK and ERK by enzymes working near saturation; it grows from level to level (MEK $n_H$ ≈ 2, ERK ≈ 4). ERK switches from off to on over a small change in growth factor.
+
+**E2.** With feedback, ERK peaks at **about 85 % after 5–6 min** and falls to **about 45–50 %** by 30 min, then stays there (a small dip and rebound on the way). Without feedback, ERK rises to about 85 % and **stays** there. The dose–response curve with feedback is lower (maximum about 59 %) and much **less steep** ($n_H$ ≈ 1.3 instead of 4). On a western blot, phospho-ERK with feedback would be strongest at 5–10 min and weaker at 30–60 min (as in real cells after EGF); without feedback it would stay strong. Total ERK would be the same in all lanes.
+
+**E3.** Without feedback, the drug removes **about 59 %** of ERK activity (85 % → 35 %); RAF and Ras do not change. With feedback, it removes only **about 46 %** (49 % → 27 %), and the time course shows ERK dropping to about 7 % within a few minutes and then **climbing back** to 27 %. At the same time RAF rises from about 39 % to 56 % and Ras from about 44 % to 54 %. Explanation: the inhibitor lowers ERK, ERK no longer brakes SOS and RAF, so more MEK is phosphorylated, which partly overcomes the drug. Relief of negative feedback **blunts** the inhibitor. At 3× IC₅₀ the drug wins in both cases (only 5–9 % left): feedback relief raises the dose needed.
+
+**E4.** Yes: without any growth factor, Ras is about 67 % GTP-bound and ERK about **65 %** active. **RTK inhibitor: no effect** (ERK stays 65 %), because the receptor is upstream of the mutated Ras. **MEK inhibitor: works** (ERK about 0 % at 10× IC₅₀, 4 % at 3×), because MEK is downstream of Ras. **RAF inhibitor: ERK rises** to about 78 %. In Ras-mutant cells RAF works as Ras-driven dimers, which the drug blocks poorly; at moderate doses drug binding to one RAF activates the partner (paradoxical activation). This is why vemurafenib is not given to patients with RAS-mutant tumours, and why patients on it can get new skin tumours from cells with RAS mutations. Rule: the drug must act **at or below** the mutated step, and must actually bind the active form of its target.
+
+**E5.** Melanoma without growth factor: the RAF inhibitor at 10× takes ERK from **88 % to about 0 %**. The cells depend on V600E-BRAF, and there is little other input. With EGF, the same dose leaves **about 69 %** of ERK active: the drug barely works. Look at Ras: before the drug, the strong ERK signal kept Ras suppressed by feedback (about 28 % active although half of the receptors are bound); with the drug, ERK falls, the brake is released and Ras rises (35 %), and the RAF activity now comes from **Ras-driven wild-type RAF dimers**, which the drug blocks poorly (and even activates). With the feedback switched off, the drug does nothing at all (88 % with and without): the receptor input fully replaces the blocked mutant. So the drug fails because of the receptor, and the feedback is what kept that receptor input hidden before treatment. Two ways below 30 %: **add the RTK inhibitor** at 10× (ERK about 26 %), or **add a MEK inhibitor** at 3× (ERK about 6 %; a MEK inhibitor alone at 10× gives about 1 %). In patients, BRAF V600E colon cancer is treated with a BRAF inhibitor plus the EGFR antibody cetuximab (encorafenib + cetuximab), and melanoma with a BRAF + MEK inhibitor combination.
+:::

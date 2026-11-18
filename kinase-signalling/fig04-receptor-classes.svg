@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig04: three kinds of enzyme-coupled receptor -->
+<defs></defs>
+<rect x="0" y="30" width="900" height="90" rx="0" fill="#eef4fa" stroke="none" stroke-width="0"/>
+<rect x="0" y="146" width="900" height="180" rx="0" fill="#fbfaf5" stroke="none" stroke-width="0"/>
+<rect x="0" y="120" width="900" height="26" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<line x1="0" y1="120" x2="900" y2="120" stroke="#8a6a12" stroke-width="3"/>
+<line x1="0" y1="146" x2="900" y2="146" stroke="#8a6a12" stroke-width="3"/>
+<text x="890" y="52" font-size="15" text-anchor="end" font-weight="normal" fill="#6b7280">outside</text>
+<text x="890" y="172" font-size="15" text-anchor="end" font-weight="normal" fill="#6b7280">cytosol</text>
+<rect x="116" y="62" width="28" height="110" rx="9" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="100" y="172" width="44" height="50" rx="10" fill="#b39e65" stroke="#8a6a12" stroke-width="2"/>
+<rect x="156" y="62" width="28" height="110" rx="9" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="156" y="172" width="44" height="50" rx="10" fill="#b39e65" stroke="#8a6a12" stroke-width="2"/>
+<text x="210" y="205" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">kinase</text>
+<text x="210" y="223" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">domain</text>
+<text x="150" y="262" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Receptor tyrosine kinase</text>
+<text x="150" y="284" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">kinase is part of the receptor</text>
+<text x="150" y="306" font-size="15" text-anchor="middle" font-weight="normal" fill="#6b7280">EGFR, HER2, insulin receptor</text>
+<rect x="416" y="62" width="28" height="110" rx="9" fill="#e9ecef" stroke="#1b2a3a" stroke-width="2"/>
+<ellipse cx="420" cy="196" rx="24" ry="22" fill="#aac9ef" stroke="#2a78d6" stroke-width="2"/>
+<text x="420" y="202" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">JAK</text>
+<rect x="456" y="62" width="28" height="110" rx="9" fill="#e9ecef" stroke="#1b2a3a" stroke-width="2"/>
+<ellipse cx="480" cy="196" rx="24" ry="22" fill="#aac9ef" stroke="#2a78d6" stroke-width="2"/>
+<text x="480" y="202" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">JAK</text>
+<text x="450" y="262" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Kinase-associated receptor</text>
+<text x="450" y="284" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">a separate kinase (JAK) binds it</text>
+<text x="450" y="306" font-size="15" text-anchor="middle" font-weight="normal" fill="#6b7280">cytokine receptors (interferon, IL-6, EPO)</text>
+<rect x="716" y="62" width="28" height="110" rx="9" fill="#dee2e6" stroke="#6b7280" stroke-width="2"/>
+<rect x="700" y="172" width="44" height="50" rx="10" fill="#f1f3f5" stroke="#6b7280" stroke-width="2"/>
+<rect x="756" y="62" width="28" height="110" rx="9" fill="#dee2e6" stroke="#495057" stroke-width="2"/>
+<rect x="756" y="172" width="44" height="50" rx="10" fill="#f1f3f5" stroke="#495057" stroke-width="2"/>
+<text x="750" y="262" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Receptor Ser/Thr kinase</text>
+<text x="750" y="284" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">phosphorylates Ser/Thr</text>
+<text x="750" y="306" font-size="15" text-anchor="middle" font-weight="normal" fill="#6b7280">TGF-β receptors: tissue-signalling lecture</text>
+<text x="450" y="360" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">All three: a ligand outside brings two receptor chains together, and that switches on a kinase inside.</text>
+</svg>

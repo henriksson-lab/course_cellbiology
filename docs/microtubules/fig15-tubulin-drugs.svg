@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="296" viewBox="0 0 1100 296" font-family="Helvetica, Arial, sans-serif">
+<!-- fig15: taxanes stabilise and vinca alkaloids block microtubules; effects on mitosis and on long axons. Cartoon. -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arO" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arB" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1f77b4"/></marker><marker id="arP" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7b3f99"/></marker><marker id="arG" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2f9e44"/></marker><marker id="arR" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker></defs>
+<text x="20" y="32" font-size="18" text-anchor="start" font-weight="bold" fill="#e8590c">Taxanes (paclitaxel, docetaxel)</text>
+<text x="20" y="52" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" font-style="italic">first found in the bark of the Pacific yew</text>
+<rect x="30" y="76" width="300" height="26" rx="3" fill="#c7d0da" stroke="#1b2a3a" stroke-width="1.5"/><line x1="32" y1="83" x2="328" y2="83" stroke="#9aa8b6" stroke-width="1"/><line x1="32" y1="89" x2="328" y2="89" stroke="#9aa8b6" stroke-width="1"/><line x1="32" y1="95" x2="328" y2="95" stroke="#9aa8b6" stroke-width="1"/>
+<path d="M54,82 L61,89 L54,96 L47,89 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<path d="M90,82 L97,89 L90,96 L83,89 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<path d="M126,82 L133,89 L126,96 L119,89 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<path d="M162,82 L169,89 L162,96 L155,89 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<path d="M198,82 L205,89 L198,96 L191,89 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<path d="M234,82 L241,89 L234,96 L227,89 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<path d="M270,82 L277,89 L270,96 L263,89 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<path d="M306,82 L313,89 L306,96 L299,89 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<text x="345" y="87" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">bind inside the lattice:</text>
+<text x="345" y="107" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">microtubules cannot shrink</text>
+<text x="20" y="172" font-size="18" text-anchor="start" font-weight="bold" fill="#e8590c">Vinca alkaloids (vincristine, vinblastine)</text>
+<text x="20" y="192" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" font-style="italic">from the Madagascar periwinkle</text>
+<rect x="30" y="216" width="220" height="26" rx="3" fill="#c7d0da" stroke="#1b2a3a" stroke-width="1.5"/><line x1="32" y1="223" x2="248" y2="223" stroke="#9aa8b6" stroke-width="1"/><line x1="32" y1="229" x2="248" y2="229" stroke="#9aa8b6" stroke-width="1"/><line x1="32" y1="235" x2="248" y2="235" stroke="#9aa8b6" stroke-width="1"/>
+<path d="M249,236.2 L267,236.2 L258,220 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<path d="M255,215.6 L269,215.6 L262,203 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<path d="M247,253.6 L261,253.6 L254,241 Z" fill="#e8590c" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="290" cy="206" r="6" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="302" cy="206" r="6" fill="#6f8fae" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="300" cy="246" r="6" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="312" cy="246" r="6" fill="#6f8fae" stroke="#1b2a3a" stroke-width="1"/>
+<text x="345" y="227" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">bind the + end and free tubulin:</text>
+<text x="345" y="247" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">microtubules cannot grow</text>
+<path d="M590,100 C650,100 670,120 696,140" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M590,236 C650,236 670,210 696,178" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+<text x="612" y="158" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">both:</text>
+<text x="612" y="178" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">dynamics stop</text>
+<text x="790" y="32" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Dividing cell</text>
+<ellipse cx="790" cy="110" rx="86" ry="58" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="732" cy="110" r="5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<line x1="732" y1="110" x2="782" y2="83.0" stroke="#555555" stroke-width="1.6"/>
+<line x1="732" y1="110" x2="782" y2="96.5" stroke="#555555" stroke-width="1.6"/>
+<line x1="732" y1="110" x2="782" y2="110.0" stroke="#555555" stroke-width="1.6"/>
+<line x1="732" y1="110" x2="782" y2="123.5" stroke="#555555" stroke-width="1.6"/>
+<line x1="732" y1="110" x2="782" y2="137.0" stroke="#555555" stroke-width="1.6"/>
+<circle cx="848" cy="110" r="5" fill="#c99a06" stroke="#1b2a3a" stroke-width="1"/>
+<line x1="848" y1="110" x2="798" y2="83.0" stroke="#555555" stroke-width="1.6"/>
+<line x1="848" y1="110" x2="798" y2="96.5" stroke="#555555" stroke-width="1.6"/>
+<line x1="848" y1="110" x2="798" y2="110.0" stroke="#555555" stroke-width="1.6"/>
+<line x1="848" y1="110" x2="798" y2="123.5" stroke="#555555" stroke-width="1.6"/>
+<line x1="848" y1="110" x2="798" y2="137.0" stroke="#555555" stroke-width="1.6"/>
+<rect x="784" y="80.6" width="12" height="12" rx="3" fill="#9b7fc4" stroke="#1b2a3a" stroke-width="1"/>
+<rect x="784" y="95.9" width="12" height="12" rx="3" fill="#9b7fc4" stroke="#1b2a3a" stroke-width="1"/>
+<rect x="784" y="112.1" width="12" height="12" rx="3" fill="#9b7fc4" stroke="#1b2a3a" stroke-width="1"/>
+<rect x="784" y="127.4" width="12" height="12" rx="3" fill="#9b7fc4" stroke="#1b2a3a" stroke-width="1"/>
+<text x="790" y="190" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">spindle cannot pull: arrest</text>
+<text x="790" y="210" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">in mitosis, then cell death</text>
+<text x="1000" y="32" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Long axon</text>
+<circle cx="920" cy="110" r="20" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+<path d="M940,104 L1080,104 M940,116 L1080,116" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="962" cy="110" r="4.5" fill="#fbeedd" stroke="#d9822b" stroke-width="1.5"/>
+<circle cx="994" cy="110" r="4.5" fill="#fbeedd" stroke="#d9822b" stroke-width="1.5"/>
+<circle cx="1026" cy="110" r="4.5" fill="#fbeedd" stroke="#d9822b" stroke-width="1.5"/>
+<circle cx="1058" cy="110" r="4.5" fill="#fbeedd" stroke="#d9822b" stroke-width="1.5"/>
+<text x="1000" y="160" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">transport along the axon</text>
+<text x="1000" y="180" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">is disturbed: numb, tingling</text>
+<text x="1000" y="200" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">fingers and toes (neuropathy)</text>
+<text x="895" y="262" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Cancer cells divide often: the main effect.</text>
+<text x="895" y="282" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Nerves with the longest axons: the main side effect.</text>
+</svg>

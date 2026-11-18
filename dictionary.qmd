@@ -212,3 +212,441 @@ See [Ion channels and membrane potential](ion-channels/lec.qmd).
 **CFTR potentiator**: a drug, such as ivacaftor, that increases the time a CFTR channel at the cell surface spends open.
 
 **CFTR corrector**: a drug, such as elexacaftor or tezacaftor, that helps misfolded CFTR fold and leave the ER so that it reaches the plasma membrane.
+
+## Protein handling and organelles
+
+### Sorting proteins to the right compartment
+
+See [Sorting proteins to the right compartment](protein-sorting/lec.qmd).
+
+**Sorting signal**: a part of a protein (a short amino-acid pattern or a surface patch) that a receptor reads to decide where the protein goes.
+
+**Signal peptide (ER)**: an N-terminal stretch of 15–30 amino acids with a hydrophobic core that sends a protein into the ER during translation and is then cut off.
+
+**Nuclear localisation signal (NLS)**: a short basic stretch of amino acids (e.g. PKKKRKV) that importins recognise to carry a protein into the nucleus.
+
+**Nuclear export signal (NES)**: a short leucine-rich stretch that exportins such as XPO1 recognise to carry a protein out of the nucleus.
+
+**Nuclear pore complex**: a large protein channel (about 120 MDa) through the nuclear envelope, filled with FG repeats, that lets small molecules diffuse and larger ones pass with a carrier.
+
+**FG repeats**: disordered, phenylalanine–glycine-rich chains of nucleoporins that fill the nuclear pore and act as a selective sieve.
+
+**Importin**: a transport receptor that binds NLS cargo in the cytosol, carries it through the nuclear pore and releases it when Ran-GTP binds.
+
+**Ran**: a small GTPase whose GTP form is made in the nucleus and destroyed in the cytosol; the resulting gradient makes nuclear transport one-way.
+
+**Gated transport**: movement between the cytosol and the nucleus through nuclear pores, without crossing a membrane.
+
+**Mitochondrial presequence**: an N-terminal, positively charged amphipathic helix that targets a protein to the mitochondrial matrix and is removed there.
+
+**TOM and TIM complexes**: the protein translocators of the outer (TOM) and inner (TIM) mitochondrial membranes, through which proteins made in the cytosol are imported.
+
+**PTS1**: a C-terminal tripeptide (typically -SKL) that the receptor PEX5 reads to import a folded protein into peroxisomes.
+
+**KDEL retrieval**: return of ER-resident proteins with a C-terminal KDEL from the Golgi to the ER by the KDEL receptor.
+
+**Selinexor**: a drug that blocks the exportin XPO1, trapping tumour-suppressor proteins in the nucleus; used in multiple myeloma.
+
+### The endoplasmic reticulum
+
+See [The endoplasmic reticulum](er/lec.qmd).
+
+**Signal sequence**: a stretch of about 15–30 amino acids at the N-terminus, with a hydrophobic core, that sends a protein into the ER and is then cut off.
+
+**Signal recognition particle (SRP)**: a protein–RNA complex that binds a signal sequence as it leaves the ribosome, pauses translation and brings the ribosome to the ER membrane.
+
+**Translocon (Sec61)**: the protein channel in the ER membrane through which a new chain enters the lumen; a lateral gate lets membrane segments out into the lipid.
+
+**Co-translational translocation**: moving a protein into the ER while the ribosome is still making it.
+
+**Stop-transfer sequence**: a hydrophobic segment that stops translocation of a chain already entering the ER and stays in the membrane.
+
+**Signal-anchor sequence**: an uncleaved hydrophobic segment that starts translocation and stays as a membrane anchor; the positive charges next to it set its orientation.
+
+**Positive-inside rule**: positively charged amino acids next to a membrane segment stay on the cytosolic side.
+
+**Protein disulfide isomerase (PDI)**: an ER enzyme that forms disulfide bonds in new proteins and rearranges wrong ones.
+
+**BiP**: the main Hsp70 chaperone of the ER lumen; it binds unfolded chains and holds the UPR sensors inactive.
+
+**N-linked glycosylation**: transfer of a 14-sugar block from dolichol to an asparagine in the sequence N-X-S/T, by oligosaccharyltransferase in the ER.
+
+**Calnexin cycle**: repeated binding of a glycoprotein with one glucose to the lectin chaperone calnexin until it folds; UGGT re-adds the glucose to unfolded proteins.
+
+**ERAD (ER-associated degradation)**: return of misfolded ER proteins to the cytosol, where they are ubiquitinated and degraded by the proteasome.
+
+**Unfolded protein response (UPR)**: signalling from the ER sensors IRE1, PERK and ATF6 that raises folding capacity and lowers translation when unfolded proteins pile up, or triggers apoptosis.
+
+**Microsomes**: small sealed vesicles of ER membrane formed when cells are broken; used to study translocation and topology.
+
+**Russell body**: a swollen ER compartment filled with retained immunoglobulin in a plasma cell.
+
+### The Golgi and the secretory pathway
+
+See [The Golgi and the secretory pathway](golgi-secretion/lec.qmd).
+
+**Secretory pathway**: the route of proteins from the ER through the Golgi to the plasma membrane, secretory granules or lysosomes, always inside membrane compartments.
+
+**ERGIC**: the ER–Golgi intermediate compartment, a set of tubules and vesicle clusters between the ER exit sites and the cis Golgi.
+
+**COPII**: the coat that makes vesicles leaving the ER, switched on by the small GTPase Sar1.
+
+**COPI**: the coat that makes vesicles carrying proteins back from the Golgi to the ER and between Golgi cisternae, switched on by ARF1.
+
+**Clathrin**: a three-legged protein that forms basket-like coats on vesicles at the trans-Golgi network and the plasma membrane, linked to cargo by adaptors such as AP1 and AP2.
+
+**Rab GTPase**: a small GTPase that marks the identity of a membrane and, in its GTP form, recruits tethers and other effectors.
+
+**Tether**: a long coiled-coil protein or multi-subunit complex that catches an arriving vesicle before fusion.
+
+**SNARE**: a membrane protein whose helices zip with partner SNAREs on the other membrane into a four-helix bundle that fuses the two bilayers.
+
+**NSF**: an ATPase that pulls SNARE complexes apart after fusion so the SNAREs can be reused.
+
+**Trans-Golgi network (TGN)**: the tubular exit face of the Golgi, where cargo is sorted to the plasma membrane, secretory granules or endosomes.
+
+**Cisternal maturation**: the model in which Golgi cisternae themselves move and change from cis to trans, carrying cargo with them.
+
+**Mannose-6-phosphate (M6P)**: a sugar tag added to lysosomal enzymes in the Golgi, which the M6P receptor uses to send them to the lysosomes.
+
+**Constitutive secretion**: continuous, unregulated delivery of proteins and membrane to the cell surface, which happens in every cell.
+
+**Regulated secretion**: storage of products in secretory granules that fuse with the plasma membrane only when a signal raises cytosolic Ca²⁺.
+
+**Brefeldin A**: a fungal compound that blocks activation of ARF1, so COPI cannot form and the Golgi merges into the ER.
+
+### Endocytosis, lysosomes and autophagy
+
+See [Endocytosis, lysosomes and autophagy](endocytosis-lysosomes/lec.qmd).
+
+**Endocytosis**: uptake of material by folding in the plasma membrane and pinching off a vesicle.
+
+**Dynamin**: a GTPase that forms a ring around the neck of a budding vesicle and pinches it off.
+
+**Receptor-mediated endocytosis**: uptake of specific molecules bound to receptors that collect in clathrin-coated pits.
+
+**LDL (low-density lipoprotein)**: a particle of about 22 nm that carries cholesterol esters in the blood and is recognised through its apoB protein.
+
+**Endosome**: a membrane compartment that receives endocytosed material and sorts it for recycling or degradation; it becomes more acidic as it matures.
+
+**Macropinocytosis**: unselective, actin-driven uptake of large gulps of extracellular fluid.
+
+**Phagocytosis**: receptor-triggered, actin-driven engulfment of large particles such as bacteria or dead cells by specialised cells.
+
+**Autophagy**: delivery of parts of the cell's own cytosol and organelles to lysosomes inside a double-membrane autophagosome.
+
+**mTORC1**: a kinase on the lysosome surface that senses nutrients, drives growth and blocks autophagy when nutrients are plentiful.
+
+**PCSK9**: a liver protein that binds the LDL receptor and sends it to the lysosome instead of recycling; the target of cholesterol-lowering antibodies.
+
+**Familial hypercholesterolaemia (FH)**: an inherited disease with high blood LDL from birth, usually caused by faulty LDL receptors.
+
+**Endosomal escape**: release of a drug, such as RNA from a lipid nanoparticle, from the endosome into the cytosol before it reaches the lysosome.
+
+### Protein life and death
+
+See [Protein life and death](protein-lifecycle/lec.qmd).
+
+**Chaperone**: a protein that binds exposed hydrophobic parts of unfolded chains to prevent wrong contacts and help them fold, without carrying information about the final shape.
+
+**Hsp70**: the main cytosolic chaperone, which binds and releases short hydrophobic stretches of a chain in an ATP-driven cycle.
+
+**Chaperonin**: a barrel-shaped chaperone (GroEL/GroES in bacteria, TRiC in the human cytosol) that encloses a protein so it can fold alone.
+
+**Amyloid**: an ordered, very stable protein aggregate in which β-strands from many chains stack across a long fibril (cross-β) and seed further growth.
+
+**Protein kinase**: an enzyme that moves a phosphate from ATP onto a serine, threonine or tyrosine of a protein; a protein phosphatase removes it.
+
+**Acetylation**: addition of an acetyl group to a lysine, which removes its positive charge (for example on histones).
+
+**Ubiquitin**: a small protein of 76 amino acids attached to lysines of other proteins as a signal; Lys48-linked chains mark proteins for the proteasome.
+
+**E3 ubiquitin ligase**: the enzyme that recognises a specific substrate and transfers ubiquitin from an E2 onto it; about 600 kinds in humans give the system its specificity.
+
+**Degron**: a feature of a protein, such as a phosphorylated motif or an exposed hydrophobic stretch, that an E3 ligase recognises as a signal for destruction.
+
+**Proteasome**: a large protease complex in the cytosol and nucleus; its 19S cap unfolds ubiquitinated proteins and its 20S core cuts them into short peptides.
+
+**Protein half-life**: the time for half of a protein's molecules to be destroyed (t½ = ln 2 / k_d).
+
+**Cycloheximide chase**: blocking protein synthesis with cycloheximide and following the decay of a protein over time to measure its half-life.
+
+**Pulse-chase**: labelling newly made proteins briefly, then following the labelled group over time.
+
+**PROTAC**: a two-headed drug that links a target protein to an E3 ligase so that the target is ubiquitinated and destroyed.
+
+**Molecular glue**: a small molecule, such as lenalidomide bound to cereblon, that makes an E3 ligase recognise and destroy new substrate proteins.
+
+### Organelles compared: keeping the cell in balance
+
+See [Organelles compared: keeping the cell in balance](organelles-homeostasis/lec.qmd).
+
+**Nuclear lamina**: a mesh of lamin filaments under the inner nuclear membrane that gives the nucleus its shape and anchors chromatin.
+
+**Lamin**: an intermediate-filament protein (A- or B-type) that forms the nuclear lamina.
+
+**Peroxisome**: a single-membrane organelle that imports folded enzymes, carries out oxidations that make H₂O₂, and shortens very-long-chain fatty acids.
+
+**Catalase**: a peroxisomal enzyme that breaks down hydrogen peroxide to water and oxygen.
+
+**Lipid droplet**: an organelle that stores neutral fat in a core covered by a single layer of phospholipids.
+
+**Contact site**: a place where two organelle membranes are held 10–30 nm apart by tether proteins without fusing, so lipids and ions can pass between them.
+
+**Store-operated Ca²⁺ entry**: refilling of the ER Ca²⁺ store, in which STIM in the ER opens ORAI channels in the plasma membrane.
+
+**SERCA**: the ATP-driven pump that moves Ca²⁺ from the cytosol into the ER.
+
+**V-type H⁺-ATPase**: the proton pump that acidifies the lumen of the Golgi, endosomes and lysosomes.
+
+**AMPK**: a kinase that senses a low energy charge (high AMP) and switches on fuel use and switches off synthesis.
+
+**Homeostasis**: keeping a variable near a set point by negative feedback.
+
+**Stereology**: estimating volume fractions from sections by counting how many grid points fall on each structure.
+
+**Progerin**: a shortened lamin A that keeps its farnesyl lipid and causes Hutchinson–Gilford progeria.
+
+**Lonafarnib**: a farnesyltransferase inhibitor, the first approved drug for progeria.
+
+**Zellweger syndrome**: an inherited disease in which a defect in a PEX gene blocks protein import into peroxisomes.
+
+## Cell signalling
+
+### Principles of cell communication
+
+See [Principles of cell communication](signalling-principles/lec.qmd).
+
+**Endocrine signalling**: a hormone travels in the blood to target cells throughout the body.
+
+**Paracrine signalling**: a local mediator acts on nearby cells and is quickly removed.
+
+**Autocrine signalling**: a cell responds to a signal that it releases itself.
+
+**Contact-dependent signalling**: a membrane-bound signal acts only on cells that touch the sending cell.
+
+**Nuclear receptor**: an intracellular receptor for a small fat-soluble hormone that acts as a transcription factor.
+
+**Dissociation constant (K_d)**: the free ligand concentration at which half the receptors are occupied; a low K_d means high affinity.
+
+**Dose–response curve**: a plot of response against log drug concentration, giving E_max and EC₅₀.
+
+**EC₅₀**: the concentration of a drug that gives half of its maximal response; a measure of potency.
+
+**IC₅₀**: the inhibitor concentration that removes half of a response, at a stated agonist concentration.
+
+**Efficacy**: how strongly a drug activates a receptor once bound.
+
+**Agonist**: a drug that binds a receptor and activates it.
+
+**Partial agonist**: a drug that binds a receptor but activates it only part-way, even at full occupancy.
+
+**Antagonist**: a drug that binds a receptor without activating it and blocks the agonist; competitive antagonists shift the curve right, non-competitive ones lower the maximum.
+
+**Spare receptors**: receptors beyond those needed for a maximal response, which make EC₅₀ lower than K_d.
+
+**Desensitisation**: a fall in response to a signal that stays on, for example by receptor phosphorylation, arrestin binding or receptor endocytosis.
+
+### G-protein-coupled receptors and second messengers
+
+See [G-protein-coupled receptors and second messengers](gpcr/lec.qmd).
+
+**G-protein-coupled receptor (GPCR)**: a cell-surface receptor made of one protein chain that crosses the membrane seven times and activates a trimeric G protein.
+
+**Trimeric G protein**: a membrane-bound switch of three subunits (Gα, Gβ, Gγ) that is on when Gα holds GTP and off when it holds GDP.
+
+**GEF (guanine nucleotide exchange factor)**: a protein that makes a GTPase release GDP so that GTP can bind; an active GPCR is the GEF for its G protein.
+
+**Gs / Gi / Gq**: the main Gα families: Gs stimulates and Gi inhibits adenylyl cyclase; Gq activates phospholipase C-β.
+
+**Second messenger**: a small molecule or ion made or released inside the cell in response to a signal, such as cAMP, IP₃, DAG or Ca²⁺.
+
+**Adenylyl cyclase**: a plasma-membrane enzyme that turns ATP into cyclic AMP (cAMP).
+
+**Phosphodiesterase (PDE)**: an enzyme that breaks down cAMP (or cGMP) and so ends the signal.
+
+**Protein kinase A (PKA)**: a kinase whose catalytic subunits are released when cAMP binds its regulatory subunits.
+
+**Phospholipase C-β**: a Gq-activated enzyme that cuts the membrane lipid PIP₂ into IP₃ and DAG.
+
+**IP₃ receptor**: a Ca²⁺ channel in the ER membrane that opens when IP₃ binds.
+
+**Protein kinase C (PKC)**: a kinase activated at the membrane by DAG together with Ca²⁺.
+
+**Calmodulin**: a small Ca²⁺-binding protein that, with four Ca²⁺ bound, wraps around and activates target proteins.
+
+**Arrestin**: a protein that binds phosphorylated active GPCRs, blocks G-protein coupling and links the receptor to clathrin for endocytosis.
+
+**Cholera toxin**: a bacterial enzyme that ADP-ribosylates Gαs so it cannot hydrolyse GTP, keeping cAMP high in gut cells.
+
+### Enzyme-coupled receptors: kinase cascades
+
+See [Enzyme-coupled receptors: kinase cascades](kinase-signalling/lec.qmd).
+
+**Receptor tyrosine kinase (RTK)**: a single-pass receptor whose cytosolic kinase domain phosphorylates tyrosines when ligand binding brings two receptor chains together.
+
+**Autophosphorylation**: phosphorylation of a kinase by a second molecule of the same kinase, as in an RTK dimer where each chain phosphorylates the other.
+
+**SH2 domain**: a protein domain of about 100 amino acids that binds a phosphorylated tyrosine together with the next few amino acids.
+
+**Adaptor protein**: a protein without enzyme activity that links two other proteins, such as Grb2 linking an active RTK to SOS.
+
+**Ras**: a small membrane-anchored GTPase that is active with GTP and links RTKs to the MAP kinase cascade.
+
+**GAP (GTPase-activating protein)**: a protein that switches a GTPase off by speeding up hydrolysis of its bound GTP.
+
+**MAP kinase cascade**: a chain of three kinases (here RAF → MEK → ERK), each phosphorylating and activating the next.
+
+**Ultrasensitivity**: a switch-like response in which the output goes from off to on over a small change in input (Hill coefficient above 1).
+
+**PI3K**: a lipid kinase that turns PIP₂ into PIP₃ in the plasma membrane, recruiting proteins such as Akt.
+
+**Akt (protein kinase B)**: a kinase recruited to PIP₃ by its PH domain that promotes cell survival and growth.
+
+**JAK–STAT pathway**: a pathway in which receptor-bound JAK kinases phosphorylate STATs, which pair up and act directly as transcription factors.
+
+**Phospho-specific antibody**: an antibody that binds a protein only when a particular site is phosphorylated, so it reports the active form.
+
+**Gatekeeper mutation**: a mutation that puts a larger amino acid at the entrance of a kinase's ATP pocket, keeping an inhibitor out but letting ATP in.
+
+**Imatinib**: the first targeted cancer drug; it blocks the ATP pocket of the BCR-ABL kinase in chronic myeloid leukaemia.
+
+### Signalling that shapes tissues and decides fates
+
+See [Signalling that shapes tissues and decides fates](fate-signalling/lec.qmd).
+
+**β-catenin**: transcriptional coactivator that is destroyed continually unless Wnt signalling blocks the destruction complex.
+
+**Destruction complex**: protein complex (APC, Axin, GSK3) that phosphorylates β-catenin and marks it for destruction by the proteasome.
+
+**Primary cilium**: single non-moving cell projection that acts as a signalling antenna, where Hedgehog signalling takes place.
+
+**Patched**: Hedgehog receptor that keeps Smoothened inactive until Hedgehog binds it.
+
+**Smoothened**: membrane protein that activates Gli when it moves into the primary cilium; the target of vismodegib.
+
+**SMAD**: transcription factor phosphorylated by TGF-β-family receptor kinases, which then enters the nucleus with SMAD4.
+
+**Notch**: receptor for the membrane-bound signal Delta; it is cut, and its released intracellular domain activates genes with CSL.
+
+**γ-secretase**: protease that cuts proteins inside the membrane, including Notch and the amyloid precursor protein.
+
+**Lateral inhibition**: feedback in which a cell signalling via Delta stops its neighbours from taking the same fate, giving a salt-and-pepper pattern.
+
+**Morphogen**: a signal that forms a concentration gradient and gives different cell fates at different concentrations.
+
+**NF-κB**: inflammatory transcription factor held in the cytosol by IκB until IκB is phosphorylated and destroyed by the proteasome.
+
+**Reporter gene**: a gene for luciferase or GFP placed after binding sites for a transcription factor, so that light measures pathway activity.
+
+**Tamoxifen**: drug that binds the oestrogen receptor but blocks coactivator binding, used in ER-positive breast cancer.
+
+**Competence**: a cell's readiness to respond to a signal in a particular way, set by its open chromatin and partner transcription factors.
+
+## Cytoskeleton
+
+### Actin: cell shape and migration
+
+See [Actin: cell shape and migration](actin/lec.qmd).
+
+**G-actin**: the free, globular actin monomer, which binds ATP or ADP.
+
+**F-actin**: the filament made of G-actin subunits, a polar two-stranded helix about 7 nm wide.
+
+**Barbed end (+ end)**: the fast-growing end of an actin filament, with the lower critical concentration.
+
+**Pointed end (− end)**: the slow-growing end of an actin filament, where old ADP subunits leave.
+
+**Critical concentration**: the free monomer concentration at which subunits join and leave a filament end equally fast.
+
+**Treadmilling**: a steady state in which a filament gains subunits at its + end as fast as it loses them at its − end, so it keeps its length and moves.
+
+**Arp2/3 complex**: a nucleator that binds the side of an actin filament and starts a branch at about 70°, building branched networks.
+
+**Formin**: a nucleator that stays on the growing barbed end and makes long, unbranched actin filaments.
+
+**Profilin**: a protein that binds actin monomers, recharges them with ATP and lets them join only free barbed ends.
+
+**Cofilin**: a protein that binds old ADP-actin filaments, cuts them and speeds their disassembly.
+
+**Capping protein**: a protein that binds barbed ends tightly and stops growth there.
+
+**Lamellipodium**: the thin sheet at the front of a crawling cell, filled with a branched actin network that pushes the membrane.
+
+**Filopodium**: a thin, finger-like protrusion containing a tight bundle of parallel actin filaments.
+
+**Stress fibre**: a contractile bundle of actin and myosin II that ends in focal adhesions.
+
+**Rho GTPases (Rho, Rac, Cdc42)**: small GTP-binding switches that turn on stress fibres, lamellipodia and filopodia respectively.
+
+**Phalloidin**: a mushroom toxin that binds and stabilises F-actin; with a fluorescent dye it stains actin in fixed cells.
+
+**Latrunculin**: a sponge toxin that binds G-actin and so makes actin filaments disassemble.
+
+### Microtubules and motor proteins
+
+See [Microtubules and motor proteins](microtubules/lec.qmd).
+
+**Tubulin**: the αβ protein dimer, 8 nm long, that builds microtubules; both subunits bind GTP.
+
+**Protofilament**: a head-to-tail row of tubulin dimers; 13 of them form a microtubule.
+
+**Plus end / minus end**: the fast-growing end of a microtubule (β-tubulin exposed) and the slow, usually anchored end (α-tubulin exposed).
+
+**GTP cap**: the GTP-tubulin at a growing microtubule end that keeps it straight and stable.
+
+**Dynamic instability**: random switching of a microtubule end between slow growth and fast shrinkage.
+
+**Catastrophe**: the switch from growth to rapid shrinkage when the GTP cap is lost.
+
+**Rescue**: the switch from shrinkage back to growth.
+
+**Centrosome**: the main microtubule-organising centre of animal cells: two centrioles in pericentriolar material.
+
+**γ-tubulin ring complex**: a ring that templates new microtubules and caps their minus ends.
+
+**EB1**: a protein that binds only growing plus ends; fused to GFP it shows them as moving comets.
+
+**Kinesin**: a family of motor proteins that mostly walk towards the plus end, 8 nm and one ATP per step.
+
+**Dynein**: a large motor that walks towards the minus end; it also bends cilia (axonemal dynein).
+
+**Axonal transport**: motor-driven transport along an axon, out to the tip (anterograde, kinesin) or back to the cell body (retrograde, dynein).
+
+**Axoneme**: the 9 + 2 microtubule core of a motile cilium or flagellum.
+
+### Myosin, intermediate filaments and the mechanical cell
+
+See [Myosin, intermediate filaments and the mechanical cell](myosin-if/lec.qmd).
+
+**Myosin**: a motor protein that uses ATP to walk along actin filaments; the tail decides whether it pulls (myosin II) or carries cargo (myosin V).
+
+**Cross-bridge cycle**: the repeating cycle in which a myosin head binds actin, makes a power stroke, releases when ATP binds, and is re-cocked by ATP hydrolysis.
+
+**Power stroke**: the swing of the myosin lever arm, triggered by phosphate release, that moves an actin filament 5–10 nm.
+
+**Rigor**: the state in which myosin heads stay locked to actin because no ATP is bound; it causes rigor mortis.
+
+**Sarcomere**: the repeating contractile unit of striated muscle, from one Z-disc to the next, about 2–3 µm long.
+
+**Sliding-filament model**: muscle shortens because thick and thin filaments slide past each other while keeping their length.
+
+**Length–tension curve**: the dependence of a muscle's active force on sarcomere length, set by how much the thick and thin filaments overlap.
+
+**Tropomyosin**: a rod-shaped protein along the actin filament that covers the myosin-binding sites in resting muscle.
+
+**Troponin**: a protein complex on tropomyosin that binds Ca²⁺ and then moves tropomyosin so myosin can bind actin.
+
+**Contractile ring**: a ring of actin and non-muscle myosin II that pinches a dividing cell in two.
+
+**Intermediate filament**: a 10 nm rope-like, non-polar filament (keratins, vimentin, desmin, neurofilaments, lamins) that gives cells mechanical strength.
+
+**Desmosome**: a cell–cell junction that anchors intermediate filaments and links the networks of neighbouring cells.
+
+**Hemidesmosome**: a junction that anchors a cell's intermediate filaments to the basal lamina.
+
+**TIRF microscopy**: fluorescence microscopy that lights only a layer about 100 nm thick above the glass, for sharp images of the cell bottom and single molecules.
+
+**Traction-force microscopy**: a method that calculates the forces a cell exerts from how far beads move in the soft gel the cell grows on.
+
+**Mavacamten**: a cardiac myosin inhibitor that parks myosin heads, used to treat hypertrophic cardiomyopathy.

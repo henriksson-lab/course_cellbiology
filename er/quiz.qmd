@@ -1,0 +1,104 @@
+---
+title: "Quiz: the endoplasmic reticulum"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *The endoplasmic reticulum: making, folding and checking proteins*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** A ribosome is making a protein with an N-terminal signal sequence. Put these events in order: (a) translation continues and the chain enters the lumen; (b) SRP binds the signal sequence; (c) signal peptidase cuts off the signal; (d) SRP binds the SRP receptor; (e) the signal sequence comes out of the ribosome. `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+SRP cannot bind what is still inside the ribosome's exit tunnel.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**e → b → d → a → c.** The signal comes out of the ribosome, SRP binds it and pauses translation, SRP docks on its receptor next to the translocon, the ribosome is handed to the translocon and translation continues with the chain going into the lumen. Signal peptidase cuts the signal off while the rest of the chain is still being made.
+:::
+
+---
+
+**Q2.** You make a secreted protein in a test tube from its mRNA, without and with microsomes (ER vesicles). Without microsomes the product is 2 kDa larger. Why? `[ELO 4, ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What is missing when there is no ER membrane?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Without microsomes there is no **signal peptidase**, so the **signal sequence stays on**: about 20 amino acids, about 2 kDa. With microsomes, the chain enters the vesicle and the signal is cut off. This was the first evidence for the signal sequence (Milstein, 1972).
+:::
+
+---
+
+**Q3.** A single-pass membrane protein has **no** cleavable signal sequence. Its only hydrophobic segment has lysines and arginines on its **C-terminal** side. Which way does it insert? What type is it? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Positive charges stay on the cytosolic side.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The positive charges after the segment stay in the **cytosol**, so the C-terminal part is cytosolic and the **N-terminus goes into the lumen**. It is a **type III** protein (a signal-anchor with N in the lumen), like the cytochrome P450 enzymes of the liver ER.
+:::
+
+---
+
+**Q4.** A receptor crosses the membrane 7 times and its N-terminus is outside the cell. Where is its C-terminus? Where on the protein do you expect its N-glycans? `[ELO 4, ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Each crossing switches the side. Where are sugars added?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+An **odd** number of crossings puts the two ends on **opposite sides**: the C-terminus is in the **cytosol**. N-glycans are added only in the **ER lumen**, which becomes the **outside** of the cell, so they are on the N-terminal part or the outside loops, never on the cytosolic loops or the C-terminal tail.
+:::
+
+---
+
+**Q5.** Why do disulfide bonds form in the ER lumen but hardly ever in the cytosol? Name the enzyme that helps. `[ELO 4, ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+A disulfide bond is an oxidised pair of cysteines.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The ER lumen is **oxidizing**; the cytosol is **reducing** (much glutathione in its reduced form), which keeps cysteines as free –SH. **PDI** (protein disulfide isomerase) makes disulfide bonds in new chains and also breaks wrong pairs so that the correct pairs can form.
+:::
+
+---
+
+**Q6.** What does the **glucose** on an N-glycan tell the ER, and what does **UGGT** do? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Calnexin binds glycoproteins with exactly one glucose.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+A single glucose means "**hold me**": calnexin (and calreticulin) bind the protein and help it fold. When the last glucose is removed the protein is released. **UGGT** checks it: if it is still **unfolded** (exposed hydrophobic patches), UGGT adds one glucose back, so the protein binds calnexin again. Folded proteins are not re-glucosylated and can leave the ER.
+:::
+
+---
+
+**Q7.** A misfolded protein in the ER lumen is destroyed by the proteasome, which is in the cytosol. How does it get there? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+ERAD runs translocation in reverse.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+By **ERAD**: the protein is recognised (trimmed mannoses, exposed hydrophobic parts), pulled **back across the ER membrane** through the **Hrd1** complex, **ubiquitinated** on the cytosolic side (Hrd1 is a ubiquitin ligase), extracted by the ATPase **p97** and degraded by the **proteasome**.
+:::
+
+---
+
+**Q8.** Name the three sensors of the unfolded protein response and one thing each does. Why is reducing translation useful? `[ELO 4, ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of the ER as a factory with too many unfinished products.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**IRE1** splices the XBP1 mRNA, making the transcription factor XBP1 (more chaperones, ERAD and ER membrane). **PERK** phosphorylates eIF2α, which slows down almost all translation. **ATF6** moves to the Golgi, is cut, and its fragment is a transcription factor for chaperone genes. Less translation means **less new protein enters the ER** while its folding capacity grows, so the backlog can clear. If it cannot, the UPR triggers apoptosis.
+:::

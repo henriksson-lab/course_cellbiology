@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="400" viewBox="0 0 1100 400" font-family="Helvetica, Arial, sans-serif">
+<!-- fig06: treadmilling. The filament keeps its length and moves to the right; a dyed subunit (speckle) stays where it is. -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arb" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1971c2"/></marker><marker id="arp" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#9c36b5"/></marker><marker id="ard" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arg" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2b8a3e"/></marker><marker id="arm" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#8a6a12"/></marker><marker id="ark" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#555555"/></marker><marker id="ara" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7048e8"/></marker></defs>
+<circle cx="129.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="138.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="147.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="156.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="165.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="174.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="183.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="192.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="201.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="210.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="219.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="228.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="237.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="246.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="255.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="264.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="273.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="282.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="291.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="300.0" cy="77.2" r="9.0" fill="#2fb344" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="309.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="318.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="327.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="336.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="345.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="354.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="363.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="372.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="381.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="390.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="399.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="408.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="417.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="426.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="435.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="444.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="453.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="462.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="471.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="480.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="489.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="498.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="507.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="516.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="525.0" cy="62.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="534.0" cy="77.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="543.0" cy="62.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="552.0" cy="77.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="561.0" cy="62.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="570.0" cy="77.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="579.0" cy="62.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="588.0" cy="77.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="597.0" cy="62.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="606.0" cy="77.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="615.0" cy="62.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="624.0" cy="77.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="633.0" cy="62.8" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="642.0" cy="77.2" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="651.0" cy="62.8" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="660.0" cy="77.2" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<text x="20.0" y="76.0" font-size="17" text-anchor="start" fill="#1b2a3a" font-weight="bold">t = 0</text>
+<line x1="679.0" y1="70.0" x2="719.0" y2="70.0" stroke="#1971c2" stroke-width="2.5" marker-end="url(#arb)" />
+<text x="725.0" y="76.0" font-size="15" text-anchor="start" fill="#1971c2">+ subunits join</text>
+<line x1="116.0" y1="96.0" x2="80.0" y2="96.0" stroke="#9c36b5" stroke-width="2.5" marker-end="url(#arp)" />
+<text x="116.0" y="118.0" font-size="15" text-anchor="start" fill="#9c36b5">subunits leave</text>
+<circle cx="183.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="192.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="201.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="210.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="219.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="228.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="237.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="246.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="255.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="264.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="273.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="282.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="291.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="300.0" cy="182.2" r="9.0" fill="#2fb344" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="309.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="318.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="327.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="336.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="345.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="354.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="363.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="372.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="381.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="390.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="399.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="408.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="417.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="426.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="435.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="444.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="453.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="462.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="471.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="480.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="489.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="498.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="507.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="516.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="525.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="534.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="543.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="552.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="561.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="570.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="579.0" cy="167.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="588.0" cy="182.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="597.0" cy="167.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="606.0" cy="182.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="615.0" cy="167.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="624.0" cy="182.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="633.0" cy="167.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="642.0" cy="182.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="651.0" cy="167.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="660.0" cy="182.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="669.0" cy="167.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="678.0" cy="182.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="687.0" cy="167.8" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="696.0" cy="182.2" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="705.0" cy="167.8" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="714.0" cy="182.2" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<text x="20.0" y="181.0" font-size="17" text-anchor="start" fill="#1b2a3a" font-weight="bold">later</text>
+<line x1="733.0" y1="175.0" x2="773.0" y2="175.0" stroke="#1971c2" stroke-width="2.5" marker-end="url(#arb)" />
+<text x="779.0" y="181.0" font-size="15" text-anchor="start" fill="#1971c2">+ subunits join</text>
+<line x1="170.0" y1="201.0" x2="134.0" y2="201.0" stroke="#9c36b5" stroke-width="2.5" marker-end="url(#arp)" />
+<text x="170.0" y="223.0" font-size="15" text-anchor="start" fill="#9c36b5">subunits leave</text>
+<circle cx="237.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="246.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="255.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="264.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="273.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="282.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="291.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="300.0" cy="287.2" r="9.0" fill="#2fb344" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="309.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="318.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="327.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="336.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="345.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="354.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="363.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="372.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="381.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="390.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="399.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="408.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="417.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="426.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="435.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="444.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="453.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="462.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="471.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="480.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="489.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="498.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="507.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="516.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="525.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="534.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="543.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="552.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="561.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="570.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="579.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="588.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="597.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="606.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="615.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="624.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="633.0" cy="272.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="642.0" cy="287.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="651.0" cy="272.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="660.0" cy="287.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="669.0" cy="272.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="678.0" cy="287.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="687.0" cy="272.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="696.0" cy="287.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="705.0" cy="272.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="714.0" cy="287.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="723.0" cy="272.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="732.0" cy="287.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="741.0" cy="272.8" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="750.0" cy="287.2" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="759.0" cy="272.8" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="768.0" cy="287.2" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<text x="20.0" y="286.0" font-size="17" text-anchor="start" fill="#1b2a3a" font-weight="bold">later still</text>
+<line x1="787.0" y1="280.0" x2="827.0" y2="280.0" stroke="#1971c2" stroke-width="2.5" marker-end="url(#arb)" />
+<text x="833.0" y="286.0" font-size="15" text-anchor="start" fill="#1971c2">+ subunits join</text>
+<line x1="224.0" y1="306.0" x2="188.0" y2="306.0" stroke="#9c36b5" stroke-width="2.5" marker-end="url(#arp)" />
+<text x="224.0" y="328.0" font-size="15" text-anchor="start" fill="#9c36b5">subunits leave</text>
+<line x1="300.0" y1="40.0" x2="300.0" y2="310.0" stroke="#2fb344" stroke-width="1.5" stroke-dasharray="5 5" />
+<text x="300.0" y="30.0" font-size="15" text-anchor="middle" fill="#2b8a3e" font-weight="bold">the dyed subunit does not move</text>
+<line x1="820.0" y1="345.0" x2="1000.0" y2="345.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)" />
+<text x="910.0" y="375.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="bold">the filament moves</text>
+<text x="60.0" y="360.0" font-size="16" text-anchor="start" fill="#1b2a3a">Same length, same speed at both ends: subunits flow through the filament from + to −.</text>
+<text x="60.0" y="385.0" font-size="16" text-anchor="start" fill="#1b2a3a">Energy comes from ATP hydrolysis; free G-actin stays between the two critical concentrations.</text>
+</svg>

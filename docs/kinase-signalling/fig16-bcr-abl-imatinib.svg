@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig16: BCR-ABL from the Philadelphia translocation, and imatinib in the ATP pocket -->
+<defs><marker id="a1b2a3a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+<text x="210" y="26" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">A chromosome swap makes a new kinase</text>
+<rect x="60" y="60" width="30" height="110" rx="12" fill="#dee2e6" stroke="#1b2a3a" stroke-width="1.5"/>
+<rect x="60" y="170" width="30" height="70" rx="12" fill="#9fc5e8" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="75" y="266" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">chr 9</text>
+<text x="110" y="220" font-size="14" text-anchor="start" font-weight="bold" fill="#1c4fa0">ABL</text>
+<rect x="170" y="80" width="30" height="60" rx="12" fill="#f8d7da" stroke="#1b2a3a" stroke-width="1.5"/>
+<rect x="170" y="140" width="30" height="60" rx="12" fill="#dee2e6" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="185" y="266" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">chr 22</text>
+<text x="210" y="128" font-size="14" text-anchor="start" font-weight="bold" fill="#c92a2a">BCR</text>
+<path d="M240,150 L300,150" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<rect x="320" y="90" width="30" height="60" rx="12" fill="#f8d7da" stroke="#1b2a3a" stroke-width="1.5"/>
+<rect x="320" y="150" width="30" height="70" rx="12" fill="#9fc5e8" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="335" y="266" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Philadelphia</text>
+<text x="335" y="284" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">chromosome</text>
+<text x="360" y="140" font-size="14" text-anchor="start" font-weight="bold" fill="#c92a2a">BCR</text>
+<text x="360" y="200" font-size="14" text-anchor="start" font-weight="bold" fill="#1c4fa0">ABL</text>
+<text x="210" y="324" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">BCR–ABL fusion protein: a tyrosine kinase</text>
+<text x="210" y="344" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">that is always on → chronic myeloid leukaemia</text>
+<line x1="450" y1="40" x2="450" y2="360" stroke="#d0d4da" stroke-width="1.5"/>
+<text x="675" y="26" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Imatinib fills the ATP pocket</text>
+<path d="M510,100 C510,60 650,60 650,100 L650,130 L598,130 L598,160 L562,160 L562,130 L510,130 Z" fill="#e7f0fb" stroke="#2a78d6" stroke-width="2.5"/>
+<path d="M510,230 C510,270 650,270 650,230 L650,170 L598,170 L598,150 L562,150 L562,170 L510,170 Z" fill="#e7f0fb" stroke="#2a78d6" stroke-width="2.5"/>
+<text x="580" y="96" font-size="14" text-anchor="middle" font-weight="normal" fill="#1c4fa0">ABL kinase</text>
+<rect x="566" y="134" width="28" height="32" rx="8" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="580" y="155" font-size="11" text-anchor="middle" font-weight="bold" fill="#1b2a3a">ATP</text>
+<text x="580" y="300" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">ATP binds:</text>
+<text x="580" y="320" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">substrate phosphorylated</text>
+<path d="M710,100 C710,60 850,60 850,100 L850,130 L798,130 L798,160 L762,160 L762,130 L710,130 Z" fill="#e7f0fb" stroke="#2a78d6" stroke-width="2.5"/>
+<path d="M710,230 C710,270 850,270 850,230 L850,170 L798,170 L798,150 L762,150 L762,170 L710,170 Z" fill="#e7f0fb" stroke="#2a78d6" stroke-width="2.5"/>
+<text x="780" y="96" font-size="14" text-anchor="middle" font-weight="normal" fill="#1c4fa0">ABL kinase</text>
+<rect x="764" y="132" width="32" height="36" rx="8" fill="#e8590c" stroke="none" stroke-width="0"/>
+<text x="834" y="300" font-size="1" text-anchor="middle" font-weight="normal" fill="#1b2a3a"></text>
+<text x="780" y="300" font-size="15" text-anchor="middle" font-weight="bold" fill="#e8590c">imatinib binds:</text>
+<text x="780" y="320" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">no phosphorylation</text>
+<text x="675" y="356" font-size="14" text-anchor="middle" font-weight="normal" fill="#6b7280">Imatinib fits the inactive shape of ABL</text>
+</svg>

@@ -1,0 +1,104 @@
+---
+title: "Quiz: enzyme-coupled receptors and kinase cascades"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Enzyme-coupled receptors: kinase cascades*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** An RTK has a single transmembrane helix. How, then, does binding of a growth factor outside switch on the kinase inside? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think about what the ligand does to two receptor chains, not to one.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The growth factor brings **two receptor chains together** (dimerisation). The two kinase domains are then close enough to **phosphorylate each other** (*trans*-autophosphorylation), first in their activation loops, which makes them fully active, then on tyrosines in their tails. A single helix does not need to transmit a shape change.
+:::
+
+---
+
+**Q2.** What does an SH2 domain bind, and why do different SH2 proteins bind different phosphotyrosines on the same receptor? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+The pocket reads the phosphate; what does the groove next to it read?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+An SH2 domain binds a **phosphorylated tyrosine** together with the **few amino acids that follow it**. The pocket binds the phosphotyrosine; the neighbouring groove reads the next (about three) amino acids. Because each phosphotyrosine on the receptor has a different neighbouring sequence, each one attracts particular SH2 proteins (e.g. Grb2, PI3K, PLCγ).
+:::
+
+---
+
+**Q3.** Fill in: Ras is active when it binds ______. The ______ SOS switches it on by ______. A ______ switches it off by ______. `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+GEF, GAP, GTP, GDP.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Ras is active when it binds **GTP**. The **GEF** (guanine nucleotide exchange factor) SOS switches it on by **letting GDP out so that GTP can bind**. A **GAP** (GTPase-activating protein, e.g. neurofibromin) switches it off by **speeding up hydrolysis of the bound GTP to GDP**.
+:::
+
+---
+
+**Q4.** Put in order, from the receptor to the nucleus: ERK, Grb2–SOS, MEK, Ras, RAF. Which of them are kinases? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Two of the five have no kinase activity.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Receptor → **Grb2–SOS → Ras → RAF → MEK → ERK** → nucleus. **RAF, MEK and ERK** are kinases (the MAP kinase kinase kinase, MAP kinase kinase and MAP kinase). Grb2 is an adaptor, SOS is a GEF and Ras is a GTPase.
+:::
+
+---
+
+**Q5.** PI3K adds a phosphate to a membrane lipid. Why does that activate Akt, which is a cytosolic kinase? And what does the phosphatase PTEN do? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Akt has a PH domain.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+PI3K turns PIP₂ into **PIP₃** in the inner leaflet of the plasma membrane. Akt's **PH domain** binds PIP₃, so Akt is brought to the membrane, where other kinases (PDK1, mTORC2) phosphorylate and activate it. **PTEN** removes the phosphate again (PIP₃ → PIP₂) and so switches the pathway off; losing PTEN keeps Akt on, which is why PTEN is a tumour suppressor.
+:::
+
+---
+
+**Q6.** Why does a three-kinase cascade give a more switch-like (steeper) response than the receptor itself? Name two reasons. `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+How many phosphates do MEK and ERK need? And how busy are the kinases and phosphatases?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(1) **MEK and ERK each need two phosphorylations** to be active, which roughly squares the response at low input. (2) The kinases and phosphatases work **near saturation**, so a small change in kinase activity tips the balance strongly (zero-order ultrasensitivity). (3) The steepness **compounds** from level to level. Together, the response of ERK can have a Hill coefficient of 4–5, compared with 1 for simple receptor binding.
+:::
+
+---
+
+**Q7.** Cells are treated with EGF, and a western blot is stained with an antibody against phospho-ERK and one against total ERK. Phospho-ERK peaks at 5 min and falls by 30 min; total ERK stays the same. Give two reasons why phospho-ERK falls although EGF is still there. `[ELO 1]` `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think about the off switches, and about what active ERK does upstream.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Negative feedback**: active ERK phosphorylates SOS and RAF and makes them less active, and it turns on genes for ERK phosphatases (DUSPs). **Receptor endocytosis**: active EGF receptors are taken into the cell and partly degraded in lysosomes. GAPs also return Ras to the GDP form. Total ERK is unchanged, so the fall is in **activity**, not in amount.
+:::
+
+---
+
+**Q8.** A patient's chronic myeloid leukaemia responds well to imatinib for several years, then comes back. Sequencing shows BCR-ABL with the mutation T315I. Explain what has happened. `[ELO 3]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Where does imatinib bind, and what is a gatekeeper residue?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Imatinib binds the **ATP pocket** of the ABL kinase. T315 is the **gatekeeper** residue at the entrance of that pocket. Replacing the small threonine with the bigger isoleucine keeps imatinib out, but ATP can still bind, so BCR-ABL is active again. Among the billions of leukaemia cells, a cell with this mutation survived the drug and grew out (selection, as for antibiotic resistance). A different inhibitor that still binds T315I (ponatinib) can be used.
+:::

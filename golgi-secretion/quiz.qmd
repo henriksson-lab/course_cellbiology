@@ -1,0 +1,104 @@
+---
+title: "Quiz: the Golgi and the secretory pathway"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *The Golgi and the secretory pathway*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Put these compartments in the order a newly made antibody passes through on its way out of a plasma cell: cis Golgi, ER, trans-Golgi network, ERGIC, medial Golgi, plasma membrane. `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Start where the protein is made, and remember the station between the ER and the Golgi.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**ER → ERGIC → cis Golgi → medial Golgi → trans-Golgi network → plasma membrane.** The antibody is made on ribosomes on the rough ER, leaves the ER in COPII vesicles, passes the ERGIC, crosses the Golgi stack from cis to trans and leaves the TGN in a carrier that fuses with the plasma membrane (constitutive secretion).
+:::
+
+---
+
+**Q2.** Which coat would you find on (a) a vesicle leaving the ER, (b) a vesicle taking an escaped ER chaperone back from the Golgi to the ER, (c) a vesicle taking a lysosomal enzyme from the TGN towards the endosomes? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+One coat for the exit from the ER, one for going backwards, one that works at the TGN and the plasma membrane.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) **COPII**. (b) **COPI** (the chaperone's KDEL signal binds the KDEL receptor, which is packed into COPI vesicles). (c) **Clathrin**, with the adaptor **AP1**, which binds the mannose-6-phosphate receptor carrying the enzyme.
+:::
+
+---
+
+**Q3.** A soluble protein in the ER lumen cannot touch the COPII coat, which sits on the cytosolic side of the membrane. How can it still be collected into a COPII vesicle? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of a protein that spans the membrane and can bind on both sides.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+It binds a **transmembrane cargo receptor**. The receptor binds the soluble cargo in the lumen and, with its cytosolic tail, binds the inner coat (a sorting signal). So the coat collects the receptor, and the receptor brings the cargo. (Some soluble proteins also enter vesicles at low concentration by "bulk flow", without a receptor.)
+:::
+
+---
+
+**Q4.** What are the jobs of (a) a Rab GTPase, (b) a tether, (c) a SNARE, in the arrival of a vesicle at its target membrane? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Address label, hook, fusion machine.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) A **Rab** in its GTP form marks the identity of a membrane or vesicle and recruits effector proteins: an **address label**. (b) A **tether** (a long coiled-coil golgin or a multi-subunit complex such as the exocyst) binds the Rab and **catches** the vesicle at a distance, bringing it close. (c) **SNAREs** on the vesicle (v-SNARE) and target (t-SNAREs) wind into a four-helix bundle that pulls the membranes together and **fuses** them.
+:::
+
+---
+
+**Q5.** A cell biologist asks whether a glycoprotein has reached the Golgi yet. She treats a cell extract with the enzyme Endo H and runs an SDS gel. What result means "still in the ER", and what means "has passed the medial Golgi"? `[ELO 1, 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Endo H cuts N-linked glycans of the high-mannose type, before the medial Golgi enzymes have rebuilt them.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+If Endo H **removes** the glycans, the protein runs **faster** (smaller) on the gel: the glycans are still high-mannose, so the protein is in the **ER** (or the cis Golgi). If the band **does not move** after Endo H, the glycans have been trimmed and rebuilt by medial Golgi enzymes (**Endo H-resistant**): the protein has reached at least the **medial Golgi**.
+:::
+
+---
+
+**Q6.** In I-cell disease, the enzyme that adds mannose-6-phosphate to lysosomal enzymes is missing. Where do the lysosomal enzymes end up, and why? `[ELO 4, 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What happens in the TGN to a protein with no sorting signal?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Without mannose-6-phosphate, the enzymes are not bound by the **M6P receptor** in the TGN and are not packed into clathrin/AP1 vesicles to the endosomes. They follow the **default route**, **constitutive secretion**, and leave the cell: high enzyme levels are found in the blood, while the lysosomes lack enzymes and fill with undigested material ("inclusion cells").
+:::
+
+---
+
+**Q7.** Brefeldin A blocks the GEF that activates ARF1. Why does this make the Golgi disappear into the ER within minutes? `[ELO 4, 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which coat needs ARF1, and which direction does that coat carry membrane?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Without active ARF1, **COPI** coats fall off and cannot form again on Golgi membranes. The uncoated Golgi membranes grow long **tubules that fuse with the ER** (this return route does not need COPI), so Golgi lipids and enzymes flow into the ER. Cargo leaving the ER in COPII vesicles cannot build a separate Golgi again, so it stays in the merged ER–Golgi. The lesson: the Golgi exists only as a **steady state** of traffic in and out. When brefeldin A is washed out, the Golgi re-forms.
+:::
+
+---
+
+**Q8.** Botulinum toxin type A cuts SNAP-25 in motor nerve terminals. Synaptic vesicles still reach the membrane and dock. Why can they not release acetylcholine, and what does the patient experience? `[ELO 4, 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Docking is done by Rabs and tethers. What does the four-helix bundle do?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+SNAP-25 provides **two of the four helices** of the SNARE bundle. Cut SNAP-25 cannot complete the zipper, so the vesicle membrane and plasma membrane are **not pulled together and do not fuse**. Docking (Rab, tethers) still works, but no acetylcholine is released, the muscle gets no signal, and the patient has a **flaccid (limp) paralysis**, which can stop breathing.
+:::

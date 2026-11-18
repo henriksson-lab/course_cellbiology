@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+  </defs>
+  <!-- OFF -->
+  <path d="M90,150 c0,-60 70,-80 110,-50 c30,22 40,70 10,96 c-30,26 -120,24 -120,-46 z" fill="#d0ebff" stroke="#1971c2" stroke-width="2.5"/>
+  <path d="M196,108 l26,-14 l8,22 z" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
+  <text x="150" y="160" text-anchor="middle" font-weight="bold">OFF</text>
+  <text x="150" y="184" text-anchor="middle" font-size="15">site closed</text>
+  <text x="150" y="128" text-anchor="middle" font-size="15">Ser–OH</text>
+  <!-- ON -->
+  <path d="M640,150 c0,-60 70,-80 110,-50 c30,22 40,70 10,96 c-30,26 -120,24 -120,-46 z" fill="#d0ebff" stroke="#1971c2" stroke-width="2.5"/>
+  <path d="M746,104 l40,-10 l-6,40 z" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
+  <circle cx="660" cy="96" r="16" fill="#ffec99" stroke="#e67700" stroke-width="2.5"/><text x="660" y="102" text-anchor="middle" font-weight="bold">P</text>
+  <text x="700" y="160" text-anchor="middle" font-weight="bold">ON</text>
+  <text x="700" y="184" text-anchor="middle" font-size="15">site open</text>
+  <text x="715" y="238" text-anchor="middle" font-size="15">new shape: active, or binds</text>
+  <text x="715" y="258" text-anchor="middle" font-size="15">new partners</text>
+  <!-- kinase arrow -->
+  <path d="M260,110 C350,40 520,40 610,100" fill="none" stroke="#1b2a3a" stroke-width="2.8" marker-end="url(#ah)"/>
+  <rect x="370" y="22" width="140" height="34" rx="8" fill="#ffffff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="440" y="45" text-anchor="middle" font-weight="bold">protein kinase</text>
+  <text x="440" y="122" text-anchor="middle" font-size="15">ATP → ADP; phosphate on Ser, Thr or Tyr</text>
+  <!-- phosphatase arrow -->
+  <path d="M610,220 C520,290 350,290 260,224" fill="none" stroke="#1b2a3a" stroke-width="2.8" marker-end="url(#ah)"/>
+  <rect x="355" y="276" width="170" height="34" rx="8" fill="#ffffff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="440" y="299" text-anchor="middle" font-weight="bold">protein phosphatase</text>
+  <text x="440" y="252" text-anchor="middle" font-size="15">water: the phosphate comes off</text>
+  <text x="440" y="168" text-anchor="middle" font-size="15">each phosphate adds 2 negative</text>
+  <text x="440" y="188" text-anchor="middle" font-size="15">charges: it pulls or pushes on</text>
+  <text x="440" y="208" text-anchor="middle" font-size="15">nearby side chains</text>
+</svg>

@@ -18,7 +18,7 @@ make typecheck     # tsc --noEmit (esbuild does not check types)
 
 | Demo | Where | What |
 |---|---|---|
-| `cellexplorer` | `cell-tour/explore.qmd` (own page; screenshot + link in the deck) | One FIB-SEM plane through a HeLa cell (OpenOrganelle jrc_hela-2) with organelle outlines: pan/zoom, layers, info per organelle, scale bar, "Find the organelle" quiz |
+| `cellexplorer` | `cell-tour/explore.qmd` (own page; screenshot + link in the deck) | One FIB-SEM plane through a HeLa cell (OpenOrganelle jrc_hela-2) with organelle outlines: pan/zoom, layers, info per organelle, scale bar, "Find the organelle" quiz. With `data-mode="measure"` (used in `organelles-homeostasis/questions.qmd`) it adds a Measure tab: point counting on a grid, area fractions, pH and Ca²⁺ per compartment |
 | `resolution` | `microscopy/questions.qmd#explore` (linked from "Magnification is not resolution") | Two Airy spots merging: distance, wavelength, NA, electrons; Rayleigh limit |
 | `flowgate` | `cell-methods/questions.qmd#explore` (linked from "Reading a dot plot: gating") | Simulated blood sample: draw an FSC/SSC gate, read CD4/CD8 quadrants, check against the truth |
 | `frap` | `membrane-structure/questions.qmd#explore` (linked from "How do we know? Membrane proteins move") | Thousands of molecules doing 2D random walks (WebGL); tap to bleach, recovery curve fitted with the exact circular-spot curve (mobile fraction, t½, D); immobile fraction, qualitative fluidity sliders, follow one molecule; Frye–Edidin cell-fusion mode |

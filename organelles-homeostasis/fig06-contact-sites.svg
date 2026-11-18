@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="Helvetica, Arial, sans-serif">
+<rect width="900" height="470" fill="#fbfaf5"/>
+<path d="M20,40 Q20,20 40,20 L560,20 Q580,20 580,40 L580,440 Q580,460 560,460 L40,460 Q20,460 20,440 Z" stroke="#8a6a12" stroke-width="5" fill="#fbfaf5" />
+<ellipse cx="120" cy="240" rx="80" ry="110" fill="#efebf7" stroke="#6b4fa0" stroke-width="4" />
+<text x="120" y="245" font-size="16" fill="#6b4fa0" text-anchor="middle"><tspan dy="0">nucleus</tspan></text>
+<path d="M198,205 L470,84 L515,40 L572,40" stroke="#2a7f8f" stroke-width="10" fill="none" stroke-linejoin="round"/>
+<path d="M198,205 L470,84 L515,40 L572,40" stroke="#e6f3f5" stroke-width="4" fill="none" stroke-linejoin="round"/>
+<path d="M200,250 L572,250" stroke="#2a7f8f" stroke-width="10" fill="none" stroke-linejoin="round"/>
+<path d="M200,250 L572,250" stroke="#e6f3f5" stroke-width="4" fill="none" stroke-linejoin="round"/>
+<path d="M195,290 L520,434" stroke="#2a7f8f" stroke-width="10" fill="none" stroke-linejoin="round"/>
+<path d="M195,290 L520,434" stroke="#e6f3f5" stroke-width="4" fill="none" stroke-linejoin="round"/>
+<ellipse cx="390" cy="160" rx="46" ry="20" fill="#f8e9ec" stroke="#a8324a" stroke-width="3" transform="rotate(-24 390 160)"/>
+<text x="440" y="186" font-size="15" fill="#a8324a"><tspan dy="0">mitochondrion</tspan></text>
+<ellipse cx="290" cy="300" rx="40" ry="18" fill="#f8e9ec" stroke="#a8324a" stroke-width="3" transform="rotate(24 290 300)"/>
+<path d="M400,238 q32,-12 64,0" stroke="#d9822b" stroke-width="5" fill="none" />
+<path d="M400,228 q32,-12 64,0" stroke="#d9822b" stroke-width="5" fill="none" />
+<path d="M400,218 q32,-12 64,0" stroke="#d9822b" stroke-width="5" fill="none" />
+<text x="392" y="228" font-size="15" fill="#d9822b" text-anchor="end"><tspan dy="0">Golgi</tspan></text>
+<ellipse cx="505" cy="284" rx="26" ry="26" fill="#f2d675" stroke="#b38f00" stroke-width="3" stroke-dasharray="5 3"/>
+<text x="505" y="330" font-size="15" fill="#7a6200" text-anchor="middle"><tspan dy="0">lipid droplet</tspan></text>
+<ellipse cx="360" cy="274" rx="15" ry="15" fill="#e9eef8" stroke="#3b5bab" stroke-width="3" />
+<text x="382" y="284" font-size="15" fill="#3b5bab"><tspan dy="0">peroxisome</tspan></text>
+<ellipse cx="350" cy="398" rx="22" ry="22" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3" />
+<text x="350" y="442" font-size="15" fill="#2e8b57" text-anchor="middle"><tspan dy="0">endosome</tspan></text>
+<text x="505" y="52" font-size="15" fill="#8a6a12" text-anchor="end"><tspan dy="0">plasma membrane</tspan></text>
+<circle cx="379" cy="134" r="10" fill="none" stroke="#e8590c" stroke-width="3"/>
+<circle cx="280" cy="322" r="10" fill="none" stroke="#e8590c" stroke-width="3"/>
+<circle cx="432" cy="240" r="10" fill="none" stroke="#e8590c" stroke-width="3"/>
+<circle cx="505" cy="257" r="10" fill="none" stroke="#e8590c" stroke-width="3"/>
+<circle cx="360" cy="257" r="10" fill="none" stroke="#e8590c" stroke-width="3"/>
+<circle cx="359" cy="377" r="10" fill="none" stroke="#e8590c" stroke-width="3"/>
+<circle cx="545" cy="30" r="10" fill="none" stroke="#e8590c" stroke-width="3"/>
+<text x="600" y="40" font-size="17" fill="#1b2a3a" font-weight="bold"><tspan dy="0">Orange rings: contact sites</tspan></text>
+<text x="600" y="64" font-size="16" fill="#1b2a3a"><tspan dy="0">The ER touches almost every</tspan></text>
+<text x="600" y="86" font-size="16" fill="#1b2a3a"><tspan dy="0">organelle and the plasma membrane.</tspan></text>
+<rect x="600" y="120" width="280" height="320" rx="8" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+<text x="740" y="146" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">Close up (not to scale)</tspan></text>
+<rect x="620" y="165" width="240" height="33" fill="#e6f3f5"/>
+<path d="M620,200 L860,200" stroke="#2a7f8f" stroke-width="5" fill="none" />
+<text x="630" y="188" font-size="16" fill="#2a7f8f"><tspan dy="0">ER lumen</tspan></text>
+<rect x="620" y="262" width="240" height="40" fill="#f8e9ec"/>
+<path d="M620,260 L860,260" stroke="#a8324a" stroke-width="5" fill="none" />
+<path d="M620,272 L860,272" stroke="#a8324a" stroke-width="4" fill="none" />
+<text x="630" y="294" font-size="16" fill="#a8324a"><tspan dy="0">mitochondrion</tspan></text>
+<path d="M670,203 L670,257" stroke="#e8590c" stroke-width="5" fill="none" />
+<path d="M740,203 L740,257" stroke="#e8590c" stroke-width="5" fill="none" />
+<path d="M810,203 L810,257" stroke="#e8590c" stroke-width="5" fill="none" />
+<text x="740" y="330" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">tether proteins hold the</tspan></text>
+<text x="740" y="350" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">membranes 10–30 nm apart</tspan></text>
+<text x="740" y="382" font-size="15" fill="#1b2a3a" text-anchor="middle" font-weight="bold"><tspan dy="0">No fusion: each organelle</tspan></text>
+<text x="740" y="402" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">keeps its own lumen.</tspan></text>
+<text x="740" y="422" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">Molecules hop across.</tspan></text>
+</svg>

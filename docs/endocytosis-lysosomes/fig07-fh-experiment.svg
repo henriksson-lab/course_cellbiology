@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <rect width="1000" height="380" fill="#fff"/>
+  <!-- axes -->
+  <line x1="110" y1="40" x2="110" y2="290" stroke="#1b2a3a" stroke-width="2"/>
+  <line x1="110" y1="290" x2="980" y2="290" stroke="#1b2a3a" stroke-width="2"/>
+  <g stroke="#e3e3e3"><line x1="110" y1="90" x2="980" y2="90"/><line x1="110" y1="140" x2="980" y2="140"/><line x1="110" y1="190" x2="980" y2="190"/><line x1="110" y1="240" x2="980" y2="240"/><line x1="110" y1="40" x2="980" y2="40"/></g>
+  <g text-anchor="end" font-size="15"><text x="102" y="295">0</text><text x="102" y="195">50</text><text x="102" y="95">100</text></g>
+  <text x="34" y="165" text-anchor="middle" transform="rotate(-90 34 165)">% of normal cells</text>
+  <!-- groups: normal (x 150-390), FH no receptor (420-660), FH JD (690-930); bars 60 wide -->
+  <g stroke="#1b2a3a" stroke-width="1.2">
+    <rect x="160" y="90" width="60" height="200" fill="#e0a800"/>
+    <rect x="235" y="90" width="60" height="200" fill="#2e8b57"/>
+    <rect x="310" y="90" width="60" height="200" fill="#a8324a"/>
+    <rect x="430" y="285" width="60" height="5" fill="#e0a800"/>
+    <rect x="505" y="285" width="60" height="5" fill="#2e8b57"/>
+    <rect x="580" y="285" width="60" height="5" fill="#a8324a"/>
+    <rect x="700" y="95" width="60" height="195" fill="#e0a800"/>
+    <rect x="775" y="280" width="60" height="10" fill="#2e8b57"/>
+    <rect x="850" y="280" width="60" height="10" fill="#a8324a"/>
+  </g>
+  <g text-anchor="middle" font-weight="bold">
+    <text x="265" y="316">normal</text>
+    <text x="535" y="316">FH: no receptor</text>
+    <text x="805" y="316">FH: receptor not</text>
+  </g>
+  <text x="535" y="336" text-anchor="middle">(cannot bind LDL)</text>
+  <text x="805" y="336" text-anchor="middle" font-weight="bold">taken into pits</text>
+  <text x="805" y="356" text-anchor="middle">(binds, but stays outside)</text>
+  <!-- legend -->
+  <g font-size="15">
+    <rect x="420" y="30" width="18" height="18" fill="#e0a800" stroke="#1b2a3a"/><text x="444" y="44">LDL bound at the surface (4 °C)</text>
+    <rect x="420" y="56" width="18" height="18" fill="#2e8b57" stroke="#1b2a3a"/><text x="444" y="70">LDL taken in (37 °C)</text>
+    <rect x="700" y="56" width="18" height="18" fill="#a8324a" stroke="#1b2a3a"/><text x="724" y="70">LDL degraded</text>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig09: a multipass protein: start- and stop-transfer segments alternate; the sequence bar above, the result below -->
+  <defs><marker id="ar" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker></defs>
+  <rect width="1000" height="400" fill="#ffffff"/>
+  <rect x="0" y="110" width="1000" height="80" fill="#fbfaf5"/>
+  <rect x="0" y="224" width="1000" height="146" fill="#e6f3f5"/>
+  <rect x="0" y="190" width="1000" height="34" fill="#2a7f8f" opacity="0.35"/>
+  <line x1="0" y1="190" x2="1000" y2="190" stroke="#2a7f8f" stroke-width="3"/>
+  <line x1="0" y1="224" x2="1000" y2="224" stroke="#2a7f8f" stroke-width="3"/>
+  <text x="110" y="52" font-size="18" text-anchor="end" font-weight="bold" fill="#1b2a3a">N</text>
+  <line x1="140" y1="46" x2="190" y2="46" stroke="#1b2a3a" stroke-width="4"/>
+  <rect x="190" y="34" width="44" height="24" rx="5" fill="#3b5bdb"/>
+  <text x="212" y="82" font-size="15" text-anchor="middle" font-weight="bold" fill="#3b5bdb">start</text>
+  <line x1="234" y1="46" x2="274" y2="46" stroke="#1b2a3a" stroke-width="4"/>
+  <rect x="274" y="34" width="44" height="24" rx="5" fill="#c92a2a"/>
+  <text x="296" y="82" font-size="15" text-anchor="middle" font-weight="bold" fill="#c92a2a">stop</text>
+  <line x1="318" y1="46" x2="368" y2="46" stroke="#1b2a3a" stroke-width="4"/>
+  <rect x="368" y="34" width="44" height="24" rx="5" fill="#3b5bdb"/>
+  <text x="390" y="82" font-size="15" text-anchor="middle" font-weight="bold" fill="#3b5bdb">start</text>
+  <line x1="412" y1="46" x2="452" y2="46" stroke="#1b2a3a" stroke-width="4"/>
+  <rect x="452" y="34" width="44" height="24" rx="5" fill="#c92a2a"/>
+  <text x="474" y="82" font-size="15" text-anchor="middle" font-weight="bold" fill="#c92a2a">stop</text>
+  <line x1="496" y1="46" x2="546" y2="46" stroke="#1b2a3a" stroke-width="4"/>
+  <text x="556" y="52" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a">C</text>
+  <text x="596" y="44" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">the chain as it is made,</text>
+  <text x="596" y="63" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">N-terminus first</text>
+  <line x1="300" y1="190" x2="300" y2="224" stroke="#3b5bdb" stroke-width="12" stroke-linecap="round"/>
+  <line x1="420" y1="190" x2="420" y2="224" stroke="#c92a2a" stroke-width="12" stroke-linecap="round"/>
+  <line x1="540" y1="190" x2="540" y2="224" stroke="#3b5bdb" stroke-width="12" stroke-linecap="round"/>
+  <line x1="660" y1="190" x2="660" y2="224" stroke="#c92a2a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M300,190 C 294,150 250,140 230,130" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="216" cy="126" r="12" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="216" y="131.5" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">N</text>
+  <path d="M300,224 C 300,304 420,304 420,224" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M420,190 C 420,120 540,120 540,190" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M540,224 C 540,304 660,304 660,224" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M660,190 C 666,150 710,140 730,130" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="744" cy="126" r="12" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="744" y="131.5" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">C</text>
+  <g transform="translate(360.0 284) scale(0.8)">
+    <path d="M0,0 V22 M0,22 L-7,30 V38 M0,22 L7,30 V38" stroke="#1b2a3a" stroke-width="1" fill="none"/>
+    <rect x="-3.5" y="2.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <rect x="-3.5" y="10.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="0" cy="22" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(600.0 284) scale(0.8)">
+    <path d="M0,0 V22 M0,22 L-7,30 V38 M0,22 L7,30 V38" stroke="#1b2a3a" stroke-width="1" fill="none"/>
+    <rect x="-3.5" y="2.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <rect x="-3.5" y="10.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="0" cy="22" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+  </g>
+  <text x="278" y="176" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">+</text>
+  <text x="480.0" y="160" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">+</text>
+  <text x="682" y="176" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">+</text>
+  <circle cx="300" cy="242" r="0" fill="none"/>
+  <circle cx="420" cy="242" r="0" fill="none"/>
+  <circle cx="540" cy="242" r="0" fill="none"/>
+  <circle cx="660" cy="242" r="0" fill="none"/>
+  <text x="10" y="134" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a" font-style="italic">cytosol</text>
+  <text x="10" y="358" font-size="16" text-anchor="start" font-weight="bold" fill="#1b2a3a">ER lumen</text>
+  <text x="740" y="258" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">A start-transfer opens the way</text>
+  <text x="740" y="278" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">into the lumen; the next</text>
+  <text x="740" y="298" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">stop-transfer closes it again.</text>
+  <text x="740" y="328" font-size="15" text-anchor="start" font-weight="bold" fill="#1b2a3a">Odd number of TM segments:</text>
+  <text x="740" y="348" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">N and C on opposite sides.</text>
+  <text x="740" y="368" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">Even number: same side.</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 405" width="1060" height="405" font-family="Helvetica, Arial, sans-serif">
+<rect width="1060" height="405" fill="#ffffff"/>
+<defs>
+<marker id="a" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+<marker id="ah" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#e8590c"/></marker>
+<marker id="as" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#c92a2a"/></marker>
+<marker id="bar" markerWidth="4" markerHeight="20" refX="2" refY="10" orient="auto" markerUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="20" fill="#1b2a3a"/></marker>
+</defs>
+<rect x="20" y="40" width="1020" height="70" rx="35" fill="#fbe9e7" stroke="#b03a2e" stroke-width="3"/>
+<text x="40.0" y="30.0" font-size="15" text-anchor="start" fill="#b03a2e" font-weight="bold" >blood</text>
+<path d="M30,170 q40,-40 80,0 q10,40 -40,50 q-50,-10 -40,-50 z" fill="#fbeedd" stroke="#d9822b" stroke-width="3"/>
+<text x="70.0" y="245.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >adrenal</text>
+<text x="70.0" y="263.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >gland</text>
+<line x1="70.0" y1="158.0" x2="70.0" y2="102.0" stroke="#c92a2a" stroke-width="3" marker-end="url(#as)"/>
+<circle cx="150.0" cy="65.0" r="5" fill="#c92a2a"/>
+<circle cx="210.0" cy="85.0" r="5" fill="#c92a2a"/>
+<circle cx="270.0" cy="65.0" r="5" fill="#c92a2a"/>
+<circle cx="330.0" cy="85.0" r="5" fill="#c92a2a"/>
+<circle cx="390.0" cy="65.0" r="5" fill="#c92a2a"/>
+<circle cx="450.0" cy="85.0" r="5" fill="#c92a2a"/>
+<circle cx="510.0" cy="65.0" r="5" fill="#c92a2a"/>
+<circle cx="570.0" cy="85.0" r="5" fill="#c92a2a"/>
+<circle cx="630.0" cy="65.0" r="5" fill="#c92a2a"/>
+<circle cx="690.0" cy="85.0" r="5" fill="#c92a2a"/>
+<circle cx="750.0" cy="65.0" r="5" fill="#c92a2a"/>
+<circle cx="810.0" cy="85.0" r="5" fill="#c92a2a"/>
+<circle cx="870.0" cy="65.0" r="5" fill="#c92a2a"/>
+<circle cx="930.0" cy="85.0" r="5" fill="#c92a2a"/>
+<circle cx="990.0" cy="65.0" r="5" fill="#c92a2a"/>
+<text x="590.0" y="30.0" font-size="16" text-anchor="middle" fill="#c92a2a" font-weight="bold" >adrenaline: the same molecule reaches every cell</text>
+<rect x="185" y="150" width="210" height="120" rx="12" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+<ellipse cx="290.0" cy="210.0" rx="42.0" ry="24.0" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<line x1="220" y1="158" x2="220" y2="262" stroke="#a8324a" stroke-width="1.5" opacity="0.5"/>
+<line x1="255" y1="158" x2="255" y2="262" stroke="#a8324a" stroke-width="1.5" opacity="0.5"/>
+<line x1="290" y1="158" x2="290" y2="262" stroke="#a8324a" stroke-width="1.5" opacity="0.5"/>
+<line x1="325" y1="158" x2="325" y2="262" stroke="#a8324a" stroke-width="1.5" opacity="0.5"/>
+<line x1="360" y1="158" x2="360" y2="262" stroke="#a8324a" stroke-width="1.5" opacity="0.5"/>
+<g transform="translate(240.0 152.0) rotate(0)"><path d="M-9,-14 L-9,-2 Q-9,6 0,6 Q9,6 9,-2 L9,-14" fill="none" stroke="#1b2a3a" stroke-width="3.5" stroke-linecap="round"/></g>
+<g transform="translate(290.0 152.0) rotate(0)"><path d="M-9,-14 L-9,-2 Q-9,6 0,6 Q9,6 9,-2 L9,-14" fill="none" stroke="#1b2a3a" stroke-width="3.5" stroke-linecap="round"/></g>
+<g transform="translate(340.0 152.0) rotate(0)"><path d="M-9,-14 L-9,-2 Q-9,6 0,6 Q9,6 9,-2 L9,-14" fill="none" stroke="#1b2a3a" stroke-width="3.5" stroke-linecap="round"/></g>
+<circle cx="290.0" cy="146.0" r="5" fill="#c92a2a"/>
+<circle cx="260.0" cy="122.0" r="5" fill="#c92a2a"/>
+<text x="290.0" y="296.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="bold" >heart muscle cell</text>
+<text x="290.0" y="318.0" font-size="15" text-anchor="middle" fill="#8a8f98" font-weight="normal" >β₁ receptor</text>
+<text x="290.0" y="346.0" font-size="16" text-anchor="middle" fill="#e8590c" font-weight="bold" >beats faster</text>
+<text x="290.0" y="366.0" font-size="16" text-anchor="middle" fill="#e8590c" font-weight="bold" >and stronger</text>
+<polygon points="485,150 635,150 665,210.0 635,270 485,270 455,210.0" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+<ellipse cx="560" cy="210.0" rx="36" ry="26" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<g transform="translate(510.0 152.0) rotate(0)"><path d="M-9,-14 L-9,-2 Q-9,6 0,6 Q9,6 9,-2 L9,-14" fill="none" stroke="#1b2a3a" stroke-width="3.5" stroke-linecap="round"/></g>
+<g transform="translate(560.0 152.0) rotate(0)"><path d="M-9,-14 L-9,-2 Q-9,6 0,6 Q9,6 9,-2 L9,-14" fill="none" stroke="#1b2a3a" stroke-width="3.5" stroke-linecap="round"/></g>
+<g transform="translate(610.0 152.0) rotate(0)"><path d="M-9,-14 L-9,-2 Q-9,6 0,6 Q9,6 9,-2 L9,-14" fill="none" stroke="#1b2a3a" stroke-width="3.5" stroke-linecap="round"/></g>
+<circle cx="560.0" cy="146.0" r="5" fill="#c92a2a"/>
+<circle cx="530.0" cy="122.0" r="5" fill="#c92a2a"/>
+<text x="560.0" y="296.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="bold" >liver cell</text>
+<text x="560.0" y="318.0" font-size="15" text-anchor="middle" fill="#8a8f98" font-weight="normal" >β₂ / α₁ receptors</text>
+<text x="560.0" y="346.0" font-size="16" text-anchor="middle" fill="#e8590c" font-weight="bold" >breaks down glycogen,</text>
+<text x="560.0" y="366.0" font-size="16" text-anchor="middle" fill="#e8590c" font-weight="bold" >releases glucose</text>
+<path d="M725,210.0 Q830,140 935,210.0 Q830,280 725,210.0 z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+<ellipse cx="830" cy="210.0" rx="40" ry="14" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<g transform="translate(780.0 174.0) rotate(0)"><path d="M-9,-14 L-9,-2 Q-9,6 0,6 Q9,6 9,-2 L9,-14" fill="none" stroke="#1b2a3a" stroke-width="3.5" stroke-linecap="round"/></g>
+<g transform="translate(830.0 174.0) rotate(0)"><path d="M-9,-14 L-9,-2 Q-9,6 0,6 Q9,6 9,-2 L9,-14" fill="none" stroke="#1b2a3a" stroke-width="3.5" stroke-linecap="round"/></g>
+<g transform="translate(880.0 174.0) rotate(0)"><path d="M-9,-14 L-9,-2 Q-9,6 0,6 Q9,6 9,-2 L9,-14" fill="none" stroke="#1b2a3a" stroke-width="3.5" stroke-linecap="round"/></g>
+<circle cx="830.0" cy="168.0" r="5" fill="#c92a2a"/>
+<circle cx="800.0" cy="144.0" r="5" fill="#c92a2a"/>
+<text x="830.0" y="296.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="bold" >smooth muscle cell</text>
+<text x="830.0" y="318.0" font-size="15" text-anchor="middle" fill="#8a8f98" font-weight="normal" >α₁ receptor</text>
+<text x="830.0" y="346.0" font-size="16" text-anchor="middle" fill="#e8590c" font-weight="bold" >contracts: less blood</text>
+<text x="830.0" y="366.0" font-size="16" text-anchor="middle" fill="#e8590c" font-weight="bold" >to the gut</text>
+<text x="560.0" y="390.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >within seconds, all at once: same signal, different receptors and machinery in each cell</text>
+
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig05: RTK activation - ligand-induced dimerisation and trans-autophosphorylation -->
+<defs><marker id="a1b2a3a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+<rect x="0" y="40" width="900" height="80" rx="0" fill="#eef4fa" stroke="none" stroke-width="0"/>
+<rect x="0" y="146" width="900" height="190" rx="0" fill="#fbfaf5" stroke="none" stroke-width="0"/>
+<rect x="0" y="120" width="900" height="26" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<line x1="0" y1="120" x2="900" y2="120" stroke="#8a6a12" stroke-width="3"/>
+<line x1="0" y1="146" x2="900" y2="146" stroke="#8a6a12" stroke-width="3"/>
+<text x="140" y="26" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">1. Apart: off</text>
+<rect x="56" y="62" width="28" height="110" rx="9" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="36" y="172" width="48" height="50" rx="10" fill="#b39e65" stroke="#8a6a12" stroke-width="2"/>
+<rect x="196" y="62" width="28" height="110" rx="9" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="196" y="172" width="48" height="50" rx="10" fill="#b39e65" stroke="#8a6a12" stroke-width="2"/>
+<text x="450" y="26" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">2. Ligand makes a dimer</text>
+<rect x="418" y="62" width="28" height="110" rx="9" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="398" y="172" width="48" height="50" rx="10" fill="#b39e65" stroke="#8a6a12" stroke-width="2"/>
+<rect x="454" y="62" width="28" height="110" rx="9" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="454" y="172" width="48" height="50" rx="10" fill="#b39e65" stroke="#8a6a12" stroke-width="2"/>
+<circle cx="428" cy="52" r="11" fill="#8a6a12" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="472" cy="52" r="11" fill="#8a6a12" stroke="#1b2a3a" stroke-width="1"/>
+<text x="490" y="56" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">ligand</text>
+<text x="760" y="26" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">3. Cross-phosphorylation</text>
+<rect x="728" y="62" width="28" height="110" rx="9" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="708" y="172" width="48" height="50" rx="10" fill="#9c8036" stroke="#8a6a12" stroke-width="2"/>
+<line x1="732" y1="222" x2="732" y2="300" stroke="#8a6a12" stroke-width="3"/>
+<circle cx="714" cy="246" r="11" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="714" y="251" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<text x="746" y="251" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Y</text>
+<circle cx="714" cy="276" r="11" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="714" y="281" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<text x="746" y="281" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Y</text>
+<rect x="764" y="62" width="28" height="110" rx="9" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="764" y="172" width="48" height="50" rx="10" fill="#9c8036" stroke="#8a6a12" stroke-width="2"/>
+<line x1="788" y1="222" x2="788" y2="300" stroke="#8a6a12" stroke-width="3"/>
+<circle cx="806" cy="246" r="11" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="806" y="251" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<text x="774" y="251" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Y</text>
+<circle cx="806" cy="276" r="11" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="806" y="281" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<text x="774" y="281" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Y</text>
+<circle cx="738" cy="52" r="11" fill="#8a6a12" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="782" cy="52" r="11" fill="#8a6a12" stroke="#1b2a3a" stroke-width="1"/>
+<text x="800" y="56" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">ligand</text>
+<path d="M748,186 C780,190 800,220 804,236" fill="none" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<path d="M772,206 C740,212 720,228 716,236" fill="none" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="760" y="330" font-size="15" text-anchor="middle" font-weight="normal" fill="#6b7280">trans-autophosphorylation</text>
+<path d="M250,230 L330,230" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<path d="M560,230 L640,230" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="140" y="260" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">kinase</text>
+<text x="140" y="278" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">domains</text>
+<text x="140" y="296" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">too far apart</text>
+<text x="450" y="262" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">kinase domains</text>
+<text x="450" y="280" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">touch and switch on</text>
+</svg>

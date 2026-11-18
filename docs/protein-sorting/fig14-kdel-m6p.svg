@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig14: signals read inside the secretory pathway. Default: secreted. KDEL: retrieved from the cis-Golgi to the ER by the KDEL receptor. M6P: tagged in the cis-Golgi, bound by the M6P receptor in the trans-Golgi network and sent to endosomes and lysosomes. Cartoon. -->
+  <defs><marker id="ak" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker><marker id="ae" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#2a7f8f"/></marker><marker id="al" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#2e8b57"/></marker></defs>
+  <rect x="0" y="0" width="1100" height="470" fill="#fbfaf5"/>
+  <rect x="30" y="150" width="190" height="150" rx="30" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="3"/>
+  <text x="125" y="330" font-size="20" fill="#2a7f8f" text-anchor="middle" font-weight="bold">ER</text>
+  <path d="M 370 145 q -24 80 0 160 l 18 0 q -24 -80 0 -160 z" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <path d="M 412 145 q -24 80 0 160 l 18 0 q -24 -80 0 -160 z" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <path d="M 454 145 q -24 80 0 160 l 18 0 q -24 -80 0 -160 z" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <path d="M 496 145 q -24 80 0 160 l 18 0 q -24 -80 0 -160 z" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <text x="372" y="335" font-size="16" fill="#d9822b" text-anchor="middle" font-weight="bold">cis</text>
+  <text x="500" y="335" font-size="16" fill="#d9822b" text-anchor="middle" font-weight="bold">trans</text>
+  <text x="450" y="128" font-size="20" fill="#d9822b" text-anchor="middle" font-weight="bold">Golgi</text>
+  <path d="M 545 175 q 20 50 0 100" fill="none" stroke="#d9822b" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+  <text x="580" y="240" font-size="15" fill="#d9822b" text-anchor="start" font-weight="bold">TGN</text>
+  <line x1="1060" y1="20" x2="1060" y2="450" stroke="#8a6a12" stroke-width="6"/>
+  <text x="1050" y="40" font-size="15" fill="#8a6a12" text-anchor="end" font-weight="bold">plasma membrane</text>
+  <text x="1080" y="240" font-size="15" fill="#1b2a3a" text-anchor="middle" font-weight="bold">out</text>
+  <circle cx="760" cy="370" r="24" fill="#e3f3ea" stroke="#2e8b57" stroke-width="2.5"/>
+  <text x="760" y="412" font-size="15" fill="#2e8b57" text-anchor="middle" font-weight="bold">endosome</text>
+  <circle cx="900" cy="370" r="34" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/>
+  <text x="900" y="425" font-size="16" fill="#2e8b57" text-anchor="middle" font-weight="bold">lysosome</text>
+  <path d="M 788 370 L 860 370" stroke="#2e8b57" stroke-width="3" marker-end="url(#al)"/>
+  <path d="M 222 225 L 345 225" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ak)"/>
+  <circle cx="285" cy="225" r="11" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2.5"/>
+  <text x="285" y="258" font-size="14" fill="#2a7f8f" text-anchor="middle" font-weight="bold">COPII</text>
+  <path d="M 370 140 C 340 60, 230 60, 190 140" fill="none" stroke="#2a7f8f" stroke-width="3.5" marker-end="url(#ae)"/>
+  <circle cx="280" cy="80" r="11" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <text x="300" y="44" font-size="15" fill="#2a7f8f" text-anchor="middle" font-weight="bold">KDEL receptor returns KDEL proteins (COPI)</text>
+  <path d="M 560 200 C 700 150, 900 140, 1050 160" fill="none" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ak)"/>
+  <circle cx="800" cy="148" r="11" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <text x="800" y="120" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">no signal: secreted (default)</text>
+  <text x="800" y="190" font-size="15" fill="#1b2a3a" text-anchor="middle">membrane proteins: to the plasma membrane</text>
+  <path d="M 560 280 C 620 330, 680 360, 730 368" fill="none" stroke="#2e8b57" stroke-width="3.5" marker-end="url(#al)"/>
+  <circle cx="650" cy="338" r="11" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <text x="640" y="300" font-size="15" fill="#2e8b57" text-anchor="start" font-weight="bold">M6P receptor</text>
+  <text x="625" y="374" font-size="14" fill="#2e8b57" text-anchor="middle">(clathrin)</text>
+  <text x="450" y="370" font-size="14" fill="#2e8b57" text-anchor="middle">cis-Golgi: enzymes with the M6P</text>
+  <text x="450" y="388" font-size="14" fill="#2e8b57" text-anchor="middle">patch get mannose-6-phosphate</text>
+  <text x="830" y="455" font-size="14" fill="#2e8b57" text-anchor="middle">in endosomes the acid pH releases the cargo; the receptor recycles</text>
+</svg>

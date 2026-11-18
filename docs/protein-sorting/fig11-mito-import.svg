@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig11: import into the mitochondrial matrix. The positively charged presequence is recognised by TOM, the unfolded chain passes TOM and TIM23 together, the membrane potential pulls the presequence, mtHsp70 pulls the rest, MPP removes the presequence. Cartoon. -->
+  <defs><marker id="ak" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+  <rect x="0" y="0" width="1100" height="160" fill="#fbfaf5"/>
+  <rect x="0" y="160" width="1100" height="80" fill="#f8e9ec"/>
+  <rect x="0" y="240" width="1100" height="230" fill="#f3d3da"/>
+  <line x1="0" y1="152" x2="1100" y2="152" stroke="#a8324a" stroke-width="4"/>
+  <line x1="0" y1="168" x2="1100" y2="168" stroke="#a8324a" stroke-width="4"/>
+  <line x1="0" y1="232" x2="1100" y2="232" stroke="#a8324a" stroke-width="4"/>
+  <line x1="0" y1="248" x2="1100" y2="248" stroke="#a8324a" stroke-width="4"/>
+  <text x="16" y="30" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="bold">CYTOSOL</text>
+  <text x="16" y="206" font-size="16" fill="#a8324a" text-anchor="start" font-weight="bold">intermembrane space</text>
+  <text x="16" y="290" font-size="17" fill="#a8324a" text-anchor="start" font-weight="bold">MATRIX</text>
+  <text x="1084" y="145" font-size="15" fill="#a8324a" text-anchor="end" font-weight="bold">outer membrane</text>
+  <text x="1084" y="226" font-size="15" fill="#a8324a" text-anchor="end" font-weight="bold">inner membrane</text>
+  <rect x="556" y="146" width="18" height="28" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/><rect x="606" y="146" width="18" height="28" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="556" y="226" width="18" height="28" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/><rect x="606" y="226" width="18" height="28" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="640" y="116" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="bold">TOM</text>
+  <text x="640" y="134" font-size="14" fill="#1b2a3a" text-anchor="start">(outer-membrane translocase)</text>
+  <text x="636" y="276" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="bold">TIM23</text>
+  <path d="M 120 110 C 160 70, 200 120, 240 80 C 280 40, 320 100, 360 70" fill="none" stroke="#e8590c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 360 70 L 400 70" stroke="#a8324a" stroke-width="8" stroke-linecap="round"/>
+  <text x="380" y="58" font-size="15" fill="#a8324a" text-anchor="middle" font-weight="bold">+ + +</text>
+  <ellipse cx="170" cy="92" rx="18" ry="12" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.5"/>
+  <ellipse cx="285" cy="70" rx="18" ry="12" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="225" y="130" font-size="15" fill="#1b2a3a" text-anchor="middle">made in the cytosol, kept unfolded</text>
+  <text x="225" y="146" font-size="15" fill="#1b2a3a" text-anchor="middle">by chaperones (Hsp70)</text>
+  <text x="420" y="40" font-size="15" fill="#a8324a" text-anchor="middle" font-weight="bold">presequence</text>
+  <path d="M 410 85 C 470 100, 540 110, 580 138" fill="none" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ak)"/>
+  <path d="M 590 70 C 590 100, 590 120, 590 300" fill="none" stroke="#e8590c" stroke-width="5"/>
+  <path d="M 590 300 L 590 335" stroke="#a8324a" stroke-width="8" stroke-linecap="round"/>
+  <text x="574" y="330" font-size="18" fill="#a8324a" text-anchor="end" font-weight="bold">+</text>
+  <text x="760" y="280" font-size="15" fill="#1b2a3a" text-anchor="start">membrane potential (matrix side negative)</text>
+  <text x="760" y="300" font-size="15" fill="#1b2a3a" text-anchor="start">pulls the + presequence in</text>
+  <text x="540" y="276" font-size="18" fill="#1b2a3a" text-anchor="end" font-weight="bold">−  −  −</text>
+  <ellipse cx="612" cy="290" rx="16" ry="11" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.5"/>
+  <ellipse cx="612" cy="318" rx="16" ry="11" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="636" y="350" font-size="15" fill="#1b2a3a" text-anchor="start">mitochondrial Hsp70 pulls (uses ATP)</text>
+  <path d="M 700 420 l 18 -18 M 700 402 l 18 18" stroke="#1b2a3a" stroke-width="3"/>
+  <path d="M 740 425 C 790 400, 820 440, 860 415 C 900 390, 930 430, 960 410" fill="none" stroke="#e8590c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 660 440 L 690 440" stroke="#a8324a" stroke-width="8" stroke-linecap="round"/>
+  <text x="640" y="452" font-size="15" fill="#1b2a3a" text-anchor="end">presequence cut off (MPP)</text>
+  <text x="975" y="450" font-size="15" fill="#e8590c" text-anchor="end" font-weight="bold">mature protein folds</text>
+</svg>

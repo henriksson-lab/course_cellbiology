@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" font-family="Helvetica, Arial, sans-serif">
+<rect width="900" height="430" fill="#fbfaf5"/>
+<path d="M230,30 L230,380" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="230" y="402" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">4</tspan></text>
+<path d="M363,30 L363,380" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="363" y="402" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">5</tspan></text>
+<path d="M497,30 L497,380" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="497" y="402" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">6</tspan></text>
+<path d="M630,30 L630,380" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="630" y="402" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">7</tspan></text>
+<path d="M763,30 L763,380" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="763" y="402" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">8</tspan></text>
+<text x="530" y="426" font-size="16" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">pH   (acid ←   → alkaline)</tspan></text>
+<rect x="656" y="30" width="2" height="350" fill="#999"/>
+<text x="218" y="59" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Mitochondrial matrix</tspan></text>
+<rect x="737" y="45" width="27" height="20" rx="4" fill="#a8324a"/>
+<text x="218" y="93" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Outside the cell</tspan></text>
+<rect x="677" y="79" width="13" height="20" rx="4" fill="#8a6a12"/>
+<text x="218" y="127" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Cytosol and nucleus</tspan></text>
+<rect x="643" y="113" width="27" height="20" rx="4" fill="#6b4fa0"/>
+<text x="218" y="161" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">ER</tspan></text>
+<rect x="643" y="147" width="27" height="20" rx="4" fill="#2a7f8f"/>
+<text x="218" y="195" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">cis-Golgi</tspan></text>
+<rect x="577" y="181" width="27" height="20" rx="4" fill="#d9822b"/>
+<text x="218" y="229" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">trans-Golgi</tspan></text>
+<rect x="483" y="215" width="27" height="20" rx="4" fill="#d9822b"/>
+<text x="218" y="263" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Secretory granule</tspan></text>
+<rect x="390" y="249" width="67" height="20" rx="4" fill="#d9822b"/>
+<text x="218" y="297" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Early endosome</tspan></text>
+<rect x="497" y="283" width="67" height="20" rx="4" fill="#2e8b57"/>
+<text x="218" y="331" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Late endosome</tspan></text>
+<rect x="363" y="317" width="67" height="20" rx="4" fill="#2e8b57"/>
+<text x="218" y="365" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Lysosome</tspan></text>
+<rect x="297" y="351" width="67" height="20" rx="4" fill="#2e8b57"/>
+<text x="237" y="238" font-size="1" fill="#1b2a3a"></text>
+<path d="M783,190 L783,258" stroke="#d9822b" stroke-width="3" fill="none" />
+<text x="793" y="216" font-size="14" fill="#d9822b"><tspan dy="0">secretory route:</tspan></text>
+<text x="793" y="234" font-size="14" fill="#d9822b"><tspan dy="0">more acid</tspan></text>
+<path d="M783,292 L783,360" stroke="#2e8b57" stroke-width="3" fill="none" />
+<text x="793" y="318" font-size="14" fill="#2e8b57"><tspan dy="0">endocytic route:</tspan></text>
+<text x="793" y="336" font-size="14" fill="#2e8b57"><tspan dy="0">more acid</tspan></text>
+</svg>

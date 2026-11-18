@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2e8b57"/></marker>
+    <marker id="aro" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d9822b"/></marker>
+    <g id="rec"><line x1="0" y1="12" x2="0" y2="-10" stroke="#3d4f63" stroke-width="3.5"/><path d="M-8,-19 L0,-10 L8,-19" fill="none" stroke="#3d4f63" stroke-width="3.5"/></g>
+    <g id="ldl"><circle r="12" fill="#e0a800" stroke="#8a6a00" stroke-width="1.5"/></g>
+  </defs>
+  <rect width="1000" height="470" fill="#fff"/>
+  <rect x="0" y="100" width="1000" height="370" fill="#fbfaf5"/>
+  <text x="12" y="24" font-weight="bold">Blood</text>
+  <text x="12" y="128" font-weight="bold">Liver cell</text>
+  <!-- membrane with pit at x 300 -->
+  <path d="M0,98 L255,98 C268,98 266,150 300,150 C334,150 332,98 345,98 L1000,98" fill="none" stroke="#8a6a12" stroke-width="6"/>
+  <path d="M262,118 C270,168 330,168 338,118" fill="none" stroke="#7d8b99" stroke-width="7" stroke-dasharray="6 4"/>
+  <!-- step 1: receptors bind LDL -->
+  <use href="#rec" x="120" y="98"/><use href="#ldl" x="120" y="62"/>
+  <use href="#rec" x="175" y="98"/>
+  <use href="#ldl" x="190" y="30"/><use href="#ldl" x="60" y="40"/>
+  <use href="#rec" transform="translate(285 134) rotate(-15)"/><use href="#ldl" x="278" y="100"/>
+  <use href="#rec" transform="translate(317 134) rotate(15)"/><use href="#ldl" x="325" y="100"/>
+  <text x="40" y="160"><tspan font-weight="bold">1</tspan> receptor binds LDL</text>
+  <text x="400" y="40">2 clathrin-coated pit</text>
+  <path d="M398,46 L345,92" stroke="#1b2a3a" stroke-width="1.5"/>
+  <!-- step 3: endosome -->
+  <circle cx="300" cy="215" r="20" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+  <path d="M300,170 L300,190" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M318,228 L400,272" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <circle cx="470" cy="315" r="62" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3.5"/>
+  <use href="#ldl" x="465" y="300"/><use href="#ldl" x="492" y="330"/><use href="#ldl" x="447" y="335"/>
+  <use href="#rec" transform="translate(420 282) rotate(125)"/>
+  <use href="#rec" transform="translate(512 268) rotate(-130)"/>
+  <g fill="#1098ad" font-weight="bold" font-size="15"><text x="425" y="360">H<tspan font-size="11" dy="-6">+</tspan></text><text x="505" y="302">H<tspan font-size="11" dy="-6">+</tspan></text><text x="455" y="280">H<tspan font-size="11" dy="-6">+</tspan></text></g>
+  <text x="470" y="400" text-anchor="middle">3 sorting endosome, pH about 6:</text>
+  <text x="470" y="420" text-anchor="middle">acid makes the receptor let go of LDL</text>
+  <!-- step 4: recycling -->
+  <path d="M530,282 C600,230 620,170 620,110" fill="none" stroke="#2e8b57" stroke-width="3" stroke-dasharray="8 5" marker-end="url(#arg)"/>
+  <use href="#rec" x="640" y="98"/>
+  <text x="588" y="150" text-anchor="end">4 empty receptor recycles</text>
+  <text x="588" y="170" text-anchor="end">(one round trip ≈ 10 min,</text>
+  <text x="588" y="190" text-anchor="end">over 100 trips in its life)</text>
+  <!-- step 5: lysosome -->
+  <path d="M532,340 L700,360" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <circle cx="752" cy="365" r="48" fill="#b9dfc8" stroke="#2e8b57" stroke-width="4"/>
+  <use href="#ldl" x="742" y="358"/><circle cx="770" cy="378" r="7" fill="#e0a800" opacity="0.6"/>
+  <text x="752" y="438" text-anchor="middle">5 lysosome digests LDL:</text>
+  <text x="752" y="458" text-anchor="middle">free cholesterol for the cell</text>
+  <!-- step 6: feedback and new receptors -->
+  <path d="M800,345 C860,320 880,270 880,230" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <g fill="#fbeedd" stroke="#d9822b" stroke-width="3">
+    <path d="M830,215 C870,195 920,195 960,215" fill="none"/>
+    <path d="M835,232 C872,213 918,213 955,232" fill="none"/>
+  </g>
+  <text x="895" y="180" text-anchor="middle" fill="#b3631a" font-weight="bold">ER and Golgi</text>
+  <path d="M850,192 C820,150 720,120 660,106" fill="none" stroke="#d9822b" stroke-width="2.5" marker-end="url(#aro)"/>
+  <text x="980" y="270" text-anchor="end">6 much cholesterol:</text>
+  <text x="980" y="290" text-anchor="end">fewer new receptors,</text>
+  <text x="980" y="310" text-anchor="end">less cholesterol made</text>
+</svg>

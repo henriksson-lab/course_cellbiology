@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m3226" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0L10,5L0,10z" fill="#3b5bab"/></marker></defs>
+<rect width="900" height="330" fill="#fbfaf5"/>
+<text x="220" y="28" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold"><tspan dy="0">Healthy cell</tspan></text>
+<rect x="20" y="40" width="400" height="190" rx="20" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+<ellipse cx="220" cy="140" rx="80" ry="60" fill="#e9eef8" stroke="#3b5bab" stroke-width="4" />
+<rect x="186" y="113" width="18" height="14" rx="3" fill="#3b5bab"/>
+<rect x="221" y="108" width="18" height="14" rx="3" fill="#3b5bab"/>
+<rect x="241" y="138" width="18" height="14" rx="3" fill="#3b5bab"/>
+<rect x="196" y="153" width="18" height="14" rx="3" fill="#3b5bab"/>
+<rect x="216" y="133" width="18" height="14" rx="3" fill="#3b5bab"/>
+<rect x="61" y="83" width="18" height="14" rx="3" fill="#3b5bab"/>
+<rect x="81" y="173" width="18" height="14" rx="3" fill="#3b5bab"/>
+<path d="M82,95L140,120" stroke="#3b5bab" stroke-width="2" fill="none" marker-end="url(#m3226)"/>
+<path d="M102,178L148,160" stroke="#3b5bab" stroke-width="2" fill="none" marker-end="url(#m3226)"/>
+<text x="60" y="215" font-size="14" fill="#1b2a3a"><tspan dy="0">enzymes with –SKL are imported by PEX proteins</tspan></text>
+<text x="300" y="92" font-size="15" fill="#3b5bab"><tspan dy="0">peroxisome</tspan></text>
+<text x="680" y="28" font-size="18" fill="#c92a2a" text-anchor="middle" font-weight="bold"><tspan dy="0">Zellweger syndrome (a PEX gene broken)</tspan></text>
+<rect x="470" y="40" width="410" height="190" rx="20" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+<ellipse cx="685" cy="140" rx="80" ry="60" fill="#fff" stroke="#3b5bab" stroke-width="4" stroke-dasharray="8 5"/>
+<text x="685" y="137" font-size="15" fill="#3b5bab" text-anchor="middle"><tspan dy="0">empty membrane</tspan></text>
+<text x="685" y="157" font-size="15" fill="#3b5bab" text-anchor="middle"><tspan dy="0">("ghost")</tspan></text>
+<rect x="511" y="73" width="18" height="14" rx="3" fill="#9aa7cf"/>
+<rect x="531" y="183" width="18" height="14" rx="3" fill="#9aa7cf"/>
+<rect x="821" y="83" width="18" height="14" rx="3" fill="#9aa7cf"/>
+<rect x="801" y="183" width="18" height="14" rx="3" fill="#9aa7cf"/>
+<rect x="571" y="113" width="18" height="14" rx="3" fill="#9aa7cf"/>
+<text x="490" y="215" font-size="14" fill="#1b2a3a"><tspan dy="0">enzymes stay in the cytosol and are degraded</tspan></text>
+<text x="20" y="265" font-size="16" fill="#1b2a3a" font-weight="bold"><tspan dy="0">Consequences:</tspan></text>
+<text x="20" y="290" font-size="15" fill="#1b2a3a"><tspan dy="0">· very-long-chain fatty acids pile up (a blood test for them is the first diagnostic test)</tspan></text>
+<text x="20" y="314" font-size="15" fill="#1b2a3a"><tspan dy="0">· no plasmalogens for myelin → brain, liver, kidney and bone defects from birth</tspan></text>
+</svg>

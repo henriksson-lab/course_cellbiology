@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" font-family="Helvetica, Arial, sans-serif"><rect width="1000" height="430" fill="#ffffff"/><rect x="0" y="0" width="1000" height="70" rx="0" fill="#eef4fa" stroke="none" stroke-width="0"/>
+<rect x="0" y="110" width="1000" height="330" rx="0" fill="#fbfaf5" stroke="none" stroke-width="0"/>
+<rect x="0" y="70" width="1000" height="40" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<line x1="0" y1="70" x2="1000" y2="70" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="0" y1="110" x2="1000" y2="110" stroke="#8a6a12" stroke-width="2.5"/>
+<rect x="74.0" y="66" width="52" height="48" rx="9" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2"/>
+<line x1="80.0" y1="72" x2="80.0" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="86.66666666666667" y1="72" x2="86.66666666666667" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="93.33333333333333" y1="72" x2="93.33333333333333" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="100.0" y1="72" x2="100.0" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="106.66666666666667" y1="72" x2="106.66666666666667" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="113.33333333333334" y1="72" x2="118.33333333333334" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="120.0" y1="72" x2="120.0" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<circle cx="100" cy="56" r="10" fill="#1971c2" stroke="#1b2a3a" stroke-width="1.2"/>
+<path d="M122,114 q10,30 30,36" fill="none" stroke="#5f3dc4" stroke-width="3"/>
+<ellipse cx="178" cy="162" rx="30" ry="20" fill="#d0ebff" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="178" y="168" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="700">GRK</text>
+<circle cx="146" cy="154" r="9" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.3"/>
+<text x="146" y="159" font-size="12" text-anchor="middle" fill="#1b2a3a" font-weight="700">P</text>
+<text x="100" y="230" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">1. GRK phosphorylates</text>
+<text x="100" y="250" font-size="16" text-anchor="middle" fill="#1b2a3a">the active receptor's tail</text>
+<rect x="314.0" y="66" width="52" height="48" rx="9" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2"/>
+<line x1="320.0" y1="72" x2="320.0" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="326.6666666666667" y1="72" x2="326.6666666666667" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="333.3333333333333" y1="72" x2="333.3333333333333" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="340.0" y1="72" x2="340.0" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="346.6666666666667" y1="72" x2="346.6666666666667" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="353.3333333333333" y1="72" x2="358.3333333333333" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<line x1="360.0" y1="72" x2="360.0" y2="108" stroke="#5f3dc4" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.8"/>
+<circle cx="340" cy="56" r="10" fill="#1971c2" stroke="#1b2a3a" stroke-width="1.2"/>
+<path d="M306,120 q34,46 68,0 l-12,0 q-22,28 -44,0 z" fill="#495057" stroke="#1b2a3a" stroke-width="1.2"/>
+<text x="384" y="154" font-size="15" text-anchor="start" fill="#495057" font-weight="700">arrestin</text>
+<circle cx="370" cy="116" r="9" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.3"/>
+<text x="370" y="121" font-size="12" text-anchor="middle" fill="#1b2a3a" font-weight="700">P</text>
+<ellipse cx="240" cy="150" rx="22.400000000000002" ry="16.0" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.8"/>
+<text x="240" y="154.8" font-size="13.600000000000001" text-anchor="middle" fill="#1b2a3a" font-weight="700">Gα</text>
+<line x1="264" y1="144" x2="294" y2="136" stroke="#c92a2a" stroke-width="3"/>
+<line x1="296.5766265056033" y1="145.66234939601247" x2="291.4233734943967" y2="126.33765060398754" stroke="#c92a2a" stroke-width="4"/>
+<text x="340" y="230" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">2. Arrestin binds: the G protein</text>
+<text x="340" y="250" font-size="16" text-anchor="middle" fill="#1b2a3a">can no longer couple (desensitised)</text>
+<path d="M520,70 Q530,70 540,100 Q590,230 640,100 Q650,70 660,70" fill="none" stroke="none" stroke-width="0"/>
+<rect x="520" y="69" width="140" height="42" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<path d="M520,70 C550,70 530,220 590,220 C650,220 630,70 660,70" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<path d="M520,110 C540,110 550,186 590,186 C630,186 640,110 660,110" fill="#eef4fa" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="531.0344959897005" cy="181.46807064562168" r="6" fill="none" stroke="#868e96" stroke-width="2"/>
+<circle cx="539.8409463487533" cy="199.0304708944258" r="6" fill="none" stroke="#868e96" stroke-width="2"/>
+<circle cx="553.5573143578666" cy="212.9680706456217" r="6" fill="none" stroke="#868e96" stroke-width="2"/>
+<circle cx="570.8409463487533" cy="221.91656052659465" r="6" fill="none" stroke="#868e96" stroke-width="2"/>
+<circle cx="590.0" cy="225.0" r="6" fill="none" stroke="#868e96" stroke-width="2"/>
+<circle cx="609.1590536512467" cy="221.91656052659468" r="6" fill="none" stroke="#868e96" stroke-width="2"/>
+<circle cx="626.4426856421334" cy="212.9680706456217" r="6" fill="none" stroke="#868e96" stroke-width="2"/>
+<circle cx="640.1590536512467" cy="199.03047089442583" r="6" fill="none" stroke="#868e96" stroke-width="2"/>
+<circle cx="648.9655040102995" cy="181.4680706456217" r="6" fill="none" stroke="#868e96" stroke-width="2"/>
+<rect x="576" y="140" width="28" height="34" rx="6" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2"/>
+<text x="656" y="238" font-size="14" text-anchor="start" fill="#868e96" font-weight="700">clathrin</text>
+<text x="590" y="290" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">3. Arrestin links the receptor</text>
+<text x="590" y="310" font-size="16" text-anchor="middle" fill="#1b2a3a">to a clathrin-coated pit</text>
+<text x="590" y="330" font-size="16" text-anchor="middle" fill="#1b2a3a">(endocytosis)</text>
+<circle cx="830" cy="280" r="42" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/>
+<text x="830" y="340" font-size="15" text-anchor="middle" fill="#2e8b57" font-weight="700">endosome</text>
+<rect x="816" y="266" width="26" height="30" rx="6" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2"/>
+<path d="M856.0,244.0 Q900.0,200.0 900.0,127.0" fill="none" stroke="#2e8b57" stroke-width="2.5"/>
+<path d="M900.0,116.0 L906.0,127.0 L894.0,127.0 Z" fill="#2e8b57"/>
+<text x="908" y="190" font-size="15" text-anchor="start" fill="#2e8b57" font-weight="700">recycle:</text>
+<text x="908" y="208" font-size="15" text-anchor="start" fill="#2e8b57">resensitised</text>
+<path d="M800.0,306.0 L756.6,363.2" fill="none" stroke="#c92a2a" stroke-width="2.5"/>
+<path d="M750.0,372.0 L751.8,359.6 L761.5,366.9 Z" fill="#c92a2a"/>
+<text x="742" y="392" font-size="15" text-anchor="end" fill="#c92a2a" font-weight="700">lysosome: degraded</text>
+<path d="M660.0,260.0 L769.1,274.5" fill="none" stroke="#1b2a3a" stroke-width="2.5"/>
+<path d="M780.0,276.0 L768.3,280.5 L769.9,268.5 Z" fill="#1b2a3a"/>
+<text x="820" y="372" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="700">4. Sorted in</text>
+<text x="820" y="392" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="700">the endosome</text></svg>

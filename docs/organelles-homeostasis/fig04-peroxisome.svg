@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b2a3a"/></marker>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#3b5bab"/></marker>
+  </defs>
+  <rect width="900" height="500" fill="#fbfaf5"/>
+  <!-- peroxisome -->
+  <circle cx="450" cy="275" r="165" fill="#e9eef8" stroke="#3b5bab" stroke-width="5"/>
+  <text x="450" y="76" text-anchor="middle" font-weight="bold" fill="#3b5bab">Peroxisome</text>
+  <text x="450" y="98" text-anchor="middle" font-size="14" fill="#3b5bab">one membrane · no DNA · 0.1–1 µm</text>
+  <!-- reaction 1: oxidases -->
+  <text x="450" y="210" text-anchor="middle">oxidases:</text>
+  <text x="372" y="234">R–H<tspan dy="4" font-size="12">2</tspan><tspan dy="-4"> + O</tspan><tspan dy="4" font-size="12">2</tspan><tspan dy="-4"> → R + </tspan><tspan fill="#e8590c" font-weight="bold">H</tspan><tspan dy="4" font-size="12" fill="#e8590c" font-weight="bold">2</tspan><tspan dy="-4" fill="#e8590c" font-weight="bold">O</tspan><tspan dy="4" font-size="12" fill="#e8590c" font-weight="bold">2</tspan></text>
+  <!-- reaction 2: catalase -->
+  <text x="450" y="276" text-anchor="middle">catalase:</text>
+  <text x="378" y="300"><tspan fill="#e8590c" font-weight="bold">2 H</tspan><tspan dy="4" font-size="12" fill="#e8590c" font-weight="bold">2</tspan><tspan dy="-4" fill="#e8590c" font-weight="bold">O</tspan><tspan dy="4" font-size="12" fill="#e8590c" font-weight="bold">2</tspan><tspan dy="-4"> → 2 H</tspan><tspan dy="4" font-size="12">2</tspan><tspan dy="-4">O + O</tspan><tspan dy="4" font-size="12">2</tspan></text>
+  <text x="450" y="344" text-anchor="middle">very-long-chain fatty acids</text>
+  <text x="450" y="366" text-anchor="middle">are shortened (β-oxidation)</text>
+  <text x="450" y="402" text-anchor="middle" font-size="14">first steps of plasmalogens</text>
+  <text x="450" y="420" text-anchor="middle" font-size="14">(lipids of myelin)</text>
+  <!-- import -->
+  <g>
+    <rect x="30" y="140" width="170" height="70" rx="8" fill="#fff" stroke="#1b2a3a"/>
+    <text x="115" y="166" text-anchor="middle">folded enzyme</text>
+    <text x="115" y="188" text-anchor="middle">with tag <tspan font-weight="bold">–SKL</tspan></text>
+    <path d="M200,175 L292,215" stroke="#3b5bab" stroke-width="3" marker-end="url(#b)"/>
+    <text x="40" y="240" font-size="14">imported from the cytosol</text>
+    <text x="40" y="258" font-size="14">by PEX proteins</text>
+  </g>
+  <!-- VLCFA in -->
+  <text x="30" y="350">VLCFA (C24, C26)</text>
+  <path d="M170,345 L292,345" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <!-- products out -->
+  <path d="M612,335 L700,350" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <text x="705" y="350">shorter fatty</text>
+  <text x="705" y="370">acids → mitochondria</text>
+  <path d="M590,390 L700,420" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <text x="705" y="425">plasmalogen precursor</text>
+  <text x="705" y="445">→ ER</text>
+  <!-- origin -->
+  <text x="680" y="150" font-weight="bold">New peroxisomes:</text>
+  <text x="680" y="172">grow and divide, or</text>
+  <text x="680" y="194">bud from the ER</text>
+</svg>

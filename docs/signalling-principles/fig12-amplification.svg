@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 385" width="1020" height="385" font-family="Helvetica, Arial, sans-serif">
+<rect width="1020" height="385" fill="#ffffff"/>
+<defs>
+<marker id="a" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+<marker id="ah" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#e8590c"/></marker>
+<marker id="as" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#c92a2a"/></marker>
+<marker id="bar" markerWidth="4" markerHeight="20" refX="2" refY="10" orient="auto" markerUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="20" fill="#1b2a3a"/></marker>
+</defs>
+<circle cx="224.0" cy="50" r="6.5" fill="#1b2a3a"/>
+<text x="282.0" y="55.0" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="bold" >1 active receptor</text>
+<line x1="230.0" y1="62.0" x2="230.0" y2="101.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+<text x="214.0" y="87.5" font-size="15" text-anchor="end" fill="#8a8f98" font-weight="bold" >×10</text>
+<circle cx="190.0" cy="115" r="6.5" fill="#e8590c"/>
+<circle cx="206.0" cy="115" r="6.5" fill="#e8590c"/>
+<circle cx="222.0" cy="115" r="6.5" fill="#e8590c"/>
+<circle cx="238.0" cy="115" r="6.5" fill="#e8590c"/>
+<circle cx="254.0" cy="115" r="6.5" fill="#e8590c"/>
+<circle cx="270.0" cy="115" r="6.5" fill="#e8590c"/>
+<text x="292.0" y="120.0" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="normal" >~10 G proteins</text>
+<line x1="230.0" y1="127.0" x2="230.0" y2="166.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+<text x="214.0" y="152.5" font-size="15" text-anchor="end" fill="#8a8f98" font-weight="bold" >×100</text>
+<circle cx="130.0" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="145.4" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="160.8" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="176.2" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="191.5" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="206.9" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="222.3" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="237.7" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="253.1" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="268.5" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="283.8" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="299.2" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="314.6" cy="180" r="6.5" fill="#c2255c"/>
+<circle cx="330.0" cy="180" r="6.5" fill="#c2255c"/>
+<text x="352.0" y="185.0" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="normal" >~1000 cAMP</text>
+<line x1="230.0" y1="192.0" x2="230.0" y2="231.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+<text x="214.0" y="217.5" font-size="15" text-anchor="end" fill="#8a8f98" font-weight="bold" ></text>
+<circle cx="100.0" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="115.3" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="130.6" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="145.9" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="161.2" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="176.5" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="191.8" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="207.1" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="222.4" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="237.6" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="252.9" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="268.2" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="283.5" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="298.8" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="314.1" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="329.4" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="344.7" cy="245" r="6.5" fill="#2a7f8f"/>
+<circle cx="360.0" cy="245" r="6.5" fill="#2a7f8f"/>
+<text x="382.0" y="250.0" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="normal" >~500 active kinases</text>
+<line x1="230.0" y1="257.0" x2="230.0" y2="296.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+<text x="214.0" y="282.5" font-size="15" text-anchor="end" fill="#8a8f98" font-weight="bold" >×20</text>
+<circle cx="60.0" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="73.6" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="87.2" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="100.8" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="114.4" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="128.0" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="141.6" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="155.2" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="168.8" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="182.4" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="196.0" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="209.6" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="223.2" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="236.8" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="250.4" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="264.0" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="277.6" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="291.2" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="304.8" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="318.4" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="332.0" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="345.6" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="359.2" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="372.8" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="386.4" cy="310" r="6.5" fill="#6b4fa0"/>
+<circle cx="400.0" cy="310" r="6.5" fill="#6b4fa0"/>
+<text x="422.0" y="315.0" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="bold" >~10 000 proteins phosphorylated</text>
+<text x="230.0" y="350.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >each step: one active molecule activates many</text>
+<text x="230.0" y="370.0" font-size="14" text-anchor="middle" fill="#8a8f98" font-weight="normal" >(numbers rounded, for illustration)</text>
+<text x="845.0" y="32.0" font-size="17" text-anchor="middle" fill="#1b2a3a" font-weight="bold" >consequence: spare receptors</text>
+<path d="M700,60 V270 H990" fill="none" stroke="#1b2a3a" stroke-width="2"/>
+<text x="692.0" y="275.0" font-size="14" text-anchor="end" fill="#1b2a3a" font-weight="normal" >0 %</text>
+<line x1="700" x2="990" y1="270" y2="270" stroke="#e3e6ea"/>
+<text x="692.0" y="170.0" font-size="14" text-anchor="end" fill="#1b2a3a" font-weight="normal" >50 %</text>
+<line x1="700" x2="990" y1="165.0" y2="165.0" stroke="#e3e6ea"/>
+<text x="692.0" y="65.0" font-size="14" text-anchor="end" fill="#1b2a3a" font-weight="normal" >100 %</text>
+<line x1="700" x2="990" y1="60" y2="60" stroke="#e3e6ea"/>
+<polyline points="700.0,269.8 707.2,269.7 714.5,269.6 721.8,269.5 729.0,269.3 736.2,269.1 743.5,268.8 750.8,268.4 758.0,267.9 765.2,267.2 772.5,266.3 779.8,265.1 787.0,263.6 794.2,261.5 801.5,258.8 808.8,255.4 816.0,250.9 823.2,245.3 830.5,238.3 837.8,229.7 845.0,219.5 852.2,207.7 859.5,194.4 866.8,180.0 874.0,165.0 881.2,150.0 888.5,135.6 895.8,122.3 903.0,110.5 910.2,100.3 917.5,91.7 924.8,84.7 932.0,79.1 939.2,74.6 946.5,71.2 953.8,68.5 961.0,66.4 968.2,64.9 975.5,63.7 982.8,62.8 990.0,62.1" fill="none" stroke="#1f77b4" stroke-width="3.2" stroke-dasharray="8 5"/>
+<polyline points="700.0,265.9 707.2,264.6 714.5,262.8 721.8,260.5 729.0,257.5 736.2,253.7 743.5,248.9 750.8,242.8 758.0,235.3 765.2,226.2 772.5,215.6 779.8,203.5 787.0,190.2 794.2,176.1 801.5,161.7 808.8,147.7 816.0,134.5 823.2,122.6 830.5,112.2 837.8,103.4 845.0,96.2 852.2,90.3 859.5,85.6 866.8,81.9 874.0,79.1 881.2,76.9 888.5,75.2 895.8,73.9 903.0,73.0 910.2,72.2 917.5,71.7 924.8,71.3 932.0,70.9 939.2,70.7 946.5,70.5 953.8,70.4 961.0,70.3 968.2,70.2 975.5,70.2 982.8,70.1 990.0,70.1" fill="none" stroke="#1b2a3a" stroke-width="3.2"/>
+<text x="723.2" y="97.8" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="bold" >response</text>
+<text x="888.5" y="207.0" font-size="16" text-anchor="start" fill="#1f77b4" font-weight="bold" >receptors</text>
+<text x="888.5" y="226.0" font-size="16" text-anchor="start" fill="#1f77b4" font-weight="bold" >occupied</text>
+<text x="845.0" y="296.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >agonist concentration (log)</text>
+<text x="845.0" y="324.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >half the response with only 5 % of</text>
+<text x="845.0" y="344.0" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >receptors occupied: EC₅₀ well below K<tspan font-size='11' dy='4'>d</tspan></text>
+
+</svg>

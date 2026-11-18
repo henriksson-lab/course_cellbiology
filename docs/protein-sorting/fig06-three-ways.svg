@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig06: the three ways in. Gated (nuclear pore), transmembrane (a translocator in the membrane: ER, mitochondria, peroxisomes), vesicular (vesicles between lumen-side compartments). -->
+  <defs>
+    <marker id="ag" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#6b4fa0"/></marker>
+    <marker id="at" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#e8590c"/></marker>
+    <marker id="av" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <rect x="0" y="0" width="720" height="480" fill="#dbe7f3"/>
+  <text x="705" y="26" font-size="16" fill="#1b2a3a" text-anchor="end" font-weight="bold">outside</text>
+  <rect x="16" y="40" width="660" height="424" rx="55" fill="#fbfaf5" stroke="#8a6a12" stroke-width="5"/>
+  <!-- nucleus -->
+  <ellipse cx="150" cy="190" rx="105" ry="95" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+  <rect x="249" y="178" width="14" height="24" fill="#fbfaf5"/>
+  <line x1="250" y1="178" x2="262" y2="178" stroke="#6b4fa0" stroke-width="3"/>
+  <line x1="250" y1="202" x2="262" y2="202" stroke="#6b4fa0" stroke-width="3"/>
+  <text x="140" y="196" font-size="19" fill="#6b4fa0" text-anchor="middle" font-weight="bold">nucleus</text>
+  <!-- ER -->
+  <path d="M 70 360 q 60 -22 120 0 q 60 22 120 0 l 0 22 q -60 22 -120 0 q -60 -22 -120 0 z" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="3"/>
+  <text x="58" y="420" font-size="18" fill="#2a7f8f" font-weight="bold">ER</text>
+  <!-- mitochondrion -->
+  <rect x="345" y="385" width="150" height="54" rx="27" fill="#f8e9ec" stroke="#a8324a" stroke-width="3"/>
+  <text x="420" y="417" font-size="16" fill="#a8324a" text-anchor="middle" font-weight="bold">mitochondrion</text>
+  <!-- peroxisome -->
+  <circle cx="380" cy="88" r="26" fill="#e9eef8" stroke="#3b5bab" stroke-width="3"/>
+  <text x="414" y="94" font-size="16" fill="#3b5bab" font-weight="bold">peroxisome</text>
+  <!-- Golgi -->
+  <path d="M 520 200 q -12 40 0 80 l 12 0 q -12 -40 0 -80 z" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <path d="M 542 200 q -12 40 0 80 l 12 0 q -12 -40 0 -80 z" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <path d="M 564 200 q -12 40 0 80 l 12 0 q -12 -40 0 -80 z" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <text x="548" y="188" font-size="16" fill="#d9822b" text-anchor="middle" font-weight="bold">Golgi</text>
+  <!-- lysosome -->
+  <circle cx="600" cy="380" r="28" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/>
+  <text x="600" y="430" font-size="16" fill="#2e8b57" text-anchor="middle" font-weight="bold">lysosome</text>
+  <!-- cytosol and ribosomes -->
+  <g fill="#ced4da" stroke="#1b2a3a" stroke-width="1">
+    <ellipse cx="370" cy="212" rx="14" ry="9"/><ellipse cx="370" cy="198" rx="10" ry="6"/>
+  </g>
+  <text x="480" y="150" font-size="17" fill="#1b2a3a" text-anchor="middle" font-style="italic">cytosol</text>
+  <!-- 1 gated: in and out through the pore -->
+  <line x1="350" y1="196" x2="272" y2="186" stroke="#6b4fa0" stroke-width="4" marker-end="url(#ag)"/>
+  <line x1="240" y1="200" x2="200" y2="215" stroke="#6b4fa0" stroke-width="4" marker-end="url(#ag)"/>
+  <circle cx="300" cy="166" r="14" fill="#6b4fa0"/><text x="300" y="172" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">1</text>
+  <!-- 2 transmembrane -->
+  <line x1="360" y1="226" x2="262" y2="350" stroke="#e8590c" stroke-width="4" marker-end="url(#at)"/>
+  <line x1="378" y1="226" x2="410" y2="376" stroke="#e8590c" stroke-width="4" marker-end="url(#at)"/>
+  <line x1="372" y1="186" x2="378" y2="126" stroke="#e8590c" stroke-width="4" marker-end="url(#at)"/>
+  <circle cx="290" cy="280" r="14" fill="#e8590c"/><text x="290" y="286" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">2</text>
+  <circle cx="410" cy="282" r="14" fill="#e8590c"/><text x="410" y="288" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">2</text>
+  <circle cx="398" cy="150" r="14" fill="#e8590c"/><text x="398" y="156" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">2</text>
+  <!-- 3 vesicular -->
+  <path d="M 312 356 C 400 330, 460 300, 506 262" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#av)"/>
+  <circle cx="460" cy="294" r="9" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2.5"/>
+  <path d="M 584 268 L 592 342" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#av)"/>
+  <path d="M 590 230 L 668 230" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#av)"/>
+  <circle cx="625" cy="230" r="9" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <circle cx="612" cy="300" r="14" fill="#1b2a3a"/><text x="612" y="306" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">3</text>
+  <circle cx="500" cy="322" r="14" fill="#1b2a3a"/><text x="500" y="328" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">3</text>
+  <!-- legend -->
+  <circle cx="752" cy="66" r="15" fill="#6b4fa0"/><text x="752" y="72" font-size="18" fill="#fff" text-anchor="middle" font-weight="bold">1</text>
+  <text x="778" y="62" font-size="19" fill="#6b4fa0" font-weight="bold">Gated transport</text>
+  <text x="778" y="86" font-size="16" fill="#1b2a3a">between cytosol and nucleus, via pores.</text>
+  <text x="778" y="107" font-size="16" fill="#1b2a3a">Same space on both sides; the protein</text>
+  <text x="778" y="128" font-size="16" fill="#1b2a3a">stays <tspan font-weight="bold">folded</tspan>. No membrane crossed.</text>
+  <circle cx="752" cy="186" r="15" fill="#e8590c"/><text x="752" y="192" font-size="18" fill="#fff" text-anchor="middle" font-weight="bold">2</text>
+  <text x="778" y="182" font-size="19" fill="#e8590c" font-weight="bold">Transmembrane transport</text>
+  <text x="778" y="206" font-size="16" fill="#1b2a3a">cytosol → ER, mitochondria, peroxisomes.</text>
+  <text x="778" y="227" font-size="16" fill="#1b2a3a">A <tspan font-weight="bold">translocator</tspan> protein in the membrane;</text>
+  <text x="778" y="248" font-size="16" fill="#1b2a3a">the chain usually goes through <tspan font-weight="bold">unfolded</tspan>.</text>
+  <circle cx="752" cy="306" r="15" fill="#1b2a3a"/><text x="752" y="312" font-size="18" fill="#fff" text-anchor="middle" font-weight="bold">3</text>
+  <text x="778" y="302" font-size="19" fill="#1b2a3a" font-weight="bold">Vesicular transport</text>
+  <text x="778" y="326" font-size="16" fill="#1b2a3a">ER → Golgi → lysosomes, plasma</text>
+  <text x="778" y="347" font-size="16" fill="#1b2a3a">membrane, outside. Vesicles bud and fuse;</text>
+  <text x="778" y="368" font-size="16" fill="#1b2a3a">the protein <tspan font-weight="bold">never crosses</tspan> a membrane.</text>
+  <text x="740" y="430" font-size="16" fill="#1b2a3a" font-style="italic">The signal chooses the route;</text>
+  <text x="740" y="451" font-size="16" fill="#1b2a3a" font-style="italic">a receptor reads the signal.</text>
+</svg>

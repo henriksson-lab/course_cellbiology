@@ -1,0 +1,104 @@
+---
+title: "Quiz: protein life and death"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Protein life and death: folding, modification and degradation*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Anfinsen showed that a purified protein can refold by itself in a test tube. Why do cells still need chaperones? Give two reasons. `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Compare a test tube with the cytosol, and think about how a new chain is made.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(1) The cytosol is **crowded** (about 200–300 g protein per litre), so exposed hydrophobic stretches easily meet and stick to other chains. (2) A new chain is made **slowly, one amino acid at a time**, so for a long time a partly made chain shows hydrophobic stretches but cannot yet fold. Also, stress (heat) unfolds proteins that were already folded. Chaperones bind exposed hydrophobic stretches and prevent wrong contacts; they do not carry information about the final shape.
+:::
+
+---
+
+**Q2.** Hsp70 binds its substrate tightly in one nucleotide state and loosely in the other. Which is which, and why does Hsp70 need ATP at all? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of the lid.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+With **ADP** bound the lid is closed and Hsp70 holds the chain **tightly**; with **ATP** the lid is open and binding is **loose** and fast. ATP binding and hydrolysis drive the cycle of binding and release: each release gives the chain a new chance to fold, and each rebinding covers its sticky stretches. Without the cycle Hsp70 would either never bind or never let go.
+:::
+
+---
+
+**Q3.** What is special about the structure of amyloid compared with an amorphous aggregate, and why can amyloid "spread"? `[ELO 4]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Look at the direction of the β-strands relative to the fibril.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Amyloid is **ordered**: each chain forms β-strands lying **across** the fibril, and strands from many chains stack along it (**cross-β**), held by backbone hydrogen bonds. This makes fibrils very stable. A fibril end acts as a **seed** that converts new misfolded chains into the same structure, and broken fibrils make new seeds, which can move to other cells. An amorphous aggregate is a disordered tangle without this template.
+:::
+
+---
+
+**Q4.** A kinase phosphorylates an enzyme on a serine and the enzyme becomes active. Name the enzyme that switches it off again, and explain how one phosphate can change activity. `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does a phosphate group carry?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+A **protein phosphatase** removes the phosphate (by hydrolysis). The phosphate carries **two negative charges** and is large; it attracts positive and repels negative side chains nearby, which can move a loop, open the active site or create (or block) a binding surface for another protein. The switch is fast and reversible and needs no new protein synthesis.
+:::
+
+---
+
+**Q5.** Put these in the correct order for marking a protein for destruction, and say what each does: E2, proteasome, E1, E3. Which of them gives the specificity? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Humans have 2 of one, about 40 of another and about 600 of a third.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**E1** activates ubiquitin using ATP → **E2** carries the activated ubiquitin → **E3** binds both the E2 and the substrate (through its degron) and moves ubiquitin onto a lysine of the substrate; repeated rounds build a Lys48 chain → the **26S proteasome** binds the chain, removes the ubiquitin, unfolds the protein and cuts it into peptides. The **E3s** (about 600 in humans) give the specificity.
+:::
+
+---
+
+**Q6.** Two proteins are both present at 1000 molecules per cell. Protein A has a half-life of 30 min, protein B of 30 h. Which one is made faster? What happens to each within 2 hours after the gene is switched off? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+At steady state $P = k_s/k_d$, and $k_d = \ln 2 / t_{1/2}$.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+At steady state $k_s = k_d P$, so **A is made 60 times faster** than B (its $k_d$ is 60 times larger). After the gene is switched off, A falls by half every 30 min: after 2 h (4 half-lives) about **1/16, about 60 molecules**, are left. B loses only about **4.5 %** in 2 h ($e^{-0.023 \times 2} \approx 0.955$), about 955 molecules left. Short-lived proteins can be changed quickly.
+:::
+
+---
+
+**Q7.** In a cycloheximide chase you add a proteasome inhibitor together with cycloheximide, and the protein now disappears much more slowly. What do you conclude? Why can you not run the experiment for 48 hours? `[ELO 1]` `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What else besides your protein depends on new protein synthesis?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The protein is degraded mainly by the **proteasome** (most likely after ubiquitination). A long experiment is not reliable because cycloheximide stops **all** protein synthesis: short-lived proteins, including regulators of degradation itself, disappear, the cell becomes stressed and eventually dies. Results over more than a few hours no longer describe a normal cell; a **pulse-chase** avoids this.
+:::
+
+---
+
+**Q8.** Bortezomib and lenalidomide are both used in multiple myeloma and both act on the ubiquitin–proteasome system. How do their mechanisms differ? `[ELO 4]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+One blocks, the other redirects.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Bortezomib blocks** the proteasome (the β5 active site in the 20S core): degradation of many proteins slows, misfolded antibody chains pile up in the protein-loaded myeloma cell, and the cell dies by apoptosis. **Lenalidomide redirects** an E3 ligase: it binds **cereblon** and acts as a molecular glue, so cereblon tags **new substrates** (IKZF1 and IKZF3) for destruction; the myeloma cells need these transcription factors to survive.
+:::

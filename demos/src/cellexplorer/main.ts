@@ -2,9 +2,13 @@
 // organelle outlines from the COSEM segmentations (checked and corrected by hand).
 // Pan/zoom with mouse, wheel and touch (CSS transform on a plain <img> + SVG overlay),
 // toggle layers, tap an organelle for a description, scale bar, and a quiz mode.
-// Options (data-*): img = URL of the EM image (required), height = viewer height in px.
+// Options (data-*): img = URL of the EM image (required), height = viewer height in px,
+// mode = "measure" adds a third mode, Measure (point counting, pH and Ca²⁺ per
+// compartment; see measureui.ts), and starts in it. Without it the explorer has only
+// Explore and Find the organelle.
 import { autoMount, htmlEl, svgEl, button, rng } from "../lib/ui";
 import { CLASSES, OrgClass } from "./classes";
+import { createMeasure } from "./measureui";
 import data from "./outlines.json";
 
 type Ring = number[][];
@@ -47,6 +51,7 @@ autoMount("cellexplorer", host => {
   host.classList.add("cx");
   const imgUrl = host.dataset.img || "";
   const viewH = Number(host.dataset.height) || 0;
+  const withMeasure = host.dataset.mode === "measure";
 
   // ---------------- data
   const shapes: Shape[] = [];
@@ -97,6 +102,7 @@ autoMount("cellexplorer", host => {
   const modeRow = htmlEl("div", "qb-presets", "", panel);
   const bExplore = button(modeRow, "Explore", () => setMode("explore"));
   const bQuiz = button(modeRow, "Find the organelle", () => setMode("quiz"));
+  const bMeasure = withMeasure ? button(modeRow, "Measure", () => setMode("measure")) : null;
 
   const explorePane = htmlEl("div", "cx-pane cx-explore", "", panel);
   const layersHead = htmlEl("div", "cx-layers-head", "", explorePane);
@@ -136,6 +142,7 @@ autoMount("cellexplorer", host => {
     const len = niceLength(nmPerScreenPx * 120);
     scaleBar.style.width = (len / nmPerScreenPx).toFixed(1) + "px";
     scaleTxt.textContent = `${fmtNm(len)} · field of view ${fmtNm(nmPerScreenPx * vw())}`;
+    measure?.onZoom();
   }
   function fit() {
     s = Math.min(vw() / W, vh() / H);
@@ -201,6 +208,11 @@ autoMount("cellexplorer", host => {
   };
   view.addEventListener("pointerup", end);
   view.addEventListener("pointercancel", end);
+  // hover (mouse only): the measure mode shows the compartment under the pointer
+  view.addEventListener("pointermove", ev => {
+    if (mode !== "measure" || ev.pointerType !== "mouse" || pts.size) return;
+    measure?.hover(...toImage(...local(ev)));
+  });
   view.addEventListener("wheel", ev => {
     ev.preventDefault();
     const dy = ev.deltaMode === 1 ? ev.deltaY * 30 : ev.deltaMode === 2 ? ev.deltaY * 300 : ev.deltaY;
@@ -257,6 +269,7 @@ autoMount("cellexplorer", host => {
 
   function tap(x: number, y: number) {
     if (mode === "quiz") { quizTap(x, y); return; }
+    if (mode === "measure") { measure?.tap(x, y); return; }
     const h = hits(x, y, true);
     select(h[0] ?? null);
   }
@@ -271,7 +284,7 @@ autoMount("cellexplorer", host => {
   function setAll(on: boolean) { for (const c of CLASSES) setLayer(c.id, on); }
 
   // ---------------- quiz: "find the organelle"
-  type Mode = "explore" | "quiz";
+  type Mode = "explore" | "quiz" | "measure";
   let mode: Mode = "explore";
   const quizClasses = CLASSES.filter(c => shapes.some(sh => sh.cls === c));
   let order: OrgClass[] = [], round = 0, score = 0, misses = 0, seed = 1;
@@ -359,6 +372,8 @@ autoMount("cellexplorer", host => {
     mode = m;
     bExplore.classList.toggle("active", m === "explore");
     bQuiz.classList.toggle("active", m === "quiz");
+    bMeasure?.classList.toggle("active", m === "measure");
+    if (m !== "measure") measure?.leave();
     explorePane.hidden = m !== "explore";
     quizPane.hidden = m !== "quiz";
     svg.classList.toggle("cx-quiz", m === "quiz");
@@ -368,10 +383,23 @@ autoMount("cellexplorer", host => {
     banner.hidden = m !== "quiz";
     banner.textContent = "Quiz: outlines hidden";
     if (m === "quiz") startQuiz();
+    if (m === "measure") measure?.enter();
   }
 
-  setMode("explore");
-  const ro = new ResizeObserver(() => { if (!view.dataset.ready) { view.dataset.ready = "1"; fit(); } else apply(); });
+  // ---------------- measure mode (opt-in)
+  const measure = withMeasure ? createMeasure({
+    panel, svg, shapes, W, H,
+    scale: () => s,
+    show: r => {
+      const ns = Math.min(vw() / (r.x1 - r.x0), vh() / (r.y1 - r.y0)) * 0.96;
+      centreOn((r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2, ns);
+    },
+  }) : null;
+
+  setMode(withMeasure ? "measure" : "explore");
+  /** The starting view: the whole slice, or the counting frame in measure mode. */
+  function home() { fit(); if (mode === "measure") measure?.showFrame(); }
+  const ro = new ResizeObserver(() => { if (!view.dataset.ready) { view.dataset.ready = "1"; home(); } else apply(); });
   ro.observe(view);
-  fit();
+  home();
 });

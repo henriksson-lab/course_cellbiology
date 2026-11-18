@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig08: single-pass membrane proteins: type I, II and III; cytosol on top -->
+  <defs><marker id="ar" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker></defs>
+  <rect x="0" y="50" width="1000" height="120" fill="#fbfaf5"/>
+  <rect x="0" y="204" width="1000" height="176" fill="#e6f3f5"/>
+  <rect x="0" y="170" width="1000" height="34" fill="#2a7f8f" opacity="0.35"/>
+  <line x1="0" y1="170" x2="1000" y2="170" stroke="#2a7f8f" stroke-width="3"/>
+  <line x1="0" y1="204" x2="1000" y2="204" stroke="#2a7f8f" stroke-width="3"/>
+  <rect x="0" y="0" width="1000" height="50" fill="#ffffff"/>
+  <rect x="0" y="380" width="1000" height="40" fill="#ffffff"/>
+  <text x="170" y="26" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a">type I</text>
+  <text x="170" y="46" font-size="15" text-anchor="middle" font-weight="normal" fill="#555555" font-style="italic">LDL receptor, insulin receptor</text>
+  <text x="500" y="26" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a">type II</text>
+  <text x="500" y="46" font-size="15" text-anchor="middle" font-weight="normal" fill="#555555" font-style="italic">transferrin receptor</text>
+  <text x="830" y="26" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a">type III</text>
+  <text x="830" y="46" font-size="15" text-anchor="middle" font-weight="normal" fill="#555555" font-style="italic">cytochrome P450 (ER)</text>
+  <line x1="60" y1="176" x2="60" y2="198" stroke="#e8590c" stroke-width="10" stroke-linecap="round" opacity="0.45"/>
+  <text x="60" y="136" font-size="14" text-anchor="middle" font-weight="normal" fill="#a63c00">signal sequence</text>
+  <text x="60" y="154" font-size="14" text-anchor="middle" font-weight="normal" fill="#a63c00">(cut off)</text>
+  <line x1="190" y1="170" x2="190" y2="204" stroke="#c92a2a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M190,204 L 164,244" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="280" r="36" fill="#dee2e6" stroke="#1b2a3a" stroke-width="2"/>
+  <g transform="translate(150 316) scale(0.8)">
+    <path d="M0,0 V22 M0,22 L-7,30 V38 M0,22 L7,30 V38" stroke="#1b2a3a" stroke-width="1" fill="none"/>
+    <rect x="-3.5" y="2.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <rect x="-3.5" y="10.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="0" cy="22" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+  </g>
+  <circle cx="104" cy="258" r="12" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="104" y="263.5" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">N</text>
+  <text x="204" y="162" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">+</text>
+  <path d="M190,170 C 200,130 230,120 240,96" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="246" cy="84" r="12" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="246" y="89.5" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">C</text>
+  <text x="206" y="226" font-size="15" text-anchor="start" font-weight="bold" fill="#c92a2a">stop-transfer</text>
+  <line x1="500" y1="170" x2="500" y2="204" stroke="#3b5bdb" stroke-width="12" stroke-linecap="round"/>
+  <text x="484" y="162" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">+</text>
+  <path d="M500,170 C 490,130 460,120 450,96" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="444" cy="84" r="12" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="444" y="89.5" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">N</text>
+  <path d="M500,204 L 526,244" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="550" cy="280" r="36" fill="#dee2e6" stroke="#1b2a3a" stroke-width="2"/>
+  <g transform="translate(550 316) scale(0.8)">
+    <path d="M0,0 V22 M0,22 L-7,30 V38 M0,22 L7,30 V38" stroke="#1b2a3a" stroke-width="1" fill="none"/>
+    <rect x="-3.5" y="2.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <rect x="-3.5" y="10.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="0" cy="22" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+  </g>
+  <circle cx="596" cy="258" r="12" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="596" y="263.5" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">C</text>
+  <text x="520" y="126" font-size="15" text-anchor="start" font-weight="bold" fill="#3b5bdb">signal-anchor</text>
+  <text x="520" y="144" font-size="14" text-anchor="start" font-weight="normal" fill="#3b5bdb">(+ before it)</text>
+  <line x1="830" y1="170" x2="830" y2="204" stroke="#3b5bdb" stroke-width="12" stroke-linecap="round"/>
+  <text x="846" y="162" font-size="18" text-anchor="middle" font-weight="bold" fill="#1c4fa0">+</text>
+  <path d="M830,204 L 822,224" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="818" cy="238" r="12" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="818" y="243.5" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">N</text>
+  <path d="M830,170 L 856,136" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="880" cy="104" r="36" fill="#dee2e6" stroke="#1b2a3a" stroke-width="2"/>
+  <circle cx="928" cy="120" r="12" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="928" y="125.5" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">C</text>
+  <text x="810" y="126" font-size="15" text-anchor="end" font-weight="bold" fill="#3b5bdb">signal-anchor</text>
+  <text x="810" y="144" font-size="14" text-anchor="end" font-weight="normal" fill="#3b5bdb">(+ after it)</text>
+  <text x="10" y="72" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a" font-style="italic">cytosol</text>
+  <text x="10" y="368" font-size="16" text-anchor="start" font-weight="bold" fill="#1b2a3a">ER lumen → later: outside the cell</text>
+  <text x="990" y="406" font-size="15" text-anchor="end" font-weight="normal" fill="#1b2a3a">+ = positive charges (Lys, Arg); they stay on the cytosolic side (positive-inside rule)</text>
+</svg>

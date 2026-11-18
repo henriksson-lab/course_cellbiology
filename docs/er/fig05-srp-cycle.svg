@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig05: the SRP cycle, in four steps; cytosol on top, ER lumen below -->
+  <defs><marker id="ar" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker></defs>
+  <rect x="0" y="0" width="1000" height="250" fill="#fbfaf5"/>
+  <rect x="0" y="284" width="1000" height="146" fill="#e6f3f5"/>
+  <rect x="0" y="250" width="1000" height="34" fill="#2a7f8f" opacity="0.35"/>
+  <line x1="0" y1="250" x2="1000" y2="250" stroke="#2a7f8f" stroke-width="3"/>
+  <line x1="0" y1="284" x2="1000" y2="284" stroke="#2a7f8f" stroke-width="3"/>
+  <line x1="80" y1="100" x2="210" y2="100" stroke="#868e96" stroke-width="3"/>
+  <ellipse cx="138" cy="84" rx="36" ry="15" fill="#dee2e6" stroke="#1b2a3a" stroke-width="1.5"/>
+  <ellipse cx="134" cy="124" rx="44" ry="25" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="134" y="130" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">ribosome</text>
+  <path d="M128,150 q -6 14 -18 18" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="110" y1="168" x2="74" y2="174" stroke="#e8590c" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="58" cy="176" r="12" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="58" y="181.5" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">N</text>
+  <line x1="320" y1="100" x2="450" y2="100" stroke="#868e96" stroke-width="3"/>
+  <ellipse cx="378" cy="84" rx="36" ry="15" fill="#dee2e6" stroke="#1b2a3a" stroke-width="1.5"/>
+  <ellipse cx="374" cy="124" rx="44" ry="25" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="374" y="130" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">ribosome</text>
+  <path d="M368,150 q -6 14 -18 18" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="350" y1="168" x2="314" y2="174" stroke="#e8590c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M 300,190 C 330,198 356,186 380,164 L 390,172 C 364,200 330,212 296,202 Z" fill="#f59f00" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="330" y="234" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">SRP</text>
+  <text x="430" y="58" font-size="15" text-anchor="middle" font-weight="bold" fill="#c92a2a">pause</text>
+  <rect x="600" y="245" width="12" height="44" rx="5" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="628" y="245" width="12" height="44" rx="5" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="542" y="236" width="30" height="18" rx="4" fill="#ffe8a8" stroke="#1b2a3a" stroke-width="1.5"/>
+  <line x1="574" y1="168" x2="704" y2="168" stroke="#868e96" stroke-width="3"/>
+  <ellipse cx="632" cy="152" rx="36" ry="15" fill="#dee2e6" stroke="#1b2a3a" stroke-width="1.5"/>
+  <ellipse cx="628" cy="192" rx="44" ry="25" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="628" y="198" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">ribosome</text>
+  <path d="M 550,234 C 572,226 596,220 616,214 L 626,220 C 602,232 576,242 546,244 Z" fill="#f59f00" stroke="#1b2a3a" stroke-width="1.5"/>
+  <line x1="614" y1="222" x2="616" y2="240" stroke="#e8590c" stroke-width="10" stroke-linecap="round"/>
+  <text x="520" y="216" font-size="15" text-anchor="end" font-weight="normal" fill="#1b2a3a">SRP receptor</text>
+  <line x1="520" y1="220" x2="540" y2="240" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <rect x="840" y="245" width="12" height="44" rx="5" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="868" y="245" width="12" height="44" rx="5" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.5"/>
+  <line x1="814" y1="198" x2="944" y2="198" stroke="#868e96" stroke-width="3"/>
+  <ellipse cx="872" cy="182" rx="36" ry="15" fill="#dee2e6" stroke="#1b2a3a" stroke-width="1.5"/>
+  <ellipse cx="868" cy="222" rx="44" ry="25" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="868" y="228" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">ribosome</text>
+  <line x1="860" y1="256" x2="860" y2="280" stroke="#e8590c" stroke-width="12" stroke-linecap="round"/>
+  <path d="M862,282 C 864,314 910,324 920,364" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="930" cy="384" r="22" fill="#dee2e6" stroke="#1b2a3a" stroke-width="2"/>
+  <path d="M 906,118 C 926,110 946,114 964,124 L 958,134 C 944,126 926,122 910,128 Z" fill="#f59f00" stroke="#1b2a3a" stroke-width="1.5" opacity="0.8"/>
+  <line x1="930" y1="148" x2="936" y2="132" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="200" y1="128" x2="260" y2="128" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="430" y1="128" x2="500" y2="128" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="690" y1="128" x2="780" y2="128" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <circle cx="70" cy="26" r="14" fill="#1b2a3a"/>
+  <text x="70" y="32" font-size="17" text-anchor="middle" font-weight="bold" fill="#fff">1</text>
+  <text x="90" y="24" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">A signal sequence comes</text>
+  <text x="90" y="43" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">out of the ribosome</text>
+  <circle cx="310" cy="26" r="14" fill="#1b2a3a"/>
+  <text x="310" y="32" font-size="17" text-anchor="middle" font-weight="bold" fill="#fff">2</text>
+  <text x="330" y="24" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">SRP binds it and</text>
+  <text x="330" y="43" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">pauses translation</text>
+  <circle cx="560" cy="26" r="14" fill="#1b2a3a"/>
+  <text x="560" y="32" font-size="17" text-anchor="middle" font-weight="bold" fill="#fff">3</text>
+  <text x="580" y="24" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">SRP docks on its receptor</text>
+  <text x="580" y="43" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">next to the translocon</text>
+  <circle cx="790" cy="26" r="14" fill="#1b2a3a"/>
+  <text x="790" y="32" font-size="17" text-anchor="middle" font-weight="bold" fill="#fff">4</text>
+  <text x="810" y="24" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">SRP leaves; the chain is</text>
+  <text x="810" y="43" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">threaded into the lumen</text>
+  <text x="12" y="240" font-size="17" text-anchor="start" font-weight="normal" fill="#1b2a3a" font-style="italic">cytosol</text>
+  <text x="12" y="414" font-size="17" text-anchor="start" font-weight="bold" fill="#1b2a3a">ER lumen</text>
+  <text x="844" y="318" font-size="15" text-anchor="end" font-weight="normal" fill="#1b2a3a">signal peptidase</text>
+  <text x="844" y="336" font-size="15" text-anchor="end" font-weight="normal" fill="#1b2a3a">cuts off the signal</text>
+</svg>

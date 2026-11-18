@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b2a3a"/></marker>
+  </defs>
+  <!-- cytosol -->
+  <rect x="0" y="0" width="900" height="150" fill="#fbfaf5"/>
+  <!-- ER continuous with outer membrane -->
+  <path d="M70,150 C70,110 40,80 40,40 L40,10" fill="none" stroke="#2a7f8f" stroke-width="4"/>
+  <path d="M110,150 C110,110 80,80 80,40 L80,10" fill="none" stroke="#2a7f8f" stroke-width="4"/>
+  <path d="M74,150 C74,112 44,82 44,40 L44,10 L76,10 L76,40 C76,82 106,112 106,150Z" fill="#e6f3f5"/>
+  <!-- outer membrane -->
+  <path d="M110,150 L330,150 M370,150 L590,150 M630,150 L880,150" stroke="#2a7f8f" stroke-width="4"/>
+  <path d="M20,150 L70,150" stroke="#2a7f8f" stroke-width="4"/>
+  <!-- perinuclear space -->
+  <rect x="20" y="152" width="860" height="22" fill="#e6f3f5"/>
+  <rect x="330" y="150" width="40" height="28" fill="#fbfaf5"/>
+  <rect x="590" y="150" width="40" height="28" fill="#fbfaf5"/>
+  <!-- inner membrane -->
+  <path d="M20,176 L330,176 M370,176 L590,176 M630,176 L880,176" stroke="#6b4fa0" stroke-width="4"/>
+  <!-- pore connections -->
+  <path d="M330,150 L330,176 M370,150 L370,176 M590,150 L590,176 M630,150 L630,176" stroke="#6b4fa0" stroke-width="4"/>
+  <!-- nuclear pore complexes -->
+  <g fill="#9b7fd4" stroke="#6b4fa0" stroke-width="2">
+    <rect x="318" y="140" width="14" height="46" rx="5"/><rect x="368" y="140" width="14" height="46" rx="5"/>
+    <rect x="578" y="140" width="14" height="46" rx="5"/><rect x="628" y="140" width="14" height="46" rx="5"/>
+  </g>
+  <!-- nucleoplasm -->
+  <rect x="0" y="178" width="900" height="282" fill="#efebf7"/>
+  <!-- lamina meshwork -->
+  <g stroke="#6b4fa0" stroke-width="3" fill="none">
+    <path d="M20,192 L300,192 M400,192 L560,192 M660,192 L880,192"/>
+    <path d="M40,186 L80,204 L120,186 L160,204 L200,186 L240,204 L280,186 M420,186 L460,204 L500,186 L540,204 M680,186 L720,204 L760,186 L800,204 L840,186 L870,200"/>
+  </g>
+  <!-- chromatin attached to lamina -->
+  <g fill="#3d2a66" opacity=".75">
+    <ellipse cx="110" cy="232" rx="60" ry="24"/><ellipse cx="220" cy="226" rx="40" ry="18"/>
+    <ellipse cx="480" cy="230" rx="55" ry="22"/><ellipse cx="760" cy="232" rx="60" ry="24"/>
+  </g>
+  <path d="M110,210 L110,204 M480,210 L480,204 M760,210 L760,204" stroke="#3d2a66" stroke-width="3"/>
+  <!-- cytoskeleton link (LINC) -->
+  <path d="M220,48 L220,140" stroke="#555" stroke-width="5"/>
+  <path d="M220,140 L220,192" stroke="#e8590c" stroke-width="4"/>
+  <circle cx="220" cy="192" r="6" fill="#e8590c"/>
+
+  <!-- labels -->
+  <text x="100" y="28">ER (continues from the outer membrane)</text>
+  <text x="235" y="70" fill="#555">cytoskeleton</text>
+  <text x="235" y="106" fill="#e8590c">link through both</text><text x="235" y="126" fill="#e8590c">membranes</text>
+  <text x="430" y="60">nuclear pore: open gate for</text>
+  <text x="430" y="80">small molecules and ions</text>
+  <path d="M540,90 L596,136" stroke="#1b2a3a" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="660" y="40" fill="#2a7f8f">outer membrane</text>
+  <text x="660" y="62" fill="#2a7f8f">+ lumen = ER lumen</text>
+  <path d="M720,68 L720,145" stroke="#2a7f8f" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="40" y="300" fill="#6b4fa0" font-weight="bold">nuclear lamina:</text>
+  <text x="40" y="322">a mesh of lamin filaments (A and B)</text>
+  <text x="40" y="344">under the inner membrane</text>
+  <path d="M140,284 L140,200" stroke="#6b4fa0" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="420" y="300" fill="#3d2a66" font-weight="bold">chromatin anchored to the lamina</text>
+  <text x="420" y="322">(often silent genes: dark heterochromatin)</text>
+  <path d="M480,284 L480,256" stroke="#3d2a66" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="40" y="410" font-weight="bold">Jobs of the lamina:</text>
+  <text x="40" y="434">gives the nucleus its shape and stiffness · holds chromatin in place · comes apart in mitosis (phosphorylated)</text>
+</svg>

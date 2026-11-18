@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig15: where cancer mutations and targeted drugs hit the pathways -->
+<defs><marker id="a1b2a3a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+<rect x="0" y="0" width="900" height="80" rx="0" fill="#eef4fa" stroke="none" stroke-width="0"/>
+<rect x="0" y="80" width="900" height="26" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<line x1="0" y1="80" x2="900" y2="80" stroke="#8a6a12" stroke-width="3"/>
+<line x1="0" y1="106" x2="900" y2="106" stroke="#8a6a12" stroke-width="3"/>
+<rect x="0" y="106" width="900" height="344" rx="0" fill="#fbfaf5" stroke="none" stroke-width="0"/>
+<rect x="225" y="44" width="22" height="72" rx="8" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="253" y="44" width="22" height="72" rx="8" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<text x="250" y="136" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">EGFR</text>
+<rect x="455" y="44" width="22" height="72" rx="8" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="483" y="44" width="22" height="72" rx="8" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<text x="480" y="136" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">HER2</text>
+<rect x="205.0" y="171.0" width="90" height="38" rx="12" fill="#cdede2" stroke="#1baf7a" stroke-width="2.5"/>
+<text x="250" y="195.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Ras</text>
+<rect x="205.0" y="241.0" width="90" height="38" rx="12" fill="#d0e1f6" stroke="#2a78d6" stroke-width="2.5"/>
+<text x="250" y="265.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">RAF</text>
+<rect x="205.0" y="311.0" width="90" height="38" rx="12" fill="#fae2eb" stroke="#e87ba4" stroke-width="2.5"/>
+<text x="250" y="335.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">MEK</text>
+<rect x="205.0" y="381.0" width="90" height="38" rx="12" fill="#e2d5f1" stroke="#7b3fbf" stroke-width="2.5"/>
+<text x="250" y="405.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">ERK</text>
+<rect x="555.0" y="171.0" width="90" height="38" rx="12" fill="#d0e1f6" stroke="#2a78d6" stroke-width="2.5"/>
+<text x="600" y="195.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">PI3K</text>
+<rect x="555.0" y="241.0" width="90" height="38" rx="12" fill="#cdede2" stroke="#1baf7a" stroke-width="2.5"/>
+<text x="600" y="265.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Akt</text>
+<rect x="555.0" y="311.0" width="90" height="38" rx="12" fill="#e2d5f1" stroke="#7b3fbf" stroke-width="2.5"/>
+<text x="600" y="335.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">mTOR</text>
+<path d="M250,142 L250,171" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<path d="M250,209 L250,241" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<path d="M250,279 L250,311" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<path d="M250,349 L250,381" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<path d="M600,209 L600,241" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<path d="M600,279 L600,311" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<path d="M492,142 L575,171" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="205" y="50" font-size="14" text-anchor="end" font-weight="bold" fill="#c92a2a">EGFR mutated:</text>
+<text x="205" y="67" font-size="14" text-anchor="end" font-weight="normal" fill="#c92a2a">lung cancer</text>
+<text x="652" y="26" font-size="14" text-anchor="start" font-weight="bold" fill="#c92a2a">HER2 amplified:</text>
+<text x="652" y="43" font-size="14" text-anchor="start" font-weight="normal" fill="#c92a2a">~1 in 5 breast cancers</text>
+<text x="195" y="186" font-size="14" text-anchor="end" font-weight="bold" fill="#c92a2a">KRAS G12:</text>
+<text x="195" y="203" font-size="14" text-anchor="end" font-weight="normal" fill="#c92a2a">pancreas, colon, lung</text>
+<text x="195" y="256" font-size="14" text-anchor="end" font-weight="bold" fill="#c92a2a">BRAF V600E:</text>
+<text x="195" y="273" font-size="14" text-anchor="end" font-weight="normal" fill="#c92a2a">half of melanomas</text>
+<text x="655" y="186" font-size="14" text-anchor="start" font-weight="bold" fill="#c92a2a">PIK3CA mutated:</text>
+<text x="655" y="203" font-size="14" text-anchor="start" font-weight="normal" fill="#c92a2a">breast cancer</text>
+<text x="655" y="256" font-size="14" text-anchor="start" font-weight="bold" fill="#c92a2a">PTEN lost:</text>
+<text x="655" y="273" font-size="14" text-anchor="start" font-weight="normal" fill="#c92a2a">many cancers</text>
+<line x1="272" y1="128" x2="300" y2="150" stroke="#e8590c" stroke-width="2.5"/>
+<rect x="286.0" y="145" width="196" height="30" rx="15" fill="#e8590c" stroke="none" stroke-width="0"/>
+<text x="384" y="166" font-size="16" text-anchor="middle" font-weight="bold" fill="#ffffff">erlotinib, osimertinib</text>
+<line x1="496" y1="40" x2="520" y2="40" stroke="#e8590c" stroke-width="2.5"/>
+<rect x="516.0" y="25" width="124" height="30" rx="15" fill="#e8590c" stroke="none" stroke-width="0"/>
+<text x="578" y="46" font-size="16" text-anchor="middle" font-weight="bold" fill="#ffffff">trastuzumab</text>
+<rect x="306.0" y="245" width="124" height="30" rx="15" fill="#e8590c" stroke="none" stroke-width="0"/>
+<text x="368" y="266" font-size="16" text-anchor="middle" font-weight="bold" fill="#ffffff">vemurafenib</text>
+<rect x="305.0" y="315" width="110" height="30" rx="15" fill="#e8590c" stroke="none" stroke-width="0"/>
+<text x="360" y="336" font-size="16" text-anchor="middle" font-weight="bold" fill="#ffffff">trametinib</text>
+<rect x="438.0" y="185" width="96" height="30" rx="15" fill="#e8590c" stroke="none" stroke-width="0"/>
+<text x="486" y="206" font-size="16" text-anchor="middle" font-weight="bold" fill="#ffffff">alpelisib</text>
+<rect x="430.0" y="315" width="112" height="30" rx="15" fill="#e8590c" stroke="none" stroke-width="0"/>
+<text x="486" y="336" font-size="16" text-anchor="middle" font-weight="bold" fill="#ffffff">everolimus</text>
+<rect x="760.0" y="311.0" width="120" height="38" rx="12" fill="#dee0e3" stroke="#6b7280" stroke-width="2.5"/>
+<text x="820" y="335.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">BCR-ABL</text>
+<text x="820" y="290" font-size="14" text-anchor="middle" font-weight="bold" fill="#c92a2a">CML: fusion</text>
+<text x="820" y="306" font-size="14" text-anchor="middle" font-weight="normal" fill="#c92a2a">kinase, cytosol</text>
+<line x1="820" y1="349" x2="820" y2="370" stroke="#e8590c" stroke-width="2.5"/>
+<rect x="772.0" y="369" width="96" height="30" rx="15" fill="#e8590c" stroke="none" stroke-width="0"/>
+<text x="820" y="390" font-size="16" text-anchor="middle" font-weight="bold" fill="#ffffff">imatinib</text>
+<text x="420" y="410" font-size="15" text-anchor="start" font-weight="bold" fill="#c92a2a">Red: what breaks in cancer.</text>
+<text x="420" y="432" font-size="15" text-anchor="start" font-weight="bold" fill="#e8590c">Orange: drugs that block it.</text>
+</svg>

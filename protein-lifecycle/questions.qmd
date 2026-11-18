@@ -1,0 +1,139 @@
+---
+title: "Study questions: protein life and death"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+Useful relations: $\dfrac{dP}{dt} = k_s - k_d P$, $\;t_{1/2} = \ln 2 / k_d$, $\;P_{ss} = k_s / k_d$; after a change, the amount moves half-way to its new steady state in one half-life and 90 % of the way in about 3.3 half-lives.
+
+## G-level questions
+
+**1.** Explain why a newly made protein is at risk of aggregating in the cytosol, and how Hsp70 prevents this. Include the role of ATP. `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A new chain leaves the ribosome slowly (about 5 amino acids per second) and cannot fold until a whole domain is made; meanwhile its **hydrophobic stretches are exposed**. The cytosol is very **crowded** (200–300 g protein per litre), so exposed stretches easily stick to other chains. **Hsp70** binds short hydrophobic stretches. With **ATP** bound its lid is open and binding is loose; a **J-protein** (Hsp40) delivers the chain and stimulates ATP hydrolysis; with **ADP** the lid closes and the chain is held tightly, so the stretch is covered. A **nucleotide exchange factor** swaps ADP for ATP, the lid opens and the chain is released. It gets a new chance to fold, or is bound again. Hsp70 does not tell the chain how to fold; it prevents wrong contacts.
+:::
+
+---
+
+**2.** Describe how a chaperonin (GroEL/GroES or TRiC) helps a protein fold. How does it differ from Hsp70? `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A chaperonin is a **barrel of two rings** with a central cavity. A misfolded chain binds hydrophobic patches at the rim of an open ring. **ATP and a lid** (GroES in bacteria; built into TRiC) bind; the inner wall becomes hydrophilic and the chain is released into the **closed chamber**, where it folds **alone**, without contact with other chains. After about **10 s** ATP hydrolysis opens the lid and the protein leaves; if still misfolded it can enter again. Difference: Hsp70 binds short stretches of extended chains, one at a time, in the open cytosol; a chaperonin **encloses a whole protein** (up to about 60 kDa). In human cells TRiC is essential for actin and tubulin.
+:::
+
+---
+
+**3.** What is a degron? Give three different kinds and an example of how a cell uses one to regulate a protein. `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A **degron** is a feature of a protein that an **E3 ubiquitin ligase** recognises, leading to ubiquitination and degradation. Kinds: (1) a **phosphorylated motif** (phospho-degron), (2) **exposed hydrophobic stretches** of a misfolded protein, recognised through chaperones and their partner E3s (quality control), (3) certain amino acids at the **N-terminus** (N-degron rule). Example: **IκB** holds NF-κB in the cytosol. A signal activates the kinase IKK, which phosphorylates two serines of IκB; the phospho-degron is bound by an E3, IκB gets a Lys48 chain and is destroyed by the proteasome; NF-κB enters the nucleus and turns on genes (including IκB: negative feedback).
+:::
+
+---
+
+**4.** Describe the structure of the 26S proteasome and what happens to a ubiquitinated protein from binding to the release of peptides. `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The **20S core** is a barrel of four stacked rings (α β β α, seven subunits each). The two **β rings** carry **six protease active sites** (β1, β2, β5 in each ring) facing the inside; the **α rings** form a gate, so folded proteins cannot enter. One or two **19S caps** sit on the ends. The cap's receptors bind a **Lys48 ubiquitin chain** (four or more ubiquitins); deubiquitinating enzymes remove the ubiquitin, which is **reused**; a ring of six **ATPases** unfolds the protein and threads it into the core. Inside, it is cut into peptides of about **3–25 amino acids**, which leave and are broken down to amino acids by cytosolic peptidases (some are shown to the immune system).
+:::
+
+---
+
+**5.** Compare phosphorylation, acetylation and ubiquitination: which residues, which enzymes add and remove the mark, and what the mark does. `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Phosphorylation**: Ser, Thr, Tyr; added by **protein kinases** (from ATP), removed by **phosphatases**; adds two negative charges, changes shape, activity, binding or location within seconds. **Acetylation**: Lys; added by **acetyltransferases** (from acetyl-CoA), removed by **deacetylases**; removes the positive charge of lysine (on histones: loosens DNA binding, opens chromatin; also changes enzyme activity). **Ubiquitination**: Lys; added by **E1–E2–E3**, removed by **deubiquitinases**; Lys48 chains send the protein to the proteasome, single ubiquitin or Lys63 chains are signals (endocytosis, signalling, DNA repair). All three are reversible and are read by proteins that bind the mark.
+:::
+
+---
+
+**6.** A protein is made at 600 molecules per hour and has a half-life of 3 h. (a) Calculate $k_d$ and the steady-state amount. (b) The gene is switched on at time 0 (no protein before). How long until the protein reaches half and 90 % of its steady state? (c) Synthesis is doubled. What happens to the steady state and to the time needed to reach it? `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) $k_d = 0.693/3 = 0.231$ per h; $P_{ss} = 600/0.231 \approx$ **2600 molecules**. (b) $P(t) = P_{ss}(1 - e^{-k_d t})$: half after **one half-life, 3 h**; 90 % after $\ln 10 / k_d = 2.303/0.231 \approx$ **10 h** (3.3 half-lives). (c) The steady state **doubles** (about 5200), but the time to reach it is **unchanged**: it depends only on $k_d$.
+:::
+
+---
+
+**7.** Describe a cycloheximide chase and a pulse-chase experiment for measuring a protein's half-life. Give one advantage of each. `[ELO 1]` `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Cycloheximide chase**: add cycloheximide, which blocks eukaryotic ribosomes, so synthesis stops. Harvest cells at several times, run SDS-PAGE and a **Western blot** with an antibody against the protein (plus a stable loading control). The band decays as $e^{-k_d t}$; on a log scale a straight line, $t_{1/2}$ where it is 50 %. Advantage: **simple**, needs only an antibody, no radioactivity. **Pulse-chase**: label newly made proteins for a short time with a labelled amino acid (classically ³⁵S-methionine), then chase with excess unlabelled amino acid; at each time immunoprecipitate the protein, run a gel and detect the label. Advantage: the cell **keeps working normally** (no drug), and you follow one cohort of molecules (and can see processing or movement).
+:::
+
+---
+
+**8.** Explain why multiple myeloma cells are especially sensitive to bortezomib. `[ELO 4]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Myeloma cells are cancerous **plasma cells** that make **huge amounts of antibody** in the ER. A fraction always misfolds and is returned to the cytosol and destroyed by the **proteasome** (ERAD). **Bortezomib** blocks the **β5** active site of the proteasome. Misfolded proteins then pile up, the ER is overloaded, the **unfolded protein response** cannot restore balance and switches to **apoptosis**. Normal cells make much less secreted protein and tolerate partial proteasome inhibition better, which gives a therapeutic window (side effects such as nerve damage show that all cells need proteasomes).
+:::
+
+---
+
+**9.** Name the misfolded proteins in Alzheimer's and Parkinson's disease and where they accumulate. Why are neurons especially vulnerable? `[ELO 4]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Alzheimer's**: **amyloid-β** peptide forms **plaques outside** neurons; **hyperphosphorylated tau** detaches from microtubules and forms **tangles inside** neurons. **Parkinson's**: **α-synuclein** forms amyloid in **Lewy bodies** inside dopamine neurons of the substantia nigra; some inherited forms have mutations in **parkin**, an E3 ligase. Neurons are **post-mitotic** and live for the whole lifetime, so they **cannot dilute** damaged protein by dividing; chaperone and proteasome capacity also **decline with age**, and amyloid seeds can spread between connected cells.
+:::
+
+## VG-style questions
+
+**10. [VG]** A protein X is present at the same level in two cell types. In cell type 1 its half-life is 20 min; in cell type 2 it is 10 h. (a) What can you say about its synthesis rate in the two cell types? (b) A signal stops transcription of X in both cell types. Predict the amount of X after 1 h in each. (c) Which cell type can respond faster to an increase in synthesis, and what is the cost? `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) At steady state $k_s = k_d P$. $k_d$ is 30 times larger in type 1 (0.693/0.33 h = 2.08 per h versus 0.069 per h), so X is **synthesised 30 times faster** in type 1. (b) Assuming the mRNA disappears quickly: type 1, 1 h = 3 half-lives, so **1/8 (12.5 %)** is left; type 2, $e^{-0.069}\approx 0.93$, so **93 %** is left. (c) **Type 1**: the time to approach a new steady state depends only on $k_d$ (half-way in one half-life: 20 min versus 10 h). The cost is **energy and material**: the cell makes and destroys 30 times more X (ATP and GTP for synthesis, ATP for ubiquitination and the proteasome). This is why regulators (transcription factors, cyclins, p53) tend to be short-lived.
+:::
+
+---
+
+**11. [VG]** A new compound lowers the level of the oncogenic protein Y in cancer cells. Design experiments to find out (a) whether it acts on synthesis or on degradation of Y, (b) whether degradation goes through the proteasome, and (c) whether it works like a molecular glue via cereblon. `[ELO 1]` `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) Measure Y **mRNA** (RT-qPCR) with and without compound: unchanged mRNA argues against reduced transcription. Then a **cycloheximide chase** (or pulse-chase) with and without compound: if Y's **half-life is shorter** with the compound, it increases degradation; if the decay is unchanged but the level falls, it reduces synthesis (e.g. translation). (b) Add a **proteasome inhibitor** (bortezomib or MG132) with the compound: if Y no longer falls, degradation needs the proteasome. Check for **ubiquitinated Y** (immunoprecipitate Y, blot for ubiquitin). A lysosome inhibitor (e.g. bafilomycin) is a control for the other route. (c) Use cells **lacking cereblon** (CRISPR knockout): if the compound no longer lowers Y, cereblon is required. Compete with excess **lenalidomide** or thalidomide (occupies the pocket) and test whether Y binds cereblon only in the presence of the compound (co-immunoprecipitation). Controls: vehicle, a known glue, and a protein that should not change.
+:::
+
+---
+
+**12. [VG]** Explain why adding bortezomib together with a PROTAC can *increase* the level of the PROTAC's target protein, although each drug alone has a defined effect. Use $P_{ss} = k_s/k_d$. `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The PROTAC brings the target to an E3, which ubiquitinates it; the **proteasome** must still destroy it. So the PROTAC adds to $k_d$ **only through the proteasome**. Bortezomib blocks the proteasome, which removes both the normal proteasomal degradation and the extra PROTAC-induced degradation. $k_d$ then falls to the small part left (lysosomal degradation, dilution), possibly **below** the original $k_d$, while $k_s$ is unchanged, so $P_{ss} = k_s/k_d$ **rises**. Example (as in the demo): original $k_d$ = 0.35 per h; with PROTAC 2.35 per h (target down to 15 %); with 90 % proteasome block plus PROTAC 0.27 per h, so the target rises to about 130 % of its starting level. This combination is the standard control showing that a PROTAC works through the proteasome.
+:::
+
+## Explore {#explore}
+
+**Demo: protein turnover.** The plot shows the amount of two proteins in a cell over time, from the exact solution of $dP/dt = k_s - k_d P$: a **target** protein (blue) and a **bystander** protein (grey, dashed). Set how many molecules of each are made per hour and their half-life, and start from zero (the gene is switched on at 0 h) or at steady state. At a chosen time, add **cycloheximide** (all synthesis stops), **bortezomib** (blocks part of the proteasome, for both proteins) or a **PROTAC** (extra degradation of the target only). Drag the cursor (or tap the plot) to read values; the table gives $k_d$, half-life and steady state before and after the drugs. The model is simplified: constant synthesis, every molecule has the same chance per hour of being destroyed, 90 % of each protein's own degradation goes through the proteasome and the rest through lysosomes, and drugs act at once. An optional **particle view** shows single molecules being made and destroyed in one cell, at real time by default (choose a faster speed to watch hours pass).
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="turnover" data-preset="on"></div>
+<script src="../demos/dist/turnover.js"></script>
+```
+
+**E1.** Choose **Gene switched on**. Both proteins reach the same steady state. Move the cursor to find when each reaches 50 % and 90 % of it. *Predict first:* if you double the target's synthesis rate, what happens to its steady state and to the time needed to reach 90 %? Try it. `[ELO 4]`
+
+**E2.** Choose **Cycloheximide chase** and tick **log scale**. Read each protein's half-life from the decay with the cursor. Why are the lines straight on a log scale? How well could you measure the bystander's half-life if the cells could only stand cycloheximide for 4 h? `[ELO 1]` `[ELO 4]`
+
+**E3.** Choose **Bortezomib** (90 % block at 4 h). Which protein rises faster, and how much has each risen by 24 h? Both head for the same new steady state: why, and why does the target get there much sooner? Connect this to why proteasome inhibitors quickly raise the levels of short-lived regulators such as IκB or p53. `[ELO 4]`
+
+**E4.** Choose **PROTAC**. How far does the target fall, and how fast (read the new half-life)? What happens to the bystander? Then set the PROTAC strength $k$ to 0.5 and to 5 per hour: how does the new level depend on it? `[ELO 4]` `[ELO 9]`
+
+**E5. [VG]** *Predict before you click:* what will the target do if the PROTAC and bortezomib are given together? Then choose **PROTAC + bortezomib** and explain the result. Finally, choose **Gene switched on** and tick **dividing cells**: which protein's steady state and half-life change most, and why? With dividing cells, add cycloheximide and bortezomib at 100 % block: can the bystander still disappear? `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** Both steady states are $k_s/k_d$ = 1000/0.347 = 100/0.0347 = **2885 molecules**. The target reaches 50 % after **2 h** (one half-life) and 90 % after **6.6 h**; the bystander needs **20 h** for 50 % and **66 h** for 90 % (at 24 h it is at 1630, 56 %; use the 96 h axis to see it level off). Doubling the target's synthesis to 2000 per hour doubles the steady state to **5771**, but 50 % and 90 % are still reached after **2 h and 6.6 h**: the time depends only on $k_d$. In the particle view at 1× you see about one new target molecule every few seconds (1000 per hour is one every 3.6 s).
+
+**E2.** After cycloheximide, $P(t) = P_0 e^{-k_d (t - 4\,\text{h})}$. The target falls to 50 % (1443) at **6 h**, so $t_{1/2}$ = **2 h**; the bystander reaches 50 % at **24 h**, so $t_{1/2}$ = **20 h**. On a log scale $\ln P$ falls linearly with time with slope $-k_d$, so the lines are straight and steeper for the short-lived protein. In 4 h of chase (at 8 h) the bystander has only fallen to **87 %** (2512): a 13 % drop is hard to measure precisely on a blot, so long half-lives are better measured by pulse-chase or isotope labelling over a longer time without the drug.
+
+**E3.** The target rises much faster: from 2885 to about **5730 at 8 h** and **11 900 at 24 h**; the bystander only to **3200 at 8 h** and **4400 at 24 h**. Both now have $k_d$ = 0.1 × (normal $k_d$) from lysosomes + 0.9 × 0.1 × (normal $k_d$) from the remaining proteasomes = **0.19 × normal $k_d$**, so both steady states rise **5.3-fold to 15 186**. The approach is set by the new $k_d$: new half-life **10.5 h** for the target and **105 h** (4.4 days) for the bystander. In absolute terms, each hour the target loses 1000 molecules of degradation it would have had, the bystander only 100: blocking degradation hits **fast-turnover proteins** first. This is why IκB, p53 and cyclins rise within an hour of proteasome inhibition.
+
+**E4.** With $k$ = 2 per hour the target's $k_d$ becomes 0.347 + 2 = **2.35 per h**, a half-life of **18 min**. It falls from 2885 to about **660 within 1 h** and settles at **426** (15 % of before); the bystander is **unchanged** at 2885, because the PROTAC binds only the target. The new level is $k_s/(k_d + k)$: with $k$ = 0.5 it is **1180** (41 %), with $k$ = 5 it is **187** (6.5 %). A stronger PROTAC lowers the target more, with diminishing returns.
+
+**E5.** Together, the target **rises** instead of falling: to about **3760** (130 % of the start). The PROTAC's extra degradation also needs the proteasome, so 90 % of it is blocked: $k_d$ = 0.1 × (0.312 + 2) + 0.035 = **0.27 per h**, lower than the original 0.347. This is the standard control showing that a degrader works through the proteasome. With **dividing cells**, dilution adds 0.029 per h to every $k_d$: the target hardly changes (steady state 2663, half-life 1.8 h) but the bystander falls to **1574** and its half-life to **10.9 h**, because for long-lived proteins dilution is as large as degradation. With cycloheximide and 100 % bortezomib in dividing cells, the bystander still falls with a half-life of about **21 h** (lysosomal degradation plus dilution), the target with **10.9 h**: blocking the proteasome cannot keep the amount per cell constant in a growing cell.
+:::

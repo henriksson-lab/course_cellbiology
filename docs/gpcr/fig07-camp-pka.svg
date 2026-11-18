@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470" font-family="Helvetica, Arial, sans-serif"><rect width="1000" height="470" fill="#ffffff"/><rect x="0" y="0" width="1000" height="50" rx="0" fill="#eef4fa" stroke="none" stroke-width="0"/>
+<rect x="0" y="90" width="1000" height="380" rx="0" fill="#fbfaf5" stroke="none" stroke-width="0"/>
+<rect x="0" y="50" width="1000" height="40" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<line x1="0" y1="50" x2="1000" y2="50" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="0" y1="90" x2="1000" y2="90" stroke="#8a6a12" stroke-width="2.5"/>
+<rect x="110" y="40" width="80" height="80" rx="10" fill="#fff3bf" stroke="#1b2a3a" stroke-width="2"/>
+<text x="150" y="108" font-size="18" text-anchor="middle" fill="#1b2a3a" font-weight="700">AC</text>
+<ellipse cx="56" cy="120" rx="28.0" ry="20.0" fill="#fcc419" stroke="#1b2a3a" stroke-width="1.8"/>
+<text x="56" y="126.0" font-size="17.0" text-anchor="middle" fill="#1b2a3a" font-weight="700">Gα</text>
+<path d="M84.0,116.0 L97.6,111.5" fill="none" stroke="#1b2a3a" stroke-width="2"/>
+<path d="M108.0,108.0 L99.5,117.2 L95.7,105.7 Z" fill="#1b2a3a"/>
+<text x="300" y="132" font-size="18" text-anchor="end" fill="#1b2a3a" font-weight="700">ATP</text>
+<path d="M306.0,126.0 L349.0,126.0" fill="none" stroke="#1b2a3a" stroke-width="2.5"/>
+<path d="M360.0,126.0 L349.0,132.1 L349.0,120.0 Z" fill="#1b2a3a"/>
+<text x="330" y="116" font-size="14" text-anchor="middle" fill="#1b2a3a">AC</text>
+<circle cx="380" cy="120" r="7" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="400" cy="140" r="7" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="420" cy="118" r="7" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="392" cy="162" r="7" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="430" cy="156" r="7" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1"/>
+<text x="405" y="190" font-size="18" text-anchor="middle" fill="#2f9e44" font-weight="700">cAMP</text>
+<path d="M445.0,130.0 L519.6,103.7" fill="none" stroke="#1b2a3a" stroke-width="2.5"/>
+<path d="M530.0,100.0 L521.6,109.4 L517.6,98.0 Z" fill="#1b2a3a"/>
+<text x="535" y="106" font-size="18" text-anchor="start" fill="#1b2a3a" font-weight="700">AMP</text>
+<text x="488" y="96" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="700">PDE</text>
+<text x="585" y="106" font-size="15" text-anchor="start" fill="#5c6b7a">(phosphodiesterase destroys cAMP)</text>
+<rect x="230" y="260" width="50" height="30" rx="8" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.6"/>
+<rect x="230" y="310" width="50" height="30" rx="8" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="255" y="280" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">R</text>
+<text x="255" y="330" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">R</text>
+<circle cx="304" cy="275" r="22" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.6"/>
+<circle cx="304" cy="325" r="22" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="304" y="281" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">C</text>
+<text x="304" y="331" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">C</text>
+<text x="280" y="376" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">PKA, inactive</text>
+<text x="280" y="396" font-size="15" text-anchor="middle" fill="#1b2a3a">(R holds C)</text>
+<path d="M405.0,200.0 L385.3,235.4" fill="none" stroke="#2f9e44" stroke-width="2.5"/>
+<path d="M380.0,245.0 L380.1,232.4 L390.6,238.3 Z" fill="#2f9e44"/>
+<text x="400" y="236" font-size="15" text-anchor="start" fill="#2f9e44" font-weight="700">4 cAMP bind R</text>
+<path d="M350.0,300.0 L459.0,300.0" fill="none" stroke="#1b2a3a" stroke-width="2.5"/>
+<path d="M470.0,300.0 L459.0,306.1 L459.0,293.9 Z" fill="#1b2a3a"/>
+<rect x="520" y="260" width="50" height="30" rx="8" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.6"/>
+<rect x="520" y="310" width="50" height="30" rx="8" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.6"/>
+<circle cx="538" cy="252" r="7" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="556" cy="252" r="7" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="538" cy="348" r="7" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="556" cy="348" r="7" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="650" cy="260" r="22" fill="#c5f6fa" stroke="#0b7285" stroke-width="2.5"/>
+<circle cx="650" cy="340" r="22" fill="#c5f6fa" stroke="#0b7285" stroke-width="2.5"/>
+<text x="650" y="266" font-size="16" text-anchor="middle" fill="#0b7285" font-weight="700">C</text>
+<text x="650" y="346" font-size="16" text-anchor="middle" fill="#0b7285" font-weight="700">C</text>
+<text x="600" y="396" font-size="16" text-anchor="middle" fill="#0b7285" font-weight="700">2 free C subunits: active kinase</text>
+<path d="M676.0,256.0 L744.3,219.2" fill="none" stroke="#0b7285" stroke-width="2.2"/>
+<path d="M754.0,214.0 L747.2,224.5 L741.4,213.9 Z" fill="#0b7285"/>
+<path d="M676.0,340.0 L744.2,375.0" fill="none" stroke="#0b7285" stroke-width="2.2"/>
+<path d="M754.0,380.0 L741.5,380.4 L747.0,369.6 Z" fill="#0b7285"/>
+<rect x="760" y="190" width="228" height="70" rx="8" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="772" y="214.0" font-size="15" text-anchor="start" fill="#1b2a3a"><tspan font-weight="700">Fast (seconds):</tspan> enzymes</text>
+<text x="772" y="232.75" font-size="15" text-anchor="start" fill="#1b2a3a">(glycogen breakdown), ion</text>
+<text x="772" y="251.5" font-size="15" text-anchor="start" fill="#1b2a3a">channels (CFTR)</text>
+<rect x="760" y="290" width="228" height="160" rx="40" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<text x="874" y="318" font-size="15" text-anchor="middle" fill="#6b4fa0" font-weight="700">nucleus</text>
+<text x="774" y="350.0" font-size="15" text-anchor="start" fill="#1b2a3a"><tspan font-weight="700">Slow (hours):</tspan> PKA</text>
+<text x="774" y="368.75" font-size="15" text-anchor="start" fill="#1b2a3a">phosphorylates CREB →</text>
+<text x="774" y="387.5" font-size="15" text-anchor="start" fill="#1b2a3a">transcription of target</text>
+<text x="774" y="406.25" font-size="15" text-anchor="start" fill="#1b2a3a">genes</text>
+<text x="874" y="182" font-size="14" text-anchor="middle" fill="#5c6b7a">PKA adds phosphate to Ser/Thr</text></svg>

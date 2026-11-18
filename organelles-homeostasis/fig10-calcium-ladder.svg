@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" font-family="Helvetica, Arial, sans-serif">
+<rect width="900" height="340" fill="#fbfaf5"/>
+<path d="M284,24 L284,270" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="284" y="292" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">0.1 µM</tspan></text>
+<path d="M397,24 L397,270" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="397" y="292" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">1 µM</tspan></text>
+<path d="M510,24 L510,270" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="510" y="292" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">10 µM</tspan></text>
+<path d="M624,24 L624,270" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="624" y="292" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">0.1 mM</tspan></text>
+<path d="M737,24 L737,270" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="737" y="292" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">1 mM</tspan></text>
+<path d="M850,24 L850,270" stroke="#ddd" stroke-width="1" fill="none" />
+<text x="850" y="292" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">10 mM</tspan></text>
+<text x="363" y="318" font-size="16" fill="#1b2a3a"><tspan dy="0">free Ca</tspan><tspan dy="-6" font-size="12">2+</tspan><tspan dy="6"> (log scale: each grid line is 10×)</tspan></text>
+<text x="238" y="54" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Outside the cell</tspan></text>
+<rect x="737" y="38" width="34" height="22" rx="4" fill="#8a6a12"/>
+<text x="238" y="94" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">ER</tspan></text>
+<rect x="624" y="78" width="102" height="22" rx="4" fill="#2a7f8f"/>
+<text x="238" y="134" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Lysosome</tspan></text>
+<rect x="692" y="118" width="20" height="22" rx="4" fill="#2e8b57"/>
+<text x="238" y="174" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Golgi</tspan></text>
+<rect x="624" y="158" width="54" height="22" rx="4" fill="#d9822b"/>
+<text x="238" y="214" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Mitochondrial matrix</tspan></text>
+<rect x="318" y="201" width="306" height="16" rx="3" fill="#f8e9ec" stroke="#a8324a" stroke-dasharray="5 3"/>
+<text x="632" y="215" font-size="14" fill="#a8324a"><tspan dy="0">during a signal</tspan></text>
+<rect x="284" y="198" width="34" height="22" rx="4" fill="#a8324a"/>
+<text x="238" y="254" font-size="16" fill="#1b2a3a" text-anchor="end"><tspan dy="0">Cytosol and nucleus</tspan></text>
+<rect x="293" y="241" width="124" height="16" rx="3" fill="#efebf7" stroke="#6b4fa0" stroke-dasharray="5 3"/>
+<text x="425" y="255" font-size="14" fill="#6b4fa0"><tspan dy="0">during a signal</tspan></text>
+<rect x="266" y="238" width="26" height="22" rx="4" fill="#6b4fa0"/>
+<rect x="284" y="24" width="0" height="0"/>
+<text x="238" y="350" font-size="1" fill="#1b2a3a"></text>
+<text x="293" y="18" font-size="1" fill="#1b2a3a"></text>
+</svg>

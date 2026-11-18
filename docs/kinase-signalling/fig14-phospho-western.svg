@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig14: phospho-specific antibodies and a western blot time course (schematic, not a real blot) -->
+<defs></defs>
+<text x="150" y="26" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Phospho-specific antibody</text>
+<rect x="40" y="170" width="90" height="30" rx="8" fill="#d7c5ec" stroke="#7b3fbf" stroke-width="2"/>
+<text x="85" y="191" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">ERK</text>
+<path d="M85,130 V98 L63,70 M85,98 L107,70" fill="none" stroke="#495057" stroke-width="7" stroke-linecap="round"/>
+<text x="85" y="230" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">no phosphate:</text>
+<text x="85" y="248" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">no binding</text>
+<rect x="180" y="170" width="90" height="30" rx="8" fill="#d7c5ec" stroke="#7b3fbf" stroke-width="2"/>
+<text x="225" y="191" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">ERK</text>
+<circle cx="206" cy="162" r="9" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="206" y="167" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<circle cx="244" cy="162" r="9" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="244" y="167" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<path d="M225,152 V120 L203,92 M225,120 L247,92" fill="none" stroke="#495057" stroke-width="7" stroke-linecap="round"/>
+<text x="225" y="230" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Thr202 + Tyr204</text>
+<text x="225" y="248" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">phosphorylated: binds</text>
+<text x="150" y="290" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Same protein, two antibodies:</text>
+<text x="150" y="310" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">anti-phospho-ERK (active form)</text>
+<text x="150" y="330" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">anti-total-ERK (all of it)</text>
+<text x="150" y="362" font-size="14" text-anchor="middle" font-weight="normal" fill="#6b7280">Western blot: the cell-methods lecture</text>
+<text x="666.0" y="26" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Cells + EGF: minutes after adding</text>
+<text x="498.0" y="58" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">0</text>
+<text x="554.0" y="58" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">2</text>
+<text x="610.0" y="58" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">5</text>
+<text x="666.0" y="58" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">10</text>
+<text x="722.0" y="58" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">30</text>
+<text x="778.0" y="58" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">60</text>
+<text x="834.0" y="58" font-size="13" text-anchor="middle" font-weight="bold" fill="#e8590c">10+MEKi</text>
+<rect x="464" y="70" width="404" height="46" rx="4" fill="#f1f3f5" stroke="#ced4da" stroke-width="1"/>
+<text x="456" y="99" font-size="15" text-anchor="end" font-weight="bold" fill="#1b2a3a">P-EGFR</text>
+<rect x="477" y="85" width="42" height="16" rx="6" fill="rgb(228,228,228)" stroke="none" stroke-width="0"/>
+<rect x="533" y="85" width="42" height="16" rx="6" fill="rgb(46,46,46)" stroke="none" stroke-width="0"/>
+<rect x="589" y="85" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="645" y="85" width="42" height="16" rx="6" fill="rgb(56,56,56)" stroke="none" stroke-width="0"/>
+<rect x="701" y="85" width="42" height="16" rx="6" fill="rgb(119,119,119)" stroke="none" stroke-width="0"/>
+<rect x="757" y="85" width="42" height="16" rx="6" fill="rgb(161,161,161)" stroke="none" stroke-width="0"/>
+<rect x="813" y="85" width="42" height="16" rx="6" fill="rgb(56,56,56)" stroke="none" stroke-width="0"/>
+<rect x="464" y="132" width="404" height="46" rx="4" fill="#f1f3f5" stroke="#ced4da" stroke-width="1"/>
+<text x="456" y="161" font-size="15" text-anchor="end" font-weight="bold" fill="#1b2a3a">P-ERK</text>
+<rect x="477" y="147" width="42" height="16" rx="6" fill="rgb(228,228,228)" stroke="none" stroke-width="0"/>
+<rect x="533" y="147" width="42" height="16" rx="6" fill="rgb(119,119,119)" stroke="none" stroke-width="0"/>
+<rect x="589" y="147" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="645" y="147" width="42" height="16" rx="6" fill="rgb(46,46,46)" stroke="none" stroke-width="0"/>
+<rect x="701" y="147" width="42" height="16" rx="6" fill="rgb(130,130,130)" stroke="none" stroke-width="0"/>
+<rect x="757" y="147" width="42" height="16" rx="6" fill="rgb(140,140,140)" stroke="none" stroke-width="0"/>
+<rect x="813" y="147" width="42" height="16" rx="6" fill="rgb(224,224,224)" stroke="none" stroke-width="0"/>
+<rect x="464" y="194" width="404" height="46" rx="4" fill="#f1f3f5" stroke="#ced4da" stroke-width="1"/>
+<text x="456" y="223" font-size="15" text-anchor="end" font-weight="bold" fill="#1b2a3a">total ERK</text>
+<rect x="477" y="209" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="533" y="209" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="589" y="209" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="645" y="209" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="701" y="209" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="757" y="209" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="813" y="209" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="464" y="256" width="404" height="46" rx="4" fill="#f1f3f5" stroke="#ced4da" stroke-width="1"/>
+<text x="456" y="285" font-size="15" text-anchor="end" font-weight="bold" fill="#1b2a3a">actin</text>
+<rect x="477" y="271" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="533" y="271" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="589" y="271" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="645" y="271" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="701" y="271" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="757" y="271" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<rect x="813" y="271" width="42" height="16" rx="6" fill="rgb(25,25,25)" stroke="none" stroke-width="0"/>
+<text x="666.0" y="340" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">P-ERK peaks at 5–10 min, then falls (feedback, phosphatases);</text>
+<text x="666.0" y="360" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">total ERK and actin show equal loading.</text>
+<text x="666.0" y="388" font-size="14" text-anchor="middle" font-weight="normal" fill="#e8590c">A MEK inhibitor removes P-ERK but not P-EGFR:</text>
+<text x="666.0" y="408" font-size="14" text-anchor="middle" font-weight="normal" fill="#e8590c">this places MEK between the receptor and ERK.</text>
+</svg>

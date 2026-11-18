@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2e8b57"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <g id="rec"><line x1="0" y1="12" x2="0" y2="-8" stroke="#3d4f63" stroke-width="3.5"/><path d="M-8,-17 L0,-8 L8,-17" fill="none" stroke="#3d4f63" stroke-width="3.5"/></g>
+  </defs>
+  <rect width="1000" height="380" fill="#fbfaf5"/>
+  <!-- column titles -->
+  <g font-weight="bold" text-anchor="middle"><text x="165" y="26">LDL receptor</text><text x="500" y="26">Transferrin receptor</text><text x="835" y="26">EGF receptor</text></g>
+  <g text-anchor="middle" font-size="15"><text x="165" y="46">(cholesterol)</text><text x="500" y="46">(iron)</text><text x="835" y="46">(growth signal)</text></g>
+  <line x1="333" y1="10" x2="333" y2="370" stroke="#ced4da"/><line x1="667" y1="10" x2="667" y2="370" stroke="#ced4da"/>
+  <!-- endosomes -->
+  <circle cx="165" cy="170" r="70" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/>
+  <circle cx="500" cy="170" r="70" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/>
+  <circle cx="835" cy="170" r="70" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/>
+  <!-- LDL: receptor empty on the membrane, LDL free in lumen -->
+  <use href="#rec" transform="translate(115 120) rotate(135)"/>
+  <use href="#rec" transform="translate(215 120) rotate(-135)"/>
+  <circle cx="165" cy="175" r="12" fill="#e0a800" stroke="#8a6a00" stroke-width="1.5"/>
+  <circle cx="190" cy="195" r="12" fill="#e0a800" stroke="#8a6a00" stroke-width="1.5"/>
+  <path d="M230,95 L270,60" stroke="#2e8b57" stroke-width="3" stroke-dasharray="7 4" marker-end="url(#ag)"/>
+  <path d="M175,242 L175,285" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <!-- Transferrin: receptor with apo-Tf stays bound, iron leaves -->
+  <use href="#rec" transform="translate(450 120) rotate(135)"/>
+  <circle cx="465" cy="135" r="9" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.2"/>
+  <use href="#rec" transform="translate(550 120) rotate(-135)"/>
+  <circle cx="535" cy="135" r="9" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.2"/>
+  <circle cx="500" cy="215" r="6" fill="#a8324a"/><circle cx="515" cy="200" r="6" fill="#a8324a"/>
+  <path d="M495,220 L452,258" stroke="#a8324a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M565,95 L605,60" stroke="#2e8b57" stroke-width="3" stroke-dasharray="7 4" marker-end="url(#ag)"/>
+  <!-- EGF receptor: ubiquitin, inner vesicles -->
+  <circle cx="815" cy="160" r="20" fill="#fbfaf5" stroke="#2e8b57" stroke-width="2"/>
+  <circle cx="858" cy="190" r="20" fill="#fbfaf5" stroke="#2e8b57" stroke-width="2"/>
+  <circle cx="808" cy="160" r="6" fill="#3d4f63"/><circle cx="824" cy="160" r="5" fill="#e8590c"/>
+  <circle cx="851" cy="190" r="6" fill="#3d4f63"/><circle cx="867" cy="190" r="5" fill="#e8590c"/>
+  <path d="M845,242 L845,285" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <!-- outcome text -->
+  <g text-anchor="middle">
+    <text x="165" y="310">acid: LDL lets go.</text>
+    <text x="165" y="330">Receptor recycles,</text>
+    <text x="165" y="350">LDL goes to the lysosome</text>
+    <text x="500" y="310">acid: iron lets go.</text>
+    <text x="500" y="330">Receptor and empty transferrin</text>
+    <text x="500" y="350">recycle together</text>
+    <text x="835" y="310">ubiquitin tag: receptor buds into</text>
+    <text x="835" y="330">inner vesicles and is destroyed</text>
+    <text x="835" y="350">in the lysosome: signal off</text>
+  </g>
+  <text x="285" y="78" fill="#2e8b57" font-weight="bold">surface</text>
+  <text x="615" y="78" fill="#2e8b57" font-weight="bold">surface</text>
+  <text x="470" y="282" fill="#a8324a" font-size="15" text-anchor="end">iron to cytosol</text>
+  <!-- legend for EGF column -->
+  <g font-size="14"><circle cx="700" cy="72" r="6" fill="#3d4f63"/><text x="712" y="77">EGF receptor</text><circle cx="700" cy="94" r="5" fill="#e8590c"/><text x="712" y="99">ubiquitin</text></g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="tb" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M5,0 L5,10" stroke="#e8590c" stroke-width="3"/></marker>
+    <g id="mito"><ellipse rx="28" ry="15" fill="#f8e9ec" stroke="#a8324a" stroke-width="2.5"/><path d="M-18,-6 v12 M-6,-9 v18 M6,-9 v18 M18,-6 v12" stroke="#a8324a" stroke-width="1.8"/></g>
+    <g id="agg"><circle r="5" fill="#868e96"/><circle cx="8" cy="3" r="5" fill="#868e96"/><circle cx="3" cy="-7" r="5" fill="#868e96"/></g>
+  </defs>
+  <rect width="1000" height="420" fill="#fbfaf5"/>
+  <!-- 1 phagophore -->
+  <use href="#mito" x="120" y="120"/><use href="#agg" x="105" y="160"/>
+  <path d="M60,70 C20,110 30,190 90,200 C140,208 175,180 182,150" fill="none" stroke="#2e8b57" stroke-width="4"/>
+  <path d="M68,80 C35,115 42,182 92,190 C132,197 162,174 170,148" fill="none" stroke="#2e8b57" stroke-width="4"/>
+  <text x="110" y="240" text-anchor="middle" font-weight="bold">1 phagophore</text>
+  <text x="110" y="260" text-anchor="middle">a cup of double</text>
+  <text x="110" y="280" text-anchor="middle">membrane grows</text>
+  <!-- 2 autophagosome -->
+  <path d="M205,130 L265,130" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <circle cx="345" cy="130" r="66" fill="#fbfaf5" stroke="#2e8b57" stroke-width="4"/>
+  <circle cx="345" cy="130" r="56" fill="#fbfaf5" stroke="#2e8b57" stroke-width="4"/>
+  <use href="#mito" x="345" y="115"/><use href="#agg" x="335" y="155"/>
+  <text x="345" y="240" text-anchor="middle" font-weight="bold">2 autophagosome</text>
+  <text x="345" y="260" text-anchor="middle">closed, two membranes</text>
+  <!-- 3 fusion with lysosome -->
+  <path d="M420,130 L490,130" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <circle cx="530" cy="85" r="30" fill="#b9dfc8" stroke="#2e8b57" stroke-width="4"/>
+  <text x="530" y="40" text-anchor="middle" fill="#2e8b57" font-weight="bold">lysosome</text>
+  <path d="M530,118 L560,130" stroke="#1b2a3a" stroke-width="0"/>
+  <circle cx="610" cy="140" r="60" fill="#d3ebdd" stroke="#2e8b57" stroke-width="4"/>
+  <use href="#mito" x="610" y="128"/><use href="#agg" x="600" y="165"/>
+  <text x="610" y="240" text-anchor="middle" font-weight="bold">3 fusion</text>
+  <text x="610" y="260" text-anchor="middle">acid hydrolases enter</text>
+  <!-- 4 digestion -->
+  <path d="M680,140 L740,140" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <circle cx="805" cy="140" r="56" fill="#b9dfc8" stroke="#2e8b57" stroke-width="4.5"/>
+  <g fill="#a8324a" opacity="0.6"><circle cx="790" cy="130" r="4"/><circle cx="812" cy="150" r="4"/><circle cx="820" cy="122" r="4"/><circle cx="798" cy="158" r="4"/></g>
+  <path d="M861,140 L930,140" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="805" y="240" text-anchor="middle" font-weight="bold">4 digestion</text>
+  <text x="805" y="260" text-anchor="middle">amino acids, lipids</text>
+  <text x="805" y="280" text-anchor="middle">back to the cytosol</text>
+  <text x="940" y="135" font-size="15">reuse</text>
+  <!-- control -->
+  <rect x="40" y="310" width="920" height="96" rx="10" fill="#fff" stroke="#ced4da"/>
+  <text x="60" y="340" font-weight="bold">The switch: mTORC1, a kinase on the lysosome surface</text>
+  <text x="60" y="366">Plenty of amino acids and growth signals → mTORC1 active → <tspan fill="#e8590c" font-weight="bold">autophagy off</tspan>, cell grows.</text>
+  <text x="60" y="392">Starvation, or the drug rapamycin → mTORC1 inactive → <tspan fill="#2e8b57" font-weight="bold">autophagy on</tspan>, cell recycles itself.</text>
+  <!-- legend -->
+  <g font-size="14"><use href="#mito" transform="translate(720 30) scale(0.6)"/><text x="742" y="35">old mitochondrion</text><use href="#agg" x="880" y="30"/><text x="898" y="35">aggregate</text></g>
+</svg>

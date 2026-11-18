@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig12: the calnexin cycle: glucose trimming and re-addition as a folding tag -->
+  <defs><marker id="ar" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker></defs>
+  <rect width="1000" height="430" fill="#e6f3f5"/>
+  <text x="20" y="32" font-size="20" text-anchor="start" font-weight="bold" fill="#1b2a3a">In the ER lumen</text>
+  <path d="M86,120 q 8 -20 17 0 t 17 0 t 17 0 t 17 0" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(120 126) scale(0.9)">
+    <path d="M0,0 V22 M0,22 L-7,30 V38 M0,22 L7,30 V38" stroke="#1b2a3a" stroke-width="1" fill="none"/>
+    <rect x="-3.5" y="2.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <rect x="-3.5" y="10.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="0" cy="22" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+  </g>
+  <circle cx="113.7" cy="166.0" r="3.3" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+  <circle cx="113.7" cy="172.5" r="3.3" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+  <circle cx="113.7" cy="179.0" r="3.3" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+  <text x="120" y="210" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">new glycoprotein</text>
+  <text x="120" y="228" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">(3 glucoses)</text>
+  <line x1="180" y1="130" x2="340" y2="130" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="260" y="112" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">glucosidases</text>
+  <text x="260" y="156" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">remove 2</text>
+  <path d="M 360,190 C 360,140 390,110 430,160 L 430,230" fill="none" stroke="#2a7f8f" stroke-width="10" stroke-linecap="round"/>
+  <path d="M406,120 q 8 -20 17 0 t 17 0 t 17 0 t 17 0" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(440 126) scale(0.9)">
+    <path d="M0,0 V22 M0,22 L-7,30 V38 M0,22 L7,30 V38" stroke="#1b2a3a" stroke-width="1" fill="none"/>
+    <rect x="-3.5" y="2.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <rect x="-3.5" y="10.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="0" cy="22" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+  </g>
+  <circle cx="433.7" cy="166.0" r="3.3" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+  <text x="350" y="212" font-size="15" text-anchor="end" font-weight="bold" fill="#1d5f6b">calnexin</text>
+  <text x="350" y="230" font-size="15" text-anchor="end" font-weight="bold" fill="#1d5f6b">holds it</text>
+  <text x="350" y="248" font-size="15" text-anchor="end" font-weight="normal" fill="#1d5f6b">(1 glucose)</text>
+  <line x1="500" y1="130" x2="650" y2="130" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="575" y="112" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">last glucose</text>
+  <text x="575" y="156" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">removed</text>
+  <path d="M686,120 q 8 -20 17 0 t 17 0 t 17 0 t 17 0" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(720 126) scale(0.9)">
+    <path d="M0,0 V22 M0,22 L-7,30 V38 M0,22 L7,30 V38" stroke="#1b2a3a" stroke-width="1" fill="none"/>
+    <rect x="-3.5" y="2.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <rect x="-3.5" y="10.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="0" cy="22" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+  </g>
+  <text x="780" y="126" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">released</text>
+  <text x="780" y="144" font-size="15" text-anchor="start" font-weight="bold" fill="#1b2a3a">folded?</text>
+  <line x1="840" y1="160" x2="890" y2="250" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <circle cx="920" cy="290" r="22" fill="#dee2e6" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="920" y="340" font-size="15" text-anchor="middle" font-weight="bold" fill="#2b8a3e">yes: to the Golgi</text>
+  <line x1="720" y1="180" x2="720" y2="260" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="730" y="235" font-size="15" text-anchor="start" font-weight="bold" fill="#c92a2a">no</text>
+  <path d="M686,290 q 8 -20 17 0 t 17 0 t 17 0 t 17 0" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(720 296) scale(0.9)">
+    <path d="M0,0 V22 M0,22 L-7,30 V38 M0,22 L7,30 V38" stroke="#1b2a3a" stroke-width="1" fill="none"/>
+    <rect x="-3.5" y="2.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <rect x="-3.5" y="10.5" width="7" height="7" fill="#0072bc" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="0" cy="22" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="30" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="-7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+    <circle cx="7" cy="38" r="3.6" fill="#00a651" stroke="#1b2a3a" stroke-width="0.8"/>
+  </g>
+  <line x1="660" y1="294" x2="450" y2="238" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="560" y="330" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">UGGT puts one glucose back:</text>
+  <text x="560" y="350" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">try again</text>
+  <text x="20" y="390" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">UGGT senses misfolding (exposed hydrophobic patches). Each round, mannoses are also trimmed slowly:</text>
+  <text x="20" y="412" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">a timer. A protein that keeps failing loses mannoses and is sent to ERAD.</text>
+</svg>

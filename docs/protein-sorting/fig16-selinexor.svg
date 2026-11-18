@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="450" viewBox="0 0 1100 450" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig16: selinexor blocks exportin 1 (XPO1). Tumour-suppressor proteins that are normally exported stay in the nucleus, where they act. Cartoon. -->
+  <defs><marker id="ak" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+  <rect x="25" y="50" width="500" height="300" rx="60" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+  <ellipse cx="275" cy="200" rx="130" ry="100" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+  <rect x="397" y="186" width="16" height="28" fill="#efebf7"/>
+  <line x1="397" y1="186" x2="413" y2="186" stroke="#6b4fa0" stroke-width="3"/>
+  <line x1="397" y1="214" x2="413" y2="214" stroke="#6b4fa0" stroke-width="3"/>
+  <text x="215" y="135" font-size="17" fill="#6b4fa0" text-anchor="middle" font-weight="bold">nucleus</text>
+  <rect x="226" y="211" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="456" y="111" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="466" y="271" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="66" y="131" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="76" y="281" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="436" y="311" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="481" y="191" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <path d="M 345 196 a 20 20 0 1 1 0 8" fill="none" stroke="#343a40" stroke-width="9" stroke-linecap="round" transform="rotate(-90 355 200)"/>
+  <text x="357" y="168" font-size="15" fill="#343a40" text-anchor="middle" font-weight="bold">XPO1</text>
+  <path d="M 415 200 L 460 200" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ak)"/>
+  <rect x="575" y="50" width="500" height="300" rx="60" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+  <ellipse cx="825" cy="200" rx="130" ry="100" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+  <rect x="947" y="186" width="16" height="28" fill="#efebf7"/>
+  <line x1="947" y1="186" x2="963" y2="186" stroke="#6b4fa0" stroke-width="3"/>
+  <line x1="947" y1="214" x2="963" y2="214" stroke="#6b4fa0" stroke-width="3"/>
+  <text x="765" y="135" font-size="17" fill="#6b4fa0" text-anchor="middle" font-weight="bold">nucleus</text>
+  <rect x="746" y="181" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="786" y="221" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="736" y="241" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="826" y="161" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="856" y="241" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="796" y="171" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="846" y="131" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="766" y="206" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <rect x="1016" y="271" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <path d="M 895 196 a 20 20 0 1 1 0 8" fill="none" stroke="#343a40" stroke-width="9" stroke-linecap="round" transform="rotate(-90 905 200)"/>
+  <text x="907" y="168" font-size="15" fill="#343a40" text-anchor="middle" font-weight="bold">XPO1</text>
+  <circle cx="920" cy="210" r="9" fill="#e8590c"/>
+  <text x="975" y="256" font-size="15" fill="#e8590c" text-anchor="start" font-weight="bold">selinexor</text>
+  <line x1="927" y1="216" x2="973" y2="246" stroke="#e8590c" stroke-width="1.5"/>
+  <path d="M 975 186 l 24 24 M 999 186 l -24 24" stroke="#e8590c" stroke-width="4"/>
+  <text x="275" y="32" font-size="19" fill="#1b2a3a" text-anchor="middle" font-weight="bold">Myeloma cell: much XPO1</text>
+  <text x="825" y="32" font-size="19" fill="#e8590c" text-anchor="middle" font-weight="bold">+ selinexor</text>
+  <text x="275" y="380" font-size="16" fill="#1b2a3a" text-anchor="middle">tumour suppressors are exported:</text>
+  <text x="275" y="402" font-size="16" fill="#1b2a3a" text-anchor="middle">too few act in the nucleus</text>
+  <text x="825" y="380" font-size="16" fill="#1b2a3a" text-anchor="middle">export blocked: tumour suppressors build up</text>
+  <text x="825" y="402" font-size="16" fill="#1b2a3a" text-anchor="middle">in the nucleus and trigger cell death</text>
+  <rect x="352" y="422" width="18" height="18" rx="3" fill="#2b8a3e"/>
+  <text x="380" y="437" font-size="15" fill="#2b8a3e" text-anchor="start" font-weight="bold">tumour-suppressor protein that carries an NES (e.g. p53, FOXO, IκB)</text>
+</svg>

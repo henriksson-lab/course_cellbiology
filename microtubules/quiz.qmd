@@ -1,0 +1,104 @@
+---
+title: "Quiz: microtubules and motor proteins"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Microtubules and motor proteins*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Why does a microtubule have a plus end and a minus end, and which tubulin is exposed at the plus end? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think about how the αβ dimers are lined up in a protofilament.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+All αβ-tubulin dimers join **head to tail and point the same way**, so the two ends of the tube are different: the tube is **polar**. **β-tubulin** is exposed at the **plus end**, which grows and shrinks fast; α-tubulin is exposed at the minus end, which in cells is usually capped by a γ-tubulin ring and anchored.
+:::
+
+---
+
+**Q2.** What is the GTP cap, and what happens when a growing microtubule loses it? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Dimers arrive with GTP on β-tubulin. Which is faster, adding dimers or hydrolysing GTP?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+New dimers carry GTP, and the GTP on β-tubulin is hydrolysed a little after the dimer is built in. While dimers add faster than GTP is hydrolysed, the end carries a **cap of GTP-tubulin** that keeps the protofilaments straight. GDP-tubulin behind it is strained and wants to curve. If the cap is lost, the protofilaments **peel apart** and the microtubule **shrinks fast**: a **catastrophe**. If it gains a new cap, shrinking stops: a **rescue**.
+:::
+
+---
+
+**Q3.** A cell expresses EB1-GFP. You see many short bright comets moving from the centre towards the cell edge. What does each comet show, and what can you measure from the movie? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+EB1 binds only one kind of microtubule end.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+EB1 binds only **growing plus ends**, so each comet is the growing end of one microtubule. Their direction shows that **plus ends point outward**, and their speed is the **growth rate** (about 10–20 µm/min). A comet that disappears marks a **pause or catastrophe**; shrinking ends are not labelled. A kymograph along one microtubule shows growth as a sloped line.
+:::
+
+---
+
+**Q4.** In which direction does most kinesin walk, and in which direction does cytoplasmic dynein walk? In an axon, which motor carries new synaptic vesicle precursors to the synapse? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Where are the plus ends in an axon?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Most kinesins walk to the **plus end**, dynein to the **minus end**. In an axon all plus ends point **away from the cell body**, so **kinesin** carries new vesicles and mitochondria out to the synapse (anterograde transport), and **dynein** brings endosomes and signals back (retrograde transport).
+:::
+
+---
+
+**Q5.** How far does the cargo move per kinesin step, and how much ATP does each step cost? How was this measured? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of the length of one tubulin dimer, and of a bead held by a laser.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**8 nm per step**, the length of one tubulin dimer, and **one ATP per step** (each head moves 16 nm, hand over hand). It was measured with an **optical trap**: a laser holds a bead carrying a single kinesin; the bead position, followed to about 1 nm, rises in 8-nm steps, and the step rate follows the ATP concentration.
+:::
+
+---
+
+**Q6.** Why can a small cell rely on diffusion for many proteins, while a neuron with a 1-m axon cannot? Use the two formulas from the lecture. `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Diffusion time grows as $x^2$, motor time as $x$.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Diffusion along a line takes about $t \approx x^2/2D$; a motor takes $t = x/v$. For a protein ($D \approx 5\ \mu\text{m}^2/\text{s}$) over 10 µm, diffusion takes about 10 s, like a kinesin at 1 µm/s. Over 1 m ($10^6$ µm), diffusion takes about $10^{11}$ s, thousands of years, while kinesin needs $10^6$ s, about 12 days. Because diffusion grows with the **square** of the distance, only **motors** work over long distances.
+:::
+
+---
+
+**Q7.** What does "9 + 2" mean in a cilium, and how does dynein make the cilium bend rather than fall apart? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What would happen to two doublets if they were not linked?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The axoneme has **9 doublet microtubules in a ring around 2 single microtubules**. **Axonemal dynein arms** on each doublet walk on the neighbouring doublet and push the doublets to **slide** past each other. Because the doublets are **linked** to each other and anchored in the basal body, they cannot slide apart, so the sliding is turned into **bending**.
+:::
+
+---
+
+**Q8.** Paclitaxel stabilises microtubules and vinblastine stops their growth. Why do both kill dividing cancer cells, and why do both cause numb fingers and toes? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does a mitotic spindle need: stable microtubules, or microtubules that can grow and shrink?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The mitotic spindle needs **dynamic** microtubules that grow, shrink and search for chromosomes. Both drugs **freeze dynamic instability**, in opposite ways, so the spindle cannot work and the cell **arrests in mitosis** and dies; dividing cancer cells are hit most. Neurons with the **longest axons** depend most on transport along microtubules, which the drugs disturb, so **peripheral neuropathy** is a common side effect.
+:::

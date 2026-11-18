@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="372" viewBox="0 0 1100 372" font-family="Helvetica, Arial, sans-serif">
+<!-- fig14: 9+2 axoneme cross-section and how dynein sliding becomes bending. Cartoon. -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arO" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arB" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1f77b4"/></marker><marker id="arP" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7b3f99"/></marker><marker id="arG" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2f9e44"/></marker><marker id="arR" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker></defs>
+<text x="230" y="28" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Cross-section of a cilium: "9 + 2"</text>
+<circle cx="230" cy="185" r="148" fill="#fbfaf5" stroke="#8a6a12" stroke-width="3"/>
+<circle cx="250.0" cy="80.0" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="230.0" cy="80.0" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="219.0" y1="73.0" x2="206.0" y2="73.0" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="219.0" y1="87.0" x2="206.0" y2="87.0" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="230.0" y1="93.0" x2="230.0" y2="141.0" stroke="#868e96" stroke-width="2"/>
+<circle cx="230.0" cy="141.0" r="3.5" fill="#868e96" stroke="#868e96" stroke-width="0"/>
+<circle cx="312.8" cy="117.4" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="297.5" cy="104.6" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="293.6" y1="92.1" x2="283.6" y2="83.8" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="284.6" y1="102.9" x2="274.6" y2="94.5" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="289.1" y1="114.5" x2="258.3" y2="151.3" stroke="#868e96" stroke-width="2"/>
+<circle cx="258.3" cy="151.3" r="3.5" fill="#868e96" stroke="#868e96" stroke-width="0"/>
+<circle cx="336.9" cy="186.5" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="333.4" cy="166.8" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="338.4" y1="154.7" x2="336.1" y2="141.9" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="324.6" y1="157.1" x2="322.3" y2="144.3" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="320.6" y1="169.0" x2="273.3" y2="177.4" stroke="#868e96" stroke-width="2"/>
+<circle cx="273.3" cy="177.4" r="3.5" fill="#868e96" stroke="#868e96" stroke-width="0"/>
+<circle cx="310.9" cy="254.8" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="320.9" cy="237.5" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="332.5" y1="231.5" x2="339.0" y2="220.2" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="320.4" y1="224.5" x2="326.9" y2="213.2" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="309.7" y1="231.0" x2="268.1" y2="207.0" stroke="#868e96" stroke-width="2"/>
+<circle cx="268.1" cy="207.0" r="3.5" fill="#868e96" stroke="#868e96" stroke-width="0"/>
+<circle cx="247.1" cy="290.5" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="265.9" cy="283.7" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="278.6" y1="286.5" x2="290.9" y2="282.0" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="273.9" y1="273.3" x2="286.1" y2="268.9" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="261.5" y1="271.5" x2="245.0" y2="226.3" stroke="#868e96" stroke-width="2"/>
+<circle cx="245.0" cy="226.3" r="3.5" fill="#868e96" stroke="#868e96" stroke-width="0"/>
+<circle cx="175.3" cy="276.8" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="194.1" cy="283.7" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="202.0" y1="294.0" x2="214.2" y2="298.5" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="206.8" y1="280.9" x2="219.0" y2="285.3" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="198.5" y1="271.5" x2="215.0" y2="226.3" stroke="#868e96" stroke-width="2"/>
+<circle cx="215.0" cy="226.3" r="3.5" fill="#868e96" stroke="#868e96" stroke-width="0"/>
+<circle cx="129.1" cy="220.2" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="139.1" cy="237.5" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="138.5" y1="250.5" x2="145.0" y2="261.8" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="150.6" y1="243.5" x2="157.1" y2="254.8" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="150.3" y1="231.0" x2="191.9" y2="207.0" stroke="#868e96" stroke-width="2"/>
+<circle cx="191.9" cy="207.0" r="3.5" fill="#868e96" stroke="#868e96" stroke-width="0"/>
+<circle cx="130.1" cy="147.1" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="126.6" cy="166.8" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="117.8" y1="176.4" x2="115.5" y2="189.2" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="131.6" y1="178.8" x2="129.3" y2="191.6" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="139.4" y1="169.0" x2="186.7" y2="177.4" stroke="#868e96" stroke-width="2"/>
+<circle cx="186.7" cy="177.4" r="3.5" fill="#868e96" stroke="#868e96" stroke-width="0"/>
+<circle cx="177.8" cy="91.7" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="162.5" cy="104.6" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="149.6" y1="106.3" x2="139.6" y2="114.6" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="158.6" y1="117.0" x2="148.6" y2="125.4" stroke="#7b3f99" stroke-width="5" stroke-linecap="round"/>
+<line x1="170.9" y1="114.5" x2="201.7" y2="151.3" stroke="#868e96" stroke-width="2"/>
+<circle cx="201.7" cy="151.3" r="3.5" fill="#868e96" stroke="#868e96" stroke-width="0"/>
+<circle cx="215" cy="185" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="245" cy="185" r="12" fill="#c7d0da" stroke="#1b2a3a" stroke-width="2"/>
+<text x="410" y="70" font-size="15" text-anchor="start" font-weight="bold" fill="#1b2a3a">9 outer doublets</text>
+<line x1="406" y1="66" x2="313.49269901708664" y2="94.5653334725073" stroke="#1b2a3a" stroke-width="1.5" marker-end="url(#ar)"/>
+<text x="410" y="300" font-size="15" text-anchor="start" font-weight="bold" fill="#7b3f99">dynein arms (purple)</text>
+<line x1="406" y1="294" x2="329.9" y2="255.5" stroke="#1b2a3a" stroke-width="1.5" marker-end="url(#ar)"/>
+<text x="410" y="330" font-size="15" text-anchor="start" font-weight="normal" fill="#555">radial spokes (grey)</text>
+<text x="410" y="350" font-size="15" text-anchor="start" font-weight="normal" fill="#555">to the central pair</text>
+<text x="230" y="360" font-size="15" text-anchor="middle" font-weight="normal" fill="#8a6a12">membrane</text>
+<text x="710" y="28" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Dynein makes doublets slide</text>
+<rect x="590" y="70" width="16" height="200" rx="4" fill="#c7d0da" stroke="#1b2a3a" stroke-width="1.5"/><rect x="624" y="110" width="16" height="200" rx="4" fill="#c7d0da" stroke="#1b2a3a" stroke-width="1.5"/><line x1="607" y1="140" x2="623" y2="128" stroke="#7b3f99" stroke-width="4" stroke-linecap="round"/><line x1="607" y1="180" x2="623" y2="168" stroke="#7b3f99" stroke-width="4" stroke-linecap="round"/><line x1="607" y1="220" x2="623" y2="208" stroke="#7b3f99" stroke-width="4" stroke-linecap="round"/><line x1="607" y1="260" x2="623" y2="248" stroke="#7b3f99" stroke-width="4" stroke-linecap="round"/>
+<line x1="656" y1="130" x2="656" y2="80" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="615" y="338" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">free: they</text>
+<text x="615" y="358" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">slide apart</text>
+<path d="M768,300 L768,185.0 Q768,90 850,70" fill="none" stroke="#1b2a3a" stroke-width="18" stroke-linecap="round"/><path d="M768,300 L768,185.0 Q768,90 850,70" fill="none" stroke="#c7d0da" stroke-width="15" stroke-linecap="round"/><path d="M802,300 L802,196.5 Q802,132 870,110" fill="none" stroke="#1b2a3a" stroke-width="18" stroke-linecap="round"/><path d="M802,300 L802,196.5 Q802,132 870,110" fill="none" stroke="#c7d0da" stroke-width="15" stroke-linecap="round"/><line x1="778" y1="276" x2="792" y2="266" stroke="#7b3f99" stroke-width="4" stroke-linecap="round"/><line x1="778" y1="246" x2="792" y2="236" stroke="#7b3f99" stroke-width="4" stroke-linecap="round"/><line x1="778" y1="216" x2="792" y2="206" stroke="#7b3f99" stroke-width="4" stroke-linecap="round"/>
+<rect x="750" y="300" width="70" height="12" rx="3" fill="#d9d2c3" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="785" y="338" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">held at the base and</text>
+<text x="785" y="358" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">linked: sliding → bending</text>
+<text x="890" y="90" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">Cilia (many per cell,</text>
+<text x="890" y="110" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">beat like oars) and</text>
+<text x="890" y="130" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">flagella (one, sperm)</text>
+<text x="890" y="150" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">share this machine.</text>
+<text x="890" y="190" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">It grows from a</text>
+<text x="890" y="210" font-size="15" text-anchor="start" font-weight="bold" fill="#1b2a3a">basal body</text>
+<text x="890" y="230" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">(a centriole).</text>
+</svg>

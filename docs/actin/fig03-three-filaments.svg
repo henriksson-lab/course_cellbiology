@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="425" viewBox="0 0 1100 425" font-family="Helvetica, Arial, sans-serif">
+<!-- fig03: the three filament systems compared (cartoon, not to scale between columns except diameters). -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arb" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1971c2"/></marker><marker id="arp" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#9c36b5"/></marker><marker id="ard" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arg" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2b8a3e"/></marker><marker id="arm" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#8a6a12"/></marker><marker id="ark" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#555555"/></marker><marker id="ara" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7048e8"/></marker></defs>
+<text x="300.0" y="30.0" font-size="20" text-anchor="middle" fill="#1b2a3a" font-weight="bold">Actin filaments</text>
+<text x="620.0" y="30.0" font-size="20" text-anchor="middle" fill="#1b2a3a" font-weight="bold">Microtubules</text>
+<text x="935.0" y="30.0" font-size="20" text-anchor="middle" fill="#1b2a3a" font-weight="bold">Intermediate filaments</text>
+<circle cx="175.0" cy="70.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="187.0" cy="80.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="199.0" cy="70.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="211.0" cy="80.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="223.0" cy="70.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="235.0" cy="80.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="247.0" cy="70.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="259.0" cy="80.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="271.0" cy="70.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="283.0" cy="80.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="295.0" cy="70.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="307.0" cy="80.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="319.0" cy="70.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="331.0" cy="80.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="343.0" cy="70.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="355.0" cy="80.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="367.0" cy="70.0" r="7.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="379.0" cy="80.0" r="7.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="391.0" cy="70.0" r="7.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="403.0" cy="80.0" r="7.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="415.0" cy="70.0" r="7.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="427.0" cy="80.0" r="7.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<text x="300.0" y="112.0" font-size="15" text-anchor="middle" fill="#1b2a3a">7 nm wide; two-stranded helix</text>
+<rect x="490.0" y="55.0" width="260.0" height="42.0" rx="21" fill="#d3f9d8" stroke="#1b2a3a" stroke-width="1.5" />
+<rect x="491.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="491.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="511.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="511.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="531.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="531.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="551.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="551.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="571.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="571.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="591.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="591.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="611.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="611.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="631.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="631.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="651.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="651.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="671.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="671.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="691.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="691.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="711.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="711.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="731.0" y="59.0" width="18.0" height="17.0" rx="3" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="0.8" />
+<rect x="731.0" y="77.0" width="18.0" height="17.0" rx="3" fill="#8ce99a" stroke="#2b8a3e" stroke-width="0.8" />
+<text x="620.0" y="112.0" font-size="15" text-anchor="middle" fill="#1b2a3a">25 nm wide; a hollow tube</text>
+<path d="M 815 70 Q 825 60 840 76 Q 855 69 870 79 Q 885 78 900 76 Q 915 61 930 79 Q 945 70 960 76 Q 975 79 990 79 Q 1005 62 1020 76 Q 1035 71 1050 79" fill="none" stroke="#a0785a" stroke-width="5" />
+<path d="M 815 73 Q 825 66 840 79 Q 855 75 870 76 Q 885 84 900 79 Q 915 67 930 76 Q 945 76 960 79 Q 975 85 990 76 Q 1005 68 1020 79 Q 1035 77 1050 76" fill="none" stroke="#8c6748" stroke-width="5" />
+<path d="M 815 76 Q 825 72 840 76 Q 855 81 870 79 Q 885 64 900 76 Q 915 73 930 79 Q 945 82 960 76 Q 975 65 990 79 Q 1005 74 1020 76 Q 1035 83 1050 79" fill="none" stroke="#b98d6c" stroke-width="5" />
+<path d="M 815 79 Q 825 78 840 79 Q 855 61 870 76 Q 885 70 900 79 Q 915 79 930 76 Q 945 62 960 79 Q 975 71 990 76 Q 1005 80 1020 79 Q 1035 63 1050 76" fill="none" stroke="#7a573c" stroke-width="5" />
+<text x="935.0" y="112.0" font-size="15" text-anchor="middle" fill="#1b2a3a">10 nm wide; a rope</text>
+<text x="935.0" y="130.8" font-size="15" text-anchor="middle" fill="#1b2a3a">of fibrous proteins</text>
+<line x1="20.0" y1="161.0" x2="1080.0" y2="161.0" stroke="#dee2e6" stroke-width="1" />
+<text x="30.0" y="183.0" font-size="18" text-anchor="start" fill="#1b2a3a" font-weight="bold">Subunit</text>
+<text x="300.0" y="183.0" font-size="17" text-anchor="middle" fill="#1b2a3a">actin (globular), binds ATP</text>
+<text x="620.0" y="183.0" font-size="17" text-anchor="middle" fill="#1b2a3a">αβ-tubulin dimer, binds GTP</text>
+<text x="935.0" y="183.0" font-size="17" text-anchor="middle" fill="#1b2a3a">many kinds: keratins,</text>
+<text x="935.0" y="204.2" font-size="17" text-anchor="middle" fill="#1b2a3a">vimentin, lamins …</text>
+<line x1="20.0" y1="211.0" x2="1080.0" y2="211.0" stroke="#dee2e6" stroke-width="1" />
+<text x="30.0" y="233.0" font-size="18" text-anchor="start" fill="#1b2a3a" font-weight="bold">Polarity</text>
+<text x="300.0" y="233.0" font-size="17" text-anchor="middle" fill="#1b2a3a">yes: barbed (+) and</text>
+<text x="300.0" y="254.2" font-size="17" text-anchor="middle" fill="#1b2a3a">pointed (−) end</text>
+<text x="620.0" y="233.0" font-size="17" text-anchor="middle" fill="#1b2a3a">yes: plus and minus end</text>
+<text x="935.0" y="233.0" font-size="17" text-anchor="middle" fill="#1b2a3a">no</text>
+<line x1="20.0" y1="261.0" x2="1080.0" y2="261.0" stroke="#dee2e6" stroke-width="1" />
+<text x="30.0" y="283.0" font-size="18" text-anchor="start" fill="#1b2a3a" font-weight="bold">Dynamics</text>
+<text x="300.0" y="283.0" font-size="17" text-anchor="middle" fill="#1b2a3a">fast: treadmilling,</text>
+<text x="300.0" y="304.2" font-size="17" text-anchor="middle" fill="#1b2a3a">turned over in minutes</text>
+<text x="620.0" y="283.0" font-size="17" text-anchor="middle" fill="#1b2a3a">fast: dynamic instability</text>
+<text x="935.0" y="283.0" font-size="17" text-anchor="middle" fill="#1b2a3a">slow, very stable</text>
+<line x1="20.0" y1="311.0" x2="1080.0" y2="311.0" stroke="#dee2e6" stroke-width="1" />
+<text x="30.0" y="333.0" font-size="18" text-anchor="start" fill="#1b2a3a" font-weight="bold">Motors</text>
+<text x="300.0" y="333.0" font-size="17" text-anchor="middle" fill="#1b2a3a">myosins</text>
+<text x="620.0" y="333.0" font-size="17" text-anchor="middle" fill="#1b2a3a">kinesins, dynein</text>
+<text x="935.0" y="333.0" font-size="17" text-anchor="middle" fill="#1b2a3a">none</text>
+<line x1="20.0" y1="361.0" x2="1080.0" y2="361.0" stroke="#dee2e6" stroke-width="1" />
+<text x="30.0" y="383.0" font-size="18" text-anchor="start" fill="#1b2a3a" font-weight="bold">Main jobs</text>
+<text x="300.0" y="383.0" font-size="17" text-anchor="middle" fill="#1b2a3a">shape, crawling, cortex,</text>
+<text x="300.0" y="404.2" font-size="17" text-anchor="middle" fill="#1b2a3a">contraction, cytokinesis</text>
+<text x="620.0" y="383.0" font-size="17" text-anchor="middle" fill="#1b2a3a">long-range transport,</text>
+<text x="620.0" y="404.2" font-size="17" text-anchor="middle" fill="#1b2a3a">spindle, cilia</text>
+<text x="935.0" y="383.0" font-size="17" text-anchor="middle" fill="#1b2a3a">mechanical strength,</text>
+<text x="935.0" y="404.2" font-size="17" text-anchor="middle" fill="#1b2a3a">nuclear lamina</text>
+</svg>

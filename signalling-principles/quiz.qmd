@@ -1,0 +1,104 @@
+---
+title: "Quiz: principles of cell communication"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Principles of cell communication*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Match each signal to its type of signalling: (a) insulin from the pancreas acting on muscle, (b) histamine from a mast cell acting on a nearby blood vessel, (c) acetylcholine from a nerve ending acting on a muscle fibre, (d) Delta on one cell acting on Notch on the neighbouring cell. Types: contact-dependent, endocrine, paracrine, synaptic. `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+How far does each signal travel, and does it leave the sending cell at all?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) **endocrine**: a hormone carried in the blood; (b) **paracrine**: a local mediator acting on nearby cells; (c) **synaptic**: a neurotransmitter crossing a narrow gap to one target cell; (d) **contact-dependent**: Delta stays in the membrane of the sending cell, so only touching cells respond.
+:::
+
+---
+
+**Q2.** Adrenaline binds a receptor in the plasma membrane, while cortisol binds a receptor inside the cell. Why? And which of the two hormones gives the faster response? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which of the two can cross a lipid bilayer? What does the cortisol receptor do once it has bound its hormone?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Adrenaline is **water-soluble** and cannot cross the bilayer, so its receptor must sit in the plasma membrane and pass the signal inside. Cortisol is a small **fat-soluble** steroid that diffuses through the membrane and binds a **nuclear receptor**, a transcription factor. **Adrenaline is faster** (seconds): it changes proteins that already exist. Cortisol acts through gene expression, so new RNA and proteins must be made (hours).
+:::
+
+---
+
+**Q3.** A receptor has $K_d$ = 2 nM for its hormone. What fraction of the receptors is occupied at 2 nM, 6 nM and 18 nM hormone? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Fraction occupied $= [L]/([L] + K_d)$.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+2/(2+2) = **50 %**; 6/(6+2) = **75 %**; 18/(18+2) = **90 %**. Going from 50 % to 90 % needs nine times more hormone: the binding curve flattens as the receptors fill up.
+:::
+
+---
+
+**Q4.** Drug A gives a maximal response of 100 % with EC₅₀ = 10 nM. Drug B, acting on the same receptor, gives at most 40 % with EC₅₀ = 1 nM. Which drug is more **potent**, which has the higher **efficacy**, and what kind of drug is B? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Potency is about *how much* drug you need; efficacy is about *how large* the effect can get.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Drug B is **more potent** (lower EC₅₀: it works at lower concentrations). Drug A has the **higher efficacy** (larger maximum). B is a **partial agonist**: even when it occupies all the receptors, it switches them on only part-way.
+:::
+
+---
+
+**Q5.** You measure an agonist's dose–response curve with and without a new antagonist. With the antagonist, the curve moves to the right, but at very high agonist concentrations it reaches the same maximum. What kind of antagonist is it? What would you see with an irreversible antagonist in a tissue without spare receptors? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Can extra agonist win back the receptors?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+A **competitive** (reversible, same-site) antagonist: enough agonist out-competes it, so E~max~ is unchanged and only the EC₅₀ rises. An **irreversible** antagonist removes receptors for good; with no spare receptors, the **maximum falls**, as with a non-competitive antagonist.
+:::
+
+---
+
+**Q6.** In one tissue, an agonist gives half of its maximal effect when only about 5 % of its receptors are occupied. How is that possible, and is its EC₅₀ higher or lower than its $K_d$? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What happens to the signal in the steps after the receptor?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Amplification**: each active receptor activates many G proteins, each makes many cAMP molecules, and so on, so a few active receptors are enough for a large response. The other receptors are **spare receptors**. The EC₅₀ is therefore **lower** than the $K_d$. EC₅₀ equals $K_d$ only if the response is directly proportional to occupancy.
+:::
+
+---
+
+**Q7.** A mutation makes a GTPase unable to hydrolyse GTP. Is the protein stuck ON or OFF? Which helper protein normally switches it off, and which switches it on? `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which nucleotide is bound in the active state?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Stuck ON**: the GTP-bound form is active, and without hydrolysis it never returns to the GDP form. A **GAP** (GTPase-activating protein) normally speeds up hydrolysis and switches it off; a **GEF** (guanine nucleotide exchange factor) switches it on by letting GDP out and GTP in. Ras mutations of this kind drive many cancers.
+:::
+
+---
+
+**Q8.** A patient uses a β₂-agonist inhaler many times a day for weeks, and it works less and less well. Name the phenomenon and two mechanisms in the cell that can cause it. `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What happens to receptors that are switched on all the time?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Desensitisation** (adaptation; in the clinic called **tolerance**). Mechanisms: (1) the active receptor is **phosphorylated** by a receptor kinase and bound by **arrestin**, which blocks coupling to the G protein (fast); (2) receptors are **taken into the cell by endocytosis** and some are degraded in lysosomes, so fewer remain on the surface (slower). Changes further down the pathway can add to this.
+:::

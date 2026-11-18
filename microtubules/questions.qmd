@@ -1,0 +1,137 @@
+---
+title: "Study questions: microtubules and motor proteins"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** Describe the structure of a microtubule, from the tubulin dimer to the tube. Explain what is meant by its polarity. `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The building block is a dimer of **α- and β-tubulin** (8 nm long), each binding a GTP. Dimers join **head to tail** into a **protofilament**; **13 protofilaments** lie side by side and close into a **hollow tube about 25 nm wide**. Because every dimer points the same way, the two ends differ: the **plus end**, with β-tubulin exposed, grows and shrinks fast; the **minus end**, with α-tubulin exposed, is slower and in cells is usually capped and anchored. This **polarity** is what motor proteins read to know which way to walk.
+:::
+
+---
+
+**2.** Explain dynamic instability. Use the terms GTP cap, catastrophe and rescue, and sketch the length of one microtubule over time. `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Each microtubule end switches at random between **slow growth** and **fast shrinkage**. Dimers are added as **GTP-tubulin**; GTP on β-tubulin is hydrolysed shortly afterwards. A growing end therefore carries a **GTP cap**, which keeps the protofilaments straight. The GDP-tubulin lattice behind it is strained. If the cap is lost by chance, the protofilaments peel outward and the microtubule shrinks rapidly: a **catastrophe**. If a shrinking end regains a cap, it starts growing again: a **rescue**. The sketch is a saw-tooth: long sloping rises (growth), steep falls (shrinkage), with sharp turns at catastrophes and rescues. Dynamic instability needs no other protein (it is seen with pure tubulin), but MAPs tune it in cells.
+:::
+
+---
+
+**3.** Describe the centrosome and explain how it organises the microtubules of a fibroblast. `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The centrosome sits next to the nucleus. It has **two centrioles** at right angles (each a barrel of nine triplet microtubules) surrounded by **pericentriolar material**, which contains many **γ-tubulin ring complexes**. Each ring is a **template** for the 13 protofilaments of a new microtubule and **caps its minus end**. So in a fibroblast the minus ends are anchored at the centrosome and the **plus ends grow outward** to the cell edge: a radial **aster**. Plus-end motors (kinesin) therefore carry cargo outward, minus-end motors (dynein) inward. The centrosome is duplicated once per cycle, and the two copies form the spindle poles in mitosis.
+:::
+
+---
+
+**4.** Compare the microtubule arrays in a fibroblast, the axon of a neuron and an epithelial cell. Why does the array matter for transport? `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Fibroblast**: radial aster from the centrosome; minus ends central, plus ends at the periphery. **Axon**: microtubules are not attached to the centrosome, and all have their **plus end towards the axon tip** (dendrites have mixed directions). **Epithelial cell**: bundles run **from apical to basal**, minus ends near the apical surface. Motors walk in one direction only (kinesin to plus, dynein to minus), so the array decides where cargo goes: in the axon kinesin delivers to the synapse and dynein returns to the cell body; in the epithelium, motors can sort vesicles to the apical or basolateral side.
+:::
+
+---
+
+**5.** Name four kinds of microtubule-associated proteins (MAPs) by what they do, with one example each. `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Stabilisers** bind along the lattice, reduce catastrophes and space microtubules (tau in axons, MAP2 in dendrites). **Plus-end tracking proteins** ride on growing ends and recruit other proteins (EB1). **Destabilisers** pull dimers off the ends or keep free dimers away (kinesin-13; stathmin). **Severing enzymes** cut microtubules with ATP and make new ends (katanin, spastin). Cells shift the balance, for example towards more catastrophes when they enter mitosis.
+:::
+
+---
+
+**6.** Compare kinesin and cytoplasmic dynein: direction, structure, energy use and typical cargo. `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Kinesin** (most kinds) walks to the **plus end**; it has two globular heads, a long stalk and a tail that binds cargo; there are about 45 kinesin genes in humans. It carries vesicles, mitochondria and mRNA particles outward, for example down the axon. **Cytoplasmic dynein** walks to the **minus end**; it is much larger (about 1.4 MDa), each head is a ring of ATPase domains, and it needs **dynactin** and an adaptor to carry cargo far; one main form does most minus-end transport (endosomes, Golgi membranes, retrograde signals, viruses going to the nucleus). Both hydrolyse **ATP** to take steps and both are processive.
+:::
+
+---
+
+**7.** Explain how kinesin walks, and describe one experiment that measured its step size. `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Kinesin walks **hand over hand**. With both heads bound, ATP binds the **front** head; its neck linker docks and throws the **rear** head forward by 16 nm to the next binding site. The new front head binds and releases ADP; the new rear head hydrolyses its ATP and lets go. One head is always bound, so the motor is processive (about a hundred steps before it falls off). Each step moves the cargo **8 nm** (one dimer) and uses **one ATP**; at about 100 steps per second, kinesin moves about 1 µm/s. **Optical trap**: a laser holds a plastic bead carrying one kinesin; the motor walks on a microtubule fixed to glass and pulls the bead; its position, measured to ~1 nm, rises in **8-nm steps**, and the motor stalls at about 6 pN.
+:::
+
+---
+
+**8.** Describe the structure of the axoneme of a motile cilium and explain how it beats. How does a primary cilium differ? `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The axoneme has **nine doublet microtubules** around **two single central microtubules** (9 + 2), and grows from a **basal body** (a centriole). Each doublet carries **inner and outer dynein arms** that walk on the neighbouring doublet, pushing the doublets to slide. Links between doublets and the anchoring at the base prevent sliding apart, so the force becomes **bending**; dynein activity alternates around the ring, so the cilium beats. A **primary cilium** (one per cell in most cells) is 9 + 0, has **no dynein arms** and does not move; it is a sensory antenna, for example for urine flow in kidney tubules.
+:::
+
+---
+
+## VG-style questions
+
+**9. [VG]** A patient has chronic bronchitis since childhood, is infertile and has the heart on the right side. An electron micrograph of airway cilia shows doublets without outer arms. Explain how one defect can cause all three findings. Why would a mutation in polycystin give a different disease? `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The missing outer arms are **axonemal dyneins**, so the patient has **primary ciliary dyskinesia**. Without dynein the doublets do not slide, so motile cilia and flagella do not beat. **Airways**: cilia normally sweep mucus and trapped bacteria upward; without the beat mucus stays and infections recur. **Infertility**: sperm flagella use the same axoneme and dynein, so sperm cannot swim. **Heart on the right**: in the early embryo, rotating cilia in a small pit (the node) drive a leftward flow of fluid that tells the embryo which side is left; without it, left and right are decided at random, so about half of patients have mirrored organs. **Polycystin** works in the non-moving **primary cilium** of kidney tubule cells as a sensor of flow, not as a motor. Its loss leaves motility intact but disturbs signalling, so tubule cells keep proliferating and form **cysts** (polycystic kidney disease).
+:::
+
+---
+
+**10. [VG]** Paclitaxel stabilises microtubules and vinblastine depolymerises them. A student says: "They do opposite things, so a patient given both should be fine." Explain why the student is wrong. Then predict what each drug does to EB1-GFP comets in a cultured cell. `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Cells need microtubules that are **dynamic**, not a particular amount of polymer. The **spindle** depends on microtubules that grow, shrink, search for kinetochores and pull; both drugs **suppress dynamic instability** (at clinical doses both mainly freeze the ends), so each alone arrests cells in mitosis, and together they do not cancel: both still block the dynamics, and both disturb axonal transport (neuropathy). **EB1-GFP**: EB1 marks growing ends. With **paclitaxel**, catastrophes become rare and the lattice is locked, so microtubules become long and stable, many reach the cell edge and stop, and the comets become **fewer and dimmer** because few ends are growing. With **vinblastine**, the ends cannot add tubulin, so **comets disappear** (and at high doses the microtubule array itself disappears).
+:::
+
+---
+
+**11. [VG]** Design an experiment to test whether a newly discovered motor protein walks towards the plus or the minus end of microtubules, and whether it uses ATP. `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Purify the motor (for example with a tag) and use a **gliding assay** with **polarity-marked microtubules**: microtubules with a brightly labelled short seed at the minus end, grown from the seed with dimmer tubulin (or grown from centrosomes, whose minus ends are known). Stick the motor to glass, add the microtubules and ATP, and film them. A **plus-end-directed** motor pushes the microtubule so that its **minus end leads** (the motor walks towards the plus end, so the filament moves the opposite way); a minus-end motor makes the plus end lead. Alternatively, label the motor itself and film single molecules walking on surface-bound marked microtubules. For energy use: repeat **without ATP**, with a **non-hydrolysable analogue** (AMP-PNP) and with **ADP** only; a motor that needs ATP hydrolysis stops (often stuck tightly with AMP-PNP). Measure speed at several ATP concentrations: speed rising and saturating with ATP shows the ATP dependence. An optical trap could then measure the step size and stall force.
+:::
+
+---
+
+## Explore {#explore}
+
+**Demo: dynamic instability.** Tab 1 shows a cell seen from above with 40 microtubules growing from the centrosome. A green dash marks each growing end (as EB1-GFP would), a red dot each shrinking end. Tap a microtubule to follow it in the **kymograph** (distance from the centrosome across, time downwards: green = growing, red = shrinking). Below are the counts of catastrophes and rescues since you last pressed **Reset counts**, and the four rates of the model. Tab 2 compares how long cargo needs to move along an axon by diffusion and by kinesin. Time runs at 1× real time; choose a faster speed for long runs. The random events differ between runs, so your counts will differ a little from the solutions; count for at least 5 minutes of model time.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="microtubules" data-c="10" data-seed="1"></div>
+<script src="../demos/dist/microtubules.js"></script>
+```
+
+**E1.** Tab 1, free tubulin 10 µM. Watch one microtubule in the kymograph for a few minutes (choose 5× or 10×). Describe what a growth phase, a catastrophe and a rescue look like. Then press **Reset counts**, let 5 minutes of model time pass, and read the catastrophes and rescues per microtubule per minute and the mean length. `[ELO 6]`
+
+**E2.** *Predict first.* What happens to growth speed, catastrophes and the mean length if you lower the free tubulin to 5 µM, or raise it to 20 µM? Check it. At about which concentration does the model change from "bounded" to "unbounded"? Why does a microtubule grow longer on average when tubulin is higher, although it still has catastrophes? `[ELO 6]`
+
+**E3.** Back at 10 µM, tick **taxol**, wait 2 minutes and count again. Then untick taxol and tick **vinblastine**. Describe the array in each case. Which of the four rates does each drug change? `[ELO 6]`
+
+**E4. [VG]** Taxol makes microtubules longer and vinblastine makes them disappear, yet both are used to kill dividing cancer cells. Use your observations in E3 and the EB1 comets to explain why. Then set free tubulin to 3 µM with taxol ticked: what do you see, and what does this tell you about how taxol changes the tubulin concentration needed for growth? `[ELO 6]`
+
+**E5.** Tab 2, **vesicle**, kinesin 1 µm/s. Run the race **across a cell** at 1× real time. Then read the table for 1 mm and 1 m. Repeat with **protein**. Over what distance do diffusion and the motor take equally long for each cargo? How many ATP does one kinesin use to carry a vesicle 1 m? `[ELO 6]`
+
+**E6. [VG]** *Predict first.* How fast would a motor need to walk to bring a vesicle from the spinal cord to the foot (1 m) in one day? Is this possible for kinesin (use the slider)? Untick **ATP**: what happens to the kinesin, and why does a neuron with too little ATP (for example with failing mitochondria) lose its synapses first at the far end? `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** Growth is a **sloping green edge** moving slowly to the right (12 µm/min: the end moves out 1 µm every 5 s). A **catastrophe** is a sharp turn: the edge turns red and moves back towards 0 about **twice as fast** (24 µm/min). A **rescue** is a turn from red back to green before the microtubule reaches the centrosome; if it reaches 0, a new microtubule starts after a few seconds. Over 5 minutes the model gives about **1.1–1.3 catastrophes** and **0.5–0.6 rescues per microtubule per minute**, and a mean length of about **8–9 µm**. (The "bounded" readout says 13 µm: that is the average for a microtubule in a cell without an edge that is never empty; in the demo some microtubules are empty or stalled at the edge.)
+
+**E2.** At **5 µM** growth slows to about **5 µm/min**, catastrophes become more frequent (about **2 per microtubule per minute**: a slowly growing end has a small GTP cap and loses it more easily), rescues are rarer, and the mean length falls to about **2 µm**: a small, sparse array near the centrosome. At **20 µM** growth is about **25 µm/min**, catastrophes are fewer (about 0.9–1 per minute), and the mean length rises to about **16 µm**, with 4–10 microtubules touching the cell edge. The model switches from **bounded** to **unbounded** at about **14.5 µM** (the readout shows "unbounded" from 15 µM). In the Dogterom–Leibler model a microtubule is unbounded when the length gained in growth phases, $v_g/f_\text{cat}$ per phase, outweighs the length lost in shrinkage phases, $v_s/f_\text{res}$. Higher tubulin raises $v_g$ and lowers $f_\text{cat}$, so each growth phase adds more than each shrinkage phase removes; the average end drifts outward until the cell edge stops it.
+
+**E3.** **Taxol**: within a minute or two almost all microtubules (35–40 of 40) reach the cell edge and stay there; the mean length is about **25 µm**. Taxol lowers the **catastrophe** rate tenfold, slows **shrinkage** and raises **rescues**; the few catastrophes left (about 0.3 per microtubule per minute) happen at the edge and are rescued almost at once, so the kymograph shows a nearly straight vertical line at 25 µm. Green comets vanish because the ends at the edge are stalled, not growing. **Vinblastine**: the microtubules shrink back to the centrosome and only tiny stubs appear and vanish; the mean length is about **0.1 µm**. Vinblastine lowers the **growth** speed tenfold (1.2 µm/min) and makes catastrophes more frequent. (In the demo vinblastine is a high dose; at low doses both drugs mainly freeze the ends.)
+
+**E4.** A dividing cell must build a **spindle** whose microtubules grow, shrink and search the cell until they capture every chromosome, and then shorten to pull the chromosomes apart. With taxol the microtubules are long but **frozen**: they no longer have catastrophes, so they cannot search or pull. With vinblastine they **cannot grow**. In both cases the spindle fails, the spindle checkpoint keeps the cell in mitosis, and the cell dies (the mitosis lecture). In both cases the EB1 comets, the sign of growing, searching ends, disappear. At **3 µM with taxol** the microtubules still grow out to the edge and stay (the readout says unbounded), while without taxol 3 µM gives only short microtubules (mean about 0.7 µm). Taxol **lowers the tubulin concentration needed for net growth** (the critical concentration), because it stops the GDP lattice from falling apart: in a cell it pulls free tubulin into stable polymer.
+
+**E5.** **Vesicle** (D = 0.1 µm²/s): across a cell the kinesin arrives after **10 s**; the diffusing copies spread only about √(2Dt) ≈ 1.4 µm in 10 s, and the average time to diffuse 10 µm is **8.3 min** (a few of the 40 copies arrive earlier by chance). Over **1 mm**: diffusion 58 days, kinesin 17 min. Over **1 m**: diffusion about **160 000 years**, kinesin **12 days**. **Protein** (D = 5 µm²/s): across a cell both take about **10 s**; 1 mm: diffusion 28 h, kinesin 17 min; 1 m: diffusion about **3000 years**, kinesin 12 days. Equal times at $x = 2D/v$: **10 µm** for a protein, **0.2 µm** for a vesicle. So small proteins can diffuse across an ordinary cell, but vesicles and organelles need motors at almost any distance. ATP: 1 m / 8 nm = **125 million steps**, so 125 million ATP for one kinesin (in reality a cargo is carried by several motors that take turns).
+
+**E6.** 1 m in one day is 10⁶ µm in 86 400 s, about **12 µm/s**. The slider stops at 5 µm/s, the top of fast axonal transport, which gives **2.3 days**; kinesin cannot go much faster because each step needs one ATP cycle (about 100 per second, 8 nm each). Without **ATP** the kinesin stops where it is and stays bound to the microtubule (in a real cell it would be stuck in a tightly bound state), so nothing arrives. The far end of the axon depends on a constant supply of new vesicles, membrane proteins and mitochondria; if ATP falls, transport slows everywhere, and the part that is reached last, the synapses at the end of the longest axons, suffers first. This is why diseases of mitochondria and of motors, and drugs such as vincristine, often show up first as problems in the feet.
+:::

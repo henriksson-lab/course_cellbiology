@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="262" viewBox="0 0 1100 262" font-family="Helvetica, Arial, sans-serif">
+<!-- fig08: four kinds of microtubule-associated proteins. Cartoon. -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arO" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arB" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1f77b4"/></marker><marker id="arP" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7b3f99"/></marker><marker id="arG" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2f9e44"/></marker><marker id="arR" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker></defs>
+<text x="137.5" y="30" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Stabilise</text>
+<text x="137.5" y="52" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-style="italic">tau (axon), MAP2 (dendrites)</text>
+<rect x="26" y="110" width="220" height="26" rx="3" fill="#c7d0da" stroke="#1b2a3a" stroke-width="1.5"/><line x1="28" y1="117" x2="244" y2="117" stroke="#9aa8b6" stroke-width="1"/><line x1="28" y1="123" x2="244" y2="123" stroke="#9aa8b6" stroke-width="1"/><line x1="28" y1="129" x2="244" y2="129" stroke="#9aa8b6" stroke-width="1"/>
+<path d="M44,110 q8,-22 22,-26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M54,136 q8,22 22,26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M80,110 q8,-22 22,-26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M90,136 q8,22 22,26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M116,110 q8,-22 22,-26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M126,136 q8,22 22,26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M152,110 q8,-22 22,-26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M162,136 q8,22 22,26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M188,110 q8,-22 22,-26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M198,136 q8,22 22,26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M224,110 q8,-22 22,-26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<path d="M234,136 q8,22 22,26" fill="none" stroke="#2b6f9e" stroke-width="4" stroke-linecap="round"/>
+<text x="137.5" y="196" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">bind along the side;</text>
+<text x="137.5" y="216" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">fewer catastrophes;</text>
+<text x="137.5" y="236" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">space microtubules apart</text>
+<text x="412.5" y="30" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Track the + end</text>
+<text x="412.5" y="52" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-style="italic">EB1 and friends</text>
+<rect x="301" y="110" width="200" height="26" rx="3" fill="#c7d0da" stroke="#1b2a3a" stroke-width="1.5"/><line x1="303" y1="117" x2="499" y2="117" stroke="#9aa8b6" stroke-width="1"/><line x1="303" y1="123" x2="499" y2="123" stroke="#9aa8b6" stroke-width="1"/><line x1="303" y1="129" x2="499" y2="129" stroke="#9aa8b6" stroke-width="1"/>
+<rect x="449" y="104" width="56" height="38" rx="14" fill="#2f9e44" fill-opacity="0.75" stroke="none"/>
+<text x="524" y="129" font-size="22" text-anchor="start" font-weight="bold" fill="#1b2a3a">+</text>
+<text x="412.5" y="196" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">ride on the growing end;</text>
+<text x="412.5" y="216" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">recruit other proteins</text>
+<text x="412.5" y="236" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">(and light up the tip)</text>
+<text x="687.5" y="30" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Take apart</text>
+<text x="687.5" y="52" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-style="italic">kinesin-13, stathmin</text>
+<rect x="576" y="110" width="160" height="26" rx="3" fill="#c7d0da" stroke="#1b2a3a" stroke-width="1.5"/><line x1="578" y1="117" x2="734" y2="117" stroke="#9aa8b6" stroke-width="1"/><line x1="578" y1="123" x2="734" y2="123" stroke="#9aa8b6" stroke-width="1"/><line x1="578" y1="129" x2="734" y2="129" stroke="#9aa8b6" stroke-width="1"/>
+<path d="M736,113 q26,-2 40,-26" fill="none" stroke="#7d8ea0" stroke-width="7" stroke-linecap="round"/>
+<path d="M736,133 q26,2 40,26" fill="none" stroke="#7d8ea0" stroke-width="7" stroke-linecap="round"/>
+<circle cx="756" cy="123" r="11" fill="#d0617a" stroke="#1b2a3a" stroke-width="1.5"/>
+<circle cx="796" cy="96" r="6" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="808" cy="96" r="6" fill="#6f8fae" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="802" cy="154" r="6" fill="#b9c8d8" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="814" cy="154" r="6" fill="#6f8fae" stroke="#1b2a3a" stroke-width="1"/>
+<text x="687.5" y="196" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">peel dimers off the ends,</text>
+<text x="687.5" y="216" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">or hold free dimers away:</text>
+<text x="687.5" y="236" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">more catastrophes</text>
+<text x="962.5" y="30" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Cut</text>
+<text x="962.5" y="52" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-style="italic">katanin, spastin</text>
+<rect x="851" y="110" width="100" height="26" rx="3" fill="#c7d0da" stroke="#1b2a3a" stroke-width="1.5"/><line x1="853" y1="117" x2="949" y2="117" stroke="#9aa8b6" stroke-width="1"/><line x1="853" y1="123" x2="949" y2="123" stroke="#9aa8b6" stroke-width="1"/><line x1="853" y1="129" x2="949" y2="129" stroke="#9aa8b6" stroke-width="1"/>
+<rect x="971" y="110" width="100" height="26" rx="3" fill="#c7d0da" stroke="#1b2a3a" stroke-width="1.5"/><line x1="973" y1="117" x2="1069" y2="117" stroke="#9aa8b6" stroke-width="1"/><line x1="973" y1="123" x2="1069" y2="123" stroke="#9aa8b6" stroke-width="1"/><line x1="973" y1="129" x2="1069" y2="129" stroke="#9aa8b6" stroke-width="1"/>
+<ellipse cx="961" cy="123" rx="13" ry="26" fill="none" stroke="#8e44ad" stroke-width="6"/>
+<text x="961" y="86" font-size="14" text-anchor="middle" font-weight="normal" fill="#8e44ad">ATP-driven ring</text>
+<text x="962.5" y="196" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">cut a microtubule in two:</text>
+<text x="962.5" y="216" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">new ends, new short</text>
+<text x="962.5" y="236" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">microtubules</text>
+</svg>

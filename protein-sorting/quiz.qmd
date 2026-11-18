@@ -1,0 +1,104 @@
+---
+title: "Quiz: sorting proteins to the right compartment"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Sorting proteins to the right compartment*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Where are almost all of a cell's proteins made, and what decides where each one goes? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of a parcel in a post office: who reads the address, and where is it written?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Almost all proteins are made on ribosomes **in the cytosol** (free, or bound to the ER); in humans only 13 proteins are made inside mitochondria. The destination is written in the protein itself as one or more **sorting signals** (short amino-acid patterns or a surface patch). **Receptors** that recognise each kind of signal deliver the protein to the right transport machine.
+:::
+
+---
+
+**Q2.** Match each signal to where it sends a protein: (a) PKKKRKV, (b) C-terminal -SKL, (c) C-terminal -KDEL, (d) an N-terminal helix with several arginines and no acidic residues, (e) an N-terminal stretch with a core of 8–12 hydrophobic residues. `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Two of them sit at the N-terminus and are cut off after use; two sit at the very C-terminus.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) **NLS** → nucleus. (b) **PTS1** → peroxisome. (c) **KDEL** → returned to the **ER lumen**. (d) **Mitochondrial presequence** → mitochondrial matrix. (e) **ER signal peptide** → into the ER (and from there the secretory pathway).
+:::
+
+---
+
+**Q3.** Name the three kinds of transport between compartments. For each, give one example and say whether the protein crosses a membrane. `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of the topology: same space, a new space, or between lumen-side spaces.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Gated**: cytosol ↔ nucleus through nuclear pores; no membrane is crossed (nucleoplasm and cytosol are one space) and the protein stays folded. **Transmembrane**: cytosol → ER, mitochondria or peroxisomes through a protein translocator in the membrane; the protein crosses the membrane (usually unfolded). **Vesicular**: ER → Golgi → lysosomes, plasma membrane or outside; vesicles bud and fuse, so the protein never crosses a membrane.
+:::
+
+---
+
+**Q4.** GFP alone (27 kDa) is seen in both the cytosol and the nucleus. A GFP fused to a 120 kDa cytosolic enzyme is seen only in the cytosol. Explain the difference. `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What fills the channel of the nuclear pore, and what can pass it without help?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The nuclear pore channel is filled with a meshwork of **FG repeats** that acts as a sieve. Proteins below about **40 kDa**, like GFP, **diffuse** through and spread over cytosol and nucleus. The large fusion protein cannot pass on its own and has no NLS, so no importin carries it in: it stays in the cytosol.
+:::
+
+---
+
+**Q5.** What makes nuclear import go in one direction? Name the two enzymes involved and where they are. `[ELO 4, 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Importins bind cargo in one form of the environment and release it in the other.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The **Ran-GTP gradient**. The exchange factor **RanGEF** is bound to chromatin, so Ran-GTP is made in the **nucleus**; **RanGAP** is in the **cytosol**, where it makes Ran hydrolyse its GTP to Ran-GDP. Importins bind cargo where there is no Ran-GTP (cytosol) and release it when Ran-GTP binds them (nucleus). The energy comes from Ran's GTP hydrolysis, not from the pore.
+:::
+
+---
+
+**Q6.** Name two things that drive the import of a protein into the mitochondrial matrix. `[ELO 4, 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+One is electrical, one uses ATP.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(1) The **membrane potential** across the inner membrane (matrix side negative) pulls the positively charged presequence through TIM23. (2) **Mitochondrial Hsp70** in the matrix binds the incoming chain and pulls it in, using **ATP**. (Cytosolic chaperones also keep the precursor unfolded so it fits through TOM and TIM.)
+:::
+
+---
+
+**Q7.** A protein has an ER signal peptide and an NLS. Where does it go, and why? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which signal is read first, and on which side of the ER membrane is the protein afterwards?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The signal peptide is read by SRP **during translation**, so the protein enters the ER lumen and, with no further signal, is **secreted**. The NLS is never read: importins are in the cytosol, and the protein is now on the lumen side of a membrane.
+:::
+
+---
+
+**Q8.** What does selinexor bind, and why does that kill myeloma cells? `[ELO 4, 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which tumour-suppressor proteins carry an NES, and where must they be to act?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Selinexor binds the exportin **XPO1 (CRM1)** covalently, in the groove that binds the nuclear export signal. Export of NES proteins stops. Tumour suppressors such as **p53**, FOXO and IκB, which myeloma cells (with their high XPO1) keep exporting, **build up in the nucleus**, where they act and push the cancer cell into apoptosis.
+:::

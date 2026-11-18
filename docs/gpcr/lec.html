@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-662ae1889177880cb371f83234c0a158.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
+
+  <meta name="author" content="Cell Biology (3MB001)">
+  <title>Cell Biology – G-protein-coupled receptors and second messengers</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bf56578b9c06c165c166475cd19dbcd1.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">G-protein-coupled receptors and second messengers</h1>
+  <p class="subtitle">Cell signalling</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Cell Biology (3MB001) 
+</div>
+</div>
+</div>
+
+</section>
+<section id="about-this-lecture" class="slide level2 smaller">
+<h2>About this lecture</h2>
+<p>A hormone such as adrenaline never enters the cell. It binds a receptor on the outside, and within seconds the inside of the cell changes. Today: the largest family of receptors, the <strong>G-protein-coupled receptors (GPCRs)</strong>, and the small <strong>second messengers</strong> they make inside the cell.</p>
+<p>After this lecture you can:</p>
+<ul>
+<li>describe a GPCR (<strong>seven transmembrane helices</strong>) and how a hormone switches it on;</li>
+<li>explain the <strong>trimeric G protein</strong> as a timed switch, and the three main kinds: <strong>Gs, Gi, Gq</strong>;</li>
+<li>follow the two main pathways: <strong>cAMP → PKA</strong> and <strong>IP₃ → Ca²⁺ / DAG → PKC</strong>, including <strong>calmodulin</strong>;</li>
+<li>explain how the cascade <strong>amplifies</strong> the signal, and how every step is <strong>switched off</strong> (GTP hydrolysis, phosphodiesterase, GRK + arrestin, endocytosis);</li>
+<li>describe how we <strong>watch</strong> second messengers in living cells (Ca²⁺ imaging, FRET sensors);</li>
+<li>explain how <strong>cholera toxin</strong>, <strong>β-blockers</strong>, <strong>opioids</strong> and <strong>GLP-1 drugs</strong> act on this machinery.</li>
+</ul>
+<p><strong>ELO 3</strong> (signalling), with drug and disease examples for <strong>ELO 9</strong>.</p>
+<aside class="notes">
+<p>In the lecture on the principles of cell communication you met the receptor classes, dose–response curves and molecular switches. Today we open one receptor class in detail: the G-protein-coupled receptors. They are the largest family of membrane receptors in our genome, and they are the targets of about a third of all approved drugs, so this is the lecture where signalling meets pharmacology. We follow a signal from a hormone outside the cell, across the membrane, through a G protein, to a small molecule called a second messenger, and on to a protein kinase that changes what the cell does. We ask two quantitative questions: how can one hormone molecule outside cause millions of molecular events inside, and how does the cell switch the signal off again? We meet two methods that let us watch the signal live in a cell, and we finish with a bacterial toxin and three drug classes that act on exactly the steps we have drawn. This covers ELO 3, with examples for ELO 9.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-question-one-hormone-many-effects-all-from-outside" class="slide level2 smaller">
+<h2>The question: one hormone, many effects, all from outside</h2>
+
+<img data-src="fig02-adrenaline-liver.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li>Fright or exercise: the adrenal gland releases <strong>adrenaline</strong> (epinephrine) into the blood. Within seconds the <strong>heart</strong> beats faster and the <strong>liver</strong> releases glucose.</li>
+<li>Adrenaline is <strong>water-soluble</strong>: it cannot cross the membrane. It binds a receptor on the outside.</li>
+<li><strong>How does the signal cross the membrane? Why is the response so large and so fast, and how does it stop?</strong> And why does cholera, a gut infection, cause litres of watery diarrhoea?</li>
+</ul>
+<aside class="notes">
+<p>Imagine you are startled. Your adrenal glands release adrenaline into the blood. Within seconds your heart beats faster and harder, and your liver breaks down its glycogen store and releases glucose into the blood, fuel for your muscles. Adrenaline is a small, charged, water-soluble molecule. It cannot cross the lipid bilayer, so it never enters the liver cell. It binds a receptor protein on the outer surface, and the message must cross the membrane by a change in the shape of that protein. The numbers are striking. Adrenaline in the blood is in the nanomolar range, yet a liver cell can release millions of glucose molecules per second. So the signal must be amplified on the way. And when the danger has passed, the response must stop within minutes, so the signal must also be switched off. Keep the fourth puzzle in mind: cholera bacteria in the gut make a toxin that hijacks exactly this machinery. We solve it at the end of the lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="gpcrs-seven-helices-across-the-membrane" class="slide level2 smaller">
+<h2>GPCRs: seven helices across the membrane</h2>
+<div class="columns">
+<div class="column" style="width:64%;">
+<p><img data-src="fig03-seven-helices.svg" style="width:100.0%"></p>
+<ul>
+<li>One protein chain crosses the membrane <strong>seven times</strong> (7TM). N-terminus outside, C-terminus inside. Drawn unrolled here; in reality the helices form a <strong>bundle</strong>.</li>
+<li>The ligand binds <strong>outside or in a pocket between the helices</strong>; the <strong>G protein binds the cytosolic face</strong>.</li>
+<li>About <strong>800 human GPCRs</strong>: receptors for hormones, neurotransmitters, light (rhodopsin), smell and taste (about half are odorant receptors).</li>
+</ul>
+</div><div class="column" style="width:36%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img03-b2ar-gs.jpg" class="quarto-figure quarto-figure-center" height="430"></p>
+</figure>
+</div>
+<p><em>β₂-adrenergic receptor (gold) bound to its G protein (green, blue, purple), from X-ray crystallography (PDB 3SN6).</em></p>
+</div></div>
+<aside class="notes">
+<p>All GPCRs share one architecture. A single polypeptide chain crosses the membrane seven times as alpha helices, so they are also called seven-transmembrane receptors. The N-terminus is outside the cell, the C-terminus inside. The diagram unrolls the chain so you can count the helices; in the real protein the seven helices pack into a barrel-like bundle. Small ligands such as adrenaline bind in a pocket between the helices, reached from the outside; large protein hormones bind to the outer loops and the N-terminus. The cytosolic face, with its loops and the C-terminal tail, binds the G protein. The image on the right is a real structure: the beta-2 adrenergic receptor in gold, in complex with its G protein, solved by X-ray crystallography. The human genome encodes about 800 GPCRs. About half of them are odorant receptors in the nose. Others detect light in the eye, taste, hormones and neurotransmitters. One family, one design, hundreds of signals.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="activation-the-receptor-swaps-gdp-for-gtp" class="slide level2 smaller">
+<h2>Activation: the receptor swaps GDP for GTP</h2>
+
+<img data-src="fig04-activation.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li>Agonist binding shifts the helices: <strong>helix 6 swings outwards</strong> (about 1.4 nm in the β₂ receptor), opening a pocket on the <strong>cytosolic</strong> side.</li>
+<li>The <strong>Gα</strong> subunit’s C-terminal helix inserts into that pocket. This pulls open Gα’s nucleotide site: <strong>GDP leaves</strong>, and <strong>GTP</strong> (10 × more abundant in the cytosol) <strong>enters</strong>.</li>
+<li>So the active receptor is a <strong>GEF</strong> (guanine nucleotide exchange factor) for the G protein. It then lets go and activates the next one.</li>
+</ul>
+<aside class="notes">
+<p>How does binding outside change anything inside? The receptor is not rigid. When an agonist binds in the pocket between the helices, it stabilises a slightly different arrangement of the bundle. The largest movement is on the cytosolic side: helix 6 swings outwards, by about 1.4 nanometres in the beta-2 receptor, and a cavity opens. The G protein’s alpha subunit fits into this cavity with its C-terminal helix. This contact is transmitted through Gα to its nucleotide-binding site, which opens. GDP falls out. In the cytosol GTP is about ten times more abundant than GDP, so GTP binds next, and Gα closes around it in its active shape. In the language of the principles lecture, the receptor acts as a guanine nucleotide exchange factor, a GEF. Note what the receptor does not do: it does not add the phosphate, it only lets GDP out. Once Gα holds GTP, it lets go of the receptor, and the receptor, still bound to its hormone, can activate another G protein.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-trimeric-g-protein-is-a-switch-with-a-timer" class="slide level2 smaller">
+<h2>The trimeric G protein is a switch with a timer</h2>
+
+<img data-src="fig05-g-protein-cycle.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li>Three subunits: <strong>Gα</strong> (binds GDP or GTP) and the tight pair <strong>Gβγ</strong>. Both are anchored to the membrane by lipid tails.</li>
+<li>With GTP, Gα separates from βγ: <strong>both</strong> halves can switch on targets.</li>
+<li>Gα is itself a slow <strong>GTPase</strong>: after seconds to minutes it hydrolyses GTP and switches off. <strong>RGS proteins</strong> speed this up for many G proteins.</li>
+</ul>
+<aside class="notes">
+<p>The G protein has three subunits, alpha, beta and gamma, which is why it is called trimeric or heterotrimeric. Beta and gamma never separate, so we treat them as one unit, βγ. Both Gα and βγ carry lipid anchors, so the whole cycle happens on the inner surface of the plasma membrane. At rest, Gα holds GDP and sits with βγ. An active receptor exchanges GDP for GTP. Gα with GTP changes shape and leaves βγ. Now both halves are free to bind target proteins in the membrane: enzymes or ion channels. Here is the clever part. Gα is an enzyme that slowly hydrolyses its own GTP to GDP and phosphate. This is a built-in timer. For Gs, the GTP lasts on average ten to twenty seconds. Then Gα–GDP rebinds βγ, and the switch is off. Proteins called RGS proteins, regulators of G-protein signalling, act as GTPase-activating proteins and can make the timer much faster. Remember from the principles lecture: a GTPase switch is on with GTP and off with GDP. This is the same idea.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-main-kinds-of-g-protein-gs-gi-gq" class="slide level2 smaller">
+<h2>Three main kinds of G protein: Gs, Gi, Gq</h2>
+
+<img data-src="fig06-three-g-proteins.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><ul>
+<li>The <strong>receptor</strong> decides which G protein is used; the <strong>Gα type</strong> decides the effect. The same hormone can act through different receptors: adrenaline uses <strong>β</strong> (Gs), <strong>α₂</strong> (Gi) and <strong>α₁</strong> (Gq) receptors.</li>
+<li>Simplified: there are more Gα types (e.g.&nbsp;G₁₂/₁₃, and transducin in the eye), and βγ has its own targets.</li>
+</ul>
+<aside class="notes">
+<p>Humans have sixteen genes for Gα, but three families do most of the work we need. Gs, s for stimulatory, activates adenylyl cyclase, the enzyme that makes cyclic AMP. Gi, i for inhibitory, inhibits adenylyl cyclase, so cyclic AMP falls; in neurons and the heart its βγ subunits also open potassium channels, which makes the cell harder to excite. Gq activates a different enzyme, phospholipase C beta, which makes two messengers, IP₃ and diacylglycerol, and leads to a rise in cytosolic calcium. Which G protein a cell uses depends on the receptor. That is why one hormone can have opposite effects in different tissues. Adrenaline acting on beta receptors in the heart uses Gs and makes the heart beat harder. The same adrenaline acting on alpha-1 receptors in the smooth muscle of skin blood vessels uses Gq and constricts the vessel. This is a simplified map: there are more Gα families, for example transducin in the retina, and βγ has its own targets. But Gs, Gi and Gq will carry us through this lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-camp-pathway-adenylyl-cyclase-camp-and-pka" class="slide level2 smaller">
+<h2>The cAMP pathway: adenylyl cyclase, cAMP and PKA</h2>
+
+<img data-src="fig07-camp-pka.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li><strong>Adenylyl cyclase</strong> (in the plasma membrane) turns ATP into <strong>cyclic AMP</strong>. <strong>Phosphodiesterases</strong> (PDEs) turn cAMP into AMP. Resting cAMP is low (about 0.1 µM), stimulated several µM.</li>
+<li><strong>PKA</strong> (protein kinase A) is held inactive by its <strong>regulatory (R)</strong> subunits. Four cAMP bind the R subunits, and two <strong>catalytic (C)</strong> subunits are released.</li>
+<li>Free C phosphorylates Ser/Thr on target proteins: <strong>fast</strong> effects on enzymes and channels (seconds), <strong>slow</strong> effects on genes via CREB (hours).</li>
+</ul>
+<aside class="notes">
+<p>Here is the Gs pathway in detail. Active Gαs binds adenylyl cyclase, a large enzyme in the plasma membrane, and switches it on. Adenylyl cyclase converts ATP into cyclic AMP, a small, water-soluble molecule that diffuses through the cytosol. This is the second messenger: the hormone was the first messenger. Cyclic AMP is destroyed by phosphodiesterases, which open the ring to give plain AMP. The balance between cyclase and phosphodiesterase sets the cAMP level, and the phosphodiesterases also make sure cAMP falls quickly when the cyclase stops. The main target of cAMP is protein kinase A. PKA is a complex of two regulatory and two catalytic subunits. The regulatory subunits block the active sites. Each regulatory subunit binds two cAMP molecules, so four in total; the regulatory subunits change shape and release the two catalytic subunits, which are now active kinases. They phosphorylate serines and threonines on many proteins. Some effects are fast, like switching on enzymes for glycogen breakdown, or opening CFTR, which you met in the ion-channel lecture. Others are slow: PKA enters the nucleus and phosphorylates the transcription factor CREB, which switches on genes over hours.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="amplification-from-one-hormone-to-thousands-of-molecules" class="slide level2 smaller">
+<h2>Amplification: from one hormone to thousands of molecules</h2>
+
+<img data-src="fig08-amplification.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:74.0%"><ul>
+<li>Gain comes from steps where <strong>one active molecule acts on many</strong>: the receptor (one G protein after another), adenylyl cyclase, the kinases and the enzymes they switch on.</li>
+<li><strong>Binding</strong> steps do not amplify: four cAMP free two C subunits of PKA.</li>
+<li>In the liver, the glycogen cascade has two more kinase steps after PKA, so a few hormone molecules can release <strong>millions</strong> of glucose molecules.</li>
+</ul>
+<aside class="notes">
+<p>Let us count. One hormone molecule keeps one receptor active for as long as it stays bound. While active, the receptor catalyses GDP–GTP exchange on one G protein after another, so it switches on several to many G proteins: with the numbers in our demo model, about eight at a time. Each active Gαs switches on one adenylyl cyclase, which is an enzyme that makes many cAMP molecules per second. That is the largest gain in this cascade. The next step looks like a loss: four cAMP molecules are needed to release two catalytic subunits of PKA. Binding does not amplify; only catalysis does. But each PKA catalytic subunit is an enzyme. In the liver, PKA phosphorylates phosphorylase kinase, which phosphorylates glycogen phosphorylase, which cuts glucose units off glycogen, so each step multiplies again. The exact numbers depend on the cell and are illustrative here. The principle is not: enzymes in series multiply the signal, so a nanomolar hormone can move the metabolism of a whole organ. Amplification also has a price: a cascade that amplifies must be switched off at every step.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="gq-ip₃-releases-ca²-dag-recruits-pkc" class="slide level2 smaller">
+<h2>Gq: IP₃ releases Ca²⁺, DAG recruits PKC</h2>
+
+<img data-src="fig09-gq-ip3-dag.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li><strong>Phospholipase C-β</strong> cuts the membrane lipid <strong>PIP₂</strong> into <strong>IP₃</strong> (soluble) and <strong>DAG</strong> (stays in the membrane).</li>
+<li><strong>IP₃</strong> opens the <strong>IP₃ receptor</strong>, a Ca²⁺ channel in the ER. Cytosolic Ca²⁺ rises from about <strong>100 nM</strong> to about <strong>1 µM</strong>.</li>
+<li><strong>PKC</strong> (protein kinase C) moves to the membrane when Ca²⁺ rises and becomes active when it also binds <strong>DAG</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Now the Gq branch. Active Gαq switches on phospholipase C beta. Its substrate is a minor membrane lipid, phosphatidylinositol 4,5-bisphosphate, PIP₂ for short, which has a sugar-phosphate head group in the inner leaflet. Phospholipase C cuts PIP₂ into two messengers at once. The head group, inositol trisphosphate or IP₃, is water-soluble and diffuses into the cytosol. The rest, diacylglycerol or DAG, is a lipid and stays in the membrane. IP₃ binds the IP₃ receptor, a calcium channel in the ER membrane. You know from the ion-channel lecture that cytosolic calcium is kept at about 100 nanomolar, ten thousand times lower than in the ER. So when the channels open, calcium floods out and the cytosolic level rises roughly tenfold within a second. Calcium and DAG then work together. Protein kinase C binds calcium, moves to the membrane, and becomes fully active when it also binds DAG there. This is a coincidence detector: both messengers are needed. Calcium has many other targets, and the most important is calmodulin, on the next slide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ca²-acts-through-calmodulin" class="slide level2 smaller">
+<h2>Ca²⁺ acts through calmodulin</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img10-calmodulin.jpg" class="quarto-figure quarto-figure-center" height="420"></p>
+</figure>
+</div>
+<p><em>Calmodulin with four Ca²⁺ ions (black spheres), wrapped around a helix of its target, myosin light-chain kinase.</em></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li><strong>Calmodulin</strong> is a small, abundant protein with <strong>four Ca²⁺ binding sites</strong>. They fill when Ca²⁺ rises towards 1 µM.</li>
+<li>With Ca²⁺ bound, calmodulin <strong>wraps around a helix</strong> of its target and switches it on:
+<ul>
+<li><strong>CaM-kinase II</strong>: a kinase in neurons (memory);</li>
+<li><strong>myosin light-chain kinase</strong>: smooth muscle contraction;</li>
+<li>adenylyl cyclases and phosphodiesterases: <strong>cross-talk</strong> with cAMP.</li>
+</ul></li>
+<li>Ca²⁺ signals often come as <strong>spikes or oscillations</strong>: the cell can code strength in their <strong>frequency</strong>.</li>
+<li>Pumps (<strong>SERCA</strong> in the ER, <strong>PMCA</strong> in the plasma membrane) bring Ca²⁺ back to 100 nM.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Calcium itself does nothing until it binds a protein. The main calcium sensor in every eukaryotic cell is calmodulin, a small protein of about 150 amino acids with four calcium-binding sites. These sites have an affinity in the micromolar range, so at resting calcium they are mostly empty, and when calcium rises towards one micromolar they fill. Calcium-bound calmodulin changes shape, exposing sticky hydrophobic surfaces, and wraps around a helix in its target protein, as you see in the structure, where calmodulin grips a peptide from myosin light-chain kinase. That kinase then phosphorylates myosin in smooth muscle, and the muscle contracts. Another target, calcium-calmodulin-dependent kinase II, is abundant in synapses and is important for memory. Calmodulin also regulates some adenylyl cyclases and phosphodiesterases, so the calcium and cAMP pathways talk to each other. Calcium signals are often brief spikes, repeated as oscillations, and cells can read the frequency. Pumps in the ER and plasma membrane, which you met in the transport lectures, constantly return calcium to 100 nanomolar and end each spike.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-finding-and-seeing-the-receptor" class="slide level2 smaller">
+<h2>How do we know? Finding and seeing the receptor</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<ul>
+<li><strong>1970s:</strong> Robert <strong>Lefkowitz</strong> used <strong>radioactive ligands</strong> to show that receptors are real, countable proteins in the membrane, and purified the β-adrenergic receptor.</li>
+<li><strong>1986:</strong> his group, with Brian <strong>Kobilka</strong>, <strong>cloned the gene</strong>. Its sequence showed <strong>seven hydrophobic helices</strong>, like rhodopsin, the light receptor: one family for hormones and light.</li>
+<li><strong>2007–2011:</strong> Kobilka’s group solved the <strong>crystal structure</strong> of the β₂ receptor, and then of the receptor <strong>caught in the act</strong> of activating Gs (PDB 3SN6, the structure two slides back).</li>
+<li><strong>Nobel Prize in Chemistry 2012.</strong> Today cryo-EM gives new GPCR–G protein structures every week, and drugs are designed against them.</li>
+</ul>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img11-nobel-2012.jpg" style="width:100.0%"></p>
+<p><em>Brian Kobilka (left) and Robert Lefkowitz at the Nobel Prize ceremony in Stockholm, December 2012.</em></p>
+</div></div>
+<aside class="notes">
+<p>For a long time receptors were an abstract idea: something on the cell that a drug must bind. Robert Lefkowitz made them concrete. In the 1970s his group labelled adrenaline-like drugs with radioactive isotopes and measured how much bound to membranes: a saturable number of high-affinity sites, which they could count and purify. Then, in 1986, Lefkowitz’s group, with Brian Kobilka as a young researcher, cloned the gene for the beta-2 adrenergic receptor. The sequence was a surprise: seven stretches of hydrophobic amino acids, just like rhodopsin, the light receptor of the eye. This showed that hormone receptors and light receptors belong to one family. Kobilka then spent twenty years trying to crystallise the receptor, which is floppy and unstable outside the membrane. In 2007 his group solved its structure, and in 2011 they caught the receptor bound to its G protein in the active state, the structure you saw earlier. Lefkowitz and Kobilka shared the 2012 Nobel Prize in Chemistry. Today cryo-electron microscopy produces such structures routinely, and they guide drug design.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-watching-second-messengers-live" class="slide level2 smaller">
+<h2>How do we know? Watching second messengers live</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img12-calcium-imaging.jpg" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
+</figure>
+</div>
+<p><em>Retinal glial cells loaded with the Ca²⁺ dye fura-2: before ATP, a few seconds after adding ATP (which acts on a Gq-coupled receptor), and later. Blue = low Ca²⁺, red = high.</em></p>
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li><strong>Ca²⁺ imaging:</strong> a dye (fura-2) or a genetically encoded sensor (GCaMP: GFP + calmodulin) gets brighter or changes colour when it binds Ca²⁺.</li>
+<li><strong>FRET sensor for cAMP</strong> (right): cAMP opens the sensor, so less energy passes from CFP to YFP; the blue/yellow ratio reads cAMP.</li>
+</ul>
+</div><div class="column" style="width:55%;">
+<p><img data-src="fig12-fret-sensor.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>How do we know that calcium rises, and how fast, in a living cell? We make it visible. The images at the top show glial cells from the retina loaded with fura-2, a fluorescent dye that changes its excitation spectrum when it binds calcium; the colours show the calcium level, blue low and red high. Before stimulation the cells are blue. A few seconds after ATP is added, which acts on P2Y receptors that couple to Gq, many cells turn green to red, and the signal then fades as pumps clear the calcium. Today we often use genetically encoded sensors such as GCaMP, a fusion of GFP and calmodulin that becomes brighter when calcium binds, so we can image calcium in a specific cell type in a living animal. For cAMP we use FRET sensors, shown bottom right. A cAMP-binding domain, here from the protein Epac, sits between two fluorescent proteins, CFP and YFP. Without cAMP they are close: light absorbed by CFP is passed to YFP by FRET, and the sensor glows yellow. When cAMP binds, the sensor opens, FRET drops and more blue light comes out. The blue-to-yellow ratio reads cAMP in real time.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="switching-off-every-step-has-its-own-off-switch" class="slide level2 smaller">
+<h2>Switching off: every step has its own off-switch</h2>
+
+<img data-src="fig13-off-switches.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:86.0%"><ul>
+<li>A signal is only useful if it <strong>ends</strong>. Each active state decays on its own: <strong>GTP hydrolysis</strong> in Gα, <strong>PDE</strong> for cAMP, <strong>phosphatases</strong> for the phosphorylated targets, <strong>pumps</strong> for Ca²⁺.</li>
+<li>The signal lasts as long as the <strong>slowest</strong> off-step allows. Block one off-switch and the signal outlasts the hormone.</li>
+<li>This is why the <strong>PDE inhibitors</strong> caffeine and theophylline raise cAMP (theophylline was used for asthma).</li>
+</ul>
+<aside class="notes">
+<p>We have built a powerful amplifier. Now we need the brakes. A signal that cannot end carries no information about time: the cell must know not only that adrenaline came, but also that it has gone. Every step of the cascade has its own way back. The hormone is removed from the blood, taken up or broken down. Gα hydrolyses its GTP. Phosphodiesterases destroy cyclic AMP. Protein phosphatases remove the phosphates that PKA added. In the calcium branch, pumps in the ER and plasma membrane return calcium to 100 nanomolar, IP₃ is dephosphorylated, and DAG is converted to other lipids. Because these steps are in series, the signal can last only as long as the slowest of them allows. If you slow down one off-switch, the signal outlasts the hormone. Methylxanthines such as caffeine and theophylline inhibit phosphodiesterases. At the doses in coffee, caffeine acts mainly on adenosine receptors, another GPCR, but at higher doses PDE inhibition raises cAMP; theophylline was used to relax airway smooth muscle in asthma. Next: the receptor’s own off-switch.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="desensitisation-grk-arrestin-and-endocytosis" class="slide level2 smaller">
+<h2>Desensitisation: GRK, arrestin and endocytosis</h2>
+
+<img data-src="fig14-arrestin-endocytosis.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li><strong>GRK</strong> (G-protein-coupled receptor kinase) phosphorylates <strong>only active</strong> receptors on their tail. <strong>Arrestin</strong> binds the phosphorylated tail and <strong>blocks</strong> G-protein coupling: the receptor is <strong>desensitised</strong>, even with hormone bound.</li>
+<li>Arrestin is also an adaptor for <strong>clathrin</strong>: the receptor is taken into the cell by <strong>endocytosis</strong> (the <strong>endocytosis lecture</strong>). In the endosome it is <strong>recycled</strong> (resensitised) or sent to the <strong>lysosome</strong> (fewer receptors).</li>
+<li>Result: under constant hormone the response <strong>fades</strong> (minutes), and with long drug use <strong>tolerance</strong> develops.</li>
+</ul>
+<aside class="notes">
+<p>The receptor has an off-switch of its own, and it acts only on receptors that are in use. G-protein-coupled receptor kinases, GRKs, recognise the active shape of the receptor and phosphorylate serines and threonines on its cytosolic tail. The phosphorylated tail is bound by arrestin. Arrestin sits on the same cytosolic face that the G protein needs, so the receptor can no longer activate G proteins, even though the hormone is still bound. This is desensitisation, and it takes seconds to minutes. Arrestin does more: it also binds clathrin and its adaptor, so the receptor is collected into a clathrin-coated pit and taken into the cell by endocytosis, which you will meet in detail in the endocytosis lecture. In the endosome the hormone dissociates, the phosphates are removed, and the receptor is either recycled to the surface, ready to signal again, or sent to the lysosome and degraded. Repeated or constant stimulation therefore reduces the number of receptors on the surface. This is one cause of drug tolerance: patients need higher doses of some drugs, such as opioids, to get the same effect.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-off-rates-set-the-shape-of-the-signal" class="slide level2 smaller">
+<h2>The off-rates set the shape of the signal</h2>
+
+<img data-src="fig15-signal-duration.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><ul>
+<li><strong>Left:</strong> a 1-minute hormone pulse. A <strong>slow GTPase</strong> or a <strong>PDE inhibitor</strong> makes cAMP rise higher and last longer after the hormone has gone.</li>
+<li><strong>Right:</strong> 5 minutes of hormone. With GRK + arrestin, cAMP <strong>peaks and then falls</strong> although the hormone is still there.</li>
+<li>Curves from a simple model with illustrative numbers. <strong>Try it:</strong> <a href="../gpcr/questions.html#explore">Demo: GPCR cascade</a></li>
+</ul>
+<aside class="notes">
+<p>Here is what the off-switches do to the time course of cAMP, computed with the simple model in the demo for this lecture. On the left, the hormone is present for one minute, shaded blue. In the normal cell, black, cAMP rises within about twenty seconds, stays up while the hormone is there, and falls back within a minute after it has gone. If Gα hydrolyses its GTP five times more slowly, orange, active Gα accumulates: cAMP rises higher and stays up long after the hormone has gone. If a drug inhibits the phosphodiesterase, dashed, cAMP rises much higher and also falls more slowly. On the right, the hormone stays for five minutes. Without arrestin, dashed grey, cAMP rises to a plateau and stays there as long as the hormone is present. With GRK and arrestin, purple, cAMP peaks and then falls, although the hormone is still present: the receptors are being desensitised. The cell responds to a change in hormone more than to a constant level. These are illustrative numbers, not data, but the shapes are what experiments show. In the demo you can change each rate yourself.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-cholera-toxin-locks-gs-on" class="slide level2 smaller">
+<h2>Why it matters: cholera toxin locks Gs on</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><img data-src="fig16-cholera-toxin.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img16-vibrio.jpg" style="width:100.0%"></p>
+<p><em>Vibrio cholerae, electron microscope (negative stain).</em></p>
+</div></div>
+<ul>
+<li>Cholera toxin attaches <strong>ADP-ribose</strong> to Gαs, which then <strong>cannot hydrolyse GTP</strong>: Gs stays on, cAMP stays high in gut cells. PKA opens <strong>CFTR</strong>; Cl⁻, Na⁺ and water pour into the gut: <strong>several litres a day</strong>.</li>
+<li>Treatment: <strong>oral rehydration</strong> (water + salt + glucose), which uses the <strong>SGLT</strong> Na⁺–glucose symporter that cholera leaves intact.</li>
+</ul>
+<aside class="notes">
+<p>Now the puzzle from the start. Vibrio cholerae lives in contaminated water. In the small intestine it makes cholera toxin, a protein with one A subunit and a ring of five B subunits. The B ring binds a ganglioside on the gut cell surface, the toxin is taken into the cell, and part of the A subunit reaches the cytosol. There it is an enzyme: it transfers an ADP-ribose group from NAD onto Gαs. Modified Gαs can still bind GTP, but it can no longer hydrolyse it. The timer is broken, so every Gαs that is switched on stays on. Adenylyl cyclase runs continuously, cAMP stays high, and PKA keeps CFTR, the chloride channel from the ion-channel lecture, open. Chloride flows into the gut, sodium and water follow, and the patient loses several litres of fluid a day. Without treatment, dehydration can kill within a day. The treatment is simple and cheap: oral rehydration solution. It works because the SGLT sodium–glucose symporter from the transport lecture still works, and water follows the absorbed salt and sugar. Pertussis toxin, from the whooping-cough bacterium, modifies Gαi instead: its receptors can no longer activate it, so the brake on cyclase is lost.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-three-drug-classes-acting-on-gpcrs" class="slide level2 smaller">
+<h2>Why it matters: three drug classes acting on GPCRs</h2>
+
+<img data-src="fig17-gpcr-drugs.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><ul>
+<li>About <strong>one third</strong> of approved drugs act on GPCRs. <strong>β-blockers</strong> are <strong>antagonists</strong>: they occupy the receptor without activating it. <strong>Opioids</strong> and <strong>GLP-1 drugs</strong> are <strong>agonists</strong>.</li>
+<li><strong>Semaglutide</strong> is GLP-1 made long-lasting: natural GLP-1 lasts <strong>minutes</strong>; semaglutide resists breakdown and binds albumin, so one injection lasts <strong>a week</strong>.</li>
+<li>You meet these drugs again in <strong>Organs struktur och funktion</strong> (heart, pancreas) and <strong>Kliniska prövningar och läkemedelsutveckling</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Three drug classes show the range. Beta-blockers such as metoprolol are antagonists at beta-1 adrenergic receptors in the heart. They bind the pocket but do not activate the receptor, so adrenaline cannot act; Gs, cAMP and PKA stay lower, the heart beats more slowly and less forcefully, and blood pressure falls. They are used for high blood pressure, angina, heart failure and after heart attacks. Opioids such as morphine and fentanyl are agonists at the mu-opioid receptor, which couples to Gi. In pain-signalling neurons, Gαi lowers cAMP, and βγ opens potassium channels and closes calcium channels at the nerve terminal, so less transmitter is released and less pain signal reaches the brain. The same receptors in the brainstem slow breathing, which makes overdoses deadly, and desensitisation contributes to tolerance. Semaglutide is an agonist at the GLP-1 receptor, a Gs-coupled receptor on pancreatic beta cells. Extra cAMP increases insulin release only when glucose is high, so the risk of low blood sugar is small. It also acts in the brain to reduce appetite. Natural GLP-1 is destroyed within minutes; semaglutide carries an amino-acid change and a fatty-acid chain that binds albumin, so it lasts about a week.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<ol type="1">
+<li><strong>GPCRs</strong> have <strong>seven transmembrane helices</strong>. An agonist shifts the helices; the active receptor is a <strong>GEF</strong> that swaps GDP for GTP in the <strong>trimeric G protein</strong>.</li>
+<li><strong>Gα–GTP</strong> and <strong>βγ</strong> switch on targets: <strong>Gs</strong> ↑ cAMP, <strong>Gi</strong> ↓ cAMP, <strong>Gq</strong> → PLC-β → <strong>IP₃</strong> (Ca²⁺ from the ER) + <strong>DAG</strong> (with Ca²⁺ activates <strong>PKC</strong>). Ca²⁺ acts through <strong>calmodulin</strong>.</li>
+<li><strong>cAMP</strong> frees the catalytic subunits of <strong>PKA</strong>, which phosphorylate enzymes, channels and transcription factors. Enzymes in series <strong>amplify</strong> the signal.</li>
+<li>Every step is <strong>switched off</strong>: <strong>GTP hydrolysis</strong>, <strong>phosphodiesterase</strong>, phosphatases, Ca²⁺ pumps; <strong>GRK + arrestin</strong> desensitise the receptor and lead to <strong>endocytosis</strong>.</li>
+<li><strong>Ca²⁺ imaging</strong> and <strong>FRET sensors</strong> show these signals live. Toxins and drugs act on single steps: <strong>cholera toxin</strong> (Gs stuck on), <strong>β-blockers</strong>, <strong>opioids</strong>, <strong>semaglutide</strong>.</li>
+</ol>
+<p><em>Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch.&nbsp;15.</em></p>
+<p><a href="../credits.html#gpcr" style="font-size:0.7em">Image credits</a></p>
+<aside class="notes">
+<p>Five take-home points. First, GPCRs are seven-helix receptors; the hormone changes the shape of the bundle, and the active receptor acts as an exchange factor that loads GTP onto the G protein. Second, the G protein is a timed switch; its alpha type decides the output: Gs raises cAMP, Gi lowers it, and Gq splits PIP₂ into IP₃, which releases calcium from the ER, and DAG, which with calcium activates protein kinase C; calcium itself acts through calmodulin. Third, cAMP activates protein kinase A by releasing its catalytic subunits, and the chain of enzymes amplifies a few hormone molecules into a large response. Fourth, a signal must end: GTP hydrolysis, phosphodiesterases, phosphatases and pumps reset the messengers, and GRK and arrestin desensitise the receptor and send it into endocytosis. Fifth, we can watch these signals in living cells, and many toxins and drugs act on exactly one step. In the next lecture we meet the other big class of surface receptors, the enzyme-coupled receptors and their kinase cascades.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'visible',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

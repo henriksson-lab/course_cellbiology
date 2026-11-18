@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" font-family="Helvetica, Arial, sans-serif"><rect width="960" height="420" fill="#ffffff"/><rect x="0" y="0" width="470" height="110" rx="0" fill="#eef4fa" stroke="none" stroke-width="0"/>
+<rect x="0" y="200" width="470" height="220" rx="0" fill="#fbfaf5" stroke="none" stroke-width="0"/>
+<rect x="0" y="110" width="470" height="90" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<line x1="0" y1="110" x2="470" y2="110" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="0" y1="200" x2="470" y2="200" stroke="#8a6a12" stroke-width="2.5"/>
+<rect x="100" y="98" width="100" height="114" rx="16" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.2"/>
+<line x1="116" y1="106" x2="116" y2="208" stroke="#5f3dc4" stroke-width="7" stroke-linecap="round" stroke-opacity="0.55"/>
+<line x1="138" y1="106" x2="138" y2="208" stroke="#5f3dc4" stroke-width="7" stroke-linecap="round" stroke-opacity="0.55"/>
+<line x1="162" y1="106" x2="162" y2="208" stroke="#5f3dc4" stroke-width="7" stroke-linecap="round" stroke-opacity="0.55"/>
+<line x1="184" y1="106" x2="184" y2="208" stroke="#5f3dc4" stroke-width="7" stroke-linecap="round" stroke-opacity="0.55"/>
+<text x="150" y="40" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">no hormone</text>
+<ellipse cx="154" cy="276" rx="28.0" ry="20.0" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.8"/>
+<text x="154" y="282.0" font-size="17.0" text-anchor="middle" fill="#1b2a3a" font-weight="700">Gα</text>
+<text x="154" y="313.0" font-size="14.0" text-anchor="middle" fill="#1b2a3a">GDP</text>
+<ellipse cx="104" cy="276" rx="20.0" ry="15.0" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="104" y="281.0" font-size="15.0" text-anchor="middle" fill="#1b2a3a" font-weight="700">βγ</text>
+<text x="235" y="400" font-size="17" text-anchor="middle" fill="#1b2a3a" font-weight="700">Inactive: G protein holds GDP</text>
+<rect x="490" y="0" width="470" height="110" rx="0" fill="#eef4fa" stroke="none" stroke-width="0"/>
+<rect x="490" y="200" width="470" height="220" rx="0" fill="#fbfaf5" stroke="none" stroke-width="0"/>
+<rect x="490" y="110" width="470" height="90" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<line x1="490" y1="110" x2="960" y2="110" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="490" y1="200" x2="960" y2="200" stroke="#8a6a12" stroke-width="2.5"/>
+<rect x="590" y="98" width="100" height="114" rx="16" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.2"/>
+<line x1="606" y1="106" x2="606" y2="208" stroke="#5f3dc4" stroke-width="7" stroke-linecap="round" stroke-opacity="0.55"/>
+<line x1="628" y1="106" x2="628" y2="208" stroke="#5f3dc4" stroke-width="7" stroke-linecap="round" stroke-opacity="0.55"/>
+<line x1="652" y1="106" x2="652" y2="208" stroke="#5f3dc4" stroke-width="7" stroke-linecap="round" stroke-opacity="0.55"/>
+<line x1="674" y1="106" x2="696" y2="208" stroke="#5f3dc4" stroke-width="7" stroke-linecap="round" stroke-opacity="0.55"/>
+<circle cx="640" cy="108" r="12" fill="#1971c2" stroke="#1b2a3a" stroke-width="1.2"/>
+<text x="580" y="40" font-size="16" text-anchor="start" fill="#1971c2" font-weight="700">agonist (hormone) binds</text>
+<path d="M638.0,48.0 L638.0,82.0" fill="none" stroke="#1971c2" stroke-width="2.2"/>
+<path d="M638.0,93.0 L632.0,82.0 L644.0,82.0 Z" fill="#1971c2"/>
+<text x="712" y="234" font-size="15" text-anchor="start" fill="#5f3dc4" font-weight="700">helix 6 swings out:</text>
+<text x="712" y="253" font-size="15" text-anchor="start" fill="#5f3dc4">a pocket opens below</text>
+<ellipse cx="644" cy="258" rx="28.0" ry="20.0" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.8"/>
+<text x="644" y="264.0" font-size="17.0" text-anchor="middle" fill="#1b2a3a" font-weight="700">Gα</text>
+<path d="M644,238 L648,218" fill="none" stroke="#1b2a3a" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="590" cy="274" rx="20.0" ry="15.0" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="590" y="279.0" font-size="15.0" text-anchor="middle" fill="#1b2a3a" font-weight="700">βγ</text>
+<text x="740" y="304" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="700">GDP</text>
+<path d="M670.0,274.0 L725.7,294.2" fill="none" stroke="#1b2a3a" stroke-width="2"/>
+<path d="M736.0,298.0 L723.6,299.9 L727.7,288.6 Z" fill="#1b2a3a"/>
+<text x="740" y="360" font-size="16" text-anchor="start" fill="#c77c02" font-weight="700">GTP</text>
+<path d="M736.0,352.0 L673.9,291.7" fill="none" stroke="#c77c02" stroke-width="2"/>
+<path d="M666.0,284.0 L678.1,287.3 L669.7,296.0 Z" fill="#c77c02"/>
+<text x="725" y="400" font-size="17" text-anchor="middle" fill="#1b2a3a" font-weight="700">Active: the receptor swaps GDP for GTP in Gα</text>
+<line x1="480" y1="10" x2="480" y2="380" stroke="#ced4da" stroke-width="2"/></svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" font-family="Helvetica, Arial, sans-serif">
+
+<rect x="10.0" y="10.0" width="310.0" height="410.0" rx="14" fill="#ffffff" stroke="#3b5bdb" stroke-width="3" />
+<rect x="10.0" y="10.0" width="310.0" height="50.0" rx="14" fill="#3b5bdb" stroke="#3b5bdb" stroke-width="3" />
+<rect x="10.0" y="40.0" width="310.0" height="20.0" rx="0" fill="#3b5bdb" stroke="none" stroke-width="2" />
+<text x="165.0" y="45.0" font-size="26" text-anchor="middle" font-weight="bold" fill="#ffffff" >COPII</text>
+<circle cx="165.0" cy="130.0" r="34.0" fill="#eef3f6" stroke="#5c6b7a" stroke-width="7" />
+<circle cx="165.0" cy="130.0" r="34.0" fill="none" stroke="#ffffff" stroke-width="1.4" />
+<circle cx="157.0" cy="126.0" r="5.0" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="174.0" cy="138.0" r="5.0" fill="#2f9e44" stroke="none" stroke-width="2" />
+<line x1="204.0" y1="130.0" x2="212.0" y2="130.0" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="200.1" y1="146.9" x2="207.3" y2="150.4" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="189.3" y1="160.5" x2="194.3" y2="166.7" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="173.7" y1="168.0" x2="175.5" y2="175.8" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="156.3" y1="168.0" x2="154.5" y2="175.8" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="140.7" y1="160.5" x2="135.7" y2="166.7" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="129.9" y1="146.9" x2="122.7" y2="150.4" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="126.0" y1="130.0" x2="118.0" y2="130.0" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="129.9" y1="113.1" x2="122.7" y2="109.6" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="140.7" y1="99.5" x2="135.7" y2="93.3" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="156.3" y1="92.0" x2="154.5" y2="84.2" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="173.7" y1="92.0" x2="175.5" y2="84.2" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="189.3" y1="99.5" x2="194.3" y2="93.3" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<line x1="200.1" y1="113.1" x2="207.3" y2="109.6" stroke="#3b5bdb" stroke-width="5" stroke-linecap="round"/>
+<text x="30.0" y="222.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Switch:</text>
+<text x="110.0" y="222.0" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >Sar1</text>
+<text x="30.0" y="256.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Route:</text>
+<text x="30.0" y="284.0" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >ER → ERGIC / Golgi</text>
+<text x="30.0" y="306.0" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >forward: the exit</text>
+<text x="30.0" y="327.9" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >from the ER</text>
+<text x="30.0" y="374.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Carries:</text>
+<text x="30.0" y="400.0" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a" >cargo leaving the ER</text>
+<rect x="340.0" y="10.0" width="310.0" height="410.0" rx="14" fill="#ffffff" stroke="#ae3ec9" stroke-width="3" />
+<rect x="340.0" y="10.0" width="310.0" height="50.0" rx="14" fill="#ae3ec9" stroke="#ae3ec9" stroke-width="3" />
+<rect x="340.0" y="40.0" width="310.0" height="20.0" rx="0" fill="#ae3ec9" stroke="none" stroke-width="2" />
+<text x="495.0" y="45.0" font-size="26" text-anchor="middle" font-weight="bold" fill="#ffffff" >COPI</text>
+<circle cx="495.0" cy="130.0" r="34.0" fill="#eef3f6" stroke="#5c6b7a" stroke-width="7" />
+<circle cx="495.0" cy="130.0" r="34.0" fill="none" stroke="#ffffff" stroke-width="1.4" />
+<circle cx="487.0" cy="126.0" r="5.0" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="504.0" cy="138.0" r="5.0" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="495.0" cy="130.0" r="43.0" fill="none" stroke="#ae3ec9" stroke-width="9" stroke-dasharray="3 2.2"/>
+<text x="360.0" y="222.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Switch:</text>
+<text x="440.0" y="222.0" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >ARF1</text>
+<text x="360.0" y="256.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Route:</text>
+<text x="360.0" y="284.0" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >Golgi → ER, and back</text>
+<text x="360.0" y="306.0" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >between cisternae</text>
+<text x="360.0" y="327.9" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >(retrograde)</text>
+<text x="360.0" y="374.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Carries:</text>
+<text x="360.0" y="400.0" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a" >escaped ER proteins, Golgi enzymes</text>
+<rect x="670.0" y="10.0" width="310.0" height="410.0" rx="14" fill="#ffffff" stroke="#e67700" stroke-width="3" />
+<rect x="670.0" y="10.0" width="310.0" height="50.0" rx="14" fill="#e67700" stroke="#e67700" stroke-width="3" />
+<rect x="670.0" y="40.0" width="310.0" height="20.0" rx="0" fill="#e67700" stroke="none" stroke-width="2" />
+<text x="825.0" y="45.0" font-size="26" text-anchor="middle" font-weight="bold" fill="#ffffff" >Clathrin</text>
+<circle cx="825.0" cy="130.0" r="34.0" fill="#eef3f6" stroke="#5c6b7a" stroke-width="7" />
+<circle cx="825.0" cy="130.0" r="34.0" fill="none" stroke="#ffffff" stroke-width="1.4" />
+<circle cx="817.0" cy="126.0" r="5.0" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="834.0" cy="138.0" r="5.0" fill="#2f9e44" stroke="none" stroke-width="2" />
+<path d="M870.0,130.0 L864.0,152.5 L847.5,169.0 L825.0,175.0 L802.5,169.0 L786.0,152.5 L780.0,130.0 L786.0,107.5 L802.5,91.0 L825.0,85.0 L847.5,91.0 L864.0,107.5 Z" fill="none" stroke="#e67700" stroke-width="3" />
+<line x1="870.0" y1="130.0" x2="862.0" y2="130.0" stroke="#e67700" stroke-width="3"/>
+<line x1="847.5" y1="169.0" x2="843.5" y2="162.0" stroke="#e67700" stroke-width="3"/>
+<line x1="802.5" y1="169.0" x2="806.5" y2="162.0" stroke="#e67700" stroke-width="3"/>
+<line x1="780.0" y1="130.0" x2="788.0" y2="130.0" stroke="#e67700" stroke-width="3"/>
+<line x1="802.5" y1="91.0" x2="806.5" y2="98.0" stroke="#e67700" stroke-width="3"/>
+<line x1="847.5" y1="91.0" x2="843.5" y2="98.0" stroke="#e67700" stroke-width="3"/>
+<text x="690.0" y="222.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Switch:</text>
+<text x="770.0" y="222.0" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >ARF1 (TGN)</text>
+<text x="690.0" y="256.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Route:</text>
+<text x="690.0" y="284.0" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >TGN → endosomes (AP1)</text>
+<text x="690.0" y="306.0" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >plasma membrane →</text>
+<text x="690.0" y="327.9" font-size="18" text-anchor="start" font-weight="normal" fill="#1b2a3a" >endosomes (AP2)</text>
+<text x="690.0" y="374.0" font-size="18" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Carries:</text>
+<text x="690.0" y="400.0" font-size="16" text-anchor="start" font-weight="normal" fill="#1b2a3a" >M6P receptors; receptors for uptake</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" font-family="Helvetica, Arial, sans-serif">
+<rect width="1000" height="360" fill="#ffffff"/>
+<line x1="60.0" x2="60.0" y1="40" y2="290" stroke="#e3e6ea"/>
+<line x1="60.0" x2="60.0" y1="290" y2="296" stroke="#1b2a3a" stroke-width="2"/>
+<text x="60.0" y="316.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >1 ms</text>
+<line x1="397.5" x2="397.5" y1="40" y2="290" stroke="#e3e6ea"/>
+<line x1="397.5" x2="397.5" y1="290" y2="296" stroke="#1b2a3a" stroke-width="2"/>
+<text x="397.5" y="316.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >1 s</text>
+<line x1="597.5" x2="597.5" y1="40" y2="290" stroke="#e3e6ea"/>
+<line x1="597.5" x2="597.5" y1="290" y2="296" stroke="#1b2a3a" stroke-width="2"/>
+<text x="597.5" y="316.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >1 min</text>
+<line x1="797.6" x2="797.6" y1="40" y2="290" stroke="#e3e6ea"/>
+<line x1="797.6" x2="797.6" y1="290" y2="296" stroke="#1b2a3a" stroke-width="2"/>
+<text x="797.6" y="316.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >1 h</text>
+<line x1="952.9" x2="952.9" y1="40" y2="290" stroke="#e3e6ea"/>
+<line x1="952.9" x2="952.9" y1="290" y2="296" stroke="#1b2a3a" stroke-width="2"/>
+<text x="952.9" y="316.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >1 day</text>
+<line x1="60" x2="960" y1="290" y2="290" stroke="#1b2a3a" stroke-width="2"/>
+<text x="510.0" y="342.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="normal" >time after the signal arrives (log scale)</text>
+<rect x="60.0" y="50" width="146.4" height="30" rx="6" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+<text x="216.4" y="71.0" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="normal" >ion channel opens: voltage changes</text>
+<rect x="363.6" y="97" width="233.9" height="30" rx="6" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2"/>
+<text x="607.5" y="118.0" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="normal" >second messenger, kinase: enzymes switched</text>
+<rect x="476.1" y="144" width="253.7" height="30" rx="6" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2"/>
+<text x="466.1" y="165.0" font-size="16" text-anchor="end" fill="#1b2a3a" font-weight="normal" >existing proteins: secretion, contraction, shape</text>
+<rect x="743.9" y="191" width="166.2" height="30" rx="6" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<text x="733.9" y="212.0" font-size="16" text-anchor="end" fill="#1b2a3a" font-weight="normal" >new genes transcribed: new proteins</text>
+<rect x="831.4" y="238" width="128.6" height="30" rx="6" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<text x="821.4" y="259.0" font-size="16" text-anchor="end" fill="#1b2a3a" font-weight="normal" >cell divides or changes fate</text>
+<text x="226.2" y="282.0" font-size="15" text-anchor="start" fill="#2a7f8f" font-weight="bold" >fast: changes proteins that are already there</text>
+<text x="960.0" y="282.0" font-size="15" text-anchor="end" fill="#6b4fa0" font-weight="bold" >slow: needs new proteins</text>
+
+</svg>

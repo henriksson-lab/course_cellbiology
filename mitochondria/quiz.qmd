@@ -1,0 +1,106 @@
+---
+title: "Quiz: mitochondria"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Mitochondria: energy conversion and more*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Why can small molecules such as ATP cross the outer mitochondrial membrane freely, while even H⁺ hardly cross the inner membrane? Why must the inner membrane be so tight? `[ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which proteins sit in each membrane? What is stored across the inner membrane?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The outer membrane contains many **porins**, large channels that pass molecules up to about 5 kDa. The inner membrane has no such pores; it is rich in protein and cardiolipin and lets ions through only via specific channels and carriers. It must be tight because it stores energy as a **H⁺ gradient** (the proton-motive force). Any leak would let H⁺ flow back without making ATP, short-circuiting the battery and wasting the energy as heat.
+:::
+
+---
+
+**Q2.** A woman carries a disease-causing mtDNA mutation in about 70 % of her mtDNA copies. Her husband is healthy. What can you predict about their children? Would the answer be different if the husband carried the mutation and the wife did not? `[ELO 5]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Who gives the embryo its mitochondria? What is heteroplasmy?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+All children get mtDNA only from the **mother's egg**, so all of them (sons and daughters) will inherit some mutant mtDNA. But the **fraction** can differ a lot between children, because only a small number of copies pass through the egg "bottleneck": some children may be below the disease threshold, others above it. If only the father carries the mutation, **no child inherits it**: the few sperm mitochondria are destroyed after fertilisation.
+:::
+
+---
+
+**Q3.** Complexes I, III and IV pump H⁺ out of the matrix. Name the two parts of the proton-motive force and give their approximate size. `[ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Moving positive charge out makes a voltage; removing H⁺ changes a concentration.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(1) The **membrane potential Δψ**, about −150 to −180 mV (matrix negative), from the charge moved. (2) The **pH difference ΔpH**, about 0.5 unit (matrix more alkaline), worth about 0.5 × 61.5 ≈ 30 mV. Together **Δp ≈ 180–220 mV**, typically ≈ 190 mV, and both parts push H⁺ back into the matrix.
+:::
+
+---
+
+**Q4.** Describe in three steps how a flow of H⁺ through the ATP synthase makes ATP. `[ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Rotor, stalk, head.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+1. H⁺ enter a half-channel in subunit **a**, bind to a **c subunit** of the ring, ride around and leave through a second half-channel to the matrix: the **c-ring turns**.
+2. The ring turns the **central stalk**, which rotates inside the fixed α₃β₃ head (held by the peripheral stalk).
+3. The bent stalk forces each **β subunit** through three shapes in turn: bind ADP + Pᵢ, make ATP, release ATP (**binding change**). One turn: 8 H⁺ (in animals) → 3 ATP.
+:::
+
+---
+
+**Q5.** The ADP/ATP carrier exchanges ATP⁴⁻ for ADP³⁻. Why does the membrane potential favour ATP export? `[ELO 2]` `[ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Count the net charge moved, and remember which side is negative.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Each exchange moves one net **negative charge out** of the matrix (−4 out, −3 in). The matrix is negative (≈ −160 mV), so pushing negative charge out is downhill. The membrane potential therefore drives ATP out and ADP in, keeping the cytosolic ATP/ADP ratio high. The cost is part of the proton-motive force, about 1 H⁺ per ATP together with the phosphate carrier.
+:::
+
+---
+
+**Q6.** In a mito stress test, what does each injection do, and what does it let you measure: (a) oligomycin, (b) FCCP, (c) rotenone + antimycin A? `[ELO 1]` `[ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of where the H⁺ can flow back after each drug.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) **Oligomycin** blocks the H⁺ channel of ATP synthase; the drop in O₂ use is **ATP-linked respiration**, what remains is **proton leak** (+ non-mitochondrial). (b) **FCCP** is an uncoupler: H⁺ flow back freely, Δp collapses, and the chain runs at full speed: **maximal respiration**; maximal − basal = **spare capacity**. (c) **Rotenone + antimycin A** block complexes I and III; the O₂ use left is **non-mitochondrial** and is subtracted from all other values.
+:::
+
+---
+
+**Q7.** Name two jobs of mitochondria that are not ATP synthesis, and one protein that links mitochondria to apoptosis. `[ELO 5]` `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+An ion, a by-product of the chain, and a small protein of the intermembrane space.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Examples: **Ca²⁺ uptake** through the uniporter (MCU), driven by Δψ, which buffers Ca²⁺ signals and speeds up TCA enzymes; **making reactive oxygen species** (superoxide from complexes I and III), used as signals but harmful at high levels; heat production (in brown fat). **Cytochrome c**: when BAX/BAK open the outer membrane, it escapes to the cytosol, builds the apoptosome with APAF1 and activates caspase-9.
+:::
+
+---
+
+**Q8.** DNP and cyanide both stop mitochondrial ATP synthesis. Predict how each changes the O₂ consumption of the cells, and explain why one of them makes the body hot. `[ELO 5]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which one stops electron flow, and which one only lets the H⁺ come back another way?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Cyanide** blocks complex IV, so electrons cannot reach O₂: **O₂ consumption falls** almost to zero. **DNP** is an uncoupler: it carries H⁺ back across the inner membrane. The proton-motive force collapses, the chain is no longer held back, and **O₂ consumption rises**, up to the maximum. The energy released by electron transport is no longer stored in ATP but lost as **heat**, which is why DNP causes fever and fatal hyperthermia.
+:::

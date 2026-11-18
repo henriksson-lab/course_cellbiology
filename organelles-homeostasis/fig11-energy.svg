@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m6280" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0L10,5L0,10z" fill="#3b5bab"/></marker></defs>
+<defs><marker id="m3797" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0L10,5L0,10z" fill="#b38f00"/></marker></defs>
+<defs><marker id="m6733" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b2a3a"/></marker></defs>
+<rect width="900" height="420" fill="#fbfaf5"/>
+<ellipse cx="110" cy="110" rx="80" ry="60" fill="#f2d675" stroke="#b38f00" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="110" y="105" font-size="16" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">lipid droplet</tspan></text>
+<text x="110" y="127" font-size="14" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">(stored fat)</tspan></text>
+<ellipse cx="110" cy="300" rx="78" ry="46" fill="#e9eef8" stroke="#3b5bab" stroke-width="3" />
+<text x="110" y="296" font-size="15" fill="#3b5bab" text-anchor="middle"><tspan dy="0">peroxisome</tspan></text>
+<text x="110" y="316" font-size="14" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">VLCFA → shorter</tspan></text>
+<text x="300" y="28" font-size="16" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">glucose</tspan></text>
+<path d="M300,36L300,62" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#m6733)"/>
+<text x="300" y="82" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">glycolysis</tspan></text>
+<text x="300" y="100" font-size="14" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">(cytosol: a little ATP)</tspan></text>
+<ellipse cx="560" cy="210" rx="190" ry="110" fill="#f8e9ec" stroke="#a8324a" stroke-width="4" />
+<text x="560" y="135" font-size="17" fill="#a8324a" text-anchor="middle" font-weight="bold"><tspan dy="0">mitochondrion</tspan></text>
+<text x="560" y="175" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">fatty acids → β-oxidation</tspan></text>
+<text x="560" y="197" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">pyruvate</tspan></text>
+<text x="560" y="219" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">↓</tspan></text>
+<text x="560" y="241" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">acetyl-CoA → TCA cycle → NADH</tspan></text>
+<text x="560" y="265" font-size="15" fill="#1b2a3a" text-anchor="middle" font-weight="bold"><tspan dy="0">electron transport → most ATP</tspan></text>
+<path d="M190,120L380,170" stroke="#b38f00" stroke-width="3" fill="none" marker-end="url(#m3797)"/>
+<text x="250" y="170" font-size="14" fill="#7a6200"><tspan dy="0">fatty acids</tspan></text>
+<text x="250" y="188" font-size="14" fill="#7a6200"><tspan dy="0">(at a contact)</tspan></text>
+<path d="M188,290L375,240" stroke="#3b5bab" stroke-width="3" fill="none" marker-end="url(#m6280)"/>
+<path d="M330,110L425,150" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#m6733)"/>
+<text x="392" y="118" font-size="14" fill="#1b2a3a"><tspan dy="0">pyruvate</tspan></text>
+<path d="M750,210L815,210" stroke="#1b2a3a" stroke-width="3" fill="none" marker-end="url(#m6733)"/>
+<text x="822" y="205" font-size="17" fill="#1b2a3a" font-weight="bold"><tspan dy="0">ATP</tspan></text>
+<text x="822" y="225" font-size="14" fill="#1b2a3a"><tspan dy="0">to the cell</tspan></text>
+<rect x="400" y="345" width="480" height="62" rx="8" fill="#fff" stroke="#e8590c" stroke-width="2"/>
+<text x="415" y="370" font-size="15" fill="#1b2a3a"><tspan dy="0">Energy sensor </tspan><tspan dy="0" font-weight="bold">AMPK</tspan><tspan dy="0">: when ATP falls and AMP rises, it</tspan></text>
+<text x="415" y="392" font-size="15" fill="#1b2a3a"><tspan dy="0">turns on fat burning and autophagy, turns off synthesis.</tspan></text>
+</svg>

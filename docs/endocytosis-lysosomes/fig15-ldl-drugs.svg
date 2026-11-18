@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2e8b57"/></marker>
+    <marker id="ap" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c2408a"/></marker>
+    <g id="rec"><line x1="0" y1="12" x2="0" y2="-10" stroke="#3d4f63" stroke-width="3.5"/><path d="M-8,-19 L0,-10 L8,-19" fill="none" stroke="#3d4f63" stroke-width="3.5"/></g>
+    <g id="ab"><path d="M0,14 L0,0 L-10,-12 M0,0 L10,-12" fill="none" stroke="#e8590c" stroke-width="4" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="1000" height="450" fill="#fbfaf5"/>
+  <rect width="1000" height="90" fill="#f8eded"/>
+  <line x1="0" y1="90" x2="1000" y2="90" stroke="#8a6a12" stroke-width="6"/>
+  <text x="12" y="24" font-weight="bold">Blood</text>
+  <text x="12" y="116" font-weight="bold">Liver cell</text>
+  <!-- surface: receptor with LDL, receptor with PCSK9 -->
+  <use href="#rec" x="120" y="90"/><circle cx="120" cy="56" r="12" fill="#e0a800" stroke="#8a6a00" stroke-width="1.5"/>
+  <use href="#rec" x="330" y="90"/><circle cx="342" cy="70" r="8" fill="#c2408a"/>
+  <text x="356" y="64" fill="#c2408a" font-weight="bold">PCSK9</text>
+  <!-- antibody grabbing PCSK9 -->
+  <circle cx="560" cy="45" r="8" fill="#c2408a"/><use href="#ab" x="560" y="68" transform="rotate(0)"/>
+  <text x="580" y="40" fill="#e8590c" font-weight="bold">antibody</text>
+  <text x="580" y="60" fill="#e8590c">(evolocumab, alirocumab)</text>
+  <text x="580" y="80" fill="#e8590c" font-size="14">catches PCSK9 before it binds</text>
+  <!-- endosome -->
+  <circle cx="240" cy="230" r="55" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3.5"/>
+  <text x="240" y="305" text-anchor="middle">endosome</text>
+  <use href="#rec" transform="translate(205 195) rotate(135)"/>
+  <use href="#rec" transform="translate(275 195) rotate(-135)"/><circle cx="262" cy="212" r="8" fill="#c2408a"/>
+  <path d="M140,110 L195,178" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <path d="M325,110 L282,172" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <path d="M190,195 C160,170 160,140 175,105" fill="none" stroke="#2e8b57" stroke-width="2.5" stroke-dasharray="7 4" marker-end="url(#ag)"/>
+  <text x="40" y="160" fill="#2e8b57">recycles</text>
+  <!-- lysosome -->
+  <circle cx="240" cy="380" r="38" fill="#b9dfc8" stroke="#2e8b57" stroke-width="4"/>
+  <path d="M265,280 L262,336" stroke="#c2408a" stroke-width="2.5" marker-end="url(#ap)"/>
+  <text x="290" y="370">with PCSK9: receptor</text>
+  <text x="290" y="390">destroyed in the lysosome</text>
+  <!-- ER with HMG-CoA reductase and statin -->
+  <rect x="560" y="300" width="230" height="70" rx="22" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="3"/>
+  <text x="675" y="330" text-anchor="middle">ER: HMG-CoA reductase</text>
+  <text x="675" y="352" text-anchor="middle">makes cholesterol</text>
+  <circle cx="808" cy="312" r="14" fill="#e8590c"/>
+  <text x="830" y="306" fill="#e8590c" font-weight="bold">statin</text>
+  <text x="830" y="326" fill="#e8590c">blocks it</text>
+  <!-- nucleus with SREBP2 -->
+  <ellipse cx="690" cy="192" rx="138" ry="66" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+  <text x="690" y="160" text-anchor="middle" font-weight="bold" fill="#6b4fa0">nucleus</text>
+  <text x="690" y="183" text-anchor="middle">low ER cholesterol → SREBP2</text>
+  <text x="690" y="205" text-anchor="middle">switches on the LDLR gene</text>
+  <text x="690" y="227" text-anchor="middle">(and the PCSK9 gene)</text>
+  <path d="M675,296 L680,262" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <path d="M570,175 C500,150 450,120 420,100" fill="none" stroke="#d9822b" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="440" y="155" fill="#b3631a">more new</text>
+  <text x="440" y="173" fill="#b3631a">receptors</text>
+  <!-- PCSK9 secretion -->
+  <path d="M800,165 C860,140 880,110 880,98" fill="none" stroke="#c2408a" stroke-width="2.5" marker-end="url(#ap)"/>
+  <text x="850" y="200" fill="#c2408a">PCSK9 made</text>
+  <text x="850" y="220" fill="#c2408a">and secreted</text>
+  <text x="850" y="248" fill="#e8590c" font-size="14">inclisiran (siRNA)</text>
+  <text x="850" y="266" fill="#e8590c" font-size="14">destroys its mRNA</text>
+</svg>

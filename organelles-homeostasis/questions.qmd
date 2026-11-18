@@ -1,0 +1,154 @@
+---
+title: "Study questions: organelles compared"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, a table or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** Describe the structure of the nuclear envelope: its membranes, the space between them, the pores and the lamina. Explain why the nucleus is a separate compartment for proteins but not for ions. `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The envelope has **two membranes**. The **outer membrane** is continuous with the ER, and the space between the two membranes (perinuclear space) is continuous with the **ER lumen**. At the **nuclear pores** the two membranes join; large pore complexes fill these openings. Under the inner membrane lies the **lamina**, a mesh of lamin filaments (intermediate filaments, A- and B-type) that gives shape and stiffness, anchors chromatin and connects through the envelope to the cytoskeleton. Pores let **ions and small molecules** diffuse freely, so pH and Ca²⁺ are the same as in the cytosol. **Proteins and RNA** above about 40 kDa pass only with a signal (NLS or NES) and transport receptors, so for them the nucleus is a separate compartment.
+:::
+
+---
+
+**2.** Describe peroxisomes: structure, how their proteins arrive, and three things they do. `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Small organelles (0.1–1 µm) with **one membrane** and **no DNA**. Their proteins are made on free ribosomes in the cytosol and imported **after translation**, even in the **folded** state; most carry a C-terminal tag **SKL** (PTS1), recognised by a receptor and imported by the PEX machinery. Jobs: (1) **oxidases** use O₂ and produce **H₂O₂**, which **catalase** destroys; (2) **β-oxidation of very-long-chain fatty acids** (C22 and longer), which are then passed to mitochondria; (3) the first steps of **plasmalogen** synthesis (ether lipids, abundant in myelin); in liver also bile-acid synthesis. New peroxisomes form by growth and division or bud from the ER.
+:::
+
+---
+
+**3.** How does a lipid droplet form, and how does its surface differ from the membrane of other organelles? Give two functions of lipid droplets. `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Enzymes in the ER membrane make **neutral lipids** (triglycerides, cholesterol esters). These collect **between the two leaflets** of the ER membrane, form a lens, and bud towards the cytosol. The droplet is covered by a **single phospholipid layer** (the cytosolic leaflet), not a bilayer, because the core is oil. Functions: **store energy** (fatty acids released by lipases and burned in mitochondria) and **membrane building blocks**; **protect** the cell by trapping excess free fatty acids, which would otherwise damage membranes.
+:::
+
+---
+
+**4.** What is an organelle contact site? Describe how Ca²⁺ moves from the ER to mitochondria at a contact site, and what it does there. `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A contact site is a region where two organelle membranes are held **10–30 nm apart by tether proteins without fusing**; molecules pass between them but each lumen stays separate. At ER–mitochondria contacts, IP₃ receptor channels release Ca²⁺ from the ER into the narrow gap, where its concentration becomes much higher than in the bulk cytosol. Ca²⁺ crosses the outer mitochondrial membrane (VDAC) and enters the matrix through the **mitochondrial Ca²⁺ uniporter (MCU)**, driven by the negative matrix potential. In the matrix it **activates dehydrogenases of the citric acid cycle**, so ATP production rises when the cell is active. Prolonged Ca²⁺ overload opens a pore in the mitochondria and can trigger **apoptosis**.
+:::
+
+---
+
+**5.** Give the approximate pH of the cytosol, the ER, the trans-Golgi, the lysosome and the mitochondrial matrix. Explain how the lumen of the lysosome is acidified and give two reasons why acidity is useful there. `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Cytosol 7.2; ER 7.2; trans-Golgi ≈ 6.0; lysosome 4.5–5; mitochondrial matrix ≈ 8. A **V-type H⁺-ATPase** in the membrane uses ATP to pump H⁺ into the lumen; Cl⁻ (or another counter-ion) follows to keep the voltage low, so pumping can continue. The steady pH depends on the number of pumps and on H⁺ leaks. Uses: lysosomal **hydrolases work best at low pH** (and are almost inactive at pH 7.2, a safety lock if a lysosome leaks); low pH helps **unfold** proteins for digestion; in endosomes, low pH makes **receptors release their cargo** (e.g. LDL from its receptor, enzymes from the M6P receptor).
+:::
+
+---
+
+**6.** Free Ca²⁺ in the cytosol is about 0.1 µM, in the ER about 0.5 mM and outside the cell 1–2 mM. Name the pumps that keep these differences, and explain why the low cytosolic level is important for signalling. `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**SERCA** (sarco/endoplasmic reticulum Ca²⁺-ATPase) pumps Ca²⁺ from the cytosol into the ER; **PMCA** (plasma membrane Ca²⁺-ATPase) and the **Na⁺/Ca²⁺ exchanger** move Ca²⁺ out of the cell. Because the resting cytosolic level is 5 000–10 000 times lower than in the stores and outside, opening a few Ca²⁺ channels raises cytosolic Ca²⁺ ten- to a hundred-fold within milliseconds. This makes Ca²⁺ a fast, strong signal (secretion, contraction, gene expression). The pumps then return it to rest, ending the signal.
+:::
+
+---
+
+**7.** Explain the unfolded protein response as a homeostatic feedback loop: what is sensed, by what, and which four corrections bring the system back? What happens if the stress is not resolved? `[ELO 4]` `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The variable is the **load of unfolded proteins in the ER lumen** relative to the folding capacity. Three ER membrane sensors, **IRE1, PERK and ATF6**, detect unfolded proteins. Corrections: (1) **less translation** of new proteins (PERK phosphorylates eIF2α); (2) **more chaperones**; (3) more **ER-associated degradation** (ERAD) of misfolded proteins; (4) **more ER membrane** (larger ER). Load falls and capacity rises, so the sensors switch off again: **negative feedback**. If the stress cannot be resolved, the same pathways switch to **apoptosis** (e.g. via the transcription factor CHOP), removing the cell.
+:::
+
+---
+
+**8.** Fill in a table comparing the ER, mitochondria and peroxisomes for: number of membranes, own DNA, how proteins enter (during or after translation, which signal), one main job. `[ELO 4]` `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+| | ER | Mitochondria | Peroxisomes |
+|---|---|---|---|
+| Membranes | 1 | 2 | 1 |
+| Own DNA | no | yes (37 genes in humans) | no |
+| Protein entry | **during** translation; N-terminal **signal peptide**, SRP and translocon | **after** translation; N-terminal **presequence** (amphipathic helix), TOM/TIM, unfolded | **after** translation; C-terminal **SKL** (PTS1), PEX import, can be **folded** |
+| Main job | fold and modify membrane and secreted proteins; make lipids; Ca²⁺ store | ATP by oxidative phosphorylation; Ca²⁺ buffer; start apoptosis | oxidations (H₂O₂ + catalase); very-long-chain fatty acids; plasmalogens |
+:::
+
+---
+
+**9.** Explain how stereology (point counting) estimates the volume fraction of mitochondria in a cell from electron micrographs. `[ELO 1]` `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A grid of test points is laid over EM sections. One counts the points that fall on mitochondria and the points that fall on the reference space (the cell). Points on mitochondria ÷ points on the cell estimates the **area fraction** of mitochondria in the section. By the **Delesse principle**, the average area fraction over **random sections** equals the **volume fraction**. Many sections from many cells are needed, because single sections are not random (a section through the centre of the nucleus overestimates it) and cells differ. More points per section reduce counting error; more sections and cells reduce sampling error.
+:::
+
+---
+
+**10.** Describe the molecular cause of Hutchinson–Gilford progeria and explain how lonafarnib acts. `[ELO 5]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Lamin A is made as **prelamin A**, which gets a **farnesyl** lipid at its C-terminal end; this holds it at the inner nuclear membrane. The protease **ZMPSTE24** then cuts off the last 15 amino acids together with the lipid, and mature lamin A joins the lamina. In progeria a single, new point mutation in **LMNA** activates a hidden splice site; **50 amino acids** are lost, including the cleavage site. The protein, **progerin**, keeps its farnesyl lipid permanently, stays stuck on the membrane and distorts the lamina: nuclei are misshapen, chromatin and DNA repair are disturbed, and cells (especially in blood vessels) age early. **Lonafarnib** inhibits **farnesyltransferase**, so less progerin is farnesylated; nuclear shape improves and survival increases by a few years on average.
+:::
+
+## VG-style questions
+
+**11. [VG]** A child has low muscle tone, seizures and an enlarged liver. A blood test shows high levels of very-long-chain fatty acids. (a) Which organelle do you suspect, and why? (b) Electron micrographs of liver cells show membrane sacs but no normal peroxisomes, and the enzyme catalase is found in the cytosol fraction after centrifugation. What kind of defect does this point to? (c) Predict what happens to plasmalogen levels and explain why the brain is affected. `[ELO 5]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) **Peroxisomes**: in humans they are the only site where very-long-chain fatty acids are shortened, so their accumulation points to a peroxisomal defect (Zellweger spectrum or a single-enzyme defect).
+
+(b) The membranes are present ("ghosts") but the matrix enzymes such as catalase stay in the cytosol. So the enzymes are made but cannot be **imported**: a defect in the **import machinery**, i.e. a **PEX** gene (most often PEX1), not in one enzyme. A single-enzyme defect would leave normal-looking peroxisomes with catalase inside. This is **Zellweger syndrome**.
+
+(c) **Plasmalogens** will be **low**, because their synthesis starts with peroxisomal enzymes. Plasmalogens are abundant in **myelin** and nerve-cell membranes; together with toxic very-long-chain fatty acids, their lack disturbs brain development and myelination, which explains the low muscle tone and seizures.
+:::
+
+---
+
+**12. [VG]** A researcher expresses a Ca²⁺ sensor targeted to the mitochondrial matrix and stimulates cells with a hormone that releases Ca²⁺ from the ER through IP₃ receptors. Matrix Ca²⁺ rises quickly and strongly. (a) The mitochondrial uniporter has a low affinity for Ca²⁺ (it needs about 10 µM to work well), but the cytosolic Ca²⁺ rises only to about 1 µM. Explain the result. (b) Predict the effect on the matrix Ca²⁺ signal and on ATP production if the tethers between ER and mitochondria are removed. (c) Design a control experiment showing that the matrix Ca²⁺ comes from the ER. `[ELO 1]` `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) The ER releases Ca²⁺ into the narrow gap (10–30 nm) at **ER–mitochondria contact sites**. There, close to the open IP₃ receptors, the local Ca²⁺ concentration is far higher (tens of µM) than the average in the bulk cytosol measured by a cytosolic sensor. These **microdomains** are enough to drive the low-affinity uniporter.
+
+(b) Without tethers, the gap widens and Ca²⁺ dilutes into the cytosol before it reaches the mitochondria: the matrix Ca²⁺ rise will be **smaller and slower**, while the cytosolic signal may be similar. Matrix Ca²⁺-activated dehydrogenases of the citric acid cycle are less stimulated, so the **increase in ATP production** during stimulation is **reduced** (lipid transfer from the ER would also suffer over time).
+
+(c) Empty the ER store first with **thapsigargin** (SERCA blocker) in Ca²⁺-free medium, or block IP₃ receptors; the hormone should then no longer raise matrix Ca²⁺. Measure cytosolic Ca²⁺ in parallel (a second sensor) to show that the effect is on the ER release. As a further control, block the uniporter (MCU knock-down): cytosolic Ca²⁺ rises, matrix Ca²⁺ does not.
+:::
+
+## Explore {#explore}
+
+**Demo: measure the organelles.** The same HeLa cell slice as in the [cell explorer](../cell-tour/explore.qmd), now with a **Measure** mode. An orange **counting frame** and a grid of yellow **test points** lie over the electron micrograph. Choose an organelle under **Mark**, then tap every point that lies on it (zoom in to decide; tap a marked point again to unmark it). Unmarked points count as cytosol. **Check my count** compares your marks with the outlines (red rings: points to look at again) and fills in the computer's count and the **exact area of the outlines** in the frame. **Count all for me** marks every point from the outlines. You can change the frame, the grid spacing and the grid position, and colour the organelles by **pH** or **Ca²⁺**; point at (or tap) any place to read the pH and free Ca²⁺ of that compartment. The table compares everything with the volume fractions from the cell tour (a liver cell).
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="cellexplorer" data-mode="measure" data-img="../demos/assets/cellexplorer/hela-plane.jpg"></div>
+<script src="../demos/dist/cellexplorer.js"></script>
+```
+
+::: {.callout-note collapse="true" title="About the model and the numbers"}
+The image and outlines are real data (OpenOrganelle jrc_hela-2, FIB-SEM, CC BY 4.0), but the outlines are machine predictions checked by eye: small vesicles and endosomes below about 200 nm, and peroxisomes, are not outlined, and parts of the ER are missed. Where outlines overlap, the smaller organelle counts. The nucleolus and the nuclear envelope count as nucleus; the centrosome counts as cytosol. pH and Ca²⁺ are **typical textbook values** for mammalian cells, not measurements in this cell. The volume fractions in the table are for a liver cell; HeLa cells are different. This is one slice through one cell, so it is a demonstration of the method, not a measurement of HeLa cells.
+:::
+
+**E1.** `[ELO 5]` Start with the frame **Whole cell (centre)** and the **2 µm** grid. Mark the **mitochondria**, then press **Check my count**. What fraction of the points falls on mitochondria, and how does it compare with the outline area and with the cell-tour value for a liver cell (about 20 %)? Then **Count all for me** and look at the nucleus. Why is the nucleus share in this frame so much larger than the 5–10 % in the cell-tour table?
+
+**E2.** `[ELO 1]` *Predict first:* how much will your mitochondria estimate change if you count again with the grid in a new position? Press **Move the grid** five times (with **Count all for me** each time) and write down the mitochondria percentage. Then do the same with the **1 µm** and the **0.5 µm** grid (a few grid positions each). How does the spread of the estimates change, and why? What does this cost?
+
+**E3.** `[ELO 5]` Compare the three frames (use **Count all for me** and the outline area). Where do the mitochondria take up the largest share of the area? What does this tell you about choosing where to measure?
+
+**E4.** `[ELO 5]` Choose **Colour by pH**, then **Colour by Ca²⁺**, and point at (or tap) a mitochondrion, an endosome or lysosome, the ER, the nucleus and the cytosol. Which compartments differ most from the cytosol in pH, and which in Ca²⁺? Find a rule that links the Ca²⁺ level to the topology of the compartment (lumen side or cytosol side). Why does the lipid droplet have no value?
+
+**E5. [VG]** `[ELO 1, 5]` In this slice the ER outlines cover only about **5 %** of the frame, but the cell-tour table says the ER is 10–15 % of a cell's volume. Give at least two possible reasons, at least one about the **method** and one about the **biology**. Then *predict* how the ER and mitochondria fractions would change in a pancreatic acinar cell (which secretes digestive enzymes) and in a plasma cell (which secretes antibodies), and say how you would test your prediction with the same method.
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** With the starting grid (120 points), **13 points** fall on mitochondria: **10.8 %**. The outline area of mitochondria in the frame is **7.5 %**, so the point count is about 3 percentage points off, which is normal for so few points (see E2). Both are well below the **~20 %** of a liver cell: HeLa cells are cancer cells grown in culture, which make much of their ATP by glycolysis and have fewer mitochondria than a liver cell. The **nucleus** takes **42 points (35 %)**, and 34 % of the outline area, far above 5–10 %. The frame is placed around the nucleus and the slice passes through its **middle**, where its cross-section is largest; much of the thin cytoplasm at the cell edges is outside the frame. A volume fraction needs **random** sections through many cells; a chosen section through the centre of one nucleus is not random.
+
+**E2.** At 2 µm, the five new grid positions give **5.4, 6.7, 7.8, 7.8 and 4.7 %** mitochondria (6, 8, 10, 10 and 6 points out of 112–128): together with the first grid (10.8 %) the estimates scatter from about 5 to 11 % around the outline area of 7.5 %. With the **1 µm** grid (about 470–500 points) the six grid positions give **4.9–9.1 %**, and with **0.5 µm** (1922 points) **6.7–7.8 %**, close to the outline area. (Your exact numbers depend on how often you pressed Move the grid; the spread is what matters.) The counting error falls roughly as $1/\sqrt{n}$: for a fraction $p$ counted with $n$ points, the standard error is $\sqrt{p(1-p)/n}$, about 2.4 percentage points for 120 points and 0.6 for 1922. The cost is time: by hand, 16 times more points is 16 times more work. In practice, stereologists use a moderate number of points per section (100–200) and spend the effort on **more sections and more cells**, because the differences between sections and cells (E3) are usually larger than the counting error.
+
+**E3.** Outline areas: **whole cell (centre) 7.5 %**, **cytoplasm, left 9.7 %**, **cytoplasm above the nucleus 16.2 %** mitochondria. The band of cytoplasm between the nucleus and the upper cell edge is packed with mitochondria, while the large frame is diluted by the nucleus. The answer depends on **where you look**. To measure a whole cell (or a tissue) without bias, sections and frames must be placed **systematically at random**, not where the organelle looks interesting, and the reference space must be defined (whole cell or only cytoplasm).
+
+**E4.** pH: the **endosomes and lysosomes** are the most acidic (6.5 down to 4.5, red), the **Golgi** is mildly acidic (6.0–6.7), the **mitochondrial matrix** is alkaline (≈ 8, blue); the nucleus and ER are like the cytosol (7.2). Ca²⁺: the **ER, Golgi and lysosomes** hold 0.1–0.8 mM, thousands of times more than the **cytosol, nucleus and mitochondrial matrix** (≈ 0.1 µM at rest). Rule: compartments on the **lumen side** (ER, Golgi, endosomes and lysosomes, topologically equivalent to the outside of the cell) keep **high Ca²⁺ like the outside** (1–2 mM), pumped in by SERCA and other pumps; compartments on the **cytosol side** (nucleus, connected through pores) keep it low. Mitochondria are a third space: low at rest, but they take up Ca²⁺ during a signal. The **lipid droplet** is oil with a single phospholipid layer and no water inside, so pH and Ca²⁺ do not exist there.
+
+**E5.** Method: the ER is a network of thin tubes and sheets, often only 30–60 nm across; the **machine segmentation misses** many tubes and smooth ER, and edges of thin objects are hard to outline, so the ER area is **underestimated**; in a single plane, many tubes are cut obliquely and look fainter. The cell-tour value is for a **liver cell**, and **one section** of one cell is not a random sample. Biology: **HeLa** cells are not specialised secretory cells; they have less rough ER than a liver cell. Prediction: a **pancreatic acinar cell** and a **plasma cell** are packed with **rough ER** (ER fraction much higher, often a quarter or more of the cytoplasm), with mitochondria a smaller share; acinar cells also have many secretory granules. Test: take EM sections of these cell types (pancreas tissue; plasma cells from a lymph node or culture), place frames systematically at random, count points on ER, mitochondria and cytoplasm in many sections from several cells and animals, and compare the volume fractions with confidence intervals.
+:::

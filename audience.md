@@ -54,6 +54,10 @@ programme coordinator.
   so "a drug is a molecule that binds a target and changes its activity" is
   familiar ground for the application slides.
 
+- **Computing (experimental run):** command line and R. They have **not**
+  used bioinformatics tools or databases before. Each block has a
+  bioinformatics day (see `plan/bioinformatics.md`).
+
 ## What we should not assume
 
 - **Membrane transport mechanisms:** transporters vs channels, pumps, membrane

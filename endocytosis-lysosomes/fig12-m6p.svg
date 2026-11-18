@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2e8b57"/></marker>
+    <g id="enz"><path d="M-11,0 A11,11 0 1 1 11,0 L0,0 Z" fill="#7d6bb0" stroke="#1b2a3a" stroke-width="1"/></g>
+    <g id="tag"><circle r="5" fill="#e8590c"/></g>
+    <g id="mpr"><line x1="0" y1="0" x2="0" y2="-14" stroke="#3b5e3b" stroke-width="3.5"/><path d="M-7,-21 L0,-14 L7,-21" fill="none" stroke="#3b5e3b" stroke-width="3.5"/></g>
+  </defs>
+  <rect width="1000" height="430" fill="#fbfaf5"/>
+  <rect width="1000" height="70" fill="#fff"/>
+  <line x1="0" y1="70" x2="1000" y2="70" stroke="#8a6a12" stroke-width="6"/>
+  <text x="12" y="26" font-weight="bold">Outside the cell</text>
+  <!-- Golgi -->
+  <g fill="none" stroke="#d9822b" stroke-width="9" stroke-linecap="round">
+    <path d="M60,170 C110,155 190,155 240,170"/><path d="M60,205 C110,190 190,190 240,205"/><path d="M60,240 C110,225 190,225 240,240"/><path d="M60,275 C110,260 190,260 240,275"/>
+  </g>
+  <text x="150" y="132" text-anchor="middle" font-weight="bold" fill="#b3631a">Golgi</text>
+  <text x="18" y="175" font-size="14" fill="#b3631a">cis</text>
+  <text x="14" y="282" font-size="14" fill="#b3631a">trans</text>
+  <use href="#enz" x="150" y="172"/><use href="#tag" x="164" y="160"/>
+  <text x="150" y="320" text-anchor="middle">1 enzyme gets a</text>
+  <text x="150" y="340" text-anchor="middle">mannose-6-phosphate tag</text>
+  <text x="150" y="360" text-anchor="middle">(a sugar with a phosphate)</text>
+  <!-- TGN vesicle with receptors -->
+  <circle cx="345" cy="240" r="40" fill="#fbfaf5" stroke="#d9822b" stroke-width="3.5"/>
+  <circle cx="345" cy="240" r="48" fill="none" stroke="#7d8b99" stroke-width="6" stroke-dasharray="6 4"/>
+  <use href="#mpr" transform="translate(323 270) rotate(-35)"/><use href="#enz" x="314" y="244"/><use href="#tag" x="318" y="252"/>
+  <use href="#mpr" transform="translate(368 270) rotate(35)"/><use href="#enz" x="378" y="244"/><use href="#tag" x="374" y="252"/>
+  <path d="M246,262 L292,250" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="345" y="320" text-anchor="middle">2 M6P receptor binds</text>
+  <text x="345" y="340" text-anchor="middle">the tag (pH 6.5–7),</text>
+  <text x="345" y="360" text-anchor="middle">clathrin vesicle</text>
+  <!-- late endosome -->
+  <circle cx="590" cy="240" r="62" fill="#d3ebdd" stroke="#2e8b57" stroke-width="3.5"/>
+  <use href="#mpr" transform="translate(546 284) rotate(-45)"/><use href="#mpr" transform="translate(634 284) rotate(45)"/>
+  <use href="#enz" x="575" y="232"/><use href="#enz" x="604" y="255"/>
+  <path d="M398,240 L522,240" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="590" y="330" text-anchor="middle">3 acid (pH 5.5):</text>
+  <text x="590" y="350" text-anchor="middle">enzyme lets go;</text>
+  <text x="590" y="370" text-anchor="middle">phosphate removed</text>
+  <path d="M548,190 C500,140 330,130 255,160" fill="none" stroke="#2e8b57" stroke-width="2.5" stroke-dasharray="7 4" marker-end="url(#ag)"/>
+  <text x="420" y="128" text-anchor="middle" fill="#2e8b57">receptor returns to the Golgi</text>
+  <!-- lysosome -->
+  <circle cx="845" cy="240" r="55" fill="#b9dfc8" stroke="#2e8b57" stroke-width="4.5"/>
+  <use href="#enz" x="830" y="235"/><use href="#enz" x="860" y="255"/><use href="#enz" x="848" y="222"/>
+  <path d="M654,240 L782,240" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="845" y="330" text-anchor="middle">4 working enzyme</text>
+  <text x="845" y="350" text-anchor="middle">in the lysosome</text>
+  <!-- secretion and recapture -->
+  <use href="#mpr" transform="translate(760 80)"/><use href="#enz" x="760" y="44"/><use href="#tag" x="760" y="52"/>
+  <path d="M760,96 C760,140 700,170 660,192" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="740" y="34" text-anchor="end">5 escaped or injected enzyme</text>
+  <text x="740" y="54" text-anchor="end">is caught at the surface</text>
+  <text x="595" y="410" text-anchor="middle" font-size="15" fill="#a8324a">I-cell disease: no tag is added, so the enzymes are secreted and the lysosomes fill with waste</text>
+</svg>

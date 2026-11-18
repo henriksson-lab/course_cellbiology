@@ -29,3 +29,55 @@ may be reused under the course licence (see the course authors page).
 ## Ion channels and membrane potential {#ion-channels}
 
 {{< include ion-channels/_credits.md >}}
+
+## Sorting proteins to the right compartment {#protein-sorting}
+
+{{< include protein-sorting/_credits.md >}}
+
+## The endoplasmic reticulum {#er}
+
+{{< include er/_credits.md >}}
+
+## The Golgi and the secretory pathway {#golgi-secretion}
+
+{{< include golgi-secretion/_credits.md >}}
+
+## Endocytosis, lysosomes and autophagy {#endocytosis-lysosomes}
+
+{{< include endocytosis-lysosomes/_credits.md >}}
+
+## Protein life and death {#protein-lifecycle}
+
+{{< include protein-lifecycle/_credits.md >}}
+
+## Organelles compared: keeping the cell in balance {#organelles-homeostasis}
+
+{{< include organelles-homeostasis/_credits.md >}}
+
+## Principles of cell communication {#signalling-principles}
+
+{{< include signalling-principles/_credits.md >}}
+
+## G-protein-coupled receptors and second messengers {#gpcr}
+
+{{< include gpcr/_credits.md >}}
+
+## Enzyme-coupled receptors: kinase cascades {#kinase-signalling}
+
+{{< include kinase-signalling/_credits.md >}}
+
+## Signalling that shapes tissues and decides fates {#fate-signalling}
+
+{{< include fate-signalling/_credits.md >}}
+
+## Actin: cell shape and migration {#actin}
+
+{{< include actin/_credits.md >}}
+
+## Microtubules and motor proteins {#microtubules}
+
+{{< include microtubules/_credits.md >}}
+
+## Myosin, intermediate filaments and the mechanical cell {#myosin-if}
+
+{{< include myosin-if/_credits.md >}}

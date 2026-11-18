@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig10: folding in the ER lumen: BiP holds unfolded chains; PDI makes and fixes disulfide bonds -->
+  <defs><marker id="ar" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker></defs>
+  <rect width="1000" height="380" fill="#e6f3f5"/>
+  <text x="20" y="34" font-size="20" text-anchor="start" font-weight="bold" fill="#1b2a3a">In the ER lumen</text>
+  <text x="250" y="74" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">BiP (an Hsp70 chaperone)</text>
+  <path d="M60,170 q 15 -30 30 0 t 30 0 t 30 0 t 30 0" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="120" y="160" width="58" height="14" rx="5" fill="#e8590c"/>
+  <text x="149" y="202" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">exposed hydrophobic</text>
+  <text x="149" y="220" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">stretch</text>
+  <line x1="222" y1="170" x2="272" y2="170" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M290,170 q 15 -30 30 0 t 30 0" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 336,150 C 336,120 400,116 410,146 L 410,192 C 400,222 336,218 336,190 Z" fill="#ffd8a8" stroke="#1b2a3a" stroke-width="2"/>
+  <rect x="352" y="163" width="58" height="14" rx="5" fill="#e8590c"/>
+  <path d="M410,170 q 15 -30 30 0" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="372" y="110" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">BiP</text>
+  <text x="250" y="268" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">BiP binds and lets go again (ATP).</text>
+  <text x="250" y="288" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">This stops unfolded chains from sticking</text>
+  <text x="250" y="308" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">together while they fold.</text>
+  <line x1="500" y1="60" x2="500" y2="330" stroke="#adb5bd" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="750" y="74" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">PDI (protein disulfide isomerase)</text>
+  <path d="M560,190 C 560,120 640,120 640,160 C 640,200 700,200 700,150" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="560" y="214" font-size="15" text-anchor="middle" font-weight="bold" fill="#a87b00">SH</text>
+  <text x="700" y="138" font-size="15" text-anchor="middle" font-weight="bold" fill="#a87b00">SH</text>
+  <line x1="724" y1="170" x2="778" y2="170" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="751" y="158" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">PDI</text>
+  <path d="M800,190 C 800,130 860,130 880,170 C 890,190 920,200 940,180" fill="none" stroke="#1b2a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="808" y1="190" x2="932" y2="186" stroke="#a87b00" stroke-width="4" stroke-dasharray="5 4"/>
+  <text x="870" y="216" font-size="16" text-anchor="middle" font-weight="bold" fill="#a87b00">S–S</text>
+  <text x="750" y="268" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Cysteines are joined into disulfide bonds;</text>
+  <text x="750" y="288" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">PDI also breaks wrong pairs and tries again.</text>
+  <text x="750" y="308" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">The ER lumen is oxidizing; the cytosol is reducing,</text>
+  <text x="750" y="328" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">so cytosolic proteins have almost no S–S bonds.</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m7567" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0L10,5L0,10z" fill="#c2255c"/></marker></defs>
+<rect width="920" height="480" fill="#fbfaf5"/>
+<text x="20" y="28" font-size="18" fill="#1b2a3a" font-weight="bold"><tspan dy="0">ER–mitochondria contact</tspan></text>
+<rect x="20" y="45" width="420" height="80" fill="#e6f3f5"/>
+<path d="M20,125 L440,125" stroke="#2a7f8f" stroke-width="5" fill="none" />
+<text x="30" y="70" font-size="16" fill="#2a7f8f"><tspan dy="0">ER lumen: Ca</tspan><tspan dy="-6" font-size="12">2+</tspan><tspan dy="6"> ≈ 0.5 mM</tspan></text>
+<circle cx="260" cy="90" r="6" fill="#c2255c"/>
+<circle cx="300" cy="90" r="6" fill="#c2255c"/>
+<circle cx="340" cy="90" r="6" fill="#c2255c"/>
+<circle cx="380" cy="90" r="6" fill="#c2255c"/>
+<circle cx="410" cy="90" r="6" fill="#c2255c"/>
+<rect x="90" y="112" width="30" height="30" rx="4" fill="#fff" stroke="#2a7f8f" stroke-width="2"/>
+<text x="90" y="104" font-size="14" fill="#1b2a3a"><tspan dy="0">IP</tspan><tspan dy="4" font-size="10">3</tspan><tspan dy="-4">R</tspan></text>
+<rect x="20" y="175" width="420" height="16" fill="#f8e9ec"/>
+<path d="M20,175 L440,175" stroke="#a8324a" stroke-width="5" fill="none" />
+<path d="M20,191 L440,191" stroke="#a8324a" stroke-width="4" fill="none" />
+<rect x="20" y="193" width="420" height="80" fill="#f8e9ec"/>
+<rect x="90" y="166" width="30" height="20" rx="4" fill="#fff" stroke="#a8324a" stroke-width="2"/>
+<text x="128" y="170" font-size="13" fill="#1b2a3a"><tspan dy="0">VDAC</tspan></text>
+<rect x="90" y="185" width="30" height="16" rx="4" fill="#fff" stroke="#a8324a" stroke-width="2"/>
+<text x="128" y="206" font-size="13" fill="#1b2a3a"><tspan dy="0">MCU</tspan></text>
+<circle cx="105" cy="153" r="6" fill="#c2255c"/>
+<circle cx="105" cy="226" r="6" fill="#c2255c"/>
+<path d="M105,128L105,144" stroke="#c2255c" stroke-width="3" fill="none" marker-end="url(#m7567)"/>
+<path d="M105,202L105,216" stroke="#c2255c" stroke-width="3" fill="none" marker-end="url(#m7567)"/>
+<text x="160" y="155" font-size="15" fill="#1b2a3a"><tspan dy="0">high local Ca</tspan><tspan dy="-6" font-size="11">2+</tspan><tspan dy="6"> in the narrow gap</tspan></text>
+<text x="160" y="250" font-size="15" fill="#a8324a"><tspan dy="0">matrix: Ca</tspan><tspan dy="-6" font-size="11">2+</tspan><tspan dy="6"> switches on</tspan></text>
+<text x="160" y="270" font-size="15" fill="#a8324a"><tspan dy="0">TCA-cycle enzymes → more ATP</tspan></text>
+<text x="160" y="155" font-size="1" fill="#1b2a3a"></text>
+<text x="300" y="170" font-size="1" fill="#1b2a3a"></text>
+<text x="30" y="300" font-size="15" fill="#1b2a3a"><tspan dy="0">Too much Ca</tspan><tspan dy="-6" font-size="11">2+</tspan><tspan dy="6"> for too long → mitochondria</tspan></text>
+<text x="30" y="320" font-size="15" fill="#1b2a3a"><tspan dy="0">open a pore and start cell death (apoptosis lectures).</tspan></text>
+<text x="30" y="360" font-size="15" fill="#1b2a3a" font-weight="bold"><tspan dy="0">Lipids:</tspan></text>
+<text x="30" y="382" font-size="15" fill="#1b2a3a"><tspan dy="0">the ER makes most membrane lipids. Transfer proteins</tspan></text>
+<text x="30" y="402" font-size="15" fill="#1b2a3a"><tspan dy="0">carry them across contacts, e.g. PS from the ER to</tspan></text>
+<text x="30" y="422" font-size="15" fill="#1b2a3a"><tspan dy="0">mitochondria, where it becomes PE. No vesicles go</tspan></text>
+<text x="30" y="442" font-size="15" fill="#1b2a3a"><tspan dy="0">to mitochondria, so this is their main lipid supply.</tspan></text>
+<text x="480" y="28" font-size="18" fill="#1b2a3a" font-weight="bold"><tspan dy="0">ER–plasma membrane contact</tspan></text>
+<text x="490" y="64" font-size="16" fill="#8a6a12"><tspan dy="0">outside: Ca</tspan><tspan dy="-6" font-size="12">2+</tspan><tspan dy="6"> ≈ 1–2 mM</tspan></text>
+<circle cx="810" cy="58" r="6" fill="#c2255c"/>
+<circle cx="845" cy="58" r="6" fill="#c2255c"/>
+<circle cx="880" cy="58" r="6" fill="#c2255c"/>
+<path d="M480,85 L910,85" stroke="#8a6a12" stroke-width="5" fill="none" />
+<rect x="740" y="74" width="34" height="24" rx="4" fill="#fff" stroke="#8a6a12" stroke-width="2"/>
+<text x="700" y="116" font-size="14" fill="#1b2a3a"><tspan dy="0">ORAI</tspan></text>
+<path d="M750,46L750,70" stroke="#c2255c" stroke-width="3" fill="none" marker-end="url(#m7567)"/>
+<circle cx="750" cy="38" r="6" fill="#c2255c"/>
+<path d="M750,100L750,128" stroke="#c2255c" stroke-width="3" fill="none" marker-end="url(#m7567)"/>
+<path d="M766,165 L766,100" stroke="#e8590c" stroke-width="5" fill="none" />
+<text x="776" y="140" font-size="14" fill="#e8590c"><tspan dy="0">STIM</tspan></text>
+<rect x="480" y="165" width="430" height="70" fill="#e6f3f5"/>
+<path d="M480,165 L910,165" stroke="#2a7f8f" stroke-width="5" fill="none" />
+<text x="490" y="205" font-size="16" fill="#2a7f8f"><tspan dy="0">ER lumen: Ca</tspan><tspan dy="-6" font-size="12">2+</tspan><tspan dy="6"> has run low</tspan></text>
+<rect x="840" y="153" width="40" height="24" rx="4" fill="#fff" stroke="#2a7f8f" stroke-width="2"/>
+<text x="860" y="226" font-size="14" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">SERCA</tspan></text>
+<path d="M860,130L860,198" stroke="#c2255c" stroke-width="3" fill="none" marker-end="url(#m7567)"/>
+<text x="480" y="268" font-size="15" fill="#1b2a3a"><tspan dy="0">1. A Ca</tspan><tspan dy="-6" font-size="11">2+</tspan><tspan dy="6"> signal empties the ER store.</tspan></text>
+<text x="480" y="290" font-size="15" fill="#1b2a3a"><tspan dy="0">2. STIM in the ER membrane senses the low Ca</tspan><tspan dy="-6" font-size="11">2+</tspan><tspan dy="6">,</tspan></text>
+<text x="480" y="310" font-size="15" fill="#1b2a3a"><tspan dy="0">   moves to a contact and opens ORAI in the</tspan></text>
+<text x="480" y="330" font-size="15" fill="#1b2a3a"><tspan dy="0">   plasma membrane.</tspan></text>
+<text x="480" y="352" font-size="15" fill="#1b2a3a"><tspan dy="0">3. Ca</tspan><tspan dy="-6" font-size="11">2+</tspan><tspan dy="6"> enters right at the contact, and the</tspan></text>
+<text x="480" y="372" font-size="15" fill="#1b2a3a"><tspan dy="0">   SERCA pump refills the ER.</tspan></text>
+<text x="480" y="406" font-size="15" fill="#1b2a3a" font-weight="bold"><tspan dy="0">Store-operated Ca</tspan><tspan dy="-6" font-size="11">2+</tspan><tspan dy="6"> entry: the store refills</tspan></text>
+<text x="480" y="426" font-size="15" fill="#1b2a3a"><tspan dy="0">itself. Lost in some immune deficiencies</tspan></text>
+<text x="480" y="446" font-size="15" fill="#1b2a3a"><tspan dy="0">(T cells need it to be activated).</tspan></text>
+</svg>

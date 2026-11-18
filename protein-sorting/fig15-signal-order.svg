@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig15: the order in which signals are read. The first fork is during translation (ER or not); after that only signals on the right side of the membrane are read. Simplified: one protein, one route. -->
+  <defs><marker id="ak" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,5.5 L0,11 Z" fill="#1b2a3a"/></marker></defs>
+  <rect x="340.0" y="10" width="420" height="40" rx="8" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+  <text x="550" y="34" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">A new chain starts on a ribosome in the cytosol</text>
+  <rect x="290.0" y="80" width="520" height="40" rx="8" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+  <text x="550" y="104" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">ER signal peptide (or a TM segment) at the start?</text>
+  <path d="M 550 50 L 550 78" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <path d="M 380 120 L 260 168" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <text x="300" y="140" font-size="15" fill="#1b2a3a" text-anchor="end" font-style="italic">no</text>
+  <rect x="95.0" y="170" width="330" height="60" rx="8" fill="#fbfaf5" stroke="#555555" stroke-width="2.5"/>
+  <text x="260" y="194" font-size="16" fill="#555555" text-anchor="middle" font-weight="bold">finished in the cytosol;</text>
+  <text x="260" y="214" font-size="16" fill="#555555" text-anchor="middle">then read: NLS, presequence, PTS1</text>
+  <path d="M 260 230 L 72 316" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <rect x="10.0" y="318" width="124" height="58" rx="8" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+  <text x="72" y="342" font-size="16" fill="#6b4fa0" text-anchor="middle" font-weight="bold">nucleus</text>
+  <text x="72" y="362" font-size="16" fill="#6b4fa0" text-anchor="middle">NLS</text>
+  <path d="M 260 230 L 204 316" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <rect x="142.0" y="318" width="124" height="58" rx="8" fill="#f8e9ec" stroke="#a8324a" stroke-width="2.5"/>
+  <text x="204" y="342" font-size="16" fill="#a8324a" text-anchor="middle" font-weight="bold">mitochondria</text>
+  <text x="204" y="362" font-size="16" fill="#a8324a" text-anchor="middle">presequence</text>
+  <path d="M 260 230 L 336 316" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <rect x="274.0" y="318" width="124" height="58" rx="8" fill="#e9eef8" stroke="#3b5bab" stroke-width="2.5"/>
+  <text x="336" y="342" font-size="16" fill="#3b5bab" text-anchor="middle" font-weight="bold">peroxisome</text>
+  <text x="336" y="362" font-size="16" fill="#3b5bab" text-anchor="middle">PTS1</text>
+  <path d="M 260 230 L 462 316" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <rect x="400.0" y="318" width="124" height="58" rx="8" fill="#fbfaf5" stroke="#555555" stroke-width="2.5"/>
+  <text x="462" y="342" font-size="16" fill="#555555" text-anchor="middle" font-weight="bold">cytosol</text>
+  <text x="462" y="362" font-size="16" fill="#555555" text-anchor="middle">no signal</text>
+  <path d="M 720 120 L 840 168" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <text x="800" y="140" font-size="15" fill="#1b2a3a" text-anchor="start" font-style="italic">yes</text>
+  <rect x="675.0" y="170" width="330" height="60" rx="8" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2.5"/>
+  <text x="840" y="194" font-size="16" fill="#2a7f8f" text-anchor="middle" font-weight="bold">into the ER while it is made;</text>
+  <text x="840" y="214" font-size="16" fill="#2a7f8f" text-anchor="middle">then read: TM, KDEL, M6P</text>
+  <path d="M 840 230 L 648 316" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <rect x="586.0" y="318" width="124" height="78" rx="8" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+  <text x="648" y="342" font-size="16" fill="#8a6a12" text-anchor="middle" font-weight="bold">plasma</text>
+  <text x="648" y="362" font-size="16" fill="#8a6a12" text-anchor="middle" font-weight="bold">membrane</text>
+  <text x="648" y="382" font-size="16" fill="#8a6a12" text-anchor="middle">TM segment</text>
+  <path d="M 840 230 L 778 316" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <rect x="716.0" y="318" width="124" height="58" rx="8" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2.5"/>
+  <text x="778" y="342" font-size="16" fill="#2a7f8f" text-anchor="middle" font-weight="bold">ER lumen</text>
+  <text x="778" y="362" font-size="16" fill="#2a7f8f" text-anchor="middle">KDEL</text>
+  <path d="M 840 230 L 908 316" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <rect x="846.0" y="318" width="124" height="58" rx="8" fill="#e3f3ea" stroke="#2e8b57" stroke-width="2.5"/>
+  <text x="908" y="342" font-size="16" fill="#2e8b57" text-anchor="middle" font-weight="bold">lysosome</text>
+  <text x="908" y="362" font-size="16" fill="#2e8b57" text-anchor="middle">M6P patch</text>
+  <path d="M 840 230 L 1034 316" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)"/>
+  <rect x="972.0" y="318" width="124" height="58" rx="8" fill="#dbe7f3" stroke="#1b2a3a" stroke-width="2.5"/>
+  <text x="1034" y="342" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold">secreted</text>
+  <text x="1034" y="362" font-size="16" fill="#1b2a3a" text-anchor="middle">no signal</text>
+  <text x="550" y="420" font-size="16" fill="#1b2a3a" text-anchor="middle">A signal for the other branch is never read (an NLS on a secreted protein does nothing).</text>
+  <text x="550" y="444" font-size="16" fill="#1b2a3a" text-anchor="middle">Two signals that compete on one branch: the answer needs an experiment.</text>
+  <text x="550" y="466" font-size="1" fill="#1b2a3a" text-anchor="middle"></text>
+</svg>

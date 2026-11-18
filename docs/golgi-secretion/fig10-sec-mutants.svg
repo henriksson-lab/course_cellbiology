@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" font-family="Helvetica, Arial, sans-serif">
+
+<ellipse cx="120" cy="130" rx="85" ry="72" fill="#fbfaf5" stroke="#5c6b7a" stroke-width="6"/>
+<ellipse cx="92" cy="138" rx="26" ry="22" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<path d="M 60 110 q 20 -10 40 0" fill="none" stroke="#2a7f8f" stroke-width="4" />
+<path d="M 140 100 q 15 -6 30 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 140 107 q 15 -6 30 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 140 114 q 15 -6 30 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<circle cx="170.0" cy="150.0" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<text x="120.0" y="40.0" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >normal yeast</text>
+<text x="120.0" y="236.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >any temperature</text>
+<ellipse cx="370" cy="130" rx="85" ry="72" fill="#fbfaf5" stroke="#5c6b7a" stroke-width="6"/>
+<ellipse cx="342" cy="138" rx="26" ry="22" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<path d="M 300 90 q 60 -14 120 0" fill="none" stroke="#2a7f8f" stroke-width="5" />
+<path d="M 303 102 q 60 -14 120 0" fill="none" stroke="#2a7f8f" stroke-width="5" />
+<path d="M 306 114 q 60 -14 120 0" fill="none" stroke="#2a7f8f" stroke-width="5" />
+<path d="M 309 126 q 60 -14 120 0" fill="none" stroke="#2a7f8f" stroke-width="5" />
+<path d="M 312 138 q 60 -14 120 0" fill="none" stroke="#2a7f8f" stroke-width="5" />
+<path d="M 380 170 q 30 -8 50 0" fill="none" stroke="#2a7f8f" stroke-width="5" />
+<text x="370.0" y="40.0" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >ER block</text>
+<text x="370.0" y="236.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >e.g. sec12 (Sar1 GEF),</text>
+<text x="370.0" y="255.5" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >sec18 (NSF)</text>
+<ellipse cx="620" cy="130" rx="85" ry="72" fill="#fbfaf5" stroke="#5c6b7a" stroke-width="6"/>
+<ellipse cx="592" cy="138" rx="26" ry="22" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<path d="M 625 90 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 625 96 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 625 102 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 625 108 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 655 118 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 655 124 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 655 130 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 655 136 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 575 146 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 575 152 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 575 158 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<path d="M 575 164 q 16 -7 32 0" fill="none" stroke="#d9822b" stroke-width="3.5" />
+<text x="620.0" y="40.0" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >Golgi block</text>
+<text x="620.0" y="236.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >e.g. sec7</text>
+<text x="620.0" y="255.5" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >(ARF GEF)</text>
+<ellipse cx="870" cy="130" rx="85" ry="72" fill="#fbfaf5" stroke="#5c6b7a" stroke-width="6"/>
+<ellipse cx="842" cy="138" rx="26" ry="22" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<circle cx="892.5" cy="158.8" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="881.7" cy="122.5" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="935.0" cy="133.3" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="888.9" cy="147.0" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="919.3" cy="129.3" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="905.3" cy="107.5" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="880.0" cy="119.4" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="859.2" cy="99.0" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="884.4" cy="120.8" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="891.8" cy="99.3" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="886.7" cy="138.7" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="909.5" cy="110.4" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="880.9" cy="89.1" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="879.1" cy="87.7" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="899.6" cy="121.9" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="902.1" cy="142.3" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="917.2" cy="124.7" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="874.6" cy="116.0" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="869.7" cy="154.5" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<circle cx="869.6" cy="90.3" r="5.0" fill="#fff" stroke="#7a4fb5" stroke-width="2.5" />
+<text x="870.0" y="40.0" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >vesicle block</text>
+<text x="870.0" y="236.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >e.g. sec4 (a Rab),</text>
+<text x="870.0" y="255.5" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >sec9 (a SNARE)</text>
+<text x="620.0" y="290.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >temperature-sensitive sec mutants after 1 h at 37 °C: membranes pile up before the block</text>
+<text x="620.0" y="314.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#868e96" >(a double mutant piles up at the earlier block → order of steps)</text>
+<line x1="245" y1="20" x2="245" y2="260" stroke="#ced4da" stroke-width="2" stroke-dasharray="5 5"/>
+</svg>

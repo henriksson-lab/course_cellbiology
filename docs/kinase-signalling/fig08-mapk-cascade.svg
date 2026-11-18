@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="600" viewBox="0 0 640 600" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig08: the Ras-MAP kinase cascade: three kinases in a row, then the nucleus -->
+<defs><marker id="a1b2a3a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+<rect x="0" y="0" width="640" height="50" rx="0" fill="#eef4fa" stroke="none" stroke-width="0"/>
+<rect x="0" y="50" width="640" height="26" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<line x1="0" y1="50" x2="640" y2="50" stroke="#8a6a12" stroke-width="3"/>
+<line x1="0" y1="76" x2="640" y2="76" stroke="#8a6a12" stroke-width="3"/>
+<rect x="0" y="76" width="640" height="524" rx="0" fill="#fbfaf5" stroke="none" stroke-width="0"/>
+<rect x="202" y="12" width="24" height="74" rx="8" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="234" y="12" width="24" height="74" rx="8" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<circle cx="230" cy="14" r="9" fill="#8a6a12" stroke="#1b2a3a" stroke-width="1"/>
+<text x="190" y="34" font-size="15" text-anchor="end" font-weight="normal" fill="#1b2a3a">growth factor</text>
+<text x="190" y="104" font-size="17" text-anchor="end" font-weight="bold" fill="#1b2a3a">RTK</text>
+<text x="264" y="104" font-size="14" text-anchor="start" font-weight="normal" fill="#6b7280">(Grb2–SOS)</text>
+<path d="M230,90 L230,122" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<rect x="165.0" y="126.0" width="130" height="44" rx="12" fill="#cdede2" stroke="#1baf7a" stroke-width="2.5"/>
+<text x="230" y="154.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Ras-GTP</text>
+<path d="M230,172 L230,202" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<rect x="165.0" y="206.0" width="130" height="44" rx="12" fill="#d0e1f6" stroke="#2a78d6" stroke-width="2.5"/>
+<text x="230" y="234.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">RAF</text>
+<path d="M230,252 L230,290" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<rect x="165.0" y="294.0" width="130" height="44" rx="12" fill="#fae2eb" stroke="#e87ba4" stroke-width="2.5"/>
+<text x="230" y="322.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">MEK</text>
+<circle cx="304" cy="304" r="10" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="304" y="309" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<circle cx="304" cy="328" r="10" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="304" y="333" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<path d="M230,340 L230,378" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<rect x="165.0" y="382.0" width="130" height="44" rx="12" fill="#e2d5f1" stroke="#7b3fbf" stroke-width="2.5"/>
+<text x="230" y="410.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">ERK</text>
+<circle cx="304" cy="392" r="10" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="304" y="397" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<circle cx="304" cy="416" r="10" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="304" y="421" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<text x="150" y="272" font-size="14" text-anchor="end" font-weight="normal" fill="#6b7280">phosphorylates</text>
+<text x="150" y="288" font-size="14" text-anchor="end" font-weight="normal" fill="#6b7280">2 Ser on MEK</text>
+<text x="150" y="360" font-size="14" text-anchor="end" font-weight="normal" fill="#6b7280">phosphorylates</text>
+<text x="150" y="376" font-size="14" text-anchor="end" font-weight="normal" fill="#6b7280">Thr + Tyr on ERK</text>
+<text x="328" y="233" font-size="14" text-anchor="start" font-weight="normal" fill="#6b7280" font-style="italic">MAP kinase kinase kinase</text>
+<text x="328" y="321" font-size="14" text-anchor="start" font-weight="normal" fill="#6b7280" font-style="italic">MAP kinase kinase</text>
+<text x="328" y="409" font-size="14" text-anchor="start" font-weight="normal" fill="#6b7280" font-style="italic">MAP kinase</text>
+<path d="M320,420 L470,460" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="480" y="466" font-size="14" text-anchor="start" font-weight="normal" fill="#1b2a3a">cytosolic</text>
+<text x="480" y="482" font-size="14" text-anchor="start" font-weight="normal" fill="#1b2a3a">targets</text>
+<ellipse cx="230" cy="530" rx="190" ry="58" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<path d="M230,428 L230,476" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="230" y="518" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">ERK phosphorylates transcription factors</text>
+<text x="230" y="538" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">→ early genes (FOS, MYC) → cyclin D</text>
+<text x="230" y="558" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">→ the cell enters the cell cycle</text>
+</svg>

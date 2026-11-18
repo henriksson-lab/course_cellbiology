@@ -1,0 +1,154 @@
+---
+title: "Study questions: signalling that shapes tissues and decides fates"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** In all the pathways of this lecture, the transcription factor is already present in the cell before the signal arrives. Explain why this is so, and list the five ways in which a signal can free such a factor, with one pathway for each. `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A factor that is already made can be activated **quickly** and **reversibly**, without waiting for transcription and translation of the factor itself; it only has to be kept **inactive** until the signal comes. Five ways:
+
+1. **Stop destroying it**: β-catenin in **Wnt** signalling (no longer phosphorylated by the destruction complex and degraded).
+2. **Cut it out of the membrane**: the **Notch** intracellular domain, released by ADAM and γ-secretase.
+3. **Phosphorylate it**: **SMAD2/3** phosphorylated by the TGF-β type I receptor.
+4. **Stop converting it into a repressor**: **Gli** in **Hedgehog** signalling.
+5. **The signal binds the factor directly**: **nuclear receptors** for steroid hormones.
+
+**NF-κB** is a variant of the first: the signal destroys its **inhibitor** IκB rather than stabilising the factor.
+:::
+
+---
+
+**2.** Draw and explain the Wnt/β-catenin pathway with and without Wnt. Include the destruction complex, the proteasome and TCF. `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Without Wnt:** β-catenin is made but held by the **destruction complex** (scaffolds **Axin** and **APC**, kinases **GSK3** and CK1). It is phosphorylated, recognised by a ubiquitin ligase, **ubiquitylated** and degraded by the **proteasome** within minutes. In the nucleus, **TCF** sits on Wnt target genes together with a **repressor**: genes off.
+
+**With Wnt:** Wnt binds **Frizzled** and its co-receptor (LRP5/6); the cytoplasmic protein Dishevelled is recruited and the destruction complex is pulled to the receptor and **blocked**. β-catenin **accumulates**, enters the nucleus, displaces the repressor and binds TCF as a **coactivator**: target genes on (e.g. **MYC**, **cyclin D1**: division; **AXIN2**: negative feedback). In the adult, Wnt keeps **stem cells in intestinal crypts** dividing.
+:::
+
+---
+
+**3.** Describe Hedgehog signalling, including the role of the primary cilium. What is the role of Patched, Smoothened and Gli? `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The **primary cilium** is a single, non-moving projection on most cells that acts as a signalling antenna. **Without Hedgehog**, the receptor **Patched** sits in the cilium and keeps **Smoothened** out and inactive; the transcription factor **Gli** is partly cut (by the proteasome) into a short **repressor** that keeps target genes off. **With Hedgehog**, Hedgehog binds Patched, which leaves the cilium; **Smoothened** moves into the cilium and becomes active; Gli is no longer cut and the full-length protein enters the nucleus as an **activator**. Targets include **Patched** itself (negative feedback) and Gli1. The logic is a double negative: Hedgehog ⊣ Patched ⊣ Smoothened.
+:::
+
+---
+
+**4.** Explain how a Notch signal reaches the nucleus. Why does Notch signalling need direct cell–cell contact? `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The ligand (**Delta** or Jagged) is a **transmembrane protein** on the sending cell, so only a cell that touches the receiving cell can signal; Notch also needs the **pulling force** made when the sending cell endocytoses Delta. Steps: (1) Delta binds Notch; (2) the pull exposes a site that an **ADAM protease** cuts outside the membrane; (3) **γ-secretase** cuts Notch **inside** the membrane; (4) the **Notch intracellular domain** enters the nucleus and binds **CSL**, turning it from a repressor into an activator; (5) target genes such as the **Hes** repressors are switched on. Each receptor is used once; there is no amplification step.
+:::
+
+---
+
+**5.** What is lateral inhibition? Explain how it can turn a sheet of almost identical cells into a regular pattern. `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Lateral inhibition is a feedback between neighbouring cells through **Delta–Notch**: Delta on one cell activates Notch in its neighbours, and active Notch (via Hes repressors) **lowers Delta** and the "differentiate" genes in that same neighbour. If cell A has slightly more Delta than its neighbour B, B receives more Notch signal and makes less Delta, so A receives less Notch signal and makes more Delta. This **double-negative loop amplifies small random differences** until A is Delta-high (e.g. hair cell or neuron) and B is Notch-high (supporting cell or epidermis). In a sheet, the result is a **salt-and-pepper pattern**: single Delta-high cells, each surrounded by Notch-high cells, with no two Delta-high cells touching.
+:::
+
+---
+
+**6.** Describe TGF-β signalling from receptor to gene, and explain why the same TGF-β signal can have different effects in different cell types. `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The TGF-β dimer brings together **type II and type I receptors**, which are **serine/threonine kinases**. Type II phosphorylates type I; type I phosphorylates **SMAD2/3**. Phosphorylated SMAD2/3 binds **SMAD4**, the complex enters the nucleus and binds DNA. SMADs bind DNA weakly and act **together with other transcription factors** that differ between cell types, and the chromatin that is open also differs. So the target genes depend on the cell: in epithelial cells TGF-β **stops division** (p15, p21), in fibroblasts it increases **matrix production**. The pathway is switched off by phosphatases and by **SMAD7**, which is itself a target gene (negative feedback).
+:::
+
+---
+
+**7.** Describe how NF-κB is activated by an inflammatory signal such as TNF-α, and how the response is switched off again. `[ELO 3]` `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+At rest, **IκB** binds NF-κB in the cytosol and covers its **nuclear localisation signal**. TNF-α (or IL-1, or bacterial LPS) acts through its receptor on the kinase complex **IKK**, which **phosphorylates IκB**. Phosphorylated IκB is recognised by a ubiquitin ligase, gets a **polyubiquitin chain** and is destroyed by the **proteasome**. Free NF-κB enters the nucleus within minutes and switches on cytokines, adhesion molecules and anti-apoptosis genes. **Switch-off:** one target gene is **IκB**; the new IκB binds NF-κB, takes it out of the nucleus and ends the response (negative feedback).
+:::
+
+---
+
+**8.** Compare signalling by a steroid hormone through a nuclear receptor with signalling by a hormone through a GPCR. Give at least four differences. `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+| | Nuclear receptor (e.g. cortisol) | GPCR (e.g. adrenaline) |
+|---|---|---|
+| Hormone | small, **hydrophobic**; crosses the membrane | usually polar; stays outside |
+| Receptor location | **inside** the cell (cytosol or nucleus) | plasma membrane |
+| Relay | none: the **receptor is the transcription factor** | G protein, second messengers, kinases |
+| Amplification | little | large (enzyme cascade) |
+| Output | changes **transcription** | changes activity of existing proteins (and sometimes genes) |
+| Speed and duration | **hours**, long-lasting | **seconds**, short |
+:::
+
+---
+
+## VG-style questions
+
+**9. [VG]** A biotech company develops a **γ-secretase inhibitor** to treat Alzheimer's disease (γ-secretase makes the amyloid-β peptide from its precursor protein). Predict, from what you know about Notch, which side effects may appear in tissues that keep renewing in the adult, such as the gut lining and the skin. Explain the mechanism. How could the company test this early, in cells? `[ELO 3]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+γ-secretase also makes the **Notch intracellular domain**, so the drug will block **Notch signalling** in every tissue it reaches. In adult tissues that renew, Notch decides between fates of newly made cells. In the **gut**, blocking Notch makes progenitor cells take the secretory fate: too many **goblet cells** (mucus) and too few absorptive cells, which gives diarrhoea and poor absorption. In the **skin**, Notch is needed for normal differentiation of keratinocytes; loss of Notch disturbs it and can promote **skin tumours**. Immune cell development (T cells need Notch) may also suffer. (In a real phase III trial, the γ-secretase inhibitor semagacestat worsened cognition and increased skin cancers, and the trial was stopped.) **Early test:** cells with a **Notch reporter gene** (CSL binding sites driving luciferase) plus a source of Delta: measure how strongly each candidate blocks Notch at the dose that blocks amyloid-β. Search for compounds that spare Notch.
+:::
+
+---
+
+**10. [VG]** Researchers make two kinds of mouse with intestinal tumours. In mouse A the tumour cells have lost **APC**; in mouse B the tumour cells have an activating mutation in **β-catenin** that removes its phosphorylation sites. They test a drug that **activates GSK3** (helps the destruction complex). Predict the effect in each mouse, and explain. Then predict the effect of a drug that blocks the **binding of β-catenin to TCF**. `[ELO 3]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**GSK3 activator:** in mouse A, the destruction complex lacks its scaffold APC, so GSK3 cannot effectively reach β-catenin; the drug likely has **little effect**. In mouse B, β-catenin has no phosphorylation sites, so whatever GSK3 does, β-catenin cannot be marked for destruction: **no effect**. (In neither case does more kinase activity help, because the fault is in the complex or in the substrate.) **Blocking β-catenin–TCF binding** acts **downstream** of both mutations, at the last step before the genes: it should switch off Wnt target genes in **both** mice. General rule: a drug works only if it acts **at or below** the faulty step; this is the same reason vismodegib (Smoothened) works when Patched is lost but not when Gli is changed.
+:::
+
+---
+
+**11. [VG]** You suspect that a new gene, X, is a Notch target in the developing inner ear and that it is needed for supporting cells. Design experiments to show (a) that Notch signalling switches X on, and (b) that X is needed for the supporting-cell fate. Include controls. `[ELO 3]` `[ELO 1]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**(a) Notch switches X on.** (1) Look where X is expressed (in situ hybridisation or immunostaining): it should be in **supporting cells** (Notch-high), not hair cells. (2) Treat inner-ear explants with a **γ-secretase inhibitor** (control: solvent only): X expression should fall within hours, and Hes genes (known targets, positive control) too. (3) Express an **active Notch intracellular domain** in cells that normally lack X: X should appear. (4) Put the **X enhancer** in front of luciferase in a reporter assay; it should respond to the Notch tail, and **mutating the CSL binding sites** should abolish the response.
+
+**(b) X is needed.** Knock out X (CRISPR, or a conditional knockout only in the inner ear; control: littermates without the deletion) and count **hair cells and supporting cells** with markers. If X is needed for the supporting-cell fate, supporting cells should be fewer and hair cells may increase, as in a Notch loss. Rescue: re-expressing X should restore the normal pattern.
+:::
+
+---
+
+## Explore {#explore}
+
+A sheet of 288 hexagonal cells, each making **Delta** (the signal) and **Notch** (the receptor). Delta on a cell activates Notch in its six neighbours; active Notch switches off Delta in the same cell. The model is **Collier et al. (1996)**: two differential equations per cell (an ODE system on a grid), with Collier's parameter values. The cells start almost equal, with small random differences, and keep a little random noise in how much Delta they make. Colours change smoothly: **dark green** = Delta high (future hair cell or neuron), **cream** = Notch on (supporting cell). Use **Colour cells by** to switch to Notch activity. **Tap a cell** to follow it (A, orange) and its right-hand neighbour (B, dashed) in the graph.
+
+The demo opens at **real time**: in a tissue the pattern takes about a day, so nothing visible happens. Choose a time-lapse speed (**1 s = 1 h** is a good start). Time scale and noise are illustrative; in the model, fates never lock in (real cells commit after a while). **Restart** gives a new random start; **Reset all** restores the defaults. Because of the noise, your numbers will differ a little from the solutions.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="notch" data-seed="1"></div>
+<script src="../demos/dist/notch.js"></script>
+```
+
+**E1.** Set the clock to **1 s = 1 h** and watch the sheet. When do the first clearly dark cells appear? What fraction of cells ends up Delta-high, and do any two Delta-high cells touch? Follow cells A and B in the graph: how do two neighbours that start equal end up? Press **Restart** two or three times: what changes and what stays the same? `[ELO 3]`
+
+**E2.** *Predict first.* What will happen if every cell is exactly the same and there is **no noise**? Set **noise** to 0 %, press **Restart** and watch for 30 hours of tissue time. Then, while it runs, set noise back to 5 %. Explain both results. `[ELO 3]`
+
+**E3.** Lower the **feedback strength** (how strongly Notch switches off Delta) to 30 and press **Restart**. Watch for 2–3 days of tissue time. Then try 50, 300 and 3000 (Restart each time). Describe what changes. Why does lateral inhibition need a strong feedback? `[ELO 3]`
+
+**E4. [VG]** *Predict first.* Tick **Notch knockout in a patch of cells** and press **Restart**. What will the cells **inside** the patch become? What about the normal cells that **border** the patch? Check, using both colour modes. Relate the result to the fly experiments on the "How do we know?" slide. `[ELO 3]`
+
+**E5. [VG]** *Predict first.* Let a pattern form (defaults), then set the **γ-secretase inhibitor** to 100 %. What happens, and why? Reset, let a pattern form again, and set the inhibitor to **50 %** instead. Explain the difference. How does the 100 % result relate to the inner-ear experiment in the lecture, and what does the model leave out that matters for a real treatment? `[ELO 3]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** For the first 10–12 hours the sheet looks uniform: the tiny differences are growing, but too little to see. Dark cells appear at about **12–16 h**, and the pattern is complete after about **20–25 h**: about **30 %** of cells (roughly one in three) are Delta-high, and **no two Delta-high cells touch** (the readout shows 0 %). In the graph, A and B start at the same Delta level (about 0.07); then one of them rises to about 1 while the other falls to almost 0. Which one wins depends only on the random start. After **Restart** the **positions** of the dark cells change, but the **rules** stay: about 30 % dark cells, none touching, each surrounded by light cells. On a hexagonal sheet, "no two neighbours both high" allows at most one cell in three to be high, so the pattern packs the dark cells almost as tightly as possible. This is what lateral inhibition predicts: the pattern is reproducible, the choice of individual cells is not.
+
+**E2.** With no noise, all cells are exactly equal and **stay equal**: no pattern after 30 h (or ever). The uniform state is a balance in which each cell receives exactly as much Delta as it sends, but it is **unstable**, like a pencil standing on its tip: nothing pushes it over unless something breaks the symmetry. When noise is turned back on, small differences appear and are amplified; dark cells appear after about 15 h and the pattern is complete about 25 h later. Real cells always differ a little (gene-expression noise, cell size, the time since division), so lateral inhibition does not need a pre-made pattern: it creates one from noise.
+
+**E3.** At **30** the sheet stays uniform for days: the feedback is too weak to amplify differences, so each cell settles at the same middle level of Delta and Notch (no decision). At **50** a pattern forms, but slowly (first dark cells after about 30 h). At **300** and **3000** it forms faster (complete after about 20 h and about 10 h) and looks the same: about 30 % dark cells, none touching. A small difference must be amplified around the loop: more Delta in A → more Notch in B → less Delta in B → less Notch in A → more Delta in A. If each step is weak, the difference shrinks on each round instead of growing, and the cells return to the uniform state. Only when the gain around the loop is large enough do differences grow (the threshold in this model lies between about 30 and 50).
+
+**E4.** **Inside the patch**, all cells become **Delta-high** (dark), and they touch each other: without Notch they cannot be inhibited, so they all take the "default" fate (in the fly: neural). Their Notch activity is 0. The **normal cells bordering the patch** all become **Notch-high** (light): each receives Delta from Delta-high knockout neighbours and is strongly inhibited (in our run, all 18 border cells were light). Further away, the normal salt-and-pepper pattern forms. This is the result of the fly mosaic experiments: a Notch-negative patch becomes all neural (and in a whole embryo without Notch, too many neurons and almost no skin form), and the effect is **cell-autonomous**: the knockout cells still send Delta normally, they just cannot receive the signal.
+
+**E5.** At **100 %** inhibitor no Notch tail can be released, so no cell receives a Notch signal. Every cell, including the light ones, raises its Delta: within about 10 h **all cells are Delta-high** (all would become hair cells or neurons). This matches the experiment in which a γ-secretase inhibitor turned supporting cells into extra hair cells in the mouse inner ear. At **50 %**, the result is different: the pattern **fades** (after 20 h only a few dark cells are left) and the cells drift to an **intermediate, undecided level**. Halving Notch cleavage weakens the feedback loop, as in E3, so the differences are no longer amplified and are lost. In the model, fates are never locked and every cell can switch back. **Left out:** real cells **commit**; after some time, hair cells and supporting cells no longer change fate. In adult ears few supporting cells can still convert, so a drug can only make a limited number of new hair cells, and a cell that converts is lost as a supporting cell. A real treatment also has to reach the inner ear and must not block Notch in the rest of the body (see question 9).
+:::

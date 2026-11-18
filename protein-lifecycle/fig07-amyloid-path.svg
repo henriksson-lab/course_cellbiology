@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+  </defs>
+  <!-- native -->
+  <circle cx="60" cy="80" r="30" fill="#d0ebff" stroke="#1971c2" stroke-width="2.5"/>
+  <circle cx="60" cy="80" r="11" fill="#8a6a12" fill-opacity="0.85"/>
+  <text x="60" y="140" text-anchor="middle">native</text>
+  <line x1="98" y1="74" x2="148" y2="74" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ah)"/>
+  <line x1="148" y1="88" x2="98" y2="88" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ah)"/>
+  <!-- misfolded monomer: a beta hairpin -->
+  <path d="M168,60 h44 l-6,-6 M212,60 q14,10 0,20 h-44" fill="none" stroke="#1971c2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="192" y="140" text-anchor="middle">misfolded</text>
+  <line x1="236" y1="80" x2="286" y2="80" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ah)"/>
+  <!-- oligomer -->
+  <g fill="none" stroke="#1971c2" stroke-width="5" stroke-linecap="round">
+    <path d="M304,58 h40"/><path d="M304,72 h40"/><path d="M304,86 h40"/><path d="M304,100 h40"/>
+  </g>
+  <text x="324" y="140" text-anchor="middle">oligomer</text>
+  <text x="324" y="160" text-anchor="middle" font-size="15">(most toxic?)</text>
+  <line x1="364" y1="80" x2="414" y2="80" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ah)"/>
+  <!-- fibril: many stacked strands -->
+  <rect x="430" y="40" width="440" height="80" rx="10" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1.5"/>
+  <g stroke="#1971c2" stroke-width="5" stroke-linecap="round">
+    <path d="M446,56 v48"/><path d="M462,56 v48"/><path d="M478,56 v48"/><path d="M494,56 v48"/><path d="M510,56 v48"/><path d="M526,56 v48"/><path d="M542,56 v48"/><path d="M558,56 v48"/><path d="M574,56 v48"/><path d="M590,56 v48"/><path d="M606,56 v48"/><path d="M622,56 v48"/><path d="M638,56 v48"/><path d="M654,56 v48"/><path d="M670,56 v48"/><path d="M686,56 v48"/><path d="M702,56 v48"/><path d="M718,56 v48"/><path d="M734,56 v48"/><path d="M750,56 v48"/><path d="M766,56 v48"/><path d="M782,56 v48"/><path d="M798,56 v48"/><path d="M814,56 v48"/><path d="M830,56 v48"/><path d="M846,56 v48"/>
+  </g>
+  <line x1="430" y1="136" x2="870" y2="136" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="650" y="162" text-anchor="middle">amyloid fibril (arrow: fibril axis),</text>
+  <text x="650" y="184" text-anchor="middle">about 10 nm wide, micrometres long</text>
+  <text x="430" y="232">Cross-β: each chain lies across the fibril as a β-strand;</text>
+  <text x="430" y="254">strands from many chains stack 0.48 nm apart, held by</text>
+  <text x="430" y="276">backbone hydrogen bonds. Any chain can do this, so the</text>
+  <text x="430" y="298">fibril is very stable and hard to take apart.</text>
+  <text x="30" y="232">Seeds speed it up: a fibril end</text>
+  <text x="30" y="254">recruits more misfolded chains.</text>
+  <text x="30" y="276">Fibrils break into new seeds,</text>
+  <text x="30" y="298">which can spread to other cells.</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1098ad"/></marker>
+  </defs>
+  <!-- cytosol -->
+  <rect x="10" y="10" width="980" height="360" rx="16" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
+  <text x="30" y="40" font-size="18" font-weight="700" fill="#8a6a12">cytosol</text>
+  <text x="40" y="120" font-size="20" font-weight="700">glucose</text>
+  <line x1="80" y1="132" x2="80" y2="196" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="92" y="160" font-size="16">glycolysis</text>
+  <text x="92" y="180" font-size="16" fill="#2b8a3e" font-weight="700">2 ATP</text>
+  <text x="30" y="226" font-size="20" font-weight="700">2 pyruvate</text>
+  <line x1="138" y1="220" x2="262" y2="220" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a)"/>
+  <!-- mitochondrion -->
+  <rect x="262" y="58" width="712" height="296" rx="70" fill="#f8e9ec" stroke="#a8324a" stroke-width="3"/>
+  <rect x="280" y="74" width="676" height="264" rx="58" fill="#fdf6f7" stroke="#a8324a" stroke-width="2"/>
+  <text x="620" y="50" font-size="18" font-weight="700" fill="#a8324a" text-anchor="middle">mitochondrion</text>
+  <text x="300" y="200" font-size="18" font-weight="700">pyruvate</text>
+  <line x1="340" y1="210" x2="340" y2="240" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <text x="300" y="262" font-size="18" font-weight="700">acetyl-CoA</text>
+  <line x1="398" y1="256" x2="438" y2="234" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <circle cx="500" cy="210" r="58" fill="#fff" stroke="#a8324a" stroke-width="2.5"/>
+  <text x="500" y="204" font-size="18" font-weight="700" text-anchor="middle">TCA</text>
+  <text x="500" y="226" font-size="18" font-weight="700" text-anchor="middle">cycle</text>
+  <text x="471.7" y="300" font-size="16" text-anchor="start">CO<tspan font-size="10.9" dy="4.0">2</tspan><tspan dy="-4.0"> out</tspan></text>
+  <line x1="500" y1="270" x2="500" y2="284" stroke="#1b2a3a" stroke-width="2"/>
+  <line x1="560" y1="200" x2="640" y2="200" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="600" y="186" font-size="17" font-weight="700" text-anchor="middle">NADH</text>
+  <text x="576.9" y="224" font-size="17" font-weight="700" text-anchor="start">FADH<tspan font-size="11.6" dy="4.2">2</tspan><tspan dy="-4.2">&#8203;</tspan></text>
+  <!-- inner membrane: chain + synthase -->
+  <rect x="650" y="100" width="130" height="200" rx="14" fill="#fff" stroke="#a8324a" stroke-width="2.5"/>
+  <text x="715" y="160" font-size="17" font-weight="700" text-anchor="middle">electron</text>
+  <text x="715" y="181" font-size="17" font-weight="700" text-anchor="middle">transport</text>
+  <text x="715" y="202" font-size="17" font-weight="700" text-anchor="middle">chain</text>
+  <text x="683.8" y="250" font-size="16" text-anchor="start">O<tspan font-size="10.9" dy="4.0">2</tspan><tspan dy="-4.0"> → H</tspan><tspan font-size="10.9" dy="4.0">2</tspan><tspan dy="-4.0">O</tspan></text>
+  <line x1="780" y1="200" x2="820" y2="200" stroke="#1098ad" stroke-width="3" marker-end="url(#h)"/>
+  <text x="791.7" y="112" font-size="17" font-weight="700" fill="#1098ad" text-anchor="start">H<tspan font-size="11.6" dy="-6.8">+</tspan><tspan dy="6.8">&#8203;</tspan></text>
+  <text x="800" y="132" font-size="17" font-weight="700" fill="#1098ad" text-anchor="middle">gradient</text>
+  <rect x="822" y="140" width="116" height="120" rx="14" fill="#fff" stroke="#1b2a3a" stroke-width="2.5"/>
+  <text x="880" y="192" font-size="17" font-weight="700" text-anchor="middle">ATP</text>
+  <text x="880" y="214" font-size="17" font-weight="700" text-anchor="middle">synthase</text>
+  <text x="880" y="300" font-size="18" fill="#2b8a3e" font-weight="700" text-anchor="middle">≈ 26–28 ATP</text>
+  <text x="620" y="335" font-size="16" text-anchor="middle" fill="#a8324a" font-style="italic">this lecture: the membrane and the machines</text>
+  <text x="40" y="330" font-size="17">total: about <tspan font-weight="700">30–32 ATP</tspan></text>
+  <text x="40" y="352" font-size="17">per glucose</text>
+</svg>

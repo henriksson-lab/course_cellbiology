@@ -1,0 +1,133 @@
+---
+title: "Study questions: the endoplasmic reticulum"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** Describe how a secreted protein gets from a free ribosome in the cytosol into the ER lumen. Name SRP, the SRP receptor, the translocon and signal peptidase, and say what each does. `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Translation starts on a **free ribosome**. When the N-terminal **signal sequence** (a positive part, a hydrophobic core of about 6–15 amino acids, and a cut site) comes out of the ribosome, the **signal recognition particle (SRP)** binds it and **pauses translation**. SRP with the ribosome binds the **SRP receptor** in the ER membrane, next to the **translocon (Sec61)**. The ribosome is handed to the translocon, GTP is hydrolysed and SRP is released. Translation continues and the chain is threaded through the translocon into the lumen while it is made (**co-translational translocation**). **Signal peptidase**, with its active site in the lumen, cuts off the signal sequence. The protein folds in the lumen.
+:::
+
+---
+
+**2.** What is the difference between a stop-transfer sequence and a signal-anchor sequence? Draw a type I, a type II and a type III single-pass membrane protein in the ER membrane, with N, C, the lumen and the cytosol. `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Both are hydrophobic segments of about 20 amino acids that end up as a transmembrane helix. A **stop-transfer** arrives while the chain is **already being translocated** (after a signal sequence): it stops translocation and leaves the translocon sideways, so what follows stays in the cytosol. A **signal-anchor** is the **first** hydrophobic segment of a protein without a cleavable signal sequence: it is bound by SRP, **starts** translocation and stays in the membrane; its orientation is set by the positive charges next to it, which stay in the cytosol.
+**Type I**: cleaved signal sequence + stop-transfer; N-terminus in the lumen, C-terminus in the cytosol (LDL receptor). **Type II**: signal-anchor with positive charges before it; N in the cytosol, C in the lumen (transferrin receptor). **Type III**: signal-anchor with positive charges after it; N in the lumen, C in the cytosol (cytochrome P450).
+:::
+
+---
+
+**3.** Explain why a membrane protein that faces the ER lumen with its N-terminus has its N-terminus outside the cell when it reaches the plasma membrane. Why do all sugar chains on the cell surface face outwards? `[ELO 4, ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Vesicles bud from one membrane and fuse with the next without the protein flipping or crossing a membrane. The side of the membrane that faces the ER lumen faces the vesicle lumen, then the Golgi lumen, and when the last vesicle fuses with the plasma membrane its lumen opens to the outside. So the **lumen side becomes the outside** (topology from the cell tour). N-glycans are added only in the ER lumen (by OST) and O-glycans and further sugars in the Golgi lumen, so all sugar chains end up on the **outside** of the cell.
+:::
+
+---
+
+**4.** Describe how disulfide bonds and N-linked glycans are added in the ER. Why are disulfide bonds typical of secreted proteins and rare in cytosolic proteins? `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Disulfide bonds**: the ER lumen is oxidizing. **PDI** passes a disulfide bond to two cysteines of the new chain, and it can also break wrong pairs so the correct ones form (PDI is re-oxidised by Ero1, using O₂). The cytosol is reducing (glutathione), so disulfides are rare there. Secreted proteins must survive outside the cell, and disulfides make them stable.
+**N-glycans**: a block of 14 sugars (2 GlcNAc, 9 mannose, 3 glucose) is built on the lipid **dolichol** in the ER membrane. **Oligosaccharyltransferase (OST)**, next to the translocon, transfers the whole block to an **asparagine** in the sequence **N-X-S/T** (X not proline) while the chain enters the lumen. The block is then trimmed in the ER and modified in the Golgi.
+:::
+
+---
+
+**5.** Explain the calnexin cycle. What happens to a glycoprotein that never folds? `[ELO 4]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+After the sugar block is added, glucosidases I and II remove two of the three glucoses. With **one glucose**, the protein binds **calnexin** (membrane) or calreticulin (lumen), lectin chaperones that hold it and help it fold (with the PDI-like ERp57). Glucosidase II removes the last glucose and the protein is released. **UGGT** checks it: if it is still unfolded, UGGT adds a glucose back and the protein binds calnexin again. Folded proteins are not re-glucosylated and can leave for the Golgi. During the cycles, a mannosidase slowly removes **mannoses**: a timer. A protein that never folds ends up with trimmed mannoses, is recognised by ERAD factors and is degraded by **ERAD**: retrotranslocation to the cytosol, ubiquitination, the proteasome.
+:::
+
+---
+
+**6.** What is the unfolded protein response? Describe the three branches and the overall effect on the cell. `[ELO 4, ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A signalling response to **too many unfolded proteins in the ER**. Three ER membrane sensors are held inactive by **BiP**; unfolded proteins pull BiP away. **IRE1** (kinase and RNase) splices XBP1 mRNA → transcription factor XBP1 → genes for chaperones, ERAD and lipid synthesis. **PERK** phosphorylates **eIF2α** → general translation falls (less load), while ATF4 is made. **ATF6** moves to the Golgi, is cut by proteases, and its cytosolic part enters the nucleus as a transcription factor for chaperone genes. Overall: **less protein in, more folding capacity, more degradation, more ER**. If the stress cannot be resolved, prolonged UPR (e.g. via CHOP) triggers **apoptosis**.
+:::
+
+---
+
+**7.** List three functions of the smooth ER and give a cell type where each is important. `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(1) **Lipid synthesis**: phospholipids and cholesterol for all membranes (every cell); **steroid hormones** in adrenal cortex, Leydig cells of the testis and ovary cells. (2) **Drug and toxin metabolism** by cytochrome P450 enzymes in **liver** cells (hepatocytes); the smooth ER expands with long-term exposure to some drugs. (3) **Ca²⁺ store**: SERCA pumps fill it, IP₃ receptors or ryanodine receptors release Ca²⁺ as a signal; most developed as the **sarcoplasmic reticulum** of muscle cells, where released Ca²⁺ triggers contraction.
+:::
+
+---
+
+**8.** In cystic fibrosis with the ΔF508 mutation, CFTR is made but hardly any reaches the plasma membrane. Explain why, using ER quality control, and explain how a "corrector" drug helps. `[ELO 4, ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+ΔF508 removes one phenylalanine from the first nucleotide-binding domain of CFTR. The protein **folds slowly and incompletely**. ER quality control (chaperones, the calnexin cycle and other checks) keeps it in the ER, and **ERAD** sends it back to the cytosol, where it is ubiquitinated and degraded by the proteasome. So almost none reaches the apical membrane, although the mutant channel can still conduct some Cl⁻ if it gets there. A **corrector** (e.g. elexacaftor, tezacaftor) binds CFTR during folding and stabilises it, so more molecules pass quality control and reach the surface; a **potentiator** (ivacaftor) then helps the channel open.
+:::
+
+## VG-level questions
+
+**9. [VG]** A protein has, from N to C: a cleavable signal sequence, a 100-amino-acid domain, hydrophobic segment H1, a 30-amino-acid loop, hydrophobic segment H2, and a 200-amino-acid domain with two N-X-S/T sites. (a) Predict its topology in the ER membrane and which sites are glycosylated. (b) Predict what happens if the signal sequence is deleted and H1 has positive charges on its N-terminal side. (c) Design an experiment to test your prediction in (a). `[ELO 4, ELO 1]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) The signal sequence starts translocation and is cut off: the 100-aa domain is in the **lumen**. H1 arrives while the chain is going in: **stop-transfer**, so the 30-aa loop is in the **cytosol**. H2 arrives with the chain in the cytosol: **start-transfer**, so the 200-aa domain goes into the **lumen**. Result: two TM segments, **both ends in the lumen** (later outside the cell); the two N-X-S/T sites in the C-terminal domain are in the lumen and **are glycosylated**.
+(b) Without the signal sequence the 100-aa domain is made in the cytosol. H1 is now the first hydrophobic segment: a **signal-anchor**. Positive charges before it keep the N-terminal domain in the **cytosol**; the loop goes into the lumen. H2 is then a **stop-transfer**, and the 200-aa domain stays in the **cytosol**: both ends cytosolic, and the two sites are **not glycosylated**. The topology is inverted.
+(c) Make the protein in a cell-free system with microsomes (or in cells and then isolate microsomes). **Glycosylation**: compare the size with and without Endo H or PNGase F (or mutate the N-X-S/T sites); a shift shows the domain was in the lumen. **Protease protection**: add a protease to sealed microsomes; lumenal parts survive, the cytosolic loop is cut; detergent as a control digests everything. Antibodies against an N- or C-terminal tag show which fragment survives. In intact cells, antibodies against the N- or C-terminal tag bind without permeabilisation only if that end is outside.
+:::
+
+---
+
+**10. [VG]** Cells are treated with **tunicamycin**, which blocks the first step of building the N-glycan precursor. Predict what happens over the next hours to: (a) the size of a secreted glycoprotein on a gel, (b) how much of it is secreted, (c) the level of spliced XBP1 mRNA and the phosphorylation of eIF2α, (d) the cells after 24 hours of high dose. Explain each prediction. `[ELO 4, ELO 5]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) **Smaller**: no N-glycans are added (each N-glycan adds about 2 kDa). (b) **Less secreted**: many glycoproteins fold poorly without their glycans and cannot use the calnexin cycle, so they are kept in the ER and degraded by ERAD. (c) Unfolded proteins pile up, BiP is pulled off the sensors, and the **UPR** is activated: **more spliced XBP1** (IRE1) and **more phosphorylated eIF2α** (PERK); ATF6 is also cut. Western blots and RT-PCR of XBP1 splicing are standard read-outs. (d) If the stress cannot be resolved, the prolonged UPR (CHOP and other signals) triggers **apoptosis**: many cells die. Tunicamycin (and the SERCA blocker thapsigargin, which empties the ER of Ca²⁺) are standard tools to cause ER stress in the lab.
+:::
+
+---
+
+**11. [VG]** A biotech company makes a therapeutic IgG1 in CHO cells. After a change in the bioreactor process, the antibody has the same amino acid sequence, but more of its Fc glycans carry core fucose, and the patients' response falls. Explain the link between the ER and Golgi of the producer cell and the drug's effect, and say why regulators require glycan analysis of every batch. `[ELO 4, ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The heavy chain gets one N-glycan at Asn297 in the **ER** (OST, en bloc), and the glycan is trimmed and rebuilt in the **Golgi**, where fucosyltransferase adds the **core fucose**. How complete each step is depends on the cell's enzymes, nutrients, time in the Golgi and growth conditions, so process changes alter the glycan pattern while the sequence stays the same. The Fc glycan shapes the Fc part and its binding to **Fc receptors**. Antibodies **without core fucose** bind FcγRIIIa on natural killer cells much more strongly, so they kill antibody-coated tumour cells better (ADCC). More fucose → weaker ADCC → lower effect for an antibody that works by killing cells. Glycans also affect half-life and immunogenicity (non-human sugars from some cell lines can cause allergic reactions, as with cetuximab and α-gal). Therefore the glycan profile is a **critical quality attribute** that must be measured and kept within limits for every batch and for biosimilars.
+:::
+
+## Explore {#explore}
+
+**Demo: topology builder.** Build a protein from segments, or pick a real example, then press **▶ Make it**. A ribosome makes the chain at about 5 amino acids per second (**1× real time**; choose a faster speed, or press **Next step**, to skip ahead). Watch SRP bring the ribosome to the translocon, the segments insert into the ER membrane, the signal sequence get cut off and the N-glycans appear (sugar symbols: blue square GlcNAc, green circle mannose, blue circle glucose, yellow galactose, purple sialic acid). Then follow the protein by vesicle to the Golgi and the cell surface. The close-up always shows the **cytosol on top**: watch which side the sugars and the termini end up on. Tap a TM segment in your protein to change its type. The **Result** table appears once the protein is in the ER; it also gives the result of two classic topology tests (protease protection of microsomes, Endo H). The rules are the textbook ones, simplified (see the note under the demo).
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="topology" data-example="ldlr"></div>
+<script src="../demos/dist/topology.js"></script>
+```
+
+**E1.** Choose **LDL receptor (type I)** and press **▶ Make it**. Watch the first 20 seconds at 1×: when does SRP bind, and when does translation continue? Then use **Next step** (or a faster speed) to follow the protein to the cell surface. Where are its N-terminus, its C-terminus and its two N-glycans in the ER, and at the cell surface? What do the protease test and the Endo H test give in the ER, and after the Golgi? `[ELO 4]`
+
+**E2.** *Predict first.* Compare the **transferrin receptor (type II)** with the LDL receptor. Both cross the membrane once. Which way round is each, and what in the sequence decides it? Then build your own protein: **+ signal-anchor, + before**, then **+ domain (150 aa)**. Predict the topology, make it, then tap the signal-anchor to change it to "+ after" and make it again. Which real protein in the examples has the second topology, and why does it have no N-glycans? `[ELO 4]`
+
+**E3.** *Predict first.* Run the **β2-adrenergic receptor** (7 TM) and **GLUT1** (12 TM). Where are the two ends of each? State a rule that links the number of TM segments and the sides of the N- and C-terminus. Use it to predict the ends of **CFTR** before you run it. `[ELO 4]`
+
+**E4. [VG]** *Predict first.* Clear the protein and build: **+ stop-transfer**, then **+ domain (150 aa)**: a "stop-transfer" with nothing before it. What will happen? Make it and read the note in the Result. Then build **+ signal sequence**, **+ domain (150 aa)**, **+ signal-anchor, + before**, **+ short loop**. What does the signal-anchor do here? What do these two results tell you about how the translocon "reads" a hydrophobic segment? `[ELO 4]`
+
+**E5. [VG]** Choose **CFTR**, tick **misfolded (disease mutation)** and make it (use Next step). Where does the protein end, and what does the Endo H test show? Compare with normal CFTR. Explain why a patient with ΔF508 has almost no CFTR in the plasma membrane even though the topology is correct, and which step a corrector drug changes. Then do the same with **α1-antitrypsin**: what is the consequence for the liver and for the lungs? `[ELO 4, ELO 9]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** For the first 11 s the free ribosome makes the chain: the 21-amino-acid signal sequence is fully out of the ribosome when about 56 amino acids have been made (the exit tunnel holds about 35). SRP binds, translation **pauses**, and the ribosome is carried to the SRP receptor and the translocon (about 4 s in the demo, an illustrative value). Then translation continues, the 767-amino-acid LDL-binding domain is threaded into the lumen, and the signal sequence is cut off. The stop-transfer stops translocation and the 50-amino-acid tail stays in the cytosol. Translation of all 860 amino acids takes about 3 minutes. Result: **type I**, N-terminus in the **ER lumen**, C-terminus in the **cytosol**; both N-glycans on the lumenal domain. At the cell surface: N-terminus and glycans **outside the cell**, C-terminal tail in the cytosol (this tail is what the endocytosis machinery binds). Protease test on microsomes: **50 aa** cut (the cytosolic tail), **767 aa** protected. Endo H: **sensitive** while the protein is in the ER (high-mannose glycans), **resistant** after the Golgi has rebuilt the glycans into complex glycans. This is how a lab tells whether a protein has left the ER. The whole trip takes about 30 minutes in the demo (typical: tens of minutes).
+
+**E2.** LDL receptor: cleaved signal sequence + stop-transfer → **N outside**, C inside (type I). Transferrin receptor: **no** cleaved signal; its only TM segment is a **signal-anchor** with positive charges **before** it → the N-terminal 61 amino acids stay in the **cytosol**, the 671-amino-acid domain goes into the lumen with its **3 N-glycans** → **N inside, C outside** (type II). What decides: whether there is a cleavable signal sequence, and, for a signal-anchor, the side of the positive charges (**positive-inside rule**). Your own protein: "+ before" gives **type II** (N cytosol, domain in the lumen, **1 N-glycan**; the demo assumes one N-X-S/T site per lumenal domain). Changed to "+ after": **type III**, N-terminus in the lumen (only the end of the helix), the 150-aa domain in the **cytosol**, no glycans, because N-glycans are added only in the lumen. The real example is **cytochrome P450 3A4**: N-terminal signal-anchor with charges after it, its large enzyme domain in the cytosol, no N-glycans; it stays in the ER.
+
+**E3.** β2-adrenergic receptor: 7 TM, **N outside** (with its 2 N-glycans), **C in the cytosol** (where kinases and arrestin bind it). GLUT1: 12 TM, **both ends in the cytosol**, 1 N-glycan on the first outside loop. Rule: each TM segment switches the side, so an **odd** number puts N and C on **opposite** sides, an **even** number on the **same** side. CFTR has 12 TM segments and its first one is a signal-anchor with N in the cytosol, so both ends are in the **cytosol**, together with its two ATP-binding domains (NBD1, NBD2) and the R domain: 1143 of its 1480 amino acids are cytosolic, 85 lumenal (its 2 N-glycans are on outside loop 4).
+
+**E4.** The "stop-transfer" is the **first hydrophobic segment**, and nothing is being translocated when it comes out of the ribosome, so it cannot stop anything. SRP binds it and it acts as a **signal-anchor**; its positive charges are after it (like every stop-transfer, whose C-terminal side faces the cytosol), so the N-terminus goes into the lumen: a **type III** protein with the 150-aa domain in the cytosol. In the second protein, the signal sequence has already started translocation when the "signal-anchor" arrives, so it acts as a **stop-transfer**: a type I protein (N and the glycosylated domain in the lumen, 20-aa loop in the cytosol). Conclusion: there is no special stop or start sequence. A hydrophobic segment of about 20 amino acids is simply a TM helix that leaves the translocon sideways through the lateral gate. Its **role depends on where the chain is when it arrives**: going into the lumen → it stops; in the cytosol → it starts. Only for the **first** one do the flanking **charges** decide the orientation. (In real proteins charges also influence later segments; the demo simplifies.)
+
+**E5.** Misfolded CFTR goes through the same insertion; its topology is **correct** (12 TM, both ends cytosolic). But in the ER it does not pass quality control: it is held by chaperones (the calnexin cycle sees it as unfolded), and after about 10 more minutes it is pulled back into the cytosol, ubiquitinated and **degraded by the proteasome** (ERAD); the map shows it never reaches the Golgi. Endo H stays **sensitive** (its glycans were never rebuilt in the Golgi), whereas normal CFTR becomes Endo H-resistant after the Golgi. On a western blot this is the classic difference between "band B" (ER form) and "band C" (mature form) of CFTR. In ΔF508 the problem is **folding, not topology**: one missing phenylalanine destabilises NBD1, so ER quality control destroys almost all of the protein, although it could still work partly as a channel. A **corrector** acts at this step: it stabilises the folding protein so more of it passes quality control and reaches the plasma membrane. α1-antitrypsin (Z variant) is secreted when normal; misfolded, it is kept in the ER. In the demo it is all degraded; in patients part of it forms **polymers** in the hepatocyte ER (the PAS-positive globules), which damage the **liver** (cirrhosis), and only about 10–15 % reaches the blood, too little to inhibit neutrophil elastase in the **lungs** (emphysema).
+:::

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1098ad"/></marker>
+    <g id="enz"><path d="M-11,0 A11,11 0 1 1 11,0 L0,0 Z" fill="#7d6bb0" stroke="#1b2a3a" stroke-width="1"/></g>
+  </defs>
+  <rect width="1000" height="420" fill="#fbfaf5"/>
+  <text x="14" y="26" font-weight="bold">Cytosol, pH 7.2</text>
+  <!-- lysosome -->
+  <circle cx="300" cy="215" r="160" fill="#b9dfc8" stroke="#2e8b57" stroke-width="6"/>
+  <!-- glycocalyx inside membrane -->
+  <g stroke="#6b8f3a" stroke-width="2.5" fill="#6b8f3a">
+    <line x1="453.9" y1="246.2" x2="443.1" y2="244.0"/><circle cx="439.2" cy="243.2" r="4" stroke="none"/>
+    <line x1="430.2" y1="302.7" x2="421.1" y2="296.6"/><circle cx="417.8" cy="294.3" r="4" stroke="none"/>
+    <line x1="386.7" y1="345.9" x2="380.7" y2="336.7"/><circle cx="378.5" cy="333.4" r="4" stroke="none"/>
+    <line x1="330.1" y1="369.1" x2="328.0" y2="358.3"/><circle cx="327.2" cy="354.4" r="4" stroke="none"/>
+    <line x1="268.8" y1="368.9" x2="271.0" y2="358.1"/><circle cx="271.8" cy="354.2" r="4" stroke="none"/>
+    <line x1="212.3" y1="345.2" x2="218.4" y2="336.1"/><circle cx="220.7" cy="332.8" r="4" stroke="none"/>
+    <line x1="169.1" y1="301.7" x2="178.3" y2="295.7"/><circle cx="181.6" cy="293.5" r="4" stroke="none"/>
+    <line x1="145.9" y1="245.1" x2="156.7" y2="243.0"/><circle cx="160.6" cy="242.2" r="4" stroke="none"/>
+    <line x1="146.1" y1="183.8" x2="156.9" y2="186.0"/><circle cx="160.8" cy="186.8" r="4" stroke="none"/>
+    <line x1="213.3" y1="84.1" x2="219.3" y2="93.3"/><circle cx="221.5" cy="96.6" r="4" stroke="none"/>
+    <line x1="269.9" y1="60.9" x2="272.0" y2="71.7"/><circle cx="272.8" cy="75.6" r="4" stroke="none"/>
+    <line x1="331.2" y1="61.1" x2="329.0" y2="71.9"/><circle cx="328.2" cy="75.8" r="4" stroke="none"/>
+    <line x1="387.7" y1="84.8" x2="381.6" y2="93.9"/><circle cx="379.3" cy="97.2" r="4" stroke="none"/>
+    <line x1="430.9" y1="128.3" x2="421.7" y2="134.3"/><circle cx="418.4" cy="136.5" r="4" stroke="none"/>
+    <line x1="454.1" y1="184.9" x2="443.3" y2="187.0"/><circle cx="439.4" cy="187.8" r="4" stroke="none"/>
+  </g>
+  <text x="300" y="150" text-anchor="middle" font-weight="bold">lysosome, pH 4.5–5</text>
+  <!-- enzymes and substrates -->
+  <use href="#enz" x="240" y="200"/><use href="#enz" x="330" y="190"/><use href="#enz" x="275" y="250"/><use href="#enz" x="355" y="245"/><use href="#enz" x="215" y="240"/>
+  <g stroke="#1b2a3a" stroke-width="2.5" fill="none"><path d="M375,215 l10,-8 l10,8 l10,-8"/><path d="M290,225 q8,-10 16,0 t16,0"/></g>
+  <text x="300" y="282" text-anchor="middle">about 60 acid hydrolases</text>
+  <text x="300" y="302" text-anchor="middle">(proteases, lipases,</text>
+  <text x="300" y="322" text-anchor="middle">nucleases, glycosidases)</text>
+  <!-- V-ATPase -->
+  <rect x="120" y="140" width="34" height="30" rx="7" fill="#5c7a8a" transform="rotate(-30 137 155)"/>
+  <path d="M80,80 C105,100 128,145 146,172" fill="none" stroke="#1098ad" stroke-width="2.5" marker-end="url(#arh)"/>
+  <text x="20" y="66">V-ATPase pumps H<tspan font-size="12" dy="-6">+</tspan><tspan dy="6"> in</tspan></text>
+  <!-- transporters out -->
+  <rect x="455" y="250" width="20" height="34" rx="6" fill="#5c7a8a"/>
+  <path d="M478,267 L545,267" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="552" y="262">building blocks out:</text>
+  <text x="552" y="282">amino acids, sugars,</text>
+  <text x="552" y="302">nucleotides, cholesterol</text>
+  <!-- glycocalyx label -->
+  <path d="M432,140 L540,110" stroke="#6b8f3a" stroke-width="1.5"/>
+  <text x="548" y="104">sugar-coated membrane</text>
+  <text x="548" y="124">proteins protect the</text>
+  <text x="548" y="144">membrane from the enzymes</text>
+  <!-- activity vs pH inset -->
+  <g transform="translate(790 230)">
+    <line x1="0" y1="140" x2="190" y2="140" stroke="#1b2a3a" stroke-width="1.5"/>
+    <line x1="0" y1="140" x2="0" y2="20" stroke="#1b2a3a" stroke-width="1.5"/>
+    <path d="M10,135 C30,120 45,30 63,30 C82,30 98,120 120,136 L180,138" fill="none" stroke="#7d6bb0" stroke-width="3"/>
+    <g font-size="14" text-anchor="middle"><text x="21" y="158">4</text><text x="63" y="158">5</text><text x="105" y="158">6</text><text x="147" y="158">7</text></g>
+    <text x="95" y="182" text-anchor="middle" font-size="15">pH</text>
+    <text x="-10" y="80" text-anchor="middle" font-size="15" transform="rotate(-90 -10 80)">activity</text>
+    <path d="M155,60 L155,136" stroke="#e8590c" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="155" y="54" font-size="14" fill="#e8590c" text-anchor="middle">cytosol</text>
+    <text x="95" y="8" text-anchor="middle" font-size="15" font-weight="bold">safety lock</text>
+  </g>
+</svg>

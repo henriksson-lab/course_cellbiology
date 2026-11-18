@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m8484" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b2a3a"/></marker></defs>
+<rect width="900" height="400" fill="#fbfaf5"/>
+<text x="20" y="30" font-size="18" fill="#6b4fa0" font-weight="bold"><tspan dy="0">Normal: lamin A</tspan></text>
+<rect x="20" y="50" width="230" height="26" rx="5" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<path d="M228,50 l0,26" stroke="#6b4fa0" stroke-width="2" fill="none" stroke-dasharray="3 3"/>
+<text x="135" y="68" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">prelamin A</tspan></text>
+<path d="M255,63L300,63" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#m8484)"/>
+<text x="277" y="45" font-size="14" fill="#e8590c" text-anchor="middle"><tspan dy="0">+ farnesyl</tspan></text>
+<rect x="310" y="50" width="230" height="26" rx="5" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<path d="M518,50 l0,26" stroke="#6b4fa0" stroke-width="2" fill="none" stroke-dasharray="3 3"/>
+<path d="M540,63 q12,-16 24,0 q12,16 24,0" stroke="#e8590c" stroke-width="4" fill="none" />
+<path d="M600,63L640,63" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#m8484)"/>
+<text x="620" y="45" font-size="14" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">cut</tspan></text>
+<rect x="650" y="50" width="190" height="26" rx="5" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<text x="745" y="68" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">lamin A</tspan></text>
+<text x="20" y="110" font-size="15" fill="#1b2a3a"><tspan dy="0">The farnesyl lipid holds the new protein at the inner nuclear membrane; the enzyme ZMPSTE24 then</tspan></text>
+<text x="20" y="130" font-size="15" fill="#1b2a3a"><tspan dy="0">cuts off the end (dashed line) with the lipid, and mature lamin A joins the lamina mesh.</tspan></text>
+<text x="20" y="180" font-size="18" fill="#c92a2a" font-weight="bold"><tspan dy="0">Progeria: progerin</tspan></text>
+<rect x="20" y="200" width="200" height="26" rx="5" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<path d="M160,194 l0,38" stroke="#c92a2a" stroke-width="3" fill="none" />
+<text x="168" y="244" font-size="14" fill="#c92a2a"><tspan dy="0">Δ50</tspan></text>
+<text x="105" y="218" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">prelamin A</tspan></text>
+<path d="M230,213L300,213" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#m8484)"/>
+<text x="277" y="195" font-size="14" fill="#e8590c" text-anchor="middle"><tspan dy="0">+ farnesyl</tspan></text>
+<rect x="310" y="200" width="200" height="26" rx="5" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<path d="M450,194 l0,38" stroke="#c92a2a" stroke-width="3" fill="none" />
+<text x="458" y="244" font-size="14" fill="#c92a2a"><tspan dy="0">Δ50</tspan></text>
+<path d="M510,213 q12,-16 24,0 q12,16 24,0" stroke="#e8590c" stroke-width="4" fill="none" />
+<path d="M570,213L640,213" stroke="#1b2a3a" stroke-width="2" fill="none" stroke-dasharray="5 4" marker-end="url(#m8484)"/>
+<text x="605" y="195" font-size="14" fill="#c92a2a" text-anchor="middle"><tspan dy="0">no cut</tspan></text>
+<rect x="650" y="200" width="170" height="26" rx="5" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<path d="M760,194 l0,38" stroke="#c92a2a" stroke-width="3" fill="none" />
+<text x="768" y="244" font-size="14" fill="#c92a2a"><tspan dy="0">Δ50</tspan></text>
+<path d="M820,213 q12,-16 24,0 q12,16 24,0" stroke="#e8590c" stroke-width="4" fill="none" />
+<text x="725" y="218" font-size="15" fill="#1b2a3a" text-anchor="middle"><tspan dy="0">progerin</tspan></text>
+<text x="20" y="272" font-size="15" fill="#1b2a3a"><tspan dy="0">One base change makes a hidden splice site: 50 amino acids, including the cut site, are lost.</tspan></text>
+<text x="20" y="292" font-size="15" fill="#1b2a3a"><tspan dy="0">Progerin keeps its farnesyl, stays stuck on the membrane and distorts the lamina.</tspan></text>
+<rect x="20" y="316" width="860" height="74" rx="8" fill="#fff" stroke="#e8590c" stroke-width="2"/>
+<text x="36" y="344" font-size="16" fill="#e8590c" font-weight="bold"><tspan dy="0">Lonafarnib blocks farnesyltransferase, so less progerin carries the lipid anchor.</tspan></text>
+<text x="36" y="370" font-size="15" fill="#1b2a3a"><tspan dy="0">First approved progeria drug (2020): nuclei look more normal, and patients live longer on average.</tspan></text>
+</svg>

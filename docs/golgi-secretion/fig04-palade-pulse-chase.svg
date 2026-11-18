@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 370" font-family="Helvetica, Arial, sans-serif">
+
+<rect x="30.0" y="12.0" width="110.0" height="30.0" rx="4" fill="#d3f9d8" stroke="#2f9e44" stroke-width="2" />
+<text x="85.0" y="33.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >pulse 3 min</text>
+<rect x="140.0" y="12.0" width="830.0" height="30.0" rx="4" fill="#f1f3f5" stroke="#868e96" stroke-width="2" />
+<text x="555.0" y="33.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >chase: excess unlabelled leucine, fix samples at times →</text>
+<text x="85.0" y="64.0" font-size="15" text-anchor="middle" font-weight="normal" fill="#2f9e44" ><tspan font-size="9.3" dy="-5.7">3</tspan><tspan dy="5.7">​</tspan>H-leucine</text>
+<path d="M 50 92 L 200 92 L 220 312 L 30 312 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4" />
+<text x="125.0" y="84.0" font-size="14" text-anchor="middle" font-weight="normal" fill="#868e96" >lumen (duct)</text>
+<ellipse cx="125.0" cy="257" rx="38" ry="30" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<path d="M 48 298 L 80 298" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 170 298 L 202 298" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 51 284 L 80 284" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 170 284 L 199 284" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 54 270 L 80 270" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 170 270 L 196 270" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 57 256 L 80 256" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 170 256 L 193 256" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 52 212 L 90 210" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 160 210 L 198 212" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 56 228 L 90 226" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 160 226 L 194 228" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 60 244 L 90 242" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 160 242 L 190 244" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 95.0 212 Q 125.0 200 155.0 212" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 95.0 205 Q 125.0 193 155.0 205" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 95.0 198 Q 125.0 186 155.0 198" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 95.0 191 Q 125.0 179 155.0 191" fill="none" stroke="#d9822b" stroke-width="4" />
+<circle cx="92.0" cy="172.0" r="12.0" fill="#efe6fa" stroke="#7a4fb5" stroke-width="2" />
+<circle cx="158.0" cy="174.0" r="12.0" fill="#efe6fa" stroke="#7a4fb5" stroke-width="2" />
+<circle cx="80.0" cy="122.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="112.0" cy="114.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="142.0" cy="122.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="172.0" cy="116.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="100.0" cy="144.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="152.0" cy="146.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="60.0" cy="292.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="70.0" cy="266.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="186.0" cy="282.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="176.0" cy="228.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="68.0" cy="242.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="190.0" cy="254.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<text x="125.0" y="340.0" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >3 min</text>
+<text x="125.0" y="362.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >rough ER</text>
+<path d="M 295 92 L 445 92 L 465 312 L 275 312 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4" />
+<text x="370.0" y="84.0" font-size="14" text-anchor="middle" font-weight="normal" fill="#868e96" >lumen (duct)</text>
+<ellipse cx="370.0" cy="257" rx="38" ry="30" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<path d="M 293 298 L 325 298" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 415 298 L 447 298" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 296 284 L 325 284" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 415 284 L 444 284" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 299 270 L 325 270" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 415 270 L 441 270" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 302 256 L 325 256" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 415 256 L 438 256" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 297 212 L 335 210" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 405 210 L 443 212" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 301 228 L 335 226" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 405 226 L 439 228" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 305 244 L 335 242" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 405 242 L 435 244" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 340.0 212 Q 370.0 200 400.0 212" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 340.0 205 Q 370.0 193 400.0 205" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 340.0 198 Q 370.0 186 400.0 198" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 340.0 191 Q 370.0 179 400.0 191" fill="none" stroke="#d9822b" stroke-width="4" />
+<circle cx="337.0" cy="172.0" r="12.0" fill="#efe6fa" stroke="#7a4fb5" stroke-width="2" />
+<circle cx="403.0" cy="174.0" r="12.0" fill="#efe6fa" stroke="#7a4fb5" stroke-width="2" />
+<circle cx="325.0" cy="122.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="357.0" cy="114.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="387.0" cy="122.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="417.0" cy="116.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="345.0" cy="144.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="397.0" cy="146.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="352.0" cy="198.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="378.0" cy="192.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="392.0" cy="204.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="366.0" cy="208.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="382.0" cy="184.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<text x="370.0" y="340.0" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >7 min</text>
+<text x="370.0" y="362.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >Golgi</text>
+<path d="M 540 92 L 690 92 L 710 312 L 520 312 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4" />
+<text x="615.0" y="84.0" font-size="14" text-anchor="middle" font-weight="normal" fill="#868e96" >lumen (duct)</text>
+<ellipse cx="615.0" cy="257" rx="38" ry="30" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<path d="M 538 298 L 570 298" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 660 298 L 692 298" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 541 284 L 570 284" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 660 284 L 689 284" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 544 270 L 570 270" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 660 270 L 686 270" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 547 256 L 570 256" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 660 256 L 683 256" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 542 212 L 580 210" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 650 210 L 688 212" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 546 228 L 580 226" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 650 226 L 684 228" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 550 244 L 580 242" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 650 242 L 680 244" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 585.0 212 Q 615.0 200 645.0 212" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 585.0 205 Q 615.0 193 645.0 205" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 585.0 198 Q 615.0 186 645.0 198" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 585.0 191 Q 615.0 179 645.0 191" fill="none" stroke="#d9822b" stroke-width="4" />
+<circle cx="582.0" cy="172.0" r="12.0" fill="#efe6fa" stroke="#7a4fb5" stroke-width="2" />
+<circle cx="648.0" cy="174.0" r="12.0" fill="#efe6fa" stroke="#7a4fb5" stroke-width="2" />
+<circle cx="570.0" cy="122.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="602.0" cy="114.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="632.0" cy="122.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="662.0" cy="116.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="590.0" cy="144.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="642.0" cy="146.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="578.0" cy="168.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="588.0" cy="178.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="644.0" cy="170.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="653.0" cy="180.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="640.0" cy="182.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<text x="615.0" y="340.0" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >37 min</text>
+<text x="615.0" y="362.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >condensing vacuoles</text>
+<path d="M 785 92 L 935 92 L 955 312 L 765 312 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4" />
+<text x="860.0" y="84.0" font-size="14" text-anchor="middle" font-weight="normal" fill="#868e96" >lumen (duct)</text>
+<ellipse cx="860.0" cy="257" rx="38" ry="30" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<path d="M 783 298 L 815 298" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 905 298 L 937 298" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 786 284 L 815 284" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 905 284 L 934 284" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 789 270 L 815 270" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 905 270 L 931 270" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 792 256 L 815 256" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 905 256 L 928 256" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 787 212 L 825 210" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 895 210 L 933 212" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 791 228 L 825 226" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 895 226 L 929 228" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 795 244 L 825 242" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 895 242 L 925 244" fill="none" stroke="#2a7f8f" stroke-width="3.5" />
+<path d="M 830.0 212 Q 860.0 200 890.0 212" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 830.0 205 Q 860.0 193 890.0 205" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 830.0 198 Q 860.0 186 890.0 198" fill="none" stroke="#d9822b" stroke-width="4" />
+<path d="M 830.0 191 Q 860.0 179 890.0 191" fill="none" stroke="#d9822b" stroke-width="4" />
+<circle cx="827.0" cy="172.0" r="12.0" fill="#efe6fa" stroke="#7a4fb5" stroke-width="2" />
+<circle cx="893.0" cy="174.0" r="12.0" fill="#efe6fa" stroke="#7a4fb5" stroke-width="2" />
+<circle cx="815.0" cy="122.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="847.0" cy="114.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="877.0" cy="122.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="907.0" cy="116.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="835.0" cy="144.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="887.0" cy="146.0" r="11.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="813.0" cy="118.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="850.0" cy="112.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="877.0" cy="126.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="910.0" cy="114.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="837.0" cy="142.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<circle cx="885.0" cy="144.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<text x="860.0" y="340.0" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >117 min</text>
+<text x="860.0" y="362.0" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >zymogen granules</text>
+<circle cx="170.0" cy="60.0" r="4.5" fill="#000" stroke="#fff" stroke-width="1.2" />
+<text x="180.0" y="65.0" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >= silver grain (where the labelled protein is)</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 470" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a1b2a3a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker><marker id="ac2255c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c2255c"/></marker></defs>
+<rect x="0.0" y="38.0" width="400.0" height="190.0" rx="0" fill="#fbfaf5" stroke="none" stroke-width="2" />
+<path d="M 400 38 L 400 228" fill="none" stroke="#8a6a12" stroke-width="12" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M 400 38 L 400 228" fill="none" stroke="#f6f0de" stroke-width="5" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="10.0" y="30.0" font-size="21" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Constitutive</text>
+<circle cx="50.0" cy="80.0" r="13.0" fill="#fbeedd" stroke="#8f4f0e" stroke-width="3" />
+<circle cx="50.0" cy="130.0" r="13.0" fill="#fbeedd" stroke="#8f4f0e" stroke-width="3" />
+<circle cx="50.0" cy="180.0" r="13.0" fill="#fbeedd" stroke="#8f4f0e" stroke-width="3" />
+<text x="50.0" y="220.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#8f4f0e" >TGN</text>
+<circle cx="140.0" cy="90.0" r="11.0" fill="#ffffff" stroke="#7a4fb5" stroke-width="4" />
+<circle cx="140.0" cy="90.0" r="11.0" fill="none" stroke="#ffffff" stroke-width="1.4" />
+<circle cx="140.0" cy="90.0" r="3.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="230.0" cy="150.0" r="11.0" fill="#ffffff" stroke="#7a4fb5" stroke-width="4" />
+<circle cx="230.0" cy="150.0" r="11.0" fill="none" stroke="#ffffff" stroke-width="1.4" />
+<circle cx="230.0" cy="150.0" r="3.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<circle cx="310.0" cy="105.0" r="11.0" fill="#ffffff" stroke="#7a4fb5" stroke-width="4" />
+<circle cx="310.0" cy="105.0" r="11.0" fill="none" stroke="#ffffff" stroke-width="1.4" />
+<circle cx="310.0" cy="105.0" r="3.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<line x1="75.0" y1="130.0" x2="380.0" y2="130.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)"/>
+<path d="M 394 180 C 380 180 378 160 394 160" fill="none" stroke="#7a4fb5" stroke-width="4" />
+<circle cx="418.0" cy="172.0" r="3.5" fill="#2f9e44" stroke="none" stroke-width="2" />
+<text x="200.0" y="215.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >continuous, in every cell</text>
+<path d="M 470 70 L 470 180 L 620 180" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<text x="462.0" y="125.0" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a" transform="rotate(-90 462 125.0)">secretion</text>
+<text x="545.0" y="200.0" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >time</text>
+<path d="M 472 119.5 L 620 119.5" fill="none" stroke="#7a4fb5" stroke-width="3" />
+<rect x="0.0" y="273.0" width="400.0" height="190.0" rx="0" fill="#fbfaf5" stroke="none" stroke-width="2" />
+<path d="M 400 273 L 400 463" fill="none" stroke="#8a6a12" stroke-width="12" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M 400 273 L 400 463" fill="none" stroke="#f6f0de" stroke-width="5" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="10.0" y="265.0" font-size="21" text-anchor="start" font-weight="bold" fill="#1b2a3a" >Regulated</text>
+<circle cx="50.0" cy="315.0" r="13.0" fill="#fbeedd" stroke="#8f4f0e" stroke-width="3" />
+<circle cx="50.0" cy="365.0" r="13.0" fill="#fbeedd" stroke="#8f4f0e" stroke-width="3" />
+<circle cx="50.0" cy="415.0" r="13.0" fill="#fbeedd" stroke="#8f4f0e" stroke-width="3" />
+<text x="50.0" y="455.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#8f4f0e" >TGN</text>
+<circle cx="150.0" cy="315.0" r="17.0" fill="#e5dbf5" stroke="#7a4fb5" stroke-width="3" />
+<circle cx="150.0" cy="315.0" r="10.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="190.0" cy="395.0" r="17.0" fill="#e5dbf5" stroke="#7a4fb5" stroke-width="3" />
+<circle cx="190.0" cy="395.0" r="10.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="250.0" cy="345.0" r="17.0" fill="#e5dbf5" stroke="#7a4fb5" stroke-width="3" />
+<circle cx="250.0" cy="345.0" r="10.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="370.0" cy="305.0" r="17.0" fill="#e5dbf5" stroke="#7a4fb5" stroke-width="3" />
+<circle cx="370.0" cy="305.0" r="10.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="370.0" cy="365.0" r="17.0" fill="#e5dbf5" stroke="#7a4fb5" stroke-width="3" />
+<circle cx="370.0" cy="365.0" r="10.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<circle cx="370.0" cy="425.0" r="17.0" fill="#e5dbf5" stroke="#7a4fb5" stroke-width="3" />
+<circle cx="370.0" cy="425.0" r="10.0" fill="#7a4fb5" stroke="none" stroke-width="2" />
+<text x="200.0" y="457.0" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >stored; docked granules wait</text>
+<circle cx="425.0" cy="315.0" r="4.0" fill="#c2255c" stroke="none" stroke-width="2" />
+<circle cx="433.0" cy="327.0" r="4.0" fill="#c2255c" stroke="none" stroke-width="2" />
+<circle cx="425.0" cy="339.0" r="4.0" fill="#c2255c" stroke="none" stroke-width="2" />
+<circle cx="433.0" cy="351.0" r="4.0" fill="#c2255c" stroke="none" stroke-width="2" />
+<line x1="436.0" y1="365.0" x2="412.0" y2="365.0" stroke="#c2255c" stroke-width="2.5" marker-end="url(#ac2255c)"/>
+<path d="M 470 305 L 470 415 L 620 415" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<text x="462.0" y="360.0" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a" transform="rotate(-90 462 360.0)">secretion</text>
+<text x="545.0" y="435.0" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >time</text>
+<path d="M 472 406.2 L 522.5 406.2 L 526.5 313.8 C 536.5 343.5 546.5 365.5 556.5 371.0 L 620 373.2" fill="none" stroke="#7a4fb5" stroke-width="3" />
+<line x1="524.5" y1="287.0" x2="524.5" y2="307.0" stroke="#c2255c" stroke-width="2.5" marker-end="url(#ac2255c)"/>
+<text x="530.5" y="283.0" font-size="15" text-anchor="start" font-weight="bold" fill="#c2255c" >Ca<tspan font-size="9.3" dy="-5.7">2+</tspan><tspan dy="5.7">​</tspan></text>
+</svg>

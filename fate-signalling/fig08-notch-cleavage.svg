@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b8a3e"/></marker>
+  </defs>
+  <!-- cells -->
+  <rect x="0" y="0" width="300" height="470" fill="#fbfaf5"/>
+  <rect x="440" y="0" width="560" height="470" fill="#fbfaf5"/>
+  <rect x="294" y="0" width="12" height="470" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+  <rect x="434" y="0" width="12" height="470" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+  <text x="20" y="32" font-weight="700" font-size="19">Sending cell</text>
+  <text x="980" y="32" font-weight="700" font-size="19" text-anchor="end">Receiving cell</text>
+  <text x="370" y="455" text-anchor="middle" font-size="14">outside</text>
+  <!-- Delta -->
+  <rect x="250" y="122" width="56" height="20" rx="6" fill="#e03131" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="306" y="114" width="62" height="36" rx="10" fill="#e03131" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="236" y="112" text-anchor="end">Delta (the signal is</text>
+  <text x="236" y="131" text-anchor="end">a membrane protein)</text>
+  <path d="M244,164 L160,164" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="20" y="196" font-size="15">1. Delta binds Notch. The</text>
+  <text x="20" y="215" font-size="15">sending cell pulls Delta in</text>
+  <text x="20" y="234" font-size="15">(endocytosis); the pull opens</text>
+  <text x="20" y="253" font-size="15">a cut site on Notch.</text>
+  <!-- Notch: extracellular, TM, intracellular -->
+  <rect x="368" y="110" width="66" height="44" rx="10" fill="#9bc5e8" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="434" y="124" width="12" height="16" fill="#9bc5e8" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="446" y="121" width="150" height="22" rx="6" fill="#3b5bab" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="521" y="137" text-anchor="middle" font-size="14" fill="#fff">Notch tail</text>
+  <text x="612" y="138">Notch (receptor)</text>
+  <!-- cut marks -->
+  <path d="M428,94 L428,106" stroke="#c92a2a" stroke-width="3"/>
+  <path d="M440,158 L440,170" stroke="#c92a2a" stroke-width="3"/>
+  <path d="M428,92 C428,74 460,66 480,66" fill="none" stroke="#c92a2a" stroke-width="1.5"/>
+  <text x="486" y="71" font-size="15">2. ADAM protease cuts outside the cell</text>
+  <path d="M440,172 C440,196 460,204 474,204" fill="none" stroke="#c92a2a" stroke-width="1.5"/>
+  <text x="480" y="209" font-size="15">3. γ-secretase cuts inside the membrane</text>
+  <text x="480" y="230" font-size="15" fill="#e8590c" font-weight="700">γ-secretase inhibitors block this step</text>
+  <!-- released tail -->
+  <rect x="470" y="262" width="150" height="22" rx="6" fill="#3b5bab" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="545" y="278" text-anchor="middle" font-size="14" fill="#fff">Notch tail</text>
+  <text x="470" y="310" font-size="15">4. The freed tail</text>
+  <text x="470" y="329" font-size="15">goes to the nucleus</text>
+  <!-- nucleus -->
+  <rect x="620" y="300" width="360" height="160" rx="36" fill="#efebf7" stroke="#6b4fa0" stroke-width="4"/>
+  <text x="660" y="448" fill="#6b4fa0">nucleus</text>
+  <path d="M626,280 C660,300 672,330 676,350" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="638" y1="412" x2="962" y2="412" stroke="#1b2a3a" stroke-width="4"/>
+  <rect x="650" y="394" width="62" height="28" rx="7" fill="#c3b4e3" stroke="#6b4fa0" stroke-width="1.5"/>
+  <text x="681" y="414" text-anchor="middle" font-size="15">CSL</text>
+  <rect x="644" y="364" width="74" height="22" rx="6" fill="#3b5bab" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="790" y="400" width="150" height="24" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="865" y="418" text-anchor="middle" font-size="15">Hes genes on</text>
+  <path d="M790,398 L790,378 L830,378" fill="none" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arg)"/>
+  <text x="742" y="332" font-size="14">5. Hes proteins (repressors)</text>
+  <text x="742" y="350" font-size="14">switch off Delta and the</text>
+  <text x="742" y="368" font-size="14">"become a neuron" genes</text>
+  <!-- left bottom note -->
+  <text x="20" y="320" font-size="15">No enzyme cascade amplifies</text>
+  <text x="20" y="339" font-size="15">the signal: one contact frees</text>
+  <text x="20" y="358" font-size="15">one Notch tail, and the</text>
+  <text x="20" y="377" font-size="15">receptor is used up.</text>
+</svg>

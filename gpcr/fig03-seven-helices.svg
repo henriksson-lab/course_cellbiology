@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="Helvetica, Arial, sans-serif"><rect width="900" height="400" fill="#ffffff"/><rect x="0" y="0" width="900" height="120" rx="0" fill="#eef4fa" stroke="none" stroke-width="0"/>
+<rect x="0" y="250" width="900" height="150" rx="0" fill="#fbfaf5" stroke="none" stroke-width="0"/>
+<rect x="0" y="120" width="900" height="130" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<line x1="0" y1="120" x2="900" y2="120" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="0" y1="250" x2="900" y2="250" stroke="#8a6a12" stroke-width="2.5"/>
+<text x="14" y="28" font-size="16" text-anchor="start" fill="#5c6b7a">outside</text>
+<text x="14" y="388" font-size="16" text-anchor="start" fill="#5c6b7a">cytosol</text>
+<text x="886" y="192" font-size="16" text-anchor="end" fill="#8a6a12">membrane</text>
+<path d="M110,40 Q150,30 180,114" fill="none" stroke="#5f3dc4" stroke-width="3"/>
+<text x="98" y="40" font-size="20" text-anchor="end" fill="#5f3dc4" font-weight="700">N</text>
+<path d="M180,256 C180,310 260,310 260,256" fill="none" stroke="#5f3dc4" stroke-width="3"/>
+<path d="M260,114 C260,60 340,60 340,114" fill="none" stroke="#5f3dc4" stroke-width="3"/>
+<path d="M340,256 C340,310 420,310 420,256" fill="none" stroke="#5f3dc4" stroke-width="3"/>
+<path d="M420,114 C420,60 500,60 500,114" fill="none" stroke="#5f3dc4" stroke-width="3"/>
+<path d="M500,256 C500,310 580,310 580,256" fill="none" stroke="#5f3dc4" stroke-width="3"/>
+<path d="M580,114 C580,60 660,60 660,114" fill="none" stroke="#5f3dc4" stroke-width="3"/>
+<path d="M660,256 C660,310 740,290 770,340" fill="none" stroke="#5f3dc4" stroke-width="3"/>
+<text x="778" y="354" font-size="20" text-anchor="start" fill="#5f3dc4" font-weight="700">C</text>
+<rect x="158" y="110" width="44" height="150" rx="16" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.2"/>
+<text x="180" y="192.0" font-size="20" text-anchor="middle" fill="#5f3dc4" font-weight="700">1</text>
+<rect x="238" y="110" width="44" height="150" rx="16" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.2"/>
+<text x="260" y="192.0" font-size="20" text-anchor="middle" fill="#5f3dc4" font-weight="700">2</text>
+<rect x="318" y="110" width="44" height="150" rx="16" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.2"/>
+<text x="340" y="192.0" font-size="20" text-anchor="middle" fill="#5f3dc4" font-weight="700">3</text>
+<rect x="398" y="110" width="44" height="150" rx="16" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.2"/>
+<text x="420" y="192.0" font-size="20" text-anchor="middle" fill="#5f3dc4" font-weight="700">4</text>
+<rect x="478" y="110" width="44" height="150" rx="16" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.2"/>
+<text x="500" y="192.0" font-size="20" text-anchor="middle" fill="#5f3dc4" font-weight="700">5</text>
+<rect x="558" y="110" width="44" height="150" rx="16" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.2"/>
+<text x="580" y="192.0" font-size="20" text-anchor="middle" fill="#5f3dc4" font-weight="700">6</text>
+<rect x="638" y="110" width="44" height="150" rx="16" fill="#e5dbff" stroke="#5f3dc4" stroke-width="2.2"/>
+<text x="660" y="192.0" font-size="20" text-anchor="middle" fill="#5f3dc4" font-weight="700">7</text>
+<circle cx="460" cy="142" r="13" fill="#1971c2" stroke="#1b2a3a" stroke-width="1.2"/>
+<path d="M460.0,52.0 L460.0,114.0" fill="none" stroke="#1971c2" stroke-width="2.5"/>
+<path d="M460.0,125.0 L453.9,114.0 L466.1,114.0 Z" fill="#1971c2"/>
+<text x="474" y="46" font-size="16" text-anchor="start" fill="#1971c2" font-weight="700">hormone binds in a pocket</text>
+<text x="474" y="66" font-size="16" text-anchor="start" fill="#1971c2">between the helices</text>
+<ellipse cx="460" cy="332" rx="46" ry="24" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.6"/>
+<text x="460" y="338" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="700">G protein</text>
+<text x="460" y="380" font-size="16" text-anchor="middle" fill="#1b2a3a">the G protein binds the cytosolic face</text></svg>

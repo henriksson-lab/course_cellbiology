@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="360" viewBox="0 0 1100 360" font-family="Helvetica, Arial, sans-serif">
+<!-- fig15: metastasis as cell migration: invade, migrate, enter a vessel, leave it elsewhere. Cartoon. -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arb" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1971c2"/></marker><marker id="arp" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#9c36b5"/></marker><marker id="ard" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arg" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2b8a3e"/></marker><marker id="arm" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#8a6a12"/></marker><marker id="ark" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#555555"/></marker><marker id="ara" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7048e8"/></marker></defs>
+<rect x="40.0" y="50.0" width="58.0" height="60.0" rx="4" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2" />
+<ellipse cx="69" cy="80" rx="12" ry="10" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+<rect x="100.0" y="50.0" width="58.0" height="60.0" rx="4" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2" />
+<ellipse cx="129" cy="80" rx="12" ry="10" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+<rect x="160.0" y="50.0" width="58.0" height="60.0" rx="4" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2" />
+<ellipse cx="189" cy="80" rx="12" ry="10" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+<rect x="220.0" y="50.0" width="58.0" height="60.0" rx="4" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2" />
+<ellipse cx="249" cy="80" rx="12" ry="10" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+<rect x="280.0" y="50.0" width="58.0" height="60.0" rx="4" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2" />
+<ellipse cx="309" cy="80" rx="12" ry="10" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+<rect x="340.0" y="50.0" width="58.0" height="60.0" rx="4" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2" />
+<ellipse cx="369" cy="80" rx="12" ry="10" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+<rect x="400.0" y="50.0" width="58.0" height="60.0" rx="4" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2" />
+<ellipse cx="429" cy="80" rx="12" ry="10" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+<ellipse cx="220" cy="112" rx="24" ry="18" fill="#ffe3e3" stroke="#c92a2a" stroke-width="2"/>
+<ellipse cx="262" cy="120" rx="24" ry="18" fill="#ffe3e3" stroke="#c92a2a" stroke-width="2"/>
+<ellipse cx="240" cy="150" rx="24" ry="18" fill="#ffe3e3" stroke="#c92a2a" stroke-width="2"/>
+<line x1="20.0" y1="128.0" x2="470.0" y2="128.0" stroke="#868e96" stroke-width="4" stroke-dasharray="10 6" />
+<text x="480.0" y="133.0" font-size="15" text-anchor="start" fill="#495057">basement membrane</text>
+<text x="40.0" y="30.0" font-size="16" text-anchor="start" fill="#1b2a3a" font-weight="bold">1. Tumour in an epithelium</text>
+<path d="M 290 210 Q 300 180 340 184 Q 380 180 400 204 Q 380 232 330 230 Q 290 228 290 210 Z" fill="#ffe3e3" stroke="#c92a2a" stroke-width="2" />
+<line x1="405.0" y1="204.0" x2="445.0" y2="204.0" stroke="#1971c2" stroke-width="3" marker-end="url(#arb)" />
+<text x="280.0" y="262.0" font-size="15" text-anchor="start" fill="#1b2a3a">2. Loses its junctions, digests the</text>
+<text x="280.0" y="280.8" font-size="15" text-anchor="start" fill="#1b2a3a">matrix and crawls (lamellipodia,</text>
+<text x="280.0" y="299.5" font-size="15" text-anchor="start" fill="#1b2a3a">invadopodia)</text>
+<line x1="577.1" y1="249.2" x2="587.2" y2="236.2" stroke="#ced4da" stroke-width="3" />
+<line x1="523.2" y1="173.5" x2="498.5" y2="180.0" stroke="#ced4da" stroke-width="3" />
+<line x1="649.8" y1="162.0" x2="628.4" y2="151.5" stroke="#ced4da" stroke-width="3" />
+<line x1="742.2" y1="155.6" x2="715.0" y2="169.3" stroke="#ced4da" stroke-width="3" />
+<line x1="530.3" y1="260.6" x2="528.1" y2="267.2" stroke="#ced4da" stroke-width="3" />
+<line x1="730.9" y1="263.0" x2="749.2" y2="265.3" stroke="#ced4da" stroke-width="3" />
+<line x1="751.4" y1="145.4" x2="722.3" y2="136.9" stroke="#ced4da" stroke-width="3" />
+<line x1="751.7" y1="255.7" x2="745.4" y2="265.7" stroke="#ced4da" stroke-width="3" />
+<line x1="657.8" y1="161.4" x2="690.1" y2="166.8" stroke="#ced4da" stroke-width="3" />
+<line x1="742.9" y1="174.3" x2="758.8" y2="169.0" stroke="#ced4da" stroke-width="3" />
+<line x1="650.0" y1="162.9" x2="660.7" y2="177.5" stroke="#ced4da" stroke-width="3" />
+<line x1="584.1" y1="252.1" x2="551.2" y2="261.1" stroke="#ced4da" stroke-width="3" />
+<line x1="618.5" y1="247.3" x2="648.3" y2="233.7" stroke="#ced4da" stroke-width="3" />
+<line x1="667.5" y1="258.0" x2="671.6" y2="270.6" stroke="#ced4da" stroke-width="3" />
+<rect x="800.0" y="60.0" width="120.0" height="280.0" rx="50" fill="#ffe8e8" stroke="#c92a2a" stroke-width="2.5" />
+<ellipse cx="860" cy="90" rx="14" ry="8" fill="#fa5252" opacity="0.6"/>
+<ellipse cx="860" cy="140" rx="14" ry="8" fill="#fa5252" opacity="0.6"/>
+<ellipse cx="860" cy="190" rx="14" ry="8" fill="#fa5252" opacity="0.6"/>
+<ellipse cx="860" cy="240" rx="14" ry="8" fill="#fa5252" opacity="0.6"/>
+<ellipse cx="860" cy="290" rx="14" ry="8" fill="#fa5252" opacity="0.6"/>
+<text x="860.0" y="50.0" font-size="15" text-anchor="middle" fill="#c92a2a" font-weight="bold">blood vessel</text>
+<path d="M 420 210 Q 600 230 790 200" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)" stroke-dasharray="8 6" />
+<ellipse cx="845" cy="200" rx="22" ry="14" fill="#ffe3e3" stroke="#c92a2a" stroke-width="2"/>
+<text x="640.0" y="300.0" font-size="15" text-anchor="middle" fill="#1b2a3a">3. Squeezes into the vessel</text>
+<line x1="930.0" y1="200.0" x2="990.0" y2="200.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)" />
+<text x="1000.0" y="180.0" font-size="15" text-anchor="start" fill="#1b2a3a">4. Leaves</text>
+<text x="1000.0" y="198.8" font-size="15" text-anchor="start" fill="#1b2a3a">it in another</text>
+<text x="1000.0" y="217.5" font-size="15" text-anchor="start" fill="#1b2a3a">organ: a new</text>
+<text x="1000.0" y="236.2" font-size="15" text-anchor="start" fill="#1b2a3a">tumour</text>
+</svg>

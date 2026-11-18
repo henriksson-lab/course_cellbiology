@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b8a3e"/></marker>
+    <g id="p"><circle r="10" fill="#fff3bf" stroke="#e8590c" stroke-width="2"/><text y="5" text-anchor="middle" font-size="13" font-weight="700" fill="#e8590c">P</text></g>
+    <g id="ub"><circle r="8" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.2"/></g>
+  </defs>
+  <rect x="0" y="80" width="1000" height="390" fill="#fbfaf5"/>
+  <rect x="0" y="62" width="1000" height="20" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+  <!-- signal + receptor -->
+  <circle cx="80" cy="30" r="13" fill="#e03131" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="102" y="28" font-size="15">TNF-α, IL-1, bacterial LPS</text>
+  <text x="102" y="46" font-size="14">(inflammation signals)</text>
+  <rect x="67" y="46" width="26" height="52" rx="7" fill="#9bc5e8" stroke="#1b2a3a" stroke-width="1.5"/>
+  <path d="M80,104 L80,136" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="30" y="140" width="100" height="36" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="80" y="164" text-anchor="middle">IKK kinase</text>
+  <!-- resting complex -->
+  <ellipse cx="270" cy="170" rx="56" ry="20" fill="#e8b923" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="270" y="176" text-anchor="middle">NF-κB</text>
+  <path d="M220,154 Q270,124 320,154" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="270" y="122" text-anchor="middle" font-size="15">IκB (inhibitor) sits on NF-κB</text>
+  <text x="270" y="104" text-anchor="middle" font-size="15" font-weight="700">At rest</text>
+  <text x="270" y="216" text-anchor="middle" font-size="14">and hides its nuclear entry signal</text>
+  <path d="M134,158 L204,158" stroke="#e8590c" stroke-width="2.5" marker-end="url(#ar)"/>
+  <use href="#p" x="236" y="140"/>
+  <!-- ubiquitin and proteasome -->
+  <path d="M330,168 L420,168" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="375" y="156" text-anchor="middle" font-size="14">+Ub</text>
+  <path d="M440,150 Q490,128 540,150" fill="#adb5bd" stroke="#1b2a3a" stroke-width="1.5"/>
+  <use href="#ub" x="456" y="124"/><use href="#ub" x="470" y="112"/><use href="#ub" x="486" y="104"/><use href="#ub" x="502" y="98"/>
+  <path d="M550,148 L620,148" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="626" y="124" width="96" height="48" rx="14" fill="#d9d2c5" stroke="#1b2a3a" stroke-width="1.5"/>
+  <line x1="650" y1="124" x2="650" y2="172" stroke="#1b2a3a"/><line x1="674" y1="124" x2="674" y2="172" stroke="#1b2a3a"/><line x1="698" y1="124" x2="698" y2="172" stroke="#1b2a3a"/>
+  <text x="674" y="194" text-anchor="middle" font-size="15">proteasome</text>
+  <text x="740" y="140" font-size="15">IκB is destroyed</text>
+  <text x="740" y="158" font-size="15">(the protein-</text>
+  <text x="740" y="176" font-size="15">degradation lecture)</text>
+  <!-- free NF-kB -->
+  <ellipse cx="490" cy="186" rx="56" ry="20" fill="#e8b923" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="490" y="192" text-anchor="middle">NF-κB</text>
+  <text x="490" y="232" text-anchor="middle" font-size="15">free: enters the nucleus</text>
+  <!-- nucleus -->
+  <rect x="250" y="270" width="720" height="190" rx="40" fill="#efebf7" stroke="#6b4fa0" stroke-width="4"/>
+  <text x="275" y="298" fill="#6b4fa0">nucleus</text>
+  <path d="M490,240 L490,320" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="270" y1="380" x2="950" y2="380" stroke="#1b2a3a" stroke-width="4"/>
+  <ellipse cx="490" cy="348" rx="56" ry="20" fill="#e8b923" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="490" y="354" text-anchor="middle">NF-κB</text>
+  <rect x="580" y="368" width="150" height="24" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="655" y="386" text-anchor="middle" font-size="15">inflammation genes</text>
+  <rect x="780" y="368" width="110" height="24" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="835" y="386" text-anchor="middle" font-size="15">IκB gene</text>
+  <path d="M580,366 L580,344 L626,344" fill="none" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arg)"/>
+  <path d="M780,366 L780,344 L826,344" fill="none" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arg)"/>
+  <text x="655" y="414" text-anchor="middle" font-size="14">cytokines, adhesion molecules,</text>
+  <text x="655" y="430" text-anchor="middle" font-size="14">anti-apoptosis proteins</text>
+  <text x="835" y="414" text-anchor="middle" font-size="14">new IκB switches</text>
+  <text x="835" y="430" text-anchor="middle" font-size="14">NF-κB off again</text>
+  <!-- left note -->
+  <text x="20" y="300" font-size="15">From signal to genes</text>
+  <text x="20" y="319" font-size="15">in minutes: no new</text>
+  <text x="20" y="338" font-size="15">protein is needed.</text>
+</svg>

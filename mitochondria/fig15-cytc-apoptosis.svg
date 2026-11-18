@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <defs><marker id="k" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+  <rect x="0" y="0" width="1000" height="380" fill="#fbfaf5"/>
+  <text x="16" y="28" font-size="17" font-weight="700" fill="#8a6a12">cytosol</text>
+  <!-- mitochondrion cut -->
+  <rect x="30" y="190" width="420" height="170" rx="40" fill="#f8e9ec" stroke="#a8324a" stroke-width="4"/>
+  <rect x="52" y="214" width="376" height="130" rx="30" fill="#f4dde2" stroke="#a8324a" stroke-width="2.5"/>
+  <text x="240" y="300" font-size="16" text-anchor="middle" fill="#a8324a" font-weight="700">matrix</text>
+  <text x="64" y="208" font-size="14" fill="#a8324a">intermembrane space</text>
+  <!-- cyt c in IMS -->
+  <g fill="#c99700" stroke="#1b2a3a" stroke-width="1"><circle cx="340" cy="203" r="6"/><circle cx="375" cy="204" r="6"/><circle cx="410" cy="203" r="6"/><circle cx="420" cy="230" r="6"/></g>
+  <!-- BAX/BAK pore in outer membrane -->
+  <rect x="240" y="178" width="20" height="26" rx="4" fill="#e8590c"/><rect x="282" y="178" width="20" height="26" rx="4" fill="#e8590c"/>
+  <rect x="260" y="186" width="22" height="10" fill="#fbfaf5"/>
+  <text x="108" y="168" font-size="16" font-weight="700" fill="#e8590c">BAX/BAK pore</text>
+  <path d="M271,200 L271,120" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <g fill="#c99700" stroke="#1b2a3a" stroke-width="1"><circle cx="271" cy="104" r="6"/><circle cx="300" cy="90" r="6"/><circle cx="246" cy="86" r="6"/></g>
+  <text x="318" y="110" font-size="17" font-weight="700">cytochrome c</text>
+  <text x="318" y="130" font-size="15">leaves the</text><text x="318" y="148" font-size="15">intermembrane space</text>
+  <text x="40" y="60" font-size="15">stress, DNA damage → BCL-2 family</text>
+  <text x="40" y="78" font-size="15">proteins open the outer membrane</text>
+  <!-- apoptosome -->
+  <path d="M480,110 L550,110" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <g transform="translate(620 110)">
+    <g fill="#efebf7" stroke="#6b4fa0" stroke-width="2">
+      <circle cx="0" cy="-44" r="15"/><circle cx="34" cy="-27" r="15"/><circle cx="43" cy="10" r="15"/><circle cx="19" cy="40" r="15"/><circle cx="-19" cy="40" r="15"/><circle cx="-43" cy="10" r="15"/><circle cx="-34" cy="-27" r="15"/>
+    </g>
+    <circle cx="0" cy="0" r="16" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  </g>
+  <text x="620" y="190" font-size="17" font-weight="700" text-anchor="middle">apoptosome</text>
+  <text x="620" y="210" font-size="15" text-anchor="middle">cyt c + APAF1 (×7)</text>
+  <path d="M700,110 L760,110" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="770" y="104" font-size="17" font-weight="700">caspase-9</text>
+  <path d="M810,116 L810,160" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="770" y="184" font-size="17" font-weight="700">caspase-3, -7</text>
+  <path d="M810,192 L810,236" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#k)"/>
+  <text x="740" y="262" font-size="16">proteins cut, DNA cut,</text>
+  <text x="740" y="282" font-size="16">cell dismantled neatly:</text>
+  <text x="740" y="304" font-size="17" font-weight="700" fill="#a8324a">apoptosis</text>
+  <text x="520" y="350" font-size="15" font-style="italic">The same protein carries electrons (III → IV) and triggers death.</text>
+  <text x="520" y="370" font-size="15" font-style="italic">Details, BCL-2 and its drug venetoclax: the cell death lecture.</text>
+</svg>

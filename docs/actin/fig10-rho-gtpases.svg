@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="465" viewBox="0 0 1100 465" font-family="Helvetica, Arial, sans-serif">
+<!-- fig10: Rho-family GTPases are switches; Cdc42, Rac and Rho each build one actin structure. Simplified. -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arb" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1971c2"/></marker><marker id="arp" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#9c36b5"/></marker><marker id="ard" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arg" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2b8a3e"/></marker><marker id="arm" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#8a6a12"/></marker><marker id="ark" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#555555"/></marker><marker id="ara" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7048e8"/></marker></defs>
+<rect x="330.0" y="20.0" width="150.0" height="60.0" rx="12" fill="#e9ecef" stroke="#1b2a3a" stroke-width="2" />
+<text x="405.0" y="57.0" font-size="17" text-anchor="middle" fill="#1b2a3a" font-weight="bold">GTPase–GDP</text>
+<text x="405.0" y="100.0" font-size="16" text-anchor="middle" fill="#868e96" font-weight="bold">off</text>
+<rect x="640.0" y="20.0" width="150.0" height="60.0" rx="12" fill="#d3f9d8" stroke="#1b2a3a" stroke-width="2" />
+<text x="715.0" y="57.0" font-size="17" text-anchor="middle" fill="#1b2a3a" font-weight="bold">GTPase–GTP</text>
+<text x="715.0" y="100.0" font-size="16" text-anchor="middle" fill="#2b8a3e" font-weight="bold">on</text>
+<path d="M 482 36 Q 560 0 636 36" fill="none" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)" />
+<text x="560.0" y="14.0" font-size="15" text-anchor="middle" fill="#1b2a3a">GEF (signal in)</text>
+<path d="M 636 66 Q 560 102 486 66" fill="none" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)" />
+<text x="560.0" y="112.0" font-size="15" text-anchor="middle" fill="#1b2a3a">GAP (hydrolysis: off)</text>
+<text x="40.0" y="60.0" font-size="15" text-anchor="start" fill="#495057" font-style="italic">Same switch as in</text>
+<text x="40.0" y="78.8" font-size="15" text-anchor="start" fill="#495057" font-style="italic">the signalling lectures</text>
+<rect x="120.0" y="150.0" width="140.0" height="46.0" rx="10" fill="#d3f9d8" stroke="#1b2a3a" stroke-width="2" />
+<text x="190.0" y="180.0" font-size="18" text-anchor="middle" fill="#1b2a3a" font-weight="bold">Cdc42–GTP</text>
+<line x1="190.0" y1="198.0" x2="190.0" y2="232.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)" />
+<text x="190.0" y="254.0" font-size="15" text-anchor="middle" fill="#1b2a3a">N-WASP → Arp2/3; formins</text>
+<line x1="190.0" y1="264.0" x2="190.0" y2="290.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)" />
+<ellipse cx="190" cy="360" rx="85" ry="50" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+<ellipse cx="190" cy="360" rx="22" ry="15" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+<line x1="275.0" y1="360.0" x2="308.0" y2="360.0" stroke="#555555" stroke-width="3" />
+<line x1="263.6" y1="385.0" x2="292.2" y2="395.0" stroke="#555555" stroke-width="3" />
+<line x1="232.5" y1="403.3" x2="249.0" y2="420.6" stroke="#555555" stroke-width="3" />
+<line x1="190.0" y1="410.0" x2="190.0" y2="430.0" stroke="#555555" stroke-width="3" />
+<line x1="147.5" y1="403.3" x2="131.0" y2="420.6" stroke="#555555" stroke-width="3" />
+<line x1="116.4" y1="385.0" x2="87.8" y2="395.0" stroke="#555555" stroke-width="3" />
+<line x1="105.0" y1="360.0" x2="72.0" y2="360.0" stroke="#555555" stroke-width="3" />
+<line x1="116.4" y1="335.0" x2="87.8" y2="325.0" stroke="#555555" stroke-width="3" />
+<line x1="147.5" y1="316.7" x2="131.0" y2="299.4" stroke="#555555" stroke-width="3" />
+<line x1="190.0" y1="310.0" x2="190.0" y2="290.0" stroke="#555555" stroke-width="3" />
+<line x1="232.5" y1="316.7" x2="249.0" y2="299.4" stroke="#555555" stroke-width="3" />
+<line x1="263.6" y1="335.0" x2="292.2" y2="325.0" stroke="#555555" stroke-width="3" />
+<text x="190.0" y="452.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="bold">filopodia</text>
+<rect x="480.0" y="150.0" width="140.0" height="46.0" rx="10" fill="#d3f9d8" stroke="#1b2a3a" stroke-width="2" />
+<text x="550.0" y="180.0" font-size="18" text-anchor="middle" fill="#1b2a3a" font-weight="bold">Rac–GTP</text>
+<line x1="550.0" y1="198.0" x2="550.0" y2="232.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)" />
+<text x="550.0" y="254.0" font-size="15" text-anchor="middle" fill="#1b2a3a">WAVE → Arp2/3</text>
+<line x1="550.0" y1="264.0" x2="550.0" y2="290.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)" />
+<ellipse cx="550" cy="360" rx="85" ry="50" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+<ellipse cx="550" cy="360" rx="22" ry="15" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+<ellipse cx="550" cy="360" rx="85" ry="50" fill="none" stroke="#adb5bd" stroke-width="12" opacity="0.8"/>
+<ellipse cx="550" cy="360" rx="85" ry="50" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<text x="550.0" y="452.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="bold">lamellipodia</text>
+<rect x="840.0" y="150.0" width="140.0" height="46.0" rx="10" fill="#d3f9d8" stroke="#1b2a3a" stroke-width="2" />
+<text x="910.0" y="180.0" font-size="18" text-anchor="middle" fill="#1b2a3a" font-weight="bold">Rho–GTP</text>
+<line x1="910.0" y1="198.0" x2="910.0" y2="232.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)" />
+<text x="910.0" y="254.0" font-size="15" text-anchor="middle" fill="#1b2a3a">formin (mDia); ROCK → myosin II</text>
+<line x1="910.0" y1="264.0" x2="910.0" y2="290.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)" />
+<ellipse cx="910" cy="360" rx="85" ry="50" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+<ellipse cx="910" cy="360" rx="22" ry="15" fill="#efebf7" stroke="#6b4fa0" stroke-width="1.5"/>
+<line x1="840.0" y1="330.0" x2="980.0" y2="342.0" stroke="#555555" stroke-width="3.5" />
+<line x1="840.0" y1="348.0" x2="980.0" y2="352.8" stroke="#555555" stroke-width="3.5" />
+<line x1="840.0" y1="372.0" x2="980.0" y2="367.2" stroke="#555555" stroke-width="3.5" />
+<line x1="840.0" y1="390.0" x2="980.0" y2="378.0" stroke="#555555" stroke-width="3.5" />
+<text x="910.0" y="452.0" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="bold">stress fibres, contraction</text>
+</svg>

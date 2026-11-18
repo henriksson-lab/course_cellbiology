@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="334" viewBox="0 0 1100 334" font-family="Helvetica, Arial, sans-serif">
+<!-- fig09: kinesin walks to the plus end, cytoplasmic dynein (with dynactin) to the minus end. Cartoon, not to scale. -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arO" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arB" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1f77b4"/></marker><marker id="arP" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7b3f99"/></marker><marker id="arG" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2f9e44"/></marker><marker id="arR" markerWidth="14" markerHeight="14" refX="3" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker></defs>
+<rect x="60" y="236" width="980" height="28" rx="4" fill="#c7d0da" stroke="#1b2a3a" stroke-width="1.5"/>
+<line x1="62" y1="244" x2="1038" y2="244" stroke="#9aa8b6" stroke-width="1"/>
+<line x1="62" y1="250" x2="1038" y2="250" stroke="#9aa8b6" stroke-width="1"/>
+<line x1="62" y1="256" x2="1038" y2="256" stroke="#9aa8b6" stroke-width="1"/>
+<text x="40" y="258" font-size="28" text-anchor="middle" font-weight="bold" fill="#1b2a3a">−</text>
+<text x="1062" y="258" font-size="28" text-anchor="middle" font-weight="bold" fill="#1b2a3a">+</text>
+<text x="550" y="292" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" font-style="italic">microtubule</text>
+<ellipse cx="768" cy="224" rx="20" ry="12" fill="#1f77b4" stroke="#1b2a3a" stroke-width="1.5"/>
+<ellipse cx="812" cy="224" rx="20" ry="12" fill="#1f77b4" stroke="#1b2a3a" stroke-width="1.5"/>
+<path d="M772,214 L790,192 L808,214" fill="none" stroke="#1f77b4" stroke-width="4"/>
+<path d="M790,192 C798,156 782,126 790,96" fill="none" stroke="#1f77b4" stroke-width="6"/>
+<circle cx="790" cy="58" r="38" fill="#fbeedd" stroke="#d9822b" stroke-width="3"/>
+<text x="790" y="63" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">vesicle</text>
+<line x1="850" y1="146" x2="970" y2="146" stroke="#1f77b4" stroke-width="4" marker-end="url(#arB)"/>
+<text x="860" y="132" font-size="16" text-anchor="start" font-weight="bold" fill="#1f77b4">to the + end</text>
+<text x="860" y="38" font-size="18" text-anchor="start" font-weight="bold" fill="#1f77b4">Kinesin (most kinds)</text>
+<text x="860" y="60" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">2 heads, long stalk</text>
+<text x="860" y="80" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">about 1 µm/s</text>
+<text x="726" y="232" font-size="14" text-anchor="end" font-weight="normal" fill="#1b2a3a">heads</text>
+<circle cx="414" cy="156" r="26" fill="#e6d9ef" stroke="#7b3f99" stroke-width="3"/>
+<line x1="414" y1="156" x2="440.0" y2="156.0" stroke="#7b3f99" stroke-width="1.5"/>
+<line x1="414" y1="156" x2="427.0" y2="178.5" stroke="#7b3f99" stroke-width="1.5"/>
+<line x1="414" y1="156" x2="401.0" y2="178.5" stroke="#7b3f99" stroke-width="1.5"/>
+<line x1="414" y1="156" x2="388.0" y2="156.0" stroke="#7b3f99" stroke-width="1.5"/>
+<line x1="414" y1="156" x2="401.0" y2="133.5" stroke="#7b3f99" stroke-width="1.5"/>
+<line x1="414" y1="156" x2="427.0" y2="133.5" stroke="#7b3f99" stroke-width="1.5"/>
+<circle cx="414" cy="156" r="8" fill="#e6d9ef" stroke="#7b3f99" stroke-width="2"/>
+<line x1="410.0" y1="182" x2="400.0" y2="234" stroke="#7b3f99" stroke-width="3"/>
+<circle cx="400.0" cy="233" r="5" fill="#7b3f99" stroke="#7b3f99" stroke-width="1"/>
+<circle cx="486" cy="156" r="26" fill="#e6d9ef" stroke="#7b3f99" stroke-width="3"/>
+<line x1="486" y1="156" x2="512.0" y2="156.0" stroke="#7b3f99" stroke-width="1.5"/>
+<line x1="486" y1="156" x2="499.0" y2="178.5" stroke="#7b3f99" stroke-width="1.5"/>
+<line x1="486" y1="156" x2="473.0" y2="178.5" stroke="#7b3f99" stroke-width="1.5"/>
+<line x1="486" y1="156" x2="460.0" y2="156.0" stroke="#7b3f99" stroke-width="1.5"/>
+<line x1="486" y1="156" x2="473.0" y2="133.5" stroke="#7b3f99" stroke-width="1.5"/>
+<line x1="486" y1="156" x2="499.0" y2="133.5" stroke="#7b3f99" stroke-width="1.5"/>
+<circle cx="486" cy="156" r="8" fill="#e6d9ef" stroke="#7b3f99" stroke-width="2"/>
+<line x1="490.0" y1="182" x2="500.0" y2="234" stroke="#7b3f99" stroke-width="3"/>
+<circle cx="500.0" cy="233" r="5" fill="#7b3f99" stroke="#7b3f99" stroke-width="1"/>
+<path d="M424,132 C432,108 468,108 476,132" fill="none" stroke="#7b3f99" stroke-width="5"/>
+<line x1="450" y1="114" x2="450" y2="100" stroke="#7b3f99" stroke-width="5"/>
+<rect x="400" y="84" width="120" height="16" rx="8" fill="#d9d2c3" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="530" y="97" font-size="14" text-anchor="start" font-weight="normal" fill="#1b2a3a">dynactin + adaptor</text>
+<circle cx="460" cy="54" r="28" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/>
+<text x="496" y="50" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">endosome</text>
+<line x1="380" y1="176" x2="260" y2="176" stroke="#7b3f99" stroke-width="4" marker-end="url(#arP)"/>
+<text x="370" y="162" font-size="16" text-anchor="end" font-weight="bold" fill="#7b3f99">to the − end</text>
+<text x="40" y="38" font-size="18" text-anchor="start" font-weight="bold" fill="#7b3f99">Cytoplasmic dynein</text>
+<text x="40" y="60" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">2 ring-shaped motor heads,</text>
+<text x="40" y="80" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">very large; works with dynactin</text>
+<text x="550" y="320" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Both use ATP. Both carry cargo on the same tracks, in opposite directions.</text>
+</svg>

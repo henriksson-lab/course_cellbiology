@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340" font-family="Helvetica, Arial, sans-serif"><rect width="900" height="340" fill="#ffffff"/><text x="215" y="30" font-size="19" text-anchor="middle" fill="#1b2a3a" font-weight="700">low cAMP</text>
+<rect x="165" y="70" width="100" height="40" rx="16" fill="#e9ecef" stroke="#1b2a3a" stroke-width="1.8"/>
+<text x="215" y="96" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="700">Epac</text>
+<line x1="175" y1="110" x2="173" y2="160" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="255" y1="110" x2="257" y2="160" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="173" cy="190" r="30" fill="#c5f6fa" stroke="#1098ad" stroke-width="3"/>
+<text x="173" y="196" font-size="15" text-anchor="middle" fill="#1098ad" font-weight="700">CFP</text>
+<circle cx="257" cy="190" r="30" fill="#fff3bf" stroke="#d9a400" stroke-width="3"/>
+<text x="257" y="196" font-size="15" text-anchor="middle" fill="#a07800" font-weight="700">YFP</text>
+<path d="M83.0,120.0 L140.2,163.4" fill="none" stroke="#5f3dc4" stroke-width="2.5"/>
+<path d="M149.0,170.0 L136.6,168.2 L143.9,158.5 Z" fill="#5f3dc4"/>
+<text x="79" y="110" font-size="14" text-anchor="start" fill="#5f3dc4" font-weight="700">excite 440 nm</text>
+<path d="M193.0,214.0 Q215.0,252.0 232.5,221.8" fill="none" stroke="#868e96" stroke-width="2.5" stroke-dasharray="5 4"/>
+<path d="M237.0,214.0 L236.8,224.3 L228.2,219.3 Z" fill="#868e96"/>
+<text x="215" y="264" font-size="14" text-anchor="middle" fill="#5c6b7a" font-weight="700">FRET</text>
+<path d="M283.0,206.0 L315.2,238.2" fill="none" stroke="#d9a400" stroke-width="3"/>
+<path d="M323.0,246.0 L310.9,242.5 L319.5,233.9 Z" fill="#d9a400"/>
+<text x="307" y="270" font-size="15" text-anchor="start" fill="#a07800" font-weight="700">yellow light</text>
+<text x="307" y="288" font-size="15" text-anchor="start" fill="#a07800" font-weight="700">535 nm</text>
+<text x="215" y="325" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">close together: energy jumps to YFP</text>
+<text x="675" y="30" font-size="19" text-anchor="middle" fill="#1b2a3a" font-weight="700">high cAMP</text>
+<rect x="625" y="70" width="100" height="40" rx="16" fill="#e9ecef" stroke="#1b2a3a" stroke-width="1.8"/>
+<text x="675" y="96" font-size="15" text-anchor="middle" fill="#1b2a3a" font-weight="700">Epac</text>
+<circle cx="675" cy="58" r="9" fill="#2f9e44" stroke="#1b2a3a" stroke-width="1.2"/>
+<text x="689" y="54" font-size="14" text-anchor="start" fill="#2f9e44" font-weight="700">cAMP</text>
+<line x1="635" y1="110" x2="555" y2="140" stroke="#1b2a3a" stroke-width="2"/>
+<line x1="715" y1="110" x2="795" y2="140" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="555" cy="170" r="30" fill="#c5f6fa" stroke="#1098ad" stroke-width="3"/>
+<text x="555" y="176" font-size="15" text-anchor="middle" fill="#1098ad" font-weight="700">CFP</text>
+<circle cx="795" cy="170" r="30" fill="#fff3bf" stroke="#d9a400" stroke-width="3"/>
+<text x="795" y="176" font-size="15" text-anchor="middle" fill="#a07800" font-weight="700">YFP</text>
+<path d="M465.0,100.0 L522.2,143.4" fill="none" stroke="#5f3dc4" stroke-width="2.5"/>
+<path d="M531.0,150.0 L518.6,148.2 L525.9,138.5 Z" fill="#5f3dc4"/>
+<text x="461" y="90" font-size="14" text-anchor="start" fill="#5f3dc4" font-weight="700">excite 440 nm</text>
+<path d="M549.0,202.0 L538.2,237.5" fill="none" stroke="#1098ad" stroke-width="3"/>
+<path d="M535.0,248.0 L532.4,235.7 L544.0,239.2 Z" fill="#1098ad"/>
+<text x="557" y="270" font-size="15" text-anchor="middle" fill="#1098ad" font-weight="700">blue light 480 nm</text>
+<text x="675" y="325" font-size="16" text-anchor="middle" fill="#1b2a3a" font-weight="700">far apart: no FRET → more blue</text>
+<line x1="450" y1="15" x2="450" y2="310" stroke="#ced4da" stroke-width="2"/></svg>

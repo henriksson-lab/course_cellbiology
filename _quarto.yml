@@ -13,6 +13,8 @@ project:
     - "*/*.qmd"
     - "*/*.md"
     - "!plan/"
+    # Unfinished unit (not in the sidebar yet).
+    - "!mitochondria/"
     - "!unused-figures/"
     - "!tools/"
     - "!edit-notes/"
@@ -121,6 +123,142 @@ website:
                 href: ion-channels/questions.qmd
               - text: "Demo: the cell battery"
                 href: ion-channels/questions.qmd#explore
+      - section: "Protein handling and organelles"
+        contents:
+          - section: "Sorting proteins to the right compartment"
+            contents:
+              - text: "Lecture (slides)"
+                href: protein-sorting/lec.qmd
+              - text: "Quiz"
+                href: protein-sorting/quiz.qmd
+              - text: "Study questions"
+                href: protein-sorting/questions.qmd
+              - text: "Demo: zip-code game"
+                href: protein-sorting/questions.qmd#explore
+          - section: "The endoplasmic reticulum"
+            contents:
+              - text: "Lecture (slides)"
+                href: er/lec.qmd
+              - text: "Quiz"
+                href: er/quiz.qmd
+              - text: "Study questions"
+                href: er/questions.qmd
+              - text: "Demo: topology builder"
+                href: er/questions.qmd#explore
+          - section: "The Golgi and the secretory pathway"
+            contents:
+              - text: "Lecture (slides)"
+                href: golgi-secretion/lec.qmd
+              - text: "Quiz"
+                href: golgi-secretion/quiz.qmd
+              - text: "Study questions"
+                href: golgi-secretion/questions.qmd
+              - text: "Demo: pulse-chase"
+                href: golgi-secretion/questions.qmd#explore
+          - section: "Endocytosis, lysosomes and autophagy"
+            contents:
+              - text: "Lecture (slides)"
+                href: endocytosis-lysosomes/lec.qmd
+              - text: "Quiz"
+                href: endocytosis-lysosomes/quiz.qmd
+              - text: "Study questions"
+                href: endocytosis-lysosomes/questions.qmd
+              - text: "Demo: LDL receptor cycle"
+                href: endocytosis-lysosomes/questions.qmd#explore
+          - section: "Protein life and death"
+            contents:
+              - text: "Lecture (slides)"
+                href: protein-lifecycle/lec.qmd
+              - text: "Quiz"
+                href: protein-lifecycle/quiz.qmd
+              - text: "Study questions"
+                href: protein-lifecycle/questions.qmd
+              - text: "Demo: protein turnover"
+                href: protein-lifecycle/questions.qmd#explore
+          - section: "Organelles compared: keeping the cell in balance"
+            contents:
+              - text: "Lecture (slides)"
+                href: organelles-homeostasis/lec.qmd
+              - text: "Quiz"
+                href: organelles-homeostasis/quiz.qmd
+              - text: "Study questions"
+                href: organelles-homeostasis/questions.qmd
+              - text: "Demo: measure the organelles"
+                href: organelles-homeostasis/questions.qmd#explore
+      - section: "Cell signalling"
+        contents:
+          - section: "Principles of cell communication"
+            contents:
+              - text: "Lecture (slides)"
+                href: signalling-principles/lec.qmd
+              - text: "Quiz"
+                href: signalling-principles/quiz.qmd
+              - text: "Study questions"
+                href: signalling-principles/questions.qmd
+              - text: "Demo: dose–response"
+                href: signalling-principles/questions.qmd#explore
+          - section: "G-protein-coupled receptors and second messengers"
+            contents:
+              - text: "Lecture (slides)"
+                href: gpcr/lec.qmd
+              - text: "Quiz"
+                href: gpcr/quiz.qmd
+              - text: "Study questions"
+                href: gpcr/questions.qmd
+              - text: "Demo: GPCR cascade"
+                href: gpcr/questions.qmd#explore
+          - section: "Enzyme-coupled receptors: kinase cascades"
+            contents:
+              - text: "Lecture (slides)"
+                href: kinase-signalling/lec.qmd
+              - text: "Quiz"
+                href: kinase-signalling/quiz.qmd
+              - text: "Study questions"
+                href: kinase-signalling/questions.qmd
+              - text: "Demo: kinase cascade"
+                href: kinase-signalling/questions.qmd#explore
+          - section: "Signalling that shapes tissues and decides fates"
+            contents:
+              - text: "Lecture (slides)"
+                href: fate-signalling/lec.qmd
+              - text: "Quiz"
+                href: fate-signalling/quiz.qmd
+              - text: "Study questions"
+                href: fate-signalling/questions.qmd
+              - text: "Demo: Notch lateral inhibition"
+                href: fate-signalling/questions.qmd#explore
+      - section: "Cytoskeleton"
+        contents:
+          - section: "Actin: cell shape and migration"
+            contents:
+              - text: "Lecture (slides)"
+                href: actin/lec.qmd
+              - text: "Quiz"
+                href: actin/quiz.qmd
+              - text: "Study questions"
+                href: actin/questions.qmd
+              - text: "Demo: actin treadmilling"
+                href: actin/questions.qmd#explore
+          - section: "Microtubules and motor proteins"
+            contents:
+              - text: "Lecture (slides)"
+                href: microtubules/lec.qmd
+              - text: "Quiz"
+                href: microtubules/quiz.qmd
+              - text: "Study questions"
+                href: microtubules/questions.qmd
+              - text: "Demo: dynamic instability"
+                href: microtubules/questions.qmd#explore
+          - section: "Myosin, intermediate filaments and the mechanical cell"
+            contents:
+              - text: "Lecture (slides)"
+                href: myosin-if/lec.qmd
+              - text: "Quiz"
+                href: myosin-if/quiz.qmd
+              - text: "Study questions"
+                href: myosin-if/questions.qmd
+              - text: "Demo: sarcomere"
+                href: myosin-if/questions.qmd#explore
 
 format:
   html:

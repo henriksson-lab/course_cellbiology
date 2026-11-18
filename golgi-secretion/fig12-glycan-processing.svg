@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 370" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a1b2a3a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+<rect x="10.0" y="10.0" width="170.0" height="270.0" rx="12" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2.5" />
+<text x="95.0" y="38.0" font-size="20" text-anchor="middle" font-weight="bold" fill="#2a7f8f" >ER</text>
+<path d="M 40 258 L 150 258" fill="none" stroke="#495057" stroke-width="6" stroke-linecap="round"/>
+<text x="95.0" y="276.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#495057" >Asn</text>
+<path d="M 95.0 240.0 L 95.0 213.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 95.0 213.0 L 95.0 186.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 95.0 186.0 L 68.0 159.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 95.0 186.0 L 122.0 159.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 68.0 159.0 L 68.0 132.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 68.0 132.0 L 68.0 105.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 122.0 159.0 L 111.2 132.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 122.0 159.0 L 132.8 132.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 132.8 132.0 L 132.8 105.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<rect x="85.0" y="230.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="85.0" y="203.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="95.0" cy="186.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="68.0" cy="159.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="122.0" cy="159.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="68.0" cy="132.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="68.0" cy="105.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="111.2" cy="132.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="132.8" cy="132.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="132.8" cy="105.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="260.0" y="10.0" width="170.0" height="270.0" rx="12" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5" />
+<text x="345.0" y="38.0" font-size="20" text-anchor="middle" font-weight="bold" fill="#d9822b" >cis Golgi</text>
+<path d="M 290 258 L 400 258" fill="none" stroke="#495057" stroke-width="6" stroke-linecap="round"/>
+<text x="345.0" y="276.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#495057" >Asn</text>
+<path d="M 345.0 240.0 L 345.0 213.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 345.0 213.0 L 345.0 186.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 345.0 186.0 L 318.0 159.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 345.0 186.0 L 372.0 159.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 372.0 159.0 L 361.2 132.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 372.0 159.0 L 382.8 132.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<rect x="335.0" y="230.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="335.0" y="203.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="345.0" cy="186.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="318.0" cy="159.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="372.0" cy="159.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="361.2" cy="132.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="382.8" cy="132.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="510.0" y="10.0" width="170.0" height="270.0" rx="12" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5" />
+<text x="595.0" y="38.0" font-size="20" text-anchor="middle" font-weight="bold" fill="#d9822b" >medial Golgi</text>
+<path d="M 540 258 L 650 258" fill="none" stroke="#495057" stroke-width="6" stroke-linecap="round"/>
+<text x="595.0" y="276.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#495057" >Asn</text>
+<path d="M 595.0 240.0 L 595.0 213.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 595.0 213.0 L 595.0 186.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 595.0 186.0 L 568.0 159.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 595.0 186.0 L 622.0 159.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 568.0 159.0 L 568.0 132.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 622.0 159.0 L 622.0 132.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<rect x="585.0" y="230.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="585.0" y="203.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="595.0" cy="186.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="568.0" cy="159.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="622.0" cy="159.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="558.0" y="122.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="612.0" y="122.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="760.0" y="10.0" width="170.0" height="270.0" rx="12" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5" />
+<text x="845.0" y="38.0" font-size="20" text-anchor="middle" font-weight="bold" fill="#d9822b" >trans Golgi</text>
+<path d="M 790 258 L 900 258" fill="none" stroke="#495057" stroke-width="6" stroke-linecap="round"/>
+<text x="845.0" y="276.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#495057" >Asn</text>
+<path d="M 845.0 240.0 L 845.0 213.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 845.0 213.0 L 845.0 186.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 845.0 186.0 L 818.0 159.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 845.0 186.0 L 872.0 159.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 818.0 159.0 L 818.0 132.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 872.0 159.0 L 872.0 132.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 818.0 132.0 L 818.0 105.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 872.0 132.0 L 872.0 105.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 818.0 105.0 L 818.0 78.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<path d="M 872.0 105.0 L 872.0 78.0" fill="none" stroke="#1b2a3a" stroke-width="2" />
+<rect x="835.0" y="230.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="835.0" y="203.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="845.0" cy="186.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="818.0" cy="159.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="872.0" cy="159.0" r="10.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="808.0" y="122.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<rect x="862.0" y="122.0" width="20.0" height="20.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="818.0" cy="105.0" r="10.0" fill="#ffd400" stroke="#1b2a3a" stroke-width="1.4" />
+<circle cx="872.0" cy="105.0" r="10.0" fill="#ffd400" stroke="#1b2a3a" stroke-width="1.4" />
+<path d="M 818 66 L 830 78 L 818 90 L 806 78 Z" fill="#a54399" stroke="#1b2a3a" stroke-width="1.4" />
+<path d="M 872 66 L 884 78 L 872 90 L 860 78 Z" fill="#a54399" stroke="#1b2a3a" stroke-width="1.4" />
+<line x1="186.0" y1="150.0" x2="252.0" y2="150.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)"/>
+<text x="220.0" y="108.0" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >– 3 Man</text>
+<line x1="436.0" y1="150.0" x2="502.0" y2="150.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)"/>
+<text x="470.0" y="108.0" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >+ GlcNAc</text>
+<text x="470.0" y="126.3" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >– 2 Man</text>
+<line x1="686.0" y1="150.0" x2="752.0" y2="150.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)"/>
+<text x="720.0" y="108.0" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >+ Gal</text>
+<text x="720.0" y="126.3" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >+ sialic</text>
+<text x="720.0" y="144.6" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >acid</text>
+<path d="M 20 300 L 20 310 L 420 310 L 420 300" fill="none" stroke="#c92a2a" stroke-width="2.5" />
+<text x="235.0" y="332.0" font-size="17" text-anchor="middle" font-weight="bold" fill="#c92a2a" >Endo H can cut</text>
+<path d="M 520 300 L 520 310 L 920 310 L 920 300" fill="none" stroke="#2f9e44" stroke-width="2.5" />
+<text x="735.0" y="332.0" font-size="17" text-anchor="middle" font-weight="bold" fill="#2b8a3e" >Endo H-resistant: the protein has reached the medial Golgi</text>
+<rect x="82.0" y="349.0" width="16.0" height="16.0" rx="0" fill="#0072bc" stroke="#1b2a3a" stroke-width="1.4" />
+<text x="104.0" y="362.0" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >GlcNAc</text>
+<circle cx="240.0" cy="357.0" r="8.0" fill="#00a651" stroke="#1b2a3a" stroke-width="1.4" />
+<text x="254.0" y="362.0" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >mannose</text>
+<circle cx="390.0" cy="357.0" r="8.0" fill="#ffd400" stroke="#1b2a3a" stroke-width="1.4" />
+<text x="404.0" y="362.0" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >galactose</text>
+<path d="M 540 347 L 550 357 L 540 367 L 530 357 Z" fill="#a54399" stroke="#1b2a3a" stroke-width="1.4" />
+<text x="554.0" y="362.0" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >sialic acid</text>
+</svg>

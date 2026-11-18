@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig09: amplification and a switch-like (ultrasensitive) response; curves from the course demo model (no feedback) -->
+<defs></defs>
+<line x1="80.0" y1="40" x2="80.0" y2="310" stroke="#e3e3e3" stroke-width="1"/>
+<text x="80.0" y="332" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">0.001</text>
+<line x1="164.0" y1="40" x2="164.0" y2="310" stroke="#e3e3e3" stroke-width="1"/>
+<text x="164.0" y="332" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">0.01</text>
+<line x1="248.0" y1="40" x2="248.0" y2="310" stroke="#e3e3e3" stroke-width="1"/>
+<text x="248.0" y="332" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">0.1</text>
+<line x1="332.0" y1="40" x2="332.0" y2="310" stroke="#e3e3e3" stroke-width="1"/>
+<text x="332.0" y="332" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">1</text>
+<line x1="416.0" y1="40" x2="416.0" y2="310" stroke="#e3e3e3" stroke-width="1"/>
+<text x="416.0" y="332" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">10</text>
+<line x1="500.0" y1="40" x2="500.0" y2="310" stroke="#e3e3e3" stroke-width="1"/>
+<text x="500.0" y="332" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">100</text>
+<line x1="80" y1="310.0" x2="500" y2="310.0" stroke="#e3e3e3" stroke-width="1"/>
+<text x="72" y="315" font-size="14" text-anchor="end" font-weight="normal" fill="#1b2a3a">0%</text>
+<line x1="80" y1="175.0" x2="500" y2="175.0" stroke="#e3e3e3" stroke-width="1"/>
+<text x="72" y="180.0" font-size="14" text-anchor="end" font-weight="normal" fill="#1b2a3a">50%</text>
+<line x1="80" y1="40.0" x2="500" y2="40.0" stroke="#e3e3e3" stroke-width="1"/>
+<text x="72" y="45" font-size="14" text-anchor="end" font-weight="normal" fill="#1b2a3a">100%</text>
+<line x1="80" y1="310" x2="500" y2="310" stroke="#1b2a3a" stroke-width="1.5"/>
+<text x="290.0" y="356" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">growth factor (ng/mL, log scale)</text>
+<text x="24" y="175.0" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" transform="rotate(-90 24 175.0)">% active</text>
+<polyline points="80.0,309.7 90.5,309.6 101.0,309.5 111.5,309.4 122.0,309.1 132.5,308.9 143.0,308.5 153.5,308.0 164.0,307.3 174.5,306.4 185.0,305.3 195.5,303.7 206.0,301.7 216.5,299.1 227.0,295.6 237.5,291.2 248.0,285.5 258.5,278.2 269.0,269.2 279.5,258.2 290.0,245.1 300.5,229.9 311.0,212.8 321.5,194.3 332.0,175.0 342.5,155.7 353.0,137.2 363.5,120.1 374.0,104.9 384.5,91.8 395.0,80.8 405.5,71.8 416.0,64.5 426.5,58.8 437.0,54.4 447.5,50.9 458.0,48.3 468.5,46.3 479.0,44.7 489.5,43.6 500.0,42.7" fill="none" stroke="#8a6a12" stroke-width="3"/>
+<polyline points="80.0,310.0 90.5,310.0 101.0,310.0 111.5,310.0 122.0,310.0 132.5,310.0 143.0,310.0 153.5,310.0 164.0,309.9 174.5,309.9 185.0,309.7 195.5,309.4 206.0,308.5 216.5,305.9 227.0,297.0 237.5,259.3 248.0,166.8 258.5,117.1 269.0,98.7 279.5,90.3 290.0,85.8 300.5,83.1 311.0,81.4 321.5,80.2 332.0,79.4 342.5,78.9 353.0,78.5 363.5,78.2 374.0,78.0 384.5,77.8 395.0,77.7 405.5,77.6 416.0,77.5 426.5,77.5 437.0,77.5 447.5,77.4 458.0,77.4 468.5,77.4 479.0,77.4 489.5,77.4 500.0,77.4" fill="none" stroke="#7b3fbf" stroke-width="4"/>
+<line x1="331.3" y1="175.0" x2="331.3" y2="310" stroke="#8a6a12" stroke-dasharray="4 3" stroke-width="1.5"/>
+<line x1="245.0" y1="193.9" x2="245.0" y2="310" stroke="#7b3fbf" stroke-dasharray="4 3" stroke-width="1.5"/>
+<text x="86.65122466800047" y="94.0" font-size="15" text-anchor="start" font-weight="normal" fill="#7b3fbf">ERK: steep, a switch</text>
+<text x="86.65122466800047" y="114.0" font-size="15" text-anchor="start" font-weight="normal" fill="#7b3fbf">(n_H ≈ 4)</text>
+<text x="372.07818539645166" y="229.0" font-size="15" text-anchor="start" font-weight="normal" fill="#8a6a12">receptor: graded</text>
+<text x="372.07818539645166" y="249.0" font-size="15" text-anchor="start" font-weight="normal" fill="#8a6a12">(n_H = 1)</text>
+<text x="290.0" y="22" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">ERK switches on at 11× less growth factor</text>
+<text x="720" y="22" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Amplification: each kinase</text>
+<text x="720" y="42" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">activates many of the next</text>
+<circle cx="690" cy="90" r="16" fill="#94bcea" stroke="#2a78d6" stroke-width="2"/>
+<text x="720" y="96" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">1 RAF</text>
+<line x1="690" y1="104" x2="610" y2="168" stroke="#1b2a3a" stroke-width="1.5"/>
+<circle cx="610" cy="180" r="13" fill="#f4bdd2" stroke="#e87ba4" stroke-width="2"/>
+<line x1="690" y1="104" x2="690" y2="168" stroke="#1b2a3a" stroke-width="1.5"/>
+<circle cx="690" cy="180" r="13" fill="#f4bdd2" stroke="#e87ba4" stroke-width="2"/>
+<line x1="690" y1="104" x2="770" y2="168" stroke="#1b2a3a" stroke-width="1.5"/>
+<circle cx="770" cy="180" r="13" fill="#f4bdd2" stroke="#e87ba4" stroke-width="2"/>
+<text x="795" y="186" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a">many MEK</text>
+<line x1="610" y1="193" x2="578" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="578" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="610" y1="193" x2="594" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="594" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="610" y1="193" x2="610" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="610" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="610" y1="193" x2="626" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="626" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="610" y1="193" x2="642" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="642" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="690" y1="193" x2="658" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="658" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="690" y1="193" x2="674" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="674" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="690" y1="193" x2="690" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="690" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="690" y1="193" x2="706" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="706" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="690" y1="193" x2="722" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="722" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="770" y1="193" x2="738" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="738" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="770" y1="193" x2="754" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="754" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="770" y1="193" x2="770" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="770" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="770" y1="193" x2="786" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="786" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<line x1="770" y1="193" x2="802" y2="262" stroke="#1b2a3a" stroke-width="1"/>
+<circle cx="802" cy="270" r="7" fill="#bd9fdf" stroke="#7b3fbf" stroke-width="2"/>
+<text x="690" y="304" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">even more ERK</text>
+<text x="720" y="340" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">Two phosphorylations per kinase,</text>
+<text x="720" y="360" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">made by enzymes close to saturation,</text>
+<text x="720" y="380" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">make each level steeper than the last.</text>
+</svg>

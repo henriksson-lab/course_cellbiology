@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="330" viewBox="0 0 980 330" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig04: anatomy of a signal sequence, with the real signal sequence of human preproinsulin -->
+  <defs><marker id="a4" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker></defs>
+  <rect width="980" height="330" fill="#ffffff"/>
+  <text x="30" y="58" font-size="20" font-weight="bold" fill="#1b2a3a">N</text>
+  <rect x="60" y="36" width="140" height="34" rx="6" fill="#dbe4ff" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="200" y="36" width="300" height="34" fill="#e8590c" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="500" y="36" width="160" height="34" fill="#ffe8cc" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="660" y="36" width="260" height="34" rx="6" fill="#dee2e6" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="940" y="58" font-size="20" font-weight="bold" fill="#1b2a3a">C</text>
+  <text x="130" y="59" font-size="17" text-anchor="middle" fill="#1b2a3a">+  +</text>
+  <text x="350" y="59" font-size="17" text-anchor="middle" fill="#ffffff" font-weight="bold">hydrophobic core</text>
+  <text x="790" y="59" font-size="17" text-anchor="middle" fill="#1b2a3a">rest of the protein</text>
+  <text x="130" y="100" font-size="16" text-anchor="middle" fill="#1b2a3a">positive charges</text>
+  <text x="350" y="100" font-size="16" text-anchor="middle" fill="#1b2a3a">6–15 hydrophobic amino acids</text>
+  <text x="350" y="120" font-size="16" text-anchor="middle" fill="#1b2a3a">(binds SRP, then the translocon)</text>
+  <text x="580" y="100" font-size="16" text-anchor="middle" fill="#1b2a3a">polar, small</text>
+  <text x="580" y="120" font-size="16" text-anchor="middle" fill="#1b2a3a">amino acids</text>
+  <!-- cut site -->
+  <line x1="660" y1="20" x2="660" y2="86" stroke="#c92a2a" stroke-width="3" stroke-dasharray="6 4"/>
+  <text x="668" y="20" font-size="16" fill="#c92a2a" font-weight="bold">signal peptidase cuts here</text>
+  <line x1="60" y1="140" x2="660" y2="140" stroke="#1b2a3a" stroke-width="1.5"/>
+  <line x1="60" y1="134" x2="60" y2="146" stroke="#1b2a3a" stroke-width="1.5"/>
+  <line x1="660" y1="134" x2="660" y2="146" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="360" y="164" font-size="16" text-anchor="middle" fill="#1b2a3a">signal sequence: about 15–30 amino acids</text>
+  <!-- real example -->
+  <text x="30" y="214" font-size="17" font-weight="bold" fill="#1b2a3a">Example: human preproinsulin (the start of the chain)</text>
+  <g font-family="Courier New, monospace" font-size="22" font-weight="bold">
+    <text x="30" y="256"><tspan fill="#1c4fa0">MALWMR</tspan><tspan fill="#e8590c">LLPLLALLALW</tspan><tspan fill="#a05a00">GPDPAAA</tspan><tspan fill="#c92a2a"> | </tspan><tspan fill="#555555">FVNQHLCGSHLVEALYLV…</tspan></text>
+  </g>
+  <text x="30" y="290" font-size="16" fill="#1b2a3a">24 amino acids are cut off in the ER; the rest becomes proinsulin, then insulin.</text>
+  <text x="30" y="314" font-size="16" fill="#1b2a3a">No single sequence is shared: the code is the pattern (charge, hydrophobic stretch, cut site).</text>
+</svg>

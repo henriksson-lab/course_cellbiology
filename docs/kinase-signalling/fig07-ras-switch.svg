@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig07: Ras is a GTPase switch, turned on by SOS (GEF) and off by a GAP -->
+<defs><marker id="a1b2a3a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker><marker id="ab08900" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#b08900"/></marker></defs>
+<rect x="0" y="20" width="900" height="40" rx="0" fill="#eef4fa" stroke="none" stroke-width="0"/>
+<rect x="0" y="60" width="900" height="26" rx="0" fill="#f6f0de" stroke="none" stroke-width="0"/>
+<line x1="0" y1="60" x2="900" y2="60" stroke="#8a6a12" stroke-width="3"/>
+<line x1="0" y1="86" x2="900" y2="86" stroke="#8a6a12" stroke-width="3"/>
+<rect x="0" y="86" width="900" height="294" rx="0" fill="#fbfaf5" stroke="none" stroke-width="0"/>
+<rect x="82" y="26" width="24" height="74" rx="8" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="66" y="100" width="40" height="40" rx="9" fill="#9c8036" stroke="#8a6a12" stroke-width="2"/>
+<rect x="114" y="26" width="24" height="74" rx="8" fill="#d6cbac" stroke="#8a6a12" stroke-width="2"/>
+<rect x="114" y="100" width="40" height="40" rx="9" fill="#9c8036" stroke="#8a6a12" stroke-width="2"/>
+<circle cx="162" cy="150" r="11" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="162" y="155" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<rect x="174" y="136" width="64" height="30" rx="10" fill="#d3f0e3" stroke="#11815a" stroke-width="2"/>
+<text x="206" y="157" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Grb2</text>
+<rect x="174" y="170" width="64" height="34" rx="10" fill="#fff3bf" stroke="#b08900" stroke-width="2"/>
+<text x="206" y="193" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">SOS</text>
+<text x="70" y="172" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">active</text>
+<text x="70" y="188" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a">receptor</text>
+<path d="M370,86 L370,106" stroke="#1b2a3a" stroke-width="2.5" stroke-dasharray="3 3"/>
+<rect x="310" y="106" width="120" height="62" rx="14" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+<text x="370" y="134" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Ras</text>
+<text x="370" y="156" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">GDP</text>
+<text x="370" y="190" font-size="17" text-anchor="middle" font-weight="bold" fill="#6b7280">OFF</text>
+<path d="M640,86 L640,106" stroke="#1b2a3a" stroke-width="2.5" stroke-dasharray="3 3"/>
+<rect x="580" y="106" width="120" height="62" rx="14" fill="#afe3d0" stroke="#1baf7a" stroke-width="2.5"/>
+<text x="640" y="134" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Ras</text>
+<text x="640" y="156" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">GTP</text>
+<text x="640" y="190" font-size="17" text-anchor="middle" font-weight="bold" fill="#11815a">ON</text>
+<text x="505" y="81" font-size="13" text-anchor="middle" font-weight="normal" fill="#6b7280">lipid anchor holds Ras on the membrane</text>
+<path d="M432,118 C470,86 540,86 578,118" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="505" y="104" font-size="1" text-anchor="middle" font-weight="normal" fill="#1b2a3a"></text>
+<path d="M578,160 C540,196 470,196 432,160" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="505" y="220" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">GAP</text>
+<text x="505" y="240" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">speeds up GTP → GDP</text>
+<path d="M240,186 L300,140" fill="none" stroke="#b08900" stroke-width="2.2" marker-end="url(#ab08900)" stroke-linejoin="round"/>
+<text x="206" y="232" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a">SOS is the GEF:</text>
+<text x="206" y="250" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">GDP out, GTP in</text>
+<rect x="740" y="230" width="110" height="46" rx="12" fill="#bfd6f3" stroke="#2a78d6" stroke-width="2.5"/>
+<text x="795" y="259" font-size="18" text-anchor="middle" font-weight="bold" fill="#1b2a3a">RAF</text>
+<path d="M680,172 L750,228" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="830" y="300" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">binds and</text>
+<text x="830" y="318" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">activates RAF</text>
+<rect x="320" y="280" width="380" height="82" rx="10" fill="#fff5f5" stroke="#c92a2a" stroke-width="1.8"/>
+<text x="510" y="306" font-size="16" text-anchor="middle" font-weight="bold" fill="#c92a2a">Ras G12V / G12D (cancer):</text>
+<text x="510" y="328" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">GAP can no longer speed up hydrolysis,</text>
+<text x="510" y="348" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">so Ras stays GTP-bound: stuck ON</text>
+</svg>

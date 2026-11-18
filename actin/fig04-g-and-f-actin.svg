@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="225" viewBox="0 75 1100 225" font-family="Helvetica, Arial, sans-serif">
+<!-- fig04: G-actin (monomer with ATP in its cleft) and F-actin (two-stranded filament) with barbed and pointed ends and the ATP cap. -->
+<defs><marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="arb" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1971c2"/></marker><marker id="arp" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#9c36b5"/></marker><marker id="ard" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="arg" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2b8a3e"/></marker><marker id="arm" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#8a6a12"/></marker><marker id="ark" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#555555"/></marker><marker id="ara" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#7048e8"/></marker></defs>
+<path d="M 40.599999999999994 140.4 Q 31.0 92.4 79.0 95.6 Q 91.8 95.6 91.8 121.2 L 98.2 121.2 Q 98.2 95.6 114.2 95.6 Q 159.0 92.4 152.6 143.6 Q 162.2 204.4 95 201.2 Q 31.0 204.4 40.599999999999994 140.4 Z" fill="#ffd166" stroke="#1b2a3a" stroke-width="1.8" />
+<circle cx="95.0" cy="124.4" r="8.0" fill="#ffffff" stroke="#1b2a3a" stroke-width="1.2" />
+<text x="95.0" y="169.2" font-size="17.6" text-anchor="middle" fill="#1b2a3a" font-weight="bold">ATP</text>
+<text x="95.0" y="230.0" font-size="18" text-anchor="middle" fill="#1b2a3a" font-weight="bold">G-actin</text>
+<text x="95.0" y="252.0" font-size="15" text-anchor="middle" fill="#1b2a3a">one globular protein,</text>
+<text x="95.0" y="270.8" font-size="15" text-anchor="middle" fill="#1b2a3a">42 kDa, binds ATP</text>
+<text x="95.0" y="289.5" font-size="15" text-anchor="middle" fill="#1b2a3a">(or ADP) in a cleft</text>
+<line x1="185.0" y1="150.0" x2="255.0" y2="150.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)" />
+<text x="220.0" y="135.0" font-size="15" text-anchor="middle" fill="#1b2a3a">join</text>
+<circle cx="299.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="308.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="317.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="326.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="335.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="344.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="353.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="362.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="371.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="380.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="389.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="398.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="407.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="416.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="425.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="434.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="443.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="452.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="461.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="470.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="479.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="488.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="497.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="506.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="515.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="524.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="533.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="542.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="551.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="560.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="569.0" cy="142.8" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="578.0" cy="157.2" r="9.0" fill="#8a9099" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="587.0" cy="142.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="596.0" cy="157.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="605.0" cy="142.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="614.0" cy="157.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="623.0" cy="142.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="632.0" cy="157.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="641.0" cy="142.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="650.0" cy="157.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="659.0" cy="142.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="668.0" cy="157.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="677.0" cy="142.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="686.0" cy="157.2" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="695.0" cy="142.8" r="9.0" fill="#d39b2a" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="704.0" cy="157.2" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="713.0" cy="142.8" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="722.0" cy="157.2" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="731.0" cy="142.8" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<circle cx="740.0" cy="157.2" r="9.0" fill="#ffd166" stroke="#1b2a3a" stroke-width="0.8" />
+<text x="284.0" y="108.0" font-size="17" text-anchor="start" fill="#9c36b5" font-weight="bold">pointed (−) end</text>
+<text x="755.0" y="108.0" font-size="17" text-anchor="end" fill="#1971c2" font-weight="bold">barbed (+) end</text>
+<text x="755.0" y="128.0" font-size="15" text-anchor="end" fill="#1971c2">grows fast</text>
+<text x="284.0" y="128.0" font-size="15" text-anchor="start" fill="#9c36b5">grows slowly</text>
+<path d="M 695 172 L 695 180 L 749 180 L 749 172" fill="none" stroke="#1b2a3a" stroke-width="1.5" />
+<text x="722.0" y="200.0" font-size="15" text-anchor="middle" fill="#1b2a3a">ATP</text>
+<path d="M 578 172 L 578 180 L 691 180 L 691 172" fill="none" stroke="#1b2a3a" stroke-width="1.5" />
+<text x="634.5" y="200.0" font-size="15" text-anchor="middle" fill="#1b2a3a">ADP-Pi</text>
+<path d="M 290 172 L 290 180 L 574 180 L 574 172" fill="none" stroke="#1b2a3a" stroke-width="1.5" />
+<text x="432.0" y="200.0" font-size="15" text-anchor="middle" fill="#1b2a3a">ADP</text>
+<text x="729.0" y="232.0" font-size="15" text-anchor="end" fill="#1b2a3a">ATP is split into ADP + Pi seconds after a subunit joins;</text>
+<text x="729.0" y="250.8" font-size="15" text-anchor="end" fill="#1b2a3a">Pi leaves over minutes. Old subunits hold ADP.</text>
+<text x="290.0" y="282.0" font-size="15" text-anchor="start" fill="#1b2a3a">Filament: 7 nm wide, 2.7 nm longer per subunit added.</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1b2a3a"/></marker>
+  </defs>
+  <rect width="900" height="400" fill="#fbfaf5"/>
+  <!-- step 1: ER bilayer with lens of fat -->
+  <text x="20" y="26" font-weight="bold">1. Fat collects between the two</text><text x="20" y="48" font-weight="bold">   leaflets of the ER membrane</text>
+  <rect x="20" y="70" width="380" height="40" fill="#e6f3f5"/>
+  <path d="M20,64 L400,64" stroke="#2a7f8f" stroke-width="4"/>
+  <path d="M20,116 L150,116 C180,116 190,150 225,150 C260,150 270,116 300,116 L400,116" stroke="#2a7f8f" stroke-width="4" fill="none"/>
+  <path d="M150,120 C180,120 190,146 225,146 C260,146 270,120 300,120 Z" fill="#f2d675" stroke="none"/>
+  <path d="M20,124 L150,124 C180,124 190,158 225,158 C260,158 270,124 300,124 L400,124" stroke="#2a7f8f" stroke-width="4" fill="none" opacity="0"/>
+  <text x="30" y="96" fill="#2a7f8f">ER lumen</text>
+  <text x="160" y="190">neutral fat (yellow)</text>
+  <text x="30" y="148" fill="#2a7f8f" font-size="14">ER membrane</text>
+
+  <!-- step 2: budded droplet -->
+  <text x="470" y="30" font-weight="bold">2. A droplet buds into the cytosol</text>
+  <rect x="470" y="70" width="400" height="40" fill="#e6f3f5"/>
+  <path d="M470,64 L870,64 M470,116 L870,116" stroke="#2a7f8f" stroke-width="4"/>
+  <circle cx="670" cy="220" r="88" fill="#f2d675" stroke="#b38f00" stroke-width="3" stroke-dasharray="6 4"/>
+  <path d="M650,116 L650,134 M690,116 L690,134" stroke="#555" stroke-width="3"/>
+  <text x="670" y="208" text-anchor="middle">triglycerides +</text>
+  <text x="670" y="230" text-anchor="middle">cholesterol esters</text>
+  <text x="770" y="160" font-size="14">one layer of</text>
+  <text x="770" y="178" font-size="14">phospholipids</text>
+  <text x="770" y="196" font-size="14">(not a bilayer)</text>
+  <path d="M768,190 L748,198" stroke="#1b2a3a" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="640" y="135" text-anchor="end" font-size="14" fill="#555">contact stays</text>
+
+  <!-- uses -->
+  <text x="20" y="250" font-weight="bold">Lipid droplets:</text>
+  <text x="20" y="276">· store fuel and membrane building blocks</text>
+  <text x="20" y="300">· take up excess free fatty acids, which</text>
+  <text x="20" y="322">  would damage membranes</text>
+  <text x="20" y="346">· release fatty acids (lipases) when the cell</text>
+  <text x="20" y="368">  needs energy: they go to mitochondria</text>
+  <!-- arrow to mito -->
+  <ellipse cx="840" cy="340" rx="48" ry="26" fill="#f8e9ec" stroke="#a8324a" stroke-width="3"/>
+  <text x="840" y="345" text-anchor="middle" font-size="14" fill="#a8324a">mito</text>
+  <path d="M735,265 L800,318" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <text x="560" y="330" font-size="14">fatty acids, at a contact</text>
+</svg>

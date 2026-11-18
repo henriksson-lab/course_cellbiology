@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 395" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <!-- outer membrane -->
+  <rect x="40" y="70" width="450" height="250" rx="125" fill="#fbf3f5" stroke="#a8324a" stroke-width="4"/>
+  <!-- inner membrane with cristae, as one path -->
+  <path d="M170,88 H360 A112,112 0 0 1 472,195 A112,112 0 0 1 360,302 H170 A112,112 0 0 1 58,195 A112,112 0 0 1 170,88 Z" fill="#f4dde2" stroke="#a8324a" stroke-width="3"/>
+  <g fill="#fbf3f5" stroke="#a8324a" stroke-width="3">
+    <path d="M150,90 V210 Q150,226 160,226 Q170,226 170,210 V90"/>
+    <path d="M230,88 V230 Q230,246 240,246 Q250,246 250,230 V88"/>
+    <path d="M310,88 V200 Q310,216 320,216 Q330,216 330,200 V88"/>
+    <path d="M190,302 V200 Q190,184 200,184 Q210,184 210,200 V302"/>
+    <path d="M270,302 V170 Q270,154 280,154 Q290,154 290,170 V302"/>
+    <path d="M370,300 V190 Q370,174 380,174 Q390,174 390,190 V296"/>
+  </g>
+  <!-- cover the inner membrane line where crista joins (cristae junction look) -->
+  <g stroke="#fbf3f5" stroke-width="4">
+    <line x1="152" y1="88" x2="168" y2="88"/><line x1="232" y1="88" x2="248" y2="88"/><line x1="312" y1="88" x2="328" y2="88"/>
+    <line x1="192" y1="302" x2="208" y2="302"/><line x1="272" y1="302" x2="288" y2="302"/><line x1="372" y1="300" x2="388" y2="298"/>
+  </g>
+  <!-- ATP synthase dimers at the crista tip -->
+  <g fill="#1b2a3a"><circle cx="270" cy="160" r="5"/><circle cx="290" cy="160" r="5"/></g>
+  <!-- labels -->
+  <g font-size="17">
+    <line x1="480" y1="120" x2="520" y2="70" stroke="#1b2a3a"/><text x="524" y="64" font-weight="700" fill="#a8324a">outer membrane</text>
+    <text x="524" y="84">porous to small molecules</text>
+    <line x1="466" y1="200" x2="520" y2="150" stroke="#1b2a3a"/><text x="524" y="144" font-weight="700" fill="#a8324a">inner membrane</text>
+    <text x="524" y="164">tight; holds the machines</text>
+    <text x="524" y="184">and the H<tspan font-size="10.9" dy="-6.4">+</tspan><tspan dy="6.4"> gradient</tspan></text>
+    <line x1="391" y1="232" x2="520" y2="232" stroke="#1b2a3a"/><text x="524" y="226" font-weight="700" fill="#a8324a">crista</text>
+    <text x="524" y="246">fold of the inner membrane</text>
+    <line x1="420" y1="250" x2="520" y2="292" stroke="#1b2a3a"/><text x="524" y="296" font-weight="700" fill="#a8324a">matrix</text>
+    <text x="524" y="316">TCA cycle, mtDNA, ribosomes</text>
+    <line x1="100" y1="75" x2="70" y2="40" stroke="#1b2a3a"/><text x="20" y="32" font-weight="700" fill="#a8324a">intermembrane space</text>
+    <line x1="296" y1="158" x2="520" y2="358" stroke="#1b2a3a"/><text x="524" y="356" font-weight="700" fill="#1b2a3a">ATP synthase rows</text><text x="524" y="376">bend the crista tips</text>
+  </g>
+  <text x="265" y="360" font-size="16" text-anchor="middle">about 0.5–1 µm wide, often much longer</text>
+  <text x="265" y="384" font-size="15" text-anchor="middle" font-style="italic">cartoon: real cristae are folded sheets and tubes</text>
+</svg>

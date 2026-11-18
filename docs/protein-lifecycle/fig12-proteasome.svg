@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <g id="ub"><circle r="11" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2"/><text y="4" text-anchor="middle" font-size="10" font-weight="bold">Ub</text></g>
+  </defs>
+  <!-- substrate with chain -->
+  <path d="M60,40 c0,-24 44,-30 54,-8 c10,22 -6,38 -28,38 c-20,0 -26,-12 -26,-30 z" fill="#d0ebff" stroke="#1971c2" stroke-width="2.5"/>
+  <use href="#ub" x="122" y="22"/><use href="#ub" x="144" y="14"/><use href="#ub" x="166" y="22"/><use href="#ub" x="188" y="14"/>
+  <path d="M100,64 C130,90 150,100 162,110" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <!-- 19S cap -->
+  <path d="M120,110 h170 a20,20 0 0 1 20,20 v54 h-210 v-54 a20,20 0 0 1 20,-20 z" fill="#e9ecef" stroke="#495057" stroke-width="2.5"/>
+  <rect x="100" y="184" width="210" height="22" fill="#ced4da" stroke="#495057" stroke-width="2"/>
+  <text x="205" y="142" text-anchor="middle" font-weight="bold">19S cap</text>
+  <text x="205" y="164" text-anchor="middle" font-size="14">reads the Ub chain</text>
+  <text x="205" y="200" text-anchor="middle" font-size="14">ATPase ring: unfolds</text>
+  <!-- unfolded chain threading -->
+  <path d="M205,172 v0" stroke="none"/>
+  <!-- 20S core -->
+  <g stroke="#495057" stroke-width="2.5">
+    <rect x="110" y="210" width="190" height="40" rx="8" fill="#e9ecef"/>
+    <rect x="110" y="252" width="190" height="56" rx="8" fill="#dee2e6"/>
+    <rect x="110" y="310" width="190" height="56" rx="8" fill="#dee2e6"/>
+    <rect x="110" y="368" width="190" height="40" rx="8" fill="#e9ecef"/>
+  </g>
+  <rect x="150" y="262" width="110" height="94" rx="20" fill="#ffffff" stroke="#495057" stroke-width="1.5"/>
+  <path d="M205,120 v0" stroke="none"/>
+  <path d="M205,212 C190,240 222,262 196,282 S222,320 200,340 S206,360 205,404" fill="none" stroke="#1971c2" stroke-width="3.5" stroke-linecap="round"/>
+  <g fill="#ffffff" stroke="#1b2a3a" stroke-width="2">
+    <circle cx="164" cy="290" r="6"/><circle cx="182" cy="290" r="6"/><circle cx="246" cy="290" r="6"/><circle cx="164" cy="328" r="6"/><circle cx="230" cy="328" r="6"/>
+  </g>
+  <circle cx="248" cy="328" r="7" fill="#e8590c" stroke="#e8590c"/>
+  <text x="102" y="233" text-anchor="end" font-size="14">α ring</text>
+  <text x="102" y="284" text-anchor="end" font-size="14">β ring</text>
+  <text x="102" y="342" text-anchor="end" font-size="14">β ring</text>
+  <text x="102" y="392" text-anchor="end" font-size="14">α ring</text>
+  <!-- right labels -->
+  <line x1="306" y1="290" x2="356" y2="290" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="362" y="280" font-size="15">6 cutting sites (dots),</text>
+  <text x="362" y="298" font-size="15">3 per β ring, inside</text>
+  <line x1="256" y1="328" x2="356" y2="340" stroke="#e8590c" stroke-width="1.8"/>
+  <text x="362" y="336" font-size="15" fill="#e8590c" font-weight="bold">bortezomib blocks</text>
+  <text x="362" y="354" font-size="15" fill="#e8590c" font-weight="bold">the β5 site</text>
+  <text x="362" y="238" font-size="15" font-weight="bold">20S core:</text>
+  <text x="362" y="256" font-size="15">a closed barrel</text>
+  <!-- Ub recycled -->
+  <use href="#ub" x="352" y="122"/><use href="#ub" x="376" y="122"/>
+  <path d="M310,140 C330,138 334,130 338,126" fill="none" stroke="#1b2a3a" stroke-width="1.8" marker-end="url(#ah)"/>
+  <text x="400" y="128" font-size="15">Ub removed</text>
+  <text x="400" y="146" font-size="15">and reused</text>
+  <!-- peptides -->
+  <path d="M205,410 v18" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <g stroke="#1971c2" stroke-width="3.5" stroke-linecap="round">
+    <path d="M170,446 h16"/><path d="M196,452 h12"/><path d="M218,444 h18"/><path d="M246,450 h10"/>
+  </g>
+  <text x="270" y="452" font-size="15">peptides, 3–25 amino acids</text>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig09: the Ran gradient gives direction. RanGEF on chromatin makes Ran-GTP in the nucleus, RanGAP in the cytosol turns it into Ran-GDP. Exportin binds NES cargo only together with Ran-GTP and lets go when the GTP is split in the cytosol. Cartoon. -->
+  <defs><marker id="ak" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker><marker id="ao" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#e8590c"/></marker></defs>
+  <rect x="0" y="0" width="520" height="430" fill="#fbfaf5"/>
+  <rect x="554" y="0" width="546" height="430" fill="#efebf7"/>
+  <rect x="520" y="0" width="34" height="430" fill="#dbe7f3"/>
+  <line x1="520" y1="40" x2="520" y2="170" stroke="#6b4fa0" stroke-width="4"/>
+  <line x1="520" y1="340" x2="520" y2="410" stroke="#6b4fa0" stroke-width="4"/>
+  <line x1="554" y1="40" x2="554" y2="170" stroke="#6b4fa0" stroke-width="4"/>
+  <line x1="554" y1="340" x2="554" y2="410" stroke="#6b4fa0" stroke-width="4"/>
+  <path d="M 520 170 Q 537 156 554 170" fill="none" stroke="#6b4fa0" stroke-width="4"/>
+  <path d="M 520 340 Q 537 354 554 340" fill="none" stroke="#6b4fa0" stroke-width="4"/>
+  <path d="M 522 184 q 8 -7 16 0 q 8 7 16 0" fill="none" stroke="#b197fc" stroke-width="2"/>
+  <path d="M 522 220 q 8 -7 16 0 q 8 7 16 0" fill="none" stroke="#b197fc" stroke-width="2"/>
+  <path d="M 522 255 q 8 -7 16 0 q 8 7 16 0" fill="none" stroke="#b197fc" stroke-width="2"/>
+  <path d="M 522 290 q 8 -7 16 0 q 8 7 16 0" fill="none" stroke="#b197fc" stroke-width="2"/>
+  <path d="M 522 326 q 8 -7 16 0 q 8 7 16 0" fill="none" stroke="#b197fc" stroke-width="2"/>
+  <text x="20" y="30" font-size="18" fill="#1b2a3a" text-anchor="start" font-weight="bold">CYTOSOL</text>
+  <text x="1080" y="30" font-size="18" fill="#6b4fa0" text-anchor="end" font-weight="bold">NUCLEUS</text>
+  <circle cx="80" cy="80" r="20" fill="#fff" stroke="#e8590c" stroke-width="2.5"/>
+  <text x="80" y="79" font-size="12" fill="#e8590c" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="80" y="92" font-size="11" fill="#e8590c" text-anchor="middle" font-weight="bold">GDP</text>
+  <circle cx="150" cy="80" r="20" fill="#fff" stroke="#e8590c" stroke-width="2.5"/>
+  <text x="150" y="79" font-size="12" fill="#e8590c" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="150" y="92" font-size="11" fill="#e8590c" text-anchor="middle" font-weight="bold">GDP</text>
+  <circle cx="220" cy="80" r="20" fill="#fff" stroke="#e8590c" stroke-width="2.5"/>
+  <text x="220" y="79" font-size="12" fill="#e8590c" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="220" y="92" font-size="11" fill="#e8590c" text-anchor="middle" font-weight="bold">GDP</text>
+  <circle cx="290" cy="80" r="20" fill="#fff" stroke="#e8590c" stroke-width="2.5"/>
+  <text x="290" y="79" font-size="12" fill="#e8590c" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="290" y="92" font-size="11" fill="#e8590c" text-anchor="middle" font-weight="bold">GDP</text>
+  <circle cx="360" cy="80" r="20" fill="#fff" stroke="#e8590c" stroke-width="2.5"/>
+  <text x="360" y="79" font-size="12" fill="#e8590c" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="360" y="92" font-size="11" fill="#e8590c" text-anchor="middle" font-weight="bold">GDP</text>
+  <circle cx="430" cy="80" r="20" fill="#e8590c"/>
+  <text x="430" y="79" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="430" y="92" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">GTP</text>
+  <circle cx="620" cy="80" r="20" fill="#fff" stroke="#e8590c" stroke-width="2.5"/>
+  <text x="620" y="79" font-size="12" fill="#e8590c" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="620" y="92" font-size="11" fill="#e8590c" text-anchor="middle" font-weight="bold">GDP</text>
+  <circle cx="690" cy="80" r="20" fill="#e8590c"/>
+  <text x="690" y="79" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="690" y="92" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">GTP</text>
+  <circle cx="760" cy="80" r="20" fill="#e8590c"/>
+  <text x="760" y="79" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="760" y="92" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">GTP</text>
+  <circle cx="830" cy="80" r="20" fill="#e8590c"/>
+  <text x="830" y="79" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="830" y="92" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">GTP</text>
+  <circle cx="900" cy="80" r="20" fill="#e8590c"/>
+  <text x="900" y="79" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="900" y="92" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">GTP</text>
+  <circle cx="970" cy="80" r="20" fill="#e8590c"/>
+  <text x="970" y="79" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="970" y="92" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">GTP</text>
+  <text x="20" y="132" font-size="15" fill="#1b2a3a" text-anchor="start" font-weight="bold">RanGAP (on the cytosolic face of the pore)</text>
+  <text x="20" y="152" font-size="15" fill="#1b2a3a" text-anchor="start">makes Ran split its GTP: mostly Ran-GDP here</text>
+  <text x="1080" y="132" font-size="15" fill="#6b4fa0" text-anchor="end" font-weight="bold">RanGEF (bound to chromatin) swaps GDP for GTP:</text>
+  <text x="1080" y="152" font-size="15" fill="#6b4fa0" text-anchor="end">mostly Ran-GTP here</text>
+  <rect x="790" y="262" width="60" height="36" rx="13" fill="#a5d8ff" stroke="#1c4fa0" stroke-width="2"/>
+  <text x="820" y="285" font-size="14" fill="#1c4fa0" text-anchor="middle" font-weight="bold">cargo</text>
+  <rect x="809" y="254" width="22" height="10" rx="3" fill="#1b2a3a"/>
+  <path d="M 772 310 A 52 52 0 1 1 868 310" fill="none" stroke="#343a40" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="882" cy="314" r="20" fill="#e8590c"/>
+  <text x="882" y="313" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="882" y="326" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">GTP</text>
+  <text x="820" y="395" font-size="15" fill="#1b2a3a" text-anchor="middle">in the nucleus: exportin binds</text>
+  <text x="820" y="415" font-size="15" fill="#1b2a3a" text-anchor="middle">the NES cargo and Ran-GTP together</text>
+  <path d="M 730 290 L 600 290" fill="none" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ak)"/>
+  <path d="M 480 290 L 380 290" fill="none" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ak)"/>
+  <path d="M 222 330 A 52 52 0 1 1 318 330" fill="none" stroke="#343a40" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="332" cy="334" r="20" fill="#fff" stroke="#e8590c" stroke-width="2.5"/>
+  <text x="332" y="333" font-size="12" fill="#e8590c" text-anchor="middle" font-weight="bold">Ran</text>
+  <text x="332" y="346" font-size="11" fill="#e8590c" text-anchor="middle" font-weight="bold">GDP</text>
+  <rect x="80" y="236" width="60" height="36" rx="13" fill="#a5d8ff" stroke="#1c4fa0" stroke-width="2"/>
+  <text x="110" y="259" font-size="14" fill="#1c4fa0" text-anchor="middle" font-weight="bold">cargo</text>
+  <rect x="99" y="228" width="22" height="10" rx="3" fill="#1b2a3a"/>
+  <path d="M 220 262 L 150 256" fill="none" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ak)"/>
+  <text x="250" y="395" font-size="15" fill="#1b2a3a" text-anchor="middle">in the cytosol: GTP is split,</text>
+  <text x="250" y="415" font-size="15" fill="#1b2a3a" text-anchor="middle">Ran-GDP and the cargo let go</text>
+  <text x="770" y="214" font-size="14" fill="#1b2a3a" text-anchor="end" font-weight="bold">NES</text>
+  <line x1="774" y1="210" x2="806" y2="256" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="890" y="230" font-size="15" fill="#343a40" text-anchor="start" font-weight="bold">exportin</text>
+  <text x="890" y="248" font-size="14" fill="#343a40" text-anchor="start">(CRM1 = XPO1)</text>
+</svg>

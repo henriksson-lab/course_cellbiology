@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b8a3e"/></marker>
+    <path id="hormone" d="M-9,-6 L0,-11 L9,-6 L9,6 L0,11 L-9,6 Z" fill="#e03131" stroke="#1b2a3a" stroke-width="1.2"/>
+    <g id="rec"><rect x="-45" y="-18" width="90" height="36" rx="6" fill="#9bc5e8" stroke="#1b2a3a" stroke-width="1.5"/><path d="M23,-18 L45,-18 L45,0 L23,0 Z" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/></g>
+  </defs>
+  <rect x="0" y="80" width="1000" height="360" fill="#fbfaf5"/>
+  <rect x="0" y="62" width="1000" height="20" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+  <!-- hormone crossing -->
+  <use href="#hormone" x="90" y="30"/>
+  <text x="112" y="26" font-size="15">steroid hormone (cortisol, oestradiol):</text>
+  <text x="112" y="45" font-size="15">small and fat-soluble, crosses the membrane</text>
+  <path d="M90,44 L90,98" stroke="#1b2a3a" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <use href="#hormone" x="90" y="110"/>
+  <!-- receptor with chaperone -->
+  <use href="#rec" x="200" y="160"/>
+  <text x="188" y="166" text-anchor="middle" font-size="14">receptor</text>
+  <ellipse cx="200" cy="192" rx="46" ry="14" fill="#ced4da" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="200" y="197" text-anchor="middle" font-size="14">HSP90</text>
+  <text x="200" y="232" text-anchor="middle" font-size="15">empty receptor, held</text>
+  <text x="200" y="250" text-anchor="middle" font-size="15">by a chaperone</text>
+  <path d="M102,116 C150,124 205,118 230,138" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <!-- hormone-bound dimer -->
+  <path d="M262,170 L362,170" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="310" y="156" text-anchor="middle" font-size="14">binds</text>
+  <use href="#rec" x="420" y="150"/><use href="#hormone" x="454" y="141"/>
+  <use href="#rec" x="420" y="188"/><use href="#hormone" x="454" y="179"/>
+  <text x="482" y="164" font-size="15">hormone in the pocket:</text>
+  <text x="482" y="183" font-size="15">chaperone falls off,</text>
+  <text x="482" y="202" font-size="15">two receptors pair up</text>
+  <!-- nucleus -->
+  <rect x="300" y="250" width="680" height="180" rx="40" fill="#efebf7" stroke="#6b4fa0" stroke-width="4"/>
+  <text x="960" y="418" text-anchor="end" fill="#6b4fa0">nucleus</text>
+  <path d="M420,212 L420,326" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="320" y1="380" x2="960" y2="380" stroke="#1b2a3a" stroke-width="4"/>
+  <rect x="350" y="370" width="184" height="20" fill="#d0bfe9" stroke="#6b4fa0" stroke-width="1.5"/>
+  <use href="#rec" x="395" y="352"/><use href="#hormone" x="429" y="343"/>
+  <use href="#rec" x="488" y="352"/><use href="#hormone" x="522" y="343"/>
+  <rect x="540" y="318" width="96" height="28" rx="12" fill="#ffd8a8" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="588" y="337" text-anchor="middle" font-size="14">coactivator</text>
+  <text x="442" y="414" text-anchor="middle" font-size="14">response element</text>
+  <rect x="660" y="368" width="150" height="24" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="735" y="386" text-anchor="middle" font-size="15">target genes</text>
+  <path d="M660,366 L660,344 L706,344" fill="none" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arg)"/>
+  <text x="720" y="290" font-size="15">The receptor is the</text>
+  <text x="720" y="309" font-size="15">transcription factor.</text>
+  <text x="720" y="328" font-size="15">Effect after hours.</text>
+  <!-- left note -->
+  <text x="20" y="320" font-size="15">Oestrogen and thyroid</text>
+  <text x="20" y="339" font-size="15">hormone receptors wait</text>
+  <text x="20" y="358" font-size="15">in the nucleus instead,</text>
+  <text x="20" y="377" font-size="15">already on DNA.</text>
+</svg>

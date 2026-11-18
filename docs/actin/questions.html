@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.30">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Study questions: actin, cell shape and migration – Cell Biology</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-28eabafef56a315de3e02b9d829b0765.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Cell Biology</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-course-info" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Course info</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-course-info">    
+        <li>
+    <a class="dropdown-item" href="../courseplan.html">
+ <span class="dropdown-text">Course plan</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cytoskeleton</li><li class="breadcrumb-item"><a href="../actin/lec.html">Actin: cell shape and migration</a></li><li class="breadcrumb-item"><a href="../actin/questions.html">Study questions</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course info</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courseplan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course plan (3MB001)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../elo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Learning outcomes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../dictionary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image credits</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The cell and how we study it</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">A tour of the cell</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cell-tour/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cell-tour/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cell-tour/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cell-tour/explore.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: explore a real HeLa cell</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Seeing cells: microscopy</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../microscopy/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../microscopy/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../microscopy/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../microscopy/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: resolution limit</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Taking cells apart and perturbing them</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cell-methods/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cell-methods/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cell-methods/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cell-methods/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: flow cytometry gating</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Membranes and transport</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">Membrane structure</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../membrane-structure/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../membrane-structure/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../membrane-structure/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../membrane-structure/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: FRAP lab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Transporters and pumps</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../membrane-transport/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../membrane-transport/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../membrane-transport/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../membrane-transport/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: uptake assay</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
+ <span class="menu-text">Ion channels and membrane potential</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ion-channels/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ion-channels/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ion-channels/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ion-channels/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: the cell battery</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Protein handling and organelles</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+ <span class="menu-text">Sorting proteins to the right compartment</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../protein-sorting/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../protein-sorting/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../protein-sorting/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../protein-sorting/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: zip-code game</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
+ <span class="menu-text">The endoplasmic reticulum</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../er/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../er/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../er/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../er/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: topology builder</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
+ <span class="menu-text">The Golgi and the secretory pathway</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../golgi-secretion/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../golgi-secretion/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../golgi-secretion/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../golgi-secretion/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: pulse-chase</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false">
+ <span class="menu-text">Endocytosis, lysosomes and autophagy</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../endocytosis-lysosomes/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../endocytosis-lysosomes/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../endocytosis-lysosomes/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../endocytosis-lysosomes/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: LDL receptor cycle</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false">
+ <span class="menu-text">Protein life and death</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../protein-lifecycle/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../protein-lifecycle/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../protein-lifecycle/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../protein-lifecycle/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: protein turnover</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+ <span class="menu-text">Organelles compared: keeping the cell in balance</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../organelles-homeostasis/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../organelles-homeostasis/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../organelles-homeostasis/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../organelles-homeostasis/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: measure the organelles</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="true">
+ <span class="menu-text">Cell signalling</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false">
+ <span class="menu-text">Principles of cell communication</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../signalling-principles/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../signalling-principles/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../signalling-principles/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../signalling-principles/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: dose–response</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false">
+ <span class="menu-text">G-protein-coupled receptors and second messengers</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../gpcr/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../gpcr/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../gpcr/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../gpcr/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: GPCR cascade</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false">
+ <span class="menu-text">Enzyme-coupled receptors: kinase cascades</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kinase-signalling/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kinase-signalling/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kinase-signalling/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kinase-signalling/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: kinase cascade</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false">
+ <span class="menu-text">Signalling that shapes tissues and decides fates</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../fate-signalling/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../fate-signalling/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../fate-signalling/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../fate-signalling/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: Notch lateral inhibition</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="true">
+ <span class="menu-text">Cytoskeleton</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="true">
+ <span class="menu-text">Actin: cell shape and migration</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../actin/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../actin/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../actin/questions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../actin/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: actin treadmilling</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false">
+ <span class="menu-text">Microtubules and motor proteins</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../microtubules/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../microtubules/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../microtubules/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../microtubules/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: dynamic instability</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false">
+ <span class="menu-text">Myosin, intermediate filaments and the mechanical cell</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../myosin-if/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../myosin-if/quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quiz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../myosin-if/questions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../myosin-if/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: sarcomere</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#g-level-questions" id="toc-g-level-questions" class="nav-link active" data-scroll-target="#g-level-questions">G-level questions</a></li>
+  <li><a href="#vg-style-questions" id="toc-vg-style-questions" class="nav-link" data-scroll-target="#vg-style-questions">VG-style questions</a></li>
+  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore">Explore</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cytoskeleton</li><li class="breadcrumb-item"><a href="../actin/lec.html">Actin: cell shape and migration</a></li><li class="breadcrumb-item"><a href="../actin/questions.html">Study questions</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Study questions: actin, cell shape and migration</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged <strong>[VG]</strong> are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.</p>
+<section id="g-level-questions" class="level2">
+<h2 class="anchored" data-anchor-id="g-level-questions">G-level questions</h2>
+<p><strong>1.</strong> Compare actin filaments, microtubules and intermediate filaments. For each, give the subunit, the approximate width, whether it is polar, its motor proteins and one main job. <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Actin filaments</th>
+<th>Microtubules</th>
+<th>Intermediate filaments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Subunit</td>
+<td>actin (globular), binds ATP</td>
+<td>αβ-tubulin dimer, binds GTP</td>
+<td>fibrous proteins: keratins, vimentin, lamins …</td>
+</tr>
+<tr class="even">
+<td>Width</td>
+<td>about 7 nm</td>
+<td>about 25 nm (hollow tube)</td>
+<td>about 10 nm</td>
+</tr>
+<tr class="odd">
+<td>Polar?</td>
+<td>yes (barbed + / pointed −)</td>
+<td>yes (plus / minus)</td>
+<td>no</td>
+</tr>
+<tr class="even">
+<td>Motors</td>
+<td>myosins</td>
+<td>kinesins, dynein</td>
+<td>none</td>
+</tr>
+<tr class="odd">
+<td>Main job</td>
+<td>cell shape, crawling, cortex, contraction, cytokinesis</td>
+<td>long-range transport, mitotic spindle, cilia</td>
+<td>mechanical strength, nuclear lamina</td>
+</tr>
+</tbody>
+</table>
+<p>All three are built from many subunits held by non-covalent bonds. Actin and microtubules are highly dynamic; intermediate filaments are much more stable.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>2.</strong> Describe what happens to the nucleotide of an actin subunit from the moment it is free in the cytosol until it leaves a filament again. Why does this matter for the cell? <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Free G-actin binds <strong>ATP</strong> (profilin helps exchange ADP for ATP). The ATP-actin joins a filament, mostly at the <strong>barbed (+) end</strong>. A few seconds later the subunit <strong>hydrolyses ATP to ADP + Pi</strong>; the <strong>Pi leaves slowly</strong>, over minutes. The older part of the filament therefore holds <strong>ADP-actin</strong>, which binds less tightly and is recognised by <strong>cofilin</strong>, which cuts and takes apart old filaments. The released ADP-actin exchanges its ADP for ATP again and can be reused. This matters because (1) the <strong>ATP clock</strong> marks old filaments for removal, so the cell turns its actin over; (2) hydrolysis makes the two ends different, which allows <strong>treadmilling</strong>; (3) the energy of ATP keeps the system out of equilibrium.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>3.</strong> Explain the terms <em>critical concentration</em> and <em>treadmilling</em>. Sketch net growth against G-actin concentration for both ends of a filament and mark the three zones. <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>At each end, subunits <strong>join</strong> at a rate <span class="math inline">\(k_\text{on}[\text{G-actin}]\)</span> and <strong>leave</strong> at a rate <span class="math inline">\(k_\text{off}\)</span>. The net growth is a straight line against concentration; it is zero at the <strong>critical concentration</strong> <span class="math inline">\(C_c = k_\text{off}/k_\text{on}\)</span>. Below <span class="math inline">\(C_c\)</span> the end shrinks, above it grows. Because of ATP hydrolysis, <span class="math inline">\(C_c\)</span> is lower at the <strong>barbed end</strong> (about 0.1 µM) than at the <strong>pointed end</strong> (about 0.6 µM). Sketch: two rising lines, the barbed one steeper, crossing zero at 0.1 and 0.6 µM. Zones: below 0.1 µM, <strong>both ends shrink</strong>; between 0.1 and 0.6 µM, the <strong>+ end grows while the − end shrinks</strong>; above 0.6 µM, <strong>both grow</strong>. <strong>Treadmilling</strong> is the state in the middle zone where the + end gains as many subunits as the − end loses (about 0.2 µM in the test tube): the filament keeps its length but moves forward, and each subunit stays in place while it passes from the + end to the − end. It needs a constant supply of ATP.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>4.</strong> What is the role of the Arp2/3 complex and of formins? Where in the cell would you find the filaments that each one makes? <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Both are <strong>nucleators</strong>: they overcome the slow step of starting a filament (unstable actin dimers and trimers), so the cell decides where new filaments start. <strong>Arp2/3</strong> (with the actin-like Arp2 and Arp3) binds the <strong>side of an existing filament</strong> and starts a <strong>branch at about 70°</strong>. It must be activated by <strong>WASP/WAVE</strong> proteins, which sit at the plasma membrane. Repeated branching makes the <strong>branched mesh of the lamellipodium</strong> (and of endocytic patches and <em>Listeria</em> comet tails). <strong>Formins</strong> form a ring around the <strong>barbed end</strong> and stay on it while it grows, feeding in profilin–actin. They make <strong>long, unbranched</strong> filaments, found in <strong>filopodia</strong> (bundled by fascin), <strong>stress fibres</strong> and the <strong>contractile ring</strong> of cytokinesis.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>5.</strong> A cell contains tens of µM unpolymerised actin, far above the critical concentration. Explain why actin does not polymerise everywhere, and how the cell makes it grow fast in one place. <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Nucleation is slow</strong>, so new filaments do not form spontaneously. (2) Most monomers are bound to <strong>profilin</strong> (and thymosin): profilin–actin cannot start filaments and cannot join pointed ends, only free barbed ends. (3) <strong>Capping protein</strong> blocks most barbed ends. So growth happens only where there are <strong>free barbed ends</strong>. The cell makes them locally: a signal activates <strong>Rac or Cdc42</strong> at one part of the membrane, which activates <strong>WAVE/WASP → Arp2/3</strong> (new branches) or <strong>formins</strong>. The large profilin–actin pool then adds rapidly to these ends. Behind, <strong>cofilin</strong> takes old ADP filaments apart and refills the pool.</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>6.</strong> Describe the four main actin structures in a crawling fibroblast. For each, say what the filaments look like and name one protein that builds or organises it. <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Lamellipodium</strong>: a thin sheet at the leading edge with a <strong>branched mesh</strong> of short filaments, + ends towards the membrane; built by <strong>Arp2/3</strong> (activated by Rac and WAVE), trimmed by capping protein, recycled by cofilin. <strong>Filopodia</strong>: thin finger-like protrusions with a <strong>tight parallel bundle</strong> of long filaments, + ends at the tip; <strong>formins</strong> and <strong>fascin</strong>. <strong>Stress fibres</strong>: thick <strong>contractile bundles</strong> across the cell, with <strong>myosin II</strong> and <strong>α-actinin</strong>, ending at <strong>focal adhesions</strong>; made under <strong>Rho</strong> (formin mDia, ROCK). <strong>Cortex</strong>: a thin <strong>mesh</strong> under the whole plasma membrane, cross-linked by <strong>filamin</strong> (and spectrin); gives the surface stiffness and forms the contractile ring at cytokinesis.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>7.</strong> Explain how Rho-family GTPases work as switches, and which actin structure Cdc42, Rac and Rho each control. Describe the experiment that showed this. <code>[ELO 6]</code> <code>[ELO 3]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Rho-family GTPases are small G proteins: <strong>on with GTP, off with GDP</strong>. A <strong>GEF</strong>, activated by a signal (e.g.&nbsp;a growth-factor receptor), exchanges GDP for GTP; a <strong>GAP</strong> stimulates GTP hydrolysis and turns the switch off. Active <strong>Cdc42</strong> → <strong>filopodia</strong> (N-WASP/Arp2/3, formins); active <strong>Rac</strong> → <strong>lamellipodia</strong> (WAVE → Arp2/3); active <strong>Rho</strong> → <strong>stress fibres and focal adhesions</strong>, and <strong>contraction</strong> (formin mDia; ROCK → myosin II). Experiment: fibroblasts were starved of serum so they had few actin structures. Active (GTP-locked) forms of each GTPase were <strong>microinjected</strong>, and the cells were fixed and stained with <strong>fluorescent phalloidin</strong> a few minutes later. Each GTPase gave its own structure.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>8.</strong> Describe the steps by which a cell crawls across a surface. What is the job of actin polymerisation, of adhesions and of myosin II? <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Protrusion</strong>: at the front, actin polymerisation in the <strong>lamellipodium</strong> (Rac, WAVE, Arp2/3) pushes the membrane forward; filopodia probe the surroundings. (2) <strong>Adhesion</strong>: new adhesions form at the front, where <strong>integrins</strong> bind the surface or extracellular matrix and link to actin inside; they give the cell grip. (3) <strong>Contraction</strong>: <strong>myosin II</strong> (activated by Rho/ROCK) pulls on actin filaments and drags the cell body forward. (4) <strong>Release</strong>: adhesions at the <strong>rear</strong> come apart, so the rear follows. Polymerisation pushes, adhesion transmits force to the surface, myosin pulls. The cell is polarised: Rac and Cdc42 at the front, Rho at the rear.</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>9.</strong> Name three drugs that act on actin, say what each binds, and what happens to the actin in a living cell. Which one is used to stain actin, and why only in fixed cells? <code>[ELO 6]</code> <code>[ELO 1]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Latrunculin</strong> binds <strong>G-actin</strong> (1:1) and lowers the free monomer concentration below the critical concentration: filaments are taken apart and do not regrow. <strong>Cytochalasin D</strong> binds <strong>barbed ends</strong> and blocks growth there (like capping protein): structures that need + end growth, such as lamellipodia, stop. <strong>Jasplakinolide</strong> (and phalloidin) bind <strong>F-actin</strong> and stabilise it: filaments cannot be taken apart, the monomer pool is used up, and dynamic structures stop as well. <strong>Phalloidin</strong>, coupled to a fluorescent dye, stains filaments in <strong>fixed and permeabilised</strong> cells; it does not cross the membrane of living cells (and would freeze actin if it did). For live cells one uses GFP-actin or Lifeact-GFP.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="vg-style-questions" class="level2">
+<h2 class="anchored" data-anchor-id="vg-style-questions">VG-style questions</h2>
+<p><strong>10. [VG]</strong> A lamellipodium in a cultured cell stops advancing within a minute after (a) latrunculin and also after (b) jasplakinolide, although the two drugs have opposite effects on filaments. Explain both results. What does this tell you about how a lamellipodium works? <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>Latrunculin binds free G-actin, so the free concentration falls below the critical concentration of the barbed end. The barbed ends at the membrane cannot grow and cannot push; the network is taken apart. (b) Jasplakinolide stabilises filaments, so old filaments at the back of the lamellipodium can <strong>no longer be taken apart</strong>. The network keeps adding actin at the front but returns none, so the <strong>monomer pool runs out</strong> within a short time, and growth at the membrane stops too. Together: the lamellipodium is a <strong>treadmilling network</strong>, not a static structure. It needs both <strong>polymerisation at the front</strong> and <strong>disassembly at the back</strong> (cofilin), and the recycling of monomers between them. Blocking either half stops the edge.</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>11. [VG]</strong> In a test tube with pure proteins, beads coated with an Arp2/3 activator (like <em>Listeria</em> ActA) move by forming actin comet tails. Predict what happens to bead speed when you (a) leave out capping protein, (b) leave out cofilin, (c) double the Arp2/3 complex. Explain. <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><strong>No capping protein: the beads stop</strong> (or move very slowly). New branches keep forming and no barbed end is ever capped, so the number of growing ends rises. All of them use monomers, and the free actin falls to near the critical concentration; growth spreads over too many ends and few of them push the bead. Capping protein “funnels” monomers to the few young ends at the bead surface. This was the observed result in the reconstitution experiments. (b) <strong>No cofilin: the beads slow down and stop</strong> after a while: filaments in the tail are not taken apart, actin accumulates in the tail and the monomer pool runs out. (c) <strong>More Arp2/3</strong>: more branches and more ends. At first more ends share the load and may push faster, but more ends also use more monomers; beyond an optimum the speed <strong>falls</strong> for the same reason as in (a). (The demo shows the same behaviour.)</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>12. [VG]</strong> Researchers suspect that a new kinase inhibitor reduces metastasis because it blocks cell migration. Design experiments in cultured cancer cells to test (a) whether the drug slows migration, and (b) whether it acts through Rac-driven lamellipodia or through Rho/ROCK-driven contraction. <code>[ELO 6]</code> <code>[ELO 1]</code> <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Model answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><strong>Live imaging of migration</strong> with and without the drug (solvent control, several doses): a <strong>scratch (wound-healing) assay</strong> or <strong>single-cell tracking</strong> on a matrix-coated dish (speed, persistence), and a <strong>3D invasion assay</strong> (cells in or through a collagen or Matrigel layer, e.g.&nbsp;a Transwell chamber). Check that the drug does not simply kill cells or stop division (viability, short times, or block division). (b) <strong>Phalloidin staining</strong> of fixed cells: loss of lamellipodia suggests the Rac pathway; loss of stress fibres suggests Rho/ROCK. <strong>Live imaging with Lifeact-GFP</strong> to measure protrusion of the leading edge. <strong>Pull-down assays</strong> for active (GTP-bound) Rac and Rho with and without the drug. <strong>Rescue</strong>: express a GTP-locked Rac (or Rho) and see whether migration is restored. Compare with known inhibitors (a ROCK inhibitor, an Arp2/3 inhibitor such as CK-666) as reference. A drug that acts on Rac should reduce edge protrusion and lamellipodia; one that acts on ROCK should reduce myosin activity (phospho-myosin light chain staining) and contraction.</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="explore" class="level2">
+<h2 class="anchored" data-anchor-id="explore">Explore</h2>
+<p><strong>Demo: actin treadmilling.</strong> Two tabs. <strong>1 · One filament</strong>: a single actin filament in a large pool of G-actin, seen from the side. Subunits join and leave one at a time, at random moments, with measured on- and off-rates for each end (the barbed end has a critical concentration of 0.12 µM, the pointed end 0.6 µM). Colours show the nucleotide: fresh ATP-actin (light yellow), ADP-Pi-actin (amber) and old ADP-actin (grey). A few subunits carry a green dye (<strong>speckles</strong>). The left graph gives the expected net growth at each end against free G-actin; the right graph follows the two ends over time. Add capping protein, cytochalasin D, phalloidin or latrunculin. <strong>2 · Lamellipodium</strong>: a 1 µm piece of the leading edge seen from above. Arp2/3 makes branches next to the membrane, the growing ends push the membrane, capping protein stops ends, and cofilin takes old filaments apart. Change the amounts and watch the <strong>edge speed</strong>, or press <strong>Measure speed curve</strong>. Both tabs are <strong>stochastic models that are qualitatively right</strong>: the behaviour is right, the numbers are illustrative. Time starts at real time; you can speed it up. Live runs are random, so your numbers will differ a little from the solutions; the “expected” rates and the speed curve use fixed values and seeds.</p>
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="actin" data-tab="1" data-c="0.3" data-seed="1"></div>
+<script src="../demos/dist/actin.js"></script>
+<p><strong>E1.</strong> Tab 1. Press <strong>below both (0.05)</strong>, then <strong>between (0.3)</strong>, then <strong>above both (1.0)</strong>. For each, read the expected net rate at the + and − ends and say whether the filament shrinks, treadmills or grows. Where are you on the left graph? <code>[ELO 6]</code></p>
+<p><strong>E2.</strong> Tab 1. Press <strong>steady state (0.17)</strong> and set time to <strong>10× real time</strong>. Watch for about 2 minutes. What happens to the length, to the two lines in the right graph, and to the green speckles? Where are the yellow (ATP) and the grey (ADP) subunits, and why? <code>[ELO 6]</code></p>
+<p><strong>E3. [VG]</strong> <em>Predict first.</em> At <strong>0.3 µM</strong>, what will happen if you add <strong>capping protein</strong>? And at <strong>1.0 µM</strong>? Check, and explain. Why is it useful for a cell, which has tens of µM free actin, to cap most of its barbed ends? <code>[ELO 6]</code></p>
+<p><strong>E4.</strong> Tab 1. Set G-actin to <strong>1.0 µM</strong> and add <strong>latrunculin 1 µM</strong>, then <strong>2 µM</strong>. Read the free G-actin and the net rates. Then set G-actin to <strong>0.05 µM</strong>, latrunculin to 0, and tick <strong>phalloidin</strong>. Compare the two drugs: which one destroys filaments, which one protects them, and why? <code>[ELO 6]</code></p>
+<p><strong>E5. [VG]</strong> Tab 2. <em>Predict first:</em> sketch how the edge speed will depend on the amount of capping protein, from 0 to 3× normal. Then choose <strong>vary: capping protein</strong> and press <strong>Measure speed curve</strong>. Explain the shape. Repeat for <strong>Arp2/3</strong> and <strong>cofilin</strong>. Why does the edge stop when there is <strong>no capping protein</strong>, although capping protein itself blocks growth? <code>[ELO 6]</code></p>
+<p><strong>E6.</strong> Tab 2. Press <strong>no Arp2/3</strong> and watch for 20 s. Then press <strong>normal</strong>. What happens, and why? How does this explain why <em>Listeria</em> needs the host’s Arp2/3 complex, and what would a drug that blocks ActA do? <code>[ELO 6]</code> <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solutions">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solutions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>E1.</strong> <strong>0.05 µM</strong>: + end −0.82, − end −0.74 subunits/s: <strong>both ends shrink</strong> (below both critical concentrations, the red zone on the left), about 1.6 subunits/s in total; a 100-subunit filament is gone within about a minute. <strong>0.3 µM</strong>: + end +2.08, − end −0.41: <strong>the + end grows and the − end shrinks</strong>: the filament <strong>treadmills</strong> (between the two critical concentrations) and also gets longer overall, +1.7 subunits/s (about 0.3 µm/min). <strong>1.0 µM</strong>: + end +10.2, − end +0.50: <strong>both ends grow</strong> (above both). On the left graph the dots sit on the two lines at the chosen concentration; an end grows when its dot is above zero.</p>
+<p><strong>E2.</strong> At 0.17 µM the + end gains about <strong>0.58 subunits/s</strong> and the − end loses about <strong>0.58</strong>: the <strong>length stays about the same</strong> (it wanders up and down a little, because events are random). In the right graph both lines rise <strong>in parallel</strong>: the filament moves to the right, about 1.5 nm/s (0.1 µm/min). The <strong>green speckles stay where they are</strong>: the filament moves through space while each subunit stays put, joins at + and, minutes later, leaves at −. The <strong>yellow ATP subunits</strong> are only at the <strong>+ end</strong>, because ATP is hydrolysed seconds after a subunit joins; behind them are amber ADP-Pi subunits and then grey <strong>ADP subunits</strong> towards the − end, because Pi leaves over minutes. The subunits that leave at the − end are the oldest ones.</p>
+<p><strong>E3.</strong> Capping blocks the + end completely (no joining, no loss). At <strong>0.3 µM</strong> only the − end works, and 0.3 µM is below its critical concentration (0.6 µM): the filament <strong>shrinks</strong> from the − end at about <strong>0.4 subunits/s</strong>. At <strong>1.0 µM</strong> the − end is above its critical concentration and grows slowly, about <strong>+0.5 subunits/s</strong>; the filament grows only from the − end, 20 times slower than an uncapped + end would. In a cell, free actin is far above both critical concentrations, so every free + end would grow fast and use up the monomers. By <strong>capping most ends</strong>, the cell keeps a large pool of free actin ready and lets only the ends it chooses (new branches, formin-bound ends at the right place) grow. Cytochalasin D does the same as capping protein in this model.</p>
+<p><strong>E4.</strong> With 1.0 µM actin and <strong>1 µM latrunculin</strong>, most monomers are bound: free actin is about <strong>0.36 µM</strong>; the filament still treadmills (+2.8, −0.3). With <strong>2 µM latrunculin</strong>, free actin falls to about <strong>0.15 µM</strong>: + end +0.3, − end −0.6, so the filament <strong>shrinks overall</strong> (−0.3 subunits/s). More latrunculin pushes free actin below the + end critical concentration and both ends shrink. <strong>Phalloidin</strong> at <strong>0.05 µM</strong>: the off-rates fall 50-fold, so both critical concentrations drop almost to zero; the filament now <strong>grows</strong> (+0.55 and +0.05) at a concentration where it shrank before (E1). <strong>Latrunculin destroys</strong> filaments indirectly by taking away the monomers; <strong>phalloidin protects</strong> them by gluing the subunits together so they cannot leave. That is why phalloidin is used as a stain for filaments (in fixed cells) and why it is poisonous.</p>
+<p><strong>E5.</strong> The capping curve rises and then falls: speed about <strong>0</strong> at 0×, 3.6 at 0.25×, 7 at 0.5×, about <strong>10 µm/min at 1–1.5×</strong>, and 9.5 at 2× and 7 at 3×. With <strong>too little capping</strong>, branches keep forming and no end stops growing; the many growing ends use up the monomers (free G-actin falls to 0; nearly all actin is in the network) and none of them can grow and push. Capping protein <strong>funnels</strong> the monomers to the few young ends next to the membrane. With <strong>too much capping</strong>, ends are stopped before they reach the membrane, so few ends push (about 7 touch the membrane at 3×, against about 25 at 1×), and the edge slows. <strong>Arp2/3</strong>: about 0.7 µm/min at 0 (only a few filaments made without Arp2/3), about <strong>10</strong> at 0.5–1×, then falling to about 6 at 3× (too many ends use the monomers, as with too little capping). <strong>Cofilin</strong>: about 1.6 µm/min at 0, rising steadily to about 12.6 at 3×: without cofilin the old network is not taken apart, most actin is stuck in it, and the monomer pool is nearly empty; more cofilin recycles faster. (Real numbers vary by cell type; the shapes of the curves are the point.)</p>
+<p><strong>E6.</strong> Without Arp2/3 no new branches form. The existing ends are capped one by one within a few seconds, the network falls behind and is taken apart, and the <strong>edge stops</strong> (0–2 µm/min; free G-actin rises to the full 20 µM, but there are no ends to use it). With <strong>normal</strong> Arp2/3 the network restarts (there are a few filaments from other nucleators to branch from) and the edge returns to about 10 µm/min. <em>Listeria</em> has no motor of its own; its ActA protein switches on the host Arp2/3 complex at the bacterial surface, so the bacterium sits at the front of its own small lamellipodium (the comet tail). A drug that blocks ActA would stop the tail forming, so the bacterium could not move or spread to the next cell; it would stay in one cell, exposed to the immune system.</p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

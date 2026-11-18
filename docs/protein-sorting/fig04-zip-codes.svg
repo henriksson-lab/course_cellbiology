@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="518" viewBox="0 0 1100 518" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig04: sorting signals as zip codes: position on the chain, what they look like, where they send the protein. Example sequences from well-studied proteins. -->
+  <defs><marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#1b2a3a"/></marker></defs>
+  <text x="40" y="30" font-size="16" fill="#555" font-weight="bold">N</text><text x="262" y="30" font-size="16" fill="#555" font-weight="bold">C</text>
+  <text x="300" y="30" font-size="16" fill="#555" font-weight="bold">signal: where it sits and what it looks like</text>
+  <text x="900" y="30" font-size="16" fill="#555" font-weight="bold">sends the protein to</text>
+  <line x1="20" y1="42" x2="1080" y2="42" stroke="#adb5bd" stroke-width="1.5"/>
+  <line x1="40" y1="80" x2="270" y2="80" stroke="#adb5bd" stroke-width="9" stroke-linecap="round"/>
+  <rect x="40" y="72" width="37" height="16" rx="4" fill="#2a7f8f"/>
+  <text x="300" y="76" font-size="17" fill="#2a7f8f" font-weight="bold">ER signal peptide<tspan fill="#1b2a3a" font-weight="normal" font-size="16">: N-terminus, 15–30 aa, hydrophobic core</tspan></text>
+  <text x="300" y="97" font-size="15" fill="#495057" font-family="Menlo, Consolas, monospace">MKWVTFISLLFLFSSAYS… (albumin)</text>
+  <line x1="862" y1="80" x2="890" y2="80" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="900" y="86" font-size="17" fill="#1b2a3a" font-weight="bold">into the ER</text>
+  <line x1="20" y1="108" x2="1080" y2="108" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="40" y1="136" x2="270" y2="136" stroke="#adb5bd" stroke-width="9" stroke-linecap="round"/>
+  <rect x="144" y="128" width="30" height="16" rx="4" fill="#8a6a12"/>
+  <text x="300" y="132" font-size="17" fill="#8a6a12" font-weight="bold">transmembrane segment<tspan fill="#1b2a3a" font-weight="normal" font-size="16">: about 20 hydrophobic aa in a row</tspan></text>
+  <text x="300" y="153" font-size="15" fill="#495057" font-family="Menlo, Consolas, monospace">…LLVGILFAVLLLGAVITA… (typical pattern)</text>
+  <line x1="862" y1="136" x2="890" y2="136" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="900" y="142" font-size="17" fill="#1b2a3a" font-weight="bold">stays in a membrane</text>
+  <line x1="20" y1="164" x2="1080" y2="164" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="40" y1="192" x2="270" y2="192" stroke="#adb5bd" stroke-width="9" stroke-linecap="round"/>
+  <rect x="247" y="184" width="23" height="16" rx="4" fill="#2a7f8f"/>
+  <text x="300" y="188" font-size="17" fill="#2a7f8f" font-weight="bold">KDEL<tspan fill="#1b2a3a" font-weight="normal" font-size="16">: C-terminus, last 4 aa</tspan></text>
+  <text x="300" y="209" font-size="15" fill="#495057" font-family="Menlo, Consolas, monospace">…KDEL-COOH</text>
+  <line x1="862" y1="192" x2="890" y2="192" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="900" y="198" font-size="17" fill="#1b2a3a" font-weight="bold">back to the ER lumen</text>
+  <line x1="20" y1="220" x2="1080" y2="220" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="40" y1="248" x2="270" y2="248" stroke="#adb5bd" stroke-width="9" stroke-linecap="round"/>
+  <path d="M 130 242 q 22 -26 44 0" fill="none" stroke="#2e8b57" stroke-width="7" stroke-linecap="round"/>
+  <text x="300" y="244" font-size="17" fill="#2e8b57" font-weight="bold">M6P signal patch<tspan fill="#1b2a3a" font-weight="normal" font-size="16">: a patch on the folded surface, tagged in the Golgi</tspan></text>
+  <text x="300" y="265" font-size="15" fill="#495057" font-family="Menlo, Consolas, monospace">(not a linear sequence)</text>
+  <line x1="862" y1="248" x2="890" y2="248" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="900" y="254" font-size="17" fill="#1b2a3a" font-weight="bold">lysosome</text>
+  <line x1="20" y1="276" x2="1080" y2="276" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="40" y1="304" x2="270" y2="304" stroke="#adb5bd" stroke-width="9" stroke-linecap="round"/>
+  <rect x="40" y="296" width="37" height="16" rx="4" fill="#a8324a"/>
+  <text x="300" y="300" font-size="17" fill="#a8324a" font-weight="bold">mitochondrial presequence<tspan fill="#1b2a3a" font-weight="normal" font-size="16">: N-terminus, 20–60 aa, positively charged helix</tspan></text>
+  <text x="300" y="321" font-size="15" fill="#495057" font-family="Menlo, Consolas, monospace">MLSLRQSIRFFKPATRTL… (COX4, yeast)</text>
+  <line x1="862" y1="304" x2="890" y2="304" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="900" y="310" font-size="17" fill="#1b2a3a" font-weight="bold">mitochondrial matrix</text>
+  <line x1="20" y1="332" x2="1080" y2="332" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="40" y1="360" x2="270" y2="360" stroke="#adb5bd" stroke-width="9" stroke-linecap="round"/>
+  <rect x="109" y="352" width="23" height="16" rx="4" fill="#6b4fa0"/>
+  <text x="300" y="356" font-size="17" fill="#6b4fa0" font-weight="bold">NLS<tspan fill="#1b2a3a" font-weight="normal" font-size="16">: a short basic stretch, almost anywhere</tspan></text>
+  <text x="300" y="377" font-size="15" fill="#495057" font-family="Menlo, Consolas, monospace">…PKKKRKV… (SV40 T antigen)</text>
+  <line x1="862" y1="360" x2="890" y2="360" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="900" y="366" font-size="17" fill="#1b2a3a" font-weight="bold">into the nucleus</text>
+  <line x1="20" y1="388" x2="1080" y2="388" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="40" y1="416" x2="270" y2="416" stroke="#adb5bd" stroke-width="9" stroke-linecap="round"/>
+  <rect x="183" y="408" width="23" height="16" rx="4" fill="#6b4fa0"/>
+  <text x="300" y="412" font-size="17" fill="#6b4fa0" font-weight="bold">NES<tspan fill="#1b2a3a" font-weight="normal" font-size="16">: a short leucine-rich stretch</tspan></text>
+  <text x="300" y="433" font-size="15" fill="#495057" font-family="Menlo, Consolas, monospace">…LALKLAGLDI… (PKI)</text>
+  <line x1="862" y1="416" x2="890" y2="416" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="900" y="422" font-size="17" fill="#1b2a3a" font-weight="bold">out of the nucleus</text>
+  <line x1="20" y1="444" x2="1080" y2="444" stroke="#e9ecef" stroke-width="1"/>
+  <line x1="40" y1="472" x2="270" y2="472" stroke="#adb5bd" stroke-width="9" stroke-linecap="round"/>
+  <rect x="247" y="464" width="23" height="16" rx="4" fill="#3b5bab"/>
+  <text x="300" y="468" font-size="17" fill="#3b5bab" font-weight="bold">PTS1<tspan fill="#1b2a3a" font-weight="normal" font-size="16">: C-terminus, last 3 aa</tspan></text>
+  <text x="300" y="489" font-size="15" fill="#495057" font-family="Menlo, Consolas, monospace">…SKL-COOH</text>
+  <line x1="862" y1="472" x2="890" y2="472" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="900" y="478" font-size="17" fill="#1b2a3a" font-weight="bold">peroxisome</text>
+</svg>

@@ -1,0 +1,104 @@
+---
+title: "Quiz: actin, cell shape and migration"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Actin: cell shape and migration*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Which of the three filament systems (a) has no polarity, (b) binds GTP in its subunits, (c) is about 7 nm wide and binds ATP? Which one has no motor proteins? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of the comparison table: subunit, width, polarity, motors.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) **Intermediate filaments** have no polarity (and no motors). (b) **Microtubules**: the αβ-tubulin dimer binds GTP. (c) **Actin filaments**: 7 nm wide, actin binds ATP. Intermediate filaments are the only system without motor proteins; myosins move on actin, kinesins and dynein on microtubules.
+:::
+
+---
+
+**Q2.** Why are the two ends of an actin filament different? Name them and say which one grows faster. `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+How are the subunits oriented in the filament?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+All actin subunits join **head-to-tail and point the same way**, so the two ends expose different faces of the subunit: the filament is **polar**. The **barbed (+) end** grows much faster than the **pointed (−) end** (higher on-rate). In addition, the + end usually carries fresh ATP-actin, while the − end carries old ADP-actin.
+:::
+
+---
+
+**Q3.** The critical concentration is about 0.1 µM at the barbed end and about 0.6 µM at the pointed end. Predict what happens at each end of a filament at (a) 0.05 µM, (b) 0.3 µM, (c) 2 µM free G-actin. `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Above its critical concentration, an end grows; below it, it shrinks.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) 0.05 µM is below both: **both ends shrink**. (b) 0.3 µM is between them: the **+ end grows and the − end shrinks**, so the filament **treadmills** (at this concentration it also gets a little longer overall). (c) 2 µM is above both: **both ends grow**, the + end much faster.
+:::
+
+---
+
+**Q4.** Why does a cell need nucleators such as Arp2/3 and formins, although it contains plenty of free actin? How do the filaments they make differ? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What is the slow step in making a new filament?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Starting a new filament is slow: actin **dimers and trimers are unstable** and fall apart before they grow. Nucleators make the first seed, so the cell decides **where and when** filaments start. **Arp2/3** binds the side of an existing filament and makes a **branch at 70°**, giving a **branched mesh** (lamellipodia). **Formins** stay on the growing + end and make **long, unbranched** filaments, which are bundled in filopodia and stress fibres.
+:::
+
+---
+
+**Q5.** Match each protein to its job: profilin, capping protein, cofilin, fascin. Jobs: (i) cuts old ADP filaments; (ii) packs filaments into tight parallel bundles; (iii) blocks the + end; (iv) delivers ATP-actin to free + ends. `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Two of them act on the ends or on free actin, one on old filaments, one between filaments.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Profilin → (iv); capping protein → (iii); cofilin → (i); fascin → (ii).
+:::
+
+---
+
+**Q6.** A fibroblast is injected with a form of Rac that is always bound to GTP. What actin structure appears? Which structure would you expect with active Rho, and with active Cdc42? `[ELO 6]` `[ELO 3]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Each of the three GTPases switches on its own nucleator.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Active **Rac** → **lamellipodia** (via WAVE and Arp2/3, also called membrane ruffles). Active **Rho** → **stress fibres** and focal adhesions, with contraction (formin mDia and ROCK → myosin II). Active **Cdc42** → **filopodia** (N-WASP/Arp2/3 and formins). A GTP-locked form cannot be switched off by a GAP, so the structure keeps forming.
+:::
+
+---
+
+**Q7.** You want to know whether a cell needs actin polymerisation to take up particles by phagocytosis. Which drug would you add, and what control would you include? Why can you not use fluorescent phalloidin to film actin in the living cell? `[ELO 6]` `[ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which drugs block polymerisation? Does phalloidin cross the plasma membrane?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Add **latrunculin** (binds G-actin, so filaments cannot grow) or **cytochalasin D** (caps + ends) and measure uptake. Controls: cells with the solvent only (e.g. DMSO); a **washout** to show the effect is reversible; a check that the cells are still alive (e.g. another process that does not need actin still works). **Phalloidin does not enter living cells** (and it would freeze the filaments if it did), so it is used on **fixed** cells. For live cells, use **GFP-actin or Lifeact-GFP**.
+:::
+
+---
+
+**Q8.** *Listeria* moves through the cytosol of a host cell without any motor protein of its own. Explain how. `[ELO 6]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which host protein complex does ActA switch on, and what does it build?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The bacterial surface protein **ActA**, at one pole only, mimics the cell's **WASP** proteins and **activates the host Arp2/3 complex**. A branched actin network, the **comet tail**, forms behind the bacterium; the + ends grow against the bacterial surface and **push** it forward, just as a lamellipodium pushes the membrane. Cofilin and capping protein from the host keep the tail turning over. The bacterium uses this to push into the neighbouring cell.
+:::

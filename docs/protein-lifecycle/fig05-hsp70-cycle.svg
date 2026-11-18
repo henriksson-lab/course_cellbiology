@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+  </defs>
+  <!-- state 1: ATP, lid open, chain arriving with J-protein -->
+  <text x="110" y="56" text-anchor="middle" font-weight="bold" fill="#a61e4d">Hsp70</text>
+  <g transform="translate(150 70)">
+    <rect x="-70" y="0" width="80" height="66" rx="14" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5"/>
+    <circle cx="-30" cy="33" r="17" fill="#ffffff" stroke="#a61e4d" stroke-width="2"/><text x="-30" y="39" text-anchor="middle" font-size="14" font-weight="bold">ATP</text>
+    <rect x="14" y="30" width="58" height="30" rx="8" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5"/>
+    <rect x="14" y="-6" width="58" height="22" rx="8" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5" transform="rotate(-38 14 16)"/>
+    <path d="M90,-8 q16,10 6,24 t12,26 t20,14" fill="none" stroke="#1971c2" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="96" cy="17" r="6" fill="#8a6a12"/>
+    <rect x="118" y="-18" width="44" height="30" rx="8" fill="#ffffff" stroke="#495057" stroke-width="2"/><text x="140" y="2" text-anchor="middle" font-size="14">J</text>
+  </g>
+  <text x="150" y="172" text-anchor="middle">1. Hsp70 + ATP: lid open.</text>
+  <text x="150" y="192" text-anchor="middle">A J-protein (Hsp40) brings</text>
+  <text x="150" y="212" text-anchor="middle">an unfolded chain.</text>
+  <!-- state 2: ADP, lid closed on chain -->
+  <g transform="translate(640 70)">
+    <rect x="-70" y="0" width="80" height="66" rx="14" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5"/>
+    <circle cx="-30" cy="33" r="17" fill="#ffffff" stroke="#a61e4d" stroke-width="2"/><text x="-30" y="39" text-anchor="middle" font-size="14" font-weight="bold">ADP</text>
+    <path d="M0,22 h100" fill="none" stroke="#1971c2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M100,22 q14,-14 26,-4 t20,-12" fill="none" stroke="#1971c2" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="44" cy="22" r="6" fill="#8a6a12"/>
+    <rect x="14" y="30" width="58" height="30" rx="8" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5"/>
+    <rect x="14" y="-4" width="58" height="20" rx="8" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5"/>
+  </g>
+  <text x="640" y="172" text-anchor="middle">2. ATP is split (the J-protein</text>
+  <text x="640" y="192" text-anchor="middle">speeds this up). With ADP the lid</text>
+  <text x="640" y="212" text-anchor="middle">closes: tight grip on the chain.</text>
+  <!-- state 3: exchange -->
+  <g transform="translate(640 270)">
+    <rect x="-70" y="0" width="80" height="66" rx="14" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5"/>
+    <circle cx="-30" cy="33" r="17" fill="#ffffff" stroke="#a61e4d" stroke-width="2"/><text x="-30" y="39" text-anchor="middle" font-size="14" font-weight="bold">ATP</text>
+    <path d="M0,22 h100" fill="none" stroke="#1971c2" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="44" cy="22" r="6" fill="#8a6a12"/>
+    <rect x="14" y="30" width="58" height="30" rx="8" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5"/>
+    <rect x="14" y="-4" width="58" height="20" rx="8" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5"/>
+    <rect x="-120" y="-30" width="58" height="30" rx="8" fill="#ffffff" stroke="#495057" stroke-width="2"/><text x="-91" y="-10" text-anchor="middle" font-size="14">NEF</text>
+  </g>
+  <text x="640" y="370" text-anchor="middle">3. An exchange factor (NEF)</text>
+  <text x="640" y="390" text-anchor="middle">swaps ADP for a new ATP.</text>
+  <!-- state 4: release -->
+  <g transform="translate(150 270)">
+    <rect x="-70" y="0" width="80" height="66" rx="14" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5"/>
+    <circle cx="-30" cy="33" r="17" fill="#ffffff" stroke="#a61e4d" stroke-width="2"/><text x="-30" y="39" text-anchor="middle" font-size="14" font-weight="bold">ATP</text>
+    <rect x="14" y="30" width="58" height="30" rx="8" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5"/>
+    <rect x="14" y="-6" width="58" height="22" rx="8" fill="#fff0f6" stroke="#a61e4d" stroke-width="2.5" transform="rotate(-38 14 16)"/>
+    <path d="M150,30 c-20,-30 30,-40 34,-10 c4,24 -30,34 -34,10 z" fill="#d0ebff" stroke="#1971c2" stroke-width="2.5"/>
+  </g>
+  <text x="150" y="370" text-anchor="middle">4. The lid opens and the chain</text>
+  <text x="150" y="390" text-anchor="middle">is released. It folds, or is bound</text>
+  <text x="150" y="410" text-anchor="middle">again: another round.</text>
+  <!-- cycle arrows -->
+  <line x1="330" y1="100" x2="530" y2="100" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <text x="430" y="88" text-anchor="middle">ATP → ADP + phosphate</text>
+  <line x1="680" y1="226" x2="680" y2="250" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="530" y1="300" x2="370" y2="300" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <text x="450" y="288" text-anchor="middle">ATP in: lid opens</text>
+  <line x1="110" y1="250" x2="110" y2="226" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <text x="395" y="392" text-anchor="middle" font-size="15" font-style="italic" fill="#8a6a12">brown dot: the hydrophobic</text>
+  <text x="395" y="410" text-anchor="middle" font-size="15" font-style="italic" fill="#8a6a12">stretch that Hsp70 binds</text>
+</svg>

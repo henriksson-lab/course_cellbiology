@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig03: two kinds of molecular switch - phosphorylation and GTP binding -->
+<defs><marker id="a1b2a3a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+<text x="225" y="26" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Switch 1: phosphorylation</text>
+<text x="675" y="26" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Switch 2: GTP binding</text>
+<rect x="40" y="130" width="130" height="70" rx="30" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+<text x="105" y="172" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a">protein</text>
+<text x="105" y="225" font-size="17" text-anchor="middle" font-weight="bold" fill="#6b7280">OFF</text>
+<rect x="280" y="130" width="130" height="70" rx="12" fill="#d7c5ec" stroke="#7b3fbf" stroke-width="2.5"/>
+<text x="345" y="172" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a">protein</text>
+<circle cx="410" cy="130" r="13" fill="#f2c94c" stroke="#9a6b00" stroke-width="1.5"/>
+<text x="410" y="135" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a">P</text>
+<text x="345" y="225" font-size="17" text-anchor="middle" font-weight="bold" fill="#7b3fbf">ON</text>
+<path d="M175,140 C210,90 245,90 275,140" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="225" y="78" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">kinase</text>
+<text x="225" y="100" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">ATP → ADP</text>
+<path d="M275,192 C245,242 210,242 175,192" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="225" y="262" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">phosphatase</text>
+<text x="225" y="282" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">releases phosphate</text>
+<text x="225" y="315" font-size="15" text-anchor="middle" font-weight="normal" fill="#6b7280">On Ser, Thr or Tyr side chains (–OH)</text>
+<rect x="490" y="130" width="130" height="70" rx="30" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+<text x="555" y="162" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a">GTPase</text>
+<text x="555" y="184" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a">+ GDP</text>
+<text x="555" y="225" font-size="17" text-anchor="middle" font-weight="bold" fill="#6b7280">OFF</text>
+<rect x="730" y="130" width="130" height="70" rx="12" fill="#bbe7d7" stroke="#1baf7a" stroke-width="2.5"/>
+<text x="795" y="162" font-size="17" text-anchor="middle" font-weight="normal" fill="#1b2a3a">GTPase</text>
+<text x="795" y="184" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a">+ GTP</text>
+<text x="795" y="225" font-size="17" text-anchor="middle" font-weight="bold" fill="#11815a">ON</text>
+<path d="M625,140 C660,90 695,90 725,140" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="675" y="78" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">GEF</text>
+<text x="675" y="100" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">GDP out, GTP in</text>
+<path d="M725,192 C695,242 660,242 625,192" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a1b2a3a)" stroke-linejoin="round"/>
+<text x="675" y="262" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">GAP</text>
+<text x="675" y="282" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a">speeds up GTP → GDP + phosphate</text>
+<text x="675" y="315" font-size="15" text-anchor="middle" font-weight="normal" fill="#6b7280">Ras: a small GTPase</text>
+<line x1="450" y1="45" x2="450" y2="320" stroke="#d0d4da" stroke-width="1.5"/>
+</svg>

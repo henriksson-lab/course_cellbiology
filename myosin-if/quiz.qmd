@@ -1,0 +1,104 @@
+---
+title: "Quiz: myosin, intermediate filaments and the mechanical cell"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Myosin, intermediate filaments and the mechanical cell*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** In the cross-bridge cycle of myosin II, which step needs (a) ATP **binding**, (b) ATP **hydrolysis**, (c) **phosphate release**? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of three verbs: let go, cock, pull.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) ATP **binding** makes the head **let go** of actin. (b) ATP **hydrolysis** (ADP and Pi stay bound) **re-cocks the lever** while the head is detached. (c) **Phosphate release**, after the head binds actin again, triggers the **power stroke**, which pulls the actin filament 5–10 nm. ADP then leaves and the head is in the rigor state until the next ATP binds.
+:::
+
+---
+
+**Q2.** Why do muscles become stiff a few hours after death (rigor mortis)? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which step of the cycle cannot happen without ATP?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+After death the cells run out of ATP. Myosin heads can still finish their stroke and stay bound to actin, but **without ATP they cannot let go**. All heads end up locked to actin in the rigor state, so the filaments cannot slide and the muscle is stiff. (Rigor passes later, when the proteins are broken down.)
+:::
+
+---
+
+**Q3.** A muscle fibre contracts from a sarcomere length of 2.6 µm to 2.2 µm. What happens to the length of (a) the A band, (b) the I band, (c) the H zone? What does this tell us? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+The A band is the length of the thick filaments.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) The **A band stays the same** (1.6 µm, the thick-filament length). (b) The **I band shrinks** (from 0.5 µm to 0.3 µm on each side). (c) The **H zone shrinks** (from 0.55 µm to 0.15 µm). Neither filament changes length; they **slide past each other** and overlap more. This is the sliding-filament model (Huxley and Hanson; Huxley and Niedergerke, 1954).
+:::
+
+---
+
+**Q4.** Why does a muscle fibre stretched to a sarcomere length of 3.65 µm produce no active force, even when it is fully stimulated? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Add up the filament lengths: thick 1.6 µm, thin 1.0 µm on each side, plus the Z-disc.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+At 3.65 µm the thin filaments have been pulled completely out of the thick filaments (1.6 + 2 × 1.0 + 0.05 µm). **No myosin head faces a thin filament**, so no cross-bridges can form and no force is made. Force on the descending limb is proportional to the filament overlap, which is the evidence that every cross-bridge adds a small, independent force (Gordon, Huxley and Julian, 1966).
+:::
+
+---
+
+**Q5.** Describe how a rise in cytosolic Ca²⁺ switches on contraction in skeletal muscle. Where does the Ca²⁺ come from, and how does the muscle relax? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Two proteins sit on the thin filament; one covers the binding sites, the other binds Ca²⁺.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+An action potential opens Ca²⁺ channels in the **sarcoplasmic reticulum** (the ER of muscle). Cytosolic Ca²⁺ rises from about 0.1 µM to about 10 µM. Ca²⁺ binds **troponin C**; troponin changes shape and moves **tropomyosin** away from the myosin-binding sites on actin. Cocked myosin heads can now bind and run the cross-bridge cycle. To relax, **SERCA pumps** use ATP to move Ca²⁺ back into the sarcoplasmic reticulum, and tropomyosin covers the sites again.
+:::
+
+---
+
+**Q6.** Match each myosin to its job: (a) muscle myosin II, (b) non-muscle myosin II, (c) myosin V. Jobs: carries pigment granules along actin; pinches a dividing cell in two; makes a sarcomere shorten. `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Myosin II always works as a bipolar filament that pulls; one of the three is a single two-headed walker with a cargo-binding tail.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) Muscle myosin II: **makes a sarcomere shorten** (thick filaments pull thin filaments towards the M-line). (b) Non-muscle myosin II: **pinches a dividing cell in two** (contractile ring; it also pulls the rear of a migrating cell). (c) Myosin V: **carries pigment granules** (and vesicles) along actin, in 36 nm steps.
+:::
+
+---
+
+**Q7.** Give three differences between intermediate filaments and actin filaments. `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think about nucleotides, polarity, motors and mechanics.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Intermediate filaments (1) bind **no nucleotide** (actin binds ATP); (2) have **no polarity**, because their tetramers are antiparallel (actin has plus and minus ends); (3) have **no motor proteins** walking on them (actin has myosins); (4) are **rope-like**: they can be stretched to two or three times their length, while actin filaments break after a few per cent stretch; (5) are **tissue-specific** (keratins, vimentin, desmin, neurofilaments, lamins), while actin is in every cell. Diameter: about 10 nm, versus 7 nm for actin.
+:::
+
+---
+
+**Q8.** Why do mutations in keratin 5 or 14 cause blisters, and why is one mutant copy enough? `[ELO 6]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which cells make keratin 5 and 14? What does a mutant subunit do to a filament it is built into?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Keratin 5 and 14 form the intermediate filament network of the **basal cells** of the epidermis, anchored to desmosomes and hemidesmosomes. A mutant keratin is built into the same filaments as the normal protein and **spoils them** (a dominant-negative effect), so even with one normal gene copy the network collapses into clumps. Without a working network, basal cells **break under friction**, and the skin above separates: a blister (**epidermolysis bullosa simplex**).
+:::

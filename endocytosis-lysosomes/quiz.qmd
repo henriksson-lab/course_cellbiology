@@ -1,0 +1,104 @@
+---
+title: "Quiz: endocytosis, lysosomes and autophagy"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Endocytosis, lysosomes and autophagy*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Put these steps of clathrin-mediated endocytosis in order: dynamin cuts the neck; the coat is removed; adaptors bind receptor tails; clathrin forms a curved lattice; the vesicle fuses with an early endosome. `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Cargo is chosen first, the coat can only come off once the vesicle is free.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Adaptors bind receptor tails → clathrin forms a curved lattice (pit) → dynamin cuts the neck → the coat is removed → the vesicle fuses with an early endosome.** The adaptors (AP2) choose the cargo by its tail signal, clathrin bends the membrane, dynamin uses GTP to pinch off the vesicle, and only an uncoated vesicle can fuse.
+:::
+
+---
+
+**Q2.** Fruit flies with the *shibire* mutation are paralysed within seconds at 29 °C and recover when cooled. What do you expect to see in their nerve endings at 29 °C, and why does this stop nerve signals? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+*shibire* is a temperature-sensitive mutation in dynamin. Synaptic vesicles are made again from membrane taken back by endocytosis.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Many **deep coated pits with long necks** that cannot pinch off, and very few synaptic vesicles. Dynamin does not work at 29 °C, so endocytosis stops at the last step. Nerve endings release their synaptic vesicles but cannot **recycle** the membrane into new vesicles, so they run out of transmitter vesicles and signalling stops.
+:::
+
+---
+
+**Q3.** The LDL receptor releases LDL in the endosome, but the transferrin receptor does **not** release transferrin there. Both receptors still recycle to the surface. What happens to LDL, to iron and to transferrin? `[ELO 4]` `[ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does acid do in each case? What stays in the membrane, and what is free in the lumen?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Acid frees **LDL** from its receptor; LDL stays in the endosome lumen and goes on to the **lysosome**, where it is digested and its cholesterol released. Acid frees **iron** from transferrin; iron is transported into the **cytosol**. The empty **transferrin** stays bound to its receptor at acid pH and returns with it to the **surface**, where at pH 7.4 it lets go and can pick up iron again.
+:::
+
+---
+
+**Q4.** Order the compartments by pH, from highest to lowest: lysosome, early endosome, cytosol, late endosome. Which protein makes these differences? `[ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+The further along the endocytic route, the more acid.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Cytosol (7.2) > early endosome (6.0–6.5) > late endosome (5.0–5.5) > lysosome (4.5–5).** The **V-ATPase**, an ATP-driven proton pump, pumps H⁺ from the cytosol into the lumen. Later compartments have more pumps and are more acidic.
+:::
+
+---
+
+**Q5.** A lysosomal enzyme lacks the mannose-6-phosphate tag. Where does it end up, and why? `[ELO 4]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Lysosomal enzymes start in the ER, like secreted proteins. What is the "default" route out of the Golgi?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+It is **secreted** out of the cell. Without M6P, the **M6P receptors** in the trans Golgi network cannot collect it into clathrin vesicles to the endosomes, so it follows the default secretory route to the surface. This is what happens to most lysosomal enzymes in **I-cell disease**, where the enzyme that adds the tag is missing.
+:::
+
+---
+
+**Q6.** Why does a small leak from one lysosome not digest the cytosol? `[ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Compare the pH of the two compartments.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Lysosomal hydrolases are **acid hydrolases**: they work best at pH 4.5–5 and are much less active at the cytosol's pH of about 7.2. A small amount that leaks out is therefore nearly inactive (and the cytosol also contains inhibitors of some of them). Large leaks, however, can kill a cell.
+:::
+
+---
+
+**Q7.** A cell is starved of amino acids. What happens to mTORC1 and to autophagy, and how does this help the cell? `[ELO 5]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+mTORC1 is a growth switch that blocks autophagy when nutrients are plentiful.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**mTORC1 becomes inactive**, so its block on autophagy is lifted and **autophagy increases**. Autophagosomes enclose parts of the cytosol and old organelles and deliver them to lysosomes, which break them down and **return amino acids** and other building blocks to the cytosol. The cell survives the starvation by recycling itself. The drug rapamycin has the same effect.
+:::
+
+---
+
+**Q8.** How does a PCSK9 antibody lower blood LDL? Use the words *recycling* and *lysosome*. `[ELO 4]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does PCSK9 normally do to the LDL receptor after endocytosis?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+PCSK9 binds the LDL receptor on liver cells and stays bound in the acidic endosome, which **stops the receptor recycling** and sends it to the **lysosome** to be destroyed. The antibody catches PCSK9 in the blood before it binds, so receptors keep **recycling**, more receptors are at the cell surface, and more LDL is taken out of the blood (about 50–60 % lower LDL).
+:::
