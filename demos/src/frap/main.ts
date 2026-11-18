@@ -10,7 +10,7 @@ import { Sim, MOLS, MolKey, Mode, Fluidity, DEFAULT_FLUID, SPOT_R, FUSION_R, flu
 const GREEN = hexRGB("#5ee27f"), DARK = hexRGB("#4a524c"), RED = hexRGB("#ff5a5f"), MOUSE = hexRGB("#3fcf5c"), YELLOW = hexRGB("#ffd43b");
 const PW = 440, PH = 230, ML = 50, MR = 14, MT = 12, MB = 40;
 const SPEEDS = [0.1, 0.25, 0.5, 1, 2, 5, 10, 25, 50, 100, 240, 600];
-const FUSION_SPEED = 240;               // simulated seconds per real second in fusion mode
+const FUSION_SPEED = 1;                 // default: real time (students can speed up)
 
 function niceCeil(v: number): number {
   const e = Math.pow(10, Math.floor(Math.log10(v)));

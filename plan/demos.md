@@ -39,6 +39,10 @@ Further rules:
 - **Colours** follow the shared colour key in `plan/lecture-brief.md` (ER teal,
   mitochondria red, Golgi orange, …), so a demo and the slide diagrams agree.
 
+**Motion and eye comfort.** Every animation starts at **1× real time** (or slower)
+and offers faster speeds as a choice. No flashing, strobing or rapid full-screen
+changes, both for photosensitive epilepsy and for general eye comfort.
+
 ### Infrastructure: reuse 3MB00A
 
 Copy the sister course's setup (`/home/mahogny/github/course/quantbio-3MB00A/demos/`):
