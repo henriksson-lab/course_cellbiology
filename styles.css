@@ -34,7 +34,9 @@
 
 /* Interactive demos (links to an exercise's #explore section) → orange */
 .sidebar a.sidebar-item-text[href*="#explore"],
-.sidebar-item .sidebar-item-text > a[href*="#explore"] {
+.sidebar-item .sidebar-item-text > a[href*="#explore"],
+.sidebar a.sidebar-item-text[href*="/explore"],
+.sidebar-item .sidebar-item-text > a[href*="/explore"] {
   color: #b35900;
 }
 .sidebar a.sidebar-item-text[href*="#explore"]:hover,

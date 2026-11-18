@@ -65,7 +65,7 @@ website:
                 href: cell-tour/quiz.qmd
               - text: "Study questions"
                 href: cell-tour/questions.qmd
-              - text: "Explore a real cell"
+              - text: "Demo: explore a real HeLa cell"
                 href: cell-tour/explore.qmd
               - text: "Image credits"
                 href: cell-tour/credits.md
@@ -77,6 +77,8 @@ website:
                 href: microscopy/quiz.qmd
               - text: "Study questions"
                 href: microscopy/questions.qmd
+              - text: "Demo: resolution limit"
+                href: microscopy/questions.qmd#explore
               - text: "Image credits"
                 href: microscopy/credits.md
           - section: "Taking cells apart and perturbing them"
@@ -87,6 +89,8 @@ website:
                 href: cell-methods/quiz.qmd
               - text: "Study questions"
                 href: cell-methods/questions.qmd
+              - text: "Demo: flow cytometry gating"
+                href: cell-methods/questions.qmd#explore
               - text: "Image credits"
                 href: cell-methods/credits.md
       - section: "Membranes and transport"

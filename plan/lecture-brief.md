@@ -121,3 +121,9 @@ narrow column. Text in the figures must stay readable.
   all render without warnings about missing files.
 - Count: content slides, slides with a picture (target ≥ 50 %), real images (≥ 3).
 - Every external image is in `credits.md` with its licence.
+
+## Demos in the sidebar
+
+Every demo gets its own sidebar entry under its lecture, after "Study questions":
+`- text: "Demo: <name>"` with `href: <unit>/questions.qmd#explore` (or the demo's
+own page). Links containing `#explore` or `/explore` are coloured orange.
