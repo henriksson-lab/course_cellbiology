@@ -197,6 +197,12 @@ window.Quarto = {
  <span class="menu-text">Glossary</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image credits</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -241,12 +247,6 @@ window.Quarto = {
  <span class="menu-text">Demo: explore a real HeLa cell</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../cell-tour/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -282,12 +282,6 @@ window.Quarto = {
  <span class="menu-text">Demo: resolution limit</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../microscopy/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -321,12 +315,6 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../cell-methods/questions.html#explore" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Demo: flow cytometry gating</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../cell-methods/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
   </div>
 </li>
       </ul>
@@ -371,8 +359,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../membrane-structure/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
+  <a href="../membrane-structure/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: FRAP lab</span></a>
   </div>
 </li>
       </ul>
@@ -406,8 +394,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../membrane-transport/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
+  <a href="../membrane-transport/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: uptake assay</span></a>
   </div>
 </li>
       </ul>
@@ -441,8 +429,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../ion-channels/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
+  <a href="../ion-channels/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: the cell battery</span></a>
   </div>
 </li>
       </ul>
@@ -461,6 +449,7 @@ window.Quarto = {
   <ul>
   <li><a href="#g-level-questions" id="toc-g-level-questions" class="nav-link active" data-scroll-target="#g-level-questions">G-level questions</a></li>
   <li><a href="#vg-style-questions" id="toc-vg-style-questions" class="nav-link" data-scroll-target="#vg-style-questions">VG-style questions</a></li>
+  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore">Explore</a></li>
   </ul>
 </nav>
     </div>
@@ -720,6 +709,38 @@ Model answer
 <li><p>Use <strong>excised patches</strong>: in an <strong>inside-out</strong> patch, add the compound to the bath, which now faces the cytosolic side; in an <strong>outside-out</strong> patch, the bath faces the extracellular side. Block from one side only shows the site of action. A permanently charged version of the compound, which cannot cross the membrane, is a useful extra test.</p></li>
 <li><p>Apply trains of depolarising pulses at low (e.g.&nbsp;0.1 Hz) and high frequency (e.g.&nbsp;10 Hz). If block builds up from pulse to pulse at high frequency (<strong>use-dependent block</strong>), the compound binds preferentially to open or inactivated channels, as lidocaine does. This property would let it block busy pain fibres more than normal nerves.</p></li>
 </ol>
+</div>
+</div>
+</div>
+</section>
+<section id="explore" class="level2">
+<h2 class="anchored" data-anchor-id="explore">Explore</h2>
+<p>The voltage scale shows each ion’s <strong>Nernst potential</strong> as a coloured line (K⁺ violet, Na⁺ blue, Cl⁻ green) and the <strong>membrane potential</strong> <span class="math inline">\(V_m\)</span> from the Goldman equation as the orange marker. Change the inside and outside concentrations of each ion, and how many of its channels are open (its permeability, relative to K⁺ at rest, on a log scale). The table gives each ion’s <span class="math inline">\(E\)</span>, the driving force <span class="math inline">\(V_m - E\)</span> and the direction of its net flow; the box below shows the calculation with your numbers (exact equations, 37 °C, <span class="math inline">\(RT/F = 26.7\)</span> mV). Start from the presets. An optional <strong>particle view</strong> (tick the box) shows single ions crossing open channels; how often they cross in each direction follows the same equations.</p>
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="cellbattery" data-preset="rest"></div>
+<script src="../demos/dist/cellbattery.js"></script>
+<p><strong>E1.</strong> Choose <strong>Resting cell</strong>. Check <span class="math inline">\(E_\text{K}\)</span>, <span class="math inline">\(E_\text{Na}\)</span>, <span class="math inline">\(E_\text{Cl}\)</span> and <span class="math inline">\(V_m\)</span> against the lecture. For each ion, read the driving force <span class="math inline">\(V_m - E\)</span> and the direction of net flow. Which ion is pushed hardest? Why does the membrane potential not change, although ions keep flowing? <code>[ELO 2]</code></p>
+<p><strong>E2.</strong> <em>Predict first.</em> Blood K⁺ rises from 5 to 8 mM (<strong>High outside K⁺</strong>). Which way do <span class="math inline">\(E_\text{K}\)</span> and <span class="math inline">\(V_m\)</span> move, and by how much? Then try 10 mM and 3 mM outside. Why does <span class="math inline">\(V_m\)</span> change less than <span class="math inline">\(E_\text{K}\)</span>? <code>[ELO 2]</code></p>
+<p><strong>E3.</strong> Choose <strong>Na⁺ channels open (action-potential peak)</strong>. Where is <span class="math inline">\(V_m\)</span> now? Why does it not reach <span class="math inline">\(E_\text{Na}\)</span>? How many more Na⁺ channels must open (try the slider) to get within 5 mV of <span class="math inline">\(E_\text{Na}\)</span>? Then choose <strong>Lidocaine + the same stimulus</strong>. What happens, and what does this mean for a pain fibre? <code>[ELO 2]</code></p>
+<p><strong>E4. [VG]</strong> Choose <strong>Epithelial cell, CFTR closed</strong> (inside Cl⁻ is 50 mM here), then <strong>CFTR open</strong>. How do <span class="math inline">\(E_\text{Cl}\)</span> and <span class="math inline">\(V_m\)</span> change, and in which direction does Cl⁻ flow? Now <em>predict</em> what opening the same number of Cl⁻ channels would do in a cell with only 10 mM Cl⁻ inside (go to <strong>Resting cell</strong> and set the Cl⁻ open channels to 3). Explain the difference with one rule. <code>[ELO 2]</code></p>
+<p><strong>E5.</strong> Tick the particle view and choose <strong>Resting cell</strong>. Compare how many K⁺ ions cross out and in per second, and how many Na⁺ ions come in (average over 10 s; the counts are random). How do the numbers show that the net charge flow is zero at <span class="math inline">\(V_m\)</span>? Then choose <strong>Na⁺ channels open</strong>: what changes? <code>[ELO 2]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solutions">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solutions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>E1.</strong> <span class="math inline">\(E_\text{K} = -89\)</span> mV, <span class="math inline">\(E_\text{Na} = +67\)</span> mV, <span class="math inline">\(E_\text{Cl} = -64\)</span> mV and <span class="math inline">\(V_m = -70\)</span> mV, as in the lecture. Driving forces: K⁺ <span class="math inline">\(+19\)</span> mV (net flow <strong>out</strong>), Na⁺ <span class="math inline">\(-136\)</span> mV (net flow <strong>in</strong>), Cl⁻ <span class="math inline">\(-6\)</span> mV (almost at equilibrium; a tiny net flow out). Na⁺ is pushed hardest, but few Na⁺ channels are open, so its flow is small. At <span class="math inline">\(V_m\)</span> the positive charge that leaves as K⁺ equals the positive charge that enters as Na⁺ (plus the little Cl⁻ that leaves): the <strong>net current is zero</strong>, so the voltage stays put. This is exactly how the Goldman equation is defined. The ions themselves keep leaking, and the Na⁺/K⁺ pump keeps the gradients.</p>
+<p><strong>E2.</strong> With 8 mM outside, <span class="math inline">\(E_\text{K}\)</span> rises from −89 to <strong>−76.5 mV</strong> and <span class="math inline">\(V_m\)</span> from −70 to <strong>−63.5 mV</strong>: the cell is <strong>depolarised</strong> by about 6 mV. With 10 mM: <span class="math inline">\(E_\text{K}\)</span> −70.5 mV, <span class="math inline">\(V_m\)</span> <strong>−59.9 mV</strong>. With 3 mM (hypokalaemia): <span class="math inline">\(E_\text{K}\)</span> −102.7 mV, <span class="math inline">\(V_m\)</span> <strong>−75.2 mV</strong> (hyperpolarised). <span class="math inline">\(V_m\)</span> moves less than <span class="math inline">\(E_\text{K}\)</span> because it is a weighted average: the Na⁺ and Cl⁻ channels, whose <span class="math inline">\(E\)</span> did not change, still pull on it. In heart muscle, a depolarised resting potential inactivates part of the Na⁺ channels and disturbs the rhythm, which is why high blood K⁺ is dangerous.</p>
+<p><strong>E3.</strong> <span class="math inline">\(V_m\)</span> is about <strong>+36 mV</strong> (the lecture’s action-potential peak), well above 0 but not at <span class="math inline">\(E_\text{Na}\)</span> (+67 mV), because the K⁺ (and Cl⁻) channels are still open and pull towards their own <span class="math inline">\(E\)</span>. Na⁺ channels must outnumber K⁺ channels much more: at 30 (relative units) <span class="math inline">\(V_m\)</span> is +57 mV, at 100 it is <strong>+63 mV</strong>. With lidocaine the voltage stays at <strong>−70 mV</strong>: the Na⁺ channels are told to open, but their pores are blocked, so only the resting leak remains and there is no action potential. A pain fibre then sends no signal to the brain. (In real cells lidocaine blocks part of the channels and binds best to channels that open often; the demo blocks all of them.)</p>
+<p><strong>E4.</strong> CFTR closed: <span class="math inline">\(E_\text{Cl} = -21\)</span> mV, <span class="math inline">\(V_m = -61.6\)</span> mV. CFTR open: $V_m = $ <strong>−28.8 mV</strong>, close to <span class="math inline">\(E_\text{Cl}\)</span>; Cl⁻ flows <strong>out</strong> of the cell (the table: net flow out), and K⁺ out flow increases too. In an airway cell, this Cl⁻ leaves through the apical membrane into the airway, Na⁺ follows between the cells and water follows by osmosis. With only 10 mM Cl⁻ inside, <span class="math inline">\(E_\text{Cl} = -64\)</span> mV, and opening the same channels moves <span class="math inline">\(V_m\)</span> only from −70 to <strong>−65.8 mV</strong>. The rule: <strong>opening channels for an ion moves <span class="math inline">\(V_m\)</span> towards that ion’s <span class="math inline">\(E\)</span></strong>; how far and in which direction depends on where <span class="math inline">\(E\)</span> lies, which is set by the concentrations. Without CFTR (cystic fibrosis) the Cl⁻ secretion and the water that follows it are lost.</p>
+<p><strong>E5.</strong> At rest about 6 K⁺ ions cross out and 3 cross in per second (net about 3 out), about 3 Na⁺ come in and almost none go out, and Cl⁻ crosses about equally in both directions (the rates are scaled to be watchable). The net K⁺ outflow equals the net Na⁺ inflow (plus a small Cl⁻ outflow): no net charge flows. Note that K⁺ crosses in both directions: equilibrium is not “no movement” but “equal movement both ways”. With Na⁺ channels open, many Na⁺ ions flood in, and the K⁺ outflow rises to match them, because <span class="math inline">\(V_m\)</span> is now far above <span class="math inline">\(E_\text{K}\)</span>; the counts are scaled down so that you can still follow them.</p>
 </div>
 </div>
 </div>

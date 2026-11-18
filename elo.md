@@ -31,11 +31,10 @@ needs enough lectures, quiz questions and study questions of its own.
 
 The final lecture follows one drug through the cell and revisits all nine ELOs.
 
-## Skills outcomes (taught in the PPT and lab modules)
+## Skills outcomes (ELO 10–19)
 
-These are taught and assessed in the seminars, poster/PPT and labs, not the
-lectures. The site supports them with study questions and mini-cases (ELO 11, 12,
-16).
+These are taught and assessed in the labs and in module 2 (oral presentations,
+seminars, group problem solving, poster), which are handled outside this site.
 
 - **ELO 10–12, 17–19** → Module 2 (PPT): oral presentation, group problem solving,
   discussion, poster for a commissioning party, projects as a working method,
@@ -50,5 +49,3 @@ lectures. The site supports them with study questions and mini-cases (ELO 11, 12
   scaffold course): G-level recall and explanation questions and **one VG-style
   question** ("predict what happens if…", "compare…", "design an experiment to…"),
   written the way the exam asks them.
-- **ELO self-check page:** before the exam, a list of the nine ELOs with links to
-  the lectures and questions for each.

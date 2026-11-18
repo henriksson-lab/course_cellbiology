@@ -141,7 +141,7 @@ How does a transporter move a molecule without ever making a hole in the membran
 
 ![](fig08-uptake-saturation.svg){width="80%" fig-align="center"}
 
-- Diffusion through lipid rises **linearly** with concentration. Transport by a protein reaches a **maximum (V~max~)**: all binding sites are busy. **K~m~** = concentration at half-maximal rate.
+- Diffusion through lipid rises **linearly** with concentration. Transport by a protein reaches a **maximum (V~max~)**: all binding sites are busy. **K~m~** = concentration at half-maximal rate. **Try it:** [the uptake assay](questions.qmd#explore).
 - Transporters are **specific**: GLUT1 takes D-glucose, not its mirror image L-glucose. They can be **competed** by similar molecules and **blocked** by inhibitors.
 
 ::: notes
@@ -306,7 +306,7 @@ Two more examples of transport and medicine. Foxglove extracts were used for hea
 
 *Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch. 11.*
 
-<small>Image credits: [credits](credits.md)</small>
+[Image credits](../credits.qmd#membrane-transport){style="font-size:0.7em"}
 
 ::: notes
 Five take-home points. First, the bilayer is a barrier to ions and polar molecules; only small hydrophobic molecules, and water slowly, cross on their own. Second, ΔG tells you whether transport can be passive, and cells keep large gradients of sodium, potassium and calcium that are not at equilibrium; they cost energy to maintain and are a store of energy to use. Third, transporters and channels are different machines: channels are fast and only passive, transporters bind their solute, alternate between outward-open and inward-open shapes, saturate like enzymes and can couple two solutes. Fourth, primary active transport uses ATP directly in P-type, V-type and ABC pumps, while secondary active transport spends the sodium gradient made by the sodium–potassium pump. Fifth, an epithelium combines these proteins on two sides of a cell to move glucose from gut to blood, and many drugs act on transporters or are limited by them. Next lecture: ion channels, where the same gradients produce the membrane potential.

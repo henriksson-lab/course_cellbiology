@@ -72,7 +72,7 @@ programme coordinator.
 - **Cell biology methods:** fluorescence, confocal and electron microscopy, cell
   culture, flow cytometry, fractionation, live imaging, CRISPR. Light microscopy
   of tissues comes *after* us (3AN006).
-- **Mammalian cell culture** in the lab: probably new. Check with the lab team.
+- **Mammalian cell culture**: probably new.
 
 ## Pedagogical consequences
 

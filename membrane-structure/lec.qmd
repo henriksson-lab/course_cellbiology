@@ -205,7 +205,7 @@ You cannot purify a membrane protein in plain buffer: its hydrophobic belt would
 ![](fig13-fluidity-evidence.svg){width="90%" fig-align="center"}
 
 - **Cell fusion (1970):** after fusion, mouse and human surface proteins **mixed in about 40 min** at 37 °C, but not in the cold. Proteins diffuse in the membrane.
-- **FRAP:** bleach the fluorescent molecules in a spot with a laser and watch others **diffuse back in**. The speed gives the **diffusion coefficient**; the part that never recovers is **immobile** (held by the cytoskeleton or other proteins).
+- **FRAP:** bleach the fluorescent molecules in a spot with a laser and watch others **diffuse back in**. The speed gives the **diffusion coefficient**; the part that never recovers is **immobile** (held by the cytoskeleton or other proteins). **Try it:** [the FRAP lab](questions.qmd#explore).
 
 ::: notes
 Two experiments convinced people that membrane proteins move. In 1970 Larry Frye and Michael Edidin fused a mouse cell with a human cell, using a virus that makes membranes fuse. They labelled mouse surface proteins with a green antibody and human proteins with a red one. Right after fusion, each colour stayed on its own half of the hybrid cell. Forty minutes later at 37 degrees, the colours were completely mixed. In the cold the mixing did not happen, and drugs that block protein synthesis or ATP production did not stop it, so this was diffusion, not new proteins. The modern method is FRAP, fluorescence recovery after photobleaching. You label a protein or lipid, for example as a GFP fusion, then use a strong laser to bleach a small spot. The fluorescence in the spot comes back as unbleached molecules diffuse in from around. How fast it recovers gives the diffusion coefficient. Typical membrane proteins diffuse ten to a hundred times more slowly than lipids. Often the recovery stops below the starting level: that fraction of the protein is immobile, tied to the cytoskeleton or to other cells.
@@ -286,7 +286,7 @@ Doxorubicin is an old and effective cancer drug. It inserts between DNA bases an
 
 *Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch. 10.*
 
-<small>Image credits: [credits](credits.md)</small>
+[Image credits](../credits.qmd#membrane-structure){style="font-size:0.7em"}
 
 ::: notes
 Let us go back to the red blood cell that squeezes through a capillary. Its membrane is a bilayer that forms and reseals by itself because water pushes the tails together. It is a liquid in its own plane, so it can bend and flow, but polar molecules and ions cannot cross its oily core, so it is a barrier. The cell tunes its fluidity with tail length, double bonds and cholesterol, and it keeps the two leaflets different with flippases; when a cell dies or a platelet is activated, scramblases expose PS as a signal. Proteins sit in the membrane in a few defined ways, and the rules of the bilayer, twenty hydrophobic residues for a helix, explain how we can predict them and how detergents take them out. FRAP, cell fusion and freeze-fracture are the evidence for this fluid mosaic, with domains such as the region fenced off by tight junctions. Finally, the same rules let us build drug carriers. The next lecture asks the question this one leaves open: if the bilayer blocks ions and sugars, how do they get across? The answer is transporters and pumps.

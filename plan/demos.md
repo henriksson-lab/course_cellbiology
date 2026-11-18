@@ -34,7 +34,7 @@ Further rules:
 - **Laptop first, phone usable.** Pointer events (mouse and touch), no hover-only
   information, controls ≥ 44 px on touch, layout that wraps below ~600 px.
 - **Licensing.** Only data we may republish on a public site: our own, CC0, public
-  domain, CC BY, CC BY-SA (record in the unit's `credits.md`, as for images). No NC/ND.
+  domain, CC BY, CC BY-SA (record in the unit's `_credits.md`, as for images). No NC/ND.
   Libraries bundled into the demo must be MIT/BSD/Apache.
 - **Colours** follow the shared colour key in `plan/lecture-brief.md` (ER teal,
   mitochondria red, Golgi orange, …), so a demo and the slide diagrams agree.
@@ -182,7 +182,7 @@ plane (mitigate: pick the plane by eye, hand-fix); polygon count too high for sm
 SVG on phones (mitigate: simplify more, raster overlay at low zoom); repository size
 creep if several planes or cells are added (keep the 20 MB budget per demo); the
 licence statement comes from the AWS registry, so re-check on the dataset's own page or
-DOI before publishing and credit it in `cell-tour/credits.md`.
+DOI before publishing and credit it in `cell-tour/_credits.md`.
 
 ## 3. Other demo ideas, ranked
 
@@ -294,3 +294,47 @@ mechanism without a student choice.
 
 Next batch candidates: diffusion vs distance (6), transporter saturation (7),
 microtubule dynamic instability (8), protein sorting game (9), BCL-2 balance (10).
+
+## 5. One demo per lecture (agreed 2026-11-18)
+
+Every lecture gets one main demo, with a sidebar entry "Demo: …". Built ones are
+marked ✅, ones being built 🔨. "Model" says how faithful it is: *exact* means
+textbook equations; *qualitative* means the behaviour is right and the page says
+so. Reuse is encouraged (one engine, several lectures).
+
+| Lecture (slug) | Demo | What the student does → sees | Model | Size |
+|---|---|---|---|---|
+| cell-tour | ✅ Cell explorer | Pan/zoom a real HeLa slice, toggle organelles, quiz | real data | done |
+| microscopy | ✅ Resolution limit | Move two points, change λ/NA → resolved or not | exact (Airy) | done |
+| cell-methods | ✅ Flow gating | Gate a blood sample → CD4/CD8 percentages | simulated data | done |
+| membrane-structure | 🔨 FRAP lab | Bleach a spot among moving molecules → recovery curve, mobile fraction; cell fusion | 2D random walk | S–M |
+| membrane-transport | 🔨 Uptake assay | Glucose via diffusion/GLUT/SGLT, particles + concentration view → line vs saturation, uphill only with Na⁺ gradient | Fick, M–M | M |
+| ion-channels | 🔨 The cell battery | Concentrations and permeabilities → Nernst lines, membrane potential | exact (Nernst/GHK) | S |
+| protein-sorting | Zip-code game | Build a protein from signals (signal peptide, NLS, presequence, PTS1, KDEL, TM) → predict, then watch its route on the cell map | rule table | M |
+| er | Topology builder | Place signal sequence, stop-transfer and signal-anchor segments → protein inserts into the ER membrane; follow it to the cell surface (inside-out logic from the cell tour) | rules | M |
+| golgi-secretion | Pulse-chase of cargo | Release a fluorescent cargo from the ER (RUSH-style) → watch it reach the Golgi and the surface; add blocks: 15 °C, brefeldin A, botulinum toxin (cleaved SNAREs) | qualitative compartment model | M |
+| endocytosis-lysosomes | LDL receptor cycle | Receptors bind LDL, are endocytosed, release LDL in acidic endosomes and recycle; sliders: endosome pH, PCSK9, PCSK9 antibody, statin → LDL left in blood. Second tab: LNP escape vs endosome pH and lipid pKa | compartment ODE, qualitative | M |
+| protein-lifecycle | Protein turnover | Set synthesis and degradation (half-life) → steady state and time to reach it; add bortezomib (proteasome block) or a PROTAC (extra degradation of one target) | exact (dP/dt = k_s − k_d·P) | S |
+| mitochondria | Mito stress test | A Seahorse-style O₂ consumption trace; inject oligomycin, the uncoupler FCCP/DNP, then rotenone/antimycin → read basal, ATP-linked, maximal respiration; proton circuit animated | qualitative proton-circuit model; real assay logic | M |
+| organelles-homeostasis | Cell explorer: measure mode | Reuse the explorer: estimate area fractions of organelles, compare with the table; compare pH and Ca²⁺ per compartment | real data | S (reuse) |
+| signalling-principles | Dose–response (built, not yet linked) | Full/partial agonist, competitive/non-competitive antagonist → curve shifts, EC₅₀, efficacy | exact (occupancy) | done |
+| gpcr | Amplification and switching off | Hormone pulse → G protein, cAMP, PKA levels over time; vary GTPase rate, PDE, arrestin; add cholera toxin (Gs stuck on) | ODE cascade, qualitative | M |
+| kinase-signalling | Kinase cascade and drug targets | Three-level MAPK cascade → amplification and switch-like output; add an inhibitor at RTK, RAF or MEK; negative feedback switch (why one inhibitor can be weakened by feedback) | ODE, qualitative | M |
+| fate-signalling | Notch lateral inhibition | A sheet of cells with Delta–Notch → salt-and-pepper pattern emerges; change coupling, knock out Notch | ODE on a grid (Collier model) | M |
+| actin | Actin treadmilling and a lamellipodium | Actin concentration, capping protein, Arp2/3 → treadmilling filament, branched network pushes the edge; latrunculin/phalloidin | stochastic, qualitative | M |
+| microtubules | Dynamic instability | Tubulin concentration, taxol, vinblastine → growing/shrinking MTs, kymograph, catastrophe counts. Tab 2: diffusion vs motor transport over an axon (why motors) | stochastic (Dogterom–Leibler) | M |
+| myosin-if | Sarcomere | Change sarcomere length and Ca²⁺ → filament overlap, force (length–tension curve); add mavacamten | geometric + qualitative | S–M |
+| cell-cycle-control | Cell-cycle clock with FUCCI | Cyclin/CDK oscillator drives FUCCI colours in a cell population; add a CDK4/6 inhibitor → cells pile up in G1; DNA-content histogram (reuses the flow engine) | ODE, qualitative | M |
+| mitosis | Spindle checkpoint | Attach kinetochores by hand; one unattached kinetochore holds anaphase; taxol/monastrol → arrest; force anaphase early → missegregation (aneuploidy) | rules | M |
+| cell-numbers | Growth, senescence, telomeres | A culture grows to confluence (contact inhibition); passage it → telomeres shorten → senescence (Hayflick limit); add telomerase or a growth-factor-independent mutation | agent-based, qualitative | M |
+| apoptosis | BCL-2 balance and venetoclax | Stress (BH3-only), BCL-2, BAX/BAK sliders → all-or-none MOMP, cytochrome c, caspases; leukaemia cell with high BCL-2 + venetoclax | threshold model, qualitative | S–M |
+| regulated-necrosis | Which death is it? | Treat cells with a stimulus, then with inhibitors (caspase inhibitor, necrostatin, ferrostatin, MCC950) and read markers (annexin V/PI, caspase-3, MLKL, lipid peroxides) → deduce the death type | rule table on real experimental logic | S–M |
+| cancer | Clonal evolution under therapy | A tumour of cells accumulates mutations (hallmarks); start a targeted drug → response, then a resistant clone takes over; try combination or intermittent therapy | agent-based, qualitative | M |
+| disease-casebook | Diagnose the defect | Clinical and cellular observations for a case → pick the broken process (folding, trafficking, channel, mitochondria, cilia), then the therapy type (small molecule, enzyme replacement, ASO, gene therapy) | case logic | S |
+| drug-journey | Drug journey | Step through an mRNA–LNP and a kinase inhibitor from injection to effect on the cell map; each step links back to its lecture and demo | stepped story, reuses explorer | M–L |
+
+Extra (no lecture of its own): **Diffusion vs distance** (random walkers; t ≈ x²/2D)
+can be added to the cell tour and reused in microtubules.
+
+Build order: demos for a block are built together with (or right after) that
+block's lectures, so each lecture ships with its demo.

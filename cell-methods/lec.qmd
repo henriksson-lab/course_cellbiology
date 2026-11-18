@@ -314,7 +314,7 @@ The second example is a therapy that is itself a cultured cell. CAR-T therapy tr
 
 *Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch. 8.*
 
-[Image credits](credits.md){style="font-size:0.7em"}
+[Image credits](../credits.qmd#cell-methods){style="font-size:0.7em"}
 
 ::: notes
 To sum up. Cell culture is the basis: cell lines for convenience, primary cells and organoids for realism, and always a check that your cells are what you think. Fractionation separates organelles by size and density, and marker proteins tell you which fraction is which. Antibodies are the most used tool: in a western blot they report size and amount, in immunoprecipitation they pull out a protein and its partners, and in immunofluorescence they show where it is. Flow cytometry turns this into single-cell numbers, and a sorter can collect living cells of one kind. Finally, to learn what a protein does you must change it, with an inhibitor, RNA interference, CRISPR or overexpression, and think carefully about necessary versus sufficient and about controls. These methods return in every later lecture, in the "How do we know?" slides, and in the lab part of the course.

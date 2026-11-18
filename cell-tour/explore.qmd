@@ -20,7 +20,7 @@ The cell map in the lecture is a cartoon. This is the real thing: **one slice th
 
 **The outlines** are **machine-learning predictions** from the OpenOrganelle (COSEM) project, simplified and checked by eye by the course team. We removed predictions that were clearly wrong in this plane (most "lipid droplets" here were small vesicles; only one nucleolus prediction was real), and drew the centriole and the nuclear envelope by hand. Some outlines are still imperfect, especially the ER: a prediction is a hypothesis, not a fact. Smaller endosomes and vesicles below about 200 nm are not outlined. A band of damaged slices (about 0.2 µm) across the middle of the image was removed.
 
-**Credit.** Data: OpenOrganelle, dataset jrc_hela-2, Janelia Research Campus, CC BY 4.0 (Xu et al., *Nature* 2021; Heinrich et al., *Nature* 2021). Full citation in the [image credits](credits.md).
+**Credit.** Data: OpenOrganelle, dataset jrc_hela-2, Janelia Research Campus, CC BY 4.0 (Xu et al., *Nature* 2021; Heinrich et al., *Nature* 2021). Full citation in the [image credits](../credits.qmd#cell-tour).
 :::
 
 ## Tasks

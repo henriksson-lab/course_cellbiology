@@ -1,7 +1,3 @@
----
-title: "Image credits: seeing cells (microscopy)"
----
-
 All diagrams (`fig*.svg`) were drawn for this course and use the course colour key.
 The photographs, micrographs and structure images below come from Wikimedia Commons;
 their licences were checked with the Commons API on 2026-11-18. Images were resized

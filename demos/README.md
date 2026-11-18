@@ -21,6 +21,9 @@ make typecheck     # tsc --noEmit (esbuild does not check types)
 | `cellexplorer` | `cell-tour/explore.qmd` (own page; screenshot + link in the deck) | One FIB-SEM plane through a HeLa cell (OpenOrganelle jrc_hela-2) with organelle outlines: pan/zoom, layers, info per organelle, scale bar, "Find the organelle" quiz |
 | `resolution` | `microscopy/questions.qmd#explore` (linked from "Magnification is not resolution") | Two Airy spots merging: distance, wavelength, NA, electrons; Rayleigh limit |
 | `flowgate` | `cell-methods/questions.qmd#explore` (linked from "Reading a dot plot: gating") | Simulated blood sample: draw an FSC/SSC gate, read CD4/CD8 quadrants, check against the truth |
+| `frap` | `membrane-structure/questions.qmd#explore` (linked from "How do we know? Membrane proteins move") | Thousands of molecules doing 2D random walks (WebGL); tap to bleach, recovery curve fitted with the exact circular-spot curve (mobile fraction, t½, D); immobile fraction, qualitative fluidity sliders, follow one molecule; Frye–Edidin cell-fusion mode |
+| `uptake` | `membrane-transport/questions.qmd#explore` (linked from "How do we know? Uptake assays…") | Glucose and Na⁺ particles crossing the bilayer, GLUT or SGLT (4-state alternating-access cycle, detailed balance), side by side with the same model as concentrations and fluxes; pump/ouabain, outside Na⁺, gliflozin; seeded assay series with Michaelis–Menten fit |
+| `cellbattery` | `ion-channels/questions.qmd#explore` (linked from "The voltage follows the most open channels") | Exact Nernst and GHK: voltage scale with E lines and Vm marker, concentrations and permeabilities, presets (rest, hyperkalaemia, Na⁺ channels open, lidocaine, CFTR); optional particle panel (`particles.ts`, off by default, removable) |
 | `doseresponse` | not embedded yet (for the signalling lectures) | Occupancy and response curves; partial agonist, competitive and non-competitive antagonist |
 
 ## Layout
@@ -28,6 +31,10 @@ make typecheck     # tsc --noEmit (esbuild does not check types)
 - `demos/src/<name>/main.ts`: one demo per folder; bundled to `demos/dist/<name>.js`
   as an IIFE (ES modules do not load from `file://`).
 - `demos/src/lib/ui.ts`: shared helpers (sliders, buttons, dragging, seeded RNG, auto-mount).
+- `demos/src/lib/particles.ts`: WebGL point renderer (Canvas2D fallback, no textures) and an
+  animation loop with a fixed step that runs only while the demo is on screen and the tab is visible.
+- Model code that needs no DOM (`frap/sim.ts`, `uptake/model.ts`, `uptake/sim.ts`, `cellbattery/model.ts`)
+  can be bundled for Node with esbuild to check the numbers in the task solutions.
 - `demos/demo.css`: shared styles (plus a section per demo), copied to `demos/dist/demo.css`.
 - Data are imported in TS and bundled (`import data from "./x.json"`), never fetched.
   Large images live in `demos/assets/<name>/` and are loaded with a plain `<img>`

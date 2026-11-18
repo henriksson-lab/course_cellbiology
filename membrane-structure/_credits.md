@@ -1,7 +1,3 @@
----
-title: "Image credits: membrane structure"
----
-
 All diagrams (`fig*.svg`) were drawn for this course and use the course colour key.
 The micrographs, simulation snapshot and structure images below come from Wikimedia
 Commons; their licences were checked with the Commons API on 2026-11-18. Images were

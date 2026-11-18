@@ -146,3 +146,36 @@ Experiment: measure membrane fluidity directly with **FRAP**. Label membranes wi
 
 **EPR caveat:** the enhanced permeability and retention effect (leaky tumour vessels, poor lymph drainage) was shown mainly in fast-growing **mouse tumours**. Human tumours vary a lot in leakiness, and in trials Doxil gave **similar survival** to free doxorubicin. So its main proven benefit is a **different side-effect profile** (less heart damage, but hand–foot syndrome in skin), not a much larger dose in the tumour.
 :::
+
+## Explore {#explore}
+
+A patch of plasma membrane seen from above, 15 µm across, with thousands of fluorescent molecules (green) that take random steps: 2D diffusion. **Click or tap** to bleach a spot 1.5 µm in radius, as the laser does in FRAP. Bleached molecules turn dark grey but keep moving. The graph shows the fraction of the molecules in the spot that are bright. The orange dashed curve is fitted to your data (the exact recovery curve for a circular spot); the readout gives the plateau, the **mobile fraction**, the half-time $t_{1/2}$ and the diffusion coefficient $D = 0.224\,w^2/t_{1/2}$ ($w$ = spot radius). The fit says *provisional* until the curve is long enough to trust. Time runs in slow or fast motion (shown under the image). The fluidity sliders change how fast the molecules move by a **qualitative rule** (the shape is right, the numbers are illustrative). The second mode, **Cell fusion**, repeats the Frye–Edidin experiment. Each bleach is a new random experiment, so your numbers will differ from the solutions by about 10–20 %.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="frap" data-mol="lipid" data-seed="1"></div>
+<script src="../demos/dist/frap.js"></script>
+```
+
+**E1.** Choose **lipid** and bleach a spot. Wait until the fit is no longer provisional, then read the mobile fraction, $t_{1/2}$ and $D$. Repeat with a **small protein**. How many times more slowly does the protein diffuse? Does this agree with the lecture? `[ELO 2]`
+
+**E2.** Choose **lipid**, press **Follow one molecule** and watch its track for about 1 s of simulated time (the clock under the image). How far is it from where it started? Try a few molecules. Does the track look like a straight path? Compare with "about 2 µm in 1 s" from the lecture. `[ELO 2]`
+
+**E3.** *Predict first, then check.* Choose **small protein** and set **immobile (anchored)** to 30 %: these molecules are held in place, as if bound to the cytoskeleton. Sketch the recovery curve you expect. Then bleach and compare. Does the half-time change? `[ELO 2]`
+
+**E4. [VG]** Use the line under the fluidity sliders, which gives the fluidity factor and $D$. (a) At 37 °C with the default membrane, compare cholesterol 0 % and 50 %. (b) Now set **double bonds** to 0 (saturated tails) and compare cholesterol 0 %, 30 % and 50 % again. (c) What do (a) and (b) together tell you about the role of cholesterol? (d) Predict the effect of cooling the default membrane to 10 °C, then check. Bleach a spot in one of these membranes to see the effect on the curve. `[ELO 2]`
+
+**E5.** Switch to **Cell fusion (Frye–Edidin)**: a mouse cell (green surface proteins) fused with a human cell (red). Press **Default membrane**, then **Reset**, and read the percentage of red molecules in the left half at 40 min (37 °C). Then set the temperature to 4 °C, press **Reset** and read it again at 40 min. What would 50 % mean? How does this explain the 1970 experiment? `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** For the lipid the curve rises to about **100 %** within a few seconds: mobile fraction about 100 %, $t_{1/2}$ about **0.5 s**, $D$ about **1 µm²/s** (single experiments give roughly 0.8–1.1). The small protein recovers to the same level but much more slowly: $t_{1/2}$ about **5 s**, $D$ about **0.1 µm²/s**, ten times slower (the large protein: about 0.02 µm²/s, 50 times slower). This fits the lecture: proteins diffuse 10–100 times more slowly than lipids, because they are larger and, in real cells, crowded among other proteins and slowed by the cortical cytoskeleton. (The plateau ends a few per cent below 100 % in a long run: the bleach destroyed about 3 % of all the fluorescent molecules in the patch, so a little fluorescence is lost for good. Real FRAP has the same effect.)
+
+**E2.** After 1 s a lipid is typically about **2 µm** from its start ($\sqrt{4Dt} = \sqrt{4 \times 1 \times 1} = 2$ µm), but single molecules vary a lot: about half end up closer than 1.6 µm, and some go 3 µm or more. The track is a tangle, not a line: each step goes in a random direction. That is why distance grows only with the square root of time: in 4 s the typical distance is about 4 µm, not 8 µm.
+
+**E3.** Expected: the curve rises with the same speed as before but levels off at about **70 %**, because the 30 % anchored molecules that were bleached stay in the spot and never recover. A run gives a plateau of about 67–75 % (mobile fraction about 70 %) and $t_{1/2}$ about **5 s**, the same as without anchored molecules: the mobile molecules diffuse just as before. So the height of the plateau tells you the mobile fraction, and the speed of recovery tells you $D$. To test whether the cytoskeleton holds the immobile fraction, repeat FRAP after disrupting actin (for example with latrunculin): the plateau should rise.
+
+**E4.** (a) Default membrane (18-carbon tails with one double bond) at 37 °C: without cholesterol the fluidity is about **1.6**× the default, with 50 % cholesterol about **0.6**×. Here cholesterol makes the membrane **less fluid**: its rigid rings stiffen the tails. (b) With saturated tails the membrane without cholesterol is a **gel**: fluidity about **0.03**× ($D$ for a lipid about 0.03 µm²/s, recovery very slow). With 30 % or 50 % cholesterol it is about **0.3**×, ten times more fluid. (c) Cholesterol is a **fluidity buffer**: it makes a fluid membrane stiffer and less leaky, but stops a membrane that would freeze from becoming a gel, by getting in the way of the packed tails. (d) At 10 °C the default membrane drops to about **0.15**× (lipid $D$ about 0.15 µm²/s): cold slows diffusion and pushes the tails towards the gel state. This is why cells in the cold make more unsaturated (kinked) tails. Shorter tails (14 carbons) also raise the fluidity (about 1.3×), longer ones (22) lower it (about 0.4×).
+
+**E5.** At 37 °C, about **56 %** of the molecules in the left half are red after 40 min (mixing about 90 % complete); at 4 °C, about **85 %** (only about 30 % mixed). 50 % red in each half would mean complete mixing. The proteins mix by diffusion in the fluid membrane, which needs no energy and no new proteins but is much slower in the cold, when the membrane is less fluid. Frye and Edidin saw exactly this: mixing in about 40 min at 37 °C, almost none in the cold, and no effect of drugs that block protein synthesis or ATP production. (The fused cell is drawn as a flat disc; its real surface is a sphere, so the times are illustrative.)
+:::

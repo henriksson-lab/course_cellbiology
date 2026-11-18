@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -168,6 +197,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Glossary</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Image credits</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -212,12 +247,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Demo: explore a real HeLa cell</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../cell-tour/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -253,12 +282,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Demo: resolution limit</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../microscopy/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -292,12 +315,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../cell-methods/questions.html#explore" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Demo: flow cytometry gating</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../cell-methods/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
   </div>
 </li>
       </ul>
@@ -342,8 +359,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../membrane-structure/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
+  <a href="../membrane-structure/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: FRAP lab</span></a>
   </div>
 </li>
       </ul>
@@ -377,8 +394,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../membrane-transport/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
+  <a href="../membrane-transport/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: uptake assay</span></a>
   </div>
 </li>
       </ul>
@@ -412,8 +429,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../ion-channels/credits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Image credits</span></a>
+  <a href="../ion-channels/questions.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: the cell battery</span></a>
   </div>
 </li>
       </ul>
@@ -432,6 +449,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#g-level-questions" id="toc-g-level-questions" class="nav-link active" data-scroll-target="#g-level-questions">G-level questions</a></li>
   <li><a href="#vg-style-questions" id="toc-vg-style-questions" class="nav-link" data-scroll-target="#vg-style-questions">VG-style questions</a></li>
+  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore">Explore</a></li>
   </ul>
 </nav>
     </div>
@@ -721,6 +739,38 @@ Model answer
 <ol type="a">
 <li>Digoxin partly blocks the <strong>Na⁺/K⁺ pump</strong> (normally: 3 Na⁺ out, 2 K⁺ in per ATP) in heart muscle cells. Na⁺ inside rises a little, so the <strong>Na⁺ gradient is smaller</strong>. The <strong>Na⁺/Ca²⁺ exchanger</strong>, which normally uses Na⁺ flowing in to push Ca²⁺ out, therefore removes <strong>less Ca²⁺</strong>. More Ca²⁺ stays in the cell and is stored in the sarcoplasmic reticulum, so more Ca²⁺ is released at each beat and <strong>contraction is stronger</strong>. Because the pump is in every cell, too much digoxin is toxic, and the safe dose range is narrow. (b) <strong>P-glycoprotein (ABCB1)</strong> is an <strong>ABC transporter</strong> that uses ATP to <strong>export</strong> hydrophobic molecules from cells; it normally protects tissues such as the gut, liver and the blood–brain barrier from toxins. Its binding cavity is large and accepts many different hydrophobic molecules. A cancer cell that makes a lot of P-glycoprotein pumps out several unrelated chemotherapy drugs, so their concentration inside the cell stays too low to kill it: <strong>multidrug resistance</strong>.</li>
 </ol>
+</div>
+</div>
+</div>
+</section>
+<section id="explore" class="level2">
+<h2 class="anchored" data-anchor-id="explore">Explore</h2>
+<p>A cell in a large bath of glucose, seen from the side. Two views show the <strong>same</strong> cell with the same controls. <strong>Molecules</strong> (left; on a phone, use the buttons on top): glucose (amber) and Na⁺ (blue) dots move at random; a glucose dot can cross the bilayer itself (rarely) or ride on a transporter, which faces out or in, never both. <strong>Concentrations</strong> (right): the same cell as calculated from the equations (Fick’s law for the bilayer, the transporter cycle for GLUT and SGLT), with the inside concentration rising smoothly and an arrow for the uptake. Both views give the <strong>uptake rate</strong> in mM per minute (for the dots: counted over the last 10 s), and the graph below compares the inside glucose over time. <strong>Run assay series</strong> does what a lab does: a fresh cell at each of eight outside concentrations, initial rate over 20 s, then a fitted curve. The assay series uses fixed random seeds, so it gives the same numbers every time; the counted dots in the live view are random, so they differ from the equations (and from the solutions) by about 10–15 %. For the live tasks, press <strong>Pause</strong>, then <strong>Reset</strong>, make the settings, then press <strong>Run</strong>.</p>
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="uptake" data-path="GLUT" data-co="5" data-n="12" data-seed="1"></div>
+<script src="../demos/dist/uptake.js"></script>
+<p><strong>E1.</strong> Choose <strong>Bilayer only</strong> and press <strong>Run assay series</strong>. Then choose <strong>GLUT</strong> (12 transporters) and run it again. Describe the two curves. Read <span class="math inline">\(V_\text{max}\)</span> and <span class="math inline">\(K_m\)</span> for GLUT. What limits the rate at 20 mM in each case? <code>[ELO 2]</code></p>
+<p><strong>E2.</strong> <em>Predict first.</em> What will happen to <span class="math inline">\(V_\text{max}\)</span> and to <span class="math inline">\(K_m\)</span> if the cell has twice as many GLUT transporters (24)? Run the assay to check. <code>[ELO 2]</code></p>
+<p><strong>E3.</strong> Live: GLUT, outside glucose 5 mM. Watch the inside glucose for 2–3 minutes (use <strong>10× faster</strong>). Where does it level off, and why does uptake stop? Then switch to <strong>SGLT</strong> with outside glucose 1 mM (Pause, Reset, set, Run). What is the inside concentration after 2 minutes? Where does the energy for this come from? Compare “highest possible ratio” for GLUT and SGLT. <code>[ELO 2]</code></p>
+<p><strong>E4. [VG]</strong> <em>Predict first.</em> Let SGLT (outside glucose 1 mM) run for 2 minutes, then untick the <strong>Na⁺/K⁺ pump</strong> (as ouabain would). Predict what happens to the Na⁺ inside, the voltage, the highest possible ratio and the glucose inside. Then watch. Why does SGLT stop working although ouabain does not bind to SGLT? What happens if you set <strong>outside Na⁺</strong> to 0 instead (Na⁺ replaced by another cation)? <code>[ELO 2]</code></p>
+<p><strong>E5. [VG]</strong> Run the assay for <strong>SGLT</strong> (12 transporters). Then tick <strong>gliflozin</strong> and run it again. Then untick gliflozin, set outside Na⁺ to 20 mM and run it a third time. Compare <span class="math inline">\(V_\text{max}\)</span> and <span class="math inline">\(K_m\)</span> in the three runs and explain each change. How does the gliflozin result explain why glucose appears in the urine of patients who take the drug? <code>[ELO 2]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solutions">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solutions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>E1.</strong> Bilayer only: the points lie on a <strong>straight line through 0</strong> (slope about 0.09 mM/min per mM; only about 1.6 mM/min at 20 mM): Fick’s law, rate proportional to the concentration difference, no maximum. GLUT: the curve rises steeply at first and then <strong>flattens</strong>: the fit gives <span class="math inline">\(V_\text{max} \approx\)</span> <strong>16 mM/min</strong> and <span class="math inline">\(K_m \approx\)</span> <strong>2.6 mM</strong> (the equations: 16 mM/min and 2.7 mM). At 20 mM the bilayer rate is limited only by how many molecules hit the membrane per second, so more glucose gives proportionally more uptake. GLUT is limited by the transporters themselves: almost every transporter is loaded and busy flipping, so more glucose outside cannot make them faster. Watch the molecules view at 20 mM: nearly every transporter holds a glucose.</p>
+<p><strong>E2.</strong> <span class="math inline">\(V_\text{max}\)</span> should double and <span class="math inline">\(K_m\)</span> stay the same. The assay gives <span class="math inline">\(V_\text{max} \approx\)</span> <strong>31 mM/min</strong> and <span class="math inline">\(K_m \approx\)</span> <strong>2.8 mM</strong>. <span class="math inline">\(V_\text{max}\)</span> is (number of transporters) × (turnover of one transporter), so it scales with the number of transporters. <span class="math inline">\(K_m\)</span> is a property of one transporter (how readily it binds glucose compared with how fast it cycles), so it does not depend on how many there are. Cells use this: insulin raises glucose uptake into muscle and fat by moving more GLUT4 transporters to the surface, a change in <span class="math inline">\(V_\text{max}\)</span>.</p>
+<p><strong>E3.</strong> With GLUT the inside rises quickly at first (about 2.6 mM after 30 s) and then more slowly (about 4.5 mM after 2 min), approaching <strong>5 mM, the outside concentration</strong> (ratio 1). Uptake stops because GLUT is passive: it carries glucose in both directions, and when inside and outside are equal, as many molecules leave as enter. With SGLT the inside passes 1 mM within seconds and is about <strong>20 mM after 2 minutes</strong> (ratio about 20), still rising: glucose moves <strong>uphill</strong>. The energy comes from the Na⁺ that enters with each glucose (2 Na⁺ per glucose), flowing down its steep gradient (145 mM outside, about 12–14 mM inside) and pulled in by the −70 mV inside. The highest possible ratio is 1 for GLUT but about <strong>20 000</strong> for SGLT, <span class="math inline">\((145/14)^2 \times e^{140/26.7}\)</span>, as in the lecture (“more than 10 000-fold”). In practice the climb slows long before that, because inside glucose starts to occupy the inward-facing transporters.</p>
+<p><strong>E4.</strong> Without the pump, Na⁺ leaks in and is no longer removed: inside Na⁺ rises from about 14 mM to about <strong>90 mM in 30 s</strong> and to nearly 145 mM after 2 min, and the voltage falls from −70 mV towards 0. The highest possible ratio falls from about 20 000 to about 20 within 30 s and then to 1. The inside glucose (about 20 mM) is now far above what the weak gradient can hold, so the uptake becomes <strong>negative</strong> (about −2 mM/min): SGLT runs backwards and glucose leaks out (about 14 mM after 3 more minutes). SGLT uses no ATP itself; it is driven by the Na⁺ gradient that the pump makes (secondary active transport), so blocking the pump stops it indirectly. With outside Na⁺ at 0, SGLT cannot bind Na⁺ and stops completely: only diffusion through the bilayer is left (about 0.1 mM/min).</p>
+<p><strong>E5.</strong> SGLT alone: <span class="math inline">\(V_\text{max} \approx\)</span> <strong>26 mM/min</strong>, <span class="math inline">\(K_m \approx\)</span> <strong>0.7 mM</strong> (a high affinity, like SGLT1 in the gut). With gliflozin, 90 % of the transporters are blocked (in the demo 11 of 12): <span class="math inline">\(V_\text{max}\)</span> falls to about <strong>4 mM/min</strong> (one working transporter plus a little diffusion), while <span class="math inline">\(K_m\)</span> changes less (the fit, 1.9 mM, is noisy because the rates are small). Blocking transporters removes binding sites, like a non-competitive inhibitor in enzyme kinetics. With outside Na⁺ at 20 mM, <span class="math inline">\(V_\text{max}\)</span> stays about the same (<strong>29 mM/min</strong>) but <span class="math inline">\(K_m\)</span> rises about six-fold, to about <strong>4 mM</strong>: with less Na⁺, fewer transporters have their two Na⁺ bound when a glucose arrives, so more glucose is needed to keep them busy; at high glucose they still saturate. In the kidney, SGLT2 normally takes back about 90 % of the filtered glucose. With most SGLT2 blocked, the tubule’s capacity (<span class="math inline">\(V_\text{max}\)</span>) is far below the glucose load, so much of the filtered glucose stays in the urine, and blood glucose falls.</p>
 </div>
 </div>
 </div>

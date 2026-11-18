@@ -1,7 +1,3 @@
----
-title: "Image credits: a tour of the cell"
----
-
 All diagrams (`fig*.svg`) were drawn for this course and use the course colour key.
 The photographs and micrographs below come from Wikimedia Commons; their licences
 were checked on the file pages on 2026-11-18. Images were resized for the slides.
@@ -21,9 +17,9 @@ Our diagrams in this unit: `fig02-course-map.svg`, `fig05-prokaryote-eukaryote.s
 on the "Numbers worth knowing" slide are standard order-of-magnitude values of the
 kind collected in BioNumbers (<https://bionumbers.hms.harvard.edu>).
 
-## Cell explorer (`explore.qmd`) and its slide screenshot
+### Cell explorer (`explore.qmd`) and its slide screenshot
 
-The electron micrograph and the organelle outlines in the [cell explorer](explore.qmd)
+The electron micrograph and the organelle outlines in the [cell explorer](cell-tour/explore.qmd)
 (and the screenshot `img06-cell-explorer.jpg` on the slide "Explore a real HeLa cell")
 come from the OpenOrganelle dataset **jrc_hela-2**, "Interphase HeLa cell" (wild-type
 HeLa, ATCC CCL-2; high-pressure frozen, freeze-substituted, imaged by FIB-SEM at

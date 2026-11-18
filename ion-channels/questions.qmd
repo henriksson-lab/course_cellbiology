@@ -117,3 +117,36 @@ CFTR is a **Cl⁻ channel** in the apical membrane, opened by PKA phosphorylatio
 
 (c) Apply trains of depolarising pulses at low (e.g. 0.1 Hz) and high frequency (e.g. 10 Hz). If block builds up from pulse to pulse at high frequency (**use-dependent block**), the compound binds preferentially to open or inactivated channels, as lidocaine does. This property would let it block busy pain fibres more than normal nerves.
 :::
+
+## Explore {#explore}
+
+The voltage scale shows each ion's **Nernst potential** as a coloured line (K⁺ violet, Na⁺ blue, Cl⁻ green) and the **membrane potential** $V_m$ from the Goldman equation as the orange marker. Change the inside and outside concentrations of each ion, and how many of its channels are open (its permeability, relative to K⁺ at rest, on a log scale). The table gives each ion's $E$, the driving force $V_m - E$ and the direction of its net flow; the box below shows the calculation with your numbers (exact equations, 37 °C, $RT/F = 26.7$ mV). Start from the presets. An optional **particle view** (tick the box) shows single ions crossing open channels; how often they cross in each direction follows the same equations.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="cellbattery" data-preset="rest"></div>
+<script src="../demos/dist/cellbattery.js"></script>
+```
+
+**E1.** Choose **Resting cell**. Check $E_\text{K}$, $E_\text{Na}$, $E_\text{Cl}$ and $V_m$ against the lecture. For each ion, read the driving force $V_m - E$ and the direction of net flow. Which ion is pushed hardest? Why does the membrane potential not change, although ions keep flowing? `[ELO 2]`
+
+**E2.** *Predict first.* Blood K⁺ rises from 5 to 8 mM (**High outside K⁺**). Which way do $E_\text{K}$ and $V_m$ move, and by how much? Then try 10 mM and 3 mM outside. Why does $V_m$ change less than $E_\text{K}$? `[ELO 2]`
+
+**E3.** Choose **Na⁺ channels open (action-potential peak)**. Where is $V_m$ now? Why does it not reach $E_\text{Na}$? How many more Na⁺ channels must open (try the slider) to get within 5 mV of $E_\text{Na}$? Then choose **Lidocaine + the same stimulus**. What happens, and what does this mean for a pain fibre? `[ELO 2]`
+
+**E4. [VG]** Choose **Epithelial cell, CFTR closed** (inside Cl⁻ is 50 mM here), then **CFTR open**. How do $E_\text{Cl}$ and $V_m$ change, and in which direction does Cl⁻ flow? Now *predict* what opening the same number of Cl⁻ channels would do in a cell with only 10 mM Cl⁻ inside (go to **Resting cell** and set the Cl⁻ open channels to 3). Explain the difference with one rule. `[ELO 2]`
+
+**E5.** Tick the particle view and choose **Resting cell**. Compare how many K⁺ ions cross out and in per second, and how many Na⁺ ions come in (average over 10 s; the counts are random). How do the numbers show that the net charge flow is zero at $V_m$? Then choose **Na⁺ channels open**: what changes? `[ELO 2]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** $E_\text{K} = -89$ mV, $E_\text{Na} = +67$ mV, $E_\text{Cl} = -64$ mV and $V_m = -70$ mV, as in the lecture. Driving forces: K⁺ $+19$ mV (net flow **out**), Na⁺ $-136$ mV (net flow **in**), Cl⁻ $-6$ mV (almost at equilibrium; a tiny net flow out). Na⁺ is pushed hardest, but few Na⁺ channels are open, so its flow is small. At $V_m$ the positive charge that leaves as K⁺ equals the positive charge that enters as Na⁺ (plus the little Cl⁻ that leaves): the **net current is zero**, so the voltage stays put. This is exactly how the Goldman equation is defined. The ions themselves keep leaking, and the Na⁺/K⁺ pump keeps the gradients.
+
+**E2.** With 8 mM outside, $E_\text{K}$ rises from −89 to **−76.5 mV** and $V_m$ from −70 to **−63.5 mV**: the cell is **depolarised** by about 6 mV. With 10 mM: $E_\text{K}$ −70.5 mV, $V_m$ **−59.9 mV**. With 3 mM (hypokalaemia): $E_\text{K}$ −102.7 mV, $V_m$ **−75.2 mV** (hyperpolarised). $V_m$ moves less than $E_\text{K}$ because it is a weighted average: the Na⁺ and Cl⁻ channels, whose $E$ did not change, still pull on it. In heart muscle, a depolarised resting potential inactivates part of the Na⁺ channels and disturbs the rhythm, which is why high blood K⁺ is dangerous.
+
+**E3.** $V_m$ is about **+36 mV** (the lecture's action-potential peak), well above 0 but not at $E_\text{Na}$ (+67 mV), because the K⁺ (and Cl⁻) channels are still open and pull towards their own $E$. Na⁺ channels must outnumber K⁺ channels much more: at 30 (relative units) $V_m$ is +57 mV, at 100 it is **+63 mV**. With lidocaine the voltage stays at **−70 mV**: the Na⁺ channels are told to open, but their pores are blocked, so only the resting leak remains and there is no action potential. A pain fibre then sends no signal to the brain. (In real cells lidocaine blocks part of the channels and binds best to channels that open often; the demo blocks all of them.)
+
+**E4.** CFTR closed: $E_\text{Cl} = -21$ mV, $V_m = -61.6$ mV. CFTR open: $V_m = $ **−28.8 mV**, close to $E_\text{Cl}$; Cl⁻ flows **out** of the cell (the table: net flow out), and K⁺ out flow increases too. In an airway cell, this Cl⁻ leaves through the apical membrane into the airway, Na⁺ follows between the cells and water follows by osmosis. With only 10 mM Cl⁻ inside, $E_\text{Cl} = -64$ mV, and opening the same channels moves $V_m$ only from −70 to **−65.8 mV**. The rule: **opening channels for an ion moves $V_m$ towards that ion's $E$**; how far and in which direction depends on where $E$ lies, which is set by the concentrations. Without CFTR (cystic fibrosis) the Cl⁻ secretion and the water that follows it are lost.
+
+**E5.** At rest about 6 K⁺ ions cross out and 3 cross in per second (net about 3 out), about 3 Na⁺ come in and almost none go out, and Cl⁻ crosses about equally in both directions (the rates are scaled to be watchable). The net K⁺ outflow equals the net Na⁺ inflow (plus a small Cl⁻ outflow): no net charge flows. Note that K⁺ crosses in both directions: equilibrium is not "no movement" but "equal movement both ways". With Na⁺ channels open, many Na⁺ ions flood in, and the K⁺ outflow rises to match them, because $V_m$ is now far above $E_\text{K}$; the counts are scaled down so that you can still follow them.
+:::

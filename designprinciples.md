@@ -29,7 +29,7 @@ point is *where* something is, *which way* it moves, or *what it looks like*.
   Protein Atlas, RCSB PDB / Mol* renderings, EMDB, Servier Medical Art, NIH/NIGMS
   image gallery, OpenOrganelle, Allen Cell Explorer: check each source's terms).
   **Never copy figures from MBoC or other textbooks.** Record every external image
-  in the unit's `credits.md` (source URL, author, licence).
+  in the unit's `_credits.md` (source URL, author, licence), which the central image credits page includes.
 - Run the figure QA checklist (`plan/figure-qa-checklist.md`) on every SVG.
 
 ## 3. One lecture ≈ 45 minutes

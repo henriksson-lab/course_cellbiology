@@ -1,0 +1,31 @@
+---
+title: "Image credits"
+---
+
+Sources and licences for all images, data and figures from elsewhere used in the
+course, per lecture. Our own diagrams (`fig*.svg`) were drawn for this course and
+may be reused under the course licence (see the course authors page).
+
+## A tour of the cell {#cell-tour}
+
+{{< include cell-tour/_credits.md >}}
+
+## Seeing cells: microscopy {#microscopy}
+
+{{< include microscopy/_credits.md >}}
+
+## Taking cells apart and perturbing them {#cell-methods}
+
+{{< include cell-methods/_credits.md >}}
+
+## Membrane structure {#membrane-structure}
+
+{{< include membrane-structure/_credits.md >}}
+
+## Transporters and pumps {#membrane-transport}
+
+{{< include membrane-transport/_credits.md >}}
+
+## Ion channels and membrane potential {#ion-channels}
+
+{{< include ion-channels/_credits.md >}}

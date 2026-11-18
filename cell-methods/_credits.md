@@ -1,7 +1,3 @@
----
-title: "Image credits: Taking cells apart and perturbing them"
----
-
 All diagrams (`fig*.svg`) were drawn for this course. The dot plots in `fig11` and `fig18` show simulated data. The photographs and micrographs below come from Wikimedia Commons. They were resized and recompressed; nothing else was changed.
 
 | File | What it shows | Author | Licence | Source |

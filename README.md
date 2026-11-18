@@ -6,7 +6,7 @@ Teacher information. This file is not part of the published site.
   [elo.md](elo.md), [contentplan.md](contentplan.md),
   [designprinciples.md](designprinciples.md), [plan/](plan/).
 - Each lecture is one folder (topic slug, never a week or day number): `lec.qmd`
-  (slides), `quiz.qmd`, `questions.qmd` (study questions), `credits.md` (image
+  (slides), `quiz.qmd`, `questions.qmd` (study questions), `_credits.md` (image
   sources and licences), and its figures. Order lives only in `_quarto.yml`.
 
 ## Building this site

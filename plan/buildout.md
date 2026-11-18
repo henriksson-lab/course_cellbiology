@@ -40,7 +40,7 @@ membrane-transport/
   lec.qmd         reveal.js slides, ~45 min, speaker notes on every slide
   quiz.qmd        5–8 self-check questions, each tagged [ELO n]
   questions.qmd   study questions: G-level + at least one VG-style question
-  credits.md      source + licence for every external image
+  _credits.md     source + licence for every external image (included in credits.qmd)
   figNN-*.svg     our diagrams
   imgNN-*.jpg/png real images (licensed)
 ```
@@ -67,14 +67,12 @@ In course order A, C, D, E, F, G, H. For each lecture:
       whether it has an image and why or why not; ≥ 50 % with an image, at least
       two real images per lecture
 - [ ] figure QA on every SVG
-- [ ] `credits.md` complete
+- [ ] `_credits.md` complete
 - [ ] `quiz.qmd` + `questions.qmd`, ELO-tagged
 - [ ] glossary entries added
 
 ## Phase 3: Course-level pages
 
-- [ ] ELO self-check page (each ELO → lectures, quizzes, questions)
-- [ ] exam-style practice set: one G section + one VG question per ELO
 - [ ] Canvas quizzes built from `quiz.qmd`
 
 ## Decisions (2026-11-18)
@@ -82,12 +80,7 @@ In course order A, C, D, E, F, G, H. For each lecture:
 - Files and folders are never named by week or day; order lives in `_quarto.yml`.
 - Make material now and refactor later; don't over-plan.
 - Design does not depend on whether lectures are live or recorded.
-- Labs: assume a full cell biology lab (any standard method can be referred to).
+- Labs (module 3) and everything in module 2 (oral presentations, seminars, group problem solving, poster) are handled outside this repo. Lectures may refer to any standard lab method.
 - Book chapter pointers: MBoC 7th ed. for now.
 - Who teaches what is not our concern here.
-
-## Open questions
-
-1. Should the site host the PPT seminar mini-cases, or is that Canvas only?
-2. Exam question bank: write per-ELO exam questions alongside the lectures, or
-   separately (kept private, like `canvas-quiz/private/`)?
+- Revision and the exam are out of scope for this repo.

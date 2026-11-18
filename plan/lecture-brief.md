@@ -11,7 +11,7 @@ person) builds a lecture. Read first: `designprinciples.md`, `audience.md`,
 | `lec.qmd` | reveal.js slides, about 45 min: **15–19 content slides**, speaker notes on every slide |
 | `quiz.qmd` | 6–8 short self-check questions, Hint + Answer callouts, each tagged `[ELO n]` |
 | `questions.qmd` | study questions in exam style: 6–10 G-level + at least 2 VG-style, model answers in collapsed callouts, each tagged `[ELO n]` (and `[VG]`) |
-| `credits.md` | one row per external image: file, what it shows, author, licence, source URL |
+| `_credits.md` | one row per external image: file, what it shows, author, licence, source URL. No YAML header; it is included into the central `credits.qmd` (add a section there for a new unit) |
 | `figNN-<name>.svg` | our own diagrams, NN = slide number |
 | `imgNN-<name>.jpg/png` | real images, NN = slide number |
 
@@ -43,7 +43,7 @@ Only write inside the unit folder.
    Sjukdomslära, Immunologi, Kliniska prövningar och läkemedelsutveckling).
 5. **Summary**: 3–5 take-home points in the words of the ELO, then one line:
    *Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed.,
-   ch. N.*  Then a small line linking the image credits page (`credits.md`).
+   ch. N.*  Then a small line linking the central credits page: `[Image credits](../credits.qmd#<unit>){style="font-size:0.7em"}`.
 
 ## Pictures
 
@@ -117,10 +117,10 @@ narrow column. Text in the figures must stay readable.
 
 - Screenshot every slide and fix overflow at the bottom edge and unreadable figures.
 - `quarto render <unit>/lec.qmd`, `quarto render <unit>/quiz.qmd`,
-  `quarto render <unit>/questions.qmd`, `quarto render <unit>/credits.md`
+  `quarto render <unit>/questions.qmd`, `quarto render credits.qmd`
   all render without warnings about missing files.
 - Count: content slides, slides with a picture (target ≥ 50 %), real images (≥ 3).
-- Every external image is in `credits.md` with its licence.
+- Every external image is in `_credits.md` with its licence.
 
 ## Demos in the sidebar
 

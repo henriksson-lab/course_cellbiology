@@ -172,7 +172,7 @@ Put the pieces together. Step one: the sodium-potassium pump, from the transport
 ![](fig11-voltage-scale.svg){width="56%" fig-align="center"}
 
 - At rest the membrane is mostly permeable to K⁺, so the resting potential (about **−70 mV**) lies **close to $E_\text{K}$**, pulled a little towards $E_\text{Na}$ by a small Na⁺ leak.
-- This weighted average is the **Goldman equation**. Learn the idea, not the formula: **more open channels for an ion = voltage closer to that ion's E**.
+- This weighted average is the **Goldman equation**. Learn the idea, not the formula: **more open channels for an ion = voltage closer to that ion's E**. **Try it:** [the cell battery](questions.qmd#explore).
 - Open many Na⁺ channels, and the voltage swings towards **$E_\text{Na}$**. That is the **action potential**.
 - Change the K⁺ outside, and the resting potential changes: high blood K⁺ is dangerous for the heart.
 
@@ -309,7 +309,7 @@ Two more examples link this lecture to the clinic. First, the sweat test. In the
 
 *Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch. 11.*
 
-<small>Image credits: [credits](credits.md)</small>
+[Image credits](../credits.qmd#ion-channels){style="font-size:0.7em"}
 
 ::: notes
 Five take-home points. First, channels are pores that let ions flow down their electrochemical gradient, very fast, and they are selective and gated; transporters are slower but can couple to energy and pump. Second, selectivity comes from structure: the potassium channel filter replaces the water around a potassium ion with protein oxygens at exactly the right distance, which does not work for the smaller sodium ion. Third, the Nernst equation is just Gibbs energy with an electrical term; set delta G to zero and you get the equilibrium potential, which you should be able to calculate. Fourth, the resting potential arises because the pump makes the gradients and the resting membrane is mainly permeable to potassium; when sodium channels open, the voltage swings towards E Na, which is the action potential. Patch clamp lets us record a single channel. Fifth, all cells use channels: CFTR for salt and water secretion, calcium channels for signals. Knowing the exact molecular defect lets us choose the drug. Next we leave the plasma membrane and follow proteins into the compartments of the cell.

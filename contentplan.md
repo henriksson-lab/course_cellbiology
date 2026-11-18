@@ -23,7 +23,7 @@ Open questions are marked **[?]**.
   drug-delivery technology or a disease that depends on the lecture's content,
   then the summary.
 - **Every lecture has a "How do we know?" moment**: one method slide, because
-  ELO 1 and ELO 6 ask for methods and the lab module uses them.
+  ELO 1 and ELO 6 ask for methods.
 - **Each lecture unit** = `lec.qmd` + `quiz.qmd` + `questions.qmd` (study
   questions with one VG-style question). There is no code.
 
@@ -358,9 +358,3 @@ The exam passes each ELO separately, so no ELO should be thin.
   3AN006.
 - **Chloroplasts** (MBoC ch. 14): one slide in L12 at most.
 - **Development** (MBoC ch. 21): only through signalling in L17.
-
-## Possible link to the lab module **[?]**
-
-When the lab content is known, place the method lecture before the lab that uses
-it, e.g. L2 (microscopy) and L3 (culture, fractionation, flow) before the first
-lab, L24 (apoptosis assays) before a cell-death lab.

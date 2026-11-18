@@ -50,6 +50,8 @@ website:
             href: elo.md
           - text: Glossary
             href: dictionary.qmd
+          - text: Image credits
+            href: credits.qmd
       # ----------------------------------------------------------------------
       # Order is defined HERE, not in filenames. To reorder a unit, move its
       # block; never rename its folder. Sections are topic blocks, not weeks.
@@ -67,8 +69,6 @@ website:
                 href: cell-tour/questions.qmd
               - text: "Demo: explore a real HeLa cell"
                 href: cell-tour/explore.qmd
-              - text: "Image credits"
-                href: cell-tour/credits.md
           - section: "Seeing cells: microscopy"
             contents:
               - text: "Lecture (slides)"
@@ -79,8 +79,6 @@ website:
                 href: microscopy/questions.qmd
               - text: "Demo: resolution limit"
                 href: microscopy/questions.qmd#explore
-              - text: "Image credits"
-                href: microscopy/credits.md
           - section: "Taking cells apart and perturbing them"
             contents:
               - text: "Lecture (slides)"
@@ -91,8 +89,6 @@ website:
                 href: cell-methods/questions.qmd
               - text: "Demo: flow cytometry gating"
                 href: cell-methods/questions.qmd#explore
-              - text: "Image credits"
-                href: cell-methods/credits.md
       - section: "Membranes and transport"
         contents:
           - section: "Membrane structure"
@@ -103,8 +99,8 @@ website:
                 href: membrane-structure/quiz.qmd
               - text: "Study questions"
                 href: membrane-structure/questions.qmd
-              - text: "Image credits"
-                href: membrane-structure/credits.md
+              - text: "Demo: FRAP lab"
+                href: membrane-structure/questions.qmd#explore
           - section: "Transporters and pumps"
             contents:
               - text: "Lecture (slides)"
@@ -113,8 +109,8 @@ website:
                 href: membrane-transport/quiz.qmd
               - text: "Study questions"
                 href: membrane-transport/questions.qmd
-              - text: "Image credits"
-                href: membrane-transport/credits.md
+              - text: "Demo: uptake assay"
+                href: membrane-transport/questions.qmd#explore
           - section: "Ion channels and membrane potential"
             contents:
               - text: "Lecture (slides)"
@@ -123,8 +119,8 @@ website:
                 href: ion-channels/quiz.qmd
               - text: "Study questions"
                 href: ion-channels/questions.qmd
-              - text: "Image credits"
-                href: ion-channels/credits.md
+              - text: "Demo: the cell battery"
+                href: ion-channels/questions.qmd#explore
 
 format:
   html:
