@@ -9,9 +9,9 @@ export interface MolType { name: string; D0: number; size: number; corral: numbe
 /** D0: diffusion coefficient (µm²/s) in the default membrane at 37 °C. Typical values in a
  *  cell's plasma membrane: lipids about 1, proteins 10–100 times slower (crowding, cytoskeleton). */
 export const MOLS: Record<MolKey, MolType> = {
-  lipid: { name: "fluorescent lipid", D0: 1.0, size: 0.13, corral: 0.08, speed: 0.5 },
-  small: { name: "small membrane protein", D0: 0.1, size: 0.22, corral: 0.12, speed: 5 },
-  large: { name: "large protein complex", D0: 0.02, size: 0.32, corral: 0.15, speed: 25 },
+  lipid: { name: "fluorescent lipid", D0: 1.0, size: 0.13, corral: 0.08, speed: 1 },
+  small: { name: "small membrane protein", D0: 0.1, size: 0.22, corral: 0.12, speed: 1 },
+  large: { name: "large protein complex", D0: 0.02, size: 0.32, corral: 0.15, speed: 1 },
 };
 
 export interface Fluidity { tail: number; db: number; chol: number; temp: number }
