@@ -1,0 +1,141 @@
+---
+title: "Study questions: mitosis and cytokinesis"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** Describe cohesin and condensin: what they are built from, when they act, and what each does to a chromosome. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Both are **ring-shaped complexes** of SMC proteins (long coiled-coil arms with an ATPase head) closed by a kleisin subunit. **Cohesin** is loaded before DNA replication and, as the fork passes, ends up **encircling both sister DNAs**: from S phase to anaphase it is what holds the sisters together. In prophase and prometaphase most **arm cohesin is removed**, while **centromere cohesin is protected** (by shugoshin) until separase cuts it at anaphase. **Condensin** acts from prophase: it uses ATP to pull DNA into **loops** along a central axis, which shortens and stiffens each chromatid (about 10 000-fold shorter than its DNA), so chromatids can be moved without tangling or breaking.
+:::
+
+---
+
+**2.** Explain how the nuclear envelope breaks down at the start of mitosis in animal cells and how it re-forms. Link your answer to the cell-cycle control system. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**CDK1–cyclin B** (with other mitotic kinases) phosphorylates **lamins**, the intermediate-filament proteins of the **nuclear lamina**. Phosphorylated lamins cannot stay in filaments, so the lamina dissolves into soluble dimers. **Nucleoporins** are phosphorylated too, and the nuclear pores fall apart. The nuclear membranes, which are continuous with the ER, are absorbed into the **ER**. At the end of mitosis **APC/C–Cdc20** destroys cyclin B, CDK1 activity falls, and **phosphatases** remove the phosphates. Lamins and pore proteins reassemble on the chromosome surface, and ER membrane wraps around each set of chromosomes to form two new nuclei.
+:::
+
+---
+
+**3.** Draw a metaphase spindle and label the three classes of microtubules, the poles and the kinetochores. Mark where kinesin-5 and cortical dynein act and in which direction they move the poles. `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Two **centrosomes** (poles) with minus ends at the poles and plus ends outward. **Kinetochore microtubules** run from each pole to the kinetochores of the chromosomes at the metaphase plate (each sister kinetochore to its own pole). **Interpolar microtubules** from the two poles **overlap antiparallel** in the middle. **Astral microtubules** radiate from the poles to the cell cortex. **Kinesin-5** sits in the overlap and walks towards both plus ends, **sliding the overlap apart and pushing the poles outward**. **Dynein** anchored at the cortex walks towards the minus end of astral microtubules, **pulling the poles outward** towards the cortex and positioning the spindle.
+:::
+
+---
+
+**4.** What is a kinetochore, and what is special about the way it binds microtubules? `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+A kinetochore is a large protein machine (about a hundred kinds of protein) built on the **centromere** of each sister chromatid. Its outer part, including the **Ndc80 complex**, binds the side of microtubules near their **plus ends** (about 20 microtubules per human kinetochore). It **stays attached while the plus end grows or shrinks**, so it can follow a dynamic microtubule and be pulled by a depolymerising one. It is also a signalling platform: unattached kinetochores make the checkpoint signal, and its proteins are the targets of **Aurora B** in error correction.
+:::
+
+---
+
+**5.** Explain what the spindle assembly checkpoint senses, which proteins make the signal, and what the signal blocks. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The checkpoint senses **unattached kinetochores**. An unattached kinetochore recruits checkpoint proteins (Mad1, Mad2, Bub proteins) and catalyses the conversion of **Mad2** into its active shape, which binds **Cdc20**. Together with BubR1 and Bub3 this forms the **mitotic checkpoint complex (MCC)**, which **blocks APC/C–Cdc20**. While APC/C–Cdc20 is off, **securin** and **cyclin B** are not destroyed: separase stays inhibited, cohesin stays intact, and the cell stays in mitosis. A **single** unattached kinetochore is enough. When all kinetochores are attached, no new MCC is made, the old MCC is taken apart and anaphase starts within minutes.
+:::
+
+---
+
+**6.** Describe the molecular events that make anaphase start suddenly and irreversibly. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+When the checkpoint is satisfied, **APC/C–Cdc20** (an E3 ubiquitin ligase) ubiquitylates **securin**, which is destroyed by the **proteasome**. Securin was the inhibitor of **separase**, a protease. Free separase **cleaves the kleisin subunit of cohesin**, so the cohesin rings on **all** chromosomes open at the same moment, and the sisters are pulled to the poles. APC/C–Cdc20 also targets **cyclin B**; CDK1 activity falls and the cell exits mitosis. Because the key steps are **protein destruction**, they cannot be reversed: the cell cannot put cohesin back or rebuild securin in time, so anaphase is a one-way step.
+:::
+
+---
+
+**7.** Compare anaphase A and anaphase B: what moves, and what produces the force? `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Anaphase A**: the **chromatids move to the poles** and kinetochore microtubules shorten. The main force comes from **depolymerisation**: tubulin is lost at the plus end at the kinetochore, which holds on to the shrinking end (and in many cells also at the minus end at the pole, **poleward flux**). **Anaphase B**: the **poles move apart** and the spindle gets longer. Motors (kinesin-5 and related kinesins) in the overlap zone **slide antiparallel interpolar microtubules apart**, and **cortical dynein pulls** on astral microtubules. Both use microtubule dynamics and motor proteins (ELO 6).
+:::
+
+---
+
+**8.** Explain how an animal cell decides where to divide and how the contractile ring is built and closed. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The position is set by the **spindle**: the overlap of interpolar microtubules in the middle (the **central spindle**) collects a complex that carries a **RhoGEF**, which activates **RhoA** in a narrow band of cortex at the equator. **RhoA-GTP** activates **formins**, which make unbranched **actin** filaments, and **Rho kinase**, which phosphorylates the regulatory light chain of **non-muscle myosin II**. Bipolar myosin II filaments pull antiparallel actin filaments past each other, so the ring **constricts like a purse string** and pulls the membrane into a cleavage furrow. The last thin bridge (the **midbody**) is cut by **ESCRT-III** (**abscission**).
+:::
+
+---
+
+**9.** Compare meiosis I with mitosis in terms of what holds the chromosomes together, how the sister kinetochores attach, and what separase cuts. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Mitosis**: sisters are held by cohesin; the two sister kinetochores attach to **opposite** poles; separase cuts **all** remaining cohesin and the **sisters** separate. **Meiosis I**: **homologous chromosomes** are held together by **crossovers** plus arm cohesin; the two sister kinetochores act as one and attach to the **same** pole; separase cuts **arm cohesin only** (centromere cohesin is protected by shugoshin), so the **homologues** separate while sisters stay together. Meiosis II then resembles mitosis without a preceding S phase. The machinery (spindle, kinetochores, checkpoint, APC/C, separase) is the same.
+:::
+
+## VG-style questions
+
+**10. [VG]** A researcher treats human cells with an inhibitor of Aurora B. The cells align most chromosomes, the checkpoint is satisfied and they enter anaphase on time, but many daughter cells are aneuploid. A colleague says: "The checkpoint must be broken." Explain why the checkpoint can be working normally, and why the daughters are aneuploid. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The spindle assembly checkpoint senses **attachment, not tension**. Syntelic and merotelic attachments are **fully attached**, so they make no wait signal by themselves. Normally **Aurora B** detects the missing tension (syntelic) or the wrong geometry (merotelic), **phosphorylates** the kinetochore, and the microtubules are released; the now **unattached** kinetochore turns the checkpoint on until a correct attachment forms. Without Aurora B activity, wrong attachments are **stable** and **all kinetochores are attached**, so the checkpoint is silent, APC/C–Cdc20 becomes active and anaphase starts **on time**. Syntelic chromosomes send both sisters to one pole (one daughter gains, the other loses a chromosome); merotelic chromatids lag and may end in the wrong daughter or a micronucleus. The checkpoint works; the **error-correction** step that feeds it has been removed. (You can test this in the demo: switch off tension correction.)
+:::
+
+---
+
+**11. [VG]** Paclitaxel arrests cancer cells in mitosis in the laboratory, but in patients many tumour cells divide only rarely, and the drug also causes hair loss and low neutrophil counts. (a) Explain the arrest at the level of attachment, tension and the checkpoint. (b) Explain the side effects. (c) Predict how the effect of paclitaxel would change in cells in which Mad2 has been knocked down. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**(a)** Paclitaxel binds β-tubulin in the lattice and **stops microtubule dynamics**. Microtubules can no longer search and capture kinetochores, so some kinetochores stay **unattached**; attached ones cannot make proper **tension**, because tension needs microtubules that can shorten, so **Aurora B** releases them. Unattached kinetochores produce **MCC**, **APC/C–Cdc20** stays off, securin and cyclin B stay, and the cell is **held in mitosis** for hours, after which it usually dies (or slips out without dividing). **(b)** The drug acts on **every dividing cell**: hair-bulb cells and **bone-marrow** precursors divide very often, so hair is lost and neutrophil production falls (which usually limits the dose); the gut and mouth lining are hit for the same reason. **(c)** Without Mad2 the checkpoint cannot block APC/C–Cdc20, so the cells **do not arrest**: they enter anaphase on time with unattached or wrongly attached chromosomes and produce **aneuploid** daughters. Arrest and death in mitosis would fall; some daughters might die later, but cells with a weak checkpoint are often **less sensitive** to taxanes, one way tumours can become resistant.
+:::
+
+---
+
+**12. [VG]** Down syndrome becomes much more common with the mother's age, but not with the father's. Use what you know about cohesin and meiosis to propose an explanation, and design an experiment in mice to test it. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Explanation:** oocytes enter meiosis **before birth** and stay arrested in prophase I for decades. The **cohesin** that holds homologues together (with crossovers) and sisters together was loaded in the fetal ovary. If it is **not renewed**, it is slowly lost; after many years too little cohesin is left, crossovers slip off the chromosome ends and homologues or sisters separate **too early**, so chromosome 21 can go to the wrong pole (**nondisjunction**, mostly in meiosis I). Sperm are made continuously from dividing stem cells, with fresh cohesin each time, so paternal age matters much less. **Experiment:** compare oocytes from young and old female mice: stain cohesin (for example its meiotic kleisin) on chromosome spreads and measure the distance between sister centromeres; count aneuploid eggs after meiosis I. Then delete the cohesin gene **after** the oocytes have formed (a conditional knockout switched on after birth): if cohesin is not renewed, oocytes should still divide normally, because they rely on the old cohesin. In contrast, a mouse in which cohesin is weakened from the start should mimic the old-age phenotype in young animals.
+:::
+
+## Explore {#explore}
+
+**Demo: spindle checkpoint.** A toy cell with four chromosomes (a human cell has 46) is in prometaphase: the nuclear envelope has just broken down and the two poles are in place. Tap the **left or right half** of a chromosome to attach that kinetochore: each tap moves it one step through *none → left pole → right pole → both poles → none*. An orange ring marks an **unattached kinetochore**, which makes the "wait" signal. The panel shows the checkpoint chemistry (wait signal, APC/C–Cdc20, securin, cyclin B), the state of each chromosome, a log of what happened and, at the end, the chromosomes in each daughter. You can also let the microtubules **search and capture by themselves**, switch off **tension correction** (Aurora B), add **taxol** or **monastrol**, or **force anaphase** by switching the checkpoint off. Time runs at **1× real time**; choose 10× or 30× for whole divisions. The model is **rules-based**: the behaviour is qualitatively right, the timings are illustrative, and random capture differs from run to run.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="spindle" data-seed="1"></div>
+<script src="../demos/dist/spindle.js"></script>
+```
+
+**E1.** Set the speed to 10×. Attach every chromosome correctly, each sister to its own pole (or press **Attach all correctly**). Watch the four bars. How long after the last attachment does anaphase start, and which bar decides the moment? How long do anaphase and cytokinesis take after that? `[ELO 7]`
+
+**E2.** Press **Reset**. *Predict first:* if you attach 7 of the 8 kinetochores correctly and leave one free, what will happen? Do it and wait 10 minutes of model time. Then attach the last kinetochore. What does this tell you about how many unattached kinetochores are needed to stop the cell? Which classic experiment showed this in real cells? `[ELO 7]`
+
+**E3.** Press **Reset**. Attach chromosomes 2–4 correctly, and attach **both** kinetochores of chromosome 1 to the **left** pole (one tap on each half). What kind of attachment is this? Watch the log and the checkpoint box for a few minutes. Then press **Reset**, untick **Tension correction (Aurora B)** and make the same attachments again. Compare the two runs and read the result for the daughters. `[ELO 7]`
+
+**E4.** Press **Reset** with tension correction off. Attach everything correctly, then tap the **left** half of chromosome 2 twice more so that its left kinetochore holds **both poles**. What kind of attachment is this, and does the checkpoint notice? What happens to that chromatid in anaphase? Repeat with tension correction on. `[ELO 7]`
+
+**E5.** Press **Reset**, tick **Microtubules search and capture by themselves** and let one division run at 10× or 30×. Then tick **Taxol** and press **Reset**. Then untick taxol and tick **Monastrol**. For each drug, describe what the spindle looks like, which kinetochores stay unattached, and how far the cell gets. Why do two drugs with different targets give the same arrest? `[ELO 6]`
+
+**E6. [VG]** *Predict first.* Press **Reset** (search off, nothing attached) and press **Force anaphase now (checkpoint off)** at once. This is what a cell without Mad2 does. Which chromatids go where, and what do the daughter cells look like? Then tick search and capture, untick tension correction and run three divisions (press **Reset** each time, 30×): how many daughters are normal? Use the results to explain why cancer cells with a weak checkpoint or weak error correction keep changing their chromosome number. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** About **6½–7 minutes** after the last attachment (6:40 if you attach everything at time 0). The **wait signal** (MCC) falls first, which lets **APC/C–Cdc20** rise; APC/C–Cdc20 then destroys **securin**, and anaphase starts when securin drops below 10 %: that is when separase is free to cut cohesin. Cyclin B falls at the same time. Anaphase A and B take about **3 minutes**, and the contractile ring then needs about **4 minutes** to close: two daughter cells, each with one copy of every chromosome, about **14 minutes** after the start. (In real human cells, nuclear envelope breakdown to anaphase takes about 20–40 minutes, because capture and correction take longer than in this toy cell.)
+
+**E2.** The cell **waits**: it stays in prometaphase with the wait signal at 100 %, APC/C–Cdc20 near 0 and securin near 100 %, for as long as you like (after 30 minutes the label says "arrested"). When you attach the last kinetochore, the wait signal falls and anaphase starts about **6½ minutes** later, the same delay as in E1. So **one** unattached kinetochore is enough to hold the whole cell. This was shown in real cells by **laser ablation** (Rieder and colleagues, 1995): destroying the last unattached kinetochore let the cell enter anaphase.
+
+**E3.** Both sisters of chromosome 1 attached to the same pole is a **syntelic** attachment. With **tension correction on**, the chromosome has no tension, and usually within about **1–3 minutes** the log says "Aurora B released a syntelic attachment": one kinetochore is unattached again, gets an orange ring, and the checkpoint box turns back to WAIT. You can now attach it to the right pole, and the cell divides normally. With **correction off**, the syntelic attachment stays; all 8 kinetochores are attached, so the **checkpoint is satisfied**, and anaphase starts about 6½ minutes later as in E1. Both copies of chromosome 1 go to the left pole: the left daughter has **two** copies of chromosome 1 and the right daughter **none**. Both daughters are **aneuploid**. The checkpoint only senses attachment; Aurora B turns a tension error into an unattached kinetochore that the checkpoint can see.
+
+**E4.** One kinetochore attached to both poles is **merotelic**. The checkpoint does **not** notice: every kinetochore is attached and the chromosome is under tension, so the box shows "Every kinetochore is attached" and anaphase starts about 6½ minutes later. In anaphase the merotelic chromatid is pulled both ways and **lags** in the middle of the spindle; it ends up in a **micronucleus** in one of the daughters (here the right one, which gets two copies of chromosome 2 while the left gets none). With **correction on**, Aurora B removes the wrong microtubule, but slowly (merotely is partly hidden by tension): in this model the error is fixed before anaphase in about **9 runs of 10**; occasionally it escapes. In real cells merotelic attachments are the main cause of **lagging chromosomes**.
+
+**E5.** With search and capture alone, the kinetochores attach one by one over several minutes, a few wrong attachments appear and are corrected (see the log), and the cell usually divides normally after about 15–30 minutes (it differs between runs). **Taxol**: the searching microtubules stop moving and no kinetochore is captured; all 8 stay unattached, the wait signal stays at 100 % and the cell is **arrested** in prometaphase. (If you add taxol after the chromosomes are attached, the attachments lose tension, Aurora B releases them, and the cell arrests too.) **Monastrol**: kinesin-5 is blocked, the two centrosomes never separate and the cell forms a **monopolar** spindle. Chromosomes attach to the single aster, but only monotelic or syntelic attachments are possible; Aurora B releases the syntelic ones, unattached kinetochores remain and the cell is **arrested**. Both drugs act on different targets (tubulin, a motor) but both prevent **bipolar, tension-bearing attachment**, so both keep unattached kinetochores and keep the **checkpoint** on.
+
+**E6.** With the checkpoint off, APC/C–Cdc20 is free: securin is destroyed and anaphase starts about **6½ minutes** later although **no chromosome is attached**. Unattached chromatids are not pulled anywhere: each stays where it was. Chromosomes 1 and 3 lie left of the middle, 2 and 4 to the right, so the left daughter gets **two copies of chromosomes 1 and 3 and none of 2 and 4**, and the right daughter the opposite. Because the chromatids are far from the poles, each ends up in its own **micronucleus**. Both daughters are badly **aneuploid**. With search and capture but **no error correction**, most divisions in the model give at least one abnormal daughter (about three in four; your three runs may differ), mostly through merotelic and syntelic attachments that the checkpoint cannot see. With correction on, fewer than one in ten divisions goes wrong. A cancer cell with a **weak checkpoint** (like Mad2 loss) or **weak error correction** (more merotelic attachments, for example from extra centrosomes) missegregates often, so each division can change its chromosome number again: this is **chromosomal instability**. It produces a varied population from which the cells that grow best are selected.
+:::

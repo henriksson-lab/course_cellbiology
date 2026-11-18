@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="390" fill="#ffffff"/>
+  <!-- axes: y = 40 (100 %) to 300 (0 %) -->
+  <g stroke="#e3e3e3" stroke-width="1">
+    <line x1="110" y1="40" x2="640" y2="40"/><line x1="110" y1="105" x2="640" y2="105"/>
+    <line x1="110" y1="170" x2="640" y2="170"/><line x1="110" y1="235" x2="640" y2="235"/>
+  </g>
+  <line x1="110" y1="300" x2="640" y2="300" stroke="#1b2a3a" stroke-width="2"/>
+  <line x1="110" y1="40" x2="110" y2="300" stroke="#1b2a3a" stroke-width="2"/>
+  <g font-size="15" fill="#1b2a3a" text-anchor="end">
+    <text x="102" y="45">100</text><text x="102" y="110">75</text><text x="102" y="175">50</text>
+    <text x="102" y="240">25</text><text x="102" y="305">0</text>
+  </g>
+  <text transform="translate(40,170) rotate(-90)" text-anchor="middle" font-size="16" fill="#1b2a3a">% of normal cells</text>
+
+  <!-- group 1: normal -->
+  <rect x="140" y="40" width="56" height="260" fill="#8a6a12"/>
+  <rect x="200" y="40" width="56" height="260" fill="#2e8b57"/>
+  <!-- group 2: receptor-negative -->
+  <rect x="320" y="294" width="56" height="6" fill="#8a6a12"/>
+  <rect x="380" y="295" width="56" height="5" fill="#2e8b57"/>
+  <!-- group 3: internalisation-defective -->
+  <rect x="500" y="53" width="56" height="247" fill="#8a6a12"/>
+  <rect x="560" y="290" width="56" height="10" fill="#2e8b57"/>
+
+  <g font-size="16" fill="#1b2a3a" text-anchor="middle">
+    <text x="198" y="324">normal</text>
+    <text x="378" y="324" font-weight="700" fill="#c92a2a">FH patient A</text>
+    <text x="378" y="344">no receptor</text>
+    <text x="558" y="324" font-weight="700" fill="#c92a2a">FH patient J.D.</text>
+    <text x="558" y="344">receptor binds,</text>
+    <text x="558" y="364">but is not taken in</text>
+  </g>
+
+  <!-- legend -->
+  <rect x="670" y="60" width="22" height="22" fill="#8a6a12"/>
+  <text x="702" y="72" font-size="16" fill="#1b2a3a">LDL bound to the</text>
+  <text x="702" y="92" font-size="16" fill="#1b2a3a">cell surface (4 °C)</text>
+  <rect x="670" y="120" width="22" height="22" fill="#2e8b57"/>
+  <text x="702" y="132" font-size="16" fill="#1b2a3a">LDL taken in and</text>
+  <text x="702" y="152" font-size="16" fill="#1b2a3a">degraded (37 °C)</text>
+  <text x="670" y="200" font-size="14" fill="#666666">Skin fibroblasts in culture,</text>
+  <text x="670" y="218" font-size="14" fill="#666666">LDL labelled with iodine-125.</text>
+  <text x="670" y="236" font-size="14" fill="#666666">Schematic values, after</text>
+  <text x="670" y="254" font-size="14" fill="#666666">Brown and Goldstein, 1970s.</text>
+</svg>

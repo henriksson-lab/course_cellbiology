@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" font-family="Helvetica, Arial, sans-serif">
+<!-- fig09: lipid peroxidation: a radical chain reaction along polyunsaturated tails in the bilayer -->
+<defs><marker id="ao" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#e8590c"/></marker><marker id="ar" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+<rect x="30" y="150" width="940" height="180" fill="#f6f0de" opacity="0.5"/>
+<line x1="55" y1="162" x2="55" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="65" y1="162" x2="65" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="60" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="55" y1="318" x2="55" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="65" y1="318" x2="65" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="60" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="99" y1="162" x2="99" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="109" y1="162" x2="109" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="104" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="99" y1="318" x2="99" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="109" y1="318" x2="109" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="104" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="143" y1="162" x2="143" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="153" y1="162" x2="153" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="148" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="143" y1="318" x2="143" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="153" y1="318" x2="153" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="148" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="187" y1="162" x2="187" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="197" y1="162" x2="197" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="192" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="187" y1="318" x2="187" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="197" y1="318" x2="197" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="192" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="231" y1="162" x2="231" y2="232" stroke="#8a6a12" stroke-width="2.5"/><polyline points="241,162 241,183 249,197 243,211 248,232" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="236" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="231" y1="318" x2="231" y2="248" stroke="#8a6a12" stroke-width="2.5"/><polyline points="241,318 241,297 249,283 243,269 248,248" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="236" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="275" y1="162" x2="275" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="285" y1="162" x2="285" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="280" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="275" y1="318" x2="275" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="285" y1="318" x2="285" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="280" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="319" y1="162" x2="319" y2="232" stroke="#8a6a12" stroke-width="2.5"/><polyline points="329,162 329,183 337,197 331,211 336,232" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="324" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="319" y1="318" x2="319" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="329" y1="318" x2="329" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="324" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="363" y1="162" x2="363" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="373" y1="162" x2="373" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="368" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="363" y1="318" x2="363" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="373" y1="318" x2="373" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="368" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="407" y1="162" x2="407" y2="232" stroke="#8a6a12" stroke-width="2.5"/><polyline points="417,162 417,183 425,197 419,211 424,232" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="412" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="407" y1="318" x2="407" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="417" y1="318" x2="417" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="412" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="451" y1="162" x2="451" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="461" y1="162" x2="461" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="456" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="451" y1="318" x2="451" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="461" y1="318" x2="461" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="456" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="495" y1="162" x2="495" y2="232" stroke="#8a6a12" stroke-width="2.5"/><polyline points="505,162 505,183 513,197 507,211 512,232" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="500" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="495" y1="318" x2="495" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="505" y1="318" x2="505" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="500" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="539" y1="162" x2="539" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="549" y1="162" x2="549" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="544" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="539" y1="318" x2="539" y2="248" stroke="#8a6a12" stroke-width="2.5"/><polyline points="549,318 549,297 557,283 551,269 556,248" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="544" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="583" y1="162" x2="583" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="593" y1="162" x2="593" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="588" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="583" y1="318" x2="583" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="593" y1="318" x2="593" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="588" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="627" y1="162" x2="627" y2="232" stroke="#8a6a12" stroke-width="2.5"/><polyline points="637,162 637,183 645,197 639,211 644,232" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="632" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="627" y1="318" x2="627" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="637" y1="318" x2="637" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="632" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="671" y1="162" x2="671" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="681" y1="162" x2="681" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="676" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="671" y1="318" x2="671" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="681" y1="318" x2="681" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="676" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="715" y1="162" x2="715" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="725" y1="162" x2="725" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="720" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="715" y1="318" x2="715" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="725" y1="318" x2="725" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="720" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="759" y1="162" x2="759" y2="232" stroke="#8a6a12" stroke-width="2.5"/><polyline points="769,162 769,183 777,197 771,211 776,232" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="764" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="759" y1="318" x2="759" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="769" y1="318" x2="769" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="764" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="803" y1="162" x2="803" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="813" y1="162" x2="813" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="808" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="803" y1="318" x2="803" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="813" y1="318" x2="813" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="808" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="847" y1="162" x2="847" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="857" y1="162" x2="857" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="852" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="847" y1="318" x2="847" y2="248" stroke="#8a6a12" stroke-width="2.5"/><polyline points="857,318 857,297 865,283 859,269 864,248" fill="none" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="852" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="891" y1="162" x2="891" y2="232" stroke="#8a6a12" stroke-width="2.5"/><line x1="901" y1="162" x2="901" y2="232" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="896" cy="150" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<line x1="891" y1="318" x2="891" y2="248" stroke="#8a6a12" stroke-width="2.5"/><line x1="901" y1="318" x2="901" y2="248" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="896" cy="330" r="12" fill="#f6f0de" stroke="#8a6a12" stroke-width="2.5"/>
+<circle cx="336" cy="200" r="9" fill="#e8590c"/>
+<circle cx="424" cy="200" r="9" fill="#e8590c"/>
+<circle cx="512" cy="200" r="9" fill="#e8590c"/>
+<path d="M344,190 C364,160 396,160 416,188" fill="none" stroke="#e8590c" stroke-width="2.5" marker-end="url(#ao)"/>
+<path d="M432,190 C452,160 484,160 504,188" fill="none" stroke="#e8590c" stroke-width="2.5" marker-end="url(#ao)"/>
+<path d="M520,190 C540,160 560,160 580,188" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#ao)"/>
+<text x="30" y="30" font-size="18" font-weight="bold" fill="#1b2a3a">A chain reaction in the membrane</text>
+<text x="30" y="56" font-size="16" fill="#1b2a3a">Fe<tspan font-size="11" dy="-6">2+</tspan><tspan dy="6"> turns a lipid peroxide into a radical (orange dot). The radical steals an H atom</tspan></text>
+<text x="30" y="80" font-size="16" fill="#1b2a3a">from the next polyunsaturated tail, which becomes a radical in turn …</text>
+<text x="256" y="122" font-size="16" font-weight="bold" fill="#1b2a3a">Fe<tspan font-size="11" dy="-6">2+</tspan></text>
+<line x1="298" y1="122" x2="330" y2="190" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+<text x="640" y="104" font-size="16" font-weight="bold" fill="#e8590c">ferrostatin-1, vitamin E:</text>
+<text x="640" y="124" font-size="16" fill="#e8590c">trap the radical</text>
+<line x1="636" y1="112" x2="600" y2="162" stroke="#e8590c" stroke-width="3"/><line x1="588" y1="155" x2="610" y2="168" stroke="#e8590c" stroke-width="5"/>
+<text x="30" y="372" font-size="16" fill="#1b2a3a">Kinked tails = polyunsaturated (several C=C): easy to attack. Straight tails = saturated: resistant.</text>
+<text x="30" y="398" font-size="16" fill="#1b2a3a">Oxidised tails bend and break the packing: the bilayer becomes leaky and finally ruptures.</text>
+</svg>

@@ -10,7 +10,9 @@ Suggested order, one block at a time. The real timetable is set elsewhere.
 | Protein handling and organelles (2) | protein-lifecycle, mitochondria, organelles-homeostasis | ✅ ⚠️ draft (stopped by safeguards; excluded from site) ✅ |
 | Cell signalling | signalling-principles, gpcr, kinase-signalling, fate-signalling | ✅ ✅ ✅ ✅ |
 | Cytoskeleton | actin, microtubules, myosin-if | ✅ ✅ ✅ |
-| Cell cycle and cell death | cell-cycle-control, mitosis, cell-numbers, apoptosis | |
-| Cell death and disease | regulated-necrosis, cancer, disease-casebook, drug-journey | |
+| Cell cycle and cell death | cell-cycle-control, mitosis, cell-numbers, apoptosis | ✅ ✅ ✅ ✅ |
+| Cell death and disease | regulated-necrosis, cancer, disease-casebook, drug-journey | ✅ ✅ ✅ ⚠️ not built (worker stopped by safeguards; no files) |
 
 Build each block with its demos (see `demos.md` section 5), in this order.
+
+Bioinformatics days: day 1 `bioinfo-protein-atlas/` ✅ (pilot); days 2–8 planned in `bioinformatics.md`.

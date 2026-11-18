@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="466" viewBox="0 0 1000 466" font-family="Helvetica, Arial, sans-serif">
+<!-- fig11: the three main checkpoints of the cell cycle (red stop signs) and the question each one asks. Schematic. -->
+<path d="M166.9,97.6 A165,165 0 0 1 293.1,97.6 L270.2,153.0 A105,105 0 0 0 189.8,153.0 Z" fill="#8fd19e" stroke="#ffffff" stroke-width="3"/>
+<text x="230.0" y="122.0" font-size="18" font-weight="bold" text-anchor="middle" fill="#2b8a3e">M</text>
+<path d="M293.1,97.6 A165,165 0 0 1 251.5,413.6 L243.7,354.1 A105,105 0 0 0 270.2,153.0 Z" fill="#f4c7c7" stroke="#ffffff" stroke-width="3"/>
+<text x="363.8" y="275.6" font-size="24" font-weight="bold" text-anchor="middle" fill="#c92a2a">G1</text>
+<path d="M251.5,413.6 A165,165 0 0 1 66.4,228.5 L125.9,236.3 A105,105 0 0 0 243.7,354.1 Z" fill="#c9e8cf" stroke="#ffffff" stroke-width="3"/>
+<text x="134.5" y="353.5" font-size="24" font-weight="bold" text-anchor="middle" fill="#2b8a3e">S</text>
+<path d="M66.4,228.5 A165,165 0 0 1 166.9,97.6 L189.8,153.0 A105,105 0 0 0 125.9,236.3 Z" fill="#b2dfbb" stroke="#ffffff" stroke-width="3"/>
+<text x="122.9" y="175.8" font-size="24" font-weight="bold" text-anchor="middle" fill="#2b8a3e">G2</text>
+<polygon points="296.9,446.5 286.1,457.4 270.8,457.4 259.9,446.5 259.9,431.2 270.8,420.4 286.1,420.4 296.9,431.2" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+<text x="278.4" y="445.9" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">3</text>
+<polygon points="170.3,79.0 159.4,89.8 144.1,89.8 133.3,79.0 133.3,63.7 144.1,52.9 159.4,52.9 170.3,63.7" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+<text x="151.8" y="78.4" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text>
+<polygon points="271.4,64.0 260.6,74.8 245.3,74.8 234.4,64.0 234.4,48.7 245.3,37.9 260.6,37.9 271.4,48.7" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+<text x="252.9" y="63.4" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">1</text>
+<text x="230" y="246" font-size="18" text-anchor="middle" fill="#1b2a3a">checkpoints:</text>
+<text x="230" y="270" font-size="18" text-anchor="middle" fill="#1b2a3a">brakes on CDKs</text>
+<text x="520" y="70" font-size="19" font-weight="bold" fill="#c92a2a">1. Metaphase → anaphase</text>
+<text x="520" y="95" font-size="17" fill="#1b2a3a">Are all chromosomes attached to the spindle?</text>
+<text x="520" y="118" font-size="17" fill="#1b2a3a">(the spindle checkpoint: mitosis lecture)</text>
+<text x="520" y="185" font-size="19" font-weight="bold" fill="#c92a2a">2. G2 → M</text>
+<text x="520" y="210" font-size="17" fill="#1b2a3a">Is all DNA copied? Is the DNA intact?</text>
+<text x="520" y="233" font-size="17" fill="#1b2a3a">Brake: inhibitory phosphate on CDK1</text>
+<text x="520" y="300" font-size="19" font-weight="bold" fill="#c92a2a">3. G1 → S (the decision)</text>
+<text x="520" y="325" font-size="17" fill="#1b2a3a">Mitogens present? DNA intact?</text>
+<text x="520" y="348" font-size="17" fill="#1b2a3a">Brake: no Rb phosphorylation; p21</text>
+<text x="520" y="420" font-size="16" fill="#555">Also: damaged DNA during S slows replication.</text>
+</svg>

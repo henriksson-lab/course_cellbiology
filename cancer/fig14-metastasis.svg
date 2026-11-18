@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1b2a3a"/></marker></defs>
+  <!-- blood vessel -->
+  <path d="M10 150 L1090 150 L1090 230 L10 230 Z" fill="#fbe9ec"/>
+  <line x1="10" y1="150" x2="1090" y2="150" stroke="#a8324a" stroke-width="4"/>
+  <line x1="10" y1="230" x2="1090" y2="230" stroke="#a8324a" stroke-width="4"/>
+  <text x="1080" y="222" font-size="15" text-anchor="end" fill="#a8324a">blood or lymph vessel</text>
+  <g fill="#e03131" opacity="0.5"><ellipse cx="330" cy="175" rx="9" ry="5"/><ellipse cx="420" cy="200" rx="9" ry="5"/><ellipse cx="560" cy="180" rx="9" ry="5"/><ellipse cx="690" cy="205" rx="9" ry="5"/><ellipse cx="760" cy="172" rx="9" ry="5"/></g>
+  <!-- 1 primary -->
+  <ellipse cx="110" cy="80" rx="85" ry="50" fill="#f3b3c8" stroke="#d6457a" stroke-width="2"/>
+  <text x="110" y="86" font-size="16" text-anchor="middle" font-weight="700">primary tumour</text>
+  <!-- invading cell -->
+  <path d="M190 110 C205 120 215 135 220 146" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <ellipse cx="236" cy="165" rx="18" ry="10" fill="#f3b3c8" stroke="#d6457a" stroke-width="2"/>
+  <!-- circulating cells -->
+  <circle cx="380" cy="190" r="13" fill="#f3b3c8" stroke="#d6457a" stroke-width="2"/>
+  <g><circle cx="510" cy="190" r="13" fill="#f3b3c8" stroke="#d6457a" stroke-width="2"/><circle cx="498" cy="178" r="5" fill="#c9ced6"/><circle cx="522" cy="202" r="5" fill="#c9ced6"/><circle cx="525" cy="180" r="5" fill="#c9ced6"/></g>
+  <g opacity="0.5"><circle cx="620" cy="195" r="13" fill="#fff" stroke="#adb5bd" stroke-width="2" stroke-dasharray="4 3"/></g>
+  <!-- arrest and exit -->
+  <circle cx="790" cy="215" r="13" fill="#f3b3c8" stroke="#d6457a" stroke-width="2"/>
+  <path d="M800 232 C808 248 815 258 824 268" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <!-- secondary site -->
+  <rect x="760" y="270" width="320" height="110" rx="14" fill="#f8e9ec" stroke="#a8324a" stroke-width="2"/>
+  <text x="920" y="296" font-size="16" text-anchor="middle">distant organ (liver, lung, bone, brain)</text>
+  <circle cx="830" cy="330" r="10" fill="#f3b3c8" stroke="#d6457a" stroke-width="2"/>
+  <text x="830" y="364" font-size="14" text-anchor="middle">dormant</text>
+  <g fill="#f3b3c8" stroke="#d6457a" stroke-width="2"><circle cx="960" cy="335" r="11"/><circle cx="980" cy="325" r="11"/><circle cx="978" cy="347" r="11"/><circle cx="998" cy="338" r="11"/><circle cx="960" cy="356" r="11"/></g>
+  <text x="1040" y="364" font-size="14" text-anchor="middle">grows</text>
+  <!-- step labels -->
+  <g font-size="16">
+    <text x="210" y="40" font-weight="700">1 invade</text><text x="210" y="60">EMT, MMPs, actin</text>
+    <text x="236" y="268" font-weight="700">2 enter the vessel</text><text x="236" y="288">(intravasation)</text>
+    <text x="380" y="122" font-weight="700">3 survive the trip</text><text x="380" y="142">shear, immune cells; platelets</text>
+    <text x="465" y="268">a platelet coat</text><text x="465" y="288">protects some cells</text>
+    <text x="600" y="268">most die</text>
+    <text x="720" y="122" font-weight="700">4 stick and leave</text><text x="720" y="142">(extravasation)</text>
+    <text x="400" y="330" font-weight="700">5 colonise: the hardest step</text>
+    <text x="400" y="352">new tissue, new neighbours, no support:</text>
+    <text x="400" y="374">far fewer than 1 in 1 000 cells succeed</text>
+  </g>
+  <text x="20" y="410" font-size="15" fill="#555">Cells reach the blood early and often; spread is limited by survival and by growth in the new organ.</text>
+</svg>

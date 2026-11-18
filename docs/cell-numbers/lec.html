@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-662ae1889177880cb371f83234c0a158.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
+
+  <meta name="author" content="Cell Biology (3MB001)">
+  <title>Cell Biology – Controlling cell numbers: growth, proliferation and senescence</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bf56578b9c06c165c166475cd19dbcd1.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Controlling cell numbers: growth, proliferation and senescence</h1>
+  <p class="subtitle">Cell cycle and cell death</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Cell Biology (3MB001) 
+</div>
+</div>
+</div>
+
+</section>
+<section id="about-this-lecture" class="slide level2 smaller">
+<h2>About this lecture</h2>
+<p>The cell-cycle control system decides <em>how</em> a cell divides. Today: <em>whether</em> it divides at all. A body keeps the right number of cells in every organ for decades, and loses that control in cancer.</p>
+<p>After this lecture you can:</p>
+<ul>
+<li>explain how <strong>mitogens</strong>, <strong>growth factors</strong> and <strong>survival factors</strong> set cell numbers, and how a mitogen signal reaches the <strong>restriction point</strong>;</li>
+<li>explain the difference between <strong>cell growth</strong> (mass, controlled by <strong>mTOR</strong>) and <strong>cell division</strong>;</li>
+<li>explain <strong>contact inhibition</strong> and what transformed cells do differently;</li>
+<li>explain <strong>replicative senescence</strong> and the <strong>Hayflick limit</strong> with <strong>telomere</strong> shortening and <strong>telomerase</strong>, and name other triggers of senescence;</li>
+<li>describe in outline how <strong>stem cells</strong> renew tissues and how <strong>cell lines</strong> escape the limits;</li>
+<li>explain why <strong>growth-factor receptors</strong>, <strong>telomerase</strong> and <strong>senescent cells</strong> are drug targets.</li>
+</ul>
+<p><strong>ELO 7</strong> (cell cycle and control of cell numbers), with disease examples for <strong>ELO 9</strong>.</p>
+<aside class="notes">
+<p>This lecture moves from the single cell to the population. In the lecture on the cell-cycle control system you saw the engine: cyclins, CDKs, Rb and E2F, and checkpoints that stop the cycle when something is wrong. Today we ask what tells that engine to start, and what stops it for good. We will look at three kinds of signal from outside: mitogens, which make a cell divide; growth factors, which make it bigger; and survival factors, which keep it alive. We will see that cells stop dividing when they touch their neighbours, and that normal human cells can only divide a limited number of times before they enter a permanent arrest called senescence. The reason is the ends of the chromosomes, the telomeres. Then we look briefly at stem cells and at how cancer cells and cell lines escape every one of these limits. The last slides show three medical applications. The lecture covers ELO 7, and the disease examples belong to ELO 9.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-question-how-does-a-body-count-its-cells" class="slide level2 smaller">
+<h2>The question: how does a body count its cells?</h2>
+<div class="columns">
+<div class="column" style="width:42%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img02-fibroblast-culture.jpg" class="quarto-figure quarto-figure-center" height="400"></p>
+</figure>
+</div>
+<p><em>Human skin fibroblasts in a culture dish, close to confluence (phase contrast).</em></p>
+</div><div class="column" style="width:58%;">
+<ul>
+<li>An adult has about <strong>30 million million (3 × 10¹³)</strong> cells and replaces about <strong>4 million cells every second</strong>, yet organs keep their size.</li>
+<li>Remove two thirds of a rat liver: the rest <strong>regrows to the original size</strong> within about two weeks, and then stops.</li>
+<li>Skin cells put in a dish <strong>divide until they cover the bottom</strong>, then stop. Split them into new dishes and they divide again, but only <strong>about 50 times</strong>. Then they stop for good.</li>
+</ul>
+<p><strong>What tells a cell to divide, and what makes it stop?</strong></p>
+</div></div>
+<aside class="notes">
+<p>Your body has roughly thirty million million cells, and every second it replaces millions of them, mostly blood cells and cells lining the gut. Still, your liver, kidneys and skin stay the same size year after year. The liver shows this best: if surgeons remove two thirds of a rat liver, the remaining cells start dividing, the liver grows back to its original size, and then the cells stop. So cells must sense how many of them there are. The same is seen in a culture dish. The picture shows fibroblasts, the cells of connective tissue, taken from a skin biopsy. Given nutrients and serum, they divide until they cover the bottom of the dish in a single layer, and then stop. If you loosen them with an enzyme and split them into new dishes, they divide again. But after about fifty doublings in total, they stop for good, even with fresh medium and plenty of space. This lecture explains both stops: the reversible one and the permanent one.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-kinds-of-signal-divide-grow-survive" class="slide level2 smaller">
+<h2>Three kinds of signal: divide, grow, survive</h2>
+
+<img data-src="fig03-three-signals.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li><strong>Mitogens</strong> make a cell pass the restriction point and divide. <strong>Growth factors</strong> make it build more protein and grow. <strong>Survival factors</strong> block apoptosis.</li>
+<li>Each is a <strong>local, limited supply</strong> from neighbouring cells; cells compete for it. Many real factors (PDGF, IGF-1) do more than one job.</li>
+<li>Without survival signals, most cells <strong>kill themselves</strong> (the apoptosis lecture): cell number is set by births <em>and</em> deaths.</li>
+</ul>
+<aside class="notes">
+<p>Animal cells do not divide on their own initiative. They need permission from other cells, given as extracellular signal proteins. We sort them by their effect. Mitogens, such as platelet-derived growth factor and epidermal growth factor, stimulate cell division: they push the cell past the decision point in G1 that we call the restriction point. Growth factors, such as insulin-like growth factor 1, stimulate cell growth, meaning the building of protein and other macromolecules, so the cell gets bigger. Survival factors suppress apoptosis, the built-in suicide program. The names overlap: in practice many factors do two or all three jobs, and the word growth factor is often used for all of them. An important point is that these signals are scarce and local. Cells compete for them, so a tissue with too many cells has too little signal per cell. And a cell that gets no survival signal dies. In developing nerves about half the neurons die this way. So the number of cells in a tissue is set by the balance of division and death, and you will see the death side in the apoptosis lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="recap-from-mitogen-to-the-restriction-point" class="slide level2 smaller">
+<h2>Recap: from mitogen to the restriction point</h2>
+
+<img data-src="fig04-mitogen-to-s.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li>A mitogen activates an <strong>RTK → Ras → ERK</strong> (the kinase cascades lecture). In the nucleus, ERK turns on <strong>Myc</strong> and other genes, and the cell makes <strong>cyclin D</strong>.</li>
+<li><strong>Cyclin D–CDK4/6</strong> phosphorylates <strong>Rb</strong>, Rb releases <strong>E2F</strong>, E2F turns on S-phase genes. Past this point the cell no longer needs the mitogen.</li>
+</ul>
+<aside class="notes">
+<p>This slide connects two earlier lectures. From the kinase cascades lecture: a mitogen binds a receptor tyrosine kinase, the receptor activates Ras, and Ras starts the RAF, MEK, ERK cascade. Active ERK enters the nucleus and switches on early genes, including the transcription factors Myc and AP-1, and these switch on the gene for cyclin D. From the cell-cycle control lecture: cyclin D binds CDK4 or CDK6, and this kinase phosphorylates the retinoblastoma protein, Rb. Phosphorylated Rb releases E2F, and E2F turns on the genes the cell needs for S phase, including cyclin E. Cyclin E with CDK2 phosphorylates Rb further, which releases more E2F: a positive feedback loop. Because of this loop, the decision is all or none, and once it is made, removing the mitogen no longer stops the cell from replicating its DNA. This is the restriction point, in late G1. Before it, a cell without mitogen leaves the cycle and rests in a state called G0. Most cells in your body are in G0 right now.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-serum-not-plasma-makes-cells-divide" class="slide level2 smaller">
+<h2>How do we know? Serum, not plasma, makes cells divide</h2>
+
+<img data-src="fig05-serum-plasma.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:74.0%"><ul>
+<li>Fibroblasts divide in <strong>serum</strong> (blood allowed to clot) but hardly in <strong>plasma</strong> (blood that did not clot). Clotting <strong>platelets release</strong> a mitogen, later purified as <strong>PDGF</strong> (1974–79).</li>
+<li><strong>Serum starvation</strong>: remove serum and cells stop in <strong>G0</strong>; add it back and they enter S phase about <strong>12–16 h</strong> later, all at the same time. Remove it again a few hours before S phase: the cells <strong>go on</strong> anyway. That point is the <strong>restriction point</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Cell culture taught us most of what we know about mitogens. Since the early days, cells were grown in medium with serum, the yellow liquid left after blood has clotted. In 1974 two groups noticed a strange result: fibroblasts divided in serum but hardly at all in plasma, which is the same liquid taken from blood prevented from clotting. The difference is what platelets release when blood clots. The factor they release was purified and named platelet-derived growth factor, PDGF. It makes sense physiologically: at a wound, blood clots, platelets release PDGF, and nearby fibroblasts and smooth muscle cells divide to repair the damage. The same experiment gives a simple tool. If you remove serum, cells finish their current cycle and stop in G0. Add serum back and all of them start together, which synchronises the culture. Arthur Pardee used this to show that cells need the mitogen only until a point in late G1. If serum is removed after that point, the cells still enter S phase. That point is the restriction point.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="growth-is-not-division-mtor-controls-cell-size" class="slide level2 smaller">
+<h2>Growth is not division: mTOR controls cell size</h2>
+
+<img data-src="fig06-growth-vs-division.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><ul>
+<li><strong>mTORC1</strong> (the kinase cascades lecture) adds up growth factors, amino acids and energy, and switches on <strong>protein synthesis</strong>. The drug <strong>rapamycin</strong> blocks it: cells grow less and are smaller.</li>
+<li>Normally a cell <strong>doubles its mass</strong> before it divides. Growth and division are controlled separately and then coupled.</li>
+</ul>
+<aside class="notes">
+<p>A cell that divides without growing gets smaller each time. That actually happens in the early embryo, where a large egg is cut into many small cells. A cell that grows without dividing gets bigger, as in muscle fibres and neurons, which grow for years. Most dividing cells do both, and they couple them, so that daughter cells keep the same size. Growth is controlled mainly by the kinase complex mTORC1, which you met in the kinase cascades lecture at the end of the PI3K–Akt pathway. mTORC1 works like a gate with several locks: it is fully active only when growth factors signal through Akt, amino acids are available, energy is high and there is enough oxygen. Active mTORC1 increases the making of ribosomes and proteins and lipids, and it switches off autophagy. The drug rapamycin, from a soil bacterium found on Easter Island, inhibits mTORC1. Cells treated with rapamycin grow more slowly and are smaller. Rapamycin and related drugs are used to prevent transplant rejection, where they stop immune cells from growing and dividing, and in some cancers.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="contact-inhibition-cells-stop-when-they-touch" class="slide level2 smaller">
+<h2>Contact inhibition: cells stop when they touch</h2>
+
+<img data-src="fig07-contact-inhibition.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><ul>
+<li>Normal cells divide until they form <strong>one confluent layer</strong>, then rest in <strong>G0</strong>. Cell contacts (through <strong>cadherins</strong>) and crowding keep the growth regulator <strong>YAP</strong> out of the nucleus (the <strong>Hippo</strong> pathway), and less growth factor is left per cell.</li>
+<li><strong>Transformed</strong> cells (for example with an active <strong>RAS</strong> oncogene) ignore contact and <strong>pile up</strong> into a visible <strong>focus</strong>: the classic test for an oncogene.</li>
+</ul>
+<aside class="notes">
+<p>In a dish, normal fibroblasts or epithelial cells divide until they touch each other on all sides and then stop. This is called contact inhibition of proliferation, and it explains the reversible stop at confluence. The cells are not damaged: if you scrape a stripe of cells away, the cells at the edge of the scratch divide and fill the gap, then stop again. Two things contribute. First, cell contacts, for example through cadherins, and the cell’s own spreading and shape are sensed by a pathway called Hippo. When cells are crowded and round, Hippo kinases phosphorylate the transcription co-activator YAP and keep it in the cytosol; when cells are sparse and spread out, YAP enters the nucleus and turns on growth genes. Second, more cells share the same growth factors. We keep the details light; tissue organisation comes in the course on organs and tissues. Transformed cells, for example cells with an active RAS oncogene, lose contact inhibition. They keep dividing and pile up into dense clumps called foci. Counting foci after putting tumour DNA into cells was how the first human oncogene, mutant RAS, was found.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="replicative-senescence-the-hayflick-limit" class="slide level2 smaller">
+<h2>Replicative senescence: the Hayflick limit</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p><img data-src="fig08-hayflick-curve.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:44%;">
+<ul>
+<li><strong>Hayflick and Moorhead (1961)</strong>: human fetal fibroblasts divide about <strong>40–60 times</strong> in culture, then stop for good. This is <strong>replicative senescence</strong>.</li>
+<li>It counts <strong>divisions, not time</strong>: frozen cells, thawed years later, “remember” how many doublings they have left.</li>
+<li>Cells from people with a fast-ageing disease (Werner syndrome) have <strong>fewer</strong> doublings left. Mouse cells behave differently (long telomeres, telomerase on).</li>
+<li><strong>Try it:</strong> <a href="../cell-numbers/questions.html#explore">growth, senescence and telomeres</a>.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>For the first half of the twentieth century, people believed that cells in culture could live forever if you treated them well. In 1961 Leonard Hayflick and Paul Moorhead showed that this was wrong for normal human cells. Fetal lung fibroblasts grew well for months, were split again and again, and then slowed down and stopped after about forty to sixty population doublings. A population doubling means the number of cells has doubled once. The graph shows the typical culture: a short phase one when the culture is started, a long phase two of steady division, and phase three when division slows and stops. The cells do not die. They stay alive for months as large, flat cells that never divide again. This is replicative senescence, and the number is called the Hayflick limit. Hayflick froze cells at different doublings and thawed them later: they continued from where they had stopped, so the cells count divisions, not days. Earlier reports of immortal cultures turned out to be contaminated with cancer cells. You can watch a culture reach its limit in the demo.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-a-senescent-cell-looks-like" class="slide level2 smaller">
+<h2>What a senescent cell looks like</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img09-sa-beta-gal.jpg" class="quarto-figure quarto-figure-center" height="470"></p>
+</figure>
+</div>
+<p><span style="font-size:0.7em">Mouse fibroblasts stained for SA-β-gal. Top: early passage. Bottom: senescent (blue). Scale 100 µm.</span></p>
+</div><div class="column" style="width:66%;">
+<ul>
+<li><strong>Permanent</strong> arrest in G1: no mitogen can restart it. Not the same as resting in G0.</li>
+<li><strong>Large and flat</strong>, often with one big nucleus; full of lysosomes.</li>
+<li><strong>Markers</strong> used in labs: <strong>SA-β-gal</strong> (senescence-associated β-galactosidase, blue stain at pH 6), high <strong>p16</strong> and <strong>p21</strong> (CDK inhibitors), no proliferation marker (<strong>Ki-67</strong>).</li>
+<li>Still <strong>alive and active</strong>: resists apoptosis, and secretes signals.</li>
+<li>No marker is perfect: labs combine several.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>How do you recognise a senescent cell? Under the microscope it is much larger and flatter than a young cell of the same type, as in the lower image. The most used stain is for senescence-associated beta-galactosidase. This lysosomal enzyme is present in all cells, but senescent cells have so many lysosomes that its activity can be detected at pH 6, where normal cells show almost nothing. The product of the reaction is blue. Senescent cells also contain high levels of the CDK inhibitors p16 and p21, which you met in the cell-cycle control lecture, and they lack markers of dividing cells such as Ki-67. Note the difference from quiescence. A quiescent cell in G0 can re-enter the cycle when it gets mitogens or space. A senescent cell cannot, even with fresh serum and an empty dish. But it is not dead: it is metabolically very active, it resists apoptosis, and it secretes many proteins. The cells in the picture are mouse cells, which become senescent in culture mainly from oxygen stress rather than short telomeres, but they look the same. None of the markers is perfect on its own, so research papers combine several, and this matters when people try to find senescent cells in old tissues.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-chromosomes-get-shorter-the-end-replication-problem" class="slide level2 smaller">
+<h2>Why chromosomes get shorter: the end-replication problem</h2>
+
+<img data-src="fig10-end-replication.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li>DNA polymerase needs a <strong>primer</strong> and works only <strong>5′ → 3′</strong>. On the lagging strand, the last RNA primer at the very end leaves a <strong>gap</strong>.</li>
+<li>So every replication <strong>loses some DNA at the ends</strong>. Human chromosome ends are <strong>telomeres</strong>: thousands of <strong>TTAGGG</strong> repeats, about <strong>10–15 kb</strong> at birth. Dividing body cells lose about <strong>50–200 bp per division</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Why should a cell count its divisions? The answer lies in a weakness of DNA replication that you know from the molecular biology course. DNA polymerase cannot start a new strand; it extends a short RNA primer, and only in the five-prime to three-prime direction. On the leading strand this is no problem. On the lagging strand, the DNA is made as short Okazaki fragments, each starting from its own primer. At the very end of a linear chromosome, the last primer sits at or near the tip. When it is removed, there is nothing upstream to extend, so a short stretch of the new strand is never made. In addition, enzymes trim the ends to make a single-stranded three-prime overhang. The net effect is that each daughter chromosome is a little shorter than its parent. Bacteria escape this with circular chromosomes. Our chromosomes have telomeres at their ends: long runs of the six-base repeat TTAGGG, about ten to fifteen thousand bases in a newborn. Telomeres contain no genes, so losing fifty to two hundred bases per division costs nothing at first. They are a buffer, but a finite one.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="telomeres-protect-the-ends-until-they-are-too-short" class="slide level2 smaller">
+<h2>Telomeres protect the ends, until they are too short</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="img11-telomere-caps.jpg" style="width:100.0%"></p>
+<p><span style="font-size:0.7em">Human chromosomes (grey); telomeres stained by FISH (white dots at the ends).</span></p>
+</div><div class="column" style="width:60%;">
+<p><img data-src="fig11-short-telomere-signal.svg" style="width:100.0%"></p>
+</div></div>
+<ul>
+<li>A protein cap (<strong>shelterin</strong>) and a loop hide the end. A <strong>very short</strong> telomere loses its cap and looks like a <strong>broken chromosome</strong>: the <strong>p53–p21</strong> brake stops the cell for good.</li>
+</ul>
+<aside class="notes">
+<p>Telomeres are not bare DNA. A complex of six proteins, called shelterin, binds the repeats, and the single-stranded overhang tucks back into the double-stranded part to form a loop. The image on the left shows human chromosomes with their telomeres made visible by fluorescence in situ hybridisation, FISH: a labelled probe of TTAGGG repeats binds to every chromosome end. This capping solves a dangerous problem: a cell has a sensitive alarm for broken DNA, and a free chromosome end looks exactly like a break. With a long telomere and its shelterin cap, the alarm stays silent. When repeated divisions have made one or a few telomeres very short, there is not enough room for the cap. The exposed end activates the DNA-damage response: the kinase ATM, then p53, then the CDK inhibitor p21. p21 blocks the CDKs, Rb stays unphosphorylated and E2F stays off. This is the same DNA-damage checkpoint you met in the cell-cycle control lecture, but here the damage cannot be repaired, so the arrest is permanent. It is the shortest telomeres, not the average, that trigger senescence.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="telomerase-adds-the-repeats-back" class="slide level2 smaller">
+<h2>Telomerase adds the repeats back</h2>
+
+<img data-src="fig12-telomerase.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><ul>
+<li><strong>Telomerase</strong> = a reverse transcriptase (<strong>TERT</strong>) carrying its own <strong>RNA template</strong>. It extends the 3′ end by new TTAGGG repeats. Found in ciliates by <strong>Greider and Blackburn</strong> (1985); Nobel Prize 2009 with Szostak.</li>
+<li>Active in <strong>germ cells</strong> and early embryos, low in <strong>stem cells</strong>, <strong>off in most body cells</strong>, <strong>on in about 85–90 % of cancers</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Some cells cannot afford a limit: germ cells must pass on full-length chromosomes generation after generation. They use telomerase. Telomerase is an enzyme made of a protein and an RNA. The protein, TERT, is a reverse transcriptase: it makes DNA from an RNA template, like the enzyme of HIV. The template is part of the enzyme’s own RNA. A short stretch of the template pairs with the end of the three-prime overhang. TERT then copies the rest of the template, adding the bases GGTTAG. The enzyme moves along and repeats, adding many TTAGGG units. Afterwards, primase and DNA polymerase fill in the complementary strand. Carol Greider and Elizabeth Blackburn discovered the enzyme in the single-celled ciliate Tetrahymena, which has tens of thousands of tiny chromosomes and therefore many ends. They shared the 2009 Nobel Prize with Jack Szostak. In humans, telomerase is active in germ cells and the early embryo, present at a low level in some stem cells and activated immune cells, and practically absent from most body cells, such as fibroblasts. That is why fibroblasts count down. About eighty-five to ninety percent of cancers switch it back on.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-add-telomerase-remove-the-limit" class="slide level2 smaller">
+<h2>How do we know? Add telomerase, remove the limit</h2>
+
+<img data-src="fig13-tert-experiment.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li><strong>Bodnar et al.&nbsp;1998</strong>: human cells given the <strong>TERT</strong> gene kept long telomeres and divided far beyond their limit; control cells became senescent. Shortening telomeres is <strong>the cause</strong>, not just a marker.</li>
+<li>The immortal cells still showed <strong>contact inhibition</strong>, needed <strong>serum</strong> and did not form tumours.</li>
+</ul>
+<aside class="notes">
+<p>In the 1990s, telomere shortening and senescence went together, but correlation is not cause. Maybe both were caused by something else. The test, published in 1998 by Andrea Bodnar and colleagues, was to add the missing enzyme. Telomerase RNA is present in most cells, but the protein TERT is not. The team put the TERT gene into normal human retinal cells and skin fibroblasts. The cells with TERT made active telomerase, their telomeres grew longer instead of shorter, and they continued dividing long after their control cultures had become senescent; later work showed that they could divide indefinitely. The control experiment matters: cells given the same vector without TERT became senescent as usual. So telomere shortening is sufficient to set the limit, and telomerase is sufficient to remove it, at least in these cells. Equally important, the immortal cells kept normal chromosomes, still stopped at confluence, still needed serum and did not form tumours in mice. Immortality and transformation are two separate steps. Cell lines made this way, called hTERT lines, are now widely used as normal-like cells in research.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="senescence-is-also-a-stress-response" class="slide level2 smaller">
+<h2>Senescence is also a stress response</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig14-senescence-triggers.svg" class="quarto-figure quarto-figure-center" style="width:68.0%"></p>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="width:64%;">
+<ul>
+<li>An <strong>oncogene</strong> in a normal cell triggers <strong>oncogene-induced senescence</strong>: a barrier to cancer.</li>
+<li><strong>SASP</strong>: senescent cells secrete inflammatory signals that recruit immune cells and help repair, but in old tissues cause harm.</li>
+</ul>
+</div><div class="column" style="width:36%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img14-nevus-histology.jpg" class="quarto-figure quarto-figure-center" height="150"></p>
+</figure>
+</div>
+<p><span style="font-size:0.7em">A benign mole (melanocytic nevus). Inset: nests of melanocytes. Many moles carry <strong>BRAF V600E</strong>, yet stop growing.</span></p>
+</div></div>
+<aside class="notes">
+<p>Short telomeres are not the only trigger. Any strong, lasting stress can put a cell into senescence: DNA damage from radiation or chemotherapy, oxidative stress, and, surprisingly, oncogenes. In 1997 Manuel Serrano and colleagues put an active RAS oncogene into normal human fibroblasts, expecting them to become cancer cells. Instead they became senescent. The oncogene drives the cell into S phase too hard, replication goes wrong, and the DNA-damage response and the CDK inhibitor p16 stop the cell. This is called oncogene-induced senescence, and it is one reason why one mutation is rarely enough for cancer. A real example sits on your skin. Moles are benign clusters of pigment cells, and many carry the same BRAF V600E mutation found in melanoma, which you met in the kinase cascades lecture. Yet most moles grow for a while and then stop for life, with features of senescence; this interpretation is still debated in detail. Senescent cells also secrete a mix of cytokines and proteases called the senescence-associated secretory phenotype, SASP. In wound healing this is useful; when senescent cells accumulate with age, it drives chronic inflammation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="stem-cells-renew-tissues-in-brief" class="slide level2 smaller">
+<h2>Stem cells renew tissues (in brief)</h2>
+<div class="columns">
+<div class="column" style="width:46%;">
+<p><img data-src="fig15-stem-cell-hierarchy.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:54%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img15-colon-crypts.jpg" class="quarto-figure quarto-figure-center" height="230"></p>
+</figure>
+</div>
+<p><span style="font-size:0.7em">Normal colon, crypts cut across (H&amp;E). Stem cells sit at the bottom of each crypt.</span></p>
+<ul>
+<li><strong>Self-renewal</strong>: on average one daughter stays a stem cell, the other differentiates. <strong>Transit-amplifying</strong> cells make the numbers.</li>
+<li>The <strong>niche</strong> (Wnt in gut crypts; the fate signalling lecture) keeps stem cells as stem cells.</li>
+<li>Renewal times: gut lining <strong>3–5 days</strong>, epidermis <strong>about a month</strong>, red blood cells <strong>120 days</strong>; most neurons <strong>never</strong>.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>In the body, cell numbers are kept up by stem cells. A stem cell can divide to make another stem cell, called self-renewal, and cells that go on to differentiate. The gut lining is the fastest example. At the bottom of each crypt sit about a dozen stem cells, kept in that state by Wnt and other signals from neighbouring cells, their niche. You met Wnt in the fate signalling lecture. Their daughters become transit-amplifying cells, which divide fast a few times while moving up the crypt, and then stop dividing and differentiate into absorptive and secretory cells. After about four to five days they reach the top and are shed into the gut. So the whole lining is replaced every few days, and cell number is a flow: birth at the bottom, death at the top. The skin works in a similar way, more slowly. Tissues such as the liver have no dedicated stem cells but can make mature cells divide again after damage, while most neurons and heart muscle cells are never replaced. Tissues and stem-cell physiology come back in detail in the course on organs and tissues, so we keep this brief.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-cell-lines-escape-the-limits" class="slide level2 smaller">
+<h2>How cell lines escape the limits</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig16-escape.svg" class="quarto-figure quarto-figure-center" style="width:78.0%"></p>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li>Losing <strong>p53 and Rb</strong> lets cells pass senescence, but telomeres keep shrinking until <strong>crisis</strong>. Only a cell that turns on <strong>telomerase</strong> (or <strong>ALT</strong>, copying between telomeres) becomes <strong>immortal</strong>.</li>
+<li><strong>HeLa</strong> (1951): the virus <strong>HPV18</strong> makes <strong>E6</strong>, which destroys <strong>p53</strong>, and <strong>E7</strong>, which blocks <strong>Rb</strong>; telomerase is on.</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img16-hela.jpg" class="quarto-figure quarto-figure-center" height="150"></p>
+</figure>
+</div>
+<p><span style="font-size:0.7em">HeLa cells: microtubules (green), Golgi (orange), DNA (cyan).</span></p>
+</div></div>
+<aside class="notes">
+<p>Now we can see how a normal cell becomes an immortal cell line, or a cancer cell. Senescence depends on two brakes, p53 with p21, and p16 with Rb. If both are lost, by mutation or by a viral protein, the cell ignores short telomeres and keeps dividing. But that is not the end: telomeres continue to shrink, chromosome ends lose their caps, ends fuse to each other, and chromosomes break at the next mitosis. This stage is called crisis, and most cells die. Very rarely, roughly one cell in ten million, a cell turns on telomerase, or uses a recombination mechanism called alternative lengthening of telomeres, ALT. That cell stabilises its telomeres and founds an immortal line, but it carries the chromosome damage of crisis with it. HeLa, from the tour of the cell and the methods lecture, came from the cervical cancer of Henrietta Lacks in 1951. Her tumour was caused by human papillomavirus 18. The viral protein E6 sends p53 to the proteasome, E7 binds Rb and releases E2F, and E6 also helps switch on telomerase. HeLa cells have divided in labs for over seventy years.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-growth-factor-receptors-as-cancer-drug-targets" class="slide level2 smaller">
+<h2>Why it matters: growth-factor receptors as cancer drug targets</h2>
+
+<img data-src="fig17-receptor-drugs.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:76.0%"><ul>
+<li>A cancer cell that makes its own mitogen signal, through an <strong>amplified</strong> or <strong>mutated receptor</strong>, divides without asking. Blocking the receptor puts the brake back, <strong>if</strong> the receptor is the cause.</li>
+<li><strong>Cetuximab</strong> (anti-EGFR antibody) helps in colorectal cancer only when <strong>RAS is not mutated</strong>: a mutation below the receptor makes the drug useless. More in <strong>Sjukdomslära</strong> and drug development.</li>
+</ul>
+<aside class="notes">
+<p>Go back to the recap slide on the mitogen pathway. A normal cell divides only when its neighbours provide a mitogen. Many cancer cells have found a way around this: they make too much receptor, as in HER2-amplified breast cancer from the kinase cascades lecture, they carry a receptor that is switched on by mutation, or they make their own mitogen. Blocking the receptor can then stop the cancer cells. There are two kinds of drug. Antibodies, such as cetuximab against EGFR, bind the outside of the receptor and stop the ligand from activating it. Small molecules, such as erlotinib, enter the cell and block the ATP site of the kinase. The figure also shows why the position in the pathway matters. In about four in ten colorectal cancers, KRAS itself is mutated. Then RAS is active without any signal from the receptor, and blocking the receptor upstream has no effect. Large trials showed exactly this, so today the tumour is tested for RAS mutations before an anti-EGFR antibody is given. This logic, find the broken step and hit it or below it, returns in the courses on disease mechanisms and on clinical trials.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-telomerase-and-senescent-cells-as-targets" class="slide level2 smaller">
+<h2>Why it matters: telomerase and senescent cells as targets</h2>
+
+<img data-src="fig18-senolytics.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:72.0%"><div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Telomerase in cancer</strong>: <strong>TERT promoter mutations</strong> are common in melanoma and glioblastoma. <strong>Imetelstat</strong>, an oligonucleotide that blocks the template, was approved in 2024 for a bone-marrow cancer (myelodysplastic syndrome); main side effect: low blood counts.</li>
+<li><strong>Too little telomerase</strong>: inherited mutations (<strong>dyskeratosis congenita</strong>) give bone-marrow failure.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><strong>Senolytics</strong> kill senescent cells, for example by blocking <strong>BCL-xL</strong> (the apoptosis lecture). Removing senescent cells made <strong>mice</strong> live longer and healthier.</li>
+<li><strong>Caveats</strong>: in humans only small trials, no proven benefit yet; senescence also <strong>protects</strong> against cancer and helps wound healing; navitoclax <strong>lowers platelets</strong>.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Two last applications, with honest caveats. First, telomerase. Most cancers need it, and about eighty-five to ninety percent have it on, often through mutations in the promoter of the TERT gene, which are among the most common mutations in melanoma, glioblastoma and bladder cancer. Imetelstat is a modified oligonucleotide that binds the RNA template of telomerase. It was approved in the USA in 2024 for myelodysplastic syndrome, a bone-marrow cancer. Because telomeres take many divisions to shorten, telomerase inhibitors act slowly, and normal blood stem cells also need some telomerase, so blood counts fall. The opposite problem exists: people born with defective telomerase have short telomeres, and their fastest-renewing tissues fail, especially bone marrow. Second, senescent cells. In mice, genetically removing senescent cells delayed age-related diseases and extended lifespan. Drugs that do this are called senolytics. Senescent cells survive by relying on anti-apoptotic proteins such as BCL-xL, so blocking them, with navitoclax or with dasatinib plus quercetin, kills senescent cells first. But human trials are small and early, and one larger trial in knee arthritis failed. Senescence also protects us, and navitoclax lowers platelets. Mice are not people.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<ol type="1">
+<li>Cell number = <strong>divisions − deaths</strong>. Cells divide only with <strong>mitogens</strong> (which act up to the <strong>restriction point</strong>: Ras–ERK → cyclin D–CDK4/6 → Rb–P → E2F), grow with <strong>growth factors</strong> (<strong>mTORC1</strong>), and survive with <strong>survival factors</strong>.</li>
+<li><strong>Contact inhibition</strong> stops normal cells reversibly at confluence (G0); <strong>transformed</strong> cells pile up.</li>
+<li>Normal human cells stop permanently after <strong>about 50 doublings</strong> (<strong>Hayflick limit</strong>, <strong>replicative senescence</strong>): <strong>telomeres</strong> shorten at each division until an uncapped end triggers <strong>p53–p21</strong>. <strong>Telomerase</strong> prevents this.</li>
+<li>Senescence is also a <strong>stress response</strong> (DNA damage, <strong>oncogenes</strong>): a barrier to cancer, but senescent cells secrete inflammatory <strong>SASP</strong>. <strong>Stem cells</strong> in niches renew tissues.</li>
+<li><strong>Cell lines and cancers</strong> escape by losing <strong>p53/Rb</strong> and switching on <strong>telomerase</strong>. Drugs target <strong>growth-factor receptors</strong>, <strong>telomerase</strong> and, experimentally, <strong>senescent cells</strong>.</li>
+</ol>
+<p><em>Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch.&nbsp;17 and 22.</em></p>
+<p><a href="../credits.html#cell-numbers" style="font-size:0.7em">Image credits</a></p>
+<aside class="notes">
+<p>Five take-home points. First, cell numbers come from a balance: cells divide only when mitogens push them past the restriction point, they grow under mTOR control, and they die unless survival factors protect them. Second, contact inhibition is a reversible stop: crowded normal cells rest in G0, while transformed cells keep dividing and pile up. Third, normal human cells have a limited number of divisions. Each division shortens the telomeres, because DNA polymerase cannot finish the end of a linear chromosome, and when a telomere is too short to be capped, it is read as DNA damage and p53 and p21 stop the cell for good. Telomerase, active in germ cells and most cancers, adds the repeats back. Fourth, senescence also follows stress and oncogene activation. It is a barrier against cancer, but senescent cells secrete inflammatory signals, which may contribute to ageing. In tissues, stem cells in their niches supply new cells. Fifth, cancers and cell lines escape by losing the p53 and Rb brakes and turning on telomerase, which makes these pathways drug targets. Next: the other side of the balance, apoptosis.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'visible',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

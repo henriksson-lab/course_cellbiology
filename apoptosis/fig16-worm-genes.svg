@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+  <marker id="t" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M5,0 L5,10" stroke="#1b2a3a" stroke-width="3"/></marker></defs>
+  <text x="10" y="58" font-size="18" font-weight="700">Worm</text>
+  <text x="10" y="178" font-size="18" font-weight="700">Human</text>
+  <g font-weight="700" text-anchor="middle">
+    <rect x="110" y="30" width="130" height="44" rx="22" fill="#d6336c"/><text x="175" y="58" fill="#fff">EGL-1</text>
+    <rect x="320" y="30" width="130" height="44" rx="22" fill="#2a78d6"/><text x="385" y="58" fill="#fff">CED-9</text>
+    <rect x="690" y="30" width="130" height="44" rx="22" fill="#3b5bab"/><text x="755" y="58" fill="#fff">CED-4</text>
+    <rect x="890" y="30" width="130" height="44" rx="22" fill="#c92a2a"/><text x="955" y="58" fill="#fff">CED-3</text>
+    <rect x="110" y="150" width="130" height="44" rx="22" fill="#d6336c"/><text x="175" y="178" fill="#fff">BH3-only</text>
+    <rect x="320" y="150" width="130" height="44" rx="22" fill="#2a78d6"/><text x="385" y="178" fill="#fff">BCL-2</text>
+    <rect x="505" y="150" width="140" height="44" rx="22" fill="#7b3fbf"/><text x="575" y="171" fill="#fff" font-size="14">BAX/BAK, MOMP,</text><text x="575" y="188" fill="#fff" font-size="14">cytochrome c</text>
+    <rect x="690" y="150" width="130" height="44" rx="22" fill="#3b5bab"/><text x="755" y="178" fill="#fff">APAF1</text>
+    <rect x="890" y="150" width="130" height="44" rx="22" fill="#c92a2a"/><text x="955" y="178" fill="#fff">caspase-9</text>
+  </g>
+  <g stroke="#1b2a3a" stroke-width="3">
+    <line x1="244" y1="52" x2="312" y2="52" marker-end="url(#t)"/><line x1="454" y1="52" x2="682" y2="52" marker-end="url(#t)"/><line x1="824" y1="52" x2="882" y2="52" marker-end="url(#a)"/>
+    <line x1="244" y1="172" x2="312" y2="172" marker-end="url(#t)"/><line x1="454" y1="172" x2="497" y2="172" marker-end="url(#t)"/><line x1="649" y1="172" x2="684" y2="172" marker-end="url(#a)"/><line x1="824" y1="172" x2="882" y2="172" marker-end="url(#a)"/>
+  </g>
+  <g stroke="#adb5bd" stroke-width="2" stroke-dasharray="4 4">
+    <line x1="175" y1="78" x2="175" y2="146"/><line x1="385" y1="78" x2="385" y2="146"/><line x1="755" y1="78" x2="755" y2="146"/><line x1="955" y1="78" x2="955" y2="146"/>
+  </g>
+  <text x="1060" y="58" font-size="16" text-anchor="middle">death</text>
+  <text x="1060" y="178" font-size="16" text-anchor="middle">death</text>
+  <line x1="1022" y1="52" x2="1036" y2="52" stroke="#1b2a3a" stroke-width="2"/><line x1="1022" y1="172" x2="1036" y2="172" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="110" y="240" font-size="16">ced-3 or ced-4 broken: all 131 cells survive (the worm is fine).</text>
+  <text x="110" y="264" font-size="16">ced-9 broken: many cells that should live die; the embryo dies.</text>
+  <text x="110" y="288" font-size="16">Human BCL-2 put into a ced-9 mutant worm can do CED-9's job.</text>
+  <text x="570" y="116" font-size="15" text-anchor="middle" fill="#6b7280">dashed lines: same protein family</text>
+</svg>

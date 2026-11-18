@@ -1,0 +1,104 @@
+---
+title: "Quiz: cancer as a disease of cell biology"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Cancer as a disease of cell biology*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Sort these genes into oncogenes and tumour suppressors: RAS, TP53, HER2, RB1, BCR-ABL, APC. `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Ask for each: does the normal protein push the cell to grow (accelerator), or does it stop, repair or kill (brake)?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Oncogenes** (gain of function): **RAS**, **HER2**, **BCR-ABL**. **Tumour suppressors** (loss of function): **TP53**, **RB1**, **APC**. APC is part of the complex that destroys β-catenin, so losing it switches Wnt signalling on: a lost brake, even though the result is more growth signal.
+:::
+
+---
+
+**Q2.** Why is one mutated copy enough for an oncogene, while a tumour suppressor needs both copies to be lost? `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does the one remaining normal copy do in each case?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+An activated oncogene makes a protein that is **active all the time**; the normal protein from the other copy cannot stop it, so one copy acts **dominantly** in the cell. A tumour suppressor protein is a brake: **one working copy still makes enough brake** protein, so the cell behaves normally until the **second copy is also lost** (two hits). The effect is **recessive** in the cell.
+:::
+
+---
+
+**Q3.** Children with inherited retinoblastoma often get tumours in both eyes, and earlier than children with sporadic retinoblastoma. Explain why with the two-hit idea. `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+How many hits does each retinal cell already carry from birth in the two groups?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+In inherited cases, **every cell** already carries one mutant RB1 copy from the fertilised egg. Only **one more** somatic hit is needed, and with millions of dividing retinal cells this is likely to happen **several times**, in both eyes, early. In sporadic cases **both** copies must be lost by chance **in the same cell**, which is rare: usually one tumour in one eye, later.
+:::
+
+---
+
+**Q4.** A tumour has lost RB1. Will a CDK4/6 inhibitor such as palbociclib stop its cells in G1? Explain. `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does cyclin D–CDK4/6 phosphorylate to let the cell enter S phase?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**No.** Cyclin D–CDK4/6 drives the cell into S phase by **phosphorylating Rb**, which then releases E2F. Without Rb, E2F is **already free**, so blocking CDK4/6 has nothing to act on: the gate is gone, not just open. CDK4/6 inhibitors are used only in tumours that still have Rb.
+:::
+
+---
+
+**Q5.** Name two ways a cancer cell can escape the limit on the number of divisions or the trigger for apoptosis, and the lecture topic each belongs to. `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+One concerns the ends of chromosomes, the other the outer membrane of mitochondria.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(1) **Telomerase switched on**: telomeres no longer shorten with each division, so the cell avoids **senescence** and crisis (controlling cell numbers). (2) **Too much BCL-2** (or loss of BAX/BAK or of p53): the mitochondria stay closed, no cytochrome c is released and no caspases start, so damaged cells **do not die by apoptosis** (the apoptosis lecture).
+:::
+
+---
+
+**Q6.** What is the difference between carcinoma *in situ* and an invasive carcinoma, and what cellular changes are needed to go from one to the other? `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Look for the thin sheet of matrix under every epithelium.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+In carcinoma *in situ* the abnormal cells stay **above the basement membrane**; they cannot reach vessels and surgery cures. An invasive carcinoma has **crossed the basement membrane** into the stroma. This needs **EMT** (E-cadherin lost, polarity lost, a loose crawling cell), **proteases** such as MMPs that cut the basement membrane and matrix, and **migration** with actin protrusions and myosin.
+:::
+
+---
+
+**Q7.** A melanoma with BRAF V600E shrinks quickly on a BRAF inhibitor, then grows back after eight months. Give the evolutionary explanation in three steps. `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Variation, selection, and what was already in the tumour at the start.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(1) **Variation**: the tumour of about 10⁹ cells is a mixture of subclones; a few cells already carried a change that makes them resistant (for example a mutation that reactivates the pathway downstream or a bypass route). (2) **Selection**: the drug kills the sensitive cells, so the tumour shrinks, but the resistant cells survive. (3) **Expansion**: with the sensitive cells gone, the resistant clone has space and grows back: relapse. Combining a BRAF and a MEK inhibitor makes it harder for a single change to rescue the cell.
+:::
+
+---
+
+**Q8.** Why do PD-1 antibodies tend to work better in tumours with many mutations (for example melanoma, or tumours that have lost mismatch repair)? `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What do T cells recognise on a tumour cell?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+T cells recognise **peptides on MHC class I**. Mutant proteins give **new (foreign-looking) peptides**. More mutations give more such peptides, so it is more likely that some T cells **already recognise the tumour** but are held back by PD-1/PD-L1. Blocking PD-1 releases these T cells; if no T cell recognises the tumour, releasing the brake does little.
+:::

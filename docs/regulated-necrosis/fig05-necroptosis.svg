@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" font-family="Helvetica, Arial, sans-serif">
+<!-- fig05: necroptosis, the backup when caspase-8 is blocked -->
+<defs><marker id="ar" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+<!-- top membrane with TNF receptor -->
+<rect x="20" y="40" width="960" height="22" fill="#f6f0de"/>
+<line x1="20" y1="40" x2="980" y2="40" stroke="#8a6a12" stroke-width="3"/><line x1="20" y1="62" x2="980" y2="62" stroke="#8a6a12" stroke-width="3"/>
+<rect x="472" y="22" width="16" height="58" rx="5" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/>
+<rect x="494" y="22" width="16" height="58" rx="5" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="491" cy="12" r="10" fill="#1b2a3a"/>
+<text x="520" y="20" font-size="16" fill="#1b2a3a">TNF on its receptor</text>
+<line x1="491" y1="84" x2="491" y2="112" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="381" y="118" width="220" height="44" rx="8" fill="#ffffff" stroke="#1b2a3a" stroke-width="2"/>
+<text x="491" y="146" font-size="18" text-anchor="middle" fill="#1b2a3a">RIPK1 + caspase-8</text>
+<!-- left branch -->
+<path d="M420,164 L250,214" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="40" y="200" font-size="17" font-weight="bold" fill="#1b2a3a">Caspase-8 active</text>
+<rect x="40" y="220" width="330" height="70" rx="8" fill="#ffffff" stroke="#1b2a3a" stroke-width="2"/>
+<text x="55" y="248" font-size="17" fill="#1b2a3a">cuts RIPK1 and RIPK3:</text>
+<text x="55" y="274" font-size="17" fill="#1b2a3a">necroptosis is switched off</text>
+<line x1="205" y1="292" x2="205" y2="330" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="205" y="356" font-size="17" text-anchor="middle" fill="#1b2a3a">apoptosis (or survival)</text>
+<!-- right branch -->
+<path d="M565,164 L640,210" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="665" y="200" font-size="17" font-weight="bold" fill="#1b2a3a">Caspase-8 blocked</text>
+<text x="620" y="96" font-size="16" fill="#e8590c" font-weight="bold">z-VAD or a viral</text>
+<text x="620" y="116" font-size="16" fill="#e8590c" font-weight="bold">caspase inhibitor</text>
+<path d="M650,124 L610,140" fill="none" stroke="#e8590c" stroke-width="3"/>
+<line x1="606" y1="126" x2="612" y2="154" stroke="#e8590c" stroke-width="5"/>
+<!-- necrosome fibre -->
+<g stroke="#1b2a3a" stroke-width="1.5">
+<rect x="640" y="222" width="34" height="26" rx="6" fill="#d9e7f7"/><rect x="676" y="222" width="34" height="26" rx="6" fill="#f2c9a0"/>
+<rect x="712" y="222" width="34" height="26" rx="6" fill="#d9e7f7"/><rect x="748" y="222" width="34" height="26" rx="6" fill="#f2c9a0"/>
+<rect x="784" y="222" width="34" height="26" rx="6" fill="#d9e7f7"/><rect x="820" y="222" width="34" height="26" rx="6" fill="#f2c9a0"/>
+</g>
+<text x="640" y="272" font-size="16" fill="#1b2a3a">RIPK1–RIPK3 “necrosome” (a fibre)</text>
+<rect x="870" y="222" width="22" height="26" fill="none"/>
+<text x="872" y="241" font-size="15" fill="#e8590c" font-weight="bold">← Nec-1</text>
+<line x1="745" y1="280" x2="745" y2="318" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="760" y="305" font-size="16" fill="#1b2a3a">RIPK3 phosphorylates MLKL</text>
+<!-- bottom membrane with MLKL pores -->
+<rect x="560" y="370" width="420" height="22" fill="#f6f0de"/>
+<line x1="560" y1="370" x2="660" y2="370" stroke="#8a6a12" stroke-width="3"/><line x1="560" y1="392" x2="660" y2="392" stroke="#8a6a12" stroke-width="3"/>
+<line x1="700" y1="370" x2="800" y2="370" stroke="#8a6a12" stroke-width="3"/><line x1="700" y1="392" x2="800" y2="392" stroke="#8a6a12" stroke-width="3"/>
+<line x1="840" y1="370" x2="980" y2="370" stroke="#8a6a12" stroke-width="3"/><line x1="840" y1="392" x2="980" y2="392" stroke="#8a6a12" stroke-width="3"/>
+<g fill="#e8590c" stroke="#1b2a3a" stroke-width="1.2">
+<rect x="662" y="340" width="12" height="58" rx="4"/><rect x="686" y="340" width="12" height="58" rx="4"/>
+<rect x="802" y="340" width="12" height="58" rx="4"/><rect x="826" y="340" width="12" height="58" rx="4"/>
+</g>
+<text x="852" y="362" font-size="15" fill="#1b2a3a">plasma membrane</text>
+<text x="770" y="420" font-size="17" text-anchor="middle" fill="#1b2a3a">P-MLKL oligomers break the membrane:</text>
+<text x="770" y="444" font-size="17" text-anchor="middle" fill="#c92a2a" font-weight="bold">cell swells and bursts (inflammatory)</text>
+</svg>

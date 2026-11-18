@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-662ae1889177880cb371f83234c0a158.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
+
+  <meta name="author" content="Cell Biology (3MB001)">
+  <title>Cell Biology – Beyond apoptosis: necroptosis, pyroptosis, ferroptosis</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bf56578b9c06c165c166475cd19dbcd1.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Beyond apoptosis: necroptosis, pyroptosis, ferroptosis</h1>
+  <p class="subtitle">Cell death and disease</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Cell Biology (3MB001) 
+</div>
+</div>
+</div>
+
+</section>
+<section id="about-this-lecture" class="slide level2 smaller">
+<h2>About this lecture</h2>
+<p>Apoptosis is not the only way a cell can kill itself. Cells also have programmes that make them <strong>swell and burst</strong>. These deaths are messy on purpose: they <strong>alarm the immune system</strong>.</p>
+<p>After this lecture you can:</p>
+<ul>
+<li>tell <strong>accidental</strong> necrosis from <strong>regulated</strong> necrosis;</li>
+<li>explain <strong>necroptosis</strong> (RIPK1, RIPK3, MLKL) and why it is a <strong>backup</strong> when caspase-8 is blocked;</li>
+<li>explain <strong>pyroptosis</strong> (inflammasome, caspase-1, <strong>gasdermin D pores</strong>, IL-1β);</li>
+<li>explain <strong>ferroptosis</strong> (iron, <strong>lipid peroxidation</strong>, GPX4 and glutathione);</li>
+<li>describe how <strong>autophagy</strong> relates to cell death, and why lytic death causes <strong>inflammation</strong>;</li>
+<li>use <strong>markers and inhibitors</strong> to decide which death a cell died, and fill in a <strong>comparison table</strong> of all death types.</li>
+</ul>
+<p><strong>ELO 8</strong> (cell death), with disease examples for <strong>ELO 9</strong>.</p>
+<aside class="notes">
+<p>This lecture opens the block on cell death and disease. In the apoptosis lecture you met the tidy, quiet death: the cell shrinks, packs itself into small pieces and is eaten, and the body hardly notices. Today we meet three other programmes: necroptosis, pyroptosis and ferroptosis. They have one thing in common: the plasma membrane breaks and the contents of the cell spill out. For a long time this kind of death, called necrosis, was thought to be pure accident. We now know that a cell can choose it, with dedicated proteins, and that it has a purpose: it raises an alarm. We will also look at autophagy, which is mostly a survival process, and we will practise the experimental logic that tells the death types apart: which marker appears and which inhibitor rescues the cell. The lecture ends with a comparison table that you should be able to fill in at the exam, and with two medical stories: stroke and heart attack, and new cancer and anti-inflammatory drugs. This is ELO 8.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-question-block-the-caspases-and-the-cells-still-die" class="slide level2 smaller">
+<h2>The question: block the caspases, and the cells still die</h2>
+
+<img data-src="fig02-morphology.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:74.0%"><ul>
+<li>Caspases carry out apoptosis. So a <strong>caspase inhibitor</strong> should save cells that are told to die. Often it does not: given <strong>TNF + a caspase inhibitor</strong>, many cells die <em>faster</em>, and they <strong>swell and burst</strong> instead of shrinking.</li>
+<li><strong>Is this an accident, or a second programme? And why would a cell want a messy death?</strong></li>
+</ul>
+<aside class="notes">
+<p>Look at the two rows of the figure. In apoptosis, the top row, the cell shrinks, the chromatin condenses, the cell forms blebs and breaks into membrane-wrapped apoptotic bodies, which a phagocyte eats. The membrane stays intact, so nothing leaks out. In necrosis, the bottom row, the cell and its organelles swell, the plasma membrane bursts and the contents spill into the tissue. Immune cells arrive: inflammation. Now the puzzle. If caspases carry out apoptosis, then blocking them should save a cell. In the 1990s researchers treated cells with the signal protein TNF together with a broad caspase inhibitor, expecting the cells to survive. Many cell types died anyway, and faster, with the swollen look of necrosis. So necrosis is not always an accident; there must be a second, caspase-independent programme. Today we will see that there are several, each with its own proteins, markers and inhibitors, and that a messy death can be useful to the body.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="recap-apoptosis-in-one-slide" class="slide level2 smaller">
+<h2><em>Recap:</em> apoptosis in one slide</h2>
+
+<img data-src="fig03-apoptosis-recap.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li>Two entry routes, one executioner: <strong>caspase-3 and -7</strong> cut hundreds of proteins.</li>
+<li>The membrane stays intact; phosphatidylserine on the outside says <strong>“eat me”</strong>. No inflammation.</li>
+<li><strong>Caspase-8</strong> is important today: it is also the <strong>brake on necroptosis</strong>.</li>
+</ul>
+<aside class="notes">
+<p>A short recap of the apoptosis lecture, because today’s programmes branch from the same points. In the extrinsic route, a death ligand such as TNF or Fas ligand binds a death receptor on the cell surface, and the receptor activates caspase-8. In the intrinsic route, stress or DNA damage tips the balance in the BCL-2 family, the outer membrane of the mitochondria is permeabilised, which we call MOMP, cytochrome c escapes into the cytosol and builds the apoptosome, which activates caspase-9. Caspase-8 can also cut a protein called BID, which links the two routes. Both routes converge on the executioner caspases 3 and 7. These cut hundreds of proteins and dismantle the cell in an orderly way. The plasma membrane stays intact, and the lipid phosphatidylserine flips to the outer leaflet as an eat-me signal. Keep caspase-8 in mind: it has a second job, which we meet in two slides. It cuts and switches off the proteins of necroptosis.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="accidental-or-regulated-necrosis" class="slide level2 smaller">
+<h2>Accidental or regulated necrosis?</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img04-kidney-infarct.jpg" style="width:100.0%"></p>
+<p><em>Kidney infarct (H&amp;E). The tubules and glomeruli keep their outlines, but most nuclei are gone: the cells died by necrosis when the blood supply stopped.</em></p>
+</div><div class="column" style="width:55%;">
+<ul>
+<li><strong>Accidental necrosis:</strong> the damage is too strong for any programme: heat, freezing, a detergent, crushing, total loss of ATP. <strong>No protein decides.</strong> No inhibitor or knockout can stop it.</li>
+<li><strong>Regulated necrosis:</strong> the cell <strong>uses its own proteins</strong> to break its membrane. So a <strong>drug or a gene knockout can stop it</strong>. That is the test.</li>
+<li>Three regulated forms in this lecture: <strong>necroptosis, pyroptosis, ferroptosis</strong>. All end with a <strong>broken plasma membrane</strong>.</li>
+<li>In real tissue, such as an infarct, accidental and regulated death happen <strong>side by side</strong>.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Necrosis is an old word from pathology. Pathologists use it for dead tissue, like this kidney infarct, where an artery was blocked. The cells keep their outlines but lose their nuclei. For a long time all necrosis was thought to be accidental: the cell is simply destroyed by heat, freezing, a detergent, a crush, or a total lack of ATP. In accidental necrosis no protein makes a decision, and so no drug and no gene knockout can prevent it. The definition of regulated necrosis follows from this. If the cell uses its own proteins to break its membrane, then removing one of those proteins, by a drug or by a knockout, must stop the death. That is the key experimental test, and it is the logic of the cell methods lecture: you show that a protein is necessary by removing it. In this lecture we look at the three best understood forms: necroptosis, pyroptosis and ferroptosis. In a real infarct, as you will see at the end, accidental and regulated death happen side by side.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="necroptosis-the-backup-when-caspase-8-is-blocked" class="slide level2 smaller">
+<h2>Necroptosis: the backup when caspase-8 is blocked</h2>
+
+<img data-src="fig05-necroptosis.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:72.0%"><ul>
+<li>When <strong>caspase-8 works</strong>, it cuts <strong>RIPK1</strong> and <strong>RIPK3</strong> (two kinases): no necroptosis.</li>
+<li>When caspase-8 is <strong>blocked</strong> (z-VAD, or a <strong>viral caspase inhibitor</strong>), RIPK1 and RIPK3 bind each other and form a fibre. RIPK3 phosphorylates <strong>MLKL</strong>, which moves to the plasma membrane and <strong>breaks it</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Here is the mechanism of necroptosis. TNF binds its receptor, and a complex forms that contains the kinase RIPK1 and caspase-8. Usually TNF does not kill at all: it switches on survival genes through NF-kappa-B. If the cell does start to die, caspase-8 decides how. Active caspase-8 cuts RIPK1 and RIPK3 and so keeps necroptosis switched off; the cell dies by apoptosis, or survives. If caspase-8 is blocked, by the drug z-VAD or by a caspase inhibitor made by a virus, RIPK1 and RIPK3 are no longer cut. They bind each other through a short motif and stack into a fibre, a bit like an amyloid, called the necrosome. Inside it RIPK3 becomes active and phosphorylates the protein MLKL. Phosphorylated MLKL forms small oligomers that move to the plasma membrane and break it. The cell swells and bursts. So necroptosis is a backup: if a virus blocks apoptosis, the cell can still die. The drug necrostatin-1 blocks the kinase activity of RIPK1.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-inhibitors-and-knockouts" class="slide level2 smaller">
+<h2>How do we know? Inhibitors and knockouts</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p><img data-src="fig06-inhibitor-logic.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:42%;">
+<ul>
+<li><strong>Inhibitor:</strong> <strong>necrostatin-1</strong> was found in 2005 in a screen of thousands of small molecules for ones that block TNF + z-VAD death. Later shown to block the <strong>RIPK1 kinase</strong>.</li>
+<li><strong>Knockout:</strong> cells or mice without <strong>RIPK3</strong> or <strong>MLKL</strong> do not die by necroptosis: these proteins are <strong>necessary</strong>.</li>
+<li><strong>Marker:</strong> an antibody against <strong>phospho-MLKL</strong> shows that the pathway is <strong>active</strong> in a cell or tissue.</li>
+<li>A good argument uses <strong>all three</strong>, plus a control without the stimulus.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>How was necroptosis proved to be a programme and not an accident? With the tools from the cell methods lecture. First, chemistry: in 2005 Junying Yuan’s lab screened thousands of small molecules for ones that keep cells alive after TNF plus z-VAD. They found necrostatin-1, and later showed that it inhibits the kinase activity of RIPK1. A specific inhibitor that saves the cells is strong evidence for a programme. Second, genetics: cells and mice that lack RIPK3 or MLKL do not die by necroptosis. That shows these proteins are necessary. In the figure, notice that TNF alone kills few cells, TNF plus z-VAD kills most of them, and adding necrostatin-1 or removing RIPK3 or MLKL rescues them. The numbers are illustrative, but the pattern is the classic one. Third, a marker: phosphorylated MLKL can be detected with an antibody, by western blot or in tissue sections. A marker shows that the pathway is active, but not that it causes the death. For that you need the inhibitor or knockout. Inhibitors are never perfectly specific, so the knockout is the stronger evidence.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="pyroptosis-the-inflammasome-and-caspase-1" class="slide level2 smaller">
+<h2>Pyroptosis: the inflammasome and caspase-1</h2>
+
+<img data-src="fig07-pyroptosis.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:74.0%"><ul>
+<li>Mainly in <strong>immune cells</strong> such as macrophages. Needs <strong>two signals</strong>: priming (makes pro-IL-1β and NLRP3) and a <strong>danger signal</strong> (toxin, K⁺ loss, crystals).</li>
+<li><strong>NLRP3 + ASC + pro-caspase-1</strong> assemble into the <strong>inflammasome</strong>, which activates <strong>caspase-1</strong>: an <strong>inflammatory caspase</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Pyroptosis means fiery death, because it is so inflammatory. It happens mainly in immune cells such as macrophages, and it needs two signals. Signal one is priming: for example, LPS from the bacterial cell wall binds the receptor TLR4, and through NF-kappa-B the cell makes the inactive precursor pro-interleukin-1-beta and the sensor protein NLRP3. Signal two is danger. Many different things activate NLRP3: bacterial toxins that make holes, such as nigericin, crystals such as uric acid in gout, or damaged lysosomes. A common step seems to be loss of potassium from the cell; this links to the ion channel lecture. Activated NLRP3 recruits the adaptor ASC, which recruits pro-caspase-1. This large complex is the inflammasome. In it, caspase-1 activates itself. Caspase-1 is an inflammatory caspase: it does not drive apoptosis, it cuts two targets, which we see next. The drug MCC950 blocks NLRP3, and is a standard research tool.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="gasdermin-d-a-pore-that-kills-and-lets-il-1β-out" class="slide level2 smaller">
+<h2>Gasdermin D: a pore that kills and lets IL-1β out</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="img08-gasdermin-pore.jpg" style="width:100.0%"></p>
+<p><em>Gasdermin D pore seen from above (cryo-EM, PDB 6VFE): about 33 subunits in a ring, inner diameter about 20 nm.</em></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li>Caspase-1 cuts <strong>gasdermin D</strong>. The cut releases the <strong>N-terminal half</strong> from its own inhibitory C-terminal half.</li>
+<li>The N-terminal half binds the <strong>inner leaflet</strong> (it prefers acidic lipids such as PIP₂) and assembles into large <strong>pores</strong>.</li>
+<li><strong>IL-1β</strong> (made active by caspase-1) leaves <strong>through the pores</strong>. Water rushes in, the cell <strong>swells and bursts</strong>.</li>
+<li>Discovered in <strong>2015</strong>: gasdermin D is the long-sought executioner of pyroptosis.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>The executioner of pyroptosis was found in 2015 by two groups at the same time: it is gasdermin D. In the resting cell the protein folds back on itself: its C-terminal half covers and inhibits its N-terminal half. Caspase-1 cuts the linker between the halves. The free N-terminal half binds lipids of the inner leaflet of the plasma membrane, especially acidic lipids such as PIP2, and many copies assemble into a ring. The image shows the pore structure solved by cryo-electron microscopy: about thirty-three subunits and an inner opening of about twenty nanometres. Compare that with an ion channel from the ion channel lecture, which is less than one nanometre wide. Through such a pore, small proteins can leave the cell. Caspase-1 also cuts pro-IL-1-beta into active interleukin-1-beta, a powerful inflammatory signal, and it leaves through the gasdermin pores. Water and ions flow in, the cell swells, and a membrane protein called NINJ1 helps the final rupture. Other gasdermins, cut by other caspases, can do the same in other cells.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ferroptosis-iron-and-lipid-peroxidation" class="slide level2 smaller">
+<h2>Ferroptosis: iron and lipid peroxidation</h2>
+
+<img data-src="fig09-lipid-peroxidation.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li><strong>Polyunsaturated</strong> fatty acid tails (several C=C double bonds) have weak C–H bonds next to the double bonds: radicals attack them easily.</li>
+<li><strong>Iron</strong> (Fe²⁺) turns lipid peroxides into new radicals: a <strong>chain reaction</strong> through the membrane. Named <strong>ferroptosis</strong> in 2012 (Latin <em>ferrum</em>, iron).</li>
+</ul>
+<aside class="notes">
+<p>Ferroptosis is completely different: no caspases, no kinases, no pore-forming protein. The membrane is destroyed by chemistry. Recall from the membrane structure lecture that phospholipid tails can be saturated, straight, or unsaturated, with kinks at the double bonds. Tails with several double bonds, called polyunsaturated, such as arachidonic acid, have carbon–hydrogen bonds next to the double bonds that are weak. A radical can remove that hydrogen atom, and the tail becomes a lipid radical. It reacts with oxygen and becomes a peroxyl radical, which takes a hydrogen from the next polyunsaturated tail. So one radical starts a chain reaction that spreads sideways through the bilayer. Free iron, Fe2+, makes things worse, because it splits lipid peroxides into new radicals. Oxidised tails change shape and disturb the packing of the bilayer; the membrane becomes leaky and finally ruptures. The name ferroptosis, from the Latin for iron, was given in 2012. Ferrostatin-1, and vitamin E, trap the radicals and stop the chain.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-guard-gpx4-and-glutathione" class="slide level2 smaller">
+<h2>The guard: GPX4 and glutathione</h2>
+<div class="columns">
+<div class="column" style="width:72%;">
+<p><img data-src="fig10-gpx4.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:28%;">
+<p><img data-src="img10-gpx4-structure.jpg" style="width:100.0%"></p>
+<p><em>GPX4 (PDB 2GS3), a small selenium enzyme.</em></p>
+</div></div>
+<ul>
+<li><strong>GPX4</strong> reduces lipid peroxides (L–OOH) to harmless alcohols (L–OH), using <strong>glutathione</strong>. Glutathione needs <strong>cysteine</strong>, imported as cystine by <strong>system xc⁻</strong>.</li>
+<li>Ferroptosis = the <strong>guard fails</strong>: block GPX4 (<strong>RSL3</strong>), starve it of cystine (<strong>erastin</strong>), or add iron.</li>
+</ul>
+<aside class="notes">
+<p>Every cell makes some lipid peroxides all the time, from normal metabolism. Why don’t all cells die by ferroptosis? Because of a guard: the enzyme glutathione peroxidase 4, GPX4. It is the only enzyme that can reduce peroxides while they are still inside membrane phospholipids, turning a dangerous lipid hydroperoxide into a harmless lipid alcohol. GPX4 contains selenium in its active site, as selenocysteine. It uses two molecules of reduced glutathione, GSH, for each peroxide. Glutathione is a small tripeptide, and its supply is limited by cysteine. Many cells get cysteine by importing its oxidised dimer, cystine, through the antiporter system xc-minus, which exchanges it for glutamate. So there are several ways to cause ferroptosis: block GPX4 directly with RSL3; block cystine import with erastin, so that glutathione runs out; or raise free iron. An iron chelator such as deferoxamine protects, as does ferrostatin-1. Cells also have backup guards, such as the enzyme FSP1 with coenzyme Q10, but GPX4 is the main one.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="autophagy-and-cell-death-mostly-a-survival-process" class="slide level2 smaller">
+<h2>Autophagy and cell death: mostly a survival process</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img11-autophagosome.jpg" class="quarto-figure quarto-figure-center" height="430"></p>
+</figure>
+</div>
+<p><em>Autophagosome (EM): a double membrane wrapping a piece of ER.</em></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li><em>From the endocytosis and lysosome lecture:</em> autophagy wraps cytoplasm in a <strong>double membrane</strong> and delivers it to <strong>lysosomes</strong>.</li>
+<li>Dying cells are often <strong>full of autophagosomes</strong>. But in most cases autophagy is <strong>trying to save</strong> the cell: block it (ATG gene knockout) and the cell dies <strong>sooner</strong>, not later.</li>
+<li>So “autophagic cell death” mostly means death <strong>with</strong> autophagy, not <strong>by</strong> autophagy. True cases are rare (e.g.&nbsp;fly salivary glands in development).</li>
+<li>Autophagy can <strong>feed</strong> another death: digesting <strong>ferritin</strong> releases iron and favours <strong>ferroptosis</strong>.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>You met autophagy in the lecture on endocytosis and lysosomes: the cell wraps a piece of its own cytoplasm, here a piece of ER, in a double membrane, the autophagosome, and sends it to the lysosome for digestion. In starvation, autophagy recycles building blocks; it also removes damaged mitochondria before they release cytochrome c or activate the inflammasome. Dying cells are often packed with autophagosomes, and this led to the idea of autophagic cell death. Here we must be careful, and use the logic of necessary and sufficient from the cell methods lecture. If autophagy killed these cells, then knocking out an essential autophagy gene should save them. In most experiments the opposite happens: without autophagy the cells die sooner. So autophagy was a failed rescue attempt: death with autophagy, not by autophagy. There are a few true cases, for example when the salivary glands of the fruit fly are removed during metamorphosis. Autophagy can also help another death: when it digests the iron-storage protein ferritin, free iron is released, which favours ferroptosis.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="death-as-a-signal-damps-and-inflammation" class="slide level2 smaller">
+<h2>Death as a signal: DAMPs and inflammation</h2>
+
+<img data-src="fig12-damps.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li>Molecules that should <strong>never be outside a cell</strong> act as alarms: <strong>DAMPs</strong> (damage-associated molecular patterns), e.g.&nbsp;HMGB1, ATP, IL-1α, DNA, uric acid.</li>
+<li>Immune cells sense them with the <strong>same kinds of receptors</strong> they use for microbes (e.g.&nbsp;Toll-like receptors). <strong>Apoptosis hides</strong> them; <strong>lytic death releases</strong> them.</li>
+</ul>
+<aside class="notes">
+<p>Why does the mode of death matter? Because the dying cell sends a message. A healthy cell contains many molecules that are normally never found outside cells: the nuclear protein HMGB1, large amounts of ATP, DNA, the cytokine IL-1 alpha, uric acid. If they appear in the tissue fluid, something has gone badly wrong. These molecules are called DAMPs, damage-associated molecular patterns. Immune cells sense them with receptors of the same families they use to sense bacteria and viruses, for example Toll-like receptors, or the ATP-gated channel P2X7. They then make inflammatory cytokines and call neutrophils. In apoptosis, the contents stay inside membranes, the cell shows only the eat-me signal phosphatidylserine, and the phagocyte that eats it releases calming signals such as TGF-beta and IL-10. So apoptosis is silent. Necroptosis, pyroptosis, ferroptosis and accidental necrosis all break the membrane and release DAMPs, and pyroptosis adds IL-1-beta. These deaths are loud. You meet these receptors again in the immunology course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-the-mode-of-death-matters-to-the-body" class="slide level2 smaller">
+<h2>Why the mode of death matters to the body</h2>
+
+<img data-src="fig13-death-defence.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><ul>
+<li>Several programmes = <strong>defence in depth</strong> against pathogens, which evolve ways to block each one.</li>
+<li>The price: when lytic death runs <strong>too much</strong> or in the <strong>wrong place</strong>, the inflammation itself causes disease.</li>
+</ul>
+<aside class="notes">
+<p>Why would evolution keep several ways to die? Think of the cell as being at war with pathogens. Many viruses need the infected cell to stay alive while they multiply, so they make proteins that block apoptosis, for example caspase-8 inhibitors from poxviruses. Necroptosis is the answer: blocking caspase-8 releases RIPK3, and the infected cell dies anyway, loudly, so immune cells are alerted. Some viruses in turn have evolved RIPK3 blockers: an arms race. Bacteria that hide inside macrophages are detected by inflammasomes, and pyroptosis destroys their hiding place. The bacteria stay trapped in the remains of the dead cell, and IL-1-beta calls neutrophils, which eat them. The price is the right-hand panel. When these programmes run too much, or in the wrong place, the inflammation causes disease: sepsis, gout and other NLRP3-driven diseases, some inflammatory bowel and skin diseases with too much necroptosis, and the damage after a stroke or a heart attack. Disease mechanisms like these return in Sjukdomslära.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-telling-the-death-types-apart" class="slide level2 smaller">
+<h2>How do we know? Telling the death types apart</h2>
+
+<img data-src="fig14-lab-logic.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:72.0%"><ul>
+<li><strong>Annexin V / PI</strong> by flow cytometry asks: was the membrane intact while phosphatidylserine came out? Then <strong>one marker and one rescue</strong> decide. <strong>Try it:</strong> <a href="../regulated-necrosis/questions.html#explore">which death is it?</a></li>
+</ul>
+<aside class="notes">
+<p>In the lab you often see cells dying and have to decide how. This flow chart is the logic. Step one: annexin V and propidium iodide, PI, measured by flow cytometry over time, as in the cell methods lecture. Annexin V binds phosphatidylserine, PI enters only cells with a broken membrane. An apoptotic cell is first annexin V positive and PI negative: the eat-me signal is out but the membrane is still intact. In lytic death the membrane breaks early, so cells go straight to double positive. Be careful: annexin V also stains a cell with a broken membrane, because it then reaches the inner leaflet. Step two: which marker appears, and which inhibitor rescues? Cleaved caspase-3 and rescue by z-VAD point to apoptosis; phospho-MLKL and necrostatin-1 to necroptosis; cleaved gasdermin D, IL-1-beta release and MCC950 to pyroptosis; lipid peroxides and ferrostatin-1 to ferroptosis. If nothing rescues and no marker appears, it was probably accidental. Practise this in the demo.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="all-death-types-compared" class="slide level2 smaller">
+<h2>All death types compared</h2>
+<div style="font-size:1.12em">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Apoptosis</strong></th>
+<th><strong>Necroptosis</strong></th>
+<th><strong>Pyroptosis</strong></th>
+<th><strong>Ferroptosis</strong></th>
+<th><strong>Accidental necrosis</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Typical trigger</strong></td>
+<td>DNA damage, stress; death receptors</td>
+<td>TNF (or virus) when caspase-8 is blocked</td>
+<td>Microbes, toxins, crystals, in immune cells</td>
+<td>Loss of GPX4 or cystine; excess iron</td>
+<td>Heat, freezing, detergent, crush, no ATP</td>
+</tr>
+<tr class="even">
+<td><strong>Morphology</strong></td>
+<td>Shrinks, blebs, nucleus fragments, apoptotic bodies</td>
+<td>Swells, membrane ruptures</td>
+<td>Swells with “balloons”, bursts</td>
+<td>Rounds up, ruptures; small dense mitochondria</td>
+<td>Swells, bursts</td>
+</tr>
+<tr class="odd">
+<td><strong>Key molecules</strong></td>
+<td>BCL-2 family, caspase-8/-9 → caspase-3/-7</td>
+<td>RIPK1, RIPK3, MLKL</td>
+<td>Inflammasome (NLRP3, ASC), caspase-1, gasdermin D</td>
+<td>Iron, polyunsaturated lipids, GPX4, glutathione</td>
+<td>None (no programme)</td>
+</tr>
+<tr class="even">
+<td><strong>Plasma membrane</strong></td>
+<td>Intact until eaten</td>
+<td>Broken by MLKL</td>
+<td>Pores of gasdermin D, then rupture</td>
+<td>Broken by lipid peroxidation</td>
+<td>Broken directly</td>
+</tr>
+<tr class="odd">
+<td><strong>Inflammation</strong></td>
+<td>No (calming)</td>
+<td>Yes (DAMPs)</td>
+<td>Strong (IL-1β, DAMPs)</td>
+<td>Yes (DAMPs)</td>
+<td>Yes (DAMPs)</td>
+</tr>
+<tr class="even">
+<td><strong>Marker</strong></td>
+<td>Annexin V⁺ PI⁻; cleaved caspase-3</td>
+<td>Phospho-MLKL</td>
+<td>Cleaved gasdermin D; IL-1β release</td>
+<td>Lipid peroxides (C11-BODIPY)</td>
+<td>Early PI⁺, no specific marker</td>
+</tr>
+<tr class="odd">
+<td><strong>Inhibitor (tool)</strong></td>
+<td>z-VAD (all caspases)</td>
+<td>Necrostatin-1 (RIPK1)</td>
+<td>MCC950 (NLRP3); caspase-1 inhibitors</td>
+<td>Ferrostatin-1; iron chelators</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>This table is the core of ELO 8 for this lecture and the apoptosis lecture together. Read it by columns first: for each death, know a typical trigger, what the cell looks like, the key molecules, what happens to the plasma membrane, whether it is inflammatory, a marker you can measure and an inhibitor you can use as a tool. Then read it by rows: the inflammation row is the big divide. Apoptosis is the only programme that keeps the membrane intact and is silent; all the others are lytic and inflammatory, but for different reasons and with different strength: pyroptosis is the loudest because it adds IL-1-beta. The marker and inhibitor rows are the experimental logic you just saw. Two warnings. First, z-VAD blocks all caspases, including caspase-1, so it also blocks pyroptosis: a rescue by z-VAD does not prove apoptosis. Second, in real tissues several deaths often happen at once, and one can switch to another, as when blocking caspase-8 turns apoptosis into necroptosis. An exam question may give you one row and ask for the death type.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-stroke-and-heart-attack" class="slide level2 smaller">
+<h2>Why it matters: stroke and heart attack</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img16-stroke-mri.jpg" class="quarto-figure quarto-figure-center" height="270"></p>
+</figure>
+</div>
+<p><em>Stroke, MRI (diffusion): the bright area is dying brain tissue.</em></p>
+</div><div class="column" style="width:32%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img16-heart-infarct.jpg" class="quarto-figure quarto-figure-center" height="270"></p>
+</figure>
+</div>
+<p><em>Heart infarct (H&amp;E): dead muscle with an influx of neutrophils (dark dots).</em></p>
+</div><div class="column" style="width:38%;">
+<ul>
+<li><strong>Core</strong> of the infarct: no blood, no ATP, the Na⁺/K⁺ pump stops, cells swell: mostly <strong>accidental necrosis</strong> within minutes.</li>
+<li><strong>Border zone</strong> and <strong>reperfusion</strong> (when blood returns): <strong>regulated</strong> death over hours to days: apoptosis, necroptosis, ferroptosis, and inflammation.</li>
+</ul>
+</div></div>
+<ul>
+<li>In <strong>mice</strong>, necrostatin-1 and ferroptosis inhibitors make infarcts <strong>smaller</strong>. In <strong>patients</strong>, no such drug is approved; the treatment is to <strong>reopen the vessel fast</strong> (clot-dissolving drugs, removing the clot, stents). Many protective drugs that worked in animals <strong>failed</strong> in patients.</li>
+</ul>
+<aside class="notes">
+<p>A stroke or a heart attack starts when an artery is blocked. In the core of the infarct, cells get no oxygen and no glucose, ATP runs out within minutes, the sodium-potassium pump from the transport lecture stops, sodium and water flow in and the cells swell and burst. That is mostly accidental necrosis, and no drug can save those cells. But around the core is a border zone, called the penumbra in the brain, where cells are injured but not yet dead. And when the vessel is opened again, the returning oxygen causes a burst of radicals and calcium overload, which we call reperfusion injury. Here regulated death plays a big part, over hours to days: apoptosis, necroptosis, ferroptosis, and the inflammation that follows, which you can see in the heart section as an influx of neutrophils. In mice, necrostatin-1, already in the 2005 paper, and ferroptosis inhibitors reduce the size of infarcts. In patients, no cell-death inhibitor is approved. Treatment is still to reopen the vessel as fast as possible. Many protective drugs that worked in animals have failed in clinical trials: a lesson you will meet again in the course on clinical trials and drug development.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-new-drugs-at-an-early-stage" class="slide level2 smaller">
+<h2>Why it matters: new drugs, at an early stage</h2>
+
+<img data-src="fig17-persisters.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><ul>
+<li><strong>Ferroptosis against therapy-resistant cancer</strong> (<em>research stage</em>): cancer cells that survive targeted drugs, and some aggressive cell states, depend on <strong>GPX4</strong>. In cells and mice, blocking GPX4 kills them. Caveats: current GPX4 inhibitors are <strong>poor drugs</strong> (unstable in the body), and <strong>normal cells</strong> (kidney, neurons) also need GPX4.</li>
+<li><strong>RIPK1 inhibitors</strong> (<em>clinical trials</em>): several have reached <strong>phase 1–2</strong> trials for inflammatory diseases (psoriasis, rheumatoid arthritis, ulcerative colitis) and ALS. So far <strong>no clear benefit</strong>, and <strong>none is approved</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Two drug stories, both at an early stage; say so honestly when you talk about them. First, ferroptosis and cancer. A recurring problem with targeted cancer drugs is that a few cells survive, the so-called drug-tolerant persister cells, and the tumour later grows back from them. Studies from 2017 onwards found that such persister cells, and some aggressive, therapy-resistant cell states, are unusually dependent on GPX4. In cell culture and in mice, a GPX4 inhibitor kills them by ferroptosis. This is a research result, not a treatment. The GPX4 inhibitors used today, such as RSL3, break down quickly in the body, and GPX4 is needed by normal cells too, such as kidney cells and neurons, so toxicity is a real risk. Second, RIPK1 inhibitors. Because necroptosis and RIPK1 signalling drive inflammation in mice, several companies developed RIPK1 kinase inhibitors. They reached phase 1 and phase 2 trials in psoriasis, rheumatoid arthritis, ulcerative colitis and the nerve disease ALS. So far none has shown a clear benefit, for example a phase 2 trial in ALS did not meet its main goal in 2024, and none is approved. Trial phases are explained in the course Kliniska prövningar och läkemedelsutveckling.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<ol type="1">
+<li><strong>Accidental necrosis</strong> has no programme; <strong>regulated necrosis</strong> uses the cell’s own proteins, so a <strong>drug or a knockout can stop it</strong>. All lytic deaths break the plasma membrane.</li>
+<li><strong>Necroptosis:</strong> when <strong>caspase-8</strong> is blocked, <strong>RIPK1–RIPK3</strong> activate <strong>MLKL</strong>, which breaks the membrane: a backup against viruses. Marker phospho-MLKL; tool necrostatin-1.</li>
+<li><strong>Pyroptosis:</strong> the <strong>inflammasome</strong> activates <strong>caspase-1</strong>, which cuts <strong>gasdermin D</strong> (pores) and <strong>pro-IL-1β</strong>. <strong>Ferroptosis:</strong> <strong>iron</strong>-driven <strong>lipid peroxidation</strong> wins when <strong>GPX4</strong> or <strong>glutathione</strong> fails.</li>
+<li><strong>Autophagy</strong> is mostly a <strong>survival</strong> process. <strong>Apoptosis is silent</strong>; lytic deaths release <strong>DAMPs</strong> and cause <strong>inflammation</strong>, which defends against pathogens but harms in stroke, heart attack and inflammatory disease.</li>
+<li>Decide the death type with <strong>annexin V/PI, one marker and one rescue</strong>, and know the <strong>comparison table</strong>.</li>
+</ol>
+<p><em>Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch.&nbsp;18.</em></p>
+<p><a href="../credits.html#regulated-necrosis" style="font-size:0.7em">Image credits</a></p>
+<aside class="notes">
+<p>Five take-home points. First, the definition: regulated necrosis is carried out by the cell’s own proteins, and the test is that a drug or a knockout prevents it; accidental necrosis cannot be prevented that way. Second, necroptosis: caspase-8 normally keeps RIPK1 and RIPK3 in check; when it is blocked, for example by a virus, they activate MLKL, which breaks the membrane. Third, pyroptosis and ferroptosis: in pyroptosis the inflammasome activates caspase-1, which cuts gasdermin D into pore-forming pieces and activates IL-1-beta; in ferroptosis, the membrane is destroyed by a chain reaction of lipid peroxidation that iron accelerates, when the guard GPX4 with its glutathione fails. Fourth, autophagy mostly protects the cell; and the mode of death is a message to the body: silent for apoptosis, loud for the lytic deaths. Fifth, you can tell them apart with a membrane readout, a marker and a rescue, and you should know the table. Next, we look at cancer, where cells escape death altogether.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'visible',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

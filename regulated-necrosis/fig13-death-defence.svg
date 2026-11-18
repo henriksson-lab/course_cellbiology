@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" font-family="Helvetica, Arial, sans-serif">
+<!-- fig13: why several death programmes: defence against pathogens, and the cost when they run too much -->
+<defs><marker id="ar" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+<g fill="#ffffff" stroke="#c9ced6" stroke-width="2"><rect x="10" y="10" width="315" height="360" rx="12"/><rect x="342" y="10" width="315" height="360" rx="12"/><rect x="674" y="10" width="315" height="360" rx="12"/></g>
+<text x="167" y="42" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a">A virus blocks apoptosis</text>
+<text x="499" y="42" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a">A bacterium in a macrophage</text>
+<text x="831" y="42" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a">Too much lytic death</text>
+<!-- panel A -->
+<circle cx="110" cy="130" r="55" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+<ellipse cx="105" cy="132" rx="18" ry="15" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+<g fill="#2a7f8f"><polygon points="140,100 148,95 156,100 156,110 148,115 140,110"/><polygon points="70,150 78,145 86,150 86,160 78,165 70,160"/><polygon points="130,160 138,155 146,160 146,170 138,175 130,170"/></g>
+<text x="185" y="110" font-size="15" fill="#1b2a3a">viral caspase-8</text>
+<text x="185" y="128" font-size="15" fill="#1b2a3a">inhibitor</text>
+<line x1="110" y1="190" x2="110" y2="222" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="30" y="250" font-size="16" fill="#1b2a3a">Backup: <tspan font-weight="bold">necroptosis</tspan></text>
+<text x="30" y="275" font-size="16" fill="#1b2a3a">kills the cell anyway; the</text>
+<text x="30" y="297" font-size="16" fill="#1b2a3a">virus loses its factory and</text>
+<text x="30" y="319" font-size="16" fill="#1b2a3a">the alarm calls immune cells.</text>
+<text x="30" y="350" font-size="14" fill="#555">Some viruses block RIPK3 too.</text>
+<!-- panel B -->
+<path d="M380,135 C380,85 440,70 485,88 C535,108 545,155 520,180 C490,210 410,205 392,178 C384,166 380,150 380,135 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+<ellipse cx="490" cy="150" rx="18" ry="14" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+<g fill="#2b8a3e"><rect x="410" y="115" width="26" height="11" rx="5"/><rect x="430" y="150" width="26" height="11" rx="5" transform="rotate(30 443 155)"/></g>
+<text x="538" y="80" font-size="15" fill="#1b2a3a">inflammasome</text>
+<text x="538" y="98" font-size="15" fill="#1b2a3a">senses it</text>
+<line x1="460" y1="210" x2="460" y2="232" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="362" y="258" font-size="16" fill="#1b2a3a"><tspan font-weight="bold">Pyroptosis</tspan>: the bacteria lose</text>
+<text x="362" y="280" font-size="16" fill="#1b2a3a">their hiding place and stay</text>
+<text x="362" y="302" font-size="16" fill="#1b2a3a">trapped in the dead cell;</text>
+<text x="362" y="324" font-size="16" fill="#1b2a3a">IL-1β calls neutrophils,</text>
+<text x="362" y="346" font-size="16" fill="#1b2a3a">which eat them.</text>
+<!-- panel C -->
+<text x="694" y="90" font-size="16" fill="#1b2a3a">The same programmes harm</text>
+<text x="694" y="112" font-size="16" fill="#1b2a3a">us when they run too much:</text>
+<g font-size="16" fill="#1b2a3a">
+<text x="700" y="150">• sepsis (body-wide</text><text x="716" y="172">inflammation)</text>
+<text x="700" y="204">• gout and other NLRP3</text><text x="716" y="226">diseases</text>
+<text x="700" y="258">• inflammatory bowel and</text><text x="716" y="280">skin disease (necroptosis)</text>
+<text x="700" y="312">• damage after a stroke or</text><text x="716" y="334">heart attack</text>
+</g>
+</svg>

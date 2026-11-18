@@ -1,0 +1,104 @@
+---
+title: "Quiz: beyond apoptosis"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Beyond apoptosis: necroptosis, pyroptosis, ferroptosis*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** What is the difference between accidental and regulated necrosis, and which experiment tells them apart? `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Does the cell use its own proteins to die? What happens if you remove one of them?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+In **accidental necrosis** the damage (heat, freezing, detergent, crushing, total loss of ATP) destroys the cell directly; no protein decides. In **regulated necrosis** the cell uses its own proteins to break its membrane. So the test is to **remove a protein of the programme**, with an inhibitor or a gene knockout: if that **prevents the death**, it was regulated. Accidental necrosis cannot be prevented this way.
+:::
+
+---
+
+**Q2.** Why do many cells die *faster* when they are given TNF together with the caspase inhibitor z-VAD than with TNF alone? `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Caspase-8 has a second job besides starting apoptosis.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Active **caspase-8 cuts RIPK1 and RIPK3** and so keeps necroptosis switched off. z-VAD blocks caspase-8. RIPK1 and RIPK3 are then no longer cut; they form the necrosome, RIPK3 phosphorylates **MLKL**, and MLKL breaks the plasma membrane: **necroptosis**. (TNF alone mostly switches on survival genes, so few cells die.)
+:::
+
+---
+
+**Q3.** Put these steps of pyroptosis in order: (a) IL-1β leaves the cell, (b) NLRP3, ASC and pro-caspase-1 assemble, (c) gasdermin D is cut, (d) a danger signal such as K⁺ loss, (e) priming makes pro-IL-1β and NLRP3, (f) caspase-1 becomes active. `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Two signals come first. The pore must exist before IL-1β can get out.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**e → d → b → f → c → a.** Priming (e) makes the parts; the danger signal (d) activates NLRP3, which assembles the inflammasome (b); caspase-1 activates itself there (f); it cuts gasdermin D, whose N-terminal halves form pores (c), and it cuts pro-IL-1β to IL-1β, which leaves through the pores (a). Then the cell swells and bursts.
+:::
+
+---
+
+**Q4.** Why are polyunsaturated fatty acid tails, and not saturated ones, the targets in ferroptosis? `[ELO 8]` `[ELO 2]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Look at the C–H bonds next to the double bonds.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Polyunsaturated tails have **several C=C double bonds**, and the C–H bonds between them are **weak**: a radical can easily remove that hydrogen. The tail becomes a radical, reacts with O₂ and attacks the next polyunsaturated tail: a **chain reaction** in the bilayer. Saturated tails have no such weak bonds and resist attack.
+:::
+
+---
+
+**Q5.** Name two ways to start ferroptosis in a cultured cell, and say which step of the guard system each one breaks. `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Cystine → cysteine → glutathione → GPX4.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Erastin** blocks **system xc⁻**, the cystine/glutamate exchanger: no cystine, so no cysteine and glutathione runs out. **RSL3** blocks **GPX4** directly, so lipid peroxides are no longer reduced to harmless alcohols. (Adding **iron** also works: it turns peroxides into new radicals.)
+:::
+
+---
+
+**Q6.** A cell dying after a stress is full of autophagosomes. A student concludes: "autophagy killed this cell". What experiment tests this, and what is the usual result? `[ELO 8]` `[ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Necessary versus "found together".
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Block autophagy, e.g. **knock out an essential ATG gene**, and repeat the stress. If autophagy were killing the cell, the knockout cells should survive. Usually they die **sooner**: autophagy was a failed **survival** attempt. The cell died *with* autophagy, not *by* autophagy.
+:::
+
+---
+
+**Q7.** Why does apoptosis cause no inflammation, while necroptosis, pyroptosis and ferroptosis do? Give two examples of DAMPs. `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What happens to the plasma membrane in each?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+In apoptosis the **plasma membrane stays intact** until the cell is eaten; it shows only the eat-me signal phosphatidylserine, and the phagocyte releases calming signals. The lytic deaths **break the membrane**, so molecules that should never be outside a cell leak out: **DAMPs** such as **HMGB1, ATP, IL-1α, DNA, uric acid**. Immune cells sense them and start inflammation (pyroptosis also releases IL-1β).
+:::
+
+---
+
+**Q8.** Cells die after a treatment. z-VAD saves them. Can you conclude that they died by apoptosis? `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which caspases does z-VAD block?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**No.** z-VAD blocks **all** caspases, including **caspase-1**, so it also blocks **pyroptosis**. Measure a specific marker: **cleaved caspase-3** (and annexin V⁺ PI⁻ cells) for apoptosis, **cleaved gasdermin D** and IL-1β release for pyroptosis. An NLRP3 inhibitor (MCC950) that also saves the cells points to pyroptosis.
+:::

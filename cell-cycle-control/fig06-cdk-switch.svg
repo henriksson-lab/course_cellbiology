@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420" font-family="Helvetica, Arial, sans-serif">
+<!-- fig06: how a CDK is switched on (cyclin binding plus an activating phosphate added by CAK) and three ways to switch it off (inhibitory phosphate by Wee1, a CDK inhibitor protein, destruction of the cyclin). Cartoon shapes. -->
+<defs>
+<marker id="ar" markerWidth="14" markerHeight="14" refX="6" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker>
+<marker id="ao" markerWidth="14" markerHeight="14" refX="6" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker>
+</defs>
+<!-- state 1: CDK alone -->
+<g>
+<path d="M60,215 C60,170 95,150 130,155 C170,160 190,190 185,225 C180,262 140,275 105,268 C75,262 60,245 60,215 Z" fill="#dee2e6" stroke="#555555" stroke-width="2.5"/>
+<text x="122" y="220" font-size="20" font-weight="bold" text-anchor="middle" fill="#1b2a3a">CDK</text>
+<text x="122" y="305" font-size="17" text-anchor="middle" fill="#1b2a3a">CDK alone:</text>
+<text x="122" y="327" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a">off</text>
+</g>
+<line x1="200" y1="212" x2="282" y2="212" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<text x="240" y="196" font-size="15" text-anchor="middle" fill="#1b2a3a">+ cyclin</text>
+<text x="240" y="240" font-size="15" text-anchor="middle" fill="#1b2a3a">+ CAK</text>
+<!-- state 2: active -->
+<g>
+<path d="M310,215 C310,170 345,150 380,155 C420,160 440,190 435,225 C430,262 390,275 355,268 C325,262 310,245 310,215 Z" fill="#dee2e6" stroke="#555555" stroke-width="2.5"/>
+<ellipse cx="420" cy="150" rx="70" ry="38" fill="#d0ebff" stroke="#1c7ed6" stroke-width="2.5"/>
+<text x="432" y="156" font-size="18" font-weight="bold" text-anchor="middle" fill="#1c7ed6">cyclin</text>
+<text x="360" y="225" font-size="20" font-weight="bold" text-anchor="middle" fill="#1b2a3a">CDK</text>
+<circle cx="395" cy="262" r="15" fill="#2b8a3e"/><text x="395" y="268" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">P</text>
+<text x="372" y="305" font-size="17" text-anchor="middle" fill="#1b2a3a">cyclin bound + activating</text>
+<text x="372" y="327" font-size="17" text-anchor="middle" fill="#1b2a3a">phosphate (CAK):</text>
+<text x="372" y="351" font-size="17" text-anchor="middle" font-weight="bold" fill="#2b8a3e">ON: phosphorylates targets</text>
+</g>
+<!-- arrows to brakes -->
+<path d="M495,175 C560,150 580,95 640,88" fill="none" stroke="#e8590c" stroke-width="3" marker-end="url(#ao)"/>
+<line x1="500" y1="212" x2="640" y2="212" stroke="#e8590c" stroke-width="3" marker-end="url(#ao)"/>
+<path d="M495,250 C560,275 580,330 640,338" fill="none" stroke="#e8590c" stroke-width="3" marker-end="url(#ao)"/>
+<text x="565" y="40" font-size="18" font-weight="bold" text-anchor="middle" fill="#e8590c">three brakes</text>
+<!-- brake 1: inhibitory phosphate -->
+<g transform="translate(660,40)">
+<path d="M0,55 C0,30 18,20 38,22 C60,25 70,40 68,60 C66,80 45,88 26,84 C10,80 0,70 0,55 Z" fill="#dee2e6" stroke="#555555" stroke-width="2"/>
+<ellipse cx="62" cy="22" rx="38" ry="20" fill="#d0ebff" stroke="#1c7ed6" stroke-width="2"/>
+<circle cx="12" cy="28" r="12" fill="#c92a2a"/><text x="12" y="33" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff">P</text>
+<text x="120" y="38" font-size="17" fill="#1b2a3a"><tspan font-weight="bold">inhibitory phosphate</tspan> (Wee1);</text>
+<text x="120" y="62" font-size="17" fill="#1b2a3a">the phosphatase Cdc25 removes it</text>
+</g>
+<!-- brake 2: CKI -->
+<g transform="translate(660,170)">
+<path d="M0,55 C0,30 18,20 38,22 C60,25 70,40 68,60 C66,80 45,88 26,84 C10,80 0,70 0,55 Z" fill="#dee2e6" stroke="#555555" stroke-width="2"/>
+<ellipse cx="62" cy="22" rx="38" ry="20" fill="#d0ebff" stroke="#1c7ed6" stroke-width="2"/>
+<path d="M-4,40 C20,8 60,0 96,10 C100,30 70,55 40,60" fill="none" stroke="#e8590c" stroke-width="7" stroke-linecap="round"/>
+<text x="120" y="38" font-size="17" fill="#1b2a3a"><tspan font-weight="bold">CDK inhibitor</tspan> protein binds:</text>
+<text x="120" y="62" font-size="17" fill="#1b2a3a">p21, p27 (all CDKs); p16 (CDK4/6)</text>
+</g>
+<!-- brake 3: cyclin destroyed -->
+<g transform="translate(660,300)">
+<path d="M0,55 C0,30 18,20 38,22 C60,25 70,40 68,60 C66,80 45,88 26,84 C10,80 0,70 0,55 Z" fill="#dee2e6" stroke="#555555" stroke-width="2"/>
+<g fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.5">
+<ellipse cx="70" cy="8" rx="9" ry="6"/><ellipse cx="90" cy="20" rx="8" ry="5"/><ellipse cx="78" cy="30" rx="6" ry="4"/>
+</g>
+<text x="120" y="38" font-size="17" fill="#1b2a3a"><tspan font-weight="bold">cyclin destroyed</tspan> by the</text>
+<text x="120" y="62" font-size="17" fill="#1b2a3a">proteasome (tagged by SCF or APC/C)</text>
+</g>
+</svg>

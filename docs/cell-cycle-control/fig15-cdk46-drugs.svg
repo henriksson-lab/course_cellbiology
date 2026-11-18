@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="380" viewBox="0 0 1100 380" font-family="Helvetica, Arial, sans-serif">
+<!-- fig15: why CDK4/6 inhibitors work in oestrogen-receptor-positive breast cancer (simplified). Oestrogen acting through its receptor raises cyclin D; cyclin D-CDK4/6 phosphorylates Rb and releases E2F. Endocrine therapy cuts the input, palbociclib blocks CDK4/6, and the cells stop in G1. Two escape routes are shown at the bottom. -->
+<defs>
+<marker id="ar" markerWidth="14" markerHeight="14" refX="6" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker>
+<marker id="ti" markerWidth="8" markerHeight="22" refX="4" refY="11" orient="auto" markerUnits="userSpaceOnUse"><rect x="2" y="0" width="5" height="22" fill="#e8590c"/></marker>
+</defs>
+<!-- chain -->
+<rect x="30" y="80" width="170" height="60" rx="10" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+<text x="115" y="106" font-size="17" font-weight="bold" text-anchor="middle" fill="#1b2a3a">oestrogen +</text>
+<text x="115" y="128" font-size="17" font-weight="bold" text-anchor="middle" fill="#1b2a3a">its receptor</text>
+<line x1="200" y1="110" x2="258" y2="110" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<rect x="270" y="80" width="190" height="60" rx="12" fill="#e5dbff" stroke="#7048e8" stroke-width="2.5"/>
+<text x="365" y="106" font-size="17" font-weight="bold" text-anchor="middle" fill="#5f3dc4">cyclin D–</text>
+<text x="365" y="128" font-size="17" font-weight="bold" text-anchor="middle" fill="#5f3dc4">CDK4/6</text>
+<line x1="460" y1="110" x2="518" y2="110" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<rect x="530" y="80" width="170" height="60" rx="12" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+<text x="615" y="106" font-size="17" font-weight="bold" text-anchor="middle" fill="#1b2a3a">Rb-P,</text>
+<text x="615" y="128" font-size="17" font-weight="bold" text-anchor="middle" fill="#2b8a3e">E2F free</text>
+<line x1="700" y1="110" x2="758" y2="110" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<rect x="770" y="80" width="300" height="60" rx="12" fill="#c9e8cf" stroke="#2b8a3e" stroke-width="2.5"/>
+<text x="920" y="116" font-size="18" font-weight="bold" text-anchor="middle" fill="#2b8a3e">S phase: the tumour grows</text>
+<!-- drugs -->
+<line x1="115" y1="40" x2="115" y2="74" stroke="#e8590c" stroke-width="4" marker-end="url(#ti)"/>
+<text x="130" y="32" font-size="17" font-weight="bold" fill="#e8590c">endocrine therapy</text>
+<text x="130" y="54" font-size="15" fill="#1b2a3a">(aromatase inhibitor, fulvestrant)</text>
+<line x1="365" y1="180" x2="365" y2="146" stroke="#e8590c" stroke-width="4" marker-end="url(#ti)"/>
+<text x="365" y="204" font-size="18" font-weight="bold" text-anchor="middle" fill="#e8590c">palbociclib, ribociclib,</text>
+<text x="365" y="226" font-size="18" font-weight="bold" text-anchor="middle" fill="#e8590c">abemaciclib</text>
+<text x="560" y="200" font-size="17" fill="#1b2a3a">Both drugs together: Rb stays bound to E2F,</text>
+<text x="560" y="224" font-size="17" fill="#1b2a3a">cancer cells <tspan font-weight="bold">stop in G1</tspan> (they are not killed directly).</text>
+<!-- escape -->
+<line x1="30" y1="262" x2="1070" y2="262" stroke="#dee2e6" stroke-width="2"/>
+<text x="30" y="292" font-size="18" font-weight="bold" fill="#1b2a3a">How tumours escape (resistance)</text>
+<text x="30" y="322" font-size="17" fill="#1b2a3a">• <tspan font-weight="bold">RB1 lost</tspan>: E2F is free without any CDK4/6, so the drug has nothing to block.</text>
+<text x="30" y="350" font-size="17" fill="#1b2a3a">• <tspan font-weight="bold">More cyclin E</tspan>: cyclin E–CDK2 phosphorylates Rb instead (bypass).</text>
+</svg>

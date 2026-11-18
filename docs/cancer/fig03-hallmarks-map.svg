@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 540" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <!-- connectors -->
+  <g stroke="#9aa5b1" stroke-width="2">
+    <line x1="420" y1="58" x2="490" y2="190"/><line x1="420" y1="160" x2="455" y2="225"/>
+    <line x1="420" y1="262" x2="445" y2="270"/><line x1="420" y1="364" x2="455" y2="315"/>
+    <line x1="420" y1="466" x2="490" y2="350"/>
+    <line x1="680" y1="58" x2="610" y2="190"/><line x1="680" y1="160" x2="645" y2="225"/>
+    <line x1="680" y1="262" x2="655" y2="270"/><line x1="680" y1="364" x2="645" y2="315"/>
+    <line x1="680" y1="466" x2="610" y2="350"/>
+  </g>
+  <!-- the cell -->
+  <circle cx="550" cy="270" r="112" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+  <circle cx="550" cy="262" r="48" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+  <text x="550" y="258" font-size="17" font-weight="700" text-anchor="middle">cancer</text>
+  <text x="550" y="278" font-size="17" font-weight="700" text-anchor="middle">cell</text>
+  <text x="550" y="352" font-size="14" text-anchor="middle" fill="#555">one cell, many</text>
+  <text x="550" y="369" font-size="14" text-anchor="middle" fill="#555">broken rules</text>
+  <!-- left boxes -->
+  <g>
+    <rect x="10" y="12" width="410" height="92" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+    <text x="24" y="40" font-size="19" font-weight="700">Keeps its growth signals on</text>
+    <text x="24" y="64" font-size="16" fill="#2a7f8f">kinase signalling · fate signalling</text>
+    <text x="24" y="88" font-size="15">EGFR, HER2, RAS, BRAF, BCR-ABL; Wnt (APC)</text>
+
+    <rect x="10" y="114" width="410" height="92" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+    <text x="24" y="142" font-size="19" font-weight="700">Ignores the brakes on division</text>
+    <text x="24" y="166" font-size="16" fill="#2a7f8f">cell-cycle control</text>
+    <text x="24" y="190" font-size="15">Rb, p53, p16, cyclin D–CDK4/6</text>
+
+    <rect x="10" y="216" width="410" height="92" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+    <text x="24" y="244" font-size="19" font-weight="700">Resists cell death</text>
+    <text x="24" y="268" font-size="16" fill="#2a7f8f">apoptosis</text>
+    <text x="24" y="292" font-size="15">BCL-2 up, p53 lost</text>
+
+    <rect x="10" y="318" width="410" height="92" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+    <text x="24" y="346" font-size="19" font-weight="700">Divides without limit</text>
+    <text x="24" y="370" font-size="16" fill="#2a7f8f">controlling cell numbers</text>
+    <text x="24" y="394" font-size="15">telomerase on, senescence escaped</text>
+
+    <rect x="10" y="420" width="410" height="92" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+    <text x="24" y="448" font-size="19" font-weight="700">Changes its fuel use</text>
+    <text x="24" y="472" font-size="16" fill="#2a7f8f">mitochondria and metabolism</text>
+    <text x="24" y="496" font-size="15">glycolysis even with oxygen (Warburg effect)</text>
+  </g>
+  <!-- right boxes -->
+  <g>
+    <rect x="680" y="12" width="410" height="92" rx="10" fill="#fff" stroke="#e8590c" stroke-width="2"/>
+    <text x="694" y="40" font-size="19" font-weight="700">Unstable genome (enabling)</text>
+    <text x="694" y="64" font-size="16" fill="#2a7f8f">mitosis · DNA repair</text>
+    <text x="694" y="88" font-size="15">spindle checkpoint, BRCA1/2, mismatch repair</text>
+
+    <rect x="680" y="114" width="410" height="92" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+    <text x="694" y="142" font-size="19" font-weight="700">Invades and spreads</text>
+    <text x="694" y="166" font-size="16" fill="#2a7f8f">actin and migration · junctions</text>
+    <text x="694" y="190" font-size="15">EMT, E-cadherin lost, invadopodia</text>
+
+    <rect x="680" y="216" width="410" height="92" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+    <text x="694" y="244" font-size="19" font-weight="700">Recruits blood vessels</text>
+    <text x="694" y="268" font-size="16" fill="#2a7f8f">signalling between cells</text>
+    <text x="694" y="292" font-size="15">VEGF from hypoxic tumour cells</text>
+
+    <rect x="680" y="318" width="410" height="92" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+    <text x="694" y="346" font-size="19" font-weight="700">Hides from the immune system</text>
+    <text x="694" y="370" font-size="16" fill="#2a7f8f">course on immunology</text>
+    <text x="694" y="394" font-size="15">PD-L1, less antigen shown on MHC</text>
+
+    <rect x="680" y="420" width="410" height="92" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="1.5"/>
+    <text x="694" y="448" font-size="19" font-weight="700">Survives therapy (not a hallmark)</text>
+    <text x="694" y="472" font-size="16" fill="#2a7f8f">membrane transport · evolution</text>
+    <text x="694" y="496" font-size="15">P-glycoprotein pump, resistant clones</text>
+  </g>
+  <text x="550" y="534" font-size="14" text-anchor="middle" fill="#555">Grouping after Hanahan &amp; Weinberg (2000, 2011), simplified; teal: where it is in this course</text>
+</svg>

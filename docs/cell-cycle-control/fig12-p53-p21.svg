@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470" font-family="Helvetica, Arial, sans-serif">
+<!-- fig12: the DNA-damage checkpoint (simplified). Damaged DNA activates the kinases ATM/ATR and Chk1/Chk2. Fast route: Chk1/2 block Cdc25, so CDK1 keeps its inhibitory phosphate (G2 arrest). Slow route: p53 is no longer destroyed (MDM2 cannot tag it), accumulates and switches on p21, which blocks G1/S CDKs (G1 arrest). Outcomes: repair, senescence or apoptosis. -->
+<defs>
+<marker id="ar" markerWidth="14" markerHeight="14" refX="6" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker>
+<marker id="ao" markerWidth="14" markerHeight="14" refX="2" refY="7" orient="auto" markerUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="14" fill="#e8590c"/></marker>
+</defs>
+<!-- damaged DNA -->
+<path d="M40,70 C70,55 100,85 130,70 S190,55 205,70" fill="none" stroke="#6b4fa0" stroke-width="5"/>
+<path d="M235,70 C255,60 280,80 300,70" fill="none" stroke="#6b4fa0" stroke-width="5"/>
+<path d="M212,48 L224,64 L214,70 L228,92" fill="none" stroke="#e8590c" stroke-width="4"/>
+<text x="170" y="122" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b2a3a">damaged DNA</text>
+<text x="170" y="144" font-size="15" text-anchor="middle" fill="#1b2a3a">(a break, UV damage, stalled fork)</text>
+<line x1="300" y1="80" x2="368" y2="80" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<!-- sensor kinases -->
+<rect x="380" y="50" width="200" height="60" rx="10" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+<text x="480" y="77" font-size="17" font-weight="bold" text-anchor="middle" fill="#1b2a3a">kinases ATM/ATR</text>
+<text x="480" y="99" font-size="17" font-weight="bold" text-anchor="middle" fill="#1b2a3a">→ Chk1/Chk2</text>
+<!-- fast branch -->
+<line x1="580" y1="80" x2="648" y2="80" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<text x="740" y="40" font-size="17" font-weight="bold" text-anchor="middle" fill="#1b2a3a">fast: minutes</text>
+<rect x="660" y="55" width="160" height="50" rx="10" fill="#ffffff" stroke="#1b2a3a" stroke-width="2"/>
+<text x="740" y="86" font-size="17" text-anchor="middle" fill="#1b2a3a">Cdc25 blocked</text>
+<line x1="820" y1="80" x2="880" y2="80" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<text x="975" y="76" font-size="17" text-anchor="middle" fill="#1b2a3a">CDK1 stays</text>
+<text x="975" y="98" font-size="17" text-anchor="middle" fill="#1b2a3a">phosphorylated</text>
+<text x="975" y="130" font-size="18" font-weight="bold" text-anchor="middle" fill="#c92a2a">G2 arrest</text>
+<!-- slow branch: p53 -->
+<line x1="480" y1="110" x2="480" y2="168" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<text x="490" y="146" font-size="15" fill="#1b2a3a">phosphorylate p53</text>
+<text x="740" y="166" font-size="17" font-weight="bold" text-anchor="middle" fill="#1b2a3a">slow: hours (needs new protein)</text>
+<rect x="410" y="180" width="140" height="56" rx="28" fill="#fff4e6" stroke="#d9822b" stroke-width="2.5"/>
+<text x="480" y="215" font-size="20" font-weight="bold" text-anchor="middle" fill="#1b2a3a">p53 ↑</text>
+<!-- MDM2 normally -->
+<rect x="96" y="182" width="210" height="52" rx="10" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<text x="201" y="205" font-size="15" text-anchor="middle" fill="#495057">normally: MDM2 tags p53</text>
+<text x="201" y="225" font-size="15" text-anchor="middle" fill="#495057">for the proteasome</text>
+<line x1="306" y1="208" x2="400" y2="208" stroke="#868e96" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="350" y="198" font-size="14" text-anchor="middle" fill="#495057">now blocked</text>
+<!-- p53 -> p21 -->
+<line x1="550" y1="208" x2="648" y2="208" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<text x="599" y="198" font-size="14" text-anchor="middle" fill="#1b2a3a">gene on</text>
+<rect x="660" y="183" width="160" height="50" rx="10" fill="#ffffff" stroke="#e8590c" stroke-width="2.5"/>
+<text x="740" y="214" font-size="18" font-weight="bold" text-anchor="middle" fill="#e8590c">p21 (CKI)</text>
+<line x1="820" y1="208" x2="882" y2="208" stroke="#e8590c" stroke-width="3.5" marker-end="url(#ao)"/>
+<text x="975" y="204" font-size="17" text-anchor="middle" fill="#1b2a3a">CDK2, CDK4/6</text>
+<text x="975" y="226" font-size="17" text-anchor="middle" fill="#1b2a3a">blocked</text>
+<text x="975" y="256" font-size="18" font-weight="bold" text-anchor="middle" fill="#c92a2a">G1 arrest</text>
+<!-- outcomes -->
+<line x1="40" y1="300" x2="1060" y2="300" stroke="#dee2e6" stroke-width="2"/>
+<text x="550" y="335" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b2a3a">Time to repair. Then:</text>
+<rect x="60" y="355" width="300" height="80" rx="10" fill="#e8f5ea" stroke="#2b8a3e" stroke-width="2"/>
+<text x="210" y="388" font-size="17" font-weight="bold" text-anchor="middle" fill="#2b8a3e">repaired</text>
+<text x="210" y="414" font-size="16" text-anchor="middle" fill="#1b2a3a">p53 falls, cycle restarts</text>
+<rect x="400" y="355" width="300" height="80" rx="10" fill="#f8f9fa" stroke="#868e96" stroke-width="2"/>
+<text x="550" y="388" font-size="17" font-weight="bold" text-anchor="middle" fill="#495057">too much damage</text>
+<text x="550" y="414" font-size="16" text-anchor="middle" fill="#1b2a3a">permanent arrest (senescence)</text>
+<rect x="740" y="355" width="300" height="80" rx="10" fill="#fff5f5" stroke="#c92a2a" stroke-width="2"/>
+<text x="890" y="388" font-size="17" font-weight="bold" text-anchor="middle" fill="#c92a2a">too much damage</text>
+<text x="890" y="414" font-size="16" text-anchor="middle" fill="#1b2a3a">p53 triggers apoptosis</text>
+</svg>

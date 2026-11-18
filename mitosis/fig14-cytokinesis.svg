@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="400" viewBox="0 0 1100 400" font-family="Helvetica, Arial, sans-serif">
+<!-- fig14: cytokinesis. The central spindle marks the equator; a RhoGEF activates RhoA there; RhoA switches on formins (actin) and Rho kinase (myosin II); the contractile ring closes; abscission cuts the midbody. Cartoon. -->
+<defs><marker id="ak" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="ao" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="ag" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2b8a3e"/></marker><marker id="ab" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1c4fa0"/></marker><marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker><marker id="am" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#555555"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="300" y="30" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >Late anaphase: where to cut?</text>
+<path d="M300,90 C360,55 550,65 555,205 C550,345 360,355 300,320 C240,355 50,345 45,205 C50,65 240,55 300,90 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="3"/>
+<line x1="115.0" y1="205.0" x2="325.0" y2="175.0" stroke="#555555" stroke-width="2" />
+<line x1="485.0" y1="205.0" x2="275.0" y2="179.0" stroke="#555555" stroke-width="2" />
+<line x1="115.0" y1="205.0" x2="325.0" y2="195.0" stroke="#555555" stroke-width="2" />
+<line x1="485.0" y1="205.0" x2="275.0" y2="199.0" stroke="#555555" stroke-width="2" />
+<line x1="115.0" y1="205.0" x2="325.0" y2="215.0" stroke="#555555" stroke-width="2" />
+<line x1="485.0" y1="205.0" x2="275.0" y2="219.0" stroke="#555555" stroke-width="2" />
+<line x1="115.0" y1="205.0" x2="325.0" y2="235.0" stroke="#555555" stroke-width="2" />
+<line x1="485.0" y1="205.0" x2="275.0" y2="239.0" stroke="#555555" stroke-width="2" />
+<rect x="274" y="165" width="52" height="80" rx="8" fill="#0b7285" fill-opacity="0.15" stroke="#0b7285" stroke-width="2" stroke-dasharray="5 4"/>
+<rect x="139.0" y="158.0" width="12" height="24" rx="6.0" fill="#6b4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 145.0 170.0)"/>
+<rect x="449.0" y="158.0" width="12" height="24" rx="6.0" fill="#6b4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 455.0 170.0)"/>
+<rect x="139.0" y="193.0" width="12" height="24" rx="6.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 145.0 205.0)"/>
+<rect x="449.0" y="193.0" width="12" height="24" rx="6.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 455.0 205.0)"/>
+<rect x="139.0" y="228.0" width="12" height="24" rx="6.0" fill="#2b8a3e" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 145.0 240.0)"/>
+<rect x="449.0" y="228.0" width="12" height="24" rx="6.0" fill="#2b8a3e" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 455.0 240.0)"/>
+<circle cx="115" cy="205" r="11" fill="#555555"/>
+<circle cx="485" cy="205" r="11" fill="#555555"/>
+<ellipse cx="300" cy="92" rx="42" ry="11" fill="#c92a2a" fill-opacity="0.85"/>
+<ellipse cx="300" cy="318" rx="42" ry="11" fill="#c92a2a" fill-opacity="0.85"/>
+<text x="300" y="42" font-size="1" text-anchor="middle" font-weight="normal" fill="#1b2a3a" ></text>
+<line x1="320.0" y1="245.0" x2="470.0" y2="348.0" stroke="#1b2a3a" stroke-width="1.2" />
+<text x="480" y="358" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >central spindle (overlap)</text>
+<text x="480" y="376" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >→ RhoGEF (Ect2) to the equator</text>
+<line x1="342.0" y1="92.0" x2="470.0" y2="66.0" stroke="#1b2a3a" stroke-width="1.2" />
+<text x="480" y="64" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >RhoA-GTP: actin (formin) +</text>
+<text x="480" y="82" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >myosin II (Rho kinase) ring</text>
+<text x="890" y="30" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >Furrow, then abscission</text>
+<path d="M890,179 C920,95 1065,95 1070,205 C1065,315 920,315 890,231 C860,315 715,315 710,205 C715,95 860,95 890,179 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="3"/>
+<circle cx="795" cy="205" r="48" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<circle cx="985" cy="205" r="48" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+<rect x="878" y="183" width="24" height="44" rx="6" fill="#0b7285" fill-opacity="0.35"/>
+<ellipse cx="890" cy="178" rx="9" ry="6" fill="#c92a2a"/>
+<ellipse cx="890" cy="232" rx="9" ry="6" fill="#c92a2a"/>
+<line x1="890.0" y1="245.0" x2="890.0" y2="330.0" stroke="#1b2a3a" stroke-width="1.2" />
+<text x="890" y="348" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >midbody: ESCRT-III cuts</text>
+<text x="890" y="366" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >the last bridge (abscission)</text>
+</svg>

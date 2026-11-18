@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e8590c"/></marker></defs>
+<text x="190" y="30" text-anchor="middle" font-weight="bold">Old tissue</text>
+<rect x="16" y="82" width="48" height="56" rx="8" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/><circle cx="40" cy="110" r="9" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<rect x="71" y="82" width="48" height="56" rx="8" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="2.5"/><circle cx="95" cy="110" r="12" fill="#8aa6cf"/>
+<rect x="126" y="82" width="48" height="56" rx="8" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/><circle cx="150" cy="110" r="9" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<rect x="181" y="82" width="48" height="56" rx="8" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/><circle cx="205" cy="110" r="9" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<rect x="236" y="82" width="48" height="56" rx="8" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="2.5"/><circle cx="260" cy="110" r="12" fill="#8aa6cf"/>
+<rect x="291" y="82" width="48" height="56" rx="8" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/><circle cx="315" cy="110" r="9" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<path d="M65,155 q8,8 0,16 q-8,8 0,16 M95,150 q8,8 0,16 q-8,8 0,16 M125,155 q8,8 0,16 q-8,8 0,16" fill="none" stroke="#c2410c" stroke-width="2"/>
+<path d="M230,155 q8,8 0,16 q-8,8 0,16 M260,150 q8,8 0,16 q-8,8 0,16 M290,155 q8,8 0,16 q-8,8 0,16" fill="none" stroke="#c2410c" stroke-width="2"/>
+<text x="190" y="225" text-anchor="middle" font-size="15" fill="#c2410c">SASP: inflammatory signals</text>
+<text x="190" y="245" text-anchor="middle" font-size="15">harm the neighbours</text>
+<line x1="360" y1="110" x2="480" y2="110" stroke="#e8590c" stroke-width="3" marker-end="url(#ar)"/>
+<text x="420" y="92" text-anchor="middle" font-weight="bold" fill="#c2410c">senolytic</text>
+<text x="420" y="138" text-anchor="middle" font-size="15" fill="#c2410c">blocks BCL-xL,</text><text x="420" y="157" text-anchor="middle" font-size="15" fill="#c2410c">the survival protein</text><text x="420" y="176" text-anchor="middle" font-size="15" fill="#c2410c">senescent cells rely on</text>
+<text x="670" y="30" text-anchor="middle" font-weight="bold">After treatment</text>
+<rect x="496" y="82" width="48" height="56" rx="8" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/><circle cx="520" cy="110" r="9" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<circle cx="567" cy="104" r="7" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="1.5"/><circle cx="583" cy="114" r="6" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="1.5"/><circle cx="571" cy="122" r="5" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="1.5"/><circle cx="585" cy="98" r="4" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="1.5"/>
+<rect x="606" y="82" width="48" height="56" rx="8" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/><circle cx="630" cy="110" r="9" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<rect x="661" y="82" width="48" height="56" rx="8" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/><circle cx="685" cy="110" r="9" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<circle cx="732" cy="104" r="7" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="1.5"/><circle cx="748" cy="114" r="6" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="1.5"/><circle cx="736" cy="122" r="5" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="1.5"/><circle cx="750" cy="98" r="4" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="1.5"/>
+<rect x="771" y="82" width="48" height="56" rx="8" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/><circle cx="795" cy="110" r="9" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+<text x="670" y="190" text-anchor="middle" font-size="15">senescent cells die by apoptosis;</text>
+<text x="670" y="210" text-anchor="middle" font-size="15">normal cells are spared (in theory)</text>
+<text x="20" y="285" font-size="15" fill="#555">Examples: navitoclax (BCL-2/BCL-xL inhibitor), dasatinib + quercetin. Mostly tested in mice so far.</text>
+</svg>

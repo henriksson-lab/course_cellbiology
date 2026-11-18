@@ -1,0 +1,138 @@
+---
+title: "Study questions: beyond apoptosis"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** Define regulated necrosis and explain how it differs from accidental necrosis and from apoptosis. `[ELO 8]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Regulated necrosis** is cell death in which the cell's **own proteins break the plasma membrane**, so the cell swells and bursts. Because proteins carry it out, it can be **prevented by an inhibitor or a gene knockout** of those proteins. **Accidental necrosis** is caused directly by overwhelming damage (heat, freezing, detergent, crushing, total ATP loss); no programme is involved and it cannot be prevented that way. **Apoptosis** is also regulated, but the membrane stays **intact**: the cell shrinks, fragments into apoptotic bodies and is eaten without inflammation. Regulated necrosis (necroptosis, pyroptosis, ferroptosis) is **lytic** and **inflammatory**.
+:::
+
+---
+
+**2.** Describe the mechanism of necroptosis, starting from TNF binding its receptor. Explain the role of caspase-8. `[ELO 8]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+TNF binds its receptor (TNFR1), and a complex forms with the kinase **RIPK1** and **caspase-8**. Usually TNF switches on survival genes through NF-κB. If death is triggered, **active caspase-8 cuts RIPK1 and RIPK3**, which keeps necroptosis off; the cell dies by apoptosis (or survives). If caspase-8 is **blocked** (by z-VAD or a viral inhibitor) or absent, RIPK1 and RIPK3 bind each other and form a fibre, the **necrosome**. RIPK3 becomes active and **phosphorylates MLKL**. Phospho-MLKL forms oligomers that move to the **plasma membrane and break it**; the cell swells and bursts and releases DAMPs. Necrostatin-1 blocks the RIPK1 kinase. Caspase-8 is thus both an initiator of apoptosis and the **brake on necroptosis**.
+:::
+
+---
+
+**3.** Why is it useful for the body to have necroptosis as a backup programme? `[ELO 8]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Many viruses need the infected cell alive while they multiply, so they make **inhibitors of apoptosis**, for example **caspase-8 inhibitors** (poxviruses). Blocking caspase-8 releases RIPK1/RIPK3 and triggers **necroptosis**, so the infected cell dies anyway, removing the virus's "factory". Because necroptosis is lytic, DAMPs are released, which **alerts the immune system**. Some viruses have in turn evolved RIPK3 blockers: an evolutionary arms race.
+:::
+
+---
+
+**4.** Explain how the inflammasome leads to pyroptosis. Include the two signals, caspase-1, gasdermin D and IL-1β. `[ELO 8]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Pyroptosis happens mainly in immune cells such as macrophages. **Signal 1 (priming)**, e.g. LPS on TLR4, activates NF-κB, and the cell makes **pro-IL-1β** and the sensor **NLRP3**. **Signal 2 (danger)**, e.g. a pore-forming toxin, K⁺ loss, uric acid crystals or lysosome damage, activates NLRP3, which recruits the adaptor **ASC** and **pro-caspase-1**: the **inflammasome**. Here **caspase-1** activates itself. It cuts **gasdermin D**, releasing its N-terminal half from the inhibitory C-terminal half; the N-terminal halves insert into the inner leaflet of the plasma membrane and form large **pores** (about 20 nm). Caspase-1 also cuts pro-IL-1β to active **IL-1β**, which leaves through the pores. Water enters, the cell **swells and bursts**, releasing DAMPs: a strongly inflammatory death.
+:::
+
+---
+
+**5.** Explain what happens in ferroptosis. Include iron, polyunsaturated lipids, GPX4 and glutathione. `[ELO 8]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Membrane phospholipids with **polyunsaturated** tails have weak C–H bonds next to their double bonds. A radical removes such a hydrogen, the tail reacts with O₂ and becomes a peroxyl radical, which attacks the next tail: a **chain reaction of lipid peroxidation**. **Free iron (Fe²⁺)** accelerates it by turning lipid hydroperoxides into new radicals. The guard is **GPX4**, a selenium enzyme that reduces lipid hydroperoxides (L–OOH) to harmless alcohols (L–OH) using two molecules of **glutathione** (GSH → GSSG). Glutathione needs **cysteine**, imported as cystine through **system xc⁻**. When GPX4 is blocked (RSL3), cystine import is blocked (erastin) so glutathione runs out, or iron is high, peroxides accumulate, the bilayer becomes leaky and **ruptures**. No caspases are involved. Ferrostatin-1 (a radical trap) and iron chelators prevent it.
+:::
+
+---
+
+**6.** Explain what DAMPs are and why the mode of cell death matters to the tissue. `[ELO 8]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**DAMPs** (damage-associated molecular patterns) are molecules that are normally **inside cells** and act as alarms when they appear outside: HMGB1, ATP, IL-1α, DNA, uric acid. Immune cells detect them with receptors of the same families used for microbes (Toll-like receptors, P2X7) and respond with inflammatory cytokines and recruitment of neutrophils. **Apoptosis** keeps the contents inside an intact membrane; the cell is eaten and the phagocyte releases calming signals (TGF-β, IL-10), so tissue is cleaned up silently. **Lytic deaths** release DAMPs (and IL-1β in pyroptosis) and cause **inflammation**. This helps fight infection but harms the tissue when it runs too much, as in sepsis, gout or after a stroke or heart attack.
+:::
+
+---
+
+**7.** How is autophagy related to cell death? `[ELO 8]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Autophagy wraps cytoplasm in a double-membrane **autophagosome** and delivers it to lysosomes. It is **mostly a survival process**: it recycles material in starvation and removes damaged organelles (e.g. mitochondria). Dying cells are often full of autophagosomes, but when an essential **ATG gene is knocked out**, cells usually die **sooner**, showing that autophagy was trying to save them: death *with* autophagy, not *by* it. True autophagy-dependent death is rare (e.g. fly salivary glands in metamorphosis). Autophagy can also **promote ferroptosis**, because digesting the iron-storage protein ferritin releases free iron.
+:::
+
+---
+
+**8.** For apoptosis, necroptosis, pyroptosis and ferroptosis, give one **marker** you can measure and one **inhibitor** you can use as a research tool. `[ELO 8]` `[ELO 1]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+| Death | Marker | Inhibitor (tool) |
+|---|---|---|
+| Apoptosis | Cleaved caspase-3; annexin V⁺ PI⁻ cells | z-VAD (all caspases) |
+| Necroptosis | Phospho-MLKL | Necrostatin-1 (RIPK1 kinase) |
+| Pyroptosis | Cleaved gasdermin D (N-terminal fragment); IL-1β release | MCC950 (NLRP3); caspase-1 inhibitors |
+| Ferroptosis | Lipid peroxides (e.g. C11-BODIPY) | Ferrostatin-1; iron chelators (deferoxamine) |
+:::
+
+## VG-style questions
+
+**9. [VG]** Mouse fibroblasts that express RIPK3 are treated with TNF + cycloheximide and die with cleaved caspase-3. (a) Predict what happens when you add z-VAD, and which marker appears. (b) What must you add to save the cells, and why? (c) What does this tell you about the relation between apoptosis and necroptosis? `[ELO 8]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) z-VAD blocks caspase-8 (and caspase-3), so cleaved caspase-3 disappears, but the cells **still die**: RIPK1 and RIPK3 are no longer cut by caspase-8, the necrosome forms and **phospho-MLKL** appears. The cells swell and become PI⁺ early, without an annexin V⁺ PI⁻ stage. (b) Add **necrostatin-1** (RIPK1 kinase inhibitor) **together with z-VAD**, or use RIPK3- or MLKL-knockout cells with z-VAD. Both routes must be blocked. (c) The two programmes start from the **same signalling complex**; **caspase-8 is the switch**. Apoptosis is the first choice, and necroptosis is the backup when caspase-8 cannot act. Blocking one death programme can **switch** the cell to another, which matters when designing drugs.
+:::
+
+---
+
+**10. [VG]** A new compound kills cultured macrophages. Design a set of experiments that decides whether they die by apoptosis, necroptosis, pyroptosis, ferroptosis or accidental necrosis. Say which controls you need and which result would point to each answer. `[ELO 8]` `[ELO 1]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Controls:** untreated cells (vehicle), and the compound alone, measured at the same time. **Step 1:** annexin V/PI by **flow cytometry** over time: an annexin V⁺ PI⁻ population before PI⁺ points to **apoptosis**; early PI⁺ without that stage points to a **lytic** death. **Step 2 (markers)**, by western blot or ELISA: cleaved caspase-3 (apoptosis), phospho-MLKL (necroptosis), N-terminal fragment of gasdermin D and IL-1β in the medium (pyroptosis; macrophages need priming to make pro-IL-1β), lipid peroxides with C11-BODIPY (ferroptosis). **Step 3 (rescue)**, pretreat with z-VAD, necrostatin-1, MCC950 and ferrostatin-1, each alone, and measure viability. The answer is the death whose **marker appears and whose specific inhibitor rescues**: z-VAD only with caspase-3 → apoptosis (remember z-VAD also blocks caspase-1); necrostatin-1 + phospho-MLKL → necroptosis; MCC950 + gasdermin D cleavage + IL-1β → pyroptosis; ferrostatin-1 + lipid peroxides → ferroptosis. **No rescue, no marker, near-immediate PI⁺** → accidental necrosis (e.g. a detergent-like compound). **Confirm** with knockouts (e.g. MLKL⁻/⁻, GSDMD⁻/⁻, or GPX4 overexpression), since inhibitors are not perfectly specific.
+:::
+
+---
+
+**11. [VG]** In mice, necrostatin-1 makes brain infarcts smaller after a stroke. (a) Which cells in the infarct can such a drug save, and which can it not? (b) Give two reasons why a drug that works in mice may still fail in patients. `[ELO 8]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) In the **core**, cells lose ATP within minutes, the Na⁺/K⁺ pump stops, they swell and burst: mostly **accidental necrosis**, which no inhibitor of a programme can prevent. In the **border zone (penumbra)** and during **reperfusion**, cells die over hours to days, partly by **regulated** death (necroptosis, ferroptosis, apoptosis) and inflammation; these are the cells a RIPK1 inhibitor can save, because RIPK1 is **necessary** for their death. (b) Possible reasons: in mice the drug is often given **before or right at** the stroke, while patients arrive hours later; mouse strokes are **standardised** (young, healthy animals), patients are old with other diseases; **several death programmes** run in parallel, so blocking one may not be enough; the drug may not reach the brain at the right dose in humans, or have side effects; animal studies are small and may overestimate effects. (You meet trial design in Kliniska prövningar och läkemedelsutveckling.)
+:::
+
+## Explore {#explore}
+
+**Which death is it?** Each case gives you cells and a stimulus. Design experiments: with or without the stimulus, with any of four inhibitors (given 1 h before), and with the readouts you choose. Press **Run experiment** for each condition; the results collect in a table. When you are sure, name the death type. The feedback tells you which results decide the case and whether your own experiments already prove it. The results come from a **rule table based on the textbook experimental logic** (open "How the results are made" at the bottom of the demo), not from a simulation; the numbers are illustrative.
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="whichdeath" data-case="sts"></div>
+<script src="../demos/dist/whichdeath.js"></script>
+```
+
+**E1.** Case **Staurosporine**. Run a control without the stimulus and the stimulus alone, with annexin V/PI, morphology and cleaved caspase-3. Then add z-VAD. Which two results point to apoptosis, and which result shows that caspases are **necessary** for this death? `[ELO 8]`
+
+**E2.** *Predict first.* Compare **TNF alone** and **TNF + cycloheximide** in the same cells. Why does adding a protein-synthesis inhibitor turn TNF into a killer? `[ELO 8]`
+
+**E3. [VG]** Case **TNF + cycloheximide**. *Predict* what z-VAD will do before you run it, then run it with annexin V/PI, cleaved caspase-3 and phospho-MLKL. What happened, and what must you add to save the cells? Explain with the role of caspase-8. `[ELO 8]`
+
+**E4.** Case **Bacterial toxin (nigericin)**. Show that z-VAD saves the cells. Does that prove apoptosis? Which two readouts and which inhibitor decide the case? `[ELO 8]`
+
+**E5.** Cases **GPX4 inhibitor (RSL3)** and **Cystine uptake block (erastin)**. Which readout and which inhibitor show ferroptosis? The readouts for erastin are taken later (16 h) than for RSL3 (12 h). Explain why erastin needs more time. `[ELO 8]`
+
+**E6. [VG]** Press **Mystery compound** three times (each press gives a new compound in primed macrophages). Solve each case with **as few experiments as possible**, and get a "complete argument" in the feedback. Describe your strategy. What is the smallest number of experiments that can give a complete argument for a lytic death? `[ELO 8]` `[ELO 1]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** Control: about 90 % live. Staurosporine: about **29 % live, 44 % annexin V⁺ PI⁻, 27 % PI⁺**, a **strong cleaved caspase-3 band**, and shrunken, blebbing cells with a fragmented nucleus. The large annexin V⁺ PI⁻ population (phosphatidylserine outside while the membrane is intact) and cleaved caspase-3 point to apoptosis; these are markers, so they show the programme is **active**. With **z-VAD about 93 % are alive**: caspases are **necessary** for this death. (The demo notes that the mitochondria are still permeabilised; in real cells many die later by a slow, caspase-independent death.)
+
+**E2.** TNF alone: about 91 % live, like the control (about 93 %), no markers: **no death**. TNF switches on NF-κB, which makes survival proteins. With cycloheximide the cell **cannot make those proteins**, so the death signal from the same receptor wins: about 27 % live, 47 % annexin V⁺ PI⁻, cleaved caspase-3: **apoptosis**.
+
+**E3.** With z-VAD the cells **still die** (about 29 % live), but now **68 % are PI⁺ and only 3 % annexin V⁺ PI⁻**, cleaved caspase-3 is gone, and **phospho-MLKL** appears; the cells are swollen: **necroptosis**. z-VAD blocked caspase-8, which normally cuts RIPK1 and RIPK3; without that brake the necrosome forms and MLKL breaks the membrane. **z-VAD + necrostatin-1** saves them (about 94 % live): both routes must be blocked. Apoptosis is the first choice, necroptosis the backup.
+
+**E4.** z-VAD saves the cells (about 93 % live), but this does **not** prove apoptosis: z-VAD also blocks **caspase-1**. Cleaved caspase-3 stays negative. The deciding results are the **N-terminal fragment of gasdermin D** and a large **IL-1β** release (about 2500 pg/mL against about 20 in the control), and rescue by the NLRP3 inhibitor **MCC950** (about 91 % live): **pyroptosis**. Necrostatin-1 and ferrostatin-1 do not help.
+
+**E5.** **Lipid peroxides** rise about **8-fold** over control (RSL3 about 8.6×, erastin about 8.3×), no caspase-3, phospho-MLKL or gasdermin D cleavage, and **ferrostatin-1** rescues (about 92–93 % live), while z-VAD, necrostatin-1 and MCC950 do not. RSL3 blocks GPX4 **directly**. Erastin blocks cystine import, so the cell must first **use up its glutathione** before GPX4 stops working; this takes longer.
+
+**E6.** A good strategy: **(1)** a control without the compound, with annexin V/PI and morphology; **(2)** the compound alone with **all readouts** (one experiment then shows which marker appears); **(3)** the compound plus the **one inhibitor** that matches that marker, with a viability readout. Three experiments give a complete argument (control, marker, rescue) for apoptosis, necroptosis, pyroptosis or ferroptosis. Accidental necrosis needs more, because you must show that **no** inhibitor rescues (the demo asks for at least three of the four, e.g. one experiment with three inhibitors together still counts as tried for each). For a compound that does not kill, the control and the compound alone with a death marker are enough. In the first three presses the compounds cause pyroptosis, ferroptosis and no death.
+:::

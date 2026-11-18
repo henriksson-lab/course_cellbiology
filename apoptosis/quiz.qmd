@@ -1,0 +1,104 @@
+---
+title: "Quiz: apoptosis"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Apoptosis: how a cell kills itself*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Give one example each of apoptosis in (a) development, (b) the response to damage and (c) immunity. `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of fingers, of p53, and of killer T cells.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) The cells between the digits die, so separate fingers form (also: the tadpole tail, extra neurons, self-reactive T cells in the thymus). (b) A cell with badly damaged DNA activates **p53**, which switches on BH3-only genes (PUMA, NOXA) and the cell dies before it can become a cancer cell. (c) A **killer T cell** or NK cell makes an infected cell run its own apoptosis program, through **Fas ligand** or granzymes.
+:::
+
+---
+
+**Q2.** List four changes you would see in a cell undergoing apoptosis, and explain why apoptosis causes no inflammation. `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Size, chromatin, membrane, final packages. What happens to the cell's contents?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The cell **shrinks**, the **chromatin condenses** and the nucleus breaks up, the plasma membrane **blebs**, and the cell falls apart into **apoptotic bodies**. The membrane stays **intact**, and phagocytes eat the pieces quickly, so the contents never leak into the tissue. Macrophages that eat apoptotic cells even release anti-inflammatory signals (TGF-β, IL-10).
+:::
+
+---
+
+**Q3.** What is the difference between an initiator caspase and an executioner caspase? Give an example of each. `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+How is each switched on, and what does each cut?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Initiator** caspases (caspase-8, caspase-9) have a long prodomain and are inactive monomers; they become active when an adaptor platform (the DISC for caspase-8, the apoptosome for caspase-9) brings several together. Their main targets are the executioners. **Executioner** caspases (caspase-3, caspase-7) are inactive dimers that are activated by being **cut** by an initiator; they then cut hundreds of cell proteins (ICAD, lamins, ROCK1, PARP-1 …). One initiator activates many executioners: an amplifying cascade.
+:::
+
+---
+
+**Q4.** Put these events of the intrinsic pathway in order: caspase-9 activation, MOMP, PUMA made, caspase-3 activation, cytochrome c binds APAF1, BAX/BAK activated. `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Start with a BH3-only protein, end with the executioner.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+PUMA made (e.g. by p53 after DNA damage) → BAX/BAK activated (PUMA blocks the guardians) → **MOMP** → cytochrome c binds APAF1 (apoptosome) → caspase-9 activation → caspase-3 activation.
+:::
+
+---
+
+**Q5.** A cell lacks both BAX and BAK. Which of these still kill it: (a) DNA damage, (b) Fas ligand, in a liver cell that needs the tBID loop, (c) Fas ligand, in a lymphocyte where caspase-8 activates caspase-3 directly? `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which routes must go through MOMP?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+(a) **No**: DNA damage acts through p53 and BH3-only proteins, which need BAX/BAK to cause MOMP. (b) **No** (or much less): tBID needs BAX/BAK, and without MOMP there is no SMAC to remove the XIAP brake on caspase-3. (c) **Yes**: caspase-8 cuts caspase-3/7 directly, without the mitochondria.
+:::
+
+---
+
+**Q6.** Why do apoptotic cells bind annexin V, and why do early apoptotic cells exclude propidium iodide? `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which lipid moves, and what has not yet happened to the membrane?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Caspases switch off the flippase and switch on a scramblase, so **phosphatidylserine** reaches the outer leaflet, and annexin V binds it (with Ca²⁺). In early apoptosis the plasma membrane is still **intact**, so PI, a DNA dye that cannot cross an intact membrane, stays out. Only late (in a dish, where nothing eats the cells) does the membrane break, and the cells become PI positive.
+:::
+
+---
+
+**Q7.** What does SMAC do, and why does it make sense that it is released together with cytochrome c? `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What holds active caspases back in a healthy cell?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+IAPs such as **XIAP** bind and block active caspase-9, -3 and -7, a safety catch against accidental activation. **SMAC** binds XIAP and pulls it off the caspases. Because SMAC sits in the intermembrane space and leaves at **MOMP**, the brake is released at the same moment as the accelerator (cytochrome c → apoptosome) is pressed: once the cell has committed, death is efficient.
+:::
+
+---
+
+**Q8.** How does venetoclax kill chronic lymphocytic leukaemia (CLL) cells, and why does it kill them much more easily than most normal cells? `[ELO 8]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What is BCL-2 holding in a CLL cell?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Venetoclax is a **BH3 mimetic**: it binds the BH3 groove of **BCL-2**. CLL cells make very much BCL-2, which holds a lot of the BH3-only protein **BIM**: the cells are "primed". The drug releases BIM, BIM activates BAX/BAK, and the cells undergo MOMP and apoptosis within hours. Most normal cells hold less BIM on BCL-2, or rely on other guardians (BCL-XL, MCL-1) that venetoclax does not block, so they stay below the threshold.
+:::

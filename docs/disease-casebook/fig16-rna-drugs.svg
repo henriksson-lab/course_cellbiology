@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1b2a3a"/></marker></defs>
+<rect width="1000" height="360" fill="#ffffff"/>
+<text x="240" y="24" font-size="18" fill="#1b2a3a" font-weight="700" text-anchor="middle">Nusinersen (ASO) fixes splicing of SMN2</text>
+<text x="20" y="62" font-size="16" fill="#c92a2a" font-weight="700" text-anchor="start">Without drug</text>
+<line x1="20" y1="110" x2="430" y2="110" stroke="#868e96" stroke-width="3"/><rect x="20" y="95" width="80" height="30" rx="4" fill="#6b4fa0"/><text x="60.0" y="115" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle">exon 6</text><rect x="190" y="95" width="56" height="30" rx="4" fill="#6b4fa0"/><text x="218.0" y="115" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle">exon 7</text><rect x="350" y="95" width="80" height="30" rx="4" fill="#6b4fa0"/><text x="390.0" y="115" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle">exon 8</text><rect x="262" y="103" width="34" height="14" fill="#c92a2a"/>
+<path d="M100 94 Q225 50 350 94" fill="none" stroke="#1b2a3a" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="279" y="146" font-size="14" fill="#c92a2a" font-weight="700" text-anchor="middle">silencer</text>
+<text x="20" y="172" font-size="16" fill="#1b2a3a" font-weight="400" text-anchor="start">exon 7 skipped in 9 of 10 mRNAs:</text>
+<text x="20" y="192" font-size="16" fill="#c92a2a" font-weight="700" text-anchor="start">short, unstable SMN protein</text>
+<text x="20" y="236" font-size="16" fill="#2b8a3e" font-weight="700" text-anchor="start">With nusinersen</text>
+<line x1="20" y1="290" x2="430" y2="290" stroke="#868e96" stroke-width="3"/><rect x="20" y="275" width="80" height="30" rx="4" fill="#6b4fa0"/><text x="60.0" y="295" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle">exon 6</text><rect x="190" y="275" width="56" height="30" rx="4" fill="#6b4fa0"/><text x="218.0" y="295" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle">exon 7</text><rect x="350" y="275" width="80" height="30" rx="4" fill="#6b4fa0"/><text x="390.0" y="295" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle">exon 8</text><rect x="262" y="283" width="34" height="14" fill="#c92a2a"/><rect x="254" y="264" width="50" height="9" rx="4" fill="#e8590c"/>
+<path d="M100 274 Q145 244 190 274" fill="none" stroke="#1b2a3a" stroke-width="2" stroke-dasharray="5 3"/>
+<path d="M246 274 Q298 232 350 274" fill="none" stroke="#1b2a3a" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="312" y="256" font-size="14" fill="#1b2a3a" font-weight="400" text-anchor="start"></text>
+<text x="20" y="328" font-size="16" fill="#1b2a3a" font-weight="400" text-anchor="start">ASO (orange) covers the silencer:</text>
+<text x="20" y="348" font-size="16" fill="#2b8a3e" font-weight="700" text-anchor="start">exon 7 kept, full-length SMN</text>
+<line x1="490" y1="40" x2="490" y2="340" stroke="#ced4da" stroke-width="1.5"/>
+<text x="755" y="24" font-size="18" fill="#1b2a3a" font-weight="700" text-anchor="middle">Patisiran (siRNA) silences TTR in the liver</text>
+<circle cx="548" cy="120" r="30" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+<circle cx="578.0" cy="120.0" r="4" fill="#8a6a12"/>
+<circle cx="575.0" cy="133.0" r="4" fill="#8a6a12"/>
+<circle cx="566.7" cy="143.5" r="4" fill="#8a6a12"/>
+<circle cx="554.7" cy="149.2" r="4" fill="#8a6a12"/>
+<circle cx="541.3" cy="149.2" r="4" fill="#8a6a12"/>
+<circle cx="529.3" cy="143.5" r="4" fill="#8a6a12"/>
+<circle cx="521.0" cy="133.0" r="4" fill="#8a6a12"/>
+<circle cx="518.0" cy="120.0" r="4" fill="#8a6a12"/>
+<circle cx="521.0" cy="107.0" r="4" fill="#8a6a12"/>
+<circle cx="529.3" cy="96.5" r="4" fill="#8a6a12"/>
+<circle cx="541.3" cy="90.8" r="4" fill="#8a6a12"/>
+<circle cx="554.7" cy="90.8" r="4" fill="#8a6a12"/>
+<circle cx="566.7" cy="96.5" r="4" fill="#8a6a12"/>
+<circle cx="575.0" cy="107.0" r="4" fill="#8a6a12"/>
+<path d="M538 116 h20 M538 124 h20" stroke="#e8590c" stroke-width="3"/>
+<text x="548" y="172" font-size="14" fill="#8a6a12" font-weight="700" text-anchor="middle">lipid</text>
+<text x="548" y="188" font-size="14" fill="#8a6a12" font-weight="700" text-anchor="middle">nanoparticle</text>
+<rect x="610" y="50" width="380" height="250" rx="22" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2.5"/>
+<text x="976" y="290" font-size="15" fill="#8a6a12" font-weight="700" text-anchor="end">liver cell</text>
+<path d="M580 120 L640 120" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<circle cx="680" cy="120" r="34" fill="#e3f3ea" stroke="#2e8b57" stroke-width="2.5"/>
+<text x="680" y="172" font-size="14" fill="#2e8b57" font-weight="700" text-anchor="middle">endosome:</text>
+<text x="680" y="188" font-size="14" fill="#2e8b57" font-weight="400" text-anchor="middle">RNA escapes</text>
+<path d="M716 112 L780 104" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<ellipse cx="830" cy="104" rx="44" ry="26" fill="#dee2e6" stroke="#555555" stroke-width="2"/>
+<path d="M806 104 h48" stroke="#e8590c" stroke-width="4"/>
+<text x="830" y="74" font-size="14" fill="#555555" font-weight="700" text-anchor="middle">RISC + siRNA guide</text>
+<path d="M760 200 h170" stroke="#1b2a3a" stroke-width="3"/>
+<text x="936" y="205" font-size="13" fill="#1b2a3a" font-weight="400" text-anchor="start">AAAA</text>
+<text x="760" y="224" font-size="14" fill="#1b2a3a" font-weight="700" text-anchor="start">TTR mRNA</text>
+<path d="M830 134 L830 190" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<path d="M836 188 L852 212 M852 188 L836 212" stroke="#c92a2a" stroke-width="3"/>
+<text x="864" y="180" font-size="14" fill="#c92a2a" font-weight="700" text-anchor="start">cut</text>
+<text x="640" y="256" font-size="16" fill="#1b2a3a" font-weight="700" text-anchor="start">TTR protein made: about 80 % less</text>
+<text x="640" y="276" font-size="16" fill="#1b2a3a" font-weight="400" text-anchor="start">so less amyloid in nerves and heart</text>
+<text x="510" y="334" font-size="14" fill="#666666" font-weight="400" text-anchor="start">The same lipid nanoparticle design carries the mRNA COVID-19 vaccines.</text>
+</svg>

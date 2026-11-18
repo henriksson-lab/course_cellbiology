@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="400" viewBox="0 0 1100 400" font-family="Helvetica, Arial, sans-serif">
+<!-- fig16: antimitotic drugs arrest dividing cells in mitosis; normal tissues that divide fast are hit too, which explains hair loss, mouth and gut damage and low white blood cell counts. Neuropathy is a separate, non-mitotic effect on axons. -->
+<defs><marker id="ak" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="ao" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="ag" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2b8a3e"/></marker><marker id="ab" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1c4fa0"/></marker><marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker><marker id="am" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#555555"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="260" y="30" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >Drugs that stop the spindle</text>
+<rect x="20" y="70" width="480" height="44" rx="8" fill="#fff4e6" stroke="#e8590c" stroke-width="2"/>
+<text x="32" y="89" font-size="16" text-anchor="start" font-weight="bold" fill="#b03d00" >taxanes (paclitaxel)</text>
+<text x="32" y="107" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >freeze microtubules (stabilise)</text>
+<rect x="20" y="122" width="480" height="44" rx="8" fill="#fff4e6" stroke="#e8590c" stroke-width="2"/>
+<text x="32" y="141" font-size="16" text-anchor="start" font-weight="bold" fill="#b03d00" >vinca alkaloids (vincristine)</text>
+<text x="32" y="159" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >block microtubule growth</text>
+<rect x="20" y="174" width="480" height="44" rx="8" fill="#fff4e6" stroke="#e8590c" stroke-width="2"/>
+<text x="32" y="193" font-size="16" text-anchor="start" font-weight="bold" fill="#b03d00" >kinesin-5 inhibitors*</text>
+<text x="32" y="211" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >poles do not separate</text>
+<rect x="20" y="226" width="480" height="44" rx="8" fill="#fff4e6" stroke="#e8590c" stroke-width="2"/>
+<text x="32" y="245" font-size="16" text-anchor="start" font-weight="bold" fill="#b03d00" >Aurora / PLK1 inhibitors*</text>
+<text x="32" y="263" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >spindle and checkpoint fail</text>
+<text x="20" y="296" font-size="14" text-anchor="start" font-weight="normal" fill="#555" >* tested in trials; not standard drugs</text>
+<line x1="260.0" y1="305.0" x2="260.0" y2="335.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ak)" />
+<rect x="60" y="340" width="400" height="50" rx="10" fill="#f8f9fa" stroke="#1b2a3a" stroke-width="2.5"/>
+<text x="260.0" y="371.0" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >checkpoint holds the cell in mitosis → it dies</text>
+<text x="800" y="30" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >Which cells divide often?</text>
+<rect x="560" y="70" width="520" height="56" rx="8" fill="#ffffff" stroke="#2b8a3e" stroke-width="2"/>
+<text x="575" y="94" font-size="17" text-anchor="start" font-weight="bold" fill="#1b2a3a" >cancer cells</text>
+<text x="575" y="116" font-size="16" text-anchor="start" font-weight="normal" fill="#2b8a3e" >→ the target</text>
+<rect x="560" y="136" width="520" height="56" rx="8" fill="#ffffff" stroke="#c92a2a" stroke-width="2"/>
+<text x="575" y="160" font-size="17" text-anchor="start" font-weight="bold" fill="#1b2a3a" >hair follicle (hair bulb)</text>
+<text x="575" y="182" font-size="16" text-anchor="start" font-weight="normal" fill="#c92a2a" >→ hair loss</text>
+<rect x="560" y="202" width="520" height="56" rx="8" fill="#ffffff" stroke="#c92a2a" stroke-width="2"/>
+<text x="575" y="226" font-size="17" text-anchor="start" font-weight="bold" fill="#1b2a3a" >gut lining (crypts)</text>
+<text x="575" y="248" font-size="16" text-anchor="start" font-weight="normal" fill="#c92a2a" >→ sore mouth, diarrhoea</text>
+<rect x="560" y="268" width="520" height="56" rx="8" fill="#ffffff" stroke="#c92a2a" stroke-width="2"/>
+<text x="575" y="292" font-size="17" text-anchor="start" font-weight="bold" fill="#1b2a3a" >bone marrow</text>
+<text x="575" y="314" font-size="16" text-anchor="start" font-weight="normal" fill="#c92a2a" >→ few neutrophils: infections</text>
+<text x="820" y="352" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >Slowly dividing tissues (neurons, muscle) are spared,</text>
+<text x="820" y="372" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >but taxanes and vincristine still harm long axons:</text>
+<text x="820" y="392" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >transport, not mitosis (the microtubules lecture)</text>
+<line x1="505.0" y1="180.0" x2="553.0" y2="180.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ak)" />
+</svg>

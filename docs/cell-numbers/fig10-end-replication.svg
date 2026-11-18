@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2a7f8f"/></marker>
+  </defs>
+  <text x="20" y="30" font-weight="bold">Chromosome end before replication</text>
+  <rect x="560" y="46" width="232" height="48" fill="#fbeedd"/>
+  <text x="675" y="114" text-anchor="middle" font-size="15" fill="#c2410c">telomere: TTAGGG repeats</text>
+  <line x1="40" y1="58" x2="790" y2="58" stroke="#1b2a3a" stroke-width="5"/>
+  <line x1="40" y1="82" x2="740" y2="82" stroke="#1b2a3a" stroke-width="5"/>
+  <text x="800" y="64" font-size="15">3' overhang</text>
+  <text x="750" y="88" font-size="15">5'</text>
+  <text x="20" y="165" font-weight="bold">After replication: two daughter ends</text>
+  <text x="20" y="208" font-size="15" fill="#555">leading strand</text>
+  <line x1="150" y1="192" x2="735" y2="192" stroke="#2a7f8f" stroke-width="5" marker-end="url(#ab)"/>
+  <line x1="150" y1="214" x2="740" y2="214" stroke="#1b2a3a" stroke-width="5"/>
+  <text x="760" y="208" font-size="15" fill="#2a7f8f">copied to the end</text>
+  <text x="20" y="292" font-size="15" fill="#555">lagging strand</text>
+  <line x1="150" y1="276" x2="790" y2="276" stroke="#1b2a3a" stroke-width="5"/>
+  <line x1="740" y1="298" x2="604" y2="298" stroke="#2a7f8f" stroke-width="5" marker-end="url(#ab)"/>
+  <line x1="596" y1="298" x2="454" y2="298" stroke="#2a7f8f" stroke-width="5" marker-end="url(#ab)"/>
+  <line x1="446" y1="298" x2="304" y2="298" stroke="#2a7f8f" stroke-width="5" marker-end="url(#ab)"/>
+  <line x1="296" y1="298" x2="150" y2="298" stroke="#2a7f8f" stroke-width="5"/>
+  <rect x="745" y="290" width="46" height="16" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <text x="800" y="304" font-size="15" fill="#c2410c">gap</text>
+  <text x="150" y="335" font-size="15">The last RNA primer at the very end is removed and cannot be replaced:</text>
+  <text x="150" y="355" font-size="15">the new strand is shorter, so the chromosome loses some telomere every round.</text>
+  <text x="20" y="236" font-size="14" fill="#555">black: old strand · teal: new strand</text>
+</svg>

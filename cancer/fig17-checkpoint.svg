@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <!-- panel 1 -->
+  <text x="270" y="30" font-size="19" font-weight="700" text-anchor="middle">Without the drug: the T cell is braked</text>
+  <text x="550" y="30" font-size="1"> </text>
+  <path d="M40 60 C120 50 170 90 170 190 C170 290 120 330 40 320 Z" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/>
+  <text x="80" y="195" font-size="17" font-weight="700" text-anchor="middle">T cell</text>
+  <path d="M500 60 C420 50 370 90 370 190 C370 290 420 330 500 320 Z" fill="#f3b3c8" stroke="#d6457a" stroke-width="3"/>
+  <text x="455" y="195" font-size="17" font-weight="700" text-anchor="middle">tumour</text>
+  <text x="455" y="215" font-size="17" font-weight="700" text-anchor="middle">cell</text>
+  <!-- TCR - MHC -->
+  <rect x="170" y="98" width="70" height="20" rx="6" fill="#2e8b57"/><text x="205" y="88" font-size="15" text-anchor="middle">TCR</text>
+  <rect x="300" y="98" width="70" height="20" rx="6" fill="#6b4fa0"/><text x="335" y="88" font-size="15" text-anchor="middle">MHC + peptide</text>
+  <line x1="240" y1="108" x2="300" y2="108" stroke="#1b2a3a" stroke-width="3"/>
+  <text x="270" y="145" font-size="15" text-anchor="middle">"I see you" (go)</text>
+  <!-- PD-1 PD-L1 -->
+  <rect x="170" y="240" width="70" height="20" rx="6" fill="#1c4fa0"/><text x="205" y="286" font-size="15" text-anchor="middle">PD-1</text>
+  <rect x="300" y="240" width="70" height="20" rx="6" fill="#d6457a"/><text x="335" y="286" font-size="15" text-anchor="middle">PD-L1</text>
+  <line x1="240" y1="250" x2="300" y2="250" stroke="#1b2a3a" stroke-width="3"/>
+  <text x="270" y="225" font-size="15" text-anchor="middle">"stop" (brake)</text>
+  <text x="270" y="360" font-size="16" text-anchor="middle">T cell switched off: the tumour survives</text>
+  <!-- panel 2 -->
+  <text x="830" y="30" font-size="19" font-weight="700" text-anchor="middle">With anti-PD-1: the brake is released</text>
+  <path d="M600 60 C680 50 730 90 730 190 C730 290 680 330 600 320 Z" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/>
+  <text x="640" y="195" font-size="17" font-weight="700" text-anchor="middle">T cell</text>
+  <path d="M1060 60 C980 50 930 90 930 190 C930 290 980 330 1060 320 Z" fill="#f3b3c8" stroke="#d6457a" stroke-width="3" stroke-dasharray="8 5"/>
+  <text x="1015" y="195" font-size="17" font-weight="700" text-anchor="middle">tumour</text>
+  <text x="1015" y="215" font-size="17" font-weight="700" text-anchor="middle">cell dies</text>
+  <rect x="730" y="98" width="70" height="20" rx="6" fill="#2e8b57"/><rect x="860" y="98" width="70" height="20" rx="6" fill="#6b4fa0"/>
+  <line x1="800" y1="108" x2="860" y2="108" stroke="#1b2a3a" stroke-width="3"/>
+  <rect x="730" y="240" width="70" height="20" rx="6" fill="#1c4fa0"/><rect x="860" y="240" width="70" height="20" rx="6" fill="#d6457a"/>
+  <!-- antibody Y -->
+  <g stroke="#e8590c" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M806 250 L830 250"/><path d="M830 250 L848 232"/><path d="M830 250 L848 268"/>
+  </g>
+  <text x="830" y="300" font-size="15" text-anchor="middle" fill="#e8590c" font-weight="700">antibody</text>
+  <text x="830" y="318" font-size="15" text-anchor="middle" fill="#e8590c">(nivolumab, pembrolizumab)</text>
+  <text x="830" y="160" font-size="15" text-anchor="middle">perforin, granzymes</text>
+  <text x="830" y="178" font-size="15" text-anchor="middle">→ apoptosis</text>
+  <text x="830" y="360" font-size="16" text-anchor="middle">T cell kills: works best when the tumour has many mutations</text>
+  <text x="550" y="404" font-size="15" text-anchor="middle" fill="#555">Simplified: the TCR sees mutant peptides on MHC class I. CTLA-4 is a second brake, acting earlier, when T cells are first activated.</text>
+</svg>

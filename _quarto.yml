@@ -91,6 +91,8 @@ website:
                 href: cell-methods/questions.qmd
               - text: "Demo: flow cytometry gating"
                 href: cell-methods/questions.qmd#explore
+          - text: "Bioinformatics day: where does a protein live?"
+            href: bioinfo-protein-atlas/index.qmd
       - section: "Membranes and transport"
         contents:
           - section: "Membrane structure"
@@ -259,6 +261,80 @@ website:
                 href: myosin-if/questions.qmd
               - text: "Demo: sarcomere"
                 href: myosin-if/questions.qmd#explore
+      - section: "Cell cycle and cell death"
+        contents:
+          - section: "The cell-cycle control system"
+            contents:
+              - text: "Lecture (slides)"
+                href: cell-cycle-control/lec.qmd
+              - text: "Quiz"
+                href: cell-cycle-control/quiz.qmd
+              - text: "Study questions"
+                href: cell-cycle-control/questions.qmd
+              - text: "Demo: cell-cycle clock"
+                href: cell-cycle-control/questions.qmd#explore
+          - section: "Mitosis and cytokinesis"
+            contents:
+              - text: "Lecture (slides)"
+                href: mitosis/lec.qmd
+              - text: "Quiz"
+                href: mitosis/quiz.qmd
+              - text: "Study questions"
+                href: mitosis/questions.qmd
+              - text: "Demo: spindle checkpoint"
+                href: mitosis/questions.qmd#explore
+          - section: "Controlling cell numbers"
+            contents:
+              - text: "Lecture (slides)"
+                href: cell-numbers/lec.qmd
+              - text: "Quiz"
+                href: cell-numbers/quiz.qmd
+              - text: "Study questions"
+                href: cell-numbers/questions.qmd
+              - text: "Demo: growth, senescence and telomeres"
+                href: cell-numbers/questions.qmd#explore
+          - section: "Apoptosis"
+            contents:
+              - text: "Lecture (slides)"
+                href: apoptosis/lec.qmd
+              - text: "Quiz"
+                href: apoptosis/quiz.qmd
+              - text: "Study questions"
+                href: apoptosis/questions.qmd
+              - text: "Demo: BCL-2 balance"
+                href: apoptosis/questions.qmd#explore
+      - section: "Cell death and disease"
+        contents:
+          - section: "Beyond apoptosis: necroptosis, pyroptosis, ferroptosis"
+            contents:
+              - text: "Lecture (slides)"
+                href: regulated-necrosis/lec.qmd
+              - text: "Quiz"
+                href: regulated-necrosis/quiz.qmd
+              - text: "Study questions"
+                href: regulated-necrosis/questions.qmd
+              - text: "Demo: which death is it?"
+                href: regulated-necrosis/questions.qmd#explore
+          - section: "Cancer as a disease of cell biology"
+            contents:
+              - text: "Lecture (slides)"
+                href: cancer/lec.qmd
+              - text: "Quiz"
+                href: cancer/quiz.qmd
+              - text: "Study questions"
+                href: cancer/questions.qmd
+              - text: "Demo: clonal evolution under therapy"
+                href: cancer/questions.qmd#explore
+          - section: "When cell biology goes wrong: a disease casebook"
+            contents:
+              - text: "Lecture (slides)"
+                href: disease-casebook/lec.qmd
+              - text: "Quiz"
+                href: disease-casebook/quiz.qmd
+              - text: "Study questions"
+                href: disease-casebook/questions.qmd
+              - text: "Demo: diagnose the defect"
+                href: disease-casebook/questions.qmd#explore
 
 format:
   html:

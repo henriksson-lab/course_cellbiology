@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1b2a3a"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2b8a3e"/></marker>
+  </defs>
+  <rect width="1000" height="430" fill="#ffffff"/>
+  <text x="24" y="28" font-size="16" fill="#1b2a3a">airway side (outside)</text>
+  <!-- cell -->
+  <rect x="20" y="66" width="960" height="356" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/>
+  <rect x="20" y="44" width="960" height="22" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+  <text x="24" y="88" font-size="15" fill="#8a6a12">apical plasma membrane</text>
+
+  <!-- nucleus -->
+  <ellipse cx="120" cy="300" rx="88" ry="76" fill="#efebf7" stroke="#6b4fa0" stroke-width="2.5"/>
+  <text x="120" y="296" text-anchor="middle" font-size="17" font-weight="700" fill="#6b4fa0">CFTR gene</text>
+  <text x="120" y="320" text-anchor="middle" font-size="15" fill="#6b4fa0">nucleus</text>
+
+  <!-- ER -->
+  <rect x="250" y="240" width="210" height="100" rx="22" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2.5"/>
+  <text x="440" y="330" text-anchor="end" font-size="17" font-weight="700" fill="#2a7f8f">ER</text>
+  <!-- Golgi -->
+  <g fill="#fbeedd" stroke="#d9822b" stroke-width="2.2">
+    <path d="M560 215 q-14 50 0 100 l11 0 q-14 -50 0 -100 z"/>
+    <path d="M584 215 q-14 50 0 100 l11 0 q-14 -50 0 -100 z"/>
+    <path d="M608 215 q-14 50 0 100 l11 0 q-14 -50 0 -100 z"/>
+  </g>
+  <text x="590" y="338" text-anchor="middle" font-size="17" font-weight="700" fill="#d9822b">Golgi</text>
+
+  <!-- route: nucleus to ER (mRNA, translation) -->
+  <path d="M208 290 L246 290" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M218 280 L236 300 M236 280 L218 300" stroke="#c92a2a" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M227 278 L227 196" stroke="#c92a2a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="227" y="166" text-anchor="middle" font-size="16" font-weight="700" fill="#c92a2a">1. Stop codon:</text>
+  <text x="227" y="186" text-anchor="middle" font-size="16" fill="#1b2a3a">no protein made</text>
+
+  <!-- folded CFTR leaves ER to Golgi -->
+  <circle cx="420" cy="275" r="11" fill="#2b8a3e"/>
+  <path d="M434 272 L552 262" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <!-- misfolded CFTR, ERAD -->
+  <path d="M296 268 l10 -10 l8 12 l12 -6 l-2 14 l10 8 l-14 4 l-4 12 l-10 -10 l-12 2 l2 -12 z" fill="#c92a2a"/>
+  <path d="M306 304 L306 368" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="280" y="372" width="52" height="34" rx="8" fill="#dee2e6" stroke="#555555" stroke-width="2"/>
+  <line x1="280" y1="383" x2="332" y2="383" stroke="#555555" stroke-width="1.5"/><line x1="280" y1="395" x2="332" y2="395" stroke="#555555" stroke-width="1.5"/>
+  <text x="342" y="386" font-size="15" fill="#555555">proteasome</text>
+  <text x="342" y="408" font-size="16" fill="#1b2a3a"><tspan font-weight="700" fill="#c92a2a">2. F508del:</tspan> misfolds, ERAD</text>
+  <text x="262" y="232" font-size="16" font-weight="700" fill="#e8590c">+ corrector</text>
+
+  <!-- Golgi to membrane -->
+  <path d="M582 210 Q562 140 538 80" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M628 250 Q770 210 818 80" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <!-- G551D channel: closed -->
+  <rect x="520" y="36" width="16" height="38" rx="4" fill="#2b8a3e"/>
+  <rect x="536" y="36" width="16" height="38" rx="4" fill="#2b8a3e"/>
+  <line x1="520" y1="74" x2="552" y2="74" stroke="#c92a2a" stroke-width="4"/>
+  <g text-anchor="end" font-size="16">
+    <text x="520" y="114" font-weight="700" fill="#c92a2a">3. G551D:</text>
+    <text x="520" y="134" fill="#1b2a3a">at the surface,</text>
+    <text x="520" y="154" fill="#1b2a3a">but the gate stays shut</text>
+    <text x="520" y="176" font-weight="700" fill="#e8590c">+ potentiator</text>
+  </g>
+
+  <!-- normal channel: open -->
+  <rect x="796" y="36" width="16" height="38" rx="4" fill="#2b8a3e"/>
+  <rect x="828" y="36" width="16" height="38" rx="4" fill="#2b8a3e"/>
+  <path d="M820 72 L820 12" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arg)"/>
+  <text x="830" y="26" font-size="16" font-weight="700" fill="#2b8a3e">Cl<tspan dy="-6" font-size="12">−</tspan></text>
+  <g font-size="16">
+    <text x="852" y="114" font-weight="700" fill="#2b8a3e">Normal:</text>
+    <text x="852" y="134" fill="#1b2a3a">opens, chloride</text>
+    <text x="852" y="154" fill="#1b2a3a">flows out</text>
+  </g>
+</svg>

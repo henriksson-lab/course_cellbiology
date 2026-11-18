@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+  <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c92a2a"/></marker></defs>
+  <rect x="10" y="150" width="170" height="90" rx="12" fill="#f2a7a0" stroke="#c92a2a" stroke-width="2"/>
+  <text x="95" y="188" text-anchor="middle" font-weight="700" font-size="19">active</text>
+  <text x="95" y="212" text-anchor="middle" font-weight="700" font-size="19">caspase-3, -7</text>
+  <g stroke="#c92a2a" stroke-width="2.5" fill="none" marker-end="url(#r)">
+    <path d="M180,180 C220,180 220,40 262,40"/>
+    <path d="M180,188 C230,188 230,112 262,112"/>
+    <path d="M180,195 L262,195"/>
+    <path d="M180,202 C230,202 230,268 262,268"/>
+    <path d="M180,210 C220,210 220,345 262,345"/>
+  </g>
+  <text x="95" y="140" text-anchor="middle" font-size="15" fill="#c92a2a">cuts:</text>
+  <!-- rows -->
+  <g font-size="17">
+    <rect x="265" y="20" width="230" height="40" rx="8" fill="#fff" stroke="#c92a2a"/><text x="380" y="46" text-anchor="middle">ICAD (holds a nuclease)</text>
+    <rect x="265" y="92" width="230" height="40" rx="8" fill="#fff" stroke="#c92a2a"/><text x="380" y="118" text-anchor="middle">nuclear lamins</text>
+    <rect x="265" y="175" width="230" height="40" rx="8" fill="#fff" stroke="#c92a2a"/><text x="380" y="201" text-anchor="middle">ROCK1 (a kinase)</text>
+    <rect x="265" y="248" width="230" height="40" rx="8" fill="#fff" stroke="#c92a2a"/><text x="380" y="274" text-anchor="middle">flippase / scramblase</text>
+    <rect x="265" y="325" width="230" height="40" rx="8" fill="#fff" stroke="#c92a2a"/><text x="380" y="351" text-anchor="middle">pannexin-1 channel</text>
+  </g>
+  <g stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)">
+    <line x1="497" y1="40" x2="537" y2="40"/><line x1="497" y1="112" x2="537" y2="112"/><line x1="497" y1="195" x2="537" y2="195"/>
+    <line x1="497" y1="268" x2="537" y2="268"/><line x1="497" y1="345" x2="537" y2="345"/>
+  </g>
+  <text x="545" y="36">freed nuclease (CAD) cuts DNA between</text>
+  <text x="545" y="57">nucleosomes → fragments of ~200 bp × n</text>
+  <text x="545" y="117">lamina falls apart → nucleus breaks up</text>
+  <text x="545" y="191">kinase always on → myosin contracts the</text>
+  <text x="545" y="212">cortex → membrane blebs</text>
+  <text x="545" y="264">flippase off, scramblase (XKR8) on →</text>
+  <text x="545" y="285">PS appears outside: <tspan font-weight="700">"eat me"</tspan></text>
+  <text x="545" y="341">channel opens → ATP leaks out:</text>
+  <text x="545" y="362"><tspan font-weight="700">"find me"</tspan> for phagocytes</text>
+  <!-- DNA ladder gel -->
+  <g transform="translate(905 10)">
+    <rect x="0" y="0" width="150" height="140" rx="6" fill="#26303b"/>
+    <text x="40" y="18" text-anchor="middle" font-size="13" fill="#fff">healthy</text>
+    <text x="108" y="18" text-anchor="middle" font-size="13" fill="#fff">apoptotic</text>
+    <rect x="22" y="28" width="36" height="7" fill="#e8f4ff"/>
+    <g fill="#e8f4ff"><rect x="90" y="40" width="36" height="5" opacity=".55"/><rect x="90" y="60" width="36" height="5" opacity=".65"/><rect x="90" y="78" width="36" height="5" opacity=".75"/><rect x="90" y="94" width="36" height="5" opacity=".85"/><rect x="90" y="108" width="36" height="5"/><rect x="90" y="121" width="36" height="5"/></g>
+  </g>
+  <text x="980" y="170" text-anchor="middle" font-size="14">"DNA ladder" on a gel</text>
+  <text x="265" y="393" font-size="15" fill="#6b7280">Also cut: PARP-1, a DNA-repair enzyme (a marker on western blots), and hundreds of other proteins.</text>
+</svg>

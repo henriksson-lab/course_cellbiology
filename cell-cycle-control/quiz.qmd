@@ -1,0 +1,108 @@
+---
+title: "Quiz: the cell-cycle control system"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *The cell-cycle control system*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Put the phases in order, starting just after a cell is born: S, M, G1, G2. In which phase does a cell have 4N DNA but has not yet started to divide its chromosomes? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+DNA is copied in S. What comes between the copy and mitosis?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**G1 → S → G2 → M.** In **G2** the DNA has been copied (4N) and the cell checks the copy and prepares for mitosis. Cells in M also have 4N until the chromosomes are separated at anaphase.
+:::
+
+---
+
+**Q2.** The amount of CDK1 protein in a cell is about the same in every phase, yet CDK1 activity is high only in mitosis. Give two reasons. `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does a CDK need to be active, and which brakes act on it before mitosis?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+1. CDK1 is active only when bound to its **cyclin (cyclin B)**, which is made during S and G2 and destroyed at the end of M.
+2. Before mitosis, **Wee1** keeps an **inhibitory phosphate** on CDK1; only when **Cdc25** removes it does CDK1 switch on (fast, through positive feedback). CDK inhibitor proteins can also keep it off.
+:::
+
+---
+
+**Q3.** Which ubiquitin ligase destroys cyclin B at the end of mitosis, and why is it important that this happens by destruction and not by a reversible modification? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think about which way the cycle may run.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The **APC/C** (with its partner **Cdc20**) tags cyclin B with ubiquitin, and the **proteasome** destroys it. A destroyed protein cannot come back without new synthesis, so the cell cannot slip back into mitosis: destruction makes the transition **one-way** (irreversible).
+:::
+
+---
+
+**Q4.** Describe in four steps how a growth factor outside the cell leads to the expression of S-phase genes. `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Receptor → kinase cascade → a cyclin → a protein that holds a transcription factor.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+1. The growth factor activates a receptor tyrosine kinase, Ras and the **ERK** cascade.
+2. ERK switches on genes that lead to **cyclin D**, which binds **CDK4/6**.
+3. Cyclin D–CDK4/6 **phosphorylates Rb**; phosphorylated Rb **releases E2F**.
+4. **E2F** switches on S-phase genes (cyclin E, cyclin A, DNA polymerase). Cyclin E–CDK2 phosphorylates more Rb (positive feedback).
+:::
+
+---
+
+**Q5.** What is the restriction point? What happens if you remove growth factors from a cell 2 hours after the restriction point? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+After the restriction point, what keeps Rb phosphorylated?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The **restriction point** is the moment in G1 after which the cell no longer needs mitogens to finish the cycle. Removing growth factors after it has **no effect on this cycle**: the cell enters S, copies its DNA and divides, because **cyclin E–CDK2 and E2F** now keep Rb phosphorylated by themselves (positive feedback). Its daughters will stop in their G1 if the growth factors stay away.
+:::
+
+---
+
+**Q6.** After X-ray irradiation, normal fibroblasts stop in G1 and in G2. Name the protein that the tumour suppressor p53 switches on to cause the G1 arrest, and explain how that protein works. `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+It is one of the CDK inhibitors (CKIs).
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**p21**, a **CDK inhibitor**. It binds cyclin–CDK complexes (CDK2, CDK4/6) and blocks their kinase activity, so Rb is not phosphorylated, E2F stays bound and the cell cannot start S phase. p53 itself accumulates after damage because the kinases ATM/ATR and Chk1/2 phosphorylate it, so its E3 ligase **MDM2** can no longer tag it for destruction.
+:::
+
+---
+
+**Q7.** You stain cells with propidium iodide and measure them by flow cytometry. The histogram has a peak at 200 (fluorescence units), a peak at 400 and some cells in between. Which phases do the three groups contain? What would the histogram look like after 24 h with a spindle poison? `[ELO 7, ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Fluorescence is proportional to the amount of DNA.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Peak at 200: **2N, G1** (and G0). Peak at 400: **4N, G2 and M**. In between: **S phase**, DNA partly copied. A spindle poison stops cells in mitosis, so cells finish S and G2 and then **pile up at 4N**: one large peak at 400, the 2N peak and the S plateau almost empty.
+:::
+
+---
+
+**Q8.** In FUCCI cells, the red reporter is a piece of Cdt1 and the green reporter is a piece of geminin. A cell has a red nucleus and no green. Which phase is it in, and which ubiquitin ligase is keeping the green reporter away? `[ELO 7, ELO 1]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which ligase is active from late mitosis through G1?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**G1.** The **APC/C** (with Cdh1) is active from late M through G1 and destroys the geminin fragment, so no green signal builds up. At the G1/S transition the APC/C is switched off (green appears, yellow nucleus) and SCF starts destroying the Cdt1 fragment (red disappears).
+:::

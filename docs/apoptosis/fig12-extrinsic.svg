@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 430" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+  <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c92a2a"/></marker></defs>
+  <!-- killer cell -->
+  <rect x="0" y="0" width="520" height="56" fill="#e3f3ea"/>
+  <rect x="0" y="50" width="520" height="10" fill="#2e8b57"/>
+  <text x="20" y="32" font-size="17" font-weight="700" fill="#2e8b57">killer T cell or NK cell</text>
+  <!-- FasL trimer -->
+  <g fill="#2e8b57"><rect x="242" y="60" width="16" height="34" rx="4"/><rect x="262" y="60" width="16" height="34" rx="4"/><rect x="282" y="60" width="16" height="34" rx="4"/></g>
+  <text x="310" y="84" font-size="16" font-weight="700" fill="#2e8b57">Fas ligand</text>
+  <!-- target membrane -->
+  <rect x="0" y="122" width="1100" height="14" fill="#f6f0de" stroke="#8a6a12"/>
+  <text x="560" y="114" font-size="15" fill="#8a6a12">plasma membrane of the target cell</text>
+  <g fill="#8a6a12"><rect x="242" y="98" width="16" height="70" rx="4"/><rect x="262" y="98" width="16" height="70" rx="4"/><rect x="282" y="98" width="16" height="70" rx="4"/></g>
+  <text x="310" y="160" font-size="16" font-weight="700" fill="#8a6a12">Fas (death receptor)</text>
+  <!-- FADD -->
+  <g><rect x="232" y="172" width="76" height="30" rx="8" fill="#e6e6e6" stroke="#555"/><text x="270" y="193" text-anchor="middle" font-size="15" font-weight="700">FADD</text></g>
+  <g><rect x="222" y="208" width="96" height="34" rx="8" fill="#f2a7a0" stroke="#c92a2a" stroke-width="2"/><text x="270" y="231" text-anchor="middle" font-size="15" font-weight="700">caspase-8</text></g>
+  <path d="M210,165 L210,250 L330,250 L330,165" fill="none" stroke="#555" stroke-dasharray="4 3"/>
+  <text x="40" y="200" font-size="15">death-inducing</text>
+  <text x="40" y="220" font-size="15">signalling complex</text>
+  <text x="40" y="240" font-size="15">(DISC)</text>
+  <!-- type I branch -->
+  <line x1="270" y1="245" x2="270" y2="318" stroke="#c92a2a" stroke-width="2.5" marker-end="url(#r)"/>
+  <rect x="190" y="322" width="160" height="40" rx="10" fill="#f2a7a0" stroke="#c92a2a" stroke-width="2"/>
+  <text x="270" y="348" text-anchor="middle" font-size="16" font-weight="700">caspase-3, -7</text>
+  <text x="270" y="390" text-anchor="middle" font-size="15">directly (e.g. lymphocytes)</text>
+  <!-- type II branch -->
+  <line x1="322" y1="225" x2="470" y2="225" stroke="#c92a2a" stroke-width="2.5" marker-end="url(#r)"/>
+  <text x="396" y="216" text-anchor="middle" font-size="15" fill="#c92a2a">cuts</text>
+  <rect x="476" y="206" width="70" height="38" rx="8" fill="#d6336c"/><text x="511" y="231" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">BID</text>
+  <line x1="550" y1="225" x2="610" y2="225" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="614" y="206" width="70" height="38" rx="8" fill="#d6336c"/><text x="649" y="231" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">tBID</text>
+  <line x1="688" y1="225" x2="760" y2="225" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <text x="724" y="214" text-anchor="middle" font-size="14">BAX/BAK</text>
+  <g transform="translate(860 228)">
+    <rect x="-90" y="-44" width="180" height="88" rx="44" fill="#f8e9ec" stroke="#a8324a" stroke-width="2.5"/>
+    <text x="0" y="-4" text-anchor="middle" font-size="16" font-weight="700" fill="#a8324a">MOMP</text>
+    <text x="0" y="18" text-anchor="middle" font-size="14">cytochrome c, SMAC</text>
+  </g>
+  <path d="M860,276 L860,342 L356,342" fill="none" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <text x="610" y="335" text-anchor="middle" font-size="15">apoptosome → caspase-9</text>
+  <text x="470" y="400" font-size="15">In many cells (e.g. liver cells) the direct route is too weak: the loop through</text>
+  <text x="470" y="420" font-size="15">the mitochondria (tBID) amplifies it. This links the two pathways.</text>
+</svg>

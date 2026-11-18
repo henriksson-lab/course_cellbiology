@@ -1,4 +1,4 @@
-# Handover notes (2026-11-18)
+# Handover notes (updated 2026-11-18, second session)
 
 State of the 3MB001 Cell Biology course site and how to continue. Read this
 first in a new session, then `plan/schedule.md`.
@@ -20,13 +20,18 @@ first in a new session, then `plan/schedule.md`.
   not in the sidebar. The worker building it was stopped by Anthropic safeguards
   (flagged as bio); Claude must not finish that work itself. The user decides:
   finish by hand, another model, or `/feedback`.
-- **Not built yet:** blocks "Cell cycle and cell death" (cell-cycle-control,
-  mitosis, cell-numbers, apoptosis) and "Cell death and disease"
-  (regulated-necrosis, cancer, disease-casebook, drug-journey). Demo ideas for
-  each are in `plan/demos.md` section 5.
+- **Second session added:** cell-cycle-control, mitosis, cell-numbers, apoptosis,
+  regulated-necrosis, cancer, disease-casebook (all with demos), so 26 of 28
+  lectures are published.
+- **Not built:** `drug-journey` (capstone). Its worker was also stopped by
+  safeguards before writing any files; sidebar entry removed. Same rule as
+  mitochondria: Claude does not do it; the user decides.
 - **Bioinformatics days:** planned in `plan/bioinformatics.md` (one per block, 8 in
-  total; browser steps + R Markdown templates knit to HTML; APIs checked
-  2026-11-18). None built. Suggested pilot: day 1 `bioinfo-protein-atlas/`.
+  total; browser steps + R Markdown templates knit to HTML). Day 1
+  `bioinfo-protein-atlas/` is built (pilot; sidebar: last item of the first block,
+  purple). Its lessons are in `plan/bioinformatics.md` section 6 (e.g. per-page
+  `resources:`, solution `.Rmd` kept out of `docs/`, `engine: markdown`). Days 2–8
+  not built.
 
 ## Key planning docs
 
@@ -96,7 +101,9 @@ After a push, check the Pages run: `gh run list -R henriksson-lab/course_cellbio
 
 ## Open items / to check
 
-- Mitochondria draft (see above).
+- Mitochondria draft and drug-journey (see above).
+- Day 1 bioinformatics: check the UniProt/HPA button labels by hand in a browser.
+- Optional images not downloaded (Commons rate limits) are listed in the workers' units/credits notes (mitosis: ProphaseIF, fibroblast cytokinesis, meiosis I oocyte, H2B-GFP film; cancer: multipolar spindle, FDG-PET, microinvasive DCIS).
 - Notch demo opens at 1× real time but the pattern needs time-lapse; students
   are told to pick a speed. Author may prefer opening in time-lapse.
 - Optional image not downloaded (rate limit): clathrin cage cryo-EM for the

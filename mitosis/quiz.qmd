@@ -1,0 +1,104 @@
+---
+title: "Quiz: mitosis and cytokinesis"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Mitosis and cytokinesis*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Sister chromatids are made in S phase but separated only in anaphase, hours later. What holds them together in the meantime, and why does this matter for the spindle? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+A ring-shaped protein complex is loaded before replication.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Cohesin** rings encircle both sister DNA molecules from S phase on. This keeps the sisters paired so the cell knows which two chromatids belong together. It also lets the spindle pull the two sisters against each other: the resistance of cohesin makes the **tension** that tells the cell a chromosome is correctly attached. At anaphase, separase cuts cohesin.
+:::
+
+---
+
+**Q2.** How does CDK1–cyclin B make the nuclear envelope break down at the start of mitosis, and what makes it re-form in telophase? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think of the intermediate-filament network under the inner nuclear membrane.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+CDK1–cyclin B **phosphorylates lamins** (and nuclear pore proteins). Phosphorylated lamins no longer form filaments, so the **nuclear lamina** dissolves, the pores come apart and the membrane is absorbed into the ER. In telophase, cyclin B has been destroyed, CDK1 activity falls and **phosphatases** remove the phosphates, so lamins and pores reassemble around each set of chromosomes.
+:::
+
+---
+
+**Q3.** What does kinesin-5 do in the spindle, and what does a cell look like after treatment with monastrol, a kinesin-5 inhibitor? `[ELO 6]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Kinesin-5 has motor heads at both ends and walks towards plus ends.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Kinesin-5 cross-links **antiparallel** interpolar microtubules and walks towards both plus ends, which **slides them apart** and pushes the two poles away from each other. With monastrol the centrosomes do not separate: the cell forms a **monopolar spindle** (one aster with chromosomes in a ring around it). No chromosome can biorient, so the checkpoint holds the cell in mitosis.
+:::
+
+---
+
+**Q4.** Name the four ways a pair of sister kinetochores can attach to the spindle. Which one is correct, and which one does the spindle assembly checkpoint **not** detect? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+The checkpoint responds to unattached kinetochores, not directly to tension.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Amphitelic** (each sister to its own pole, correct), **monotelic** (one sister attached, one free), **syntelic** (both sisters to the same pole) and **merotelic** (one kinetochore attached to both poles). The checkpoint does **not** detect **merotelic** attachments: every kinetochore is attached and the chromosome is under tension, so there is no unattached kinetochore to make the wait signal. Merotelic chromatids lag in anaphase.
+:::
+
+---
+
+**Q5.** Aurora B kinase sits between the two sister kinetochores. Explain how it can tell a correct attachment from a syntelic one. `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What happens to the distance between Aurora B and the kinetochores when the sisters are pulled towards opposite poles?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Aurora B phosphorylates kinetochore proteins (such as Ndc80) that are **within its reach**, which weakens their grip on microtubules. In a correct (bioriented) attachment the sisters are pulled apart: there is **tension**, the kinetochores are pulled **out of reach**, they are not phosphorylated, and the attachment holds. In a syntelic attachment there is **no tension**: the kinetochores stay close to Aurora B, are phosphorylated and **release** the microtubules, so they can try again.
+:::
+
+---
+
+**Q6.** A cell has 45 chromosomes correctly attached and one chromosome with an unattached kinetochore. What does the spindle assembly checkpoint do, and through which proteins? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+One unattached kinetochore is enough.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The checkpoint **keeps the whole cell in metaphase**. The unattached kinetochore activates **Mad2**, which helps assemble the **mitotic checkpoint complex (MCC)**. The MCC captures **Cdc20** and blocks **APC/C–Cdc20**, so securin and cyclin B are not destroyed: separase stays inactive and cohesin stays intact. Only when that last kinetochore is attached does APC/C–Cdc20 become active and anaphase begin.
+:::
+
+---
+
+**Q7.** List the steps from "the last kinetochore attaches" to "the sister chromatids move apart". `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Four proteins: APC/C, securin, separase, cohesin.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+No new MCC is made → **APC/C–Cdc20** becomes active → it puts **ubiquitin** on **securin** → the **proteasome** destroys securin → **separase** is free → separase **cuts the kleisin of cohesin** → all sister pairs are released at once and are pulled to the poles (anaphase A). APC/C–Cdc20 also destroys cyclin B, so CDK1 activity falls and the cell exits mitosis.
+:::
+
+---
+
+**Q8.** Why do paclitaxel and vincristine cause hair loss and a sore mouth, but not heart failure? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which cells are in mitosis during a course of treatment?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Both drugs stop microtubule dynamics, so any cell that **enters mitosis** cannot build a working spindle, is held by the checkpoint and usually dies. Cells in the **hair bulb** and in the **mouth and gut lining** divide very often, so many are hit. Heart muscle cells hardly divide, so mitosis-dependent damage does not reach them. (Nerve damage by these drugs is a separate effect on axonal transport, not on mitosis.)
+:::

@@ -505,3 +505,26 @@ pitfall), then the others in block order as their lectures are built.
 
 Total estimated build effort: about **13–14 days** for all eight, plus ~1 h per
 day page per year to re-check answers.
+
+## 6. Lessons from the day 1 pilot (2026-11-18)
+
+Apply these to all remaining days:
+
+1. Publish downloads with front-matter `resources:` on each day's `index.qmd`
+   (template + snapshot), **not** a `bioinfo-*/*.Rmd` glob in `_quarto.yml`: the
+   glob would also publish the worked solution (`*-solution.Rmd`, kept out of `docs/`).
+2. Every template: `error = TRUE` in the setup chunk plus a "no errors at hand-in"
+   check; data-record defaults (source, date, release) set before any fetch so inline
+   R never breaks a knit; snapshot fallback that reads the local `data/` file or, if
+   missing, the copy on the site.
+3. Don't name an R object `url` (it masks base R `url()`); use `uniprot_url` etc.
+4. Put `engine: markdown` on every day page (the site build never runs R or calls
+   an API); show inline-R examples as double-backtick code.
+5. Check that each planned protein actually has data in each database before
+   writing a task (HPA has no subcellular data for LAMP1).
+6. Avoid wide tables on day pages (phones); prefer lists and code blocks.
+7. Good VG pattern: two databases that disagree (e.g. catalase: UniProt
+   peroxisome vs HPA "Vesicles"), with what to expect if one updates.
+8. Effort estimate held (≈1.5 days for day 1); most time goes into checking answers live.
+9. Click paths: name buttons by their labels; no screenshots of external sites.
+   Check the labels once by hand in a real browser.

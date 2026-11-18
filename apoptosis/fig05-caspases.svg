@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+  <!-- top: what a caspase does -->
+  <text x="20" y="30" font-size="18" font-weight="700">A caspase is a protease with a cysteine (C) in its active site. It cuts proteins just after an aspartate (D).</text>
+  <g transform="translate(110 64)">
+    <line x1="0" y1="0" x2="420" y2="0" stroke="#1b2a3a" stroke-width="3"/>
+    <g font-size="15" text-anchor="middle">
+      <circle cx="120" cy="0" r="14" fill="#fff" stroke="#1b2a3a"/><text x="120" y="5">E</text>
+      <circle cx="160" cy="0" r="14" fill="#fff" stroke="#1b2a3a"/><text x="160" y="5">V</text>
+      <circle cx="200" cy="0" r="14" fill="#fff" stroke="#1b2a3a"/><text x="200" y="5">D</text>
+      <circle cx="240" cy="0" r="14" fill="#fff" stroke="#1b2a3a"/><text x="240" y="5">G</text>
+      <circle cx="80" cy="0" r="14" fill="#fff" stroke="#1b2a3a"/><text x="80" y="5">D</text>
+    </g>
+    <line x1="220" y1="-16" x2="220" y2="20" stroke="#c92a2a" stroke-width="3" stroke-dasharray="5 3"/>
+    <text x="236" y="-16" font-size="15" fill="#c92a2a">cut</text>
+    <text x="440" y="6" font-size="15">a target protein (caspase-3 cuts best after D-E-V-D)</text>
+  </g>
+
+  <!-- initiator -->
+  <rect x="15" y="105" width="480" height="230" rx="12" fill="#fbfaf5" stroke="#c9c3b0"/>
+  <text x="30" y="132" font-size="18" font-weight="700">Initiator caspases (caspase-8, -9)</text>
+  <g transform="translate(40 160)">
+    <rect x="0" y="0" width="34" height="26" rx="5" fill="#e9eef8" stroke="#3b5bab"/>
+    <rect x="36" y="0" width="90" height="26" rx="5" fill="#f9dcd6" stroke="#c92a2a"/>
+    <rect x="0" y="40" width="34" height="26" rx="5" fill="#e9eef8" stroke="#3b5bab"/>
+    <rect x="36" y="40" width="90" height="26" rx="5" fill="#f9dcd6" stroke="#c92a2a"/>
+    <text x="-6" y="88" font-size="14" fill="#3b5bab">long prodomain</text>
+    <text x="63" y="-8" font-size="14" text-anchor="middle">inactive monomers</text>
+  </g>
+  <line x1="180" y1="200" x2="250" y2="200" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <g transform="translate(270 150)">
+    <rect x="0" y="0" width="200" height="22" rx="4" fill="#d9d9d9" stroke="#555"/>
+    <text x="100" y="16" text-anchor="middle" font-size="14">platform</text>
+    <rect x="40" y="24" width="34" height="26" rx="5" fill="#e9eef8" stroke="#3b5bab"/>
+    <rect x="126" y="24" width="34" height="26" rx="5" fill="#e9eef8" stroke="#3b5bab"/>
+    <rect x="12" y="52" width="88" height="30" rx="5" fill="#f2a7a0" stroke="#c92a2a" stroke-width="2"/>
+    <rect x="100" y="52" width="88" height="30" rx="5" fill="#f2a7a0" stroke="#c92a2a" stroke-width="2"/>
+    <text x="100" y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#c92a2a">active dimer</text>
+  </g>
+  <text x="30" y="296" font-size="15">Brought together on a platform: caspase-9 on the</text>
+  <text x="30" y="316" font-size="15">apoptosome, caspase-8 on death receptors.</text>
+
+  <!-- executioner -->
+  <rect x="605" y="105" width="480" height="230" rx="12" fill="#fbfaf5" stroke="#c9c3b0"/>
+  <text x="620" y="132" font-size="18" font-weight="700">Executioner caspases (caspase-3, -7)</text>
+  <g transform="translate(630 168)">
+    <rect x="0" y="0" width="60" height="28" rx="5" fill="#f9dcd6" stroke="#c92a2a"/>
+    <rect x="66" y="0" width="40" height="28" rx="5" fill="#f9dcd6" stroke="#c92a2a"/>
+    <line x1="60" y1="14" x2="66" y2="14" stroke="#c92a2a" stroke-width="2"/>
+    <rect x="0" y="32" width="60" height="28" rx="5" fill="#f9dcd6" stroke="#c92a2a"/>
+    <rect x="66" y="32" width="40" height="28" rx="5" fill="#f9dcd6" stroke="#c92a2a"/>
+    <line x1="60" y1="46" x2="66" y2="46" stroke="#c92a2a" stroke-width="2"/>
+    <text x="53" y="84" font-size="14" text-anchor="middle">inactive dimer</text>
+  </g>
+  <line x1="752" y1="198" x2="842" y2="198" stroke="#c92a2a" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="797" y="186" text-anchor="middle" font-size="14" fill="#c92a2a">initiator cuts</text>
+  <text x="797" y="222" text-anchor="middle" font-size="14" fill="#c92a2a">the linker</text>
+  <g transform="translate(860 168)">
+    <rect x="0" y="0" width="60" height="28" rx="5" fill="#f2a7a0" stroke="#c92a2a" stroke-width="2"/>
+    <rect x="76" y="0" width="40" height="28" rx="5" fill="#f2a7a0" stroke="#c92a2a" stroke-width="2"/>
+    <rect x="0" y="32" width="60" height="28" rx="5" fill="#f2a7a0" stroke="#c92a2a" stroke-width="2"/>
+    <rect x="76" y="32" width="40" height="28" rx="5" fill="#f2a7a0" stroke="#c92a2a" stroke-width="2"/>
+    <text x="58" y="84" text-anchor="middle" font-size="15" font-weight="700" fill="#c92a2a">active</text>
+  </g>
+  <text x="620" y="296" font-size="15">Short prodomain. Activated by cleavage; then</text>
+  <text x="620" y="316" font-size="15">they cut hundreds of proteins in the cell.</text>
+
+  <!-- cascade link -->
+  <line x1="497" y1="220" x2="602" y2="220" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="550" y="210" text-anchor="middle" font-size="14">cuts</text>
+  <rect x="150" y="350" width="800" height="42" rx="10" fill="#f9dcd6" stroke="#c92a2a"/>
+  <text x="550" y="377" text-anchor="middle" font-size="17">A cascade: one active initiator cuts many executioners, so the signal is amplified.</text>
+</svg>

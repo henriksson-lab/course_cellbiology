@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400" font-family="Helvetica, Arial, sans-serif">
+<!-- fig06: necessary vs sufficient for necroptosis: an illustrative viability experiment -->
+<text x="330" y="24" font-size="17" font-weight="bold" fill="#1b2a3a">Cells alive after 8 h (%)</text>
+<line x1="330" y1="40" x2="330" y2="338" stroke="#e3e3e3" stroke-width="1"/>
+<text x="330" y="368" font-size="15" text-anchor="middle" fill="#555">0</text>
+<line x1="472" y1="40" x2="472" y2="338" stroke="#e3e3e3" stroke-width="1"/>
+<text x="472" y="368" font-size="15" text-anchor="middle" fill="#555">25</text>
+<line x1="615" y1="40" x2="615" y2="338" stroke="#e3e3e3" stroke-width="1"/>
+<text x="615" y="368" font-size="15" text-anchor="middle" fill="#555">50</text>
+<line x1="758" y1="40" x2="758" y2="338" stroke="#e3e3e3" stroke-width="1"/>
+<text x="758" y="368" font-size="15" text-anchor="middle" fill="#555">75</text>
+<line x1="900" y1="40" x2="900" y2="338" stroke="#e3e3e3" stroke-width="1"/>
+<text x="900" y="368" font-size="15" text-anchor="middle" fill="#555">100</text>
+<text x="318" y="63" font-size="17" text-anchor="end" fill="#1b2a3a">no TNF (control)</text>
+<path d="M330,40 H868 a4,4 0 0 1 4,4 V70 a4,4 0 0 1 -4,4 H330 Z" fill="#7d8fa3"/>
+<text x="880" y="63" font-size="16" fill="#1b2a3a">95</text>
+<text x="318" y="115" font-size="17" text-anchor="end" fill="#1b2a3a">TNF</text>
+<path d="M330,92 H839 a4,4 0 0 1 4,4 V122 a4,4 0 0 1 -4,4 H330 Z" fill="#7d8fa3"/>
+<text x="851" y="115" font-size="16" fill="#1b2a3a">90</text>
+<text x="318" y="167" font-size="17" text-anchor="end" fill="#1b2a3a">TNF + z-VAD</text>
+<path d="M330,144 H468 a4,4 0 0 1 4,4 V174 a4,4 0 0 1 -4,4 H330 Z" fill="#e8590c"/>
+<text x="480" y="167" font-size="16" fill="#1b2a3a">25</text>
+<text x="318" y="219" font-size="17" text-anchor="end" fill="#1b2a3a">TNF + z-VAD + necrostatin-1</text>
+<path d="M330,196 H828 a4,4 0 0 1 4,4 V226 a4,4 0 0 1 -4,4 H330 Z" fill="#7d8fa3"/>
+<text x="840" y="219" font-size="16" fill="#1b2a3a">88</text>
+<text x="318" y="271" font-size="17" text-anchor="end" fill="#1b2a3a">TNF + z-VAD, RIPK3 knockout cells</text>
+<path d="M330,248 H845 a4,4 0 0 1 4,4 V278 a4,4 0 0 1 -4,4 H330 Z" fill="#7d8fa3"/>
+<text x="857" y="271" font-size="16" fill="#1b2a3a">91</text>
+<text x="318" y="323" font-size="17" text-anchor="end" fill="#1b2a3a">TNF + z-VAD, MLKL knockout cells</text>
+<path d="M330,300 H839 a4,4 0 0 1 4,4 V330 a4,4 0 0 1 -4,4 H330 Z" fill="#7d8fa3"/>
+<text x="851" y="323" font-size="16" fill="#1b2a3a">90</text>
+<line x1="330" y1="36" x2="330" y2="354" stroke="#444" stroke-width="1.5"/>
+<text x="900" y="394" font-size="14" text-anchor="end" fill="#555">Illustrative numbers; the pattern of the classic experiments in mouse fibroblast lines.</text>
+</svg>

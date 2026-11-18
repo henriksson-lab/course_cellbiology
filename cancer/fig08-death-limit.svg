@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1b2a3a"/></marker></defs>
+  <rect x="10" y="10" width="530" height="450" rx="14" fill="#fbfaf5" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="275" y="44" font-size="22" font-weight="700" text-anchor="middle">Escaping apoptosis: too much BCL-2</text>
+  <!-- balance -->
+  <polygon points="275,250 255,290 295,290" fill="#1b2a3a"/>
+  <line x1="95" y1="276" x2="455" y2="236" stroke="#1b2a3a" stroke-width="5"/>
+  <rect x="60" y="190" width="140" height="80" rx="10" fill="#fde3d3" stroke="#e8590c" stroke-width="3"/>
+  <text x="130" y="222" font-size="17" text-anchor="middle" font-weight="700">BCL-2</text>
+  <text x="130" y="246" font-size="15" text-anchor="middle">(many copies)</text>
+  <rect x="380" y="166" width="140" height="64" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="450" y="192" font-size="16" text-anchor="middle">BAX/BAK,</text>
+  <text x="450" y="214" font-size="16" text-anchor="middle">BH3-only</text>
+  <text x="130" y="178" font-size="16" text-anchor="middle">"survive"</text>
+  <text x="450" y="154" font-size="16" text-anchor="middle">"die"</text>
+  <text x="40" y="330" font-size="16">Mitochondria stay closed: no cytochrome c,</text>
+  <text x="40" y="354" font-size="16">no caspases. The damaged cell lives on.</text>
+  <text x="40" y="384" font-size="16">Follicular lymphoma: t(14;18) puts BCL2 next</text>
+  <text x="40" y="406" font-size="16">to an antibody-gene enhancer.</text>
+  <text x="40" y="440" font-size="16"><tspan fill="#e8590c" font-weight="700">Venetoclax</tspan> blocks BCL-2 (leukaemia, CLL).</text>
+  <!-- right: telomeres -->
+  <rect x="560" y="10" width="530" height="450" rx="14" fill="#fbfaf5" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="825" y="44" font-size="22" font-weight="700" text-anchor="middle">Escaping the division limit</text>
+  <line x1="640" y1="330" x2="1060" y2="330" stroke="#1b2a3a" stroke-width="2"/>
+  <line x1="640" y1="330" x2="640" y2="80" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="850" y="358" font-size="16" text-anchor="middle">number of divisions</text>
+  <text x="612" y="210" font-size="16" text-anchor="middle" transform="rotate(-90 612 210)">telomere length</text>
+  <line x1="640" y1="300" x2="1060" y2="300" stroke="#9aa5b1" stroke-dasharray="6 5" stroke-width="2"/>
+  <text x="650" y="292" font-size="14" fill="#555">too short: senescence or crisis</text>
+  <path d="M645 110 L960 300" stroke="#1c4fa0" stroke-width="4" fill="none"/>
+  <circle cx="960" cy="300" r="7" fill="#1c4fa0"/>
+  <text x="690" y="162" font-size="16" fill="#1c4fa0" transform="rotate(31 690 162)">normal cell (no telomerase)</text>
+  <path d="M645 110 L780 190 C800 202 820 140 840 140 L1055 140" stroke="#e8590c" stroke-width="4" fill="none"/>
+  <text x="1075" y="128" font-size="16" fill="#e8590c" text-anchor="end">cancer cell: telomerase on</text>
+  <text x="590" y="394" font-size="16">Each division shortens the chromosome ends.</text>
+  <text x="590" y="418" font-size="16">About 85–90 % of cancers switch telomerase on;</text>
+  <text x="590" y="442" font-size="16">most of the rest use a recombination route (ALT).</text>
+</svg>

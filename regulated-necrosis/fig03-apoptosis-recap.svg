@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" font-family="Helvetica, Arial, sans-serif">
+<!-- fig03: recap of apoptosis: two entry routes converge on executioner caspases -->
+<defs><marker id="ar" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+<!-- plasma membrane -->
+<rect x="20" y="40" width="440" height="22" fill="#f6f0de"/>
+<line x1="20" y1="40" x2="460" y2="40" stroke="#8a6a12" stroke-width="3"/><line x1="20" y1="62" x2="460" y2="62" stroke="#8a6a12" stroke-width="3"/>
+<text x="30" y="28" font-size="16" fill="#1b2a3a">outside</text>
+<!-- death receptor -->
+<rect x="130" y="22" width="16" height="58" rx="5" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/>
+<rect x="152" y="22" width="16" height="58" rx="5" fill="#dbe4ee" stroke="#1b2a3a" stroke-width="2"/>
+<circle cx="149" cy="12" r="10" fill="#e8590c"/>
+<text x="180" y="20" font-size="16" fill="#1b2a3a">death ligand (e.g. TNF, FasL)</text>
+<text x="180" y="98" font-size="17" fill="#1b2a3a" font-weight="bold">Extrinsic: death receptor</text>
+<line x1="149" y1="84" x2="149" y2="140" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="70" y="146" width="160" height="44" rx="8" fill="#ffffff" stroke="#1b2a3a" stroke-width="2"/>
+<text x="150" y="174" font-size="18" text-anchor="middle" fill="#1b2a3a">caspase-8</text>
+<!-- intrinsic -->
+<text x="520" y="30" font-size="17" fill="#1b2a3a" font-weight="bold">Intrinsic: stress, DNA damage</text>
+<text x="520" y="54" font-size="16" fill="#1b2a3a">BCL-2 family decides</text>
+<ellipse cx="640" cy="120" rx="110" ry="42" fill="#f8e9ec" stroke="#a8324a" stroke-width="3"/>
+<path d="M560,120 q15,-25 30,0 q15,25 30,0 q15,-25 30,0 q15,25 30,0 q15,-25 30,0" fill="none" stroke="#a8324a" stroke-width="2"/>
+<text x="625" y="182" font-size="16" text-anchor="middle" fill="#1b2a3a">MOMP: outer membrane permeabilised</text>
+<circle cx="770" cy="105" r="8" fill="#e8590c"/>
+<text x="785" y="100" font-size="16" fill="#1b2a3a">cytochrome c</text>
+<text x="785" y="120" font-size="16" fill="#1b2a3a">released</text>
+<line x1="895" y1="132" x2="895" y2="200" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="690" y="206" width="260" height="44" rx="8" fill="#ffffff" stroke="#1b2a3a" stroke-width="2"/>
+<text x="820" y="234" font-size="18" text-anchor="middle" fill="#1b2a3a">apoptosome → caspase-9</text>
+<!-- convergence -->
+<path d="M150,192 L150,280 L380,280" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<path d="M820,252 L820,280 L606,280" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<path d="M232,168 C330,168 420,140 520,128" fill="none" stroke="#1b2a3a" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar)"/>
+<text x="270" y="150" font-size="15" fill="#1b2a3a">(via BID)</text>
+<rect x="388" y="256" width="210" height="48" rx="8" fill="#1b2a3a"/>
+<text x="493" y="287" font-size="19" text-anchor="middle" fill="#ffffff" font-weight="bold">caspase-3, -7</text>
+<text x="493" y="335" font-size="17" text-anchor="middle" fill="#1b2a3a">cut hundreds of proteins → tidy, quiet death, cell eaten</text>
+</svg>

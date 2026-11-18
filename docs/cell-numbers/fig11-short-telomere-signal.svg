@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+  </defs>
+  <text x="10" y="26" font-weight="bold">Long telomere: capped</text>
+  <line x1="20" y1="70" x2="330" y2="70" stroke="#1b2a3a" stroke-width="5"/>
+  <line x1="20" y1="84" x2="330" y2="84" stroke="#1b2a3a" stroke-width="5"/>
+  <path d="M330,70 C400,70 410,120 360,120 C320,120 300,100 290,92" fill="none" stroke="#1b2a3a" stroke-width="5"/>
+  <g fill="#3b5bab"><circle cx="190" cy="77" r="11"/><circle cx="225" cy="77" r="11"/><circle cx="260" cy="77" r="11"/><circle cx="295" cy="77" r="11"/><circle cx="380" cy="100" r="11"/></g>
+  <text x="430" y="70" font-size="15">loop hides the end;</text>
+  <text x="430" y="90" font-size="15">shelterin proteins</text>
+  <text x="430" y="110" font-size="15" fill="#3b5bab">(blue) protect it</text>
+  <text x="10" y="170" font-weight="bold">Very short telomere: uncapped</text>
+  <line x1="20" y1="208" x2="200" y2="208" stroke="#1b2a3a" stroke-width="5"/>
+  <line x1="20" y1="222" x2="190" y2="222" stroke="#1b2a3a" stroke-width="5"/>
+  <circle cx="160" cy="215" r="11" fill="#3b5bab"/>
+  <path d="M206,196 l12,-12 M210,215 l18,0 M206,234 l12,12" stroke="#e8590c" stroke-width="3"/>
+  <text x="240" y="221" font-size="15">the free end looks like a broken chromosome</text>
+  <line x1="110" y1="240" x2="110" y2="268" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="20" y="272" width="580" height="40" rx="8" fill="#fff" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="310" y="298" text-anchor="middle">DNA-damage response (ATM kinase) → p53 → p21</text>
+  <line x1="110" y1="314" x2="110" y2="342" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="20" y="346" width="580" height="60" rx="8" fill="#cfe0f4" stroke="#2f5d9e" stroke-width="2.5"/>
+  <text x="310" y="371" text-anchor="middle" font-weight="bold">p21 blocks CDKs, Rb stays active: permanent arrest</text>
+  <text x="310" y="394" text-anchor="middle">= replicative senescence</text>
+</svg>

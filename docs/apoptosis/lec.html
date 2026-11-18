@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-662ae1889177880cb371f83234c0a158.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
+
+  <meta name="author" content="Cell Biology (3MB001)">
+  <title>Cell Biology – Apoptosis: how a cell kills itself</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bf56578b9c06c165c166475cd19dbcd1.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Apoptosis: how a cell kills itself</h1>
+  <p class="subtitle">Cell cycle and cell death</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Cell Biology (3MB001) 
+</div>
+</div>
+</div>
+
+</section>
+<section id="about-this-lecture" class="slide level2 smaller">
+<h2>About this lecture</h2>
+<p>Every day, tens of billions of your cells kill themselves, on purpose and without fuss. Today: <strong>apoptosis</strong>, the cell’s built-in program for a clean death, and how the decision to start it is made.</p>
+<p>After this lecture you can:</p>
+<ul>
+<li>explain <strong>why</strong> cells die by apoptosis (development, damage, immunity) and <strong>what it looks like</strong>;</li>
+<li>describe <strong>caspases</strong>: initiators and executioners, and the cleavage cascade;</li>
+<li>explain the <strong>intrinsic pathway</strong>: the <strong>BCL-2 family</strong>, <strong>MOMP</strong>, cytochrome c, the apoptosome and caspase-9, and the brakes (<strong>IAPs</strong>, SMAC);</li>
+<li>explain the <strong>extrinsic pathway</strong>: death receptors, FADD, caspase-8, and the link through <strong>tBID</strong>;</li>
+<li>describe how dead cells are <strong>cleared</strong> (“find me”, “eat me”) and how we <strong>measure</strong> apoptosis (annexin V/PI, TUNEL, western blots);</li>
+<li>explain how <strong>venetoclax</strong>, a BCL-2 inhibitor, treats leukaemia.</li>
+</ul>
+<p><strong>ELO 8</strong> (cell death).</p>
+<aside class="notes">
+<p>This lecture is about a cell that decides to die. That sounds strange: why would evolution keep a program for suicide? We will see that apoptosis is as important as cell division. It shapes the body during development, removes damaged cells that could become cancer, and lets the immune system kill infected cells without damaging the tissue around them. We first look at what an apoptotic cell looks like. Then we meet the machines: caspases, which are proteases that take the cell apart, and the BCL-2 protein family, which decides at the mitochondria whether the caspases are switched on. There are two routes in, the intrinsic pathway from inside the cell and the extrinsic pathway from death receptors on the surface. We finish with how the body removes the dead cells, how we measure apoptosis in the lab, and a drug, venetoclax, that kills leukaemia cells by blocking BCL-2. Other forms of regulated cell death, such as necroptosis and ferroptosis, come in the next lecture. This lecture covers ELO 8.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-question-why-would-a-cell-kill-itself" class="slide level2 smaller">
+<h2>The question: why would a cell kill itself?</h2>
+<div class="columns">
+<div class="column" style="width:38%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img02-mouse-foot.jpg" class="quarto-figure quarto-figure-center" height="470"></p>
+</figure>
+</div>
+<p><em>Foot of a mouse embryo (day 15.5), stained section. The tissue between the digits is being removed.</em></p>
+</div><div class="column" style="width:62%;">
+<ul>
+<li>Your hands started as <strong>paddles</strong>. The fingers appeared because the cells <strong>between</strong> them died.</li>
+<li>In an adult, <strong>tens of billions of cells die every day</strong>, mostly in blood, gut and skin, and as many new cells are made.</li>
+<li>They die <strong>quietly</strong>: no inflammation, no scar. Neighbours eat them within an hour or two.</li>
+<li>Too <strong>little</strong> death: cancer, autoimmunity. Too <strong>much</strong>: neurodegeneration, damage after a stroke or heart attack.</li>
+</ul>
+<p><strong>How does a cell decide to die, and how does it do it so cleanly?</strong></p>
+</div></div>
+<aside class="notes">
+<p>Look at the picture. This is a thin section through the foot of a mouse embryo at day 15.5 of development, stained with dyes. The dark purple shapes are the cartilage models of the toe bones. At an earlier stage the foot is a flat paddle, and the toes are separated because the cells between them die on schedule. In ducks fewer of these cells die, and the webbing stays. Cell death is not rare. In an adult human, tens of billions of cells die every day, about as many as are made by cell division, mostly in the bone marrow, the gut lining and the skin. Yet you never notice: the dying cells are eaten by neighbours or by macrophages, usually within an hour or two, and there is no inflammation. Getting this balance right matters for health. If cells that should die survive, the result can be cancer or autoimmune disease. If too many cells die, the result can be neurodegeneration or extra damage after a stroke. Today’s question: how does a cell make the decision, and how does it carry it out so neatly?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-reasons-to-die" class="slide level2 smaller">
+<h2>Three reasons to die</h2>
+
+<img data-src="fig03-why-die.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:94.0%"><ul>
+<li><strong>Development</strong>: sculpt organs; remove cells that are not needed or not wired correctly (about half of the neurons made in development die); remove T cells that would attack the body.</li>
+<li><strong>Damage</strong>: a cell with broken DNA or other serious stress removes itself before it can become dangerous. <strong>p53</strong> (the cell-cycle control lecture) is a key trigger.</li>
+<li><strong>Immunity</strong>: killer T cells and NK cells <strong>tell</strong> an infected or cancer cell to run its own program.</li>
+</ul>
+<aside class="notes">
+<p>Biologists group the reasons for cell death into three. First, development. Tissues are sculpted by death, like the fingers, or the tadpole tail that disappears when the frog forms. The nervous system makes about twice as many neurons as it keeps; the neurons that fail to get enough survival signals from their targets die. In the thymus, young T cells that would react against the body’s own proteins are removed by apoptosis. Second, damage. A cell with broken DNA, too much oncogene activity or an overloaded endoplasmic reticulum is a risk to the body. You met p53 in the cell-cycle control lecture: when DNA is damaged, p53 first stops the cell cycle, but if the damage is too great it switches on genes that make the cell die. This is why p53 is the most often mutated gene in cancer. Third, immunity. A killer T cell or a natural killer cell does not shred its target. It sends signals that make the target cell start its own apoptosis program. The common thread: the body removes a cell without harming its neighbours.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-apoptosis-looks-like" class="slide level2 smaller">
+<h2>What apoptosis looks like</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig04-morphology.svg" class="quarto-figure quarto-figure-center" style="width:82.0%"></p>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="width:52%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img04-du145-apoptosis.jpg" class="quarto-figure quarto-figure-center" height="215"></p>
+</figure>
+</div>
+<p><em>Time-lapse frames of a prostate cancer cell dying after an anticancer drug (holographic microscopy; colour = cell thickness). Read left to right, top row first.</em></p>
+</div><div class="column" style="width:48%;">
+<ul>
+<li>The cell <strong>shrinks</strong>, the chromatin <strong>condenses</strong>, the membrane <strong>blebs</strong>.</li>
+<li>It falls apart into membrane-wrapped <strong>apoptotic bodies</strong>.</li>
+<li>Phagocytes eat them: <strong>no leak, no inflammation</strong>. (Death by <strong>necrosis</strong>, when a cell swells and bursts, is in the next lecture.)</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>The word apoptosis comes from Greek, for leaves falling off a tree. It was coined in 1972 by Kerr, Wyllie and Currie, who saw the same series of shape changes in many tissues. The cell detaches from its neighbours and shrinks. The chromatin condenses into dense masses against the nuclear envelope, and then the nucleus breaks into pieces. The plasma membrane bulges out in blebs that form and retract, which you can see in time-lapse movies. Finally the cell breaks into small membrane-wrapped packages called apoptotic bodies. The frames below come from such a movie of a prostate cancer cell line treated with etoposide, a drug that damages DNA. The colour shows how thick each cell is. You can see the cell round up, bleb, and break into many small pieces. The key point is that the membrane stays intact the whole time. Nothing from inside the cell leaks out, so the immune system is not alarmed. In the next lecture you will compare this with necrosis, where a cell swells and bursts and causes inflammation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="caspases-the-executioners" class="slide level2 smaller">
+<h2>Caspases: the executioners</h2>
+
+<img data-src="fig05-caspases.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><ul>
+<li>Made as inactive <strong>procaspases</strong>, ready in every cell: death needs <strong>no new proteins</strong>.</li>
+<li><strong>Initiators</strong> (caspase-8, -9) are switched on by being <strong>brought together</strong>; <strong>executioners</strong> (caspase-3, -7) by being <strong>cut</strong> by an initiator.</li>
+</ul>
+<aside class="notes">
+<p>The work of apoptosis is done by a family of proteases called caspases. The name tells you what they are: cysteine proteases that cut after aspartate. Each has a cysteine in its active site, and it cuts a target protein just after an aspartate residue, in a short recognition sequence; caspase-3, for example, prefers D-E-V-D. Every cell already contains the caspases as inactive precursors, the procaspases, so a cell can die within an hour without making any new protein. There are two kinds. Initiator caspases, caspase-8 and caspase-9, have a long prodomain that binds adaptor proteins. They float around as inactive monomers. When an adaptor platform assembles, it pulls several of them together; they form dimers and become active. This is called induced proximity. Executioner caspases, caspase-3 and caspase-7, are already dimers, but a linker blocks their active site. An active initiator cuts this linker, and the executioner becomes active. One initiator can cut many executioners, so the signal is amplified, like the kinase cascades in the signalling lectures. Once enough executioners are active, the process is hard to stop.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-the-caspases-cut" class="slide level2 smaller">
+<h2>What the caspases cut</h2>
+
+<img data-src="fig06-caspase-targets.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:94.0%"><p>Each shape change on the previous slide is caused by <strong>one cut</strong> in a specific protein.</p>
+<aside class="notes">
+<p>Executioner caspases cut several hundred different proteins, and each cut explains part of the picture you saw. One target is ICAD, an inhibitor that holds a DNA-cutting enzyme, CAD, in check. When ICAD is cut, CAD enters the nucleus and cuts the DNA in the linker regions between nucleosomes. The fragments are about 200 base pairs long, or multiples of this, and on an agarose gel they form a ladder; this DNA ladder was one of the first lab tests for apoptosis. Cutting the nuclear lamins, the protein mesh under the nuclear envelope, lets the nucleus fall apart. Cutting the kinase ROCK1 removes its inhibitory tail, so it stays active and makes myosin contract the actin cortex, which pushes out the blebs. Caspases cut and switch off the flippase that keeps phosphatidylserine on the inside, and they activate the scramblase XKR8. You met these enzymes in the membrane-structure lecture. Phosphatidylserine appears on the outside, and this is the main “eat me” signal. Finally, caspases open pannexin channels, so ATP leaks out and attracts phagocytes. PARP-1, a DNA-repair enzyme, is also cut; we will use it on a western blot.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-intrinsic-pathway-starts-at-the-mitochondria" class="slide level2 smaller">
+<h2>The intrinsic pathway starts at the mitochondria</h2>
+
+<img data-src="fig07-momp.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><ul>
+<li><strong>Cytochrome c</strong> carries electrons in the space between the two mitochondrial membranes (the mitochondria lecture).</li>
+<li>Stress makes <strong>BAX</strong> and <strong>BAK</strong> punch holes in the <strong>outer</strong> membrane: <strong>MOMP</strong> (mitochondrial outer membrane permeabilisation). Within about 5 minutes, cytochrome c leaves <strong>all</strong> mitochondria of the cell.</li>
+</ul>
+<aside class="notes">
+<p>Most apoptosis in our bodies goes through the mitochondria, and this route is called the intrinsic pathway because it starts from signals inside the cell. Here is what you need to know about mitochondria for today. A mitochondrion has two membranes. The inner one is folded into cristae and carries the electron transport chain. Between the two membranes is the intermembrane space. Cytochrome c is a small, water-soluble protein that lives in this space and carries electrons from complex III to complex IV. It cannot cross the outer membrane, so in a healthy cell it never reaches the cytosol. When a cell commits to death, two proteins called BAX and BAK collect in the outer membrane and form pores. This is mitochondrial outer membrane permeabilisation, MOMP. Cytochrome c and other proteins of the intermembrane space, such as SMAC, escape into the cytosol. Experiments that follow fluorescent cytochrome c in single living cells show that once release starts, all mitochondria in the cell release within about five minutes. In practice MOMP is the point of no return: even if caspases are blocked, the cell usually dies because its mitochondria fail.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-bcl-2-family-decides" class="slide level2 smaller">
+<h2>The BCL-2 family decides</h2>
+
+<img data-src="fig08-bcl2-family.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><p>All three groups share <strong>BH</strong> (BCL-2 homology) regions. The <strong>BH3 helix</strong> of one protein fits into the <strong>groove</strong> of a guardian, like a key into a lock.</p>
+<aside class="notes">
+<p>Whether BAX and BAK make pores is decided by a family of proteins named after its first member, BCL-2. The family has three groups. The effectors, BAX and BAK, are the pore makers. The guardians, BCL-2, BCL-XL and MCL-1, prevent death. The sensors are the BH3-only proteins, such as BIM, BID, PUMA, NOXA and BAD. They are made or activated when the cell is stressed. All family members share short regions called BCL-2 homology regions, BH1 to BH4. The key interaction is simple. A guardian has a groove on its surface, and the BH3 helix of another family member fits into this groove. So guardians bind and hold back activated BAX and BAK. BH3-only proteins put their own BH3 helix into the groove and so block the guardians. Some BH3-only proteins, notably BIM and tBID, can also activate BAX and BAK directly. The result is a chain of inhibition: sensors block guardians, guardians block effectors. Hold on to this picture; the drug at the end of the lecture is an artificial BH3 helix.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-balance-with-a-threshold" class="slide level2 smaller">
+<h2>A balance with a threshold</h2>
+
+<img data-src="fig09-balance.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><ul>
+<li>The cell <strong>adds up</strong> its signals in one number: is there BAX/BAK that no guardian holds?</li>
+<li>Below the threshold: nothing happens. Above: <strong>MOMP</strong>, all or none. Cells differ, so in a population some die and some survive. <strong>Try it:</strong> <a href="../apoptosis/questions.html#explore">Demo: BCL-2 balance</a>.</li>
+</ul>
+<aside class="notes">
+<p>Think of the BCL-2 family as a balance. On one side are BH3-only proteins and activated BAX and BAK; on the other side the guardians. Many different stresses feed into the BH3-only side. DNA damage activates p53, which switches on the genes for PUMA and NOXA. Loss of growth factors raises BIM, and when the survival kinase Akt, which you met in the kinase lecture, is switched off, BAD is released to act. ER stress, oncogene activity and loss of cytokines also raise BH3-only proteins. Death receptors make tBID, as we will see shortly. As long as the guardians can hold all of these, nothing happens. But once the pro-death side wins, free BAX and BAK accumulate, and above a threshold they make pores. This is an all-or-none decision for each cell: there is no half-way MOMP. Because cells differ in how much of each protein they make, the same treatment kills some cells in a dish and not others, and kills them at different times. The demo lets you move the balance yourself and watch a population of cells respond. This picture is simplified: different BH3-only proteins prefer different guardians.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cytochrome-c-builds-the-apoptosome" class="slide level2 smaller">
+<h2>Cytochrome c builds the apoptosome</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig10-apoptosome.svg" class="quarto-figure quarto-figure-center" style="width:86.0%"></p>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="width:44%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img10-apoptosome.jpg" class="quarto-figure quarto-figure-center" height="300"></p>
+</figure>
+</div>
+</div><div class="column" style="width:56%;">
+<ul>
+<li>In the cytosol, cytochrome c binds <strong>APAF1</strong>. With dATP, seven APAF1 assemble into a <strong>wheel</strong>: the <strong>apoptosome</strong>.</li>
+<li>The hub gathers <strong>caspase-9</strong> (the platform of the caspase slide); active caspase-9 cuts caspase-3 and -7.</li>
+</ul>
+<p><em>Left: one APAF1, folded shut. Right: the apoptosome, with cytochrome c (pink-red) on each arm and the CARD domains (purple) in the centre, where caspase-9 binds.</em></p>
+</div></div>
+<aside class="notes">
+<p>What does cytochrome c do once it is in the cytosol? It binds a large protein called APAF1, which stands for apoptotic protease activating factor 1. On its own APAF1 is folded shut, as in the drawing on the left. Binding cytochrome c, together with exchange of its bound nucleotide for dATP or ATP, opens it up, and seven APAF1 molecules assemble into a wheel-shaped complex of about one megadalton: the apoptosome. The drawing on the right, by David Goodsell, is based on cryo-electron microscopy structures. The cytochrome c molecules, in pink-red, sit on the outer arms, and the CARD domains of APAF1 form a ring in the centre. Procaspase-9 has its own CARD domain, so it is recruited to the hub. Several caspase-9 molecules are brought close together and become active. This is the platform idea from the caspase slide. Active caspase-9 then cuts and activates the executioners, caspase-3 and caspase-7, and the cell is taken apart. Note the logic: a protein that normally carries electrons becomes a death signal simply by being in the wrong compartment.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="brakes-on-the-caspases-iaps-and-smac" class="slide level2 smaller">
+<h2>Brakes on the caspases: IAPs and SMAC</h2>
+
+<img data-src="fig11-iap-smac.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><ul>
+<li><strong>IAPs</strong> (inhibitors of apoptosis, e.g.&nbsp;<strong>XIAP</strong>) bind active caspase-9, -3 and -7: a safety catch against accidental activation.</li>
+<li><strong>SMAC</strong> leaves the mitochondria together with cytochrome c and pulls XIAP off: once MOMP has happened, the brake is released.</li>
+</ul>
+<aside class="notes">
+<p>A protease cascade that destroys the cell is dangerous, so cells add a safety catch. The inhibitor of apoptosis proteins, IAPs, bind caspases. The best studied is XIAP, which binds and blocks caspase-9, caspase-3 and caspase-7. If a small number of caspases become active by accident, XIAP catches them and the cell survives. But during real apoptosis the brake must come off. This is done by a second protein from the mitochondrial intermembrane space, called SMAC, or DIABLO. SMAC escapes during MOMP together with cytochrome c.&nbsp;Its first four amino acids fit into the same pockets of XIAP that hold the caspases, so SMAC pulls XIAP away and the caspases are free. So MOMP does two things at once: it builds the accelerator, the apoptosome, and it releases the brake. Some cancer cells make a lot of IAPs to survive. Drug companies have made small molecules that copy the end of SMAC, called SMAC mimetics, and these are being tested in cancer trials.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-extrinsic-pathway-death-receptors" class="slide level2 smaller">
+<h2>The extrinsic pathway: death receptors</h2>
+
+<img data-src="fig12-extrinsic.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><ul>
+<li><strong>Death receptors</strong> (Fas, TNF receptor 1, TRAIL receptors) bind their ligand, gather the adaptor <strong>FADD</strong>, and FADD gathers <strong>caspase-8</strong>: a second platform.</li>
+<li>Caspase-8 cuts <strong>caspase-3/7</strong> directly, and cuts <strong>BID</strong> to <strong>tBID</strong>, which switches on BAX/BAK: the two pathways <strong>meet</strong> at the mitochondria.</li>
+</ul>
+<aside class="notes">
+<p>The second route starts outside the cell, so it is called the extrinsic pathway. Some cells of the immune system, such as killer T cells and natural killer cells, carry Fas ligand on their surface. When it binds Fas, a death receptor on the target cell, the receptors cluster in groups of three. Inside the cell, each receptor has a death domain, which binds the adaptor protein FADD. FADD in turn binds procaspase-8 through another domain, the death effector domain. Together they form the death-inducing signalling complex, DISC. This is the second platform: procaspase-8 molecules are brought close together and become active. In some cells, such as lymphocytes, active caspase-8 is enough to cut caspase-3 and caspase-7 directly. In many others, such as liver cells, the direct route is too weak, partly because XIAP holds the executioners. Here caspase-8 also cuts a BH3-only protein, BID. Its truncated form, tBID, moves to the mitochondria and activates BAX and BAK. MOMP then releases cytochrome c and SMAC and amplifies the signal. So the two pathways are linked. Cells can also block the DISC with a protein called FLIP.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="clearing-the-dead-find-me-and-eat-me" class="slide level2 smaller">
+<h2>Clearing the dead: “find me” and “eat me”</h2>
+
+<img data-src="fig13-clearance.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><ul>
+<li><strong>Find me</strong>: ATP and UTP (from caspase-opened pannexin channels) and lipids attract phagocytes.</li>
+<li><strong>Eat me</strong>: <strong>phosphatidylserine</strong> on the outer leaflet (the scramblase from the membrane-structure lecture). Eating apoptotic cells is called <strong>efferocytosis</strong>.</li>
+</ul>
+<aside class="notes">
+<p>The last step of apoptosis happens in another cell. A dying cell sends out “find me” signals: caspases open pannexin-1 channels in its plasma membrane, so ATP and UTP leak out, and lipids such as lysophosphatidylcholine are released. These molecules diffuse and attract macrophages and other phagocytes. When a phagocyte arrives, it must recognise the dying cell. The main “eat me” signal is phosphatidylserine. In the membrane-structure lecture you learned that flippases keep this negatively charged lipid in the inner leaflet. In apoptosis, caspases switch the flippase off and a scramblase on, so phosphatidylserine appears on the outside. Phagocytes have receptors that bind it, either directly or through bridging proteins in the blood. Healthy cells, by contrast, carry “don’t eat me” signals such as CD47. The process of eating apoptotic cells is called efferocytosis. It does more than remove debris: macrophages that have eaten apoptotic cells release anti-inflammatory signals such as TGF-beta and interleukin-10. If clearance fails, dying cells eventually burst, their contents leak, and this is linked to autoimmune diseases such as lupus. You meet these cells again in immunology.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-annexin-v-and-pi-by-flow-cytometry" class="slide level2 smaller">
+<h2>How do we know? Annexin V and PI by flow cytometry</h2>
+
+<img data-src="fig14-annexin-pi.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:92.0%"><ul>
+<li><strong>Annexin V</strong> binds phosphatidylserine (needs Ca²⁺). <strong>Propidium iodide (PI)</strong> stains DNA, but only gets in through a broken membrane.</li>
+<li>Thousands of cells per second (flow cytometry, the cell-methods lecture): <strong>live</strong>, <strong>early apoptotic</strong>, <strong>late apoptotic</strong> in one plot. <em>Simulated data.</em></li>
+</ul>
+<aside class="notes">
+<p>How do we count apoptotic cells? The most common method uses the eat-me signal. Annexin V is a protein that binds phosphatidylserine tightly when calcium is present. Coupled to a green fluorescent dye, it labels cells that show phosphatidylserine on the outside. Propidium iodide, PI, is a red dye that binds DNA, but it cannot cross an intact membrane. Cells are stained with both and run through a flow cytometer, which you met in the cell-methods lecture. Each dot in the plot is one cell. Live cells are negative for both, in the lower left. Early apoptotic cells have exposed phosphatidylserine but an intact membrane, so they are annexin V positive and PI negative, lower right. Late apoptotic cells have also lost membrane integrity: both positive, upper right. In a culture dish there are no phagocytes, so apoptotic cells eventually break open; this is called secondary necrosis. Cells that are PI positive but annexin V negative, upper left, are usually cells killed by direct membrane damage. Note one limitation: annexin V/PI tells you that cells die, and roughly when, but not by which pathway. For that you need caspase assays and inhibitors.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-dna-breaks-and-cut-caspases" class="slide level2 smaller">
+<h2>How do we know? DNA breaks and cut caspases</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img15-tunel-spheroids.jpg" class="quarto-figure quarto-figure-center" height="380"></p>
+</figure>
+</div>
+<p><em>TUNEL (green) in 3D balls of cancer cells, 7 days after two anticancer drugs. Red: cytokeratin; blue: all nuclei (DAPI). Scale bar 100 µm.</em></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="fig15-western.svg" style="width:100.0%"></p>
+<ul>
+<li><strong>TUNEL</strong>: an enzyme adds labelled nucleotides to DNA <strong>ends</strong>, made by CAD. Works on <strong>tissue sections</strong>.</li>
+<li><strong>Western blot</strong>: the <strong>cleaved</strong> caspase-3 and PARP-1 bands appear. <strong>Live imaging</strong>: reporters show when single cells release cytochrome c or activate caspases.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Three more methods are used every day. TUNEL stands for terminal deoxynucleotidyl transferase dUTP nick end labelling. The enzyme terminal transferase adds nucleotides to free 3’ ends of DNA. If the nucleotides carry a fluorescent label, every nucleus with many DNA breaks, the work of the nuclease CAD, lights up. The big advantage is that it works on fixed tissue sections. The picture shows balls of head-and-neck cancer cells grown in 3D; after treatment with cisplatin or cetuximab more nuclei are TUNEL positive, shown in green. Second, western blots, from the cell-methods lecture. An antibody against caspase-3 shows the full-length procaspase disappearing and the small cleaved fragment appearing. Antibodies against PARP-1 show the full-length protein, 116 kilodaltons, being cut to an 89-kilodalton fragment. The blot here is a sketch of a typical result. Third, live imaging: cells that express fluorescent cytochrome c or a fluorescent caspase sensor are filmed, so you can see when each cell crosses the threshold. These single-cell films showed that release is all or none and that the timing varies between cells.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-a-worm-found-the-genes" class="slide level2 smaller">
+<h2>How do we know? A worm found the genes</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img16-c-elegans.jpg" class="quarto-figure quarto-figure-center" style="width:52.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig16-worm-genes.svg" class="quarto-figure quarto-figure-center" style="width:84.0%"></p>
+</figure>
+</div>
+<p>In the worm <em>C. elegans</em>, exactly <strong>131 of 1090</strong> cells die during development. Mutant screens found the death genes (Nobel Prize 2002).</p>
+<aside class="notes">
+<p>Much of what we know about apoptosis came from a millimetre-long worm, Caenorhabditis elegans. Its development is so regular that every cell division is known, and in every hermaphrodite worm exactly 131 of the 1090 cells that are made die, always the same ones. Robert Horvitz and colleagues searched for mutant worms in which these deaths did not happen or happened wrongly. They found ced-3 and ced-4, where ced stands for cell death abnormal. Without either gene, all 131 cells survive. They found ced-9, whose loss makes many cells die that should live, and egl-1, which triggers death in specific cells. Then came the surprise: the worm genes have human counterparts. CED-3 is a caspase, CED-4 is like APAF1, CED-9 is like BCL-2, and EGL-1 is a BH3-only protein. Human BCL-2 can even replace CED-9 in a mutant worm. The human pathway has an extra step through the mitochondria, but the logic is the same. Sydney Brenner, Robert Horvitz and John Sulston shared the Nobel Prize in 2002. The picture shows an adult worm in a light microscope.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-venetoclax-in-leukaemia" class="slide level2 smaller">
+<h2>Why it matters: venetoclax in leukaemia</h2>
+<div class="columns">
+<div class="column" style="width:36%;">
+<p><img data-src="img17-cll-smear.jpg" style="width:100.0%"></p>
+<p><em>Blood smear in chronic lymphocytic leukaemia (CLL): many small lymphocytes with dark nuclei.</em></p>
+</div><div class="column" style="width:64%;">
+<p><img data-src="fig17-venetoclax.svg" style="width:100.0%"></p>
+</div></div>
+<ul>
+<li><strong>CLL</strong> cells make far too much <strong>BCL-2</strong>. They live too long, and pile up in blood, marrow and lymph nodes.</li>
+<li><strong>Venetoclax</strong> is a <strong>BH3 mimetic</strong>: it fits the BH3 groove of BCL-2 (as on the BCL-2 family slide). Approved in <strong>2016</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Chronic lymphocytic leukaemia, CLL, is the most common leukaemia in adults in Europe. Mature B lymphocytes accumulate in the blood, bone marrow and lymph nodes, as in the smear on the left. The CLL cells do not divide unusually fast; they fail to die. Almost all of them make very high levels of BCL-2, often because a deletion on chromosome 13 removes two microRNAs that normally keep BCL-2 low. BCL-2 itself was discovered in another blood cancer, follicular lymphoma, where a chromosome translocation puts it under a strong immunoglobulin promoter; it was the first cancer gene shown to work by blocking death rather than by driving division. Here is the key insight. A CLL cell is not just protected; it is primed. Its BCL-2 is busy holding a lot of BIM. Venetoclax is a small molecule designed to fit exactly into the BH3 groove of BCL-2, where BIM binds. It is called a BH3 mimetic. It displaces BIM, BIM activates BAX and BAK, and the cell undergoes MOMP within hours. Venetoclax was approved in 2016 and is now used in CLL and, with other drugs, in acute myeloid leukaemia.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-using-venetoclax-safely-and-resistance" class="slide level2 smaller">
+<h2>Why it matters: using venetoclax safely, and resistance</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><img data-src="fig18-ramp-up.svg" style="width:100.0%"></p>
+<p><em>The dose is raised step by step over 5 weeks.</em></p>
+</div><div class="column" style="width:52%;">
+<ul>
+<li><strong>Too much death at once</strong>: millions of leukaemia cells die within hours and release K⁺, phosphate and nucleic acids (→ uric acid): <strong>tumour lysis syndrome</strong> can damage the kidneys. Hence the <strong>ramp-up</strong>.</li>
+<li><strong>Selectivity</strong>: an earlier drug (navitoclax) also blocked <strong>BCL-XL</strong>, which <strong>platelets</strong> need to survive. Venetoclax spares BCL-XL.</li>
+<li><strong>Resistance</strong>: cells that rely on <strong>MCL-1</strong>, or with a BCL-2 mutation that blocks the drug’s fit.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Venetoclax shows how knowing the mechanism helps to use a drug safely. Because CLL cells are primed, the first doses can kill a large number of them within hours. Their contents flood the blood: potassium, phosphate, and nucleic acids that are broken down to uric acid. This is tumour lysis syndrome, which can damage the kidneys and disturb the heart rhythm. Patients therefore start with 20 milligrams a day and the dose is raised every week until it reaches 400 milligrams, with fluids and blood tests. Second, selectivity matters. An earlier BH3 mimetic, navitoclax, blocked both BCL-2 and BCL-XL. Platelets, which have no nucleus, depend on BCL-XL to survive, so navitoclax lowered platelet counts. Venetoclax was designed to bind BCL-2 thousands of times better than BCL-XL. Third, resistance. Leukaemia cells that make more MCL-1, which venetoclax does not bind, survive; so do cells with mutations in the BCL-2 groove, such as G101V, which lower the drug’s binding. Try the MCL-1 preset in the demo. The design of such trials returns in Kliniska prövningar och läkemedelsutveckling, and CLL in Sjukdomslära.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<ol type="1">
+<li><strong>Apoptosis</strong> is a clean, programmed death: the cell shrinks, blebs and breaks into apoptotic bodies that are eaten <strong>without inflammation</strong>. It serves <strong>development</strong>, removes <strong>damaged</strong> cells and is used by the <strong>immune system</strong>.</li>
+<li><strong>Caspases</strong> do the work: <strong>initiators</strong> (8, 9) are activated on platforms, <strong>executioners</strong> (3, 7) are cut by initiators and cut hundreds of proteins (DNA ladder, blebs, PS outside).</li>
+<li><strong>Intrinsic pathway</strong>: BH3-only sensors block the guardians (<strong>BCL-2</strong>, MCL-1), free <strong>BAX/BAK</strong> cross a threshold → <strong>MOMP</strong> → cytochrome c → <strong>apoptosome</strong> → caspase-9; SMAC removes the <strong>IAP</strong> brake.</li>
+<li><strong>Extrinsic pathway</strong>: death receptors → FADD → <strong>caspase-8</strong> → caspase-3/7, and <strong>tBID</strong> links it to the mitochondria. Dead cells say <strong>“find me”</strong> (ATP) and <strong>“eat me”</strong> (phosphatidylserine).</li>
+<li>We measure apoptosis with <strong>annexin V/PI</strong>, <strong>TUNEL</strong>, <strong>cleaved caspase-3/PARP</strong> and live imaging. <strong>Venetoclax</strong>, a BH3 mimetic, kills BCL-2-dependent leukaemia cells.</li>
+</ol>
+<p><em>Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch.&nbsp;18.</em></p>
+<p><a href="../credits.html#apoptosis" style="font-size:0.7em">Image credits</a></p>
+<aside class="notes">
+<p>Five take-home points. First, apoptosis is a tidy form of cell death with a typical look: shrinking, condensed chromatin, blebs, apoptotic bodies, and rapid eating by phagocytes, so there is no inflammation. It shapes the body in development, removes damaged cells and is the immune system’s way to kill infected cells. Second, caspases are proteases made as inactive precursors. Initiators are switched on by being brought together on a platform, executioners by being cut, and the executioners cut hundreds of proteins, which explains the shape changes. Third, the intrinsic pathway is decided by the BCL-2 family at the mitochondria: when BH3-only proteins outweigh the guardians, free BAX and BAK make pores, cytochrome c leaves, and the apoptosome activates caspase-9; SMAC releases the IAP brake. Fourth, the extrinsic pathway goes from death receptors through FADD to caspase-8, and tBID connects it to the mitochondria; the dead cells are found and eaten through ATP and phosphatidylserine. Fifth, you should be able to choose a method to detect apoptosis, and to explain how venetoclax works. In the next lecture we meet the other ways a cell can die.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'visible',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="380" viewBox="0 0 1100 380" font-family="Helvetica, Arial, sans-serif">
+<!-- fig08: error correction by tension. Aurora B at the inner centromere phosphorylates kinetochore proteins within reach; without tension the kinetochore is close and lets go; with tension it is pulled out of reach and holds on. Cartoon. -->
+<defs><marker id="ak" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="ao" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="ag" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2b8a3e"/></marker><marker id="ab" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1c4fa0"/></marker><marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker><marker id="am" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#555555"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="270" y="30" font-size="19" text-anchor="middle" font-weight="bold" fill="#c92a2a" >No tension: let go</text>
+<circle cx="270" cy="190" r="78" fill="#e8590c" fill-opacity="0.13"/><circle cx="270" cy="190" r="44" fill="#e8590c" fill-opacity="0.18"/>
+<text x="270" y="302" font-size="16" text-anchor="middle" font-weight="normal" fill="#b03d00" >Aurora B (inner centromere)</text>
+<rect x="246.0" y="115.0" width="22" height="150" rx="11.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 257.0 190.0)"/>
+<rect x="272.0" y="115.0" width="22" height="150" rx="11.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 283.0 190.0)"/>
+<line x1="257.0" y1="190.0" x2="283.0" y2="190.0" stroke="#1b2a3a" stroke-width="4" />
+<rect x="230.0" y="170" width="14" height="40" rx="5" fill="#1b2a3a"/>
+<circle cx="227.0" cy="160" r="10" fill="#e8590c"/><text x="227.0" y="165" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">P</text>
+<line x1="207.0" y1="178.0" x2="67.0" y2="163.6" stroke="#555555" stroke-width="2.2" stroke-dasharray="7 5"/>
+<line x1="207.0" y1="190.0" x2="67.0" y2="190.0" stroke="#555555" stroke-width="2.2" stroke-dasharray="7 5"/>
+<line x1="207.0" y1="202.0" x2="67.0" y2="216.4" stroke="#555555" stroke-width="2.2" stroke-dasharray="7 5"/>
+<rect x="296.0" y="170" width="14" height="40" rx="5" fill="#1b2a3a"/>
+<circle cx="313.0" cy="160" r="10" fill="#e8590c"/><text x="313.0" y="165" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">P</text>
+<line x1="333.0" y1="178.0" x2="473.0" y2="163.6" stroke="#555555" stroke-width="2.2" stroke-dasharray="7 5"/>
+<line x1="333.0" y1="190.0" x2="473.0" y2="190.0" stroke="#555555" stroke-width="2.2" stroke-dasharray="7 5"/>
+<line x1="333.0" y1="202.0" x2="473.0" y2="216.4" stroke="#555555" stroke-width="2.2" stroke-dasharray="7 5"/>
+<text x="270" y="330" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >kinetochores sit inside Aurora B's reach:</text>
+<text x="270" y="352" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >phosphorylated, microtubules released</text>
+<text x="820" y="30" font-size="19" text-anchor="middle" font-weight="bold" fill="#2b8a3e" >Tension: hold on</text>
+<circle cx="820" cy="190" r="78" fill="#e8590c" fill-opacity="0.13"/><circle cx="820" cy="190" r="44" fill="#e8590c" fill-opacity="0.18"/>
+<text x="820" y="302" font-size="16" text-anchor="middle" font-weight="normal" fill="#b03d00" >Aurora B (inner centromere)</text>
+<rect x="738.0" y="115.0" width="22" height="150" rx="11.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 749.0 190.0)"/>
+<rect x="880.0" y="115.0" width="22" height="150" rx="11.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 891.0 190.0)"/>
+<line x1="749.0" y1="190.0" x2="891.0" y2="190.0" stroke="#1b2a3a" stroke-width="4" />
+<rect x="722.0" y="170" width="14" height="40" rx="5" fill="#1b2a3a"/>
+<line x1="722.0" y1="178.0" x2="559.0" y2="163.6" stroke="#555555" stroke-width="2.2" />
+<line x1="722.0" y1="186.0" x2="559.0" y2="181.2" stroke="#555555" stroke-width="2.2" />
+<line x1="722.0" y1="194.0" x2="559.0" y2="198.8" stroke="#555555" stroke-width="2.2" />
+<line x1="722.0" y1="202.0" x2="559.0" y2="216.4" stroke="#555555" stroke-width="2.2" />
+<line x1="609.0" y1="138.0" x2="559.0" y2="138.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ak)" />
+<rect x="904.0" y="170" width="14" height="40" rx="5" fill="#1b2a3a"/>
+<line x1="918.0" y1="178.0" x2="1081.0" y2="163.6" stroke="#555555" stroke-width="2.2" />
+<line x1="918.0" y1="186.0" x2="1081.0" y2="181.2" stroke="#555555" stroke-width="2.2" />
+<line x1="918.0" y1="194.0" x2="1081.0" y2="198.8" stroke="#555555" stroke-width="2.2" />
+<line x1="918.0" y1="202.0" x2="1081.0" y2="216.4" stroke="#555555" stroke-width="2.2" />
+<line x1="1031.0" y1="138.0" x2="1081.0" y2="138.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ak)" />
+<text x="820" y="330" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >kinetochores pulled out of reach:</text>
+<text x="820" y="352" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >not phosphorylated, attachment stable</text>
+<line x1="550.0" y1="50.0" x2="550.0" y2="360.0" stroke="#d0d4d9" stroke-width="2" />
+</svg>

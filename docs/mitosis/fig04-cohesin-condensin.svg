@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="400" viewBox="0 0 1100 400" font-family="Helvetica, Arial, sans-serif">
+<!-- fig04: cohesin holds sister chromatids together from S phase; condensin folds each chromatid into loops in prophase; arm cohesin is removed in prophase/prometaphase, centromere cohesin is protected until anaphase. Cartoon, not to scale. -->
+<defs><marker id="ak" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="ao" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="ag" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2b8a3e"/></marker><marker id="ab" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1c4fa0"/></marker><marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker><marker id="am" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#555555"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="180" y="30" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >After S phase</text>
+<text x="180" y="54" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >cohesin rings hold the two sisters</text>
+<path d="M166,80 Q158,88 166,96 Q174,104 166,112 Q158,120 166,128 Q174,136 166,144 Q158,152 166,160 Q174,168 166,176 Q158,184 166,192 Q174,200 166,208 Q158,216 166,224 Q174,232 166,240 Q158,248 166,256 Q174,264 166,272 Q158,280 166,288 Q174,296 166,304 Q158,312 166,320" fill="none" stroke="#6b4fa0" stroke-width="5"/>
+<path d="M194,80 Q186,88 194,96 Q202,104 194,112 Q186,120 194,128 Q202,136 194,144 Q186,152 194,160 Q202,168 194,176 Q186,184 194,192 Q202,200 194,208 Q186,216 194,224 Q202,232 194,240 Q186,248 194,256 Q202,264 194,272 Q186,280 194,288 Q202,296 194,304 Q186,312 194,320" fill="none" stroke="#6b4fa0" stroke-width="5"/>
+<ellipse cx="180" cy="100" rx="30" ry="9" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<ellipse cx="180" cy="142" rx="30" ry="9" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<ellipse cx="180" cy="184" rx="30" ry="9" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<ellipse cx="180" cy="226" rx="30" ry="9" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<ellipse cx="180" cy="268" rx="30" ry="9" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<ellipse cx="180" cy="310" rx="30" ry="9" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<text x="180" y="345" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >long, thin chromatin:</text>
+<text x="180" y="366" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >cannot be separated cleanly</text>
+<line x1="268.0" y1="200.0" x2="348.0" y2="200.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ak)" />
+<text x="550" y="30" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >Prophase</text>
+<text x="550" y="54" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >condensin folds each sister into loops</text>
+<line x1="534.0" y1="80.0" x2="534.0" y2="320.0" stroke="#6b4fa0" stroke-width="4" />
+<path d="M534,84 C490,76 490,105 534,97" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="90" r="5" fill="#1c4fa0"/>
+<path d="M534,105 C490,97 490,126 534,118" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="111" r="5" fill="#1c4fa0"/>
+<path d="M534,126 C490,118 490,147 534,139" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="132" r="5" fill="#1c4fa0"/>
+<path d="M534,147 C490,139 490,168 534,160" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="153" r="5" fill="#1c4fa0"/>
+<path d="M534,168 C490,160 490,189 534,181" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="174" r="5" fill="#1c4fa0"/>
+<path d="M534,189 C490,181 490,210 534,202" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="195" r="5" fill="#1c4fa0"/>
+<path d="M534,210 C490,202 490,231 534,223" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="216" r="5" fill="#1c4fa0"/>
+<path d="M534,231 C490,223 490,252 534,244" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="237" r="5" fill="#1c4fa0"/>
+<path d="M534,252 C490,244 490,273 534,265" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="258" r="5" fill="#1c4fa0"/>
+<path d="M534,273 C490,265 490,294 534,286" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="279" r="5" fill="#1c4fa0"/>
+<path d="M534,294 C490,286 490,315 534,307" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="300" r="5" fill="#1c4fa0"/>
+<path d="M534,315 C490,307 490,336 534,328" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="534" cy="321" r="5" fill="#1c4fa0"/>
+<line x1="566.0" y1="80.0" x2="566.0" y2="320.0" stroke="#6b4fa0" stroke-width="4" />
+<path d="M566,84 C610,76 610,105 566,97" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="90" r="5" fill="#1c4fa0"/>
+<path d="M566,105 C610,97 610,126 566,118" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="111" r="5" fill="#1c4fa0"/>
+<path d="M566,126 C610,118 610,147 566,139" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="132" r="5" fill="#1c4fa0"/>
+<path d="M566,147 C610,139 610,168 566,160" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="153" r="5" fill="#1c4fa0"/>
+<path d="M566,168 C610,160 610,189 566,181" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="174" r="5" fill="#1c4fa0"/>
+<path d="M566,189 C610,181 610,210 566,202" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="195" r="5" fill="#1c4fa0"/>
+<path d="M566,210 C610,202 610,231 566,223" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="216" r="5" fill="#1c4fa0"/>
+<path d="M566,231 C610,223 610,252 566,244" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="237" r="5" fill="#1c4fa0"/>
+<path d="M566,252 C610,244 610,273 566,265" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="258" r="5" fill="#1c4fa0"/>
+<path d="M566,273 C610,265 610,294 566,286" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="279" r="5" fill="#1c4fa0"/>
+<path d="M566,294 C610,286 610,315 566,307" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="300" r="5" fill="#1c4fa0"/>
+<path d="M566,315 C610,307 610,336 566,328" fill="none" stroke="#6b4fa0" stroke-width="3"/>
+<circle cx="566" cy="321" r="5" fill="#1c4fa0"/>
+<ellipse cx="550" cy="150" rx="26" ry="8" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<ellipse cx="550" cy="200" rx="26" ry="8" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<ellipse cx="550" cy="250" rx="26" ry="8" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<text x="550" y="345" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >short, stiff chromatids,</text>
+<text x="550" y="366" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >about 10 000× shorter than their DNA</text>
+<line x1="650.0" y1="200.0" x2="730.0" y2="200.0" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ak)" />
+<text x="920" y="30" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >Prometaphase</text>
+<text x="920" y="54" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >arm cohesin removed; centromere kept</text>
+<path d="M910,200 Q906,140 886,90" fill="none" stroke="#6b4fa0" stroke-width="22" stroke-linecap="round"/>
+<path d="M910,200 Q906,260 886,310" fill="none" stroke="#6b4fa0" stroke-width="22" stroke-linecap="round"/>
+<circle cx="890" cy="200" r="7" fill="#1b2a3a"/>
+<path d="M930,200 Q934,140 954,90" fill="none" stroke="#6b4fa0" stroke-width="22" stroke-linecap="round"/>
+<path d="M930,200 Q934,260 954,310" fill="none" stroke="#6b4fa0" stroke-width="22" stroke-linecap="round"/>
+<circle cx="950" cy="200" r="7" fill="#1b2a3a"/>
+<ellipse cx="920" cy="192" rx="24" ry="7" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<ellipse cx="920" cy="208" rx="24" ry="7" fill="none" stroke="#2b8a3e" stroke-width="4"/>
+<line x1="838.0" y1="150.0" x2="893.0" y2="186.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)" />
+<text x="846" y="112" font-size="15" text-anchor="end" font-weight="normal" fill="#1b2a3a" >cohesin at the</text>
+<text x="846" y="132" font-size="15" text-anchor="end" font-weight="normal" fill="#1b2a3a" >centromere,</text>
+<text x="846" y="152" font-size="15" text-anchor="end" font-weight="normal" fill="#1b2a3a" >protected</text>
+<line x1="1010.0" y1="250.0" x2="960.0" y2="205.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)" />
+<text x="1018" y="262" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >kinetochore</text>
+<text x="920" y="345" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >one X-shaped chromosome:</text>
+<text x="920" y="366" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >separase cuts the last cohesin in anaphase</text>
+<ellipse cx="365" cy="388" rx="14" ry="5" fill="none" stroke="#2b8a3e" stroke-width="3"/><text x="386" y="393" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >cohesin</text>
+<circle cx="480" cy="388" r="5" fill="#1c4fa0"/><text x="492" y="393" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >condensin</text>
+<line x1="580" y1="388" x2="606" y2="388" stroke="#6b4fa0" stroke-width="5"/><text x="614" y="393" font-size="15" text-anchor="start" font-weight="normal" fill="#1b2a3a" >chromatin</text>
+</svg>

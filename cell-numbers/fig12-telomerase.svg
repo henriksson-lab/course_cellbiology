@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e8590c"/></marker>
+  </defs>
+  <!-- chromosome end -->
+  <line x1="20" y1="70" x2="250" y2="70" stroke="#1b2a3a" stroke-width="5"/>
+  <line x1="20" y1="100" x2="250" y2="100" stroke="#1b2a3a" stroke-width="5"/>
+  <text x="20" y="40" font-size="15" fill="#555">chromosome</text>
+  <text x="258" y="77" font-family="Courier New, monospace" font-size="21" font-weight="bold" letter-spacing="1">TTAGGGTTAG<tspan fill="#e8590c">GGTTAG</tspan></text>
+  <text x="258" y="107" font-family="Courier New, monospace" font-size="21" letter-spacing="1">AATC</text>
+  <text x="258" y="130" font-size="15" fill="#555">5'</text>
+  <text x="484" y="72" font-size="15">3'</text>
+  <!-- telomerase blob -->
+  <rect x="300" y="86" width="340" height="140" rx="50" fill="#fbeedd" stroke="#d9822b" stroke-width="2.5"/>
+  <text x="340" y="106" font-family="Courier New, monospace" font-size="21" letter-spacing="1" fill="#6b4fa0">AAUC<tspan font-weight="bold">CCAAUC</tspan></text>
+  <text x="336" y="106" font-size="15" fill="#6b4fa0" text-anchor="end">3'</text>
+  <text x="484" y="106" font-size="15" fill="#6b4fa0">5'</text>
+  <text x="470" y="150" text-anchor="middle" font-size="15" fill="#6b4fa0">RNA template (part of the enzyme)</text>
+  <text x="470" y="185" text-anchor="middle" font-weight="bold">telomerase</text>
+  <text x="470" y="208" text-anchor="middle" font-size="15">TERT = reverse transcriptase</text>
+  <path d="M505,55 C590,30 660,45 690,74" fill="none" stroke="#e8590c" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="700" y="80" font-size="15" fill="#c2410c">adds GGTTAG,</text>
+  <text x="700" y="100" font-size="15" fill="#c2410c">slides along,</text>
+  <text x="700" y="120" font-size="15" fill="#c2410c">repeats</text>
+  <!-- steps -->
+  <text x="20" y="262" font-size="16">1. The RNA template pairs with the 3' overhang.  2. TERT copies the template into DNA (RNA → DNA).</text>
+  <text x="20" y="286" font-size="16">3. Telomerase moves on and adds the next repeat.  4. Primase and DNA polymerase fill in the other strand.</text>
+  <text x="20" y="316" font-size="15" fill="#555">Active in germ cells, stem cells (low) and most cancers; very low in most body cells.</text>
+</svg>

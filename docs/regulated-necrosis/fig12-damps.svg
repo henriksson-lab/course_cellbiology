@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" font-family="Helvetica, Arial, sans-serif">
+<!-- fig12: death as a signal: apoptosis keeps contents in and calms; necrosis releases DAMPs and alarms -->
+<defs><marker id="ar" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+<line x1="480" y1="20" x2="480" y2="400" stroke="#cccccc" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="20" y="30" font-size="19" font-weight="bold" fill="#1b2a3a">Apoptosis: contents stay inside</text>
+<text x="510" y="30" font-size="19" font-weight="bold" fill="#1b2a3a">Lytic death: contents spill out</text>
+<!-- apoptotic cell with PS flags -->
+<circle cx="120" cy="150" r="55" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+<circle cx="112" cy="145" r="12" fill="#6b4fa0"/><circle cx="135" cy="162" r="9" fill="#6b4fa0"/>
+<g stroke="#e8590c" stroke-width="3">
+<line x1="120" y1="95" x2="120" y2="80"/><line x1="175" y1="150" x2="190" y2="150"/><line x1="159" y1="111" x2="170" y2="100"/><line x1="159" y1="189" x2="170" y2="200"/><line x1="65" y1="150" x2="50" y2="150"/><line x1="81" y1="111" x2="70" y2="100"/>
+</g>
+<text x="40" y="240" font-size="16" fill="#1b2a3a">“eat me”: phosphatidylserine</text>
+<text x="40" y="260" font-size="16" fill="#1b2a3a">on the outer leaflet</text>
+<line x1="200" y1="150" x2="262" y2="150" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<!-- phagocyte -->
+<path d="M270,150 C270,85 340,70 390,95 C440,120 455,170 420,200 C385,230 300,220 282,190 C274,178 270,165 270,150 Z" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+<circle cx="330" cy="140" r="24" fill="#e3f3ea" stroke="#2e8b57" stroke-width="3"/><circle cx="330" cy="140" r="8" fill="#6b4fa0"/>
+<ellipse cx="400" cy="170" rx="20" ry="14" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+<text x="360" y="245" font-size="16" text-anchor="middle" fill="#1b2a3a">phagocyte digests it,</text>
+<text x="360" y="265" font-size="16" text-anchor="middle" fill="#1b2a3a">releases calming signals</text>
+<text x="360" y="285" font-size="16" text-anchor="middle" fill="#1b2a3a">(TGF-β, IL-10)</text>
+<text x="240" y="350" font-size="18" text-anchor="middle" fill="#2b8a3e" font-weight="bold">Silent: tissue is tidied, no alarm</text>
+<!-- lytic cell -->
+<path d="M560,104 A60,60 0 0,1 640,108" fill="none" stroke="#8a6a12" stroke-width="4"/>
+<path d="M655,125 A60,60 0 0,1 620,215" fill="none" stroke="#8a6a12" stroke-width="4"/>
+<path d="M600,220 A60,60 0 0,1 545,110" fill="none" stroke="#8a6a12" stroke-width="4"/>
+<ellipse cx="598" cy="160" rx="22" ry="19" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+<g fill="#e8590c"><circle cx="672" cy="112" r="6"/><circle cx="690" cy="135" r="5"/><circle cx="678" cy="160" r="6"/><circle cx="700" cy="180" r="5"/><circle cx="650" cy="230" r="5"/><circle cx="668" cy="210" r="6"/></g>
+<text x="510" y="62" font-size="16" fill="#1b2a3a">DAMPs: HMGB1, ATP, IL-1α, DNA,</text>
+<text x="510" y="82" font-size="16" fill="#1b2a3a">uric acid (+ IL-1β after pyroptosis)</text>
+<line x1="710" y1="155" x2="772" y2="155" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<!-- macrophage with receptors -->
+<circle cx="850" cy="155" r="62" fill="#fbfaf5" stroke="#8a6a12" stroke-width="4"/>
+<ellipse cx="865" cy="165" rx="22" ry="16" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+<g fill="#dbe4ee" stroke="#1b2a3a" stroke-width="1.5"><rect x="784" y="128" width="10" height="22" rx="3"/><rect x="784" y="162" width="10" height="22" rx="3"/><rect x="820" y="92" width="10" height="22" rx="3" transform="rotate(-30 825 103)"/></g>
+<text x="850" y="245" font-size="16" text-anchor="middle" fill="#1b2a3a">immune cell senses them</text>
+<text x="850" y="265" font-size="16" text-anchor="middle" fill="#1b2a3a">(TLRs, P2X7, …) and makes</text>
+<text x="850" y="285" font-size="16" text-anchor="middle" fill="#1b2a3a">inflammatory cytokines</text>
+<text x="745" y="350" font-size="18" text-anchor="middle" fill="#c92a2a" font-weight="bold">Alarm: neutrophils arrive, inflammation</text>
+<text x="745" y="376" font-size="16" text-anchor="middle" fill="#1b2a3a">necrosis, necroptosis, pyroptosis, ferroptosis</text>
+</svg>

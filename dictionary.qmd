@@ -650,3 +650,233 @@ See [Myosin, intermediate filaments and the mechanical cell](myosin-if/lec.qmd).
 **Traction-force microscopy**: a method that calculates the forces a cell exerts from how far beads move in the soft gel the cell grows on.
 
 **Mavacamten**: a cardiac myosin inhibitor that parks myosin heads, used to treat hypertrophic cardiomyopathy.
+
+## Cell cycle and cell death
+
+### The cell-cycle control system
+
+See [The cell-cycle control system](cell-cycle-control/lec.qmd).
+
+**Cell cycle**: the ordered series of phases (G1, S, G2, M) by which a cell copies its contents and divides into two.
+
+**G0**: a resting state outside the cell cycle, entered from G1, in which most cells of the adult body stay.
+
+**Cyclin**: a protein whose level rises and falls during the cell cycle and that activates a cyclin-dependent kinase when bound to it.
+
+**Cyclin-dependent kinase (CDK)**: a protein kinase that is active only with a cyclin partner and drives the transitions of the cell cycle.
+
+**CDK inhibitor (CKI)**: a protein, such as p21, p27 or p16, that binds a cyclin–CDK complex and blocks its activity.
+
+**SCF**: a ubiquitin ligase that tags phosphorylated cell-cycle proteins, such as p27 and cyclin E, for destruction by the proteasome.
+
+**APC/C (anaphase-promoting complex/cyclosome)**: a ubiquitin ligase that destroys securin and mitotic cyclins to trigger anaphase and exit from mitosis, and keeps cyclins low in G1.
+
+**Rb (retinoblastoma protein)**: a protein that holds the transcription factor E2F inactive until CDKs phosphorylate it in G1.
+
+**E2F**: a transcription factor that switches on the genes needed for S phase once it is released from Rb.
+
+**Restriction point**: the point in G1 after which a cell completes the cycle even if mitogens are removed.
+
+**Checkpoint**: a control mechanism that stops the cell cycle until a condition is met, for example intact or fully replicated DNA.
+
+**p53**: a transcription factor that accumulates after DNA damage and stops the cell cycle, mainly through p21, or triggers senescence or apoptosis.
+
+**Replication licensing**: the loading of helicase rings onto replication origins in G1, which ensures that each origin fires only once per cycle.
+
+**FUCCI**: a pair of fluorescent reporters, red in G1 and green in S/G2/M, that show the cell-cycle phase of living cells.
+
+**CDK4/6 inhibitor**: a drug, such as palbociclib, that blocks cyclin D–CDK4/6, so that Rb stays active and cells stop in G1.
+
+### Mitosis and cytokinesis
+
+See [Mitosis and cytokinesis](mitosis/lec.qmd).
+
+**Cohesin**: a ring-shaped protein complex that holds sister chromatids together from S phase until anaphase.
+
+**Condensin**: a ring-shaped complex that uses ATP to fold DNA into loops, compacting chromosomes for mitosis.
+
+**Kinetochore**: the protein machine on a centromere that attaches a chromatid to spindle microtubules and holds on to their growing and shrinking ends.
+
+**Spindle**: the bipolar microtubule machine, with two poles and kinetochore, interpolar and astral microtubules, that separates the chromosomes.
+
+**Kinesin-5**: a four-headed plus-end motor that slides antiparallel microtubules apart and pushes the spindle poles away from each other; the target of monastrol.
+
+**Amphitelic attachment**: correct attachment, with each sister kinetochore bound to the opposite pole (biorientation).
+
+**Syntelic attachment**: a wrong attachment in which both sister kinetochores bind the same pole.
+
+**Merotelic attachment**: a wrong attachment in which one kinetochore binds microtubules from both poles; the checkpoint does not detect it.
+
+**Aurora B**: a kinase at the inner centromere that releases kinetochore–microtubule attachments that are not under tension.
+
+**Spindle assembly checkpoint**: the control that blocks anaphase while any kinetochore is unattached.
+
+**Mitotic checkpoint complex (MCC)**: the inhibitor of APC/C–Cdc20 (Mad2, BubR1, Bub3 and Cdc20), made at unattached kinetochores.
+
+**Separase**: the protease that cleaves cohesin to start anaphase once its inhibitor securin is destroyed.
+
+**Securin**: the inhibitor of separase, destroyed after ubiquitylation by APC/C–Cdc20.
+
+**Abscission**: the final cut of the midbody bridge between daughter cells, done by ESCRT-III.
+
+**Aneuploidy**: having a wrong number of chromosomes, as in trisomy 21 or many cancers.
+
+### Controlling cell numbers
+
+See [Controlling cell numbers](cell-numbers/lec.qmd).
+
+**Mitogen**: an extracellular signal protein, such as PDGF or EGF, that makes a cell pass the restriction point and divide.
+
+**Survival factor**: an extracellular signal that keeps a cell alive by suppressing apoptosis.
+
+**Contact inhibition**: the reversible stop of division when normal cells touch neighbours on all sides; lost in transformed cells.
+
+**Population doubling**: one doubling of the number of cells in a culture, used to count a culture's divisions.
+
+**Hayflick limit**: the limited number of divisions (about 40–60 population doublings) that normal human cells can make in culture.
+
+**Replicative senescence**: permanent cell-cycle arrest caused by short telomeres after many divisions.
+
+**Telomere**: the repeated TTAGGG DNA and its protein cap (shelterin) at the end of each chromosome.
+
+**End-replication problem**: the loss of DNA at chromosome ends at each replication, because the last lagging-strand primer gap cannot be filled.
+
+**Telomerase**: a reverse transcriptase (TERT) with its own RNA template that adds telomere repeats to chromosome ends.
+
+**Oncogene-induced senescence**: permanent arrest of a normal cell triggered by an activated oncogene, a barrier to cancer.
+
+**SASP**: the senescence-associated secretory phenotype, the inflammatory cytokines and proteases that senescent cells secrete.
+
+**Crisis**: the stage when cells without p53/Rb keep dividing until critically short telomeres cause chromosome fusions and most cells die.
+
+**Senolytic**: a drug that selectively kills senescent cells, for example by blocking BCL-xL.
+
+### Apoptosis
+
+See [Apoptosis](apoptosis/lec.qmd).
+
+**Apoptosis**: a programmed, tidy form of cell death in which the cell shrinks, blebs and breaks into apoptotic bodies that are eaten without inflammation.
+
+**Caspase**: a cysteine protease, made as an inactive procaspase, that cuts proteins after an aspartate; initiators (caspase-8, -9) activate executioners (caspase-3, -7).
+
+**BCL-2 family**: proteins that decide on MOMP: the guardians (BCL-2, BCL-XL, MCL-1), the effectors (BAX, BAK) and the BH3-only sensors.
+
+**BH3-only protein**: a stress-activated BCL-2-family member (e.g. BIM, BID, PUMA, NOXA, BAD) whose BH3 helix blocks the guardians or activates BAX/BAK.
+
+**BAX/BAK**: effector proteins of the BCL-2 family that, once activated, form pores in the outer mitochondrial membrane.
+
+**MOMP (mitochondrial outer membrane permeabilisation)**: the all-or-none opening of the outer mitochondrial membrane by BAX/BAK, which releases cytochrome c and SMAC.
+
+**Apoptosome**: a wheel of seven APAF1 molecules, assembled by cytosolic cytochrome c, that activates caspase-9.
+
+**IAP (inhibitor of apoptosis)**: a protein such as XIAP that binds and blocks active caspases; SMAC released at MOMP removes it.
+
+**Death receptor**: a cell-surface receptor (e.g. Fas, TNFR1, TRAIL receptors) that recruits FADD and caspase-8 into the DISC when its ligand binds.
+
+**tBID**: the caspase-8-cut form of BID, which activates BAX/BAK and links the extrinsic pathway to the mitochondria.
+
+**Efferocytosis**: phagocytosis of apoptotic cells, guided by "find me" (e.g. ATP) and "eat me" (phosphatidylserine) signals; it calms the phagocyte.
+
+**Annexin V/PI assay**: a flow cytometry test in which annexin V binds exposed phosphatidylserine and PI stains cells with a broken membrane, separating live, early apoptotic and late apoptotic cells.
+
+**TUNEL**: a staining method in which terminal transferase adds labelled nucleotides to DNA ends, marking apoptotic nuclei in cells or tissue sections.
+
+**BH3 mimetic**: a drug that copies the BH3 helix and fills a guardian's groove, releasing BH3-only proteins (e.g. venetoclax).
+
+**Venetoclax**: a BH3 mimetic that selectively blocks BCL-2, used in chronic lymphocytic leukaemia and acute myeloid leukaemia.
+
+## Cell death and disease
+
+### Beyond apoptosis: necroptosis, pyroptosis, ferroptosis
+
+See [Beyond apoptosis: necroptosis, pyroptosis, ferroptosis](regulated-necrosis/lec.qmd).
+
+**Regulated necrosis**: cell death in which the cell's own proteins break the plasma membrane, so it can be blocked by a drug or a gene knockout.
+
+**Accidental necrosis**: cell death caused directly by overwhelming damage (heat, freezing, detergent, loss of ATP), with no programme involved.
+
+**Necroptosis**: regulated lytic death in which RIPK1 and RIPK3 activate MLKL, which breaks the plasma membrane; a backup when caspase-8 is blocked.
+
+**MLKL**: the executioner of necroptosis; once phosphorylated by RIPK3, it forms oligomers that rupture the plasma membrane.
+
+**Necrostatin-1**: a small-molecule inhibitor of the RIPK1 kinase, used as a research tool to block necroptosis.
+
+**Pyroptosis**: inflammatory lytic death, mainly of immune cells, in which caspase-1 cuts gasdermin D into pore-forming fragments.
+
+**Inflammasome**: a protein complex (e.g. NLRP3 + ASC + pro-caspase-1) that senses danger and activates caspase-1.
+
+**Gasdermin D**: a protein whose N-terminal fragment, released by caspase-1, forms large pores in the plasma membrane.
+
+**IL-1β (interleukin-1β)**: a powerful inflammatory cytokine, activated by caspase-1 and released through gasdermin pores.
+
+**Ferroptosis**: iron-dependent cell death caused by runaway peroxidation of polyunsaturated membrane lipids.
+
+**Lipid peroxidation**: a radical chain reaction that oxidises polyunsaturated fatty acid tails in membranes.
+
+**GPX4 (glutathione peroxidase 4)**: a selenium enzyme that uses glutathione to reduce lipid peroxides in membranes, protecting cells from ferroptosis.
+
+**Ferrostatin-1**: a radical-trapping antioxidant that stops lipid peroxidation and blocks ferroptosis.
+
+**DAMPs (damage-associated molecular patterns)**: molecules normally inside cells (e.g. HMGB1, ATP, DNA) that trigger inflammation when released by dying cells.
+
+**z-VAD**: a pan-caspase inhibitor that blocks apoptosis and also pyroptosis (via caspase-1).
+
+### Cancer as a disease of cell biology
+
+See [Cancer as a disease of cell biology](cancer/lec.qmd).
+
+**Oncogene**: a mutated or overactive form of a normal growth-promoting gene (proto-oncogene) that drives cancer when one copy is altered.
+
+**Proto-oncogene**: a normal gene whose protein promotes growth, division or survival, such as RAS or EGFR.
+
+**Tumour suppressor**: a gene whose protein brakes growth, repairs DNA or triggers death; both copies must be lost for it to contribute to cancer.
+
+**Two-hit hypothesis**: Knudson's idea that both copies of a tumour suppressor must be inactivated, one of which can be inherited.
+
+**Hallmarks of cancer**: the set of capabilities a cell must gain to become a cancer cell, such as sustained growth signals and escape from apoptosis.
+
+**Genome instability**: an increased rate of mutations or chromosome changes in a cell lineage, which speeds up cancer evolution.
+
+**Clonal evolution**: the process by which new mutations and selection produce competing subclones within a tumour.
+
+**Tumour heterogeneity**: the presence of genetically and functionally different subclones within one tumour.
+
+**Carcinoma in situ**: a carcinoma whose cells have not yet crossed the basement membrane.
+
+**Epithelial–mesenchymal transition (EMT)**: a programme in which epithelial cells lose junctions and polarity and become migratory, mesenchymal-like cells.
+
+**Metastasis**: the spread of cancer cells from the primary tumour to form new tumours in distant organs.
+
+**Tumour microenvironment**: the non-cancer cells, vessels and matrix around tumour cells that influence their growth and spread.
+
+**Warburg effect**: the use of glycolysis by many cancer cells even when oxygen is present.
+
+**Immune checkpoint inhibitor**: an antibody that blocks a T-cell brake such as PD-1, PD-L1 or CTLA-4, so that T cells can attack the tumour.
+
+### When cell biology goes wrong: a disease casebook
+
+See [When cell biology goes wrong: a disease casebook](disease-casebook/lec.qmd).
+
+**Loss of function**: a mutation that removes or weakens a protein's normal activity; usually recessive.
+
+**Gain of function**: a mutation that makes a protein too active or gives it a new, harmful activity; often dominant.
+
+**Toxic aggregate**: misfolded protein that clumps (often as amyloid) and damages the cell.
+
+**Corrector**: a small molecule that helps a misfolded protein fold and leave the ER (e.g. elexacaftor for CFTR).
+
+**Potentiator**: a small molecule that holds an ion channel open longer (e.g. ivacaftor for CFTR).
+
+**Enzyme replacement therapy**: infusion of a missing enzyme that cells take up by receptor-mediated endocytosis and deliver to lysosomes.
+
+**Antisense oligonucleotide (ASO)**: a short, modified nucleic-acid strand that pairs with one RNA to change its splicing or have it destroyed.
+
+**siRNA (as a drug)**: a short double-stranded RNA that guides RISC to cut one mRNA, so less of its protein is made.
+
+**Gene therapy**: delivery of a working gene, often in an AAV virus shell, so cells make a missing protein.
+
+**I-cell disease**: lack of the Golgi enzyme that adds the mannose-6-phosphate tag, so lysosomal enzymes are secreted instead of reaching lysosomes.
+
+**Heteroplasmy**: the presence of both normal and mutant mitochondrial DNA in one cell; disease appears above a threshold fraction.
+
+**Primary ciliary dyskinesia**: an inherited loss of axonemal dynein function, so motile cilia do not beat.

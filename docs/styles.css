@@ -75,3 +75,10 @@
 .sidebar-menu-container > ul > li:nth-child(6) { --week-color: #8a6a12; --week-tint: #f6f0de; } /* Week 4 ochre */
 .sidebar-menu-container > ul > li:nth-child(7) { --week-color: #3b5bab; --week-tint: #e9eef8; } /* Week 5 blue */
 .sidebar-menu-container > ul > li:nth-child(8) { --week-color: #6c757d; --week-tint: #f1f3f5; } /* Further reading grey */
+
+/* Bioinformatics days (folders named bioinfo-...) are purple and bold */
+.sidebar a.sidebar-item-text[href*="bioinfo-"],
+.sidebar-item .sidebar-item-text > a[href*="bioinfo-"] {
+  color: #6b4fa0;
+  font-weight: 600;
+}

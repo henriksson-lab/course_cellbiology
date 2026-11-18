@@ -1,0 +1,104 @@
+---
+title: "Quiz: when cell biology goes wrong"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *When cell biology goes wrong: a disease casebook*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Name the five ways a protein can make you ill, and give one disease for each. `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Missing, too active, clumped, in the wrong compartment, at the wrong level.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Loss of function** (cystic fibrosis, primary ciliary dyskinesia, Gaucher disease, MELAS); **gain of function** (hypertrophic cardiomyopathy, progeria, PCSK9 mutations in FH); **toxic aggregate** (Alzheimer's, Parkinson's, TTR amyloidosis, the liver disease in α1-antitrypsin deficiency); **wrong place** (I-cell disease; F508del CFTR kept in the ER); **wrong amount or time** (too few LDL receptors in FH, too little SMN protein in SMA, cholera toxin keeping Gs on). One disease can belong to two categories.
+:::
+
+---
+
+**Q2.** Two patients with cystic fibrosis have the same sweat chloride. In patient 1, a Western blot of CFTR shows only band B; in patient 2, band C is normal. Which drug type fits each patient? `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Band B is the ER form, band C the form that has passed the Golgi. Where is each patient's protein?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Patient 1: CFTR misfolds and is kept in the ER (like F508del). A **corrector** helps it fold and leave the ER; in practice it is given with a potentiator. Patient 2: CFTR reaches the surface but its gate rarely opens (like G551D). A **potentiator** (ivacaftor) holds the gate open.
+:::
+
+---
+
+**Q3.** In I-cell disease, lysosomal enzymes are 10–20 times higher than normal in blood plasma. Why, when the patient's lysosomes are full of undigested material? `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which tag sends lysosomal enzymes from the trans-Golgi network to the lysosome?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The Golgi enzyme that adds the **mannose-6-phosphate tag** is missing. Without the tag, the M6P receptor in the trans-Golgi network cannot catch the enzymes, so they follow the default route and are **secreted** into the blood. The enzymes are active, but in the **wrong place**; the lysosomes lack them and fill with undigested material.
+:::
+
+---
+
+**Q4.** Why is hypertrophic cardiomyopathy caused by one mutated copy of the myosin gene, while primary ciliary dyskinesia needs two mutated copies of a dynein gene? `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Is the mutant protein too active, or missing?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+In HCM the mutant myosin is **too active** (fewer heads parked): a **gain of function**. It harms the heart even when normal myosin is present, so one copy is enough (dominant). In PCD the dynein is **missing or broken**: a **loss of function**. One good copy makes enough dynein, so both copies must be broken (recessive).
+:::
+
+---
+
+**Q5.** Patisiran treats hereditary TTR amyloidosis by destroying TTR mRNA in the liver. Why does it help to remove a protein, when the disease is caused by a mutation in that protein? `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which category is TTR amyloidosis in, and is TTR itself essential?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+TTR amyloidosis is a **toxic aggregate** disease: the mutant TTR tetramer falls apart and the chains form amyloid in nerves and heart. Less TTR made means **less material for amyloid**. TTR is not essential: most thyroid hormone in blood is carried by other proteins, so lowering TTR by about 80 % is safe. (TTR also carries the vitamin A transport protein, so patients take vitamin A supplements.)
+:::
+
+---
+
+**Q6.** Enzyme replacement works for Gaucher disease but not for cystic fibrosis. Explain with one cell biology reason. `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+How does an infused protein get into a cell, and where does it end up?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+An infused protein enters cells by **receptor-mediated endocytosis** and ends up in **endosomes and lysosomes**. That is exactly where glucocerebrosidase (Gaucher) has to work. CFTR is a **membrane protein** that must be inserted into the ER membrane while it is made and travel to the apical membrane; an infused protein cannot do that.
+:::
+
+---
+
+**Q7.** Nusinersen helps children with spinal muscular atrophy although they have no *SMN1* gene. How? `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What does the backup gene *SMN2* do wrong?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+*SMN2* makes the same protein as *SMN1*, but a one-base difference makes the splicing machinery **skip exon 7** in most transcripts, so little full-length SMN is made. Nusinersen is an **antisense oligonucleotide** that covers a splicing silencer in the intron after exon 7, so exon 7 is kept and *SMN2* makes **full-length SMN**.
+:::
+
+---
+
+**Q8.** Cholera toxin and cystic fibrosis both affect CFTR, but with opposite results. Explain. `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Is CFTR open too much or too little?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Cholera toxin ADP-ribosylates **Gαs**, so it cannot hydrolyse GTP and stays on. cAMP stays high, PKA keeps CFTR **open**, and Cl⁻, Na⁺ and water pour into the gut (diarrhoea): a signal at the **wrong time**. In cystic fibrosis CFTR is **missing or closed** (loss of function): too little salt and water are secreted, mucus becomes thick, and sweat stays salty.
+:::

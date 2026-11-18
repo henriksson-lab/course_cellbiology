@@ -1,0 +1,309 @@
+---
+title: "When cell biology goes wrong: a disease casebook"
+subtitle: "Cell death and disease"
+author: "Cell Biology (3MB001)"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    highlight-style: github
+    code-overflow: wrap
+    code-line-numbers: false
+    incremental: false
+    chalkboard: false
+    menu: true
+    html-math-method: katex
+---
+
+## About this lecture {.smaller}
+
+Every lecture in this course ended with a disease. Today we put them side by side. A disease is often **one broken step** in a pathway you already know: a protein that does not fold, a receptor that is not recycled, a motor that pulls too hard.
+
+After this lecture you can:
+
+- sort a disease into one of **five ways** a protein can make you ill: **loss of function, gain of function, toxic aggregate, wrong place, wrong amount**;
+- explain, for about ten diseases, **which step in the cell is broken** and which lecture taught that step;
+- explain how we go from a patient to the broken step: **sweat test, biopsy, patient cells, gene**;
+- match a **therapy type** to the defect: small molecule, enzyme replacement, antibody, antisense oligonucleotide, siRNA, gene therapy.
+
+**ELO 9** (disease mechanisms), revisiting ELO 2, 4, 5 and 6.
+
+::: notes
+This lecture is different from the others. It does not teach a new machine. Instead it collects the diseases you have met at the end of almost every lecture and puts them into one framework. The aim is that you can take any disease that is caused by one gene, ask which step in the cell has failed, and then predict what kind of medicine could help. We start with a puzzle about two children with the same cough. Then we build a simple framework with five categories. Then we go through about ten cases, each linked to the lecture where you learned the cell biology. At the end we look at therapy types, from small molecules to gene therapy, and match them to the categories. Keep in mind that this is the cell-level view. How a broken cell becomes symptoms in a whole organ is the subject of Sjukdomslära, later in the programme, and infections are covered in depth in Mikrobiell patogenes.
+:::
+
+## The question: two children, the same cough {.smaller}
+
+![](fig02-two-coughs.svg){width="88%" fig-align="center"}
+
+- Both children have **thick mucus** and **chest infections** since birth. In both, mucus is **not cleared** from the airways.
+- Child A has **salty sweat**. Child B has normal sweat, but the **heart is on the right** side.
+- **Same symptom, different broken step.** Which step, and does it matter for treatment?
+
+::: notes
+Here are two children who look much the same in the clinic. Both have had a wet cough and chest infections since they were babies. In both, mucus stays in the airways instead of being carried up and out. Normally the airway surface has a thin layer of liquid, and cilia beat in that liquid and push the mucus layer on top towards the throat. Two things are needed: enough liquid, and cilia that beat. Child A has salty sweat. You know from the ion channels lecture what that means: the chloride channel CFTR is not working, so chloride is not secreted, water does not follow, the liquid layer dries out and the cilia are pressed flat under thick mucus. Child B has normal sweat, so CFTR works. But on the chest X-ray the heart is on the right side. That is a clue from the microtubules lecture: cilia in the early embryo set left and right. In child B the cilia themselves do not beat. Same symptom, two different broken steps, and, as we will see, two different treatments.
+:::
+
+## A framework: five ways a protein can make you ill {.smaller}
+
+![](fig03-framework.svg){width="96%" fig-align="center"}
+
+- One disease can sit in **two boxes**: misfolded CFTR is lost (**loss of function**) because it stays in the ER (**wrong place**).
+- **Recessive** diseases are usually loss of function: one good copy is enough. **Dominant** ones are often gain of function or toxic.
+
+::: notes
+Here is the framework for the lecture. Most diseases caused by one gene fit into one or two of five categories. First, loss of function: the protein is missing or does not work. Cystic fibrosis, ciliary dyskinesia, lysosomal storage diseases and most mitochondrial diseases are like this. Second, gain of function: the protein is too active, or does something new and harmful, like the overactive myosin in hypertrophic cardiomyopathy. Third, toxic aggregates: misfolded chains stick together, and the clumps harm the cell; Alzheimer's and Parkinson's disease are examples. Fourth, wrong place: the protein works but ends up in the wrong compartment. Fifth, wrong amount or wrong time: the right protein at the wrong level, or a signal stuck on. A useful rule from genetics: if one normal copy is enough, the disease is recessive and usually a loss of function. If one mutant copy causes disease, the mutant protein usually does something harmful: a gain of function or a toxic aggregate. That rule will help you choose a therapy at the end of the lecture.
+:::
+
+## Loss of function: cystic fibrosis, one gene, several defects {.smaller}
+
+::::: {.columns}
+::: {.column width="75%"}
+![](fig04-cftr-defects.svg){width="100%"}
+
+- More than **2000 mutations** in CFTR, but only a few kinds of defect: **no protein**, **misfolded** (stuck in the ER), **gate shut**.
+- Same disease, different broken step, **different drug**: a **corrector** for F508del, a **potentiator** for G551D.
+:::
+::: {.column width="25%"}
+![](img04-cf-lung.jpg){height="230px" fig-align="center"}
+
+*Lung of a patient with cystic fibrosis (autopsy): widened airways filled with thick mucus.*
+:::
+:::::
+
+::: notes
+Cystic fibrosis is a recessive loss of function of CFTR, the chloride channel you met in the ion channels lecture. Over two thousand different mutations are known, but they break the protein in only a few ways. Some, like premature stop codons, mean that no protein is made at all. The most common, F508del, deletes one phenylalanine; the protein misfolds, ER quality control holds it back and ERAD sends it to the proteasome, as you saw in the ER lecture. So F508del is a loss of function because the protein is in the wrong place. A third group, such as G551D, gives a protein that folds and reaches the apical membrane, but its gate rarely opens. The photograph shows what happens over years: airways widen and fill with thick, infected mucus. The lesson for therapy is that the disease name is not enough. You need to know which step is broken. Correctors help the protein fold and leave the ER; potentiators hold the gate open. A patient with no protein at all is helped by neither.
+:::
+
+## Wrong place and toxic aggregate: α1-antitrypsin deficiency {.smaller}
+
+:::: {.columns}
+::: {.column width="45%"}
+![](img05-a1at-liver.jpg){height="400px" fig-align="center"}
+
+*Liver in α1-antitrypsin deficiency: round pink globules are α1-antitrypsin trapped in the ER of liver cells.*
+:::
+::: {.column width="55%"}
+- **α1-antitrypsin** is made in the liver and secreted into blood. It inhibits **neutrophil elastase**, which otherwise digests lung tissue.
+- **Z mutation** (Glu342Lys): the protein folds slowly and forms **polymers in the ER**. Discovered in **Malmö** (Laurell and Eriksson, 1963); about **1 in 1600** Swedes carry two Z copies.
+- **Two diseases from one defect:**
+  - **lung**: too little in blood (**wrong place**, loss of function) → **emphysema**, much worse in smokers;
+  - **liver**: polymers in the ER (**toxic aggregate**) → **cirrhosis**.
+- Therapy: **infusions** of purified α1-antitrypsin for the lungs; **siRNA** against the liver's production is in trials.
+:::
+::::
+
+::: notes
+Alpha-1-antitrypsin shows that one mutation can sit in two boxes of the framework at once. The protein is made in liver cells, travels through the ER and Golgi and is secreted into the blood. Its job is to inhibit neutrophil elastase, a protease that white blood cells release in the lungs. In the Z variant, a single amino acid change makes the protein fold slowly, and the partly folded molecules link up into long polymers inside the ER. The micrograph shows the result: pink globules of trapped protein in liver cells. Now follow the consequences. In the lungs, too little inhibitor arrives, elastase digests the walls of the air sacs and the patient develops emphysema, typically in the forties, much earlier in smokers. In the liver, the polymers themselves damage the cells and can cause cirrhosis. So the lung disease is a loss of function and the liver disease is a toxic gain. Weekly infusions of the purified protein help the lungs but not the liver; silencing the gene in the liver with an siRNA is being tested. The disease was discovered in Malmö in 1963.
+:::
+
+## Wrong amount: familial hypercholesterolaemia {.smaller}
+
+![](fig06-ldlr-breaks.svg){width="76%" fig-align="center"}
+
+- Blood LDL is set by the **number of LDL receptors** on liver cells. Every break in the cycle **lowers that number**: high LDL from birth, heart attacks at 40 (one bad copy) or in childhood (two).
+- About **1 in 250** people. Most have a broken **LDL receptor** (loss of function); a few have an overactive **PCSK9** (gain of function).
+
+::: notes
+Familial hypercholesterolaemia, FH, is common: about one person in two hundred and fifty carries one mutated copy. You know the pathway from the endocytosis lecture. The liver cell makes LDL receptors in the ER, sends them through the Golgi to the surface, where they bind LDL particles from the blood. The receptors gather in clathrin-coated pits, are taken in, and in the acidic endosome LDL is released and goes on to the lysosome. The receptor returns to the surface, every ten minutes or so. The number of receptors on the surface decides how fast LDL is removed. The diagram shows three places where the cycle can break. One: no receptor is made. Two: a mutation in the receptor's short cytoplasmic tail; it binds LDL but is never taken in, because the adaptor of the coated pit cannot read its signal. Three: PCSK9, a protein secreted by the liver, binds the receptor and sends it to the lysosome instead of back to the surface. A gain-of-function PCSK9 removes receptors too fast. Every break leads to the same result: too few receptors, high LDL, early atherosclerosis.
+:::
+
+## How do we know? Patient cells reveal the broken step {.smaller}
+
+![](fig07-ldl-assay.svg){width="74%" fig-align="center"}
+
+- **Michael Brown and Joseph Goldstein** (Nobel Prize 1985) grew **skin fibroblasts** from FH patients and gave them radioactive LDL.
+- **4 °C**: no endocytosis, so only **binding** to the surface is measured. **37 °C**: uptake and degradation.
+- Patient J.D. **bound** LDL normally but did **not take it in**: the receptor tail was mutated. This showed that receptors must be **collected into coated pits** to be internalised.
+
+::: notes
+How did we learn that the LDL receptor exists, and how it works? Largely from patients. In the 1970s Brown and Goldstein took small skin biopsies from children with severe familial hypercholesterolaemia and grew the fibroblasts in culture. Fibroblasts also make LDL receptors, so the patient's defect can be studied in a dish. They labelled LDL with radioactive iodine. At four degrees, membranes are stiff and endocytosis stops, so only the LDL bound to the surface is measured. At thirty-seven degrees the cells take LDL in and degrade it, and the degraded products appear in the medium. Most patients' cells did neither: they had no working receptor. But cells from one patient, known by his initials J.D., bound LDL normally and still did not take it in. Electron microscopy showed that his receptors were spread over the surface instead of collected in coated pits. His receptor had one amino acid changed in its short cytoplasmic tail, in the signal that the coated pit recognises. A rare patient revealed a general rule of cell biology. This is the logic of the demo for this lecture.
+:::
+
+## Lysosomes: one enzyme missing, or all enzymes lost {.smaller}
+
+::::: {.columns}
+::: {.column width="68%"}
+![](fig08-m6p-storage.svg){width="100%"}
+
+- **Lysosomal storage disease**: one enzyme is defective, its substrate **piles up**. About **70** such diseases; together **1 in 5000** births.
+- **I-cell disease**: the Golgi enzyme that adds the **mannose-6-phosphate** tag is missing. All lysosomal enzymes are **secreted**: high in blood, low in cells (**wrong place**).
+:::
+::: {.column width="32%"}
+![](img08-gaucher-cells.jpg){height="290px" fig-align="center"}
+
+*Gaucher disease, bone marrow next to bone (red, left): pale Gaucher cells, macrophages whose lysosomes are packed with glucosylceramide.*
+:::
+:::::
+
+::: notes
+Lysosomes break down material from endocytosis, phagocytosis and autophagy using about sixty different acid hydrolases. If one of them is defective, its substrate cannot be broken down and accumulates in the lysosomes, which swell until they disturb the cell. In Gaucher disease the missing enzyme is glucocerebrosidase. Macrophages that eat old blood cells cannot digest a glycolipid from their membranes and become large Gaucher cells, shown on the right, which fill the spleen, liver and bone marrow. I-cell disease looks similar under the microscope, but the cause is quite different. From the Golgi lecture you know that lysosomal enzymes receive a mannose-6-phosphate tag in the cis-Golgi, and that the M6P receptor in the trans-Golgi network sends them to endosomes and lysosomes. In I-cell disease the tagging enzyme is missing. The hydrolases are all made and active, but without the tag they follow the default route and are secreted into the blood. So dozens of enzymes are missing from the lysosome at once. In fact, studying I-cell fibroblasts in the 1970s is how the M6P pathway was found.
+:::
+
+## Toxic aggregates: Alzheimer's and Parkinson's disease {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](img09-tangles.jpg){height="290px" fig-align="center"}
+
+*Alzheimer's disease: tangles of tau inside neurons (hippocampus).*
+:::
+::: {.column width="50%"}
+![](img09-lewy-bodies.jpg){height="290px" fig-align="center"}
+
+*Parkinson's disease: a Lewy body (brown, α-synuclein) in a substantia nigra neuron.*
+:::
+::::
+
+- A protein leaves its folded state and forms **amyloid**: stacked β-strands, very stable and hard to degrade. **Alzheimer's**: **Aβ peptide** (cut from APP) forms plaques **outside** neurons; **tau** detaches from microtubules and forms tangles **inside**. **Parkinson's**: **α-synuclein** forms **Lewy bodies**; dopamine neurons die.
+- **Gain of a toxic function**: small aggregates (oligomers) damage membranes, mitochondria and the proteasome, and can **seed** misfolding in the next cell.
+- Most cases are not inherited. Rare inherited forms (mutations in **APP**, **presenilin**, α-synuclein) show that the aggregating protein **causes** the disease. **Antibodies** against Aβ (lecanemab, 2023) slow decline modestly.
+
+::: notes
+You met amyloid in the lecture on protein life and death. Some proteins can leave their folded state and stack into long fibrils in which every chain forms a β-strand across the fibril. Amyloid is very stable, and the cell's chaperones and proteasomes cannot clear it. In Alzheimer's disease, two proteins aggregate. The Aβ peptide is cut from a membrane protein, APP, and forms plaques outside neurons. Tau, which normally binds along axonal microtubules, becomes heavily phosphorylated, lets go of the microtubules and forms tangles inside the neurons, shown at the top. In Parkinson's disease, α-synuclein forms round inclusions called Lewy bodies, shown below, in the dopamine neurons of the substantia nigra. Most cases are sporadic and appear with age. But rare families with mutations in APP, in presenilin, the protease that cuts APP, or in α-synuclein, get the disease early, and this shows that the aggregating protein is a cause, not just a marker. Small aggregates seem to be the most toxic. Antibodies that clear Aβ from the brain were approved in 2023; they slow the decline a little, with risks of brain swelling and bleeding.
+:::
+
+## Gain of function in the nucleus: progeria {.smaller}
+
+![](fig10-progerin.svg){width="64%" fig-align="center"}
+
+:::: {.columns}
+::: {.column width="58%"}
+- **Hutchinson–Gilford progeria**: children age very fast; average life about **14 years** (heart attack, stroke).
+- One **silent** base change in lamin A creates a new splice site: 50 amino acids are lost, the farnesyl lipid **stays**. Progerin sits in the inner nuclear membrane and **deforms the lamina**. Dominant: **gain of function**.
+- **Lonafarnib** (2020), a farnesyltransferase inhibitor: about **2–3 years** longer life.
+:::
+::: {.column width="42%"}
+![](img10-progeria-nuclei.jpg){height="160px" fig-align="center"}
+
+*Fibroblasts from a person with progeria: lamin A/C (green) and DNA (blue). One nucleus is misshapen with a bleb, its neighbour almost normal.*
+:::
+::::
+
+::: notes
+Progeria is very rare, about one child in several million, but it teaches a lot. The children are normal at birth, then grow slowly, lose hair and fat under the skin, and develop stiff arteries; most die in their teens of heart attack or stroke. The cause is in lamin A, an intermediate filament protein that, with other lamins, forms the nuclear lamina under the inner nuclear membrane, as you saw in the myosin and intermediate filaments lecture. Normal prelamin A gets a farnesyl lipid at its tail end, and then a protease cuts off the end with the lipid, so mature lamin A is free to join the lamina. In progeria, one silent base change creates a new splice site; fifty amino acids, including the cut site, are lost. The lipid stays on, and the protein, called progerin, is stuck to the membrane. Nuclei become misshapen, as in the image. Because one copy is enough, this is a gain of function. Lonafarnib inhibits farnesyltransferase, so less progerin carries the lipid, and it extends life by a few years. Base editing that reverses the mutation has worked in mice.
+:::
+
+## Broken motors: cilia that do not beat, hearts that pull too hard {.smaller}
+
+:::: {.columns}
+::: {.column width="32%"}
+![](img11-pcd-cilia.jpg){height="300px" fig-align="center"}
+
+*Nasal cilia cut across (TEM) from a patient with primary ciliary dyskinesia: the 9 + 2 microtubules are present, the dynein arms are not.*
+:::
+::: {.column width="68%"}
+**Primary ciliary dyskinesia** (about 1 in 15 000): child B.
+
+- Recessive mutations in **axonemal dynein** (e.g. DNAH5) or the proteins that attach it: **loss of function**.
+- Cilia do not beat: chronic **airway infections**, **male infertility**, and in half of patients **organs mirrored** (situs inversus).
+- No drug for the cause: airway clearance and antibiotics.
+
+**Hypertrophic cardiomyopathy** (about 1 in 500).
+
+- One mutated copy of **β-cardiac myosin**: fewer heads are parked, more pull. **Gain of function**.
+- The heart wall thickens and relaxes poorly; risk of sudden death in young athletes.
+- **Mavacamten** (2022) inhibits the myosin ATPase and parks heads.
+:::
+::::
+
+::: notes
+Two diseases of motor proteins show the difference between loss and gain of function. Primary ciliary dyskinesia is the answer for child B. In the microtubules lecture you saw that a motile cilium has nine doublet microtubules around a central pair, and that dynein arms on each doublet walk on the neighbour, so that the doublets slide and the cilium bends. In this disease, both copies of a gene for an axonemal dynein, or for a protein that assembles or docks the arms, are broken. The electron micrograph from a patient's nose shows the microtubules in place but the arms missing. Mucus is not cleared, sperm do not swim, and because cilia in the embryo set the left–right axis, half of patients have mirrored organs. There is no drug that makes cilia beat. Hypertrophic cardiomyopathy, from the myosin lecture, is the opposite. One mutated copy of cardiac myosin makes the motor too active, so the dominant disease is a gain of function. The matching drug is an inhibitor: mavacamten parks myosin heads. A missing motor needs replacement; an overactive one needs a brake.
+:::
+
+## Mitochondrial disease (in brief) {.smaller}
+
+:::: {.columns}
+::: {.column width="42%"}
+![](img12-ragged-red.jpg){width="100%"}
+
+*Muscle biopsy in MELAS, modified Gomori trichrome: "ragged red fibres" with clumps of abnormal mitochondria under the membrane.*
+:::
+::: {.column width="58%"}
+- **mtDNA** encodes 13 proteins of the respiratory chain, plus its own tRNAs and rRNAs. It is inherited **only from the mother**.
+- Each cell has **hundreds to thousands of copies**. A mutation is often in only some of them (**heteroplasmy**): disease appears when the mutant fraction passes a **threshold** (often 60–90 %).
+- Tissues that need most ATP fail first: **muscle, brain, eye, ear, heart**. High **lactate** in blood.
+- Example: **MELAS** (tRNA mutation m.3243A>G). **Loss of function**; no drug for the cause. **Mitochondrial donation** at IVF can prevent passing it on.
+:::
+::::
+
+::: notes
+Mitochondrial diseases affect about one adult in five thousand. Here we look at them only briefly; the mitochondria lecture has the details. Some are caused by nuclear genes for mitochondrial proteins and are inherited in the usual way. Others are caused by mutations in mitochondrial DNA, and these have three special features. First, mtDNA comes only from the mother's egg. Second, each cell has many copies, and a mutation is often present in only a fraction of them, which is called heteroplasmy. Symptoms appear when the fraction passes a threshold in a tissue, so the same mutation can give mild or severe disease, even in siblings. Third, the tissues that need the most ATP suffer first: muscle, brain, the retina, the inner ear and the heart. When oxidative phosphorylation fails, cells rely on glycolysis and lactate rises in the blood. In the muscle biopsy, abnormal mitochondria gather under the membrane and stain red: ragged red fibres. There is no drug that repairs mtDNA. Mitochondrial donation, which moves the parents' nuclear DNA into a donor egg with healthy mitochondria, is allowed in the UK.
+:::
+
+## An infection hijacks the cell {.smaller}
+
+![](fig13-hijack.svg){width="88%" fig-align="center"}
+
+- ***Listeria*** uses the host's **Arp2/3 complex** (the actin lecture) to move and spread from cell to cell.
+- **Cholera toxin** adds ADP-ribose to **Gαs**, so it cannot switch off (the GPCR lecture): a **signal stuck on**, the "wrong time" box. Salt and water pour out through **CFTR**: the opposite of cystic fibrosis.
+- Pathogens are experts in cell biology. More in **Mikrobiell patogenes**.
+
+::: notes
+Not all diseases come from our own genes. Many bacteria and viruses cause disease by taking over a step of cell biology. Two examples you have seen. Listeria monocytogenes, from the actin lecture, escapes from its vacuole into the cytosol and makes a surface protein, ActA, that switches on the host's Arp2/3 complex. A comet tail of branched actin grows behind the bacterium and pushes it through the cytosol and into a finger-like protrusion that pokes into the neighbouring cell. The bacterium spreads from cell to cell without ever being outside, where antibodies could find it. Cholera toxin, from the GPCR lecture, is an enzyme that attaches ADP-ribose to the alpha subunit of Gs. Gs can no longer hydrolyse its GTP, so it stays on, cyclic AMP stays high, PKA keeps CFTR open, and chloride, sodium and water flood the gut. In our framework, that is a signal at the wrong time. It is the mirror image of cystic fibrosis: too much CFTR activity instead of too little. You will study pathogens in depth in Mikrobiell patogenes.
+:::
+
+## How do we know? From the patient to the broken step {.smaller}
+
+![](fig14-diagnostic-ladder.svg){width="74%" fig-align="center"}
+
+- Go down the levels. At each level, ask: **which process could explain this?** The **cell** level usually decides: where is the protein, and does it work?
+- **Patient cells** (skin fibroblasts, nose brushings, blood cells, stem cells made from them) let us test the defect, and drugs, **in a dish**. **Try it:** [Demo: diagnose the defect](questions.qmd#explore).
+
+::: notes
+How does a clinician or a researcher go from a sick child to a broken step in the cell? By moving down a ladder of levels. In the clinic: symptoms, family history and imaging. In body fluids: sweat chloride, blood lipids, the activity of an enzyme in white blood cells. In tissue: a biopsy, special stains, electron microscopy, such as the cilia cross-sections you just saw. In cells: patient cells grown in a dish, where you can ask where the protein is, whether it has passed the Golgi, and whether it works, with blots, imaging and transport assays. And finally the molecule: sequencing the gene and studying the protein. Today the gene is often found first, by sequencing, but the cell level is still what tells you which step is broken and which drug could fix it. CFTR modulators, for example, are tested on small gut organoids grown from each patient's own cells. In the demo for this lecture you get the findings of ten cases one level at a time, choose the broken process, and then a therapy type.
+:::
+
+## Matching the therapy to the defect {.smaller}
+
+![](fig15-therapy-map.svg){width="92%" fig-align="center"}
+
+- **Missing function** → add it back: replace the **enzyme**, deliver the **gene**, fix **splicing**, or rescue the protein with a **corrector** or **potentiator**.
+- **Too much or harmful protein** → take it away: **inhibitor**, **antibody**, or destroy its mRNA with **siRNA** or **ASO**.
+
+::: notes
+Now we can match therapies to the framework. The figure follows the central dogma from left to right, and places each therapy type where it acts. Gene therapy acts on DNA: it delivers a working copy of a gene. Antisense oligonucleotides, short modified DNA-like strands, act on RNA: they pair with a pre-mRNA to change its splicing, or with an mRNA to have it destroyed. siRNAs also destroy one mRNA, using the cell's own RISC complex. Small molecules act on proteins inside the cell: correctors and stabilisers help a protein fold or stay folded, potentiators open a channel, inhibitors turn an enzyme or motor down. Antibodies act on proteins outside the cell, in blood or on the cell surface. And infused enzymes act in the lysosome after endocytosis. The rule is simple. If the disease is a loss of function, you need to add something back. If it is a gain of function or a toxic protein, you need to take something away. Recessive diseases usually need adding; dominant ones often need removing.
+:::
+
+## Why it matters: RNA drugs for SMA and amyloidosis {.smaller}
+
+![](fig16-rna-drugs.svg){width="86%" fig-align="center"}
+
+- **Spinal muscular atrophy**: *SMN1* is lost; the backup gene *SMN2* skips exon 7. **Nusinersen** (2016), injected into the spinal fluid, makes *SMN2* produce full SMN. Babies who would not have survived now sit and walk.
+- **Hereditary TTR amyloidosis** ("Skelleftesjukan", common around **Skellefteå**): **patisiran** (2018), the first siRNA drug, cuts TTR mRNA in liver cells: less **toxic aggregate**.
+
+::: notes
+Two RNA drugs show how far this matching can go. Spinal muscular atrophy is a recessive loss of function. The SMN1 gene is deleted, so motor neurons, which need the SMN protein most, die. Untreated, babies with the severe form do not survive their second year. But every person also has a nearly identical backup gene, SMN2. One base difference in exon 7 makes the splicing machinery skip that exon in most transcripts, so SMN2 makes only about a tenth of the normal protein. Nusinersen is an antisense oligonucleotide that covers a splicing silencer in the intron after exon 7. Now exon 7 is kept, and SMN2 makes full-length protein. It is injected into the spinal fluid a few times a year. The second example is from northern Sweden: hereditary transthyretin amyloidosis, where a mutant blood protein made by the liver forms amyloid in nerves and heart. Patisiran is an siRNA packed in a lipid nanoparticle. Liver cells take the particle up by endocytosis, a little RNA escapes the endosome, and the siRNA guides RISC to cut TTR mRNA. Less TTR means less amyloid. Here an aggregate disease is treated by making less of the protein.
+:::
+
+## Why it matters: replacing the protein or the gene {.smaller}
+
+![](fig17-replace.svg){width="82%" fig-align="center"}
+
+- **Enzyme replacement** (Gaucher, since the 1990s) works because cells **take up enzymes by endocytosis** and deliver them to lysosomes. It cannot replace a protein that must sit inside the cytosol, a membrane or a mitochondrion.
+- **Gene therapy**: one infusion of an **AAV** carrying *SMN1* (onasemnogene, 2019) treats SMA. CRISPR editing of blood stem cells treats **sickle cell disease** (2023).
+- Development, trials and price of these drugs: **Kliniska prövningar och läkemedelsutveckling**. Disease mechanisms in depth: **Sjukdomslära**.
+
+::: notes
+When the problem is a missing protein, the most direct cure is to put the protein back, or its gene. Enzyme replacement works for lysosomal enzymes because of what you learned in the endocytosis lecture. The infused enzyme carries a sugar tag, mannose or mannose-6-phosphate; receptors on the cell surface bind it, the enzyme is taken up in coated vesicles and reaches the lysosome, its normal home. This is why it works for Gaucher, Fabry and Pompe disease, but not for CFTR, a membrane protein, or for SMN, which works inside motor neurons. It also cannot cross the blood–brain barrier. Gene therapy goes one step further back. A harmless virus shell, AAV, carries a working gene into the cell. In SMA, one infusion of AAV9 carrying SMN1 reaches motor neurons, and the cell makes its own protein. The limits are the size of the gene that fits in the virus, immune reactions, and cost. For blood diseases, stem cells can be taken out, edited with CRISPR and given back. Drug development and trials come in Kliniska prövningar och läkemedelsutveckling, and the final lecture follows one drug all the way through the cell.
+:::
+
+## Summary {.smaller}
+
+1. Many diseases are **one broken step** in cell biology you know. Five categories: **loss of function, gain of function, toxic aggregate, wrong place, wrong amount**; one disease can sit in two.
+2. **Protein handling**: misfolded CFTR and α1-antitrypsin stay in the ER; a missing M6P tag sends lysosomal enzymes out of the cell; a missing enzyme fills the lysosome; amyloid in Alzheimer's, Parkinson's and TTR amyloidosis.
+3. **Membranes, organelles and cytoskeleton**: CFTR gating, LDL receptor recycling (PCSK9), progerin in the lamina, axonemal dynein (PCD), overactive myosin (HCM), mtDNA heteroplasmy. **Pathogens** hijack actin and G proteins.
+4. We find the step by going from **clinic → body fluids → tissue → cell → molecule**; patient cells test the defect in a dish.
+5. **Add back** a missing function (enzyme replacement, gene therapy, ASO splicing fix, corrector, potentiator); **take away** a harmful one (inhibitor, antibody, siRNA).
+
+*Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed.: the disease examples in ch. 6, 11, 12, 13, 14 and 16.*
+
+[Image credits](../credits.qmd#disease-casebook){style="font-size:0.7em"}
+
+::: notes
+Five take-home points. First, a disease caused by one gene can usually be described as one broken step in a pathway you already know, and it falls into one or two of five categories. Second, protein handling: folding, quality control, sorting and degradation explain cystic fibrosis, alpha-1-antitrypsin deficiency, I-cell disease, lysosomal storage diseases and the amyloid diseases. Third, the other parts of the course explain the rest: channel gating, receptor recycling, the nuclear lamina, motors in cilia and heart muscle, and mitochondrial DNA; and pathogens take over the same machines. Fourth, the way to the broken step goes from the patient down to the molecule, and patient cells let us test both the defect and the drug. Fifth, therapies follow the category: add back what is missing, take away what harms. The cancer lecture looks at cancer as a disease of cell biology, where many such defects add up in one cell, and the final lecture follows one drug through the whole cell.
+:::

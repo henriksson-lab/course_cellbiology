@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 350" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#e8590c"/></marker>
+  </defs>
+  <rect width="1100" height="350" fill="#ffffff"/>
+
+  <!-- column frames -->
+  <g fill="#fbfaf5" stroke="#1b2a3a" stroke-width="1.5">
+    <rect x="8" y="8" width="204" height="334" rx="10"/>
+    <rect x="227" y="8" width="204" height="334" rx="10"/>
+    <rect x="446" y="8" width="204" height="334" rx="10"/>
+    <rect x="665" y="8" width="204" height="334" rx="10"/>
+    <rect x="884" y="8" width="204" height="334" rx="10"/>
+  </g>
+  <g fill="#1b2a3a">
+    <path d="M8 18 a10 10 0 0 1 10 -10 h184 a10 10 0 0 1 10 10 v36 h-204 z"/>
+    <path d="M227 18 a10 10 0 0 1 10 -10 h184 a10 10 0 0 1 10 10 v36 h-204 z"/>
+    <path d="M446 18 a10 10 0 0 1 10 -10 h184 a10 10 0 0 1 10 10 v36 h-204 z"/>
+    <path d="M665 18 a10 10 0 0 1 10 -10 h184 a10 10 0 0 1 10 10 v36 h-204 z"/>
+    <path d="M884 18 a10 10 0 0 1 10 -10 h184 a10 10 0 0 1 10 10 v36 h-204 z"/>
+  </g>
+  <g font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <text x="110" y="38">1. Loss of function</text>
+    <text x="329" y="38">2. Gain of function</text>
+    <text x="548" y="38">3. Toxic aggregate</text>
+    <text x="767" y="38">4. Wrong place</text>
+    <text x="986" y="38">5. Wrong amount</text>
+  </g>
+
+  <!-- icon 1: missing protein -->
+  <path d="M75 108 q-5 -32 30 -34 q38 -2 38 30 q2 30 -32 32 q-32 2 -36 -28 z" fill="none" stroke="#868e96" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <path d="M88 82 L132 132 M132 82 L88 132" stroke="#c92a2a" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- icon 2: overactive protein -->
+  <path d="M295 108 q-5 -32 30 -34 q38 -2 38 30 q2 30 -32 32 q-32 2 -36 -28 z" fill="#fbeedd" stroke="#1b2a3a" stroke-width="2.5"/>
+  <path d="M374 84 q12 22 0 44 M386 76 q18 30 0 60" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M284 84 q-12 22 0 44 M272 76 q-18 30 0 60" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- icon 3: aggregate (stacked strands) -->
+  <g fill="#f8e9ec" stroke="#a8324a" stroke-width="2">
+    <rect x="500" y="74" width="92" height="12" rx="6"/>
+    <rect x="504" y="88" width="92" height="12" rx="6"/>
+    <rect x="500" y="102" width="92" height="12" rx="6"/>
+    <rect x="504" y="116" width="92" height="12" rx="6"/>
+    <rect x="500" y="130" width="92" height="12" rx="6"/>
+  </g>
+
+  <!-- icon 4: wrong compartment -->
+  <ellipse cx="722" cy="108" rx="42" ry="34" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2.5"/>
+  <ellipse cx="822" cy="108" rx="36" ry="30" fill="#e3f3ea" stroke="#2e8b57" stroke-width="2.5"/>
+  <circle cx="722" cy="108" r="11" fill="#e8590c"/>
+  <path d="M736 90 Q772 62 806 86" fill="none" stroke="#e8590c" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#ar)"/>
+  <path d="M800 72 L812 60 M812 72 L800 60" stroke="#c92a2a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- icon 5: dial -->
+  <path d="M930 132 A56 56 0 0 1 1042 132" fill="none" stroke="#adb5bd" stroke-width="12"/>
+  <path d="M970 82 A56 56 0 0 1 1002 82" fill="none" stroke="#2b8a3e" stroke-width="12"/>
+  <path d="M986 132 L948 100" stroke="#e8590c" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="986" cy="132" r="7" fill="#1b2a3a"/>
+  <text x="986" y="70" text-anchor="middle" font-size="14" fill="#2b8a3e">normal</text>
+
+  <!-- descriptions -->
+  <g font-size="16" fill="#1b2a3a" text-anchor="middle">
+    <text x="110" y="180">The protein is missing</text>
+    <text x="110" y="200">or does not work.</text>
+    <text x="329" y="180">The protein works too</text>
+    <text x="329" y="200">much, or does something</text>
+    <text x="329" y="220">new and harmful.</text>
+    <text x="548" y="180">Misfolded chains stick</text>
+    <text x="548" y="200">together and harm</text>
+    <text x="548" y="220">the cell.</text>
+    <text x="767" y="180">A working protein ends</text>
+    <text x="767" y="200">up in the wrong</text>
+    <text x="767" y="220">compartment.</text>
+    <text x="986" y="180">The right protein at</text>
+    <text x="986" y="200">the wrong level or</text>
+    <text x="986" y="220">at the wrong time.</text>
+  </g>
+  <line x1="28" y1="240" x2="192" y2="240" stroke="#ced4da"/><line x1="247" y1="240" x2="411" y2="240" stroke="#ced4da"/>
+  <line x1="466" y1="240" x2="630" y2="240" stroke="#ced4da"/><line x1="685" y1="240" x2="849" y2="240" stroke="#ced4da"/>
+  <line x1="904" y1="240" x2="1068" y2="240" stroke="#ced4da"/>
+  <g font-size="15" fill="#b8460a" text-anchor="middle" font-style="italic">
+    <text x="110" y="266">cystic fibrosis</text>
+    <text x="110" y="288">ciliary dyskinesia</text>
+    <text x="110" y="310">lysosomal storage</text>
+    <text x="110" y="332">mitochondrial disease</text>
+    <text x="329" y="266">cardiomyopathy (myosin)</text>
+    <text x="329" y="288">progeria (lamin A)</text>
+    <text x="329" y="310">PCSK9 in FH</text>
+    <text x="329" y="332">cholera toxin</text>
+    <text x="548" y="266">Alzheimer's</text>
+    <text x="548" y="288">Parkinson's</text>
+    <text x="548" y="310">α1-antitrypsin (liver)</text>
+    <text x="548" y="332">TTR amyloidosis</text>
+    <text x="767" y="266">I-cell disease</text>
+    <text x="767" y="288">F508del CFTR (in ER)</text>
+    <text x="767" y="310">α1-antitrypsin</text>
+    <text x="767" y="332">(not in blood)</text>
+    <text x="986" y="266">too few LDL receptors</text>
+    <text x="986" y="288">too little SMN protein</text>
+    <text x="986" y="310">signal stuck on</text>
+    <text x="986" y="332">(cholera; cancer)</text>
+  </g>
+</svg>

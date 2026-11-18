@@ -1,0 +1,104 @@
+---
+title: "Quiz: controlling cell numbers"
+format:
+  html:
+    toc: true
+---
+
+Short questions to check your understanding of the lecture *Controlling cell numbers: growth, proliferation and senescence*. Try each on paper first, then open the hint or the answer. The tag after each question shows the learning outcome (ELO) it practises.
+
+---
+
+**Q1.** Match each signal to its main effect: mitogen, growth factor, survival factor. Effects: (a) the cell does not die by apoptosis, (b) the cell passes the restriction point and divides, (c) the cell makes more protein and gets bigger. `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Cell number depends on births and deaths; cell size depends on mass.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**Mitogen → (b)** divide. **Growth factor → (c)** grow (through mTORC1). **Survival factor → (a)** stay alive. In real life many factors, such as PDGF or IGF-1, have more than one of these effects.
+:::
+
+---
+
+**Q2.** Fibroblasts are starved of serum for two days and then given serum again. They enter S phase after about 12–16 hours. If serum is removed again after 10 hours, most cells still enter S phase. Why? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+What happens to Rb and E2F at the restriction point, and what keeps them that way?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+By 10 hours most cells have passed the **restriction point**. Mitogen signalling made cyclin D–CDK4/6, which phosphorylated **Rb** so that **E2F** was released. E2F then turns on cyclin E, and cyclin E–CDK2 phosphorylates Rb further: a **positive feedback loop** that keeps E2F active without the mitogen. The cell is committed to replicate its DNA.
+:::
+
+---
+
+**Q3.** A cell line is grown with the drug rapamycin at a dose that does not stop division. What do you expect to happen to the size of the cells, and why? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Which kinase does rapamycin block, and what does that kinase control?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+The cells become **smaller**. Rapamycin inhibits **mTORC1**, which drives protein synthesis and ribosome production, that is, **cell growth**. If the cells still divide but grow less between divisions, each daughter is smaller. Growth and division are controlled separately.
+:::
+
+---
+
+**Q4.** What is the difference between a **quiescent** cell (in G0) and a **senescent** cell? Give two differences. `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Can each one divide again? What do they look like? What triggered the stop?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+A **quiescent** cell has stopped because it lacks mitogens or space (contact inhibition); it **re-enters the cycle** when it gets serum or room, and it looks normal. A **senescent** cell has stopped **permanently**, triggered by short telomeres, DNA damage or an oncogene through **p53–p21** and **p16–Rb**; mitogens cannot restart it. It is **large and flat**, stains for **SA-β-gal**, has high p16/p21, resists apoptosis and secretes inflammatory signals (**SASP**).
+:::
+
+---
+
+**Q5.** Why does the lagging strand of a linear chromosome end up shorter after each round of replication, and why does this not happen in bacteria? `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+How does DNA polymerase start a new strand, and in which direction does it work?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+DNA polymerase can only **extend a primer**, in the **5′ → 3′** direction. The lagging strand is made in short pieces, each started from an RNA primer. At the very end of the chromosome, the last primer is removed and there is no upstream DNA from which a polymerase could fill the gap, so the new strand is shorter (this is the **end-replication problem**). Bacterial chromosomes are **circular**: they have no ends, so there is always DNA upstream to extend.
+:::
+
+---
+
+**Q6.** Telomerase is called a **reverse transcriptase**. Explain what it copies, from what, and where its template comes from. `[ELO 7]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Reverse transcription means RNA → DNA.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+Telomerase makes **DNA from an RNA template**. Its protein part, **TERT**, is the reverse transcriptase; the template is a short stretch of its **own RNA** component. The template pairs with the 3′ overhang of the chromosome end, and TERT adds **TTAGGG** repeats to it, one repeat at a time. The other strand is then filled in by primase and DNA polymerase.
+:::
+
+---
+
+**Q7.** Normal human fibroblasts given the **TERT** gene divide far beyond their Hayflick limit. Are they now cancer cells? Give two observations that answer this. `[ELO 7]` `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Think about contact inhibition, serum and chromosomes.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**No.** They are **immortal but not transformed**: they still show **contact inhibition** (stop at confluence), still **need serum** (mitogens), keep **normal chromosomes**, and **do not form tumours** in mice. Becoming a cancer cell needs further changes, for example an active oncogene and loss of p53/Rb.
+:::
+
+---
+
+**Q8.** A colorectal tumour carries a mutation that makes **KRAS** permanently active. Would you expect the anti-EGFR antibody **cetuximab** to work? Explain with the order of the proteins in the pathway. `[ELO 9]`
+
+::: {.callout-tip collapse="true" title="Hint"}
+Draw EGFR → RAS → ERK. Which step is broken, and where does the drug act?
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**No.** Cetuximab blocks **EGFR**, upstream of RAS. A permanently active KRAS sends the division signal on to ERK **without** any input from the receptor, so blocking the receptor changes nothing. This is why tumours are tested for **RAS mutations** before anti-EGFR antibodies are given.
+:::

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="990" height="472" viewBox="0 0 990 472" font-family="Helvetica, Arial, sans-serif">
+<!-- fig03: the four phases of the cell cycle with typical lengths for a human cell in culture (about 24 h). Schematic. -->
+<defs>
+<marker id="ar" markerWidth="14" markerHeight="14" refX="6" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker>
+<marker id="ag" markerWidth="14" markerHeight="14" refX="6" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#868e96"/></marker>
+</defs>
+<path d="M215.2,79.6 A190,190 0 0 1 264.8,79.6 L255.7,149.0 A120,120 0 0 0 224.3,149.0 Z" fill="#8fd19e" stroke="#ffffff" stroke-width="3"/>
+<text x="240.0" y="62.0" font-size="22" font-weight="bold" text-anchor="middle" fill="#2b8a3e">M</text>
+<path d="M264.8,79.6 A190,190 0 0 1 264.8,456.4 L255.7,387.0 A120,120 0 0 0 255.7,149.0 Z" fill="#f4c7c7" stroke="#ffffff" stroke-width="3"/>
+<text x="395.0" y="276.0" font-size="26" font-weight="bold" text-anchor="middle" fill="#c92a2a">G1</text>
+<text x="395.0" y="296.0" font-size="15" text-anchor="middle" fill="#1b2a3a">~11 h</text>
+<path d="M264.8,456.4 A190,190 0 0 1 64.5,195.3 L129.1,222.1 A120,120 0 0 0 255.7,387.0 Z" fill="#c9e8cf" stroke="#ffffff" stroke-width="3"/>
+<text x="117.0" y="370.4" font-size="26" font-weight="bold" text-anchor="middle" fill="#2b8a3e">S</text>
+<text x="117.0" y="390.4" font-size="15" text-anchor="middle" fill="#1b2a3a">~8 h</text>
+<path d="M64.5,195.3 A190,190 0 0 1 215.2,79.6 L224.3,149.0 A120,120 0 0 0 129.1,222.1 Z" fill="#b2dfbb" stroke="#ffffff" stroke-width="3"/>
+<text x="145.6" y="153.0" font-size="26" font-weight="bold" text-anchor="middle" fill="#2b8a3e">G2</text>
+<text x="145.6" y="173.0" font-size="15" text-anchor="middle" fill="#1b2a3a">~4 h</text>
+<text x="240" y="262" font-size="18" text-anchor="middle" fill="#1b2a3a">one cycle:</text>
+<text x="240" y="286" font-size="18" text-anchor="middle" fill="#1b2a3a" font-weight="bold">about 24 h</text>
+<text x="240" y="310" font-size="14" text-anchor="middle" fill="#555">(human cell in culture)</text>
+<path d="M205.1,363.8 A102,102 0 0 1 144.2,302.9" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<path d="M384.2,138.2 C414.2,118.2 434.2,88.2 436.2,68.2" fill="none" stroke="#868e96" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#ag)"/>
+<text x="438.2" y="56.2" font-size="20" font-weight="bold" text-anchor="middle" fill="#868e96">G0</text>
+
+<g font-size="17" fill="#1b2a3a">
+<rect x="550" y="70" width="420" height="300" rx="10" fill="#f8f9fa" stroke="#dee2e6"/>
+<text x="570" y="102" font-weight="bold" font-size="19">Interphase</text>
+<text x="570" y="134"><tspan font-weight="bold" fill="#c92a2a">G1</tspan> (gap 1): grow, sense signals, decide</text>
+<text x="570" y="164"><tspan font-weight="bold" fill="#2b8a3e">S</tspan> (synthesis): copy all DNA, 2N → 4N</text>
+<text x="570" y="194"><tspan font-weight="bold" fill="#2b8a3e">G2</tspan> (gap 2): check the copy, prepare</text>
+<text x="570" y="234" font-weight="bold" font-size="19">M phase</text>
+<text x="570" y="266"><tspan font-weight="bold" fill="#2b8a3e">M</tspan>: mitosis (split the chromosomes),</text>
+<text x="595" y="290">then cytokinesis (split the cell)</text>
+<text x="570" y="330"><tspan font-weight="bold" fill="#868e96">G0</tspan>: resting, out of the cycle</text>
+<text x="595" y="354">(most cells in your body)</text>
+</g>
+
+</svg>

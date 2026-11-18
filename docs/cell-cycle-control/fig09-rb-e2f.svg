@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="440" viewBox="0 0 1100 440" font-family="Helvetica, Arial, sans-serif">
+<!-- fig09: the G1/S switch. Mitogen signalling raises cyclin D; cyclin D-CDK4/6 starts phosphorylating Rb; phosphorylated Rb releases E2F; E2F switches on genes for cyclin E and DNA replication; cyclin E-CDK2 phosphorylates more Rb (positive feedback). Simplified: one Rb, one E2F. -->
+<defs>
+<marker id="ar" markerWidth="14" markerHeight="14" refX="6" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker>
+<marker id="ab" markerWidth="14" markerHeight="14" refX="6" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1c7ed6"/></marker>
+</defs>
+<!-- nucleus background -->
+<rect x="250" y="40" width="830" height="330" rx="40" fill="#efebf7" stroke="#6b4fa0" stroke-width="3"/>
+<text x="1060" y="68" font-size="17" text-anchor="end" fill="#6b4fa0" font-weight="bold">nucleus</text>
+<!-- mitogen input -->
+<text x="110" y="70" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b2a3a">mitogen</text>
+<text x="110" y="92" font-size="16" text-anchor="middle" fill="#1b2a3a">(growth factor)</text>
+<line x1="110" y1="102" x2="110" y2="150" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<rect x="45" y="160" width="130" height="44" rx="8" fill="#ffffff" stroke="#1b2a3a" stroke-width="2"/>
+<text x="110" y="188" font-size="17" text-anchor="middle" fill="#1b2a3a">Ras → ERK</text>
+<line x1="175" y1="182" x2="268" y2="182" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<!-- cyclin D-CDK4/6 -->
+<rect x="282" y="150" width="170" height="64" rx="12" fill="#e5dbff" stroke="#7048e8" stroke-width="2.5"/>
+<text x="367" y="177" font-size="17" font-weight="bold" text-anchor="middle" fill="#5f3dc4">cyclin D–</text>
+<text x="367" y="200" font-size="17" font-weight="bold" text-anchor="middle" fill="#5f3dc4">CDK4/6</text>
+<text x="367" y="240" font-size="15" text-anchor="middle" fill="#1b2a3a">blocked by p16</text>
+<!-- Rb-E2F complex -->
+<line x1="452" y1="182" x2="515" y2="182" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<text x="484" y="170" font-size="22" font-weight="bold" text-anchor="middle" fill="#1b2a3a">P</text>
+<g>
+<rect x="530" y="140" width="96" height="44" rx="20" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+<text x="578" y="169" font-size="19" font-weight="bold" text-anchor="middle" fill="#1b2a3a">Rb</text>
+<rect x="545" y="186" width="70" height="36" rx="10" fill="#d3f9d8" stroke="#2b8a3e" stroke-width="2.5"/>
+<text x="580" y="210" font-size="17" font-weight="bold" text-anchor="middle" fill="#2b8a3e">E2F</text>
+</g>
+<text x="578" y="128" font-size="15" text-anchor="middle" fill="#1b2a3a">Rb holds E2F: off</text>
+<!-- release -->
+<line x1="630" y1="200" x2="700" y2="200" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<rect x="715" y="182" width="70" height="36" rx="10" fill="#d3f9d8" stroke="#2b8a3e" stroke-width="2.5"/>
+<text x="750" y="206" font-size="17" font-weight="bold" text-anchor="middle" fill="#2b8a3e">E2F</text>
+<text x="750" y="246" font-size="15" text-anchor="middle" fill="#1b2a3a">free E2F</text>
+<!-- target genes -->
+<line x1="785" y1="200" x2="835" y2="200" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+<rect x="850" y="150" width="200" height="100" rx="10" fill="#ffffff" stroke="#1b2a3a" stroke-width="2"/>
+<text x="950" y="176" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b2a3a">genes on:</text>
+<text x="950" y="199" font-size="16" text-anchor="middle" fill="#1c7ed6">cyclin E, cyclin A</text>
+<text x="950" y="221" font-size="16" text-anchor="middle" fill="#1b2a3a">DNA polymerase,</text>
+<text x="950" y="242" font-size="16" text-anchor="middle" fill="#1b2a3a">nucleotide synthesis</text>
+<!-- feedback loop: cyclin E-CDK2 back to Rb -->
+<path d="M940,250 C940,280 925,295 905,302" fill="none" stroke="#1c7ed6" stroke-width="3" marker-end="url(#ab)"/>
+<rect x="760" y="300" width="160" height="50" rx="12" fill="#d0ebff" stroke="#1c7ed6" stroke-width="2.5"/>
+<text x="840" y="331" font-size="17" font-weight="bold" text-anchor="middle" fill="#1864ab">cyclin E–CDK2</text>
+<path d="M760,325 C680,325 590,300 582,240" fill="none" stroke="#1c7ed6" stroke-width="3" marker-end="url(#ab)"/>
+<text x="560" y="300" font-size="16" font-weight="bold" text-anchor="end" fill="#1864ab">more P on Rb:</text>
+<text x="560" y="322" font-size="16" font-weight="bold" text-anchor="end" fill="#1864ab">positive feedback</text>
+<!-- caption -->
+<text x="550" y="410" font-size="17" text-anchor="middle" fill="#1b2a3a">Once cyclin E–CDK2 keeps Rb phosphorylated by itself, the cell no longer needs the mitogen: it has passed the restriction point.</text>
+</svg>

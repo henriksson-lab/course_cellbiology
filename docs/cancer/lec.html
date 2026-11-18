@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-662ae1889177880cb371f83234c0a158.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
+
+  <meta name="author" content="Cell Biology (3MB001)">
+  <title>Cell Biology – Cancer as a disease of cell biology</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bf56578b9c06c165c166475cd19dbcd1.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Cancer as a disease of cell biology</h1>
+  <p class="subtitle">Cell death and disease</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Cell Biology (3MB001) 
+</div>
+</div>
+</div>
+
+</section>
+<section id="about-this-lecture" class="slide level2 smaller">
+<h2>About this lecture</h2>
+<p>Cancer is not one disease of one organ. It is what happens when <strong>one cell breaks the rules</strong> that this course has described: when to divide, when to stop, when to die, where to stay. Today we put the course together and look at cancer as <strong>cell biology going wrong</strong>.</p>
+<p>After this lecture you can:</p>
+<ul>
+<li>map the <strong>hallmarks of cancer</strong> onto the cell biology of this course: signalling, cell-cycle control, cell death, the cytoskeleton, metabolism;</li>
+<li>explain the difference between <strong>oncogenes</strong> (gain of function, one hit) and <strong>tumour suppressors</strong> (loss of function, two hits);</li>
+<li>explain why cancer needs <strong>many mutations</strong>, how <strong>genome instability</strong> speeds this up, and how <strong>clonal evolution</strong> makes every tumour a mixture of different cells;</li>
+<li>describe <strong>invasion and metastasis</strong> (EMT, basement membrane, the metastatic cascade) and the role of the <strong>tumour microenvironment</strong>;</li>
+<li>explain why <strong>targeted drugs</strong> stop working, why <strong>combinations</strong> help, and how <strong>checkpoint immunotherapy</strong> releases the immune system.</li>
+</ul>
+<p><strong>ELO 9</strong> (disease mechanisms), building on ELO 3, 6, 7 and 8.</p>
+<aside class="notes">
+<p>This is a synthesis lecture. Almost every lecture in this course has ended with a slide on cancer: a kinase inhibitor, a drug that freezes microtubules, a pump that throws out chemotherapy, a BCL-2 blocker. Today we turn this around. Instead of starting from the cell biology and ending with cancer, we start from cancer and ask which piece of cell biology is broken. You will see that a cancer cell has not invented anything new. It uses the normal machinery of the cell, but with the brakes removed and the accelerators stuck. We cover four things: first, the hallmarks of cancer as a map of the course; second, the two kinds of cancer gene and how we know the difference; third, cancer as evolution inside the body, which explains both heterogeneity and drug resistance; and fourth, how cancer cells invade and spread. We end with two kinds of modern therapy. This lecture is about the cell level. The diseases themselves, their diagnosis and clinical treatment come in the course on disease mechanisms, Sjukdomslära.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-question-why-does-cancer-take-decades-and-why-does-it-come-back" class="slide level2 smaller">
+<h2>The question: why does cancer take decades, and why does it come back?</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img02-invasive-carcinoma.jpg" style="width:100.0%"></p>
+<p><em>Breast cancer (invasive ductal carcinoma), H&amp;E stain: nests of tumour cells (purple) growing through fibrous tissue (pink) and fat (white).</em></p>
+</div><div class="column" style="width:55%;">
+<ul>
+<li>Each tumour starts from <strong>one cell</strong>: all its cells share the same founding mutations.</li>
+<li>Yet one mutation is not enough. Most cancers appear after <strong>age 50</strong>, and the risk rises steeply with age.</li>
+<li>A targeted drug can make a tumour <strong>shrink within weeks</strong>, and then it <strong>grows back</strong>, now resistant.</li>
+<li>Most cancer deaths are caused not by the first tumour but by <strong>metastases</strong> in other organs.</li>
+</ul>
+<p><strong>What has to go wrong in a cell, and why is a tumour so hard to kill?</strong></p>
+</div></div>
+<aside class="notes">
+<p>Look at the micrograph. This is a breast cancer stained with haematoxylin and eosin, the standard stain of pathology: nuclei are purple, protein-rich tissue is pink, and fat cells look empty because the fat is dissolved during processing. Normal breast tissue has neat ducts lined by two layers of cells. Here the tumour cells form irregular nests that have broken out of the ducts and grow through the connective tissue and fat. Three observations frame this lecture. First, a tumour is a clone. When the DNA of all its cells is sequenced, they share a set of founding mutations, so they descend from one cell. Second, cancer is a disease of age. If one mutation were enough, risk would be the same at every age. Instead, it rises steeply, roughly with the fourth to sixth power of age, which tells us that several independent steps are needed. Third, tumours change. A drug that works at first often fails after months, and cells that spread to other organs, not the original tumour, kill most patients. We need cell biology and evolution to explain all three.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-hallmarks-of-cancer-a-map-of-this-course" class="slide level2 smaller">
+<h2>The hallmarks of cancer: a map of this course</h2>
+
+<img data-src="fig03-hallmarks-map.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li>A cancer cell has gained a set of <strong>capabilities</strong> that normal cells keep under control. Each one is a broken piece of the cell biology you have learned (<strong>teal</strong>: where).</li>
+<li><strong>Genome instability</strong> is not a hallmark itself: it is what <strong>enables</strong> the cell to collect the others quickly.</li>
+</ul>
+<aside class="notes">
+<p>In 2000, Douglas Hanahan and Robert Weinberg proposed that all cancers, whatever the organ, share a small set of acquired capabilities, which they called the hallmarks of cancer. In 2011 they added changes in metabolism and escape from the immune system, and they named genome instability and inflammation as enabling characteristics: features that do not themselves make a cell cancerous, but that make it easier to acquire the hallmarks. This figure is our own grouping, simplified, and placed on the map of this course. Growth signals stuck on: the kinase signalling and fate signalling lectures. Brakes on division removed: the cell-cycle control lecture. Escape from apoptosis: the apoptosis lecture. Unlimited division: the lecture on controlling cell numbers, with telomeres and senescence. Invasion: the actin lecture. Altered metabolism: the mitochondria. The immune system: the immunology course. The last box, survival under therapy, is not one of the hallmarks, but it is the reason we must understand all the others. Keep this map in mind: each of the next slides zooms in on one box.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="two-kinds-of-cancer-gene" class="slide level2 smaller">
+<h2>Two kinds of cancer gene</h2>
+
+<img data-src="fig04-oncogene-tsg.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li><strong>Oncogenes</strong> come from normal genes (<strong>proto-oncogenes</strong>) that make cells grow. A <strong>gain of function</strong> in <strong>one copy</strong> is enough.</li>
+<li><strong>Tumour suppressors</strong> normally stop growth or repair damage. Both copies must be lost: <strong>two hits</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Cancer genes come in two kinds, and the difference matters for how they are inherited, how they are found and how they are treated. Think of a car. An oncogene is an accelerator that is stuck down. Its normal version, the proto-oncogene, codes for a protein that tells the cell to grow or divide, such as a growth factor receptor or RAS. A mutation that makes the protein more active, or more abundant, is enough in one of the two copies, because the overactive protein simply overrides the normal one. Oncogenes are activated in three main ways: a point mutation that locks the protein in its active form, as in RAS or BRAF; amplification, many extra copies of the gene, as for HER2 in breast cancer; or a translocation that fuses two genes, as in BCR-ABL. A tumour suppressor is a brake. Its normal job is to stop the cycle, repair DNA or trigger death. Losing one copy usually does little, because the other copy still works. Both must be lost: by deletion, a stop mutation, or by silencing the promoter with DNA methylation. Drugs can block an overactive oncogene protein; it is much harder to restore a missing brake.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-retinoblastoma-and-the-two-hit-idea" class="slide level2 smaller">
+<h2>How do we know? Retinoblastoma and the two-hit idea</h2>
+
+<img data-src="fig05-two-hits.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:76.0%"><ul>
+<li>Retinoblastoma is a rare eye tumour of young children. In <strong>inherited</strong> cases tumours are often in <strong>both eyes</strong> and appear <strong>earlier</strong>.</li>
+<li>Alfred <strong>Knudson</strong> (1971): only <strong>one more hit</strong> is needed when one is inherited. The gene, <strong>RB1</strong>, was cloned in 1986; its protein Rb is the cell-cycle gate of the next slides.</li>
+</ul>
+<aside class="notes">
+<p>How do we know that tumour suppressors need two hits? The classic evidence is a statistical argument about a rare childhood cancer of the retina. Alfred Knudson compared children with inherited retinoblastoma, who often have a parent with the disease, and children with sporadic retinoblastoma. Inherited cases usually had several tumours, often in both eyes, and were diagnosed early. Sporadic cases had one tumour in one eye and were diagnosed later. Knudson showed that the timing fitted a simple model: in inherited cases every retinal cell already carries one mutant copy from the fertilised egg, so a single additional somatic mutation in any of millions of retinal cells is enough, and that happens often. In sporadic cases, both copies must be lost by chance in the same cell, which is rare. When the gene, RB1, was found fifteen years later, tumour cells from both kinds of patients had lost both copies, as predicted. Note the apparent paradox: the risk is inherited as a dominant trait in families, but at the level of the cell the gene is recessive. The same pattern holds for BRCA1 and BRCA2 in inherited breast and ovarian cancer, and for APC in familial polyposis.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="growth-signals-stuck-on" class="slide level2 smaller">
+<h2>Growth signals stuck on</h2>
+
+<img data-src="fig06-growth-signals.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:76.0%"><ul>
+<li>Normal cells divide only when a <strong>neighbour sends a signal</strong>. Cancer cells make the signal themselves, or switch on a protein <strong>below</strong> the receptor (the kinase signalling and fate signalling lectures).</li>
+<li>One stuck kinase can be a weak point: <strong>imatinib</strong> (BCR-ABL), <strong>vemurafenib</strong> (BRAF V600E) and <strong>EGFR inhibitors</strong> made cancers shrink.</li>
+</ul>
+<aside class="notes">
+<p>The first hallmark is independence from growth signals. In a tissue, a cell divides only when other cells tell it to, by releasing growth factors that bind receptor tyrosine kinases. You followed this path in the kinase signalling lecture: receptor, the small GTPase RAS, the kinases RAF, MEK and ERK, and finally transcription factors that switch on genes such as MYC and cyclin D. Cancer cells break this chain at many points. The receptor can be mutated so that it signals without its ligand, as EGFR in some lung cancers, or the gene can be amplified so that the cell has far too many receptors, as HER2 in breast cancer. RAS can be locked in its GTP-bound active state; this is found in about one cancer in five. BRAF V600E is active without RAS. In chronic myeloid leukaemia, a chromosome translocation makes the BCR-ABL fusion kinase, which is always on. The fate signalling lecture added Wnt: when APC is lost, beta-catenin is no longer destroyed and drives the same growth genes. When a tumour depends on one stuck protein, a drug against it can be dramatic, as you saw with imatinib and vemurafenib. We come back to why such drugs stop working.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="brakes-removed-rb-and-p53" class="slide level2 smaller">
+<h2>Brakes removed: Rb and p53</h2>
+
+<img data-src="fig07-brakes.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li>The <strong>Rb pathway</strong> is broken in most cancers, in one way or another. <strong>p53</strong> is the most often mutated gene in human cancer (the cell-cycle control lecture).</li>
+<li><strong>CDK4/6 inhibitors</strong> (palbociclib) restore the gate in breast cancers that still have Rb.</li>
+</ul>
+<aside class="notes">
+<p>Growth signals push the cell forward; the cell-cycle control system decides whether it actually goes. The key gate is between G1 and S phase. Rb holds the transcription factor E2F. When cyclin D with CDK4 or CDK6 phosphorylates Rb, E2F is released and switches on the genes for DNA replication. The CDK inhibitor p16 holds this step back. Look at how many ways a cancer can force the gate open: more cyclin D or CDK4, loss of p16, loss of Rb itself, or, in cervical cancer, a viral protein from human papillomavirus that binds Rb. Almost every cancer has one of these changes, and usually only one, because one is enough. On the right is p53, often called the guardian of the genome. DNA damage and other stress stabilise p53, which normally is destroyed quickly by MDM2. p53 then switches on p21 to pause the cycle for repair, or drives the cell into permanent arrest, senescence, or into apoptosis. Without p53, a damaged cell keeps dividing, so mutations accumulate. TP53 is mutated in about half of all human cancers. Palbociclib and related drugs block CDK4 and 6 and are used in hormone-receptor-positive breast cancer; they only work if Rb is still there.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="no-death-no-limit-bcl-2-and-telomerase" class="slide level2 smaller">
+<h2>No death, no limit: BCL-2 and telomerase</h2>
+
+<img data-src="fig08-death-limit.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li>A cell with damaged DNA or no growth signal normally <strong>dies by apoptosis</strong>. More <strong>BCL-2</strong> keeps the mitochondria closed (the apoptosis lecture).</li>
+<li>Normal cells stop after a limited number of divisions: telomeres shorten and trigger <strong>senescence</strong>. Cancer cells <strong>turn telomerase back on</strong> (the lecture on controlling cell numbers).</li>
+</ul>
+<aside class="notes">
+<p>Even a cell that divides too much would not form a tumour if its errors made it die. Cells with damaged DNA, with oncogenes that push too hard, or that have lost contact with their matrix normally kill themselves by apoptosis. In the apoptosis lecture you saw that the decision is made at the outer membrane of the mitochondria: BAX and BAK, triggered by BH3-only proteins, make pores, cytochrome c escapes and caspases start. BCL-2 blocks this. In follicular lymphoma, a translocation between chromosomes 14 and 18 puts the BCL2 gene next to a strong enhancer of an antibody gene, so B cells make far too much BCL-2 and do not die. Venetoclax, a BH3 mimetic, blocks BCL-2 and is used in chronic lymphocytic leukaemia. The second limit is the number of divisions. Each round of replication leaves the chromosome ends, the telomeres, a little shorter. When they are too short the cell senses DNA damage and stops for good, or, if p53 is missing, chromosomes fuse and break in a crisis. Most cancer cells switch on telomerase, the enzyme that rebuilds telomeres, and so escape this counting mechanism.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="genome-instability-a-faster-route-to-many-hits" class="slide level2 smaller">
+<h2>Genome instability: a faster route to many hits</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<ul>
+<li>Normal cells copy DNA with about <strong>one error per 10⁹ bases</strong> per division, and repair most damage. With so few errors, collecting <strong>5–10 driver mutations</strong> in one cell line would be very rare.</li>
+<li>Cancer cells often lose <strong>DNA repair</strong> (mismatch repair, <strong>BRCA1/2</strong> for double-strand breaks) or <strong>p53</strong>: point mutations pile up faster.</li>
+<li>Or they lose <strong>chromosome control</strong>: extra centrosomes make <strong>multipolar spindles</strong>, and a weak <strong>spindle checkpoint</strong> lets chromosomes be lost or gained (<strong>aneuploidy</strong>; the mitosis lecture).</li>
+<li>Most solid tumours have <strong>abnormal chromosome numbers</strong>; the karyotype differs from cell to cell.</li>
+</ul>
+</div><div class="column" style="width:42%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig09-missegregation.svg" class="quarto-figure quarto-figure-center" height="470"></p>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<p>If every cell needs several driver mutations, and a normal cell makes very few errors, how does any cell ever collect them? Part of the answer is time and numbers: we have trillions of cells and decades. The other part is genome instability. Many cancers lose a repair system early. In about fifteen percent of colorectal cancers, mismatch repair is lost, and the mutation rate rises a hundred to a thousand times. In inherited breast and ovarian cancer with BRCA1 or BRCA2 mutations, double-strand breaks are repaired by error-prone routes. Losing p53 removes the checkpoint that would stop or kill a damaged cell. A second kind of instability affects whole chromosomes. The figure compares a normal two-pole spindle with a spindle that has extra centrosomes: such a spindle can pull chromosomes towards more than two poles, so the daughters get wrong numbers of chromosomes. A weak spindle assembly checkpoint lets cells enter anaphase before all chromosomes are attached. The result is aneuploidy, found in most solid tumours: whole chromosomes or arms gained and lost, which changes the dose of hundreds of genes at once. Genome instability is a double-edged sword for the tumour: it speeds evolution, but it also makes cells vulnerable, which PARP inhibitors exploit in BRCA-mutant cancers.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="many-hits-over-many-years" class="slide level2 smaller">
+<h2>Many hits over many years</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig10-multistep.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="width:62%;">
+<ul>
+<li>Colorectal cancer often starts with <strong>APC</strong> loss (a small polyp), then <strong>KRAS</strong> activation, then <strong>TP53</strong> loss. Each step gives one cell an advantage, and its descendants take over.</li>
+<li>This is why most cancers appear late in life, and why <strong>screening</strong> can find and remove <strong>adenomas</strong> before they become cancer.</li>
+</ul>
+</div><div class="column" style="width:38%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img10-colon-adenoma-carcinoma.jpg" class="quarto-figure quarto-figure-center" height="170"></p>
+</figure>
+</div>
+<p><em>Opened colon: carcinoma (left) and a benign villous adenoma (right).</em></p>
+</div></div>
+<aside class="notes">
+<p>The clearest example of step-by-step progression is colorectal cancer, worked out by Bert Vogelstein and colleagues in the late 1980s by comparing the mutations in tissue at different stages. In a normal crypt, Wnt signalling is high only at the bottom, where stem cells divide. When a stem cell loses both copies of APC, beta-catenin stays on everywhere, and the crypt grows into a small benign polyp, an adenoma. A cell in the adenoma that gains an activating KRAS mutation grows faster, and the adenoma grows larger. Loss of TP53 then removes the guardian, and further changes let the cells break through the basement membrane: now it is a carcinoma, which can spread. The photograph shows a surgical specimen with both stages in one piece of colon: a raised, cauliflower-like benign adenoma on the right, and a carcinoma with an ulcerated centre on the left. The order of the mutations varies, and the timeline is long, typically ten to thirty years. That long window is why colonoscopy screening works: removing adenomas prevents cancer.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cancer-is-evolution-inside-the-body" class="slide level2 smaller">
+<h2>Cancer is evolution inside the body</h2>
+
+<img data-src="fig11-clonal-evolution.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:76.0%"><ul>
+<li><strong>Variation</strong> (new mutations) + <strong>selection</strong> (the fittest cells outgrow the others) = <strong>clonal evolution</strong>. The tumour becomes a <strong>mixture of subclones</strong>: <strong>heterogeneity</strong>.</li>
+<li>Therapy is a new <strong>selection pressure</strong>: rare resistant cells survive and take over. <strong>Try it:</strong> <a href="../cancer/questions.html#explore">Demo: clonal evolution under therapy</a>.</li>
+</ul>
+<aside class="notes">
+<p>Peter Nowell described cancer as an evolutionary process in 1976, and today we can watch it in the DNA. Evolution needs two things: variation and selection. Variation comes from mutations, more of them in a genetically unstable cell. Selection comes from the tissue: space, nutrients, oxygen, immune cells. A cell with a driver mutation divides a bit more or dies a bit less, so over many generations its descendants outnumber the others. Inside that subclone, another cell gains another driver and starts its own subclone. This kind of plot, called a fish plot, shows it: the height is the number of cells, and each colour is a clone nested inside the clone it came from. By the time of diagnosis, a tumour of a billion cells is a mixture of related but different subclones. Some carry mutations that happen to make them resistant to a drug, before the drug has ever been given. When therapy starts, the sensitive clones die and the tumour shrinks, but the resistant cells now have space and grow back. This is natural selection, just as for antibiotic resistance in bacteria. In the demo you can treat a simulated tumour and compare one drug, two drugs and intermittent therapy.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-know-sequencing-many-pieces-of-one-tumour" class="slide level2 smaller">
+<h2>How do we know? Sequencing many pieces of one tumour</h2>
+
+<img data-src="fig12-tumour-tree.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><ul>
+<li><strong>Multi-region sequencing</strong>: in kidney cancers (Gerlinger et al., 2012), about <strong>two-thirds</strong> of the mutations were <strong>not found in every region</strong>.</li>
+<li>Mutations in all regions form the <strong>trunk</strong> (early, in the first cancer cell); the others are <strong>branches</strong>. A single biopsy sees only one branch.</li>
+</ul>
+<aside class="notes">
+<p>How do we know that tumours are mixtures, and what their family tree looks like? Sequencing a single biopsy gives an average. The trick is to sample several regions of the same tumour, and also normal cells from the same patient, such as blood, so that inherited variants can be removed. Each somatic mutation is then marked as present or absent in each region. In this cartoon, mutations a, b and c are found everywhere: they were in the founding cell and form the trunk of the tree. Mutation d is found only in regions 1 and 2, so it arose later in the cell that gave rise to that part of the tumour; e and f are private to single regions. In a landmark study of kidney cancers published in 2012, about two-thirds of the mutations were not present in every region, and some regions carried different mutations in the same gene. The same logic applies over time: sequencing a tumour before treatment and at relapse shows which branch survived. Today, tumour DNA fragments in the blood, liquid biopsies, are used to follow such clones. For drug development this is important: the best targets are trunk mutations, present in every cancer cell.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="invasion-breaking-out-of-the-epithelium" class="slide level2 smaller">
+<h2>Invasion: breaking out of the epithelium</h2>
+
+<img data-src="fig13-invasion.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li>Most cancers are <strong>carcinomas</strong>: they start in an epithelium. While cells stay above the <strong>basement membrane</strong> (carcinoma <em>in situ</em>), surgery cures.</li>
+<li><strong>Invasion</strong> needs new behaviour: loose junctions, protrusions, <strong>proteases</strong> that cut the matrix.</li>
+</ul>
+<aside class="notes">
+<p>About 80 to 90 percent of human cancers are carcinomas, tumours of epithelial cells. In the actin lecture you met the crawling cell, and in the membrane lectures the tight and adherens junctions that hold an epithelium together. An epithelium sits on a thin sheet of specialised extracellular matrix, the basement membrane, made mostly of type four collagen and laminin. Below it lies the stroma, the connective tissue with fibroblasts, collagen fibres, vessels and immune cells. In carcinoma in situ, the cells grow too much and lose their orderly layering, but they all stay above the basement membrane. They cannot reach vessels, and removing them cures the patient. Invasion starts when cells cross this membrane. Many invading cells go through a programme called the epithelial–mesenchymal transition, or EMT, borrowed from embryonic development. Transcription factors such as Snail and Twist switch off E-cadherin, so the cell lets go of its neighbours; it loses its apical-basal polarity and switches on proteins of mesenchymal cells, such as vimentin. It digests the matrix with matrix metalloproteases and crawls with actin protrusions and myosin contraction. EMT is often partial and reversible.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="metastasis-a-long-and-wasteful-journey" class="slide level2 smaller">
+<h2>Metastasis: a long and wasteful journey</h2>
+<div class="columns">
+<div class="column" style="width:72%;">
+<p><img data-src="fig14-metastasis.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:28%;">
+<p><img data-src="img14-lymphatic-invasion.jpg" style="width:100.0%"></p>
+<p><em>Breast cancer cells (centre) inside a lymph vessel, H&amp;E.</em></p>
+</div></div>
+<ul>
+<li>Most cancer deaths are caused by <strong>metastases</strong>. Tumours shed many cells into the blood, but very few succeed: the <strong>last step</strong>, growing in a new organ, is the hardest.</li>
+<li><strong>Seed and soil</strong>: cells grow best where the tissue suits them; breast cancer often goes to bone, colon cancer to liver.</li>
+</ul>
+<aside class="notes">
+<p>Metastasis is a series of steps, and a cell must succeed in all of them. It must invade, as on the previous slide. It must squeeze through the wall of a small blood or lymph vessel; the micrograph shows a group of breast cancer cells with large nuclei floating inside a lymph channel. In the blood it must survive shear forces, immune cells and the lack of a matrix to hold on to; epithelial cells that lose their anchorage normally die by a form of apoptosis called anoikis. Some are protected by a coat of platelets. It must then stick in a small vessel of another organ and crawl out. Finally, it must grow in a tissue with different neighbours, signals and matrix. Experiments in animals and counts of circulating tumour cells in patients show that a large tumour releases huge numbers of cells, but only a tiny fraction form metastases. Many arrive and stay dormant for years before they grow, which is why cancer can return long after surgery. Stephen Paget proposed in 1889 that the seed, the cancer cell, needs the right soil; which organs receive metastases depends both on blood flow and on that match. Metastasis biology is a major subject in Sjukdomslära.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-tumour-is-a-tissue-vessels-fuel-and-neighbours" class="slide level2 smaller">
+<h2>A tumour is a tissue: vessels, fuel and neighbours</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<ul>
+<li><strong>Blood vessels</strong>: a tumour larger than about <strong>1–2 mm</strong> needs its own supply. Hypoxic cells release <strong>VEGF</strong>; vessels grow in, leaky and disordered (bevacizumab blocks VEGF).</li>
+<li><strong>Fuel</strong>: many cancer cells take up much more <strong>glucose</strong> and run <strong>glycolysis even with oxygen</strong> (the Warburg effect). It gives building blocks for new cells. <strong>FDG-PET</strong> scans find tumours by their glucose uptake.</li>
+<li><strong>Neighbours</strong>: <strong>fibroblasts</strong> make stiff matrix, <strong>macrophages</strong> can help growth and invasion, and <strong>T cells</strong> may attack, unless the tumour switches them off.</li>
+<li><strong>Chronic inflammation</strong> (hepatitis, <em>H. pylori</em>) promotes cancer.</li>
+</ul>
+</div><div class="column" style="width:42%;">
+<p><img data-src="img15-tils.jpg" style="width:100.0%"></p>
+<p><em>Colorectal carcinoma, H&amp;E: small dark lymphocytes (T cells) between the tumour cells. Patients with many such cells often do better.</em></p>
+</div></div>
+<aside class="notes">
+<p>So far we have looked at the cancer cell, but a tumour is a tissue, and the other cells in it matter. A small cluster of cells can live on oxygen and nutrients that diffuse from nearby vessels, but diffusion works only over a short distance, about a tenth of a millimetre. A tumour that grows beyond one or two millimetres needs new vessels. Cells far from vessels become hypoxic, and the hypoxia-sensing transcription factor HIF makes them release VEGF, which makes the endothelial cells of nearby vessels sprout towards the tumour. The new vessels are leaky and disordered, which makes drug delivery uneven. Cancer cells also change their metabolism. Otto Warburg noticed a hundred years ago that tumours turn glucose into lactate even when oxygen is present. This fast, wasteful glycolysis supplies building blocks for membranes and nucleotides. It also lets doctors find tumours: in a PET scan, a radioactive glucose analogue, fluorodeoxyglucose, accumulates where glucose uptake is high. Finally, the stroma: fibroblasts, macrophages and lymphocytes. In this micrograph, the small dark round cells between the tumour glands are lymphocytes. Their presence is a good sign: the immune system has recognised the tumour. Why does it not win?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-targeted-therapy-and-resistance" class="slide level2 smaller">
+<h2>Why it matters: targeted therapy and resistance</h2>
+
+<img data-src="fig16-resistance.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li>Any one drug <strong>selects</strong> for resistant cells that were there before. <strong>Two drugs</strong> with different targets need a cell with <strong>two</strong> rare mutations.</li>
+<li>Resistance can also be <strong>non-genetic</strong>: P-glycoprotein pumps (the membrane transport lecture) and changes of cell state. More in Kliniska prövningar och läkemedelsutveckling.</li>
+</ul>
+<aside class="notes">
+<p>Now we can explain the relapse from the beginning of the lecture. A tumour at diagnosis has around a billion cells. Suppose a particular resistance mutation, such as a gatekeeper mutation in the drug’s target, is present in one cell in ten million. Then about a hundred resistant cells are already in the tumour before the first dose. The drug kills everything else, the tumour shrinks dramatically, and those hundred cells grow back. This is the Goldie–Coldman argument from 1979, and it is the same logic used for HIV and tuberculosis, where single drugs failed and combinations succeeded. With two drugs that act on different targets, a cell must carry two independent resistance mutations; the chance of that is the product of the two small numbers, and in most tumours no such cell exists at the start. In practice, combinations are limited by side effects, and some resistance is not caused by mutations in the target: another pathway can take over, the ABC transporter P-glycoprotein can pump many drugs out, or cells can change into a different cell type. Antimitotic drugs such as taxanes, from the microtubule lecture, meet the same problem. You meet the design of combination trials in the course on clinical trials and drug development.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-it-matters-checkpoint-immunotherapy" class="slide level2 smaller">
+<h2>Why it matters: checkpoint immunotherapy</h2>
+
+<img data-src="fig17-checkpoint.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><ul>
+<li>T cells can recognise <strong>mutant peptides</strong> on tumour cells. Tumours protect themselves with <strong>PD-L1</strong>, which binds the <strong>PD-1</strong> brake on T cells.</li>
+<li><strong>Antibodies against PD-1, PD-L1 or CTLA-4</strong> release the brake. Some patients with metastatic melanoma or lung cancer stay in remission for years. Nobel Prize 2018 (Allison, Honjo). More in the immunology course (Immunologi).</li>
+</ul>
+<aside class="notes">
+<p>The second big change in cancer treatment does not target the cancer cell at all. Mutant proteins in cancer cells are broken down by the proteasome, and some of the peptides are shown on MHC class one molecules at the cell surface, as for any protein. A cytotoxic T cell whose receptor recognises such a peptide can kill the cell by inducing apoptosis. But T cells have brakes, called immune checkpoints, that normally prevent damage to healthy tissue. PD-1 is one of them. Many tumours, and cells around them, make its ligand PD-L1, so T cells that reach the tumour are switched off. An antibody against PD-1, such as nivolumab or pembrolizumab, or against PD-L1, blocks this interaction and lets the T cells work. Antibodies against CTLA-4, a brake that acts earlier, when T cells are first activated in lymph nodes, work in a similar way. James Allison and Tasuku Honjo shared the Nobel Prize in 2018 for this. These drugs work best in tumours with many mutations, such as melanoma, lung cancer from smoking, and tumours without mismatch repair, because more mutations make more foreign peptides. Side effects are autoimmune reactions, which shows that the brakes are there for a reason. You meet T cells properly in the immunology course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<ol type="1">
+<li>Cancer is <strong>one cell’s descendants breaking the rules</strong> of the cell: the <strong>hallmarks</strong> (growth signals on, brakes off, no death, no division limit, invasion, new vessels, altered metabolism, immune escape) each map onto a part of this course.</li>
+<li><strong>Oncogenes</strong> gain function and act in <strong>one copy</strong> (RAS, BRAF, HER2, BCR-ABL); <strong>tumour suppressors</strong> lose function and need <strong>two hits</strong> (RB1, TP53, APC, BRCA), as shown by retinoblastoma.</li>
+<li>Cancer needs <strong>several hits over years</strong>; <strong>genome instability</strong> (lost repair, p53, chromosome missegregation) speeds this up. <strong>Clonal evolution</strong> makes each tumour a <strong>heterogeneous</strong> mixture of subclones, seen by <strong>multi-region sequencing</strong>.</li>
+<li><strong>Invasion and metastasis</strong> need <strong>EMT</strong>, matrix-cutting proteases and migration through the <strong>basement membrane</strong>, then survival in blood and growth in a new organ. The <strong>microenvironment</strong> (vessels, stroma, immune cells) shapes the tumour.</li>
+<li>Targeted drugs <strong>select resistant clones</strong>; <strong>combinations</strong> reduce this. <strong>Checkpoint antibodies</strong> (PD-1, CTLA-4) release T cells against the tumour.</li>
+</ol>
+<p><em>Read more (optional): Alberts et al., Molecular Biology of the Cell, 7th ed., ch.&nbsp;20.</em></p>
+<p><a href="../credits.html#cancer" style="font-size:0.7em">Image credits</a></p>
+<aside class="notes">
+<p>Five take-home points. First, cancer is not a foreign invader but our own cells, descended from one cell that broke the rules the rest of this course described. The hallmarks give a checklist, and each item is a piece of normal cell biology gone wrong. Second, the two kinds of cancer gene behave differently: oncogenes are overactive versions of growth genes and act in one copy; tumour suppressors are lost brakes and need both copies lost, as Knudson’s two-hit idea for retinoblastoma predicted. Third, a single mutation is not enough. Several drivers, collected over years, are needed, and genome instability speeds this up. Because the cells compete and are selected, a tumour evolves and becomes a family tree of related but different subclones. Fourth, the deadly step is spread. Cells leave the epithelium by EMT and proteases, survive the journey, and must grow in a new organ; the tumour also builds its own tissue of vessels and stroma, and must hide from immune cells. Fifth, these ideas explain why targeted drugs fail, why combinations help, and how checkpoint antibodies work. The next lecture extends the same way of thinking to other diseases: misfolding, trafficking, channels and mitochondria.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'visible',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1b2a3a"/></marker></defs>
+<rect width="1000" height="380" fill="#ffffff"/>
+<text x="110" y="24" font-size="17" fill="#1b2a3a" font-weight="700" text-anchor="middle">1. Farnesyl added</text>
+<text x="380" y="24" font-size="17" fill="#1b2a3a" font-weight="700" text-anchor="middle">2. End cut off</text>
+<text x="640" y="24" font-size="17" fill="#1b2a3a" font-weight="700" text-anchor="middle">3. Result</text>
+<text x="880" y="24" font-size="17" fill="#1b2a3a" font-weight="700" text-anchor="middle">Nucleus</text>
+<text x="10" y="66" font-size="17" fill="#2b8a3e" font-weight="700" text-anchor="start">Normal: lamin A</text>
+<text x="10" y="236" font-size="17" fill="#c92a2a" font-weight="700" text-anchor="start">Progeria: progerin</text>
+<rect x="30" y="101" width="150" height="18" rx="5" fill="#6b4fa0"/>
+<path d="M180 110 l8 -10 l8 10 l8 -10 l8 10 l8 -10" fill="none" stroke="#8a6a12" stroke-width="3.5" stroke-linejoin="round"/>
+<path d="M232 110 L262 110" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="275" y="101" width="150" height="18" rx="5" fill="#6b4fa0"/>
+<path d="M425 110 l8 -10 l8 10 l8 -10 l8 10 l8 -10" fill="none" stroke="#8a6a12" stroke-width="3.5" stroke-linejoin="round"/>
+<path d="M405 84 L405 136" stroke="#c92a2a" stroke-width="2.5" stroke-dasharray="5 3"/>
+<text x="405" y="154" font-size="14" fill="#c92a2a" font-weight="400" text-anchor="middle">protease cuts here</text>
+<path d="M482 110 L540 110" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="550" y="101" width="130" height="18" rx="5" fill="#6b4fa0"/>
+<g transform="translate(70,0)"><rect x="640" y="135" width="24" height="18" rx="5" fill="#6b4fa0"/></g>
+<path d="M734 144 l8 -10 l8 10 l8 -10 l8 10 l8 -10" fill="none" stroke="#8a6a12" stroke-width="3.5" stroke-linejoin="round"/>
+<text x="615" y="154" font-size="14" fill="#1b2a3a" font-weight="400" text-anchor="middle">free lamin A</text>
+<path d="M790 110 L816 110" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<ellipse cx="890" cy="110" rx="62" ry="54" fill="#efebf7" stroke="#6b4fa0" stroke-width="5"/>
+<text x="890" y="115" font-size="15" fill="#6b4fa0" font-weight="700" text-anchor="middle">round</text>
+<rect x="30" y="281" width="150" height="18" rx="5" fill="#6b4fa0"/><rect x="140" y="279" width="20" height="22" fill="#ffffff"/><path d="M140 281 L160 299 M160 281 L140 299" stroke="#c92a2a" stroke-width="1.5" stroke-dasharray="3 2"/>
+<path d="M180 290 l8 -10 l8 10 l8 -10 l8 10 l8 -10" fill="none" stroke="#8a6a12" stroke-width="3.5" stroke-linejoin="round"/>
+<path d="M232 290 L262 290" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="30" y="326" font-size="14" fill="#c92a2a" font-weight="400" text-anchor="start">50 amino acids missing</text>
+<text x="30" y="344" font-size="14" fill="#c92a2a" font-weight="400" text-anchor="start">(incl. the cut site)</text>
+<rect x="275" y="281" width="150" height="18" rx="5" fill="#6b4fa0"/><rect x="385" y="279" width="20" height="22" fill="#ffffff"/><path d="M385 281 L405 299 M405 281 L385 299" stroke="#c92a2a" stroke-width="1.5" stroke-dasharray="3 2"/>
+<path d="M425 290 l8 -10 l8 10 l8 -10 l8 10 l8 -10" fill="none" stroke="#8a6a12" stroke-width="3.5" stroke-linejoin="round"/>
+<path d="M392 272 L418 308 M418 272 L392 308" stroke="#c92a2a" stroke-width="3"/>
+<text x="405" y="330" font-size="14" fill="#c92a2a" font-weight="700" text-anchor="middle">no cut</text>
+<path d="M482 290 L540 290" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="550" y="281" width="150" height="18" rx="5" fill="#6b4fa0"/><rect x="660" y="279" width="20" height="22" fill="#ffffff"/><path d="M660 281 L680 299 M680 281 L660 299" stroke="#c92a2a" stroke-width="1.5" stroke-dasharray="3 2"/>
+<path d="M700 290 l8 -10 l8 10 l8 -10 l8 10 l8 -10" fill="none" stroke="#8a6a12" stroke-width="3.5" stroke-linejoin="round"/>
+<text x="625" y="326" font-size="14" fill="#1b2a3a" font-weight="400" text-anchor="middle">farnesyl stays:</text>
+<text x="625" y="344" font-size="14" fill="#1b2a3a" font-weight="400" text-anchor="middle">stuck to the membrane</text>
+<path d="M760 290 L816 290" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+<path d="M832 290 q0 -50 46 -54 q18 -14 34 2 q38 0 42 40 q20 16 0 32 q-6 40 -50 34 q-14 18 -36 0 q-40 -4 -36 -54 z" fill="#efebf7" stroke="#6b4fa0" stroke-width="5"/>
+<text x="890" y="295" font-size="15" fill="#6b4fa0" font-weight="700" text-anchor="middle">blebbed</text>
+<path d="M300 244 L208 276" stroke="#e8590c" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="306" y="246" font-size="15" fill="#e8590c" font-weight="700" text-anchor="start">lonafarnib blocks the enzyme that adds farnesyl</text>
+</svg>

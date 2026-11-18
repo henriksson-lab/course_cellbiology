@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 430" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1b2a3a"/></marker></defs>
+  <!-- stroma background -->
+  <rect x="10" y="190" width="1080" height="170" fill="#fbf6ea"/>
+  <g stroke="#d4c49a" stroke-width="2" fill="none">
+    <path d="M30 240 C120 220 200 260 300 235"/><path d="M40 300 C150 280 260 330 360 300"/>
+    <path d="M400 250 C500 230 600 270 700 245"/><path d="M420 320 C520 300 640 340 740 310"/>
+    <path d="M760 240 C860 220 960 260 1080 235"/><path d="M780 320 C880 300 980 340 1080 310"/>
+  </g>
+  <text x="1080" y="350" font-size="15" text-anchor="end" fill="#8a6a12">stroma: collagen fibres and other matrix (ECM)</text>
+  <!-- basement membrane -->
+  <line x1="10" y1="186" x2="1090" y2="186" stroke="#2e8b57" stroke-width="6"/>
+  <!-- panel titles -->
+  <text x="180" y="30" font-size="19" font-weight="700" text-anchor="middle">1. Normal epithelium</text>
+  <text x="550" y="30" font-size="19" font-weight="700" text-anchor="middle">2. Carcinoma in situ</text>
+  <text x="915" y="30" font-size="19" font-weight="700" text-anchor="middle">3. Invasive carcinoma</text>
+  <line x1="365" y1="45" x2="365" y2="370" stroke="#9aa5b1" stroke-dasharray="4 4"/>
+  <line x1="735" y1="45" x2="735" y2="370" stroke="#9aa5b1" stroke-dasharray="4 4"/>
+  <!-- normal: one layer -->
+  <g fill="#f6f0de" stroke="#8a6a12" stroke-width="2">
+    <rect x="40" y="120" width="40" height="62" rx="5"/><rect x="82" y="120" width="40" height="62" rx="5"/><rect x="124" y="120" width="40" height="62" rx="5"/><rect x="166" y="120" width="40" height="62" rx="5"/><rect x="208" y="120" width="40" height="62" rx="5"/><rect x="250" y="120" width="40" height="62" rx="5"/><rect x="292" y="120" width="40" height="62" rx="5"/>
+  </g>
+  <g fill="#2b8a3e"><rect x="78" y="128" width="6" height="40"/><rect x="120" y="128" width="6" height="40"/><rect x="162" y="128" width="6" height="40"/><rect x="204" y="128" width="6" height="40"/><rect x="246" y="128" width="6" height="40"/><rect x="288" y="128" width="6" height="40"/></g>
+  <text x="40" y="96" font-size="15">E-cadherin junctions (green)</text>
+  <!-- CIS: pile, membrane intact -->
+  <g fill="#f3b3c8" stroke="#d6457a" stroke-width="2">
+    <rect x="400" y="140" width="36" height="42" rx="5"/><rect x="438" y="140" width="36" height="42" rx="5"/><rect x="476" y="140" width="36" height="42" rx="5"/><rect x="514" y="140" width="36" height="42" rx="5"/><rect x="552" y="140" width="36" height="42" rx="5"/><rect x="590" y="140" width="36" height="42" rx="5"/><rect x="628" y="140" width="36" height="42" rx="5"/><rect x="666" y="140" width="36" height="42" rx="5"/>
+    <rect x="420" y="96" width="36" height="42" rx="5"/><rect x="458" y="96" width="36" height="42" rx="5"/><rect x="496" y="96" width="36" height="42" rx="5"/><rect x="534" y="96" width="36" height="42" rx="5"/><rect x="572" y="96" width="36" height="42" rx="5"/><rect x="610" y="96" width="36" height="42" rx="5"/><rect x="648" y="96" width="36" height="42" rx="5"/>
+    <rect x="470" y="52" width="36" height="42" rx="5"/><rect x="508" y="52" width="36" height="42" rx="5"/><rect x="546" y="52" width="36" height="42" rx="5"/><rect x="584" y="52" width="36" height="42" rx="5"/>
+  </g>
+  <text x="550" y="222" font-size="15" text-anchor="middle">basement membrane still intact</text>
+  <!-- invasive -->
+  <g fill="#f3b3c8" stroke="#d6457a" stroke-width="2">
+    <rect x="760" y="140" width="36" height="42" rx="5"/><rect x="798" y="140" width="36" height="42" rx="5"/><rect x="836" y="140" width="36" height="42" rx="5"/><rect x="1000" y="140" width="36" height="42" rx="5"/><rect x="1038" y="140" width="36" height="42" rx="5"/>
+    <rect x="780" y="96" width="36" height="42" rx="5"/><rect x="818" y="96" width="36" height="42" rx="5"/><rect x="856" y="96" width="36" height="42" rx="5"/><rect x="894" y="96" width="36" height="42" rx="5"/><rect x="932" y="96" width="36" height="42" rx="5"/><rect x="970" y="96" width="36" height="42" rx="5"/><rect x="1008" y="96" width="36" height="42" rx="5"/>
+  </g>
+  <rect x="876" y="181" width="118" height="12" fill="#fbf6ea"/>
+  <!-- EMT cells: spindle -->
+  <g fill="#f3b3c8" stroke="#d6457a" stroke-width="2">
+    <ellipse cx="900" cy="160" rx="16" ry="22"/><ellipse cx="955" cy="168" rx="14" ry="20"/>
+    <path d="M905 215 C930 205 960 210 985 225 C960 235 930 238 905 215Z"/>
+    <path d="M930 268 C955 256 990 262 1015 280 C990 290 955 292 930 268Z"/>
+  </g>
+  <path d="M960 290 L990 320" stroke="#1b2a3a" stroke-width="2" marker-end="url(#a)"/>
+  <g fill="#e8590c"><circle cx="925" cy="196" r="4"/><circle cx="945" cy="194" r="4"/><circle cx="965" cy="198" r="4"/></g>
+  <text x="760" y="232" font-size="15">MMPs cut the</text>
+  <text x="760" y="250" font-size="15">membrane</text>
+  <!-- bottom text -->
+  <text x="20" y="396" font-size="16"><tspan font-weight="700">EMT</tspan> (epithelial–mesenchymal transition): the cell switches off E-cadherin, loses its polarity and becomes a</text>
+  <text x="20" y="420" font-size="16">loose, crawling cell. It digests matrix with proteases (MMPs) and moves with actin protrusions, as in the actin lecture.</text>
+</svg>

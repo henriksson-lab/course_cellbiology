@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="352" viewBox="0 0 1100 352" font-family="Helvetica, Arial, sans-serif">
+<!-- fig07: four ways a chromosome can attach to the spindle: amphitelic (correct), monotelic, syntelic, merotelic. The orange halo marks an unattached kinetochore. -->
+<defs><marker id="ak" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1b2a3a"/></marker><marker id="ao" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#e8590c"/></marker><marker id="ag" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#2b8a3e"/></marker><marker id="ab" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#1c4fa0"/></marker><marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#c92a2a"/></marker><marker id="am" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L12,7 L0,13 Z" fill="#555555"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="550" y="24" font-size="19" text-anchor="middle" font-weight="bold" fill="#1b2a3a" >How the two sister kinetochores can attach</text>
+<rect x="4" y="40" width="262" height="306" rx="10" fill="#ffffff" stroke="#d0d4d9"/>
+<text x="135.0" y="70" font-size="18" text-anchor="middle" font-weight="bold" fill="#2b8a3e" >Amphitelic</text>
+<line x1="28.0" y1="150.0" x2="116.0" y2="146.0" stroke="#555555" stroke-width="1.8" />
+<line x1="28.0" y1="150.0" x2="116.0" y2="150.0" stroke="#555555" stroke-width="1.8" />
+<line x1="28.0" y1="150.0" x2="116.0" y2="154.0" stroke="#555555" stroke-width="1.8" />
+<line x1="242.0" y1="150.0" x2="154.0" y2="146.0" stroke="#555555" stroke-width="1.8" />
+<line x1="242.0" y1="150.0" x2="154.0" y2="150.0" stroke="#555555" stroke-width="1.8" />
+<line x1="242.0" y1="150.0" x2="154.0" y2="154.0" stroke="#555555" stroke-width="1.8" />
+<rect x="118.0" y="124.0" width="16" height="52" rx="8.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 126.0 150.0)"/>
+<rect x="136.0" y="124.0" width="16" height="52" rx="8.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 144.0 150.0)"/>
+<line x1="130.0" y1="150.0" x2="140.0" y2="150.0" stroke="#1b2a3a" stroke-width="4" />
+<circle cx="116.0" cy="150" r="5" fill="#1b2a3a"/>
+<circle cx="154.0" cy="150" r="5" fill="#1b2a3a"/>
+<circle cx="28" cy="150" r="11" fill="#555555"/>
+<circle cx="242" cy="150" r="11" fill="#555555"/>
+<line x1="101.0" y1="106.0" x2="71.0" y2="106.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)" />
+<line x1="169.0" y1="106.0" x2="199.0" y2="106.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)" />
+<text x="135.0" y="111" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >tension</text>
+<text x="135.0" y="250" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >each sister to its own</text>
+<text x="135.0" y="272" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >pole: bioriented</text>
+<text x="135.0" y="308" font-size="16" text-anchor="middle" font-weight="bold" fill="#2b8a3e" >correct</text>
+<rect x="279" y="40" width="262" height="306" rx="10" fill="#ffffff" stroke="#d0d4d9"/>
+<text x="410.0" y="70" font-size="18" text-anchor="middle" font-weight="bold" fill="#e8590c" >Monotelic</text>
+<line x1="303.0" y1="150.0" x2="391.0" y2="146.0" stroke="#555555" stroke-width="1.8" />
+<line x1="303.0" y1="150.0" x2="391.0" y2="150.0" stroke="#555555" stroke-width="1.8" />
+<line x1="303.0" y1="150.0" x2="391.0" y2="154.0" stroke="#555555" stroke-width="1.8" />
+<rect x="393.0" y="124.0" width="16" height="52" rx="8.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 401.0 150.0)"/>
+<rect x="411.0" y="124.0" width="16" height="52" rx="8.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 419.0 150.0)"/>
+<line x1="405.0" y1="150.0" x2="415.0" y2="150.0" stroke="#1b2a3a" stroke-width="4" />
+<circle cx="391.0" cy="150" r="5" fill="#1b2a3a"/>
+<circle cx="429.0" cy="150" r="10" fill="#e8590c" fill-opacity="0.25" stroke="#e8590c" stroke-width="2.5"/>
+<circle cx="429.0" cy="150" r="5" fill="#1b2a3a"/>
+<circle cx="303" cy="150" r="11" fill="#555555"/>
+<circle cx="517" cy="150" r="11" fill="#555555"/>
+<text x="410.0" y="250" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >one kinetochore free:</text>
+<text x="410.0" y="272" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >makes the wait signal</text>
+<text x="410.0" y="308" font-size="16" text-anchor="middle" font-weight="bold" fill="#e8590c" >checkpoint: WAIT</text>
+<rect x="554" y="40" width="262" height="306" rx="10" fill="#ffffff" stroke="#d0d4d9"/>
+<text x="685.0" y="70" font-size="18" text-anchor="middle" font-weight="bold" fill="#c92a2a" >Syntelic</text>
+<line x1="578.0" y1="150.0" x2="666.0" y2="146.0" stroke="#555555" stroke-width="1.8" />
+<line x1="578.0" y1="150.0" x2="666.0" y2="150.0" stroke="#555555" stroke-width="1.8" />
+<line x1="578.0" y1="150.0" x2="666.0" y2="154.0" stroke="#555555" stroke-width="1.8" />
+<path d="M578,150 Q685.0,220 704.0,146" fill="none" stroke="#555555" stroke-width="1.8"/><path d="M578,150 Q685.0,220 704.0,150" fill="none" stroke="#555555" stroke-width="1.8"/><path d="M578,150 Q685.0,220 704.0,154" fill="none" stroke="#555555" stroke-width="1.8"/><rect x="668.0" y="124.0" width="16" height="52" rx="8.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 676.0 150.0)"/>
+<rect x="686.0" y="124.0" width="16" height="52" rx="8.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 694.0 150.0)"/>
+<line x1="680.0" y1="150.0" x2="690.0" y2="150.0" stroke="#1b2a3a" stroke-width="4" />
+<circle cx="666.0" cy="150" r="5" fill="#1b2a3a"/>
+<circle cx="704.0" cy="150" r="5" fill="#1b2a3a"/>
+<circle cx="578" cy="150" r="11" fill="#555555"/>
+<circle cx="792" cy="150" r="11" fill="#555555"/>
+<text x="685.0" y="250" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >both sisters to one</text>
+<text x="685.0" y="272" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >pole: no tension</text>
+<text x="685.0" y="308" font-size="16" text-anchor="middle" font-weight="bold" fill="#c92a2a" >Aurora B releases it</text>
+<rect x="829" y="40" width="262" height="306" rx="10" fill="#ffffff" stroke="#d0d4d9"/>
+<text x="960.0" y="70" font-size="18" text-anchor="middle" font-weight="bold" fill="#c92a2a" >Merotelic</text>
+<line x1="853.0" y1="150.0" x2="941.0" y2="146.0" stroke="#555555" stroke-width="1.8" />
+<line x1="853.0" y1="150.0" x2="941.0" y2="150.0" stroke="#555555" stroke-width="1.8" />
+<line x1="853.0" y1="150.0" x2="941.0" y2="154.0" stroke="#555555" stroke-width="1.8" />
+<line x1="1067.0" y1="150.0" x2="979.0" y2="146.0" stroke="#555555" stroke-width="1.8" />
+<line x1="1067.0" y1="150.0" x2="979.0" y2="150.0" stroke="#555555" stroke-width="1.8" />
+<line x1="1067.0" y1="150.0" x2="979.0" y2="154.0" stroke="#555555" stroke-width="1.8" />
+<path d="M1067,150 Q960.0,225 941.0,149" fill="none" stroke="#e8590c" stroke-width="2"/><path d="M1067,150 Q960.0,225 941.0,155" fill="none" stroke="#e8590c" stroke-width="2"/><rect x="943.0" y="124.0" width="16" height="52" rx="8.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 951.0 150.0)"/>
+<rect x="961.0" y="124.0" width="16" height="52" rx="8.0" fill="#1c4fa0" stroke="#1b2a3a" stroke-width="1.2" transform="rotate(0 969.0 150.0)"/>
+<line x1="955.0" y1="150.0" x2="965.0" y2="150.0" stroke="#1b2a3a" stroke-width="4" />
+<circle cx="941.0" cy="150" r="5" fill="#1b2a3a"/>
+<circle cx="979.0" cy="150" r="5" fill="#1b2a3a"/>
+<circle cx="853" cy="150" r="11" fill="#555555"/>
+<circle cx="1067" cy="150" r="11" fill="#555555"/>
+<line x1="926.0" y1="106.0" x2="896.0" y2="106.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)" />
+<line x1="994.0" y1="106.0" x2="1024.0" y2="106.0" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ak)" />
+<text x="960.0" y="111" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >tension</text>
+<text x="960.0" y="250" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >one kinetochore holds</text>
+<text x="960.0" y="272" font-size="16" text-anchor="middle" font-weight="normal" fill="#1b2a3a" >both poles (orange)</text>
+<text x="960.0" y="308" font-size="16" text-anchor="middle" font-weight="bold" fill="#c92a2a" >not detected:</text>
+<text x="960.0" y="330" font-size="16" text-anchor="middle" font-weight="bold" fill="#c92a2a" >lagging chromatid</text>
+</svg>

@@ -1,0 +1,147 @@
+---
+title: "Study questions: controlling cell numbers"
+format:
+  html:
+    toc: true
+---
+
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+
+## G-level questions
+
+**1.** Name three kinds of extracellular signal that control cell numbers in a tissue, give one example of each, and say what each does. Why does cell number depend on more than cell division? `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Mitogens** (e.g. PDGF, EGF) make a cell pass the restriction point and **divide**. **Growth factors** (e.g. IGF-1, insulin) make a cell build more protein and **grow** in mass, through PI3K–Akt–**mTORC1**. **Survival factors** (e.g. IGF-1, NGF for neurons) **block apoptosis**; without them most cells kill themselves. Cell number is the balance of **divisions and deaths**, so a tissue can grow because more cells divide or because fewer die. Many factors have more than one of these effects, and they are made in limited amounts, so cells compete for them.
+:::
+
+---
+
+**2.** Describe the path from a mitogen at the cell surface to the start of DNA replication. Where is the restriction point, and why is the decision all-or-none? `[ELO 7]` `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+The mitogen binds a **receptor tyrosine kinase**, which activates **Ras** and the **RAF → MEK → ERK** cascade. ERK enters the nucleus and turns on early genes such as **Myc**, which lead to more **cyclin D**. **Cyclin D–CDK4/6** phosphorylates **Rb**; phosphorylated Rb releases **E2F**, which turns on S-phase genes, including **cyclin E**. Cyclin E–CDK2 phosphorylates Rb further and releases more E2F: a **positive feedback loop**. The **restriction point** is in late G1, when this loop has taken over: from then on the cell enters S phase even if the mitogen is removed. Positive feedback makes the switch all-or-none: a cell is either before it (and can go back to G0) or past it.
+:::
+
+---
+
+**3.** Explain the difference between cell **growth** and cell **division**, with one example where they are uncoupled. Which kinase complex controls growth, and what does it sense? `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Growth** is an increase in cell mass (protein, lipids, organelles); **division** is one cell becoming two. Normally a cell doubles its mass before it divides, so daughters keep the same size. In the **early embryo**, cells divide without growing and get smaller; **neurons and muscle fibres** grow for years without dividing. Growth is controlled mainly by **mTORC1**, which is active only when **growth factors** signal (through Akt), and **amino acids**, **energy** (ATP) and **oxygen** are sufficient. It increases ribosome and protein synthesis and inhibits autophagy. **Rapamycin** inhibits mTORC1, and cells become smaller.
+:::
+
+---
+
+**4.** What is **contact inhibition**? Describe what normal and transformed cells look like in a dish after a week, and name one mechanism behind contact inhibition. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Contact inhibition (of proliferation) means that normal cells stop dividing when they touch neighbours on all sides. **Normal cells** form **one confluent layer** and then rest in **G0**; the stop is reversible (scrape some cells away and the neighbours divide into the gap). **Transformed cells**, for example with an active RAS oncogene, keep dividing and **pile up** into dense, multilayered **foci**. Mechanisms: cell–cell contacts (cadherins) and crowding activate the **Hippo** pathway, which keeps the co-activator **YAP** out of the nucleus, so growth genes stay off; in addition, more cells share the same limited amount of growth factors.
+:::
+
+---
+
+**5.** What is the **Hayflick limit**? Describe the classic experiment and three features of a senescent cell. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Hayflick and Moorhead (1961) grew normal human fetal fibroblasts, split them again and again, and counted population doublings. After about **40–60 doublings** the cultures slowed down and stopped for good, although the cells stayed alive. The maximum number of doublings is the Hayflick limit; the permanent arrest is **replicative senescence**. Cells frozen in between continued from where they stopped, so they count **divisions, not time**. A senescent cell: **never divides again** (permanent arrest, usually in G1), is **large and flat**, stains for **SA-β-gal**, has high **p16 and p21**, resists apoptosis, and secretes inflammatory signals (**SASP**).
+:::
+
+---
+
+**6.** Explain why telomeres shorten at each cell division and how a short telomere stops the cell cycle. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+DNA polymerase can only extend a **primer** in the **5′ → 3′** direction. The lagging strand is made from many RNA primers; at the very end of a linear chromosome the last primer is removed and the gap cannot be filled (the **end-replication problem**). Ends are also trimmed to make a 3′ overhang. So each division loses about **50–200 bp** of telomere (TTAGGG repeats, about 10–15 kb at birth). A long telomere is capped by **shelterin** proteins and a loop that hides the end. When a telomere becomes too short to be capped, the free end looks like a **DNA double-strand break**: the DNA-damage response (**ATM**) activates **p53**, which makes **p21**. p21 inhibits CDKs, Rb stays unphosphorylated, E2F stays off, and the cell arrests permanently (senescence).
+:::
+
+---
+
+**7.** What is **telomerase**, where is it active, and what happens when it is too weak or too active? `[ELO 7]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Telomerase is a **reverse transcriptase** (protein **TERT**) that carries its own **RNA template**; it adds **TTAGGG** repeats to the 3′ end of chromosomes and so compensates for the end-replication problem. It is active in **germ cells** and early embryos, at a low level in some **stem cells** and activated lymphocytes, and practically absent in most body cells such as fibroblasts. **Too weak**: inherited mutations in telomerase (e.g. **dyskeratosis congenita**) give short telomeres and failure of fast-renewing tissues, especially **bone marrow**. **Too active**: about **85–90 % of cancers** switch telomerase on (often by **TERT promoter mutations**), which lets them divide without limit.
+:::
+
+---
+
+**8.** Senescence is not only caused by short telomeres. Name two other triggers, explain why **oncogene-induced senescence** protects against cancer, and give one example from human skin. `[ELO 7]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Other triggers: **DNA damage** (radiation, chemotherapy), **oxidative stress**, and **activated oncogenes** (e.g. mutant RAS or BRAF). An oncogene drives a normal cell into S phase too hard; replication stress and the DNA-damage response, together with **p16**, stop the cell permanently through **p53–p21** and **p16–Rb**. A cell with one oncogene is thus stopped before it can collect further mutations: a barrier to cancer, so cancer usually needs the senescence brakes to be lost as well. Example: **moles** (melanocytic nevi) often carry **BRAF V600E**, the melanoma mutation, but grow only for a while and then stop for life, with features of senescence.
+:::
+
+---
+
+**9.** Describe how a stem-cell system keeps the number of cells in the gut lining constant. `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+At the bottom of each crypt sit a few **stem cells**, kept in their state by signals from their **niche** (for example **Wnt**). A stem cell divides so that, on average, one daughter stays a stem cell (**self-renewal**) and the other becomes a **transit-amplifying** cell. Transit-amplifying cells divide fast a few times as they move up, then stop dividing and **differentiate** into absorptive and secretory cells. After about **4–5 days** they reach the top and are **shed** (they die). The number of cells is constant when production at the bottom equals loss at the top; the whole lining is replaced every few days.
+:::
+
+---
+
+## VG-style questions
+
+**10. [VG]** Normal human fibroblasts are infected with a virus that makes **SV40 large T antigen**, a protein that inactivates both **p53** and **Rb**. Predict what happens to the culture over the following months, compared with uninfected cells, and explain each stage. What would you need to add to obtain a permanent cell line, and how could you test that the line has stable telomeres? `[ELO 7]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+**Uninfected** cells divide about 50 times, telomeres shorten, and at the Hayflick limit an uncapped telomere activates **p53–p21** (and p16–Rb): **senescence**. **Infected** cells have no working p53 or Rb, so they **ignore the short-telomere signal** and keep dividing past the Hayflick limit (often 20–30 extra doublings). Telomeres keep shrinking until many ends lose their caps: chromosome ends **fuse**, chromosomes break in mitosis, and most cells die (**crisis**). Only rare cells that switch on **telomerase** (or ALT) survive and form an immortal line, with abnormal chromosomes from crisis. To get a permanent line directly, also add the **TERT** gene (as in many research lines), or select a rare survivor. Test: measure telomere length over many passages (**FISH** with a TTAGGG probe or a Southern blot of terminal restriction fragments) and **telomerase activity**; telomeres should stay stable and chromosome ends should not fuse.
+:::
+
+---
+
+**11. [VG]** A company claims that its new drug "removes senescent cells and will extend human healthy lifespan". Using what you know about senescence, (a) explain why removing senescent cells might help, (b) explain how such a drug could work at the molecular level, and (c) give three reasons to be cautious. `[ELO 7]` `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+(a) Senescent cells **accumulate with age** and secrete a mix of inflammatory cytokines and proteases (**SASP**) that damage the surrounding tissue and may drive age-related disease. In **mice**, removing senescent cells genetically delayed several age-related diseases and extended lifespan. (b) Senescent cells **resist apoptosis** by relying on anti-apoptotic proteins such as **BCL-xL** (and BCL-2). A **senolytic** that blocks these proteins (navitoclax) or other survival pathways (dasatinib + quercetin) lets senescent cells die by apoptosis while most normal cells survive. (c) Caution: **mice are not people**, and human trials are small and early; one larger trial (knee osteoarthritis) failed. Senescence is also **useful**: it stops cells with oncogenes or DNA damage (a barrier to cancer) and helps wound healing. The drugs have **side effects** on normal cells that need the same proteins (navitoclax lowers **platelets**). Markers of senescent cells in human tissue are imperfect, so it is hard to measure whether the drug works. A lifespan claim needs long, controlled clinical trials.
+:::
+
+---
+
+**12. [VG]** Design an experiment to test whether a new compound slows the growth of a tumour cell line by blocking **mitogen signalling** at the receptor, rather than by killing cells. Name the measurements, the controls and the result that would support the idea. `[ELO 7]` `[ELO 1]`
+
+::: {.callout-note collapse="true" title="Model answer"}
+Grow the cells with and without the compound (several doses) and **count cells** over several days (growth curve). Separate division from death: measure **DNA content by flow cytometry** (cells pile up in G1 if they cannot pass the restriction point) or **EdU/BrdU incorporation** (fewer S-phase cells), and measure **apoptosis** (annexin V, cleaved caspase-3) to show few cells die. Show the target: **serum-starve** the cells, then add the mitogen (e.g. EGF) with or without compound and detect **phospho-EGFR** and **phospho-ERK** with phospho-specific antibodies (Western blot): the compound should block both. Controls: solvent only; a known inhibitor (e.g. erlotinib) as positive control; a cell line with an **activated RAS** mutation, which should **not** respond if the compound acts at the receptor; and a rescue by bypassing the receptor. Support: fewer cells in S phase, more in G0/G1, no rise in apoptosis, and loss of receptor and ERK phosphorylation.
+:::
+
+---
+
+## Explore {#explore}
+
+A small culture well, about 1 mm across, seen from above as in a phase-contrast microscope. Each shape is one fibroblast. Cells crawl, grow and divide (about once a day) as long as there is **serum** (mitogens) and **room**: a cell passes the restriction point only if most of its edge is free. **Passage now** does what you do in the lab: it loosens the cells and puts a random quarter of them into a fresh well (split 1:4). Each division costs the telomeres of both daughters about 70 bp; a cell with a too-short telomere becomes **senescent** (large, flat, blue as after SA-β-gal staining) if its **p53 and Rb checkpoints** work. The top graph counts cells over time; the bottom graph adds up **population doublings** at each passage (one doubling = the number of cells doubled once; the open circle is the current passage). **Colour cells by telomere length** to see the countdown. Four switches change the cells: serum, contact inhibition, telomerase (the TERT gene) and the p53/Rb checkpoints.
+
+The model is **qualitative**: illustrative numbers chosen to give textbook behaviour, one telomere length per cell instead of 92 ends, no apoptosis from lack of survival factors, and no rare escape from crisis. It opens in **real time**, so at first you will see almost nothing; culture changes take hours to days. Use the **clock speed** buttons for time-lapse. The model uses a fixed random seed, so after **Reset** and the same settings you get the same numbers as in the solutions (manual passages at different moments give slightly different numbers).
+
+```{=html}
+<link rel="stylesheet" href="../demos/dist/demo.css">
+<div data-demo="cellnumbers" data-seed="1"></div>
+<script src="../demos/dist/cellnumbers.js"></script>
+```
+
+**E1.** Press **Reset** (young fibroblasts), leave automatic passaging **off**, and choose **1 s = 6 h**. Watch for 6 days. When does the dish become confluent? Does growth stop exactly at the dashed line? What colour are the cells at the end, and what does the readout say about why they rest? Then press **Passage now**. What happens in the next two days, and why? `[ELO 7]`
+
+**E2.** *Predict first.* Press **Reset**, choose 1 s = 6 h and let the culture grow to about day 2 (about 220 cells). Then untick **Serum**. Will the number of cells stop rising at once? Watch and explain. After two more days, tick serum again. How long does it take until the first cells divide? `[ELO 7]`
+
+**E3.** Press **Reset**, tick **Passage automatically**, choose **1 s = 3 days** and let it run until the message says the culture has stopped. How many population doublings and passages did the culture manage? How does the time between passages change towards the end, and why? Switch **Colour cells by** to telomere length: what is the mean telomere length at the start and at the end, and how many base pairs were lost per doubling on average? `[ELO 7]`
+
+**E4. [VG]** *Predict first.* Repeat E3 but pause at passage 25 (about 49 doublings; about a third of the cells are already senescent) and tick **Telomerase**, then run on. What will happen to the cells that are already senescent, and to the culture as a whole? Check, and look at the mean telomere length after five more passages. Is the culture now a cancer culture? Untick **Serum** for a few days to find out, and explain. `[ELO 7]` `[ELO 9]`
+
+**E5. [VG]** *Predict first.* Press **Reset**, untick **p53 and Rb checkpoints**, tick automatic passaging and run at 1 s = 3 days. What happens near 50 doublings, and later? Which one more change would give you an immortal cell line like HeLa? Try it (Reset, set both switches). `[ELO 7]` `[ELO 9]`
+
+**E6.** Press **Reset**, untick **Contact inhibition**, leave automatic passaging off and run at 1 s = 6 h for a week. Compare with E1 (cell number, what the cells look like). Then, with automatic passaging on, does losing contact inhibition remove the Hayflick limit? `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Solutions"}
+
+**E1.** The 93 seeded cells first attach and spread (round cells, about half a day), then divide about once a day: about 108 cells on day 1, 227 on day 2, 340 on day 3. The dish is **confluent at about day 4** (about 400 cells). Growth slows as more cells touch their neighbours, and stops at about **415 cells**, slightly above the dashed line: cells that had already passed the restriction point when they became crowded still finish their cycle. At the end almost all cells are grey-beige: **resting in G0, "touching neighbours"** (contact inhibition), not senescent. After **Passage now** about 100 cells are left, spread out in a fresh well. They need some hours to attach and spread, then divide again, because each now has free edges: the stop at confluence is **reversible**.
+
+**E2.** The number does **not** stop at once: it goes on rising from about 220 to about **290 cells** over the next half day and then stops. Cells that had already passed the **restriction point** finish their cycle and divide without serum; cells before it stop and rest in **G0** (readout: "no serum"). With serum back, the first cells divide after about **15 hours** and most within about a day: a cell leaving G0 must first go through G1 and the restriction point again (in real fibroblasts, S phase starts about 12–16 h after serum is added). The cells were never damaged: serum starvation is a reversible stop, used in labs to synchronise cells.
+
+**E3.** The culture stops after about **52 population doublings** and **26 passages** (in this run the last division is around day 104, and the Hayflick message appears about a week later). In the early passages the culture gains 2 doublings per passage (a 1:4 split) every 3–4 days. From about passage 20 more and more cells become **senescent** (blue): they do not divide but are still counted, so each passage gives fewer than 2 doublings and takes longer to reach confluence; at the end the remaining cells cannot fill the dish at all. The mean telomere length falls from about **8.6 kb** to about **4.9 kb**: (8.6 − 4.9) kb / 52 doublings ≈ **70 bp per doubling**, as set in the model (real fibroblasts lose about 50–200 bp per division). Cells become senescent when their telomere falls below about 5 kb; some do so earlier, by chance (stress) or because they started with shorter telomeres.
+
+**E4.** At passage 25 about 33 of 53 cells are senescent. Telomerase does **not** rescue them: senescence is permanent, and senescent cells do not divide, so telomerase cannot lengthen their telomeres (in real cells it would not reverse the arrest either). The cells that still divide now keep their telomeres and slowly lengthen them (to about **8.6 kb** after five more passages), so the culture keeps growing (about **60 doublings by passage 30** and still 2 doublings per passage). The senescent cells are diluted away by the 1:4 splits (none left at passage 30). The culture is **immortal but not transformed**: without serum the cells stop in G0, and they still stop at confluence. Telomerase removes only the counting limit, as in the experiment of Bodnar et al.
+
+**E5.** Without checkpoints the cells **pass the Hayflick limit**: no cell becomes senescent, and the culture goes on at 2 doublings per passage although telomeres keep shrinking (about 3.2 kb at 80 doublings). When telomeres become very short (below about 3 kb) more and more cells die (grey, chromosome fusions in **crisis**); passages take longer, and the whole culture is dead at about **88 doublings** (day 185 in this run). In real cultures a very rare cell (about 1 in 10⁷) escapes crisis by switching on telomerase; the model leaves this out. With **no checkpoints and telomerase**, telomeres stay at about 9 kb and the culture grows without limit (over 100 doublings by day 150): an immortal line. HeLa did the same: HPV18 E6 and E7 inactivate p53 and Rb, and telomerase is active.
+
+**E6.** Without contact inhibition the cells **do not stop** at confluence: they go on dividing (about 520 cells on day 3, 1100 on day 4) and pile on top of each other (darker, overlapping shapes), until about **1650 cells** (more than four layers' worth) when the model's medium is used up (readout: "medium used up"). With automatic passaging, the culture still stops after about **53 doublings**: the cells still count their divisions and still have p53/Rb. Losing contact inhibition (transformation) and escaping senescence (immortalisation) are **separate steps**; a cancer usually needs both.
+:::

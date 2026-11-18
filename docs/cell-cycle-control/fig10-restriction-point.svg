@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="400" viewBox="0 0 1100 400" font-family="Helvetica, Arial, sans-serif">
+<!-- fig10: the restriction point experiment (schematic, after Pardee 1974 and Zetterberg and Larsson 1985). Cells filmed after mitosis; mitogens (serum) removed at different times. Removed early: the cell stops in G1 and leaves the cycle (G0). Removed after the restriction point: the cell enters S and divides anyway. Times are typical for fibroblasts in culture. -->
+<defs>
+<marker id="ao" markerWidth="16" markerHeight="16" refX="7" refY="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L14,8 L0,15 Z" fill="#e8590c"/></marker>
+</defs>
+<!-- time axis: x = 200 + 50*h -->
+<line x1="200" y1="300" x2="1060" y2="300" stroke="#1b2a3a" stroke-width="2"/>
+<g font-size="15" fill="#1b2a3a" text-anchor="middle">
+<line x1="200" y1="300" x2="200" y2="307" stroke="#1b2a3a" stroke-width="2"/><text x="200" y="326">0</text>
+<line x1="400" y1="300" x2="400" y2="307" stroke="#1b2a3a" stroke-width="2"/><text x="400" y="326">4</text>
+<line x1="600" y1="300" x2="600" y2="307" stroke="#1b2a3a" stroke-width="2"/><text x="600" y="326">8</text>
+<line x1="800" y1="300" x2="800" y2="307" stroke="#1b2a3a" stroke-width="2"/><text x="800" y="326">12</text>
+<line x1="1000" y1="300" x2="1000" y2="307" stroke="#1b2a3a" stroke-width="2"/><text x="1000" y="326">16</text>
+</g>
+<text x="630" y="352" font-size="16" text-anchor="middle" fill="#1b2a3a">hours after the cell was born (end of mitosis)</text>
+<!-- restriction point line -->
+<line x1="375" y1="50" x2="375" y2="300" stroke="#1b2a3a" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="375" y="38" font-size="17" font-weight="bold" text-anchor="middle" fill="#1b2a3a">restriction point (about 3–4 h)</text>
+<!-- row 1 -->
+<text x="185" y="104" font-size="16" text-anchor="end" fill="#1b2a3a">serum removed</text>
+<text x="185" y="124" font-size="16" text-anchor="end" fill="#1b2a3a">at 2 h</text>
+<rect x="200" y="92" width="100" height="32" fill="#f4c7c7" stroke="#c92a2a" stroke-width="2"/>
+<rect x="300" y="92" width="760" height="32" fill="#e9ecef" stroke="#868e96" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="250" y="114" font-size="15" text-anchor="middle" fill="#c92a2a" font-weight="bold">G1</text>
+<text x="680" y="114" font-size="16" text-anchor="middle" fill="#495057">stops: leaves the cycle (G0) until serum comes back</text>
+<line x1="300" y1="70" x2="300" y2="88" stroke="#e8590c" stroke-width="3" marker-end="url(#ao)"/>
+<!-- row 2 -->
+<text x="185" y="214" font-size="16" text-anchor="end" fill="#1b2a3a">serum removed</text>
+<text x="185" y="234" font-size="16" text-anchor="end" fill="#1b2a3a">at 6 h</text>
+<rect x="200" y="202" width="400" height="32" fill="#f4c7c7" stroke="#c92a2a" stroke-width="2"/>
+<rect x="600" y="202" width="400" height="32" fill="#c9e8cf" stroke="#2b8a3e" stroke-width="2"/>
+<rect x="1000" y="202" width="60" height="32" fill="#b2dfbb" stroke="#2b8a3e" stroke-width="2"/>
+<text x="400" y="224" font-size="15" text-anchor="middle" fill="#c92a2a" font-weight="bold">G1</text>
+<text x="800" y="224" font-size="15" text-anchor="middle" fill="#2b8a3e" font-weight="bold">S: copies its DNA anyway</text>
+<text x="1030" y="224" font-size="15" text-anchor="middle" fill="#2b8a3e" font-weight="bold">G2</text>
+<line x1="500" y1="180" x2="500" y2="198" stroke="#e8590c" stroke-width="3" marker-end="url(#ao)"/>
+<text x="508" y="176" font-size="15" fill="#e8590c">serum out</text>
+<text x="308" y="66" font-size="15" fill="#e8590c">serum out</text>
+<text x="630" y="270" font-size="16" text-anchor="middle" fill="#1b2a3a">After the restriction point, the cell finishes the cycle without mitogens.</text>
+</svg>

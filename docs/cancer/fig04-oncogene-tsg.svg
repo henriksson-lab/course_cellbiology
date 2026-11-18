@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" font-family="Helvetica, Arial, sans-serif" fill="#1b2a3a">
+  <!-- left: oncogene -->
+  <rect x="10" y="10" width="530" height="450" rx="14" fill="#fbfaf5" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="275" y="46" font-size="24" font-weight="700" text-anchor="middle">Oncogene</text>
+  <text x="275" y="74" font-size="17" text-anchor="middle">gain of function: an accelerator stuck down</text>
+  <!-- chromosome pair -->
+  <g>
+    <rect x="60" y="110" width="300" height="34" rx="17" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+    <rect x="190" y="110" width="40" height="34" fill="#2b8a3e"/>
+    <text x="380" y="134" font-size="16">normal copy</text>
+    <rect x="60" y="170" width="300" height="34" rx="17" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+    <rect x="190" y="170" width="40" height="34" fill="#e8590c"/>
+    <text x="380" y="186" font-size="16">activated</text>
+    <text x="380" y="204" font-size="16">copy</text>
+  </g>
+  <rect x="60" y="232" width="430" height="56" rx="10" fill="#fff" stroke="#e8590c" stroke-width="2"/>
+  <text x="275" y="256" font-size="18" font-weight="700" text-anchor="middle">one hit is enough (dominant in the cell)</text>
+  <text x="275" y="279" font-size="16" text-anchor="middle">the active protein overrides the normal one</text>
+  <text x="40" y="324" font-size="17" font-weight="700">How a proto-oncogene is activated</text>
+  <text x="40" y="350" font-size="16">• point mutation: RAS G12, BRAF V600E</text>
+  <text x="40" y="374" font-size="16">• more copies (amplification): HER2, MYC</text>
+  <text x="40" y="398" font-size="16">• fusion by translocation: BCR-ABL</text>
+  <text x="40" y="436" font-size="16" fill="#555">Normal job: tell the cell to grow, divide, survive</text>
+
+  <!-- right: tumour suppressor -->
+  <rect x="560" y="10" width="530" height="450" rx="14" fill="#fbfaf5" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="825" y="46" font-size="24" font-weight="700" text-anchor="middle">Tumour suppressor</text>
+  <text x="825" y="74" font-size="17" text-anchor="middle">loss of function: a broken brake</text>
+  <g>
+    <rect x="610" y="110" width="300" height="34" rx="17" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+    <rect x="740" y="110" width="40" height="34" fill="#c9ced6"/>
+    <path d="M742 112 L778 142 M778 112 L742 142" stroke="#e8590c" stroke-width="4"/>
+    <text x="930" y="134" font-size="16">hit 1</text>
+    <rect x="610" y="170" width="300" height="34" rx="17" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+    <rect x="740" y="170" width="40" height="34" fill="#c9ced6"/>
+    <path d="M742 172 L778 202 M778 172 L742 202" stroke="#e8590c" stroke-width="4"/>
+    <text x="930" y="194" font-size="16">hit 2</text>
+  </g>
+  <rect x="610" y="232" width="430" height="56" rx="10" fill="#fff" stroke="#e8590c" stroke-width="2"/>
+  <text x="825" y="256" font-size="18" font-weight="700" text-anchor="middle">both copies must go (recessive in the cell)</text>
+  <text x="825" y="279" font-size="16" text-anchor="middle">one working copy still brakes</text>
+  <text x="590" y="324" font-size="17" font-weight="700">How a tumour suppressor is lost</text>
+  <text x="590" y="350" font-size="16">• deletion or a stop (nonsense) mutation</text>
+  <text x="590" y="374" font-size="16">• loss of the second copy ("loss of heterozygosity")</text>
+  <text x="590" y="398" font-size="16">• promoter silenced by DNA methylation</text>
+  <text x="590" y="436" font-size="16" fill="#555">Examples: RB1, TP53, APC, BRCA1/2, p16</text>
+</svg>

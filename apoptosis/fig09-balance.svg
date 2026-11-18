@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 396" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="t" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M5,0 L5,10" stroke="#1b2a3a" stroke-width="3"/></marker>
+  </defs>
+  <!-- inputs -->
+  <text x="20" y="28" font-size="18" font-weight="700">Signals that make BH3-only proteins</text>
+  <g font-size="16">
+    <rect x="20" y="44" width="300" height="56" rx="8" fill="#fff" stroke="#6b4fa0"/>
+    <text x="34" y="67">DNA damage → p53 → genes for</text><text x="34" y="89"><tspan font-weight="700">PUMA</tspan> and <tspan font-weight="700">NOXA</tspan></text>
+    <rect x="20" y="112" width="300" height="56" rx="8" fill="#fff" stroke="#1b2a3a"/>
+    <text x="34" y="135">no growth factor → more <tspan font-weight="700">BIM</tspan>;</text><text x="34" y="157">Akt off → <tspan font-weight="700">BAD</tspan> released</text>
+    <rect x="20" y="180" width="300" height="56" rx="8" fill="#fff" stroke="#2a7f8f"/>
+    <text x="34" y="203">ER stress (UPR), oncogenes,</text><text x="34" y="225">cytokine loss → more BH3-only</text>
+    <rect x="20" y="248" width="300" height="56" rx="8" fill="#fff" stroke="#c92a2a"/>
+    <text x="34" y="271">death receptors → caspase-8</text><text x="34" y="293">cuts BID → <tspan font-weight="700">tBID</tspan></text>
+  </g>
+  <line x1="324" y1="175" x2="420" y2="175" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a)"/>
+  <!-- balance beam -->
+  <g transform="translate(710 230)">
+    <polygon points="0,0 -26,60 26,60" fill="#d9d9d9" stroke="#555" stroke-width="2"/>
+    <g transform="rotate(-8)">
+      <rect x="-250" y="-8" width="500" height="10" rx="4" fill="#555"/>
+      <rect x="-250" y="-62" width="60" height="52" rx="8" fill="#d6336c"/><text x="-220" y="-30" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">BH3</text>
+      <rect x="-186" y="-62" width="60" height="52" rx="8" fill="#d6336c"/><text x="-156" y="-30" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">BH3</text>
+      <rect x="-218" y="-118" width="60" height="52" rx="8" fill="#7b3fbf"/><text x="-188" y="-87" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">BAX/BAK</text>
+      <rect x="126" y="-62" width="60" height="52" rx="8" fill="#2a78d6"/><text x="156" y="-30" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">BCL-2</text>
+      <rect x="190" y="-62" width="60" height="52" rx="8" fill="#1baf7a"/><text x="220" y="-30" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">MCL-1</text>
+    </g>
+  </g>
+  <text x="480" y="300" font-size="17" font-weight="700" fill="#b02a5b">death</text>
+  <text x="900" y="232" font-size="17" font-weight="700" fill="#1d5fae">survival</text>
+  <!-- threshold result -->
+  <rect x="400" y="312" width="680" height="76" rx="10" fill="#f8e9ec" stroke="#a8324a"/>
+  <text x="740" y="341" text-anchor="middle" font-size="17">When BH3-only proteins outnumber the guardians, free BAX/BAK</text>
+  <text x="740" y="367" text-anchor="middle" font-size="17" font-weight="700">crosses a threshold → MOMP: all or none, no way back.</text>
+</svg>

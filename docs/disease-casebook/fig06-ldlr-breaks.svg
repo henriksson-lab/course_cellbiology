@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1b2a3a"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2e8b57"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c92a2a"/></marker>
+  </defs>
+  <rect width="1000" height="440" fill="#ffffff"/>
+  <text x="20" y="26" font-size="17" font-weight="700" fill="#1b2a3a">blood</text>
+  <text x="20" y="120" font-size="17" font-weight="700" fill="#1b2a3a">liver cell</text>
+
+  <!-- membrane with a coated pit at x=500 -->
+  <path d="M10 72 H462 Q470 72 474 84 Q500 136 526 84 Q530 72 538 72 H990 V92 H540 Q534 92 532 100 Q500 160 468 100 Q466 92 460 92 H10 Z" fill="#f6f0de" stroke="#8a6a12" stroke-width="2"/>
+  <!-- clathrin bristles -->
+  <g stroke="#555555" stroke-width="2">
+    <path d="M478 108 l-10 6"/><path d="M486 124 l-8 9"/><path d="M500 132 l0 12"/><path d="M514 124 l8 9"/><path d="M522 108 l10 6"/>
+  </g>
+  <text x="474" y="150" text-anchor="end" font-size="15" fill="#555555">coated pit</text>
+
+  <!-- receptors at surface, with LDL -->
+  <g stroke="#1b2a3a" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M330 92 V60 M322 52 q8 12 16 0"/>
+    <path d="M490 118 l-4 -22 M480 92 q6 10 14 2"/>
+  </g>
+  <circle cx="488" cy="80" r="10" fill="#f2c94c" stroke="#b5a24a" stroke-width="1.5"/>
+  <circle cx="330" cy="40" r="11" fill="#f2c94c" stroke="#b5a24a" stroke-width="1.5"/>
+  <circle cx="420" cy="30" r="11" fill="#f2c94c" stroke="#b5a24a" stroke-width="1.5"/>
+  <circle cx="250" cy="32" r="11" fill="#f2c94c" stroke="#b5a24a" stroke-width="1.5"/>
+  <text x="200" y="38" text-anchor="end" font-size="16" fill="#8a6a12" font-weight="700">LDL</text>
+
+  <!-- PCSK9 and antibody in blood -->
+  <path d="M770 30 l10 -10 l10 10 l-10 10 z" fill="#495057"/>
+  <text x="800" y="36" font-size="16" fill="#495057" font-weight="700">PCSK9</text>
+  <g stroke="#e8590c" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M900 52 V34 M900 34 l-12 -14 M900 34 l12 -14"/>
+  </g>
+  <text x="922" y="40" font-size="15" fill="#e8590c" font-weight="700">anti-</text>
+  <text x="922" y="58" font-size="15" fill="#e8590c" font-weight="700">PCSK9</text>
+  <path d="M780 44 Q776 56 790 66" fill="none" stroke="#495057" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+
+  <!-- ER and Golgi -->
+  <rect x="60" y="300" width="170" height="80" rx="20" fill="#e6f3f5" stroke="#2a7f8f" stroke-width="2.5"/>
+  <text x="145" y="346" text-anchor="middle" font-size="17" font-weight="700" fill="#2a7f8f">ER</text>
+  <g fill="#fbeedd" stroke="#d9822b" stroke-width="2.2">
+    <path d="M272 250 q-12 40 0 80 l10 0 q-12 -40 0 -80 z"/>
+    <path d="M294 250 q-12 40 0 80 l10 0 q-12 -40 0 -80 z"/>
+  </g>
+  <text x="290" y="350" text-anchor="middle" font-size="16" font-weight="700" fill="#d9822b">Golgi</text>
+  <path d="M232 320 L262 300" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M308 250 Q328 170 330 100" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="336" y="236" font-size="15" fill="#1b2a3a">new receptor</text>
+
+  <!-- endosome, recycling, lysosome -->
+  <circle cx="620" cy="236" r="52" fill="#e3f3ea" stroke="#2e8b57" stroke-width="2.5"/>
+  <text x="620" y="241" text-anchor="middle" font-size="16" font-weight="700" fill="#2e8b57">endosome</text>
+  <path d="M514 150 Q530 210 566 228" fill="none" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <path d="M660 202 Q705 150 720 96" fill="none" stroke="#2e8b57" stroke-width="3" marker-end="url(#arg)"/>
+  <text x="712" y="170" font-size="15" font-weight="700" fill="#2e8b57">receptor recycles</text>
+  <text x="712" y="188" font-size="15" fill="#2e8b57">(every ~10 min)</text>
+  <circle cx="620" cy="384" r="46" fill="#e3f3ea" stroke="#2e8b57" stroke-width="2.5"/>
+  <text x="620" y="389" text-anchor="middle" font-size="16" font-weight="700" fill="#2e8b57">lysosome</text>
+  <path d="M620 290 L620 334" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="600" y="318" text-anchor="end" font-size="15" fill="#1b2a3a">LDL → cholesterol</text>
+
+  <!-- breaks -->
+  <g font-size="16">
+    <text x="60" y="410" font-weight="700" fill="#c92a2a">1. No receptor made</text>
+    <text x="60" y="430" fill="#1b2a3a">(LDLR gene broken)</text>
+    <path d="M150 396 L150 384" stroke="#c92a2a" stroke-width="2"/>
+    <path d="M544 30 Q530 40 524 66" fill="none" stroke="#c92a2a" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="548" y="26" font-weight="700" fill="#c92a2a">2. Tail mutation:</text>
+    <text x="548" y="46" fill="#1b2a3a">binds LDL, not taken in</text>
+    <text x="720" y="268" font-weight="700" fill="#c92a2a">3. PCSK9 bound:</text>
+    <text x="720" y="288" fill="#1b2a3a">receptor goes to the</text>
+    <text x="720" y="308" fill="#1b2a3a">lysosome, not back up</text>
+    <path d="M668 258 Q706 310 664 368" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+  </g>
+  <text x="60" y="268" font-size="16" font-weight="700" fill="#e8590c">statin:</text><text x="60" y="288" font-size="16" font-weight="700" fill="#e8590c">more receptors made</text>
+</svg>

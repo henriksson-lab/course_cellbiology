@@ -33,6 +33,16 @@ units in the same repo at the same time.
 `demos/demo.css`, other units, other demos, plan files. The coordinator adds your
 sidebar entries, glossary entries and credits section afterwards from your report.
 
+## Scratch space and processes
+
+- Use **only your own scratch subfolder**: `<scratchpad>/<unit>/` (create it). Never
+  write to the scratchpad root or to other workers' folders.
+- Never kill processes by pattern (`pkill -f …`, `killall`). Stop only processes
+  you started, by their PID.
+- Wikimedia Commons rate-limits many parallel workers (HTTP 429): batch API calls
+  (several titles per request), wait and retry with back-off, and do not let a
+  missing optional image block you; use a diagram instead and say so in the report.
+
 ## Building and checking in a shared repo
 
 - Build only your demo: `demos/build.sh <demo>` (not `make demos`). Typecheck:

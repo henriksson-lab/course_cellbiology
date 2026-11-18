@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+  </defs>
+  <!-- left: mTORC1 hub -->
+  <text x="20" y="40">growth factors (via Akt)</text>
+  <text x="20" y="85">amino acids</text>
+  <text x="20" y="130">energy (ATP)</text>
+  <text x="20" y="175">oxygen</text>
+  <line x1="215" y1="35" x2="268" y2="88" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="125" y1="80" x2="264" y2="98" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="130" y1="125" x2="264" y2="112" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="88" y1="170" x2="268" y2="122" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <rect x="270" y="80" width="110" height="50" rx="10" fill="#fff" stroke="#1b2a3a" stroke-width="3"/>
+  <text x="325" y="111" text-anchor="middle" font-weight="bold">mTORC1</text>
+  <line x1="325" y1="132" x2="325" y2="178" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="325" y="202" text-anchor="middle">more ribosomes,</text>
+  <text x="325" y="222" text-anchor="middle">protein and lipid</text>
+  <text x="325" y="242" text-anchor="middle">synthesis; less autophagy</text>
+  <text x="325" y="268" text-anchor="middle" font-weight="bold">= cell GROWTH (mass)</text>
+  <!-- rapamycin -->
+  <line x1="405" y1="62" x2="385" y2="84" stroke="#e8590c" stroke-width="3"/>
+  <line x1="378" y1="78" x2="392" y2="90" stroke="#e8590c" stroke-width="3"/>
+  <text x="410" y="58" fill="#e8590c" font-weight="bold">rapamycin</text>
+  <text x="20" y="320" font-size="15" fill="#555">Growth and division are separate controls;</text>
+  <text x="20" y="340" font-size="15" fill="#555">normally they are coupled, so daughters keep the same size.</text>
+  <!-- right: three cases -->
+  <line x1="505" y1="15" x2="505" y2="355" stroke="#ccc" stroke-width="1.5"/>
+  <text x="530" y="45" font-weight="bold">grow + divide</text>
+  <ellipse cx="560" cy="85" rx="24" ry="18" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/><circle cx="560" cy="85" r="7" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+  <line x1="590" y1="85" x2="625" y2="85" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <ellipse cx="665" cy="85" rx="34" ry="25" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/><circle cx="665" cy="85" r="9" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+  <line x1="705" y1="85" x2="740" y2="85" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <ellipse cx="772" cy="85" rx="24" ry="18" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/><circle cx="772" cy="85" r="7" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+  <ellipse cx="830" cy="85" rx="24" ry="18" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/><circle cx="830" cy="85" r="7" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+  <text x="530" y="160" font-weight="bold">divide, no growth</text>
+  <text x="700" y="160" font-size="15" fill="#555">(early embryo)</text>
+  <ellipse cx="575" cy="205" rx="40" ry="30" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/><circle cx="575" cy="205" r="9" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+  <line x1="622" y1="205" x2="657" y2="205" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <g fill="#fbfaf5" stroke="#8a6a12" stroke-width="2">
+    <circle cx="680" cy="195" r="11"/><circle cx="703" cy="195" r="11"/><circle cx="680" cy="217" r="11"/><circle cx="703" cy="217" r="11"/>
+  </g>
+  <text x="730" y="211" font-size="15">smaller cells</text>
+  <text x="530" y="275" font-weight="bold">grow, no division</text>
+  <text x="700" y="275" font-size="15" fill="#555">(muscle, neurons)</text>
+  <ellipse cx="560" cy="318" rx="24" ry="18" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/><circle cx="560" cy="318" r="7" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+  <line x1="590" y1="318" x2="625" y2="318" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <ellipse cx="700" cy="318" rx="68" ry="38" fill="#fbfaf5" stroke="#8a6a12" stroke-width="2"/><circle cx="700" cy="318" r="10" fill="#efebf7" stroke="#6b4fa0" stroke-width="2"/>
+  <text x="776" y="324" font-size="15">larger cell</text>
+</svg>

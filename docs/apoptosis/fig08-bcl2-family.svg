@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 422" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#1b2a3a">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="t" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M5,0 L5,10" stroke="#1b2a3a" stroke-width="3"/></marker>
+  </defs>
+  <!-- three columns -->
+  <g>
+    <rect x="10" y="10" width="340" height="215" rx="12" fill="#fdebf1" stroke="#d6336c" stroke-width="2"/>
+    <text x="180" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#b02a5b">Sensors (BH3-only)</text>
+    <rect x="60" y="62" width="240" height="22" rx="4" fill="#fff" stroke="#1b2a3a"/>
+    <rect x="150" y="62" width="44" height="22" fill="#d6336c"/><text x="172" y="79" text-anchor="middle" font-size="14" fill="#fff">BH3</text>
+    <text x="180" y="122" text-anchor="middle" font-weight="700">BIM, BID, PUMA, NOXA, BAD</text>
+    <text x="180" y="156" text-anchor="middle" font-size="16">switched on by stress;</text>
+    <text x="180" y="178" text-anchor="middle" font-size="16">one short helix (BH3) does</text>
+    <text x="180" y="200" text-anchor="middle" font-size="16">the work</text>
+  </g>
+  <g>
+    <rect x="380" y="10" width="340" height="215" rx="12" fill="#e7f0fb" stroke="#2a78d6" stroke-width="2"/>
+    <text x="550" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#1d5fae">Guardians (anti-death)</text>
+    <rect x="420" y="62" width="260" height="22" rx="4" fill="#fff" stroke="#1b2a3a"/>
+    <g fill="#2a78d6"><rect x="432" y="62" width="34" height="22"/><rect x="500" y="62" width="34" height="22"/><rect x="556" y="62" width="34" height="22"/><rect x="606" y="62" width="34" height="22"/></g>
+    <rect x="652" y="62" width="28" height="22" fill="#8a6a12"/>
+    <g font-size="12" fill="#fff" text-anchor="middle"><text x="449" y="78">BH4</text><text x="517" y="78">BH3</text><text x="573" y="78">BH1</text><text x="623" y="78">BH2</text><text x="666" y="78">TM</text></g>
+    <text x="550" y="122" text-anchor="middle" font-weight="700">BCL-2, BCL-XL, MCL-1</text>
+    <text x="550" y="156" text-anchor="middle" font-size="16">a groove on the surface</text>
+    <text x="550" y="178" text-anchor="middle" font-size="16">grabs the BH3 helix of the</text>
+    <text x="550" y="200" text-anchor="middle" font-size="16">other two groups</text>
+  </g>
+  <g>
+    <rect x="750" y="10" width="340" height="215" rx="12" fill="#f1eafa" stroke="#7b3fbf" stroke-width="2"/>
+    <text x="920" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#7b3fbf">Effectors (pore makers)</text>
+    <rect x="800" y="62" width="240" height="22" rx="4" fill="#fff" stroke="#1b2a3a"/>
+    <g fill="#7b3fbf"><rect x="860" y="62" width="34" height="22"/><rect x="916" y="62" width="34" height="22"/><rect x="966" y="62" width="34" height="22"/></g>
+    <rect x="1012" y="62" width="28" height="22" fill="#8a6a12"/>
+    <g font-size="12" fill="#fff" text-anchor="middle"><text x="877" y="78">BH3</text><text x="933" y="78">BH1</text><text x="983" y="78">BH2</text><text x="1026" y="78">TM</text></g>
+    <text x="920" y="122" text-anchor="middle" font-weight="700">BAX, BAK</text>
+    <text x="920" y="156" text-anchor="middle" font-size="16">once activated, they gather</text>
+    <text x="920" y="178" text-anchor="middle" font-size="16">in the outer mitochondrial</text>
+    <text x="920" y="200" text-anchor="middle" font-size="16">membrane and make pores</text>
+  </g>
+  <!-- interaction line -->
+  <g transform="translate(0 260)">
+    <rect x="80" y="40" width="200" height="50" rx="25" fill="#d6336c"/><text x="180" y="71" text-anchor="middle" fill="#fff" font-weight="700">BH3-only</text>
+    <rect x="450" y="40" width="200" height="50" rx="25" fill="#2a78d6"/><text x="550" y="71" text-anchor="middle" fill="#fff" font-weight="700">guardians</text>
+    <rect x="820" y="40" width="200" height="50" rx="25" fill="#7b3fbf"/><text x="920" y="71" text-anchor="middle" fill="#fff" font-weight="700">BAX/BAK</text>
+    <line x1="284" y1="65" x2="440" y2="65" stroke="#1b2a3a" stroke-width="3" marker-end="url(#t)"/>
+    <line x1="654" y1="65" x2="810" y2="65" stroke="#1b2a3a" stroke-width="3" marker-end="url(#t)"/>
+    <text x="362" y="56" text-anchor="middle" font-size="15">block</text>
+    <text x="732" y="56" text-anchor="middle" font-size="15">hold back</text>
+    <path d="M180,94 Q180,152 550,152 Q920,152 920,98" fill="none" stroke="#1b2a3a" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a)"/>
+    <text x="550" y="138" text-anchor="middle" font-size="15">BIM and tBID can also switch BAX/BAK on directly</text>
+    <line x1="1024" y1="65" x2="1080" y2="65" stroke="#1b2a3a" stroke-width="3" marker-end="url(#a)"/>
+    <text x="1080" y="40" text-anchor="end" font-size="16" font-weight="700" fill="#a8324a">MOMP</text>
+  </g>
+</svg>

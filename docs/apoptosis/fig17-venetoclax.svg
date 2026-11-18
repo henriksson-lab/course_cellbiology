@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1b2a3a">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker></defs>
+  <text x="180" y="26" text-anchor="middle" font-size="18" font-weight="700">CLL cell: alive, but primed</text>
+  <g transform="translate(180 120)">
+    <path d="M-80,-50 L80,-50 Q100,-50 100,-30 L100,50 Q100,70 80,70 L-80,70 Q-100,70 -100,50 L-100,-30 Q-100,-50 -80,-50 Z M-30,-50 L-30,-10 Q-30,4 -16,4 L16,4 Q30,4 30,-10 L30,-50 Z" fill="#2a78d6" fill-rule="evenodd"/>
+    <text x="0" y="46" text-anchor="middle" fill="#fff" font-weight="700" font-size="18">BCL-2</text>
+    <rect x="-24" y="-62" width="48" height="62" rx="20" fill="#d6336c"/>
+    <text x="0" y="-26" text-anchor="middle" fill="#fff" font-weight="700" font-size="15">BIM</text>
+  </g>
+  <text x="180" y="225" text-anchor="middle">lots of BCL-2 holds lots of BIM</text>
+  <rect x="120" y="244" width="120" height="40" rx="20" fill="#d9cfee" stroke="#7b3fbf" stroke-dasharray="5 3"/>
+  <text x="180" y="270" text-anchor="middle" fill="#7b3fbf" font-weight="700">BAX/BAK off</text>
+
+  <line x1="355" y1="140" x2="430" y2="140" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="392" y="124" text-anchor="middle" font-weight="700" fill="#e8590c">+ venetoclax</text>
+
+  <text x="610" y="26" text-anchor="middle" font-size="18" font-weight="700">Venetoclax: a BH3 mimetic</text>
+  <g transform="translate(560 120)">
+    <path d="M-80,-50 L80,-50 Q100,-50 100,-30 L100,50 Q100,70 80,70 L-80,70 Q-100,70 -100,50 L-100,-30 Q-100,-50 -80,-50 Z M-30,-50 L-30,-10 Q-30,4 -16,4 L16,4 Q30,4 30,-10 L30,-50 Z" fill="#2a78d6" fill-rule="evenodd"/>
+    <text x="0" y="46" text-anchor="middle" fill="#fff" font-weight="700" font-size="18">BCL-2</text>
+    <path d="M-26,-60 L26,-60 L26,-6 L-26,-6 Z" fill="#e8590c"/>
+    <path d="M-20,-48 L-8,-36 L8,-48 L20,-36" fill="none" stroke="#fff" stroke-width="3"/>
+  </g>
+  <rect x="680" y="70" width="48" height="62" rx="20" fill="#d6336c"/>
+  <text x="704" y="106" text-anchor="middle" fill="#fff" font-weight="700" font-size="15">BIM</text>
+  <text x="704" y="152" text-anchor="middle" font-size="15">set free</text>
+  <line x1="704" y1="160" x2="704" y2="238" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="640" y="244" width="130" height="40" rx="20" fill="#7b3fbf"/>
+  <text x="705" y="270" text-anchor="middle" fill="#fff" font-weight="700">BAX/BAK on</text>
+  <text x="500" y="225" text-anchor="middle" font-size="15">the drug sits in the groove</text>
+  <text x="500" y="245" text-anchor="middle" font-size="15">where BH3 helices bind</text>
+  <text x="704" y="318" text-anchor="middle" font-weight="700" fill="#a8324a">MOMP → apoptosis</text>
+  <line x1="704" y1="288" x2="704" y2="300" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="400" y="350" text-anchor="middle" font-size="15">Venetoclax binds BCL-2 thousands of times more tightly than BCL-XL, and hardly binds MCL-1.</text>
+</svg>

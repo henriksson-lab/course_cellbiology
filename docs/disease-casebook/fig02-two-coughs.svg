@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 410" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1b2a3a"/></marker>
+    <marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2b8a3e"/></marker>
+  </defs>
+  <rect width="1100" height="410" fill="#ffffff"/>
+
+  <!-- ===== panel 1: healthy ===== -->
+  <g>
+    <text x="175" y="28" text-anchor="middle" font-size="21" font-weight="700" fill="#1b2a3a">Healthy airway</text>
+    <!-- mucus -->
+    <rect x="15" y="130" width="320" height="30" rx="6" fill="#ece3b4" stroke="#b5a24a" stroke-width="1.5"/>
+    <text x="175" y="151" text-anchor="middle" font-size="15" fill="#6b5a10">mucus</text>
+    <!-- liquid layer -->
+    <rect x="15" y="160" width="320" height="50" fill="#dceefa"/>
+    <!-- cilia upright, tilted (beating) -->
+    <g stroke="#555555" stroke-width="2.2" stroke-linecap="round" fill="none">
+      <path d="M27 210 q4 -24 12 -46"/><path d="M47 210 q4 -24 12 -46"/><path d="M67 210 q4 -24 12 -46"/><path d="M87 210 q4 -24 12 -46"/>
+      <path d="M107 210 q4 -24 12 -46"/><path d="M127 210 q4 -24 12 -46"/><path d="M147 210 q4 -24 12 -46"/><path d="M167 210 q4 -24 12 -46"/>
+      <path d="M187 210 q4 -24 12 -46"/><path d="M207 210 q4 -24 12 -46"/><path d="M227 210 q4 -24 12 -46"/><path d="M247 210 q4 -24 12 -46"/>
+      <path d="M267 210 q4 -24 12 -46"/><path d="M287 210 q4 -24 12 -46"/><path d="M307 210 q4 -24 12 -46"/>
+    </g>
+    <!-- cells -->
+    <g fill="#fbfaf5" stroke="#8a6a12" stroke-width="2">
+      <rect x="15" y="210" width="80" height="100"/><rect x="95" y="210" width="80" height="100"/><rect x="175" y="210" width="80" height="100"/><rect x="255" y="210" width="80" height="100"/>
+    </g>
+    <g fill="#efebf7" stroke="#6b4fa0" stroke-width="1.6">
+      <ellipse cx="55" cy="275" rx="16" ry="20"/><ellipse cx="135" cy="275" rx="16" ry="20"/><ellipse cx="215" cy="275" rx="16" ry="20"/><ellipse cx="295" cy="275" rx="16" ry="20"/>
+    </g>
+    <!-- Cl- out and water -->
+    <path d="M135 248 L135 222" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arg)"/>
+    <text x="147" y="244" font-size="15" font-weight="700" fill="#2b8a3e">Cl<tspan dy="-6" font-size="12">−</tspan></text>
+    <path d="M215 248 L215 222" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arg)"/>
+    <text x="227" y="244" font-size="15" font-weight="700" fill="#2b8a3e">Cl<tspan dy="-6" font-size="12">−</tspan></text>
+    <!-- mucus moves -->
+    <path d="M90 104 L260 104" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+    <text x="175" y="92" text-anchor="middle" font-size="16" fill="#1b2a3a">mucus carried out</text>
+    <text x="175" y="342" text-anchor="middle" font-size="16" fill="#1b2a3a">Chloride secreted, water follows:</text>
+    <text x="175" y="364" text-anchor="middle" font-size="16" fill="#1b2a3a">deep liquid layer; cilia beat</text>
+  </g>
+
+  <!-- ===== panel 2: child A ===== -->
+  <g transform="translate(375,0)">
+    <text x="175" y="28" text-anchor="middle" font-size="21" font-weight="700" fill="#1b2a3a">Child A: salty sweat</text>
+    <rect x="15" y="140" width="320" height="58" rx="6" fill="#e3d69a" stroke="#b5a24a" stroke-width="1.5"/>
+    <text x="175" y="174" text-anchor="middle" font-size="15" fill="#6b5a10">thick, dry mucus</text>
+    <rect x="15" y="198" width="320" height="12" fill="#dceefa"/>
+    <!-- cilia flattened -->
+    <g stroke="#555555" stroke-width="2.2" stroke-linecap="round" fill="none">
+      <path d="M27 210 q6 -8 18 -10"/><path d="M47 210 q6 -8 18 -10"/><path d="M67 210 q6 -8 18 -10"/><path d="M87 210 q6 -8 18 -10"/>
+      <path d="M107 210 q6 -8 18 -10"/><path d="M127 210 q6 -8 18 -10"/><path d="M147 210 q6 -8 18 -10"/><path d="M167 210 q6 -8 18 -10"/>
+      <path d="M187 210 q6 -8 18 -10"/><path d="M207 210 q6 -8 18 -10"/><path d="M227 210 q6 -8 18 -10"/><path d="M247 210 q6 -8 18 -10"/>
+      <path d="M267 210 q6 -8 18 -10"/><path d="M287 210 q6 -8 18 -10"/><path d="M307 210 q6 -8 18 -10"/>
+    </g>
+    <g fill="#fbfaf5" stroke="#8a6a12" stroke-width="2">
+      <rect x="15" y="210" width="80" height="100"/><rect x="95" y="210" width="80" height="100"/><rect x="175" y="210" width="80" height="100"/><rect x="255" y="210" width="80" height="100"/>
+    </g>
+    <g fill="#efebf7" stroke="#6b4fa0" stroke-width="1.6">
+      <ellipse cx="55" cy="275" rx="16" ry="20"/><ellipse cx="135" cy="275" rx="16" ry="20"/><ellipse cx="215" cy="275" rx="16" ry="20"/><ellipse cx="295" cy="275" rx="16" ry="20"/>
+    </g>
+    <!-- no Cl- -->
+    <text x="124" y="244" font-size="15" font-weight="700" fill="#2b8a3e">Cl<tspan dy="-6" font-size="12">−</tspan></text>
+    <text x="204" y="244" font-size="15" font-weight="700" fill="#2b8a3e">Cl<tspan dy="-6" font-size="12">−</tspan></text>
+    <path d="M120 246 L150 232 M200 246 L230 232" stroke="#c92a2a" stroke-width="2.5"/>
+    <text x="175" y="104" text-anchor="middle" font-size="17" font-weight="700" fill="#c92a2a">mucus stuck</text>
+    <text x="175" y="342" text-anchor="middle" font-size="16" fill="#1b2a3a">no chloride secretion, little water:</text>
+    <text x="175" y="364" text-anchor="middle" font-size="16" fill="#1b2a3a">cilia pressed flat</text>
+    <text x="175" y="392" text-anchor="middle" font-size="16" font-weight="700" fill="#e8590c">sweat chloride 98 mmol/L</text>
+  </g>
+
+  <!-- ===== panel 3: child B ===== -->
+  <g transform="translate(750,0)">
+    <text x="175" y="28" text-anchor="middle" font-size="21" font-weight="700" fill="#1b2a3a">Child B: heart on the right</text>
+    <rect x="15" y="130" width="320" height="30" rx="6" fill="#ece3b4" stroke="#b5a24a" stroke-width="1.5"/>
+    <text x="175" y="151" text-anchor="middle" font-size="15" fill="#6b5a10">mucus</text>
+    <rect x="15" y="160" width="320" height="50" fill="#dceefa"/>
+    <!-- cilia straight and still -->
+    <g stroke="#555555" stroke-width="2.2" stroke-linecap="round">
+      <path d="M33 210 V164"/><path d="M53 210 V164"/><path d="M73 210 V164"/><path d="M93 210 V164"/>
+      <path d="M113 210 V164"/><path d="M133 210 V164"/><path d="M153 210 V164"/><path d="M173 210 V164"/>
+      <path d="M193 210 V164"/><path d="M213 210 V164"/><path d="M233 210 V164"/><path d="M253 210 V164"/>
+      <path d="M273 210 V164"/><path d="M293 210 V164"/><path d="M313 210 V164"/>
+    </g>
+    <g fill="#fbfaf5" stroke="#8a6a12" stroke-width="2">
+      <rect x="15" y="210" width="80" height="100"/><rect x="95" y="210" width="80" height="100"/><rect x="175" y="210" width="80" height="100"/><rect x="255" y="210" width="80" height="100"/>
+    </g>
+    <g fill="#efebf7" stroke="#6b4fa0" stroke-width="1.6">
+      <ellipse cx="55" cy="275" rx="16" ry="20"/><ellipse cx="135" cy="275" rx="16" ry="20"/><ellipse cx="215" cy="275" rx="16" ry="20"/><ellipse cx="295" cy="275" rx="16" ry="20"/>
+    </g>
+    <path d="M135 248 L135 222" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arg)"/>
+    <text x="147" y="244" font-size="15" font-weight="700" fill="#2b8a3e">Cl<tspan dy="-6" font-size="12">−</tspan></text>
+    <path d="M215 248 L215 222" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arg)"/>
+    <text x="227" y="244" font-size="15" font-weight="700" fill="#2b8a3e">Cl<tspan dy="-6" font-size="12">−</tspan></text>
+    <text x="175" y="104" text-anchor="middle" font-size="17" font-weight="700" fill="#c92a2a">mucus stuck</text>
+    <text x="175" y="342" text-anchor="middle" font-size="16" fill="#1b2a3a">liquid layer normal,</text>
+    <text x="175" y="364" text-anchor="middle" font-size="16" fill="#1b2a3a">but the cilia stand still</text>
+    <text x="175" y="392" text-anchor="middle" font-size="16" font-weight="700" fill="#e8590c">sweat chloride normal</text>
+  </g>
+</svg>

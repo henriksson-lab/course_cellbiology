@@ -81,3 +81,35 @@ may be reused under the course licence (see the course authors page).
 ## Myosin, intermediate filaments and the mechanical cell {#myosin-if}
 
 {{< include myosin-if/_credits.md >}}
+
+## The cell-cycle control system {#cell-cycle-control}
+
+{{< include cell-cycle-control/_credits.md >}}
+
+## Mitosis and cytokinesis {#mitosis}
+
+{{< include mitosis/_credits.md >}}
+
+## Controlling cell numbers {#cell-numbers}
+
+{{< include cell-numbers/_credits.md >}}
+
+## Apoptosis {#apoptosis}
+
+{{< include apoptosis/_credits.md >}}
+
+## Beyond apoptosis: necroptosis, pyroptosis, ferroptosis {#regulated-necrosis}
+
+{{< include regulated-necrosis/_credits.md >}}
+
+## Cancer as a disease of cell biology {#cancer}
+
+{{< include cancer/_credits.md >}}
+
+## When cell biology goes wrong: a disease casebook {#disease-casebook}
+
+{{< include disease-casebook/_credits.md >}}
+
+## Bioinformatics day: where does a protein live? {#bioinfo-protein-atlas}
+
+{{< include bioinfo-protein-atlas/_credits.md >}}
