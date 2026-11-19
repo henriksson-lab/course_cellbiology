@@ -110,3 +110,11 @@ After a push, check the Pages run: `gh run list -R henriksson-lab/course_cellbio
   Palade pulse-chase times, Na⁺/K⁺ pump ATP share, LNP composition). Not yet
   collected into one list.
 - Cell-tour deck is at the 19-content-slide ceiling.
+
+## Update 2026-11-19: bioinformatics days reworked
+
+All 8 days follow `plan/bioinformatics.md` section 7 (one page, closed tasks with
+exact entries, given fetch code + 2–3 blanks, sources in unpublished `_sources.md`,
+data snapshots published). Packages: rmarkdown, ggplot2, jsonlite (httr only if
+needed; no httr2). Open: button labels on UniProt/HPA/RCSB/ChEMBL/Open Targets pages
+were checked via APIs/HTML, not clicked by hand; day 8 no longer covers ELO 8.
