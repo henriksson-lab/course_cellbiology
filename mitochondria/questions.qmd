@@ -8,7 +8,7 @@ format:
 Practise explaining the mechanisms in [the lecture](lec.qmd), then use the
 [quiz](quiz.qmd) for a shorter self-check. G questions cover the core outcomes;
 VG questions ask you to predict, interpret data or design a test. Try each answer
-before opening the model answer.
+before opening the answer.
 
 ## G-level questions
 
@@ -17,7 +17,7 @@ inner membrane, cristae and matrix. Place the TCA cycle, respiratory chain,
 ATP synthase head and cytochrome c. Why do the two membranes have different
 permeabilities?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The **matrix** lies inside the inner membrane and contains most TCA-cycle enzymes
 (succinate dehydrogenase is complex II in the inner membrane). The respiratory
 complexes and ATP synthase sit in the **inner membrane**, including its cristae;
@@ -34,7 +34,7 @@ Cristae increase the area available for energy conversion.
 and how the resulting gradient drives ATP synthesis. Why does succinate-linked
 entry through complex II yield less ATP per electron pair?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Electrons pass **I → ubiquinone (Q) → III → cytochrome c → IV → O₂**, reducing
 oxygen to water. Complexes **I, III and IV** move H⁺ from matrix to intermembrane
 space: about **10 H⁺ per NADH**. The matrix becomes negative and alkaline; both
@@ -53,7 +53,7 @@ electron pair instead of 10.
 at 37 °C, taking 61.5 mV per pH unit. What happens if H⁺ can freely cross the
 inner membrane?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Both electrical and chemical components favour H⁺ entry, so their magnitudes add:
 **160 + 0.5 × 61.5 ≈ 191 mV**. This is the magnitude; Δψ is negative when defined
 as matrix minus intermembrane-space potential. H⁺ leakage dissipates the stored
@@ -68,7 +68,7 @@ across the membrane, not a large reservoir of free protons.
 why the ADP/ATP carrier depends on the membrane potential and why ATP synthesis
 also needs phosphate transport.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The inner membrane does not freely pass ATP or ADP. The **ADP/ATP antiporter**
 exports ATP⁴⁻ in exchange for ADP³⁻, moving one net negative charge out of the
 negative matrix: the voltage favours export. The **phosphate carrier** imports
@@ -85,7 +85,7 @@ help explain why practical ATP yields are lower than the ideal rotor ratio.
 import? Distinguish maternal inheritance of mtDNA from inheritance of a
 mitochondrial disease caused by a nuclear gene.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Human mtDNA has **37 genes: 13 proteins, 22 tRNAs and 2 rRNAs**. The 13 proteins
 are core subunits of complexes I, III, IV and ATP synthase; complex II is entirely
 nuclear encoded. Most mitochondrial proteins are encoded in the nucleus, made
@@ -102,7 +102,7 @@ necessarily maternally inherited**.
 bottleneck. Why can siblings have different symptoms, and why are brain,
 heart and skeletal muscle often affected?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **Heteroplasmy** means that different mtDNA variants coexist in a cell or person,
 here normal and disease-causing copies. During egg development, sampling and
 amplification of mtDNA produce eggs with different mutant fractions (the
@@ -119,7 +119,7 @@ energy demand makes brain, heart and muscle particularly vulnerable.
 **7.** Compare mitochondrial fission and fusion. How do they cooperate with
 mitophagy to maintain the network?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **Fission**, involving DRP1, divides tubules; **fusion** joins outer membranes
 through mitofusins and inner membranes through OPA1. Fusion mixes contents and
 can complement local defects. Fission helps segregate damaged regions and
@@ -135,7 +135,7 @@ has occurred: removal must be measured separately.
 Ca²⁺ uptake and ROS can be useful at moderate levels and harmful in excess.
 What changes when cytochrome c reaches the cytosol?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 At **ER–mitochondria contacts**, released Ca²⁺ enters the matrix through the
 mitochondrial calcium uniporter, driven by the negative matrix potential. This
 shapes Ca²⁺ signals and activates metabolic enzymes. Ca²⁺ overload can promote
@@ -153,7 +153,7 @@ Location changes its effect.
 holds the gradient, which side accumulates H⁺, and where does the ATP synthase
 head face?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Mitochondria use the **inner membrane**: H⁺ are pumped from the matrix into the
 intermembrane space and return to the matrix-facing synthase head. Chloroplasts
 use the **thylakoid membrane**: light-driven electron transport accumulates H⁺
@@ -177,7 +177,7 @@ coupling efficiency. Is maximal respiration also maximal ATP production?
 | After FCCP | 200 |
 | After rotenone + antimycin A | 20 |
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Non-mitochondrial OCR is **20**. Subtract it where appropriate:
 
 - Basal mitochondrial respiration: 120 − 20 = **100 pmol O₂/min**.
@@ -201,7 +201,7 @@ cyanide on electron flow, proton-motive force and mitochondrial ATP synthesis
 in oxygenated cells supplied with fuel. Why can FCCP increase OCR after
 oligomycin but not after cyanide? What could maintain some cellular ATP?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 | Treatment | Electron flow / mitochondrial OCR | Proton-motive force | ATP synthesis |
 |---|---|---|---|
 | Oligomycin | Falls as the gradient opposes further pumping | Initially rises | Blocked at synthase |
@@ -223,7 +223,7 @@ couple an unrelated proton pump to ATP synthesis. Include controls. Then explain
 why mitochondrial donation can reduce the risk of mtDNA disease but cannot
 correct a pathogenic nuclear allele.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Reconstitute a light-driven H⁺ pump and ATP synthase into sealed lipid vesicles,
 with orientations that let the pump create a gradient driving H⁺ through the
 synthase. Supply ADP and phosphate on the synthase-head side. Compare **light vs

@@ -6,7 +6,7 @@ format:
 ---
 
 Use the two journeys to connect mechanisms from [the lecture](lec.qmd). Draw the
-compartments and label the molecule at each step before opening a model answer.
+compartments and label the molecule at each step before opening an answer.
 The [quiz](quiz.qmd) gives a shorter self-check.
 
 ## G-level questions
@@ -15,7 +15,7 @@ The [quiz](quiz.qmd) gives a shorter self-check.
 Name the two membrane barriers, explain endocytosis and escape, and distinguish
 the paths of the lipid carrier, mRNA and encoded protein.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The plasma membrane separates extracellular space from cytosol. **Endocytosis**
 encloses the particle in an intracellular vesicle, so the cargo crosses the cell
 boundary without being released into cytosol. The **endosomal membrane** is a
@@ -35,7 +35,7 @@ large antigen domain and a membrane anchor. Explain how the antigen domain
 reaches the ER lumen and what can happen if it fails to fold. Why must you inspect
 the remaining sequence before predicting the effect of deleting the signal peptide?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Translation begins on a cytosolic ribosome. **SRP** recognises the emerging signal,
 directs the ribosome to the ER, and translation feeds the chain through a
 **translocon**. The signal is cleaved; the antigen domain enters the lumen, where
@@ -54,7 +54,7 @@ assumption that no functional alternative targeting signal remains.
 which side contains its glycosylated antigen domain and which contains its
 cytosolic tail at each stage. Give a way to test the final orientation.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 ER → transport carriers → Golgi → carriers from the trans-Golgi network → plasma
 membrane. The antigen domain faces the **lumen** of each compartment; the tail
 faces the **cytosol**. Fusion with the plasma membrane exposes the carrier lumen
@@ -71,7 +71,7 @@ controls. A total-protein measurement alone cannot establish surface orientation
 journey. Give two reasons a global ATP-depletion experiment cannot isolate a
 single failed step.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Microtubules and motors position organelles and move many carriers; actin and
 myosins contribute to local traffic. Motor transport works with docking and
 fusion machinery rather than replacing it. Energy supports translation, chaperone
@@ -89,7 +89,7 @@ and more focused perturbations, measuring the earliest affected event.
 route uses secretory transport, and which uses the proteasome? Why does neither
 measurement alone establish a complete immune response?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 A whole membrane antigen folds and reaches the surface through **ER and Golgi
 traffic**. In the classical MHC-I route, the **proteasome** generates peptides;
 peptides are transported into the ER, loaded onto MHC-I, and peptide–MHC-I complexes
@@ -107,7 +107,7 @@ not proof of immune protection. Other presentation routes are covered in Immunol
 Explain why total cellular drug, target engagement and downstream phosphorylation
 are different measurements.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Available extracellular drug enters the cell; entry, export, binding and
 sequestration determine the amount accessible at the target. Imatinib binds the
 BCR–ABL1 kinase domain and reduces its signalling. **Total cellular drug** includes
@@ -125,7 +125,7 @@ and does not require translation of a new therapeutic protein or Golgi export.
 apoptosis. Which measurements distinguish those outcomes, and why is a smaller
 cell population insufficient evidence of death?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Reduced mitogenic signalling can lower cyclin/CDK activity and prevent cell-cycle
 progression. Reduced survival signalling can shift BCL-2-family control towards
 BAX/BAK activation, mitochondrial outer-membrane permeabilisation, cytochrome c
@@ -143,7 +143,7 @@ more slowly; this does not require cells to die.
 kinase and a downstream survival bypass. Predict whether each can preserve growth
 and whether it must prevent inhibition of the intended kinase.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **Increased efflux** can lower target-site exposure so kinase activity remains
 sufficient. **Target resistance**, such as a mutation reducing imatinib sensitivity,
 can preserve kinase activity despite adequate exposure. **A downstream bypass**
@@ -165,7 +165,7 @@ the difference and design two measurements to distinguish competing explanations
 | Cell-associated lipid fluorescence | 100 | 180 |
 | Total encoded protein | 100 | 25 |
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 B has **more cell-associated lipid label but less protein expression**. It does
 not follow that B delivered more intact mRNA to cytosol. Possibilities include
 more surface-bound or endosomally trapped carrier, separation of lipid and RNA,
@@ -185,7 +185,7 @@ antigen falls sharply. RNA delivery is unchanged. Compare an ER-folding defect
 with an ER-to-Golgi traffic block. Design a test that distinguishes them, including
 a control and a limitation.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Both can lower surface delivery while leaving initial translation intact.
 A **folding defect** can retain antigen in the ER and eventually send it to ERAD;
 a **traffic block** can retain folded cargo before Golgi arrival. Use a time-resolved
@@ -212,7 +212,7 @@ unique molecular mechanism from the table.
 | Y | 95 % | 95 % |
 | Z | 15 % | 90 % |
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **X:** pathway action and DNA synthesis both fall, consistent with target-dependent
 proliferation. Measure cell-cycle distribution and apoptosis separately to
 distinguish arrest from death. **Y:** little pathway inhibition; measure cellular

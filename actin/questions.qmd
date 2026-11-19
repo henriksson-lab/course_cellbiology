@@ -5,13 +5,13 @@ format:
     toc: true
 ---
 
-Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then open the answer. Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
 
 ## G-level questions
 
 **1.** Compare actin filaments, microtubules and intermediate filaments. For each, give the subunit, the approximate width, whether it is polar, its motor proteins and one main job.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 | | Actin filaments | Microtubules | Intermediate filaments |
 |---|---|---|---|
 | Subunit | actin (globular), binds ATP | αβ-tubulin dimer, binds GTP | fibrous proteins: keratins, vimentin, lamins … |
@@ -27,7 +27,7 @@ All three are built from many subunits held by non-covalent bonds. Actin and mic
 
 **2.** Describe what happens to the nucleotide of an actin subunit from the moment it is free in the cytosol until it leaves a filament again. Why does this matter for the cell?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Free G-actin binds **ATP** (profilin helps exchange ADP for ATP). The ATP-actin joins a filament, mostly at the **barbed (+) end**. A few seconds later the subunit **hydrolyses ATP to ADP + Pi**; the **Pi leaves slowly**, over minutes. The older part of the filament therefore holds **ADP-actin**, which binds less tightly and is recognised by **cofilin**, which cuts and takes apart old filaments. The released ADP-actin exchanges its ADP for ATP again and can be reused. This matters because (1) the **ATP clock** marks old filaments for removal, so the cell turns its actin over; (2) hydrolysis makes the two ends different, which allows **treadmilling**; (3) the energy of ATP keeps the system out of equilibrium.
 :::
 
@@ -35,7 +35,7 @@ Free G-actin binds **ATP** (profilin helps exchange ADP for ATP). The ATP-actin 
 
 **3.** Explain the terms *critical concentration* and *treadmilling*. Sketch net growth against G-actin concentration for both ends of a filament and mark the three zones.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 At each end, subunits **join** at a rate $k_\text{on}[\text{G-actin}]$ and **leave** at a rate $k_\text{off}$. The net growth is a straight line against concentration; it is zero at the **critical concentration** $C_c = k_\text{off}/k_\text{on}$. Below $C_c$ the end shrinks, above it grows. Because of ATP hydrolysis, $C_c$ is lower at the **barbed end** (about 0.1 µM) than at the **pointed end** (about 0.6 µM). Sketch: two rising lines, the barbed one steeper, crossing zero at 0.1 and 0.6 µM. Zones: below 0.1 µM, **both ends shrink**; between 0.1 and 0.6 µM, the **+ end grows while the − end shrinks**; above 0.6 µM, **both grow**. **Treadmilling** is the state in the middle zone where the + end gains as many subunits as the − end loses (about 0.2 µM in the test tube): the filament keeps its length but moves forward, and each subunit stays in place while it passes from the + end to the − end. It needs a constant supply of ATP.
 :::
 
@@ -43,7 +43,7 @@ At each end, subunits **join** at a rate $k_\text{on}[\text{G-actin}]$ and **lea
 
 **4.** What is the role of the Arp2/3 complex and of formins? Where in the cell would you find the filaments that each one makes?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Both are **nucleators**: they overcome the slow step of starting a filament (unstable actin dimers and trimers), so the cell decides where new filaments start. **Arp2/3** (with the actin-like Arp2 and Arp3) binds the **side of an existing filament** and starts a **branch at about 70°**. It must be activated by **WASP/WAVE** proteins, which sit at the plasma membrane. Repeated branching makes the **branched mesh of the lamellipodium** (and of endocytic patches and *Listeria* comet tails). **Formins** form a ring around the **barbed end** and stay on it while it grows, feeding in profilin–actin. They make **long, unbranched** filaments, found in **filopodia** (bundled by fascin), **stress fibres** and the **contractile ring** of cytokinesis.
 :::
 
@@ -51,7 +51,7 @@ Both are **nucleators**: they overcome the slow step of starting a filament (uns
 
 **5.** A cell contains tens of µM unpolymerised actin, far above the critical concentration. Explain why actin does not polymerise everywhere, and how the cell makes it grow fast in one place.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (1) **Nucleation is slow**, so new filaments do not form spontaneously. (2) Most monomers are bound to **profilin** (and thymosin): profilin–actin cannot start filaments and cannot join pointed ends, only free barbed ends. (3) **Capping protein** blocks most barbed ends. So growth happens only where there are **free barbed ends**. The cell makes them locally: a signal activates **Rac or Cdc42** at one part of the membrane, which activates **WAVE/WASP → Arp2/3** (new branches) or **formins**. The large profilin–actin pool then adds rapidly to these ends. Behind, **cofilin** takes old ADP filaments apart and refills the pool.
 :::
 
@@ -59,7 +59,7 @@ Both are **nucleators**: they overcome the slow step of starting a filament (uns
 
 **6.** Describe the four main actin structures in a crawling fibroblast. For each, say what the filaments look like and name one protein that builds or organises it.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **Lamellipodium**: a thin sheet at the leading edge with a **branched mesh** of short filaments, + ends towards the membrane; built by **Arp2/3** (activated by Rac and WAVE), trimmed by capping protein, recycled by cofilin. **Filopodia**: thin finger-like protrusions with a **tight parallel bundle** of long filaments, + ends at the tip; **formins** and **fascin**. **Stress fibres**: thick **contractile bundles** across the cell, with **myosin II** and **α-actinin**, ending at **focal adhesions**; made under **Rho** (formin mDia, ROCK). **Cortex**: a thin **mesh** under the whole plasma membrane, cross-linked by **filamin** (and spectrin); gives the surface stiffness and forms the contractile ring at cytokinesis.
 :::
 
@@ -67,7 +67,7 @@ Both are **nucleators**: they overcome the slow step of starting a filament (uns
 
 **7.** Explain how Rho-family GTPases work as switches, and which actin structure Cdc42, Rac and Rho each control. Describe the experiment that showed this.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Rho-family GTPases are small G proteins: **on with GTP, off with GDP**. A **GEF**, activated by a signal (e.g. a growth-factor receptor), exchanges GDP for GTP; a **GAP** stimulates GTP hydrolysis and turns the switch off. Active **Cdc42** → **filopodia** (N-WASP/Arp2/3, formins); active **Rac** → **lamellipodia** (WAVE → Arp2/3); active **Rho** → **stress fibres and focal adhesions**, and **contraction** (formin mDia; ROCK → myosin II). Experiment: fibroblasts were starved of serum so they had few actin structures. Active (GTP-locked) forms of each GTPase were **microinjected**, and the cells were fixed and stained with **fluorescent phalloidin** a few minutes later. Each GTPase gave its own structure.
 :::
 
@@ -75,7 +75,7 @@ Rho-family GTPases are small G proteins: **on with GTP, off with GDP**. A **GEF*
 
 **8.** Describe the steps by which a cell crawls across a surface. What is the job of actin polymerisation, of adhesions and of myosin II?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (1) **Protrusion**: at the front, actin polymerisation in the **lamellipodium** (Rac, WAVE, Arp2/3) pushes the membrane forward; filopodia probe the surroundings. (2) **Adhesion**: new adhesions form at the front, where **integrins** bind the surface or extracellular matrix and link to actin inside; they give the cell grip. (3) **Contraction**: **myosin II** (activated by Rho/ROCK) pulls on actin filaments and drags the cell body forward. (4) **Release**: adhesions at the **rear** come apart, so the rear follows. Polymerisation pushes, adhesion transmits force to the surface, myosin pulls. The cell is polarised: Rac and Cdc42 at the front, Rho at the rear.
 :::
 
@@ -83,7 +83,7 @@ Rho-family GTPases are small G proteins: **on with GTP, off with GDP**. A **GEF*
 
 **9.** Name three drugs that act on actin, say what each binds, and what happens to the actin in a living cell. Which one is used to stain actin, and why only in fixed cells?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **Latrunculin** binds **G-actin** (1:1) and lowers the free monomer concentration below the critical concentration: filaments are taken apart and do not regrow. **Cytochalasin D** binds **barbed ends** and blocks growth there (like capping protein): structures that need + end growth, such as lamellipodia, stop. **Jasplakinolide** (and phalloidin) bind **F-actin** and stabilise it: filaments cannot be taken apart, the monomer pool is used up, and dynamic structures stop as well. **Phalloidin**, coupled to a fluorescent dye, stains filaments in **fixed and permeabilised** cells; it does not cross the membrane of living cells (and would freeze actin if it did). For live cells one uses GFP-actin or Lifeact-GFP.
 :::
 
@@ -91,7 +91,7 @@ Rho-family GTPases are small G proteins: **on with GTP, off with GDP**. A **GEF*
 
 **10. [VG]** A lamellipodium in a cultured cell stops advancing within a minute after (a) latrunculin and also after (b) jasplakinolide, although the two drugs have opposite effects on filaments. Explain both results. What does this tell you about how a lamellipodium works?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (a) Latrunculin binds free G-actin, so the free concentration falls below the critical concentration of the barbed end. The barbed ends at the membrane cannot grow and cannot push; the network is taken apart. (b) Jasplakinolide stabilises filaments, so old filaments at the back of the lamellipodium can **no longer be taken apart**. The network keeps adding actin at the front but returns none, so the **monomer pool runs out** within a short time, and growth at the membrane stops too. Together: the lamellipodium is a **treadmilling network**, not a static structure. It needs both **polymerisation at the front** and **disassembly at the back** (cofilin), and the recycling of monomers between them. Blocking either half stops the edge.
 :::
 
@@ -99,7 +99,7 @@ Rho-family GTPases are small G proteins: **on with GTP, off with GDP**. A **GEF*
 
 **11. [VG]** In a test tube with pure proteins, beads coated with an Arp2/3 activator (like *Listeria* ActA) move by forming actin comet tails. Predict what happens to bead speed when you (a) leave out capping protein, (b) leave out cofilin, (c) double the Arp2/3 complex. Explain.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (a) **No capping protein: the beads stop** (or move very slowly). New branches keep forming and no barbed end is ever capped, so the number of growing ends rises. All of them use monomers, and the free actin falls to near the critical concentration; growth spreads over too many ends and few of them push the bead. Capping protein "funnels" monomers to the few young ends at the bead surface. This was the observed result in the reconstitution experiments. (b) **No cofilin: the beads slow down and stop** after a while: filaments in the tail are not taken apart, actin accumulates in the tail and the monomer pool runs out. (c) **More Arp2/3**: more branches and more ends. At first more ends share the load and may push faster, but more ends also use more monomers; beyond an optimum the speed **falls** for the same reason as in (a). (The demo shows the same behaviour.)
 :::
 
@@ -107,7 +107,7 @@ Rho-family GTPases are small G proteins: **on with GTP, off with GDP**. A **GEF*
 
 **12. [VG]** Researchers suspect that a new kinase inhibitor reduces metastasis because it blocks cell migration. Design experiments in cultured cancer cells to test (a) whether the drug slows migration, and (b) whether it acts through Rac-driven lamellipodia or through Rho/ROCK-driven contraction.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (a) **Live imaging of migration** with and without the drug (solvent control, several doses): a **scratch (wound-healing) assay** or **single-cell tracking** on a matrix-coated dish (speed, persistence), and a **3D invasion assay** (cells in or through a collagen or Matrigel layer, e.g. a Transwell chamber). Check that the drug does not simply kill cells or stop division (viability, short times, or block division). (b) **Phalloidin staining** of fixed cells: loss of lamellipodia suggests the Rac pathway; loss of stress fibres suggests Rho/ROCK. **Live imaging with Lifeact-GFP** to measure protrusion of the leading edge. **Pull-down assays** for active (GTP-bound) Rac and Rho with and without the drug. **Rescue**: express a GTP-locked Rac (or Rho) and see whether migration is restored. Compare with known inhibitors (a ROCK inhibitor, an Arp2/3 inhibitor such as CK-666) as reference. A drug that acts on Rac should reduce edge protrusion and lamellipodia; one that acts on ROCK should reduce myosin activity (phospho-myosin light chain staining) and contraction.
 :::
 

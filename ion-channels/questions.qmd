@@ -5,7 +5,7 @@ format:
     toc: true
 ---
 
-Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then open the answer. Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
 
 Useful values (37 °C): $RT/F \approx 26.7$ mV, or $61.5$ mV per tenfold gradient for a singly charged ion.
 
@@ -13,7 +13,7 @@ Useful values (37 °C): $RT/F \approx 26.7$ mV, or $61.5$ mV per tenfold gradien
 
 **1.** Compare ion channels and transporters with respect to (a) rate, (b) how the solute crosses, (c) whether they can move a solute against its gradient.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (a) **Rate**: channels pass up to about 10⁸ ions per second; transporters move about 10²–10⁴ molecules per second. (b) A **channel** is a water-filled pore; when open, ions stream through without the protein changing shape for each ion. A **transporter** binds the solute, changes shape (alternating access) and releases it on the other side; it is never open to both sides at once. (c) Channels only allow **passive** flow down the electrochemical gradient. Transporters can be **active**: coupled to ATP hydrolysis (pumps) or to the downhill flow of another solute, they can move a solute uphill.
 :::
 
@@ -21,7 +21,7 @@ Useful values (37 °C): $RT/F \approx 26.7$ mV, or $61.5$ mV per tenfold gradien
 
 **2.** Describe the structure of the K⁺ channel selectivity filter and explain how it lets K⁺ through but keeps Na⁺ out.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Four identical subunits surround a central pore. Near the outer end the pore narrows into the **selectivity filter**, about 1.2 nm long, lined by the **backbone carbonyl oxygens** of a conserved sequence (TVGYG). In water, each ion is surrounded by water oxygens; to enter the narrow filter it must lose this water, which costs energy. The carbonyl oxygens are held rigidly at the distance at which they replace the water around a **K⁺** ion, so the energy is paid back. **Na⁺** is smaller; the oxygens are too far away to replace its water, so dehydration is not compensated and Na⁺ does not enter. The structure was solved by X-ray crystallography (MacKinnon, KcsA, 1998).
 :::
 
@@ -29,7 +29,7 @@ Four identical subunits surround a central pore. Near the outer end the pore nar
 
 **3.** Name the three main ways a channel can be gated. For each, give one example and say what opens it.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **Voltage-gated**: e.g. the voltage-gated Na⁺ channel of nerve and muscle; a helix with positive charges (the voltage sensor) moves outwards when the membrane depolarises and opens the gate. **Ligand-gated**: e.g. the nicotinic acetylcholine receptor at the nerve–muscle junction; binding of two acetylcholine molecules opens a cation pore. **Mechanically gated**: e.g. Piezo channels; tension in the membrane flattens the channel's blades and opens the pore (Piezo2 in touch, Piezo1 in sensing blood flow).
 :::
 
@@ -37,7 +37,7 @@ Four identical subunits surround a central pore. Near the outer end the pore nar
 
 **4.** Derive the Nernst equation from the Gibbs energy for moving one mole of an ion with charge $z$ from outside to inside a cell.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Chemical part: $\Delta G = \Delta G^\circ + RT\ln Q$ with $\Delta G^\circ = 0$ (same ion on both sides) and $Q = c_\text{in}/c_\text{out}$, so $RT\ln(c_\text{in}/c_\text{out})$. Electrical part: moving $z$ moles of charge through the membrane potential $V = V_\text{in} - V_\text{out}$ costs $zFV$. Total: $\Delta G = RT\ln(c_\text{in}/c_\text{out}) + zFV$. At equilibrium there is no net flow, so $\Delta G = 0$, which gives
 $$E = \frac{RT}{zF}\ln\frac{c_\text{out}}{c_\text{in}}.$$
 :::
@@ -46,7 +46,7 @@ $$E = \frac{RT}{zF}\ln\frac{c_\text{out}}{c_\text{in}}.$$
 
 **5.** Calculate the equilibrium potentials for K⁺ (inside 140 mM, outside 5 mM) and Cl⁻ (inside 10 mM, outside 110 mM) at 37 °C. Explain the sign of each.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 $E_\text{K} = 26.7 \times \ln(5/140) = 26.7 \times (-3.33) \approx$ **−89 mV**. K⁺ is higher inside and tends to leave; the inside must be negative to hold the positive ion back.
 
 $E_\text{Cl} = \frac{26.7}{-1} \times \ln(110/10) = -26.7 \times 2.40 \approx$ **−64 mV**. Cl⁻ is higher outside and tends to enter; because it is negative, a negative inside repels it, so equilibrium is reached at a negative potential.
@@ -56,7 +56,7 @@ $E_\text{Cl} = \frac{26.7}{-1} \times \ln(110/10) = -26.7 \times 2.40 \approx$ *
 
 **6.** Explain how the resting membrane potential arises. Include the roles of the Na⁺/K⁺ pump, K⁺ leak channels and large intracellular anions.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The **Na⁺/K⁺ pump** uses ATP to move 3 Na⁺ out and 2 K⁺ in, building high K⁺ inside and high Na⁺ outside (it also contributes a few mV directly, because it is electrogenic). The resting membrane has many open **K⁺ leak channels** and few open Na⁺ channels. K⁺ flows out down its concentration gradient; the **large anions** inside (proteins, phosphates, organic molecules) cannot follow. Each K⁺ that leaves adds a positive charge outside and leaves a negative charge inside, building a thin layer of charge at the membrane. The voltage grows until the electrical pull balances the concentration push, close to $E_\text{K}$. The small Na⁺ leak makes it a bit less negative (about −70 mV): the resting potential is a permeability-weighted average (Goldman). Very few ions need to move (fewer than 1 in 10 000 of the K⁺ ions), so concentrations hardly change.
 :::
 
@@ -64,7 +64,7 @@ The **Na⁺/K⁺ pump** uses ATP to move 3 Na⁺ out and 2 K⁺ in, building hig
 
 **7.** Describe the four phases of an action potential and which channels cause each.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 1. A stimulus depolarises the membrane to **threshold** (about −55 mV). 2. Voltage-gated **Na⁺ channels open**; Na⁺ rushes in, depolarising the membrane further and opening more Na⁺ channels (positive feedback); the voltage rises towards $E_\text{Na}$ (peak about +35 mV). 3. Na⁺ channels **inactivate** and slower voltage-gated **K⁺ channels open**; K⁺ flows out and the voltage falls. 4. **Undershoot** towards $E_\text{K}$ while K⁺ channels are still open; inactivated Na⁺ channels cannot yet reopen (**refractory period**), so the spike travels in one direction. The whole spike lasts about 1–2 ms and moves very few ions; the pump restores the gradients over time.
 :::
 
@@ -72,7 +72,7 @@ The **Na⁺/K⁺ pump** uses ATP to move 3 Na⁺ out and 2 K⁺ in, building hig
 
 **8.** Describe the patch-clamp method. What is a gigaseal, and what does a single-channel recording show?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 A glass pipette with a tip about 1 µm wide, filled with salt solution and containing an electrode, is pressed against a cell, and gentle suction is applied. The membrane seals to the glass with a resistance above 1 GΩ (**gigaseal**), so no current leaks around the tip and the only current measured flows through channels in the membrane patch under the pipette. An amplifier holds the voltage constant (clamp) and measures the current. In the **cell-attached** configuration the cell stays intact. A single-channel recording shows the current jumping in **square steps** of a few pA between closed and fully open; open and closed times are random, and gating signals change the open **probability**. Developed by Neher and Sakmann (Nobel Prize 1991).
 :::
 
@@ -80,7 +80,7 @@ A glass pipette with a tip about 1 µm wide, filled with salt solution and conta
 
 **9.** Explain how CFTR in airway epithelial cells keeps the airway surface wet, and why mucus becomes thick in cystic fibrosis.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 CFTR is a **Cl⁻ channel** in the apical membrane, opened by PKA phosphorylation and ATP binding. When open, Cl⁻ flows out into the airway lumen. Na⁺ follows between the cells (attracted by the negative charge), and **water follows the salt by osmosis**. This keeps a liquid layer under the mucus deep enough for the cilia to beat and move the mucus out of the lungs. In cystic fibrosis CFTR is missing or does not open, so little Cl⁻ and water are secreted; the liquid layer becomes thin, mucus becomes thick and sticky, cilia cannot clear it, and bacteria cause chronic infections.
 :::
 
@@ -88,7 +88,7 @@ CFTR is a **Cl⁻ channel** in the apical membrane, opened by PKA phosphorylatio
 
 **10. [VG]** A patient's blood K⁺ rises from 5 mM to 10 mM (intracellular K⁺ stays at 140 mM). (a) Calculate the new $E_\text{K}$. (b) Predict what happens to the resting potential of heart muscle cells and explain why. (c) Explain why this can be dangerous, using what you know about voltage-gated Na⁺ channels.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (a) $E_\text{K} = 26.7 \times \ln(10/140) = 26.7 \times (-2.64) \approx$ **−70 mV** (instead of −89 mV).
 
 (b) The resting membrane is mostly permeable to K⁺, so the resting potential follows $E_\text{K}$: it becomes **less negative** (depolarised), roughly 15–20 mV.
@@ -100,7 +100,7 @@ CFTR is a **Cl⁻ channel** in the apical membrane, opened by PKA phosphorylatio
 
 **11. [VG]** In the sweat gland duct, CFTR **reabsorbs** Cl⁻ from sweat into the cell, while in the airways it **secretes** Cl⁻ out of the cell. (a) How can the same channel move Cl⁻ in opposite directions? (b) Explain why people with cystic fibrosis have salty sweat.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (a) A channel only lets ions flow **down their electrochemical gradient**; it has no direction of its own. The direction depends on the Cl⁻ concentrations and the membrane potential in each tissue. In airway cells, transporters load Cl⁻ into the cell above its equilibrium, so when CFTR opens, Cl⁻ flows **out** into the lumen. In the sweat duct, the sweat starts out with a high NaCl concentration (similar to plasma), so Cl⁻ flows from the lumen **into** the duct cells (with Na⁺ through Na⁺ channels) and is returned to the blood.
 
 (b) Without working CFTR in the duct, Cl⁻ (and therefore Na⁺) cannot be reabsorbed, so the sweat reaching the skin stays salty. The sweat test measures this: Cl⁻ ≥ 60 mmol/L indicates cystic fibrosis.
@@ -110,7 +110,7 @@ CFTR is a **Cl⁻ channel** in the apical membrane, opened by PKA phosphorylatio
 
 **12. [VG]** A new compound blocks pain in an animal model. You suspect it blocks voltage-gated Na⁺ channels, like lidocaine. Design patch-clamp experiments to test (a) whether it blocks Na⁺ channels, (b) whether it acts from the inside or the outside of the membrane, and (c) whether, like lidocaine, it blocks more strongly when channels open often.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (a) **Whole-cell** recording from cells expressing the Na⁺ channel (e.g. cultured sensory neurons or a cell line expressing it). Depolarise with voltage steps and measure the inward Na⁺ current before and after adding the compound; a dose–response curve gives the IC₅₀. Controls: vehicle alone; a known blocker (tetrodotoxin or lidocaine); test other channels (e.g. K⁺ currents) to check specificity.
 
 (b) Use **excised patches**: in an **inside-out** patch, add the compound to the bath, which now faces the cytosolic side; in an **outside-out** patch, the bath faces the extracellular side. Block from one side only shows the site of action. A permanently charged version of the compound, which cannot cross the membrane, is a useful extra test.

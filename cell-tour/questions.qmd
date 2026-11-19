@@ -5,13 +5,13 @@ format:
     toc: true
 ---
 
-Questions written the way the exam asks them. Each is tagged with its ELO. Questions marked **[VG]** are of the harder kind that the exam uses to decide between G and VG: they ask you to predict, compare, explain an unexpected result or design an experiment. Write your answer first, then open the model answer.
+Questions written the way the exam asks them. Questions marked **[VG]** are of the harder kind that the exam uses to decide between G and VG: they ask you to predict, compare, explain an unexpected result or design an experiment. Write your answer first, then open the answer.
 
 ## G-level questions
 
 **1.** Draw a simple animal cell and label the plasma membrane, nucleus, nuclear envelope, rough ER, Golgi apparatus, a mitochondrion, a lysosome and the cytosol. Give one function for each labelled part.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 - **Plasma membrane:** barrier between cell and outside; controls what enters and leaves.
 - **Nucleus:** stores the DNA; transcription happens here.
 - **Nuclear envelope:** two membranes with pores; separates nucleoplasm from cytosol but lets molecules pass through pores. The outer membrane continues into the ER.
@@ -26,7 +26,7 @@ Questions written the way the exam asks them. Each is tagged with its ELO. Quest
 
 **2.** List three differences between a prokaryotic and a eukaryotic cell. Why is it an advantage for a large cell to have internal membranes?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Differences: eukaryotes have a **nucleus** with a nuclear envelope (prokaryote DNA lies in the cytosol); eukaryotes have **membrane-bound organelles** (ER, Golgi, mitochondria, lysosomes); eukaryotic cells are about **1000 times larger** in volume; eukaryotes have an extensive **cytoskeleton** with motor proteins.
 Advantage: internal membranes give **more membrane area** for membrane-bound reactions, and they divide the cell into **compartments with different chemistry** (for example acidic lysosomes, calcium-rich ER), so incompatible reactions can run at the same time.
 :::
@@ -35,7 +35,7 @@ Advantage: internal membranes give **more membrane area** for membrane-bound rea
 
 **3.** Explain what is meant by the *lumen* of an organelle. Which compartments are topologically equivalent to the outside of the cell, and why?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The lumen is the space **inside** a membrane-bound organelle, on the opposite side of its membrane from the cytosol. The lumens of the **ER, the nuclear envelope (the gap between its two membranes), the Golgi, transport vesicles, endosomes and lysosomes** are topologically equivalent to the outside of the cell. Material moves between them, and to and from the outside, by vesicles that **bud** from one membrane and **fuse** with another, so it never crosses a membrane and never enters the cytosol.
 :::
 
@@ -43,7 +43,7 @@ The lumen is the space **inside** a membrane-bound organelle, on the opposite si
 
 **4.** The nucleoplasm is surrounded by two membranes, yet it is said to be on the same side as the cytosol. Explain.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The nuclear envelope has **nuclear pores**: large channels that join the nucleoplasm and the cytosol. Molecules move between them through the pores without crossing a lipid bilayer. The space **between** the two nuclear membranes, however, is continuous with the ER lumen and is on the lumen side.
 :::
 
@@ -51,7 +51,7 @@ The nuclear envelope has **nuclear pores**: large channels that join the nucleop
 
 **5.** Give typical sizes (order of magnitude) for: a protein, a ribosome, a virus, a bacterium, a nucleus and an animal cell. Which of these can you resolve in a light microscope without special methods?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Protein ~5 nm; ribosome ~25 nm; virus ~100 nm; bacterium ~1–2 µm; nucleus ~5–10 µm; animal cell ~10–20 µm. The light microscope resolves objects larger than about **0.2 µm**, so the **bacterium, nucleus and cell** can be resolved (and mitochondria, about 1 µm wide). Proteins, ribosomes and most viruses are too small to resolve; single molecules can only be *detected* if they carry a fluorescent label.
 :::
 
@@ -59,7 +59,7 @@ Protein ~5 nm; ribosome ~25 nm; virus ~100 nm; bacterium ~1–2 µm; nucleus ~5�
 
 **6.** A mammalian cell contains about $10^9$–$10^{10}$ protein molecules in a volume of a few picolitres. What does this mean for the physical state of the cytoplasm, and how fast does a typical protein move across the cell?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The protein concentration is a few hundred mg/mL, so the cytoplasm is **crowded**: more like a gel than a dilute solution. A typical protein diffuses with $D \approx 5$–$10\ \mu\text{m}^2/\text{s}$ in cytoplasm; with $t \approx x^2/6D$ it crosses a 10 µm cell in **a few seconds**.
 :::
 
@@ -67,7 +67,7 @@ The protein concentration is a few hundred mg/mL, so the cytoplasm is **crowded*
 
 **7.** Compare the mitochondrion and the lysosome: number of membranes, main function, and the chemistry of the inner space.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **Mitochondrion:** two membranes (outer and folded inner membrane); main function ATP production by oxidative phosphorylation (also involved in starting apoptosis); the matrix is a separate space with its own DNA and ribosomes, not part of the lumen side. **Lysosome:** one membrane; digests proteins, lipids and other material; acidic lumen (pH about 4.5–5) full of digestive enzymes; part of the lumen side (reached by vesicles from endosomes).
 :::
 
@@ -75,7 +75,7 @@ The protein concentration is a few hundred mg/mL, so the cytoplasm is **crowded*
 
 **8.** What is a cell line? Give two reasons why HeLa cells became so widely used, and two reasons to be careful when interpreting results from them.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 A cell line is a population of cells that **divides without limit** in culture; normal cells stop after about 40–60 divisions. HeLa became widely used because it was the **first human cell line** (1951), it **grows fast and robustly**, and it can be shipped and shared, for example to test the polio vaccine. Reasons for caution: HeLa cells are **cancer cells** with an abnormal genome (around 76–80 chromosomes) and HPV-18 proteins that disable cell-cycle brakes; they grow flat on plastic, not in a tissue; and HeLa has **contaminated** many other cell lines, so the identity of a cell line must be checked with a DNA test.
 :::
 
@@ -83,7 +83,7 @@ A cell line is a population of cells that **divides without limit** in culture; 
 
 **9.** [VG] A membrane protein has its N-terminus in the ER lumen and its C-terminus in the cytosol. Predict the orientation of the protein (a) in the membrane of a transport vesicle, (b) in the Golgi membrane and (c) in the plasma membrane. A researcher adds an antibody against the N-terminus to living, intact cells. Will the antibody bind? Explain.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (a) In the vesicle, the N-terminus faces the **vesicle lumen**, the C-terminus the cytosol. (b) In the Golgi, the N-terminus faces the **Golgi lumen**. (c) In the plasma membrane, the N-terminus faces the **outside of the cell**. The orientation never changes because vesicles bud and fuse without the protein flipping, and the lumen side is topologically equivalent to the outside.
 The antibody **will bind** on living cells, because the N-terminus is exposed on the cell surface and an antibody cannot cross the plasma membrane. An antibody against the C-terminus would **not** bind to intact cells; it would bind only after the membrane is made permeable (for example with a detergent). This is a standard experiment to determine membrane topology.
 :::
@@ -92,7 +92,7 @@ The antibody **will bind** on living cells, because the N-terminus is exposed on
 
 **10.** [VG] You want to know whether a drug that is toxic to the liver damages mitochondria. You can use HeLa cells, budding yeast or organoids grown from human liver cells. Choose a system, justify your choice, and name one thing your system cannot tell you. Suggest a first experiment.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 A good answer chooses and justifies, and names a limitation. For example: **human liver organoids** are the best first choice because they are human, contain liver-like cells that metabolise drugs as the liver does (many liver toxins become toxic only after liver enzymes modify them), and can be grown from several donors. **Limitation:** no blood supply, immune system or other organs, so they cannot show effects that depend on the whole body (for example inflammation, or drug levels in blood). HeLa cells are easier but are cancer cells that may not metabolise the drug like liver cells and rely less on mitochondria. Yeast is good for finding which genes make cells sensitive, but is not human and has a cell wall that may block the drug.
 First experiment: treat organoids with a range of drug concentrations and an untreated control, then measure mitochondrial function (for example with a dye whose uptake depends on the mitochondrial membrane potential, viewed by fluorescence microscopy) and cell survival, with replicate cultures.
 :::
@@ -101,6 +101,6 @@ First experiment: treat organoids with a range of drug concentrations and an unt
 
 **11.** [VG] In a textbook from 1950, the cytoplasm of a cell is described as "a structureless gel with some granules". Explain, with reference to sizes and methods, why scientists at that time could not see most of the structures on today's cell map, and which two methods changed this.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The light microscope cannot resolve structures closer than about **0.2 µm**. Ribosomes (~25 nm), ER membranes (a bilayer is ~5 nm thick, ER tubes ~50–100 nm across) and the inner structure of mitochondria are below this limit, and unstained membranes give little contrast. So the cytoplasm looked structureless, with mitochondria as small granules. Two methods changed this: **electron microscopy of thin sections** (resolution down to about a nanometre), which showed the ER, ribosomes, Golgi stacks and cristae; and **cell fractionation** by centrifugation, which separated the parts and showed what each did (for example lysosomes with digestive enzymes). Combining the two gave the modern map.
 :::

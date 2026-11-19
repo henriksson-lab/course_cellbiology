@@ -5,13 +5,13 @@ format:
     toc: true
 ---
 
-Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then open the answer. Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
 
 ## G-level questions
 
 **1.** In all the pathways of this lecture, the transcription factor is already present in the cell before the signal arrives. Explain why this is so, and list the five ways in which a signal can free such a factor, with one pathway for each.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 A factor that is already made can be activated **quickly** and **reversibly**, without waiting for transcription and translation of the factor itself; it only has to be kept **inactive** until the signal comes. Five ways:
 
 1. **Stop destroying it**: β-catenin in **Wnt** signalling (no longer phosphorylated by the destruction complex and degraded).
@@ -27,7 +27,7 @@ A factor that is already made can be activated **quickly** and **reversibly**, w
 
 **2.** Draw and explain the Wnt/β-catenin pathway with and without Wnt. Include the destruction complex, the proteasome and TCF.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **Without Wnt:** β-catenin is made but held by the **destruction complex** (scaffolds **Axin** and **APC**, kinases **GSK3** and CK1). It is phosphorylated, recognised by a ubiquitin ligase, **ubiquitylated** and degraded by the **proteasome** within minutes. In the nucleus, **TCF** sits on Wnt target genes together with a **repressor**: genes off.
 
 **With Wnt:** Wnt binds **Frizzled** and its co-receptor (LRP5/6); the cytoplasmic protein Dishevelled is recruited and the destruction complex is pulled to the receptor and **blocked**. β-catenin **accumulates**, enters the nucleus, displaces the repressor and binds TCF as a **coactivator**: target genes on (e.g. **MYC**, **cyclin D1**: division; **AXIN2**: negative feedback). In the adult, Wnt keeps **stem cells in intestinal crypts** dividing.
@@ -37,7 +37,7 @@ A factor that is already made can be activated **quickly** and **reversibly**, w
 
 **3.** Describe Hedgehog signalling, including the role of the primary cilium. What is the role of Patched, Smoothened and Gli?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The **primary cilium** is a single, non-moving projection on most cells that acts as a signalling antenna. **Without Hedgehog**, the receptor **Patched** sits in the cilium and keeps **Smoothened** out and inactive; the transcription factor **Gli** is partly cut (by the proteasome) into a short **repressor** that keeps target genes off. **With Hedgehog**, Hedgehog binds Patched, which leaves the cilium; **Smoothened** moves into the cilium and becomes active; Gli is no longer cut and the full-length protein enters the nucleus as an **activator**. Targets include **Patched** itself (negative feedback) and Gli1. The logic is a double negative: Hedgehog ⊣ Patched ⊣ Smoothened.
 :::
 
@@ -45,7 +45,7 @@ The **primary cilium** is a single, non-moving projection on most cells that act
 
 **4.** Explain how a Notch signal reaches the nucleus. Why does Notch signalling need direct cell–cell contact?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The ligand (**Delta** or Jagged) is a **transmembrane protein** on the sending cell, so only a cell that touches the receiving cell can signal; Notch also needs the **pulling force** made when the sending cell endocytoses Delta. Steps: (1) Delta binds Notch; (2) the pull exposes a site that an **ADAM protease** cuts outside the membrane; (3) **γ-secretase** cuts Notch **inside** the membrane; (4) the **Notch intracellular domain** enters the nucleus and binds **CSL**, turning it from a repressor into an activator; (5) target genes such as the **Hes** repressors are switched on. Each receptor is used once; there is no amplification step.
 :::
 
@@ -53,7 +53,7 @@ The ligand (**Delta** or Jagged) is a **transmembrane protein** on the sending c
 
 **5.** What is lateral inhibition? Explain how it can turn a sheet of almost identical cells into a regular pattern.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Lateral inhibition is a feedback between neighbouring cells through **Delta–Notch**: Delta on one cell activates Notch in its neighbours, and active Notch (via Hes repressors) **lowers Delta** and the "differentiate" genes in that same neighbour. If cell A has slightly more Delta than its neighbour B, B receives more Notch signal and makes less Delta, so A receives less Notch signal and makes more Delta. This **double-negative loop amplifies small random differences** until A is Delta-high (e.g. hair cell or neuron) and B is Notch-high (supporting cell or epidermis). In a sheet, the result is a **salt-and-pepper pattern**: single Delta-high cells, each surrounded by Notch-high cells, with no two Delta-high cells touching.
 :::
 
@@ -61,7 +61,7 @@ Lateral inhibition is a feedback between neighbouring cells through **Delta–No
 
 **6.** Describe TGF-β signalling from receptor to gene, and explain why the same TGF-β signal can have different effects in different cell types.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 The TGF-β dimer brings together **type II and type I receptors**, which are **serine/threonine kinases**. Type II phosphorylates type I; type I phosphorylates **SMAD2/3**. Phosphorylated SMAD2/3 binds **SMAD4**, the complex enters the nucleus and binds DNA. SMADs bind DNA weakly and act **together with other transcription factors** that differ between cell types, and the chromatin that is open also differs. So the target genes depend on the cell: in epithelial cells TGF-β **stops division** (p15, p21), in fibroblasts it increases **matrix production**. The pathway is switched off by phosphatases and by **SMAD7**, which is itself a target gene (negative feedback).
 :::
 
@@ -69,7 +69,7 @@ The TGF-β dimer brings together **type II and type I receptors**, which are **s
 
 **7.** Describe how NF-κB is activated by an inflammatory signal such as TNF-α, and how the response is switched off again.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 At rest, **IκB** binds NF-κB in the cytosol and covers its **nuclear localisation signal**. TNF-α (or IL-1, or bacterial LPS) acts through its receptor on the kinase complex **IKK**, which **phosphorylates IκB**. Phosphorylated IκB is recognised by a ubiquitin ligase, gets a **polyubiquitin chain** and is destroyed by the **proteasome**. Free NF-κB enters the nucleus within minutes and switches on cytokines, adhesion molecules and anti-apoptosis genes. **Switch-off:** one target gene is **IκB**; the new IκB binds NF-κB, takes it out of the nucleus and ends the response (negative feedback).
 :::
 
@@ -77,7 +77,7 @@ At rest, **IκB** binds NF-κB in the cytosol and covers its **nuclear localisat
 
 **8.** Compare signalling by a steroid hormone through a nuclear receptor with signalling by a hormone through a GPCR. Give at least four differences.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 | | Nuclear receptor (e.g. cortisol) | GPCR (e.g. adrenaline) |
 |---|---|---|
 | Hormone | small, **hydrophobic**; crosses the membrane | usually polar; stays outside |
@@ -94,7 +94,7 @@ At rest, **IκB** binds NF-κB in the cytosol and covers its **nuclear localisat
 
 **9. [VG]** A biotech company develops a **γ-secretase inhibitor** to treat Alzheimer's disease (γ-secretase makes the amyloid-β peptide from its precursor protein). Predict, from what you know about Notch, which side effects may appear in tissues that keep renewing in the adult, such as the gut lining and the skin. Explain the mechanism. How could the company test this early, in cells?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 γ-secretase also makes the **Notch intracellular domain**, so the drug will block **Notch signalling** in every tissue it reaches. In adult tissues that renew, Notch decides between fates of newly made cells. In the **gut**, blocking Notch makes progenitor cells take the secretory fate: too many **goblet cells** (mucus) and too few absorptive cells, which gives diarrhoea and poor absorption. In the **skin**, Notch is needed for normal differentiation of keratinocytes; loss of Notch disturbs it and can promote **skin tumours**. Immune cell development (T cells need Notch) may also suffer. (In a real phase III trial, the γ-secretase inhibitor semagacestat worsened cognition and increased skin cancers, and the trial was stopped.) **Early test:** cells with a **Notch reporter gene** (CSL binding sites driving luciferase) plus a source of Delta: measure how strongly each candidate blocks Notch at the dose that blocks amyloid-β. Search for compounds that spare Notch.
 :::
 
@@ -102,7 +102,7 @@ At rest, **IκB** binds NF-κB in the cytosol and covers its **nuclear localisat
 
 **10. [VG]** Researchers make two kinds of mouse with intestinal tumours. In mouse A the tumour cells have lost **APC**; in mouse B the tumour cells have an activating mutation in **β-catenin** that removes its phosphorylation sites. They test a drug that **activates GSK3** (helps the destruction complex). Predict the effect in each mouse, and explain. Then predict the effect of a drug that blocks the **binding of β-catenin to TCF**.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **GSK3 activator:** in mouse A, the destruction complex lacks its scaffold APC, so GSK3 cannot effectively reach β-catenin; the drug likely has **little effect**. In mouse B, β-catenin has no phosphorylation sites, so whatever GSK3 does, β-catenin cannot be marked for destruction: **no effect**. (In neither case does more kinase activity help, because the fault is in the complex or in the substrate.) **Blocking β-catenin–TCF binding** acts **downstream** of both mutations, at the last step before the genes: it should switch off Wnt target genes in **both** mice. General rule: a drug works only if it acts **at or below** the faulty step; this is the same reason vismodegib (Smoothened) works when Patched is lost but not when Gli is changed.
 :::
 
@@ -110,7 +110,7 @@ At rest, **IκB** binds NF-κB in the cytosol and covers its **nuclear localisat
 
 **11. [VG]** You suspect that a new gene, X, is a Notch target in the developing inner ear and that it is needed for supporting cells. Design experiments to show (a) that Notch signalling switches X on, and (b) that X is needed for the supporting-cell fate. Include controls.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **(a) Notch switches X on.** (1) Look where X is expressed (in situ hybridisation or immunostaining): it should be in **supporting cells** (Notch-high), not hair cells. (2) Treat inner-ear explants with a **γ-secretase inhibitor** (control: solvent only): X expression should fall within hours, and Hes genes (known targets, positive control) too. (3) Express an **active Notch intracellular domain** in cells that normally lack X: X should appear. (4) Put the **X enhancer** in front of luciferase in a reporter assay; it should respond to the Notch tail, and **mutating the CSL binding sites** should abolish the response.
 
 **(b) X is needed.** Knock out X (CRISPR, or a conditional knockout only in the inner ear; control: littermates without the deletion) and count **hair cells and supporting cells** with markers. If X is needed for the supporting-cell fate, supporting cells should be fewer and hair cells may increase, as in a Notch loss. Rescue: re-expressing X should restore the normal pattern.

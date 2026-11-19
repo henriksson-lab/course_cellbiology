@@ -5,13 +5,13 @@ format:
     toc: true
 ---
 
-Questions written the way the exam asks them. Each is tagged with its ELO. Questions marked **[VG]** are of the harder kind that the exam uses to decide between G and VG: they ask you to predict, compare, explain an unexpected result or design an experiment. Write your answer first, then open the model answer.
+Questions written the way the exam asks them. Questions marked **[VG]** are of the harder kind that the exam uses to decide between G and VG: they ask you to predict, compare, explain an unexpected result or design an experiment. Write your answer first, then open the answer.
 
 ## G-level questions
 
 **1.** Describe the difference between primary cells, cell lines and organoids. Give one research question for which each is the best choice.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 - **Primary cells** are taken directly from a tissue and divide a limited number of times. Best when you need normal behaviour, e.g. how freshly isolated T cells respond to a signal.
 - **Cell lines** divide without limit (usually from a tumour or immortalised). Best for large, repeated or reproducible experiments, e.g. a screen of many compounds, or a standard microscopy experiment.
 - **Organoids** are 3D structures grown from stem cells that contain several cell types of an organ. Best when tissue organisation or a patient's own cells matter, e.g. testing which drug works on gut organoids from a patient with cystic fibrosis.
@@ -21,7 +21,7 @@ Questions written the way the exam asks them. Each is tagged with its ELO. Quest
 
 **2.** Explain why a researcher must check (a) the identity of a cell line and (b) whether the culture contains *Mycoplasma*. How is each checked?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (a) Many cell lines have been taken over by other lines (often HeLa), so experiments may be done on the wrong cell type. Identity is checked with a **DNA fingerprint (STR profile)** compared with a reference. (b) *Mycoplasma* are tiny bacteria without a cell wall; they are invisible in the microscope and not killed by common antibiotics, but they change the cells' metabolism and gene expression. They are detected with a **PCR test**.
 :::
 
@@ -29,7 +29,7 @@ Questions written the way the exam asks them. Each is tagged with its ELO. Quest
 
 **3.** Describe how you would separate nuclei, mitochondria and cytosol from a liver homogenate by differential centrifugation. Explain the principle.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Break the cells gently in an isotonic buffer (homogenisation). Spin at low speed (around 1,000 *g*, ~10 min): **nuclei** pellet. Spin the supernatant faster (around 10,000–20,000 *g*): **mitochondria** (with lysosomes and peroxisomes) pellet. After a very strong spin (>100,000 *g*), which pellets microsomes and ribosomes, the remaining supernatant is the **cytosol**. Principle: larger and denser particles sediment faster, so increasing force and time pellets smaller and smaller particles.
 :::
 
@@ -37,7 +37,7 @@ Break the cells gently in an isotonic buffer (homogenisation). Spin at low speed
 
 **4.** What is a marker protein, and why is it needed in a fractionation experiment?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 A marker protein is a protein known to be found in **only one organelle** (e.g. calnexin for ER, TOM20 for mitochondria). Fractions are not labelled and are never completely pure, so staining each fraction for markers (by western blot) shows **which organelle is in which fraction** and how pure it is. A new protein that follows one marker probably lives in that organelle.
 :::
 
@@ -45,7 +45,7 @@ A marker protein is a protein known to be found in **only one organelle** (e.g. 
 
 **5.** Describe the steps of a western blot, and say what the position and the intensity of a band tell you.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Proteins in a cell lysate are separated by size with **SDS-PAGE**, **transferred** to a membrane, and the membrane is incubated with a **primary antibody** against the target and a **secondary antibody** with an enzyme that produces light (or a fluorophore). The **position** shows the size of the protein (checks that the right protein was detected); the **intensity**, compared between lanes and normalised to a **loading control**, shows the relative amount.
 :::
 
@@ -53,7 +53,7 @@ Proteins in a cell lysate are separated by size with **SDS-PAGE**, **transferred
 
 **6.** Explain how a flow cytometer measures cells, and what forward scatter, side scatter and fluorescence tell you. How does a cell sorter collect one kind of cell?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Cells in suspension are lined up by sheath fluid and pass a laser **one at a time**. **Forward scatter** relates to cell size, **side scatter** to internal granularity, and **fluorescence** in each colour to how much of a labelled molecule (antibody or fluorescent protein) the cell carries. In a sorter (FACS) the stream breaks into droplets; a droplet containing a wanted cell is given an **electric charge** and deflected by charged plates into a collection tube.
 :::
 
@@ -61,7 +61,7 @@ Cells in suspension are lined up by sheath fluid and pass a laser **one at a tim
 
 **7.** Compare RNAi knockdown and CRISPR knockout: what each acts on, how complete and how lasting the effect is, and one pitfall of each.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **RNAi** acts on the **mRNA**: the protein drops partly (often 70–90 %) for a few days; pitfall: incomplete loss and off-target effects on similar mRNAs. **CRISPR** acts on the **gene**: the cut, repaired with small insertions or deletions, shifts the reading frame, giving a **complete and permanent** loss; pitfall: it takes weeks to make a knockout line, so cells may adapt (compensate), and the guide can cut elsewhere (off-targets).
 :::
 
@@ -69,7 +69,7 @@ Cells in suspension are lined up by sheath fluid and pass a laser **one at a tim
 
 **8.** Explain the difference between a correlation and a causal effect, using an example from cell biology. Which kind of experiment shows a causal effect?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Example: cells with more protein X divide faster. This **correlation** may mean X drives division, that dividing cells make more X, or that a third factor (a growth signal) raises both. A **perturbation** experiment shows causation: change X (remove or add it) while keeping everything else the same, with proper controls, and see whether division changes.
 :::
 
@@ -77,7 +77,7 @@ Example: cells with more protein X divide faster. This **correlation** may mean 
 
 **9.** [VG] A student treats cells with siRNA against protein Y and finds that the cells die. The student concludes that Y is needed for survival. List three things that could make this conclusion wrong, and describe the experiments that would rule each of them out.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 1. **The treatment itself kills cells** (transfection is toxic). Control: a **non-targeting control siRNA** handled the same way.
 2. **Y was not actually reduced**, or the effect came from another protein (**off-target**). Controls: **western blot** for Y with a loading control; use a **second siRNA** with a different sequence, or a **CRISPR** knockout; do a **rescue** by expressing a version of Y that the siRNA cannot target: if the cells now survive, the effect was due to losing Y.
 3. **The result only holds for this cell line** (e.g. a cancer line that depends on Y). Test another cell type, ideally primary cells.
@@ -88,7 +88,7 @@ A strong answer also notes that "needed for survival" means *necessary*, and say
 
 **10.** [VG] You want to know whether a newly found protein Z is in mitochondria or in peroxisomes, two organelles of similar size. Design an experiment using fractionation, and say how you would interpret the result. Name one weakness and one complementary method.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Homogenise cells gently, remove nuclei with a low-speed spin, then separate the organelles on a **density gradient** (peroxisomes are denser than mitochondria). Collect fractions and run a **western blot** of each fraction for **Z**, a **mitochondrial marker** (e.g. TOM20) and a **peroxisome marker** (e.g. catalase). If the Z profile follows TOM20, Z is mitochondrial; if it follows catalase, peroxisomal. **Weakness:** fractions overlap and organelles can break or stick together, so the result is a distribution, not proof; Z could also be in both. **Complementary method:** **immunofluorescence** of Z together with a marker for each organelle (co-localisation), ideally with super-resolution, or a GFP-tagged Z in living cells.
 :::
 
@@ -96,7 +96,7 @@ Homogenise cells gently, remove nuclei with a low-speed spin, then separate the 
 
 **11.** [VG] A drug kills a leukaemia cell line in a dish at low concentration. Explain why this is not enough to say that the drug will work in patients, using at least three differences between a cell line in culture and cancer cells in a body. Suggest one better model.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Differences: (1) a cell line has **adapted to culture** and may have extra mutations; patients' tumours vary between people; (2) in a dish the drug reaches the cells **directly**, while in the body it must be absorbed, distributed and not broken down too fast (pharmacokinetics); (3) the body has **normal cells** that may also be harmed (toxicity), and the dish has none; (4) a tumour has a **microenvironment** (blood vessels, immune cells, stroma) that culture lacks. Better models: **primary cells or organoids from patients**, followed by animal studies, before **clinical trials**, the topic of the later course on drug development.
 :::
 

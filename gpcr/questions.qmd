@@ -5,13 +5,13 @@ format:
     toc: true
 ---
 
-Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then compare with the model answer. Each question is tagged with its learning outcome (ELO). Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
+Study questions in the style of the written exam. Write your answer first (a few sentences, or a labelled sketch where it helps), then open the answer. Questions tagged **[VG]** are of the kind used for the higher grade: predict, compare, explain an unexpected result or design an experiment.
 
 ## G-level questions
 
 **1.** Describe the structure of a G-protein-coupled receptor and explain how binding of a hormone outside the cell activates a G protein inside.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 A GPCR is one polypeptide that crosses the membrane as **seven α-helices** (N-terminus outside, C-terminus inside); the helices form a bundle. Small ligands bind in a pocket between the helices, reached from outside. Agonist binding stabilises an active arrangement in which **helix 6 moves outwards** and a cavity opens on the **cytosolic** face. The C-terminal helix of **Gα** inserts there, which opens Gα's nucleotide site: **GDP leaves and GTP binds**. The receptor is thus a **GEF** for the G protein. Gα–GTP separates from Gβγ and from the receptor, which can then activate another G protein.
 :::
 
@@ -19,7 +19,7 @@ A GPCR is one polypeptide that crosses the membrane as **seven α-helices** (N-t
 
 **2.** Explain why the trimeric G protein is called a switch with a built-in timer. What do RGS proteins do?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Gα is **on** with GTP and **off** with GDP. With GTP it leaves βγ, and both halves bind and regulate target proteins. Gα is itself a slow **GTPase**: after seconds to minutes (for Gs, on average 10–20 s) it hydrolyses GTP to GDP + Pᵢ, switches off and rebinds βγ. The time until hydrolysis is the timer, and it sets how long each activation lasts. **RGS proteins** (regulators of G-protein signalling) are GTPase-activating proteins: they speed up hydrolysis, making the signal shorter.
 :::
 
@@ -27,7 +27,7 @@ Gα is **on** with GTP and **off** with GDP. With GTP it leaves βγ, and both h
 
 **3.** Compare Gs, Gi and Gq: the enzyme each acts on, the second messenger(s) that change, and one example receptor.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **Gs** stimulates **adenylyl cyclase** → cAMP rises (e.g. β-adrenergic receptor for adrenaline, GLP-1 receptor). **Gi** inhibits adenylyl cyclase → cAMP falls; its βγ also opens K⁺ channels (e.g. μ-opioid receptor, α₂-adrenergic receptor). **Gq** activates **phospholipase C-β** → IP₃ and DAG, and IP₃ releases Ca²⁺ from the ER (e.g. α₁-adrenergic receptor, M3 muscarinic acetylcholine receptor).
 :::
 
@@ -35,7 +35,7 @@ Gα is **on** with GTP and **off** with GDP. With GTP it leaves βγ, and both h
 
 **4.** Describe the cAMP pathway from adenylyl cyclase to a change in gene expression.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Active Gαs binds and activates **adenylyl cyclase** in the plasma membrane, which converts ATP to **cAMP**. cAMP binds the **regulatory subunits of PKA** (two cAMP per R, four in total); the R subunits release the two **catalytic subunits**, which are active Ser/Thr kinases. They phosphorylate cytosolic targets within seconds (enzymes of glycogen metabolism, ion channels such as CFTR). Some C subunits enter the **nucleus** and phosphorylate the transcription factor **CREB**, which then activates transcription of target genes over minutes to hours. **Phosphodiesterases** turn cAMP into AMP and end the signal.
 :::
 
@@ -43,7 +43,7 @@ Active Gαs binds and activates **adenylyl cyclase** in the plasma membrane, whi
 
 **5.** Explain how a Gq-coupled receptor raises cytosolic Ca²⁺ and activates protein kinase C.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Gαq–GTP activates **phospholipase C-β**, which cleaves the membrane lipid **PIP₂** into **IP₃** and **DAG**. IP₃ is water-soluble, diffuses to the ER and opens the **IP₃ receptor**, a Ca²⁺ channel; Ca²⁺ flows down its large gradient from the ER lumen into the cytosol, which rises from about 100 nM to about 1 µM. **PKC** binds Ca²⁺, moves to the plasma membrane and is fully activated when it also binds **DAG** there. Ca²⁺ also binds **calmodulin**, which activates other targets (CaM-kinases, myosin light-chain kinase).
 :::
 
@@ -51,7 +51,7 @@ Gαq–GTP activates **phospholipase C-β**, which cleaves the membrane lipid **
 
 **6.** Explain, with an example, how a GPCR cascade amplifies a signal. Which step does not amplify, and why?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Gain comes from steps where one active molecule **catalyses** the activation or production of many. One hormone-bound receptor activates G proteins one after another; each Gαs activates an adenylyl cyclase, which makes many cAMP per second; each PKA catalytic subunit phosphorylates many target proteins; in the liver, PKA → phosphorylase kinase → glycogen phosphorylase, each an enzyme, so a few hormone molecules release millions of glucose molecules. The step from **cAMP to PKA is binding**, not catalysis: four cAMP release two catalytic subunits, so there is no gain at that step.
 :::
 
@@ -59,7 +59,7 @@ Gain comes from steps where one active molecule **catalyses** the activation or 
 
 **7.** Describe desensitisation of a GPCR by GRK and arrestin, and what happens to the receptor afterwards.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 A **G-protein-coupled receptor kinase (GRK)** recognises the **active** receptor and phosphorylates Ser/Thr on its cytosolic tail. **Arrestin** binds the phosphorylated receptor on its cytosolic face and blocks G-protein binding: the receptor is **desensitised** although the hormone is still bound. Arrestin also binds **clathrin** and its adaptor, so the receptor is internalised by **clathrin-mediated endocytosis**. In the endosome the ligand dissociates and the receptor is dephosphorylated and **recycled** to the surface (resensitisation), or it is sent to the **lysosome** and degraded, which lowers the number of receptors (down-regulation). This contributes to drug tolerance.
 :::
 
@@ -67,7 +67,7 @@ A **G-protein-coupled receptor kinase (GRK)** recognises the **active** receptor
 
 **8.** Describe one method to follow a second messenger in a living cell. What would you see when you add a Gq-activating hormone?
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 **Ca²⁺ imaging**: load cells with a Ca²⁺-sensitive dye such as fura-2, or express a genetically encoded indicator such as **GCaMP** (GFP fused to calmodulin), and record fluorescence over time in a fluorescence microscope. Binding of Ca²⁺ changes the brightness (or the excitation ratio for fura-2). After adding a Gq-activating hormone, the fluorescence rises within seconds as IP₃ releases Ca²⁺ from the ER, often as a spike or repeated oscillations, and falls back as pumps remove Ca²⁺. (Alternative: a **FRET sensor for cAMP**, CFP–Epac–YFP; cAMP binding opens the sensor, FRET falls and the CFP/YFP emission ratio rises.)
 :::
 
@@ -75,7 +75,7 @@ A **G-protein-coupled receptor kinase (GRK)** recognises the **active** receptor
 
 **9.** Explain how cholera toxin and pertussis toxin both raise cAMP, although they act on different G proteins.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Both toxins transfer **ADP-ribose** from NAD⁺ to a Gα subunit. **Cholera toxin** modifies **Gαs** so that it can no longer hydrolyse GTP: once activated, Gs stays on and adenylyl cyclase is stimulated continuously. **Pertussis toxin** modifies **Gαi** so that its receptors can no longer activate it: Gi stays off, and the inhibitory brake on adenylyl cyclase is lost. In both cases cAMP rises. In the gut, high cAMP keeps CFTR open, causing secretory diarrhoea (cholera).
 :::
 
@@ -83,7 +83,7 @@ Both toxins transfer **ADP-ribose** from NAD⁺ to a Gα subunit. **Cholera toxi
 
 **10. [VG]** A patient takes theophylline, a phosphodiesterase inhibitor. (a) Predict how the cAMP response of a cell to a short adrenaline pulse changes in height and duration, and explain why. (b) Would theophylline have any effect in a cell with no adrenaline at all? (c) Explain why a PDE inhibitor and a β-blocker have opposite effects on the same pathway, although they act at very different steps.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 (a) cAMP level is set by a balance between synthesis (adenylyl cyclase) and breakdown (PDE). With less PDE activity, the same cyclase activity builds up **more** cAMP, so the peak is **higher**; and after the pulse, when Gα has switched off the cyclase, cAMP is removed **more slowly**, so the response **lasts longer**. (b) Yes: there is always some basal cyclase activity, so resting cAMP also rises (and with it basal PKA activity). (c) Both change the amount of cAMP. The β-blocker reduces the **input** (fewer active receptors, less Gs, less cAMP made), the PDE inhibitor reduces the **output** (less cAMP destroyed). Any step in a cascade can be a drug target, and the effect on the end product depends on whether the drug acts on an "on" or an "off" step.
 :::
 
@@ -91,7 +91,7 @@ Both toxins transfer **ADP-ribose** from NAD⁺ to a Gα subunit. **Cholera toxi
 
 **11. [VG]** You suspect that a new compound is an agonist at a Gs-coupled receptor and want to show that its effect needs the receptor, Gs and cAMP. Design experiments using a cell line, a cAMP FRET sensor and tools from this lecture. Include controls.
 
-::: {.callout-note collapse="true" title="Model answer"}
+::: {.callout-note collapse="true" title="Answer"}
 Express a **cAMP FRET sensor** (CFP–Epac–YFP) in a cell line that expresses the receptor, and image the CFP/YFP ratio before and after adding the compound; a rise in the ratio means a rise in cAMP. Make a **dose–response** curve (EC₅₀). **Receptor**: add a specific **competitive antagonist** of the receptor: the response should be reduced and shifted to higher compound concentrations; and test a cell line without the receptor (or with the receptor gene knocked out by CRISPR, then re-expressed as a rescue). **Gs**: compare with a known Gs agonist; in cells lacking Gαs (knock-out) the response should disappear; cholera toxin pre-treatment maximally activates Gs and should occlude a further response. **cAMP-specific**: a PDE inhibitor should make the response larger and longer; forskolin, which activates adenylyl cyclase directly, is a positive control for the sensor. Controls: vehicle alone, untransfected cells, and a check that the compound does not change CFP or YFP fluorescence by itself.
 :::
 
