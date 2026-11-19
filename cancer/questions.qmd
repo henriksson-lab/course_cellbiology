@@ -9,7 +9,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ## G-level questions
 
-**1.** List six hallmarks of cancer. For each, name one protein or process from this course that is changed, and say whether the change is a gain or a loss of function. `[ELO 9]`
+**1.** List six hallmarks of cancer. For each, name one protein or process from this course that is changed, and say whether the change is a gain or a loss of function.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 | Hallmark | Example | Gain or loss |
@@ -28,7 +28,7 @@ Any six with correct examples. Genome instability (lost DNA repair, p53, weak sp
 
 ---
 
-**2.** Explain the difference between an oncogene and a tumour suppressor. Give two ways a proto-oncogene can become an oncogene and two ways a tumour suppressor can be lost. `[ELO 9]`
+**2.** Explain the difference between an oncogene and a tumour suppressor. Give two ways a proto-oncogene can become an oncogene and two ways a tumour suppressor can be lost.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 A **proto-oncogene** codes for a protein that promotes growth or survival. A **gain-of-function** change makes it an **oncogene**; one mutant copy is enough (dominant in the cell). Routes: a **point mutation** that locks the protein on (RAS G12, BRAF V600E); **amplification** (HER2, MYC); a **translocation** that makes a fusion protein (BCR-ABL) or puts the gene under a strong enhancer. A **tumour suppressor** codes for a brake (Rb, p53, APC, BRCA1/2). It contributes to cancer by **loss of function**, and **both copies** must be lost (two hits, recessive in the cell). Routes: **deletion**, a **nonsense or frameshift** mutation, **loss of the second copy** (loss of heterozygosity) or **silencing of the promoter** by DNA methylation.
@@ -36,7 +36,7 @@ A **proto-oncogene** codes for a protein that promotes growth or survival. A **g
 
 ---
 
-**3.** Describe how the Rb protein controls entry into S phase, and give three different changes that remove this control in cancer cells. `[ELO 9]` `[ELO 7]`
+**3.** Describe how the Rb protein controls entry into S phase, and give three different changes that remove this control in cancer cells.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 In G1, unphosphorylated **Rb binds E2F** and keeps the S-phase genes off. Growth signals raise **cyclin D**, which activates **CDK4/6**; they **phosphorylate Rb**, Rb releases **E2F**, and E2F switches on genes for DNA replication (and cyclin E, which completes the switch). The **CDK inhibitor p16** holds CDK4/6 back. In cancer: (1) **RB1 lost** (both copies); (2) **p16 deleted or silenced**; (3) **cyclin D or CDK4 amplified**; also (4) a viral protein (HPV E7) binds and inactivates Rb. Any one of these lets the cell pass into S phase without a proper signal.
@@ -44,7 +44,7 @@ In G1, unphosphorylated **Rb binds E2F** and keeps the S-phase genes off. Growth
 
 ---
 
-**4.** p53 is called the guardian of the genome. What does p53 do after DNA damage, and why does losing p53 speed up the accumulation of further mutations? `[ELO 9]` `[ELO 8]`
+**4.** p53 is called the guardian of the genome. What does p53 do after DNA damage, and why does losing p53 speed up the accumulation of further mutations?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 DNA damage activates kinases that stabilise p53 (it is normally destroyed quickly by MDM2). p53 is a transcription factor. It switches on **p21**, a CDK inhibitor, so the cell **pauses** in G1 to repair; if the damage is too great it drives **senescence** (permanent arrest) or **apoptosis** (via BH3-only proteins such as PUMA and NOXA). Without p53, damaged cells **keep dividing** and **do not die**, so unrepaired damage becomes **permanent mutations** and broken chromosomes are passed on: genome instability. That is why TP53 loss is found in about half of all cancers and often marks the transition to a more aggressive tumour.
@@ -52,7 +52,7 @@ DNA damage activates kinases that stabilise p53 (it is normally destroyed quickl
 
 ---
 
-**5.** What is genome instability? Give one example at the level of DNA sequence and one at the level of whole chromosomes, and explain why it helps a tumour to evolve. `[ELO 9]`
+**5.** What is genome instability? Give one example at the level of DNA sequence and one at the level of whole chromosomes, and explain why it helps a tumour to evolve.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Genome instability is a **raised rate of genetic change** in a cell line. **Sequence level**: loss of **mismatch repair** raises the point-mutation rate 100–1000-fold; loss of **BRCA1/2** forces error-prone repair of double-strand breaks. **Chromosome level**: **extra centrosomes** give multipolar spindles, and a weak **spindle assembly checkpoint** lets cells divide before all chromosomes are attached, so daughters gain or lose chromosomes (**aneuploidy**). A tumour needs several driver mutations; at the normal error rate (about 10⁻⁹ per base per division) collecting them in one cell lineage would take very long. A higher rate produces **more variation** for selection to act on, so drivers (and drug resistance) appear sooner.
@@ -60,7 +60,7 @@ Genome instability is a **raised rate of genetic change** in a cell line. **Sequ
 
 ---
 
-**6.** Explain what is meant by clonal evolution and tumour heterogeneity. How can multi-region sequencing show that a tumour is heterogeneous? `[ELO 9]`
+**6.** Explain what is meant by clonal evolution and tumour heterogeneity. How can multi-region sequencing show that a tumour is heterogeneous?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Clonal evolution**: a tumour descends from one cell; new mutations arise (variation), and cells with mutations that let them divide more or die less outgrow the others (selection). Repeated rounds make a **family tree of subclones**. **Heterogeneity**: at any time, the tumour contains different subclones with different mutations and properties. **Multi-region sequencing**: DNA from several regions of one tumour (and normal DNA from blood) is sequenced. Mutations found in **every region** form the **trunk** (present in the founding cell); mutations found in **only some regions** are **branches**. In kidney cancers about two-thirds of mutations were not present everywhere, so a single biopsy misses much of the tumour's diversity.
@@ -68,7 +68,7 @@ Genome instability is a **raised rate of genetic change** in a cell line. **Sequ
 
 ---
 
-**7.** Describe the steps of metastasis, from a carcinoma in an epithelium to a tumour in another organ. Which step is the least efficient? `[ELO 9]` `[ELO 6]`
+**7.** Describe the steps of metastasis, from a carcinoma in an epithelium to a tumour in another organ. Which step is the least efficient?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (1) **Local invasion**: cells undergo **EMT** (lose E-cadherin and polarity), cut the **basement membrane** and matrix with **proteases** (MMPs) and crawl through the stroma using **actin** protrusions and myosin. (2) **Intravasation** into a blood or lymph vessel. (3) **Survival in the circulation**: shear forces, immune cells, loss of anchorage (anoikis); platelets can protect them. (4) **Arrest and extravasation** in small vessels of another organ. (5) **Colonisation**: survive and grow in a foreign tissue (seed and soil); many cells stay **dormant** for years. Colonisation is the least efficient step: tumours release very many cells, but only a tiny fraction form metastases.
@@ -76,7 +76,7 @@ Genome instability is a **raised rate of genetic change** in a cell line. **Sequ
 
 ---
 
-**8.** A tumour of 10⁹ cells is treated with drug A. Resistance to A is caused by a mutation present in 1 cell in 10⁷. (a) How many resistant cells do you expect at the start? (b) If resistance to drug B arises with the same frequency, independently, how many cells resistant to both do you expect? (c) What does this predict about one-drug and two-drug therapy? `[ELO 9]`
+**8.** A tumour of 10⁹ cells is treated with drug A. Resistance to A is caused by a mutation present in 1 cell in 10⁷. (a) How many resistant cells do you expect at the start? (b) If resistance to drug B arises with the same frequency, independently, how many cells resistant to both do you expect? (c) What does this predict about one-drug and two-drug therapy?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) 10⁹ × 10⁻⁷ = **100** resistant cells. (b) 10⁹ × 10⁻⁷ × 10⁻⁷ = **10⁻⁵**: almost certainly **none**. (c) With drug A alone, the 100 resistant cells survive and regrow: **relapse**. With A + B together, a cell must carry both rare changes, which almost certainly does not exist at the start, so the tumour can shrink further and a cure is possible, unless a double mutant arises **during** therapy while many cells are still dividing. This is the reason for combination therapy, as in HIV and tuberculosis. In practice side effects limit which drugs can be combined, and resistance can also come from non-genetic changes or drug pumps such as P-glycoprotein.
@@ -84,7 +84,7 @@ Genome instability is a **raised rate of genetic change** in a cell line. **Sequ
 
 ## VG-level questions
 
-**9. [VG]** Two siblings carry the same inherited mutation in one copy of TP53 (Li–Fraumeni syndrome). One develops a sarcoma at age 15, the other no cancer by age 40. (a) Explain how a dominantly inherited cancer risk fits with TP53 being a tumour suppressor. (b) Suggest why the siblings differ. (c) Design an experiment, with tumour and blood samples, to test whether the sarcoma followed the two-hit model. `[ELO 9]`
+**9. [VG]** Two siblings carry the same inherited mutation in one copy of TP53 (Li–Fraumeni syndrome). One develops a sarcoma at age 15, the other no cancer by age 40. (a) Explain how a dominantly inherited cancer risk fits with TP53 being a tumour suppressor. (b) Suggest why the siblings differ. (c) Design an experiment, with tumour and blood samples, to test whether the sarcoma followed the two-hit model.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) Each sibling inherited one mutant copy, so **every cell has hit 1**. A tumour needs the **second copy lost** in one cell (recessive in the cell), plus further drivers. Because the body has very many dividing cells, a second hit somewhere is likely during life, so in families the **risk** is passed on as a dominant trait, but not every carrier gets cancer, and not at the same age (incomplete penetrance). (b) The second hit and the other drivers are **random somatic events**: chance alone can make one sibling unlucky. Differences in exposure (radiation, smoking, chemotherapy), in other inherited variants, and in which tissue is hit also matter. (c) Sequence **TP53 in blood DNA** (should show one mutant and one normal copy: germline heterozygous) and in **tumour DNA** (micro-dissected to be mostly tumour cells). The two-hit model predicts that the tumour has **lost the normal copy**: loss of heterozygosity (only the mutant allele left), or a **second, different mutation** in the normal copy. Controls: normal tissue next to the tumour should still have both alleles. Immunohistochemistry for p53 and a functional readout (p21 induction after irradiation of cultured tumour cells) could confirm that no working p53 is left.
@@ -92,7 +92,7 @@ Genome instability is a **raised rate of genetic change** in a cell line. **Sequ
 
 ---
 
-**10. [VG]** A patient with lung cancer carrying an activating EGFR mutation responds to an EGFR kinase inhibitor, but relapses after a year. Biopsies of two growing metastases give different results: in one, EGFR now has a second mutation in the drug's binding pocket (T790M); in the other, EGFR is unchanged but the MET receptor gene is amplified. (a) Explain each resistance mechanism in terms of cell signalling. (b) Explain, with clonal evolution, why two metastases in one patient can have different mechanisms. (c) Predict what would happen with a new drug that blocks only T790M EGFR, and propose a better strategy. `[ELO 9]` `[ELO 3]`
+**10. [VG]** A patient with lung cancer carrying an activating EGFR mutation responds to an EGFR kinase inhibitor, but relapses after a year. Biopsies of two growing metastases give different results: in one, EGFR now has a second mutation in the drug's binding pocket (T790M); in the other, EGFR is unchanged but the MET receptor gene is amplified. (a) Explain each resistance mechanism in terms of cell signalling. (b) Explain, with clonal evolution, why two metastases in one patient can have different mechanisms. (c) Predict what would happen with a new drug that blocks only T790M EGFR, and propose a better strategy.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) **T790M** is a **gatekeeper** mutation: a larger amino acid at the entrance of the ATP pocket lowers the binding of the drug, while the kinase still binds ATP, so EGFR signals again despite the drug. **MET amplification** is a **bypass**: MET is another receptor tyrosine kinase; with many copies it activates the same downstream pathways (RAS–ERK and PI3K–Akt) without EGFR, so blocking EGFR no longer stops the growth signal. (b) The tumour was heterogeneous before therapy: different subclones (in different places, or seeded to different metastases) carried, or later gained, different resistance changes. The drug selected the resistant subclone in each place, so **independent resistance routes evolve in parallel** (branched evolution), as multi-region sequencing shows. (c) A drug against T790M EGFR (such as osimertinib) should shrink the first metastasis but **not the MET-amplified one**, which would keep growing; the patient would progress. Better: biopsy or **liquid biopsy** to find all mechanisms, then **combine** drugs (EGFR inhibitor + MET inhibitor), ideally from the start, so that a single change cannot rescue the cell; follow circulating tumour DNA to detect new resistant clones early.
@@ -108,15 +108,15 @@ A simulated tumour, seen from above. Each square on the grid holds one cell or i
 <script src="../demos/dist/clonal.js"></script>
 ```
 
-**E1.** Tumour 1, **Drug A, continuous**. Press **Skip to diagnosis** and read the counts. How many cells are resistant to A, and how many to B? What fraction carries a driver mutation? Then run at **1 week/s** until the tumour progresses. Describe the curve: how small does the tumour get, and what colour is it when it grows back? Where did the resistant cells come from? `[ELO 9]`
+**E1.** Tumour 1, **Drug A, continuous**. Press **Skip to diagnosis** and read the counts. How many cells are resistant to A, and how many to B? What fraction carries a driver mutation? Then run at **1 week/s** until the tumour progresses. Describe the curve: how small does the tumour get, and what colour is it when it grows back? Where did the resistant cells come from?
 
-**E2.** Now choose **A, then B at relapse** for the same tumour, then **Drugs A + B together**. What happens in each case? Then use **Run 10 tumours** for each of the four therapies (no therapy, A continuous, A + B, A then B) and compare how many are cured and the median time to progression. Why does A + B do best? `[ELO 9]`
+**E2.** Now choose **A, then B at relapse** for the same tumour, then **Drugs A + B together**. What happens in each case? Then use **Run 10 tumours** for each of the four therapies (no therapy, A continuous, A + B, A then B) and compare how many are cured and the median time to progression. Why does A + B do best?
 
-**E3. [VG]** *Predict first.* The idea behind **intermittent** therapy is that sensitive cells compete with resistant cells for space, so keeping some sensitive cells alive might hold back the resistant clone. Will intermittent drug A delay progression compared with continuous drug A? Run 10 tumours with each and compare. Then untick **resistance can also arise during therapy** and run both again. Explain the difference between the two results. `[ELO 9]`
+**E3. [VG]** *Predict first.* The idea behind **intermittent** therapy is that sensitive cells compete with resistant cells for space, so keeping some sensitive cells alive might hold back the resistant clone. Will intermittent drug A delay progression compared with continuous drug A? Run 10 tumours with each and compare. Then untick **resistance can also arise during therapy** and run both again. Explain the difference between the two results.
 
-**E4.** Set the **mutation rate (genome instability)** to ×10 and run 10 tumours with **Drug A, continuous** and with **Drugs A + B together**. Compare with the default rate. Which hallmark-related feature are you changing, and why does it make the tumour harder to treat? `[ELO 9]`
+**E4.** Set the **mutation rate (genome instability)** to ×10 and run 10 tumours with **Drug A, continuous** and with **Drugs A + B together**. Compare with the default rate. Which hallmark-related feature are you changing, and why does it make the tumour harder to treat?
 
-**E5.** *Predict first.* Set the **cost of each resistance** to 0 (resistant cells divide as fast as sensitive ones). Will progression on drug A come sooner or later? Run 10 tumours and explain. Where in real cells could a cost of resistance come from? `[ELO 9]`
+**E5.** *Predict first.* Set the **cost of each resistance** to 0 (resistant cells divide as fast as sensitive ones). Will progression on drug A come sooner or later? Run 10 tumours and explain. Where in real cells could a cost of resistance come from?
 
 ::: {.callout-note collapse="true" title="Solutions"}
 

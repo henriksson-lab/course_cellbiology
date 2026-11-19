@@ -11,7 +11,7 @@ Useful values (frog skeletal muscle, as in the lecture): thick filament 1.6 µm 
 
 ## G-level questions
 
-**1.** Describe the domain structure of a myosin molecule. How do the tails of myosin II and myosin V suit their different jobs? `[ELO 6]`
+**1.** Describe the domain structure of a myosin molecule. How do the tails of myosin II and myosin V suit their different jobs?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Every myosin has a **motor domain** (head) that binds actin and ATP, a **lever arm** (neck) stabilised by light chains that amplifies small shape changes in the head into a swing of several nanometres, and a **tail**. **Myosin II** has a long coiled-coil tail; hundreds of tails bundle into a **bipolar thick filament** with heads at both ends, so it pulls actin filaments of opposite polarity towards the middle: contraction (muscle, contractile ring, cell rear). **Myosin V** has long lever arms (36 nm steps) and a tail that binds **cargo** (vesicles, pigment granules); it walks processively, hand over hand, along actin.
@@ -19,7 +19,7 @@ Every myosin has a **motor domain** (head) that binds actin and ATP, a **lever a
 
 ---
 
-**2.** Draw and explain the cross-bridge cycle of myosin II. For each step, say what happens to the nucleotide and to the head. `[ELO 6]`
+**2.** Draw and explain the cross-bridge cycle of myosin II. For each step, say what happens to the nucleotide and to the head.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 1. **Rigor**: no nucleotide, head bound tightly to actin. 2. **ATP binds** → the actin-binding cleft opens and the head **releases** actin. 3. **ATP is hydrolysed** to ADP + Pi (both stay bound) → the lever is **cocked** (re-primed). 4. The head **binds** actin weakly at a new site; **Pi is released** → the **power stroke**: the lever swings and moves the actin filament 5–10 nm towards the M-line (towards the actin minus end). **ADP is released** → back to rigor. One ATP is used per cycle. A sketch should show the actin filament, the thick filament, the head attached or detached, the lever position and the nucleotide in each state.
@@ -27,7 +27,7 @@ Every myosin has a **motor domain** (head) that binds actin and ATP, a **lever a
 
 ---
 
-**3.** Draw a sarcomere and label: Z-disc, M-line, thin filament, thick filament, A band, I band, H zone. Which bands change length during contraction, and why? `[ELO 6]`
+**3.** Draw a sarcomere and label: Z-disc, M-line, thin filament, thick filament, A band, I band, H zone. Which bands change length during contraction, and why?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The sketch: Z-discs at both ends; thin (actin) filaments anchored in each Z-disc with their plus ends, pointing to the middle; thick (myosin II) filaments in the middle, centred on the M-line, overlapping the thin filaments. **A band** = the thick-filament length (dark); **I band** = the part with only thin filaments (light), across the Z-disc; **H zone** = the middle part of the A band without thin filaments. During contraction the **A band stays constant** and the **I band and H zone shrink**, because the filaments keep their length and **slide** past each other (sliding-filament model).
@@ -35,7 +35,7 @@ The sketch: Z-discs at both ends; thin (actin) filaments anchored in each Z-disc
 
 ---
 
-**4.** Explain the shape of the length–tension curve of skeletal muscle (Gordon, Huxley and Julian, 1966): the descending limb, the plateau and the ascending limb. `[ELO 6]`
+**4.** Explain the shape of the length–tension curve of skeletal muscle (Gordon, Huxley and Julian, 1966): the descending limb, the plateau and the ascending limb.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Descending limb** (above 2.25 µm): force falls in a straight line with the **overlap** between thin filaments and the head-bearing part of the thick filaments, reaching zero at 3.65 µm (1.6 + 2 × 1.0 + 0.05 µm), where the filaments no longer overlap. This shows that every cross-bridge contributes force independently. **Plateau** (2.0–2.25 µm): every head faces a thin filament; extra overlap in the bare zone, which has no heads, adds nothing. **Ascending limb** (below 2.0 µm): thin filaments from the two halves cross the M-line and get in each other's way (and wrong-polarity filaments face the heads); below about 1.65 µm the thick filaments are pressed against the Z-discs, so force falls steeply.
@@ -43,7 +43,7 @@ The sketch: Z-discs at both ends; thin (actin) filaments anchored in each Z-disc
 
 ---
 
-**5.** Explain how Ca²⁺ controls contraction in skeletal muscle. Compare with how non-muscle myosin II is switched on. `[ELO 6]` `[ELO 3]`
+**5.** Explain how Ca²⁺ controls contraction in skeletal muscle. Compare with how non-muscle myosin II is switched on.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Skeletal muscle**: at rest (Ca²⁺ ≈ 0.1 µM) **tropomyosin** lies on the actin filament and covers the myosin-binding sites. An action potential opens Ca²⁺ channels in the **sarcoplasmic reticulum**; Ca²⁺ rises to about 10 µM and binds **troponin C**; troponin moves tropomyosin aside and heads can bind. SERCA pumps return Ca²⁺ to the sarcoplasmic reticulum to relax the muscle. The switch is on the **thin filament**. **Non-muscle myosin II** (and smooth muscle) has no troponin. The switch is on **myosin** itself: **phosphorylation of the regulatory light chain** by myosin light-chain kinase (activated by Ca²⁺–calmodulin) or by **Rho kinase** turns the motor on and lets it form minifilaments; a phosphatase turns it off.
@@ -51,7 +51,7 @@ The sketch: Z-discs at both ends; thin (actin) filaments anchored in each Z-disc
 
 ---
 
-**6.** Give two jobs of non-muscle myosin II in cells and explain how it does them. `[ELO 6]`
+**6.** Give two jobs of non-muscle myosin II in cells and explain how it does them.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (1) **Cytokinesis**: at the end of mitosis, a **contractile ring** of actin filaments and myosin II minifilaments forms under the plasma membrane at the cell equator. Myosin pulls the antiparallel actin filaments past each other, the ring tightens like a purse string and pinches the cell in two. (2) **Cell migration**: at the **rear** of a migrating cell, myosin II contracts the actin network, pulls the cell body and tail forward and helps detach rear adhesions, while actin polymerisation pushes the front. (Also: tension in stress fibres, which traction-force microscopy measures.)
@@ -59,7 +59,7 @@ The sketch: Z-discs at both ends; thin (actin) filaments anchored in each Z-disc
 
 ---
 
-**7.** Describe how intermediate filaments are assembled, and explain why they have no polarity and no motor proteins. `[ELO 6]`
+**7.** Describe how intermediate filaments are assembled, and explain why they have no polarity and no motor proteins.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Each protein has a long **α-helical rod** with head and tail domains. Two rods wind into a parallel **coiled-coil dimer**. Two dimers associate side by side, **antiparallel** and staggered, into a **tetramer**. Eight tetramers pack side by side into a **unit-length filament**, and these join end to end and compact into a **10 nm filament**. Because the tetramer is antiparallel, both ends of the filament are the same: **no polarity**. Motor proteins need a polar track to know which way to walk, so **no motors** move on intermediate filaments. They also bind **no ATP or GTP**; they are regulated mainly by phosphorylation.
@@ -67,7 +67,7 @@ Each protein has a long **α-helical rod** with head and tail domains. Two rods 
 
 ---
 
-**8.** Name four families of intermediate filaments and where each is found. How do intermediate filaments give an epithelium its mechanical strength? `[ELO 6]`
+**8.** Name four families of intermediate filaments and where each is found. How do intermediate filaments give an epithelium its mechanical strength?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Keratins** (epithelia, e.g. skin, gut, liver), **vimentin** (fibroblasts, endothelium, white blood cells), **desmin** (muscle), **neurofilaments** (axons), **nuclear lamins** (nuclear lamina in all nucleated cells). In an epithelium, keratin filaments are anchored at **desmosomes** (to the next cell) and **hemidesmosomes** (to the basal lamina), so the networks of all cells form one continuous network that **spreads force** over the whole sheet. The filaments themselves can be stretched to two or three times their length before breaking and become stiffer as they stretch.
@@ -75,7 +75,7 @@ Each protein has a long **α-helical rod** with head and tail domains. Two rods 
 
 ---
 
-**9.** Choose a method to answer each question and explain briefly how it works: (a) How much force does a fibroblast exert on its surroundings? (b) How far does one myosin V molecule move per step? (c) Is the keratin network rebuilt as fast as the actin network? `[ELO 1]` `[ELO 6]`
+**9.** Choose a method to answer each question and explain briefly how it works: (a) How much force does a fibroblast exert on its surroundings? (b) How far does one myosin V molecule move per step? (c) Is the keratin network rebuilt as fast as the actin network?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) **Traction-force microscopy**: grow the cell on a soft gel of known stiffness containing fluorescent beads; measure bead displacements with and without the cell; calculate the force map (nanonewtons). (b) **Optical tweezers** (or single-molecule **TIRF** tracking of a fluorescent myosin V on surface-bound actin): a laser trap holds a bead attached to the motor or the actin filament; the bead jumps by one step (36 nm) per ATP, and the trap also measures the force (piconewtons). (c) **FRAP**: express GFP-keratin or GFP-actin, bleach a spot, measure how fast fluorescence recovers. Actin recovers within seconds; keratin much more slowly (minutes or longer): a more stable network.
@@ -83,7 +83,7 @@ Each protein has a long **α-helical rod** with head and tail domains. Two rods 
 
 ## VG-style questions
 
-**10. [VG]** A heart muscle cell normally works at sarcomere lengths between about 1.8 and 2.3 µm. (a) Using the length–tension curve, predict what happens to the force of contraction when the heart fills with more blood and its sarcomeres are stretched from 1.9 to 2.2 µm. (b) A patient has a mutation in cardiac myosin that releases heads from the parked (super-relaxed) state. Predict the effect on force and on ATP use, and explain why mavacamten helps. (c) Why must the dose of mavacamten be adjusted carefully? `[ELO 6]` `[ELO 9]`
+**10. [VG]** A heart muscle cell normally works at sarcomere lengths between about 1.8 and 2.3 µm. (a) Using the length–tension curve, predict what happens to the force of contraction when the heart fills with more blood and its sarcomeres are stretched from 1.9 to 2.2 µm. (b) A patient has a mutation in cardiac myosin that releases heads from the parked (super-relaxed) state. Predict the effect on force and on ATP use, and explain why mavacamten helps. (c) Why must the dose of mavacamten be adjusted carefully?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) At 1.9 µm the sarcomere is on the **ascending limb**: thin filaments from the two halves overlap each other and force is below maximum. Stretching to 2.2 µm brings it to the **plateau**, where every head faces a thin filament, so **force increases**. (This is the cellular basis of the Frank–Starling law: a fuller heart pumps more strongly; more about it in the organ course. In real heart muscle, stretch also increases Ca²⁺ sensitivity.)
@@ -95,7 +95,7 @@ Each protein has a long **α-helical rod** with head and tail domains. Two rods 
 
 ---
 
-**11. [VG]** A researcher adds a drug to permeabilised muscle fibres (the membrane is made leaky, so the solution reaches the filaments directly). In the bath, Ca²⁺ is 10 µM and ATP is present, and the fibres contract normally. Predict and explain the result in each case: (a) ATP is removed from the bath; (b) ATP is replaced by a non-hydrolysable ATP analogue that binds myosin like ATP but cannot be split; (c) Ca²⁺ is lowered to 0.1 µM while ATP is present. `[ELO 6]`
+**11. [VG]** A researcher adds a drug to permeabilised muscle fibres (the membrane is made leaky, so the solution reaches the filaments directly). In the bath, Ca²⁺ is 10 µM and ATP is present, and the fibres contract normally. Predict and explain the result in each case: (a) ATP is removed from the bath; (b) ATP is replaced by a non-hydrolysable ATP analogue that binds myosin like ATP but cannot be split; (c) Ca²⁺ is lowered to 0.1 µM while ATP is present.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) **No ATP**: heads finish their stroke and remain bound (**rigor**). The fibre becomes **stiff** and cannot relax or shorten further; it stays at whatever tension it had. This shows that ATP is needed to **release** heads.
@@ -107,7 +107,7 @@ Each protein has a long **α-helical rod** with head and tail domains. Two rods 
 
 ---
 
-**12. [VG]** Transgenic mice that make a mutant keratin 14 in their skin, in addition to their own two normal keratin 14 genes, develop blisters after mild friction, like patients with epidermolysis bullosa simplex. (a) Explain how a mutant keratin can cause disease when plenty of normal keratin 14 is also made. (b) Design an experiment with cultured keratinocytes to test whether cells with the mutant keratin are mechanically weaker, and name the controls. `[ELO 6]` `[ELO 9]` `[ELO 1]`
+**12. [VG]** Transgenic mice that make a mutant keratin 14 in their skin, in addition to their own two normal keratin 14 genes, develop blisters after mild friction, like patients with epidermolysis bullosa simplex. (a) Explain how a mutant keratin can cause disease when plenty of normal keratin 14 is also made. (b) Design an experiment with cultured keratinocytes to test whether cells with the mutant keratin are mechanically weaker, and name the controls.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) Keratin 14 pairs with keratin 5, and many keratin molecules are packed side by side and end to end in each filament. The mutant keratin 14 is still built into the same dimers, tetramers and filaments as the normal protein, but it **disrupts filament assembly** (often it changes the conserved ends of the rod that are needed for elongation). Because each filament contains many subunits, a minority of bad subunits is enough to spoil most filaments: the network collapses into **clumps**. This is a **dominant-negative** effect, which is why the human disease is usually dominant (one mutant copy is enough). Without a network anchored to desmosomes and hemidesmosomes, basal cells tear under friction.
@@ -125,15 +125,15 @@ A **sarcomere** drawn to scale (frog filament lengths, as in the lecture), with 
 <script src="../demos/dist/sarcomere.js"></script>
 ```
 
-**E1.** Choose **Full activation, optimal length**. Read the A band, I band and H zone. Now set the sarcomere length to 3.0 µm, then to 1.7 µm. Which bands change and which do not? Read the force at each length and explain it from the drawing. `[ELO 6]`
+**E1.** Choose **Full activation, optimal length**. Read the A band, I band and H zone. Now set the sarcomere length to 3.0 µm, then to 1.7 µm. Which bands change and which do not? Read the force at each length and explain it from the drawing.
 
-**E2.** Choose **Relaxed (rest Ca²⁺)** and watch the heads for a few seconds. Then raise Ca²⁺ slowly. At which Ca²⁺ is the force half of maximum? How much does Ca²⁺ have to rise to go from about 10 % to about 90 % of the force? Why is a steep switch useful for a muscle? `[ELO 6]`
+**E2.** Choose **Relaxed (rest Ca²⁺)** and watch the heads for a few seconds. Then raise Ca²⁺ slowly. At which Ca²⁺ is the force half of maximum? How much does Ca²⁺ have to rise to go from about 10 % to about 90 % of the force? Why is a steep switch useful for a muscle?
 
-**E3.** Choose **No ATP (rigor)**. What do the heads do, and why can the muscle not relax even though Ca²⁺ is low? Tick ATP again: what happens? Which step of the cross-bridge cycle does this show? `[ELO 6]`
+**E3.** Choose **No ATP (rigor)**. What do the heads do, and why can the muscle not relax even though Ca²⁺ is low? Tick ATP again: what happens? Which step of the cross-bridge cycle does this show?
 
-**E4. [VG]** *Predict first.* Set the length to 3.0 µm with full Ca²⁺. Will raising Ca²⁺ from 10 to 20 µM restore the force? Will the HCM mutation? Test both, and explain which factor limits the force here. `[ELO 6]`
+**E4. [VG]** *Predict first.* Set the length to 3.0 µm with full Ca²⁺. Will raising Ca²⁺ from 10 to 20 µM restore the force? Will the HCM mutation? Test both, and explain which factor limits the force here.
 
-**E5. [VG]** Choose **HCM mutation** at optimal length. What is the force? Increase mavacamten until the force is back at about 100 %. What happens if you give the full dose? Explain what this means for treating patients, and why the shape of the length–tension curve does not change with the drug. `[ELO 6]` `[ELO 9]`
+**E5. [VG]** Choose **HCM mutation** at optimal length. What is the force? Increase mavacamten until the force is back at about 100 %. What happens if you give the full dose? Explain what this means for treating patients, and why the shape of the length–tension curve does not change with the drug.
 
 ::: {.callout-note collapse="true" title="Solutions"}
 

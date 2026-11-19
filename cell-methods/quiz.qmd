@@ -9,7 +9,7 @@ Short questions to check that you can choose and read the methods from the lectu
 
 ---
 
-**Q1.** [ELO 1] Give one advantage of a cell line and one advantage of primary cells.
+**Q1.** Give one advantage of a cell line and one advantage of primary cells.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think about how long each kind divides, and how close each is to the tissue.
@@ -21,7 +21,7 @@ Think about how long each kind divides, and how close each is to the tissue.
 
 ---
 
-**Q2.** [ELO 1] In differential centrifugation, which comes down first, nuclei or ribosomes? Why?
+**Q2.** In differential centrifugation, which comes down first, nuclei or ribosomes? Why?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Larger and denser particles sediment at lower force.
@@ -33,7 +33,7 @@ Larger and denser particles sediment at lower force.
 
 ---
 
-**Q3.** [ELO 1] After a density gradient, fraction 4 contains the protein calnexin. What does that tell you, and why?
+**Q3.** After a density gradient, fraction 4 contains the protein calnexin. What does that tell you, and why?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Calnexin is a marker protein.
@@ -45,7 +45,7 @@ Fraction 4 contains **ER** membranes, because calnexin is a marker protein found
 
 ---
 
-**Q4.** [ELO 1] In a western blot, why do you also stain for a loading control such as actin?
+**Q4.** In a western blot, why do you also stain for a loading control such as actin?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What if one lane simply got more sample?
@@ -57,7 +57,7 @@ To show that the **same amount of protein** was loaded in every lane. Only then 
 
 ---
 
-**Q5.** [ELO 1] What does immunoprecipitation give you that a western blot on a whole lysate does not?
+**Q5.** What does immunoprecipitation give you that a western blot on a whole lysate does not?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What else comes down with the target protein?
@@ -69,7 +69,7 @@ It pulls out the target protein **together with the proteins bound to it**, so y
 
 ---
 
-**Q6.** [ELO 1] In a flow cytometry dot plot, what is one dot, and what is a gate?
+**Q6.** In a flow cytometry dot plot, what is one dot, and what is a gate?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Flow cytometry measures single cells.
@@ -81,7 +81,7 @@ One dot is **one cell**. A gate is a **region you draw** on a plot so that only 
 
 ---
 
-**Q7.** [ELO 1] Match each tool to what it acts on: CRISPR knockout, RNAi, small-molecule inhibitor. (gene / mRNA / protein)
+**Q7.** Match each tool to what it acts on: CRISPR knockout, RNAi, small-molecule inhibitor. (gene / mRNA / protein)
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Follow the path from gene to active protein.
@@ -93,7 +93,7 @@ Follow the path from gene to active protein.
 
 ---
 
-**Q8.** [ELO 1] Removing protein X stops cell migration. Is X *necessary* or *sufficient* for migration? What experiment would test the other?
+**Q8.** Removing protein X stops cell migration. Is X *necessary* or *sufficient* for migration? What experiment would test the other?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Removing tests one; adding tests the other.

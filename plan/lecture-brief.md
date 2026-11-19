@@ -9,8 +9,8 @@ person) builds a lecture. Read first: `designprinciples.md`, `audience.md`,
 | File | What |
 |---|---|
 | `lec.qmd` | reveal.js slides, about 45 min: **15–19 content slides**, speaker notes on every slide |
-| `quiz.qmd` | 6–8 short self-check questions, Hint + Answer callouts, each tagged `[ELO n]` |
-| `questions.qmd` | study questions in exam style: 6–10 G-level + at least 2 VG-style, model answers in collapsed callouts, each tagged `[ELO n]` (and `[VG]`) |
+| `quiz.qmd` | 6–8 short self-check questions, Hint + Answer callouts (no ELO tags) |
+| `questions.qmd` | study questions in exam style: 6–10 G-level + at least 2 VG-style, model answers in collapsed callouts; mark harder ones `[VG]` (no ELO tags) |
 | `_credits.md` | one row per external image: file, what it shows, author, licence, source URL. No YAML header; it is included into the central `credits.qmd` (add a section there for a new unit) |
 | `figNN-<name>.svg` | our own diagrams, NN = slide number |
 | `imgNN-<name>.jpg/png` | real images, NN = slide number |

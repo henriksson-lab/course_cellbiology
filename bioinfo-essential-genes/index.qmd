@@ -21,7 +21,7 @@ cells cannot live without. Builds on [cell-cycle control](../cell-cycle-control/
 section](https://www.proteinatlas.org/ENSG00000134057-CCNB1/subcellular). Scroll to
 **Single cell variation** and find **Protein expression peak phase**.
 
-**T1.** In which phase is cyclin B1 protein highest: G1, S or G2? `[ELO 7]`
+**T1.** In which phase is cyclin B1 protein highest: G1, S or G2?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **G2.** Cyclin B1 builds up before mitosis and activates CDK1. The APC/C then
@@ -32,7 +32,7 @@ marks it for destruction at anaphase, so the cell can leave mitosis.
 Go to **PTM/Processing** and find the **Modified residue** at position **15**.
 
 **T2.** Which of the kinases listed for serine 15 is the DNA-damage kinase from
-the checkpoint slide? `[ELO 7]`
+the checkpoint slide?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **ATM.** After a DNA break, ATM phosphorylates p53 at serine 15. MDM2 can then no
@@ -43,7 +43,7 @@ longer tag p53 for destruction, p53 accumulates and switches on p21.
 (venetoclax)](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3137309) and find
 **Mechanisms of Action**.
 
-**T3.** Which protein does venetoclax inhibit: BCL-2, BCL-XL, MCL-1 or CDK4? `[ELO 8]`
+**T3.** Which protein does venetoclax inhibit: BCL-2, BCL-XL, MCL-1 or CDK4?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **BCL-2** ("Apoptosis regulator Bcl-2 inhibitor"). It is the BH3 mimetic from the
@@ -81,7 +81,7 @@ Replace `___` in `FUN = ___` with the R function that computes a median. When it
 works, a table with six rows prints: one median gene effect per gene.
 
 **T4.** Which gene has the most negative median, and what is that median (two
-decimals)? `[ELO 7]`
+decimals)?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **CDK1, about −2.63.** Almost every cell line needs CDK1 to enter mitosis. The
@@ -94,7 +94,7 @@ Write one `ggplot()` call from the pieces listed in the template: data
 `dependencies`, `gene` on the x axis, `gene_effect` on the y axis, `geom_violin()`,
 a dashed line at −1, and axis labels. You should see six violins, one per gene.
 
-**T5.** Which statement matches your plot? `[ELO 8]`
+**T5.** Which statement matches your plot?
 
 ::: {.options}
 - (a) BCL2 is needed by most cell lines.
@@ -113,7 +113,7 @@ Fill in `"BCL2"` (with quotes) to keep only the BCL2 rows. A plot with one row o
 points per tissue appears, and below it a count of cell lines with gene effect
 below −1 per tissue.
 
-**T6.** Which tissue group has the most cell lines below −1 for BCL2? `[ELO 8, 9]`
+**T6.** Which tissue group has the most cell lines below −1 for BCL2?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **Lymphoid tissue** (5 lines; haematopoietic tissue is next with 2). These are
@@ -122,7 +122,7 @@ cancers.
 :::
 
 **T7. [VG]** CDK1 is the strongest dependency in your plot. Why is it a poorer drug
-target than BCL2? Pick one. `[ELO 7, 9]`
+target than BCL2? Pick one.
 
 ::: {.options}
 - (a) CDK1 is not expressed in cancer cells.

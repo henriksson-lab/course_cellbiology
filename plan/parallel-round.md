@@ -20,7 +20,7 @@ units in the same repo at the same time.
 
 - `<unit>/`: `lec.qmd`, `quiz.qmd`, `questions.qmd` (with the demo as
   `## Explore {#explore}` at the end: tasks E1… with collapsed, checked solutions,
-  ELO-tagged), `_credits.md` (no YAML header), `fig*.svg`, `img*.jpg`.
+  no ELO tags), `_credits.md` (no YAML header), `fig*.svg`, `img*.jpg`.
 - `demos/src/<demo>/` for your demo (and only that folder; you may *import* from
   `demos/src/lib/` but do not change it; if you need a shared helper, copy it into
   your folder).

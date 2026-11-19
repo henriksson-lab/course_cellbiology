@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *The Golgi and the se
 
 ---
 
-**Q1.** Put these compartments in the order a newly made antibody passes through on its way out of a plasma cell: cis Golgi, ER, trans-Golgi network, ERGIC, medial Golgi, plasma membrane. `[ELO 4]`
+**Q1.** Put these compartments in the order a newly made antibody passes through on its way out of a plasma cell: cis Golgi, ER, trans-Golgi network, ERGIC, medial Golgi, plasma membrane.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Start where the protein is made, and remember the station between the ER and the Golgi.
@@ -21,7 +21,7 @@ Start where the protein is made, and remember the station between the ER and the
 
 ---
 
-**Q2.** Which coat would you find on (a) a vesicle leaving the ER, (b) a vesicle taking an escaped ER chaperone back from the Golgi to the ER, (c) a vesicle taking a lysosomal enzyme from the TGN towards the endosomes? `[ELO 4]`
+**Q2.** Which coat would you find on (a) a vesicle leaving the ER, (b) a vesicle taking an escaped ER chaperone back from the Golgi to the ER, (c) a vesicle taking a lysosomal enzyme from the TGN towards the endosomes?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One coat for the exit from the ER, one for going backwards, one that works at the TGN and the plasma membrane.
@@ -33,7 +33,7 @@ One coat for the exit from the ER, one for going backwards, one that works at th
 
 ---
 
-**Q3.** A soluble protein in the ER lumen cannot touch the COPII coat, which sits on the cytosolic side of the membrane. How can it still be collected into a COPII vesicle? `[ELO 4]`
+**Q3.** A soluble protein in the ER lumen cannot touch the COPII coat, which sits on the cytosolic side of the membrane. How can it still be collected into a COPII vesicle?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of a protein that spans the membrane and can bind on both sides.
@@ -45,7 +45,7 @@ It binds a **transmembrane cargo receptor**. The receptor binds the soluble carg
 
 ---
 
-**Q4.** What are the jobs of (a) a Rab GTPase, (b) a tether, (c) a SNARE, in the arrival of a vesicle at its target membrane? `[ELO 4]`
+**Q4.** What are the jobs of (a) a Rab GTPase, (b) a tether, (c) a SNARE, in the arrival of a vesicle at its target membrane?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Address label, hook, fusion machine.
@@ -57,7 +57,7 @@ Address label, hook, fusion machine.
 
 ---
 
-**Q5.** A cell biologist asks whether a glycoprotein has reached the Golgi yet. She treats a cell extract with the enzyme Endo H and runs an SDS gel. What result means "still in the ER", and what means "has passed the medial Golgi"? `[ELO 1, 4]`
+**Q5.** A cell biologist asks whether a glycoprotein has reached the Golgi yet. She treats a cell extract with the enzyme Endo H and runs an SDS gel. What result means "still in the ER", and what means "has passed the medial Golgi"?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Endo H cuts N-linked glycans of the high-mannose type, before the medial Golgi enzymes have rebuilt them.
@@ -69,7 +69,7 @@ If Endo H **removes** the glycans, the protein runs **faster** (smaller) on the 
 
 ---
 
-**Q6.** In I-cell disease, the enzyme that adds mannose-6-phosphate to lysosomal enzymes is missing. Where do the lysosomal enzymes end up, and why? `[ELO 4, 9]`
+**Q6.** In I-cell disease, the enzyme that adds mannose-6-phosphate to lysosomal enzymes is missing. Where do the lysosomal enzymes end up, and why?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What happens in the TGN to a protein with no sorting signal?
@@ -81,7 +81,7 @@ Without mannose-6-phosphate, the enzymes are not bound by the **M6P receptor** i
 
 ---
 
-**Q7.** Brefeldin A blocks the GEF that activates ARF1. Why does this make the Golgi disappear into the ER within minutes? `[ELO 4, 5]`
+**Q7.** Brefeldin A blocks the GEF that activates ARF1. Why does this make the Golgi disappear into the ER within minutes?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which coat needs ARF1, and which direction does that coat carry membrane?
@@ -93,7 +93,7 @@ Without active ARF1, **COPI** coats fall off and cannot form again on Golgi memb
 
 ---
 
-**Q8.** Botulinum toxin type A cuts SNAP-25 in motor nerve terminals. Synaptic vesicles still reach the membrane and dock. Why can they not release acetylcholine, and what does the patient experience? `[ELO 4, 9]`
+**Q8.** Botulinum toxin type A cuts SNAP-25 in motor nerve terminals. Synaptic vesicles still reach the membrane and dock. Why can they not release acetylcholine, and what does the patient experience?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Docking is done by Rabs and tethers. What does the four-helix bundle do?

@@ -30,8 +30,6 @@ After this lecture you can:
 - connect **membranes, organelles, protein sorting, cytoskeleton and signalling** along each route;
 - choose measurements that distinguish **delivery, molecular action and cell response**, and explain where resistance can arise.
 
-**ELO 1–9**, applied together. Immune recognition is a preview of **Immunologi**.
-
 ::: notes
 We have studied the cell as compartments, machines and decisions. A treatment brings those parts together: it must reach a relevant cell, get to the compartment containing its target, and change something that matters for that cell or for the organism. Today we follow two examples. The first delivers instructions: an mRNA packaged in a lipid nanoparticle. The second delivers a molecule that acts directly on an existing protein: the kinase inhibitor imatinib. We ask where each molecule goes, which membrane it crosses, what the cell must do for it, and what observation would show success. The purpose is to explain complete mechanisms, rather than to introduce a new list of proteins.
 :::

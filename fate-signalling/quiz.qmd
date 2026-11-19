@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Signalling that shap
 
 ---
 
-**Q1.** In the Wnt pathway, what happens to β-catenin in a cell that receives **no** Wnt, and what happens when Wnt arrives? `[ELO 3]`
+**Q1.** In the Wnt pathway, what happens to β-catenin in a cell that receives **no** Wnt, and what happens when Wnt arrives?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 β-catenin is made all the time. The question is whether it survives.
@@ -21,7 +21,7 @@ Without Wnt, the **destruction complex** (APC, Axin, GSK3) phosphorylates β-cat
 
 ---
 
-**Q2.** Hedgehog signalling is called a "double negative". Explain what this means with Patched and Smoothened. `[ELO 3]`
+**Q2.** Hedgehog signalling is called a "double negative". Explain what this means with Patched and Smoothened.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which protein inhibits which, and what does Hedgehog inhibit?
@@ -33,7 +33,7 @@ Which protein inhibits which, and what does Hedgehog inhibit?
 
 ---
 
-**Q3.** Notch signalling has no second messenger and no kinase cascade. How does the signal reach the nucleus, and why can it not be amplified? `[ELO 3]`
+**Q3.** Notch signalling has no second messenger and no kinase cascade. How does the signal reach the nucleus, and why can it not be amplified?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Two proteases are involved. What happens to the receptor itself?
@@ -45,7 +45,7 @@ Delta on the neighbouring cell binds Notch and pulls on it. Notch is then cut tw
 
 ---
 
-**Q4.** Put these steps of TGF-β signalling in order: (a) SMAD2/3 binds SMAD4; (b) the type II receptor phosphorylates the type I receptor; (c) the SMAD complex binds DNA with a partner transcription factor; (d) TGF-β binds and brings the two receptors together; (e) the type I receptor phosphorylates SMAD2/3. `[ELO 3]`
+**Q4.** Put these steps of TGF-β signalling in order: (a) SMAD2/3 binds SMAD4; (b) the type II receptor phosphorylates the type I receptor; (c) the SMAD complex binds DNA with a partner transcription factor; (d) TGF-β binds and brings the two receptors together; (e) the type I receptor phosphorylates SMAD2/3.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 The receptors are serine/threonine kinases. Which one is activated first?
@@ -57,7 +57,7 @@ The receptors are serine/threonine kinases. Which one is activated first?
 
 ---
 
-**Q5.** A patient takes a **proteasome inhibitor** (used against multiple myeloma). Predict the effect on NF-κB signalling after TNF-α stimulation, and explain. `[ELO 3]`
+**Q5.** A patient takes a **proteasome inhibitor** (used against multiple myeloma). Predict the effect on NF-κB signalling after TNF-α stimulation, and explain.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What holds NF-κB in the cytosol, and how is it removed?
@@ -69,7 +69,7 @@ NF-κB stays **in the cytosol** and its target genes stay **off**. TNF-α still 
 
 ---
 
-**Q6.** Why can cortisol act on a receptor inside the cell, while adrenaline needs a receptor on the cell surface? How does this affect how fast each acts? `[ELO 3]`
+**Q6.** Why can cortisol act on a receptor inside the cell, while adrenaline needs a receptor on the cell surface? How does this affect how fast each acts?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think about which molecules cross a lipid bilayer, and what the receptor does after binding.
@@ -81,7 +81,7 @@ Cortisol is a **small, fat-soluble steroid** that diffuses across the plasma mem
 
 ---
 
-**Q7.** What is a **morphogen**, and how can one morphogen give three different cell types in a row of identical cells? `[ELO 3]`
+**Q7.** What is a **morphogen**, and how can one morphogen give three different cell types in a row of identical cells?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Concentration falls with distance from the source; target genes have thresholds.
@@ -93,7 +93,7 @@ A morphogen is a signal made by a group of **source cells** that spreads and for
 
 ---
 
-**Q8.** Tamoxifen and oestradiol bind the **same pocket** of the oestrogen receptor. Why does tamoxifen block the receptor in breast cancer cells instead of activating it? `[ELO 3]` `[ELO 9]`
+**Q8.** Tamoxifen and oestradiol bind the **same pocket** of the oestrogen receptor. Why does tamoxifen block the receptor in breast cancer cells instead of activating it?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What must the receptor recruit, besides binding DNA, to switch genes on?

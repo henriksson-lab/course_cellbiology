@@ -31,8 +31,6 @@ After this lecture you can:
 - say what **confocal**, **light-sheet**, **super-resolution** and **electron microscopy** (TEM, SEM, cryo-EM, tomography) add;
 - **choose a method** for a question, and **read a microscopy figure** critically.
 
-**ELO 1** (cell and methods) and **ELO 6** (methods to study the cytoskeleton).
-
 ::: notes
 This lecture follows the tour of the cell. In the tour we showed you organelles in pictures; today we ask how those pictures were made. Every microscope answers three questions in its own way. First, can it make small things big enough and sharp enough to separate them? That is resolution. Second, can it make a transparent cell stand out from the water around it? That is contrast. Third, can it show one particular molecule among thousands? That is specificity, or labelling. Keep these three words in mind; every method today improves one or more of them, and every method pays a price, usually that the cell must be dead, or that the picture is blurrier, or slower. A thread runs through the whole lecture: "How do we know?" A picture is evidence, and you need to know what a method can and cannot show before you believe it. This covers ELO 1, choosing a method, and supports ELO 6, because many of the examples are the cytoskeleton.
 :::

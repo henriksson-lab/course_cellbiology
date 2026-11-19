@@ -49,7 +49,7 @@ Out of scope here as everywhere in this repo: exam, revision, labs, module-2 sem
      `jsonlite`, later `httr2`, are installed; no logins needed).
   3. **Part A: in the browser** (numbered steps, each with a direct URL).
   4. **Part B: in R Markdown** (what to fill in which chunk).
-  5. **Tasks** `T1…T6`, each tagged with ELO and skill, each followed by
+  5. **Tasks** `T1…T6`, each followed by
      `::: {.callout-note collapse="true" title="Answer (checked 2026-11-18)"}`,
      the same pattern as `questions.qmd`.
   6. **Hand-in** (optional): the knitted HTML.
@@ -561,7 +561,7 @@ had open-ended tasks. Every day is reworked to these rules.
 - Ask for **stable facts** that will not change with database updates (which chain
   binds the ligand, which tissue is highest, which disease is linked), not counts
   that drift (number of trials, number of variants).
-- 5–7 tasks per day, tagged with the ELO; at most one marked [VG], and also closed form.
+- 5–7 tasks per day, no ELO tags; at most one marked [VG], and also closed form.
 
 **R part (R Markdown, knit to HTML)**
 

@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Microtubules and mot
 
 ---
 
-**Q1.** Why does a microtubule have a plus end and a minus end, and which tubulin is exposed at the plus end? `[ELO 6]`
+**Q1.** Why does a microtubule have a plus end and a minus end, and which tubulin is exposed at the plus end?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think about how the αβ dimers are lined up in a protofilament.
@@ -21,7 +21,7 @@ All αβ-tubulin dimers join **head to tail and point the same way**, so the two
 
 ---
 
-**Q2.** What is the GTP cap, and what happens when a growing microtubule loses it? `[ELO 6]`
+**Q2.** What is the GTP cap, and what happens when a growing microtubule loses it?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Dimers arrive with GTP on β-tubulin. Which is faster, adding dimers or hydrolysing GTP?
@@ -33,7 +33,7 @@ New dimers carry GTP, and the GTP on β-tubulin is hydrolysed a little after the
 
 ---
 
-**Q3.** A cell expresses EB1-GFP. You see many short bright comets moving from the centre towards the cell edge. What does each comet show, and what can you measure from the movie? `[ELO 6]`
+**Q3.** A cell expresses EB1-GFP. You see many short bright comets moving from the centre towards the cell edge. What does each comet show, and what can you measure from the movie?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 EB1 binds only one kind of microtubule end.
@@ -45,7 +45,7 @@ EB1 binds only **growing plus ends**, so each comet is the growing end of one mi
 
 ---
 
-**Q4.** In which direction does most kinesin walk, and in which direction does cytoplasmic dynein walk? In an axon, which motor carries new synaptic vesicle precursors to the synapse? `[ELO 6]`
+**Q4.** In which direction does most kinesin walk, and in which direction does cytoplasmic dynein walk? In an axon, which motor carries new synaptic vesicle precursors to the synapse?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Where are the plus ends in an axon?
@@ -57,7 +57,7 @@ Most kinesins walk to the **plus end**, dynein to the **minus end**. In an axon 
 
 ---
 
-**Q5.** How far does the cargo move per kinesin step, and how much ATP does each step cost? How was this measured? `[ELO 6]`
+**Q5.** How far does the cargo move per kinesin step, and how much ATP does each step cost? How was this measured?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of the length of one tubulin dimer, and of a bead held by a laser.
@@ -69,7 +69,7 @@ Think of the length of one tubulin dimer, and of a bead held by a laser.
 
 ---
 
-**Q6.** Why can a small cell rely on diffusion for many proteins, while a neuron with a 1-m axon cannot? Use the two formulas from the lecture. `[ELO 6]`
+**Q6.** Why can a small cell rely on diffusion for many proteins, while a neuron with a 1-m axon cannot? Use the two formulas from the lecture.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Diffusion time grows as $x^2$, motor time as $x$.
@@ -81,7 +81,7 @@ Diffusion along a line takes about $t \approx x^2/2D$; a motor takes $t = x/v$. 
 
 ---
 
-**Q7.** What does "9 + 2" mean in a cilium, and how does dynein make the cilium bend rather than fall apart? `[ELO 6]`
+**Q7.** What does "9 + 2" mean in a cilium, and how does dynein make the cilium bend rather than fall apart?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What would happen to two doublets if they were not linked?
@@ -93,7 +93,7 @@ The axoneme has **9 doublet microtubules in a ring around 2 single microtubules*
 
 ---
 
-**Q8.** Paclitaxel stabilises microtubules and vinblastine stops their growth. Why do both kill dividing cancer cells, and why do both cause numb fingers and toes? `[ELO 6]`
+**Q8.** Paclitaxel stabilises microtubules and vinblastine stops their growth. Why do both kill dividing cancer cells, and why do both cause numb fingers and toes?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What does a mitotic spindle need: stable microtubules, or microtubules that can grow and shrink?

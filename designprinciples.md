@@ -40,7 +40,7 @@ units rather than cutting good material, as in 3MB00A.
 
 ## 4. Every lecture has the same skeleton
 
-1. **About this lecture**: what you will be able to explain, and which ELO(s).
+1. **About this lecture**: what you will be able to explain (no ELO labels on slides).
 2. **The question**: a biological puzzle or observation that motivates the topic.
 3. Content slides, including at least one **"How do we know?"** method slide.
 4. **Why it matters**: one or two slides on a drug, drug-delivery technology or
@@ -67,8 +67,8 @@ course probably does not belong on a slide.
 
 ## 7. Practice per ELO, at G and VG level
 
-The exam passes each ELO separately. Every quiz and study question is tagged with
-its ELO. Every lecture's study questions include at least one VG-style question:
+The exam passes each ELO separately, so every ELO gets its own quiz and study
+questions (planning only: **no ELO tags on pages or slides**, they clutter). Every lecture's study questions include at least one VG-style question:
 predict, compare, explain an unexpected result, or design an experiment.
 
 ## 8. Honest about simplification

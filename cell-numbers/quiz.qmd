@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Controlling cell num
 
 ---
 
-**Q1.** Match each signal to its main effect: mitogen, growth factor, survival factor. Effects: (a) the cell does not die by apoptosis, (b) the cell passes the restriction point and divides, (c) the cell makes more protein and gets bigger. `[ELO 7]`
+**Q1.** Match each signal to its main effect: mitogen, growth factor, survival factor. Effects: (a) the cell does not die by apoptosis, (b) the cell passes the restriction point and divides, (c) the cell makes more protein and gets bigger.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Cell number depends on births and deaths; cell size depends on mass.
@@ -21,7 +21,7 @@ Cell number depends on births and deaths; cell size depends on mass.
 
 ---
 
-**Q2.** Fibroblasts are starved of serum for two days and then given serum again. They enter S phase after about 12–16 hours. If serum is removed again after 10 hours, most cells still enter S phase. Why? `[ELO 7]`
+**Q2.** Fibroblasts are starved of serum for two days and then given serum again. They enter S phase after about 12–16 hours. If serum is removed again after 10 hours, most cells still enter S phase. Why?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What happens to Rb and E2F at the restriction point, and what keeps them that way?
@@ -33,7 +33,7 @@ By 10 hours most cells have passed the **restriction point**. Mitogen signalling
 
 ---
 
-**Q3.** A cell line is grown with the drug rapamycin at a dose that does not stop division. What do you expect to happen to the size of the cells, and why? `[ELO 7]`
+**Q3.** A cell line is grown with the drug rapamycin at a dose that does not stop division. What do you expect to happen to the size of the cells, and why?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which kinase does rapamycin block, and what does that kinase control?
@@ -45,7 +45,7 @@ The cells become **smaller**. Rapamycin inhibits **mTORC1**, which drives protei
 
 ---
 
-**Q4.** What is the difference between a **quiescent** cell (in G0) and a **senescent** cell? Give two differences. `[ELO 7]`
+**Q4.** What is the difference between a **quiescent** cell (in G0) and a **senescent** cell? Give two differences.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Can each one divide again? What do they look like? What triggered the stop?
@@ -57,7 +57,7 @@ A **quiescent** cell has stopped because it lacks mitogens or space (contact inh
 
 ---
 
-**Q5.** Why does the lagging strand of a linear chromosome end up shorter after each round of replication, and why does this not happen in bacteria? `[ELO 7]`
+**Q5.** Why does the lagging strand of a linear chromosome end up shorter after each round of replication, and why does this not happen in bacteria?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 How does DNA polymerase start a new strand, and in which direction does it work?
@@ -69,7 +69,7 @@ DNA polymerase can only **extend a primer**, in the **5′ → 3′** direction.
 
 ---
 
-**Q6.** Telomerase is called a **reverse transcriptase**. Explain what it copies, from what, and where its template comes from. `[ELO 7]`
+**Q6.** Telomerase is called a **reverse transcriptase**. Explain what it copies, from what, and where its template comes from.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Reverse transcription means RNA → DNA.
@@ -81,7 +81,7 @@ Telomerase makes **DNA from an RNA template**. Its protein part, **TERT**, is th
 
 ---
 
-**Q7.** Normal human fibroblasts given the **TERT** gene divide far beyond their Hayflick limit. Are they now cancer cells? Give two observations that answer this. `[ELO 7]` `[ELO 9]`
+**Q7.** Normal human fibroblasts given the **TERT** gene divide far beyond their Hayflick limit. Are they now cancer cells? Give two observations that answer this.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think about contact inhibition, serum and chromosomes.
@@ -93,7 +93,7 @@ Think about contact inhibition, serum and chromosomes.
 
 ---
 
-**Q8.** A colorectal tumour carries a mutation that makes **KRAS** permanently active. Would you expect the anti-EGFR antibody **cetuximab** to work? Explain with the order of the proteins in the pathway. `[ELO 9]`
+**Q8.** A colorectal tumour carries a mutation that makes **KRAS** permanently active. Would you expect the anti-EGFR antibody **cetuximab** to work? Explain with the order of the proteins in the pathway.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Draw EGFR → RAS → ERK. Which step is broken, and where does the drug act?

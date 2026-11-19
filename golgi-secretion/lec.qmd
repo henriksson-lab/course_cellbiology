@@ -31,8 +31,6 @@ After this lecture you can:
 - explain **sorting in the trans-Golgi network**, and **constitutive versus regulated secretion**;
 - explain how **botulinum toxin** and **failing insulin secretion** follow from this machinery.
 
-**ELO 4** (protein handling) and **ELO 5** (organelles).
-
 ::: notes
 In the lecture on the endoplasmic reticulum you followed a new protein into the ER, saw it fold and saw how the ER checks its quality. Today we follow the proteins that pass that check. They leave the ER in small membrane bubbles called vesicles, pass through the Golgi apparatus, where their sugar chains are rebuilt, and are then sorted to the cell surface, to secretory granules or to the lysosomes. Along the way we meet a small set of machines that every transport step uses: coats that bend the membrane and choose the cargo, small GTPases that act as switches and address labels, and SNARE proteins that fuse two membranes. Most of the parts were found with three tools you will see today: radioactive pulse-chase, yeast genetics and a test-tube transport assay. We finish with two medical examples: botulinum toxin, which cuts SNAREs, and insulin secretion, which fails in type 2 diabetes. This lecture covers ELO 4 and ELO 5.
 :::

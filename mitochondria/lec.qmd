@@ -31,8 +31,6 @@ After this lecture you can:
 - describe the roles of mitochondria **beyond ATP**: Ca²⁺ buffering, reactive oxygen species and **cytochrome c in apoptosis**;
 - read a **mito stress test**, and explain **mitochondrial diseases**, **mitochondrial donation**, and how **DNP, cyanide and metformin** act.
 
-**ELO 5** (organelles and homeostasis), with disease examples for **ELO 9**.
-
 ::: notes
 In biochemistry you learned the chemistry of energy metabolism: glucose is broken down to pyruvate, pyruvate is oxidised in the TCA cycle, and the electrons end up on oxygen. In this course we ask cell biology questions about the same process. Where does each step happen? Which membrane holds which machine? How is the energy of electrons turned into a gradient of protons, and how does a rotating protein motor turn that gradient into ATP? We will reuse two ideas from the membranes block. From the ion-channels lecture, the idea of a membrane potential, a voltage across a membrane. From the transporters lecture, the idea that an ATP-driven pump run backwards can make ATP. Mitochondria also do much more than make ATP. They take up calcium, they make reactive oxygen species, and they hold the switch for one kind of programmed cell death. We end with medicine: diseases of mitochondrial DNA, the new technique of mitochondrial donation, and three chemicals that act on the proton circuit: a deadly diet pill, a classic poison and a common diabetes drug. This covers ELO 5, with examples for ELO 9.
 :::

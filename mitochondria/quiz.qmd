@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Mitochondria: energy
 
 ---
 
-**Q1.** Why can small molecules such as ATP cross the outer mitochondrial membrane freely, while even H⁺ hardly cross the inner membrane? Why must the inner membrane be so tight? `[ELO 5]`
+**Q1.** Why can small molecules such as ATP cross the outer mitochondrial membrane freely, while even H⁺ hardly cross the inner membrane? Why must the inner membrane be so tight?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which proteins sit in each membrane? What is stored across the inner membrane?
@@ -21,7 +21,7 @@ The outer membrane contains many **porins**, large channels that pass molecules 
 
 ---
 
-**Q2.** A woman carries a disease-causing mtDNA mutation in about 70 % of her mtDNA copies. Her husband is healthy. What can you predict about their children? Would the answer be different if the husband carried the mutation and the wife did not? `[ELO 5]` `[ELO 9]`
+**Q2.** A woman carries a disease-causing mtDNA mutation in about 70 % of her mtDNA copies. Her husband is healthy. What can you predict about their children? Would the answer be different if the husband carried the mutation and the wife did not?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Who gives the embryo its mitochondria? What is heteroplasmy?
@@ -33,7 +33,7 @@ All children get mtDNA only from the **mother's egg**, so **both sons and daught
 
 ---
 
-**Q3.** Complexes I, III and IV pump H⁺ out of the matrix. Name the two parts of the proton-motive force and give their approximate size. `[ELO 5]`
+**Q3.** Complexes I, III and IV pump H⁺ out of the matrix. Name the two parts of the proton-motive force and give their approximate size.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Moving positive charge out makes a voltage; removing H⁺ changes a concentration.
@@ -45,7 +45,7 @@ Moving positive charge out makes a voltage; removing H⁺ changes a concentratio
 
 ---
 
-**Q4.** Describe in three steps how a flow of H⁺ through the ATP synthase makes ATP. `[ELO 5]`
+**Q4.** Describe in three steps how a flow of H⁺ through the ATP synthase makes ATP.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Rotor, stalk, head.
@@ -59,7 +59,7 @@ Rotor, stalk, head.
 
 ---
 
-**Q5.** The ADP/ATP carrier exchanges ATP⁴⁻ for ADP³⁻. Why does the membrane potential favour ATP export? `[ELO 2]` `[ELO 5]`
+**Q5.** The ADP/ATP carrier exchanges ATP⁴⁻ for ADP³⁻. Why does the membrane potential favour ATP export?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Count the net charge moved, and remember which side is negative.
@@ -71,7 +71,7 @@ Each exchange moves one net **negative charge out** of the matrix (−4 out, −
 
 ---
 
-**Q6.** In a mito stress test, what does each injection do, and what does it let you measure: (a) oligomycin, (b) FCCP, (c) rotenone + antimycin A? `[ELO 1]` `[ELO 5]`
+**Q6.** In a mito stress test, what does each injection do, and what does it let you measure: (a) oligomycin, (b) FCCP, (c) rotenone + antimycin A?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of where the H⁺ can flow back after each drug.
@@ -83,7 +83,7 @@ Think of where the H⁺ can flow back after each drug.
 
 ---
 
-**Q7.** Name two jobs of mitochondria that are not ATP synthesis, and one protein that links mitochondria to apoptosis. `[ELO 5]` `[ELO 8]`
+**Q7.** Name two jobs of mitochondria that are not ATP synthesis, and one protein that links mitochondria to apoptosis.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 An ion, a by-product of the chain, and a small protein of the intermembrane space.
@@ -95,7 +95,7 @@ Examples: **Ca²⁺ uptake** through the uniporter (MCU), driven by Δψ, which 
 
 ---
 
-**Q8.** DNP and cyanide both stop mitochondrial ATP synthesis. Predict how each changes the O₂ consumption of the cells, and explain why one of them makes the body hot. `[ELO 5]` `[ELO 9]`
+**Q8.** DNP and cyanide both stop mitochondrial ATP synthesis. Predict how each changes the O₂ consumption of the cells, and explain why one of them makes the body hot.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which one stops electron flow, and which one only lets the H⁺ come back another way?

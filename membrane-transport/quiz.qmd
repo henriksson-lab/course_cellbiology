@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Moving molecules acr
 
 ---
 
-**Q1.** Rank these by how fast they cross a pure lipid bilayer (no proteins), fastest first: glucose, O₂, Na⁺, water. `[ELO 2]`
+**Q1.** Rank these by how fast they cross a pure lipid bilayer (no proteins), fastest first: glucose, O₂, Na⁺, water.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Two things matter: size, and how well the molecule dissolves in the oily middle of the bilayer. A charge is the biggest obstacle.
@@ -21,7 +21,7 @@ Two things matter: size, and how well the molecule dissolves in the oily middle 
 
 ---
 
-**Q2.** Na⁺ is about 12 mM inside a cell and 145 mM outside. K⁺ is about 140 mM inside and 5 mM outside. If you block all ATP production in a cell, what happens to these concentrations over time, and why? `[ELO 2]`
+**Q2.** Na⁺ is about 12 mM inside a cell and 145 mM outside. K⁺ is about 140 mM inside and 5 mM outside. If you block all ATP production in a cell, what happens to these concentrations over time, and why?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Are the gradients at equilibrium, or are they kept up by work?
@@ -33,7 +33,7 @@ The gradients **run down**: Na⁺ slowly rises inside and K⁺ falls. The gradie
 
 ---
 
-**Q3.** Using $\Delta G = RT\ln(c_\text{in}/c_\text{out})$ with $RT \approx 2.6$ kJ/mol, estimate ΔG for moving glucose into a cell when glucose is 5 mM outside and 0.5 mM inside. Is this passive or active transport? `[ELO 2]`
+**Q3.** Using $\Delta G = RT\ln(c_\text{in}/c_\text{out})$ with $RT \approx 2.6$ kJ/mol, estimate ΔG for moving glucose into a cell when glucose is 5 mM outside and 0.5 mM inside. Is this passive or active transport?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 $\ln(0.1) \approx -2.3$.
@@ -45,7 +45,7 @@ $\Delta G \approx 2.6 \times \ln(0.5/5) = 2.6 \times (-2.3) \approx -6$ kJ/mol. 
 
 ---
 
-**Q4.** You measure the initial rate of uptake of a radiolabelled amino acid into cells at many concentrations. The rate rises and then levels off at high concentration. What does this tell you about how the amino acid enters, and what do V~max~ and K~m~ mean here? `[ELO 2]`
+**Q4.** You measure the initial rate of uptake of a radiolabelled amino acid into cells at many concentrations. The rate rises and then levels off at high concentration. What does this tell you about how the amino acid enters, and what do V~max~ and K~m~ mean here?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Compare with Michaelis–Menten kinetics of an enzyme. What would simple diffusion through lipid look like?
@@ -57,7 +57,7 @@ Compare with Michaelis–Menten kinetics of an enzyme. What would simple diffusi
 
 ---
 
-**Q5.** Classify each as uniport, symport or antiport, and as passive, primary active or secondary active: (a) GLUT1; (b) SGLT1; (c) the Na⁺/Ca²⁺ exchanger; (d) the Na⁺/K⁺ pump. `[ELO 2]`
+**Q5.** Classify each as uniport, symport or antiport, and as passive, primary active or secondary active: (a) GLUT1; (b) SGLT1; (c) the Na⁺/Ca²⁺ exchanger; (d) the Na⁺/K⁺ pump.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Does the protein use ATP itself? Does it move one solute or two, and in which directions?
@@ -69,7 +69,7 @@ Does the protein use ATP itself? Does it move one solute or two, and in which di
 
 ---
 
-**Q6.** Why is the Na⁺/K⁺ pump called a P-type pump, and how many ions does it move per ATP? `[ELO 2]`
+**Q6.** Why is the Na⁺/K⁺ pump called a P-type pump, and how many ions does it move per ATP?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Where does the phosphate of ATP go during the cycle?
@@ -81,7 +81,7 @@ During its cycle the pump **phosphorylates itself** on an aspartate; this switch
 
 ---
 
-**Q7.** In a gut epithelial cell, which transporter sits in the apical membrane and which in the basolateral membrane to absorb glucose? Why must they be in different membranes? `[ELO 2]`
+**Q7.** In a gut epithelial cell, which transporter sits in the apical membrane and which in the basolateral membrane to absorb glucose? Why must they be in different membranes?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One brings glucose into the cell uphill; the other lets it out downhill. What would happen if both were on the same side?
@@ -93,7 +93,7 @@ One brings glucose into the cell uphill; the other lets it out downhill. What wo
 
 ---
 
-**Q8.** Gliflozins block SGLT2. What happens to glucose in the urine of a patient taking one, and why does this lower blood glucose? `[ELO 2]` `[ELO 9]`
+**Q8.** Gliflozins block SGLT2. What happens to glucose in the urine of a patient taking one, and why does this lower blood glucose?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Where in the body is SGLT2, and what does it normally do with filtered glucose?

@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *The cell-cycle contr
 
 ---
 
-**Q1.** Put the phases in order, starting just after a cell is born: S, M, G1, G2. In which phase does a cell have 4N DNA but has not yet started to divide its chromosomes? `[ELO 7]`
+**Q1.** Put the phases in order, starting just after a cell is born: S, M, G1, G2. In which phase does a cell have 4N DNA but has not yet started to divide its chromosomes?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 DNA is copied in S. What comes between the copy and mitosis?
@@ -21,7 +21,7 @@ DNA is copied in S. What comes between the copy and mitosis?
 
 ---
 
-**Q2.** The amount of CDK1 protein in a cell is about the same in every phase, yet CDK1 activity is high only in mitosis. Give two reasons. `[ELO 7]`
+**Q2.** The amount of CDK1 protein in a cell is about the same in every phase, yet CDK1 activity is high only in mitosis. Give two reasons.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What does a CDK need to be active, and which brakes act on it before mitosis?
@@ -34,7 +34,7 @@ What does a CDK need to be active, and which brakes act on it before mitosis?
 
 ---
 
-**Q3.** Which ubiquitin ligase destroys cyclin B at the end of mitosis, and why is it important that this happens by destruction and not by a reversible modification? `[ELO 7]`
+**Q3.** Which ubiquitin ligase destroys cyclin B at the end of mitosis, and why is it important that this happens by destruction and not by a reversible modification?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think about which way the cycle may run.
@@ -46,7 +46,7 @@ The **APC/C** (with its partner **Cdc20**) tags cyclin B with ubiquitin, and the
 
 ---
 
-**Q4.** Describe in four steps how a growth factor outside the cell leads to the expression of S-phase genes. `[ELO 7]`
+**Q4.** Describe in four steps how a growth factor outside the cell leads to the expression of S-phase genes.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Receptor → kinase cascade → a cyclin → a protein that holds a transcription factor.
@@ -61,7 +61,7 @@ Receptor → kinase cascade → a cyclin → a protein that holds a transcriptio
 
 ---
 
-**Q5.** What is the restriction point? What happens if you remove growth factors from a cell 2 hours after the restriction point? `[ELO 7]`
+**Q5.** What is the restriction point? What happens if you remove growth factors from a cell 2 hours after the restriction point?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 After the restriction point, what keeps Rb phosphorylated?
@@ -73,7 +73,7 @@ The **restriction point** is the moment in G1 after which the cell no longer nee
 
 ---
 
-**Q6.** After X-ray irradiation, normal fibroblasts stop in G1 and in G2. Name the protein that the tumour suppressor p53 switches on to cause the G1 arrest, and explain how that protein works. `[ELO 7]`
+**Q6.** After X-ray irradiation, normal fibroblasts stop in G1 and in G2. Name the protein that the tumour suppressor p53 switches on to cause the G1 arrest, and explain how that protein works.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 It is one of the CDK inhibitors (CKIs).
@@ -85,7 +85,7 @@ It is one of the CDK inhibitors (CKIs).
 
 ---
 
-**Q7.** You stain cells with propidium iodide and measure them by flow cytometry. The histogram has a peak at 200 (fluorescence units), a peak at 400 and some cells in between. Which phases do the three groups contain? What would the histogram look like after 24 h with a spindle poison? `[ELO 7, ELO 1]`
+**Q7.** You stain cells with propidium iodide and measure them by flow cytometry. The histogram has a peak at 200 (fluorescence units), a peak at 400 and some cells in between. Which phases do the three groups contain? What would the histogram look like after 24 h with a spindle poison?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Fluorescence is proportional to the amount of DNA.
@@ -97,7 +97,7 @@ Peak at 200: **2N, G1** (and G0). Peak at 400: **4N, G2 and M**. In between: **S
 
 ---
 
-**Q8.** In FUCCI cells, the red reporter is a piece of Cdt1 and the green reporter is a piece of geminin. A cell has a red nucleus and no green. Which phase is it in, and which ubiquitin ligase is keeping the green reporter away? `[ELO 7, ELO 1]`
+**Q8.** In FUCCI cells, the red reporter is a piece of Cdt1 and the green reporter is a piece of geminin. A cell has a red nucleus and no green. Which phase is it in, and which ubiquitin ligase is keeping the green reporter away?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which ligase is active from late mitosis through G1?

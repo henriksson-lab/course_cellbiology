@@ -31,8 +31,6 @@ After this lecture you can:
 - explain **primary active transport** (P-type, V-type and ABC pumps; the **Na⁺/K⁺ pump**) and **secondary active transport** driven by the Na⁺ gradient;
 - explain how an **epithelium** moves glucose from the gut to the blood, and how drugs act on transporters.
 
-**ELO 2** (membranes and transport).
-
 ::: notes
 In the lecture on membrane structure you met the lipid bilayer: a thin, oily sheet that separates two water-filled spaces. Today we ask how anything gets through it. The answer has three parts. First, physics: a few small, uncharged molecules simply dissolve in the bilayer and cross on their own, but most of what a cell needs cannot. Second, proteins: transporters and channels give polar molecules and ions a path. Third, energy: to move something against its concentration gradient, the cell must pay, either directly with ATP or indirectly with another gradient. You already know the tools from chemistry and biochemistry: ΔG tells us which way a process goes, and Michaelis–Menten kinetics describes a protein with a limited number of binding sites. We will use both. Channels and the membrane potential get their own lecture next, so today channels appear only as a contrast to transporters. This lecture covers ELO 2, and it ends with drugs that act on transporters, which you meet again in drug development.
 :::

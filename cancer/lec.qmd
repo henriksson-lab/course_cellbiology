@@ -31,8 +31,6 @@ After this lecture you can:
 - describe **invasion and metastasis** (EMT, basement membrane, the metastatic cascade) and the role of the **tumour microenvironment**;
 - explain why **targeted drugs** stop working, why **combinations** help, and how **checkpoint immunotherapy** releases the immune system.
 
-**ELO 9** (disease mechanisms), building on ELO 3, 6, 7 and 8.
-
 ::: notes
 This is a synthesis lecture. Almost every lecture in this course has ended with a slide on cancer: a kinase inhibitor, a drug that freezes microtubules, a pump that throws out chemotherapy, a BCL-2 blocker. Today we turn this around. Instead of starting from the cell biology and ending with cancer, we start from cancer and ask which piece of cell biology is broken. You will see that a cancer cell has not invented anything new. It uses the normal machinery of the cell, but with the brakes removed and the accelerators stuck. We cover four things: first, the hallmarks of cancer as a map of the course; second, the two kinds of cancer gene and how we know the difference; third, cancer as evolution inside the body, which explains both heterogeneity and drug resistance; and fourth, how cancer cells invade and spread. We end with two kinds of modern therapy. This lecture is about the cell level. The diseases themselves, their diagnosis and clinical treatment come in the course on disease mechanisms, Sjukdomslära.
 :::

@@ -33,8 +33,6 @@ After this lecture you can:
 - choose a method to study the cytoskeleton: **FRAP, TIRF, traction-force microscopy, optical tweezers**;
 - explain how **mavacamten** treats hypertrophic cardiomyopathy and why broken **keratin** gives blistering skin.
 
-**ELO 6** (cytoskeleton and motility), with disease examples for **ELO 9**.
-
 ::: notes
 This lecture closes the cytoskeleton block. In the lecture on actin you saw how actin filaments grow and push the front of a migrating cell. In the lecture on microtubules you met kinesin and dynein, the motors that walk on microtubules. Today we add the motor of the actin system, myosin, and we see how one kind of myosin, myosin II, makes a muscle contract. We take the sarcomere apart, the repeating unit of muscle, and see how its geometry decides how much force a muscle can make. We see how calcium, the signal you met in the lecture on ion channels, switches contraction on. Then we turn to the third filament system, intermediate filaments, which do not move anything but stop cells and tissues from tearing. We end with a round-up of the methods used to study the whole cytoskeleton, and two medical stories: a new heart drug that acts directly on myosin, and a skin disease caused by broken keratin. The physiology of muscle and heart comes in the course on organ structure and function; here we stay at the level of molecules and cells.
 :::

@@ -14,7 +14,7 @@ resources:
 
 Open [PDB 3SN6](https://www.rcsb.org/structure/3SN6), the β₂-adrenergic receptor bound to Gs. Scroll to **Macromolecules**: each protein has a chain letter. Then open the 3D view and colour by chain.
 
-**T1.** Which chain letter is the Gα~s~ subunit, and on which side of the receptor does it bind: (a) the extracellular side, (b) inside the membrane, (c) the cytoplasmic side? `[ELO 3]`
+**T1.** Which chain letter is the Gα~s~ subunit, and on which side of the receptor does it bind: (a) the extracellular side, (b) inside the membrane, (c) the cytoplasmic side?
 
 ::: {.callout-note collapse="true" title="Answer"}
 Chain **A**, on the **cytoplasmic side (c)**. The receptor is chain R; its seven helices cross the membrane, and Gα~s~ sits in the pocket that opens on the inside when adrenaline binds.
@@ -24,7 +24,7 @@ Chain **A**, on the **cytoplasmic side (c)**. The receptor is chain R; its seven
 
 Open [PDB 1IEP](https://www.rcsb.org/structure/1IEP), the ABL kinase domain with imatinib (called STI-571 in the entry). Scroll to **Small Molecules**.
 
-**T2.** What is the three-character ligand ID of imatinib in this entry? `[ELO 3]`
+**T2.** What is the three-character ligand ID of imatinib in this entry?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **STI**. In the 3D view it sits in the ATP pocket of the kinase, as in the lecture: with imatinib there, ATP cannot bind.
@@ -34,7 +34,7 @@ Open [PDB 1IEP](https://www.rcsb.org/structure/1IEP), the ABL kinase domain with
 
 Open the Reactome pathway [GRB2 events in EGFR signaling (R-HSA-179812)](https://reactome.org/content/detail/R-HSA-179812). Read the list of reactions it contains.
 
-**T3.** The last reaction is a nucleotide exchange made by SOS1. Which protein gets its GDP swapped for GTP? `[ELO 3]`
+**T3.** The last reaction is a nucleotide exchange made by SOS1. Which protein gets its GDP swapped for GTP?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **RAS**. GRB2 binds the phosphorylated receptor and brings SOS1 to the membrane, where it switches Ras on.
@@ -44,7 +44,7 @@ Open the Reactome pathway [GRB2 events in EGFR signaling (R-HSA-179812)](https:/
 
 Open [EGFR in Open Targets](https://platform.opentargets.org/target/ENSG00000146648) and scroll to the drugs section. Each drug has a type (small molecule, antibody…); click a drug name to see its page.
 
-**T4.** Which of these four EGFR drugs is an antibody: erlotinib, osimertinib, cetuximab or gefitinib? `[ELO 9]`
+**T4.** Which of these four EGFR drugs is an antibody: erlotinib, osimertinib, cetuximab or gefitinib?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **Cetuximab**. An antibody cannot cross the membrane, so it binds the outside of EGFR and stops ligand binding. The other three are small molecules that enter the cell and block the ATP pocket of the kinase.
@@ -67,7 +67,7 @@ ggplot(ic50, aes(x = ___, y = ___, colour = kinase_form)) +
 
 You should see one dot per record, on a log scale, with a dashed line at 1000 nM. Records on mutant kinases have their own colour.
 
-**T5.** Which kinase has no record below the dashed 1 µM line? `[ELO 9]`
+**T5.** Which kinase has no record below the dashed 1 µM line?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **SRC**. All its values are 5000 nM or more. Imatinib does not block every tyrosine kinase.
@@ -75,13 +75,13 @@ You should see one dot per record, on a log scale, with a dashed line at 1000 nM
 
 **Blanks 2 and 3** (`potent`). Look at the two given examples, `data[condition, ]` and `data[order(column), ]`. Keep the kinases whose median IC50 is below 1 µM (blank 2: a number in nM), then sort them, lowest first (blank 3: `potent$median_ic50_nm`). The printout should be a small table of kinases.
 
-**T6.** How many kinases are left, and which one is on top (lowest median IC50)? `[ELO 9]`
+**T6.** How many kinases are left, and which one is on top (lowest median IC50)?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **Three** (PDGFRA, ABL1, KIT); **PDGFRA** is on top, at about 70 nM. This is why imatinib works not only in chronic myeloid leukaemia (BCR-ABL) but also in gastrointestinal stromal tumours, which are driven by KIT or PDGFRA.
 :::
 
-**T7. [VG]** The last chunk (`mutations`) is given: it lists the mutations named in the mutant records and the median IC50 of the T315I records. Which mutation is most frequent, and is its median IC50 (a) below 1 µM or (b) above 1 µM? `[ELO 9]`
+**T7. [VG]** The last chunk (`mutations`) is given: it lists the mutations named in the mutant records and the median IC50 of the T315I records. Which mutation is most frequent, and is its median IC50 (a) below 1 µM or (b) above 1 µM?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **T315I**, median **10 000 nM, above 1 µM (b)**: about 40 times higher than for wild-type ABL1. T315 is the gatekeeper residue at the entrance of the ATP pocket of ABL: the bigger isoleucine keeps imatinib out, and the leukaemia becomes resistant (kinase signalling lecture).

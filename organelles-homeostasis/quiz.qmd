@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Organelles compared:
 
 ---
 
-**Q1.** The nucleus is surrounded by two membranes. Why do the pH and free Ca²⁺ in the nucleoplasm still follow those of the cytosol? `[ELO 5]`
+**Q1.** The nucleus is surrounded by two membranes. Why do the pH and free Ca²⁺ in the nucleoplasm still follow those of the cytosol?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What do the nuclear pores let through without a signal?
@@ -21,7 +21,7 @@ What do the nuclear pores let through without a signal?
 
 ---
 
-**Q2.** What is the nuclear lamina made of, where is it, and name two of its jobs. `[ELO 5]`
+**Q2.** What is the nuclear lamina made of, where is it, and name two of its jobs.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 It is a type of intermediate filament.
@@ -33,7 +33,7 @@ A mesh of **lamins** (A-type and B-type), which are intermediate-filament protei
 
 ---
 
-**Q3.** Peroxisomes make hydrogen peroxide (H₂O₂), which is toxic. Why is this not a problem for the cell, and why does it make sense to do these reactions in a separate organelle? `[ELO 5]`
+**Q3.** Peroxisomes make hydrogen peroxide (H₂O₂), which is toxic. Why is this not a problem for the cell, and why does it make sense to do these reactions in a separate organelle?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which enzyme is packed into the same organelle?
@@ -45,7 +45,7 @@ The oxidases that make H₂O₂ sit in the same small compartment as **catalase*
 
 ---
 
-**Q4.** Why does a lipid droplet have only **one** layer of phospholipids around it, while other organelles have a bilayer? `[ELO 5]`
+**Q4.** Why does a lipid droplet have only **one** layer of phospholipids around it, while other organelles have a bilayer?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Where are the neutral fats deposited when a droplet forms, and what is inside the droplet?
@@ -57,7 +57,7 @@ Neutral fats (triglycerides, cholesterol esters) are made in the ER and collect 
 
 ---
 
-**Q5.** What is an organelle contact site? Give one example and say what passes there. `[ELO 5]`
+**Q5.** What is an organelle contact site? Give one example and say what passes there.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 How far apart are the membranes, and do they fuse?
@@ -69,7 +69,7 @@ A place where the membranes of two organelles are held **10–30 nm apart by tet
 
 ---
 
-**Q6.** Put these compartments in order from the most acidic to the most alkaline: cytosol, lysosome, mitochondrial matrix, early endosome, trans-Golgi. `[ELO 5]`
+**Q6.** Put these compartments in order from the most acidic to the most alkaline: cytosol, lysosome, mitochondrial matrix, early endosome, trans-Golgi.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One of them is above pH 7.2.
@@ -81,7 +81,7 @@ One of them is above pH 7.2.
 
 ---
 
-**Q7.** A drug blocks the SERCA pump. What happens to free Ca²⁺ in (a) the ER and (b) the cytosol, and (c) why does the cell then switch on the unfolded protein response? `[ELO 5]`
+**Q7.** A drug blocks the SERCA pump. What happens to free Ca²⁺ in (a) the ER and (b) the cytosol, and (c) why does the cell then switch on the unfolded protein response?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 SERCA pumps Ca²⁺ from the cytosol into the ER. The ER leaks Ca²⁺ all the time. Which ER chaperones bind Ca²⁺?
@@ -93,7 +93,7 @@ SERCA pumps Ca²⁺ from the cytosol into the ER. The ER leaks Ca²⁺ all the t
 
 ---
 
-**Q8.** Name the gene or protein that is defective, and the organelle affected, in (a) Hutchinson–Gilford progeria and (b) Zellweger syndrome. How does lonafarnib help in (a)? `[ELO 5]` `[ELO 9]`
+**Q8.** Name the gene or protein that is defective, and the organelle affected, in (a) Hutchinson–Gilford progeria and (b) Zellweger syndrome. How does lonafarnib help in (a)?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One disease keeps a lipid anchor that should be cut off; the other cannot import enzymes.

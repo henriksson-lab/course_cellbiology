@@ -32,8 +32,6 @@ After this lecture you can:
 - use **synthesis and degradation rates** to explain protein **half-life** and **steady state**, and how they are measured (**cycloheximide chase**, **pulse-chase**);
 - explain how **bortezomib**, **PROTACs** and **lenalidomide** use this machinery, and how misfolding leads to **Alzheimer's** and **Parkinson's** disease.
 
-**ELO 4** (protein handling), with links to **ELO 9** (disease).
-
 ::: notes
 In biochemistry you learned what a protein is: a chain of amino acids that folds into a shape, and the shape decides what it does. Today we follow a protein through its life inside a cell. It starts as a chain leaving the ribosome, and it must fold correctly in a very crowded space; helper proteins called chaperones make this possible. Once folded, a protein is often switched on and off by small chemical marks that enzymes add and remove. And finally every protein is destroyed, mostly by a machine called the proteasome, after being marked with a small protein called ubiquitin. The balance between making and destroying sets how much of each protein a cell has. We will also look at how we measure protein lifetimes, and at drugs that block or hijack the destruction machinery. Folding and quality control inside the endoplasmic reticulum, and degradation in lysosomes, get their own lectures; today we stay in the cytosol and nucleus. This lecture covers ELO 4, with links to disease mechanisms, ELO 9.
 :::

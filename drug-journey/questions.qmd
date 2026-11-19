@@ -13,7 +13,7 @@ The [quiz](quiz.qmd) gives a shorter self-check.
 
 **1.** Follow an mRNA–LNP from a particle outside a cell to productive translation.
 Name the two membrane barriers, explain endocytosis and escape, and distinguish
-the paths of the lipid carrier, mRNA and encoded protein. `[ELO 2, ELO 4, ELO 5]`
+the paths of the lipid carrier, mRNA and encoded protein.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The plasma membrane separates extracellular space from cytosol. **Endocytosis**
@@ -34,7 +34,6 @@ fluorescence demonstrates cytosolic delivery of functional mRNA.
 large antigen domain and a membrane anchor. Explain how the antigen domain
 reaches the ER lumen and what can happen if it fails to fold. Why must you inspect
 the remaining sequence before predicting the effect of deleting the signal peptide?
-`[ELO 4]`
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Translation begins on a cytosolic ribosome. **SRP** recognises the emerging signal,
@@ -54,7 +53,6 @@ assumption that no functional alternative targeting signal remains.
 **3.** Trace a correctly folded membrane antigen from ER to cell surface. Mark
 which side contains its glycosylated antigen domain and which contains its
 cytosolic tail at each stage. Give a way to test the final orientation.
-`[ELO 1, ELO 2, ELO 4, ELO 5]`
 
 ::: {.callout-note collapse="true" title="Model answer"}
 ER → transport carriers → Golgi → carriers from the trans-Golgi network → plasma
@@ -71,7 +69,7 @@ controls. A total-protein measurement alone cannot establish surface orientation
 
 **4.** Explain how cytoskeletal transport and organelle homeostasis support the
 journey. Give two reasons a global ATP-depletion experiment cannot isolate a
-single failed step. `[ELO 5, ELO 6]`
+single failed step.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Microtubules and motors position organelles and move many carriers; actin and
@@ -89,7 +87,7 @@ and more focused perturbations, measuring the earliest affected event.
 
 **5.** Compare whole-antigen display with classical peptide–MHC-I display. Which
 route uses secretory transport, and which uses the proteasome? Why does neither
-measurement alone establish a complete immune response? `[ELO 3, ELO 4]`
+measurement alone establish a complete immune response?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 A whole membrane antigen folds and reaches the surface through **ER and Golgi
@@ -107,7 +105,7 @@ not proof of immune protection. Other presentation routes are covered in Immunol
 
 **6.** Follow imatinib from outside a leukaemia cell to inhibition of BCR–ABL1.
 Explain why total cellular drug, target engagement and downstream phosphorylation
-are different measurements. `[ELO 1, ELO 2, ELO 3, ELO 9]`
+are different measurements.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Available extracellular drug enters the cell; entry, export, binding and
@@ -125,7 +123,7 @@ and does not require translation of a new therapeutic protein or Golgi export.
 
 **7.** Explain how kinase inhibition can cause cell-cycle arrest or intrinsic
 apoptosis. Which measurements distinguish those outcomes, and why is a smaller
-cell population insufficient evidence of death? `[ELO 1, ELO 3, ELO 7, ELO 8]`
+cell population insufficient evidence of death?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Reduced mitogenic signalling can lower cyclin/CDK activity and prevent cell-cycle
@@ -143,7 +141,7 @@ more slowly; this does not require cells to die.
 
 **8.** Compare three resistance mechanisms: increased drug efflux, a resistant
 kinase and a downstream survival bypass. Predict whether each can preserve growth
-and whether it must prevent inhibition of the intended kinase. `[ELO 2, ELO 3, ELO 9]`
+and whether it must prevent inhibition of the intended kinase.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Increased efflux** can lower target-site exposure so kinase activity remains
@@ -161,7 +159,6 @@ can change together. Clinical resistance is not diagnosed from a cell count alon
 **9. [VG]** Two mRNA formulations give the following results in equal numbers of
 viable cells at the same time. Values are normalised to formulation A. Interpret
 the difference and design two measurements to distinguish competing explanations.
-`[ELO 1, ELO 2, ELO 4]`
 
 | Readout | A | B |
 |---|---:|---:|
@@ -186,7 +183,7 @@ locate the defect or establish which formulation would work better in vivo.
 **10. [VG]** After a treatment, total antigen remains near control but surface
 antigen falls sharply. RNA delivery is unchanged. Compare an ER-folding defect
 with an ER-to-Golgi traffic block. Design a test that distinguishes them, including
-a control and a limitation. `[ELO 1, ELO 4, ELO 5]`
+a control and a limitation.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Both can lower surface delivery while leaving initial translation intact.
@@ -207,7 +204,7 @@ cannot establish whether the retained cargo is correctly folded.
 **11. [VG]** Three leukaemia cell lines receive the same extracellular inhibitor.
 A validated target-dependent phosphorylation readout and DNA synthesis are measured
 relative to vehicle controls. Propose a next test for each line. Do not assign a
-unique molecular mechanism from the table. `[ELO 1, ELO 3, ELO 7, ELO 8, ELO 9]`
+unique molecular mechanism from the table.
 
 | Line | Target-dependent phosphorylation | DNA synthesis |
 |---|---:|---:|
@@ -248,27 +245,25 @@ current stop so you can compare it directly.
 **E1.** Select **mRNA–LNP**, Baseline. Step through all seven stops. At **Escape**,
 **Translation**, **ER/Golgi** and **Surface/peptides**, name the molecule being
 followed and which side of a membrane it occupies. Does the mRNA pass through
-the Golgi? `[ELO 2, ELO 4, ELO 5]`
+the Golgi?
 
 **E2.** Predict, then select **Impaired endosomal escape**. Which readouts could
 still look successful even though protein expression falls? Why would increasing
-particle fluorescence not resolve the problem? `[ELO 1, ELO 2, ELO 4]`
+particle fluorescence not resolve the problem?
 
 **E3. [VG]** Compare **No ER-targeting signal** with **Secretory traffic block**.
 Which early events can remain intact? Why must the signal scenario assume that
 no alternative signal-anchor redirects the protein? Does failed whole-antigen
 surface display necessarily eliminate every antigen-derived peptide?
-`[ELO 4, ELO 5]`
 
 **E4.** Switch to **Imatinib** and follow the five stops. Compare **Increased drug
 efflux** and **Resistant target**. Which measurement helps distinguish the two
 assumptions, and which would show whether kinase activity actually fell?
-`[ELO 1, ELO 2, ELO 3, ELO 9]`
 
 **E5. [VG]** The kinase readout falls but cells remain alive. Explain why this
 need not contradict the drug's molecular mechanism. Choose separate tests for
 cell-cycle arrest, apoptosis and a survival bypass, then explain what the map
-cannot decide for you. `[ELO 1, ELO 3, ELO 7, ELO 8, ELO 9]`
+cannot decide for you.
 
 ::: {.callout-note collapse="true" title="Solutions"}
 **E1.** Escape moves intact **mRNA from endosomal lumen to cytosol**, where

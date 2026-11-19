@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Beyond apoptosis: ne
 
 ---
 
-**Q1.** What is the difference between accidental and regulated necrosis, and which experiment tells them apart? `[ELO 8]`
+**Q1.** What is the difference between accidental and regulated necrosis, and which experiment tells them apart?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Does the cell use its own proteins to die? What happens if you remove one of them?
@@ -21,7 +21,7 @@ In **accidental necrosis** the damage (heat, freezing, detergent, crushing, tota
 
 ---
 
-**Q2.** Why do many cells die *faster* when they are given TNF together with the caspase inhibitor z-VAD than with TNF alone? `[ELO 8]`
+**Q2.** Why do many cells die *faster* when they are given TNF together with the caspase inhibitor z-VAD than with TNF alone?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Caspase-8 has a second job besides starting apoptosis.
@@ -33,7 +33,7 @@ Active **caspase-8 cuts RIPK1 and RIPK3** and so keeps necroptosis switched off.
 
 ---
 
-**Q3.** Put these steps of pyroptosis in order: (a) IL-1β leaves the cell, (b) NLRP3, ASC and pro-caspase-1 assemble, (c) gasdermin D is cut, (d) a danger signal such as K⁺ loss, (e) priming makes pro-IL-1β and NLRP3, (f) caspase-1 becomes active. `[ELO 8]`
+**Q3.** Put these steps of pyroptosis in order: (a) IL-1β leaves the cell, (b) NLRP3, ASC and pro-caspase-1 assemble, (c) gasdermin D is cut, (d) a danger signal such as K⁺ loss, (e) priming makes pro-IL-1β and NLRP3, (f) caspase-1 becomes active.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Two signals come first. The pore must exist before IL-1β can get out.
@@ -45,7 +45,7 @@ Two signals come first. The pore must exist before IL-1β can get out.
 
 ---
 
-**Q4.** Why are polyunsaturated fatty acid tails, and not saturated ones, the targets in ferroptosis? `[ELO 8]` `[ELO 2]`
+**Q4.** Why are polyunsaturated fatty acid tails, and not saturated ones, the targets in ferroptosis?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Look at the C–H bonds next to the double bonds.
@@ -57,7 +57,7 @@ Polyunsaturated tails have **several C=C double bonds**, and the C–H bonds bet
 
 ---
 
-**Q5.** Name two ways to start ferroptosis in a cultured cell, and say which step of the guard system each one breaks. `[ELO 8]`
+**Q5.** Name two ways to start ferroptosis in a cultured cell, and say which step of the guard system each one breaks.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Cystine → cysteine → glutathione → GPX4.
@@ -69,7 +69,7 @@ Cystine → cysteine → glutathione → GPX4.
 
 ---
 
-**Q6.** A cell dying after a stress is full of autophagosomes. A student concludes: "autophagy killed this cell". What experiment tests this, and what is the usual result? `[ELO 8]` `[ELO 1]`
+**Q6.** A cell dying after a stress is full of autophagosomes. A student concludes: "autophagy killed this cell". What experiment tests this, and what is the usual result?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Necessary versus "found together".
@@ -81,7 +81,7 @@ Block autophagy, e.g. **knock out an essential ATG gene**, and repeat the stress
 
 ---
 
-**Q7.** Why does apoptosis cause no inflammation, while necroptosis, pyroptosis and ferroptosis do? Give two examples of DAMPs. `[ELO 8]`
+**Q7.** Why does apoptosis cause no inflammation, while necroptosis, pyroptosis and ferroptosis do? Give two examples of DAMPs.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What happens to the plasma membrane in each?
@@ -93,7 +93,7 @@ In apoptosis the **plasma membrane stays intact** until the cell is eaten; it sh
 
 ---
 
-**Q8.** Cells die after a treatment. z-VAD saves them. Can you conclude that they died by apoptosis? `[ELO 8]`
+**Q8.** Cells die after a treatment. z-VAD saves them. Can you conclude that they died by apoptosis?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which caspases does z-VAD block?

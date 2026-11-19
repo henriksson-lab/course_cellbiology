@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Protein life and dea
 
 ---
 
-**Q1.** Anfinsen showed that a purified protein can refold by itself in a test tube. Why do cells still need chaperones? Give two reasons. `[ELO 4]`
+**Q1.** Anfinsen showed that a purified protein can refold by itself in a test tube. Why do cells still need chaperones? Give two reasons.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Compare a test tube with the cytosol, and think about how a new chain is made.
@@ -21,7 +21,7 @@ Compare a test tube with the cytosol, and think about how a new chain is made.
 
 ---
 
-**Q2.** Hsp70 binds its substrate tightly in one nucleotide state and loosely in the other. Which is which, and why does Hsp70 need ATP at all? `[ELO 4]`
+**Q2.** Hsp70 binds its substrate tightly in one nucleotide state and loosely in the other. Which is which, and why does Hsp70 need ATP at all?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of the lid.
@@ -33,7 +33,7 @@ With **ADP** bound the lid is closed and Hsp70 holds the chain **tightly**; with
 
 ---
 
-**Q3.** What is special about the structure of amyloid compared with an amorphous aggregate, and why can amyloid "spread"? `[ELO 4]` `[ELO 9]`
+**Q3.** What is special about the structure of amyloid compared with an amorphous aggregate, and why can amyloid "spread"?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Look at the direction of the β-strands relative to the fibril.
@@ -45,7 +45,7 @@ Amyloid is **ordered**: each chain forms β-strands lying **across** the fibril,
 
 ---
 
-**Q4.** A kinase phosphorylates an enzyme on a serine and the enzyme becomes active. Name the enzyme that switches it off again, and explain how one phosphate can change activity. `[ELO 4]`
+**Q4.** A kinase phosphorylates an enzyme on a serine and the enzyme becomes active. Name the enzyme that switches it off again, and explain how one phosphate can change activity.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What does a phosphate group carry?
@@ -57,7 +57,7 @@ A **protein phosphatase** removes the phosphate (by hydrolysis). The phosphate c
 
 ---
 
-**Q5.** Put these in the correct order for marking a protein for destruction, and say what each does: E2, proteasome, E1, E3. Which of them gives the specificity? `[ELO 4]`
+**Q5.** Put these in the correct order for marking a protein for destruction, and say what each does: E2, proteasome, E1, E3. Which of them gives the specificity?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Humans have 2 of one, about 40 of another and about 600 of a third.
@@ -69,7 +69,7 @@ Humans have 2 of one, about 40 of another and about 600 of a third.
 
 ---
 
-**Q6.** Two proteins are both present at 1000 molecules per cell. Protein A has a half-life of 30 min, protein B of 30 h. Which one is made faster? What happens to each within 2 hours after the gene is switched off? `[ELO 4]`
+**Q6.** Two proteins are both present at 1000 molecules per cell. Protein A has a half-life of 30 min, protein B of 30 h. Which one is made faster? What happens to each within 2 hours after the gene is switched off?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 At steady state $P = k_s/k_d$, and $k_d = \ln 2 / t_{1/2}$.
@@ -81,7 +81,7 @@ At steady state $k_s = k_d P$, so **A is made 60 times faster** than B (its $k_d
 
 ---
 
-**Q7.** In a cycloheximide chase you add a proteasome inhibitor together with cycloheximide, and the protein now disappears much more slowly. What do you conclude? Why can you not run the experiment for 48 hours? `[ELO 1]` `[ELO 4]`
+**Q7.** In a cycloheximide chase you add a proteasome inhibitor together with cycloheximide, and the protein now disappears much more slowly. What do you conclude? Why can you not run the experiment for 48 hours?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What else besides your protein depends on new protein synthesis?
@@ -93,7 +93,7 @@ The protein is degraded mainly by the **proteasome** (most likely after ubiquiti
 
 ---
 
-**Q8.** Bortezomib and lenalidomide are both used in multiple myeloma and both act on the ubiquitin–proteasome system. How do their mechanisms differ? `[ELO 4]` `[ELO 9]`
+**Q8.** Bortezomib and lenalidomide are both used in multiple myeloma and both act on the ubiquitin–proteasome system. How do their mechanisms differ?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One blocks, the other redirects.

@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Principles of cell c
 
 ---
 
-**Q1.** Match each signal to its type of signalling: (a) insulin from the pancreas acting on muscle, (b) histamine from a mast cell acting on a nearby blood vessel, (c) acetylcholine from a nerve ending acting on a muscle fibre, (d) Delta on one cell acting on Notch on the neighbouring cell. Types: contact-dependent, endocrine, paracrine, synaptic. `[ELO 3]`
+**Q1.** Match each signal to its type of signalling: (a) insulin from the pancreas acting on muscle, (b) histamine from a mast cell acting on a nearby blood vessel, (c) acetylcholine from a nerve ending acting on a muscle fibre, (d) Delta on one cell acting on Notch on the neighbouring cell. Types: contact-dependent, endocrine, paracrine, synaptic.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 How far does each signal travel, and does it leave the sending cell at all?
@@ -21,7 +21,7 @@ How far does each signal travel, and does it leave the sending cell at all?
 
 ---
 
-**Q2.** Adrenaline binds a receptor in the plasma membrane, while cortisol binds a receptor inside the cell. Why? And which of the two hormones gives the faster response? `[ELO 3]`
+**Q2.** Adrenaline binds a receptor in the plasma membrane, while cortisol binds a receptor inside the cell. Why? And which of the two hormones gives the faster response?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which of the two can cross a lipid bilayer? What does the cortisol receptor do once it has bound its hormone?
@@ -33,7 +33,7 @@ Adrenaline is **water-soluble** and cannot cross the bilayer, so its receptor mu
 
 ---
 
-**Q3.** A receptor has $K_d$ = 2 nM for its hormone. What fraction of the receptors is occupied at 2 nM, 6 nM and 18 nM hormone? `[ELO 3]`
+**Q3.** A receptor has $K_d$ = 2 nM for its hormone. What fraction of the receptors is occupied at 2 nM, 6 nM and 18 nM hormone?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Fraction occupied $= [L]/([L] + K_d)$.
@@ -45,7 +45,7 @@ Fraction occupied $= [L]/([L] + K_d)$.
 
 ---
 
-**Q4.** Drug A gives a maximal response of 100 % with EC₅₀ = 10 nM. Drug B, acting on the same receptor, gives at most 40 % with EC₅₀ = 1 nM. Which drug is more **potent**, which has the higher **efficacy**, and what kind of drug is B? `[ELO 3]`
+**Q4.** Drug A gives a maximal response of 100 % with EC₅₀ = 10 nM. Drug B, acting on the same receptor, gives at most 40 % with EC₅₀ = 1 nM. Which drug is more **potent**, which has the higher **efficacy**, and what kind of drug is B?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Potency is about *how much* drug you need; efficacy is about *how large* the effect can get.
@@ -57,7 +57,7 @@ Drug B is **more potent** (lower EC₅₀: it works at lower concentrations). Dr
 
 ---
 
-**Q5.** You measure an agonist's dose–response curve with and without a new antagonist. With the antagonist, the curve moves to the right, but at very high agonist concentrations it reaches the same maximum. What kind of antagonist is it? What would you see with an irreversible antagonist in a tissue without spare receptors? `[ELO 3]`
+**Q5.** You measure an agonist's dose–response curve with and without a new antagonist. With the antagonist, the curve moves to the right, but at very high agonist concentrations it reaches the same maximum. What kind of antagonist is it? What would you see with an irreversible antagonist in a tissue without spare receptors?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Can extra agonist win back the receptors?
@@ -69,7 +69,7 @@ A **competitive** (reversible, same-site) antagonist: enough agonist out-compete
 
 ---
 
-**Q6.** In one tissue, an agonist gives half of its maximal effect when only about 5 % of its receptors are occupied. How is that possible, and is its EC₅₀ higher or lower than its $K_d$? `[ELO 3]`
+**Q6.** In one tissue, an agonist gives half of its maximal effect when only about 5 % of its receptors are occupied. How is that possible, and is its EC₅₀ higher or lower than its $K_d$?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What happens to the signal in the steps after the receptor?
@@ -81,7 +81,7 @@ What happens to the signal in the steps after the receptor?
 
 ---
 
-**Q7.** A mutation makes a GTPase unable to hydrolyse GTP. Is the protein stuck ON or OFF? Which helper protein normally switches it off, and which switches it on? `[ELO 3]`
+**Q7.** A mutation makes a GTPase unable to hydrolyse GTP. Is the protein stuck ON or OFF? Which helper protein normally switches it off, and which switches it on?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which nucleotide is bound in the active state?
@@ -93,7 +93,7 @@ Which nucleotide is bound in the active state?
 
 ---
 
-**Q8.** A patient uses a β₂-agonist inhaler many times a day for weeks, and it works less and less well. Name the phenomenon and two mechanisms in the cell that can cause it. `[ELO 3]`
+**Q8.** A patient uses a β₂-agonist inhaler many times a day for weeks, and it works less and less well. Name the phenomenon and two mechanisms in the cell that can cause it.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What happens to receptors that are switched on all the time?

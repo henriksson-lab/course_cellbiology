@@ -15,7 +15,7 @@ before opening the model answer.
 **1.** Draw a mitochondrion and label its outer membrane, intermembrane space,
 inner membrane, cristae and matrix. Place the TCA cycle, respiratory chain,
 ATP synthase head and cytochrome c. Why do the two membranes have different
-permeabilities? `[ELO 5]`
+permeabilities?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The **matrix** lies inside the inner membrane and contains most TCA-cycle enzymes
@@ -32,7 +32,7 @@ Cristae increase the area available for energy conversion.
 
 **2.** Explain how electrons from NADH reach oxygen, which complexes pump H⁺,
 and how the resulting gradient drives ATP synthesis. Why does succinate-linked
-entry through complex II yield less ATP per electron pair? `[ELO 5]`
+entry through complex II yield less ATP per electron pair?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Electrons pass **I → ubiquinone (Q) → III → cytochrome c → IV → O₂**, reducing
@@ -51,7 +51,7 @@ electron pair instead of 10.
 **3.** The matrix is 160 mV negative relative to the intermembrane space and
 0.5 pH unit more alkaline. Estimate the magnitude of the proton-motive force
 at 37 °C, taking 61.5 mV per pH unit. What happens if H⁺ can freely cross the
-inner membrane? `[ELO 2, ELO 5]`
+inner membrane?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Both electrical and chemical components favour H⁺ entry, so their magnitudes add:
@@ -66,7 +66,7 @@ across the membrane, not a large reservoir of free protons.
 
 **4.** How does ATP made in the matrix become available in the cytosol? Explain
 why the ADP/ATP carrier depends on the membrane potential and why ATP synthesis
-also needs phosphate transport. `[ELO 2, ELO 5]`
+also needs phosphate transport.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The inner membrane does not freely pass ATP or ADP. The **ADP/ATP antiporter**
@@ -83,7 +83,7 @@ help explain why practical ATP yields are lower than the ideal rotor ratio.
 
 **5.** What does human mtDNA encode? Why do mitochondria still need protein
 import? Distinguish maternal inheritance of mtDNA from inheritance of a
-mitochondrial disease caused by a nuclear gene. `[ELO 4, ELO 5, ELO 9]`
+mitochondrial disease caused by a nuclear gene.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Human mtDNA has **37 genes: 13 proteins, 22 tRNAs and 2 rRNAs**. The 13 proteins
@@ -100,7 +100,7 @@ necessarily maternally inherited**.
 
 **6.** Explain heteroplasmy, the threshold effect and the mitochondrial genetic
 bottleneck. Why can siblings have different symptoms, and why are brain,
-heart and skeletal muscle often affected? `[ELO 5, ELO 9]`
+heart and skeletal muscle often affected?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Heteroplasmy** means that different mtDNA variants coexist in a cell or person,
@@ -117,7 +117,7 @@ energy demand makes brain, heart and muscle particularly vulnerable.
 ---
 
 **7.** Compare mitochondrial fission and fusion. How do they cooperate with
-mitophagy to maintain the network? `[ELO 5]`
+mitophagy to maintain the network?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Fission**, involving DRP1, divides tubules; **fusion** joins outer membranes
@@ -133,7 +133,7 @@ has occurred: removal must be measured separately.
 
 **8.** Give two roles of mitochondria beyond ATP production. Explain why both
 Ca²⁺ uptake and ROS can be useful at moderate levels and harmful in excess.
-What changes when cytochrome c reaches the cytosol? `[ELO 5, ELO 8]`
+What changes when cytochrome c reaches the cytosol?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 At **ER–mitochondria contacts**, released Ca²⁺ enters the matrix through the
@@ -151,7 +151,7 @@ Location changes its effect.
 
 **9.** Compare chemiosmosis in mitochondria and chloroplasts. Which membrane
 holds the gradient, which side accumulates H⁺, and where does the ATP synthase
-head face? `[ELO 5]`
+head face?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Mitochondria use the **inner membrane**: H⁺ are pumped from the matrix into the
@@ -169,7 +169,6 @@ rates from equal numbers of viable cells. Assume each phase has reached a stable
 rate and FCCP has been optimised. Calculate basal mitochondrial respiration,
 ATP-linked respiration, proton leak, maximal respiration, spare capacity and
 coupling efficiency. Is maximal respiration also maximal ATP production?
-`[ELO 1, ELO 5]`
 
 | Phase | OCR (pmol O₂/min) |
 |---|---:|
@@ -201,7 +200,6 @@ protein, and optimise drug concentrations.
 cyanide on electron flow, proton-motive force and mitochondrial ATP synthesis
 in oxygenated cells supplied with fuel. Why can FCCP increase OCR after
 oligomycin but not after cyanide? What could maintain some cellular ATP?
-`[ELO 5, ELO 9]`
 
 ::: {.callout-note collapse="true" title="Model answer"}
 | Treatment | Electron flow / mitochondrial OCR | Proton-motive force | ATP synthesis |
@@ -223,7 +221,7 @@ impairs cellular function, so the early OCR prediction need not hold indefinitel
 **12. [VG]** Design a test of the claim that a proton gradient is sufficient to
 couple an unrelated proton pump to ATP synthesis. Include controls. Then explain
 why mitochondrial donation can reduce the risk of mtDNA disease but cannot
-correct a pathogenic nuclear allele. `[ELO 1, ELO 5, ELO 9]`
+correct a pathogenic nuclear allele.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Reconstitute a light-driven H⁺ pump and ATP synthase into sealed lipid vesicles,
@@ -261,24 +259,24 @@ fixed non-mitochondrial OCR; it omits glycolytic ATP and long-term cell response
 
 **E1.** Run **Healthy cell**. After the basal phase, inject **oligomycin → FCCP →
 rotenone + antimycin A**, waiting for each phase to finish. Explain the change in
-OCR and Δp after every injection. `[ELO 5]`
+OCR and Δp after every injection.
 
 **E2.** Use the completed trace to calculate ATP-linked respiration and spare
 capacity yourself. Compare your calculations with the table. Why do you subtract
-the final residual OCR? `[ELO 1, ELO 5]`
+the final residual OCR?
 
 **E3. [VG]** Predict, then compare **Complex I defect** with Healthy cell at the
 same ATP demand. Which results suggest reduced respiratory capacity? Does OCR
-alone prove a defect in complex I? `[ELO 1, ELO 5, ELO 9]`
+alone prove a defect in complex I?
 
 **E4. [VG]** Start a new well and inject **FCCP before oligomycin**, then finish
 with rotenone + antimycin A. Which quantities can you still estimate, and which
-are lost? Repeat with rotenone + antimycin A first. `[ELO 1, ELO 5]`
+are lost? Repeat with rotenone + antimycin A first.
 
 **E5. [VG]** Increase **ATP demand** and repeat the standard sequence in Healthy
 cell. Predict basal respiration and spare capacity. Compare the high-concentration
 metformin preset: what conclusion about therapeutic metformin can this model
-support? `[ELO 5, ELO 9]`
+support?
 
 ::: {.callout-note collapse="true" title="Solutions"}
 **E1.** Oligomycin closes the ATP synthase proton route: Δp rises, pumping faces

@@ -32,8 +32,6 @@ After this lecture you can:
 - describe in outline how **stem cells** renew tissues and how **cell lines** escape the limits;
 - explain why **growth-factor receptors**, **telomerase** and **senescent cells** are drug targets.
 
-**ELO 7** (cell cycle and control of cell numbers), with disease examples for **ELO 9**.
-
 ::: notes
 This lecture moves from the single cell to the population. In the lecture on the cell-cycle control system you saw the engine: cyclins, CDKs, Rb and E2F, and checkpoints that stop the cycle when something is wrong. Today we ask what tells that engine to start, and what stops it for good. We will look at three kinds of signal from outside: mitogens, which make a cell divide; growth factors, which make it bigger; and survival factors, which keep it alive. We will see that cells stop dividing when they touch their neighbours, and that normal human cells can only divide a limited number of times before they enter a permanent arrest called senescence. The reason is the ends of the chromosomes, the telomeres. Then we look briefly at stem cells and at how cancer cells and cell lines escape every one of these limits. The last slides show three medical applications. The lecture covers ELO 7, and the disease examples belong to ELO 9.
 :::

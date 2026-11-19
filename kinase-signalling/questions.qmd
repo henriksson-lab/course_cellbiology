@@ -9,7 +9,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ## G-level questions
 
-**1.** Describe, step by step, how binding of EGF to its receptor leads to activation of Ras. Name the proteins and domains involved. `[ELO 3]`
+**1.** Describe, step by step, how binding of EGF to its receptor leads to activation of Ras. Name the proteins and domains involved.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 1. EGF binds the extracellular part of the EGF receptor and brings two receptor chains together (**dimerisation**).
@@ -20,7 +20,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ---
 
-**2.** Compare the two kinds of molecular switch used in RTK signalling, phosphorylation and GTP binding. For each, say what turns it on and what turns it off, with one example from the lecture. `[ELO 3]`
+**2.** Compare the two kinds of molecular switch used in RTK signalling, phosphorylation and GTP binding. For each, say what turns it on and what turns it off, with one example from the lecture.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Phosphorylation:** a **kinase** transfers a phosphate from ATP to a Ser, Thr or Tyr; a **phosphatase** removes it. The phosphate changes the shape of the protein or creates a binding site. Example: MEK phosphorylates ERK on a Thr and a Tyr; dual-specificity phosphatases (DUSPs) remove them. Or: RTK tyrosines phosphorylated, then bound by SH2 proteins.
@@ -32,7 +32,7 @@ In both, the "off" state is reached by an enzyme reaction, so the length of the 
 
 ---
 
-**3.** Draw the Ras–MAP kinase cascade from the receptor to the nucleus. For each step, say what kind of molecule it is and how it activates the next. What does ERK do in the nucleus? `[ELO 3]`
+**3.** Draw the Ras–MAP kinase cascade from the receptor to the nucleus. For each step, say what kind of molecule it is and how it activates the next. What does ERK do in the nucleus?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Active **RTK** (phosphotyrosines) → **Grb2** (adaptor, SH2) → **SOS** (GEF) → **Ras** (small GTPase; Ras-GTP binds RAF) → **RAF** (Ser/Thr kinase, MAPKKK; phosphorylates MEK on two serines) → **MEK** (dual-specificity kinase, MAPKK; phosphorylates ERK on a Thr and a Tyr) → **ERK** (MAP kinase; active only when both sites are phosphorylated).
@@ -42,7 +42,7 @@ Active ERK phosphorylates many proteins in the cytosol and enters the **nucleus*
 
 ---
 
-**4.** Explain how the PI3K–Akt pathway helps a cell survive and grow. Include PIP₃, the PH domain, PTEN and two targets of Akt. `[ELO 3]`
+**4.** Explain how the PI3K–Akt pathway helps a cell survive and grow. Include PIP₃, the PH domain, PTEN and two targets of Akt.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 PI3K docks on phosphotyrosines of an active RTK (SH2 domains of its regulatory subunit; Ras-GTP also helps) and phosphorylates the membrane lipid PIP₂ to **PIP₃**. Akt binds PIP₃ with its **PH domain**, is brought to the membrane, and is phosphorylated and activated by PDK1 and mTORC2. Active Akt (1) phosphorylates and inactivates **BAD** and other pro-apoptotic proteins, so the cell **survives**; (2) activates **mTORC1** (via TSC and Rheb), which increases **protein synthesis and cell growth**; (in muscle and fat cells it also sends GLUT4 to the surface after insulin). **PTEN** removes the 3-phosphate from PIP₃ and so switches the pathway off; loss of PTEN in cancer keeps Akt active.
@@ -50,7 +50,7 @@ PI3K docks on phosphotyrosines of an active RTK (SH2 domains of its regulatory s
 
 ---
 
-**5.** Describe the JAK–STAT pathway. How does it differ from the Ras–MAP kinase pathway? `[ELO 3]`
+**5.** Describe the JAK–STAT pathway. How does it differ from the Ras–MAP kinase pathway?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Cytokine receptors (e.g. for interferons, IL-6, erythropoietin) have no kinase domain; a **JAK** tyrosine kinase is bound to each receptor tail. The cytokine brings two receptor chains together; the JAKs phosphorylate each other and tyrosines on the receptor. A **STAT** protein docks on a phosphotyrosine with its **SH2 domain** and is phosphorylated by JAK on one tyrosine. Two phosphorylated STATs bind each other (each SH2 domain binds the other's phosphotyrosine), the dimer enters the nucleus and binds DNA as a **transcription factor**.
@@ -60,7 +60,7 @@ Differences: the kinase is **associated**, not part of the receptor; there is **
 
 ---
 
-**6.** List four ways in which a growth-factor signal through the Ras–MAP kinase pathway is switched off. Which of them is a negative feedback, and what does it do to the time course of ERK activity? `[ELO 3]`
+**6.** List four ways in which a growth-factor signal through the Ras–MAP kinase pathway is switched off. Which of them is a negative feedback, and what does it do to the time course of ERK activity?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (1) **Receptor endocytosis** and degradation in lysosomes (and dephosphorylation of the receptor by tyrosine phosphatases). (2) **GAPs** speed up GTP hydrolysis by Ras. (3) **Phosphatases** remove the phosphates from MEK and ERK (e.g. DUSPs). (4) **Negative feedback**: active ERK phosphorylates SOS and RAF and makes them less active; ERK also induces transcription of DUSP genes.
@@ -70,7 +70,7 @@ The feedback (4, and the induced DUSPs) is driven by the output itself. It makes
 
 ---
 
-**7.** What is a phospho-specific antibody? Describe a western blot experiment that shows that EGF activates ERK within minutes, and name the controls. `[ELO 1]` `[ELO 3]`
+**7.** What is a phospho-specific antibody? Describe a western blot experiment that shows that EGF activates ERK within minutes, and name the controls.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 A phospho-specific antibody is raised against a peptide that carries a phosphate at a particular site, and selected so that it binds the protein only when that site is phosphorylated. It therefore reports the **active form** (e.g. ERK phosphorylated on Thr202 and Tyr204).
@@ -80,7 +80,7 @@ Experiment: starve cultured cells of serum (so that the pathway is off), add EGF
 
 ---
 
-**8.** Explain how imatinib works in chronic myeloid leukaemia. Start with the chromosome change. `[ELO 3]` `[ELO 9]`
+**8.** Explain how imatinib works in chronic myeloid leukaemia. Start with the chromosome change.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 In CML, chromosomes 9 and 22 exchange pieces (translocation t(9;22)); the shortened chromosome 22 is the **Philadelphia chromosome**. At the joint, the start of the **BCR** gene is fused to most of the **ABL** tyrosine kinase gene. The BCR part makes the fusion protein form oligomers, so the kinase is **always active**; the cells divide and survive without the normal signals, and too many white blood cells are made. **Imatinib** is a small molecule that binds the **ATP pocket** of ABL (in its inactive shape). Without ATP, BCR-ABL cannot phosphorylate its substrates, so the signal stops and the leukaemia cells stop dividing and die. Normal cells, which do not depend on ABL, are largely spared. Imatinib (2001) was the first targeted cancer drug; most patients now survive long term.
@@ -88,7 +88,7 @@ In CML, chromosomes 9 and 22 exchange pieces (translocation t(9;22)); the shorte
 
 ## VG-style questions
 
-**9. [VG]** A tumour carries a **KRAS G12V** mutation. (a) Explain at the molecular level why this Ras is "stuck on". (b) Predict whether an EGFR inhibitor, a RAF inhibitor (vemurafenib) or a MEK inhibitor will reduce ERK activity in these cells, and explain why. `[ELO 3]` `[ELO 9]`
+**9. [VG]** A tumour carries a **KRAS G12V** mutation. (a) Explain at the molecular level why this Ras is "stuck on". (b) Predict whether an EGFR inhibitor, a RAF inhibitor (vemurafenib) or a MEK inhibitor will reduce ERK activity in these cells, and explain why.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) Ras switches off by hydrolysing GTP, which is very slow unless a **GAP** puts a catalytic arginine into the active site. Glycine 12 lies next to that site; any larger side chain (here valine) blocks the GAP's arginine, so GAP-stimulated hydrolysis no longer works. Ras stays GTP-bound (active) without any input from the receptor.
@@ -98,7 +98,7 @@ In CML, chromosomes 9 and 22 exchange pieces (translocation t(9;22)); the shorte
 
 ---
 
-**10. [VG]** BRAF V600E melanomas often respond to vemurafenib, but BRAF V600E colon cancers hardly do. Colon cells have much more EGFR signalling than melanocytes. Use the idea of negative feedback to explain the difference, and propose a better treatment for the colon cancer. Then describe an experiment with cultured colon cancer cells that would test your explanation. `[ELO 1]` `[ELO 3]` `[ELO 9]`
+**10. [VG]** BRAF V600E melanomas often respond to vemurafenib, but BRAF V600E colon cancers hardly do. Colon cells have much more EGFR signalling than melanocytes. Use the idea of negative feedback to explain the difference, and propose a better treatment for the colon cancer. Then describe an experiment with cultured colon cancer cells that would test your explanation.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Explanation:** In BRAF V600E cells, ERK is very active, so the **negative feedback** from ERK keeps SOS, Ras and wild-type RAF strongly suppressed; the mutant BRAF itself ignores the feedback. Vemurafenib blocks V600E-BRAF and ERK falls. Lower ERK means **less feedback**, so the brake on the upstream pathway is released. In a melanoma cell there is little receptor input, so not much happens. In a colon cancer cell, **EGFR** is active: with the brake released, EGFR activates Ras, Ras makes RAF **dimers**, and vemurafenib inhibits these poorly. ERK comes back, and the tumour keeps growing.
@@ -110,7 +110,7 @@ In CML, chromosomes 9 and 22 exchange pieces (translocation t(9;22)); the shorte
 
 ---
 
-**11. [VG]** Students compare two signals: receptor occupancy and active (doubly phosphorylated) ERK, both measured over a range of growth-factor concentrations. ERK is half-maximal at a ten times lower growth-factor concentration than the receptor, and its curve is much steeper. (a) Explain both observations. (b) Why could a steep, switch-like response be useful for a decision such as cell division? (c) Predict how a strong negative feedback would change the ERK dose–response curve. `[ELO 3]`
+**11. [VG]** Students compare two signals: receptor occupancy and active (doubly phosphorylated) ERK, both measured over a range of growth-factor concentrations. ERK is half-maximal at a ten times lower growth-factor concentration than the receptor, and its curve is much steeper. (a) Explain both observations. (b) Why could a steep, switch-like response be useful for a decision such as cell division? (c) Predict how a strong negative feedback would change the ERK dose–response curve.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) **Sensitivity (left shift):** amplification. Each active kinase activates many molecules of the next, so a small fraction of active receptors is enough to switch on a large fraction of ERK. **Steepness:** MEK and ERK each need two phosphorylations, and the kinases and phosphatases work close to saturation, so at each level a small change in input tips the balance from mostly off to mostly on. The steepness compounds level by level (Hill coefficient about 4–5 for ERK versus 1 for binding).
@@ -134,15 +134,15 @@ The demo is a small model of the cascade **growth factor → RTK → Ras → RAF
 ```
 :::
 
-**E1.** Choose **Feedback off**. In the lower plot, compare the receptor and ERK curves. At what growth-factor dose is each half-maximal, and what are their Hill coefficients? Set the dose to 0.1 ng/mL: what percentage of receptors and of ERK is active? Explain both differences with two properties of the cascade. `[ELO 3]`
+**E1.** Choose **Feedback off**. In the lower plot, compare the receptor and ERK curves. At what growth-factor dose is each half-maximal, and what are their Hill coefficients? Set the dose to 0.1 ng/mL: what percentage of receptors and of ERK is active? Explain both differences with two properties of the cascade.
 
-**E2.** Choose **Normal cell + growth factor** (feedback on). Read ERK at the peak and at 60 min, and when the peak occurs. Then untick the feedback. What changes in the time course and in the dose–response curve? What would you expect to see on a phospho-ERK western blot with and without the feedback? `[ELO 1]` `[ELO 3]`
+**E2.** Choose **Normal cell + growth factor** (feedback on). Read ERK at the peak and at 60 min, and when the peak occurs. Then untick the feedback. What changes in the time course and in the dose–response curve? What would you expect to see on a phospho-ERK western blot with and without the feedback?
 
-**E3. [VG]** *Predict first:* a MEK inhibitor at its IC₅₀ is added 30 min after the growth factor. Will it remove a larger or a smaller fraction of ERK activity in a cell **with** feedback than in one **without**? Then run **MEK inhibitor at 30 min, no feedback** and **… with feedback**. Read the percentage of ERK activity removed, and look at RAF and Ras before and after the drug. Explain what you see. `[ELO 3]`
+**E3. [VG]** *Predict first:* a MEK inhibitor at its IC₅₀ is added 30 min after the growth factor. Will it remove a larger or a smaller fraction of ERK activity in a cell **with** feedback than in one **without**? Then run **MEK inhibitor at 30 min, no feedback** and **… with feedback**. Read the percentage of ERK activity removed, and look at RAF and Ras before and after the drug. Explain what you see.
 
-**E4.** Choose **Ras G12V (stuck on)**. Is ERK active without growth factor? Now try each inhibitor alone at 10× IC₅₀ (use **Remove all drugs** between tries). Which one works, which one does nothing, and which one makes ERK *more* active? Explain each with where the drug acts relative to the mutation. `[ELO 3]` `[ELO 9]`
+**E4.** Choose **Ras G12V (stuck on)**. Is ERK active without growth factor? Now try each inhibitor alone at 10× IC₅₀ (use **Remove all drugs** between tries). Which one works, which one does nothing, and which one makes ERK *more* active? Explain each with where the drug acts relative to the mutation.
 
-**E5. [VG]** Choose **BRAF V600E melanoma** (no growth factor) and add the RAF inhibitor at 10× IC₅₀. Then choose **BRAF V600E + vemurafenib, with EGF**. Compare ERK. Untick the feedback in the second case: what happens, and what does this tell you about *why* the drug fails? Find two ways (one or two drugs) to bring ERK below 30 %. Relate this to the treatment of BRAF V600E colon cancer. `[ELO 3]` `[ELO 9]`
+**E5. [VG]** Choose **BRAF V600E melanoma** (no growth factor) and add the RAF inhibitor at 10× IC₅₀. Then choose **BRAF V600E + vemurafenib, with EGF**. Compare ERK. Untick the feedback in the second case: what happens, and what does this tell you about *why* the drug fails? Find two ways (one or two drugs) to bring ERK below 30 %. Relate this to the treatment of BRAF V600E colon cancer.
 
 ::: {.callout-note collapse="true" title="Solutions"}
 

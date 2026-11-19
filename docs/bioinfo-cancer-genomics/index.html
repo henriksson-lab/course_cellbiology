@@ -1354,14 +1354,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Follow one oncogene and its drug through four databases: the mutation in tumours, the protein, the drug bound to it, and the trial that tested it. <strong>ELO 9.</strong></p>
+<p>Follow one oncogene and its drug through four databases: the mutation in tumours, the protein, the drug bound to it, and the trial that tested it.</p>
 <p>Builds on <a href="../cancer/lec.html">cancer</a>, <a href="../regulated-necrosis/lec.html">cell death beyond apoptosis</a>, the <a href="../disease-casebook/lec.html">disease casebook</a> and the <a href="../drug-journey/lec.html">drug journey</a>. About 2 hours.</p>
 <section id="part-a-in-the-browser" class="level2">
 <h2 class="anchored" data-anchor-id="part-a-in-the-browser">Part A: in the browser</h2>
 <section id="a1.-the-hotspot-in-melanoma" class="level3">
 <h3 class="anchored" data-anchor-id="a1.-the-hotspot-in-melanoma">A1. The hotspot in melanoma</h3>
 <p>Open the <a href="https://www.cbioportal.org/results/mutations?cancer_study_list=skcm_tcga_pan_can_atlas_2018&amp;case_set_id=skcm_tcga_pan_can_atlas_2018_all&amp;gene_list=BRAF%20TP53">BRAF and TP53 mutations in TCGA melanoma</a> in cBioPortal. The <strong>Mutations</strong> tab opens with <strong>BRAF</strong> selected. Each lollipop is one amino-acid position; its height is the number of patients with a mutation there. Then click <strong>TP53</strong> and compare.</p>
-<p><strong>T1.</strong> At which amino-acid position does BRAF have by far the tallest lollipop? <code>[ELO 9]</code></p>
+<p><strong>T1.</strong> At which amino-acid position does BRAF have by far the tallest lollipop?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1382,7 +1382,7 @@ Answer (checked 2026-11-19)
 <section id="a2.-where-is-v600-in-the-protein" class="level3">
 <h3 class="anchored" data-anchor-id="a2.-where-is-v600-in-the-protein">A2. Where is V600 in the protein?</h3>
 <p>Open <a href="https://www.uniprot.org/uniprotkb/P15056/entry">BRAF, UniProt P15056</a> and go to the section <strong>Family &amp; Domains</strong>.</p>
-<p><strong>T2.</strong> Which domain contains residue 600? <code>[ELO 9]</code></p>
+<p><strong>T2.</strong> Which domain contains residue 600?</p>
 <ol type="a">
 <li>The Ras-binding domain (RBD)</li>
 <li>The phorbol-ester/DAG-type zinc finger</li>
@@ -1408,7 +1408,7 @@ Answer (checked 2026-11-19)
 <section id="a3.-the-drug-in-the-binding-site" class="level3">
 <h3 class="anchored" data-anchor-id="a3.-the-drug-in-the-binding-site">A3. The drug in the binding site</h3>
 <p>Open <a href="https://www.rcsb.org/structure/3OG7">PDB 3OG7</a>, “B-Raf Kinase V600E oncogenic mutant in complex with PLX4032”. PLX4032 is the development name of vemurafenib. Scroll to <strong>Small Molecules</strong>.</p>
-<p><strong>T3.</strong> What is the three-character ligand ID of vemurafenib? <code>[ELO 9]</code></p>
+<p><strong>T3.</strong> What is the three-character ligand ID of vemurafenib?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1429,7 +1429,7 @@ Answer (checked 2026-11-19)
 <section id="a4.-the-trial" class="level3">
 <h3 class="anchored" data-anchor-id="a4.-the-trial">A4. The trial</h3>
 <p>Open the BRIM-3 trial, <a href="https://clinicaltrials.gov/study/NCT01006980">NCT01006980</a>, and look at <strong>Arms and Interventions</strong>.</p>
-<p><strong>T4.</strong> Which drug was vemurafenib compared with? <code>[ELO 9]</code></p>
+<p><strong>T4.</strong> Which drug was vemurafenib compared with?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1464,7 +1464,7 @@ Answer (checked 2026-11-19)
 <li><strong>Chunk <code>position-600</code>:</strong> build a pipeline from the three given pieces, in the right order, joined by <code>|&gt;</code>. It starts with the data, keeps only BRAF position 600, then counts each protein change. It prints a small table of changes.</li>
 <li><strong>Chunk <code>mutation-types</code>:</strong> colour the bars by the column that holds the mutation type (look at the column names printed by the Data chunk, or run <code>names(mutations)</code>). You should see one stacked bar per gene.</li>
 </ol>
-<p><strong>T5.</strong> In your lollipop plot, compare the tallest BRAF lollipop with the tallest TP53 lollipop. <code>[ELO 9]</code></p>
+<p><strong>T5.</strong> In your lollipop plot, compare the tallest BRAF lollipop with the tallest TP53 lollipop.</p>
 <ol type="a">
 <li>They are about the same height</li>
 <li>BRAF’s is about 5 times taller</li>
@@ -1486,7 +1486,7 @@ Answer (checked 2026-11-19)
 </div>
 </div>
 </div>
-<p><strong>T6.</strong> Your <code>position_600</code> table: which change is the second most common at BRAF position 600? <code>[ELO 9]</code></p>
+<p><strong>T6.</strong> Your <code>position_600</code> table: which change is the second most common at BRAF position 600?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1503,7 +1503,7 @@ Answer (checked 2026-11-19)
 </div>
 </div>
 </div>
-<p><strong>T7. [VG]</strong> Your mutation-type plot: which statement fits? <code>[ELO 9]</code></p>
+<p><strong>T7. [VG]</strong> Your mutation-type plot: which statement fits?</p>
 <ol type="a">
 <li>Both genes have mostly missense mutations, so both are oncogenes</li>
 <li>TP53 has many nonsense, frameshift and splice mutations that cut the protein short; BRAF has almost only missense mutations</li>

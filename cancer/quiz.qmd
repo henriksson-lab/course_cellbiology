@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Cancer as a disease 
 
 ---
 
-**Q1.** Sort these genes into oncogenes and tumour suppressors: RAS, TP53, HER2, RB1, BCR-ABL, APC. `[ELO 9]`
+**Q1.** Sort these genes into oncogenes and tumour suppressors: RAS, TP53, HER2, RB1, BCR-ABL, APC.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Ask for each: does the normal protein push the cell to grow (accelerator), or does it stop, repair or kill (brake)?
@@ -21,7 +21,7 @@ Ask for each: does the normal protein push the cell to grow (accelerator), or do
 
 ---
 
-**Q2.** Why is one mutated copy enough for an oncogene, while a tumour suppressor needs both copies to be lost? `[ELO 9]`
+**Q2.** Why is one mutated copy enough for an oncogene, while a tumour suppressor needs both copies to be lost?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What does the one remaining normal copy do in each case?
@@ -33,7 +33,7 @@ An activated oncogene makes a protein that is **active all the time**; the norma
 
 ---
 
-**Q3.** Children with inherited retinoblastoma often get tumours in both eyes, and earlier than children with sporadic retinoblastoma. Explain why with the two-hit idea. `[ELO 9]`
+**Q3.** Children with inherited retinoblastoma often get tumours in both eyes, and earlier than children with sporadic retinoblastoma. Explain why with the two-hit idea.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 How many hits does each retinal cell already carry from birth in the two groups?
@@ -45,7 +45,7 @@ In inherited cases, **every cell** already carries one mutant RB1 copy from the 
 
 ---
 
-**Q4.** A tumour has lost RB1. Will a CDK4/6 inhibitor such as palbociclib stop its cells in G1? Explain. `[ELO 9]`
+**Q4.** A tumour has lost RB1. Will a CDK4/6 inhibitor such as palbociclib stop its cells in G1? Explain.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What does cyclin D–CDK4/6 phosphorylate to let the cell enter S phase?
@@ -57,7 +57,7 @@ What does cyclin D–CDK4/6 phosphorylate to let the cell enter S phase?
 
 ---
 
-**Q5.** Name two ways a cancer cell can escape the limit on the number of divisions or the trigger for apoptosis, and the lecture topic each belongs to. `[ELO 9]`
+**Q5.** Name two ways a cancer cell can escape the limit on the number of divisions or the trigger for apoptosis, and the lecture topic each belongs to.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One concerns the ends of chromosomes, the other the outer membrane of mitochondria.
@@ -69,7 +69,7 @@ One concerns the ends of chromosomes, the other the outer membrane of mitochondr
 
 ---
 
-**Q6.** What is the difference between carcinoma *in situ* and an invasive carcinoma, and what cellular changes are needed to go from one to the other? `[ELO 9]`
+**Q6.** What is the difference between carcinoma *in situ* and an invasive carcinoma, and what cellular changes are needed to go from one to the other?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Look for the thin sheet of matrix under every epithelium.
@@ -81,7 +81,7 @@ In carcinoma *in situ* the abnormal cells stay **above the basement membrane**; 
 
 ---
 
-**Q7.** A melanoma with BRAF V600E shrinks quickly on a BRAF inhibitor, then grows back after eight months. Give the evolutionary explanation in three steps. `[ELO 9]`
+**Q7.** A melanoma with BRAF V600E shrinks quickly on a BRAF inhibitor, then grows back after eight months. Give the evolutionary explanation in three steps.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Variation, selection, and what was already in the tumour at the start.
@@ -93,7 +93,7 @@ Variation, selection, and what was already in the tumour at the start.
 
 ---
 
-**Q8.** Why do PD-1 antibodies tend to work better in tumours with many mutations (for example melanoma, or tumours that have lost mismatch repair)? `[ELO 9]`
+**Q8.** Why do PD-1 antibodies tend to work better in tumours with many mutations (for example melanoma, or tumours that have lost mismatch repair)?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What do T cells recognise on a tumour cell?

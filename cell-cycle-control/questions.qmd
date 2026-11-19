@@ -9,7 +9,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ## G-level questions
 
-**1.** Name the four phases of the cell cycle and state what happens in each. What is G0, and give an example of a cell type that is usually in G0. `[ELO 7]`
+**1.** Name the four phases of the cell cycle and state what happens in each. What is G0, and give an example of a cell type that is usually in G0.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **G1** (gap 1): the cell grows, reads signals from outside and decides whether to divide. **S** (synthesis): the DNA is replicated, from 2N to 4N. **G2** (gap 2): the cell checks that replication is complete and the DNA intact, and prepares for mitosis. **M**: mitosis (separation of the chromosomes) and cytokinesis (division of the cytoplasm). **G0** is a resting state outside the cycle, entered from G1; most cells of the adult body are in G0, for example neurons, heart muscle cells or (until injury) liver cells. A typical human cell line needs about 24 h per cycle, of which M takes about 1 h; G1 is the most variable phase.
@@ -17,7 +17,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ---
 
-**2.** What is a cyclin-dependent kinase (CDK)? Explain why CDK activity rises and falls during the cycle even though the amount of CDK protein stays constant. Name the cyclin–CDK pair that acts in G1, at G1/S, and in M. `[ELO 7]`
+**2.** What is a cyclin-dependent kinase (CDK)? Explain why CDK activity rises and falls during the cycle even though the amount of CDK protein stays constant. Name the cyclin–CDK pair that acts in G1, at G1/S, and in M.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 A CDK is a protein kinase (serine/threonine) that is **inactive on its own** and becomes active only when bound to a **cyclin**. Cyclins are made at one stage and destroyed at another, so each CDK is active only in the window when its cyclin is present. Activity is further controlled by an **activating phosphate** (added by CAK), an **inhibitory phosphate** (added by Wee1, removed by Cdc25) and **CDK inhibitor proteins**. Pairs: **G1**: cyclin D–CDK4/6; **G1/S**: cyclin E–CDK2; **M**: cyclin B–CDK1 (cyclin A–CDK2 acts in S).
@@ -25,7 +25,7 @@ A CDK is a protein kinase (serine/threonine) that is **inactive on its own** and
 
 ---
 
-**3.** Describe three different ways in which a cell can switch off a cyclin–CDK complex. Give one example of where each is used. `[ELO 7]`
+**3.** Describe three different ways in which a cell can switch off a cyclin–CDK complex. Give one example of where each is used.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 1. **Inhibitory phosphorylation**: Wee1 adds a phosphate near the ATP site of CDK1; Cdc25 removes it. Used at the G2/M transition and in the DNA-damage checkpoint (Chk1/2 inactivate Cdc25, so CDK1 stays off).
@@ -35,7 +35,7 @@ A CDK is a protein kinase (serine/threonine) that is **inactive on its own** and
 
 ---
 
-**4.** Compare the two ubiquitin ligases SCF and APC/C: when are they active, how do they choose their targets, and give one target of each. `[ELO 7, ELO 4]`
+**4.** Compare the two ubiquitin ligases SCF and APC/C: when are they active, how do they choose their targets, and give one target of each.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Both are **E3 ubiquitin ligases** that tag proteins with ubiquitin chains for the **proteasome**. **SCF** is active throughout the cycle but recognises only targets that a kinase has **phosphorylated** (a phospho-degron); so its timing is set by the kinases. Targets: the CKI **p27** in late G1, **cyclin E** in S. **APC/C** is regulated by its activator subunits: with **Cdc20** it is active from metaphase to anaphase (targets **securin** and **cyclin B**), with **Cdh1** from late M through G1 (keeps mitotic cyclins and geminin low). It is switched off at the G1/S transition.
@@ -43,7 +43,7 @@ Both are **E3 ubiquitin ligases** that tag proteins with ubiquitin chains for th
 
 ---
 
-**5.** Explain how Rb and E2F control entry into S phase. Use the term "positive feedback" in your answer. `[ELO 7]`
+**5.** Explain how Rb and E2F control entry into S phase. Use the term "positive feedback" in your answer.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Unphosphorylated **Rb** binds the transcription factor **E2F** and keeps S-phase genes off. Mitogens raise **cyclin D**; **cyclin D–CDK4/6** starts to phosphorylate Rb, which releases some E2F. Free E2F switches on the genes for **cyclin E** (and cyclin A, DNA polymerase and other replication enzymes). **Cyclin E–CDK2** phosphorylates Rb further, releasing more E2F, which makes more cyclin E: a **positive feedback** loop. The loop turns a gradual mitogen signal into an all-or-none switch, and once it runs by itself the cell no longer needs mitogens (the restriction point). Cyclin E–CDK2 then triggers origin firing and S phase starts.
@@ -51,7 +51,7 @@ Unphosphorylated **Rb** binds the transcription factor **E2F** and keeps S-phase
 
 ---
 
-**6.** How does a cell make sure that each part of its genome is replicated only once per cycle? `[ELO 7]`
+**6.** How does a cell make sure that each part of its genome is replicated only once per cycle?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Through **licensing**. In G1, when CDK activity is low, helicase rings (**MCM**) are loaded onto each replication origin with the help of Cdt1 (and other proteins): the origin is licensed. When CDK activity rises at the start of S, licensed origins **fire** and the rings move away with the replication forks. High CDK activity (and the protein geminin, which binds Cdt1) **prevents new loading** during S, G2 and M. Only when CDK activity falls at the end of mitosis can origins be licensed again. So each origin can fire at most once per cycle. Cell-fusion experiments showed this: a G2 nucleus cannot be made to replicate again by S-phase cytoplasm.
@@ -59,7 +59,7 @@ Through **licensing**. In G1, when CDK activity is low, helicase rings (**MCM**)
 
 ---
 
-**7.** Describe the DNA-damage checkpoint. Include the roles of ATM/ATR, p53, MDM2 and p21, and say what can happen to the cell afterwards. `[ELO 7]`
+**7.** Describe the DNA-damage checkpoint. Include the roles of ATM/ATR, p53, MDM2 and p21, and say what can happen to the cell afterwards.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 DNA damage (for example a double-strand break) is detected by the kinases **ATM** and **ATR**, which activate **Chk1/Chk2**. Fast route: Chk1/2 inactivate **Cdc25**, so CDK1 keeps its inhibitory phosphate and the cell stops in **G2**. Slow route: **p53** is normally destroyed within minutes because the E3 ligase **MDM2** tags it; after damage p53 is phosphorylated, escapes MDM2 and **accumulates**. p53 is a transcription factor; it switches on **p21**, a CDK inhibitor that blocks CDK2 and CDK4/6, so Rb stays unphosphorylated and the cell stops in **G1**. The arrest gives time for repair. If repair succeeds, p53 falls and the cycle restarts; if the damage is too severe, p53 drives **permanent arrest (senescence)** or **apoptosis**.
@@ -67,7 +67,7 @@ DNA damage (for example a double-strand break) is detected by the kinases **ATM*
 
 ---
 
-**8.** How were the genes that control the cell cycle discovered in yeast? Explain what a temperature-sensitive cdc mutant is and what Hartwell observed when he shifted such mutants to the high temperature. `[ELO 7, ELO 1]`
+**8.** How were the genes that control the cell cycle discovered in yeast? Explain what a temperature-sensitive cdc mutant is and what Hartwell observed when he shifted such mutants to the high temperature.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 A **temperature-sensitive** mutant makes a protein that works at the low (permissive) temperature, for example 25 °C, but fails at the high (restrictive) temperature, for example 36 °C. This makes it possible to grow mutants in essential genes and then switch the gene off. Hartwell collected budding-yeast **cdc** (cell division cycle) mutants. After the shift, **all cells of one mutant stopped at the same stage**, which he could see from the bud size: each gene is needed for one specific step. Nurse used fission yeast in the same way and found **cdc2**, the master kinase (human **CDK1** can replace it), and **wee1**, whose mutants divide at a small size. Hunt discovered **cyclins** in sea urchin eggs. They shared the Nobel Prize in 2001.
@@ -75,7 +75,7 @@ A **temperature-sensitive** mutant makes a protein that works at the low (permis
 
 ---
 
-**9.** Explain how a DNA-content histogram is measured by flow cytometry and how it can show where a drug stops the cell cycle. Why can it not separate G2 from M? `[ELO 7, ELO 1]`
+**9.** Explain how a DNA-content histogram is measured by flow cytometry and how it can show where a drug stops the cell cycle. Why can it not separate G2 from M?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Cells are fixed, permeabilised and treated with RNase, then stained with a dye whose fluorescence is **proportional to the amount of DNA** (propidium iodide, DAPI). The flow cytometer measures each cell's fluorescence; thousands of cells give a histogram with a **2N peak (G1)**, a **4N peak (G2 and M)** and S-phase cells in between. A drug that stops the cycle at one point makes cells **pile up** there: a CDK4/6 inhibitor raises the 2N peak and empties S, a spindle poison raises the 4N peak. G2 and M cells have the **same DNA content (4N)**, so a second marker is needed, for example an antibody against a mitosis-specific phosphorylated histone (or looking at the cells: mitotic cells are round with condensed chromosomes).
@@ -85,7 +85,7 @@ Cells are fixed, permeabilised and treated with RNase, then stained with a dye w
 
 ## VG-level questions
 
-**10. [VG]** A patient with oestrogen-receptor-positive breast cancer responds well to palbociclib plus endocrine therapy for two years, then the tumour grows again. A biopsy shows that the tumour cells have lost both copies of *RB1*. (a) Explain why palbociclib worked at first. (b) Explain why loss of *RB1* makes the drug useless. (c) Predict what a DNA-content histogram of the resistant cells would look like with and without palbociclib, compared with the original tumour cells. `[ELO 7, ELO 9]`
+**10. [VG]** A patient with oestrogen-receptor-positive breast cancer responds well to palbociclib plus endocrine therapy for two years, then the tumour grows again. A biopsy shows that the tumour cells have lost both copies of *RB1*. (a) Explain why palbociclib worked at first. (b) Explain why loss of *RB1* makes the drug useless. (c) Predict what a DNA-content histogram of the resistant cells would look like with and without palbociclib, compared with the original tumour cells.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) ER-positive breast cancer cells depend on oestrogen-driven **cyclin D1–CDK4/6** to phosphorylate **Rb** and release **E2F**. Palbociclib blocks the ATP pocket of CDK4/6, so Rb stays unphosphorylated and holds E2F; the cells stop in **G1** before the restriction point (a cytostatic effect). Endocrine therapy removes the oestrogen signal upstream.
@@ -95,7 +95,7 @@ Cells are fixed, permeabilised and treated with RNase, then stained with a dye w
 
 ---
 
-**11. [VG]** Design an experiment to find the restriction point in a culture of fibroblasts, using live-cell imaging. Say which cells you would use, what you would do to them, what you would measure and what result would define the restriction point. Name one control. `[ELO 7, ELO 1]`
+**11. [VG]** Design an experiment to find the restriction point in a culture of fibroblasts, using live-cell imaging. Say which cells you would use, what you would do to them, what you would measure and what result would define the restriction point. Name one control.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Use fibroblasts expressing **FUCCI** (or another G1/S marker, for example a CDK2 activity sensor), growing in medium with serum (mitogens). Film them by time-lapse so that the **time of birth** (end of mitosis) of each cell is known. Then **remove the serum** (change to serum-free medium) at one time point and keep filming. For each cell that was in G1 at the moment of removal, note how long after its birth the serum was removed, and whether it entered S phase (red → yellow → green) in the next ~12 h or stayed red. Expected result: cells that were **less than a certain time** after birth (about 3–4 h in fibroblasts) do not enter S; cells beyond that time enter S and divide anyway. That time is the restriction point. Controls: the same cells with a mock medium change that keeps serum (to show that handling alone does not stop them); and a check that the reporter itself does not change cycle length (compare with unlabelled cells by DNA flow cytometry). A molecular version: stain the same cells for phosphorylated Rb at the time of removal.
@@ -103,7 +103,7 @@ Use fibroblasts expressing **FUCCI** (or another G1/S marker, for example a CDK2
 
 ---
 
-**12. [VG]** Cells from a tumour with a *TP53* mutation are irradiated. Predict, and explain, how the DNA-content histogram 12 hours later differs from that of irradiated normal cells. Why might losing p53 be an advantage for a tumour but a weakness under treatment? `[ELO 7, ELO 9]`
+**12. [VG]** Cells from a tumour with a *TP53* mutation are irradiated. Predict, and explain, how the DNA-content histogram 12 hours later differs from that of irradiated normal cells. Why might losing p53 be an advantage for a tumour but a weakness under treatment?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Normal cells: p53 accumulates, induces **p21**, and cells in G1 **stay in G1**; cells in G2 stop through **Chk1/2 → Cdc25**. 12 h later: a large 2N peak, few S-phase cells (no new cells entered S), and an increased 4N peak. *TP53*-mutant cells: no p21, so cells in G1 **enter S anyway** with damaged DNA, and the G1 peak shrinks while S and G2 fill up; the **G2 arrest still works**, because it does not need p53, so the 4N peak rises. For the tumour, losing p53 means damaged cells keep dividing instead of dying or senescing: mutations accumulate and the tumour evolves. Under treatment, such cells rely entirely on the **G2 checkpoint** to repair damage before mitosis; drugs that block Chk1 or Wee1 can push them into mitosis with broken DNA, where they die (an approach being tested in clinical trials).
@@ -121,15 +121,15 @@ A dish of human cells, each running a small model of the control system from the
 <script src="../demos/dist/cellcycle.js"></script>
 ```
 
-**E1.** Choose 1 s = 1 h and watch the followed cell (white ring) for about 30 h. In which order does its nucleus change colour? Which cyclin peaks when the nucleus turns yellow, and which cyclins vanish when the cell divides? How long is one cycle, and which phase is longest? What fractions does the histogram show for G1, S and G2/M? `[ELO 7]`
+**E1.** Choose 1 s = 1 h and watch the followed cell (white ring) for about 30 h. In which order does its nucleus change colour? Which cyclin peaks when the nucleus turns yellow, and which cyclins vanish when the cell divides? How long is one cycle, and which phase is longest? What fractions does the histogram show for G1, S and G2/M?
 
-**E2.** *Predict first.* Set the **CDK4/6 inhibitor** to 100 % (Reset all, speed 1 s = 1 h, then set). What will happen to the histogram and to the colours? After 24 h, set the inhibitor back to 0 and watch for another 24 h. What do you see, and why is this a way to make all cells in a dish go through the cycle together? `[ELO 7]`
+**E2.** *Predict first.* Set the **CDK4/6 inhibitor** to 100 % (Reset all, speed 1 s = 1 h, then set). What will happen to the histogram and to the colours? After 24 h, set the inhibitor back to 0 and watch for another 24 h. What do you see, and why is this a way to make all cells in a dish go through the cycle together?
 
-**E3.** The restriction point. Reset, choose 1 s = 1 h, then set **mitogens** to 0 %. Follow a red cell in early G1 (just after division) and a cell that is red–yellow (late G1). What happens to each? On the cyclin graph, where is Rb phosphorylation in each case compared with the dashed "restriction point" line? Why do some G1 cells still enter S? `[ELO 7]`
+**E3.** The restriction point. Reset, choose 1 s = 1 h, then set **mitogens** to 0 %. Follow a red cell in early G1 (just after division) and a cell that is red–yellow (late G1). What happens to each? On the cyclin graph, where is Rb phosphorylation in each case compared with the dashed "restriction point" line? Why do some G1 cells still enter S?
 
-**E4. [VG]** *Predict first.* Irradiate the dish once (Reset, speed 1 s = 1 h, then click **DNA damage**). Predict the histogram after 12 h. Then repeat with **p53 lost** ticked before you irradiate. Compare the two histograms at 12 h and explain the differences with the two routes of the DNA-damage checkpoint. Which arrest works without p53, and why? `[ELO 7]`
+**E4. [VG]** *Predict first.* Irradiate the dish once (Reset, speed 1 s = 1 h, then click **DNA damage**). Predict the histogram after 12 h. Then repeat with **p53 lost** ticked before you irradiate. Compare the two histograms at 12 h and explain the differences with the two routes of the DNA-damage checkpoint. Which arrest works without p53, and why?
 
-**E5. [VG]** A breast cancer has lost *RB1*. Tick **RB1 lost** and run for 24 h, then add the CDK4/6 inhibitor at 100 % for another 24 h. Compare with E2. Explain the result, and why loss of Rb shortens G1. What does this mean for choosing patients for palbociclib? Bonus: tick the **spindle poison** in a fresh dish and compare its histogram with the CDK4/6 inhibitor. `[ELO 7, ELO 9]`
+**E5. [VG]** A breast cancer has lost *RB1*. Tick **RB1 lost** and run for 24 h, then add the CDK4/6 inhibitor at 100 % for another 24 h. Compare with E2. Explain the result, and why loss of Rb shortens G1. What does this mean for choosing patients for palbociclib? Bonus: tick the **spindle poison** in a fresh dish and compare its histogram with the CDK4/6 inhibitor.
 
 ::: {.callout-note collapse="true" title="Solutions"}
 

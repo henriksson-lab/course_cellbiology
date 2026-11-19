@@ -18,7 +18,7 @@ resources:
 
 Open [LDLR, UniProt P01130](https://www.uniprot.org/uniprotkb/P01130/entry). Its signal peptide (residues 1–21) is listed under **PTM/Processing**. Now click **Subcellular Location** in the left menu and scroll to its **Features** table: one **Transmembrane** segment and two **Topological domains**.
 
-**T1.** `[ELO 4]` Which end of the mature receptor is outside the cell: the N-terminal part or the C-terminal part?
+**T1.** Which end of the mature receptor is outside the cell: the N-terminal part or the C-terminal part?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 The **N-terminal part**: topological domain 22–788 is *Extracellular*, the transmembrane segment is 789–810, and 811–860 is *Cytoplasmic*. LDLR is a type I protein: signal peptide in, stop-transfer segment in the membrane. The ER lumen side becomes the outside of the cell.
@@ -28,7 +28,7 @@ The **N-terminal part**: topological domain 22–788 is *Extracellular*, the tra
 
 Open [PCSK9, UniProt Q8NBP7](https://www.uniprot.org/uniprotkb/Q8NBP7/entry). It has a signal peptide (1–30) and no transmembrane segment, so it is secreted. That is why an antibody in the blood can catch it. Click **Disease & Variants** in the left menu.
 
-**T2.** `[ELO 9]` Which disease does UniProt link to PCSK9?
+**T2.** Which disease does UniProt link to PCSK9?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **Hypercholesterolemia, familial, 3 (FHCL3)**, autosomal dominant. Gain-of-function PCSK9 sends more LDL receptors to the lysosome. LDLR itself (T1) is linked to FHCL1.
@@ -38,7 +38,7 @@ Open [PCSK9, UniProt Q8NBP7](https://www.uniprot.org/uniprotkb/Q8NBP7/entry). It
 
 Open [HSPA5 (BiP), UniProt P11021](https://www.uniprot.org/uniprotkb/P11021/entry). It has a signal peptide (1–18), yet it stays in the ER. Click **Sequence** in the left menu and read the end of the sequence.
 
-**T3.** `[ELO 4, 5]` What are the last four amino acids of BiP?
+**T3.** What are the last four amino acids of BiP?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **KDEL** (Lys-Asp-Glu-Leu). BiP leaks to the Golgi with other cargo; the KDEL receptor in the cis-Golgi brings it back to the ER in COPI vesicles.
@@ -48,7 +48,7 @@ Open [HSPA5 (BiP), UniProt P11021](https://www.uniprot.org/uniprotkb/P11021/entr
 
 Open the [human LDLR network in STRING](https://string-db.org/cgi/network?identifiers=LDLR&species=9606). Each node is a protein; each line is a predicted functional link, from experiments, databases or co-mentions in papers. Click a node to see its name.
 
-**T4.** `[ELO 4, 9]` PCSK9 is in the network. Which one of these four is also there: **APOB**, **GAPDH**, **CANX** or **TFRC**?
+**T4.** PCSK9 is in the network. Which one of these four is also there: **APOB**, **GAPDH**, **CANX** or **TFRC**?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **APOB**, the protein of the LDL particle that LDLR binds. A STRING line means "these proteins work together", not necessarily that they touch.
@@ -58,7 +58,7 @@ Open the [human LDLR network in STRING](https://string-db.org/cgi/network?identi
 
 Gene Ontology (GO) gives each location a term and each annotation an **evidence code**. Open [QuickGO: CFTR annotations to *endoplasmic reticulum membrane* (GO:0005789)](https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=P13569&goId=GO:0005789). Find the row whose reference is **PMID:11707463**.
 
-**T5.** `[ELO 4]` Which evidence code does that row have, and what does it stand for?
+**T5.** Which evidence code does that row have, and what does it stand for?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **IDA, Inferred from Direct Assay**: an experiment located CFTR in the ER membrane. Other rows say IEA (electronic annotation) or TAS (traceable author statement). Misfolded CFTR ΔF508 is held in the ER, as in the ER lecture.
@@ -75,13 +75,13 @@ All fetching and cleaning code is given. You fill **two blanks** marked `___`:
 1. **Chunk `kdel`:** the filter value, the four letters of the ER retrieval signal, in quotes. Expected result: a table with two proteins, both in the ER group.
 2. **Chunk `feature-map`:** the `aes()` mapping. Put `feature` on `x`, `gene` on `y` and `present` as `fill`. Expected result: a tile plot with three columns (signal peptide, transit peptide, transmembrane) and one row per protein, grouped by destination. Dark tiles mean "annotated".
 
-**T6.** `[ELO 4]` Your KDEL table shows BiP (HSPA5). Which other protein ends in KDEL?
+**T6.** Your KDEL table shows BiP (HSPA5). Which other protein ends in KDEL?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **P4HB** (protein disulfide isomerase, PDI), the ER enzyme that forms disulfide bonds.
 :::
 
-**T7.** `[ELO 4, 5]` **[VG]** In your plot, one cell-surface protein has a transmembrane segment but **no** signal peptide. Which one, and what kind of segment brings it to the ER?
+**T7.** **[VG]** In your plot, one cell-surface protein has a transmembrane segment but **no** signal peptide. Which one, and what kind of segment brings it to the ER?
 
 - A. LDLR, a stop-transfer segment
 - B. TFRC, a signal-anchor

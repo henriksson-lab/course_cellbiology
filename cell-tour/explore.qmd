@@ -25,15 +25,15 @@ The cell map in the lecture is a cartoon. This is the real thing: **one slice th
 
 ## Tasks
 
-**E1.** `[ELO 1]` Zoom in on a mitochondrion until the scale bar shows 200 nm or 500 nm. How wide is it? Now look at the dark grains in the cytoplasm around it (ribosomes, about 25 nm). Which of the two could a light microscope (limit about 200 nm) show as separate objects, and which not?
+**E1.** Zoom in on a mitochondrion until the scale bar shows 200 nm or 500 nm. How wide is it? Now look at the dark grains in the cytoplasm around it (ribosomes, about 25 nm). Which of the two could a light microscope (limit about 200 nm) show as separate objects, and which not?
 
-**E2.** `[ELO 5]` Find the Golgi apparatus (switch off all layers except Golgi to find it, then switch everything back on). What lies close to it? Why does it make sense that the Golgi sits next to the nucleus and the centrosome?
+**E2.** Find the Golgi apparatus (switch off all layers except Golgi to find it, then switch everything back on). What lies close to it? Why does it make sense that the Golgi sits next to the nucleus and the centrosome?
 
-**E3.** `[ELO 5]` Look along the edge of the nucleus and at the ER around it. Find a place where you can see that the nuclear envelope is **two** membranes. Can you find a mitochondrion that an ER tube touches?
+**E3.** Look along the edge of the nucleus and at the ER around it. Find a place where you can see that the nuclear envelope is **two** membranes. Can you find a mitochondrion that an ER tube touches?
 
-**E4. [VG]** `[ELO 1]` Mitochondria, ER and the centrosome seem to lie **inside** the nucleus in this picture. Use what you know about the nuclear envelope to explain what you are really seeing, and say how you could check it with the same dataset.
+**E4. [VG]** Mitochondria, ER and the centrosome seem to lie **inside** the nucleus in this picture. Use what you know about the nuclear envelope to explain what you are really seeing, and say how you could check it with the same dataset.
 
-**E5.** `[ELO 1, 5]` Switch to **Find the organelle** and play one round. Aim for at least 8 of 10 on the first try. Which organelles were hardest, and what feature finally gave them away?
+**E5.** Switch to **Find the organelle** and play one round. Aim for at least 8 of 10 on the first try. Which organelles were hardest, and what feature finally gave them away?
 
 ::: {.callout-note collapse="true" title="Solutions"}
 

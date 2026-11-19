@@ -1361,7 +1361,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="a1.-count-the-membrane-crossings" class="level3">
 <h3 class="anchored" data-anchor-id="a1.-count-the-membrane-crossings">A1. Count the membrane crossings</h3>
 <p>Open human CFTR in UniProt: <a href="https://www.uniprot.org/uniprotkb/P13569/entry">P13569</a>. Scroll to <strong>Subcellular location</strong>, then <strong>Topology</strong>. Each <strong>Transmembrane</strong> row is one helix that crosses the membrane (the hydropathy plot in <a href="../membrane-structure/lec.html">membrane structure</a> predicts the same helices).</p>
-<p><strong>T1.</strong> <code>[ELO 2]</code> How many transmembrane segments does CFTR have?</p>
+<p><strong>T1.</strong> How many transmembrane segments does CFTR have?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1382,7 +1382,7 @@ Answer (checked 2026-11-19)
 <section id="a2.-find-the-drug-in-a-structure" class="level3">
 <h3 class="anchored" data-anchor-id="a2.-find-the-drug-in-a-structure">A2. Find the drug in a structure</h3>
 <p>Open <a href="https://www.rcsb.org/structure/6O2P">PDB 6O2P</a>, human CFTR bound to ivacaftor. In the <strong>Small Molecules</strong> section, find ligand <strong>VX7</strong>: this is ivacaftor. Click its <strong>Ligand Interaction</strong> view (opens the Mol* viewer) to see where it sits.</p>
-<p><strong>T2.</strong> <code>[ELO 2, 9]</code> Where does ivacaftor bind?</p>
+<p><strong>T2.</strong> Where does ivacaftor bind?</p>
 <div class="options">
 <ul>
 <li><ol type="a">
@@ -1419,7 +1419,7 @@ Answer (checked 2026-11-19)
 <section id="a3.-read-a-predictions-confidence" class="level3">
 <h3 class="anchored" data-anchor-id="a3.-read-a-predictions-confidence">A3. Read a prediction’s confidence</h3>
 <p>Open the AlphaFold model of CFTR: <a href="https://alphafold.ebi.ac.uk/entry/P13569">AF-P13569</a>. The colours show <strong>pLDDT</strong>, the model’s confidence per residue: blue is confident, orange is very low.</p>
-<p><strong>T3.</strong> <code>[ELO 2]</code> <strong>[VG]</strong> Which part of CFTR is mostly orange?</p>
+<p><strong>T3.</strong> <strong>[VG]</strong> Which part of CFTR is mostly orange?</p>
 <div class="options">
 <ul>
 <li><ol type="a">
@@ -1456,7 +1456,7 @@ Answer (checked 2026-11-19)
 <section id="a4.-look-up-the-common-cystic-fibrosis-variant" class="level3">
 <h3 class="anchored" data-anchor-id="a4.-look-up-the-common-cystic-fibrosis-variant">A4. Look up the common cystic fibrosis variant</h3>
 <p>Open ClinVar record <a href="https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/">7105</a>, CFTR p.Phe508del (F508del).</p>
-<p><strong>T4.</strong> <code>[ELO 9]</code> What is its <strong>Germline classification</strong>?</p>
+<p><strong>T4.</strong> What is its <strong>Germline classification</strong>?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1477,7 +1477,7 @@ Answer (checked 2026-11-19)
 <section id="a5.-check-how-fat-loving-the-drug-is" class="level3">
 <h3 class="anchored" data-anchor-id="a5.-check-how-fat-loving-the-drug-is">A5. Check how fat-loving the drug is</h3>
 <p>Open ivacaftor in PubChem: <a href="https://pubchem.ncbi.nlm.nih.gov/compound/16220172">CID 16220172</a>. Under <strong>Chemical and Physical Properties → Computed Properties</strong>, find <strong>XLogP3-AA</strong>. A positive value means the molecule prefers lipid to water.</p>
-<p><strong>T5.</strong> <code>[ELO 2, 9]</code> What is ivacaftor’s XLogP3-AA?</p>
+<p><strong>T5.</strong> What is ivacaftor’s XLogP3-AA?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1510,7 +1510,7 @@ Answer (checked 2026-11-19)
 <li><strong>Blank 1:</strong> set <code>min_tpm &lt;- 10</code>. The chunk then prints <code>9</code>: nine tissues pass.</li>
 <li><strong>Blank 2:</strong> complete <code>aes()</code>: map <code>median_tpm</code> to <code>x</code>, <code>tissue</code> to <code>y</code> and <code>gene</code> to <code>colour</code>. You get one row per tissue with two coloured dots.</li>
 </ul>
-<p><strong>T6.</strong> <code>[ELO 2, 9]</code> In which tissue is <em>SLC5A2</em> (SGLT2) highest?</p>
+<p><strong>T6.</strong> In which tissue is <em>SLC5A2</em> (SGLT2) highest?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1534,7 +1534,7 @@ Answer (checked 2026-11-19)
 <ul>
 <li><strong>Blank 3:</strong> map <code>y</code> to the column with the counts (its name is in the printed table). You get eight bars, longest at the top.</li>
 </ul>
-<p><strong>T7.</strong> <code>[ELO 2]</code> Which protein has exactly 10 transmembrane segments?</p>
+<p><strong>T7.</strong> Which protein has exactly 10 transmembrane segments?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">

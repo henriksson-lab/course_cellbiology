@@ -30,8 +30,6 @@ After this lecture you can:
 - explain **lateral inhibition** and **morphogen gradients**: how equal cells become different;
 - connect pathways to drugs and disease: **tamoxifen**, **vismodegib**, **corticosteroids**, **APC** mutations in colorectal cancer.
 
-**ELO 3** (signalling).
-
 ::: notes
 This lecture closes the signalling block. So far you have seen how a receptor talks to the inside of the cell: G proteins and second messengers, and kinase cascades. Those signals act fast, often in seconds, by changing the activity of proteins that already exist. Today the end point is different. The signals we meet now change gene expression, so the effect comes after hours and can last for days or for the rest of the cell's life. That is how a cell in an embryo decides to become a neuron or a skin cell, and how adult tissues such as the gut lining keep the right number of each cell type. You already know gene regulation from earlier courses: transcription factors, enhancers, activators and repressors. We build on that. The question for every pathway is the same: how does a signal outside the cell switch on a transcription factor in the nucleus, and how is it switched off again? At the end we look at cancers and drugs that depend on exactly these steps.
 :::

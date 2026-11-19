@@ -38,7 +38,7 @@ in `_quarto.yml`, as in 3MB00A):
 ```
 membrane-transport/
   lec.qmd         reveal.js slides, ~45 min, speaker notes on every slide
-  quiz.qmd        5–8 self-check questions, each tagged [ELO n]
+  quiz.qmd        5–8 self-check questions (no ELO tags)
   questions.qmd   study questions: G-level + at least one VG-style question
   _credits.md     source + licence for every external image (included in credits.qmd)
   figNN-*.svg     our diagrams
@@ -68,7 +68,7 @@ In course order A, C, D, E, F, G, H. For each lecture:
       two real images per lecture
 - [ ] figure QA on every SVG
 - [ ] `_credits.md` complete
-- [ ] `quiz.qmd` + `questions.qmd`, ELO-tagged
+- [ ] `quiz.qmd` + `questions.qmd` (no ELO tags)
 - [ ] glossary entries added
 
 ## Phase 3: Course-level pages

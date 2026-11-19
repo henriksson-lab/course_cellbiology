@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Mitosis and cytokine
 
 ---
 
-**Q1.** Sister chromatids are made in S phase but separated only in anaphase, hours later. What holds them together in the meantime, and why does this matter for the spindle? `[ELO 7]`
+**Q1.** Sister chromatids are made in S phase but separated only in anaphase, hours later. What holds them together in the meantime, and why does this matter for the spindle?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 A ring-shaped protein complex is loaded before replication.
@@ -21,7 +21,7 @@ A ring-shaped protein complex is loaded before replication.
 
 ---
 
-**Q2.** How does CDK1–cyclin B make the nuclear envelope break down at the start of mitosis, and what makes it re-form in telophase? `[ELO 7]`
+**Q2.** How does CDK1–cyclin B make the nuclear envelope break down at the start of mitosis, and what makes it re-form in telophase?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of the intermediate-filament network under the inner nuclear membrane.
@@ -33,7 +33,7 @@ CDK1–cyclin B **phosphorylates lamins** (and nuclear pore proteins). Phosphory
 
 ---
 
-**Q3.** What does kinesin-5 do in the spindle, and what does a cell look like after treatment with monastrol, a kinesin-5 inhibitor? `[ELO 6]`
+**Q3.** What does kinesin-5 do in the spindle, and what does a cell look like after treatment with monastrol, a kinesin-5 inhibitor?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Kinesin-5 has motor heads at both ends and walks towards plus ends.
@@ -45,7 +45,7 @@ Kinesin-5 cross-links **antiparallel** interpolar microtubules and walks towards
 
 ---
 
-**Q4.** Name the four ways a pair of sister kinetochores can attach to the spindle. Which one is correct, and which one does the spindle assembly checkpoint **not** detect? `[ELO 7]`
+**Q4.** Name the four ways a pair of sister kinetochores can attach to the spindle. Which one is correct, and which one does the spindle assembly checkpoint **not** detect?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 The checkpoint responds to unattached kinetochores, not directly to tension.
@@ -57,7 +57,7 @@ The checkpoint responds to unattached kinetochores, not directly to tension.
 
 ---
 
-**Q5.** Aurora B kinase sits between the two sister kinetochores. Explain how it can tell a correct attachment from a syntelic one. `[ELO 7]`
+**Q5.** Aurora B kinase sits between the two sister kinetochores. Explain how it can tell a correct attachment from a syntelic one.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What happens to the distance between Aurora B and the kinetochores when the sisters are pulled towards opposite poles?
@@ -69,7 +69,7 @@ Aurora B phosphorylates kinetochore proteins (such as Ndc80) that are **within i
 
 ---
 
-**Q6.** A cell has 45 chromosomes correctly attached and one chromosome with an unattached kinetochore. What does the spindle assembly checkpoint do, and through which proteins? `[ELO 7]`
+**Q6.** A cell has 45 chromosomes correctly attached and one chromosome with an unattached kinetochore. What does the spindle assembly checkpoint do, and through which proteins?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One unattached kinetochore is enough.
@@ -81,7 +81,7 @@ The checkpoint **keeps the whole cell in metaphase**. The unattached kinetochore
 
 ---
 
-**Q7.** List the steps from "the last kinetochore attaches" to "the sister chromatids move apart". `[ELO 7]`
+**Q7.** List the steps from "the last kinetochore attaches" to "the sister chromatids move apart".
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Four proteins: APC/C, securin, separase, cohesin.
@@ -93,7 +93,7 @@ No new MCC is made → **APC/C–Cdc20** becomes active → it puts **ubiquitin*
 
 ---
 
-**Q8.** Why do paclitaxel and vincristine cause hair loss and a sore mouth, but not heart failure? `[ELO 7]`
+**Q8.** Why do paclitaxel and vincristine cause hair loss and a sore mouth, but not heart failure?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which cells are in mitosis during a course of treatment?

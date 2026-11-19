@@ -9,7 +9,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ## G-level questions
 
-**1.** What is a sorting signal? Describe three different sorting signals: where each sits on the protein, what it looks like, and where it sends the protein. `[ELO 4]`
+**1.** What is a sorting signal? Describe three different sorting signals: where each sits on the protein, what it looks like, and where it sends the protein.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 A sorting signal is a part of a protein that is recognised by a receptor and decides where the protein goes, like a zip code on a parcel. Most are **short stretches of amino acids** in which the pattern matters more than the exact sequence. Examples: the **ER signal peptide**, at the N-terminus, 15–30 amino acids with a hydrophobic core, sends the protein into the ER and is cut off. The **NLS**, a short basic stretch (e.g. PKKKRKV) almost anywhere in the protein, sends it into the nucleus and stays. **PTS1**, the last three amino acids (-SKL), sends it into peroxisomes. Others: the mitochondrial presequence (N-terminal positively charged amphipathic helix, cut off in the matrix), KDEL (C-terminal, returns proteins to the ER), the NES (leucine-rich, export from the nucleus), and the mannose-6-phosphate signal, which is a **patch** on the folded surface rather than a linear sequence.
@@ -17,7 +17,7 @@ A sorting signal is a part of a protein that is recognised by a receptor and dec
 
 ---
 
-**2.** Describe the three ways in which proteins move between compartments. Use the idea of topology (cytosol side and lumen side) to explain why each compartment uses the kind of transport it does. `[ELO 4, 5]`
+**2.** Describe the three ways in which proteins move between compartments. Use the idea of topology (cytosol side and lumen side) to explain why each compartment uses the kind of transport it does.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Gated transport** between cytosol and nucleus: the nucleoplasm and the cytosol are one space joined by nuclear pores, so no membrane is crossed; the pore lets small molecules diffuse and lets large folded proteins through only when bound to a transport receptor. **Transmembrane transport** from the cytosol into the ER, mitochondria and peroxisomes: these are separate spaces, so the protein must cross a membrane through a **protein translocator**, usually as an unfolded chain (peroxisomes import folded proteins). **Vesicular transport** from the ER onwards: the ER, Golgi, endosomes, lysosomes and the outside are all on the lumen side, so vesicles can bud from one and fuse with the next and carry proteins without any membrane crossing.
@@ -25,7 +25,7 @@ A sorting signal is a part of a protein that is recognised by a receptor and dec
 
 ---
 
-**3.** Describe the import of a protein with an NLS into the nucleus, step by step. Include the roles of importin α, importin β, the FG repeats and Ran. `[ELO 4]`
+**3.** Describe the import of a protein with an NLS into the nucleus, step by step. Include the roles of importin α, importin β, the FG repeats and Ran.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 In the cytosol, **importin α** binds the NLS and **importin β** binds importin α. Importin β interacts with the **FG repeats**, the disordered Phe-Gly-rich chains that fill the pore channel, and the complex passes through the pore with the cargo **folded** (about 10 ms). In the nucleus, **Ran-GTP** binds importin β, the complex changes shape and releases importin α and the cargo. Importin β returns to the cytosol bound to Ran-GTP; there **RanGAP** makes Ran hydrolyse GTP, Ran-GDP lets go and importin β is free again (importin α is returned by its own exportin). Because Ran-GTP is made in the nucleus by **RanGEF** on chromatin and destroyed in the cytosol, the cargo is always released on the nuclear side: import is one-way.
@@ -33,7 +33,7 @@ In the cytosol, **importin α** binds the NLS and **importin β** binds importin
 
 ---
 
-**4.** Compare nuclear import and nuclear export. What is the same, and what is opposite? `[ELO 4]`
+**4.** Compare nuclear import and nuclear export. What is the same, and what is opposite?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Same**: both use soluble transport receptors (karyopherins) that pass the FG meshwork of the pore with folded cargo, and both use the **Ran-GTP gradient**, so both get their energy from Ran's GTP hydrolysis. **Opposite**: importins bind cargo (with an **NLS**) in the cytosol, where Ran-GTP is absent, and release it when Ran-GTP binds in the nucleus. Exportins (e.g. **XPO1/CRM1**) bind cargo (with a leucine-rich **NES**) in the nucleus **together with** Ran-GTP, and release it in the cytosol when GTP is hydrolysed.
@@ -41,7 +41,7 @@ In the cytosol, **importin α** binds the NLS and **importin β** binds importin
 
 ---
 
-**5.** Describe how a protein made in the cytosol reaches the mitochondrial matrix. Name the complexes and the forces involved. `[ELO 4, 5]`
+**5.** Describe how a protein made in the cytosol reaches the mitochondrial matrix. Name the complexes and the forces involved.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The precursor is made on free ribosomes and kept **unfolded** by cytosolic Hsp70 chaperones (post-translational import). Its N-terminal **presequence**, a positively charged amphipathic helix, binds receptors of the **TOM** complex in the outer membrane. The chain passes the TOM channel and, at a contact site, the **TIM23** channel in the inner membrane. The **membrane potential** across the inner membrane (about 150–180 mV, matrix negative) pulls the positive presequence in, and **mitochondrial Hsp70** pulls the rest using ATP. The matrix processing peptidase removes the presequence, and the protein folds. A hydrophobic segment after the presequence can stop transfer in TIM23 and leave the protein in the inner membrane.
@@ -49,7 +49,7 @@ The precursor is made on free ribosomes and kept **unfolded** by cytosolic Hsp70
 
 ---
 
-**6.** How does peroxisomal import differ from import into mitochondria and the ER? `[ELO 4, 5]`
+**6.** How does peroxisomal import differ from import into mitochondria and the ER?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Peroxisomal matrix proteins carry **PTS1** (C-terminal -SKL) and are recognised **after** translation by the cytosolic receptor **PEX5**, which docks on the peroxisome membrane and takes the cargo in. Unlike the ER and mitochondria, peroxisomes import proteins **fully folded**, even oligomers, and the receptor enters with its cargo and is recycled. The ER imports during translation (co-translational, SRP-dependent) and mitochondria import unfolded chains through TOM and TIM using the membrane potential. Defects in the PEX genes stop import (Zellweger syndrome).
@@ -57,7 +57,7 @@ Peroxisomal matrix proteins carry **PTS1** (C-terminal -SKL) and are recognised 
 
 ---
 
-**7.** Explain what happens to (a) a soluble ER protein with a C-terminal KDEL, (b) a lysosomal enzyme with a mannose-6-phosphate signal patch, and (c) a soluble protein with only an ER signal peptide. `[ELO 4]`
+**7.** Explain what happens to (a) a soluble ER protein with a C-terminal KDEL, (b) a lysosomal enzyme with a mannose-6-phosphate signal patch, and (c) a soluble protein with only an ER signal peptide.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 All three enter the ER lumen by their signal peptide and leave the ER in COPII vesicles. (a) The **KDEL** protein reaches the cis-Golgi, where the **KDEL receptor** binds it and returns it to the ER in COPI vesicles: **retrieval**, so at steady state it is in the ER. (b) In the cis-Golgi an enzyme recognises the signal patch and adds a phosphate to mannose; in the trans-Golgi network the **M6P receptor** binds the tag, and clathrin-coated vesicles carry it to endosomes, where the acid pH releases it; it ends up in **lysosomes**. (c) With no further signal it follows the **default** route through the Golgi and is **secreted**.
@@ -65,7 +65,7 @@ All three enter the ER lumen by their signal peptide and leave the ER in COPII v
 
 ---
 
-**8.** Describe an experiment that shows that a protein is imported **into** mitochondria rather than just bound to their surface. `[ELO 1, 4]`
+**8.** Describe an experiment that shows that a protein is imported **into** mitochondria rather than just bound to their surface.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Make the precursor in a test tube with **radioactive** amino acids; incubate with **isolated mitochondria**; then add a **protease**, which cannot cross membranes and digests everything outside. Analyse by SDS-PAGE and autoradiography. An imported protein is **protected** from the protease and is often **shorter** (presequence removed). Controls: without mitochondria the precursor is digested; an **uncoupler** (CCCP), which collapses the membrane potential, blocks import, so the protein is digested; **detergent** dissolves the membranes and makes the protein sensitive again, showing that protection was due to the membranes.
@@ -73,7 +73,7 @@ Make the precursor in a test tube with **radioactive** amino acids; incubate wit
 
 ## VG-level questions
 
-**9. [VG]** A researcher adds the SV40 NLS to the C-terminus of human serum albumin, which has an N-terminal ER signal peptide. She expects the protein in the nucleus, but finds it in the culture medium. Explain the result, and propose one change to the construct that would put it in the nucleus. `[ELO 4]`
+**9. [VG]** A researcher adds the SV40 NLS to the C-terminus of human serum albumin, which has an N-terminal ER signal peptide. She expects the protein in the nucleus, but finds it in the culture medium. Explain the result, and propose one change to the construct that would put it in the nucleus.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The ER signal peptide is read **first**, by SRP, while the protein is still being translated. The ribosome is brought to the ER and the whole chain, including the NLS, is threaded into the **ER lumen**. Importins are in the cytosol and never see the NLS, so it has no effect; with no other signal the protein follows the **default** route and is **secreted** into the medium. To send it to the nucleus, **remove the signal peptide**: the protein is then finished in the cytosol and the NLS can be read by importin α. (Albumin is about 66 kDa, so without an NLS it would stay mainly in the cytosol; with the NLS it is imported. It may fold less well in the cytosol, which is another thing to check.)
@@ -81,7 +81,7 @@ The ER signal peptide is read **first**, by SRP, while the protein is still bein
 
 ---
 
-**10. [VG]** A patient's fibroblasts secrete large amounts of several lysosomal enzymes into the culture medium, and their lysosomes are full of undigested material. The enzymes themselves have normal sequences. (a) Propose which step is defective. (b) Predict what happens if you add purified, correctly tagged lysosomal enzyme to the medium, and explain. `[ELO 4, 9]`
+**10. [VG]** A patient's fibroblasts secrete large amounts of several lysosomal enzymes into the culture medium, and their lysosomes are full of undigested material. The enzymes themselves have normal sequences. (a) Propose which step is defective. (b) Predict what happens if you add purified, correctly tagged lysosomal enzyme to the medium, and explain.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) All the enzymes are normal but go to the wrong place, so the shared **sorting step** is broken: the enzyme in the cis-Golgi that adds the **mannose-6-phosphate** tag (the GlcNAc phosphotransferase), as in I-cell disease. Without M6P, the M6P receptor in the trans-Golgi network cannot bind the enzymes, and they follow the default route and are **secreted**. (A defective M6P receptor would give a similar picture.) (b) Some **M6P receptors are also on the plasma membrane**. Tagged enzyme added to the medium binds them, is taken up by endocytosis and delivered to lysosomes, so the stored material should be degraded. This is the principle of **enzyme replacement therapy** for lysosomal storage diseases (endocytosis lecture).
@@ -89,7 +89,7 @@ The ER signal peptide is read **first**, by SRP, while the protein is still bein
 
 ---
 
-**11. [VG]** Design an experiment to test whether a new 80 kDa protein, which has a short basic stretch in the middle, is imported into the nucleus because of that stretch. Say what result you expect if the hypothesis is right, and include the controls. `[ELO 1, 4]`
+**11. [VG]** Design an experiment to test whether a new 80 kDa protein, which has a short basic stretch in the middle, is imported into the nucleus because of that stretch. Say what result you expect if the hypothesis is right, and include the controls.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Make **GFP fusions** and express them in cultured cells; image living cells by fluorescence microscopy with a DNA stain (e.g. Hoechst) to mark the nucleus, and quantify the nuclear/cytosolic ratio in many cells. Constructs: (1) the full protein–GFP: if the hypothesis is right, it is **nuclear**. (2) The same protein with the basic stretch **mutated** (e.g. lysines to alanine or threonine): it should stay **cytosolic** (**necessary**). (3) The basic stretch alone fused to a large cytosolic reporter (e.g. GFP fused to a large enzyme, or two to three GFPs in a row, too big to diffuse): it should become **nuclear** (**sufficient**). Controls: GFP alone (small, spreads everywhere) and the large reporter without the stretch (cytosolic). A dominant-negative or depleted importin α/β, or a drug that blocks import, should keep construct 1 out of the nucleus.
@@ -107,17 +107,17 @@ The rules are the textbook ones: the ER decision is made during translation, and
 <script src="../demos/dist/zipcode.js"></script>
 ```
 
-**E1.** Choose **Albumin**. Predict, then run it at real time for one minute: what happens first, and where is the ribosome? Then speed up. Where does albumin end, and how long does the whole route take? Now add **KDEL** at the C-terminus and run again. Where does it end, and does KDEL stop the protein from leaving the ER? `[ELO 4]`
+**E1.** Choose **Albumin**. Predict, then run it at real time for one minute: what happens first, and where is the ribosome? Then speed up. Where does albumin end, and how long does the whole route take? Now add **KDEL** at the C-terminus and run again. Where does it end, and does KDEL stop the protein from leaving the ER?
 
-**E2.** Compare **GFP alone**, the same protein made **large**, and **GFP + NLS**. Where does each end up, and why? Which one is the "necessary and sufficient" experiment from the lecture? `[ELO 4]`
+**E2.** Compare **GFP alone**, the same protein made **large**, and **GFP + NLS**. Where does each end up, and why? Which one is the "necessary and sufficient" experiment from the lecture?
 
-**E3.** Choose **Cathepsin D**. Predict and run. Then remove its **ER signal peptide** (N-terminus: none) and run again. What happens to the M6P signal, and why? `[ELO 4]`
+**E3.** Choose **Cathepsin D**. Predict and run. Then remove its **ER signal peptide** (N-terminus: none) and run again. What happens to the M6P signal, and why?
 
-**E4. [VG]** *Predict first.* (a) Add an **NLS** to **Albumin**. (b) Add **KDEL** to the **LDL receptor**. For each, write down your prediction with a reason before you run. Then explain why the extra signal has no effect in both cases, using the word *topology*. `[ELO 4, 5]`
+**E4. [VG]** *Predict first.* (a) Add an **NLS** to **Albumin**. (b) Add **KDEL** to the **LDL receptor**. For each, write down your prediction with a reason before you run. Then explain why the extra signal has no effect in both cases, using the word *topology*.
 
-**E5. [VG]** Choose **Citrate synthase** and add an **NLS**. The game says "not predicted". Why is this combination not decided by a simple rule? Design an experiment that would tell you where such a protein really goes. `[ELO 1, 4]`
+**E5. [VG]** Choose **Citrate synthase** and add an **NLS**. The game says "not predicted". Why is this combination not decided by a simple rule? Design an experiment that would tell you where such a protein really goes.
 
-**E6.** Give a protein a **mitochondrial presequence** and a **TM segment**. Where does it end up, and which way does it face? Compare the time it takes with the route of the LDL receptor to the plasma membrane. Why is one so much faster? `[ELO 4, 5]`
+**E6.** Give a protein a **mitochondrial presequence** and a **TM segment**. Where does it end up, and which way does it face? Compare the time it takes with the route of the LDL receptor to the plasma membrane. Why is one so much faster?
 
 ::: {.callout-note collapse="true" title="Solutions"}
 

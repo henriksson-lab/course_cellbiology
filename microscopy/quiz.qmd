@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Seeing cells: micros
 
 ---
 
-**Q1.** A student says: "If I use a 100× objective and a 20× eyepiece instead of a 10× eyepiece, I will be able to see ribosomes in a light microscope." Is the student right? `[ELO 1]`
+**Q1.** A student says: "If I use a 100× objective and a 20× eyepiece instead of a 10× eyepiece, I will be able to see ribosomes in a light microscope." Is the student right?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What does the eyepiece change: the size of the image or the amount of detail in it? How big is a ribosome compared with the resolution limit?
@@ -21,7 +21,7 @@ No. A stronger eyepiece only **magnifies** the image more; it does not improve *
 
 ---
 
-**Q2.** Using $d \approx 0.61\,\lambda / \mathrm{NA}$, which change gives better (smaller) resolution: (a) blue light (450 nm) instead of red light (650 nm), or (b) a dry objective with NA 0.75 instead of an oil objective with NA 1.4? `[ELO 1]`
+**Q2.** Using $d \approx 0.61\,\lambda / \mathrm{NA}$, which change gives better (smaller) resolution: (a) blue light (450 nm) instead of red light (650 nm), or (b) a dry objective with NA 0.75 instead of an oil objective with NA 1.4?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Smaller $\lambda$ and larger NA both make $d$ smaller.
@@ -33,7 +33,7 @@ Smaller $\lambda$ and larger NA both make $d$ smaller.
 
 ---
 
-**Q3.** Why can unstained living cells be seen clearly in a phase-contrast microscope but hardly at all in a bright-field microscope? `[ELO 1]`
+**Q3.** Why can unstained living cells be seen clearly in a phase-contrast microscope but hardly at all in a bright-field microscope?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Cells absorb very little light. What else happens to light that passes through a nucleus or a membrane?
@@ -45,7 +45,7 @@ Cells are mostly water and absorb little visible light, so in bright field the l
 
 ---
 
-**Q4.** A fluorophore is excited at 490 nm and emits at 520 nm. What is the Stokes shift, and why is it essential for fluorescence microscopy? `[ELO 1]`
+**Q4.** A fluorophore is excited at 490 nm and emits at 520 nm. What is the Stokes shift, and why is it essential for fluorescence microscopy?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of the filter cube: what would happen if the emitted light had the same colour as the excitation light?
@@ -57,7 +57,7 @@ The Stokes shift is the difference between the excitation and emission peaks, he
 
 ---
 
-**Q5.** You want to follow how fast a vesicle protein moves in a living neuron. Should you use immunofluorescence or a GFP fusion protein? Give one reason and one thing you must check. `[ELO 1]` `[ELO 6]`
+**Q5.** You want to follow how fast a vesicle protein moves in a living neuron. Should you use immunofluorescence or a GFP fusion protein? Give one reason and one thing you must check.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What must you do to cells before antibodies can get inside?
@@ -69,7 +69,7 @@ A **GFP fusion protein**. Immunofluorescence needs the cells to be **fixed and p
 
 ---
 
-**Q6.** What does the pinhole in a confocal microscope do, and what do you gain from it? `[ELO 1]`
+**Q6.** What does the pinhole in a confocal microscope do, and what do you gain from it?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Where is light from the focal plane focused, and where is light from other depths focused?
@@ -81,7 +81,7 @@ The pinhole sits where light **from the focal plane** comes to a sharp point, so
 
 ---
 
-**Q7.** Match each question to the best method: (i) the shape of microvilli on the surface of an intestinal cell; (ii) the atomic structure of a purified membrane pump; (iii) how the ER membrane is arranged next to a mitochondrion inside a cell, at nanometre detail. Methods: TEM, SEM, single-particle cryo-EM. `[ELO 1]`
+**Q7.** Match each question to the best method: (i) the shape of microvilli on the surface of an intestinal cell; (ii) the atomic structure of a purified membrane pump; (iii) how the ER membrane is arranged next to a mitochondrion inside a cell, at nanometre detail. Methods: TEM, SEM, single-particle cryo-EM.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which method shows surfaces, which shows thin slices through a cell, and which averages many copies of one purified molecule?
@@ -93,7 +93,7 @@ Which method shows surfaces, which shows thin slices through a cell, and which a
 
 ---
 
-**Q8.** In a figure, protein A (green) and protein B (red) give yellow in the merged confocal image. The authors conclude "A binds B". What is wrong with this conclusion? `[ELO 1]`
+**Q8.** In a figure, protein A (green) and protein B (red) give yellow in the merged confocal image. The authors conclude "A binds B". What is wrong with this conclusion?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 How close must two proteins be to look like one spot in a confocal image? How big is a protein?

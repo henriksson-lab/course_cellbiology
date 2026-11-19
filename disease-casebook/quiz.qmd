@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *When cell biology go
 
 ---
 
-**Q1.** Name the five ways a protein can make you ill, and give one disease for each. `[ELO 9]`
+**Q1.** Name the five ways a protein can make you ill, and give one disease for each.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Missing, too active, clumped, in the wrong compartment, at the wrong level.
@@ -21,7 +21,7 @@ Missing, too active, clumped, in the wrong compartment, at the wrong level.
 
 ---
 
-**Q2.** Two patients with cystic fibrosis have the same sweat chloride. In patient 1, a Western blot of CFTR shows only band B; in patient 2, band C is normal. Which drug type fits each patient? `[ELO 9]`
+**Q2.** Two patients with cystic fibrosis have the same sweat chloride. In patient 1, a Western blot of CFTR shows only band B; in patient 2, band C is normal. Which drug type fits each patient?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Band B is the ER form, band C the form that has passed the Golgi. Where is each patient's protein?
@@ -33,7 +33,7 @@ Patient 1: CFTR misfolds and is kept in the ER (like F508del). A **corrector** h
 
 ---
 
-**Q3.** In I-cell disease, lysosomal enzymes are 10–20 times higher than normal in blood plasma. Why, when the patient's lysosomes are full of undigested material? `[ELO 9]`
+**Q3.** In I-cell disease, lysosomal enzymes are 10–20 times higher than normal in blood plasma. Why, when the patient's lysosomes are full of undigested material?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which tag sends lysosomal enzymes from the trans-Golgi network to the lysosome?
@@ -45,7 +45,7 @@ The Golgi enzyme that adds the **mannose-6-phosphate tag** is missing. Without t
 
 ---
 
-**Q4.** Why is hypertrophic cardiomyopathy caused by one mutated copy of the myosin gene, while primary ciliary dyskinesia needs two mutated copies of a dynein gene? `[ELO 9]`
+**Q4.** Why is hypertrophic cardiomyopathy caused by one mutated copy of the myosin gene, while primary ciliary dyskinesia needs two mutated copies of a dynein gene?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Is the mutant protein too active, or missing?
@@ -57,7 +57,7 @@ In HCM the mutant myosin is **too active** (fewer heads parked): a **gain of fun
 
 ---
 
-**Q5.** Patisiran treats hereditary TTR amyloidosis by destroying TTR mRNA in the liver. Why does it help to remove a protein, when the disease is caused by a mutation in that protein? `[ELO 9]`
+**Q5.** Patisiran treats hereditary TTR amyloidosis by destroying TTR mRNA in the liver. Why does it help to remove a protein, when the disease is caused by a mutation in that protein?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which category is TTR amyloidosis in, and is TTR itself essential?
@@ -69,7 +69,7 @@ TTR amyloidosis is a **toxic aggregate** disease: the mutant TTR tetramer falls 
 
 ---
 
-**Q6.** Enzyme replacement works for Gaucher disease but not for cystic fibrosis. Explain with one cell biology reason. `[ELO 9]`
+**Q6.** Enzyme replacement works for Gaucher disease but not for cystic fibrosis. Explain with one cell biology reason.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 How does an infused protein get into a cell, and where does it end up?
@@ -81,7 +81,7 @@ An infused protein enters cells by **receptor-mediated endocytosis** and ends up
 
 ---
 
-**Q7.** Nusinersen helps children with spinal muscular atrophy although they have no *SMN1* gene. How? `[ELO 9]`
+**Q7.** Nusinersen helps children with spinal muscular atrophy although they have no *SMN1* gene. How?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What does the backup gene *SMN2* do wrong?
@@ -93,7 +93,7 @@ What does the backup gene *SMN2* do wrong?
 
 ---
 
-**Q8.** Cholera toxin and cystic fibrosis both affect CFTR, but with opposite results. Explain. `[ELO 9]`
+**Q8.** Cholera toxin and cystic fibrosis both affect CFTR, but with opposite results. Explain.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Is CFTR open too much or too little?

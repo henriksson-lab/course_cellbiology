@@ -9,7 +9,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ## G-level questions
 
-**1.** Give three biological reasons why cells undergo apoptosis, with one example of each. Why is it important that apoptosis does not cause inflammation? `[ELO 8]`
+**1.** Give three biological reasons why cells undergo apoptosis, with one example of each. Why is it important that apoptosis does not cause inflammation?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Development**: the tissue between the digits dies so that fingers form; about half the neurons made die if they do not receive enough survival factor; self-reactive T cells die in the thymus. **Damage**: a cell with badly damaged DNA activates p53, which makes BH3-only proteins (PUMA, NOXA), and dies instead of passing on mutations. **Immunity**: killer T cells and NK cells make virus-infected or cancer cells start apoptosis (Fas ligand, granzymes). Tens of billions of cells die every day in a healthy adult; if each death caused inflammation, tissues would be inflamed all the time. Because the membrane stays intact and the cells are eaten quickly, the contents never leak, and neighbouring tissue is not harmed.
@@ -17,7 +17,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ---
 
-**2.** Describe the shape changes of a cell undergoing apoptosis, and link three of them to specific proteins that caspases cut. `[ELO 8]`
+**2.** Describe the shape changes of a cell undergoing apoptosis, and link three of them to specific proteins that caspases cut.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The cell shrinks and rounds up, the chromatin condenses against the nuclear envelope and the nucleus fragments, the membrane blebs, and the cell breaks into membrane-wrapped apoptotic bodies that phagocytes eat. Links (any three): cutting **ICAD** frees the nuclease **CAD**, which cuts DNA between nucleosomes (DNA ladder of ~200 bp steps); cutting **lamins** lets the nuclear lamina and the nucleus fall apart; cutting **ROCK1** makes it permanently active, so myosin contracts the cortex and the membrane **blebs**; cutting the **flippase** and activating the scramblase **XKR8** exposes phosphatidylserine ("eat me"); opening **pannexin-1** channels releases ATP ("find me").
@@ -25,7 +25,7 @@ The cell shrinks and rounds up, the chromatin condenses against the nuclear enve
 
 ---
 
-**3.** Explain how initiator and executioner caspases are activated, and why the caspase system works as an amplifying cascade. `[ELO 8]`
+**3.** Explain how initiator and executioner caspases are activated, and why the caspase system works as an amplifying cascade.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Caspases are cysteine proteases that cut after aspartate, made as inactive procaspases. **Initiator** caspases (caspase-8, -9) have long prodomains (DED or CARD) that bind adaptors. They are inactive monomers; an adaptor platform (the DISC for caspase-8, the apoptosome for caspase-9) brings several together, and in these dimers they become active (induced proximity). **Executioner** caspases (caspase-3, -7) are dimers held inactive by an uncut linker; an active initiator cuts it and they become active. One active initiator molecule cuts many executioner molecules, each of which cuts many targets: a cascade that amplifies a small signal, similar to a kinase cascade.
@@ -33,7 +33,7 @@ Caspases are cysteine proteases that cut after aspartate, made as inactive proca
 
 ---
 
-**4.** Name the three groups of the BCL-2 family, give examples of each, and explain how they interact to decide whether MOMP happens. `[ELO 8]`
+**4.** Name the three groups of the BCL-2 family, give examples of each, and explain how they interact to decide whether MOMP happens.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Effectors** (BAX, BAK) form pores in the outer mitochondrial membrane. **Guardians** (anti-apoptotic: BCL-2, BCL-XL, MCL-1) have a groove that binds BH3 helices; they hold activated BAX/BAK. **BH3-only sensors** (BIM, BID/tBID, PUMA, NOXA, BAD) are made or activated by stress; their BH3 helix binds the guardians' groove and blocks them, and some (BIM, tBID) also activate BAX/BAK directly. The decision is a balance: when BH3-only proteins outnumber the guardians, free active BAX/BAK accumulates; above a threshold they assemble into pores, giving **MOMP**, an all-or-none event in each cell.
@@ -41,7 +41,7 @@ Caspases are cysteine proteases that cut after aspartate, made as inactive proca
 
 ---
 
-**5.** Describe the intrinsic pathway from DNA damage to the activation of caspase-3. `[ELO 8]`
+**5.** Describe the intrinsic pathway from DNA damage to the activation of caspase-3.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 DNA damage activates **p53**, which switches on the genes for the BH3-only proteins **PUMA** and **NOXA**. They block the guardians (BCL-2, MCL-1 …), so **BAX/BAK** become active and form pores in the outer mitochondrial membrane (**MOMP**). **Cytochrome c** (normally in the intermembrane space, carrying electrons) and **SMAC** escape into the cytosol. Cytochrome c binds **APAF1**; with dATP, seven APAF1 form the **apoptosome**, which recruits and activates **caspase-9** through its CARD domain. Caspase-9 cuts and activates **caspase-3** (and -7). SMAC removes **XIAP**, which would otherwise block caspase-9 and -3.
@@ -49,7 +49,7 @@ DNA damage activates **p53**, which switches on the genes for the BH3-only prote
 
 ---
 
-**6.** Describe the extrinsic pathway triggered by Fas ligand and explain how it is linked to the intrinsic pathway. `[ELO 8]`
+**6.** Describe the extrinsic pathway triggered by Fas ligand and explain how it is linked to the intrinsic pathway.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Fas ligand (e.g. on a killer T cell) binds and clusters **Fas**, a death receptor, on the target cell. The receptors' death domains recruit the adaptor **FADD**, which recruits **procaspase-8** through its death effector domain: the death-inducing signalling complex (**DISC**). Procaspase-8 molecules are brought together and become active. Caspase-8 cuts **caspase-3/7** directly (enough in some cells, e.g. lymphocytes). It also cuts the BH3-only protein **BID** to **tBID**, which activates BAX/BAK at the mitochondria → MOMP → cytochrome c → apoptosome → caspase-9, and SMAC removes the XIAP brake. In many cells (e.g. liver cells) this mitochondrial loop is needed to amplify the signal. FLIP can block caspase-8 at the DISC.
@@ -57,7 +57,7 @@ Fas ligand (e.g. on a killer T cell) binds and clusters **Fas**, a death recepto
 
 ---
 
-**7.** How are apoptotic cells recognised and removed? Use the terms "find me", "eat me" and "don't eat me". `[ELO 8]`
+**7.** How are apoptotic cells recognised and removed? Use the terms "find me", "eat me" and "don't eat me".
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Find me**: the dying cell releases ATP and UTP (through pannexin-1 channels opened by caspases) and lipids, which attract phagocytes such as macrophages. **Eat me**: caspases switch off the flippase and activate a scramblase, so **phosphatidylserine** appears on the outer leaflet; phagocytes bind it with receptors (directly or through bridging proteins). **Don't eat me**: healthy cells display **CD47**, which inhibits phagocytosis. Eating apoptotic cells (**efferocytosis**) makes macrophages release anti-inflammatory signals (TGF-β, IL-10). If clearance fails, the cells eventually break open and can trigger inflammation and autoimmunity.
@@ -65,7 +65,7 @@ Fas ligand (e.g. on a killer T cell) binds and clusters **Fas**, a death recepto
 
 ---
 
-**8.** You treat cultured cells with a drug and want to know whether they die by apoptosis. Describe three methods and what each one measures. `[ELO 1]` `[ELO 8]`
+**8.** You treat cultured cells with a drug and want to know whether they die by apoptosis. Describe three methods and what each one measures.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (1) **Annexin V / PI by flow cytometry**: annexin V (fluorescent, with Ca²⁺) binds exposed phosphatidylserine; PI enters only cells with a broken membrane. Gives the percentage of live (−/−), early apoptotic (annexin V+ PI−) and late apoptotic (+/+) cells. (2) **Western blot** for cleaved caspase-3 (the 17 kDa fragment appears) and cleaved PARP-1 (116 → 89 kDa): shows that executioner caspases are active. (3) **TUNEL**: terminal transferase adds labelled nucleotides to DNA ends made by CAD; works on cells and on tissue sections. Also possible: DNA ladder on a gel, live imaging with caspase reporters or fluorescent cytochrome c, a caspase activity assay with a DEVD substrate. A pan-caspase inhibitor that blocks death supports apoptosis.
@@ -73,7 +73,7 @@ Fas ligand (e.g. on a killer T cell) binds and clusters **Fas**, a death recepto
 
 ---
 
-**9.** Explain the mechanism of venetoclax and why it works especially well in chronic lymphocytic leukaemia (CLL). Name two problems that can arise in treatment. `[ELO 8]` `[ELO 9]`
+**9.** Explain the mechanism of venetoclax and why it works especially well in chronic lymphocytic leukaemia (CLL). Name two problems that can arise in treatment.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Venetoclax is a **BH3 mimetic**: a small molecule that fits the BH3-binding groove of **BCL-2** (very selectively; it hardly binds BCL-XL or MCL-1). CLL cells make very much BCL-2 (often because a deletion on chromosome 13 removes the microRNAs miR-15a/16-1), and this BCL-2 holds a lot of BIM: the cells are **primed** for death. Venetoclax displaces BIM, BIM activates BAX/BAK, and the cells undergo MOMP and apoptosis within hours. Problems: **tumour lysis syndrome** (so many cells die at once that K⁺, phosphate and uric acid damage the kidneys; hence a 5-week dose ramp-up), and **resistance** (cells that rely on MCL-1 or BCL-XL, or BCL-2 mutations such as G101V that lower drug binding). Neutropenia also occurs.
@@ -81,7 +81,7 @@ Venetoclax is a **BH3 mimetic**: a small molecule that fits the BH3-binding groo
 
 ## VG-style questions
 
-**10. [VG]** In *C. elegans*, loss of *ced-3* lets all 131 doomed cells survive, while loss of *ced-9* makes many extra cells die and kills the embryo. A double mutant lacking both *ced-9* and *ced-3* is viable and has no extra cell deaths. (a) What does this tell you about the order of the two genes in the pathway? (b) Name the human counterparts and explain why the human pathway has an extra step. `[ELO 8]`
+**10. [VG]** In *C. elegans*, loss of *ced-3* lets all 131 doomed cells survive, while loss of *ced-9* makes many extra cells die and kills the embryo. A double mutant lacking both *ced-9* and *ced-3* is viable and has no extra cell deaths. (a) What does this tell you about the order of the two genes in the pathway? (b) Name the human counterparts and explain why the human pathway has an extra step.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) In the double mutant the *ced-3* phenotype (no death) wins: this is **epistasis**. CED-9 acts **upstream** of CED-3 and works by inhibiting it (through CED-4); without CED-3 there is no executioner, so removing the inhibitor CED-9 no longer matters. The order is EGL-1 ⊣ CED-9 ⊣ CED-4 → CED-3 → death. (b) CED-3 = a caspase (caspase-9/-3), CED-4 = APAF1, CED-9 = BCL-2, EGL-1 = a BH3-only protein. In the worm, CED-9 holds CED-4 directly on the mitochondrial surface. In mammals BCL-2 does not bind APAF1; instead the BCL-2 family controls **BAX/BAK and MOMP**, and APAF1 is activated by **cytochrome c** released from the mitochondria. This extra step gives a point of no return (MOMP) and links cell death to the mitochondria's state, and it releases SMAC at the same time.
@@ -89,7 +89,7 @@ Venetoclax is a **BH3 mimetic**: a small molecule that fits the BH3-binding groo
 
 ---
 
-**11. [VG]** A patient with CLL responds well to venetoclax but relapses after two years. The leukaemia cells now have normal BCL-2 levels without mutations but three times more MCL-1. (a) Explain why the cells survive the drug. (b) Predict the effect of adding an MCL-1 inhibitor, and one risk of doing so. (c) Design an experiment with the patient's cells to test your explanation in (a). `[ELO 8]` `[ELO 9]`
+**11. [VG]** A patient with CLL responds well to venetoclax but relapses after two years. The leukaemia cells now have normal BCL-2 levels without mutations but three times more MCL-1. (a) Explain why the cells survive the drug. (b) Predict the effect of adding an MCL-1 inhibitor, and one risk of doing so. (c) Design an experiment with the patient's cells to test your explanation in (a).
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) When venetoclax blocks BCL-2, BIM and active BAX/BAK are released, but **MCL-1**, which venetoclax does not bind, captures them. With three times more MCL-1 the guardians still outnumber the BH3-only proteins, free BAX/BAK stays below the threshold, and no MOMP occurs. (b) Blocking MCL-1 as well removes the last guardian: free BAX/BAK rises above the threshold and the cells should die quickly (a strong combination). Risk: many normal cells depend on MCL-1 (e.g. heart muscle cells, blood stem cells), so toxicity (heart damage, low blood counts) and tumour lysis are possible. (c) Take the patient's leukaemia cells (before and after relapse), treat them in culture with venetoclax alone, an MCL-1 inhibitor alone and both, at several doses, and measure apoptosis by **annexin V/PI flow cytometry** and cleaved caspase-3 after 4–24 h. Confirm the mechanism by knocking down MCL-1 (siRNA or CRISPR): this should restore venetoclax sensitivity. Co-immunoprecipitation can show that BIM moves from BCL-2 to MCL-1 after venetoclax. Controls: untreated cells, a pan-caspase inhibitor (death should be blocked), and normal lymphocytes.
@@ -97,7 +97,7 @@ Venetoclax is a **BH3 mimetic**: a small molecule that fits the BH3-binding groo
 
 ---
 
-**12. [VG]** A student treats a cell line with an anticancer drug and adds a pan-caspase inhibitor (zVAD). The inhibitor blocks annexin V staining and the cleavage of PARP-1, but after 48 h almost the same number of cells have died, now with swollen mitochondria and a broken membrane. Explain this result. `[ELO 8]`
+**12. [VG]** A student treats a cell line with an anticancer drug and adds a pan-caspase inhibitor (zVAD). The inhibitor blocks annexin V staining and the cleavage of PARP-1, but after 48 h almost the same number of cells have died, now with swollen mitochondria and a broken membrane. Explain this result.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The caspase inhibitor blocks everything **downstream of the caspases**: no PARP cleavage, no scramblase activation (no annexin V), no tidy apoptotic morphology. But the drug acts **upstream**, through the BCL-2 family, so **MOMP** still happens. After MOMP the mitochondria lose cytochrome c, the electron transport chain fails, ATP falls and the mitochondria are damaged, so the cell dies anyway, more slowly and by a messier, necrosis-like death with membrane rupture. MOMP, not caspase activation, is the point of no return in the intrinsic pathway. (Caspase inhibition can also switch some cells to other regulated death types, the topic of the next lecture.) For therapy, this means that blocking caspases alone rarely saves cells after MOMP.
@@ -115,15 +115,15 @@ The demo is a **qualitative threshold model** of the intrinsic pathway in a dish
 <script src="../demos/dist/bcl2.js"></script>
 ```
 
-**E1.** Choose **Healthy lymphocyte** and the speed 1 h/s. How many cells die in 24 h? Look at the strip plot: where do the cells lie relative to the threshold? Now raise the stress slider to 1.5, 2, 3 and 4. Read the percentage that dies each time. Why does the population respond gradually, although each cell's decision is all or none? `[ELO 8]`
+**E1.** Choose **Healthy lymphocyte** and the speed 1 h/s. How many cells die in 24 h? Look at the strip plot: where do the cells lie relative to the threshold? Now raise the stress slider to 1.5, 2, 3 and 4. Read the percentage that dies each time. Why does the population respond gradually, although each cell's decision is all or none?
 
-**E2.** Choose **CLL cell (high BCL-2)**, then **CLL cell + venetoclax**. Compare the fraction that dies in 24 h and when it happens. Pause at about 2 h, 3 h and 6 h and read the flow plot. In which order do the cells move through the quadrants, and why? Use the balance bars to explain why a CLL cell is called "primed". `[ELO 8]` `[ELO 1]`
+**E2.** Choose **CLL cell (high BCL-2)**, then **CLL cell + venetoclax**. Compare the fraction that dies in 24 h and when it happens. Pause at about 2 h, 3 h and 6 h and read the flow plot. In which order do the cells move through the quadrants, and why? Use the balance bars to explain why a CLL cell is called "primed".
 
-**E3. [VG]** *Predict first.* Choose **MCL-1-dependent cell + venetoclax**. Will this cell die? Write down your prediction, then check. Now lower MCL-1 step by step to 3, 2 and 1 (as an MCL-1 inhibitor would). What happens? What does this mean for a patient whose CLL relapses with high MCL-1? `[ELO 8]` `[ELO 9]`
+**E3. [VG]** *Predict first.* Choose **MCL-1-dependent cell + venetoclax**. Will this cell die? Write down your prediction, then check. Now lower MCL-1 step by step to 3, 2 and 1 (as an MCL-1 inhibitor would). What happens? What does this mean for a patient whose CLL relapses with high MCL-1?
 
-**E4.** Choose **CLL cell + venetoclax** and set BAX/BAK to 0, then 0.2 and 0.5. What happens to the fraction that dies and to the timing? What does this tell you about the role of BAX/BAK, and what would a cancer cell gain by losing them? `[ELO 8]`
+**E4.** Choose **CLL cell + venetoclax** and set BAX/BAK to 0, then 0.2 and 0.5. What happens to the fraction that dies and to the timing? What does this tell you about the role of BAX/BAK, and what would a cancer cell gain by losing them?
 
-**E5.** Choose **Healthy lymphocyte** and add venetoclax at 1×, 10× and 100× K_d. Compare with **CLL cell (high BCL-2)** at venetoclax 1× and 3.2× K_d. Why does the same drug kill CLL cells far more easily than normal lymphocytes? Then set the CLL cell to BCL-2 = 2 without the drug, and compare with venetoclax 1×: what do you notice? `[ELO 8]` `[ELO 9]`
+**E5.** Choose **Healthy lymphocyte** and add venetoclax at 1×, 10× and 100× K_d. Compare with **CLL cell (high BCL-2)** at venetoclax 1× and 3.2× K_d. Why does the same drug kill CLL cells far more easily than normal lymphocytes? Then set the CLL cell to BCL-2 = 2 without the drug, and compare with venetoclax 1×: what do you notice?
 
 ::: {.callout-note collapse="true" title="Solutions"}
 

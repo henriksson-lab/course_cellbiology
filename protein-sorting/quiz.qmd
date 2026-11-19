@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Sorting proteins to 
 
 ---
 
-**Q1.** Where are almost all of a cell's proteins made, and what decides where each one goes? `[ELO 4]`
+**Q1.** Where are almost all of a cell's proteins made, and what decides where each one goes?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of a parcel in a post office: who reads the address, and where is it written?
@@ -21,7 +21,7 @@ Almost all proteins are made on ribosomes **in the cytosol** (free, or bound to 
 
 ---
 
-**Q2.** Match each signal to where it sends a protein: (a) PKKKRKV, (b) C-terminal -SKL, (c) C-terminal -KDEL, (d) an N-terminal helix with several arginines and no acidic residues, (e) an N-terminal stretch with a core of 8–12 hydrophobic residues. `[ELO 4]`
+**Q2.** Match each signal to where it sends a protein: (a) PKKKRKV, (b) C-terminal -SKL, (c) C-terminal -KDEL, (d) an N-terminal helix with several arginines and no acidic residues, (e) an N-terminal stretch with a core of 8–12 hydrophobic residues.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Two of them sit at the N-terminus and are cut off after use; two sit at the very C-terminus.
@@ -33,7 +33,7 @@ Two of them sit at the N-terminus and are cut off after use; two sit at the very
 
 ---
 
-**Q3.** Name the three kinds of transport between compartments. For each, give one example and say whether the protein crosses a membrane. `[ELO 4]`
+**Q3.** Name the three kinds of transport between compartments. For each, give one example and say whether the protein crosses a membrane.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of the topology: same space, a new space, or between lumen-side spaces.
@@ -45,7 +45,7 @@ Think of the topology: same space, a new space, or between lumen-side spaces.
 
 ---
 
-**Q4.** GFP alone (27 kDa) is seen in both the cytosol and the nucleus. A GFP fused to a 120 kDa cytosolic enzyme is seen only in the cytosol. Explain the difference. `[ELO 4]`
+**Q4.** GFP alone (27 kDa) is seen in both the cytosol and the nucleus. A GFP fused to a 120 kDa cytosolic enzyme is seen only in the cytosol. Explain the difference.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What fills the channel of the nuclear pore, and what can pass it without help?
@@ -57,7 +57,7 @@ The nuclear pore channel is filled with a meshwork of **FG repeats** that acts a
 
 ---
 
-**Q5.** What makes nuclear import go in one direction? Name the two enzymes involved and where they are. `[ELO 4, 5]`
+**Q5.** What makes nuclear import go in one direction? Name the two enzymes involved and where they are.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Importins bind cargo in one form of the environment and release it in the other.
@@ -69,7 +69,7 @@ The **Ran-GTP gradient**. The exchange factor **RanGEF** is bound to chromatin, 
 
 ---
 
-**Q6.** Name two things that drive the import of a protein into the mitochondrial matrix. `[ELO 4, 5]`
+**Q6.** Name two things that drive the import of a protein into the mitochondrial matrix.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One is electrical, one uses ATP.
@@ -81,7 +81,7 @@ One is electrical, one uses ATP.
 
 ---
 
-**Q7.** A protein has an ER signal peptide and an NLS. Where does it go, and why? `[ELO 4]`
+**Q7.** A protein has an ER signal peptide and an NLS. Where does it go, and why?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which signal is read first, and on which side of the ER membrane is the protein afterwards?
@@ -93,7 +93,7 @@ The signal peptide is read by SRP **during translation**, so the protein enters 
 
 ---
 
-**Q8.** What does selinexor bind, and why does that kill myeloma cells? `[ELO 4, 9]`
+**Q8.** What does selinexor bind, and why does that kill myeloma cells?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which tumour-suppressor proteins carry an NES, and where must they be to act?

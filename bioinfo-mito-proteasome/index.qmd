@@ -19,7 +19,7 @@ Builds on [protein life and death](../protein-lifecycle/lec.qmd), [mitochondria]
 
 Open [NC_012920.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_012920.1), the human mitochondrial reference genome at NCBI. The first line (**LOCUS**) gives its length.
 
-**A1.** How long is the human mitochondrial genome, in base pairs? `[ELO 5]`
+**A1.** How long is the human mitochondrial genome, in base pairs?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **16 569 bp**, a circle (LOCUS says `circular`). It carries 37 genes: 13 for proteins, 22 tRNAs and 2 rRNAs.
@@ -34,7 +34,7 @@ Open two UniProt entries for subunits of the same machine, the ATP synthase:
 
 In each, look under **PTM/Processing** for a **Transit peptide**. Under **Names & Taxonomy**, P00846 also says **Encoded in: Mitochondrion**.
 
-**A2.** Which of the two has a mitochondrial transit peptide, and which residues does it span? `[ELO 4, 5]`
+**A2.** Which of the two has a mitochondrial transit peptide, and which residues does it span?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **P25705 (ATP5F1A), residues 1–43.** It is encoded in the nucleus, made on cytosolic ribosomes and imported through TOM/TIM; the transit peptide is then cut off. MT-ATP6 is encoded in mtDNA and made in the matrix, so it needs no transit peptide.
@@ -44,7 +44,7 @@ In each, look under **PTM/Processing** for a **Transit peptide**. Under **Names 
 
 Open [PDB 5LF3](https://www.rcsb.org/structure/5LF3), the human 20S proteasome with bortezomib. Under **Small Molecules**, find the row for **BO2** (bortezomib). Its chains are written like `JB [auth K]`: the letter after `auth` is the protein chain. Look up those letters under **Macromolecules**.
 
-**A3.** Bortezomib is bound to which proteasome subunits? `[ELO 4, 9]`
+**A3.** Bortezomib is bound to which proteasome subunits?
 
 a) Alpha type-1, -2 and -3
 b) Beta type-5, -6 and -7
@@ -57,7 +57,7 @@ d) Beta type-1, -2 and -3
 
 Now open bortezomib in ChEMBL, [CHEMBL325041](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL325041), and read **Max Phase** at the top.
 
-**A4.** What is bortezomib's maximum development phase? `[ELO 9]`
+**A4.** What is bortezomib's maximum development phase?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **Phase 4: approved.** Bortezomib has been used against multiple myeloma since 2003. Mechanism of action in ChEMBL: 26S proteasome inhibitor.
@@ -67,7 +67,7 @@ Now open bortezomib in ChEMBL, [CHEMBL325041](https://www.ebi.ac.uk/chembl/explo
 
 Open ClinVar variant [14500](https://www.ncbi.nlm.nih.gov/clinvar/variation/14500/), LMNA c.1824C>T (p.Gly608=). Note the classification (**Pathogenic**) and the condition **Hutchinson–Gilford syndrome** (progeria). `p.Gly608=` means codon 608 still codes for glycine.
 
-**A5. [VG]** How does this variant cause progeria? `[ELO 4, 9]`
+**A5. [VG]** How does this variant cause progeria?
 
 a) It changes glycine 608 into another amino acid.
 b) It creates a stop codon, so no lamin A is made.
@@ -105,13 +105,13 @@ In section 4 you complete a similar plot of the protein-coding genes per respira
 
 While a blank is empty, the chunk shows an `unexpected input` error. With all three filled, knit again: you should see four bars, labelled I, III, IV and V.
 
-**B1.** Which respiratory complex has the most subunits encoded in mtDNA, and how many? `[ELO 5]`
+**B1.** Which respiratory complex has the most subunits encoded in mtDNA, and how many?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **Complex I, 7 subunits** (ND1–ND6 and ND4L). Then IV: 3, V: 2, III: 1. Complex II has no bar: all its subunits are encoded in the nucleus.
 :::
 
-**B2.** Section 2 of your report prints the share of mitochondrial proteins encoded in mtDNA (`percent_mtdna`). Which is closest? `[ELO 5]`
+**B2.** Section 2 of your report prints the share of mitochondrial proteins encoded in mtDNA (`percent_mtdna`). Which is closest?
 
 a) about 1 %
 b) about 10 %

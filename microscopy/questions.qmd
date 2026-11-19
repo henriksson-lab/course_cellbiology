@@ -9,7 +9,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ## G-level questions
 
-**1.** Explain the difference between magnification and resolution. Why can a light microscope not separate two objects that are 50 nm apart, however much it magnifies? `[ELO 1]`
+**1.** Explain the difference between magnification and resolution. Why can a light microscope not separate two objects that are 50 nm apart, however much it magnifies?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Magnification** is how much bigger the image is than the object. **Resolution** is the smallest distance at which two points can still be seen as two. Light is a wave, so a lens turns each point of the sample into a small blur spot. When two points are closer than about $0.61\,\lambda/\mathrm{NA}$, their blur spots merge into one. With visible light (about 500 nm) and the best objectives (NA about 1.4) this limit is about **200 nm**. Two objects 50 nm apart give one blob, and magnifying the blob more adds no detail.
@@ -17,7 +17,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ---
 
-**2.** Describe how a phase-contrast microscope and a DIC microscope make living, unstained cells visible. Why is staining with dyes usually not an option for living cells? `[ELO 1]`
+**2.** Describe how a phase-contrast microscope and a DIC microscope make living, unstained cells visible. Why is staining with dyes usually not an option for living cells?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Unstained cells absorb almost no light, but dense structures (nucleus, membranes) have a higher refractive index and **slow light down** (phase shift). **Phase contrast** converts these phase shifts into differences in **brightness**. **DIC** uses polarised light to turn **gradients** in optical path into light and shadow, so edges look three-dimensional. Most dyes for bright-field microscopy need the cells to be fixed and often sectioned, and many dyes are toxic, so stained cells are dead.
@@ -25,7 +25,7 @@ Unstained cells absorb almost no light, but dense structures (nucleus, membranes
 
 ---
 
-**3.** Draw and label the light path in an epifluorescence microscope with a filter cube for a green fluorophore. State what each filter and the dichroic mirror does. `[ELO 1]`
+**3.** Draw and label the light path in an epifluorescence microscope with a filter cube for a green fluorophore. State what each filter and the dichroic mirror does.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Lamp → **excitation filter** (passes only blue light that excites the fluorophore) → **dichroic mirror** (reflects blue light down through the objective onto the sample) → fluorophore absorbs blue and emits green → green light goes back up through the **objective** → passes **through the dichroic mirror** (it transmits longer wavelengths) → **emission filter** (passes green, blocks stray blue) → camera or eye. The design works because of the **Stokes shift**: emitted light has a longer wavelength than the excitation light.
@@ -33,7 +33,7 @@ Lamp → **excitation filter** (passes only blue light that excites the fluoroph
 
 ---
 
-**4.** Describe the steps of indirect immunofluorescence to show where tubulin is in cultured cells. Why do we use a secondary antibody? `[ELO 1]` `[ELO 6]`
+**4.** Describe the steps of indirect immunofluorescence to show where tubulin is in cultured cells. Why do we use a secondary antibody?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 1. **Fix** the cells (e.g. formaldehyde) so proteins are cross-linked and stay in place. 2. **Permeabilise** the membranes with a mild detergent so antibodies can enter. 3. **Block** free binding sites (e.g. with serum proteins) to reduce background. 4. Add the **primary antibody** against tubulin (e.g. made in mouse), wash. 5. Add a **fluorescent secondary antibody** against mouse antibodies, wash. 6. Often add a DNA dye (DAPI), mount and image. The secondary antibody **amplifies** the signal (several secondaries bind each primary), and one labelled secondary can be used with many different primaries from the same species.
@@ -41,7 +41,7 @@ Lamp → **excitation filter** (passes only blue light that excites the fluoroph
 
 ---
 
-**5.** What is GFP, why was it so useful for cell biology, and how is a GFP fusion protein made? `[ELO 1]` `[ELO 6]`
+**5.** What is GFP, why was it so useful for cell biology, and how is a GFP fusion protein made?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 GFP is the **green fluorescent protein** from the jellyfish *Aequorea victoria*. Its chain of 238 amino acids folds into a barrel and forms its fluorescent group **by itself** (it needs only oxygen), so the gene works in any cell. To make a fusion protein you join the coding sequence of the protein of interest to the GFP coding sequence **in the same reading frame**, without a stop codon between them, and introduce the DNA into cells. The cell makes one chain, protein–GFP, so you can see where the protein is **in a living cell** and follow it over time. Mutants of GFP and proteins from corals give other colours, so several proteins can be followed at once.
@@ -49,7 +49,7 @@ GFP is the **green fluorescent protein** from the jellyfish *Aequorea victoria*.
 
 ---
 
-**6.** Explain how a confocal microscope gives sharper images of thick samples than a wide-field fluorescence microscope. What is the cost? `[ELO 1]`
+**6.** Explain how a confocal microscope gives sharper images of thick samples than a wide-field fluorescence microscope. What is the cost?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 In wide-field fluorescence the whole depth of the sample is lit, so out-of-focus light adds haze. A confocal microscope focuses a **laser spot** in the sample and places a **pinhole** in front of the detector at the point where light from the focal plane is focused. Light from other depths is out of focus at the pinhole and mostly blocked. The spot is **scanned** to build the image. This gives a thin **optical section** (about 0.5–1 µm), and a stack of sections gives a 3D image. Costs: it is **slower** (point by point), and the sample receives more light, so there is more **photobleaching and phototoxicity**.
@@ -57,7 +57,7 @@ In wide-field fluorescence the whole depth of the sample is lit, so out-of-focus
 
 ---
 
-**7.** Name two problems you meet when you film living fluorescent cells for many hours, and one way to reduce each. `[ELO 1]`
+**7.** Name two problems you meet when you film living fluorescent cells for many hours, and one way to reduce each.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Photobleaching**: fluorophores are destroyed by repeated excitation, so the signal fades. **Phototoxicity**: excited fluorophores make reactive oxygen species that damage the cell, so it may behave abnormally or die. Both are reduced by using **less light** (lower intensity, shorter exposures, fewer time points, a more sensitive camera) and gentler methods such as **spinning-disk confocal or light-sheet** microscopy, which light less of the sample. The cells must also be kept at **37 °C** with the right CO₂ and medium.
@@ -65,7 +65,7 @@ In wide-field fluorescence the whole depth of the sample is lit, so out-of-focus
 
 ---
 
-**8.** Compare TEM and SEM: how is the image made, what does each show, and why can neither be used on living cells? `[ELO 1]`
+**8.** Compare TEM and SEM: how is the image made, what does each show, and why can neither be used on living cells?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **TEM**: electrons pass **through** an ultrathin section (about 50–100 nm) stained with heavy metals; areas that scatter electrons look dark. It shows **internal structure** (membranes, organelles, ribosomes) at about 1–2 nm. **SEM**: a fine beam **scans** a metal-coated sample, and electrons knocked out of the **surface** are detected. It shows the **3D surface** at a few nm. Both work in a **vacuum**, so samples are fixed and dried (and for TEM embedded and cut), which kills the cells.
@@ -73,7 +73,7 @@ In wide-field fluorescence the whole depth of the sample is lit, so out-of-focus
 
 ---
 
-**9.** What is single-particle cryo-EM? Explain why averaging many images is needed and what the result is. `[ELO 1]`
+**9.** What is single-particle cryo-EM? Explain why averaging many images is needed and what the result is.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 A purified protein or complex is frozen so quickly that water forms **glass-like ice**, keeping the molecules in their native, hydrated shape without stain. Only a low electron dose can be used, so each image of a single molecule is **very noisy**. A computer finds tens of thousands to millions of particle images, sorts them by viewing angle and **averages** them, so noise cancels and the signal remains. The 2D views are combined into a **3D density map**, often at better than 0.3 nm, into which an atomic model is built.
@@ -81,7 +81,7 @@ A purified protein or complex is frozen so quickly that water forms **glass-like
 
 ## VG-style questions
 
-**10. [VG]** A research group makes a GFP fusion of a newly discovered protein, P. In living cells, P–GFP is spread evenly through the cytosol. But immunofluorescence with an antibody against P in fixed cells shows P on mitochondria. Give **two** possible explanations, and propose an experiment to decide between them. `[ELO 1]`
+**10. [VG]** A research group makes a GFP fusion of a newly discovered protein, P. In living cells, P–GFP is spread evenly through the cytosol. But immunofluorescence with an antibody against P in fixed cells shows P on mitochondria. Give **two** possible explanations, and propose an experiment to decide between them.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Possible explanations:
@@ -95,7 +95,7 @@ Experiments: put GFP at the **other end** of P and express it at **low level** (
 
 ---
 
-**11. [VG]** You want to know (a) how often vesicles carrying a GFP-tagged cargo move along microtubules in living cells, and (b) whether the cargo sits inside the vesicle or on its outer membrane. Design an imaging approach for each part, and explain why one method cannot answer both. `[ELO 1]` `[ELO 6]`
+**11. [VG]** You want to know (a) how often vesicles carrying a GFP-tagged cargo move along microtubules in living cells, and (b) whether the cargo sits inside the vesicle or on its outer membrane. Design an imaging approach for each part, and explain why one method cannot answer both.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) **Live-cell fluorescence imaging** of the GFP-cargo, ideally with microtubules labelled in a second colour (e.g. a red fluorescent tubulin fusion), using a fast, gentle method (spinning-disk confocal or light-sheet) and short exposures to limit bleaching and phototoxicity. Track vesicles over time and count runs along microtubules. Control: a drug that depolymerises microtubules should stop the directed runs.
@@ -107,7 +107,7 @@ One method cannot do both because live imaging needs light microscopy (low resol
 
 ---
 
-**12. [VG]** Explain why the SARS-CoV-2 spike in the mRNA COVID-19 vaccines carries two extra prolines (the "2P" spike), and why cryo-EM was a good method to check this design quickly. `[ELO 1]`
+**12. [VG]** Explain why the SARS-CoV-2 spike in the mRNA COVID-19 vaccines carries two extra prolines (the "2P" spike), and why cryo-EM was a good method to check this design quickly.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The spike is a fusion protein: it starts in a compact **prefusion** shape and, when it fuses the viral and cell membranes, S1 is lost and S2 refolds into a long **postfusion** rod. Many protective (neutralising) antibodies recognise the prefusion shape, but a spike made on its own can flip to the postfusion form. Two **prolines**, which are stiff, placed at a hinge in S2 block this refolding and keep the prefusion shape, so the immune system sees the right target. The idea came from structures of related coronavirus spikes (MERS, SARS). Cryo-EM was ideal because the spike is a large, flexible, glycosylated membrane-protein trimer that is hard to crystallise; cryo-EM needs only a small amount of purified protein, no crystals, and keeps it in a near-native state. In early 2020 a cryo-EM structure confirmed within weeks that the SARS-CoV-2 2P spike holds the prefusion shape.
@@ -123,13 +123,13 @@ Two glowing points (for example two fluorescent molecules) seen through a micros
 <script src="../demos/dist/resolution.js"></script>
 ```
 
-**E1.** Start with green light (520 nm) and the oil objective (NA 1.4), $d = 300$ nm. Move the points slowly together. At what distance does the readout say you reach the Rayleigh limit? Check it with the formula. How deep is the dip there, and at about what distance does the dip disappear completely? `[ELO 1]`
+**E1.** Start with green light (520 nm) and the oil objective (NA 1.4), $d = 300$ nm. Move the points slowly together. At what distance does the readout say you reach the Rayleigh limit? Check it with the formula. How deep is the dip there, and at about what distance does the dip disappear completely?
 
-**E2.** Set $d = 250$ nm. Try the three objectives: dry 10× (NA 0.25), dry 40× (NA 0.65) and oil 100× (NA 1.4). Which of them separate the two points? What is the limit for each? `[ELO 1]`
+**E2.** Set $d = 250$ nm. Try the three objectives: dry 10× (NA 0.25), dry 40× (NA 0.65) and oil 100× (NA 1.4). Which of them separate the two points? What is the limit for each?
 
-**E3. [VG]** *Predict first, then check.* Keep $d = 250$ nm and NA 1.4. Will the two points be resolved in red light (650 nm)? In blue light (450 nm)? Then explain why a light microscope cannot be improved much further by choosing a shorter wavelength or a better lens. `[ELO 1]`
+**E3. [VG]** *Predict first, then check.* Keep $d = 250$ nm and NA 1.4. Will the two points be resolved in red light (650 nm)? In blue light (450 nm)? Then explain why a light microscope cannot be improved much further by choosing a shorter wavelength or a better lens.
 
-**E4. [VG]** Switch to **Electrons (TEM)**. The wavelength is about 100 000 times shorter than green light. What is the limit with a 10 mrad aperture, and why is it much larger than the wavelength? Why do electron micrographs of cells still show only about 1–2 nm detail? `[ELO 1]`
+**E4. [VG]** Switch to **Electrons (TEM)**. The wavelength is about 100 000 times shorter than green light. What is the limit with a 10 mrad aperture, and why is it much larger than the wavelength? Why do electron micrographs of cells still show only about 1–2 nm detail?
 
 ::: {.callout-note collapse="true" title="Solutions"}
 

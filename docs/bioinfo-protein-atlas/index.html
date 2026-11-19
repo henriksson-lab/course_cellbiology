@@ -1357,14 +1357,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <style>
   main a, main p code, main li code { overflow-wrap: anywhere; }
 </style>
-<p>Find where marker proteins live in two databases, check a cell line, and knit your first R Markdown report. Builds on <a href="../cell-tour/lec.html">A tour of the cell</a>, <a href="../microscopy/lec.html">Seeing cells: microscopy</a> and <a href="../cell-methods/lec.html">Taking cells apart and perturbing them</a>. <strong>ELO 1, 5.</strong></p>
+<p>Find where marker proteins live in two databases, check a cell line, and knit your first R Markdown report. Builds on <a href="../cell-tour/lec.html">A tour of the cell</a>, <a href="../microscopy/lec.html">Seeing cells: microscopy</a> and <a href="../cell-methods/lec.html">Taking cells apart and perturbing them</a>.</p>
 <section id="part-a-in-the-browser" class="level2">
 <h2 class="anchored" data-anchor-id="part-a-in-the-browser">Part A: in the browser</h2>
 <p><strong>UniProt</strong> is the reference database of proteins; <strong>Human Protein Atlas</strong> (HPA) shows real immunofluorescence images of each protein in cultured human cells.</p>
 <section id="a1.-calnexin-in-uniprot" class="level3">
 <h3 class="anchored" data-anchor-id="a1.-calnexin-in-uniprot">A1. Calnexin in UniProt</h3>
 <p>Open UniProt entry <a href="https://www.uniprot.org/uniprotkb/P27824/entry">P27824</a> (human calnexin). <code>P27824</code> is its <strong>accession</strong>; <code>CANX</code> is its <strong>gene symbol</strong>. Click <strong>Subcellular Location</strong> in the menu on the left.</p>
-<p><strong>T1</strong> <code>[ELO 1]</code> Where in the cell is calnexin, and how does it sit in the membrane?</p>
+<p><strong>T1</strong> Where in the cell is calnexin, and how does it sit in the membrane?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1390,7 +1390,7 @@ Answer
 <li><a href="https://www.proteinatlas.org/ENSG00000167110-GOLGA2">GOLGA2</a> (GM130)</li>
 <li><a href="https://www.proteinatlas.org/ENSG00000113368-LMNB1">LMNB1</a> (lamin B1)</li>
 </ul>
-<p><strong>T2</strong> <code>[ELO 1, 5]</code> Give the HPA main location of TOMM20, GOLGA2 and LMNB1.</p>
+<p><strong>T2</strong> Give the HPA main location of TOMM20, GOLGA2 and LMNB1.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1411,7 +1411,7 @@ Answer
 <section id="a3.-catalase-two-databases-disagree" class="level3">
 <h3 class="anchored" data-anchor-id="a3.-catalase-two-databases-disagree">A3. Catalase: two databases disagree</h3>
 <p>Catalase is the classic peroxisome marker (<a href="../cell-methods/lec.html#/density-gradients-and-marker-proteins">cell-methods lecture</a>). UniProt <a href="https://www.uniprot.org/uniprotkb/P04040/entry">P04040</a> says <strong>peroxisome matrix</strong>. Now open <a href="https://www.proteinatlas.org/ENSG00000121691-CAT">CAT in HPA</a>, <strong>SUBCELLULAR</strong>.</p>
-<p><strong>T3</strong> <code>[ELO 1, 5]</code> <strong>[VG]</strong> HPA gives a different main location. Which, and which statement best explains the difference?</p>
+<p><strong>T3</strong> <strong>[VG]</strong> HPA gives a different main location. Which, and which statement best explains the difference?</p>
 <ol type="a">
 <li>Catalase leaves peroxisomes in cultured cells.</li>
 <li>Peroxisomes are small dots near the resolution limit of light microscopy, so in an image they look like any other small vesicle.</li>
@@ -1437,7 +1437,7 @@ Answer
 <section id="a4.-which-cells-make-insulin" class="level3">
 <h3 class="anchored" data-anchor-id="a4.-which-cells-make-insulin">A4. Which cells make insulin?</h3>
 <p>Open <a href="https://www.proteinatlas.org/ENSG00000254647-INS">INS in HPA</a> and click <strong>SINGLE CELL</strong>. This shows mRNA in each cell type, measured by <a href="../cell-methods/lec.html#/single-cell-omics-a-census-of-cells">single-cell RNA sequencing</a>.</p>
-<p><strong>T4</strong> <code>[ELO 1]</code> Which cell type expresses INS?</p>
+<p><strong>T4</strong> Which cell type expresses INS?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1458,7 +1458,7 @@ Answer
 <section id="a5.-is-the-culture-what-you-think-it-is" class="level3">
 <h3 class="anchored" data-anchor-id="a5.-is-the-culture-what-you-think-it-is">A5. Is the culture what you think it is?</h3>
 <p><strong>Cellosaurus</strong> registers every cell line under a stable accession. Open <a href="https://www.cellosaurus.org/CVCL_0030">HeLa, CVCL_0030</a> and find the virus under <strong>Transformant</strong>. Then open <a href="https://www.cellosaurus.org/CVCL_1906">HEp-2, CVCL_1906</a> and read <strong>Problematic cell line</strong> (<a href="../cell-methods/lec.html#/is-the-culture-what-you-think-it-is">lecture</a>).</p>
-<p><strong>T5</strong> <code>[ELO 1]</code> HEp-2 was thought to come from a laryngeal cancer. Which cell line is it really?</p>
+<p><strong>T5</strong> HEp-2 was thought to come from a laryngeal cancer. Which cell line is it really?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1503,7 +1503,7 @@ Answer
 <li><strong>Blank 2:</strong> <code>which.max</code> finds the heaviest; change <code>___</code> so the next line finds the lightest. The sentence below the chunk now shows a number.</li>
 <li><strong>Blank 3:</strong> the column that holds the compartment. The plot appears, with coloured dots and a legend.</li>
 </ol>
-<p><strong>T6</strong> <code>[ELO 1]</code> In your plot, which protein is the lightest, and which compartment is it coloured as?</p>
+<p><strong>T6</strong> In your plot, which protein is the lightest, and which compartment is it coloured as?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1520,7 +1520,7 @@ Answer
 </div>
 </div>
 </div>
-<p><strong>T7</strong> <code>[ELO 1]</code> How many times heavier than the lightest is the heaviest protein (the inline R number in your report)?</p>
+<p><strong>T7</strong> How many times heavier than the lightest is the heaviest protein (the inline R number in your report)?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Answer">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">

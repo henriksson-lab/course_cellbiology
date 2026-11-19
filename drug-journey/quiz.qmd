@@ -11,7 +11,7 @@ the hint or answer. ELO tags show which mechanisms you are connecting.
 ---
 
 **Q1.** A cell has many fluorescent LNP-labelled dots but little encoded protein.
-Why does this not prove that translation is defective? `[ELO 1, ELO 2, ELO 4]`
+Why does this not prove that translation is defective?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which side of the endosomal membrane can a ribosome reach? What exactly was labelled?
@@ -28,7 +28,7 @@ identify the failed step.
 ---
 
 **Q2.** Does delivered mRNA need to enter the nucleus to make a membrane antigen?
-Where does translation begin, and what directs the protein into the ER? `[ELO 4]`
+Where does translation begin, and what directs the protein into the ER?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Distinguish the route of the mRNA from the route of its growing protein.
@@ -44,7 +44,7 @@ The mRNA's lipid carrier is not taken through the ER and Golgi with the antigen.
 ---
 
 **Q3.** A membrane antigen's glycosylated domain faces the ER lumen. Which side
-will it face at the cell surface, and why? `[ELO 2, ELO 4, ELO 5]`
+will it face at the cell surface, and why?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Do transport vesicles turn a membrane inside out?
@@ -60,7 +60,7 @@ bilayer on the way.
 ---
 
 **Q4.** Give one way microtubules and one way ATP supply support this antigen's
-journey. Why might a severe energy deficit affect several steps? `[ELO 5, ELO 6]`
+journey. Why might a severe energy deficit affect several steps?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of carriers, motors, chaperones and pumps.
@@ -77,7 +77,7 @@ expression after ATP depletion does not isolate one delivery defect.
 ---
 
 **Q5.** Is a whole antigen at the plasma membrane the same as an antigen peptide
-bound to MHC-I? Name one cellular process needed for each display. `[ELO 3, ELO 4]`
+bound to MHC-I? Name one cellular process needed for each display.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Folded protein versus a short fragment of a protein.
@@ -95,7 +95,7 @@ context determine the response; this is a preview of Immunologi.
 ---
 
 **Q6.** Why can measuring total intracellular imatinib fail to predict kinase
-inhibition? What additional measurement would help? `[ELO 1, ELO 2, ELO 3]`
+inhibition? What additional measurement would help?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Is all measured drug freely available beside the kinase?
@@ -113,7 +113,7 @@ phosphorylation readout measures pathway action, not direct binding by itself.
 
 **Q7.** Imatinib reduces a BCR–ABL1-dependent phosphorylation readout. Does that
 prove the cells have undergone apoptosis? Explain how you would distinguish
-arrest from death. `[ELO 1, ELO 7, ELO 8]`
+arrest from death.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Separate molecular action, proliferation and cell fate.
@@ -131,7 +131,6 @@ slower division rather than increased death.
 
 **Q8.** A resistant cell has normal drug exposure but its BCR–ABL1 remains active.
 Suggest a target-level explanation. How would a downstream bypass differ?
-`[ELO 3, ELO 9]`
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What can change at the kinase, and what can change after it?

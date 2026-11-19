@@ -31,8 +31,6 @@ After this lecture you can:
 - **compare** all organelles in one table: membranes, DNA, how proteins get in, main job, pH and Ca²⁺;
 - explain two diseases of organelles that are not the usual suspects: **progeria** (lamin A) and **Zellweger syndrome** (no peroxisomes).
 
-**ELO 5** (organelles and homeostasis), with disease examples for **ELO 9**.
-
 ::: notes
 This lecture closes the block on protein handling and organelles. So far you have met each organelle on its own: how proteins are sorted, how the ER folds and checks them, how the Golgi modifies and ships them, how endosomes and lysosomes take material in and digest it, how proteins are made and destroyed, and how mitochondria make ATP. Today we do two new things. First, we fill the gaps: three organelles have not had their own lecture, namely the nucleus with its envelope and lamina, the peroxisome, and the lipid droplet. Second, we change the question. Instead of asking what one organelle does, we ask how all of them together keep the cell stable. That is homeostasis, and it is what ELO 5 asks for: compare organelles, and explain how they cooperate to keep energy, calcium, pH, lipids and protein load in balance. We end with a comparison table that you can use to revise for the exam, and with two diseases that show what happens when one organelle fails.
 :::

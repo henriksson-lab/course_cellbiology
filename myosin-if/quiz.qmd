@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Myosin, intermediate
 
 ---
 
-**Q1.** In the cross-bridge cycle of myosin II, which step needs (a) ATP **binding**, (b) ATP **hydrolysis**, (c) **phosphate release**? `[ELO 6]`
+**Q1.** In the cross-bridge cycle of myosin II, which step needs (a) ATP **binding**, (b) ATP **hydrolysis**, (c) **phosphate release**?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of three verbs: let go, cock, pull.
@@ -21,7 +21,7 @@ Think of three verbs: let go, cock, pull.
 
 ---
 
-**Q2.** Why do muscles become stiff a few hours after death (rigor mortis)? `[ELO 6]`
+**Q2.** Why do muscles become stiff a few hours after death (rigor mortis)?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which step of the cycle cannot happen without ATP?
@@ -33,7 +33,7 @@ After death the cells run out of ATP. Myosin heads can still finish their stroke
 
 ---
 
-**Q3.** A muscle fibre contracts from a sarcomere length of 2.6 µm to 2.2 µm. What happens to the length of (a) the A band, (b) the I band, (c) the H zone? What does this tell us? `[ELO 6]`
+**Q3.** A muscle fibre contracts from a sarcomere length of 2.6 µm to 2.2 µm. What happens to the length of (a) the A band, (b) the I band, (c) the H zone? What does this tell us?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 The A band is the length of the thick filaments.
@@ -45,7 +45,7 @@ The A band is the length of the thick filaments.
 
 ---
 
-**Q4.** Why does a muscle fibre stretched to a sarcomere length of 3.65 µm produce no active force, even when it is fully stimulated? `[ELO 6]`
+**Q4.** Why does a muscle fibre stretched to a sarcomere length of 3.65 µm produce no active force, even when it is fully stimulated?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Add up the filament lengths: thick 1.6 µm, thin 1.0 µm on each side, plus the Z-disc.
@@ -57,7 +57,7 @@ At 3.65 µm the thin filaments have been pulled completely out of the thick fila
 
 ---
 
-**Q5.** Describe how a rise in cytosolic Ca²⁺ switches on contraction in skeletal muscle. Where does the Ca²⁺ come from, and how does the muscle relax? `[ELO 6]`
+**Q5.** Describe how a rise in cytosolic Ca²⁺ switches on contraction in skeletal muscle. Where does the Ca²⁺ come from, and how does the muscle relax?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Two proteins sit on the thin filament; one covers the binding sites, the other binds Ca²⁺.
@@ -69,7 +69,7 @@ An action potential opens Ca²⁺ channels in the **sarcoplasmic reticulum** (th
 
 ---
 
-**Q6.** Match each myosin to its job: (a) muscle myosin II, (b) non-muscle myosin II, (c) myosin V. Jobs: carries pigment granules along actin; pinches a dividing cell in two; makes a sarcomere shorten. `[ELO 6]`
+**Q6.** Match each myosin to its job: (a) muscle myosin II, (b) non-muscle myosin II, (c) myosin V. Jobs: carries pigment granules along actin; pinches a dividing cell in two; makes a sarcomere shorten.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Myosin II always works as a bipolar filament that pulls; one of the three is a single two-headed walker with a cargo-binding tail.
@@ -81,7 +81,7 @@ Myosin II always works as a bipolar filament that pulls; one of the three is a s
 
 ---
 
-**Q7.** Give three differences between intermediate filaments and actin filaments. `[ELO 6]`
+**Q7.** Give three differences between intermediate filaments and actin filaments.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think about nucleotides, polarity, motors and mechanics.
@@ -93,7 +93,7 @@ Intermediate filaments (1) bind **no nucleotide** (actin binds ATP); (2) have **
 
 ---
 
-**Q8.** Why do mutations in keratin 5 or 14 cause blisters, and why is one mutant copy enough? `[ELO 6]` `[ELO 9]`
+**Q8.** Why do mutations in keratin 5 or 14 cause blisters, and why is one mutant copy enough?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which cells make keratin 5 and 14? What does a mutant subunit do to a filament it is built into?

@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *G-protein-coupled re
 
 ---
 
-**Q1.** Adrenaline never enters a liver cell, yet it changes the cell's metabolism within seconds. What crosses the membrane: the hormone, an ion, or something else? `[ELO 3]`
+**Q1.** Adrenaline never enters a liver cell, yet it changes the cell's metabolism within seconds. What crosses the membrane: the hormone, an ion, or something else?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think about what the receptor protein does when the hormone binds on the outside.
@@ -21,7 +21,7 @@ Nothing crosses. The receptor is a **seven-helix membrane protein**. Hormone bin
 
 ---
 
-**Q2.** What exactly does an active GPCR do to the G protein? Why is it called a GEF? `[ELO 3]`
+**Q2.** What exactly does an active GPCR do to the G protein? Why is it called a GEF?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Does the receptor add a phosphate to GDP?
@@ -33,7 +33,7 @@ It opens Gα's nucleotide pocket so that **GDP leaves**; **GTP**, which is about
 
 ---
 
-**Q3.** Match each Gα type to its main effect: Gs, Gi, Gq. Effects: (a) activates phospholipase C-β; (b) inhibits adenylyl cyclase; (c) activates adenylyl cyclase. `[ELO 3]`
+**Q3.** Match each Gα type to its main effect: Gs, Gi, Gq. Effects: (a) activates phospholipase C-β; (b) inhibits adenylyl cyclase; (c) activates adenylyl cyclase.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 s = stimulatory, i = inhibitory.
@@ -45,7 +45,7 @@ s = stimulatory, i = inhibitory.
 
 ---
 
-**Q4.** How does cAMP activate protein kinase A? How many cAMP molecules are needed to release one catalytic subunit? `[ELO 3]`
+**Q4.** How does cAMP activate protein kinase A? How many cAMP molecules are needed to release one catalytic subunit?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 PKA is R₂C₂. Each R subunit binds two cAMP.
@@ -57,7 +57,7 @@ The regulatory (R) subunits block the catalytic (C) subunits. Four cAMP bind the
 
 ---
 
-**Q5.** Phospholipase C-β cuts PIP₂ into two products. Name them, say where each goes, and what each does. `[ELO 3]`
+**Q5.** Phospholipase C-β cuts PIP₂ into two products. Name them, say where each goes, and what each does.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One product is water-soluble, the other is a lipid.
@@ -69,7 +69,7 @@ One product is water-soluble, the other is a lipid.
 
 ---
 
-**Q6.** List four ways the cAMP pathway is switched off after adrenaline has gone. `[ELO 3]`
+**Q6.** List four ways the cAMP pathway is switched off after adrenaline has gone.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One off-switch for each active molecule: receptor, Gα, cAMP, phosphorylated proteins.
@@ -81,7 +81,7 @@ One off-switch for each active molecule: receptor, Gα, cAMP, phosphorylated pro
 
 ---
 
-**Q7.** Cholera toxin modifies Gαs so it cannot hydrolyse GTP. Why does this cause watery diarrhoea? `[ELO 3]` `[ELO 9]`
+**Q7.** Cholera toxin modifies Gαs so it cannot hydrolyse GTP. Why does this cause watery diarrhoea?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Follow the chain: Gαs → cAMP → PKA → which chloride channel?
@@ -93,7 +93,7 @@ Once Gαs is switched on, it **stays on**. Adenylyl cyclase keeps making cAMP, P
 
 ---
 
-**Q8.** Metoprolol is a β-blocker. Is it an agonist or an antagonist? What happens to cAMP in heart muscle cells when adrenaline is present? `[ELO 3]` `[ELO 9]`
+**Q8.** Metoprolol is a β-blocker. Is it an agonist or an antagonist? What happens to cAMP in heart muscle cells when adrenaline is present?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 It binds the same pocket as adrenaline.

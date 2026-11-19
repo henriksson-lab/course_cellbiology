@@ -20,7 +20,7 @@ All tasks use the CFTR chloride channel and the drug ivacaftor, from the ion cha
 
 Open human CFTR in UniProt: [P13569](https://www.uniprot.org/uniprotkb/P13569/entry). Scroll to **Subcellular location**, then **Topology**. Each **Transmembrane** row is one helix that crosses the membrane (the hydropathy plot in [membrane structure](../membrane-structure/lec.qmd) predicts the same helices).
 
-**T1.** `[ELO 2]` How many transmembrane segments does CFTR have?
+**T1.** How many transmembrane segments does CFTR have?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **12**, in two halves of six helices. Each half is followed by a nucleotide-binding domain in the cytosol.
@@ -30,7 +30,7 @@ Open human CFTR in UniProt: [P13569](https://www.uniprot.org/uniprotkb/P13569/en
 
 Open [PDB 6O2P](https://www.rcsb.org/structure/6O2P), human CFTR bound to ivacaftor. In the **Small Molecules** section, find ligand **VX7**: this is ivacaftor. Click its **Ligand Interaction** view (opens the Mol* viewer) to see where it sits.
 
-**T2.** `[ELO 2, 9]` Where does ivacaftor bind?
+**T2.** Where does ivacaftor bind?
 
 ::: {.options}
 - a) in a nucleotide-binding domain, next to ATP
@@ -47,7 +47,7 @@ Open [PDB 6O2P](https://www.rcsb.org/structure/6O2P), human CFTR bound to ivacaf
 
 Open the AlphaFold model of CFTR: [AF-P13569](https://alphafold.ebi.ac.uk/entry/P13569). The colours show **pLDDT**, the model's confidence per residue: blue is confident, orange is very low.
 
-**T3.** `[ELO 2]` **[VG]** Which part of CFTR is mostly orange?
+**T3.** **[VG]** Which part of CFTR is mostly orange?
 
 ::: {.options}
 - a) the first transmembrane domain (residues 81–365)
@@ -64,7 +64,7 @@ Open the AlphaFold model of CFTR: [AF-P13569](https://alphafold.ebi.ac.uk/entry/
 
 Open ClinVar record [7105](https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/), CFTR p.Phe508del (F508del).
 
-**T4.** `[ELO 9]` What is its **Germline classification**?
+**T4.** What is its **Germline classification**?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **Pathogenic**, for cystic fibrosis. F508del CFTR misfolds and is removed in the ER, so few channels reach the membrane. That is why patients get correctors (more channels arrive) together with ivacaftor (each channel opens more).
@@ -74,7 +74,7 @@ Open ClinVar record [7105](https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/)
 
 Open ivacaftor in PubChem: [CID 16220172](https://pubchem.ncbi.nlm.nih.gov/compound/16220172). Under **Chemical and Physical Properties → Computed Properties**, find **XLogP3-AA**. A positive value means the molecule prefers lipid to water.
 
-**T5.** `[ELO 2, 9]` What is ivacaftor's XLogP3-AA?
+**T5.** What is ivacaftor's XLogP3-AA?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **5.6.** Strongly lipophilic, which fits a binding site inside the bilayer (T2).
@@ -101,7 +101,7 @@ The template fetches GTEx RNA levels (TPM) of *SLC5A1* (SGLT1, gut) and *SLC5A2*
 - **Blank 1:** set `min_tpm <- 10`. The chunk then prints `9`: nine tissues pass.
 - **Blank 2:** complete `aes()`: map `median_tpm` to `x`, `tissue` to `y` and `gene` to `colour`. You get one row per tissue with two coloured dots.
 
-**T6.** `[ELO 2, 9]` In which tissue is *SLC5A2* (SGLT2) highest?
+**T6.** In which tissue is *SLC5A2* (SGLT2) highest?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **Kidney cortex** (about 36 TPM). SGLT2 takes glucose back from the urine in the proximal tubule; gliflozin drugs block it, so glucose leaves in the urine. *SLC5A1* is instead highest in the small intestine (about 98 TPM).
@@ -113,7 +113,7 @@ The template fetches the transmembrane segments of eight proteins from the trans
 
 - **Blank 3:** map `y` to the column with the counts (its name is in the printed table). You get eight bars, longest at the top.
 
-**T7.** `[ELO 2]` Which protein has exactly 10 transmembrane segments?
+**T7.** Which protein has exactly 10 transmembrane segments?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **ATP1A1**, the α subunit of the Na⁺/K⁺ pump. CFTR, ABCB1 and GLUT1 (SLC2A1) have 12; both SGLTs have 14; AQP1 and KCNA1 have 6.

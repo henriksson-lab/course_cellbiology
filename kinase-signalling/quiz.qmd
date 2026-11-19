@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Enzyme-coupled recep
 
 ---
 
-**Q1.** An RTK has a single transmembrane helix. How, then, does binding of a growth factor outside switch on the kinase inside? `[ELO 3]`
+**Q1.** An RTK has a single transmembrane helix. How, then, does binding of a growth factor outside switch on the kinase inside?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think about what the ligand does to two receptor chains, not to one.
@@ -21,7 +21,7 @@ The growth factor brings **two receptor chains together** (dimerisation). The tw
 
 ---
 
-**Q2.** What does an SH2 domain bind, and why do different SH2 proteins bind different phosphotyrosines on the same receptor? `[ELO 3]`
+**Q2.** What does an SH2 domain bind, and why do different SH2 proteins bind different phosphotyrosines on the same receptor?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 The pocket reads the phosphate; what does the groove next to it read?
@@ -33,7 +33,7 @@ An SH2 domain binds a **phosphorylated tyrosine** together with the **few amino 
 
 ---
 
-**Q3.** Fill in: Ras is active when it binds ______. The ______ SOS switches it on by ______. A ______ switches it off by ______. `[ELO 3]`
+**Q3.** Fill in: Ras is active when it binds ______. The ______ SOS switches it on by ______. A ______ switches it off by ______.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 GEF, GAP, GTP, GDP.
@@ -45,7 +45,7 @@ Ras is active when it binds **GTP**. The **GEF** (guanine nucleotide exchange fa
 
 ---
 
-**Q4.** Put in order, from the receptor to the nucleus: ERK, Grb2–SOS, MEK, Ras, RAF. Which of them are kinases? `[ELO 3]`
+**Q4.** Put in order, from the receptor to the nucleus: ERK, Grb2–SOS, MEK, Ras, RAF. Which of them are kinases?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Two of the five have no kinase activity.
@@ -57,7 +57,7 @@ Receptor → **Grb2–SOS → Ras → RAF → MEK → ERK** → nucleus. **RAF, 
 
 ---
 
-**Q5.** PI3K adds a phosphate to a membrane lipid. Why does that activate Akt, which is a cytosolic kinase? And what does the phosphatase PTEN do? `[ELO 3]`
+**Q5.** PI3K adds a phosphate to a membrane lipid. Why does that activate Akt, which is a cytosolic kinase? And what does the phosphatase PTEN do?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Akt has a PH domain.
@@ -69,7 +69,7 @@ PI3K turns PIP₂ into **PIP₃** in the inner leaflet of the plasma membrane. A
 
 ---
 
-**Q6.** Why does a three-kinase cascade give a more switch-like (steeper) response than the receptor itself? Name two reasons. `[ELO 3]`
+**Q6.** Why does a three-kinase cascade give a more switch-like (steeper) response than the receptor itself? Name two reasons.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 How many phosphates do MEK and ERK need? And how busy are the kinases and phosphatases?
@@ -81,7 +81,7 @@ How many phosphates do MEK and ERK need? And how busy are the kinases and phosph
 
 ---
 
-**Q7.** Cells are treated with EGF, and a western blot is stained with an antibody against phospho-ERK and one against total ERK. Phospho-ERK peaks at 5 min and falls by 30 min; total ERK stays the same. Give two reasons why phospho-ERK falls although EGF is still there. `[ELO 1]` `[ELO 3]`
+**Q7.** Cells are treated with EGF, and a western blot is stained with an antibody against phospho-ERK and one against total ERK. Phospho-ERK peaks at 5 min and falls by 30 min; total ERK stays the same. Give two reasons why phospho-ERK falls although EGF is still there.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think about the off switches, and about what active ERK does upstream.
@@ -93,7 +93,7 @@ Think about the off switches, and about what active ERK does upstream.
 
 ---
 
-**Q8.** A patient's chronic myeloid leukaemia responds well to imatinib for several years, then comes back. Sequencing shows BCR-ABL with the mutation T315I. Explain what has happened. `[ELO 3]` `[ELO 9]`
+**Q8.** A patient's chronic myeloid leukaemia responds well to imatinib for several years, then comes back. Sequencing shows BCR-ABL with the mutation T315I. Explain what has happened.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Where does imatinib bind, and what is a gatekeeper residue?

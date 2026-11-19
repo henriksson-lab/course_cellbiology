@@ -44,7 +44,7 @@ seminars, group problem solving, poster), which are handled outside this site.
 
 ## Assessment support on this site
 
-- **Quiz** per lecture: short self-check, each question tagged with its ELO.
+- **Quiz** per lecture: short self-check.
 - **Study questions** per lecture (replacing the programming exercises of the
   scaffold course): G-level recall and explanation questions and **one VG-style
   question** ("predict what happens if…", "compare…", "design an experiment to…"),

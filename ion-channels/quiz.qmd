@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Ion channels and mem
 
 ---
 
-**Q1.** A membrane protein moves 500 molecules of glucose per second. Another moves 10 million K⁺ ions per second. Which is a channel and which is a transporter? Give one more property that tells them apart. `[ELO 2]`
+**Q1.** A membrane protein moves 500 molecules of glucose per second. Another moves 10 million K⁺ ions per second. Which is a channel and which is a transporter? Give one more property that tells them apart.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Does the protein change shape for every molecule, or is it an open pore?
@@ -21,7 +21,7 @@ The glucose mover is a **transporter** (10²–10⁴ per second: it binds, chang
 
 ---
 
-**Q2.** Na⁺ is smaller than K⁺. Why can it not pass through the K⁺ channel's selectivity filter? `[ELO 2]`
+**Q2.** Na⁺ is smaller than K⁺. Why can it not pass through the K⁺ channel's selectivity filter?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What does an ion have to lose before it enters the narrow filter, and what does the filter give back?
@@ -33,7 +33,7 @@ To enter the narrow filter, an ion must lose its **shell of water**, which costs
 
 ---
 
-**Q3.** Match each channel to how it is opened: (a) voltage-gated Na⁺ channel, (b) nicotinic acetylcholine receptor, (c) Piezo2. Gating types: ligand, mechanical force, voltage. `[ELO 2]`
+**Q3.** Match each channel to how it is opened: (a) voltage-gated Na⁺ channel, (b) nicotinic acetylcholine receptor, (c) Piezo2. Gating types: ligand, mechanical force, voltage.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 One has a charged sensor helix, one binds a transmitter, one responds to stretch of the membrane.
@@ -45,7 +45,7 @@ One has a charged sensor helix, one binds a transmitter, one responds to stretch
 
 ---
 
-**Q4.** Use the Nernst equation ($E = \frac{61.5\text{ mV}}{z}\log_{10}\frac{c_\text{out}}{c_\text{in}}$ at 37 °C) to calculate $E_\text{K}$ if K⁺ is 150 mM inside and 15 mM outside. `[ELO 2]`
+**Q4.** Use the Nernst equation ($E = \frac{61.5\text{ mV}}{z}\log_{10}\frac{c_\text{out}}{c_\text{in}}$ at 37 °C) to calculate $E_\text{K}$ if K⁺ is 150 mM inside and 15 mM outside.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 The ratio out/in is 0.1. What is log₁₀(0.1)?
@@ -57,7 +57,7 @@ $E_\text{K} = 61.5 \times \log_{10}(15/150) = 61.5 \times (-1) =$ **−61.5 mV**
 
 ---
 
-**Q5.** The resting membrane potential of a cell is −70 mV, $E_\text{K}$ is −89 mV and $E_\text{Na}$ is +67 mV. Why is the resting potential so much closer to $E_\text{K}$ than to $E_\text{Na}$? `[ELO 2]`
+**Q5.** The resting membrane potential of a cell is −70 mV, $E_\text{K}$ is −89 mV and $E_\text{Na}$ is +67 mV. Why is the resting potential so much closer to $E_\text{K}$ than to $E_\text{Na}$?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which channels are open at rest?
@@ -69,7 +69,7 @@ At rest, many **K⁺ leak channels** are open and very few Na⁺ channels. The m
 
 ---
 
-**Q6.** During an action potential, why does the voltage fall again after the peak, and why can a second action potential not start immediately? `[ELO 2]`
+**Q6.** During an action potential, why does the voltage fall again after the peak, and why can a second action potential not start immediately?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Two things happen to two kinds of voltage-gated channels after the peak.
@@ -81,7 +81,7 @@ The voltage-gated **Na⁺ channels inactivate** (a part of the channel plugs the
 
 ---
 
-**Q7.** In a cell-attached patch-clamp recording, the current jumps between 0 and −2 pA and never stays in between. What does this tell you, and about how many ions per second pass through the channel when it is open? (Charge of one ion: 1.6 × 10⁻¹⁹ C.) `[ELO 1]` `[ELO 2]`
+**Q7.** In a cell-attached patch-clamp recording, the current jumps between 0 and −2 pA and never stays in between. What does this tell you, and about how many ions per second pass through the channel when it is open? (Charge of one ion: 1.6 × 10⁻¹⁹ C.)
 
 ::: {.callout-tip collapse="true" title="Hint"}
 1 A = 1 C/s. Divide the current by the charge of one ion.
@@ -93,7 +93,7 @@ The square steps show **one channel** switching between **fully open and fully c
 
 ---
 
-**Q8.** Two patients have cystic fibrosis. Patient A is homozygous for G551D, patient B for F508del. Ivacaftor alone helps A a lot but B very little. Explain. `[ELO 2]` `[ELO 9]`
+**Q8.** Two patients have cystic fibrosis. Patient A is homozygous for G551D, patient B for F508del. Ivacaftor alone helps A a lot but B very little. Explain.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Where is the CFTR protein in each patient, and what does a potentiator do?

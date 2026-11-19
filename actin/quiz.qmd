@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Actin: cell shape an
 
 ---
 
-**Q1.** Which of the three filament systems (a) has no polarity, (b) binds GTP in its subunits, (c) is about 7 nm wide and binds ATP? Which one has no motor proteins? `[ELO 6]`
+**Q1.** Which of the three filament systems (a) has no polarity, (b) binds GTP in its subunits, (c) is about 7 nm wide and binds ATP? Which one has no motor proteins?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of the comparison table: subunit, width, polarity, motors.
@@ -21,7 +21,7 @@ Think of the comparison table: subunit, width, polarity, motors.
 
 ---
 
-**Q2.** Why are the two ends of an actin filament different? Name them and say which one grows faster. `[ELO 6]`
+**Q2.** Why are the two ends of an actin filament different? Name them and say which one grows faster.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 How are the subunits oriented in the filament?
@@ -33,7 +33,7 @@ All actin subunits join **head-to-tail and point the same way**, so the two ends
 
 ---
 
-**Q3.** The critical concentration is about 0.1 µM at the barbed end and about 0.6 µM at the pointed end. Predict what happens at each end of a filament at (a) 0.05 µM, (b) 0.3 µM, (c) 2 µM free G-actin. `[ELO 6]`
+**Q3.** The critical concentration is about 0.1 µM at the barbed end and about 0.6 µM at the pointed end. Predict what happens at each end of a filament at (a) 0.05 µM, (b) 0.3 µM, (c) 2 µM free G-actin.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Above its critical concentration, an end grows; below it, it shrinks.
@@ -45,7 +45,7 @@ Above its critical concentration, an end grows; below it, it shrinks.
 
 ---
 
-**Q4.** Why does a cell need nucleators such as Arp2/3 and formins, although it contains plenty of free actin? How do the filaments they make differ? `[ELO 6]`
+**Q4.** Why does a cell need nucleators such as Arp2/3 and formins, although it contains plenty of free actin? How do the filaments they make differ?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What is the slow step in making a new filament?
@@ -57,7 +57,7 @@ Starting a new filament is slow: actin **dimers and trimers are unstable** and f
 
 ---
 
-**Q5.** Match each protein to its job: profilin, capping protein, cofilin, fascin. Jobs: (i) cuts old ADP filaments; (ii) packs filaments into tight parallel bundles; (iii) blocks the + end; (iv) delivers ATP-actin to free + ends. `[ELO 6]`
+**Q5.** Match each protein to its job: profilin, capping protein, cofilin, fascin. Jobs: (i) cuts old ADP filaments; (ii) packs filaments into tight parallel bundles; (iii) blocks the + end; (iv) delivers ATP-actin to free + ends.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Two of them act on the ends or on free actin, one on old filaments, one between filaments.
@@ -69,7 +69,7 @@ Profilin → (iv); capping protein → (iii); cofilin → (i); fascin → (ii).
 
 ---
 
-**Q6.** A fibroblast is injected with a form of Rac that is always bound to GTP. What actin structure appears? Which structure would you expect with active Rho, and with active Cdc42? `[ELO 6]` `[ELO 3]`
+**Q6.** A fibroblast is injected with a form of Rac that is always bound to GTP. What actin structure appears? Which structure would you expect with active Rho, and with active Cdc42?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Each of the three GTPases switches on its own nucleator.
@@ -81,7 +81,7 @@ Active **Rac** → **lamellipodia** (via WAVE and Arp2/3, also called membrane r
 
 ---
 
-**Q7.** You want to know whether a cell needs actin polymerisation to take up particles by phagocytosis. Which drug would you add, and what control would you include? Why can you not use fluorescent phalloidin to film actin in the living cell? `[ELO 6]` `[ELO 1]`
+**Q7.** You want to know whether a cell needs actin polymerisation to take up particles by phagocytosis. Which drug would you add, and what control would you include? Why can you not use fluorescent phalloidin to film actin in the living cell?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which drugs block polymerisation? Does phalloidin cross the plasma membrane?
@@ -93,7 +93,7 @@ Add **latrunculin** (binds G-actin, so filaments cannot grow) or **cytochalasin 
 
 ---
 
-**Q8.** *Listeria* moves through the cytosol of a host cell without any motor protein of its own. Explain how. `[ELO 6]` `[ELO 9]`
+**Q8.** *Listeria* moves through the cytosol of a host cell without any motor protein of its own. Explain how.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which host protein complex does ActA switch on, and what does it build?

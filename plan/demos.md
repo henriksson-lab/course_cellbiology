@@ -23,7 +23,7 @@ Further rules:
   cascade), say so on the demo ("illustrative numbers, simplified network"), as
   design principle 8 asks.
 - **Tied to an ELO and to questions.** Every demo comes with 2–4 short tasks
-  ("Set …, what happens to …? Why?") tagged `[ELO n]`, at least one VG-style
+  ("Set …, what happens to …? Why?"), no ELO tags, at least one VG-style
   (predict before you move the slider). Without tasks, students play and learn little.
 - **A drug knob where it fits.** Most lectures end with a drug; a demo that lets
   the student add the drug (venetoclax, taxol, an antagonist, an SGLT2 inhibitor)

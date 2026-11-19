@@ -11,7 +11,7 @@ Useful relations: fraction of receptors occupied $= [L]/([L]+K_d)$. A competitiv
 
 ## G-level questions
 
-**1.** Describe endocrine, paracrine, autocrine, contact-dependent and synaptic signalling. Give one example of each. `[ELO 3]`
+**1.** Describe endocrine, paracrine, autocrine, contact-dependent and synaptic signalling. Give one example of each.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Endocrine:** a gland releases a hormone into the blood, which carries it to target cells all over the body (insulin from the pancreas, cortisol from the adrenal cortex). **Paracrine:** a local mediator acts on nearby cells and is quickly broken down, taken up or bound, so it does not travel far (histamine from mast cells, many growth factors). **Autocrine:** the cell responds to a signal it releases itself, often together with neighbouring cells of the same type (interleukin 2 from activated T cells). **Contact-dependent:** the signal stays bound to the membrane of the sending cell and acts only on cells that touch it (Delta binding Notch). **Synaptic:** a nerve ending releases a neurotransmitter into a gap of about 20 nm, acting on one target cell within milliseconds (acetylcholine at the nerve–muscle junction).
@@ -19,7 +19,7 @@ Useful relations: fraction of receptors occupied $= [L]/([L]+K_d)$. A competitiv
 
 ---
 
-**2.** Compare cell-surface receptors and intracellular (nuclear) receptors: which signals use them, how the signal reaches the response, and how fast the response is. `[ELO 3]`
+**2.** Compare cell-surface receptors and intracellular (nuclear) receptors: which signals use them, how the signal reaches the response, and how fast the response is.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Cell-surface receptors** bind **water-soluble** signals that cannot cross the lipid bilayer (adrenaline, peptide hormones, growth factors, neurotransmitters). The signal binds outside, the receptor changes shape and activates proteins inside the cell (channels, G proteins, kinases). Because these proteins already exist, the response can start in **milliseconds to minutes**; later it may also change gene expression. **Intracellular receptors** bind **small fat-soluble** signals that diffuse through the membrane (steroid hormones such as cortisol and oestrogen, thyroid hormone, vitamin D). The receptor, in the cytosol or the nucleus, binds the hormone, binds **DNA response elements** and recruits co-activators: it is a **transcription factor** controlled by a small molecule. New RNA and proteins must be made, so the response takes **hours**, and it lasts long.
@@ -27,7 +27,7 @@ Useful relations: fraction of receptors occupied $= [L]/([L]+K_d)$. A competitiv
 
 ---
 
-**3.** Name the three classes of cell-surface receptor. For each, describe how the signal is passed into the cell and give one example. `[ELO 3]`
+**3.** Name the three classes of cell-surface receptor. For each, describe how the signal is passed into the cell and give one example.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Ion-channel-coupled receptors** (ligand-gated channels): the receptor is itself a channel; binding of the signal opens it and ions flow, changing the membrane potential within milliseconds. Example: the nicotinic acetylcholine receptor (Na⁺ in). **G-protein-coupled receptors:** a chain that crosses the membrane seven times; the active receptor activates a trimeric **G protein** on the inside, which changes the activity of enzymes (such as adenylyl cyclase, which makes cAMP) or channels. Example: the β-adrenergic receptor for adrenaline. **Enzyme-coupled receptors:** single-pass receptors that are enzymes themselves, mostly **tyrosine kinases**, or that bind a kinase. The signal brings two receptors together and they phosphorylate each other, which creates docking sites for signalling proteins. Example: the insulin receptor or the EGF receptor.
@@ -35,7 +35,7 @@ Useful relations: fraction of receptors occupied $= [L]/([L]+K_d)$. A competitiv
 
 ---
 
-**4.** Define the dissociation constant $K_d$. A receptor has $K_d$ = 5 nM. (a) What fraction of receptors is occupied at 5 nM and at 1 nM ligand? (b) What concentration is needed to occupy 90 % of the receptors? `[ELO 3]`
+**4.** Define the dissociation constant $K_d$. A receptor has $K_d$ = 5 nM. (a) What fraction of receptors is occupied at 5 nM and at 1 nM ligand? (b) What concentration is needed to occupy 90 % of the receptors?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 For $\text{R} + \text{L} \rightleftharpoons \text{RL}$, $K_d = [\text{R}][\text{L}]/[\text{RL}]$, a concentration. It equals the free ligand concentration at which **half the receptors are occupied**; a low $K_d$ means high affinity. Fraction occupied $= [L]/([L]+K_d)$. (a) At 5 nM: 5/10 = **50 %**; at 1 nM: 1/6 ≈ **17 %**. (b) $[L]/([L]+5) = 0.9$ gives $[L] = 9 \times 5$ = **45 nM**.
@@ -43,7 +43,7 @@ For $\text{R} + \text{L} \rightleftharpoons \text{RL}$, $K_d = [\text{R}][\text{
 
 ---
 
-**5.** Sketch a dose–response curve on a log concentration axis. Mark $E_\text{max}$ and EC₅₀. Explain the difference between **potency** and **efficacy**. `[ELO 3]`
+**5.** Sketch a dose–response curve on a log concentration axis. Mark $E_\text{max}$ and EC₅₀. Explain the difference between **potency** and **efficacy**.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The curve is S-shaped on a log axis: little response at low concentration, a steep rise over about two orders of magnitude, then a plateau. The plateau is **$E_\text{max}$**, the largest response the drug can give. **EC₅₀** is the concentration on the x-axis that gives half of $E_\text{max}$. **Potency** is about how much drug is needed: a lower EC₅₀ means a more potent drug (the curve lies further left). **Efficacy** is how large a response the drug can give once bound, seen as the height of the plateau. A drug can be potent but have low efficacy (a high-affinity partial agonist), or be less potent but fully efficacious.
@@ -51,7 +51,7 @@ The curve is S-shaped on a log axis: little response at low concentration, a ste
 
 ---
 
-**6.** Define full agonist, partial agonist, competitive antagonist and non-competitive antagonist. Describe how a competitive and a non-competitive antagonist change the dose–response curve of an agonist. `[ELO 3]`
+**6.** Define full agonist, partial agonist, competitive antagonist and non-competitive antagonist. Describe how a competitive and a non-competitive antagonist change the dose–response curve of an agonist.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 A **full agonist** binds the receptor and switches it fully on (e.g. adrenaline at β receptors, morphine at opioid receptors). A **partial agonist** binds but switches the receptor on only part-way, so its maximum stays below that of a full agonist even at full occupancy (buprenorphine). A **competitive antagonist** binds reversibly to the same site and has no efficacy: it blocks the agonist (naloxone, metoprolol). A **non-competitive antagonist** binds to another site and prevents activation, or binds irreversibly. A competitive antagonist **shifts the agonist curve to the right** in parallel, with the same maximum, because enough agonist can out-compete it (by a factor $1+[B]/K_B$). A non-competitive antagonist **lowers the maximum**, because extra agonist cannot recover the blocked receptors.
@@ -59,7 +59,7 @@ A **full agonist** binds the receptor and switches it fully on (e.g. adrenaline 
 
 ---
 
-**7.** Describe two kinds of molecular switch used in signalling. For each, say what switches it on and what switches it off. `[ELO 3]`
+**7.** Describe two kinds of molecular switch used in signalling. For each, say what switches it on and what switches it off.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Phosphorylation:** a **protein kinase** transfers a phosphate from ATP to a serine, threonine or tyrosine of a target protein, which changes its shape or creates a docking site (ON, or sometimes OFF). A **protein phosphatase** removes the phosphate. **GTP-binding proteins** (trimeric G proteins, Ras): ON with GTP bound, OFF with GDP bound. A **GEF** (guanine nucleotide exchange factor; an activated receptor can act as one) lets GDP out and GTP in, switching the protein on. The protein switches itself off by hydrolysing GTP to GDP; a **GAP** (GTPase-activating protein) speeds this up. In both cases the off route is essential: a Ras protein that cannot hydrolyse GTP stays on and drives cell division in cancer.
@@ -67,7 +67,7 @@ A **full agonist** binds the receptor and switches it fully on (e.g. adrenaline 
 
 ---
 
-**8.** What is meant by amplification in a signalling pathway? Explain why the EC₅₀ of an agonist can be lower than its $K_d$. `[ELO 3]`
+**8.** What is meant by amplification in a signalling pathway? Explain why the EC₅₀ of an agonist can be lower than its $K_d$.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Amplification:** each active molecule in a pathway activates many molecules of the next step. One active GPCR activates many G proteins in turn; each activated adenylyl cyclase makes many cAMP molecules; each active protein kinase phosphorylates many targets. A few bound hormone molecules can therefore change thousands of proteins. As a consequence, only a small fraction of receptors needs to be occupied for a full response; the rest are **spare receptors** (a receptor reserve). Half of the maximal response is reached at a concentration where far less than half of the receptors are occupied, so **EC₅₀ < $K_d$**. EC₅₀ equals $K_d$ only when the response is directly proportional to occupancy.
@@ -75,7 +75,7 @@ A **full agonist** binds the receptor and switches it fully on (e.g. adrenaline 
 
 ---
 
-**9.** Explain what adaptation (desensitisation) is and describe two mechanisms. Give one clinical example. `[ELO 3]`
+**9.** Explain what adaptation (desensitisation) is and describe two mechanisms. Give one clinical example.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Adaptation** means that the response to a constant signal declines with time, although the signal is still present; the cell becomes less sensitive and can respond again to a stronger signal. Mechanisms: (1) **receptor phosphorylation and arrestin binding**: a receptor kinase phosphorylates the active GPCR, and arrestin binds and blocks coupling to the G protein (seconds to minutes); (2) **receptor endocytosis** and degradation in lysosomes, which lowers the number of receptors on the surface (minutes to hours); (3) **negative feedback** further down the pathway. Clinical examples: **tolerance** to opioids (higher doses needed for the same pain relief), and the weaker effect of a β₂-agonist inhaler used very often.
@@ -83,7 +83,7 @@ A **full agonist** binds the receptor and switches it fully on (e.g. adrenaline 
 
 ---
 
-**10.** Some signals change a cell's behaviour within seconds, others only after hours. Explain the difference in mechanism and give an example of each. `[ELO 3]`
+**10.** Some signals change a cell's behaviour within seconds, others only after hours. Explain the difference in mechanism and give an example of each.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Fast responses** change the activity of proteins that **already exist**: a ligand-gated channel opens (milliseconds; acetylcholine at the muscle), or second messengers and kinases switch enzymes on or off (seconds to minutes; adrenaline makes the liver break down glycogen). **Slow responses** change **gene expression**: the signal reaches the nucleus, genes are transcribed, the RNA is processed and translated, and the new proteins must fold and reach their place (about half an hour to many hours; cortisol acting through the glucocorticoid receptor). Decisions such as cell division or differentiation take hours to days. Many pathways have both arms: protein kinase A quickly phosphorylates enzymes and later a transcription factor.
@@ -91,7 +91,7 @@ A **full agonist** binds the receptor and switches it fully on (e.g. adrenaline 
 
 ## VG-style questions
 
-**11. [VG]** A person who is dependent on heroin (a full agonist at the μ-opioid receptor) and still has heroin in the body is given buprenorphine. A few minutes later the person develops sudden withdrawal symptoms. (a) Explain this using affinity and efficacy. (b) Would naloxone given later easily reverse an overdose of buprenorphine? Explain. `[ELO 3]`
+**11. [VG]** A person who is dependent on heroin (a full agonist at the μ-opioid receptor) and still has heroin in the body is given buprenorphine. A few minutes later the person develops sudden withdrawal symptoms. (a) Explain this using affinity and efficacy. (b) Would naloxone given later easily reverse an overdose of buprenorphine? Explain.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) Buprenorphine has a **higher affinity** for the μ-opioid receptor than heroin's active products (a lower $K_d$), so it **displaces** them from the receptors. But it is a **partial agonist** with **lower efficacy**: each receptor it occupies is switched on only part-way. The total receptor activity falls from almost full (heroin) to the lower plateau of buprenorphine, which the dependent body experiences as **withdrawal**. A partial agonist therefore acts as an antagonist when a full agonist is present. (b) **Not easily.** Naloxone is a competitive antagonist with a lower affinity than buprenorphine (and buprenorphine leaves the receptor very slowly), so high naloxone concentrations are needed to push buprenorphine off. Fortunately, buprenorphine's effect on breathing reaches a ceiling because of its low efficacy, so overdose alone is less dangerous than with full agonists.
@@ -99,7 +99,7 @@ A **full agonist** binds the receptor and switches it fully on (e.g. adrenaline 
 
 ---
 
-**12. [VG]** You have a new compound that lowers the heart rate. You suspect it is an antagonist at the β₁-adrenergic receptor. Design experiments in cultured cells that express this receptor to find out (a) whether it acts on the receptor at all, and (b) whether it is a competitive or a non-competitive antagonist. `[ELO 3]`
+**12. [VG]** You have a new compound that lowers the heart rate. You suspect it is an antagonist at the β₁-adrenergic receptor. Design experiments in cultured cells that express this receptor to find out (a) whether it acts on the receptor at all, and (b) whether it is a competitive or a non-competitive antagonist.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) **Binding:** do a competition binding assay. Incubate membranes with a fixed, low concentration of a radioactive β-blocker and increasing concentrations of the compound; if the compound binds the receptor, it displaces the radioactive ligand, and the curve gives its IC₅₀ and hence its $K_i$. Include non-specific binding controls (a large excess of a known β-blocker). As a control, cells without the receptor should show no effect of the compound on a β-agonist response. (b) **Function:** measure an agonist dose–response curve (for example cAMP production in response to noradrenaline or isoprenaline) without the compound and with two or three fixed concentrations of it. If the curves **shift to the right in parallel and reach the same maximum**, and the shift grows as $1+[B]/K_B$, the compound is a **competitive** antagonist. If the **maximum falls** (and washing out does not restore it), it is **non-competitive** or irreversible. Also test the compound alone: if it raises cAMP a little, it is a partial agonist.
@@ -107,7 +107,7 @@ A **full agonist** binds the receptor and switches it fully on (e.g. adrenaline 
 
 ---
 
-**13. [VG]** Two laboratories measure the IC₅₀ of the same competitive antagonist in the same cell line. Lab A finds 3 nM, lab B 30 nM. Both did the experiment correctly. Suggest an explanation, and say which number you would quote to describe the drug itself. `[ELO 3]`
+**13. [VG]** Two laboratories measure the IC₅₀ of the same competitive antagonist in the same cell line. Lab A finds 3 nM, lab B 30 nM. Both did the experiment correctly. Suggest an explanation, and say which number you would quote to describe the drug itself.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The IC₅₀ of a **competitive** antagonist is not a constant of the drug: it depends on **how much agonist** is present, because the antagonist must compete with it. Lab B probably used a higher agonist concentration (the IC₅₀ rises roughly in proportion to $1 + [A]/K_A$ in a binding assay, and more steeply in a functional assay with spare receptors). Other differences in conditions, such as receptor number (more spare receptors) or incubation time, could also contribute. To describe the drug itself, quote its **equilibrium dissociation constant** ($K_i$ or $K_B$), which can be calculated from the IC₅₀ and the agonist concentration, or measured from the parallel shift of the agonist curve. Always report the agonist concentration together with an IC₅₀.
@@ -115,7 +115,7 @@ The IC₅₀ of a **competitive** antagonist is not a constant of the drug: it d
 
 ---
 
-**14. [VG]** A tissue has many spare receptors for an agonist. You add increasing amounts of an **irreversible** antagonist. Predict how the agonist dose–response curve changes, first at low and then at high antagonist doses, and explain why. `[ELO 3]`
+**14. [VG]** A tissue has many spare receptors for an agonist. You add increasing amounts of an **irreversible** antagonist. Predict how the agonist dose–response curve changes, first at low and then at high antagonist doses, and explain why.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 At **low doses**, the irreversible antagonist removes some receptors, but the remaining ones are still more than enough for a full response. The agonist just needs to occupy a larger fraction of them, so the curve **shifts to the right with an unchanged maximum**, which looks like competitive antagonism. At **high doses**, so many receptors are lost that even full occupancy of the rest cannot give a maximal response: the **maximum falls**. (In the demo, with morphine: removing 50 % of the receptors shifts the EC₅₀ from 48 to 91 pM with the maximum almost unchanged, 95 % → 91 %; removing 90 % gives a maximum of 67 %.) The same logic explains why tolerance to an opioid appears first as a need for higher doses, and why a high-efficacy agonist keeps working when receptors are lost.
@@ -131,19 +131,19 @@ At **low doses**, the irreversible antagonist removes some receptors, but the re
 <script src="../demos/dist/doseresponse.js"></script>
 ```
 
-**E1.** Choose **Morphine (full agonist)**. Read the EC₅₀, the $K_d$ and the occupancy at the EC₅₀. Why is the black curve to the left of the blue one? Now open *Change the drugs and the cell* and untick **amplification**. What happens to the EC₅₀? `[ELO 3]`
+**E1.** Choose **Morphine (full agonist)**. Read the EC₅₀, the $K_d$ and the occupancy at the EC₅₀. Why is the black curve to the left of the blue one? Now open *Change the drugs and the cell* and untick **amplification**. What happens to the EC₅₀?
 
-**E2.** Choose **Buprenorphine (partial agonist)**. Compare its $K_d$, EC₅₀ and maximal response with morphine's. Which drug binds more tightly? Why is buprenorphine's EC₅₀ nevertheless not lower than morphine's? `[ELO 3]`
+**E2.** Choose **Buprenorphine (partial agonist)**. Compare its $K_d$, EC₅₀ and maximal response with morphine's. Which drug binds more tightly? Why is buprenorphine's EC₅₀ nevertheless not lower than morphine's?
 
-**E3.** Choose **Morphine + naloxone** (15 nM naloxone). By what factor has the EC₅₀ moved, and has the maximum changed? *Predict first:* what will the EC₅₀ be with 150 nM naloxone? Check with the slider. `[ELO 3]`
+**E3.** Choose **Morphine + naloxone** (15 nM naloxone). By what factor has the EC₅₀ moved, and has the maximum changed? *Predict first:* what will the EC₅₀ be with 150 nM naloxone? Check with the slider.
 
-**E4. [VG]** Choose **Naloxone reverses morphine**. Read the IC₅₀ of naloxone and compare it with naloxone's $K_d$. What fraction of the receptors does naloxone occupy at its IC₅₀? Then raise morphine to 10 nM. What happens to the IC₅₀, and what does this mean for treating a large opioid overdose? `[ELO 3]`
+**E4. [VG]** Choose **Naloxone reverses morphine**. Read the IC₅₀ of naloxone and compare it with naloxone's $K_d$. What fraction of the receptors does naloxone occupy at its IC₅₀? Then raise morphine to 10 nM. What happens to the IC₅₀, and what does this mean for treating a large opioid overdose?
 
-**E5. [VG]** *Predict before you click:* a patient with 1 nM morphine receives buprenorphine. Will the response go up, go down or stay the same? Then choose **Buprenorphine on top of morphine** and explain the result. `[ELO 3]`
+**E5. [VG]** *Predict before you click:* a patient with 1 nM morphine receives buprenorphine. Will the response go up, go down or stay the same? Then choose **Buprenorphine on top of morphine** and explain the result.
 
-**E6.** Choose **Noradrenaline + metoprolol**. Read the shift of the EC₅₀ and check it with the formula $1 + [B]/K_B$. Then choose **drug 2: inhibition** and keep noradrenaline at 100 nM. How much of the response is left at 250 nM metoprolol? Finally change drug 2 to **pindolol** and compare noradrenaline at 100 nM and at 10 nM. What does pindolol do in each case? `[ELO 3]`
+**E6.** Choose **Noradrenaline + metoprolol**. Read the shift of the EC₅₀ and check it with the formula $1 + [B]/K_B$. Then choose **drug 2: inhibition** and keep noradrenaline at 100 nM. How much of the response is left at 250 nM metoprolol? Finally change drug 2 to **pindolol** and compare noradrenaline at 100 nM and at 10 nM. What does pindolol do in each case?
 
-**E7. [VG]** Choose **Morphine (full agonist)** and reduce **receptors left** (under *Change the drugs and the cell*) to 50 % and then to 10 %, as in tolerance. Note the EC₅₀ and the maximum each time. Then change drug 1 to **fentanyl** at 10 % receptors. Explain the pattern. `[ELO 3]`
+**E7. [VG]** Choose **Morphine (full agonist)** and reduce **receptors left** (under *Change the drugs and the cell*) to 50 % and then to 10 %, as in tolerance. Note the EC₅₀ and the maximum each time. Then change drug 1 to **fentanyl** at 10 % receptors. Explain the pattern.
 
 ::: {.callout-note collapse="true" title="Solutions"}
 

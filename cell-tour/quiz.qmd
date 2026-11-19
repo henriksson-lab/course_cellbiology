@@ -9,7 +9,7 @@ Short questions to check that you can use the map of the cell from the lecture. 
 
 ---
 
-**Q1.** [ELO 1] Name three structures that a eukaryotic animal cell has and a bacterium does not.
+**Q1.** Name three structures that a eukaryotic animal cell has and a bacterium does not.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of everything that is surrounded by its own membrane inside the cell.
@@ -21,7 +21,7 @@ Any three of: a **nucleus** with a double membrane (nuclear envelope), **endopla
 
 ---
 
-**Q2.** [ELO 1] Which of these spaces are on the **same side** of a membrane as the outside of the cell: cytosol, ER lumen, nucleoplasm, lysosome lumen, Golgi lumen?
+**Q2.** Which of these spaces are on the **same side** of a membrane as the outside of the cell: cytosol, ER lumen, nucleoplasm, lysosome lumen, Golgi lumen?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which compartments exchange material with the outside by vesicles that bud and fuse? Which are joined by open pores?
@@ -33,7 +33,7 @@ The **ER lumen, the Golgi lumen and the lysosome lumen** are topologically equiv
 
 ---
 
-**Q3.** [ELO 1] Put these in order from smallest to largest, and give a typical size for each: ribosome, mitochondrion (width), protein, nucleus, potassium ion, virus such as influenza.
+**Q3.** Put these in order from smallest to largest, and give a typical size for each: ribosome, mitochondrion (width), protein, nucleus, potassium ion, virus such as influenza.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Each step on the scale ladder was roughly a factor of 3–10.
@@ -45,7 +45,7 @@ Potassium ion (~0.3 nm) < protein (~5 nm) < ribosome (~25 nm) < influenza virus 
 
 ---
 
-**Q4.** [ELO 1] A protein diffuses across a 10 µm cell in a few seconds. About how long would it take to diffuse 100 µm? What does this tell you about very long cells such as nerve cells?
+**Q4.** A protein diffuses across a 10 µm cell in a few seconds. About how long would it take to diffuse 100 µm? What does this tell you about very long cells such as nerve cells?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Diffusion time grows with the **square** of the distance: $t \approx x^2 / 6D$.
@@ -57,7 +57,7 @@ Ten times the distance means $10^2 = 100$ times the time: a few hundred seconds,
 
 ---
 
-**Q5.** [ELO 5] A cell type is packed with rough ER and Golgi. What does the cell probably spend most of its effort on? Give one example of such a cell.
+**Q5.** A cell type is packed with rough ER and Golgi. What does the cell probably spend most of its effort on? Give one example of such a cell.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What does the rough ER make, and where do those proteins go?
@@ -69,7 +69,7 @@ It probably **secretes large amounts of protein**. The rough ER makes proteins f
 
 ---
 
-**Q6.** [ELO 1] A membrane receptor has a sugar chain on one domain. On which side of the plasma membrane do you expect to find that domain, and why?
+**Q6.** A membrane receptor has a sugar chain on one domain. On which side of the plasma membrane do you expect to find that domain, and why?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Sugar chains are added in the lumen of the ER and Golgi. Follow the protein from the ER to the plasma membrane.
@@ -81,7 +81,7 @@ On the **outside** of the cell. The sugar chain is added while that domain faces
 
 ---
 
-**Q7.** [ELO 1] Give one advantage and one limitation of using HeLa cells to study a human protein.
+**Q7.** Give one advantage and one limitation of using HeLa cells to study a human protein.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of what a cell line is, and where HeLa came from.
@@ -93,7 +93,7 @@ Think of what a cell line is, and where HeLa came from.
 
 ---
 
-**Q8.** [ELO 1] Electron microscopy of thin sections first showed the ER and ribosomes. Why was another method also needed to understand what lysosomes do?
+**Q8.** Electron microscopy of thin sections first showed the ER and ribosomes. Why was another method also needed to understand what lysosomes do?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What does a picture tell you, and what does it not tell you?

@@ -21,7 +21,7 @@ resources:
 Find where marker proteins live in two databases, check a cell line, and knit your
 first R Markdown report. Builds on [A tour of the cell](../cell-tour/lec.qmd),
 [Seeing cells: microscopy](../microscopy/lec.qmd) and
-[Taking cells apart and perturbing them](../cell-methods/lec.qmd). **ELO 1, 5.**
+[Taking cells apart and perturbing them](../cell-methods/lec.qmd).
 
 ## Part A: in the browser
 
@@ -34,7 +34,7 @@ Open UniProt entry [P27824](https://www.uniprot.org/uniprotkb/P27824/entry)
 (human calnexin). `P27824` is its **accession**; `CANX` is its **gene symbol**.
 Click **Subcellular Location** in the menu on the left.
 
-**T1** `[ELO 1]` Where in the cell is calnexin, and how does it sit in the membrane?
+**T1** Where in the cell is calnexin, and how does it sit in the membrane?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **Endoplasmic reticulum membrane**, as a **single-pass type I** membrane protein
@@ -51,7 +51,7 @@ ER yellow.
 - [GOLGA2](https://www.proteinatlas.org/ENSG00000167110-GOLGA2) (GM130)
 - [LMNB1](https://www.proteinatlas.org/ENSG00000113368-LMNB1) (lamin B1)
 
-**T2** `[ELO 1, 5]` Give the HPA main location of TOMM20, GOLGA2 and LMNB1.
+**T2** Give the HPA main location of TOMM20, GOLGA2 and LMNB1.
 
 ::: {.callout-note collapse="true" title="Answer"}
 TOMM20: **Mitochondria**. GOLGA2: **Golgi apparatus**. LMNB1: **Nuclear membrane**.
@@ -65,7 +65,7 @@ UniProt [P04040](https://www.uniprot.org/uniprotkb/P04040/entry) says
 **peroxisome matrix**. Now open [CAT in HPA](https://www.proteinatlas.org/ENSG00000121691-CAT),
 **SUBCELLULAR**.
 
-**T3** `[ELO 1, 5]` **[VG]** HPA gives a different main location. Which, and
+**T3** **[VG]** HPA gives a different main location. Which, and
 which statement best explains the difference?
 
 a. Catalase leaves peroxisomes in cultured cells.
@@ -85,7 +85,7 @@ Open [INS in HPA](https://www.proteinatlas.org/ENSG00000254647-INS) and click
 **SINGLE CELL**. This shows mRNA in each cell type, measured by
 [single-cell RNA sequencing](../cell-methods/lec.qmd#/single-cell-omics-a-census-of-cells).
 
-**T4** `[ELO 1]` Which cell type expresses INS?
+**T4** Which cell type expresses INS?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **Pancreatic islet cells** (cell type enriched; essentially absent elsewhere).
@@ -99,7 +99,7 @@ Open [INS in HPA](https://www.proteinatlas.org/ENSG00000254647-INS) and click
 and read **Problematic cell line**
 ([lecture](../cell-methods/lec.qmd#/is-the-culture-what-you-think-it-is)).
 
-**T5** `[ELO 1]` HEp-2 was thought to come from a laryngeal cancer. Which cell line
+**T5** HEp-2 was thought to come from a laryngeal cancer. Which cell line
 is it really?
 
 ::: {.callout-note collapse="true" title="Answer"}
@@ -144,14 +144,14 @@ filled yet; errors further down follow from the first one.
 3. **Blank 3:** the column that holds the compartment. The plot appears, with
    coloured dots and a legend.
 
-**T6** `[ELO 1]` In your plot, which protein is the lightest, and which compartment
+**T6** In your plot, which protein is the lightest, and which compartment
 is it coloured as?
 
 ::: {.callout-note collapse="true" title="Answer"}
 **Histone H4**, **Nucleus** (11.4 kDa). The heaviest is titin, 3816 kDa.
 :::
 
-**T7** `[ELO 1]` How many times heavier than the lightest is the heaviest
+**T7** How many times heavier than the lightest is the heaviest
 protein (the inline R number in your report)?
 
 ::: {.callout-note collapse="true" title="Answer"}

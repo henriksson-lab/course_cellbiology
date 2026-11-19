@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *Apoptosis: how a cel
 
 ---
 
-**Q1.** Give one example each of apoptosis in (a) development, (b) the response to damage and (c) immunity. `[ELO 8]`
+**Q1.** Give one example each of apoptosis in (a) development, (b) the response to damage and (c) immunity.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of fingers, of p53, and of killer T cells.
@@ -21,7 +21,7 @@ Think of fingers, of p53, and of killer T cells.
 
 ---
 
-**Q2.** List four changes you would see in a cell undergoing apoptosis, and explain why apoptosis causes no inflammation. `[ELO 8]`
+**Q2.** List four changes you would see in a cell undergoing apoptosis, and explain why apoptosis causes no inflammation.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Size, chromatin, membrane, final packages. What happens to the cell's contents?
@@ -33,7 +33,7 @@ The cell **shrinks**, the **chromatin condenses** and the nucleus breaks up, the
 
 ---
 
-**Q3.** What is the difference between an initiator caspase and an executioner caspase? Give an example of each. `[ELO 8]`
+**Q3.** What is the difference between an initiator caspase and an executioner caspase? Give an example of each.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 How is each switched on, and what does each cut?
@@ -45,7 +45,7 @@ How is each switched on, and what does each cut?
 
 ---
 
-**Q4.** Put these events of the intrinsic pathway in order: caspase-9 activation, MOMP, PUMA made, caspase-3 activation, cytochrome c binds APAF1, BAX/BAK activated. `[ELO 8]`
+**Q4.** Put these events of the intrinsic pathway in order: caspase-9 activation, MOMP, PUMA made, caspase-3 activation, cytochrome c binds APAF1, BAX/BAK activated.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Start with a BH3-only protein, end with the executioner.
@@ -57,7 +57,7 @@ PUMA made (e.g. by p53 after DNA damage) → BAX/BAK activated (PUMA blocks the 
 
 ---
 
-**Q5.** A cell lacks both BAX and BAK. Which of these still kill it: (a) DNA damage, (b) Fas ligand, in a liver cell that needs the tBID loop, (c) Fas ligand, in a lymphocyte where caspase-8 activates caspase-3 directly? `[ELO 8]`
+**Q5.** A cell lacks both BAX and BAK. Which of these still kill it: (a) DNA damage, (b) Fas ligand, in a liver cell that needs the tBID loop, (c) Fas ligand, in a lymphocyte where caspase-8 activates caspase-3 directly?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which routes must go through MOMP?
@@ -69,7 +69,7 @@ Which routes must go through MOMP?
 
 ---
 
-**Q6.** Why do apoptotic cells bind annexin V, and why do early apoptotic cells exclude propidium iodide? `[ELO 8]`
+**Q6.** Why do apoptotic cells bind annexin V, and why do early apoptotic cells exclude propidium iodide?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Which lipid moves, and what has not yet happened to the membrane?
@@ -81,7 +81,7 @@ Caspases switch off the flippase and switch on a scramblase, so **phosphatidylse
 
 ---
 
-**Q7.** What does SMAC do, and why does it make sense that it is released together with cytochrome c? `[ELO 8]`
+**Q7.** What does SMAC do, and why does it make sense that it is released together with cytochrome c?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What holds active caspases back in a healthy cell?
@@ -93,7 +93,7 @@ IAPs such as **XIAP** bind and block active caspase-9, -3 and -7, a safety catch
 
 ---
 
-**Q8.** How does venetoclax kill chronic lymphocytic leukaemia (CLL) cells, and why does it kill them much more easily than most normal cells? `[ELO 8]`
+**Q8.** How does venetoclax kill chronic lymphocytic leukaemia (CLL) cells, and why does it kill them much more easily than most normal cells?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What is BCL-2 holding in a CLL cell?

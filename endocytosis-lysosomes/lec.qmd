@@ -31,8 +31,6 @@ After this lecture you can:
 - describe **lysosomes**, how their enzymes get there (**mannose-6-phosphate**), and the other routes in: **macropinocytosis, phagocytosis, autophagy**;
 - explain how **statins, PCSK9 inhibitors, antibody–drug conjugates, lipid nanoparticles** and **enzyme replacement** depend on this pathway.
 
-**ELO 4** (protein handling) and **ELO 5** (organelles and homeostasis).
-
 ::: notes
 This lecture is the mirror image of the lecture on the Golgi and the secretory pathway. There, proteins made in the ER travelled outwards in vesicles to the cell surface. Here, material from outside the cell, and pieces of the plasma membrane itself, travel inwards. We will see that the cell does not simply swallow things at random. It uses receptors to pick out specific molecules, such as the cholesterol-carrying particle LDL, and it uses acid to sort them: the receptor goes back to the surface to be used again, and the cargo goes on to the lysosome, the digestive organelle of the cell. The lysosome also receives material from inside the cell by autophagy, so it is both the stomach and the recycling centre of the cell. Several important drugs depend on this pathway: cholesterol-lowering drugs, cancer drugs that are carried by antibodies, the lipid nanoparticles of mRNA vaccines, and enzymes given to patients with lysosomal storage diseases. The lecture covers ELO 4 and ELO 5.
 :::

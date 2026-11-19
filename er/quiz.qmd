@@ -9,7 +9,7 @@ Short questions to check your understanding of the lecture *The endoplasmic reti
 
 ---
 
-**Q1.** A ribosome is making a protein with an N-terminal signal sequence. Put these events in order: (a) translation continues and the chain enters the lumen; (b) SRP binds the signal sequence; (c) signal peptidase cuts off the signal; (d) SRP binds the SRP receptor; (e) the signal sequence comes out of the ribosome. `[ELO 4]`
+**Q1.** A ribosome is making a protein with an N-terminal signal sequence. Put these events in order: (a) translation continues and the chain enters the lumen; (b) SRP binds the signal sequence; (c) signal peptidase cuts off the signal; (d) SRP binds the SRP receptor; (e) the signal sequence comes out of the ribosome.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 SRP cannot bind what is still inside the ribosome's exit tunnel.
@@ -21,7 +21,7 @@ SRP cannot bind what is still inside the ribosome's exit tunnel.
 
 ---
 
-**Q2.** You make a secreted protein in a test tube from its mRNA, without and with microsomes (ER vesicles). Without microsomes the product is 2 kDa larger. Why? `[ELO 4, ELO 1]`
+**Q2.** You make a secreted protein in a test tube from its mRNA, without and with microsomes (ER vesicles). Without microsomes the product is 2 kDa larger. Why?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 What is missing when there is no ER membrane?
@@ -33,7 +33,7 @@ Without microsomes there is no **signal peptidase**, so the **signal sequence st
 
 ---
 
-**Q3.** A single-pass membrane protein has **no** cleavable signal sequence. Its only hydrophobic segment has lysines and arginines on its **C-terminal** side. Which way does it insert? What type is it? `[ELO 4]`
+**Q3.** A single-pass membrane protein has **no** cleavable signal sequence. Its only hydrophobic segment has lysines and arginines on its **C-terminal** side. Which way does it insert? What type is it?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Positive charges stay on the cytosolic side.
@@ -45,7 +45,7 @@ The positive charges after the segment stay in the **cytosol**, so the C-termina
 
 ---
 
-**Q4.** A receptor crosses the membrane 7 times and its N-terminus is outside the cell. Where is its C-terminus? Where on the protein do you expect its N-glycans? `[ELO 4, ELO 5]`
+**Q4.** A receptor crosses the membrane 7 times and its N-terminus is outside the cell. Where is its C-terminus? Where on the protein do you expect its N-glycans?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Each crossing switches the side. Where are sugars added?
@@ -57,7 +57,7 @@ An **odd** number of crossings puts the two ends on **opposite sides**: the C-te
 
 ---
 
-**Q5.** Why do disulfide bonds form in the ER lumen but hardly ever in the cytosol? Name the enzyme that helps. `[ELO 4, ELO 5]`
+**Q5.** Why do disulfide bonds form in the ER lumen but hardly ever in the cytosol? Name the enzyme that helps.
 
 ::: {.callout-tip collapse="true" title="Hint"}
 A disulfide bond is an oxidised pair of cysteines.
@@ -69,7 +69,7 @@ The ER lumen is **oxidizing**; the cytosol is **reducing** (much glutathione in 
 
 ---
 
-**Q6.** What does the **glucose** on an N-glycan tell the ER, and what does **UGGT** do? `[ELO 4]`
+**Q6.** What does the **glucose** on an N-glycan tell the ER, and what does **UGGT** do?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Calnexin binds glycoproteins with exactly one glucose.
@@ -81,7 +81,7 @@ A single glucose means "**hold me**": calnexin (and calreticulin) bind the prote
 
 ---
 
-**Q7.** A misfolded protein in the ER lumen is destroyed by the proteasome, which is in the cytosol. How does it get there? `[ELO 4]`
+**Q7.** A misfolded protein in the ER lumen is destroyed by the proteasome, which is in the cytosol. How does it get there?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 ERAD runs translocation in reverse.
@@ -93,7 +93,7 @@ By **ERAD**: the protein is recognised (trimmed mannoses, exposed hydrophobic pa
 
 ---
 
-**Q8.** Name the three sensors of the unfolded protein response and one thing each does. Why is reducing translation useful? `[ELO 4, ELO 5]`
+**Q8.** Name the three sensors of the unfolded protein response and one thing each does. Why is reducing translation useful?
 
 ::: {.callout-tip collapse="true" title="Hint"}
 Think of the ER as a factory with too many unfinished products.

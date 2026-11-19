@@ -32,8 +32,6 @@ After this lecture you can:
 - explain how **phospho-specific antibodies** show which kinase is active;
 - explain how **imatinib**, **trastuzumab**, **EGFR** and **BRAF** inhibitors act, and how tumours become **resistant**.
 
-**ELO 3** (signalling), with cancer examples for **ELO 9**.
-
 ::: notes
 This is the third lecture on cell signalling. In the lecture on principles of cell communication you met the receptor classes and the idea of molecular switches. In the lecture on G-protein-coupled receptors you followed a signal through a G protein to second messengers such as cyclic AMP and calcium. Today we look at the third big class of cell-surface receptors: enzyme-coupled receptors. Most of them are tyrosine kinases themselves, or they bind a tyrosine kinase. They answer growth factors, insulin and cytokines, so they control whether a cell divides, grows, survives or changes what it is. We will follow three pathways that you will meet again and again in later courses: the Ras–MAP kinase pathway, the PI3K–Akt pathway and the JAK–STAT pathway. We will also ask a systems question: why does a cell use a chain of three kinases instead of one? Finally, these pathways are where many cancers start, and where the first targeted cancer drugs act. This covers ELO 3, with examples for ELO 9.
 :::

@@ -9,7 +9,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ## G-level questions
 
-**1.** Name the five categories of the disease framework from the lecture. Explain why a recessive disease is usually a loss of function, while a dominant disease is often a gain of function or a toxic aggregate. `[ELO 9]`
+**1.** Name the five categories of the disease framework from the lecture. Explain why a recessive disease is usually a loss of function, while a dominant disease is often a gain of function or a toxic aggregate.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Loss of function, gain of function, toxic aggregate, wrong place, wrong amount (or wrong time).** In a recessive disease one normal copy is enough for health: half the normal amount of protein still does the job, so disease appears only when both copies are lost, which means the problem is a missing function. In a dominant disease one mutant copy causes disease even though a normal copy is present. That is easiest to explain if the mutant protein **does something harmful**: it is overactive (HCM myosin, PCSK9), it sticks in the wrong place (progerin in the lamina), or it aggregates (TTR, α-synuclein in rare families). (Some dominant diseases are caused by a lost copy when half the amount is not enough, but these are less common.)
@@ -17,7 +17,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ---
 
-**2.** Cystic fibrosis is caused by more than 2000 different mutations in CFTR. Describe three kinds of molecular defect, and for each say which kind of drug can help (if any). `[ELO 9]`
+**2.** Cystic fibrosis is caused by more than 2000 different mutations in CFTR. Describe three kinds of molecular defect, and for each say which kind of drug can help (if any).
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (1) **No protein**: e.g. a premature stop codon; the mRNA is degraded and nothing is made. CFTR modulators cannot help, because there is no protein to act on; gene or mRNA therapy would be needed. (2) **Misfolding**: F508del; the protein is recognised by ER quality control and degraded by ERAD, so it never reaches the apical membrane. A **corrector** (elexacaftor, tezacaftor) helps it fold and leave the ER; it is combined with a potentiator because rescued F508del opens poorly. (3) **Gating defect**: G551D; the protein reaches the apical membrane but the gate rarely opens. A **potentiator** (ivacaftor) holds the gate open.
@@ -25,7 +25,7 @@ Study questions in the style of the written exam. Write your answer first (a few
 
 ---
 
-**3.** In α1-antitrypsin deficiency (Z variant), patients can get both emphysema and liver cirrhosis. Explain both from one molecular defect, and place each in the disease framework. `[ELO 9]`
+**3.** In α1-antitrypsin deficiency (Z variant), patients can get both emphysema and liver cirrhosis. Explain both from one molecular defect, and place each in the disease framework.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 The Z mutation makes α1-antitrypsin fold slowly in the ER of liver cells, and the partly folded molecules link into **polymers** that stay in the ER. **Lung**: too little α1-antitrypsin reaches the blood, so neutrophil elastase in the lungs is not inhibited and digests the walls of the air sacs (emphysema). This is a **loss of function** caused by the protein being in the **wrong place**. **Liver**: the polymers accumulate in the ER and damage the liver cells (cirrhosis). This is a **toxic aggregate** (gain of toxic function). Infusions of purified α1-antitrypsin help the lungs but not the liver.
@@ -33,7 +33,7 @@ The Z mutation makes α1-antitrypsin fold slowly in the ER of liver cells, and t
 
 ---
 
-**4.** Describe three different molecular defects that all cause familial hypercholesterolaemia. Why do they all raise blood LDL? `[ELO 9]`
+**4.** Describe three different molecular defects that all cause familial hypercholesterolaemia. Why do they all raise blood LDL?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (1) **No LDL receptor** is made (or it misfolds and stays in the ER). (2) A mutation in the receptor's **cytoplasmic tail**: the receptor binds LDL at the surface but is not collected into **clathrin-coated pits**, so LDL is not taken in. (3) A **gain-of-function PCSK9**: PCSK9 binds the receptor and sends it to the **lysosome** instead of recycling to the surface. In all three, fewer working receptors remove LDL from the blood in the liver, so LDL stays high. Blood LDL is set by the number of receptors that cycle through the liver cell surface.
@@ -41,7 +41,7 @@ The Z mutation makes α1-antitrypsin fold slowly in the ER of liver cells, and t
 
 ---
 
-**5.** Compare Gaucher disease and I-cell disease. What is missing, where do the lysosomal enzymes end up, and how many enzymes are affected? `[ELO 9]`
+**5.** Compare Gaucher disease and I-cell disease. What is missing, where do the lysosomal enzymes end up, and how many enzymes are affected?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Gaucher disease**: one lysosomal enzyme, glucocerebrosidase, is defective. All other enzymes reach the lysosome normally. Its substrate, glucosylceramide, piles up in the lysosomes of macrophages (Gaucher cells). **I-cell disease**: the enzyme in the cis-Golgi that adds the **mannose-6-phosphate tag** is missing. All lysosomal enzymes are made and active, but without the tag the M6P receptor in the trans-Golgi network cannot sort them, so they are **secreted**: high in blood, low inside cells. Dozens of enzymes are missing from the lysosome at once, and many substrates pile up. Gaucher is a loss of function; I-cell disease is a wrong-place disease.
@@ -49,7 +49,7 @@ The Z mutation makes α1-antitrypsin fold slowly in the ER of liver cells, and t
 
 ---
 
-**6.** What is amyloid, and why do we think that the aggregating protein causes Alzheimer's and Parkinson's disease rather than being just a marker of dying neurons? `[ELO 9]`
+**6.** What is amyloid, and why do we think that the aggregating protein causes Alzheimer's and Parkinson's disease rather than being just a marker of dying neurons?
 
 ::: {.callout-note collapse="true" title="Model answer"}
 **Amyloid** is a very stable, ordered aggregate in which each protein chain forms a β-strand lying across a long fibril, with strands from many chains stacked together. It is hard for chaperones and the proteasome to clear. Evidence that the aggregating protein is a cause: rare **inherited forms** of the diseases are caused by mutations in the aggregating protein or its processing (APP and presenilin in Alzheimer's, α-synuclein in Parkinson's), and these families get the disease early. Also, small aggregates are toxic to cells in culture, and aggregates can seed misfolding of normal protein. Antibodies that remove Aβ slow the decline a little.
@@ -57,7 +57,7 @@ The Z mutation makes α1-antitrypsin fold slowly in the ER of liver cells, and t
 
 ---
 
-**7.** Explain how one silent base change in the lamin A gene causes progeria, and how lonafarnib acts. `[ELO 9]`
+**7.** Explain how one silent base change in the lamin A gene causes progeria, and how lonafarnib acts.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 Lamin A is made as prelamin A, which gets a **farnesyl** lipid at its C-terminus; a protease then **cuts off** the end with the lipid, and mature lamin A joins the nuclear lamina. In progeria, the silent base change creates a **new splice site**, so 50 amino acids, including the cut site, are lost from the protein. The farnesyl stays on, and the protein (**progerin**) remains stuck to the inner nuclear membrane. It disturbs the lamina, and nuclei become misshapen. One copy is enough: a dominant **gain of function**. **Lonafarnib** inhibits farnesyltransferase, so less progerin carries the lipid; it extends life by a few years.
@@ -65,7 +65,7 @@ Lamin A is made as prelamin A, which gets a **farnesyl** lipid at its C-terminus
 
 ---
 
-**8.** A woman with a mitochondrial DNA mutation has muscle weakness and hearing loss; her mother has only mild diabetes. Explain (a) why the disease comes from the mother, (b) why mother and daughter differ, (c) why muscle and ear are affected. `[ELO 9]`
+**8.** A woman with a mitochondrial DNA mutation has muscle weakness and hearing loss; her mother has only mild diabetes. Explain (a) why the disease comes from the mother, (b) why mother and daughter differ, (c) why muscle and ear are affected.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) Mitochondria, and their DNA, are inherited only from the **egg**; sperm mitochondria are lost. (b) Each cell has hundreds to thousands of mtDNA copies, and the mutation is in only some of them (**heteroplasmy**). The fraction passed to each egg varies, and it differs between tissues. Disease appears when the mutant fraction in a tissue passes a **threshold**. (c) Muscle, brain, the inner ear and the heart need the most ATP from **oxidative phosphorylation**; mtDNA encodes 13 respiratory-chain proteins plus the tRNAs and rRNAs to make them, so these tissues fail first. Blood lactate rises because cells rely on glycolysis.
@@ -73,7 +73,7 @@ Lamin A is made as prelamin A, which gets a **farnesyl** lipid at its C-terminus
 
 ---
 
-**9.** Match each therapy type to the disease it is used for, and say where in the cell (or body) it acts: (a) enzyme replacement, (b) antibody, (c) antisense oligonucleotide, (d) siRNA, (e) gene therapy, (f) small-molecule inhibitor. Diseases: SMA, Gaucher disease, familial hypercholesterolaemia, hypertrophic cardiomyopathy, TTR amyloidosis. `[ELO 9]`
+**9.** Match each therapy type to the disease it is used for, and say where in the cell (or body) it acts: (a) enzyme replacement, (b) antibody, (c) antisense oligonucleotide, (d) siRNA, (e) gene therapy, (f) small-molecule inhibitor. Diseases: SMA, Gaucher disease, familial hypercholesterolaemia, hypertrophic cardiomyopathy, TTR amyloidosis.
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) **Gaucher**: imiglucerase, taken up by endocytosis, acts in the **lysosome**. (b) **FH**: anti-PCSK9 antibodies bind PCSK9 in the **blood**. (c) **SMA**: nusinersen changes splicing of *SMN2* **pre-mRNA** in the nucleus (also TTR amyloidosis: inotersen, which destroys TTR mRNA). (d) **TTR amyloidosis**: patisiran destroys TTR **mRNA** in liver cells (also FH: inclisiran against PCSK9 mRNA). (e) **SMA**: onasemnogene delivers *SMN1* **DNA** to the nucleus of motor neurons. (f) **HCM**: mavacamten inhibits the **myosin** ATPase in the heart muscle cell.
@@ -81,7 +81,7 @@ Lamin A is made as prelamin A, which gets a **farnesyl** lipid at its C-terminus
 
 ## VG-style questions
 
-**10. [VG]** A child has very high LDL cholesterol. Sequencing finds no mutation in the LDL receptor gene. Design an experiment with the patient's cells to decide between (a) a receptor that is made but not taken in, and (b) an overactive PCSK9. Predict the result for each. `[ELO 9]` `[VG]`
+**10. [VG]** A child has very high LDL cholesterol. Sequencing finds no mutation in the LDL receptor gene. Design an experiment with the patient's cells to decide between (a) a receptor that is made but not taken in, and (b) an overactive PCSK9. Predict the result for each. `[VG]`
 
 ::: {.callout-note collapse="true" title="Model answer"}
 A normal receptor gene already argues against (a), which needs a tail mutation in the receptor itself; but the test is useful in general. Grow the patient's **skin fibroblasts** (or liver-like cells made from stem cells) and measure labelled LDL **binding at 4 °C** (surface receptors only, no endocytosis) and **uptake and degradation at 37 °C**. (a) Tail mutation: binding normal, uptake very low; receptors are spread over the surface instead of in coated pits (immunostaining or EM). (b) PCSK9 gain of function: PCSK9 comes from outside, so add the patient's PCSK9 (or medium from cells expressing the mutant PCSK9) to normal cells. Surface receptor number falls, so **both binding and uptake fall**, and receptor protein disappears faster (pulse–chase or Western blot over time); a lysosome inhibitor (e.g. raising lysosomal pH) or an anti-PCSK9 antibody **prevents** the loss. Controls: normal cells with normal PCSK9, and no PCSK9.
@@ -89,7 +89,7 @@ A normal receptor gene already argues against (a), which needs a tail mutation i
 
 ---
 
-**11. [VG]** A new dominant disease is found: a mutant K⁺ channel that stays open too long in heart muscle cells. A colleague suggests gene therapy that adds a normal copy of the gene. Evaluate the idea and propose two better therapy types, with reasons. `[ELO 9]` `[VG]`
+**11. [VG]** A new dominant disease is found: a mutant K⁺ channel that stays open too long in heart muscle cells. A colleague suggests gene therapy that adds a normal copy of the gene. Evaluate the idea and propose two better therapy types, with reasons. `[VG]`
 
 ::: {.callout-note collapse="true" title="Model answer"}
 A dominant disease with a channel that is **too active** is a **gain of function**. The patient already has one normal copy; adding another normal copy does not remove the harmful mutant channel, so gene therapy that adds a gene is unlikely to help (it might dilute the mutant subunits a little if channels are made of several subunits, but not remove them). Better: (1) a **small-molecule channel blocker** (inhibitor) that reduces the current through the overactive channels, as mavacamten turns down overactive myosin; (2) an **allele-specific siRNA or ASO** that destroys only the mutant mRNA, so only normal channels are made. Gene editing that corrects or switches off the mutant allele would also fit. Any therapy must reach heart muscle cells and be tested for effects on the heart rhythm.
@@ -97,7 +97,7 @@ A dominant disease with a channel that is **too active** is a **gain of function
 
 ---
 
-**12. [VG]** Children with spinal muscular atrophy who have four copies of *SMN2* usually have a much milder disease than children with two copies. (a) Explain why. (b) Predict what an siRNA against *SMN2* mRNA would do in a patient. (c) Why is nusinersen injected into the spinal fluid rather than into a vein? `[ELO 9]` `[VG]`
+**12. [VG]** Children with spinal muscular atrophy who have four copies of *SMN2* usually have a much milder disease than children with two copies. (a) Explain why. (b) Predict what an siRNA against *SMN2* mRNA would do in a patient. (c) Why is nusinersen injected into the spinal fluid rather than into a vein? `[VG]`
 
 ::: {.callout-note collapse="true" title="Model answer"}
 (a) Each *SMN2* copy makes a little full-length SMN (about 10 % of the normal output of *SMN1*, because exon 7 is kept in about 1 of 10 transcripts). Four copies make about twice as much as two, which is enough to keep more motor neurons alive. This is a **wrong amount** disease: the amount of protein decides severity. (b) An siRNA would destroy *SMN2* mRNA and remove the little SMN that is left: the disease would get **worse**. The right RNA tool is one that **changes splicing** (an ASO such as nusinersen), not one that destroys the mRNA. (c) The target cells are **motor neurons in the spinal cord**, behind the **blood–brain barrier**. An oligonucleotide is a large, charged molecule that does not cross it, so it is injected into the spinal fluid, from which it reaches the neurons.
@@ -113,15 +113,15 @@ A dominant disease with a channel that is **too active** is a **gain of function
 <script src="../demos/dist/casebook.js"></script>
 ```
 
-**E1.** Solve cases 1 and 2. Both patients have cystic fibrosis and nearly the same sweat chloride. Which finding tells the two cases apart? Which process and which therapy type fit each case, and why does the potentiator only half fit case 1? `[ELO 9]`
+**E1.** Solve cases 1 and 2. Both patients have cystic fibrosis and nearly the same sweat chloride. Which finding tells the two cases apart? Which process and which therapy type fit each case, and why does the potentiator only half fit case 1?
 
-**E2.** *Predict first.* Open case 3 and reveal findings up to and including the **Cell** finding, but not the **Molecule** finding. Which process is broken? Now try **Lysosomal digestion** and **Sorting**: why are they only partly right? Then choose a therapy type. How many therapy types fit, and why is a statin only partly right? `[ELO 9]`
+**E2.** *Predict first.* Open case 3 and reveal findings up to and including the **Cell** finding, but not the **Molecule** finding. Which process is broken? Now try **Lysosomal digestion** and **Sorting**: why are they only partly right? Then choose a therapy type. How many therapy types fit, and why is a statin only partly right?
 
-**E3.** Solve cases 4 and 5. Both patients have swollen lysosomes. Which single finding best tells the two diseases apart? Why does enzyme replacement fit case 4 but not case 5? `[ELO 9]`
+**E3.** Solve cases 4 and 5. Both patients have swollen lysosomes. Which single finding best tells the two diseases apart? Why does enzyme replacement fit case 4 but not case 5?
 
-**E4. [VG]** Solve all ten cases and note the category chips. Sort the cases into loss of function, gain of function or toxic aggregate, wrong place and wrong amount. Which therapy types fit the loss-of-function cases, and which fit the gain-of-function and aggregate cases? Find the one loss-of-function case where an *inhibitor* also fits, and explain why that is not a contradiction. `[ELO 9]` `[VG]`
+**E4. [VG]** Solve all ten cases and note the category chips. Sort the cases into loss of function, gain of function or toxic aggregate, wrong place and wrong amount. Which therapy types fit the loss-of-function cases, and which fit the gain-of-function and aggregate cases? Find the one loss-of-function case where an *inhibitor* also fits, and explain why that is not a contradiction. `[VG]`
 
-**E5. [VG]** A new patient has had a wet cough and chest infections since birth (compare cases 1 and 7). *Predict* which one finding you would ask for first to tell cystic fibrosis from primary ciliary dyskinesia, and what result you expect in each disease. Then explain why gene therapy is only "partly" right for case 7, although it is a loss-of-function disease. `[ELO 9]` `[VG]`
+**E5. [VG]** A new patient has had a wet cough and chest infections since birth (compare cases 1 and 7). *Predict* which one finding you would ask for first to tell cystic fibrosis from primary ciliary dyskinesia, and what result you expect in each disease. Then explain why gene therapy is only "partly" right for case 7, although it is a loss-of-function disease. `[VG]`
 
 ::: {.callout-note collapse="true" title="Solutions"}
 

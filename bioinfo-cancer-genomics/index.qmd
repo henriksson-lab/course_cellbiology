@@ -11,7 +11,7 @@ resources:
 ---
 
 Follow one oncogene and its drug through four databases: the mutation in tumours,
-the protein, the drug bound to it, and the trial that tested it. **ELO 9.**
+the protein, the drug bound to it, and the trial that tested it.
 
 Builds on [cancer](../cancer/lec.qmd), [cell death beyond apoptosis](../regulated-necrosis/lec.qmd),
 the [disease casebook](../disease-casebook/lec.qmd) and the
@@ -26,7 +26,7 @@ in cBioPortal. The **Mutations** tab opens with **BRAF** selected. Each lollipop
 one amino-acid position; its height is the number of patients with a mutation there.
 Then click **TP53** and compare.
 
-**T1.** At which amino-acid position does BRAF have by far the tallest lollipop? `[ELO 9]`
+**T1.** At which amino-acid position does BRAF have by far the tallest lollipop?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **Position 600** (valine 600, label "V600E/K/R"). Most of these are **V600E**.
@@ -38,7 +38,7 @@ TP53, in contrast, has many short lollipops spread over the protein.
 Open [BRAF, UniProt P15056](https://www.uniprot.org/uniprotkb/P15056/entry) and go to
 the section **Family & Domains**.
 
-**T2.** Which domain contains residue 600? `[ELO 9]`
+**T2.** Which domain contains residue 600?
 
 a. The Ras-binding domain (RBD)
 b. The phorbol-ester/DAG-type zinc finger
@@ -56,7 +56,7 @@ Open [PDB 3OG7](https://www.rcsb.org/structure/3OG7), "B-Raf Kinase V600E oncoge
 mutant in complex with PLX4032". PLX4032 is the development name of vemurafenib.
 Scroll to **Small Molecules**.
 
-**T3.** What is the three-character ligand ID of vemurafenib? `[ELO 9]`
+**T3.** What is the three-character ligand ID of vemurafenib?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **032.** The structure contains only the kinase domain, with the V600E mutation:
@@ -68,7 +68,7 @@ the drug binds the ATP pocket of the mutant kinase.
 Open the BRIM-3 trial, [NCT01006980](https://clinicaltrials.gov/study/NCT01006980),
 and look at **Arms and Interventions**.
 
-**T4.** Which drug was vemurafenib compared with? `[ELO 9]`
+**T4.** Which drug was vemurafenib compared with?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **Dacarbazine**, a standard chemotherapy. Only patients whose melanoma carried
@@ -107,7 +107,7 @@ and knit.
    mutation type (look at the column names printed by the Data chunk, or run
    `names(mutations)`). You should see one stacked bar per gene.
 
-**T5.** In your lollipop plot, compare the tallest BRAF lollipop with the tallest TP53 lollipop. `[ELO 9]`
+**T5.** In your lollipop plot, compare the tallest BRAF lollipop with the tallest TP53 lollipop.
 
 a. They are about the same height
 b. BRAF's is about 5 times taller
@@ -118,13 +118,13 @@ c. BRAF's is about 30 times taller
 One position dominates BRAF; TP53 mutations are scattered.
 :::
 
-**T6.** Your `position_600` table: which change is the second most common at BRAF position 600? `[ELO 9]`
+**T6.** Your `position_600` table: which change is the second most common at BRAF position 600?
 
 ::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
 **V600K** (35 mutations, after 158 V600E). Both replace valine 600 and both activate the kinase.
 :::
 
-**T7. [VG]** Your mutation-type plot: which statement fits? `[ELO 9]`
+**T7. [VG]** Your mutation-type plot: which statement fits?
 
 a. Both genes have mostly missense mutations, so both are oncogenes
 b. TP53 has many nonsense, frameshift and splice mutations that cut the protein short;
