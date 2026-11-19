@@ -1,5 +1,5 @@
 ---
-title: "Read the mutations: BRAF and TP53"
+title: "BRAF V600E and vemurafenib: read the mutations"
 author: "Worked solution"
 date: "`r Sys.Date()`"
 output:
@@ -7,108 +7,110 @@ output:
     toc: true
 ---
 
-
 ```{r setup, include=FALSE}
 library(ggplot2)
 library(jsonlite)
-library(httr2)
 options(HTTPUserAgent = "3MB001-course", timeout = 90)
-knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(error = TRUE, message = FALSE, warning = FALSE)
+
+# Set to TRUE if cBioPortal is down: the report then reads the course snapshot.
 use_snapshot <- identical(Sys.getenv("BIOINFO_SNAPSHOT"), "true")
-dir.create("data", showWarnings = FALSE)
-retrieved <- if (use_snapshot) "2026-11-18" else as.character(Sys.Date())
-get_json <- function(url, ...) {
-  req <- req_url_query(request(url), ...)
-  resp_body_json(req_perform(req_retry(req, max_tries = 3)), simplifyVector = FALSE)
-}
-cache_csv <- function(name, fetch) {
-  file <- file.path("data", paste0(name, "-", retrieved, ".csv"))
-  if (file.exists(file)) return(read.csv(file, stringsAsFactors = FALSE))
-  if (use_snapshot) stop("Missing snapshot: ", file)
-  value <- fetch()
-  write.csv(value, file, row.names = FALSE)
-  value
-}
+
+# Data record (filled in before any fetch, so the text below always knits)
+data_source <- "cBioPortal API, TCGA Skin Cutaneous Melanoma (PanCancer Atlas)"
+retrieved <- "2026-11-18 (course snapshot)"
 ```
-
-# Question
-
-Do BRAF and TP53 show the same positional mutation pattern in this melanoma cohort?
 
 # Data
 
-```{r mutations-fetch}
+This chunk is complete. It fetches all BRAF and TP53 mutations in the TCGA
+melanoma study from the cBioPortal API and keeps one row per mutation.
+
+```{r fetch}
 study <- "skcm_tcga_pan_can_atlas_2018"
-profile <- paste0(study, "_mutations")
-sample_list <- paste0(study, "_sequenced")
-metadata_file <- file.path("data", paste0("study-metadata-", retrieved, ".json"))
-if (!file.exists(metadata_file)) {
-  if (use_snapshot) stop("Missing sample-list snapshot")
-  metadata <- get_json(paste0("https://www.cbioportal.org/api/sample-lists/", sample_list))
-  write_json(metadata, metadata_file, auto_unbox = TRUE)
+genes <- c(BRAF = 673, TP53 = 7157)   # cBioPortal uses Entrez gene IDs
+
+fetch_gene <- function(gene) {
+  api_url <- paste0(
+    "https://www.cbioportal.org/api/molecular-profiles/", study, "_mutations/mutations",
+    "?sampleListId=", study, "_sequenced",
+    "&entrezGeneId=", genes[[gene]], "&projection=SUMMARY&pageSize=10000")
+  x <- fromJSON(api_url)
+  data.frame(gene = gene, sample_id = x$sampleId, patient_id = x$patientId,
+             protein_change = x$proteinChange, protein_start = x$proteinPosStart,
+             mutation_type = x$mutationType)
 }
-metadata <- fromJSON(metadata_file)
-fetch_mutations <- function() {
-  ids <- c(BRAF = 673, TP53 = 7157)
-  rows <- list()
-  for (gene in names(ids)) {
-    result <- get_json(paste0("https://www.cbioportal.org/api/molecular-profiles/", profile, "/mutations"),
-      sampleListId = sample_list, entrezGeneId = ids[[gene]], projection = "DETAILED", pageSize = 10000000)
-    for (record in result) {
-      pos <- function(x) if (is.null(x)) NA_real_ else as.numeric(x)
-      text <- function(x) if (is.null(x)) "" else x
-      rows[[length(rows) + 1]] <- data.frame(gene = gene,
-        sample_id = record$sampleId, patient_id = record$patientId,
-        protein_change = text(record$proteinChange), protein_start = pos(record$proteinPosStart),
-        protein_end = pos(record$proteinPosEnd), mutation_type = record$mutationType,
-        study = record$studyId)
-    }
-  }
-  do.call(rbind, rows)
+
+read_snapshot <- function() {
+  file <- "data/skcm-mutations-2026-11-18.csv"
+  if (!file.exists(file)) file <- paste0(
+    "https://henriksson-lab.github.io/course_cellbiology/bioinfo-cancer-genomics/", file)
+  read.csv(file)
 }
-mutations <- cache_csv("skcm-mutations", fetch_mutations)
-stopifnot(all(mutations$sample_id %in% metadata$sampleIds))
+
+mutations <- NULL
+if (!use_snapshot) {
+  mutations <- tryCatch(do.call(rbind, lapply(names(genes), fetch_gene)),
+                        error = function(e) NULL)
+  if (!is.null(mutations)) retrieved <- as.character(Sys.Date())
+}
+if (is.null(mutations)) mutations <- read_snapshot()
+
+table(mutations$gene)
 ```
 
-Study `r study`, profile `r profile`, sample list `r sample_list`,
-`r metadata$sampleCount` mutation-profiled samples; retrieved `r retrieved`.
+Source: `r data_source`, study `r study`; retrieved `r retrieved`.
 
-```{r mutation-lollipops, fig.width=9, fig.height=4}
-mapped <- mutations[!is.na(mutations$protein_start) & mutations$protein_start > 0, ]
-counts <- aggregate(rep(1L, nrow(mapped)), mapped[c("gene", "protein_start")], sum)
-names(counts)[3] <- "records"
-ggplot(counts, aes(protein_start, records)) +
-  geom_segment(aes(xend = protein_start, y = 0, yend = records), colour = "#a8324a") +
-  geom_point(colour = "#a8324a", size = 1.4) + facet_wrap(~ gene, scales = "free_x") +
-  labs(x = "Amino-acid position", y = "Mutation records at position",
-       caption = paste("cBioPortal / TCGA SKCM PanCancer Atlas 2018; retrieved", retrieved)) + theme_minimal()
-summary_table <- do.call(rbind, lapply(split(mutations, mutations$gene), function(x) data.frame(
-  gene = x$gene[1], records = nrow(x), mutated_samples = length(unique(x$sample_id)),
-  mutated_patients = length(unique(x$patient_id)))))
-summary_table
+# 1. Where are the mutations?
+
+Fill in the blank: put the amino-acid position on the x axis.
+
+```{r lollipop, fig.width=9, fig.height=4}
+mapped <- subset(mutations, !is.na(protein_start))
+per_position <- aggregate(sample_id ~ gene + protein_start, data = mapped, FUN = length)
+names(per_position)[3] <- "records"
+
+ggplot(per_position, aes(x = protein_start, y = records)) +
+  geom_segment(aes(xend = protein_start, y = 0, yend = records), colour = "grey50") +
+  geom_point(colour = "#a8324a") +
+  facet_wrap(~ gene, scales = "free_x") +
+  labs(x = "Amino-acid position", y = "Mutations at this position",
+       caption = paste0("Data: cBioPortal, TCGA melanoma; retrieved ", retrieved))
 ```
 
-# Interpretation
+# 2. Which changes hit position 600?
 
-BRAF has `r sum(mutations$gene == "BRAF")` records including
-`r sum(mutations$gene == "BRAF" & mutations$protein_change == "V600E")`
-exact V600E records. TP53 has `r sum(mutations$gene == "TP53")` records.
-The positional plot excludes `r nrow(mutations) - nrow(mapped)` calls without a
-usable mapped position. The BRAF hotspot is consistent with selective activation;
-the dispersed TP53 changes are compatible with several routes to loss of function.
-These patterns alone do not establish the effect of each individual variant.
+Build the pipeline from these three pieces, in the right order, joined by `|>`:
 
-# Limitations
+- `table()`
+- `mutations`
+- `subset(gene == "BRAF" & protein_start == 600, select = protein_change)`
 
-Records are not patients; coverage and sample selection affect frequencies. Protein
-plots omit unmapped positions and cannot summarise every structural alteration.
-These observations concern one selected cancer cohort, not all cancers.
+```{r position-600}
+position_600 <- mutations |>
+  subset(gene == "BRAF" & protein_start == 600, select = protein_change) |>
+  table()
+position_600
+```
 
-# Sources
+# 3. What kind of mutations?
 
-cBioPortal API: https://www.cbioportal.org/api/ ; TCGA SKCM PanCancer Atlas 2018;
-cBioPortal paper, doi:10.1158/2159-8290.CD-12-0095 .
-UniProt BRAF P15056 and TP53 P04637 supply functional context.
+Fill in the blank: colour the bars by the column that holds the mutation type.
+
+```{r mutation-types, fig.width=7, fig.height=4}
+ggplot(mutations, aes(x = gene, fill = mutation_type)) +
+  geom_bar() +
+  labs(x = NULL, y = "Number of mutations", fill = "Mutation type",
+       caption = paste0("Data: cBioPortal, TCGA melanoma; retrieved ", retrieved))
+```
+
+# Answers
+
+Write your answers to tasks T5–T7 here, one line each.
+
+- T5: (c) BRAF 600 has about 30 times more mutations than the tallest TP53 position.
+- T6: V600K.
+- T7: (b) TP53 has many truncating mutations (nonsense, frameshift, splice); BRAF has almost only missense.
 
 # Reproducibility
 

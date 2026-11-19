@@ -7,51 +7,139 @@ format:
     toc-depth: 2
 resources:
   - bioinfo-essential-genes.Rmd
-  - data/*.csv
-  - data/*.json
+  - data/depmap-gene-effect-2026-11-18.csv
 ---
 
-## What you will do
+**Goal:** read CRISPR screens to see which cell-cycle and survival genes cancer
+cells cannot live without. Builds on [cell-cycle control](../cell-cycle-control/lec.qmd),
+[mitosis](../mitosis/lec.qmd), [cell numbers](../cell-numbers/lec.qmd) and
+[apoptosis](../apoptosis/lec.qmd). About 2 hours.
 
-Use CRISPR gene-dependency screens to compare core cell-cycle machinery with
-context-dependent survival genes. Interpret distributions and build an R Markdown
-report from a short outline. **ELO 7, 8, 9.**
+## Part A: in the browser
 
-Builds on [cell-cycle control](../cell-cycle-control/lec.qmd),
-[mitosis](../mitosis/lec.qmd), [cell numbers](../cell-numbers/lec.qmd), and
-[apoptosis](../apoptosis/lec.qmd). Allow about 3–4 hours.
+**A1. Cyclin B1 rises and falls.** Open [Human Protein Atlas: CCNB1, subcellular
+section](https://www.proteinatlas.org/ENSG00000134057-CCNB1/subcellular). Scroll to
+**Single cell variation** and find **Protein expression peak phase**.
 
-1. [In the browser: dependencies, cyclin B1 and p53](browser.qmd).
-2. [In R: dependency distributions](report.qmd).
+**T1.** In which phase is cyclin B1 protein highest: G1, S or G2? `[ELO 7]`
 
-## Before you start
+::: {.callout-note collapse="true" title="Answer"}
+**G2.** Cyclin B1 builds up before mitosis and activates CDK1. The APC/C then
+marks it for destruction at anaphase, so the cell can leave mitosis.
+:::
 
-No account is needed. Use RStudio or R with `rmarkdown`, `ggplot2`, `jsonlite` and
-`httr2` installed. Install missing packages once in the console:
+**A2. Who switches p53 on?** Open [UniProt P04637 (TP53)](https://www.uniprot.org/uniprotkb/P04637/entry).
+Go to **PTM/Processing** and find the **Modified residue** at position **15**.
 
-```r
-install.packages(c("rmarkdown", "ggplot2", "jsonlite", "httr2"))
-```
+**T2.** Which of the kinases listed for serine 15 is the DNA-damage kinase from
+the checkpoint slide? `[ELO 7]`
 
-Download the report and all listed snapshots. Put the report in a new folder and
-CSV/JSON files in its `data/` subfolder. Keep the filenames. If an API is unavailable,
-set `use_snapshot <- TRUE`. A snapshot is a dated copy of real records, not simulated data.
-Knitting uses a fresh R session: create every object in the report and finish with
-`sessionInfo()`. Do not include your R console history as a substitute for code.
+::: {.callout-note collapse="true" title="Answer"}
+**ATM.** After a DNA break, ATM phosphorylates p53 at serine 15. MDM2 can then no
+longer tag p53 for destruction, p53 accumulates and switches on p21.
+:::
 
-## Downloads
+**A3. A drug against a survival protein.** Open [ChEMBL CHEMBL3137309
+(venetoclax)](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3137309) and find
+**Mechanisms of Action**.
 
-- [Student report outline](bioinfo-essential-genes.Rmd)
-- [Gene-effect snapshot](data/depmap-gene-effect-2026-11-18.csv)
-- [API release metadata](data/release-2026-11-18.json)
-- [Retrieval record](data/retrieval-manifest-2026-11-18.json)
+**T3.** Which protein does venetoclax inhibit: BCL-2, BCL-XL, MCL-1 or CDK4? `[ELO 8]`
 
-## Sources and licences
+::: {.callout-note collapse="true" title="Answer"}
+**BCL-2** ("Apoptosis regulator Bcl-2 inhibitor"). It is the BH3 mimetic from the
+apoptosis lecture, used in chronic lymphocytic leukaemia.
+:::
 
-[Open Targets Platform](https://platform.opentargets.org/) redistributes DepMap
-CRISPR screen data through its [GraphQL API](https://api.platform.opentargets.org/api/v4/graphql).
-Open Targets data are CC0 unless a contributing dataset has additional terms;
-retain the DepMap citation and check [DepMap terms](https://depmap.org/portal/terms/).
-Snapshot retrieved 2026-11-18; the included metadata records the Open Targets release.
-Cite the [DepMap portal](https://depmap.org/portal/) and [Chronos method](https://doi.org/10.1186/s13059-021-02540-7).
-HPA and UniProt annotations are CC BY 4.0. No external images are reproduced.
+## Part B: in R
+
+A CRISPR screen knocks out one gene in each of about 1 250 cancer cell lines and
+measures growth. The **gene effect** is 0 when the cells grow as usual and about
+**−1** for a typical essential gene. More negative means the cells need the gene more.
+
+The template fetches these scores for six genes: **CDK1, CDK4, CDK6** (cell cycle)
+and **BCL2, BCL2L1, MCL1** (BCL-2 family guardians). All fetching code is given.
+You fill three blanks marked `___`.
+
+### Downloads
+
+1. [Report template](bioinfo-essential-genes.Rmd){download="bioinfo-essential-genes.Rmd"}.
+   Put it in a new folder.
+2. [Data snapshot](data/depmap-gene-effect-2026-11-18.csv){download="depmap-gene-effect-2026-11-18.csv"}
+   (optional). Put it in a `data/` subfolder. It is used only if you set
+   `use_snapshot <- TRUE` (for example when the API is down).
+
+Data: DepMap CRISPR screens via the Open Targets Platform 26.09 (CC0; cite DepMap),
+retrieved 2026-11-18.
+
+You need the R packages `rmarkdown`, `ggplot2` and `httr`
+(`install.packages(c("rmarkdown", "ggplot2", "httr"))`). Knit once before you
+change anything: the report knits, with an error under each blank.
+
+### Blank 1: one summary line
+
+Replace `___` in `FUN = ___` with the R function that computes a median. When it
+works, a table with six rows prints: one median gene effect per gene.
+
+**T4.** Which gene has the most negative median, and what is that median (two
+decimals)? `[ELO 7]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**CDK1, about −2.63.** Almost every cell line needs CDK1 to enter mitosis. The
+other five medians lie between −1 and 0 (BCL2 is close to 0).
+:::
+
+### Blank 2: one `ggplot()` call
+
+Write one `ggplot()` call from the pieces listed in the template: data
+`dependencies`, `gene` on the x axis, `gene_effect` on the y axis, `geom_violin()`,
+a dashed line at −1, and axis labels. You should see six violins, one per gene.
+
+**T5.** Which statement matches your plot? `[ELO 8]`
+
+::: {.options}
+- (a) BCL2 is needed by most cell lines.
+- (b) Most cell lines do not need BCL2, but a few lie below −1.
+- (c) BCL2 and CDK1 have similar violins.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**(b).** The BCL2 violin is wide at 0 with a thin tail down to below −2. CDK1 sits
+almost entirely below −1.
+:::
+
+### Blank 3: one gene name
+
+Fill in `"BCL2"` (with quotes) to keep only the BCL2 rows. A plot with one row of
+points per tissue appears, and below it a count of cell lines with gene effect
+below −1 per tissue.
+
+**T6.** Which tissue group has the most cell lines below −1 for BCL2? `[ELO 8, 9]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**Lymphoid tissue** (5 lines; haematopoietic tissue is next with 2). These are
+lymphoma, myeloma and leukaemia lines, which fits venetoclax being a drug for blood
+cancers.
+:::
+
+**T7. [VG]** CDK1 is the strongest dependency in your plot. Why is it a poorer drug
+target than BCL2? Pick one. `[ELO 7, 9]`
+
+::: {.options}
+- (a) CDK1 is not expressed in cancer cells.
+- (b) Normal dividing cells, such as bone marrow and gut lining, also need CDK1,
+  so blocking it would harm them too.
+- (c) Knocking out CDK1 makes cells grow faster.
+:::
+
+::: {.callout-note collapse="true" title="Answer"}
+**(b).** A gene that every dividing cell needs gives little room between killing the
+cancer and harming the patient. This is why antimitotic drugs lower blood counts
+(mitosis lecture). BCL2 is needed by only a few kinds of cancer cell, so a BCL-2
+inhibitor can be more selective.
+:::
+
+## Hand in
+
+- The knitted HTML of your report, with no `Error` messages left.
+- It shows the table of six medians, the six-gene violin plot and the BCL2 plot by tissue.
+- Your answers to T1–T7, one line each.

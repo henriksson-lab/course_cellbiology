@@ -6,83 +6,167 @@ format:
     toc-depth: 2
 # Plain Markdown page: nothing is run when the site is built.
 engine: markdown
-# Files students download. Listed here so Quarto copies them next to the page;
-# the worked solution (bioinfo-protein-atlas-solution.Rmd) is deliberately not listed.
+# Student downloads. The worked solution is deliberately not listed.
 resources:
   - bioinfo-protein-atlas.Rmd
-  - data/uniprot-proteins-2026-11-18.csv
+  - data/*.csv
 ---
 
 ```{=html}
 <style>
-  /* Long URLs and code (queries, R calls) wrap on narrow screens. */
   main a, main p code, main li code { overflow-wrap: anywhere; }
-  main p code, main li code { white-space: pre-wrap; }
 </style>
 ```
 
-## In this module
+Find where marker proteins live in two databases, check a cell line, and knit your
+first R Markdown report. Builds on [A tour of the cell](../cell-tour/lec.qmd),
+[Seeing cells: microscopy](../microscopy/lec.qmd) and
+[Taking cells apart and perturbing them](../cell-methods/lec.qmd). **ELO 1, 5.**
 
-You look up where proteins live, using the same kind of evidence as in the lectures:
-an annotated database entry (**UniProt**), real immunofluorescence images (**Human
-Protein Atlas**), and a cell-line register (**Cellosaurus**). Then you write your
-first **R Markdown report**: it fetches protein sizes from UniProt and plots them.
+## Part A: in the browser
 
-**Builds on:** [A tour of the cell](../cell-tour/lec.qmd) (organelles, scale, HeLa),
-[Seeing cells: microscopy](../microscopy/lec.qmd) (immunofluorescence) and
-[Taking cells apart and perturbing them](../cell-methods/lec.qmd) (marker proteins, cell lines, single-cell
-omics). **ELO 1, 5.**
+**UniProt** is the reference database of proteins; **Human Protein Atlas** (HPA)
+shows real immunofluorescence images of each protein in cultured human cells.
 
-**Time:** Part A about 1.5 h, Part B about 1.5–2 h.
+### A1. Calnexin in UniProt
 
-## Before you start
+Open UniProt entry [P27824](https://www.uniprot.org/uniprotkb/P27824/entry)
+(human calnexin). `P27824` is its **accession**; `CANX` is its **gene symbol**.
+Click **Subcellular Location** in the menu on the left.
 
-1. **Download the report template:**
-   [bioinfo-protein-atlas.Rmd](bioinfo-protein-atlas.Rmd){download="bioinfo-protein-atlas.Rmd"}.
-   Put it in a new, empty folder (for example `cellbio-bioinfo/`).
-2. **Check R.** In R, run:
+**T1** `[ELO 1]` Where in the cell is calnexin, and how does it sit in the membrane?
 
-   ```r
-   packageVersion("rmarkdown")   # an error means: install.packages("rmarkdown")
-   packageVersion("ggplot2")     # an error means: install.packages("ggplot2")
-   ```
-
-   Knitting also needs **Pandoc**. RStudio includes it. If you work from the
-   command line, check with `rmarkdown::pandoc_available()` (should be `TRUE`).
-3. **No logins** are needed for any of these websites.
-4. Keep a notes file or the template open: you fill a small table during Part A.
-
-::: {.callout-tip title="Three kinds of names for one protein"}
-Databases name the same thing in different ways. Learn to tell them apart here;
-every later bioinformatics module uses all three.
-
-- **Gene symbol** (HGNC), e.g. `CANX`: names the human gene; short and readable,
-  but genes are sometimes renamed.
-- **UniProt accession**, e.g. `P27824`: names the protein entry; stable, so use it
-  to cite a protein.
-- **Ensembl gene ID**, e.g. `ENSG00000127022`: names the gene in the genome
-  sequence; stable. A version suffix such as `.17` may be added: omit it when
-  linking a gene page, but use the dataset-specific version when an API such as
-  GTEx requires it.
-
-Gene and protein names differ too: the Golgi marker **GM130** in the lecture is the
-gene **GOLGA2**; TOM20 is **TOMM20**.
+::: {.callout-note collapse="true" title="Answer"}
+**Endoplasmic reticulum membrane**, as a **single-pass type I** membrane protein
+(one transmembrane helix, the large N-terminal part in the ER lumen).
 :::
 
-## Work through the module
+### A2. Organelle markers in HPA
 
-1. [Browser activities](browser.qmd): UniProt, the Human Protein Atlas and Cellosaurus.
-2. [R Markdown report](report.qmd): a short introduction, then protein-size data and a plot.
-3. [Check your answers](questions.qmd): six tasks with worked explanations.
+For each gene, open the page and click **SUBCELLULAR** in the row of section
+names. Read **Main location**. The protein is green; nucleus blue, microtubules red,
+ER yellow.
 
-## Sources and licences
+- [TOMM20](https://www.proteinatlas.org/ENSG00000173726-TOMM20) (TOM20)
+- [GOLGA2](https://www.proteinatlas.org/ENSG00000167110-GOLGA2) (GM130)
+- [LMNB1](https://www.proteinatlas.org/ENSG00000113368-LMNB1) (lamin B1)
 
-- **UniProt** — The UniProt Consortium, *UniProt: the Universal Protein Knowledgebase*,
-  Nucleic Acids Research (latest database issue). <https://www.uniprot.org>, data
-  CC BY 4.0. The snapshot `data/uniprot-proteins-2026-11-18.csv` is UniProtKB release
-  2026_04, retrieved 2026-11-18.
-- **Human Protein Atlas** — version 26.0, <https://www.proteinatlas.org>, CC BY 4.0.
-  Subcellular section: Thul et al., *Science* 2017, 356:eaal3321. Single cell section:
-  Karlsson et al., *Science Advances* 2021, 7:eabh2169.
-- **Cellosaurus** — Bairoch A., *J Biomol Tech* 2018, 29:25–38.
-  <https://www.cellosaurus.org>, CC BY 4.0.
+**T2** `[ELO 1, 5]` Give the HPA main location of TOMM20, GOLGA2 and LMNB1.
+
+::: {.callout-note collapse="true" title="Answer"}
+TOMM20: **Mitochondria**. GOLGA2: **Golgi apparatus**. LMNB1: **Nuclear membrane**.
+:::
+
+### A3. Catalase: two databases disagree
+
+Catalase is the classic peroxisome marker
+([cell-methods lecture](../cell-methods/lec.qmd#/density-gradients-and-marker-proteins)).
+UniProt [P04040](https://www.uniprot.org/uniprotkb/P04040/entry) says
+**peroxisome matrix**. Now open [CAT in HPA](https://www.proteinatlas.org/ENSG00000121691-CAT),
+**SUBCELLULAR**.
+
+**T3** `[ELO 1, 5]` **[VG]** HPA gives a different main location. Which, and
+which statement best explains the difference?
+
+a. Catalase leaves peroxisomes in cultured cells.
+b. Peroxisomes are small dots near the resolution limit of light microscopy, so in
+   an image they look like any other small vesicle.
+c. UniProt's peroxisome location is only a prediction.
+
+::: {.callout-note collapse="true" title="Answer"}
+HPA says **Vesicles**. **b** is right: peroxisomes (0.1–1 µm) appear as small dots,
+and the image alone cannot tell which kind of dot it is. UniProt's location comes
+from experiments, so c is wrong. A co-stain with another peroxisome marker would decide.
+:::
+
+### A4. Which cells make insulin?
+
+Open [INS in HPA](https://www.proteinatlas.org/ENSG00000254647-INS) and click
+**SINGLE CELL**. This shows mRNA in each cell type, measured by
+[single-cell RNA sequencing](../cell-methods/lec.qmd#/single-cell-omics-a-census-of-cells).
+
+**T4** `[ELO 1]` Which cell type expresses INS?
+
+::: {.callout-note collapse="true" title="Answer"}
+**Pancreatic islet cells** (cell type enriched; essentially absent elsewhere).
+:::
+
+### A5. Is the culture what you think it is?
+
+**Cellosaurus** registers every cell line under a stable accession. Open
+[HeLa, CVCL_0030](https://www.cellosaurus.org/CVCL_0030) and find the virus under
+**Transformant**. Then open [HEp-2, CVCL_1906](https://www.cellosaurus.org/CVCL_1906)
+and read **Problematic cell line**
+([lecture](../cell-methods/lec.qmd#/is-the-culture-what-you-think-it-is)).
+
+**T5** `[ELO 1]` HEp-2 was thought to come from a laryngeal cancer. Which cell line
+is it really?
+
+::: {.callout-note collapse="true" title="Answer"}
+**HeLa**: HEp-2 is a contaminated HeLa derivative, so it carries HPV18 like HeLa.
+:::
+
+## Part B: in R
+
+Download the template
+[bioinfo-protein-atlas.Rmd](bioinfo-protein-atlas.Rmd){download="bioinfo-protein-atlas.Rmd"}
+into a new folder. You need the packages `rmarkdown` and `ggplot2`. All code that
+fetches and cleans the data is given; you fill three blanks marked `___`.
+
+### R Markdown in five minutes
+
+An `.Rmd` file mixes text and R code. **Knitting** runs all code from top to
+bottom and writes one HTML report with text, tables and plots.
+
+- **YAML header** between the `---` lines: title, author, output. Put your name in
+  `author:`.
+- **Code chunks** start with ```` ```{r name} ```` and end with ```` ``` ````.
+- **Inline R** in text, such as `` `r round(ratio)` ``, is replaced by its value.
+- **Knit** in RStudio with the **Knit** button, or in a terminal:
+
+  ```bash
+  Rscript -e 'rmarkdown::render("bioinfo-protein-atlas.Rmd")'
+  ```
+
+Knitting starts from an empty R session: objects made in the console do not exist.
+
+### B1. Knit it untouched
+
+You get an HTML with red **Error** messages. Each points at a `___` that is not
+filled yet; errors further down follow from the first one.
+
+### B2. Fill the blanks, knitting after each
+
+1. **Blank 1:** calnexin's accession from A1, in quotes. You then see a table
+   of 13 proteins with their length and mass.
+2. **Blank 2:** `which.max` finds the heaviest; change `___` so the next line
+   finds the lightest. The sentence below the chunk now shows a number.
+3. **Blank 3:** the column that holds the compartment. The plot appears, with
+   coloured dots and a legend.
+
+**T6** `[ELO 1]` In your plot, which protein is the lightest, and which compartment
+is it coloured as?
+
+::: {.callout-note collapse="true" title="Answer"}
+**Histone H4**, **Nucleus** (11.4 kDa). The heaviest is titin, 3816 kDa.
+:::
+
+**T7** `[ELO 1]` How many times heavier than the lightest is the heaviest
+protein (the inline R number in your report)?
+
+::: {.callout-note collapse="true" title="Answer"}
+About **336** (titin 3816 kDa / histone H4 11.4 kDa). This is why the x axis is
+logarithmic: on a linear axis all other proteins would be squeezed near zero.
+:::
+
+If UniProt is down, set `use_snapshot <- TRUE` in the setup chunk and knit again.
+The report then reads the course's
+[saved copy](data/uniprot-proteins-2026-11-18.csv){download="uniprot-proteins-2026-11-18.csv"}
+(put it in a `data/` folder next to the `.Rmd`, or the report downloads it).
+Data: UniProtKB release 2026_04 (CC BY 4.0), retrieved 2026-11-18.
+
+## Hand in
+
+- The knitted **HTML** (not the `.Rmd`), with your name in the header.
+- No red error messages left.
+- The plot has coloured dots and a legend; the sentence shows a number, not `NA`.

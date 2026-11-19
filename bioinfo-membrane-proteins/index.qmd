@@ -8,36 +8,120 @@ format:
 resources:
   - bioinfo-membrane-proteins.Rmd
   - data/*.csv
-  - data/*.json
 ---
 
-## What you will learn
+**Goal:** read a membrane protein's topology, see where a drug binds it, and plot in which tissues two glucose transporters are made. It builds on [membrane structure](../membrane-structure/lec.qmd), [transporters and pumps](../membrane-transport/lec.qmd) and [ion channels](../ion-channels/lec.qmd). About 2 hours.
 
-Find a protein's membrane topology, inspect a bound drug in a structure, and compare gene expression across tissues. Then make two plots in an R Markdown report. This module builds on [membrane structure](../membrane-structure/lec.qmd), [transporters and pumps](../membrane-transport/lec.qmd) and [ion channels](../ion-channels/lec.qmd). **ELO 2, 9.**
+## Part A: in the browser
 
-Work through these short pages in order:
+All tasks use the CFTR chloride channel and the drug ivacaftor, from the ion channels lecture. No accounts are needed.
 
-1. [In the browser: topology, structures and variants](browser.qmd) — about 90 minutes.
-2. [In R: tissue expression and membrane topology](report.qmd) — about 90–120 minutes.
+### A1. Count the membrane crossings
 
-## Before you start
+Open human CFTR in UniProt: [P13569](https://www.uniprot.org/uniprotkb/P13569/entry). Scroll to **Subcellular location**, then **Topology**. Each **Transmembrane** row is one helix that crosses the membrane (the hydropathy plot in [membrane structure](../membrane-structure/lec.qmd) predicts the same helices).
 
-No database accounts are needed. You need R, a working R Markdown installation, and the packages below. Install packages once in the R console, outside the report:
+**T1.** `[ELO 2]` How many transmembrane segments does CFTR have?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**12**, in two halves of six helices. Each half is followed by a nucleotide-binding domain in the cytosol.
+:::
+
+### A2. Find the drug in a structure
+
+Open [PDB 6O2P](https://www.rcsb.org/structure/6O2P), human CFTR bound to ivacaftor. In the **Small Molecules** section, find ligand **VX7**: this is ivacaftor. Click its **Ligand Interaction** view (opens the Mol* viewer) to see where it sits.
+
+**T2.** `[ELO 2, 9]` Where does ivacaftor bind?
+
+::: {.options}
+- a) in a nucleotide-binding domain, next to ATP
+- b) in the transmembrane region, where protein meets lipid
+- c) on the extracellular loops
+- d) in the R domain
+:::
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**b)** Ivacaftor binds inside the membrane-spanning part, at the protein–lipid interface. It is a potentiator: it holds the gate open longer. The structure was solved by cryo-electron microscopy at 3.3 Å.
+:::
+
+### A3. Read a prediction's confidence
+
+Open the AlphaFold model of CFTR: [AF-P13569](https://alphafold.ebi.ac.uk/entry/P13569). The colours show **pLDDT**, the model's confidence per residue: blue is confident, orange is very low.
+
+**T3.** `[ELO 2]` **[VG]** Which part of CFTR is mostly orange?
+
+::: {.options}
+- a) the first transmembrane domain (residues 81–365)
+- b) the first nucleotide-binding domain (423–646)
+- c) the regulatory R region (654–831)
+- d) the second transmembrane domain (859–1155)
+:::
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**c)** The R region (mean pLDDT about 33). UniProt annotates it as "Disordered R region": it has no single fixed fold, so AlphaFold cannot place it with confidence. Low pLDDT means low confidence, not a measured movement.
+:::
+
+### A4. Look up the common cystic fibrosis variant
+
+Open ClinVar record [7105](https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/), CFTR p.Phe508del (F508del).
+
+**T4.** `[ELO 9]` What is its **Germline classification**?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**Pathogenic**, for cystic fibrosis. F508del CFTR misfolds and is removed in the ER, so few channels reach the membrane. That is why patients get correctors (more channels arrive) together with ivacaftor (each channel opens more).
+:::
+
+### A5. Check how fat-loving the drug is
+
+Open ivacaftor in PubChem: [CID 16220172](https://pubchem.ncbi.nlm.nih.gov/compound/16220172). Under **Chemical and Physical Properties → Computed Properties**, find **XLogP3-AA**. A positive value means the molecule prefers lipid to water.
+
+**T5.** `[ELO 2, 9]` What is ivacaftor's XLogP3-AA?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**5.6.** Strongly lipophilic, which fits a binding site inside the bilayer (T2).
+:::
+
+## Part B: in R
+
+Install the packages once in the R console:
 
 ```r
-install.packages(c("rmarkdown", "knitr", "ggplot2", "jsonlite"))
+install.packages(c("rmarkdown", "ggplot2", "jsonlite"))
 ```
 
-If R Markdown is new, read the [five-minute introduction](../bioinfo-protein-atlas/report.qmd#r-markdown-in-five-minutes).
+Download the [R Markdown template](bioinfo-membrane-proteins.Rmd) into a new folder. Optional, for working offline: put the [GTEx copy](data/gtex-medians-2026-11-18.csv) and the [UniProt copy](data/uniprot-features-2026-11-18.csv) in a `data` subfolder and set `use_snapshot <- TRUE`.
 
-Download the [student report](bioinfo-membrane-proteins.Rmd) and put it in a new folder. Create a `data` subfolder and save these files there, keeping their names:
+*Data: GTEx v8 public tissue medians and UniProtKB release 2026_04 (CC BY 4.0), retrieved 2026-11-18.*
 
-- [UniProt membrane features](data/uniprot-features-2026-11-18.csv).
-- [GTEx tissue medians](data/gtex-medians-2026-11-18.csv).
-- [UniProt provenance](data/uniprot-provenance.json) and [GTEx provenance](data/gtex-provenance.json).
+New to R Markdown? Read [the five-minute introduction](../bioinfo-protein-atlas/index.qmd#r-markdown-in-five-minutes) from day 1. Knit the template once untouched. All fetching code is given; the three blanks (`___`) show errors until you fill them.
 
-The report can fetch current data; set `use_snapshot <- TRUE` to work from these saved datasets without internet access. Browser activities still need the websites. A failed API request falls back to the supplied snapshot and records that choice in the report.
+### B1. Where are SGLT1 and SGLT2 made?
 
-## Sources
+The template fetches GTEx RNA levels (TPM) of *SLC5A1* (SGLT1, gut) and *SLC5A2* (SGLT2, kidney) in every tissue.
 
-UniProtKB release 2026_04 and GTEx v8 data were downloaded on 2026-11-18. Links to source records and interpretation tasks are on the browser page; API addresses and data provenance are on the report page. [Data credits](../credits.qmd#bioinfo-membrane-proteins).
+- **Blank 1:** set `min_tpm <- 10`. The chunk then prints `9`: nine tissues pass.
+- **Blank 2:** complete `aes()`: map `median_tpm` to `x`, `tissue` to `y` and `gene` to `colour`. You get one row per tissue with two coloured dots.
+
+**T6.** `[ELO 2, 9]` In which tissue is *SLC5A2* (SGLT2) highest?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**Kidney cortex** (about 36 TPM). SGLT2 takes glucose back from the urine in the proximal tubule; gliflozin drugs block it, so glucose leaves in the urine. *SLC5A1* is instead highest in the small intestine (about 98 TPM).
+:::
+
+### B2. How many times do eight membrane proteins cross the membrane?
+
+The template fetches the transmembrane segments of eight proteins from the transport lectures (pump, carriers, channels) and counts them.
+
+- **Blank 3:** map `y` to the column with the counts (its name is in the printed table). You get eight bars, longest at the top.
+
+**T7.** `[ELO 2]` Which protein has exactly 10 transmembrane segments?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**ATP1A1**, the α subunit of the Na⁺/K⁺ pump. CFTR, ABCB1 and GLUT1 (SLC2A1) have 12; both SGLTs have 14; AQP1 and KCNA1 have 6.
+:::
+
+## Hand in
+
+- The knitted HTML with your name in the header.
+- No errors left: all three blanks filled.
+- Two plots: the tissue dot plot and the transmembrane bar chart.
+- Your answers to T1–T7.

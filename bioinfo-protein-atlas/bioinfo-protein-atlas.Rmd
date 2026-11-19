@@ -1,64 +1,38 @@
 ---
 title: "Where does a protein live?"
-subtitle: "A first bioinformatics report, Cell Biology (3MB001)"
+subtitle: "Bioinformatics day 1, Cell Biology (3MB001)"
 author: "Your name"
 date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: true
+output: html_document
 ---
 
 ```{r setup, include = FALSE}
-# This chunk runs first, every time you knit. It is hidden in the report
-# (include = FALSE). Do not change it, except use_snapshot (see below).
+# Runs first every time you knit. Hidden in the report (include = FALSE).
 library(ggplot2)
-
-# Tell web services who is asking (polite, and some services require it).
 options(HTTPUserAgent = "3MB001-course")
 
-# error = TRUE: the report still knits when a chunk fails, and the error
-# message appears in the HTML. Before you hand in, there must be no errors left.
+# error = TRUE: the report still knits when a chunk fails, and the error is
+# shown in the HTML. At hand-in there must be no errors left.
 knitr::opts_chunk$set(error = TRUE)
 
-# If UniProt is down, set this to TRUE: the report then reads the course's
-# saved copy of the data (a snapshot) instead of asking UniProt.
+# If UniProt is down, set this to TRUE to use the course's saved copy.
 use_snapshot <- FALSE
 ```
 
-This report has three kinds of content. **Text** (like this paragraph) is written
-in Markdown. **Code chunks** (the grey boxes between three backticks) run R code
-when you knit. **Inline R** inside text (a backtick, the letter `r`, a space, an R
-expression and a backtick) is replaced by its value. Today is a good example:
-this report was knitted on `r Sys.Date()`.
+You only change the three places marked `___` (blanks 1–3). All other code is
+given. Knit after each blank and look at the HTML.
 
-# Part A: notes from the browser
+# The proteins
 
-Fill in the table as you work through Part A on the course page. Replace each
-`...` with your answer. (This is plain Markdown: no R needed.)
+Thirteen human proteins: organelle markers from Part A and a few famous proteins
+from the lectures. The compartment is where each protein mainly works.
 
-| Gene | UniProt accession | Location in UniProt | Main location in HPA | HPA reliability |
-|---|---|---|---|---|
-| CANX | ... | ... | ... | ... |
-| TOMM20 | ... | ... | ... | ... |
-| GOLGA2 | ... | ... | ... | ... |
-| LMNB1 | ... | ... | ... | ... |
-| CAT | ... | ... | ... | ... |
-| LAMP1 | ... | ... | ... | ... |
-
-**INS in the HPA single-cell section:** ...
-
-**HeLa (CVCL_0030) in Cellosaurus:** species ..., disease ..., virus ...
-
-# Part B: protein sizes from UniProt
-
-## The proteins
-
-Thirteen human proteins: the organelle markers from Part A, plus a few famous
-proteins from the lectures. The compartment is where each protein mainly works.
+**Blank 1:** calnexin's accession is missing. Replace `___` with the UniProt
+accession of calnexin from Part A, in quotes (like the others).
 
 ```{r proteins}
 markers <- data.frame(
-  accession = c("P27824", "Q15388", "P11279", "Q08379", "P20700", "P04040",
+  accession = c(___, "Q15388", "P11279", "Q08379", "P20700", "P04040",
                 "P05023", "P13569", "P60709", "P07437", "Q8WZ42", "P62805",
                 "P04406"),
   label = c("Calnexin (CANX)", "TOM20 (TOMM20)", "LAMP1", "GM130 (GOLGA2)",
@@ -73,23 +47,12 @@ markers <- data.frame(
 markers
 ```
 
-## Fetch the data (your chunk 1)
+# Fetch length and mass from UniProt
 
-Build the UniProt address as a character string called `uniprot_url`, then read
-it into a data frame called `proteins` with `read.delim(uniprot_url)`. The course
-page (step B2) gives the three pieces of the address.
+This chunk is given. It asks the UniProt REST API for a table (tab-separated)
+of the 13 proteins, or reads the course's saved copy if `use_snapshot` is `TRUE`.
 
-```{r uniprot-fetch, eval = !use_snapshot}
-# Your code here: create `uniprot_url`, then `proteins`.
-
-```
-
-The next chunk is given. It saves a dated copy of what UniProt returned (or reads
-the course snapshot), notes the UniProt release, and adds a column with the mass
-in kDa.
-
-```{r uniprot-record}
-data_source <- "not fetched yet"
+```{r fetch}
 uniprot_release <- "unknown"
 retrieved <- "not yet"
 
@@ -99,68 +62,70 @@ if (use_snapshot) {
     snapshot_file <- paste0("https://henriksson-lab.github.io/course_cellbiology/",
                             "bioinfo-protein-atlas/data/uniprot-proteins-2026-11-18.csv")
   }
-  proteins <- read.csv(snapshot_file)
-  data_source <- paste("course snapshot", snapshot_file)
-  uniprot_release <- "2026_04"
+  uniprot <- read.csv(snapshot_file)
+  uniprot_release <- "2026_04 (course snapshot)"
   retrieved <- "2026-11-18"
-} else if (exists("proteins")) {
-  dir.create("data", showWarnings = FALSE)
-  write.csv(proteins, file.path("data", paste0("uniprot-proteins-", Sys.Date(), ".csv")),
-            row.names = FALSE)
-  data_source <- uniprot_url
+} else {
+  uniprot_url <- paste0(
+    "https://rest.uniprot.org/uniprotkb/accessions?accessions=",
+    paste(markers$accession, collapse = ","),
+    "&fields=accession,gene_primary,protein_name,length,mass&format=tsv")
+  uniprot <- read.delim(uniprot_url)
   headers <- curlGetHeaders(uniprot_url)
   uniprot_release <- trimws(sub(".*: ", "",
     grep("^x-uniprot-release:", headers, ignore.case = TRUE, value = TRUE)))
   retrieved <- as.character(Sys.Date())
 }
+```
 
-proteins <- merge(markers, proteins, by.x = "accession", by.y = "Entry")
+This chunk is given too. It joins the UniProt table to our labels and adds the
+mass in kDa (UniProt gives daltons).
+
+```{r clean}
+proteins <- merge(markers, uniprot, by.x = "accession", by.y = "Entry")
 proteins$mass_kda <- proteins$Mass / 1000
 proteins[, c("label", "compartment", "Length", "mass_kda")]
 ```
 
-## Largest and smallest (your chunk 2)
+# Heaviest and lightest
 
-Find the largest and the smallest protein in `proteins` (by mass), and how many
-times heavier the largest is. Store them as `largest`, `smallest` and `ratio`.
-Hint: `which.max()` and `which.min()`.
+**Blank 2:** the first line finds the row of the heaviest protein with
+`which.max()`. Change `___` so that the second line finds the lightest.
 
-```{r largest-smallest}
-# Your code here
+```{r heaviest-lightest}
+ratio <- NA   # a default, so the text below knits even before the blank is filled
 
+heaviest <- proteins[which.max(proteins$mass_kda), ]
+lightest <- proteins[which.___(proteins$mass_kda), ]
+ratio <- heaviest$mass_kda / lightest$mass_kda
+
+heaviest[, c("label", "Length", "mass_kda")]
+lightest[, c("label", "Length", "mass_kda")]
 ```
 
-## Plot (your chunk 3)
+The heaviest protein is about `r round(ratio)` times heavier than the lightest.
+(This number is inline R: it is computed when you knit.)
 
-Make a dot plot with `ggplot2`: protein mass (kDa) on a **logarithmic** x axis,
-one row per protein, coloured by compartment. Give the axis a label with its unit
-and add a caption naming the data source.
+# Plot
+
+**Blank 3:** colour the dots by compartment. Replace `___` with the name of the
+column in `proteins` that holds the compartment.
 
 ```{r mass-plot, fig.width = 7, fig.height = 4.5}
-# Your code here
-
+ggplot(proteins, aes(x = mass_kda, y = reorder(label, mass_kda), colour = ___)) +
+  geom_point(size = 3) +
+  scale_x_log10() +
+  labs(x = "Protein mass (kDa, log scale)", y = NULL, colour = "Compartment",
+       caption = paste0("Data: UniProtKB release ", uniprot_release,
+                        ", retrieved ", retrieved)) +
+  theme_minimal()
 ```
-
-## What the plot shows
-
-Write two or three sentences here. Use inline R for at least one number (for
-example the ratio), so the text updates by itself if the data change.
-
-...
 
 # Data
 
-- **Source:** UniProtKB (<https://www.uniprot.org>), REST API, licence CC BY 4.0.
-- **Query:** `r data_source`
-- **UniProt release:** `r uniprot_release`
+- **Source:** UniProtKB, <https://www.uniprot.org> (CC BY 4.0), REST API.
+- **Release:** `r uniprot_release`
 - **Retrieved:** `r retrieved`
-- **Browser part:** UniProt, Human Protein Atlas (<https://www.proteinatlas.org>,
-  CC BY 4.0) and Cellosaurus (<https://www.cellosaurus.org>, CC BY 4.0), viewed on
-  ... (write the date).
-
-# Session info
-
-The R version and packages used to make this report.
 
 ```{r session-info}
 sessionInfo()

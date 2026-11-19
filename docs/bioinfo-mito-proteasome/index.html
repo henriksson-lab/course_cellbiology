@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -115,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Protein handling and organelles</li><li class="breadcrumb-item"><a href="../bioinfo-mito-proteasome/index.html">Bioinformatics: genomes inside organelles and drugs on machines</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Protein handling and organelles</li><li class="breadcrumb-item"><a href="../bioinfo-mito-proteasome/index.html">Bioinformatics: genomes inside organelles, and drugs on machines</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -683,7 +718,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-mito-proteasome/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Bioinformatics: genomes inside organelles and drugs on machines</span></a>
+ <span class="menu-text">Bioinformatics: genomes inside organelles, and drugs on machines</span></a>
   </div>
 </li>
       </ul>
@@ -840,7 +875,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-drug-targets/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: how selective is a kinase inhibitor?</span></a>
+ <span class="menu-text">Bioinformatics: how selective is imatinib?</span></a>
   </div>
 </li>
       </ul>
@@ -962,7 +997,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-cytoskeleton/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: filaments, tissues and a drug for the heart</span></a>
+ <span class="menu-text">Bioinformatics: one filament family per tissue</span></a>
   </div>
 </li>
       </ul>
@@ -1276,7 +1311,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-cancer-genomics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: read the mutations</span></a>
+ <span class="menu-text">Bioinformatics: BRAF V600E and vemurafenib</span></a>
   </div>
 </li>
       </ul>
@@ -1291,16 +1326,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-you-will-learn" id="toc-what-you-will-learn" class="nav-link active" data-scroll-target="#what-you-will-learn">What you will learn</a></li>
-  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
-  <li><a href="#sources-and-licences" id="toc-sources-and-licences" class="nav-link" data-scroll-target="#sources-and-licences">Sources and licences</a></li>
+  <li><a href="#part-a-in-the-browser" id="toc-part-a-in-the-browser" class="nav-link active" data-scroll-target="#part-a-in-the-browser">Part A: in the browser</a>
+  <ul class="collapse">
+  <li><a href="#the-mitochondrial-genome" id="toc-the-mitochondrial-genome" class="nav-link" data-scroll-target="#the-mitochondrial-genome">The mitochondrial genome</a></li>
+  <li><a href="#made-in-the-cytosol-imported" id="toc-made-in-the-cytosol-imported" class="nav-link" data-scroll-target="#made-in-the-cytosol-imported">Made in the cytosol, imported</a></li>
+  <li><a href="#a-drug-in-the-proteasome" id="toc-a-drug-in-the-proteasome" class="nav-link" data-scroll-target="#a-drug-in-the-proteasome">A drug in the proteasome</a></li>
+  <li><a href="#a-silent-change-that-is-not-silent" id="toc-a-silent-change-that-is-not-silent" class="nav-link" data-scroll-target="#a-silent-change-that-is-not-silent">A silent change that is not silent</a></li>
+  </ul></li>
+  <li><a href="#part-b-in-r" id="toc-part-b-in-r" class="nav-link" data-scroll-target="#part-b-in-r">Part B: in R</a></li>
+  <li><a href="#hand-in" id="toc-hand-in" class="nav-link" data-scroll-target="#hand-in">Hand-in</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Protein handling and organelles</li><li class="breadcrumb-item"><a href="../bioinfo-mito-proteasome/index.html">Bioinformatics: genomes inside organelles and drugs on machines</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Protein handling and organelles</li><li class="breadcrumb-item"><a href="../bioinfo-mito-proteasome/index.html">Bioinformatics: genomes inside organelles, and drugs on machines</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Bioinformatics: genomes inside organelles, and drugs on machines</h1>
 </div>
@@ -1319,33 +1360,197 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-you-will-learn" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-will-learn">What you will learn</h2>
-<p>How much of a mitochondrion is encoded by its own genome? How does a drug stop a protein machine? You will read mitochondrial genome annotations, inspect a drug in the proteasome and connect a synonymous DNA variant to faulty RNA processing.</p>
-<p>Builds on <a href="../protein-lifecycle/lec.html">protein life and death</a>, <a href="../mitochondria/lec.html">mitochondria</a> and <a href="../organelles-homeostasis/lec.html">organelles and homeostasis</a>. <code>[ELO 4, 5, 9]</code></p>
-<p>Work through two short pages:</p>
-<ol type="1">
-<li><a href="../bioinfo-mito-proteasome/browser.html">Database investigation</a>: NCBI, UniProt, PDB, ChEMBL and ClinVar.</li>
-<li><a href="../bioinfo-mito-proteasome/report.html">R Markdown report</a>: plot a mitochondrial genome map, count annotations and explain the result.</li>
-</ol>
-<p>Allow about 1.5 h for the browser investigation and 1.5–2 h for the report. No accounts are needed.</p>
+<p><strong>Goal:</strong> find out how little of a mitochondrion its own genome encodes, see where a cancer drug sits in the proteasome, and see how a “silent” DNA change causes progeria.</p>
+<p>Builds on <a href="../protein-lifecycle/lec.html">protein life and death</a>, <a href="../mitochondria/lec.html">mitochondria</a> and <a href="../organelles-homeostasis/lec.html">organelles and homeostasis</a>. About 2 hours.</p>
+<section id="part-a-in-the-browser" class="level2">
+<h2 class="anchored" data-anchor-id="part-a-in-the-browser">Part A: in the browser</h2>
+<section id="the-mitochondrial-genome" class="level3">
+<h3 class="anchored" data-anchor-id="the-mitochondrial-genome">The mitochondrial genome</h3>
+<p>Open <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_012920.1">NC_012920.1</a>, the human mitochondrial reference genome at NCBI. The first line (<strong>LOCUS</strong>) gives its length.</p>
+<p><strong>A1.</strong> How long is the human mitochondrial genome, in base pairs? <code>[ELO 5]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>16 569 bp</strong>, a circle (LOCUS says <code>circular</code>). It carries 37 genes: 13 for proteins, 22 tRNAs and 2 rRNAs.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="before-you-start" class="level2">
-<h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
-<p>Download these files into one folder, keeping the CSV files in a subfolder called <code>data</code>:</p>
+<section id="made-in-the-cytosol-imported" class="level3">
+<h3 class="anchored" data-anchor-id="made-in-the-cytosol-imported">Made in the cytosol, imported</h3>
+<p>Open two UniProt entries for subunits of the same machine, the ATP synthase:</p>
 <ul>
-<li><a href="bioinfo-mito-proteasome.Rmd">Report template</a>.</li>
-<li><a href="fetch-data.R">Provided data-fetching and feature-table helper</a>.</li>
-<li><a href="data/mtdna-features-2026-11-18.csv">Mitochondrial gene snapshot</a>.</li>
-<li><a href="data/uniprot-mitochondria-2026-11-18.csv">UniProt mitochondrial protein snapshot</a>.</li>
-<li><a href="data/uniprot-mitochondria-2026-11-18.csv.release.txt">UniProt release metadata</a>, also saved in <code>data/</code>.</li>
-<li>Optional: <a href="data/NC_012920.1-2026-11-18.txt">original NCBI feature table</a>.</li>
+<li><a href="https://www.uniprot.org/uniprotkb/P25705/entry">P25705</a> (ATP5F1A, subunit alpha)</li>
+<li><a href="https://www.uniprot.org/uniprotkb/P00846/entry">P00846</a> (MT-ATP6, subunit a)</li>
 </ul>
-<p>In R, install missing packages once: <code>install.packages(c("rmarkdown", "ggplot2", "rentrez"))</code>. Open the template in RStudio and click <strong>Knit</strong>, or use <code>rmarkdown::render("bioinfo-mito-proteasome.Rmd")</code>. Set <code>use_snapshot &lt;- TRUE</code> to work offline after downloading the files. Package installation needs internet; knitting in snapshot mode does not.</p>
+<p>In each, look under <strong>PTM/Processing</strong> for a <strong>Transit peptide</strong>. Under <strong>Names &amp; Taxonomy</strong>, P00846 also says <strong>Encoded in: Mitochondrion</strong>.</p>
+<p><strong>A2.</strong> Which of the two has a mitochondrial transit peptide, and which residues does it span? <code>[ELO 4, 5]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>P25705 (ATP5F1A), residues 1–43.</strong> It is encoded in the nucleus, made on cytosolic ribosomes and imported through TOM/TIM; the transit peptide is then cut off. MT-ATP6 is encoded in mtDNA and made in the matrix, so it needs no transit peptide.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="sources-and-licences" class="level2">
-<h2 class="anchored" data-anchor-id="sources-and-licences">Sources and licences</h2>
-<p>The snapshots were fetched on 2026-11-18 from <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_012920.1">NCBI RefSeq NC_012920.1</a> and <a href="https://www.uniprot.org">UniProtKB</a>, release 2026_04. NCBI records are available for unrestricted reuse under <a href="https://www.ncbi.nlm.nih.gov/home/about/policies/">NCBI’s policy</a>; UniProt data are <a href="https://www.uniprot.org/help/license">CC BY 4.0</a>. The gene map is drawn from annotations, not experimental expression data. External structures are viewed on the PDB website. <a href="../credits.html#bioinfo-mito-proteasome">Full data credits</a>.</p>
+<section id="a-drug-in-the-proteasome" class="level3">
+<h3 class="anchored" data-anchor-id="a-drug-in-the-proteasome">A drug in the proteasome</h3>
+<p>Open <a href="https://www.rcsb.org/structure/5LF3">PDB 5LF3</a>, the human 20S proteasome with bortezomib. Under <strong>Small Molecules</strong>, find the row for <strong>BO2</strong> (bortezomib). Its chains are written like <code>JB [auth K]</code>: the letter after <code>auth</code> is the protein chain. Look up those letters under <strong>Macromolecules</strong>.</p>
+<p><strong>A3.</strong> Bortezomib is bound to which proteasome subunits? <code>[ELO 4, 9]</code></p>
+<ol type="a">
+<li>Alpha type-1, -2 and -3</li>
+<li>Beta type-5, -6 and -7</li>
+<li>Beta type-5 only</li>
+<li>Beta type-1, -2 and -3</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>b) Beta type-5, -6 and -7</strong> (genes PSMB5, PSMB6, PSMB7). These are the three catalytic subunits, also called β5, β1 and β2. At the high concentration in a crystal the drug fills all three active sites. In patients it mainly blocks <strong>β5</strong> (PSMB5), the site from the lecture.</p>
+</div>
+</div>
+</div>
+<p>Now open bortezomib in ChEMBL, <a href="https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL325041">CHEMBL325041</a>, and read <strong>Max Phase</strong> at the top.</p>
+<p><strong>A4.</strong> What is bortezomib’s maximum development phase? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Phase 4: approved.</strong> Bortezomib has been used against multiple myeloma since 2003. Mechanism of action in ChEMBL: 26S proteasome inhibitor.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="a-silent-change-that-is-not-silent" class="level3">
+<h3 class="anchored" data-anchor-id="a-silent-change-that-is-not-silent">A silent change that is not silent</h3>
+<p>Open ClinVar variant <a href="https://www.ncbi.nlm.nih.gov/clinvar/variation/14500/">14500</a>, LMNA c.1824C&gt;T (p.Gly608=). Note the classification (<strong>Pathogenic</strong>) and the condition <strong>Hutchinson–Gilford syndrome</strong> (progeria). <code>p.Gly608=</code> means codon 608 still codes for glycine.</p>
+<p><strong>A5. [VG]</strong> How does this variant cause progeria? <code>[ELO 4, 9]</code></p>
+<ol type="a">
+<li>It changes glycine 608 into another amino acid.</li>
+<li>It creates a stop codon, so no lamin A is made.</li>
+<li>It activates a hidden splice site; 50 amino acids are lost, including the cleavage site, so the protein keeps its farnesyl lipid.</li>
+<li>It lowers transcription of the LMNA gene.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>c.</strong> The new splice site removes 150 nucleotides from the mRNA. The protein, progerin, lacks the site where ZMPSTE24 cuts off the farnesylated tail. It stays stuck to the inner nuclear membrane and deforms the lamina. Lonafarnib, which blocks farnesylation, is the approved treatment.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="part-b-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="part-b-in-r">Part B: in R</h2>
+<p>Download the <a href="bioinfo-mito-proteasome.Rmd">R Markdown template</a> and the two data files into a subfolder <code>data/</code>:</p>
+<ul>
+<li><a href="data/mtdna-features-2026-11-18.csv">mtdna-features-2026-11-18.csv</a></li>
+<li><a href="data/uniprot-mitochondria-2026-11-18.csv">uniprot-mitochondria-2026-11-18.csv</a></li>
+</ul>
+<p>Data: NCBI RefSeq NC_012920.1 (public domain) and UniProtKB 2026_04 (CC BY 4.0), retrieved 2026-11-18.</p>
+<p>Install once: <code>install.packages(c("rmarkdown", "ggplot2"))</code>. Open the template in RStudio and click <strong>Knit</strong>. If NCBI or UniProt is down, set <code>use_snapshot &lt;- TRUE</code>.</p>
+<p>The template already downloads the mitochondrial genes and the UniProt list of mitochondrial proteins, and draws an example bar chart of genes by type:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(genes, <span class="fu">aes</span>(<span class="at">x =</span> type)) <span class="sc">+</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Gene type"</span>, <span class="at">y =</span> <span class="st">"Number of genes"</span>, <span class="at">title =</span> <span class="st">"Genes in human mtDNA"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In section 4 you complete a similar plot of the protein-coding genes per respiratory complex. Fill three blanks <code>___</code>:</p>
+<ol type="1">
+<li>the gene type that codes for proteins: one of the bars in the example plot, in quotes;</li>
+<li>the column that holds the respiratory complex (see the <code>head(genes)</code> printout);</li>
+<li>an x-axis label, in quotes.</li>
+</ol>
+<p>While a blank is empty, the chunk shows an <code>unexpected input</code> error. With all three filled, knit again: you should see four bars, labelled I, III, IV and V.</p>
+<p><strong>B1.</strong> Which respiratory complex has the most subunits encoded in mtDNA, and how many? <code>[ELO 5]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Complex I, 7 subunits</strong> (ND1–ND6 and ND4L). Then IV: 3, V: 2, III: 1. Complex II has no bar: all its subunits are encoded in the nucleus.</p>
+</div>
+</div>
+</div>
+<p><strong>B2.</strong> Section 2 of your report prints the share of mitochondrial proteins encoded in mtDNA (<code>percent_mtdna</code>). Which is closest? <code>[ELO 5]</code></p>
+<ol type="a">
+<li>about 1 %</li>
+<li>about 10 %</li>
+<li>about 50 %</li>
+<li>about 90 %</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>a) about 1 %</strong> (13 of 1 374 proteins in the 2026-11-18 data, 0.9 %). The other 99 % are made in the cytosol and imported, like ATP5F1A in A2. This is why mutations in nuclear genes can cause mitochondrial disease.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="hand-in" class="level2">
+<h2 class="anchored" data-anchor-id="hand-in">Hand-in</h2>
+<ul>
+<li>Answers to A1–A5 and B1–B2.</li>
+<li>The knitted HTML with your name, the filled-in plot with four bars, and no errors.</li>
+</ul>
 
 
 </section>

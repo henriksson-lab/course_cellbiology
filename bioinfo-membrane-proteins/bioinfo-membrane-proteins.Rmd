@@ -1,208 +1,134 @@
 ---
-title: "Membrane proteins, tissues and drugs"
+title: "Membrane proteins: tissues and topology"
 author: "Your name"
 date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: true
+output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
+# Everything in this chunk is given. Do not change it.
 library(ggplot2)
-library(knitr)
+library(jsonlite)
 options(HTTPUserAgent = "3MB001-course", timeout = 60)
-knitr::opts_chunk$set(error = FALSE, message = FALSE, warning = TRUE)
-use_snapshot <- FALSE
-snapshot_date <- "2026-11-18"
-dir.create("data", showWarnings = FALSE)
-provenance <- data.frame(dataset = character(), mode = character(),
-                         retrieved = character(), version = character())
+knitr::opts_chunk$set(error = TRUE, message = FALSE)
 
-# Daily cache includes provenance. Failures use the named snapshot, never
-# unlabelled made-up data. Missing or malformed snapshots stop the report.
-load_data <- function(name, snapshot, fetch_fun, snapshot_version,
-                      snapshot_read = function(path) {
-                        read.csv(path, check.names = FALSE, stringsAsFactors = FALSE,
-                                 na.strings = character())
-                      }) {
-  cache <- file.path("data", paste0(name, "-", Sys.Date(), ".rds"))
-  if (use_snapshot) {
-    obj <- list(data = snapshot_read(snapshot), mode = "course snapshot",
-                retrieved = snapshot_date, version = snapshot_version)
-  } else if (file.exists(cache)) {
-    obj <- readRDS(cache)
-    obj$mode <- paste("cached", obj$mode)
-  } else {
-    obj <- tryCatch({
-      value <- fetch_fun()
-      version <- attr(value, "source_version")
-      if (is.null(version)) version <- "not reported"
-      result <- list(data = value, mode = "live API", retrieved = as.character(Sys.Date()),
-                     version = version)
-      saveRDS(result, cache)
-      result
-    }, error = function(e) {
-      warning(paste("API unavailable:", conditionMessage(e), "Using course snapshot."))
-      list(data = snapshot_read(snapshot), mode = "fallback snapshot",
-           retrieved = snapshot_date, version = snapshot_version)
-    })
-  }
-  provenance <<- rbind(provenance, data.frame(dataset = name, mode = obj$mode,
-                         retrieved = obj$retrieved, version = obj$version))
-  obj$data
+# Set to TRUE if an API is down: the report then uses the course copies.
+use_snapshot <- FALSE
+
+# Read a course copy: from your data/ folder, or else from the course site.
+read_snapshot <- function(file) {
+  local_file <- file.path("data", file)
+  if (file.exists(local_file)) return(read.csv(local_file, check.names = FALSE))
+  read.csv(paste0("https://henriksson-lab.github.io/course_cellbiology/",
+                  "bioinfo-membrane-proteins/data/", file), check.names = FALSE)
 }
-uniprot_release <- function(url) {
-  headers <- tryCatch(curlGetHeaders(url), error = function(e) character())
-  h <- headers[grepl("^x-uniprot-release:", headers, ignore.case = TRUE)]
-  if (length(h)) trimws(sub("^[^:]+:", "", tail(h, 1))) else "not reported"
-}
-count_feature <- function(x, token) {
-  vapply(gregexpr(token, x, fixed = TRUE), function(pos) sum(pos > 0), integer(1))
-}
+
+# Where the data came from (filled in below).
+gtex_source <- "GTEx v8, course copy retrieved 2026-11-18"
+uniprot_source <- "UniProtKB, course copy retrieved 2026-11-18"
 ```
 
-# Part A: browser notes
+# 1. Where are the glucose transporters expressed?
 
-Replace the dots with your observations. Record accession/record identifiers and
-access dates. See the course browser page for each task.
-
-| Task | Observation | Identifier and access date |
-|---|---|---|
-| T1: three topology counts | ... | ... |
-| T2: ivacaftor location | ... | ... |
-| T3: confidence versus measurement | ... | ... |
-| T4: F508del and ER quality control | ... | ... |
-| T5: molecular weight and XLogP | ... | ... |
-
-# Data: GTEx tissue expression
-
-The code makes four small requests: a reference lookup and an expression query
-for each gene. Inspect `jsonlite::fromJSON()` on one URL to see how JSON maps to
-an R list. The query pins GTEx v8 and resolves each versioned GENCODE identifier.
+SGLT1 (gene *SLC5A1*) and SGLT2 (gene *SLC5A2*) both move glucose with sodium.
+This chunk asks the GTEx API for the median RNA level of each gene in every
+tissue (unit: transcripts per million, TPM). It is given.
 
 ```{r fetch-gtex}
-library(jsonlite)
 gtex_base <- "https://gtexportal.org/api/v2/"
-gtex_dataset <- "gtex_v8"
-fetch_gtex <- function() {
-  result <- lapply(c("SLC5A1", "SLC5A2"), function(gene) {
-    gene_url <- paste0(gtex_base, "reference/gene?geneId=", gene,
-                       "&datasetId=", gtex_dataset)
-    reference <- jsonlite::fromJSON(gene_url)
-    genes <- reference$data
-    hit <- genes[genes$geneSymbol == gene, , drop = FALSE]
-    stopifnot(nrow(hit) == 1)
-    gene_id <- hit$gencodeId[1]
-    expression_url <- paste0(gtex_base, "expression/medianGeneExpression?gencodeId=",
-                              gene_id, "&datasetId=", gtex_dataset)
-    response <- jsonlite::fromJSON(expression_url)
-    # Never silently analyse only the first page.
-    if (!is.null(response$paging_info$numberOfPages) &&
-        response$paging_info$numberOfPages > 1) stop("GTEx response needs pagination")
-    x <- response$data
-    stopifnot(nrow(x) > 0, all(x$unit == "TPM"))
-    data.frame(gene = gene, gencode_id = gene_id,
-               tissue = x$tissueSiteDetailId, median_tpm = x$median)
-  })
-  value <- do.call(rbind, result)
-  attr(value, "source_version") <- gtex_dataset
-  value
+
+fetch_gtex_gene <- function(gene) {
+  # 1. Look up the gene's GENCODE ID used by GTEx v8.
+  ref <- fromJSON(paste0(gtex_base, "reference/gene?geneId=", gene,
+                         "&datasetId=gtex_v8"))$data
+  gencode_id <- ref$gencodeId[ref$geneSymbol == gene][1]
+  # 2. Fetch the median expression in every tissue.
+  x <- fromJSON(paste0(gtex_base, "expression/medianGeneExpression?gencodeId=",
+                       gencode_id, "&datasetId=gtex_v8"))$data
+  data.frame(gene = gene, gencode_id = gencode_id,
+             tissue = x$tissueSiteDetailId, median_tpm = x$median)
 }
-expression <- load_data("gtex-medians", "data/gtex-medians-2026-11-18.csv",
-                        fetch_gtex, "gtex_v8")
-stopifnot(all(c("gene", "gencode_id", "tissue", "median_tpm") %in% names(expression)),
-          setequal(unique(expression$gene), c("SLC5A1", "SLC5A2")),
-          !anyDuplicated(expression[c("gene", "tissue")]),
-          all(is.finite(expression$median_tpm)), all(expression$median_tpm >= 0))
+
+if (use_snapshot) {
+  expression <- read_snapshot("gtex-medians-2026-11-18.csv")
+} else {
+  expression <- tryCatch({
+    live <- rbind(fetch_gtex_gene("SLC5A1"), fetch_gtex_gene("SLC5A2"))
+    gtex_source <- paste("GTEx v8 API, retrieved", Sys.Date())
+    live
+  }, error = function(e) read_snapshot("gtex-medians-2026-11-18.csv"))
+}
+
+expression$tissue <- gsub("_", " ", expression$tissue)
 head(expression)
 ```
 
-## Plot tissue expression
-
-Only include tissues with a median above 10 TPM for either gene. These data are
-tissue medians of RNA abundance, not per-cell protein measurements.
+**Blank 1.** Keep only tissues where at least one of the two genes has a
+median above `min_tpm`. Replace `___` with the value given on the course page.
 
 ```{r select-tissues}
-plot_tissues <- unique(expression$tissue[expression$median_tpm > 10])
-plot_expression <- expression[expression$tissue %in% plot_tissues, ]
+min_tpm <- ___
+plot_tissues <- unique(expression$tissue[expression$median_tpm > min_tpm])
+plot_data <- expression[expression$tissue %in% plot_tissues, ]
+length(plot_tissues)
 ```
 
-```{r expression-plot, fig.width=8, fig.height=6}
-# TODO: ggplot plot_expression; x=tissue, y=median_tpm, colour=gene.
-# Add geom_point(position=position_dodge(width=0.5)), coord_flip(), labels.
+**Blank 2.** Fill in the `aes()` mapping: put `median_tpm` on the x axis,
+`tissue` on the y axis and colour the points by `gene`.
+
+```{r expression-plot, fig.width = 8, fig.height = 5}
+ggplot(plot_data, aes(x = ___, y = ___, colour = ___)) +
+  geom_point(size = 3) +
+  labs(x = "Median RNA level (TPM)", y = NULL, colour = "Gene",
+       caption = paste("Source:", gtex_source)) +
+  theme_minimal()
 ```
 
-```{r highest-tissue}
-# TODO: split expression by gene; find the row with the largest median_tpm.
-```
+# 2. How many times does each protein cross the membrane?
 
-**T6 interpretation:** ... Explain renal glucose reabsorption and one limitation
-of bulk-tissue RNA. Add an inline R value to your paragraph.
-
-# Data: UniProt membrane features
-
-This single query returns eight proteins. API feature names differ from the
-column labels in the response. `check.names = FALSE` preserves those labels.
+This chunk fetches the annotated transmembrane segments of eight membrane
+proteins from UniProt and counts them. It is given.
 
 ```{r fetch-uniprot}
-accessions <- c("P05023", "P11166", "P13866", "P31639", "P08183", "P13569",
-                "P29972", "Q09470")
+accessions <- c("P05023", "P11166", "P13866", "P31639",
+                "P08183", "P13569", "P29972", "Q09470")
 uniprot_url <- paste0("https://rest.uniprot.org/uniprotkb/accessions?accessions=",
-  paste(accessions, collapse = ","),
-  "&fields=accession,gene_primary,ft_transmem,ft_topo_dom,length&format=tsv")
-fetch_uniprot <- function() {
-  x <- read.delim(uniprot_url, check.names = FALSE, stringsAsFactors = FALSE,
-                  na.strings = character(), quote = "")
-  stopifnot(setequal(x$Entry, accessions))
-  attr(x, "source_version") <- uniprot_release(uniprot_url)
-  x
+                      paste(accessions, collapse = ","),
+                      "&fields=accession,gene_primary,ft_transmem,length&format=tsv")
+
+if (use_snapshot) {
+  proteins <- read_snapshot("uniprot-features-2026-11-18.csv")
+} else {
+  proteins <- tryCatch({
+    live <- read.delim(uniprot_url, check.names = FALSE, quote = "")
+    uniprot_source <- paste("UniProtKB REST API, retrieved", Sys.Date())
+    live
+  }, error = function(e) read_snapshot("uniprot-features-2026-11-18.csv"))
 }
-proteins <- load_data("uniprot-features", "data/uniprot-features-2026-11-18.csv",
-                      fetch_uniprot, "UniProtKB 2026_04")
-stopifnot(setequal(proteins$Entry, accessions),
-          all(c("Gene Names (primary)", "Transmembrane") %in% names(proteins)))
+
 proteins$gene <- proteins[["Gene Names (primary)"]]
-head(proteins[c("Entry", "gene", "Length")])
+# Each segment starts with the word "TRANSMEM"; count them.
+proteins$tm_count <- lengths(regmatches(proteins$Transmembrane,
+                                        gregexpr("TRANSMEM ", proteins$Transmembrane)))
+proteins[, c("Entry", "gene", "tm_count")]
 ```
 
-## Count and plot transmembrane segments
+**Blank 3.** Fill in the y axis: the column that holds the number of segments.
 
-Count `TRANSMEM ` occurrences, not semicolons (a feature has several qualifiers).
-The helper `count_feature()` shows how to handle the no-match value -1.
-
-```{r count-tm}
-# TODO: proteins$tm_count <- count_feature(proteins$Transmembrane, "TRANSMEM ")
-# Print a table of gene and tm_count.
+```{r tm-plot, fig.width = 7, fig.height = 4}
+ggplot(proteins, aes(x = reorder(gene, tm_count), y = ___)) +
+  geom_col(fill = "#207a72") +
+  coord_flip() +
+  labs(x = NULL, y = "Transmembrane segments (count)",
+       caption = paste("Source:", uniprot_source)) +
+  theme_minimal()
 ```
 
-```{r topology-plot, fig.width=8, fig.height=4}
-# TODO: make a column plot of annotated segments, with units and source caption.
-```
+# Data
 
-**Interpretation:** ... Equal segment counts do not establish equal mechanisms.
-
-# Data provenance and sources
-
-The analysis ran on `r Sys.Date()`. The table records the date the data were
-retrieved, which may differ from the knitting date. The snapshot was downloaded
-on 2026-11-18; a live request reports its own date and version. Cache files store
-this information alongside the data.
-
-```{r provenance}
-knitr::kable(provenance)
-cat("UniProt query:", uniprot_url, "\n")
-cat("GTEx reference endpoint:", paste0(gtex_base, "reference/gene"), "\n")
-cat("GTEx expression endpoint:", paste0(gtex_base, "expression/medianGeneExpression"),
-    "; dataset:", gtex_dataset, "\n")
-print(unique(expression[c("gene", "gencode_id")]))
-```
-
-UniProt data: CC BY 4.0, https://www.uniprot.org/help/license.
-GTEx public aggregate tissue expression: https://gtexportal.org/home/datasets.
-Browser records: UniProt P13569, P08183, P31639; RCSB PDB 6O2P;
-AlphaFold DB P13569; ClinVar 7105; PubChem CID 16220172.
-
-# Session information
+- `r gtex_source`.
+- `r uniprot_source`.
+- Report knitted on `r Sys.Date()`.
 
 ```{r session-info}
 sessionInfo()

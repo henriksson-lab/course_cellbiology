@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bioinformatics: how selective is a kinase inhibitor? – Cell Biology</title>
+<title>Bioinformatics: how selective is imatinib? – Cell Biology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -115,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cell signalling</li><li class="breadcrumb-item"><a href="../bioinfo-drug-targets/index.html">Bioinformatics: how selective is a kinase inhibitor?</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cell signalling</li><li class="breadcrumb-item"><a href="../bioinfo-drug-targets/index.html">Bioinformatics: how selective is imatinib?</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -683,7 +718,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-mito-proteasome/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: genomes inside organelles and drugs on machines</span></a>
+ <span class="menu-text">Bioinformatics: genomes inside organelles, and drugs on machines</span></a>
   </div>
 </li>
       </ul>
@@ -840,7 +875,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-drug-targets/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Bioinformatics: how selective is a kinase inhibitor?</span></a>
+ <span class="menu-text">Bioinformatics: how selective is imatinib?</span></a>
   </div>
 </li>
       </ul>
@@ -962,7 +997,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-cytoskeleton/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: filaments, tissues and a drug for the heart</span></a>
+ <span class="menu-text">Bioinformatics: one filament family per tissue</span></a>
   </div>
 </li>
       </ul>
@@ -1276,7 +1311,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-cancer-genomics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: read the mutations</span></a>
+ <span class="menu-text">Bioinformatics: BRAF V600E and vemurafenib</span></a>
   </div>
 </li>
       </ul>
@@ -1291,18 +1326,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-you-will-learn" id="toc-what-you-will-learn" class="nav-link active" data-scroll-target="#what-you-will-learn">What you will learn</a></li>
-  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
-  <li><a href="#sources-and-licences" id="toc-sources-and-licences" class="nav-link" data-scroll-target="#sources-and-licences">Sources and licences</a></li>
+  <li><a href="#part-a-in-the-browser" id="toc-part-a-in-the-browser" class="nav-link active" data-scroll-target="#part-a-in-the-browser">Part A: in the browser</a>
+  <ul class="collapse">
+  <li><a href="#a1.-a-gpcr-with-its-g-protein" id="toc-a1.-a-gpcr-with-its-g-protein" class="nav-link" data-scroll-target="#a1.-a-gpcr-with-its-g-protein">A1. A GPCR with its G protein</a></li>
+  <li><a href="#a2.-imatinib-in-the-abl-kinase" id="toc-a2.-imatinib-in-the-abl-kinase" class="nav-link" data-scroll-target="#a2.-imatinib-in-the-abl-kinase">A2. Imatinib in the ABL kinase</a></li>
+  <li><a href="#a3.-from-egfr-to-ras" id="toc-a3.-from-egfr-to-ras" class="nav-link" data-scroll-target="#a3.-from-egfr-to-ras">A3. From EGFR to Ras</a></li>
+  <li><a href="#a4.-drugs-against-egfr" id="toc-a4.-drugs-against-egfr" class="nav-link" data-scroll-target="#a4.-drugs-against-egfr">A4. Drugs against EGFR</a></li>
+  </ul></li>
+  <li><a href="#part-b-in-r" id="toc-part-b-in-r" class="nav-link" data-scroll-target="#part-b-in-r">Part B: in R</a></li>
+  <li><a href="#hand-in-checklist" id="toc-hand-in-checklist" class="nav-link" data-scroll-target="#hand-in-checklist">Hand-in checklist</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cell signalling</li><li class="breadcrumb-item"><a href="../bioinfo-drug-targets/index.html">Bioinformatics: how selective is a kinase inhibitor?</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cell signalling</li><li class="breadcrumb-item"><a href="../bioinfo-drug-targets/index.html">Bioinformatics: how selective is imatinib?</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Bioinformatics: how selective is a kinase inhibitor?</h1>
+<h1 class="title">Bioinformatics: how selective is imatinib?</h1>
 </div>
 
 
@@ -1319,32 +1360,163 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-you-will-learn" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-will-learn">What you will learn</h2>
-<p>A drug can act on several proteins, and a database can contain conflicting measurements. You will inspect signalling proteins in three dimensions, compare imatinib activity records and make a reproducible report that separates evidence from a simple dose–response model.</p>
-<p>Builds on <a href="../signalling-principles/lec.html">signalling principles</a>, <a href="../gpcr/lec.html">GPCRs</a>, <a href="../kinase-signalling/lec.html">kinase signalling</a> and <a href="../fate-signalling/lec.html">cell-fate signalling</a>. <code>[ELO 3, 9]</code></p>
-<ol type="1">
-<li><a href="../bioinfo-drug-targets/browser.html">Database investigation</a>: structures, pathways and target–disease evidence.</li>
-<li><a href="../bioinfo-drug-targets/report.html">R Markdown report</a>: activity distributions, illustrative inhibition curves and clinical-stage records.</li>
-</ol>
-<p>Allow about 1.5 h for the browser work and 1.5–2 h for the report. No logins or API keys are needed.</p>
+<p><strong>Goal:</strong> look at a receptor and a kinase drug in 3D, follow EGFR to Ras, and plot which kinases the drug imatinib blocks. Builds on <a href="../signalling-principles/lec.html">signalling principles</a>, <a href="../gpcr/lec.html">GPCRs</a> and <a href="../kinase-signalling/lec.html">kinase signalling</a>. About 2 hours.</p>
+<section id="part-a-in-the-browser" class="level2">
+<h2 class="anchored" data-anchor-id="part-a-in-the-browser">Part A: in the browser</h2>
+<section id="a1.-a-gpcr-with-its-g-protein" class="level3">
+<h3 class="anchored" data-anchor-id="a1.-a-gpcr-with-its-g-protein">A1. A GPCR with its G protein</h3>
+<p>Open <a href="https://www.rcsb.org/structure/3SN6">PDB 3SN6</a>, the β₂-adrenergic receptor bound to Gs. Scroll to <strong>Macromolecules</strong>: each protein has a chain letter. Then open the 3D view and colour by chain.</p>
+<p><strong>T1.</strong> Which chain letter is the Gα<sub>s</sub> subunit, and on which side of the receptor does it bind: (a) the extracellular side, (b) inside the membrane, (c) the cytoplasmic side? <code>[ELO 3]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Chain <strong>A</strong>, on the <strong>cytoplasmic side (c)</strong>. The receptor is chain R; its seven helices cross the membrane, and Gα<sub>s</sub> sits in the pocket that opens on the inside when adrenaline binds.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="before-you-start" class="level2">
-<h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
-<p>Download these files together; put the CSVs in a subfolder named <code>data</code>:</p>
+<section id="a2.-imatinib-in-the-abl-kinase" class="level3">
+<h3 class="anchored" data-anchor-id="a2.-imatinib-in-the-abl-kinase">A2. Imatinib in the ABL kinase</h3>
+<p>Open <a href="https://www.rcsb.org/structure/1IEP">PDB 1IEP</a>, the ABL kinase domain with imatinib (called STI-571 in the entry). Scroll to <strong>Small Molecules</strong>.</p>
+<p><strong>T2.</strong> What is the three-character ligand ID of imatinib in this entry? <code>[ELO 3]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>STI</strong>. In the 3D view it sits in the ATP pocket of the kinase, as in the lecture: with imatinib there, ATP cannot bind.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="a3.-from-egfr-to-ras" class="level3">
+<h3 class="anchored" data-anchor-id="a3.-from-egfr-to-ras">A3. From EGFR to Ras</h3>
+<p>Open the Reactome pathway <a href="https://reactome.org/content/detail/R-HSA-179812">GRB2 events in EGFR signaling (R-HSA-179812)</a>. Read the list of reactions it contains.</p>
+<p><strong>T3.</strong> The last reaction is a nucleotide exchange made by SOS1. Which protein gets its GDP swapped for GTP? <code>[ELO 3]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>RAS</strong>. GRB2 binds the phosphorylated receptor and brings SOS1 to the membrane, where it switches Ras on.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="a4.-drugs-against-egfr" class="level3">
+<h3 class="anchored" data-anchor-id="a4.-drugs-against-egfr">A4. Drugs against EGFR</h3>
+<p>Open <a href="https://platform.opentargets.org/target/ENSG00000146648">EGFR in Open Targets</a> and scroll to the drugs section. Each drug has a type (small molecule, antibody…); click a drug name to see its page.</p>
+<p><strong>T4.</strong> Which of these four EGFR drugs is an antibody: erlotinib, osimertinib, cetuximab or gefitinib? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Cetuximab</strong>. An antibody cannot cross the membrane, so it binds the outside of EGFR and stops ligand binding. The other three are small molecules that enter the cell and block the ATP pocket of the kinase.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="part-b-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="part-b-in-r">Part B: in R</h2>
+<p><strong>Downloads:</strong> the <a href="bioinfo-drug-targets.Rmd">R Markdown template</a> and the <a href="data/imatinib-ic50-2026-11-18.csv">snapshot of the data</a> (put it in a folder <code>data/</code> next to the template; only needed if ChEMBL is down). Data: ChEMBL 37 (CC BY-SA 3.0), retrieved 2026-11-18.</p>
+<p>Install the packages once: <code>install.packages(c("rmarkdown", "ggplot2", "jsonlite"))</code>. Open the template in RStudio and click <strong>Knit</strong>. It knits at once, with errors where the three blanks <code>___</code> are. If ChEMBL does not answer, set <code>use_snapshot &lt;- TRUE</code> in the first chunk.</p>
+<p>The template fetches every IC50 value ChEMBL has for imatinib against four kinases: ABL1, KIT, PDGFRA and SRC. IC50 is the drug concentration that halves the kinase’s activity, so a <strong>lower IC50 means a more potent drug</strong>. 1 µM = 1000 nM.</p>
+<p><strong>Blank 1</strong> (<code>strip-plot</code>). Copy the example bar chart’s pattern: put the kinase (<code>target</code>) on the x axis and the IC50 (<code>standard_value</code>) on the y axis:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(ic50, <span class="fu">aes</span>(<span class="at">x =</span> ___, <span class="at">y =</span> ___, <span class="at">colour =</span> kinase_form)) <span class="sc">+</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You should see one dot per record, on a log scale, with a dashed line at 1000 nM. Records on mutant kinases have their own colour.</p>
+<p><strong>T5.</strong> Which kinase has no record below the dashed 1 µM line? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>SRC</strong>. All its values are 5000 nM or more. Imatinib does not block every tyrosine kinase.</p>
+</div>
+</div>
+</div>
+<p><strong>Blanks 2 and 3</strong> (<code>potent</code>). Look at the two given examples, <code>data[condition, ]</code> and <code>data[order(column), ]</code>. Keep the kinases whose median IC50 is below 1 µM (blank 2: a number in nM), then sort them, lowest first (blank 3: <code>potent$median_ic50_nm</code>). The printout should be a small table of kinases.</p>
+<p><strong>T6.</strong> How many kinases are left, and which one is on top (lowest median IC50)? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Three</strong> (PDGFRA, ABL1, KIT); <strong>PDGFRA</strong> is on top, at about 70 nM. This is why imatinib works not only in chronic myeloid leukaemia (BCR-ABL) but also in gastrointestinal stromal tumours, which are driven by KIT or PDGFRA.</p>
+</div>
+</div>
+</div>
+<p><strong>T7. [VG]</strong> The last chunk (<code>mutations</code>) is given: it lists the mutations named in the mutant records and the median IC50 of the T315I records. Which mutation is most frequent, and is its median IC50 (a) below 1 µM or (b) above 1 µM? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>T315I</strong>, median <strong>10 000 nM, above 1 µM (b)</strong>: about 40 times higher than for wild-type ABL1. T315 is the gatekeeper residue at the entrance of the ATP pocket of ABL: the bigger isoleucine keeps imatinib out, and the leukaemia becomes resistant (kinase signalling lecture).</p>
+</div>
+</div>
+</div>
+</section>
+<section id="hand-in-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="hand-in-checklist">Hand-in checklist</h2>
 <ul>
-<li><a href="bioinfo-drug-targets.Rmd">Student R Markdown template</a>.</li>
-<li><a href="fetch-data.R">Provided API helper</a>.</li>
-<li><a href="data/imatinib-activities-2026-11-18.csv">Imatinib activity snapshot</a>.</li>
-<li><a href="data/clinical-candidates-2026-11-18.csv">Target–drug clinical-stage snapshot</a>.</li>
-<li><a href="data/releases-2026-11-18.csv">Database release metadata</a>.</li>
-<li>Optional: <a href="data/opentargets-query-2026-11-18.txt">the snapshot’s Open Targets GraphQL query</a>.</li>
+<li>The knitted HTML has no error messages left.</li>
+<li>The strip plot shows four kinases with a dashed line at 1000 nM.</li>
+<li>The <code>potent</code> table is sorted, lowest median first.</li>
+<li>Your answers to T1–T7.</li>
 </ul>
-<p>Install missing R packages once: <code>install.packages(c("rmarkdown", "ggplot2", "httr2"))</code>. Knit the downloaded template using RStudio or <code>rmarkdown::render("bioinfo-drug-targets.Rmd")</code>. For offline work, set <code>use_snapshot &lt;- TRUE</code>; all three CSVs must already be in <code>data/</code>.</p>
-</section>
-<section id="sources-and-licences" class="level2">
-<h2 class="anchored" data-anchor-id="sources-and-licences">Sources and licences</h2>
-<p>Data were retrieved 2026-11-18 from <a href="https://www.ebi.ac.uk/chembl/">ChEMBL</a>, release 37 (<a href="https://chembl.gitbook.io/chembl-interface-documentation/about">CC BY-SA 3.0</a>), and the <a href="https://platform.opentargets.org">Open Targets Platform</a>, release 26.09 (<a href="https://platform-docs.opentargets.org/licence">CC0</a>). The course ships selected fields and names the exact filters. No external figures are reproduced; the plots are generated from the records. <a href="../credits.html#bioinfo-drug-targets">Full data credits</a>.</p>
 
 
 </section>

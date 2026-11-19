@@ -1,5 +1,5 @@
 ---
-title: "Bioinformatics: read the mutations"
+title: "Bioinformatics: BRAF V600E and vemurafenib"
 engine: markdown
 format:
   html:
@@ -8,52 +8,139 @@ format:
 resources:
   - bioinfo-cancer-genomics.Rmd
   - data/*.csv
-  - data/*.json
 ---
 
-## What you will do
+Follow one oncogene and its drug through four databases: the mutation in tumours,
+the protein, the drug bound to it, and the trial that tested it. **ELO 9.**
 
-Compare mutation positions in an oncogene and a tumour suppressor, then write a
-short report that combines evidence from at least three databases. **ELO 8, 9.**
+Builds on [cancer](../cancer/lec.qmd), [cell death beyond apoptosis](../regulated-necrosis/lec.qmd),
+the [disease casebook](../disease-casebook/lec.qmd) and the
+[drug journey](../drug-journey/lec.qmd). About 2 hours.
 
-Builds on [cell death beyond apoptosis](../regulated-necrosis/lec.qmd),
-[cancer](../cancer/lec.qmd), the [disease casebook](../disease-casebook/lec.qmd),
-and [the drug-journey capstone](../drug-journey/lec.qmd).
-Allow about 3–4 hours for the guided activities; the independent report may need more time.
+## Part A: in the browser
 
-1. [In the browser: mutation patterns and death proteins](browser.qmd).
-2. [In R: mutation positions in melanoma](report.qmd).
-3. [Your own report: one mechanism, several sources](capstone.qmd).
+### A1. The hotspot in melanoma
 
-## Before you start
+Open the [BRAF and TP53 mutations in TCGA melanoma](https://www.cbioportal.org/results/mutations?cancer_study_list=skcm_tcga_pan_can_atlas_2018&case_set_id=skcm_tcga_pan_can_atlas_2018_all&gene_list=BRAF%20TP53)
+in cBioPortal. The **Mutations** tab opens with **BRAF** selected. Each lollipop is
+one amino-acid position; its height is the number of patients with a mutation there.
+Then click **TP53** and compare.
 
-No account is needed. Use RStudio or R with `rmarkdown`, `ggplot2`, `jsonlite` and
-`httr2` installed. Install missing packages once in the console:
+**T1.** At which amino-acid position does BRAF have by far the tallest lollipop? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**Position 600** (valine 600, label "V600E/K/R"). Most of these are **V600E**.
+TP53, in contrast, has many short lollipops spread over the protein.
+:::
+
+### A2. Where is V600 in the protein?
+
+Open [BRAF, UniProt P15056](https://www.uniprot.org/uniprotkb/P15056/entry) and go to
+the section **Family & Domains**.
+
+**T2.** Which domain contains residue 600? `[ELO 9]`
+
+a. The Ras-binding domain (RBD)
+b. The phorbol-ester/DAG-type zinc finger
+c. The protein kinase domain
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**c.** The protein kinase domain covers residues 457–717. V600E sits in the
+activation segment of the kinase and keeps BRAF active without RAS, so the
+RAF–MEK–ERK pathway from the signalling lecture stays on.
+:::
+
+### A3. The drug in the binding site
+
+Open [PDB 3OG7](https://www.rcsb.org/structure/3OG7), "B-Raf Kinase V600E oncogenic
+mutant in complex with PLX4032". PLX4032 is the development name of vemurafenib.
+Scroll to **Small Molecules**.
+
+**T3.** What is the three-character ligand ID of vemurafenib? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**032.** The structure contains only the kinase domain, with the V600E mutation:
+the drug binds the ATP pocket of the mutant kinase.
+:::
+
+### A4. The trial
+
+Open the BRIM-3 trial, [NCT01006980](https://clinicaltrials.gov/study/NCT01006980),
+and look at **Arms and Interventions**.
+
+**T4.** Which drug was vemurafenib compared with? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**Dacarbazine**, a standard chemotherapy. Only patients whose melanoma carried
+**BRAF V600E** could join: the drug is aimed at the mutant protein.
+You meet trial design again in *Kliniska prövningar och läkemedelsutveckling*.
+:::
+
+## Part B: in R
+
+Install the packages once in the console:
 
 ```r
-install.packages(c("rmarkdown", "ggplot2", "jsonlite", "httr2"))
+install.packages(c("rmarkdown", "ggplot2", "jsonlite"))
 ```
 
-Download the report and all listed snapshots. Put the report in a new folder and
-CSV/JSON files in its `data/` subfolder. Keep the filenames. If an API is unavailable,
-set `use_snapshot <- TRUE`. A snapshot is a dated copy of real records, not simulated data.
-Knitting uses a fresh R session: create every object in the report and finish with
-`sessionInfo()`. Do not include your R console history as a substitute for code.
+Download the template and the data snapshot. Put the template in a new folder and the
+CSV in a subfolder `data/`.
 
-## Downloads
+- [R Markdown template](bioinfo-cancer-genomics.Rmd)
+- [Snapshot: BRAF and TP53 mutations](data/skcm-mutations-2026-11-18.csv)
 
-- [Guided report outline](bioinfo-cancer-genomics.Rmd)
-- [BRAF and TP53 mutation records](data/skcm-mutations-2026-11-18.csv)
-- [Sample-list metadata](data/study-metadata-2026-11-18.json)
-- [Retrieval record](data/retrieval-manifest-2026-11-18.json)
+Data: cBioPortal, TCGA Skin Cutaneous Melanoma PanCancer Atlas (public TCGA data), retrieved 2026-11-18.
 
-## Sources and licences
+The **Data** chunk is complete: it reads all BRAF and TP53 mutations from the
+cBioPortal API into a table `mutations` with one row per mutation. If cBioPortal is
+down, it reads the snapshot instead (or set `use_snapshot <- TRUE`). Your job is to
+build the steps after it: **read → filter → plot**. Fill the three blanks `___`
+and knit.
 
-[cBioPortal](https://www.cbioportal.org/) API, TCGA Skin Cutaneous Melanoma,
-PanCancer Atlas 2018, study `skcm_tcga_pan_can_atlas_2018`. Public TCGA somatic calls,
-retrieved 2026-11-18. Cite the
-[cBioPortal paper](https://doi.org/10.1158/2159-8290.CD-12-0095) and the
-[TCGA PanCancer Atlas study collection](https://www.cell.com/pb-assets/consortium/pancanceratlas/pancani3/index.html).
-Retain the study identifier, sample selection and attribution with reused data.
-UniProt and HPA annotations are CC BY 4.0. No clinical identifiable data or external
-images are included.
+1. **Chunk `lollipop`:** put the column with the amino-acid position on the x axis.
+   You should see two panels, like Part A, made from your own data.
+2. **Chunk `position-600`:** build a pipeline from the three given pieces, in the
+   right order, joined by `|>`. It starts with the data, keeps only BRAF position 600,
+   then counts each protein change. It prints a small table of changes.
+3. **Chunk `mutation-types`:** colour the bars by the column that holds the
+   mutation type (look at the column names printed by the Data chunk, or run
+   `names(mutations)`). You should see one stacked bar per gene.
+
+**T5.** In your lollipop plot, compare the tallest BRAF lollipop with the tallest TP53 lollipop. `[ELO 9]`
+
+a. They are about the same height
+b. BRAF's is about 5 times taller
+c. BRAF's is about 30 times taller
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**c.** BRAF position 600 has 198 mutations; the tallest TP53 position (213) has 7.
+One position dominates BRAF; TP53 mutations are scattered.
+:::
+
+**T6.** Your `position_600` table: which change is the second most common at BRAF position 600? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**V600K** (35 mutations, after 158 V600E). Both replace valine 600 and both activate the kinase.
+:::
+
+**T7. [VG]** Your mutation-type plot: which statement fits? `[ELO 9]`
+
+a. Both genes have mostly missense mutations, so both are oncogenes
+b. TP53 has many nonsense, frameshift and splice mutations that cut the protein short;
+   BRAF has almost only missense mutations
+c. BRAF has more nonsense mutations than TP53
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**b.** BRAF: 241 of 245 are missense. TP53: 23 nonsense, 3 frameshift and 7 splice-site
+mutations among 82. An oncogene needs one precise change that turns it **on**, so the
+same position is hit again and again. A tumour suppressor is turned **off**, and many
+different changes do that, including stopping the protein early. This is why a
+drug can block BRAF V600E, but no pill can bring back a lost p53.
+:::
+
+## Hand in
+
+- The knitted HTML, with no error messages.
+- The two plots and the `position_600` table.
+- Your answers to T5–T7, one line each, in the **Answers** section of the template.

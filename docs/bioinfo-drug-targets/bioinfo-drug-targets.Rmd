@@ -1,99 +1,178 @@
 ---
-title: "How selective is a kinase inhibitor?"
-author: "YOUR NAME"
+title: "How selective is imatinib?"
+subtitle: "Bioinformatics day 5, Cell Biology (3MB001)"
+author: "Your name"
 date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: true
+output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
+# Runs first every time you knit. Hidden in the report (include = FALSE).
 library(ggplot2)
 options(HTTPUserAgent = "3MB001-course", timeout = 90)
+
+# error = TRUE: the report still knits when a chunk fails, and the error is
+# shown in the HTML. At hand-in there must be no errors left.
+knitr::opts_chunk$set(error = TRUE)
+
+# If ChEMBL is down, set this to TRUE to use the course's saved copy.
 use_snapshot <- FALSE
-source("fetch-data.R")
 ```
 
-# Question and browser evidence
+You only change the three places marked `___` (blanks 1–3). All other code is
+given. Knit after each blank and look at the HTML.
 
-Compare structural, activity and clinical-development evidence for kinase inhibition. Record PDB accessions, the organisms/constructs represented, an EGFR pathway and examples of extracellular and intracellular inhibition. Give source URLs and dates.
+# The question
+
+Imatinib was designed to block the ABL kinase (BCR-ABL in chronic myeloid
+leukaemia). Does it also block other kinases? ChEMBL collects IC50 values from
+published experiments: the drug concentration that halves the activity of the
+kinase. A **lower IC50 means a more potent drug**. We compare four kinases:
+ABL1, KIT, PDGFRA and SRC.
+
+# Fetch IC50 records from ChEMBL
+
+This chunk is given. It asks the ChEMBL API for all imatinib (CHEMBL941) IC50
+records for the four kinases, or reads the course's saved copy if
+`use_snapshot` is `TRUE`. A copy is saved in `data/`, so knitting again the same
+day does not ask ChEMBL again.
+
+```{r fetch}
+targets <- c(CHEMBL1862 = "ABL1", CHEMBL1936 = "KIT",
+             CHEMBL2007 = "PDGFRA", CHEMBL267 = "SRC")
+chembl_release <- "unknown"
+retrieved <- "not yet"
+
+if (use_snapshot) {
+  snapshot_file <- "data/imatinib-ic50-2026-11-18.csv"
+  if (!file.exists(snapshot_file)) {
+    snapshot_file <- paste0("https://henriksson-lab.github.io/course_cellbiology/",
+                            "bioinfo-drug-targets/data/imatinib-ic50-2026-11-18.csv")
+  }
+  activities <- read.csv(snapshot_file)
+  chembl_release <- "ChEMBL_37 (course snapshot)"
+  retrieved <- "2026-11-18"
+} else {
+  cache_file <- paste0("data/imatinib-ic50-", Sys.Date(), ".csv")
+  if (file.exists(cache_file)) {
+    activities <- read.csv(cache_file)
+  } else {
+    chembl_url <- paste0(
+      "https://www.ebi.ac.uk/chembl/api/data/activity.json",
+      "?molecule_chembl_id=CHEMBL941&standard_type=IC50",
+      "&target_chembl_id__in=", paste(names(targets), collapse = ","),
+      "&limit=1000&only=activity_id,target_chembl_id,standard_relation,",
+      "standard_value,standard_units,assay_type,assay_description,document_chembl_id")
+    # ChEMBL is sometimes slow: try up to three times.
+    result <- NULL
+    for (attempt in 1:3) {
+      result <- tryCatch(jsonlite::fromJSON(chembl_url), error = function(e) NULL)
+      if (!is.null(result)) break
+      Sys.sleep(5)
+    }
+    if (is.null(result)) stop("ChEMBL did not answer: set use_snapshot <- TRUE")
+    activities <- data.frame(target = unname(targets[result$activities$target_chembl_id]),
+                             result$activities)
+    dir.create("data", showWarnings = FALSE)
+    write.csv(activities, cache_file, row.names = FALSE)
+  }
+  chembl_release <- jsonlite::fromJSON(
+    "https://www.ebi.ac.uk/chembl/api/data/status.json")$chembl_db_version
+  retrieved <- as.character(Sys.Date())
+}
+activities$standard_value <- as.numeric(activities$standard_value)
+nrow(activities)
+```
+
+# Clean the records
+
+Given. Keep records with a number in nM, and mark records measured on a
+**mutant** kinase (the assay description says "mutant").
+
+```{r clean}
+ic50 <- activities[!is.na(activities$standard_value) &
+                     activities$standard_units %in% "nM", ]
+ic50$kinase_form <- ifelse(grepl("mutant", ic50$assay_description, ignore.case = TRUE),
+                           "mutant", "wild type")
+table(ic50$target, ic50$kinase_form)
+```
+
+# Plot every IC50 value
+
+Example (given): a bar chart of how many records each kinase has.
+
+```{r example-plot, fig.width = 6, fig.height = 3}
+ggplot(ic50, aes(x = target)) +
+  geom_bar() +
+  labs(x = "Kinase", y = "IC50 records (count)",
+       caption = paste("Source: ChEMBL, retrieved", retrieved))
+```
+
+**Blank 1:** make a strip plot with one point per record: the kinase on the
+x axis and the IC50 value (column `standard_value`) on the y axis. Replace the
+two `___` with column names (no quotes). The dashed line is 1 µM (1000 nM).
+
+```{r strip-plot, fig.width = 7, fig.height = 4.5}
+ggplot(ic50, aes(x = ___, y = ___, colour = kinase_form)) +
+  geom_jitter(width = 0.15, height = 0) +
+  scale_y_log10() +
+  geom_hline(yintercept = 1000, linetype = "dashed") +
+  labs(x = "Kinase", y = "IC50 (nM, log scale)", colour = "Kinase form",
+       caption = paste("Source: ChEMBL, retrieved", retrieved))
+```
+
+# Which kinases does imatinib block below 1 µM?
+
+Given: the median IC50 of each kinase, wild-type records only.
+
+```{r medians}
+wild_type <- ic50[ic50$kinase_form == "wild type", ]
+medians <- aggregate(standard_value ~ target, data = wild_type, FUN = median)
+names(medians)[2] <- "median_ic50_nm"
+medians
+```
+
+Two examples of filtering and sorting in base R (given):
+
+```{r filter-examples}
+# keep rows: data[condition, ]
+ic50[ic50$target == "SRC", c("target", "standard_relation", "standard_value")]
+
+# sort rows: data[order(column), ]   (lowest first)
+head(ic50[order(ic50$standard_value), c("target", "standard_value")], 3)
+```
+
+**Blank 2:** keep only the kinases with a median IC50 below 1 µM. Write the
+number in nM.
+
+**Blank 3:** sort them, lowest median first. Write the column to sort by,
+as in the example (`potent$...`).
+
+```{r potent}
+potent <- medians[medians$median_ic50_nm < ___, ]
+potent[order(___), ]
+```
+
+# Mutations in the mutant records
+
+Given: the mutation names (like V600E) found in the assay descriptions of the
+mutant records, most frequent first, and the median IC50 of the T315I records.
+
+```{r mutations}
+mutant <- ic50[ic50$kinase_form == "mutant", ]
+mutation <- regmatches(mutant$assay_description,
+                       regexpr("[A-Z][0-9]{3}[A-Z]", mutant$assay_description))
+head(sort(table(mutation), decreasing = TRUE), 5)
+
+# median IC50 (nM) of the records on the T315I mutant
+median(mutant$standard_value[grepl("T315I", mutant$assay_description)])
+```
 
 # Data
 
-```{r fetch-data}
-records <- fetch_target_data(use_snapshot)
-activities <- records$activities
-candidates <- records$candidates
-records$releases
-```
-
-Mode: `r records$mode`; retrieval date: `r records$retrieved`.
-
-```{r queries}
-records$chembl_query
-cat(records$opentargets_query)
-```
-
-The supplied helper uses `httr2` for GET requests to ChEMBL and a JSON GraphQL POST to Open Targets. It retries temporary failures and caches dated CSVs. It checks ChEMBL pagination and Open Targets row counts rather than silently plotting a partial result. Snapshot mode reads only the downloaded CSVs.
-
-- ChEMBL: <https://www.ebi.ac.uk/chembl/>, CC BY-SA 3.0. This query selects imatinib (CHEMBL941), IC50 and five targets. It is not a whole-kinome panel.
-- Open Targets: <https://platform.opentargets.org>, CC0. The query returns drug/candidate records and their `maxClinicalStage` for EGFR, ABL1 and KIT. This field is a **string**, not a numeric clinical phase.
-
-# Audit before plotting
-
-```{r audit}
-with(activities, table(target, standard_relation, useNA = "ifany"))
-activities[activities$target == "EGFR", c("activity_id", "standard_relation", "standard_value", "standard_units", "document_chembl_id", "assay_description")]
-```
-
-Do not replace `>` values with exact numbers or discard an inconvenient result without explaining it. In the shipped snapshot, EGFR includes one exact 0.11 nM record as well as >100000 nM and an unquantified low-inhibition record. These are conflicting assay observations, not a trustworthy pooled median. Read the source descriptions before interpreting the plot.
-
-# Exact activity measurements
-
-The filter below retains positive exact IC50s in nM, binding assays, records without a data-validity flag and without a potential-duplicate flag. The raw table remains available for auditing. A pChEMBL value is approximately -log10(IC50 in mol/L) here; IC50 is assay-dependent and is not a binding Kd.
-
-```{r filter-activities}
-validity_ok <- is.na(activities$data_validity_comment) | activities$data_validity_comment == ""
-exact <- subset(activities, standard_relation == "=" & standard_units == "nM" &
-                  standard_value > 0 & assay_type == "B" & validity_ok & potential_duplicate == 0)
-exact$pic50 <- -log10(exact$standard_value * 1e-9)
-```
-
-Make a strip plot. Add a dashed horizontal line at pIC50 = 6 (1 micromolar). Label the plot as **exact values only**; SRC may have no exact values, which does not mean no one measured it.
-
-```{r activity-plot, fig.width=8, fig.height=4.5}
-# Your ggplot code here.
-```
-
-# Illustrative dose-response curves
-
-Summarise exact IC50s for ABL1, KIT and PDGFRA using medians, then draw inhibition = dose / (IC50 + dose). This is a Hill-slope-1 illustration, **not a fitted clinical dose-response**. Do not pool the conflicting EGFR records into a single curve.
-
-```{r curves, fig.width=8, fig.height=4.5}
-# Your median table and curve plot here.
-```
-
-# A matched-source comparison
-
-Use source document CHEMBL1130562 to compare the ABL1 record (38 nM) with the EGFR bound (>100000 nM). Inspect the assay descriptions: the ABL assay uses v-Abl; a common paper still does not guarantee identical assay conditions.
-
-```{r matched-source}
-# Filter the named source and calculate two Hill-model fractions.
-```
-
-Explain the distinction between an estimated fraction and an upper bound.
-
-# Clinical development records
-
-Count records by `target` and `stage`, then draw a bar plot. Preserve categorical stage names: `APPROVAL`, `PHASE_4` and `PHASE_2_3` are not one integer scale. Counts refer to returned records, not distinct approved drugs or independent trials.
-
-```{r stage-plot, fig.width=8, fig.height=5}
-# Count target x stage and plot the counts.
-```
-
-# Interpretation and limits
-
-Write a paragraph that answers your question, identifies one conflicting or censored observation and states what your plots cannot establish. Cite a database release and retrieval date.
+- ChEMBL (<https://www.ebi.ac.uk/chembl/>), release `r chembl_release`,
+  activity records for imatinib (CHEMBL941), retrieved `r retrieved`.
+  Licence CC BY-SA 3.0.
 
 # Session info
 

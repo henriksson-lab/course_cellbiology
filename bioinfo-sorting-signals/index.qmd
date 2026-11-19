@@ -8,32 +8,93 @@ format:
 resources:
   - bioinfo-sorting-signals.Rmd
   - data/*.csv
-  - data/*.json
-  - data/*.fasta
 ---
 
-## What you will learn
+**Goal:** read the sorting signals of real proteins in databases, and map them for 14 proteins in R. Builds on the lectures [protein sorting](../protein-sorting/lec.qmd), [the ER](../er/lec.qmd), [the Golgi](../golgi-secretion/lec.qmd) and [endocytosis and lysosomes](../endocytosis-lysosomes/lec.qmd). About 2 hours, no logins.
 
-Use sequence features to explain where a protein goes, and distinguish observed locations from predictions. Build a feature table and a tile plot from real human sequences. This module builds on [protein sorting](../protein-sorting/lec.qmd), [the ER](../er/lec.qmd), [the Golgi](../golgi-secretion/lec.qmd) and [endocytosis and lysosomes](../endocytosis-lysosomes/lec.qmd). **ELO 4, 5, 9.**
+## Part A: in the browser
 
-1. [In the browser: signals, pathways and evidence](browser.qmd) — about 90 minutes.
-2. [In R: a map of sorting features](report.qmd) — about 90–120 minutes.
+### UniProt: the LDL receptor
 
-## Before you start
+Open [LDLR, UniProt P01130](https://www.uniprot.org/uniprotkb/P01130/entry). Its signal peptide (residues 1–21) is listed under **PTM/Processing**. Now click **Subcellular Location** in the left menu and scroll to its **Features** table: one **Transmembrane** segment and two **Topological domains**.
 
-No logins are needed. R packages: `rmarkdown`, `knitr`, `ggplot2`. The report uses base R for table operations; `dplyr` is optional.
+**T1.** `[ELO 4]` Which end of the mature receptor is outside the cell: the N-terminal part or the C-terminal part?
 
-Download the [student report](bioinfo-sorting-signals.Rmd) to a new folder. Make a `data` subfolder and save:
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+The **N-terminal part**: topological domain 22–788 is *Extracellular*, the transmembrane segment is 789–810, and 811–860 is *Cytoplasmic*. LDLR is a type I protein: signal peptide in, stop-transfer segment in the membrane. The ER lumen side becomes the outside of the cell.
+:::
 
-- [UniProt sequences and features](data/uniprot-features-2026-11-18.csv).
-- [FASTA sequences](data/uniprot-sequences-2026-11-18.fasta).
-- [UniProt provenance](data/uniprot-provenance.json).
-- [Example CFTR GO evidence rows](data/quickgo-evidence-2026-11-18.csv).
+### UniProt: PCSK9
 
-Set `use_snapshot <- TRUE` in the report to work offline. The browser activities need internet access; the report’s sequence analysis works from the provided files.
+Open [PCSK9, UniProt Q8NBP7](https://www.uniprot.org/uniprotkb/Q8NBP7/entry). It has a signal peptide (1–30) and no transmembrane segment, so it is secreted. That is why an antibody in the blood can catch it. Click **Disease & Variants** in the left menu.
 
-## What counts as evidence?
+**T2.** `[ELO 9]` Which disease does UniProt link to PCSK9?
 
-A sequence motif suggests a route; it does not prove a location. A localisation experiment, a curated pathway and a predicted interaction address different questions. You will record these distinctions as carefully as the protein names.
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**Hypercholesterolemia, familial, 3 (FHCL3)**, autosomal dominant. Gain-of-function PCSK9 sends more LDL receptors to the lysosome. LDLR itself (T1) is linked to FHCL1.
+:::
 
-[Data and source credits](../credits.qmd#bioinfo-sorting-signals).
+### UniProt: BiP, an ER chaperone
+
+Open [HSPA5 (BiP), UniProt P11021](https://www.uniprot.org/uniprotkb/P11021/entry). It has a signal peptide (1–18), yet it stays in the ER. Click **Sequence** in the left menu and read the end of the sequence.
+
+**T3.** `[ELO 4, 5]` What are the last four amino acids of BiP?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**KDEL** (Lys-Asp-Glu-Leu). BiP leaks to the Golgi with other cargo; the KDEL receptor in the cis-Golgi brings it back to the ER in COPI vesicles.
+:::
+
+### STRING: partners of LDLR
+
+Open the [human LDLR network in STRING](https://string-db.org/cgi/network?identifiers=LDLR&species=9606). Each node is a protein; each line is a predicted functional link, from experiments, databases or co-mentions in papers. Click a node to see its name.
+
+**T4.** `[ELO 4, 9]` PCSK9 is in the network. Which one of these four is also there: **APOB**, **GAPDH**, **CANX** or **TFRC**?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**APOB**, the protein of the LDL particle that LDLR binds. A STRING line means "these proteins work together", not necessarily that they touch.
+:::
+
+### QuickGO: where is CFTR?
+
+Gene Ontology (GO) gives each location a term and each annotation an **evidence code**. Open [QuickGO: CFTR annotations to *endoplasmic reticulum membrane* (GO:0005789)](https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=P13569&goId=GO:0005789). Find the row whose reference is **PMID:11707463**.
+
+**T5.** `[ELO 4]` Which evidence code does that row have, and what does it stand for?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**IDA, Inferred from Direct Assay**: an experiment located CFTR in the ER membrane. Other rows say IEA (electronic annotation) or TAS (traceable author statement). Misfolded CFTR ΔF508 is held in the ER, as in the ER lecture.
+:::
+
+## Part B: in R
+
+Download the template [bioinfo-sorting-signals.Rmd](bioinfo-sorting-signals.Rmd) into a new folder and open it in RStudio. You need the packages `rmarkdown`, `ggplot2` and `dplyr`. Knit it once as it is: it fetches 14 proteins from UniProt, and the two blanks show as errors. If UniProt is down, set `use_snapshot <- TRUE`.
+
+Snapshot: [uniprot-features-2026-11-19.csv](data/uniprot-features-2026-11-19.csv) (put it in a `data` subfolder). Data: UniProtKB release 2026_04 (CC BY 4.0), retrieved 2026-11-19.
+
+All fetching and cleaning code is given. You fill **two blanks** marked `___`:
+
+1. **Chunk `kdel`:** the filter value, the four letters of the ER retrieval signal, in quotes. Expected result: a table with two proteins, both in the ER group.
+2. **Chunk `feature-map`:** the `aes()` mapping. Put `feature` on `x`, `gene` on `y` and `present` as `fill`. Expected result: a tile plot with three columns (signal peptide, transit peptide, transmembrane) and one row per protein, grouped by destination. Dark tiles mean "annotated".
+
+**T6.** `[ELO 4]` Your KDEL table shows BiP (HSPA5). Which other protein ends in KDEL?
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**P4HB** (protein disulfide isomerase, PDI), the ER enzyme that forms disulfide bonds.
+:::
+
+**T7.** `[ELO 4, 5]` **[VG]** In your plot, one cell-surface protein has a transmembrane segment but **no** signal peptide. Which one, and what kind of segment brings it to the ER?
+
+- A. LDLR, a stop-transfer segment
+- B. TFRC, a signal-anchor
+- C. TFRC, a mitochondrial transit peptide
+- D. LDLR, a KDEL signal
+
+::: {.callout-note collapse="true" title="Answer (checked 2026-11-19)"}
+**B.** The transferrin receptor (TFRC) is a type II protein: its single hydrophobic segment is both the ER-targeting signal and the membrane anchor, so it has no cleaved signal peptide. UniProt calls it "Signal-anchor for type II membrane protein". Only the two mitochondrial proteins (ATP5F1A, CS) have transit peptides.
+:::
+
+## Hand-in checklist
+
+- Answers to T1–T7.
+- The knitted HTML of your report, with both blanks filled and **no errors** left.
+- Your plot shows 14 genes and three feature columns.
+- The **Data** section names the source, the UniProt release and the date.

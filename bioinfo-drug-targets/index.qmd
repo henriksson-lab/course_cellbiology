@@ -1,37 +1,95 @@
 ---
-title: "Bioinformatics: how selective is a kinase inhibitor?"
+title: "Bioinformatics: how selective is imatinib?"
 engine: markdown
 resources:
   - bioinfo-drug-targets.Rmd
-  - fetch-data.R
   - data/*.csv
-  - data/*.txt
 ---
 
-## What you will learn
+**Goal:** look at a receptor and a kinase drug in 3D, follow EGFR to Ras, and plot which kinases the drug imatinib blocks. Builds on [signalling principles](../signalling-principles/lec.qmd), [GPCRs](../gpcr/lec.qmd) and [kinase signalling](../kinase-signalling/lec.qmd). About 2 hours.
 
-A drug can act on several proteins, and a database can contain conflicting measurements. You will inspect signalling proteins in three dimensions, compare imatinib activity records and make a reproducible report that separates evidence from a simple dose–response model.
+## Part A: in the browser
 
-Builds on [signalling principles](../signalling-principles/lec.qmd), [GPCRs](../gpcr/lec.qmd), [kinase signalling](../kinase-signalling/lec.qmd) and [cell-fate signalling](../fate-signalling/lec.qmd). `[ELO 3, 9]`
+### A1. A GPCR with its G protein
 
-1. [Database investigation](browser.qmd): structures, pathways and target–disease evidence.
-2. [R Markdown report](report.qmd): activity distributions, illustrative inhibition curves and clinical-stage records.
+Open [PDB 3SN6](https://www.rcsb.org/structure/3SN6), the β₂-adrenergic receptor bound to Gs. Scroll to **Macromolecules**: each protein has a chain letter. Then open the 3D view and colour by chain.
 
-Allow about 1.5 h for the browser work and 1.5–2 h for the report. No logins or API keys are needed.
+**T1.** Which chain letter is the Gα~s~ subunit, and on which side of the receptor does it bind: (a) the extracellular side, (b) inside the membrane, (c) the cytoplasmic side? `[ELO 3]`
 
-## Before you start
+::: {.callout-note collapse="true" title="Answer"}
+Chain **A**, on the **cytoplasmic side (c)**. The receptor is chain R; its seven helices cross the membrane, and Gα~s~ sits in the pocket that opens on the inside when adrenaline binds.
+:::
 
-Download these files together; put the CSVs in a subfolder named `data`:
+### A2. Imatinib in the ABL kinase
 
-- [Student R Markdown template](bioinfo-drug-targets.Rmd).
-- [Provided API helper](fetch-data.R).
-- [Imatinib activity snapshot](data/imatinib-activities-2026-11-18.csv).
-- [Target–drug clinical-stage snapshot](data/clinical-candidates-2026-11-18.csv).
-- [Database release metadata](data/releases-2026-11-18.csv).
-- Optional: [the snapshot's Open Targets GraphQL query](data/opentargets-query-2026-11-18.txt).
+Open [PDB 1IEP](https://www.rcsb.org/structure/1IEP), the ABL kinase domain with imatinib (called STI-571 in the entry). Scroll to **Small Molecules**.
 
-Install missing R packages once: `install.packages(c("rmarkdown", "ggplot2", "httr2"))`. Knit the downloaded template using RStudio or `rmarkdown::render("bioinfo-drug-targets.Rmd")`. For offline work, set `use_snapshot <- TRUE`; all three CSVs must already be in `data/`.
+**T2.** What is the three-character ligand ID of imatinib in this entry? `[ELO 3]`
 
-## Sources and licences
+::: {.callout-note collapse="true" title="Answer"}
+**STI**. In the 3D view it sits in the ATP pocket of the kinase, as in the lecture: with imatinib there, ATP cannot bind.
+:::
 
-Data were retrieved 2026-11-18 from [ChEMBL](https://www.ebi.ac.uk/chembl/), release 37 ([CC BY-SA 3.0](https://chembl.gitbook.io/chembl-interface-documentation/about)), and the [Open Targets Platform](https://platform.opentargets.org), release 26.09 ([CC0](https://platform-docs.opentargets.org/licence)). The course ships selected fields and names the exact filters. No external figures are reproduced; the plots are generated from the records. [Full data credits](../credits.qmd#bioinfo-drug-targets).
+### A3. From EGFR to Ras
+
+Open the Reactome pathway [GRB2 events in EGFR signaling (R-HSA-179812)](https://reactome.org/content/detail/R-HSA-179812). Read the list of reactions it contains.
+
+**T3.** The last reaction is a nucleotide exchange made by SOS1. Which protein gets its GDP swapped for GTP? `[ELO 3]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**RAS**. GRB2 binds the phosphorylated receptor and brings SOS1 to the membrane, where it switches Ras on.
+:::
+
+### A4. Drugs against EGFR
+
+Open [EGFR in Open Targets](https://platform.opentargets.org/target/ENSG00000146648) and scroll to the drugs section. Each drug has a type (small molecule, antibody…); click a drug name to see its page.
+
+**T4.** Which of these four EGFR drugs is an antibody: erlotinib, osimertinib, cetuximab or gefitinib? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**Cetuximab**. An antibody cannot cross the membrane, so it binds the outside of EGFR and stops ligand binding. The other three are small molecules that enter the cell and block the ATP pocket of the kinase.
+:::
+
+## Part B: in R
+
+**Downloads:** the [R Markdown template](bioinfo-drug-targets.Rmd) and the [snapshot of the data](data/imatinib-ic50-2026-11-18.csv) (put it in a folder `data/` next to the template; only needed if ChEMBL is down).
+Data: ChEMBL 37 (CC BY-SA 3.0), retrieved 2026-11-18.
+
+Install the packages once: `install.packages(c("rmarkdown", "ggplot2", "jsonlite"))`. Open the template in RStudio and click **Knit**. It knits at once, with errors where the three blanks `___` are. If ChEMBL does not answer, set `use_snapshot <- TRUE` in the first chunk.
+
+The template fetches every IC50 value ChEMBL has for imatinib against four kinases: ABL1, KIT, PDGFRA and SRC. IC50 is the drug concentration that halves the kinase's activity, so a **lower IC50 means a more potent drug**. 1 µM = 1000 nM.
+
+**Blank 1** (`strip-plot`). Copy the example bar chart's pattern: put the kinase (`target`) on the x axis and the IC50 (`standard_value`) on the y axis:
+
+```r
+ggplot(ic50, aes(x = ___, y = ___, colour = kinase_form)) +
+```
+
+You should see one dot per record, on a log scale, with a dashed line at 1000 nM. Records on mutant kinases have their own colour.
+
+**T5.** Which kinase has no record below the dashed 1 µM line? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**SRC**. All its values are 5000 nM or more. Imatinib does not block every tyrosine kinase.
+:::
+
+**Blanks 2 and 3** (`potent`). Look at the two given examples, `data[condition, ]` and `data[order(column), ]`. Keep the kinases whose median IC50 is below 1 µM (blank 2: a number in nM), then sort them, lowest first (blank 3: `potent$median_ic50_nm`). The printout should be a small table of kinases.
+
+**T6.** How many kinases are left, and which one is on top (lowest median IC50)? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**Three** (PDGFRA, ABL1, KIT); **PDGFRA** is on top, at about 70 nM. This is why imatinib works not only in chronic myeloid leukaemia (BCR-ABL) but also in gastrointestinal stromal tumours, which are driven by KIT or PDGFRA.
+:::
+
+**T7. [VG]** The last chunk (`mutations`) is given: it lists the mutations named in the mutant records and the median IC50 of the T315I records. Which mutation is most frequent, and is its median IC50 (a) below 1 µM or (b) above 1 µM? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**T315I**, median **10 000 nM, above 1 µM (b)**: about 40 times higher than for wild-type ABL1. T315 is the gatekeeper residue at the entrance of the ATP pocket of ABL: the bigger isoleucine keeps imatinib out, and the leukaemia becomes resistant (kinase signalling lecture).
+:::
+
+## Hand-in checklist
+
+- The knitted HTML has no error messages left.
+- The strip plot shows four kinases with a dashed line at 1000 nM.
+- The `potent` table is sorted, lowest median first.
+- Your answers to T1–T7.

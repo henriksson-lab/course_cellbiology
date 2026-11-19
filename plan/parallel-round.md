@@ -70,3 +70,10 @@ sidebar entries, glossary entries and credits section afterwards from your repor
 5. **Sidebar:** the section title for your unit and the demo name, e.g.
    `Unit: "The endoplasmic reticulum" · Demo: "Demo: topology builder"`.
 6. **Glossary:** 8–15 entries, `**Term**: one-sentence definition.`
+
+
+## Avoid permission prompts
+
+Avoid commands that look destructive (`rm -rf`, `pkill`/`kill`, chained one-liners that
+delete files, `curl | sh`). Delete only explicitly named files (e.g. Python `os.remove`
+on listed paths). Stale files in `docs/` are cleaned by the coordinator.

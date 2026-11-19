@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -718,7 +683,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-mito-proteasome/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: genomes inside organelles and drugs on machines</span></a>
+ <span class="menu-text">Bioinformatics: genomes inside organelles, and drugs on machines</span></a>
   </div>
 </li>
       </ul>
@@ -875,7 +840,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-drug-targets/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: how selective is a kinase inhibitor?</span></a>
+ <span class="menu-text">Bioinformatics: how selective is imatinib?</span></a>
   </div>
 </li>
       </ul>
@@ -997,7 +962,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-cytoskeleton/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: filaments, tissues and a drug for the heart</span></a>
+ <span class="menu-text">Bioinformatics: one filament family per tissue</span></a>
   </div>
 </li>
       </ul>
@@ -1311,7 +1276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-cancer-genomics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: read the mutations</span></a>
+ <span class="menu-text">Bioinformatics: BRAF V600E and vemurafenib</span></a>
   </div>
 </li>
       </ul>
@@ -1326,10 +1291,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#what-you-will-do" id="toc-what-you-will-do" class="nav-link active" data-scroll-target="#what-you-will-do">What you will do</a></li>
-  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
-  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
-  <li><a href="#sources-and-licences" id="toc-sources-and-licences" class="nav-link" data-scroll-target="#sources-and-licences">Sources and licences</a></li>
+  <li><a href="#part-a-in-the-browser" id="toc-part-a-in-the-browser" class="nav-link active" data-scroll-target="#part-a-in-the-browser">Part A: in the browser</a></li>
+  <li><a href="#part-b-in-r" id="toc-part-b-in-r" class="nav-link" data-scroll-target="#part-b-in-r">Part B: in R</a></li>
+  <li><a href="#hand-in" id="toc-hand-in" class="nav-link" data-scroll-target="#hand-in">Hand in</a></li>
   </ul>
 </nav>
     </div>
@@ -1355,33 +1319,191 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="what-you-will-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-will-do">What you will do</h2>
-<p>Use CRISPR gene-dependency screens to compare core cell-cycle machinery with context-dependent survival genes. Interpret distributions and build an R Markdown report from a short outline. <strong>ELO 7, 8, 9.</strong></p>
-<p>Builds on <a href="../cell-cycle-control/lec.html">cell-cycle control</a>, <a href="../mitosis/lec.html">mitosis</a>, <a href="../cell-numbers/lec.html">cell numbers</a>, and <a href="../apoptosis/lec.html">apoptosis</a>. Allow about 3–4 hours.</p>
+<p><strong>Goal:</strong> read CRISPR screens to see which cell-cycle and survival genes cancer cells cannot live without. Builds on <a href="../cell-cycle-control/lec.html">cell-cycle control</a>, <a href="../mitosis/lec.html">mitosis</a>, <a href="../cell-numbers/lec.html">cell numbers</a> and <a href="../apoptosis/lec.html">apoptosis</a>. About 2 hours.</p>
+<section id="part-a-in-the-browser" class="level2">
+<h2 class="anchored" data-anchor-id="part-a-in-the-browser">Part A: in the browser</h2>
+<p><strong>A1. Cyclin B1 rises and falls.</strong> Open <a href="https://www.proteinatlas.org/ENSG00000134057-CCNB1/subcellular">Human Protein Atlas: CCNB1, subcellular section</a>. Scroll to <strong>Single cell variation</strong> and find <strong>Protein expression peak phase</strong>.</p>
+<p><strong>T1.</strong> In which phase is cyclin B1 protein highest: G1, S or G2? <code>[ELO 7]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>G2.</strong> Cyclin B1 builds up before mitosis and activates CDK1. The APC/C then marks it for destruction at anaphase, so the cell can leave mitosis.</p>
+</div>
+</div>
+</div>
+<p><strong>A2. Who switches p53 on?</strong> Open <a href="https://www.uniprot.org/uniprotkb/P04637/entry">UniProt P04637 (TP53)</a>. Go to <strong>PTM/Processing</strong> and find the <strong>Modified residue</strong> at position <strong>15</strong>.</p>
+<p><strong>T2.</strong> Which of the kinases listed for serine 15 is the DNA-damage kinase from the checkpoint slide? <code>[ELO 7]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>ATM.</strong> After a DNA break, ATM phosphorylates p53 at serine 15. MDM2 can then no longer tag p53 for destruction, p53 accumulates and switches on p21.</p>
+</div>
+</div>
+</div>
+<p><strong>A3. A drug against a survival protein.</strong> Open <a href="https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3137309">ChEMBL CHEMBL3137309 (venetoclax)</a> and find <strong>Mechanisms of Action</strong>.</p>
+<p><strong>T3.</strong> Which protein does venetoclax inhibit: BCL-2, BCL-XL, MCL-1 or CDK4? <code>[ELO 8]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>BCL-2</strong> (“Apoptosis regulator Bcl-2 inhibitor”). It is the BH3 mimetic from the apoptosis lecture, used in chronic lymphocytic leukaemia.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="part-b-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="part-b-in-r">Part B: in R</h2>
+<p>A CRISPR screen knocks out one gene in each of about 1 250 cancer cell lines and measures growth. The <strong>gene effect</strong> is 0 when the cells grow as usual and about <strong>−1</strong> for a typical essential gene. More negative means the cells need the gene more.</p>
+<p>The template fetches these scores for six genes: <strong>CDK1, CDK4, CDK6</strong> (cell cycle) and <strong>BCL2, BCL2L1, MCL1</strong> (BCL-2 family guardians). All fetching code is given. You fill three blanks marked <code>___</code>.</p>
+<section id="downloads" class="level3">
+<h3 class="anchored" data-anchor-id="downloads">Downloads</h3>
 <ol type="1">
-<li><a href="../bioinfo-essential-genes/browser.html">In the browser: dependencies, cyclin B1 and p53</a>.</li>
-<li><a href="../bioinfo-essential-genes/report.html">In R: dependency distributions</a>.</li>
+<li><a href="bioinfo-essential-genes.Rmd" download="bioinfo-essential-genes.Rmd">Report template</a>. Put it in a new folder.</li>
+<li><a href="data/depmap-gene-effect-2026-11-18.csv" download="depmap-gene-effect-2026-11-18.csv">Data snapshot</a> (optional). Put it in a <code>data/</code> subfolder. It is used only if you set <code>use_snapshot &lt;- TRUE</code> (for example when the API is down).</li>
 </ol>
+<p>Data: DepMap CRISPR screens via the Open Targets Platform 26.09 (CC0; cite DepMap), retrieved 2026-11-18.</p>
+<p>You need the R packages <code>rmarkdown</code>, <code>ggplot2</code> and <code>httr</code> (<code>install.packages(c("rmarkdown", "ggplot2", "httr"))</code>). Knit once before you change anything: the report knits, with an error under each blank.</p>
 </section>
-<section id="before-you-start" class="level2">
-<h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
-<p>No account is needed. Use RStudio or R with <code>rmarkdown</code>, <code>ggplot2</code>, <code>jsonlite</code> and <code>httr2</code> installed. Install missing packages once in the console:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"rmarkdown"</span>, <span class="st">"ggplot2"</span>, <span class="st">"jsonlite"</span>, <span class="st">"httr2"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Download the report and all listed snapshots. Put the report in a new folder and CSV/JSON files in its <code>data/</code> subfolder. Keep the filenames. If an API is unavailable, set <code>use_snapshot &lt;- TRUE</code>. A snapshot is a dated copy of real records, not simulated data. Knitting uses a fresh R session: create every object in the report and finish with <code>sessionInfo()</code>. Do not include your R console history as a substitute for code.</p>
+<section id="blank-1-one-summary-line" class="level3">
+<h3 class="anchored" data-anchor-id="blank-1-one-summary-line">Blank 1: one summary line</h3>
+<p>Replace <code>___</code> in <code>FUN = ___</code> with the R function that computes a median. When it works, a table with six rows prints: one median gene effect per gene.</p>
+<p><strong>T4.</strong> Which gene has the most negative median, and what is that median (two decimals)? <code>[ELO 7]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>CDK1, about −2.63.</strong> Almost every cell line needs CDK1 to enter mitosis. The other five medians lie between −1 and 0 (BCL2 is close to 0).</p>
+</div>
+</div>
+</div>
 </section>
-<section id="downloads" class="level2">
-<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
+<section id="blank-2-one-ggplot-call" class="level3">
+<h3 class="anchored" data-anchor-id="blank-2-one-ggplot-call">Blank 2: one <code>ggplot()</code> call</h3>
+<p>Write one <code>ggplot()</code> call from the pieces listed in the template: data <code>dependencies</code>, <code>gene</code> on the x axis, <code>gene_effect</code> on the y axis, <code>geom_violin()</code>, a dashed line at −1, and axis labels. You should see six violins, one per gene.</p>
+<p><strong>T5.</strong> Which statement matches your plot? <code>[ELO 8]</code></p>
+<div class="options">
 <ul>
-<li><a href="bioinfo-essential-genes.Rmd">Student report outline</a></li>
-<li><a href="data/depmap-gene-effect-2026-11-18.csv">Gene-effect snapshot</a></li>
-<li><a href="data/release-2026-11-18.json">API release metadata</a></li>
-<li><a href="data/retrieval-manifest-2026-11-18.json">Retrieval record</a></li>
+<li><ol type="a">
+<li>BCL2 is needed by most cell lines.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Most cell lines do not need BCL2, but a few lie below −1.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>BCL2 and CDK1 have similar violins.</li>
+</ol></li>
 </ul>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>(b).</strong> The BCL2 violin is wide at 0 with a thin tail down to below −2. CDK1 sits almost entirely below −1.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="sources-and-licences" class="level2">
-<h2 class="anchored" data-anchor-id="sources-and-licences">Sources and licences</h2>
-<p><a href="https://platform.opentargets.org/">Open Targets Platform</a> redistributes DepMap CRISPR screen data through its <a href="https://api.platform.opentargets.org/api/v4/graphql">GraphQL API</a>. Open Targets data are CC0 unless a contributing dataset has additional terms; retain the DepMap citation and check <a href="https://depmap.org/portal/terms/">DepMap terms</a>. Snapshot retrieved 2026-11-18; the included metadata records the Open Targets release. Cite the <a href="https://depmap.org/portal/">DepMap portal</a> and <a href="https://doi.org/10.1186/s13059-021-02540-7">Chronos method</a>. HPA and UniProt annotations are CC BY 4.0. No external images are reproduced.</p>
+<section id="blank-3-one-gene-name" class="level3">
+<h3 class="anchored" data-anchor-id="blank-3-one-gene-name">Blank 3: one gene name</h3>
+<p>Fill in <code>"BCL2"</code> (with quotes) to keep only the BCL2 rows. A plot with one row of points per tissue appears, and below it a count of cell lines with gene effect below −1 per tissue.</p>
+<p><strong>T6.</strong> Which tissue group has the most cell lines below −1 for BCL2? <code>[ELO 8, 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Lymphoid tissue</strong> (5 lines; haematopoietic tissue is next with 2). These are lymphoma, myeloma and leukaemia lines, which fits venetoclax being a drug for blood cancers.</p>
+</div>
+</div>
+</div>
+<p><strong>T7. [VG]</strong> CDK1 is the strongest dependency in your plot. Why is it a poorer drug target than BCL2? Pick one. <code>[ELO 7, 9]</code></p>
+<div class="options">
+<ul>
+<li><ol type="a">
+<li>CDK1 is not expressed in cancer cells.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Normal dividing cells, such as bone marrow and gut lining, also need CDK1, so blocking it would harm them too.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Knocking out CDK1 makes cells grow faster.</li>
+</ol></li>
+</ul>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>(b).</strong> A gene that every dividing cell needs gives little room between killing the cancer and harming the patient. This is why antimitotic drugs lower blood counts (mitosis lecture). BCL2 is needed by only a few kinds of cancer cell, so a BCL-2 inhibitor can be more selective.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="hand-in" class="level2">
+<h2 class="anchored" data-anchor-id="hand-in">Hand in</h2>
+<ul>
+<li>The knitted HTML of your report, with no <code>Error</code> messages left.</li>
+<li>It shows the table of six medians, the six-gene violin plot and the BCL2 plot by tissue.</li>
+<li>Your answers to T1–T7, one line each.</li>
+</ul>
 
 
 </section>

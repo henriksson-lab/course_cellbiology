@@ -1,58 +1,157 @@
 ---
-title: "Bioinformatics: filaments, tissues and a drug for the heart"
-engine: markdown
+title: "Bioinformatics: one filament family per tissue"
 format:
   html:
     toc: true
     toc-depth: 2
+# Plain Markdown page: nothing is run when the site is built.
+engine: markdown
+# Files students download. The worked solution is deliberately not listed.
 resources:
   - bioinfo-cytoskeleton.Rmd
   - data/*.csv
-  - data/*.json
 ---
 
-## What you will do
-
-Compare cytoskeletal gene families across tissues, locate drugs in experimental
-structures, and read a clinical-trial record. Build a parameterised R Markdown
-report with a tissue heatmap and a trial-phase chart. **ELO 6, 9.**
-
-Builds on [actin](../actin/lec.qmd), [microtubules](../microtubules/lec.qmd), and
-[myosin and intermediate filaments](../myosin-if/lec.qmd). Allow about 3–4 hours.
-
-1. [In the browser: structures, variants and trials](browser.qmd).
-2. [In R: tissue expression and trial records](report.qmd).
-
-## Before you start
-
-No account is needed. Use RStudio or R with `rmarkdown`, `ggplot2`, `jsonlite` and
-`httr2` installed. Install missing packages once in the console:
-
-```r
-install.packages(c("rmarkdown", "ggplot2", "jsonlite", "httr2"))
+```{=html}
+<style>
+  /* Long URLs and code wrap on narrow screens. */
+  main a, main p code, main li code { overflow-wrap: anywhere; }
+  main p code, main li code { white-space: pre-wrap; }
+</style>
 ```
 
-Download the report and all listed snapshots. Put the report in a new folder and
-CSV/JSON files in its `data/` subfolder. Keep the filenames. If an API is unavailable,
-set `use_snapshot <- TRUE`. A snapshot is a dated copy of real records, not simulated data.
-Knitting uses a fresh R session: create every object in the report and finish with
-`sessionInfo()`. Do not include your R console history as a substitute for code.
+**Goal:** find drugs bound to tubulin and myosin in real structures, link two
+filament genes to their diseases, and draw a heatmap showing which tissue uses
+which filament gene.
 
-## Downloads
+**Builds on:** [Actin](../actin/lec.qmd), [Microtubules](../microtubules/lec.qmd)
+and [Myosin and intermediate filaments](../myosin-if/lec.qmd). **ELO 6, 9.**
+**Time:** about 2 hours.
 
-- [Student report](bioinfo-cytoskeleton.Rmd)
-- [GTEx expression snapshot](data/gtex-expression-2026-11-18.csv)
-- [Mavacamten trial snapshot](data/mavacamten-trials-2026-11-18.csv)
-- [Retrieval record](data/retrieval-manifest-2026-11-18.json)
+## Part A: in the browser
 
-For a second gene set, use the supplied tubulin isotypes TUBB, TUBB3 and TUBB4A.
-The snapshot contains these in addition to the 13 core genes.
+No logins are needed. Note your answers as you go; you check them in the
+collapsed boxes.
 
-## Sources and licences
+### A1. Taxol on tubulin
 
-GTEx v8, adult tissue median RNA expression (TPM), from the
-[GTEx API](https://gtexportal.org/api/v2/); cite the GTEx Consortium,
-*Science* 369:1318–1330 (2020), [doi:10.1126/science.aaz1776](https://doi.org/10.1126/science.aaz1776).
-Use only open summary data here; donor-level controlled data are not included.
-[ClinicalTrials.gov](https://clinicaltrials.gov/data-api/api) supplies public registry
-records, retrieved 2026-11-18. RCSB PDB coordinates are CC0; no external images are copied.
+Open [PDB 1JFF](https://www.rcsb.org/structure/1JFF) (tubulin with taxol). Under
+**Macromolecules**, find which chain is α-tubulin and which is β-tubulin. Under
+**Small Molecules**, find **TA1** (taxol) and the chain it binds.
+
+**Task A1.** Which chain, and so which tubulin subunit, binds taxol? `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**Chain B, β-tubulin.** As in the lecture, taxanes bind β-tubulin inside the
+lattice and lock the microtubule.
+:::
+
+### A2. Two drugs on the same motor
+
+Open [PDB 5N69](https://www.rcsb.org/structure/5N69) and
+[PDB 8QYR](https://www.rcsb.org/structure/8QYR). Both show the motor of
+β-cardiac myosin (gene *MYH7*, here from cow) in the same pre-powerstroke state,
+each with a different drug. Read each title and the **Small Molecules** list.
+
+**Task A2.** Which entry contains the drug used to treat hypertrophic
+cardiomyopathy (HCM), and what is its three-character ligand code? `[ELO 6, 9]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**8QYR, ligand XB2 (mavacamten)**, an inhibitor that parks myosin heads. 5N69
+holds **omecamtiv mecarbil** (code 2OW), an *activator*. Same motor, a shared
+binding pocket, opposite effects on force.
+:::
+
+### A3. The trial that led to approval
+
+Open the EXPLORER-HCM record,
+[NCT03470545](https://clinicaltrials.gov/study/NCT03470545) on ClinicalTrials.gov.
+Find the study **phase** and the **arms** (the groups that were compared).
+
+**Task A3.** Which trial phase is it, and what did the comparison group receive? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**Phase 3**, randomised against **placebo**. You meet trial phases again in the
+course on clinical trials and drug development.
+:::
+
+### A4. One variant per gene
+
+Open two ClinVar records:
+[VCV000014612](https://www.ncbi.nlm.nih.gov/clinvar/variation/14612/)
+(KRT14 p.Arg125Cys) and
+[VCV000014087](https://www.ncbi.nlm.nih.gov/clinvar/variation/14087/)
+(MYH7 p.Arg403Gln). Read the **classification** and the **condition(s)**.
+
+**Task A4.** Which disease is linked to each variant? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer"}
+KRT14 p.Arg125Cys: **epidermolysis bullosa simplex** (blistering skin).
+MYH7 p.Arg403Gln: **hypertrophic cardiomyopathy**. Both are classified
+*Pathogenic*. Arg125 sits at the conserved start of the keratin rod, the part
+needed for filaments to join end to end.
+:::
+
+## Part B: in R
+
+### Before you start
+
+1. Download the template
+   [bioinfo-cytoskeleton.Rmd](bioinfo-cytoskeleton.Rmd){download="bioinfo-cytoskeleton.Rmd"}
+   into a new folder.
+2. Check that `ggplot2`, `jsonlite` and `rmarkdown` are installed
+   (`install.packages(c("ggplot2", "jsonlite", "rmarkdown"))` if not).
+3. If GTEx is down, set `use_snapshot <- TRUE`. The template then reads the saved
+   copy [gtex-expression-2026-11-18.csv](data/gtex-expression-2026-11-18.csv)
+   from a `data/` folder next to it, or from this site.
+
+Data: GTEx v8 median TPM (GTEx Portal, open-access summary data), retrieved 2026-11-18.
+
+### What the template does
+
+The given code fetches the median RNA expression (TPM) of 16 cytoskeleton genes
+in eight tissues from the GTEx API, and draws an **example heatmap** of raw TPM.
+Your job is to complete one `ggplot()` call that draws the same heatmap on a
+log scale. Fill the three blanks `___`:
+
+1. **Blank 1:** `fill = log10(tpm + 1)`.
+2. **Blank 2:** the layer that draws the tiles (copy it from the example).
+3. **Blank 3:** the title of the colour key, `"log10(TPM + 1)"`.
+
+Until all three are filled, the chunk shows an `Error ... unexpected input`.
+When they are, you see a 16 × 8 grid of tiles with a colour key titled
+**log10(TPM + 1)**, and far more coloured tiles than in the example.
+
+**Task B1.** In the given raw-TPM example, which single tile (gene and tissue)
+is brightest? `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**DES in skeletal muscle** (about 12 000 TPM; the printed top three confirms it).
+Desmin links Z-discs in muscle. Almost every other tile is dark: raw TPM hides
+everything below a few hundred, which is why you use a log scale.
+:::
+
+**Task B2.** On your log heatmap: in which two tissues is *MYH7* (β-cardiac
+myosin, the mavacamten target) high, and which myosin heavy chain is high only in
+skeletal muscle? `[ELO 6, 9]`
+
+::: {.callout-note collapse="true" title="Answer"}
+*MYH7* is high in **heart (left ventricle) and skeletal muscle** (slow fibres use
+the same β-myosin). **MYH2** is high only in skeletal muscle (fast fibres).
+:::
+
+**Task B3. [VG]** KRT8 and KRT18 form one keratin pair (type II + type I).
+Where are both highest? (a) skin and oesophagus mucosa; (b) liver and lung;
+(c) brain cortex and tibial nerve; (d) heart and skeletal muscle. `[ELO 6]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**(b) liver and lung.** KRT8/KRT18 is the pair of *simple* (single-layer)
+epithelia. KRT5/KRT14, the pair broken in epidermolysis bullosa simplex (A4),
+marks the *stratified* epithelia of skin and oesophagus.
+:::
+
+## Hand in
+
+- Your answers to A1–A4 and B1–B3 (one line each).
+- The knitted HTML with both heatmaps and **no errors**.
+- The **Data** section showing the retrieval date.

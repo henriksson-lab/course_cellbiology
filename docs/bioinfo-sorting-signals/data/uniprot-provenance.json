@@ -1,7 +1,0 @@
-{
-  "url": "https://rest.uniprot.org/uniprotkb/accessions?accessions=P02768%2CP01308%2CP11021%2CP27824%2CP07237%2CP11279%2CP04062%2CP01130%2CP02786%2CQ8NBP7%2CP25705%2CO75390%2CP37198%2CP50542%2CP04406&fields=accession%2Cgene_primary%2Cft_signal%2Cft_transit%2Cft_transmem%2Ccc_subcellular_location%2Csequence&format=tsv",
-  "retrieved": "2026-11-18",
-  "release": "2026_04",
-  "rows": 15,
-  "fasta_url": "https://rest.uniprot.org/uniprotkb/accessions?accessions=P02768%2CP01308%2CP11021%2CP27824%2CP07237%2CP11279%2CP04062%2CP01130%2CP02786%2CQ8NBP7%2CP25705%2CO75390%2CP37198%2CP50542%2CP04406&format=fasta"
-}

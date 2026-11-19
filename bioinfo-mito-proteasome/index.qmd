@@ -6,37 +6,123 @@ format:
     toc: true
 resources:
   - bioinfo-mito-proteasome.Rmd
-  - fetch-data.R
   - data/*.csv
-  - data/*.txt
 ---
 
-## What you will learn
+**Goal:** find out how little of a mitochondrion its own genome encodes, see where a cancer drug sits in the proteasome, and see how a "silent" DNA change causes progeria.
 
-How much of a mitochondrion is encoded by its own genome? How does a drug stop a protein machine? You will read mitochondrial genome annotations, inspect a drug in the proteasome and connect a synonymous DNA variant to faulty RNA processing.
+Builds on [protein life and death](../protein-lifecycle/lec.qmd), [mitochondria](../mitochondria/lec.qmd) and [organelles and homeostasis](../organelles-homeostasis/lec.qmd). About 2 hours.
 
-Builds on [protein life and death](../protein-lifecycle/lec.qmd), [mitochondria](../mitochondria/lec.qmd) and [organelles and homeostasis](../organelles-homeostasis/lec.qmd). `[ELO 4, 5, 9]`
+## Part A: in the browser
 
-Work through two short pages:
+### The mitochondrial genome
 
-1. [Database investigation](browser.qmd): NCBI, UniProt, PDB, ChEMBL and ClinVar.
-2. [R Markdown report](report.qmd): plot a mitochondrial genome map, count annotations and explain the result.
+Open [NC_012920.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_012920.1), the human mitochondrial reference genome at NCBI. The first line (**LOCUS**) gives its length.
 
-Allow about 1.5 h for the browser investigation and 1.5–2 h for the report. No accounts are needed.
+**A1.** How long is the human mitochondrial genome, in base pairs? `[ELO 5]`
 
-## Before you start
+::: {.callout-note collapse="true" title="Answer"}
+**16 569 bp**, a circle (LOCUS says `circular`). It carries 37 genes: 13 for proteins, 22 tRNAs and 2 rRNAs.
+:::
 
-Download these files into one folder, keeping the CSV files in a subfolder called `data`:
+### Made in the cytosol, imported
 
-- [Report template](bioinfo-mito-proteasome.Rmd).
-- [Provided data-fetching and feature-table helper](fetch-data.R).
-- [Mitochondrial gene snapshot](data/mtdna-features-2026-11-18.csv).
-- [UniProt mitochondrial protein snapshot](data/uniprot-mitochondria-2026-11-18.csv).
-- [UniProt release metadata](data/uniprot-mitochondria-2026-11-18.csv.release.txt), also saved in `data/`.
-- Optional: [original NCBI feature table](data/NC_012920.1-2026-11-18.txt).
+Open two UniProt entries for subunits of the same machine, the ATP synthase:
 
-In R, install missing packages once: `install.packages(c("rmarkdown", "ggplot2", "rentrez"))`. Open the template in RStudio and click **Knit**, or use `rmarkdown::render("bioinfo-mito-proteasome.Rmd")`. Set `use_snapshot <- TRUE` to work offline after downloading the files. Package installation needs internet; knitting in snapshot mode does not.
+- [P25705](https://www.uniprot.org/uniprotkb/P25705/entry) (ATP5F1A, subunit alpha)
+- [P00846](https://www.uniprot.org/uniprotkb/P00846/entry) (MT-ATP6, subunit a)
 
-## Sources and licences
+In each, look under **PTM/Processing** for a **Transit peptide**. Under **Names & Taxonomy**, P00846 also says **Encoded in: Mitochondrion**.
 
-The snapshots were fetched on 2026-11-18 from [NCBI RefSeq NC_012920.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_012920.1) and [UniProtKB](https://www.uniprot.org), release 2026_04. NCBI records are available for unrestricted reuse under [NCBI's policy](https://www.ncbi.nlm.nih.gov/home/about/policies/); UniProt data are [CC BY 4.0](https://www.uniprot.org/help/license). The gene map is drawn from annotations, not experimental expression data. External structures are viewed on the PDB website. [Full data credits](../credits.qmd#bioinfo-mito-proteasome).
+**A2.** Which of the two has a mitochondrial transit peptide, and which residues does it span? `[ELO 4, 5]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**P25705 (ATP5F1A), residues 1–43.** It is encoded in the nucleus, made on cytosolic ribosomes and imported through TOM/TIM; the transit peptide is then cut off. MT-ATP6 is encoded in mtDNA and made in the matrix, so it needs no transit peptide.
+:::
+
+### A drug in the proteasome
+
+Open [PDB 5LF3](https://www.rcsb.org/structure/5LF3), the human 20S proteasome with bortezomib. Under **Small Molecules**, find the row for **BO2** (bortezomib). Its chains are written like `JB [auth K]`: the letter after `auth` is the protein chain. Look up those letters under **Macromolecules**.
+
+**A3.** Bortezomib is bound to which proteasome subunits? `[ELO 4, 9]`
+
+a) Alpha type-1, -2 and -3
+b) Beta type-5, -6 and -7
+c) Beta type-5 only
+d) Beta type-1, -2 and -3
+
+::: {.callout-note collapse="true" title="Answer"}
+**b) Beta type-5, -6 and -7** (genes PSMB5, PSMB6, PSMB7). These are the three catalytic subunits, also called β5, β1 and β2. At the high concentration in a crystal the drug fills all three active sites. In patients it mainly blocks **β5** (PSMB5), the site from the lecture.
+:::
+
+Now open bortezomib in ChEMBL, [CHEMBL325041](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL325041), and read **Max Phase** at the top.
+
+**A4.** What is bortezomib's maximum development phase? `[ELO 9]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**Phase 4: approved.** Bortezomib has been used against multiple myeloma since 2003. Mechanism of action in ChEMBL: 26S proteasome inhibitor.
+:::
+
+### A silent change that is not silent
+
+Open ClinVar variant [14500](https://www.ncbi.nlm.nih.gov/clinvar/variation/14500/), LMNA c.1824C>T (p.Gly608=). Note the classification (**Pathogenic**) and the condition **Hutchinson–Gilford syndrome** (progeria). `p.Gly608=` means codon 608 still codes for glycine.
+
+**A5. [VG]** How does this variant cause progeria? `[ELO 4, 9]`
+
+a) It changes glycine 608 into another amino acid.
+b) It creates a stop codon, so no lamin A is made.
+c) It activates a hidden splice site; 50 amino acids are lost, including the cleavage site, so the protein keeps its farnesyl lipid.
+d) It lowers transcription of the LMNA gene.
+
+::: {.callout-note collapse="true" title="Answer"}
+**c.** The new splice site removes 150 nucleotides from the mRNA. The protein, progerin, lacks the site where ZMPSTE24 cuts off the farnesylated tail. It stays stuck to the inner nuclear membrane and deforms the lamina. Lonafarnib, which blocks farnesylation, is the approved treatment.
+:::
+
+## Part B: in R
+
+Download the [R Markdown template](bioinfo-mito-proteasome.Rmd) and the two data files into a subfolder `data/`:
+
+- [mtdna-features-2026-11-18.csv](data/mtdna-features-2026-11-18.csv)
+- [uniprot-mitochondria-2026-11-18.csv](data/uniprot-mitochondria-2026-11-18.csv)
+
+Data: NCBI RefSeq NC_012920.1 (public domain) and UniProtKB 2026_04 (CC BY 4.0), retrieved 2026-11-18.
+
+Install once: `install.packages(c("rmarkdown", "ggplot2"))`. Open the template in RStudio and click **Knit**. If NCBI or UniProt is down, set `use_snapshot <- TRUE`.
+
+The template already downloads the mitochondrial genes and the UniProt list of mitochondrial proteins, and draws an example bar chart of genes by type:
+
+```r
+ggplot(genes, aes(x = type)) +
+  geom_bar() +
+  labs(x = "Gene type", y = "Number of genes", title = "Genes in human mtDNA")
+```
+
+In section 4 you complete a similar plot of the protein-coding genes per respiratory complex. Fill three blanks `___`:
+
+1. the gene type that codes for proteins: one of the bars in the example plot, in quotes;
+2. the column that holds the respiratory complex (see the `head(genes)` printout);
+3. an x-axis label, in quotes.
+
+While a blank is empty, the chunk shows an `unexpected input` error. With all three filled, knit again: you should see four bars, labelled I, III, IV and V.
+
+**B1.** Which respiratory complex has the most subunits encoded in mtDNA, and how many? `[ELO 5]`
+
+::: {.callout-note collapse="true" title="Answer"}
+**Complex I, 7 subunits** (ND1–ND6 and ND4L). Then IV: 3, V: 2, III: 1. Complex II has no bar: all its subunits are encoded in the nucleus.
+:::
+
+**B2.** Section 2 of your report prints the share of mitochondrial proteins encoded in mtDNA (`percent_mtdna`). Which is closest? `[ELO 5]`
+
+a) about 1 %
+b) about 10 %
+c) about 50 %
+d) about 90 %
+
+::: {.callout-note collapse="true" title="Answer"}
+**a) about 1 %** (13 of 1 374 proteins in the 2026-11-18 data, 0.9 %). The other 99 % are made in the cytosol and imported, like ATP5F1A in A2. This is why mutations in nuclear genes can cause mitochondrial disease.
+:::
+
+## Hand-in
+
+- Answers to A1–A5 and B1–B2.
+- The knitted HTML with your name, the filled-in plot with four bars, and no errors.

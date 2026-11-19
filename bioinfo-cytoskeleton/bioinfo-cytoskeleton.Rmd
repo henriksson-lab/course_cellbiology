@@ -1,109 +1,134 @@
 ---
-title: "Filaments, tissues and a drug for the heart"
+title: "One filament family per tissue"
+subtitle: "Bioinformatics day 6, Cell Biology (3MB001)"
 author: "Your name"
 date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: true
-params:
-  genes: [KRT5, KRT14, KRT8, KRT18, VIM, DES, GFAP, NEFL, LMNA, MYH6, MYH7, MYH2, MYH9]
+output: html_document
 ---
 
-
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
+# Runs first every time you knit. Hidden in the report (include = FALSE).
 library(ggplot2)
 library(jsonlite)
-library(httr2)
-options(HTTPUserAgent = "3MB001-course", timeout = 90)
-knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+options(HTTPUserAgent = "3MB001-course")
+
+# error = TRUE: the report still knits when a chunk fails, and the error is
+# shown in the HTML. At hand-in there must be no errors left.
+knitr::opts_chunk$set(error = TRUE)
+
+# If the GTEx website is down, set this to TRUE to use the course's saved copy.
 use_snapshot <- FALSE
-dir.create("data", showWarnings = FALSE)
-retrieved <- if (use_snapshot) "2026-11-18" else as.character(Sys.Date())
-get_json <- function(url, ...) {
-  req <- req_url_query(request(url), ...)
-  resp_body_json(req_perform(req_retry(req, max_tries = 3)), simplifyVector = FALSE)
-}
-cache_csv <- function(name, fetch) {
-  file <- file.path("data", paste0(name, "-", retrieved, ".csv"))
-  if (file.exists(file)) return(read.csv(file, stringsAsFactors = FALSE))
-  if (use_snapshot) stop("Missing snapshot: ", file)
-  value <- fetch()
-  write.csv(value, file, row.names = FALSE)
-  value
-}
 ```
 
-# Question
+You only change the three places marked `___` (blanks 1–3), all in one
+`ggplot()` call near the end. All other code is given. Knit after each blank and
+look at the HTML.
 
-State the comparison you will make.
+# The genes and tissues
 
-# Browser evidence
+Sixteen cytoskeleton genes from the lectures, and eight adult tissues from the
+GTEx project.
 
-Record the PDB ligands and one named variant per gene, with accessions and dates.
+```{r genes}
+genes <- c("KRT5", "KRT14", "KRT8", "KRT18",    # keratins (epithelia)
+           "VIM", "DES", "GFAP", "NEFL", "LMNA", # other intermediate filaments
+           "MYH6", "MYH7", "MYH2", "MYH9",       # myosin II heavy chains
+           "TUBB", "TUBB3", "TUBB4A")            # beta-tubulins
+
+tissues <- c(Skin_Not_Sun_Exposed_Suprapubic = "Skin",
+             Esophagus_Mucosa                = "Oesophagus mucosa",
+             Liver                           = "Liver",
+             Lung                            = "Lung",
+             Muscle_Skeletal                 = "Skeletal muscle",
+             Heart_Left_Ventricle            = "Heart (left ventricle)",
+             Brain_Cortex                    = "Brain cortex",
+             Nerve_Tibial                    = "Tibial nerve")
+```
+
+# Fetch expression from GTEx
+
+This chunk is given. For each gene it asks the GTEx API for the gene's GENCODE
+ID, then for the median expression (TPM) in every tissue, and keeps our eight
+tissues. With `use_snapshot <- TRUE` it reads the course's saved copy instead.
+
+```{r fetch}
+retrieved <- "not yet"   # a default, so the text at the end always knits
+
+if (use_snapshot) {
+  snapshot_file <- "data/gtex-expression-2026-11-18.csv"
+  if (!file.exists(snapshot_file)) {
+    snapshot_file <- paste0("https://henriksson-lab.github.io/course_cellbiology/",
+                            "bioinfo-cytoskeleton/data/gtex-expression-2026-11-18.csv")
+  }
+  expression <- read.csv(snapshot_file)
+  retrieved <- "2026-11-18 (course snapshot)"
+} else {
+  gtex_api <- "https://gtexportal.org/api/v2/"
+  rows <- list()
+  for (gene in genes) {
+    ref <- fromJSON(paste0(gtex_api, "reference/gene?geneId=", gene,
+                           "&datasetId=gtex_v8"))$data
+    gencode_id <- ref$gencodeId[ref$geneSymbol == gene]
+    med <- fromJSON(paste0(gtex_api, "expression/medianGeneExpression?gencodeId=",
+                           gencode_id, "&datasetId=gtex_v8&itemsPerPage=250"))$data
+    med <- med[med$tissueSiteDetailId %in% names(tissues), ]
+    rows[[gene]] <- data.frame(gene = gene, gencode_id = gencode_id,
+                               tissue = med$tissueSiteDetailId, tpm = med$median,
+                               dataset = "gtex_v8")
+  }
+  expression <- do.call(rbind, rows)
+  retrieved <- as.character(Sys.Date())
+}
+
+# Cleaning: keep our genes, use readable tissue names, and fix the order of
+# rows and columns so that related genes and tissues sit next to each other.
+expression <- expression[expression$gene %in% genes, ]
+expression$tissue <- factor(tissues[expression$tissue], levels = tissues)
+expression$gene <- factor(expression$gene, levels = rev(genes))
+rownames(expression) <- NULL
+nrow(expression)   # 16 genes x 8 tissues = 128
+```
+
+# Example: a heatmap of raw TPM
+
+This chunk is given. A heatmap draws one coloured tile (`geom_tile()`) per
+gene and tissue. Here the colour is the raw TPM.
+
+```{r example-heatmap, fig.width = 8, fig.height = 5}
+ggplot(expression, aes(x = tissue, y = gene, fill = tpm)) +
+  geom_tile() +
+  scale_fill_viridis_c(name = "TPM") +
+  labs(x = NULL, y = NULL, title = "Raw TPM") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# The three highest values, to check what you see:
+head(expression[order(-expression$tpm), c("gene", "tissue", "tpm")], 3)
+```
+
+# Your heatmap: log scale
+
+Copy the idea of the example, but colour by `log10(tpm + 1)`. The log makes a
+gene at 10 TPM visible next to one at 10 000 TPM; the `+ 1` avoids `log10(0)`.
+
+- **Blank 1:** the fill: `log10(tpm + 1)`.
+- **Blank 2:** the layer that draws the tiles (see the example).
+- **Blank 3:** the title of the colour key: `log10(TPM + 1)`.
+
+```{r log-heatmap, fig.width = 8, fig.height = 5}
+ggplot(expression, aes(x = tissue, y = gene, fill = ___)) +
+  ___ +
+  scale_fill_viridis_c(name = "___") +
+  labs(x = NULL, y = NULL, title = "log10(TPM + 1)",
+       caption = paste("Data: GTEx v8 median TPM, retrieved", retrieved)) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
 
 # Data
 
-Name the sources, GTEx release, and whether you used live data or a snapshot.
-
-```{r gtex-fetch}
-genes <- params$genes
-tissues <- c("Skin_Not_Sun_Exposed_Suprapubic", "Esophagus_Mucosa",
-             "Muscle_Skeletal", "Heart_Left_Ventricle", "Brain_Cortex",
-             "Nerve_Tibial", "Liver", "Lung")
-fetch_expression <- function() {
-  rows <- lapply(genes, function(gene) {
-    ref <- get_json("https://gtexportal.org/api/v2/reference/gene",
-                    geneId = gene, datasetId = "gtex_v8")$data
-    exact <- Filter(function(x) identical(x$geneSymbol, gene), ref)
-    if (length(exact) != 1) stop("Ambiguous gene: ", gene)
-    id <- exact[[1]]$gencodeId
-    exp <- get_json("https://gtexportal.org/api/v2/expression/medianGeneExpression",
-                    gencodeId = id, datasetId = "gtex_v8", itemsPerPage = 250)$data
-    exp <- Filter(function(x) x$tissueSiteDetailId %in% tissues, exp)
-    do.call(rbind, lapply(exp, function(x) data.frame(
-      gene = gene, gencode_id = id, tissue = x$tissueSiteDetailId,
-      tpm = x$median, dataset = "gtex_v8")))
-  })
-  do.call(rbind, rows)
-}
-# Parameter-specific live cache avoids reusing results for another gene set.
-cache_name <- if (use_snapshot) "gtex-expression" else
-  paste0("gtex-expression-", paste(sort(genes), collapse = "_"))
-expression <- cache_csv(cache_name, fetch_expression)
-if (!all(genes %in% expression$gene)) stop("Requested genes absent from cache")
-expression <- expression[expression$gene %in% genes, ]
-stopifnot(nrow(expression) == length(genes) * length(tissues))
-```
-
-# Plot tissue expression
-
-Make the heatmap described on the course page.
-
-```{r expression-heatmap, fig.width=9, fig.height=5}
-# Your plot code
-```
-
-# Fetch trial records
-
-Write the paginated ClinicalTrials.gov query; in snapshot mode read the shipped CSV. Cache live results.
-
-```{r trials-fetch}
-# Your API and caching code
-```
-
-```{r trial-phase-chart}
-# Split phase lists, count and plot
-```
-
-# Interpretation
-
-Include one inline R value and distinguish expression, study counts and clinical evidence.
-
-# Sources and retrieval dates
-
-List the exact API URLs and the retrieval date of the data used.
-
-# Reproducibility
+- **Source:** GTEx Portal, <https://gtexportal.org> (dataset `gtex_v8`), API v2.
+- **Retrieved:** `r retrieved`
 
 ```{r session-info}
 sessionInfo()

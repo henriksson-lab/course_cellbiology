@@ -199,7 +199,7 @@ website:
                 href: organelles-homeostasis/questions.qmd
               - text: "Demo: measure the organelles"
                 href: organelles-homeostasis/questions.qmd#explore
-          - text: "Bioinformatics: genomes inside organelles and drugs on machines"
+          - text: "Bioinformatics: genomes inside organelles, and drugs on machines"
             href: bioinfo-mito-proteasome/index.qmd
       - section: "Cell signalling"
         contents:
@@ -243,7 +243,7 @@ website:
                 href: fate-signalling/questions.qmd
               - text: "Demo: Notch lateral inhibition"
                 href: fate-signalling/questions.qmd#explore
-          - text: "Bioinformatics: how selective is a kinase inhibitor?"
+          - text: "Bioinformatics: how selective is imatinib?"
             href: bioinfo-drug-targets/index.qmd
       - section: "Cytoskeleton"
         contents:
@@ -277,7 +277,7 @@ website:
                 href: myosin-if/questions.qmd
               - text: "Demo: sarcomere"
                 href: myosin-if/questions.qmd#explore
-          - text: "Bioinformatics: filaments, tissues and a drug for the heart"
+          - text: "Bioinformatics: one filament family per tissue"
             href: bioinfo-cytoskeleton/index.qmd
       - section: "Cell cycle and cell death"
         contents:
@@ -365,7 +365,7 @@ website:
                 href: drug-journey/questions.qmd
               - text: "Demo: drug journey"
                 href: drug-journey/questions.qmd#explore
-          - text: "Bioinformatics: read the mutations"
+          - text: "Bioinformatics: BRAF V600E and vemurafenib"
             href: bioinfo-cancer-genomics/index.qmd
 
 format:

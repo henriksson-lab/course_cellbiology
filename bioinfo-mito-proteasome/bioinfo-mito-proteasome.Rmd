@@ -2,72 +2,133 @@
 title: "Genomes inside organelles"
 author: "YOUR NAME"
 date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: true
+output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(error = TRUE)  # errors are shown in the report instead of stopping the knit
 library(ggplot2)
 options(HTTPUserAgent = "3MB001-course", timeout = 90)
+
+# TRUE = use the course copies of the data (works when NCBI or UniProt is down)
 use_snapshot <- FALSE
-source("fetch-data.R")
+
+snapshot_date <- "2026-11-18"
+snapshot_site <- "https://henriksson-lab.github.io/course_cellbiology/bioinfo-mito-proteasome/data/"
+read_snapshot <- function(file, ...) {
+  local_file <- file.path("data", file)
+  if (file.exists(local_file)) read.csv(local_file, ...) else read.csv(paste0(snapshot_site, file), ...)
+}
+data_date <- snapshot_date
 ```
 
-# Question
+## 1. The genes in human mtDNA (given)
 
-How does a small mitochondrial genome support a much larger protein machine network?
+This chunk downloads the feature table of the human mitochondrial genome,
+[NC_012920.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_012920.1), and turns it into
+one row per gene. You do not need to change it.
 
-# Browser notes
+```{r genes}
+# Turn an NCBI feature table into one row per CDS, tRNA or rRNA gene
+parse_feature_table <- function(text) {
+  lines <- strsplit(text, "\n", fixed = TRUE)[[1]]
+  features <- list()
+  for (line in lines[-1]) {
+    cells <- strsplit(line, "\t", fixed = TRUE)[[1]]
+    if (length(cells) >= 3 && nzchar(cells[1]) && nzchar(cells[3])) {
+      features[[length(features) + 1]] <- list(start = as.integer(cells[1]),
+        end = as.integer(cells[2]), type = cells[3], gene = "", product = "")
+    } else if (length(cells) >= 5 && cells[4] %in% c("gene", "product")) {
+      features[[length(features)]][[cells[4]]] <- cells[5]
+    }
+  }
+  tab <- do.call(rbind, lapply(features, as.data.frame))
+  gene_rows <- tab[tab$type == "gene", ]
+  out <- tab[tab$type %in% c("CDS", "tRNA", "rRNA"), ]
+  key <- function(x) paste(x$start, x$end)
+  out$gene <- gene_rows$gene[match(key(out), key(gene_rows))]
+  out$strand <- ifelse(out$start < out$end, "+", "-")
+  lo <- pmin(out$start, out$end); hi <- pmax(out$start, out$end)
+  out$start <- lo; out$end <- hi
+  # Which respiratory complex does each protein-coding gene belong to?
+  out$complex <- "RNA"
+  out$complex[grepl("^ND", out$gene)] <- "I"
+  out$complex[out$gene == "CYTB"] <- "III"
+  out$complex[grepl("^COX", out$gene)] <- "IV"
+  out$complex[grepl("^ATP", out$gene)] <- "V"
+  rownames(out) <- NULL
+  out[, c("gene", "start", "end", "strand", "type", "complex", "product")]
+}
 
-Record a genome accession/version, one drug-target structure and the transcript-specific LMNA variant you investigated. Include the date viewed and distinguish a database annotation from a measurement.
-
-# Data
-
-```{r fetch-data}
-records <- fetch_organelle_data(use_snapshot)
-genes <- records$genes
-proteins <- records$proteins
+if (use_snapshot) {
+  genes <- read_snapshot("mtdna-features-2026-11-18.csv")
+} else {
+  genes <- tryCatch({
+    ncbi_url <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
+                       "?db=nuccore&id=NC_012920.1&rettype=ft&retmode=text")
+    raw <- paste(readLines(ncbi_url, warn = FALSE), collapse = "\n")
+    data_date <- as.character(Sys.Date())
+    parse_feature_table(raw)
+  }, error = function(e) {
+    message("NCBI did not answer; using the course snapshot.")
+    read_snapshot("mtdna-features-2026-11-18.csv")
+  })
+}
 head(genes)
 ```
 
-Data mode: `r records$mode`. Retrieval date: `r records$retrieved`.
-UniProtKB release: `r records$release`.
+## 2. Mitochondrial proteins in UniProt (given)
 
-- NCBI request: `r records$ncbi_url`
-- UniProt request: `r records$uniprot_url`
-- RefSeq genome: NC_012920.1, 16,569 bp. NCBI data reuse policy: <https://www.ncbi.nlm.nih.gov/home/about/policies/>.
-- UniProt data: CC BY 4.0, <https://www.uniprot.org/help/license>.
+All reviewed human proteins that UniProt places in the mitochondrion.
 
-Live requests are cached in `data/` under the retrieval date; re-knitting on that date reuses them. Snapshot mode requires the two downloaded CSVs and makes no web requests. The provided helper parses CDS/tRNA/rRNA features and matches them to gene features; coordinates are 1-based and inclusive. Overlapping genes remain separate features.
+```{r proteins}
+uniprot_url <- paste0("https://rest.uniprot.org/uniprotkb/stream?format=tsv",
+  "&fields=accession,gene_primary",
+  "&query=organism_id%3A9606%20AND%20reviewed%3Atrue%20AND%20cc_scl_term%3ASL-0173")
 
-# Counts
-
-Count genes by feature type and CDS genes by respiratory complex. Compare the number of reviewed human mitochondrial protein entries with the 13 mtDNA protein genes.
-
-```{r annotation-counts}
-# Your code: table(), nrow() and sum() can help.
+if (use_snapshot) {
+  mito_proteins <- read_snapshot("uniprot-mitochondria-2026-11-18.csv", check.names = FALSE)
+} else {
+  mito_proteins <- tryCatch(read.delim(uniprot_url, check.names = FALSE),
+    error = function(e) {
+      message("UniProt did not answer; using the course snapshot.")
+      read_snapshot("uniprot-mitochondria-2026-11-18.csv", check.names = FALSE)
+    })
+}
+n_mito <- nrow(mito_proteins)
+n_mito
+percent_mtdna <- round(100 * 13 / n_mito, 1)
+percent_mtdna
 ```
 
-# Genome map
+UniProt lists `r n_mito` mitochondrial proteins. Only 13 are encoded in mtDNA,
+that is `r percent_mtdna` %.
 
-Draw one horizontal segment per annotated gene, from start to end. Colour by complex (or RNA) and separate the two strands. Keep the x axis in base pairs and label the reference accession in the caption.
+## 3. Example plot: genes by type (given)
 
-```{r genome-map, fig.width=9, fig.height=4}
-# Your code: ggplot() + geom_segment() + labels.
+```{r example-plot, fig.width = 5, fig.height = 3.5}
+ggplot(genes, aes(x = type)) +
+  geom_bar() +
+  labs(x = "Gene type", y = "Number of genes", title = "Genes in human mtDNA")
 ```
 
-# Interpretation
+## 4. Your plot: protein genes by respiratory complex
 
-Write a results paragraph with at least one inline R value. Explain why a mitochondrial disease can be caused by a nuclear gene.
+Fill in the three blanks `___`, then knit again.
 
-A map of annotations shows where genes lie; it does not measure how strongly each gene is expressed. A CDS feature and a gene feature must not be counted twice. Overlaps mean summing feature lengths does not give the fraction of unique bases covered.
+```{r your-plot, fig.width = 5, fig.height = 3.5}
+# Blank 1: keep only the protein-coding genes (the gene type that makes proteins)
+protein_genes <- genes[genes$type == ___, ]
 
-# Sources from the browser
+# Blank 2: the column to count on the x axis
+# Blank 3: a label for the x axis (text in quotes)
+ggplot(protein_genes, aes(x = ___)) +
+  geom_bar() +
+  labs(x = ___, y = "Number of mtDNA-encoded subunits",
+       title = "mtDNA-encoded subunits per complex")
+```
 
-Record the stable links you used for 5LF3, CHEMBL325041 and ClinVar variation 14500, with access dates. Explain in your own words how protein degradation and RNA splicing relate to disease.
-
-# Session info
+Data: NCBI NC_012920.1 and UniProtKB, retrieved `r data_date`.
 
 ```{r session-info}
 sessionInfo()

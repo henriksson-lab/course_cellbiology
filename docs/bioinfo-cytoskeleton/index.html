@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bioinformatics: filaments, tissues and a drug for the heart – Cell Biology</title>
+<title>Bioinformatics: one filament family per tissue – Cell Biology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -150,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cytoskeleton</li><li class="breadcrumb-item"><a href="../bioinfo-cytoskeleton/index.html">Bioinformatics: filaments, tissues and a drug for the heart</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cytoskeleton</li><li class="breadcrumb-item"><a href="../bioinfo-cytoskeleton/index.html">Bioinformatics: one filament family per tissue</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -718,7 +683,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-mito-proteasome/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: genomes inside organelles and drugs on machines</span></a>
+ <span class="menu-text">Bioinformatics: genomes inside organelles, and drugs on machines</span></a>
   </div>
 </li>
       </ul>
@@ -875,7 +840,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-drug-targets/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: how selective is a kinase inhibitor?</span></a>
+ <span class="menu-text">Bioinformatics: how selective is imatinib?</span></a>
   </div>
 </li>
       </ul>
@@ -997,7 +962,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-cytoskeleton/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Bioinformatics: filaments, tissues and a drug for the heart</span></a>
+ <span class="menu-text">Bioinformatics: one filament family per tissue</span></a>
   </div>
 </li>
       </ul>
@@ -1311,7 +1276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-cancer-genomics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: read the mutations</span></a>
+ <span class="menu-text">Bioinformatics: BRAF V600E and vemurafenib</span></a>
   </div>
 </li>
       </ul>
@@ -1326,19 +1291,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#what-you-will-do" id="toc-what-you-will-do" class="nav-link active" data-scroll-target="#what-you-will-do">What you will do</a></li>
-  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
-  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
-  <li><a href="#sources-and-licences" id="toc-sources-and-licences" class="nav-link" data-scroll-target="#sources-and-licences">Sources and licences</a></li>
+  <li><a href="#part-a-in-the-browser" id="toc-part-a-in-the-browser" class="nav-link active" data-scroll-target="#part-a-in-the-browser">Part A: in the browser</a></li>
+  <li><a href="#part-b-in-r" id="toc-part-b-in-r" class="nav-link" data-scroll-target="#part-b-in-r">Part B: in R</a></li>
+  <li><a href="#hand-in" id="toc-hand-in" class="nav-link" data-scroll-target="#hand-in">Hand in</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cytoskeleton</li><li class="breadcrumb-item"><a href="../bioinfo-cytoskeleton/index.html">Bioinformatics: filaments, tissues and a drug for the heart</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cytoskeleton</li><li class="breadcrumb-item"><a href="../bioinfo-cytoskeleton/index.html">Bioinformatics: one filament family per tissue</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Bioinformatics: filaments, tissues and a drug for the heart</h1>
+<h1 class="title">Bioinformatics: one filament family per tissue</h1>
 </div>
 
 
@@ -1355,34 +1319,181 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="what-you-will-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-will-do">What you will do</h2>
-<p>Compare cytoskeletal gene families across tissues, locate drugs in experimental structures, and read a clinical-trial record. Build a parameterised R Markdown report with a tissue heatmap and a trial-phase chart. <strong>ELO 6, 9.</strong></p>
-<p>Builds on <a href="../actin/lec.html">actin</a>, <a href="../microtubules/lec.html">microtubules</a>, and <a href="../myosin-if/lec.html">myosin and intermediate filaments</a>. Allow about 3–4 hours.</p>
+<style>
+  /* Long URLs and code wrap on narrow screens. */
+  main a, main p code, main li code { overflow-wrap: anywhere; }
+  main p code, main li code { white-space: pre-wrap; }
+</style>
+<p><strong>Goal:</strong> find drugs bound to tubulin and myosin in real structures, link two filament genes to their diseases, and draw a heatmap showing which tissue uses which filament gene.</p>
+<p><strong>Builds on:</strong> <a href="../actin/lec.html">Actin</a>, <a href="../microtubules/lec.html">Microtubules</a> and <a href="../myosin-if/lec.html">Myosin and intermediate filaments</a>. <strong>ELO 6, 9.</strong> <strong>Time:</strong> about 2 hours.</p>
+<section id="part-a-in-the-browser" class="level2">
+<h2 class="anchored" data-anchor-id="part-a-in-the-browser">Part A: in the browser</h2>
+<p>No logins are needed. Note your answers as you go; you check them in the collapsed boxes.</p>
+<section id="a1.-taxol-on-tubulin" class="level3">
+<h3 class="anchored" data-anchor-id="a1.-taxol-on-tubulin">A1. Taxol on tubulin</h3>
+<p>Open <a href="https://www.rcsb.org/structure/1JFF">PDB 1JFF</a> (tubulin with taxol). Under <strong>Macromolecules</strong>, find which chain is α-tubulin and which is β-tubulin. Under <strong>Small Molecules</strong>, find <strong>TA1</strong> (taxol) and the chain it binds.</p>
+<p><strong>Task A1.</strong> Which chain, and so which tubulin subunit, binds taxol? <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Chain B, β-tubulin.</strong> As in the lecture, taxanes bind β-tubulin inside the lattice and lock the microtubule.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="a2.-two-drugs-on-the-same-motor" class="level3">
+<h3 class="anchored" data-anchor-id="a2.-two-drugs-on-the-same-motor">A2. Two drugs on the same motor</h3>
+<p>Open <a href="https://www.rcsb.org/structure/5N69">PDB 5N69</a> and <a href="https://www.rcsb.org/structure/8QYR">PDB 8QYR</a>. Both show the motor of β-cardiac myosin (gene <em>MYH7</em>, here from cow) in the same pre-powerstroke state, each with a different drug. Read each title and the <strong>Small Molecules</strong> list.</p>
+<p><strong>Task A2.</strong> Which entry contains the drug used to treat hypertrophic cardiomyopathy (HCM), and what is its three-character ligand code? <code>[ELO 6, 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>8QYR, ligand XB2 (mavacamten)</strong>, an inhibitor that parks myosin heads. 5N69 holds <strong>omecamtiv mecarbil</strong> (code 2OW), an <em>activator</em>. Same motor, a shared binding pocket, opposite effects on force.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="a3.-the-trial-that-led-to-approval" class="level3">
+<h3 class="anchored" data-anchor-id="a3.-the-trial-that-led-to-approval">A3. The trial that led to approval</h3>
+<p>Open the EXPLORER-HCM record, <a href="https://clinicaltrials.gov/study/NCT03470545">NCT03470545</a> on ClinicalTrials.gov. Find the study <strong>phase</strong> and the <strong>arms</strong> (the groups that were compared).</p>
+<p><strong>Task A3.</strong> Which trial phase is it, and what did the comparison group receive? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Phase 3</strong>, randomised against <strong>placebo</strong>. You meet trial phases again in the course on clinical trials and drug development.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="a4.-one-variant-per-gene" class="level3">
+<h3 class="anchored" data-anchor-id="a4.-one-variant-per-gene">A4. One variant per gene</h3>
+<p>Open two ClinVar records: <a href="https://www.ncbi.nlm.nih.gov/clinvar/variation/14612/">VCV000014612</a> (KRT14 p.Arg125Cys) and <a href="https://www.ncbi.nlm.nih.gov/clinvar/variation/14087/">VCV000014087</a> (MYH7 p.Arg403Gln). Read the <strong>classification</strong> and the <strong>condition(s)</strong>.</p>
+<p><strong>Task A4.</strong> Which disease is linked to each variant? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>KRT14 p.Arg125Cys: <strong>epidermolysis bullosa simplex</strong> (blistering skin). MYH7 p.Arg403Gln: <strong>hypertrophic cardiomyopathy</strong>. Both are classified <em>Pathogenic</em>. Arg125 sits at the conserved start of the keratin rod, the part needed for filaments to join end to end.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="part-b-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="part-b-in-r">Part B: in R</h2>
+<section id="before-you-start" class="level3">
+<h3 class="anchored" data-anchor-id="before-you-start">Before you start</h3>
 <ol type="1">
-<li><a href="../bioinfo-cytoskeleton/browser.html">In the browser: structures, variants and trials</a>.</li>
-<li><a href="../bioinfo-cytoskeleton/report.html">In R: tissue expression and trial records</a>.</li>
+<li>Download the template <a href="bioinfo-cytoskeleton.Rmd" download="bioinfo-cytoskeleton.Rmd">bioinfo-cytoskeleton.Rmd</a> into a new folder.</li>
+<li>Check that <code>ggplot2</code>, <code>jsonlite</code> and <code>rmarkdown</code> are installed (<code>install.packages(c("ggplot2", "jsonlite", "rmarkdown"))</code> if not).</li>
+<li>If GTEx is down, set <code>use_snapshot &lt;- TRUE</code>. The template then reads the saved copy <a href="data/gtex-expression-2026-11-18.csv">gtex-expression-2026-11-18.csv</a> from a <code>data/</code> folder next to it, or from this site.</li>
 </ol>
+<p>Data: GTEx v8 median TPM (GTEx Portal, open-access summary data), retrieved 2026-11-18.</p>
 </section>
-<section id="before-you-start" class="level2">
-<h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
-<p>No account is needed. Use RStudio or R with <code>rmarkdown</code>, <code>ggplot2</code>, <code>jsonlite</code> and <code>httr2</code> installed. Install missing packages once in the console:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"rmarkdown"</span>, <span class="st">"ggplot2"</span>, <span class="st">"jsonlite"</span>, <span class="st">"httr2"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Download the report and all listed snapshots. Put the report in a new folder and CSV/JSON files in its <code>data/</code> subfolder. Keep the filenames. If an API is unavailable, set <code>use_snapshot &lt;- TRUE</code>. A snapshot is a dated copy of real records, not simulated data. Knitting uses a fresh R session: create every object in the report and finish with <code>sessionInfo()</code>. Do not include your R console history as a substitute for code.</p>
+<section id="what-the-template-does" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-template-does">What the template does</h3>
+<p>The given code fetches the median RNA expression (TPM) of 16 cytoskeleton genes in eight tissues from the GTEx API, and draws an <strong>example heatmap</strong> of raw TPM. Your job is to complete one <code>ggplot()</code> call that draws the same heatmap on a log scale. Fill the three blanks <code>___</code>:</p>
+<ol type="1">
+<li><strong>Blank 1:</strong> <code>fill = log10(tpm + 1)</code>.</li>
+<li><strong>Blank 2:</strong> the layer that draws the tiles (copy it from the example).</li>
+<li><strong>Blank 3:</strong> the title of the colour key, <code>"log10(TPM + 1)"</code>.</li>
+</ol>
+<p>Until all three are filled, the chunk shows an <code>Error ... unexpected input</code>. When they are, you see a 16 × 8 grid of tiles with a colour key titled <strong>log10(TPM + 1)</strong>, and far more coloured tiles than in the example.</p>
+<p><strong>Task B1.</strong> In the given raw-TPM example, which single tile (gene and tissue) is brightest? <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>DES in skeletal muscle</strong> (about 12 000 TPM; the printed top three confirms it). Desmin links Z-discs in muscle. Almost every other tile is dark: raw TPM hides everything below a few hundred, which is why you use a log scale.</p>
+</div>
+</div>
+</div>
+<p><strong>Task B2.</strong> On your log heatmap: in which two tissues is <em>MYH7</em> (β-cardiac myosin, the mavacamten target) high, and which myosin heavy chain is high only in skeletal muscle? <code>[ELO 6, 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><em>MYH7</em> is high in <strong>heart (left ventricle) and skeletal muscle</strong> (slow fibres use the same β-myosin). <strong>MYH2</strong> is high only in skeletal muscle (fast fibres).</p>
+</div>
+</div>
+</div>
+<p><strong>Task B3. [VG]</strong> KRT8 and KRT18 form one keratin pair (type II + type I). Where are both highest? (a) skin and oesophagus mucosa; (b) liver and lung; (c) brain cortex and tibial nerve; (d) heart and skeletal muscle. <code>[ELO 6]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>(b) liver and lung.</strong> KRT8/KRT18 is the pair of <em>simple</em> (single-layer) epithelia. KRT5/KRT14, the pair broken in epidermolysis bullosa simplex (A4), marks the <em>stratified</em> epithelia of skin and oesophagus.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="downloads" class="level2">
-<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
+</section>
+<section id="hand-in" class="level2">
+<h2 class="anchored" data-anchor-id="hand-in">Hand in</h2>
 <ul>
-<li><a href="bioinfo-cytoskeleton.Rmd">Student report</a></li>
-<li><a href="data/gtex-expression-2026-11-18.csv">GTEx expression snapshot</a></li>
-<li><a href="data/mavacamten-trials-2026-11-18.csv">Mavacamten trial snapshot</a></li>
-<li><a href="data/retrieval-manifest-2026-11-18.json">Retrieval record</a></li>
+<li>Your answers to A1–A4 and B1–B3 (one line each).</li>
+<li>The knitted HTML with both heatmaps and <strong>no errors</strong>.</li>
+<li>The <strong>Data</strong> section showing the retrieval date.</li>
 </ul>
-<p>For a second gene set, use the supplied tubulin isotypes TUBB, TUBB3 and TUBB4A. The snapshot contains these in addition to the 13 core genes.</p>
-</section>
-<section id="sources-and-licences" class="level2">
-<h2 class="anchored" data-anchor-id="sources-and-licences">Sources and licences</h2>
-<p>GTEx v8, adult tissue median RNA expression (TPM), from the <a href="https://gtexportal.org/api/v2/">GTEx API</a>; cite the GTEx Consortium, <em>Science</em> 369:1318–1330 (2020), <a href="https://doi.org/10.1126/science.aaz1776">doi:10.1126/science.aaz1776</a>. Use only open summary data here; donor-level controlled data are not included. <a href="https://clinicaltrials.gov/data-api/api">ClinicalTrials.gov</a> supplies public registry records, retrieved 2026-11-18. RCSB PDB coordinates are CC0; no external images are copied.</p>
 
 
 </section>

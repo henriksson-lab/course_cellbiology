@@ -1,6 +1,0 @@
-{
-  "url": "https://rest.uniprot.org/uniprotkb/accessions?accessions=P05023%2CP11166%2CP13866%2CP31639%2CP08183%2CP13569%2CP29972%2CQ09470&fields=accession%2Cgene_primary%2Cft_transmem%2Cft_topo_dom%2Clength&format=tsv",
-  "retrieved": "2026-11-18",
-  "release": "2026_04",
-  "rows": 8
-}

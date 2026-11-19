@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bioinformatics: read the mutations – Cell Biology</title>
+<title>Bioinformatics: BRAF V600E and vemurafenib – Cell Biology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -150,7 +150,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cell death and disease</li><li class="breadcrumb-item"><a href="../bioinfo-cancer-genomics/index.html">Bioinformatics: read the mutations</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cell death and disease</li><li class="breadcrumb-item"><a href="../bioinfo-cancer-genomics/index.html">Bioinformatics: BRAF V600E and vemurafenib</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -718,7 +718,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-mito-proteasome/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: genomes inside organelles and drugs on machines</span></a>
+ <span class="menu-text">Bioinformatics: genomes inside organelles, and drugs on machines</span></a>
   </div>
 </li>
       </ul>
@@ -875,7 +875,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-drug-targets/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: how selective is a kinase inhibitor?</span></a>
+ <span class="menu-text">Bioinformatics: how selective is imatinib?</span></a>
   </div>
 </li>
       </ul>
@@ -997,7 +997,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-cytoskeleton/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: filaments, tissues and a drug for the heart</span></a>
+ <span class="menu-text">Bioinformatics: one filament family per tissue</span></a>
   </div>
 </li>
       </ul>
@@ -1311,7 +1311,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bioinfo-cancer-genomics/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Bioinformatics: read the mutations</span></a>
+ <span class="menu-text">Bioinformatics: BRAF V600E and vemurafenib</span></a>
   </div>
 </li>
       </ul>
@@ -1326,19 +1326,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#what-you-will-do" id="toc-what-you-will-do" class="nav-link active" data-scroll-target="#what-you-will-do">What you will do</a></li>
-  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
-  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Downloads</a></li>
-  <li><a href="#sources-and-licences" id="toc-sources-and-licences" class="nav-link" data-scroll-target="#sources-and-licences">Sources and licences</a></li>
+  <li><a href="#part-a-in-the-browser" id="toc-part-a-in-the-browser" class="nav-link active" data-scroll-target="#part-a-in-the-browser">Part A: in the browser</a></li>
+  <li><a href="#part-b-in-r" id="toc-part-b-in-r" class="nav-link" data-scroll-target="#part-b-in-r">Part B: in R</a></li>
+  <li><a href="#hand-in" id="toc-hand-in" class="nav-link" data-scroll-target="#hand-in">Hand in</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cell death and disease</li><li class="breadcrumb-item"><a href="../bioinfo-cancer-genomics/index.html">Bioinformatics: read the mutations</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cell death and disease</li><li class="breadcrumb-item"><a href="../bioinfo-cancer-genomics/index.html">Bioinformatics: BRAF V600E and vemurafenib</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Bioinformatics: read the mutations</h1>
+<h1 class="title">Bioinformatics: BRAF V600E and vemurafenib</h1>
 </div>
 
 
@@ -1355,34 +1354,185 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="what-you-will-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-will-do">What you will do</h2>
-<p>Compare mutation positions in an oncogene and a tumour suppressor, then write a short report that combines evidence from at least three databases. <strong>ELO 8, 9.</strong></p>
-<p>Builds on <a href="../regulated-necrosis/lec.html">cell death beyond apoptosis</a>, <a href="../cancer/lec.html">cancer</a>, the <a href="../disease-casebook/lec.html">disease casebook</a>, and <a href="../drug-journey/lec.html">the drug-journey capstone</a>. Allow about 3–4 hours for the guided activities; the independent report may need more time.</p>
-<ol type="1">
-<li><a href="../bioinfo-cancer-genomics/browser.html">In the browser: mutation patterns and death proteins</a>.</li>
-<li><a href="../bioinfo-cancer-genomics/report.html">In R: mutation positions in melanoma</a>.</li>
-<li><a href="../bioinfo-cancer-genomics/capstone.html">Your own report: one mechanism, several sources</a>.</li>
+<p>Follow one oncogene and its drug through four databases: the mutation in tumours, the protein, the drug bound to it, and the trial that tested it. <strong>ELO 9.</strong></p>
+<p>Builds on <a href="../cancer/lec.html">cancer</a>, <a href="../regulated-necrosis/lec.html">cell death beyond apoptosis</a>, the <a href="../disease-casebook/lec.html">disease casebook</a> and the <a href="../drug-journey/lec.html">drug journey</a>. About 2 hours.</p>
+<section id="part-a-in-the-browser" class="level2">
+<h2 class="anchored" data-anchor-id="part-a-in-the-browser">Part A: in the browser</h2>
+<section id="a1.-the-hotspot-in-melanoma" class="level3">
+<h3 class="anchored" data-anchor-id="a1.-the-hotspot-in-melanoma">A1. The hotspot in melanoma</h3>
+<p>Open the <a href="https://www.cbioportal.org/results/mutations?cancer_study_list=skcm_tcga_pan_can_atlas_2018&amp;case_set_id=skcm_tcga_pan_can_atlas_2018_all&amp;gene_list=BRAF%20TP53">BRAF and TP53 mutations in TCGA melanoma</a> in cBioPortal. The <strong>Mutations</strong> tab opens with <strong>BRAF</strong> selected. Each lollipop is one amino-acid position; its height is the number of patients with a mutation there. Then click <strong>TP53</strong> and compare.</p>
+<p><strong>T1.</strong> At which amino-acid position does BRAF have by far the tallest lollipop? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer (checked 2026-11-19)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Position 600</strong> (valine 600, label “V600E/K/R”). Most of these are <strong>V600E</strong>. TP53, in contrast, has many short lollipops spread over the protein.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="a2.-where-is-v600-in-the-protein" class="level3">
+<h3 class="anchored" data-anchor-id="a2.-where-is-v600-in-the-protein">A2. Where is V600 in the protein?</h3>
+<p>Open <a href="https://www.uniprot.org/uniprotkb/P15056/entry">BRAF, UniProt P15056</a> and go to the section <strong>Family &amp; Domains</strong>.</p>
+<p><strong>T2.</strong> Which domain contains residue 600? <code>[ELO 9]</code></p>
+<ol type="a">
+<li>The Ras-binding domain (RBD)</li>
+<li>The phorbol-ester/DAG-type zinc finger</li>
+<li>The protein kinase domain</li>
 </ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer (checked 2026-11-19)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>c.</strong> The protein kinase domain covers residues 457–717. V600E sits in the activation segment of the kinase and keeps BRAF active without RAS, so the RAF–MEK–ERK pathway from the signalling lecture stays on.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="before-you-start" class="level2">
-<h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
-<p>No account is needed. Use RStudio or R with <code>rmarkdown</code>, <code>ggplot2</code>, <code>jsonlite</code> and <code>httr2</code> installed. Install missing packages once in the console:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"rmarkdown"</span>, <span class="st">"ggplot2"</span>, <span class="st">"jsonlite"</span>, <span class="st">"httr2"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Download the report and all listed snapshots. Put the report in a new folder and CSV/JSON files in its <code>data/</code> subfolder. Keep the filenames. If an API is unavailable, set <code>use_snapshot &lt;- TRUE</code>. A snapshot is a dated copy of real records, not simulated data. Knitting uses a fresh R session: create every object in the report and finish with <code>sessionInfo()</code>. Do not include your R console history as a substitute for code.</p>
+<section id="a3.-the-drug-in-the-binding-site" class="level3">
+<h3 class="anchored" data-anchor-id="a3.-the-drug-in-the-binding-site">A3. The drug in the binding site</h3>
+<p>Open <a href="https://www.rcsb.org/structure/3OG7">PDB 3OG7</a>, “B-Raf Kinase V600E oncogenic mutant in complex with PLX4032”. PLX4032 is the development name of vemurafenib. Scroll to <strong>Small Molecules</strong>.</p>
+<p><strong>T3.</strong> What is the three-character ligand ID of vemurafenib? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer (checked 2026-11-19)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>032.</strong> The structure contains only the kinase domain, with the V600E mutation: the drug binds the ATP pocket of the mutant kinase.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="downloads" class="level2">
-<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
+<section id="a4.-the-trial" class="level3">
+<h3 class="anchored" data-anchor-id="a4.-the-trial">A4. The trial</h3>
+<p>Open the BRIM-3 trial, <a href="https://clinicaltrials.gov/study/NCT01006980">NCT01006980</a>, and look at <strong>Arms and Interventions</strong>.</p>
+<p><strong>T4.</strong> Which drug was vemurafenib compared with? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer (checked 2026-11-19)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Dacarbazine</strong>, a standard chemotherapy. Only patients whose melanoma carried <strong>BRAF V600E</strong> could join: the drug is aimed at the mutant protein. You meet trial design again in <em>Kliniska prövningar och läkemedelsutveckling</em>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="part-b-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="part-b-in-r">Part B: in R</h2>
+<p>Install the packages once in the console:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"rmarkdown"</span>, <span class="st">"ggplot2"</span>, <span class="st">"jsonlite"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Download the template and the data snapshot. Put the template in a new folder and the CSV in a subfolder <code>data/</code>.</p>
 <ul>
-<li><a href="bioinfo-cancer-genomics.Rmd">Guided report outline</a></li>
-<li><a href="data/skcm-mutations-2026-11-18.csv">BRAF and TP53 mutation records</a></li>
-<li><a href="data/study-metadata-2026-11-18.json">Sample-list metadata</a></li>
-<li><a href="data/retrieval-manifest-2026-11-18.json">Retrieval record</a></li>
+<li><a href="bioinfo-cancer-genomics.Rmd">R Markdown template</a></li>
+<li><a href="data/skcm-mutations-2026-11-18.csv">Snapshot: BRAF and TP53 mutations</a></li>
 </ul>
+<p>Data: cBioPortal, TCGA Skin Cutaneous Melanoma PanCancer Atlas (public TCGA data), retrieved 2026-11-18.</p>
+<p>The <strong>Data</strong> chunk is complete: it reads all BRAF and TP53 mutations from the cBioPortal API into a table <code>mutations</code> with one row per mutation. If cBioPortal is down, it reads the snapshot instead (or set <code>use_snapshot &lt;- TRUE</code>). Your job is to build the steps after it: <strong>read → filter → plot</strong>. Fill the three blanks <code>___</code> and knit.</p>
+<ol type="1">
+<li><strong>Chunk <code>lollipop</code>:</strong> put the column with the amino-acid position on the x axis. You should see two panels, like Part A, made from your own data.</li>
+<li><strong>Chunk <code>position-600</code>:</strong> build a pipeline from the three given pieces, in the right order, joined by <code>|&gt;</code>. It starts with the data, keeps only BRAF position 600, then counts each protein change. It prints a small table of changes.</li>
+<li><strong>Chunk <code>mutation-types</code>:</strong> colour the bars by the column that holds the mutation type (look at the column names printed by the Data chunk, or run <code>names(mutations)</code>). You should see one stacked bar per gene.</li>
+</ol>
+<p><strong>T5.</strong> In your lollipop plot, compare the tallest BRAF lollipop with the tallest TP53 lollipop. <code>[ELO 9]</code></p>
+<ol type="a">
+<li>They are about the same height</li>
+<li>BRAF’s is about 5 times taller</li>
+<li>BRAF’s is about 30 times taller</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer (checked 2026-11-19)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>c.</strong> BRAF position 600 has 198 mutations; the tallest TP53 position (213) has 7. One position dominates BRAF; TP53 mutations are scattered.</p>
+</div>
+</div>
+</div>
+<p><strong>T6.</strong> Your <code>position_600</code> table: which change is the second most common at BRAF position 600? <code>[ELO 9]</code></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer (checked 2026-11-19)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>V600K</strong> (35 mutations, after 158 V600E). Both replace valine 600 and both activate the kinase.</p>
+</div>
+</div>
+</div>
+<p><strong>T7. [VG]</strong> Your mutation-type plot: which statement fits? <code>[ELO 9]</code></p>
+<ol type="a">
+<li>Both genes have mostly missense mutations, so both are oncogenes</li>
+<li>TP53 has many nonsense, frameshift and splice mutations that cut the protein short; BRAF has almost only missense mutations</li>
+<li>BRAF has more nonsense mutations than TP53</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Answer (checked 2026-11-19)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer (checked 2026-11-19)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>b.</strong> BRAF: 241 of 245 are missense. TP53: 23 nonsense, 3 frameshift and 7 splice-site mutations among 82. An oncogene needs one precise change that turns it <strong>on</strong>, so the same position is hit again and again. A tumour suppressor is turned <strong>off</strong>, and many different changes do that, including stopping the protein early. This is why a drug can block BRAF V600E, but no pill can bring back a lost p53.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="sources-and-licences" class="level2">
-<h2 class="anchored" data-anchor-id="sources-and-licences">Sources and licences</h2>
-<p><a href="https://www.cbioportal.org/">cBioPortal</a> API, TCGA Skin Cutaneous Melanoma, PanCancer Atlas 2018, study <code>skcm_tcga_pan_can_atlas_2018</code>. Public TCGA somatic calls, retrieved 2026-11-18. Cite the <a href="https://doi.org/10.1158/2159-8290.CD-12-0095">cBioPortal paper</a> and the <a href="https://www.cell.com/pb-assets/consortium/pancanceratlas/pancani3/index.html">TCGA PanCancer Atlas study collection</a>. Retain the study identifier, sample selection and attribution with reused data. UniProt and HPA annotations are CC BY 4.0. No clinical identifiable data or external images are included.</p>
+<section id="hand-in" class="level2">
+<h2 class="anchored" data-anchor-id="hand-in">Hand in</h2>
+<ul>
+<li>The knitted HTML, with no error messages.</li>
+<li>The two plots and the <code>position_600</code> table.</li>
+<li>Your answers to T5–T7, one line each, in the <strong>Answers</strong> section of the template.</li>
+</ul>
 
 
 </section>

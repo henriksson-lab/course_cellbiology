@@ -529,3 +529,50 @@ Apply these to all remaining modules:
 8. Effort estimate held (≈1.5 days for module 1); most time goes into checking answers live.
 9. Click paths: name buttons by their labels; no screenshots of external sites.
    Check the labels once by hand in a real browser.
+
+## 7. Redesign (2026-11-19): supersedes conflicting rules above
+
+The first versions were too long, cluttered with caveats and source notes, and
+had open-ended tasks. Every day is reworked to these rules.
+
+**Shape of a day**
+
+- **One page** `bioinfo-<topic>/index.qmd`, ~600–900 words, ~2 h of work. Delete the
+  separate `browser.qmd` / `report.qmd` pages.
+- Sections: one-sentence goal and lecture links → **Part A: in the browser** →
+  **Part B: in R** → hand-in checklist (3–4 bullets). Nothing else.
+- Plain English, short sentences. No defensive caveats ("do not label…",
+  "registration does not establish…"); at most one short note per day where a real
+  misunderstanding is likely.
+- **No sources/licences/retrieval details on the page.** They go in
+  `<day>/_sources.md` (not rendered, not included anywhere). Exception: one line
+  under the downloads, e.g. "Data: GTEx v8 (CC BY 4.0), retrieved 2026-11-18." —
+  needed because we redistribute the snapshot copies. No retrieval-manifest JSON
+  download.
+
+**Tasks**
+
+- Every step names the **exact entry** (link to it: PDB 1JFF, UniProt P02533,
+  NCT03470545, a specific ClinVar VCV…). Students never pick their own protein,
+  gene, variant or record.
+- Every task has **one checkable answer**: a number, a name, an ID, yes/no, or one
+  option out of 3–4 statements. Answer in a collapsed callout. No essays, no
+  "state your own…", no "what changed?".
+- Ask for **stable facts** that will not change with database updates (which chain
+  binds the ligand, which tissue is highest, which disease is linked), not counts
+  that drift (number of trials, number of variants).
+- 5–7 tasks per day, tagged with the ELO; at most one marked [VG], and also closed form.
+
+**R part (R Markdown, knit to HTML)**
+
+- The template gives **working code for every fetch and data-cleaning step**
+  (with `use_snapshot` fallback to the published copy in `data/`). Students only
+  fill **2–3 small, clearly marked blanks** (`___`), e.g. a gene name, the
+  `aes()` mapping, a filter value, a plot label.
+- Each blank has an expected visible result described on the page, and a task
+  reads its answer off the student's plot or a printed value.
+- Skills progress gently over the days (day 1: change one value; later days: write
+  one `ggplot()` call from a given example; day 8: write a short pipeline from
+  given pieces). No pagination, no API design for students.
+- Keep the data snapshots published in `data/` (agreed: avoids trouble when APIs
+  are down). Worked solution `.Rmd` stays unpublished.

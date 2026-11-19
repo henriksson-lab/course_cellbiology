@@ -1,5 +1,5 @@
 ---
-title: "Read the mutations: BRAF and TP53"
+title: "BRAF V600E and vemurafenib: read the mutations"
 author: "Your name"
 date: "`r Sys.Date()`"
 output:
@@ -7,37 +7,108 @@ output:
     toc: true
 ---
 
-
 ```{r setup, include=FALSE}
 library(ggplot2)
 library(jsonlite)
-library(httr2)
 options(HTTPUserAgent = "3MB001-course", timeout = 90)
+knitr::opts_chunk$set(error = TRUE, message = FALSE, warning = FALSE)
+
+# Set to TRUE if cBioPortal is down: the report then reads the course snapshot.
 use_snapshot <- FALSE
-# Define input IDs, caching and the retrieval date in your analysis chunks.
+
+# Data record (filled in before any fetch, so the text below always knits)
+data_source <- "cBioPortal API, TCGA Skin Cutaneous Melanoma (PanCancer Atlas)"
+retrieved <- "2026-11-18 (course snapshot)"
 ```
 
-# Question
+# Data
 
-# Browser evidence
+This chunk is complete. It fetches all BRAF and TP53 mutations in the TCGA
+melanoma study from the cBioPortal API and keeps one row per mutation.
 
-# Data: cohort, profile and sample list
+```{r fetch}
+study <- "skcm_tcga_pan_can_atlas_2018"
+genes <- c(BRAF = 673, TP53 = 7157)   # cBioPortal uses Entrez gene IDs
 
-```{r mutations-fetch}
-# Write your API, metadata and cache code
+fetch_gene <- function(gene) {
+  api_url <- paste0(
+    "https://www.cbioportal.org/api/molecular-profiles/", study, "_mutations/mutations",
+    "?sampleListId=", study, "_sequenced",
+    "&entrezGeneId=", genes[[gene]], "&projection=SUMMARY&pageSize=10000")
+  x <- fromJSON(api_url)
+  data.frame(gene = gene, sample_id = x$sampleId, patient_id = x$patientId,
+             protein_change = x$proteinChange, protein_start = x$proteinPosStart,
+             mutation_type = x$mutationType)
+}
+
+read_snapshot <- function() {
+  file <- "data/skcm-mutations-2026-11-18.csv"
+  if (!file.exists(file)) file <- paste0(
+    "https://henriksson-lab.github.io/course_cellbiology/bioinfo-cancer-genomics/", file)
+  read.csv(file)
+}
+
+mutations <- NULL
+if (!use_snapshot) {
+  mutations <- tryCatch(do.call(rbind, lapply(names(genes), fetch_gene)),
+                        error = function(e) NULL)
+  if (!is.null(mutations)) retrieved <- as.character(Sys.Date())
+}
+if (is.null(mutations)) mutations <- read_snapshot()
+
+table(mutations$gene)
 ```
 
-# Mutation positions
+Source: `r data_source`, study `r study`; retrieved `r retrieved`.
 
-```{r mutation-lollipops}
-# Count, plot and compare records, samples and patients
+# 1. Where are the mutations?
+
+Fill in the blank: put the amino-acid position on the x axis.
+
+```{r lollipop, fig.width=9, fig.height=4}
+mapped <- subset(mutations, !is.na(protein_start))
+per_position <- aggregate(sample_id ~ gene + protein_start, data = mapped, FUN = length)
+names(per_position)[3] <- "records"
+
+ggplot(per_position, aes(x = ___, y = records)) +
+  geom_segment(aes(xend = protein_start, y = 0, yend = records), colour = "grey50") +
+  geom_point(colour = "#a8324a") +
+  facet_wrap(~ gene, scales = "free_x") +
+  labs(x = "Amino-acid position", y = "Mutations at this position",
+       caption = paste0("Data: cBioPortal, TCGA melanoma; retrieved ", retrieved))
 ```
 
-# Interpretation
+# 2. Which changes hit position 600?
 
-# Limitations
+Build the pipeline from these three pieces, in the right order, joined by `|>`:
 
-# Sources and retrieval dates
+- `table()`
+- `mutations`
+- `subset(gene == "BRAF" & protein_start == 600, select = protein_change)`
+
+```{r position-600}
+position_600 <- ___
+position_600
+```
+
+# 3. What kind of mutations?
+
+Fill in the blank: colour the bars by the column that holds the mutation type.
+
+```{r mutation-types, fig.width=7, fig.height=4}
+ggplot(mutations, aes(x = gene, fill = ___)) +
+  geom_bar() +
+  labs(x = NULL, y = "Number of mutations", fill = "Mutation type",
+       caption = paste0("Data: cBioPortal, TCGA melanoma; retrieved ", retrieved))
+```
+
+# Answers
+
+Write your answers to tasks T5–T7 here, one line each.
+
+- T5:
+- T6:
+- T7:
 
 # Reproducibility
 

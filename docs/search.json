@@ -4112,283 +4112,107 @@
     ]
   },
   {
-    "objectID": "bioinfo-sorting-signals/report.html",
-    "href": "bioinfo-sorting-signals/report.html",
-    "title": "Sorting signals: the R report",
+    "objectID": "bioinfo-sorting-signals/index.html",
+    "href": "bioinfo-sorting-signals/index.html",
+    "title": "Bioinformatics: read the zip code",
     "section": "",
-    "text": "Module overview · Browser · R report"
+    "text": "Goal: read the sorting signals of real proteins in databases, and map them for 14 proteins in R. Builds on the lectures protein sorting, the ER, the Golgi and endocytosis and lysosomes. About 2 hours, no logins.",
+    "crumbs": [
+      "Home",
+      "Protein handling and organelles",
+      "Bioinformatics: read the zip code"
+    ]
   },
   {
-    "objectID": "bioinfo-sorting-signals/report.html#start-from-a-reproducible-report",
-    "href": "bioinfo-sorting-signals/report.html#start-from-a-reproducible-report",
-    "title": "Sorting signals: the R report",
-    "section": "1. Start from a reproducible report",
-    "text": "1. Start from a reproducible report\nDownload the template, enter your name and knit it. Complete the browser notes first. The report fetches 15 reviewed human proteins from UniProt in one request and reads their sequences in FASTA format in a second request. The supplied fallback files allow offline work. A local RDS cache prevents repeated downloads when you re-knit.\nA FASTA file has one header line beginning with &gt;, then sequence letters on one or more lines. The helper joins sequence lines and extracts the stable UniProt accession from each header. Match sequences by accession, never by row number: APIs may return records in a different order."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/report.html#read-the-feature-table",
-    "href": "bioinfo-sorting-signals/report.html#read-the-feature-table",
-    "title": "Sorting signals: the R report",
-    "section": "2. Read the feature table",
-    "text": "2. Read the feature table\nInspect names(proteins) and head(proteins). The report has short internal names for accession, gene, signal peptide, transit peptide, transmembrane features, location and sequence. Empty annotations are empty strings, not evidence that a route is impossible.\nThe proteins span several routes: secreted ALB, INS and PCSK9; ER proteins HSPA5, CANX and P4HB; lysosomal LAMP1 and GBA1; surface LDLR and TFRC; mitochondrial ATP5F1A and CS; nuclear-pore NUP62; peroxisomal receptor PEX5; cytosolic GAPDH. These destination labels are teaching groupings, not a claim that a protein has only one location."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/report.html#extract-sequence-ends",
-    "href": "bioinfo-sorting-signals/report.html#extract-sequence-ends",
-    "title": "Sorting signals: the R report",
-    "section": "3. Extract sequence ends",
-    "text": "3. Extract sequence ends\nIn sequence-ends, calculate the last four residues:\nsubstr(proteins$sequence, nchar(proteins$sequence) - 3,\n       nchar(proteins$sequence))\nStore this as proteins$last_four. Check that FASTA and the sequence column in the downloaded feature table agree. match() in the supplied code aligns the accessions first."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/report.html#make-the-feature-matrix",
-    "href": "bioinfo-sorting-signals/report.html#make-the-feature-matrix",
-    "title": "Sorting signals: the R report",
-    "section": "4. Make the feature matrix",
-    "text": "4. Make the feature matrix\nIn feature-table, create logical columns for:\n\na nonempty signal-peptide annotation;\na nonempty transit-peptide annotation;\nat least one annotated transmembrane segment;\nan exact C-terminal KDEL sequence.\n\nUse nzchar() for nonempty strings and == \"KDEL\" for the terminal sequence. Use knitr::kable() to print accession, gene, destination, last four residues and the feature columns.\nT6. [ELO 4, 5] [VG] Sequence interpretation. Which proteins have a signal peptide but no membrane segment? Which have a transit peptide? Why would a rule “no signal peptide means cytosolic” fail?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nSignal peptide but no TM annotation: ALB, INS, HSPA5, P4HB, GBA1 and PCSK9. They include secreted proteins, ER lumen proteins and a lysosomal enzyme; further sorting signals and interactions distinguish their destinations. ATP5F1A and CS have mitochondrial transit peptides. The simplistic rule fails for TFRC, whose internal signal-anchor mediates ER targeting, and for mitochondrial and nuclear proteins, which use other import routes. PEX5 is a soluble import receptor, not a peroxisomal matrix cargo: do not expect it to end in SKL merely because it works with peroxisomes."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/report.html#plot-the-features",
-    "href": "bioinfo-sorting-signals/report.html#plot-the-features",
-    "title": "Sorting signals: the R report",
-    "section": "5. Plot the features",
-    "text": "5. Plot the features\nIn feature-plot, reshape the four feature columns into a long table with columns gene, destination, feature, present. The supplied base-R hint is stack(), or you may use tidyr::pivot_longer() if you already know it and record the package. Plot with geom_tile(), fill = present, and facet_grid(destination ~ ., scales = \"free_y\", space = \"free_y\"). Label the legend “Annotation or motif present”; use a different colour for FALSE.\nThe plot tests how signals combine. It does not predict all organelle locations from sequence alone. In particular, this table does not scan for nuclear localisation signals, lysosomal mannose-6-phosphate or all peroxisomal targeting signals."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/report.html#write-and-check",
-    "href": "bioinfo-sorting-signals/report.html#write-and-check",
-    "title": "Sorting signals: the R report",
-    "section": "6. Write and check",
-    "text": "6. Write and check\nUse the plot to explain one pair of proteins with similar initial signals but different final destinations. Add one inline R value, such as the number of proteins ending in KDEL. Keep the accession IDs, Data provenance and final sessionInfo() output. Optional hand-in: the knitted HTML with your browser notes, table, plot and interpretation."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/report.html#sources-and-licences",
-    "href": "bioinfo-sorting-signals/report.html#sources-and-licences",
-    "title": "Sorting signals: the R report",
-    "section": "Sources and licences",
-    "text": "Sources and licences\n\nUniProtKB, release 2026_04, retrieved 2026-11-18: REST API, FASTA format, CC BY 4.0. The CSV and FASTA retain the fetched sequences and feature strings. Exact URLs are in data/uniprot-provenance.json.\nQuickGO, CFTR annotations, retrieved 2026-11-18. The snapshot is the IDA/IBA subset of the first 100 cellular-component results, not all CFTR annotations. GO data: CC BY 4.0. Evidence-code definitions.\nSTRING, human LDLR network, checked 2026-11-18. Reactome, R-HSA-8856825, checked 2026-11-18. These websites are viewed in the browser; their images are not copied here.\n\nModule overview."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/browser.html",
-    "href": "bioinfo-sorting-signals/browser.html",
-    "title": "Sorting signals: in the browser",
-    "section": "",
-    "text": "Module overview · Browser · R report\nRecord your answers in Part A of the downloaded report. Keep accession numbers, evidence codes and access dates alongside your notes."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/browser.html#follow-the-ldl-receptor",
-    "href": "bioinfo-sorting-signals/browser.html#follow-the-ldl-receptor",
-    "title": "Sorting signals: in the browser",
-    "section": "1. Follow the LDL receptor",
-    "text": "1. Follow the LDL receptor\nOpen human LDLR, UniProt P01130. Check the organism and reviewed status. In the sequence feature viewer, locate Signal peptide, Transmembrane and Topological domain. Read the disease annotation for familial hypercholesterolaemia. Annotated feature positions refer to the full precursor sequence, before its signal peptide is removed.\nT1. [ELO 4, 9] Sequence features. Predict which LDLR terminus is extracellular at the cell surface. Which sequence segment sends the precursor to the ER?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nLDLR has a signal peptide at residues 1–21 and one transmembrane segment. The cleaved signal peptide starts ER translocation; the transmembrane segment stops it. The mature N-terminal ligand-binding domain is in the ER lumen and later outside the cell, while the C-terminal tail is cytosolic. A defect in this receptor can impair LDL clearance and cause familial hypercholesterolaemia."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/browser.html#find-an-accessible-drug-target",
-    "href": "bioinfo-sorting-signals/browser.html#find-an-accessible-drug-target",
-    "title": "Sorting signals: in the browser",
-    "section": "2. Find an accessible drug target",
-    "text": "2. Find an accessible drug target\nOpen PCSK9, Q8NBP7. Find its signal peptide, location and effect on LDLR. Compare its transmembrane annotation with LDLR’s. Review the LDL receptor cycle if needed.\nT2. [ELO 4, 9] Route and therapy. Why can an antibody reach PCSK9 without entering the cytosol? Does having a signal peptide always mean secretion into blood?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nPCSK9 has a signal peptide at 1–30, no annotated transmembrane segment and is secreted. Extracellular PCSK9 promotes lysosomal routing of LDLR; an antibody can bind PCSK9 outside cells. A signal peptide alone does not establish the final destination: ER residents and lysosomal lumen proteins also enter the secretory pathway."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/browser.html#distinguish-entry-from-retention",
-    "href": "bioinfo-sorting-signals/browser.html#distinguish-entry-from-retention",
-    "title": "Sorting signals: in the browser",
-    "section": "3. Distinguish entry from retention",
-    "text": "3. Distinguish entry from retention\nOpen HSPA5/BiP, P11021. Inspect the beginning and end of its sequence, signal peptide, and subcellular location. Compare P4HB/PDI, P07237.\nT3. [ELO 4, 5] Sorting logic. How does a soluble protein with an ER signal peptide remain in the ER? What would you predict if its last four residues were removed?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nBiP has an N-terminal signal peptide (1–18) and ends in KDEL. The signal peptide mediates entry into the ER; KDEL is a retrieval signal that returns escaped lumenal proteins from the Golgi to the ER. PDI also ends in KDEL. Removing the signal would weaken retrieval and increase escape/secretion, although other interactions can also retain a protein. Entry and final residence are separate steps."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/browser.html#interpret-a-network",
-    "href": "bioinfo-sorting-signals/browser.html#interpret-a-network",
-    "title": "Sorting signals: in the browser",
-    "section": "4. Interpret a network",
-    "text": "4. Interpret a network\nOpen STRING’s human LDLR network. Confirm Homo sapiens, choose an evidence view if offered, and inspect the evidence legend. Select edges to APOB and PCSK9 and read the channels supporting them (experiments, databases, text mining, coexpression, etc.). Record three partners and one evidence channel for each.\nT4. [ELO 4, 9] [VG] Network evidence. Does an edge establish direct physical binding? Which additional experiment could test a binding claim?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nNo. STRING displays functional associations assembled from several evidence types; its confidence score is not a binding affinity. The checked network includes APOB and PCSK9 among the highest-scoring partners (scores 0.999), but an edge alone does not identify the underlying mechanism. To test direct binding, use purified components in a suitable binding assay, with negative controls and concentration dependence. Cellular co-immunoprecipitation supports association but can capture indirect complexes."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/browser.html#put-the-protein-into-a-pathway",
-    "href": "bioinfo-sorting-signals/browser.html#put-the-protein-into-a-pathway",
-    "title": "Sorting signals: in the browser",
-    "section": "5. Put the protein into a pathway",
-    "text": "5. Put the protein into a pathway\nOpen Reactome: cargo recognition for clathrin-mediated endocytosis, R-HSA-8856825. Read the summary, then use the diagram viewer to find LDLR and LDL-containing cargo. Identify a membrane location and an event in the route. Draw your own three-step sketch: cargo binding → internalisation → receptor/cargo sorting. Do not copy the pathway image into your report; cite the stable pathway identifier instead."
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/browser.html#read-a-go-evidence-code",
-    "href": "bioinfo-sorting-signals/browser.html#read-a-go-evidence-code",
-    "title": "Sorting signals: in the browser",
-    "section": "6. Read a GO evidence code",
-    "text": "6. Read a GO evidence code\nOpen QuickGO CFTR annotations. Filter Aspect to Cellular component. Find a row with IDA and one with IBA; open the cited reference or evidence details. Record the GO ID, label, qualifier, evidence code and reference. If the site is unavailable, use the provided example rows, then look up each GO term on QuickGO.\nT5. [ELO 4, 5] Evidence. Explain the difference between IDA and IBA. Why is recording only “CFTR: plasma membrane” incomplete?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nIDA means Inferred from Direct Assay; IBA means Inferred from Biological aspect of Ancestor (phylogenetic inference). The snapshot includes CFTR GO:0005789 (ER membrane), IDA, PMID:11707463, and GO:0005886 (plasma membrane), IBA, GO_REF:0000033. A GO annotation connects a gene product, term, qualifier and evidence. Different contexts and experimental constructs can yield several locations; a term without its evidence hides how the claim was obtained.\n\n\n\nContinue to the R report."
-  },
-  {
-    "objectID": "bioinfo-protein-atlas/questions.html",
-    "href": "bioinfo-protein-atlas/questions.html",
-    "title": "Where does a protein live? Check your answers",
-    "section": "",
-    "text": "Module overview · Browser activities · R Markdown report · Check your answers"
-  },
-  {
-    "objectID": "bioinfo-protein-atlas/questions.html#tasks",
-    "href": "bioinfo-protein-atlas/questions.html#tasks",
-    "title": "Where does a protein live? Check your answers",
-    "section": "Tasks",
-    "text": "Tasks\nT1. [ELO 1] Identifiers and evidence. Give the gene symbol, UniProt accession and Ensembl gene ID of human calnexin. Where in the cell is it according to UniProt, how does it sit in the membrane, and what kind of evidence supports the location?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nGene CANX, UniProt P27824 (entry name CALX_HUMAN, reviewed, 592 amino acids), Ensembl ENSG00000127022. Location: endoplasmic reticulum membrane, single-pass type I membrane protein: one transmembrane helix, with the large N-terminal part (after the signal peptide) in the ER lumen and a short C-terminal tail in the cytosol. The ER location carries the tag “1 Publication” (ECO:0000269, experimental evidence from a paper); the topology is “Sequence analysis” (ECO:0000255, predicted from the sequence). UniProt also lists mitochondrion membrane “By similarity” (inferred from the mouse protein) and melanosome membrane. So one entry mixes measured and inferred statements, and the evidence tag tells you which is which. The search CANX human gave about 430 results, about 110 of them reviewed; calnexin is only one of them (exact numbers change with every release).\n\n\n\nT2. [ELO 1, 5] Markers. Which organelle does each of TOMM20, GOLGA2, LMNB1 and LAMP1 mark? Give the HPA main location and reliability score where there is one, and say how the images fit the organelle’s shape.\n\n\n\n\n\n\nAnswer (checked 2026-11-18, HPA 26.0)\n\n\n\n\n\n\nCANX (for comparison): UniProt ER membrane; HPA Endoplasmic reticulum, Enhanced. A fine network through the cytoplasm, densest around the nucleus, overlapping the yellow ER stain (cell lines A-431, U-251MG, U2OS).\nTOMM20 marks mitochondria: UniProt mitochondrion outer membrane; HPA Mitochondria, Enhanced. Short threads and tubes throughout the cytoplasm.\nGOLGA2 (GM130) marks the Golgi: UniProt cis-Golgi network membrane (peripheral, on the cytoplasmic side); HPA Golgi apparatus, Enhanced. One compact bright patch next to the nucleus.\nLMNB1 (lamin B1) marks the nuclear envelope: UniProt nucleus lamina; HPA Nuclear membrane, Supported. A sharp ring at the edge of the nucleus.\nLAMP1 marks lysosomes: UniProt lysosome membrane (also late endosomes and plasma membrane); HPA: no immunofluorescence data.\n\nLAMP1 is a standard lysosome marker in the lab, but HPA had no subcellular (immunofluorescence) data for it on the check date. Use the UniProt annotation instead, or look at a related lysosomal protein in HPA. If HPA has added LAMP1 since, expect “Lysosomes” or “Vesicles”. The lesson: no single database covers every protein, and an empty section is not evidence that a protein is absent.\n\n\n\nT3. [ELO 1, 5] [VG] When databases disagree. Catalase is the classic peroxisome marker (cell-methods lecture). What do UniProt and HPA say about where it is? Suggest why they might differ, and how you would decide.\n\n\n\n\n\n\nAnswer (checked 2026-11-18, UniProt 2026_04, HPA 26.0)\n\n\n\n\n\nUniProt: peroxisome matrix, from experiments (two publications). HPA: main location “Vesicles”, reliability Supported. Peroxisomes are 0.1–1 µm, close to the resolution limit of a light microscope (about 0.2 µm), so in an immunofluorescence image they appear as many small round dots, which look the same as small vesicles or endosomes. HPA’s category “Vesicles” is a deliberately coarse class for such dots. The image alone cannot tell which kind of dot it is. To decide: co-stain with a known peroxisome marker (for example the membrane protein ABCD3, which HPA annotates “Peroxisomes”, reliability Enhanced) and check that the dots overlap; or fractionate cells and show catalase in the peroxisome fraction (the density gradient from the cell-methods lecture), as the original biochemistry did. If HPA now says “Peroxisomes”, the annotation has been improved since the check date: the reasoning is the same.\n\n\n\nT4. [ELO 1] Single cells. What does the HPA single-cell section show for INS, and how does it differ from CANX?\n\n\n\n\n\n\nAnswer (checked 2026-11-18, HPA 26.0)\n\n\n\n\n\nINS is cell type enriched in pancreatic islet cells (the endocrine cells of the pancreas; insulin comes from the β cells among them), at tens of thousands of nCPM (85 601 on the check date), and is essentially absent in every other cell type. It is an extreme example of a cell-type-specific gene. CANX is “detected in many” cell types with low cell type specificity: every cell that makes membrane or secreted proteins needs the ER folding machinery, so an ER chaperone is a typical housekeeping protein. That is also why such proteins make good organelle markers in any cell line.\n\n\n\nT5. [ELO 1] Cell lines. HeLa in Cellosaurus: species, disease, virus. What does Cellosaurus say about HeLa and contamination, and what is HEp-2?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nHeLa (CVCL_0030): Homo sapiens, female, 30 years 6 months at sampling; disease human papillomavirus-related endocervical adenocarcinoma (a cervical cancer); transformed by HPV18, whose DNA is integrated at several sites in the genome (one near the MYC gene at 8q24). Comment: “HeLa is the most frequent contributor to cell lines contamination”. HEp-2 (CVCL_1906) was thought to come from a laryngeal carcinoma of a 56-year-old man, but is flagged as a problematic, contaminated line: it is a HeLa derivative. Results “in laryngeal cancer cells” from HEp-2 are therefore about cervical cancer cells. The STR profile in Cellosaurus is the reference a lab compares its own cells with.\n\n\n\nT6. [ELO 1] (R report) Which is the largest and which the smallest protein in your table, and how many times heavier is the largest? Why does the plot need a log axis?\n\n\n\n\n\n\nAnswer (checked 2026-11-18, UniProt 2026_04)\n\n\n\n\n\nLargest: titin (TTN, Q8WZ42), 34 350 amino acids, 3 816 kDa (3.8 MDa), the largest known human protein; it spans half a sarcomere in muscle. Smallest: histone H4, 103 amino acids, 11.4 kDa. Ratio about 340×. Without titin the range is 11–168 kDa (CFTR is next), and the typical protein is 40–120 kDa (about 110 Da per amino acid). On a linear axis titin sits alone at the right and all other proteins are squeezed together near zero; on a log axis each step of the grid is a factor of 10, so all of them are readable.\nYour plot should look roughly like this:\n\n\n\nProtein mass on a log scale, coloured by compartment (UniProtKB 2026_04).\n\n\nHistone H4 is also a useful lesson in identifiers: one protein sequence, made from 14 different genes (H4C1, H4C2, …), which is why its gene column in your table is so long.\n\n\n\nSources and licences"
-  },
-  {
-    "objectID": "bioinfo-protein-atlas/browser.html",
-    "href": "bioinfo-protein-atlas/browser.html",
-    "title": "Where does a protein live? Browser activities",
-    "section": "",
-    "text": "Module overview · Browser activities · R Markdown report · Check your answers"
-  },
-  {
-    "objectID": "bioinfo-protein-atlas/browser.html#part-a-in-the-browser",
-    "href": "bioinfo-protein-atlas/browser.html#part-a-in-the-browser",
-    "title": "Where does a protein live? Browser activities",
+    "objectID": "bioinfo-sorting-signals/index.html#part-a-in-the-browser",
+    "href": "bioinfo-sorting-signals/index.html#part-a-in-the-browser",
+    "title": "Bioinformatics: read the zip code",
     "section": "Part A: in the browser",
-    "text": "Part A: in the browser\nWrite what you find in the table at the top of your .Rmd template (section “Part A”). The task answers are on a separate page; try first.\n\nA1. UniProt: a protein entry\nUniProt collects what is known about each protein. Its reviewed part (Swiss-Prot) is curated by experts who read the papers; the unreviewed part (TrEMBL) is mostly computed from genome sequences.\n\nGo to https://www.uniprot.org. Type CANX human in the search box (the menu next to it should say UniProtKB) and press Search. Note how many results there are.\nIn the filters on the left, under Status, click Reviewed (Swiss-Prot). How many are left? Most results are not calnexin at all: they are proteins whose entry mentions calnexin, and calnexin from other species.\nOpen the entry with accession P27824 (entry name CALX_HUMAN). Direct link: https://www.uniprot.org/uniprotkb/P27824/entry.\nIn the header, find the accession, the length (“Amino acids”), the annotation score and protein existence.\nClick Subcellular Location in the menu on the left. Read the “UniProt Annotation” part: where is calnexin, and how does it sit in the membrane (topology)?\nEach statement has an evidence tag next to it, such as “1 Publication”, “By similarity” or “Sequence analysis”. Click or hover over one: UniProt shows the evidence code (ECO number) and its source. Find one location that is backed by an experiment and one that is only inferred.\nClick Function and read the first paragraph: what does calnexin do in the ER?\n\n\n\nA2. Human Protein Atlas: the protein in a real cell\nThe Human Protein Atlas (HPA) stains thousands of proteins with antibodies in cultured human cells and images them by confocal immunofluorescence: the method from the microscopy lecture.\n\nGo to https://www.proteinatlas.org, type CANX in the search box and open the gene. The gene summary page shows the Ensembl ID and the UniProt accession. (Direct link: https://www.proteinatlas.org/ENSG00000127022-CANX.)\nIn the row of section names at the top of the gene page, click SUBCELLULAR.\nRead the summary: Main location, Reliability score and the antibody names. The reliability score (Enhanced &gt; Supported &gt; Approved &gt; Uncertain) says how well the staining agrees with other evidence, for example a second antibody or the UniProt annotation.\nLook at the images. The protein of interest is green; the reference stains are the nucleus (blue), microtubules (red) and the ER (yellow). Click an image to enlarge it, and use the buttons above it to switch channels on and off. Which cell lines were used?\nCompare with the map of the animal cell from the first lecture: does calnexin look like the ER in the cartoon (a network around the nucleus, continuous with the nuclear envelope)?\n\n\n\nA3. Organelle markers\nMarker proteins identify organelles in fractionation and microscopy. Repeat A1 (accession and UniProt location only) and A2 (HPA main location and reliability) for:\n\nTOMM20 (TOM20), GOLGA2 (GM130), LMNB1 (lamin B1), CAT (catalase), LAMP1.\n\nTip: in UniProt, search TOMM20 human and filter Reviewed, or use the gene search gene:TOMM20 AND organism_id:9606. In HPA, the search box takes the gene symbol.\nLook at each image for a moment. Mitochondria, Golgi and nuclear envelope have shapes you know from the HeLa cell explorer. Not every protein has every kind of data: if a section is missing or empty, write that down. It is a result too.\n\n\nA4. HPA single-cell: which cells make the protein?\nThe Subcellular section shows where in a cell a protein is. The Single cell section shows which cell types make its mRNA, measured by single-cell RNA sequencing of many human tissues.\n\nIn HPA, search INS (insulin), open the gene and click SINGLE CELL in the section row.\nRead the single cell type specificity and the bar chart of all cell types (nCPM, normalised counts per million). Which cell type stands out, and by how much?\nDo the same for CANX. What is the difference in the pattern, and why does it make sense for an ER chaperone?\n\n\n\nA5. Cellosaurus: is the culture what you think it is?\nEvery cell line has an entry in Cellosaurus, with a stable accession (CVCL_…) that papers use to say exactly which cells they used.\n\nOpen HeLa: https://www.cellosaurus.org/CVCL_0030.\nFind: species of origin, disease, sex of cell, age at sampling, and the Virology or Transformant comment (which virus?).\nIn Comments, find the “Miscellaneous” line about contamination. Then scroll to the STR profile: this DNA fingerprint is how a lab checks its HeLa really is HeLa (lecture: is the culture what you think it is?).\nOpen HEp-2: https://www.cellosaurus.org/CVCL_1906. Read the Problematic cell line comment. What was HEp-2 thought to be, and what is it?\n\nSources and licences"
+    "text": "Part A: in the browser\n\nUniProt: the LDL receptor\nOpen LDLR, UniProt P01130. Its signal peptide (residues 1–21) is listed under PTM/Processing. Now click Subcellular Location in the left menu and scroll to its Features table: one Transmembrane segment and two Topological domains.\nT1. [ELO 4] Which end of the mature receptor is outside the cell: the N-terminal part or the C-terminal part?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nThe N-terminal part: topological domain 22–788 is Extracellular, the transmembrane segment is 789–810, and 811–860 is Cytoplasmic. LDLR is a type I protein: signal peptide in, stop-transfer segment in the membrane. The ER lumen side becomes the outside of the cell.\n\n\n\n\n\nUniProt: PCSK9\nOpen PCSK9, UniProt Q8NBP7. It has a signal peptide (1–30) and no transmembrane segment, so it is secreted. That is why an antibody in the blood can catch it. Click Disease & Variants in the left menu.\nT2. [ELO 9] Which disease does UniProt link to PCSK9?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nHypercholesterolemia, familial, 3 (FHCL3), autosomal dominant. Gain-of-function PCSK9 sends more LDL receptors to the lysosome. LDLR itself (T1) is linked to FHCL1.\n\n\n\n\n\nUniProt: BiP, an ER chaperone\nOpen HSPA5 (BiP), UniProt P11021. It has a signal peptide (1–18), yet it stays in the ER. Click Sequence in the left menu and read the end of the sequence.\nT3. [ELO 4, 5] What are the last four amino acids of BiP?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nKDEL (Lys-Asp-Glu-Leu). BiP leaks to the Golgi with other cargo; the KDEL receptor in the cis-Golgi brings it back to the ER in COPI vesicles.\n\n\n\n\n\nSTRING: partners of LDLR\nOpen the human LDLR network in STRING. Each node is a protein; each line is a predicted functional link, from experiments, databases or co-mentions in papers. Click a node to see its name.\nT4. [ELO 4, 9] PCSK9 is in the network. Which one of these four is also there: APOB, GAPDH, CANX or TFRC?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nAPOB, the protein of the LDL particle that LDLR binds. A STRING line means “these proteins work together”, not necessarily that they touch.\n\n\n\n\n\nQuickGO: where is CFTR?\nGene Ontology (GO) gives each location a term and each annotation an evidence code. Open QuickGO: CFTR annotations to endoplasmic reticulum membrane (GO:0005789). Find the row whose reference is PMID:11707463.\nT5. [ELO 4] Which evidence code does that row have, and what does it stand for?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nIDA, Inferred from Direct Assay: an experiment located CFTR in the ER membrane. Other rows say IEA (electronic annotation) or TAS (traceable author statement). Misfolded CFTR ΔF508 is held in the ER, as in the ER lecture.",
+    "crumbs": [
+      "Home",
+      "Protein handling and organelles",
+      "Bioinformatics: read the zip code"
+    ]
+  },
+  {
+    "objectID": "bioinfo-sorting-signals/index.html#part-b-in-r",
+    "href": "bioinfo-sorting-signals/index.html#part-b-in-r",
+    "title": "Bioinformatics: read the zip code",
+    "section": "Part B: in R",
+    "text": "Part B: in R\nDownload the template bioinfo-sorting-signals.Rmd into a new folder and open it in RStudio. You need the packages rmarkdown, ggplot2 and dplyr. Knit it once as it is: it fetches 14 proteins from UniProt, and the two blanks show as errors. If UniProt is down, set use_snapshot &lt;- TRUE.\nSnapshot: uniprot-features-2026-11-19.csv (put it in a data subfolder). Data: UniProtKB release 2026_04 (CC BY 4.0), retrieved 2026-11-19.\nAll fetching and cleaning code is given. You fill two blanks marked ___:\n\nChunk kdel: the filter value, the four letters of the ER retrieval signal, in quotes. Expected result: a table with two proteins, both in the ER group.\nChunk feature-map: the aes() mapping. Put feature on x, gene on y and present as fill. Expected result: a tile plot with three columns (signal peptide, transit peptide, transmembrane) and one row per protein, grouped by destination. Dark tiles mean “annotated”.\n\nT6. [ELO 4] Your KDEL table shows BiP (HSPA5). Which other protein ends in KDEL?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nP4HB (protein disulfide isomerase, PDI), the ER enzyme that forms disulfide bonds.\n\n\n\nT7. [ELO 4, 5] [VG] In your plot, one cell-surface protein has a transmembrane segment but no signal peptide. Which one, and what kind of segment brings it to the ER?\n\nA. LDLR, a stop-transfer segment\nB. TFRC, a signal-anchor\nC. TFRC, a mitochondrial transit peptide\nD. LDLR, a KDEL signal\n\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nB. The transferrin receptor (TFRC) is a type II protein: its single hydrophobic segment is both the ER-targeting signal and the membrane anchor, so it has no cleaved signal peptide. UniProt calls it “Signal-anchor for type II membrane protein”. Only the two mitochondrial proteins (ATP5F1A, CS) have transit peptides.",
+    "crumbs": [
+      "Home",
+      "Protein handling and organelles",
+      "Bioinformatics: read the zip code"
+    ]
+  },
+  {
+    "objectID": "bioinfo-sorting-signals/index.html#hand-in-checklist",
+    "href": "bioinfo-sorting-signals/index.html#hand-in-checklist",
+    "title": "Bioinformatics: read the zip code",
+    "section": "Hand-in checklist",
+    "text": "Hand-in checklist\n\nAnswers to T1–T7.\nThe knitted HTML of your report, with both blanks filled and no errors left.\nYour plot shows 14 genes and three feature columns.\nThe Data section names the source, the UniProt release and the date.",
+    "crumbs": [
+      "Home",
+      "Protein handling and organelles",
+      "Bioinformatics: read the zip code"
+    ]
   },
   {
     "objectID": "bioinfo-mito-proteasome/index.html",
     "href": "bioinfo-mito-proteasome/index.html",
     "title": "Bioinformatics: genomes inside organelles, and drugs on machines",
     "section": "",
-    "text": "How much of a mitochondrion is encoded by its own genome? How does a drug stop a protein machine? You will read mitochondrial genome annotations, inspect a drug in the proteasome and connect a synonymous DNA variant to faulty RNA processing.\nBuilds on protein life and death, mitochondria and organelles and homeostasis. [ELO 4, 5, 9]\nWork through two short pages:\n\nDatabase investigation: NCBI, UniProt, PDB, ChEMBL and ClinVar.\nR Markdown report: plot a mitochondrial genome map, count annotations and explain the result.\n\nAllow about 1.5 h for the browser investigation and 1.5–2 h for the report. No accounts are needed.",
+    "text": "Goal: find out how little of a mitochondrion its own genome encodes, see where a cancer drug sits in the proteasome, and see how a “silent” DNA change causes progeria.\nBuilds on protein life and death, mitochondria and organelles and homeostasis. About 2 hours.",
     "crumbs": [
       "Home",
       "Protein handling and organelles",
-      "Bioinformatics: genomes inside organelles and drugs on machines"
+      "Bioinformatics: genomes inside organelles, and drugs on machines"
     ]
   },
   {
-    "objectID": "bioinfo-mito-proteasome/index.html#what-you-will-learn",
-    "href": "bioinfo-mito-proteasome/index.html#what-you-will-learn",
+    "objectID": "bioinfo-mito-proteasome/index.html#part-a-in-the-browser",
+    "href": "bioinfo-mito-proteasome/index.html#part-a-in-the-browser",
     "title": "Bioinformatics: genomes inside organelles, and drugs on machines",
-    "section": "",
-    "text": "How much of a mitochondrion is encoded by its own genome? How does a drug stop a protein machine? You will read mitochondrial genome annotations, inspect a drug in the proteasome and connect a synonymous DNA variant to faulty RNA processing.\nBuilds on protein life and death, mitochondria and organelles and homeostasis. [ELO 4, 5, 9]\nWork through two short pages:\n\nDatabase investigation: NCBI, UniProt, PDB, ChEMBL and ClinVar.\nR Markdown report: plot a mitochondrial genome map, count annotations and explain the result.\n\nAllow about 1.5 h for the browser investigation and 1.5–2 h for the report. No accounts are needed.",
+    "section": "Part A: in the browser",
+    "text": "Part A: in the browser\n\nThe mitochondrial genome\nOpen NC_012920.1, the human mitochondrial reference genome at NCBI. The first line (LOCUS) gives its length.\nA1. How long is the human mitochondrial genome, in base pairs? [ELO 5]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n16 569 bp, a circle (LOCUS says circular). It carries 37 genes: 13 for proteins, 22 tRNAs and 2 rRNAs.\n\n\n\n\n\nMade in the cytosol, imported\nOpen two UniProt entries for subunits of the same machine, the ATP synthase:\n\nP25705 (ATP5F1A, subunit alpha)\nP00846 (MT-ATP6, subunit a)\n\nIn each, look under PTM/Processing for a Transit peptide. Under Names & Taxonomy, P00846 also says Encoded in: Mitochondrion.\nA2. Which of the two has a mitochondrial transit peptide, and which residues does it span? [ELO 4, 5]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nP25705 (ATP5F1A), residues 1–43. It is encoded in the nucleus, made on cytosolic ribosomes and imported through TOM/TIM; the transit peptide is then cut off. MT-ATP6 is encoded in mtDNA and made in the matrix, so it needs no transit peptide.\n\n\n\n\n\nA drug in the proteasome\nOpen PDB 5LF3, the human 20S proteasome with bortezomib. Under Small Molecules, find the row for BO2 (bortezomib). Its chains are written like JB [auth K]: the letter after auth is the protein chain. Look up those letters under Macromolecules.\nA3. Bortezomib is bound to which proteasome subunits? [ELO 4, 9]\n\nAlpha type-1, -2 and -3\nBeta type-5, -6 and -7\nBeta type-5 only\nBeta type-1, -2 and -3\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nb) Beta type-5, -6 and -7 (genes PSMB5, PSMB6, PSMB7). These are the three catalytic subunits, also called β5, β1 and β2. At the high concentration in a crystal the drug fills all three active sites. In patients it mainly blocks β5 (PSMB5), the site from the lecture.\n\n\n\nNow open bortezomib in ChEMBL, CHEMBL325041, and read Max Phase at the top.\nA4. What is bortezomib’s maximum development phase? [ELO 9]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nPhase 4: approved. Bortezomib has been used against multiple myeloma since 2003. Mechanism of action in ChEMBL: 26S proteasome inhibitor.\n\n\n\n\n\nA silent change that is not silent\nOpen ClinVar variant 14500, LMNA c.1824C&gt;T (p.Gly608=). Note the classification (Pathogenic) and the condition Hutchinson–Gilford syndrome (progeria). p.Gly608= means codon 608 still codes for glycine.\nA5. [VG] How does this variant cause progeria? [ELO 4, 9]\n\nIt changes glycine 608 into another amino acid.\nIt creates a stop codon, so no lamin A is made.\nIt activates a hidden splice site; 50 amino acids are lost, including the cleavage site, so the protein keeps its farnesyl lipid.\nIt lowers transcription of the LMNA gene.\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nc. The new splice site removes 150 nucleotides from the mRNA. The protein, progerin, lacks the site where ZMPSTE24 cuts off the farnesylated tail. It stays stuck to the inner nuclear membrane and deforms the lamina. Lonafarnib, which blocks farnesylation, is the approved treatment.",
     "crumbs": [
       "Home",
       "Protein handling and organelles",
-      "Bioinformatics: genomes inside organelles and drugs on machines"
+      "Bioinformatics: genomes inside organelles, and drugs on machines"
     ]
   },
   {
-    "objectID": "bioinfo-mito-proteasome/index.html#before-you-start",
-    "href": "bioinfo-mito-proteasome/index.html#before-you-start",
+    "objectID": "bioinfo-mito-proteasome/index.html#part-b-in-r",
+    "href": "bioinfo-mito-proteasome/index.html#part-b-in-r",
     "title": "Bioinformatics: genomes inside organelles, and drugs on machines",
-    "section": "Before you start",
-    "text": "Before you start\nDownload these files into one folder, keeping the CSV files in a subfolder called data:\n\nReport template.\nProvided data-fetching and feature-table helper.\nMitochondrial gene snapshot.\nUniProt mitochondrial protein snapshot.\nUniProt release metadata, also saved in data/.\nOptional: original NCBI feature table.\n\nIn R, install missing packages once: install.packages(c(\"rmarkdown\", \"ggplot2\", \"rentrez\")). Open the template in RStudio and click Knit, or use rmarkdown::render(\"bioinfo-mito-proteasome.Rmd\"). Set use_snapshot &lt;- TRUE to work offline after downloading the files. Package installation needs internet; knitting in snapshot mode does not.",
+    "section": "Part B: in R",
+    "text": "Part B: in R\nDownload the R Markdown template and the two data files into a subfolder data/:\n\nmtdna-features-2026-11-18.csv\nuniprot-mitochondria-2026-11-18.csv\n\nData: NCBI RefSeq NC_012920.1 (public domain) and UniProtKB 2026_04 (CC BY 4.0), retrieved 2026-11-18.\nInstall once: install.packages(c(\"rmarkdown\", \"ggplot2\")). Open the template in RStudio and click Knit. If NCBI or UniProt is down, set use_snapshot &lt;- TRUE.\nThe template already downloads the mitochondrial genes and the UniProt list of mitochondrial proteins, and draws an example bar chart of genes by type:\nggplot(genes, aes(x = type)) +\n  geom_bar() +\n  labs(x = \"Gene type\", y = \"Number of genes\", title = \"Genes in human mtDNA\")\nIn section 4 you complete a similar plot of the protein-coding genes per respiratory complex. Fill three blanks ___:\n\nthe gene type that codes for proteins: one of the bars in the example plot, in quotes;\nthe column that holds the respiratory complex (see the head(genes) printout);\nan x-axis label, in quotes.\n\nWhile a blank is empty, the chunk shows an unexpected input error. With all three filled, knit again: you should see four bars, labelled I, III, IV and V.\nB1. Which respiratory complex has the most subunits encoded in mtDNA, and how many? [ELO 5]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nComplex I, 7 subunits (ND1–ND6 and ND4L). Then IV: 3, V: 2, III: 1. Complex II has no bar: all its subunits are encoded in the nucleus.\n\n\n\nB2. Section 2 of your report prints the share of mitochondrial proteins encoded in mtDNA (percent_mtdna). Which is closest? [ELO 5]\n\nabout 1 %\nabout 10 %\nabout 50 %\nabout 90 %\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\na) about 1 % (13 of 1 374 proteins in the 2026-11-18 data, 0.9 %). The other 99 % are made in the cytosol and imported, like ATP5F1A in A2. This is why mutations in nuclear genes can cause mitochondrial disease.",
     "crumbs": [
       "Home",
       "Protein handling and organelles",
-      "Bioinformatics: genomes inside organelles and drugs on machines"
+      "Bioinformatics: genomes inside organelles, and drugs on machines"
     ]
   },
   {
-    "objectID": "bioinfo-mito-proteasome/index.html#sources-and-licences",
-    "href": "bioinfo-mito-proteasome/index.html#sources-and-licences",
+    "objectID": "bioinfo-mito-proteasome/index.html#hand-in",
+    "href": "bioinfo-mito-proteasome/index.html#hand-in",
     "title": "Bioinformatics: genomes inside organelles, and drugs on machines",
-    "section": "Sources and licences",
-    "text": "Sources and licences\nThe snapshots were fetched on 2026-11-18 from NCBI RefSeq NC_012920.1 and UniProtKB, release 2026_04. NCBI records are available for unrestricted reuse under NCBI’s policy; UniProt data are CC BY 4.0. The gene map is drawn from annotations, not experimental expression data. External structures are viewed on the PDB website. Full data credits.",
+    "section": "Hand-in",
+    "text": "Hand-in\n\nAnswers to A1–A5 and B1–B2.\nThe knitted HTML with your name, the filled-in plot with four bars, and no errors.",
     "crumbs": [
       "Home",
       "Protein handling and organelles",
-      "Bioinformatics: genomes inside organelles and drugs on machines"
+      "Bioinformatics: genomes inside organelles, and drugs on machines"
     ]
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/report.html",
-    "href": "bioinfo-membrane-proteins/report.html",
-    "title": "Membrane proteins: the R report",
-    "section": "",
-    "text": "Module overview · Browser · R report"
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/report.html#knit-the-supplied-report",
-    "href": "bioinfo-membrane-proteins/report.html#knit-the-supplied-report",
-    "title": "Membrane proteins: the R report",
-    "section": "1. Knit the supplied report",
-    "text": "1. Knit the supplied report\nOpen the student template, enter your name, and knit it untouched. The fetch and data-check chunks are supplied; empty analysis chunks produce no plot yet. Set use_snapshot &lt;- TRUE if the APIs are unavailable. Keep the snapshot files in the data folder beside the .Rmd.\nThe report records whether each dataset came from a live request, a dated cache or the course snapshot. Re-knitting uses a local RDS cache named with the date. Remove the cache only when you deliberately want to refresh the data."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/report.html#read-json-from-gtex",
-    "href": "bioinfo-membrane-proteins/report.html#read-json-from-gtex",
-    "title": "Membrane proteins: the R report",
-    "section": "2. Read JSON from GTEx",
-    "text": "2. Read JSON from GTEx\nGTEx measures mRNA expression, not protein abundance or glucose transport. The report uses dataset gtex_v8, not whichever dataset the portal opens by default.\nThe supplied fetch_gtex() function:\n\nLooks up SLC5A1 or SLC5A2 through the reference gene API.\nExtracts the dataset-specific versioned GENCODE ID.\nReads median tissue expression from the expression API.\nUses jsonlite::fromJSON() to turn JSON into an R list; $data contains the result table. It checks pagination before accepting the response.\n\nInspect head(expression) and str(expression). Each row is a gene/tissue median, in transcripts per million (TPM). It is not one donor or one cell."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/report.html#make-an-expression-plot",
-    "href": "bioinfo-membrane-proteins/report.html#make-an-expression-plot",
-    "title": "Membrane proteins: the R report",
-    "section": "3. Make an expression plot",
-    "text": "3. Make an expression plot\nIn expression-plot, plot median_tpm against tissue, colour by gene, and use geom_point() with position_dodge(width = 0.5) and coord_flip(). To keep the plot readable, filter to tissues with a median above 10 TPM for either gene (the supplied plot_tissues vector identifies them). Label the axes and caption the plot “GTEx v8 tissue medians; retrieved 2026-11-18” when using the snapshot. A sample median is not an estimate of every cell in that tissue.\nT6. [ELO 2, 9] Expression and interpretation. Find the highest tissue for each gene using which.max() on each gene’s rows. Explain the link to renal glucose reabsorption, and give one reason that this plot cannot establish which cell types carry the protein.\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nIn the supplied snapshot, SLC5A1 is highest in small intestine, terminal ileum (~98 TPM). SLC5A2 is highest in kidney cortex (~36 TPM), followed by kidney medulla (~25 TPM). The SLC5A2 pattern fits SGLT2’s renal role, where inhibiting it reduces glucose reabsorption. GTEx is bulk tissue RNA: a tissue mixes many cell types, mRNA is not protein, and the plot does not show which membrane surface contains a transporter. SLC5A1 expression in heart is also substantial (~45 TPM in left ventricle); a functional explanation needs more than tissue RNA alone."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/report.html#count-features-and-make-a-second-plot",
-    "href": "bioinfo-membrane-proteins/report.html#count-features-and-make-a-second-plot",
-    "title": "Membrane proteins: the R report",
-    "section": "4. Count features and make a second plot",
-    "text": "4. Count features and make a second plot\nThe supplied UniProt query retrieves ATP1A1, SLC2A1, SLC5A1, SLC5A2, ABCB1, CFTR, AQP1 and KCNA1. In count-tm, fill in a function that counts occurrences of TRANSMEM in each annotation string. Use gregexpr(..., fixed = TRUE); no match is returned as -1, so count only positive match positions. Empty feature fields should give zero, not a missing value.\nIn topology-plot, use geom_col() for gene versus tm_count. Add a y-axis label “Annotated transmembrane segments (count)” and a UniProt data caption. Ask whether equal segment counts imply equal transport mechanisms."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/report.html#finish-the-report",
-    "href": "bioinfo-membrane-proteins/report.html#finish-the-report",
-    "title": "Membrane proteins: the R report",
-    "section": "5. Finish the report",
-    "text": "5. Finish the report\nWrite a short interpretation using at least one inline R value. Explain expression, topology and drug binding as separate observations, then connect them. Include the browser record identifiers and your access dates. Keep the Data and sessionInfo() sections.\nOptional hand-in: the knitted HTML with your name, both plots, no errors and the provenance table. Check that another person could identify which data you used."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/report.html#sources-and-licences",
-    "href": "bioinfo-membrane-proteins/report.html#sources-and-licences",
-    "title": "Membrane proteins: the R report",
-    "section": "Sources and licences",
-    "text": "Sources and licences\n\nUniProtKB, release 2026_04, retrieved 2026-11-18: REST documentation. Feature strings in data/uniprot-features-2026-11-18.csv were parsed from the original TSV response without changing their annotations. CC BY 4.0.\nGTEx, dataset v8, retrieved 2026-11-18: GTEx API. The CSV contains all returned tissue medians for the two genes (108 rows); these are public aggregate data, not donor-level records. GTEx data access policy.\nRCSB PDB 6O2P, Liu et al., Science 364:1184–1188 (2019), structure and primary paper.\nAlphaFold DB, confidence documentation; ClinVar, record 7105; PubChem, ivacaftor.\n\nThe JSON provenance files downloaded from the overview contain the exact query URLs and snapshot dates. No external images are copied into this module."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/browser.html",
-    "href": "bioinfo-membrane-proteins/browser.html",
-    "title": "Membrane proteins: in the browser",
-    "section": "",
-    "text": "Module overview · Browser · R report\nKeep notes in Part A of your downloaded report. For every database record, record its identifier and the date you accessed it. Protein sequence annotations, predicted structures, experiments and patient variant classifications provide different kinds of evidence."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/browser.html#find-transmembrane-segments",
-    "href": "bioinfo-membrane-proteins/browser.html#find-transmembrane-segments",
-    "title": "Membrane proteins: in the browser",
-    "section": "1. Find transmembrane segments",
-    "text": "1. Find transmembrane segments\nOpen human CFTR in UniProt, P13569. Check the species and that the entry is reviewed. In Subcellular location and the sequence feature viewer, select Transmembrane. Count annotated membrane-spanning segments, rather than all helices in the sequence. Repeat for ABCB1, P08183 and SGLT2/SLC5A2, P31639. Open one evidence tag: is the assignment experimental or inferred?\nT1. [ELO 2] Sequence annotation. How many annotated transmembrane segments does each protein have? Does the count tell you whether the protein is a channel or a transporter?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nCFTR 12, ABCB1 12, SGLT2 14 in the downloaded UniProt features. CFTR is an ATP-regulated chloride channel; ABCB1 is an ATP-driven exporter; SGLT2 is a sodium/glucose cotransporter. A segment count describes topology, but does not establish the transport mechanism. The evidence tags describe support for individual annotations."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/browser.html#see-a-drug-in-a-structure",
-    "href": "bioinfo-membrane-proteins/browser.html#see-a-drug-in-a-structure",
-    "title": "Membrane proteins: in the browser",
-    "section": "2. See a drug in a structure",
-    "text": "2. See a drug in a structure\nOpen RCSB PDB 6O2P, the human CFTR–ivacaftor complex. Read Experimental Data Snapshot: method and resolution. Open 3D View / Structure to launch Mol*. Under Small Molecules, find VX7, the ligand code for ivacaftor. Use its 3D interaction view or select it in the viewer, zoom to the ligand, and show nearby protein residues. Compare its position with the two cytosolic nucleotide-binding domains.\nT2. [ELO 2, 9] Structure. Where does ivacaftor bind? Why is choosing ATP or digitonin from the ligand list the wrong way to answer this question?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nIvacaftor (VX7) binds within CFTR’s transmembrane region, at the protein–lipid interface. The ATP ligands occupy nucleotide-binding sites, and digitonin is a detergent used in preparing the protein. A structure may contain several chemicals; the ligand identifier tells you which one you selected. 6O2P was determined by cryo-electron microscopy at 3.3 Å. The deposited construct includes a mutation, so it is not an unmodified protein in a living cell."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/browser.html#separate-confidence-from-measurement",
-    "href": "bioinfo-membrane-proteins/browser.html#separate-confidence-from-measurement",
-    "title": "Membrane proteins: in the browser",
-    "section": "3. Separate confidence from measurement",
-    "text": "3. Separate confidence from measurement\nOpen AlphaFold DB P13569. Read the confidence legend and locate a low-confidence region between the first nucleotide-binding domain and the second transmembrane half. Compare it with the R-domain annotation in UniProt. AlphaFold DB models describe a sequence-based prediction; the structure in 6O2P is an experimentally determined drug-bound construct.\nT3. [ELO 2] [VG] Evidence. Can low pLDDT establish that a region moves rapidly, or tell you whether ivacaftor binds there?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nNo. pLDDT measures confidence in the predicted local structure. CFTR’s regulatory R region has low-confidence stretches, consistent with a region that lacks one stable structure, but pLDDT is not a measurement of motion. Low confidence can also reflect insufficient information. A drug-binding claim needs evidence such as a ligand-bound experimental structure and functional tests; the standard monomer prediction does not include ivacaftor."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/browser.html#connect-a-variant-to-a-cellular-defect",
-    "href": "bioinfo-membrane-proteins/browser.html#connect-a-variant-to-a-cellular-defect",
-    "title": "Membrane proteins: in the browser",
-    "section": "4. Connect a variant to a cellular defect",
-    "text": "4. Connect a variant to a cellular defect\nOpen ClinVar variant 7105, CFTR p.Phe508del (F508del). Read the germline classification, disease and review status. If the page is unavailable, use NCBI’s summary for record 7105; search within the text for germline_classification. Different transcripts may number the same DNA deletion differently, so record the protein change and the accession.\nT4. [ELO 9] Mechanism. Why is a potentiator alone generally insufficient for F508del? Which extra step does a corrector address?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nThe record classifies p.Phe508del as pathogenic for cystic fibrosis. F508del causes defective folding and processing: ER quality control removes much of the protein before it reaches the surface. A potentiator increases activity of channels already at the membrane; a corrector improves folding/processing so more channels arrive there. Clinical classification is evidence about a variant–disease relationship, not a direct measurement of the molecular mechanism in every patient."
-  },
-  {
-    "objectID": "bioinfo-membrane-proteins/browser.html#relate-compound-properties-to-its-binding-site",
-    "href": "bioinfo-membrane-proteins/browser.html#relate-compound-properties-to-its-binding-site",
-    "title": "Membrane proteins: in the browser",
-    "section": "5. Relate compound properties to its binding site",
-    "text": "5. Relate compound properties to its binding site\nOpen PubChem ivacaftor, CID 16220172. In Chemical and Physical Properties, find molecular weight and XLogP. Record whether each is computed or measured.\nT5. [ELO 2, 9] Chemical properties. Do these values fit a molecule that can reach a membrane-embedded binding site? Does XLogP prove that a drug will enter cells well?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nPubChem reports molecular weight 392.5 g/mol and computed XLogP3-AA 5.6. The positive, high partition coefficient fits a lipophilic compound and a membrane-associated binding site. It does not by itself establish cellular uptake, solubility, exposure or clinical efficacy. Charge state, transporters, binding to proteins and metabolism also matter.\n\n\n\nContinue to the R report."
   },
   {
     "objectID": "bioinfo-essential-genes/index.html",
     "href": "bioinfo-essential-genes/index.html",
     "title": "Bioinformatics: which genes does a cancer cell need?",
     "section": "",
-    "text": "Use CRISPR gene-dependency screens to compare core cell-cycle machinery with context-dependent survival genes. Interpret distributions and build an R Markdown report from a short outline. ELO 7, 8, 9.\nBuilds on cell-cycle control, mitosis, cell numbers, and apoptosis. Allow about 3–4 hours.\n\nIn the browser: dependencies, cyclin B1 and p53.\nIn R: dependency distributions.",
+    "text": "Goal: read CRISPR screens to see which cell-cycle and survival genes cancer cells cannot live without. Builds on cell-cycle control, mitosis, cell numbers and apoptosis. About 2 hours.",
     "crumbs": [
       "Home",
       "Cell cycle and cell death",
@@ -4396,11 +4220,11 @@
     ]
   },
   {
-    "objectID": "bioinfo-essential-genes/index.html#what-you-will-do",
-    "href": "bioinfo-essential-genes/index.html#what-you-will-do",
+    "objectID": "bioinfo-essential-genes/index.html#part-a-in-the-browser",
+    "href": "bioinfo-essential-genes/index.html#part-a-in-the-browser",
     "title": "Bioinformatics: which genes does a cancer cell need?",
-    "section": "",
-    "text": "Use CRISPR gene-dependency screens to compare core cell-cycle machinery with context-dependent survival genes. Interpret distributions and build an R Markdown report from a short outline. ELO 7, 8, 9.\nBuilds on cell-cycle control, mitosis, cell numbers, and apoptosis. Allow about 3–4 hours.\n\nIn the browser: dependencies, cyclin B1 and p53.\nIn R: dependency distributions.",
+    "section": "Part A: in the browser",
+    "text": "Part A: in the browser\nA1. Cyclin B1 rises and falls. Open Human Protein Atlas: CCNB1, subcellular section. Scroll to Single cell variation and find Protein expression peak phase.\nT1. In which phase is cyclin B1 protein highest: G1, S or G2? [ELO 7]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nG2. Cyclin B1 builds up before mitosis and activates CDK1. The APC/C then marks it for destruction at anaphase, so the cell can leave mitosis.\n\n\n\nA2. Who switches p53 on? Open UniProt P04637 (TP53). Go to PTM/Processing and find the Modified residue at position 15.\nT2. Which of the kinases listed for serine 15 is the DNA-damage kinase from the checkpoint slide? [ELO 7]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nATM. After a DNA break, ATM phosphorylates p53 at serine 15. MDM2 can then no longer tag p53 for destruction, p53 accumulates and switches on p21.\n\n\n\nA3. A drug against a survival protein. Open ChEMBL CHEMBL3137309 (venetoclax) and find Mechanisms of Action.\nT3. Which protein does venetoclax inhibit: BCL-2, BCL-XL, MCL-1 or CDK4? [ELO 8]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nBCL-2 (“Apoptosis regulator Bcl-2 inhibitor”). It is the BH3 mimetic from the apoptosis lecture, used in chronic lymphocytic leukaemia.",
     "crumbs": [
       "Home",
       "Cell cycle and cell death",
@@ -4408,11 +4232,11 @@
     ]
   },
   {
-    "objectID": "bioinfo-essential-genes/index.html#before-you-start",
-    "href": "bioinfo-essential-genes/index.html#before-you-start",
+    "objectID": "bioinfo-essential-genes/index.html#part-b-in-r",
+    "href": "bioinfo-essential-genes/index.html#part-b-in-r",
     "title": "Bioinformatics: which genes does a cancer cell need?",
-    "section": "Before you start",
-    "text": "Before you start\nNo account is needed. Use RStudio or R with rmarkdown, ggplot2, jsonlite and httr2 installed. Install missing packages once in the console:\ninstall.packages(c(\"rmarkdown\", \"ggplot2\", \"jsonlite\", \"httr2\"))\nDownload the report and all listed snapshots. Put the report in a new folder and CSV/JSON files in its data/ subfolder. Keep the filenames. If an API is unavailable, set use_snapshot &lt;- TRUE. A snapshot is a dated copy of real records, not simulated data. Knitting uses a fresh R session: create every object in the report and finish with sessionInfo(). Do not include your R console history as a substitute for code.",
+    "section": "Part B: in R",
+    "text": "Part B: in R\nA CRISPR screen knocks out one gene in each of about 1 250 cancer cell lines and measures growth. The gene effect is 0 when the cells grow as usual and about −1 for a typical essential gene. More negative means the cells need the gene more.\nThe template fetches these scores for six genes: CDK1, CDK4, CDK6 (cell cycle) and BCL2, BCL2L1, MCL1 (BCL-2 family guardians). All fetching code is given. You fill three blanks marked ___.\n\nDownloads\n\nReport template. Put it in a new folder.\nData snapshot (optional). Put it in a data/ subfolder. It is used only if you set use_snapshot &lt;- TRUE (for example when the API is down).\n\nData: DepMap CRISPR screens via the Open Targets Platform 26.09 (CC0; cite DepMap), retrieved 2026-11-18.\nYou need the R packages rmarkdown, ggplot2 and httr (install.packages(c(\"rmarkdown\", \"ggplot2\", \"httr\"))). Knit once before you change anything: the report knits, with an error under each blank.\n\n\nBlank 1: one summary line\nReplace ___ in FUN = ___ with the R function that computes a median. When it works, a table with six rows prints: one median gene effect per gene.\nT4. Which gene has the most negative median, and what is that median (two decimals)? [ELO 7]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nCDK1, about −2.63. Almost every cell line needs CDK1 to enter mitosis. The other five medians lie between −1 and 0 (BCL2 is close to 0).\n\n\n\n\n\nBlank 2: one ggplot() call\nWrite one ggplot() call from the pieces listed in the template: data dependencies, gene on the x axis, gene_effect on the y axis, geom_violin(), a dashed line at −1, and axis labels. You should see six violins, one per gene.\nT5. Which statement matches your plot? [ELO 8]\n\n\n\nBCL2 is needed by most cell lines.\n\n\nMost cell lines do not need BCL2, but a few lie below −1.\n\n\nBCL2 and CDK1 have similar violins.\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n(b). The BCL2 violin is wide at 0 with a thin tail down to below −2. CDK1 sits almost entirely below −1.\n\n\n\n\n\nBlank 3: one gene name\nFill in \"BCL2\" (with quotes) to keep only the BCL2 rows. A plot with one row of points per tissue appears, and below it a count of cell lines with gene effect below −1 per tissue.\nT6. Which tissue group has the most cell lines below −1 for BCL2? [ELO 8, 9]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nLymphoid tissue (5 lines; haematopoietic tissue is next with 2). These are lymphoma, myeloma and leukaemia lines, which fits venetoclax being a drug for blood cancers.\n\n\n\nT7. [VG] CDK1 is the strongest dependency in your plot. Why is it a poorer drug target than BCL2? Pick one. [ELO 7, 9]\n\n\n\nCDK1 is not expressed in cancer cells.\n\n\nNormal dividing cells, such as bone marrow and gut lining, also need CDK1, so blocking it would harm them too.\n\n\nKnocking out CDK1 makes cells grow faster.\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n(b). A gene that every dividing cell needs gives little room between killing the cancer and harming the patient. This is why antimitotic drugs lower blood counts (mitosis lecture). BCL2 is needed by only a few kinds of cancer cell, so a BCL-2 inhibitor can be more selective.",
     "crumbs": [
       "Home",
       "Cell cycle and cell death",
@@ -4420,228 +4244,64 @@
     ]
   },
   {
-    "objectID": "bioinfo-essential-genes/index.html#downloads",
-    "href": "bioinfo-essential-genes/index.html#downloads",
+    "objectID": "bioinfo-essential-genes/index.html#hand-in",
+    "href": "bioinfo-essential-genes/index.html#hand-in",
     "title": "Bioinformatics: which genes does a cancer cell need?",
-    "section": "Downloads",
-    "text": "Downloads\n\nStudent report outline\nGene-effect snapshot\nAPI release metadata\nRetrieval record",
+    "section": "Hand in",
+    "text": "Hand in\n\nThe knitted HTML of your report, with no Error messages left.\nIt shows the table of six medians, the six-gene violin plot and the BCL2 plot by tissue.\nYour answers to T1–T7, one line each.",
     "crumbs": [
       "Home",
       "Cell cycle and cell death",
       "Bioinformatics: which genes does a cancer cell need?"
     ]
-  },
-  {
-    "objectID": "bioinfo-essential-genes/index.html#sources-and-licences",
-    "href": "bioinfo-essential-genes/index.html#sources-and-licences",
-    "title": "Bioinformatics: which genes does a cancer cell need?",
-    "section": "Sources and licences",
-    "text": "Sources and licences\nOpen Targets Platform redistributes DepMap CRISPR screen data through its GraphQL API. Open Targets data are CC0 unless a contributing dataset has additional terms; retain the DepMap citation and check DepMap terms. Snapshot retrieved 2026-11-18; the included metadata records the Open Targets release. Cite the DepMap portal and Chronos method. HPA and UniProt annotations are CC BY 4.0. No external images are reproduced.",
-    "crumbs": [
-      "Home",
-      "Cell cycle and cell death",
-      "Bioinformatics: which genes does a cancer cell need?"
-    ]
-  },
-  {
-    "objectID": "bioinfo-drug-targets/report.html",
-    "href": "bioinfo-drug-targets/report.html",
-    "title": "Drug selectivity: an R Markdown report",
-    "section": "",
-    "text": "Module overview and downloads · Previous: database investigation"
-  },
-  {
-    "objectID": "bioinfo-drug-targets/report.html#fetch-or-load-the-evidence",
-    "href": "bioinfo-drug-targets/report.html#fetch-or-load-the-evidence",
-    "title": "Drug selectivity: an R Markdown report",
-    "section": "1. Fetch or load the evidence",
-    "text": "1. Fetch or load the evidence\nKeep the template and fetch-data.R together, with the three CSVs in data/. Knit untouched first. The given chunks fetch data and show an audit table; your plot chunks are empty. The helper uses httr2 to make a GET request to ChEMBL and a GraphQL POST to Open Targets. A request body holds the GraphQL query; this differs from a query encoded in a GET URL.\nRead the helper’s get_chembl() function: a base URL, query parameters, user agent, timeout, retry and JSON parser. A request repeated in a chunk should read its dated cache. If an API fails, use the shipped files with use_snapshot &lt;- TRUE; that mode makes no web requests. Keep the date and release in your report even when using snapshots."
-  },
-  {
-    "objectID": "bioinfo-drug-targets/report.html#audit-then-plot-exact-values",
-    "href": "bioinfo-drug-targets/report.html#audit-then-plot-exact-values",
-    "title": "Drug selectivity: an R Markdown report",
-    "section": "2. Audit, then plot exact values",
-    "text": "2. Audit, then plot exact values\nThe ChEMBL query selects imatinib IC50 records for ABL1, KIT, PDGFRA, SRC and EGFR. It returns 161 activity records in the shipped snapshot, including censored values and records without a quantified IC50. Inspect the relation symbols before plotting.\nUse the supplied exact table to make a strip plot with geom_jitter(width = 0.12, height = 0). Its y axis is pic50 = -log10(IC50 in mol/L): a larger value means a lower concentration. Add geom_hline(yintercept = 6, linetype = \"dashed\") for 1 µM. State the filter in the caption. The filtering removes potential duplicate records and data-validity flags, and keeps exact positive binding-assay IC50s in nM. Keep the raw table for checking what the filter leaves out.\nT5. [VG] An EGFR record gives 0.11 nM, while another says &gt;100000 nM. Would a median of the exact values alone give a sound selectivity conclusion? Why not? [ELO 3, 9; skill: audit conflicting and censored data]\n\n\n\n\n\n\nAnswer (checked 2026-11-18, ChEMBL 37)\n\n\n\n\n\nNo. The only exact EGFR record in this subset is 0.11 nM (activity 24962906, document CHEMBL5214926); treating it as a representative median would hide the &gt;100000 nM record (activity 909964, CHEMBL1130562) and an unquantified low-inhibition record. Check the original papers, compound mapping and assay conditions before deciding why they disagree. A bound is information, even though it cannot be used as an exact IC50. The course retains this conflict rather than removing a result to reproduce a familiar story."
-  },
-  {
-    "objectID": "bioinfo-drug-targets/report.html#draw-an-illustrative-model",
-    "href": "bioinfo-drug-targets/report.html#draw-an-illustrative-model",
-    "title": "Drug selectivity: an R Markdown report",
-    "section": "3. Draw an illustrative model",
-    "text": "3. Draw an illustrative model\nFirst select the three targets from the supplied exact-value table:\nfocus &lt;- subset(exact, target %in% c(\"ABL1\", \"KIT\", \"PDGFRA\"))\nic50 &lt;- aggregate(standard_value ~ target, focus, median)\nThe standard_value column now contains each target’s median IC50 in nM. Create logarithmically spaced drug concentrations and calculate dose_nm / (ic50_nm + dose_nm). Plot with geom_line() and scale_x_log10(). Name the axes and say Hill slope fixed at 1; not fitted. Pooled assay medians are a teaching summary, not a precise potency ranking. Do not make an EGFR curve from its single conflicting exact observation.\nNow compare records from the same source, CHEMBL1130562: ABL1 = 38 nM, EGFR &gt;100000 nM. At a modelled drug concentration of 1 µM, how large are the two fractions?\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nConvert 1 µM to 1000 nM. The illustrative ABL fraction is 1000/(38 + 1000) ≈ 96.3%. Because EGFR IC50 is greater than 100000 nM, the EGFR fraction is less than 1000/(100000 + 1000) ≈ 0.99%. This comparison is conditional on the simple model and those records. The ABL assay describes v-Abl; even assays in one publication need not be identical. This calculation does not resolve the conflicting EGFR record or predict patient response."
-  },
-  {
-    "objectID": "bioinfo-drug-targets/report.html#compare-clinical-stage-categories",
-    "href": "bioinfo-drug-targets/report.html#compare-clinical-stage-categories",
-    "title": "Drug selectivity: an R Markdown report",
-    "section": "4. Compare clinical-stage categories",
-    "text": "4. Compare clinical-stage categories\nUse as.data.frame(table(candidates$target, candidates$stage)) and name its columns. Make a grouped bar plot. Preserve categorical strings such as APPROVAL, PHASE_4 and PHASE_2_3: they cannot be treated as one continuous phase number.\nT6. Why does a bar containing 82 EGFR drug/candidate records not show that 82 drugs are approved treatments for lung cancer? [ELO 9; skill: understand the unit counted]\n\n\n\n\n\n\nAnswer (checked 2026-11-18, Open Targets 26.09)\n\n\n\n\n\nThe query returns 82 EGFR, 27 ABL1 and 38 KIT drug/candidate records across stages. Each row represents a returned target–candidate record; related formulations, multiple indications and investigational candidates can be present. Counts are neither independent trials nor the number approved for one indication. Approval status and indication must be checked for each drug; these bars describe a database, not comparative effectiveness."
-  },
-  {
-    "objectID": "bioinfo-drug-targets/report.html#hand-in-optional",
-    "href": "bioinfo-drug-targets/report.html#hand-in-optional",
-    "title": "Drug selectivity: an R Markdown report",
-    "section": "Hand-in (optional)",
-    "text": "Hand-in (optional)\nSubmit your knitted HTML with browser-source notes, the activity strip plot, labelled model curves, stage counts, a short interpretation of the EGFR conflict, the exact filters and queries, database releases, retrieval dates and sessionInfo(). Keep source, helper and CSVs together for reproducibility."
-  },
-  {
-    "objectID": "bioinfo-drug-targets/browser.html",
-    "href": "bioinfo-drug-targets/browser.html",
-    "title": "Drug selectivity: database investigation",
-    "section": "",
-    "text": "Module overview and downloads · Next: R Markdown report"
-  },
-  {
-    "objectID": "bioinfo-drug-targets/browser.html#match-structure-to-signalling-mechanism",
-    "href": "bioinfo-drug-targets/browser.html#match-structure-to-signalling-mechanism",
-    "title": "Drug selectivity: database investigation",
-    "section": "1. Match structure to signalling mechanism",
-    "text": "1. Match structure to signalling mechanism\n\nOpen PDB 3SN6, the β₂-adrenergic receptor–Gs complex. Read the method, then open 3D View. Colour by chain and find the receptor’s transmembrane helices and G-protein subunits using the polymer/entity list.\nOpen PDB 1IEP, the ABL kinase domain bound to STI-571 (imatinib). Select its small-molecule ligand and zoom to the surrounding protein. Read the entry’s primary publication summary. This is a mouse ABL kinase domain, not the full human BCR–ABL fusion.\n\nT1. Where is Gs relative to the receptor’s membrane-spanning helices? Why must receptor and G protein contact each other for this signal to pass? [ELO 3; skill: read a multichain structure]\n\n\n\n\n\n\nAnswer (checked 2026-11-18, PDB 3SN6)\n\n\n\n\n\nThe receptor has seven transmembrane helices. Gαs binds its cytoplasmic face, with Gβ and Gγ nearby. Receptor activation promotes GDP release and GTP binding on Gαs, linking extracellular ligand binding to intracellular signalling. The structure also contains experimental stabilising components, including a nanobody; not every chain is part of the native signalling complex.\n\n\n\nT2. Where does imatinib bind in 1IEP, and why is this a plausible way to inhibit a kinase? [ELO 3, 9; skill: connect a ligand to a catalytic mechanism]\n\n\n\n\n\n\nAnswer (checked 2026-11-18, PDB 1IEP)\n\n\n\n\n\nImatinib occupies the ATP-binding region and an adjacent pocket in an inactive ABL kinase conformation. It prevents productive ATP-dependent phosphorylation and stabilises the inactive state. Binding to an isolated domain supports a molecular mechanism; it does not by itself establish clinical efficacy or selectivity against all other kinases."
-  },
-  {
-    "objectID": "bioinfo-drug-targets/browser.html#follow-a-pathway",
-    "href": "bioinfo-drug-targets/browser.html#follow-a-pathway",
-    "title": "Drug selectivity: database investigation",
-    "section": "2. Follow a pathway",
-    "text": "2. Follow a pathway\n\nOpen Reactome: signalling by EGFR, R-HSA-177929.\nEnter the pathway browser and follow the connection from activated EGFR to RAS and the MAP kinase cascade. Use the molecular details panel to distinguish a protein from a complex or reaction.\nIn your report, draw a short text chain: EGF → EGFR → RAS → RAF → MEK → ERK. Label the receptor, GTPase and kinases. Reactome contains additional branches; this chain is one route."
-  },
-  {
-    "objectID": "bioinfo-drug-targets/browser.html#compare-target-evidence-and-drug-records",
-    "href": "bioinfo-drug-targets/browser.html#compare-target-evidence-and-drug-records",
-    "title": "Drug selectivity: database investigation",
-    "section": "3. Compare target evidence and drug records",
-    "text": "3. Compare target evidence and drug records\n\nOpen EGFR in Open Targets. In Associated diseases, record one cancer association, its evidence types and your access date. Do not assume the highest score proves causation.\nIn Drugs and clinical candidates, find one small molecule (for example gefitinib) and one antibody (for example cetuximab). Record the indication and stage rather than writing only “approved”.\nOpen imatinib in ChEMBL, CHEMBL941, then Bioactivities. Filter for IC50, a named target and a binding assay. Inspect the relation symbol, units, assay description and source document. “&gt;100000 nM” is a bound, not an IC50 of 100000 nM.\n\nT3. How could a small molecule and an antibody both inhibit EGFR signalling while binding different parts of the receptor? [ELO 3, 9; skill: interpret drug mechanism records]\n\n\n\n\n\n\nAnswer (checked 2026-11-18 against EGFR drug records)\n\n\n\n\n\nAn ATP-site inhibitor such as gefitinib acts on the intracellular kinase domain; cetuximab binds the extracellular domain and interferes with receptor activation. Their access, resistance mechanisms and indications differ. Open Targets 26.09 returns 82 drug/candidate records for EGFR in the provided query, but this changing count is not the number of drugs approved for every EGFR-associated cancer.\n\n\n\nT4. [VG] Why does imatinib’s action on KIT and PDGFRA help explain its use beyond BCR–ABL-driven leukaemia? What evidence would be needed before choosing a drug for a particular tumour? [ELO 3, 9; skill: compare molecular and clinical evidence]\n\n\n\n\n\n\nAnswer (checked 2026-11-18 against ChEMBL activity records)\n\n\n\n\n\nImatinib inhibits ABL1, KIT and PDGFRA in many assays. KIT- or PDGFRA-driven gastrointestinal stromal tumours can therefore be sensitive even without BCR–ABL. A target’s presence alone is insufficient: the activating variant, drug sensitivity, exposure and clinical evidence for that disease matter. Some variants confer resistance. The R report shows why a pooled activity number cannot settle an individual treatment decision.\n\n\n\nContinue to the R Markdown report."
   },
   {
     "objectID": "bioinfo-cytoskeleton/index.html",
     "href": "bioinfo-cytoskeleton/index.html",
-    "title": "Bioinformatics: filaments, tissues and a drug for the heart",
+    "title": "Bioinformatics: one filament family per tissue",
     "section": "",
-    "text": "Compare cytoskeletal gene families across tissues, locate drugs in experimental structures, and read a clinical-trial record. Build a parameterised R Markdown report with a tissue heatmap and a trial-phase chart. ELO 6, 9.\nBuilds on actin, microtubules, and myosin and intermediate filaments. Allow about 3–4 hours.\n\nIn the browser: structures, variants and trials.\nIn R: tissue expression and trial records.",
+    "text": "Goal: find drugs bound to tubulin and myosin in real structures, link two filament genes to their diseases, and draw a heatmap showing which tissue uses which filament gene.\nBuilds on: Actin, Microtubules and Myosin and intermediate filaments. ELO 6, 9. Time: about 2 hours.",
     "crumbs": [
       "Home",
       "Cytoskeleton",
-      "Bioinformatics: filaments, tissues and a drug for the heart"
+      "Bioinformatics: one filament family per tissue"
     ]
   },
   {
-    "objectID": "bioinfo-cytoskeleton/index.html#what-you-will-do",
-    "href": "bioinfo-cytoskeleton/index.html#what-you-will-do",
-    "title": "Bioinformatics: filaments, tissues and a drug for the heart",
-    "section": "",
-    "text": "Compare cytoskeletal gene families across tissues, locate drugs in experimental structures, and read a clinical-trial record. Build a parameterised R Markdown report with a tissue heatmap and a trial-phase chart. ELO 6, 9.\nBuilds on actin, microtubules, and myosin and intermediate filaments. Allow about 3–4 hours.\n\nIn the browser: structures, variants and trials.\nIn R: tissue expression and trial records.",
+    "objectID": "bioinfo-cytoskeleton/index.html#part-a-in-the-browser",
+    "href": "bioinfo-cytoskeleton/index.html#part-a-in-the-browser",
+    "title": "Bioinformatics: one filament family per tissue",
+    "section": "Part A: in the browser",
+    "text": "Part A: in the browser\nNo logins are needed. Note your answers as you go; you check them in the collapsed boxes.\n\nA1. Taxol on tubulin\nOpen PDB 1JFF (tubulin with taxol). Under Macromolecules, find which chain is α-tubulin and which is β-tubulin. Under Small Molecules, find TA1 (taxol) and the chain it binds.\nTask A1. Which chain, and so which tubulin subunit, binds taxol? [ELO 6]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nChain B, β-tubulin. As in the lecture, taxanes bind β-tubulin inside the lattice and lock the microtubule.\n\n\n\n\n\nA2. Two drugs on the same motor\nOpen PDB 5N69 and PDB 8QYR. Both show the motor of β-cardiac myosin (gene MYH7, here from cow) in the same pre-powerstroke state, each with a different drug. Read each title and the Small Molecules list.\nTask A2. Which entry contains the drug used to treat hypertrophic cardiomyopathy (HCM), and what is its three-character ligand code? [ELO 6, 9]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n8QYR, ligand XB2 (mavacamten), an inhibitor that parks myosin heads. 5N69 holds omecamtiv mecarbil (code 2OW), an activator. Same motor, a shared binding pocket, opposite effects on force.\n\n\n\n\n\nA3. The trial that led to approval\nOpen the EXPLORER-HCM record, NCT03470545 on ClinicalTrials.gov. Find the study phase and the arms (the groups that were compared).\nTask A3. Which trial phase is it, and what did the comparison group receive? [ELO 9]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nPhase 3, randomised against placebo. You meet trial phases again in the course on clinical trials and drug development.\n\n\n\n\n\nA4. One variant per gene\nOpen two ClinVar records: VCV000014612 (KRT14 p.Arg125Cys) and VCV000014087 (MYH7 p.Arg403Gln). Read the classification and the condition(s).\nTask A4. Which disease is linked to each variant? [ELO 9]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nKRT14 p.Arg125Cys: epidermolysis bullosa simplex (blistering skin). MYH7 p.Arg403Gln: hypertrophic cardiomyopathy. Both are classified Pathogenic. Arg125 sits at the conserved start of the keratin rod, the part needed for filaments to join end to end.",
     "crumbs": [
       "Home",
       "Cytoskeleton",
-      "Bioinformatics: filaments, tissues and a drug for the heart"
+      "Bioinformatics: one filament family per tissue"
     ]
   },
   {
-    "objectID": "bioinfo-cytoskeleton/index.html#before-you-start",
-    "href": "bioinfo-cytoskeleton/index.html#before-you-start",
-    "title": "Bioinformatics: filaments, tissues and a drug for the heart",
-    "section": "Before you start",
-    "text": "Before you start\nNo account is needed. Use RStudio or R with rmarkdown, ggplot2, jsonlite and httr2 installed. Install missing packages once in the console:\ninstall.packages(c(\"rmarkdown\", \"ggplot2\", \"jsonlite\", \"httr2\"))\nDownload the report and all listed snapshots. Put the report in a new folder and CSV/JSON files in its data/ subfolder. Keep the filenames. If an API is unavailable, set use_snapshot &lt;- TRUE. A snapshot is a dated copy of real records, not simulated data. Knitting uses a fresh R session: create every object in the report and finish with sessionInfo(). Do not include your R console history as a substitute for code.",
+    "objectID": "bioinfo-cytoskeleton/index.html#part-b-in-r",
+    "href": "bioinfo-cytoskeleton/index.html#part-b-in-r",
+    "title": "Bioinformatics: one filament family per tissue",
+    "section": "Part B: in R",
+    "text": "Part B: in R\n\nBefore you start\n\nDownload the template bioinfo-cytoskeleton.Rmd into a new folder.\nCheck that ggplot2, jsonlite and rmarkdown are installed (install.packages(c(\"ggplot2\", \"jsonlite\", \"rmarkdown\")) if not).\nIf GTEx is down, set use_snapshot &lt;- TRUE. The template then reads the saved copy gtex-expression-2026-11-18.csv from a data/ folder next to it, or from this site.\n\nData: GTEx v8 median TPM (GTEx Portal, open-access summary data), retrieved 2026-11-18.\n\n\nWhat the template does\nThe given code fetches the median RNA expression (TPM) of 16 cytoskeleton genes in eight tissues from the GTEx API, and draws an example heatmap of raw TPM. Your job is to complete one ggplot() call that draws the same heatmap on a log scale. Fill the three blanks ___:\n\nBlank 1: fill = log10(tpm + 1).\nBlank 2: the layer that draws the tiles (copy it from the example).\nBlank 3: the title of the colour key, \"log10(TPM + 1)\".\n\nUntil all three are filled, the chunk shows an Error ... unexpected input. When they are, you see a 16 × 8 grid of tiles with a colour key titled log10(TPM + 1), and far more coloured tiles than in the example.\nTask B1. In the given raw-TPM example, which single tile (gene and tissue) is brightest? [ELO 6]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nDES in skeletal muscle (about 12 000 TPM; the printed top three confirms it). Desmin links Z-discs in muscle. Almost every other tile is dark: raw TPM hides everything below a few hundred, which is why you use a log scale.\n\n\n\nTask B2. On your log heatmap: in which two tissues is MYH7 (β-cardiac myosin, the mavacamten target) high, and which myosin heavy chain is high only in skeletal muscle? [ELO 6, 9]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nMYH7 is high in heart (left ventricle) and skeletal muscle (slow fibres use the same β-myosin). MYH2 is high only in skeletal muscle (fast fibres).\n\n\n\nTask B3. [VG] KRT8 and KRT18 form one keratin pair (type II + type I). Where are both highest? (a) skin and oesophagus mucosa; (b) liver and lung; (c) brain cortex and tibial nerve; (d) heart and skeletal muscle. [ELO 6]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n(b) liver and lung. KRT8/KRT18 is the pair of simple (single-layer) epithelia. KRT5/KRT14, the pair broken in epidermolysis bullosa simplex (A4), marks the stratified epithelia of skin and oesophagus.",
     "crumbs": [
       "Home",
       "Cytoskeleton",
-      "Bioinformatics: filaments, tissues and a drug for the heart"
+      "Bioinformatics: one filament family per tissue"
     ]
   },
   {
-    "objectID": "bioinfo-cytoskeleton/index.html#downloads",
-    "href": "bioinfo-cytoskeleton/index.html#downloads",
-    "title": "Bioinformatics: filaments, tissues and a drug for the heart",
-    "section": "Downloads",
-    "text": "Downloads\n\nStudent report\nGTEx expression snapshot\nMavacamten trial snapshot\nRetrieval record\n\nFor a second gene set, use the supplied tubulin isotypes TUBB, TUBB3 and TUBB4A. The snapshot contains these in addition to the 13 core genes.",
+    "objectID": "bioinfo-cytoskeleton/index.html#hand-in",
+    "href": "bioinfo-cytoskeleton/index.html#hand-in",
+    "title": "Bioinformatics: one filament family per tissue",
+    "section": "Hand in",
+    "text": "Hand in\n\nYour answers to A1–A4 and B1–B3 (one line each).\nThe knitted HTML with both heatmaps and no errors.\nThe Data section showing the retrieval date.",
     "crumbs": [
       "Home",
       "Cytoskeleton",
-      "Bioinformatics: filaments, tissues and a drug for the heart"
+      "Bioinformatics: one filament family per tissue"
     ]
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/index.html#sources-and-licences",
-    "href": "bioinfo-cytoskeleton/index.html#sources-and-licences",
-    "title": "Bioinformatics: filaments, tissues and a drug for the heart",
-    "section": "Sources and licences",
-    "text": "Sources and licences\nGTEx v8, adult tissue median RNA expression (TPM), from the GTEx API; cite the GTEx Consortium, Science 369:1318–1330 (2020), doi:10.1126/science.aaz1776. Use only open summary data here; donor-level controlled data are not included. ClinicalTrials.gov supplies public registry records, retrieved 2026-11-18. RCSB PDB coordinates are CC0; no external images are copied.",
-    "crumbs": [
-      "Home",
-      "Cytoskeleton",
-      "Bioinformatics: filaments, tissues and a drug for the heart"
-    ]
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/report.html",
-    "href": "bioinfo-cancer-genomics/report.html",
-    "title": "Cancer genomics: plot mutation positions in R",
-    "section": "",
-    "text": "Module overview · Browser activity · Next: your own report"
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/report.html#define-the-cohort-before-downloading",
-    "href": "bioinfo-cancer-genomics/report.html#define-the-cohort-before-downloading",
-    "title": "Cancer genomics: plot mutation positions in R",
-    "section": "Define the cohort before downloading",
-    "text": "Define the cohort before downloading\nUse study skcm_tcga_pan_can_atlas_2018, mutation profile skcm_tcga_pan_can_atlas_2018_mutations, and sample list skcm_tcga_pan_can_atlas_2018_sequenced. The shipped sample-list metadata contains 440 mutation-profiled samples. Do not substitute the study’s total sample count when estimating a mutation frequency."
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/report.html#fetch-the-records",
-    "href": "bioinfo-cancer-genomics/report.html#fetch-the-records",
-    "title": "Cancer genomics: plot mutation positions in R",
-    "section": "Fetch the records",
-    "text": "Fetch the records\ncBioPortal’s API documentation explains the paths and projection options. The tested GET request is:\nhttps://www.cbioportal.org/api/molecular-profiles/skcm_tcga_pan_can_atlas_2018_mutations/mutations?sampleListId=skcm_tcga_pan_can_atlas_2018_sequenced&entrezGeneId=673&projection=DETAILED&pageSize=10000000\nRepeat for TP53, Entrez 7157. BRAF is Entrez 673; these are gene identifiers, not UniProt accessions. This cohort/gene pair is small enough for one large page; for a larger cohort use pagination and verify that all records were retrieved.\n\nUse jsonlite::fromJSON() or httr2 to read each result.\nRetain gene symbol, sample ID, patient ID, protein change, protein start/end, mutation type and study ID. Set a clear gene column before combining the tables.\nCache the data and metadata. In snapshot mode read the supplied CSV and JSON.\nCount records by gene and protein_start, excluding missing/unmapped positions only from the positional plot. Report how many were excluded.\nDraw a two-panel lollipop plot with geom_segment() and geom_point(); facet_wrap(~ gene, scales = \"free_x\") permits different protein lengths. Label axes Amino-acid position and Mutation records at position.\nSeparately count unique mutated samples, unique patients, and exact V600E records. Use protein_change == \"V600E\"; a count of all position-600 records includes other substitutions and is a different quantity."
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/report.html#tasks",
-    "href": "bioinfo-cancer-genomics/report.html#tasks",
-    "title": "Cancer genomics: plot mutation positions in R",
-    "section": "Tasks",
-    "text": "Tasks\nT4. What does the shipped snapshot show? [ELO 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nThere are 245 BRAF mutation records, including 158 exact V600E records, and 82 TP53 records. BRAF has a prominent position-600 hotspot; TP53 changes are more dispersed. The selected mutation-profiled sample list has 440 samples. These are cohort-specific counts from 2026-11-18; a future query can change.\n\n\n\nT5. [VG] A plot shows 245 BRAF records. Can you report 245 patients with BRAF mutations? [ELO 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nNo. One sample can carry several calls and one patient can contribute multiple samples. Count unique sample_id or patient_id for the intended unit, state the profiled denominator, and check assay coverage. Records with no mapped protein position still belong in relevant mutation totals."
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/report.html#report-checklist",
-    "href": "bioinfo-cancer-genomics/report.html#report-checklist",
-    "title": "Cancer genomics: plot mutation positions in R",
-    "section": "Report checklist",
-    "text": "Report checklist\nState the cohort and selection, show the two-panel plot, quote calculated counts with inline R, interpret the pattern, and explain at least two limitations. Name all data sources and their retrieval dates and end with sessionInfo(). Then use these skills in your own report."
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/capstone.html",
-    "href": "bioinfo-cancer-genomics/capstone.html",
-    "title": "Your report: follow one mechanism through the databases",
-    "section": "",
-    "text": "Module overview · Guided R activity"
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/capstone.html#choose-a-focused-question",
-    "href": "bioinfo-cancer-genomics/capstone.html#choose-a-focused-question",
-    "title": "Your report: follow one mechanism through the databases",
-    "section": "Choose a focused question",
-    "text": "Choose a focused question\nWrite a 1–2-page report (figures and references can be extra) explaining one protein–drug or protein–disease relationship. Use at least three databases and at least one plot made from API-fetched data. This is an independent synthesis; choose a question that your sources can answer.\nPossible starting points:\n\n\n\n\n\n\n\nPair\nA question you can answer\n\n\n\n\nCFTR and ivacaftor\nWhy can a gating drug fail when little channel reaches the surface?\n\n\nSLC5A2 and gliflozins\nHow do tissue expression and transporter mechanism explain the site of action?\n\n\nLDLR and PCSK9\nWhy can an extracellular antibody alter receptor abundance?\n\n\nBCR–ABL1 and imatinib\nHow do a fusion and kinase inhibition connect to growth signalling?\n\n\nMYH7 and mavacamten\nHow do motor biology and clinical-trial design address excessive contraction?\n\n\nBCL2 and venetoclax\nWhen might apoptosis dependency support a targeted strategy?\n\n\nGPX4 and ferroptosis\nHow does lipid-peroxide defence distinguish this death route?"
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/capstone.html#build-an-argument",
-    "href": "bioinfo-cancer-genomics/capstone.html#build-an-argument",
-    "title": "Your report: follow one mechanism through the databases",
-    "section": "Build an argument",
-    "text": "Build an argument\n\nWrite one question and a predicted mechanism before collecting data.\nChoose complementary evidence: UniProt for molecular function, PDB for an experimental structure, GTEx/HPA for tissue context, ClinVar for a named variant, ChEMBL for assay activity, cBioPortal/DepMap for cancer data, or ClinicalTrials.gov for what was tested in people. Three websites repeating the same claim are weaker than three different kinds of evidence.\nMake a new R Markdown file with headings Question, Data, Analysis, Plot, Interpretation, Limitations, Sources. Write your own chunks.\nFetch only what the question needs; save a dated cache and the exact API request. Record the database release if supplied and whether you used live data or a snapshot.\nMake one labelled plot and use it in the argument. A plot of expression does not prove drug efficacy; a structural contact does not establish clinical selectivity.\nExplain the link to a lecture mechanism in your own words. Include an alternative explanation or a result that would weaken your interpretation."
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/capstone.html#before-sharing-the-html",
-    "href": "bioinfo-cancer-genomics/capstone.html#before-sharing-the-html",
-    "title": "Your report: follow one mechanism through the databases",
-    "section": "Before sharing the HTML",
-    "text": "Before sharing the HTML\n\nThe question is specific and answered by the evidence shown.\nEach number and biological claim has a source and retrieval date.\nStable gene/protein/variant/study identifiers identify the records.\nAt least three databases contribute different evidence.\nAt least one plot comes from a reproducible API query, with units and source caption.\nThe report knits in a fresh R session and includes sessionInfo().\nInterpretation separates association, mechanism and therapeutic evidence.\nLimitations discuss the actual data and assay, including relevant negative evidence."
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/capstone.html#how-to-review-a-report",
-    "href": "bioinfo-cancer-genomics/capstone.html#how-to-review-a-report",
-    "title": "Your report: follow one mechanism through the databases",
-    "section": "How to review a report",
-    "text": "How to review a report\nA strong report connects a molecular mechanism to a clear observation, makes appropriate comparisons, and states what remains uncertain. A satisfactory report has traceable sources and working analysis but may make a narrower claim. A report needs revision if identifiers/denominators are missing, copied plots substitute for analysis, code does not run, or expression/registry counts are treated as proof of treatment benefit. There is no single model answer: conclusions depend on the chosen question and evidence. ELO 8, 9, plus the ELO of your chosen mechanism."
   },
   {
     "objectID": "apoptosis/quiz.html",
@@ -5242,301 +4902,107 @@
     ]
   },
   {
-    "objectID": "bioinfo-cancer-genomics/browser.html",
-    "href": "bioinfo-cancer-genomics/browser.html",
-    "title": "Cancer genomics: inspect the evidence",
-    "section": "",
-    "text": "Module overview · Next: mutation plotting"
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/browser.html#a-hotspot-versus-scattered-changes",
-    "href": "bioinfo-cancer-genomics/browser.html#a-hotspot-versus-scattered-changes",
-    "title": "Cancer genomics: inspect the evidence",
-    "section": "1. A hotspot versus scattered changes",
-    "text": "1. A hotspot versus scattered changes\n\nOpen Skin Cutaneous Melanoma, TCGA PanCancer Atlas. Record the study identifier and total sample count.\nChoose Query by Gene (or the gene-query control), enter BRAF TP53, and submit.\nOpen Mutations and select BRAF. Inspect the lollipop plot, the protein domains and the table below. Find V600E. Repeat for TP53.\nRecord the profiled sample count for mutation data, not just the study total. A case lacking a mutation assay is not a mutation-negative case.\nIn OncoPrint, inspect what each column means and whether multiple samples can belong to one patient. Mutation records, samples and patients are different units."
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/browser.html#a-fusion-needs-a-different-assay",
-    "href": "bioinfo-cancer-genomics/browser.html#a-fusion-needs-a-different-assay",
-    "title": "Cancer genomics: inspect the evidence",
-    "section": "2. A fusion needs a different assay",
-    "text": "2. A fusion needs a different assay\nOpen BCR, UniProt P11274 and ABL1, P00519, then read their disease annotations. Search cBioPortal’s study selector for a leukaemia study with structural variant or fusion data. Query BCR ABL1, inspect Structural Variants and the OncoPrint legend, and record the chosen study and assay availability. An absent fusion call in a mutation-only dataset does not mean the fusion is absent."
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/browser.html#three-cell-death-proteins",
-    "href": "bioinfo-cancer-genomics/browser.html#three-cell-death-proteins",
-    "title": "Cancer genomics: inspect the evidence",
-    "section": "3. Three cell-death proteins",
-    "text": "3. Three cell-death proteins\nOpen these human reviewed UniProt entries, read Function and Sequence/Features, and compare with the lecture:\n\nMLKL, Q8NB16: necroptosis.\nGSDMD, P57764: pyroptosis.\nGPX4, P36969: ferroptosis protection.\n\nFor each, write one sentence identifying the molecular action and whether the protein promotes death or protects against it. In GPX4, find the unusual amino acid U (selenocysteine). A protein involved in cell death need not be a death activator."
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/browser.html#tasks",
-    "href": "bioinfo-cancer-genomics/browser.html#tasks",
-    "title": "Cancer genomics: inspect the evidence",
-    "section": "Tasks",
-    "text": "Tasks\nT1. Why might an oncogene show one dominant hotspot while a tumour suppressor has scattered mutations? [ELO 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nA specific amino-acid change can activate a signalling protein such as BRAF. Many different damaging changes can impair a tumour suppressor such as p53. TP53 can also have hotspots and gain-of-function or dominant-negative effects; the positional pattern is a clue, not proof that every variant acts by simple loss of function.\n\n\n\nT2. Is BCR–ABL1 a point mutation? Where would you look for it? [ELO 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nIt is a gene fusion generated by a chromosomal rearrangement, classically t(9;22). Look in structural-variant/fusion data and the study assay description. An amino-acid substitution plot does not capture all cancer alterations.\n\n\n\nT3. How do MLKL, GSDMD and GPX4 connect to death? [ELO 8, 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nActivated MLKL disrupts membranes in necroptosis. Cleavage releases the pore-forming N-terminal part of GSDMD in pyroptosis. GPX4 reduces lipid hydroperoxides and protects against ferroptosis; loss or inhibition can permit lethal lipid peroxidation. GPX4 uses selenocysteine in catalysis."
-  },
-  {
     "objectID": "bioinfo-cancer-genomics/index.html",
     "href": "bioinfo-cancer-genomics/index.html",
-    "title": "Bioinformatics: read the mutations",
+    "title": "Bioinformatics: BRAF V600E and vemurafenib",
     "section": "",
-    "text": "Compare mutation positions in an oncogene and a tumour suppressor, then write a short report that combines evidence from at least three databases. ELO 8, 9.\nBuilds on cell death beyond apoptosis, cancer, the disease casebook, and the drug-journey capstone. Allow about 3–4 hours for the guided activities; the independent report may need more time.\n\nIn the browser: mutation patterns and death proteins.\nIn R: mutation positions in melanoma.\nYour own report: one mechanism, several sources.",
+    "text": "Follow one oncogene and its drug through four databases: the mutation in tumours, the protein, the drug bound to it, and the trial that tested it. ELO 9.\nBuilds on cancer, cell death beyond apoptosis, the disease casebook and the drug journey. About 2 hours.",
     "crumbs": [
       "Home",
       "Cell death and disease",
-      "Bioinformatics: read the mutations"
+      "Bioinformatics: BRAF V600E and vemurafenib"
     ]
   },
   {
-    "objectID": "bioinfo-cancer-genomics/index.html#what-you-will-do",
-    "href": "bioinfo-cancer-genomics/index.html#what-you-will-do",
-    "title": "Bioinformatics: read the mutations",
-    "section": "",
-    "text": "Compare mutation positions in an oncogene and a tumour suppressor, then write a short report that combines evidence from at least three databases. ELO 8, 9.\nBuilds on cell death beyond apoptosis, cancer, the disease casebook, and the drug-journey capstone. Allow about 3–4 hours for the guided activities; the independent report may need more time.\n\nIn the browser: mutation patterns and death proteins.\nIn R: mutation positions in melanoma.\nYour own report: one mechanism, several sources.",
+    "objectID": "bioinfo-cancer-genomics/index.html#part-a-in-the-browser",
+    "href": "bioinfo-cancer-genomics/index.html#part-a-in-the-browser",
+    "title": "Bioinformatics: BRAF V600E and vemurafenib",
+    "section": "Part A: in the browser",
+    "text": "Part A: in the browser\n\nA1. The hotspot in melanoma\nOpen the BRAF and TP53 mutations in TCGA melanoma in cBioPortal. The Mutations tab opens with BRAF selected. Each lollipop is one amino-acid position; its height is the number of patients with a mutation there. Then click TP53 and compare.\nT1. At which amino-acid position does BRAF have by far the tallest lollipop? [ELO 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nPosition 600 (valine 600, label “V600E/K/R”). Most of these are V600E. TP53, in contrast, has many short lollipops spread over the protein.\n\n\n\n\n\nA2. Where is V600 in the protein?\nOpen BRAF, UniProt P15056 and go to the section Family & Domains.\nT2. Which domain contains residue 600? [ELO 9]\n\nThe Ras-binding domain (RBD)\nThe phorbol-ester/DAG-type zinc finger\nThe protein kinase domain\n\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nc. The protein kinase domain covers residues 457–717. V600E sits in the activation segment of the kinase and keeps BRAF active without RAS, so the RAF–MEK–ERK pathway from the signalling lecture stays on.\n\n\n\n\n\nA3. The drug in the binding site\nOpen PDB 3OG7, “B-Raf Kinase V600E oncogenic mutant in complex with PLX4032”. PLX4032 is the development name of vemurafenib. Scroll to Small Molecules.\nT3. What is the three-character ligand ID of vemurafenib? [ELO 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\n032. The structure contains only the kinase domain, with the V600E mutation: the drug binds the ATP pocket of the mutant kinase.\n\n\n\n\n\nA4. The trial\nOpen the BRIM-3 trial, NCT01006980, and look at Arms and Interventions.\nT4. Which drug was vemurafenib compared with? [ELO 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nDacarbazine, a standard chemotherapy. Only patients whose melanoma carried BRAF V600E could join: the drug is aimed at the mutant protein. You meet trial design again in Kliniska prövningar och läkemedelsutveckling.",
     "crumbs": [
       "Home",
       "Cell death and disease",
-      "Bioinformatics: read the mutations"
+      "Bioinformatics: BRAF V600E and vemurafenib"
     ]
   },
   {
-    "objectID": "bioinfo-cancer-genomics/index.html#before-you-start",
-    "href": "bioinfo-cancer-genomics/index.html#before-you-start",
-    "title": "Bioinformatics: read the mutations",
-    "section": "Before you start",
-    "text": "Before you start\nNo account is needed. Use RStudio or R with rmarkdown, ggplot2, jsonlite and httr2 installed. Install missing packages once in the console:\ninstall.packages(c(\"rmarkdown\", \"ggplot2\", \"jsonlite\", \"httr2\"))\nDownload the report and all listed snapshots. Put the report in a new folder and CSV/JSON files in its data/ subfolder. Keep the filenames. If an API is unavailable, set use_snapshot &lt;- TRUE. A snapshot is a dated copy of real records, not simulated data. Knitting uses a fresh R session: create every object in the report and finish with sessionInfo(). Do not include your R console history as a substitute for code.",
+    "objectID": "bioinfo-cancer-genomics/index.html#part-b-in-r",
+    "href": "bioinfo-cancer-genomics/index.html#part-b-in-r",
+    "title": "Bioinformatics: BRAF V600E and vemurafenib",
+    "section": "Part B: in R",
+    "text": "Part B: in R\nInstall the packages once in the console:\ninstall.packages(c(\"rmarkdown\", \"ggplot2\", \"jsonlite\"))\nDownload the template and the data snapshot. Put the template in a new folder and the CSV in a subfolder data/.\n\nR Markdown template\nSnapshot: BRAF and TP53 mutations\n\nData: cBioPortal, TCGA Skin Cutaneous Melanoma PanCancer Atlas (public TCGA data), retrieved 2026-11-18.\nThe Data chunk is complete: it reads all BRAF and TP53 mutations from the cBioPortal API into a table mutations with one row per mutation. If cBioPortal is down, it reads the snapshot instead (or set use_snapshot &lt;- TRUE). Your job is to build the steps after it: read → filter → plot. Fill the three blanks ___ and knit.\n\nChunk lollipop: put the column with the amino-acid position on the x axis. You should see two panels, like Part A, made from your own data.\nChunk position-600: build a pipeline from the three given pieces, in the right order, joined by |&gt;. It starts with the data, keeps only BRAF position 600, then counts each protein change. It prints a small table of changes.\nChunk mutation-types: colour the bars by the column that holds the mutation type (look at the column names printed by the Data chunk, or run names(mutations)). You should see one stacked bar per gene.\n\nT5. In your lollipop plot, compare the tallest BRAF lollipop with the tallest TP53 lollipop. [ELO 9]\n\nThey are about the same height\nBRAF’s is about 5 times taller\nBRAF’s is about 30 times taller\n\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nc. BRAF position 600 has 198 mutations; the tallest TP53 position (213) has 7. One position dominates BRAF; TP53 mutations are scattered.\n\n\n\nT6. Your position_600 table: which change is the second most common at BRAF position 600? [ELO 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nV600K (35 mutations, after 158 V600E). Both replace valine 600 and both activate the kinase.\n\n\n\nT7. [VG] Your mutation-type plot: which statement fits? [ELO 9]\n\nBoth genes have mostly missense mutations, so both are oncogenes\nTP53 has many nonsense, frameshift and splice mutations that cut the protein short; BRAF has almost only missense mutations\nBRAF has more nonsense mutations than TP53\n\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nb. BRAF: 241 of 245 are missense. TP53: 23 nonsense, 3 frameshift and 7 splice-site mutations among 82. An oncogene needs one precise change that turns it on, so the same position is hit again and again. A tumour suppressor is turned off, and many different changes do that, including stopping the protein early. This is why a drug can block BRAF V600E, but no pill can bring back a lost p53.",
     "crumbs": [
       "Home",
       "Cell death and disease",
-      "Bioinformatics: read the mutations"
+      "Bioinformatics: BRAF V600E and vemurafenib"
     ]
   },
   {
-    "objectID": "bioinfo-cancer-genomics/index.html#downloads",
-    "href": "bioinfo-cancer-genomics/index.html#downloads",
-    "title": "Bioinformatics: read the mutations",
-    "section": "Downloads",
-    "text": "Downloads\n\nGuided report outline\nBRAF and TP53 mutation records\nSample-list metadata\nRetrieval record",
+    "objectID": "bioinfo-cancer-genomics/index.html#hand-in",
+    "href": "bioinfo-cancer-genomics/index.html#hand-in",
+    "title": "Bioinformatics: BRAF V600E and vemurafenib",
+    "section": "Hand in",
+    "text": "Hand in\n\nThe knitted HTML, with no error messages.\nThe two plots and the position_600 table.\nYour answers to T5–T7, one line each, in the Answers section of the template.",
     "crumbs": [
       "Home",
       "Cell death and disease",
-      "Bioinformatics: read the mutations"
+      "Bioinformatics: BRAF V600E and vemurafenib"
     ]
-  },
-  {
-    "objectID": "bioinfo-cancer-genomics/index.html#sources-and-licences",
-    "href": "bioinfo-cancer-genomics/index.html#sources-and-licences",
-    "title": "Bioinformatics: read the mutations",
-    "section": "Sources and licences",
-    "text": "Sources and licences\ncBioPortal API, TCGA Skin Cutaneous Melanoma, PanCancer Atlas 2018, study skcm_tcga_pan_can_atlas_2018. Public TCGA somatic calls, retrieved 2026-11-18. Cite the cBioPortal paper and the TCGA PanCancer Atlas study collection. Retain the study identifier, sample selection and attribution with reused data. UniProt and HPA annotations are CC BY 4.0. No clinical identifiable data or external images are included.",
-    "crumbs": [
-      "Home",
-      "Cell death and disease",
-      "Bioinformatics: read the mutations"
-    ]
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/browser.html",
-    "href": "bioinfo-cytoskeleton/browser.html",
-    "title": "Filaments: structures, variants and trials",
-    "section": "",
-    "text": "Module overview · Next: the R report"
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/browser.html#a-drug-on-a-filament",
-    "href": "bioinfo-cytoskeleton/browser.html#a-drug-on-a-filament",
-    "title": "Filaments: structures, variants and trials",
-    "section": "1. A drug on a filament",
-    "text": "1. A drug on a filament\n\nOpen PDB 1JFF. Read its title and experimental method.\nChoose 3D View to open Mol*. Find TA1 (taxol) in the small-molecule/ligand list. Select it, zoom to its surroundings, and identify the contacting tubulin chain.\nRead the polymer descriptions to distinguish α- and β-tubulin. Save the PDB ID, ligand code and method in your report. A structure is one state, not a movie."
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/browser.html#drugs-can-change-the-same-motor-in-opposite-directions",
-    "href": "bioinfo-cytoskeleton/browser.html#drugs-can-change-the-same-motor-in-opposite-directions",
-    "title": "Filaments: structures, variants and trials",
-    "section": "2. Drugs can change the same motor in opposite directions",
-    "text": "2. Drugs can change the same motor in opposite directions\n\nOpen PDB 5N69. Identify the motor and ligand.\nRead the title carefully: this is omecamtiv mecarbil, a cardiac myosin activator.\nOpen the EXPLORER-HCM record, NCT03470545. Read Conditions, Interventions, Study type, Phase and Outcome measures. Mavacamten is a cardiac myosin inhibitor. Do not label 5N69 a mavacamten structure.\nSearch RCSB for mavacamten, open a matching experimental entry, and record its accession and species. Distinguish a solved structure from an AlphaFold model."
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/browser.html#variants-and-tissues",
-    "href": "bioinfo-cytoskeleton/browser.html#variants-and-tissues",
-    "title": "Filaments: structures, variants and trials",
-    "section": "3. Variants and tissues",
-    "text": "3. Variants and tissues\n\nOpen human KRT14, P02533 and MYH7, P12883.\nFollow their Pathology & Biotech disease links to ClinVar. Choose one pathogenic/likely pathogenic variant per gene. Record its HGVS expression, ClinVar accession, condition, review status and date. Record conflicting submissions if present.\nRead the GTEx gene pages for KRT14 and MYH7. Is each distribution plausible for an epithelial filament protein or cardiac motor?"
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/browser.html#tasks",
-    "href": "bioinfo-cytoskeleton/browser.html#tasks",
-    "title": "Filaments: structures, variants and trials",
-    "section": "Tasks",
-    "text": "Tasks\nT1. Which tubulin subunit binds taxol in 1JFF? How does stabilising microtubules affect mitosis? [ELO 6, 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nTaxol binds β-tubulin. Suppressing microtubule dynamics impairs spindle rearrangement and chromosome segregation; it does not simply dissolve the microtubules. The structure uses electron crystallography of zinc-induced sheets, not an intact spindle.\n\n\n\nT2. Why might inhibition of myosin help in one heart disease while activation is explored in another? [ELO 6, 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nA hypercontractile motor can contribute to hypertrophic cardiomyopathy, whereas insufficient force is a different problem. A shared target does not imply the same desired direction of change. A trial registration describes the tested hypothesis; registration alone does not establish benefit.\n\n\n\nT3. What diseases connect to KRT14 and MYH7? Does every variant in either gene cause the same disease? [ELO 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nKRT14 defects can cause epidermolysis bullosa simplex, where fragile epithelial cells fail under stress. MYH7 variants can cause hypertrophic cardiomyopathy and other cardiac or skeletal myopathies. Variant-specific evidence and the named phenotype matter; a gene name alone is not a diagnosis."
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/report.html",
-    "href": "bioinfo-cytoskeleton/report.html",
-    "title": "Filaments: expression and trial records in R",
-    "section": "",
-    "text": "Module overview · Browser activity"
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/report.html#a-heatmap-from-gtex",
-    "href": "bioinfo-cytoskeleton/report.html#a-heatmap-from-gtex",
-    "title": "Filaments: expression and trial records in R",
-    "section": "A heatmap from GTEx",
-    "text": "A heatmap from GTEx\nThe report uses 13 genes and eight tissues. Gene symbols are human-readable names; GTEx needs a versioned GENCODE ID. Keep datasetId=gtex_v8 in both requests.\n\nIn params: genes: in the report header, inspect the core gene list.\nRead /reference/gene?geneId=KRT14&datasetId=gtex_v8 from the GTEx API. Extract data$gencodeId; do not guess the suffix after the dot.\nQuery /expression/medianGeneExpression with that gencodeId and datasetId. The given fetch code requests all tissues once per gene and then retains eight.\nThe saved CSV has gene, gencode_id, tissue, tpm, dataset. Plot gene against tissue, with fill log10(tpm + 1), using geom_tile(). Label the colour key log10(TPM + 1). RNA abundance is not protein abundance.\nRe-knit with params$genes changed to TUBB, TUBB3 and TUBB4A. A parameter is an input to the report, not a manually edited result."
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/report.html#a-trial-chart-from-clinicaltrials.gov",
-    "href": "bioinfo-cytoskeleton/report.html#a-trial-chart-from-clinicaltrials.gov",
-    "title": "Filaments: expression and trial records in R",
-    "section": "A trial chart from ClinicalTrials.gov",
-    "text": "A trial chart from ClinicalTrials.gov\n\nUse the API query. query.intr searches interventions; this can return studies with multiple interventions.\nRead studies, then each protocolSection. Extract NCT ID, title, conditions, status and designModule$phases. Follow nextPageToken until absent.\nA study may list two phases; the CSV joins them with ;. Split these before counting. Keep studies without a drug-development phase as Not applicable. A study counted in two phase categories is still one study.\nPlot the number of study records by phase with geom_col(). This shows research activity, not treatment efficacy. Keep cancelled/completed/recruiting status separate."
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/report.html#tasks",
-    "href": "bioinfo-cytoskeleton/report.html#tasks",
-    "title": "Filaments: expression and trial records in R",
-    "section": "Tasks",
-    "text": "Tasks\nT4. Which selected tissues are high for KRT14, DES, GFAP and MYH7? [ELO 6]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nIn the shipped GTEx v8 snapshot: KRT14 → skin, DES → skeletal muscle, GFAP → brain cortex, MYH7 → heart left ventricle. KRT14 is also abundant in oesophageal mucosa. These are tissue medians from mixed cell populations, so a high value does not prove every cell expresses the gene.\n\n\n\nT5. Why use log10(TPM + 1)? Why are NEFL and GFAP different markers even when both are high in brain? [ELO 6]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nThe log scale compresses large abundance differences; adding 1 permits zeros. NEFL is associated with neuronal intermediate filaments, GFAP with astrocytic glial filaments. Bulk tissue cannot resolve which cell contributes the RNA; follow up with HPA single-cell evidence.\n\n\n\nT6. [VG] Compare trial phases and re-knit with a new gene set. What changed, and what can neither plot establish? [ELO 6, 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nThe trial snapshot contains phase 1, 2, 3 and 4 records plus studies without an applicable phase; one record combines phases 2 and 3. The count changes as the registry updates. A new gene set changes expression patterns, but neither expression nor trial counts alone establish a mechanism, clinical benefit, or safety. State your own parameter values and the actual result."
-  },
-  {
-    "objectID": "bioinfo-cytoskeleton/report.html#finish-the-report",
-    "href": "bioinfo-cytoskeleton/report.html#finish-the-report",
-    "title": "Filaments: expression and trial records in R",
-    "section": "Finish the report",
-    "text": "Finish the report\nInclude both labelled plots, two short biological interpretations, one inline R number, the dataset/retrieval date, the API URLs and sessionInfo(). Knit to HTML and check for errors. Do not interpret small differences between tissues as significant without donor-level variation and a suitable analysis."
   },
   {
     "objectID": "bioinfo-drug-targets/index.html",
     "href": "bioinfo-drug-targets/index.html",
-    "title": "Bioinformatics: how selective is a kinase inhibitor?",
+    "title": "Bioinformatics: how selective is imatinib?",
     "section": "",
-    "text": "A drug can act on several proteins, and a database can contain conflicting measurements. You will inspect signalling proteins in three dimensions, compare imatinib activity records and make a reproducible report that separates evidence from a simple dose–response model.\nBuilds on signalling principles, GPCRs, kinase signalling and cell-fate signalling. [ELO 3, 9]\n\nDatabase investigation: structures, pathways and target–disease evidence.\nR Markdown report: activity distributions, illustrative inhibition curves and clinical-stage records.\n\nAllow about 1.5 h for the browser work and 1.5–2 h for the report. No logins or API keys are needed.",
+    "text": "Goal: look at a receptor and a kinase drug in 3D, follow EGFR to Ras, and plot which kinases the drug imatinib blocks. Builds on signalling principles, GPCRs and kinase signalling. About 2 hours.",
     "crumbs": [
       "Home",
       "Cell signalling",
-      "Bioinformatics: how selective is a kinase inhibitor?"
+      "Bioinformatics: how selective is imatinib?"
     ]
   },
   {
-    "objectID": "bioinfo-drug-targets/index.html#what-you-will-learn",
-    "href": "bioinfo-drug-targets/index.html#what-you-will-learn",
-    "title": "Bioinformatics: how selective is a kinase inhibitor?",
-    "section": "",
-    "text": "A drug can act on several proteins, and a database can contain conflicting measurements. You will inspect signalling proteins in three dimensions, compare imatinib activity records and make a reproducible report that separates evidence from a simple dose–response model.\nBuilds on signalling principles, GPCRs, kinase signalling and cell-fate signalling. [ELO 3, 9]\n\nDatabase investigation: structures, pathways and target–disease evidence.\nR Markdown report: activity distributions, illustrative inhibition curves and clinical-stage records.\n\nAllow about 1.5 h for the browser work and 1.5–2 h for the report. No logins or API keys are needed.",
+    "objectID": "bioinfo-drug-targets/index.html#part-a-in-the-browser",
+    "href": "bioinfo-drug-targets/index.html#part-a-in-the-browser",
+    "title": "Bioinformatics: how selective is imatinib?",
+    "section": "Part A: in the browser",
+    "text": "Part A: in the browser\n\nA1. A GPCR with its G protein\nOpen PDB 3SN6, the β₂-adrenergic receptor bound to Gs. Scroll to Macromolecules: each protein has a chain letter. Then open the 3D view and colour by chain.\nT1. Which chain letter is the Gαs subunit, and on which side of the receptor does it bind: (a) the extracellular side, (b) inside the membrane, (c) the cytoplasmic side? [ELO 3]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nChain A, on the cytoplasmic side (c). The receptor is chain R; its seven helices cross the membrane, and Gαs sits in the pocket that opens on the inside when adrenaline binds.\n\n\n\n\n\nA2. Imatinib in the ABL kinase\nOpen PDB 1IEP, the ABL kinase domain with imatinib (called STI-571 in the entry). Scroll to Small Molecules.\nT2. What is the three-character ligand ID of imatinib in this entry? [ELO 3]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nSTI. In the 3D view it sits in the ATP pocket of the kinase, as in the lecture: with imatinib there, ATP cannot bind.\n\n\n\n\n\nA3. From EGFR to Ras\nOpen the Reactome pathway GRB2 events in EGFR signaling (R-HSA-179812). Read the list of reactions it contains.\nT3. The last reaction is a nucleotide exchange made by SOS1. Which protein gets its GDP swapped for GTP? [ELO 3]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nRAS. GRB2 binds the phosphorylated receptor and brings SOS1 to the membrane, where it switches Ras on.\n\n\n\n\n\nA4. Drugs against EGFR\nOpen EGFR in Open Targets and scroll to the drugs section. Each drug has a type (small molecule, antibody…); click a drug name to see its page.\nT4. Which of these four EGFR drugs is an antibody: erlotinib, osimertinib, cetuximab or gefitinib? [ELO 9]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nCetuximab. An antibody cannot cross the membrane, so it binds the outside of EGFR and stops ligand binding. The other three are small molecules that enter the cell and block the ATP pocket of the kinase.",
     "crumbs": [
       "Home",
       "Cell signalling",
-      "Bioinformatics: how selective is a kinase inhibitor?"
+      "Bioinformatics: how selective is imatinib?"
     ]
   },
   {
-    "objectID": "bioinfo-drug-targets/index.html#before-you-start",
-    "href": "bioinfo-drug-targets/index.html#before-you-start",
-    "title": "Bioinformatics: how selective is a kinase inhibitor?",
-    "section": "Before you start",
-    "text": "Before you start\nDownload these files together; put the CSVs in a subfolder named data:\n\nStudent R Markdown template.\nProvided API helper.\nImatinib activity snapshot.\nTarget–drug clinical-stage snapshot.\nDatabase release metadata.\nOptional: the snapshot’s Open Targets GraphQL query.\n\nInstall missing R packages once: install.packages(c(\"rmarkdown\", \"ggplot2\", \"httr2\")). Knit the downloaded template using RStudio or rmarkdown::render(\"bioinfo-drug-targets.Rmd\"). For offline work, set use_snapshot &lt;- TRUE; all three CSVs must already be in data/.",
+    "objectID": "bioinfo-drug-targets/index.html#part-b-in-r",
+    "href": "bioinfo-drug-targets/index.html#part-b-in-r",
+    "title": "Bioinformatics: how selective is imatinib?",
+    "section": "Part B: in R",
+    "text": "Part B: in R\nDownloads: the R Markdown template and the snapshot of the data (put it in a folder data/ next to the template; only needed if ChEMBL is down). Data: ChEMBL 37 (CC BY-SA 3.0), retrieved 2026-11-18.\nInstall the packages once: install.packages(c(\"rmarkdown\", \"ggplot2\", \"jsonlite\")). Open the template in RStudio and click Knit. It knits at once, with errors where the three blanks ___ are. If ChEMBL does not answer, set use_snapshot &lt;- TRUE in the first chunk.\nThe template fetches every IC50 value ChEMBL has for imatinib against four kinases: ABL1, KIT, PDGFRA and SRC. IC50 is the drug concentration that halves the kinase’s activity, so a lower IC50 means a more potent drug. 1 µM = 1000 nM.\nBlank 1 (strip-plot). Copy the example bar chart’s pattern: put the kinase (target) on the x axis and the IC50 (standard_value) on the y axis:\nggplot(ic50, aes(x = ___, y = ___, colour = kinase_form)) +\nYou should see one dot per record, on a log scale, with a dashed line at 1000 nM. Records on mutant kinases have their own colour.\nT5. Which kinase has no record below the dashed 1 µM line? [ELO 9]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nSRC. All its values are 5000 nM or more. Imatinib does not block every tyrosine kinase.\n\n\n\nBlanks 2 and 3 (potent). Look at the two given examples, data[condition, ] and data[order(column), ]. Keep the kinases whose median IC50 is below 1 µM (blank 2: a number in nM), then sort them, lowest first (blank 3: potent$median_ic50_nm). The printout should be a small table of kinases.\nT6. How many kinases are left, and which one is on top (lowest median IC50)? [ELO 9]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nThree (PDGFRA, ABL1, KIT); PDGFRA is on top, at about 70 nM. This is why imatinib works not only in chronic myeloid leukaemia (BCR-ABL) but also in gastrointestinal stromal tumours, which are driven by KIT or PDGFRA.\n\n\n\nT7. [VG] The last chunk (mutations) is given: it lists the mutations named in the mutant records and the median IC50 of the T315I records. Which mutation is most frequent, and is its median IC50 (a) below 1 µM or (b) above 1 µM? [ELO 9]\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nT315I, median 10 000 nM, above 1 µM (b): about 40 times higher than for wild-type ABL1. T315 is the gatekeeper residue at the entrance of the ATP pocket of ABL: the bigger isoleucine keeps imatinib out, and the leukaemia becomes resistant (kinase signalling lecture).",
     "crumbs": [
       "Home",
       "Cell signalling",
-      "Bioinformatics: how selective is a kinase inhibitor?"
+      "Bioinformatics: how selective is imatinib?"
     ]
   },
   {
-    "objectID": "bioinfo-drug-targets/index.html#sources-and-licences",
-    "href": "bioinfo-drug-targets/index.html#sources-and-licences",
-    "title": "Bioinformatics: how selective is a kinase inhibitor?",
-    "section": "Sources and licences",
-    "text": "Sources and licences\nData were retrieved 2026-11-18 from ChEMBL, release 37 (CC BY-SA 3.0), and the Open Targets Platform, release 26.09 (CC0). The course ships selected fields and names the exact filters. No external figures are reproduced; the plots are generated from the records. Full data credits.",
+    "objectID": "bioinfo-drug-targets/index.html#hand-in-checklist",
+    "href": "bioinfo-drug-targets/index.html#hand-in-checklist",
+    "title": "Bioinformatics: how selective is imatinib?",
+    "section": "Hand-in checklist",
+    "text": "Hand-in checklist\n\nThe knitted HTML has no error messages left.\nThe strip plot shows four kinases with a dashed line at 1000 nM.\nThe potent table is sorted, lowest median first.\nYour answers to T1–T7.",
     "crumbs": [
       "Home",
       "Cell signalling",
-      "Bioinformatics: how selective is a kinase inhibitor?"
+      "Bioinformatics: how selective is imatinib?"
     ]
-  },
-  {
-    "objectID": "bioinfo-essential-genes/browser.html",
-    "href": "bioinfo-essential-genes/browser.html",
-    "title": "Cancer dependencies: browser evidence",
-    "section": "",
-    "text": "Module overview · Next: the R report"
-  },
-  {
-    "objectID": "bioinfo-essential-genes/browser.html#a-crispr-screen-asks-about-growth-after-gene-loss",
-    "href": "bioinfo-essential-genes/browser.html#a-crispr-screen-asks-about-growth-after-gene-loss",
-    "title": "Cancer dependencies: browser evidence",
-    "section": "1. A CRISPR screen asks about growth after gene loss",
-    "text": "1. A CRISPR screen asks about growth after gene loss\n\nOpen DepMap and search CDK1 in its search box. Select the gene, then inspect the CRISPR gene-effect distribution.\nRepeat for CDK4, BCL2 and MCL1. Use the same dataset/release and scale.\nRecord what a score near 0 and near −1 mean. In this normalisation, 0 is approximately no growth effect and −1 is the typical effect of reference essential genes.\nCompare the distributions, including their tails. One median can hide a sensitive subset. Record the release name and which cell-line collection you used.\n\nIf the portal asks you to verify browser access, complete it in your browser. The R activity uses Open Targets, which supplies a copy of these data without scraping the portal."
-  },
-  {
-    "objectID": "bioinfo-essential-genes/browser.html#a-protein-that-changes-through-the-cycle",
-    "href": "bioinfo-essential-genes/browser.html#a-protein-that-changes-through-the-cycle",
-    "title": "Cancer dependencies: browser evidence",
-    "section": "2. A protein that changes through the cycle",
-    "text": "2. A protein that changes through the cycle\n\nOpen HPA CCNB1.\nRead its subcellular locations and Cell cycle dependency section. Distinguish variation in protein abundance from variation in its location.\nConnect the images to cyclin B1–CDK1 activation and APC/C-dependent degradation from the lectures. HPA staining alone does not prove the degradation mechanism."
-  },
-  {
-    "objectID": "bioinfo-essential-genes/browser.html#the-checkpoint-protein-p53",
-    "href": "bioinfo-essential-genes/browser.html#the-checkpoint-protein-p53",
-    "title": "Cancer dependencies: browser evidence",
-    "section": "3. The checkpoint protein p53",
-    "text": "3. The checkpoint protein p53\n\nOpen UniProt TP53, P04637.\nFind its DNA-binding domain, tetramerisation region and one post-translational modification. Write down residue position, modification, evidence and source.\nOpen Reactome: Cell Cycle Checkpoints, R-HSA-69620. Trace DNA damage to p53-dependent arrest. Is TP53 itself a cyclin-dependent kinase?"
-  },
-  {
-    "objectID": "bioinfo-essential-genes/browser.html#tasks",
-    "href": "bioinfo-essential-genes/browser.html#tasks",
-    "title": "Cancer dependencies: browser evidence",
-    "section": "Tasks",
-    "text": "Tasks\nT1. What separates CDK1 from CDK4 dependency? [ELO 7, 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nCDK1 loss strongly impairs growth across most screened lines, whereas CDK4 effects vary more by context. In the shipped Open Targets snapshot, median scores are about −2.63 for CDK1 and −0.56 for CDK4 across 1,258 screens each. These are growth effects in culture, not patient response rates.\n\n\n\nT2. Why is CCNB1 abundance cell-cycle dependent? [ELO 7]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nCyclin B1 accumulates before mitosis and helps activate CDK1; APC/C-mediated ubiquitination promotes its destruction at the metaphase-to-anaphase transition, helping cells exit mitosis. Its partner CDK1 does not have to be destroyed on every cycle.\n\n\n\nT3. [VG] Would a strongly common-essential gene automatically be an ideal cancer drug target? [ELO 7, 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nA strong growth effect is evidence of a vulnerability in the screened cells. Normal proliferating cells may need the same gene, limiting the therapeutic window. Gene knockout also differs from partial, time-limited drug inhibition. Compare normal-tissue biology, selectivity and exposure before predicting clinical usefulness."
-  },
-  {
-    "objectID": "bioinfo-essential-genes/report.html",
-    "href": "bioinfo-essential-genes/report.html",
-    "title": "Cancer dependencies: an API-to-plot report",
-    "section": "",
-    "text": "Module overview · Browser activity"
-  },
-  {
-    "objectID": "bioinfo-essential-genes/report.html#build-the-report",
-    "href": "bioinfo-essential-genes/report.html#build-the-report",
-    "title": "Cancer dependencies: an API-to-plot report",
-    "section": "Build the report",
-    "text": "Build the report\nThe report outline supplies headings; the table below supplies input identifiers. Write your own named chunks; reuse the API and caching skills from the earlier bioinformatics modules.\n\n\n\nGene\nEnsembl ID\n\n\n\n\nCDK1\nENSG00000170312\n\n\nCDK4\nENSG00000135446\n\n\nCDK6\nENSG00000105810\n\n\nBCL2\nENSG00000171791\n\n\nMCL1\nENSG00000143384\n\n\nBCL2L1\nENSG00000171552"
-  },
-  {
-    "objectID": "bioinfo-essential-genes/report.html#query-and-flatten-nested-data",
-    "href": "bioinfo-essential-genes/report.html#query-and-flatten-nested-data",
-    "title": "Cancer dependencies: an API-to-plot report",
-    "section": "Query and flatten nested data",
-    "text": "Query and flatten nested data\nPOST a JSON object with a query string to https://api.platform.opentargets.org/api/v4/graphql. Use httr2::request(), req_body_json() and req_perform(). Request one target at a time (six calls), with this tested selection:\nquery {\n  target(ensemblId: \"ENSG00000170312\") {\n    id\n    approvedSymbol\n    depMapEssentiality {\n      tissueId\n      tissueName\n      screens { cellLineName geneEffect }\n    }\n  }\n}\nAlso retrieve { meta { dataVersion { year month iteration } } }. Check for a GraphQL errors member even when HTTP status is 200. A changed schema is an error, not an empty biological result.\n\nRead the JSON without automatic simplification (simplifyVector = FALSE) so the nested tissue and screen lists remain explicit.\nLoop through each target, each tissue, and each screen. Produce one row per gene–cell-line result: gene, ensembl_id, tissue_id, tissue, cell_line, gene_effect.\nSome tissue ontology IDs are null (the other group has no ID). Preserve the tissue name and use an empty ID string; a null identifier must not discard a valid screen. Remove only rows whose gene-effect value is missing; keep zero and positive values.\nCache the flattened data and release metadata. With use_snapshot &lt;- TRUE, read the shipped files. Record the snapshot retrieval date, not today’s date, when using those files."
-  },
-  {
-    "objectID": "bioinfo-essential-genes/report.html#plot-distributions",
-    "href": "bioinfo-essential-genes/report.html#plot-distributions",
-    "title": "Cancer dependencies: an API-to-plot report",
-    "section": "Plot distributions",
-    "text": "Plot distributions\nMake a violin plot of gene_effect by gene, then show BCL2 values by tissue. Add a horizontal reference at −1 and label it as a normalisation reference, not a universal cutoff. Display sample sizes; very small tissue groups do not support strong comparisons. A dot plot or boxplot can complement violins when groups are small."
-  },
-  {
-    "objectID": "bioinfo-essential-genes/report.html#tasks",
-    "href": "bioinfo-essential-genes/report.html#tasks",
-    "title": "Cancer dependencies: an API-to-plot report",
-    "section": "Tasks",
-    "text": "Tasks\nT4. Which tissues contain BCL2-sensitive cell lines? Is the median alone enough? [ELO 8, 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nBlood/haematopoietic and lymphoid groups contain sensitive lines, consistent with the rationale for BCL2 inhibition in some blood cancers. Yet most lines in the full dataset have BCL2 effects near zero, and other groups also contain sensitive lines. Plot the lower tail and sample sizes; do not claim all blood cancers are BCL2 dependent or infer a unique tissue specificity from a median.\n\n\n\nT5. [VG] A cell line is strongly MCL1 dependent and weakly BCL2 dependent. Does this prove venetoclax will kill it? [ELO 8, 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nNo. Venetoclax targets BCL2, while this screen suggests reliance on a different anti-apoptotic protein, MCL1. Test drug dose–response and apoptosis, verify target engagement, and compare genetic perturbations. Compensation and the difference between knockout and inhibition can change the result.\n\n\n\nT6. What three limitations belong below your plot? [ELO 7, 8, 9]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nFor example: cultured cell lines are selected models of tumours; gene effect depends on the assay/release and growth conditions; knockout differs from a drug; tissue groups are unbalanced; dependency is not expression. Include the limitations that affect your actual comparison."
-  },
-  {
-    "objectID": "bioinfo-essential-genes/report.html#hand-in-optional",
-    "href": "bioinfo-essential-genes/report.html#hand-in-optional",
-    "title": "Cancer dependencies: an API-to-plot report",
-    "section": "Hand-in (optional)",
-    "text": "Hand-in (optional)\nOne HTML report: question, source/release/retrieval date, reproducible code, two labelled plots, interpretation with uncertainty, and sessionInfo(). Include at least one inline number calculated from your data. State whether you used live data or the dated snapshot."
   },
   {
     "objectID": "bioinfo-membrane-proteins/index.html",
     "href": "bioinfo-membrane-proteins/index.html",
     "title": "Bioinformatics: membrane proteins, tissues and drugs",
     "section": "",
-    "text": "Find a protein’s membrane topology, inspect a bound drug in a structure, and compare gene expression across tissues. Then make two plots in an R Markdown report. This module builds on membrane structure, transporters and pumps and ion channels. ELO 2, 9.\nWork through these short pages in order:\n\nIn the browser: topology, structures and variants — about 90 minutes.\nIn R: tissue expression and membrane topology — about 90–120 minutes.",
+    "text": "Goal: read a membrane protein’s topology, see where a drug binds it, and plot in which tissues two glucose transporters are made. It builds on membrane structure, transporters and pumps and ion channels. About 2 hours.",
     "crumbs": [
       "Home",
       "Membranes and transport",
@@ -5544,11 +5010,11 @@
     ]
   },
   {
-    "objectID": "bioinfo-membrane-proteins/index.html#what-you-will-learn",
-    "href": "bioinfo-membrane-proteins/index.html#what-you-will-learn",
+    "objectID": "bioinfo-membrane-proteins/index.html#part-a-in-the-browser",
+    "href": "bioinfo-membrane-proteins/index.html#part-a-in-the-browser",
     "title": "Bioinformatics: membrane proteins, tissues and drugs",
-    "section": "",
-    "text": "Find a protein’s membrane topology, inspect a bound drug in a structure, and compare gene expression across tissues. Then make two plots in an R Markdown report. This module builds on membrane structure, transporters and pumps and ion channels. ELO 2, 9.\nWork through these short pages in order:\n\nIn the browser: topology, structures and variants — about 90 minutes.\nIn R: tissue expression and membrane topology — about 90–120 minutes.",
+    "section": "Part A: in the browser",
+    "text": "Part A: in the browser\nAll tasks use the CFTR chloride channel and the drug ivacaftor, from the ion channels lecture. No accounts are needed.\n\nA1. Count the membrane crossings\nOpen human CFTR in UniProt: P13569. Scroll to Subcellular location, then Topology. Each Transmembrane row is one helix that crosses the membrane (the hydropathy plot in membrane structure predicts the same helices).\nT1. [ELO 2] How many transmembrane segments does CFTR have?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\n12, in two halves of six helices. Each half is followed by a nucleotide-binding domain in the cytosol.\n\n\n\n\n\nA2. Find the drug in a structure\nOpen PDB 6O2P, human CFTR bound to ivacaftor. In the Small Molecules section, find ligand VX7: this is ivacaftor. Click its Ligand Interaction view (opens the Mol* viewer) to see where it sits.\nT2. [ELO 2, 9] Where does ivacaftor bind?\n\n\n\nin a nucleotide-binding domain, next to ATP\n\n\nin the transmembrane region, where protein meets lipid\n\n\non the extracellular loops\n\n\nin the R domain\n\n\n\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nb) Ivacaftor binds inside the membrane-spanning part, at the protein–lipid interface. It is a potentiator: it holds the gate open longer. The structure was solved by cryo-electron microscopy at 3.3 Å.\n\n\n\n\n\nA3. Read a prediction’s confidence\nOpen the AlphaFold model of CFTR: AF-P13569. The colours show pLDDT, the model’s confidence per residue: blue is confident, orange is very low.\nT3. [ELO 2] [VG] Which part of CFTR is mostly orange?\n\n\n\nthe first transmembrane domain (residues 81–365)\n\n\nthe first nucleotide-binding domain (423–646)\n\n\nthe regulatory R region (654–831)\n\n\nthe second transmembrane domain (859–1155)\n\n\n\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nc) The R region (mean pLDDT about 33). UniProt annotates it as “Disordered R region”: it has no single fixed fold, so AlphaFold cannot place it with confidence. Low pLDDT means low confidence, not a measured movement.\n\n\n\n\n\nA4. Look up the common cystic fibrosis variant\nOpen ClinVar record 7105, CFTR p.Phe508del (F508del).\nT4. [ELO 9] What is its Germline classification?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nPathogenic, for cystic fibrosis. F508del CFTR misfolds and is removed in the ER, so few channels reach the membrane. That is why patients get correctors (more channels arrive) together with ivacaftor (each channel opens more).\n\n\n\n\n\nA5. Check how fat-loving the drug is\nOpen ivacaftor in PubChem: CID 16220172. Under Chemical and Physical Properties → Computed Properties, find XLogP3-AA. A positive value means the molecule prefers lipid to water.\nT5. [ELO 2, 9] What is ivacaftor’s XLogP3-AA?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\n5.6. Strongly lipophilic, which fits a binding site inside the bilayer (T2).",
     "crumbs": [
       "Home",
       "Membranes and transport",
@@ -5556,11 +5022,11 @@
     ]
   },
   {
-    "objectID": "bioinfo-membrane-proteins/index.html#before-you-start",
-    "href": "bioinfo-membrane-proteins/index.html#before-you-start",
+    "objectID": "bioinfo-membrane-proteins/index.html#part-b-in-r",
+    "href": "bioinfo-membrane-proteins/index.html#part-b-in-r",
     "title": "Bioinformatics: membrane proteins, tissues and drugs",
-    "section": "Before you start",
-    "text": "Before you start\nNo database accounts are needed. You need R, a working R Markdown installation, and the packages below. Install packages once in the R console, outside the report:\ninstall.packages(c(\"rmarkdown\", \"knitr\", \"ggplot2\", \"jsonlite\"))\nIf R Markdown is new, read the five-minute introduction.\nDownload the student report and put it in a new folder. Create a data subfolder and save these files there, keeping their names:\n\nUniProt membrane features.\nGTEx tissue medians.\nUniProt provenance and GTEx provenance.\n\nThe report can fetch current data; set use_snapshot &lt;- TRUE to work from these saved datasets without internet access. Browser activities still need the websites. A failed API request falls back to the supplied snapshot and records that choice in the report.",
+    "section": "Part B: in R",
+    "text": "Part B: in R\nInstall the packages once in the R console:\ninstall.packages(c(\"rmarkdown\", \"ggplot2\", \"jsonlite\"))\nDownload the R Markdown template into a new folder. Optional, for working offline: put the GTEx copy and the UniProt copy in a data subfolder and set use_snapshot &lt;- TRUE.\nData: GTEx v8 public tissue medians and UniProtKB release 2026_04 (CC BY 4.0), retrieved 2026-11-18.\nNew to R Markdown? Read the five-minute introduction from day 1. Knit the template once untouched. All fetching code is given; the three blanks (___) show errors until you fill them.\n\nB1. Where are SGLT1 and SGLT2 made?\nThe template fetches GTEx RNA levels (TPM) of SLC5A1 (SGLT1, gut) and SLC5A2 (SGLT2, kidney) in every tissue.\n\nBlank 1: set min_tpm &lt;- 10. The chunk then prints 9: nine tissues pass.\nBlank 2: complete aes(): map median_tpm to x, tissue to y and gene to colour. You get one row per tissue with two coloured dots.\n\nT6. [ELO 2, 9] In which tissue is SLC5A2 (SGLT2) highest?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nKidney cortex (about 36 TPM). SGLT2 takes glucose back from the urine in the proximal tubule; gliflozin drugs block it, so glucose leaves in the urine. SLC5A1 is instead highest in the small intestine (about 98 TPM).\n\n\n\n\n\nB2. How many times do eight membrane proteins cross the membrane?\nThe template fetches the transmembrane segments of eight proteins from the transport lectures (pump, carriers, channels) and counts them.\n\nBlank 3: map y to the column with the counts (its name is in the printed table). You get eight bars, longest at the top.\n\nT7. [ELO 2] Which protein has exactly 10 transmembrane segments?\n\n\n\n\n\n\nAnswer (checked 2026-11-19)\n\n\n\n\n\nATP1A1, the α subunit of the Na⁺/K⁺ pump. CFTR, ABCB1 and GLUT1 (SLC2A1) have 12; both SGLTs have 14; AQP1 and KCNA1 have 6.",
     "crumbs": [
       "Home",
       "Membranes and transport",
@@ -5568,100 +5034,23 @@
     ]
   },
   {
-    "objectID": "bioinfo-membrane-proteins/index.html#sources",
-    "href": "bioinfo-membrane-proteins/index.html#sources",
+    "objectID": "bioinfo-membrane-proteins/index.html#hand-in",
+    "href": "bioinfo-membrane-proteins/index.html#hand-in",
     "title": "Bioinformatics: membrane proteins, tissues and drugs",
-    "section": "Sources",
-    "text": "Sources\nUniProtKB release 2026_04 and GTEx v8 data were downloaded on 2026-11-18. Links to source records and interpretation tasks are on the browser page; API addresses and data provenance are on the report page. Data credits.",
+    "section": "Hand in",
+    "text": "Hand in\n\nThe knitted HTML with your name in the header.\nNo errors left: all three blanks filled.\nTwo plots: the tissue dot plot and the transmembrane bar chart.\nYour answers to T1–T7.",
     "crumbs": [
       "Home",
       "Membranes and transport",
       "Bioinformatics: membrane proteins, tissues and drugs"
     ]
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/browser.html",
-    "href": "bioinfo-mito-proteasome/browser.html",
-    "title": "Organelle genomes: database investigation",
-    "section": "",
-    "text": "Module overview and downloads · Next: R Markdown report"
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/browser.html#read-a-reference-genome",
-    "href": "bioinfo-mito-proteasome/browser.html#read-a-reference-genome",
-    "title": "Organelle genomes: database investigation",
-    "section": "1. Read a reference genome",
-    "text": "1. Read a reference genome\n\nOpen NC_012920.1 at NCBI Nucleotide. The accession before the dot identifies the record; .1 identifies its sequence version. This is the human mitochondrial reference genome.\nIn the GenBank display find LOCUS (length and circular topology), then FEATURES. Find one CDS, one tRNA and one rRNA. A gene feature and its CDS describe the same locus; do not count both as separate genes.\nFind complement(...) in a location. It places a feature on the opposite strand; it does not mean the feature is absent.\n\nT1. Record the genome length and the numbers of protein-coding, tRNA and rRNA genes. Why does a mitochondrial genome need RNA genes? [ELO 5; skill: read a feature table]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nNC_012920.1 is 16,569 bp, with 13 protein-coding genes, 22 tRNA genes and 2 rRNA genes. The tRNAs and rRNAs support translation of the 13 proteins inside mitochondria. These 37 genes are not 37 proteins. The R report checks the three feature counts directly against the downloaded feature table."
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/browser.html#compare-two-genomes-contributions",
-    "href": "bioinfo-mito-proteasome/browser.html#compare-two-genomes-contributions",
-    "title": "Organelle genomes: database investigation",
-    "section": "2. Compare two genomes’ contributions",
-    "text": "2. Compare two genomes’ contributions\n\nOpen UniProt’s human reviewed mitochondrial protein query.\nRead the query: species human, reviewed entries and the subcellular location term Mitochondrion. Record the result count and retrieval date. This is an annotation query, not a direct measurement of the whole mitochondrial proteome.\nOpen ATP synthase subunit alpha, P25705. Look for its gene, mitochondrial transit peptide and location. Contrast a nuclear gene such as ATP5F1A with the mitochondrial genes ATP6 and ATP8.\n\nT2. Compare the UniProt count with 13. Explain how a mitochondrion obtains the rest of its proteins and why the query count is not an exact census. [ELO 4, 5; skill: define a database query]\n\n\n\n\n\n\nAnswer (checked 2026-11-18, UniProtKB 2026_04)\n\n\n\n\n\nThe query returns 1,374 reviewed human entries. Most mitochondrial proteins are encoded in the nucleus, made on cytosolic ribosomes and imported, often through TOM/TIM. A rough comparison gives 13/1,374 ≈ 1% encoded in mtDNA; the great majority are nuclear encoded. Annotation coverage, proteins with several locations and the choice of isoforms affect the count. Do not interpret 1,374 as the number expressed in every cell type.\n\n\n\nT3. Which respiratory-chain complex lacks an mtDNA-encoded subunit? Predict why a nuclear mutation can still cause mitochondrial disease. [ELO 5, 9; skill: combine annotations]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nComplex II. The mtDNA protein genes contribute to I, III, IV and V (ATP synthase). Nuclear genes encode all of complex II and most subunits, import factors, assembly factors and maintenance machinery of mitochondria; a mutation in one of these can disrupt mitochondrial function."
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/browser.html#find-a-drug-in-a-protein-machine",
-    "href": "bioinfo-mito-proteasome/browser.html#find-a-drug-in-a-protein-machine",
-    "title": "Organelle genomes: database investigation",
-    "section": "3. Find a drug in a protein machine",
-    "text": "3. Find a drug in a protein machine\n\nOpen human 20S proteasome with bortezomib, PDB 5LF3. Read the experimental method and resolution. Open 3D View.\nIn Mol*, select a bortezomib ligand from Small Molecules (the entry’s ligand list identifies it). Zoom to its surroundings. Use the polymer/entity details to identify the neighbouring catalytic β subunit. The proteasome contains several catalytic sites, so the full structure can show more than one ligand copy.\nOpen ChEMBL bortezomib, CHEMBL325041. Compare Mechanism of action with Bioactivities. An activity assay is not automatically evidence for the therapeutic mechanism. Record the maximum development phase with its date.\n\nT4. What is bortezomib’s principal proteasome target, and why can blocking degradation kill a cell that makes many secreted proteins? [ELO 4, 9; skill: connect structure to function]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nThe principal target is the β5 chymotrypsin-like site (PSMB5) of the proteasome. Other catalytic sites can also be inhibited; 5LF3 is not proof of absolute β5 selectivity. Misfolded and regulatory proteins accumulate when proteasomal degradation is blocked. Antibody-producing myeloma cells carry a large protein-folding load and can undergo severe proteotoxic stress and apoptosis. ChEMBL reports maximum phase 4 for bortezomib; that label alone does not establish approval for every disease."
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/browser.html#a-synonymous-variant-with-a-serious-consequence",
-    "href": "bioinfo-mito-proteasome/browser.html#a-synonymous-variant-with-a-serious-consequence",
-    "title": "Organelle genomes: database investigation",
-    "section": "4. A synonymous variant with a serious consequence",
-    "text": "4. A synonymous variant with a serious consequence\n\nOpen ClinVar variation 14500, LMNA c.1824C&gt;T (p.Gly608=). Check the transcript accession, classification, review status and condition.\nRead the supporting submissions and the linked GeneReviews explanation. Distinguish a protein consequence predicted from an unchanged codon from the consequence of abnormal RNA splicing.\n\nT5. [VG] The codon still encodes glycine. Explain how this variant produces progerin and why the name “silent mutation” can be misleading. [ELO 4, 9; skill: interpret a variant in context]\n\n\n\n\n\n\nAnswer (checked 2026-11-18)\n\n\n\n\n\nThe classic progeria variant activates a cryptic splice site in LMNA exon 11. The abnormal RNA lacks a segment, producing progerin with a 50-amino-acid deletion near the C terminus. It lacks the site for normal final processing and retains its farnesylated tail, disturbing the nuclear lamina. The codon-level substitution is synonymous; its RNA-processing consequence is not silent. ClinVar classifies this variant as pathogenic for Hutchinson–Gilford progeria syndrome.\n\n\n\nContinue to the R Markdown report."
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/report.html",
-    "href": "bioinfo-mito-proteasome/report.html",
-    "title": "Organelle genomes: an R Markdown report",
-    "section": "",
-    "text": "Module overview and downloads · Previous: database investigation"
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/report.html#run-the-provided-data-section",
-    "href": "bioinfo-mito-proteasome/report.html#run-the-provided-data-section",
-    "title": "Organelle genomes: an R Markdown report",
-    "section": "1. Run the provided data section",
-    "text": "1. Run the provided data section\nDownload the template, helper and two CSV snapshots from the overview. Keep the helper beside the report and the CSVs in data/. Start by knitting the template untouched: the data table appears; your plotting chunks are empty. If a service is unavailable, change use_snapshot &lt;- TRUE and knit again.\nThe supplied fetch-data.R helper uses rentrez::entrez_fetch() to download the NCBI feature table, then parses its annotations. It queries UniProt’s streaming endpoint for the full result set, rather than accidentally counting only the first page of search results. Open the helper and find the query. Locate the lines that save the response and read the cache.\nWhat is cached? The raw NCBI feature table, a derived feature CSV and the UniProt protein table, each with a date in its filename. UniProt’s release header is recorded beside a newly fetched CSV. Re-knitting on the same date reads the cache. Snapshot mode uses the shipped files from 2026-11-18."
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/report.html#count-the-annotations",
-    "href": "bioinfo-mito-proteasome/report.html#count-the-annotations",
-    "title": "Organelle genomes: an R Markdown report",
-    "section": "2. Count the annotations",
-    "text": "2. Count the annotations\nIn annotation-counts, use table(genes$type). Filter CDS rows before counting proteins per complex: genes$complex[genes$type == \"CDS\"]. Use nrow(proteins) for the UniProt count. Calculate the approximate imported fraction as 1 - 13 / nrow(proteins). Explain the limits of this comparison."
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/report.html#draw-the-gene-map",
-    "href": "bioinfo-mito-proteasome/report.html#draw-the-gene-map",
-    "title": "Organelle genomes: an R Markdown report",
-    "section": "3. Draw the gene map",
-    "text": "3. Draw the gene map\nIn genome-map, use ggplot(genes, aes(x = start, xend = end, y = strand, yend = strand, colour = complex)) + geom_segment(linewidth = 7). Add labs() with a coordinate axis in bp, a strand label and a caption naming NC_012920.1 and the retrieval date. The circle is unrolled into a line at coordinate 1; this is a map, not a time course. Some genes overlap, which is biologically meaningful.\nT6. [VG] Which complexes have mtDNA-encoded subunits, how many subunits come from each, and what can this plot tell you about ATP production in a patient’s muscle? [ELO 5, 9; skill: plot and interpret annotations]\n\n\n\n\n\n\nAnswer (checked 2026-11-18 against the downloaded feature table)\n\n\n\n\n\nComplex I: 7, III: 1, IV: 3, V: 2; total 13. There are no complex-II genes in mtDNA. The map locates annotated genes and their strand. It does not measure expression, protein assembly, mutation burden or respiration. To test ATP production, add functional assays such as an oxygen-consumption stress test; to investigate an mtDNA variant, measure heteroplasmy in a relevant tissue as well as its molecular consequence."
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/report.html#write-the-results",
-    "href": "bioinfo-mito-proteasome/report.html#write-the-results",
-    "title": "Organelle genomes: an R Markdown report",
-    "section": "4. Write the results",
-    "text": "4. Write the results\nUse at least one inline R value in a paragraph comparing the two genomes’ contributions. Distinguish 37 genes from 13 protein genes, and a protein’s encoded origin from its final location. Finish the Data and browser-source sections, then knit in a fresh session."
-  },
-  {
-    "objectID": "bioinfo-mito-proteasome/report.html#hand-in-optional",
-    "href": "bioinfo-mito-proteasome/report.html#hand-in-optional",
-    "title": "Organelle genomes: an R Markdown report",
-    "section": "Hand-in (optional)",
-    "text": "Hand-in (optional)\nSubmit the knitted HTML with your name, both counts, a labelled map, a results paragraph, source URLs, retrieval dates, release and sessionInfo(). There should be no R errors. Keep your .Rmd, helper and data together so another person can rerun it."
   },
   {
     "objectID": "bioinfo-protein-atlas/index.html",
     "href": "bioinfo-protein-atlas/index.html",
     "title": "Bioinformatics: where does a protein live?",
     "section": "",
-    "text": "You look up where proteins live, using the same kind of evidence as in the lectures: an annotated database entry (UniProt), real immunofluorescence images (Human Protein Atlas), and a cell-line register (Cellosaurus). Then you write your first R Markdown report: it fetches protein sizes from UniProt and plots them.\nBuilds on: A tour of the cell (organelles, scale, HeLa), Seeing cells: microscopy (immunofluorescence) and Taking cells apart and perturbing them (marker proteins, cell lines, single-cell omics). ELO 1, 5.\nTime: Part A about 1.5 h, Part B about 1.5–2 h.",
+    "text": "Find where marker proteins live in two databases, check a cell line, and knit your first R Markdown report. Builds on A tour of the cell, Seeing cells: microscopy and Taking cells apart and perturbing them. ELO 1, 5.",
     "crumbs": [
       "Home",
       "The cell and how we study it",
@@ -5669,11 +5058,11 @@
     ]
   },
   {
-    "objectID": "bioinfo-protein-atlas/index.html#in-this-module",
-    "href": "bioinfo-protein-atlas/index.html#in-this-module",
+    "objectID": "bioinfo-protein-atlas/index.html#part-a-in-the-browser",
+    "href": "bioinfo-protein-atlas/index.html#part-a-in-the-browser",
     "title": "Bioinformatics: where does a protein live?",
-    "section": "",
-    "text": "You look up where proteins live, using the same kind of evidence as in the lectures: an annotated database entry (UniProt), real immunofluorescence images (Human Protein Atlas), and a cell-line register (Cellosaurus). Then you write your first R Markdown report: it fetches protein sizes from UniProt and plots them.\nBuilds on: A tour of the cell (organelles, scale, HeLa), Seeing cells: microscopy (immunofluorescence) and Taking cells apart and perturbing them (marker proteins, cell lines, single-cell omics). ELO 1, 5.\nTime: Part A about 1.5 h, Part B about 1.5–2 h.",
+    "section": "Part A: in the browser",
+    "text": "Part A: in the browser\nUniProt is the reference database of proteins; Human Protein Atlas (HPA) shows real immunofluorescence images of each protein in cultured human cells.\n\nA1. Calnexin in UniProt\nOpen UniProt entry P27824 (human calnexin). P27824 is its accession; CANX is its gene symbol. Click Subcellular Location in the menu on the left.\nT1 [ELO 1] Where in the cell is calnexin, and how does it sit in the membrane?\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nEndoplasmic reticulum membrane, as a single-pass type I membrane protein (one transmembrane helix, the large N-terminal part in the ER lumen).\n\n\n\n\n\nA2. Organelle markers in HPA\nFor each gene, open the page and click SUBCELLULAR in the row of section names. Read Main location. The protein is green; nucleus blue, microtubules red, ER yellow.\n\nTOMM20 (TOM20)\nGOLGA2 (GM130)\nLMNB1 (lamin B1)\n\nT2 [ELO 1, 5] Give the HPA main location of TOMM20, GOLGA2 and LMNB1.\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nTOMM20: Mitochondria. GOLGA2: Golgi apparatus. LMNB1: Nuclear membrane.\n\n\n\n\n\nA3. Catalase: two databases disagree\nCatalase is the classic peroxisome marker (cell-methods lecture). UniProt P04040 says peroxisome matrix. Now open CAT in HPA, SUBCELLULAR.\nT3 [ELO 1, 5] [VG] HPA gives a different main location. Which, and which statement best explains the difference?\n\nCatalase leaves peroxisomes in cultured cells.\nPeroxisomes are small dots near the resolution limit of light microscopy, so in an image they look like any other small vesicle.\nUniProt’s peroxisome location is only a prediction.\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nHPA says Vesicles. b is right: peroxisomes (0.1–1 µm) appear as small dots, and the image alone cannot tell which kind of dot it is. UniProt’s location comes from experiments, so c is wrong. A co-stain with another peroxisome marker would decide.\n\n\n\n\n\nA4. Which cells make insulin?\nOpen INS in HPA and click SINGLE CELL. This shows mRNA in each cell type, measured by single-cell RNA sequencing.\nT4 [ELO 1] Which cell type expresses INS?\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nPancreatic islet cells (cell type enriched; essentially absent elsewhere).\n\n\n\n\n\nA5. Is the culture what you think it is?\nCellosaurus registers every cell line under a stable accession. Open HeLa, CVCL_0030 and find the virus under Transformant. Then open HEp-2, CVCL_1906 and read Problematic cell line (lecture).\nT5 [ELO 1] HEp-2 was thought to come from a laryngeal cancer. Which cell line is it really?\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nHeLa: HEp-2 is a contaminated HeLa derivative, so it carries HPV18 like HeLa.",
     "crumbs": [
       "Home",
       "The cell and how we study it",
@@ -5681,11 +5070,11 @@
     ]
   },
   {
-    "objectID": "bioinfo-protein-atlas/index.html#before-you-start",
-    "href": "bioinfo-protein-atlas/index.html#before-you-start",
+    "objectID": "bioinfo-protein-atlas/index.html#part-b-in-r",
+    "href": "bioinfo-protein-atlas/index.html#part-b-in-r",
     "title": "Bioinformatics: where does a protein live?",
-    "section": "Before you start",
-    "text": "Before you start\n\nDownload the report template: bioinfo-protein-atlas.Rmd. Put it in a new, empty folder (for example cellbio-bioinfo/).\nCheck R. In R, run:\npackageVersion(\"rmarkdown\")   # an error means: install.packages(\"rmarkdown\")\npackageVersion(\"ggplot2\")     # an error means: install.packages(\"ggplot2\")\nKnitting also needs Pandoc. RStudio includes it. If you work from the command line, check with rmarkdown::pandoc_available() (should be TRUE).\nNo logins are needed for any of these websites.\nKeep a notes file or the template open: you fill a small table during Part A.\n\n\n\n\n\n\n\nThree kinds of names for one protein\n\n\n\nDatabases name the same thing in different ways. Learn to tell them apart here; every later bioinformatics module uses all three.\n\nGene symbol (HGNC), e.g. CANX: names the human gene; short and readable, but genes are sometimes renamed.\nUniProt accession, e.g. P27824: names the protein entry; stable, so use it to cite a protein.\nEnsembl gene ID, e.g. ENSG00000127022: names the gene in the genome sequence; stable. A version suffix such as .17 may be added: omit it when linking a gene page, but use the dataset-specific version when an API such as GTEx requires it.\n\nGene and protein names differ too: the Golgi marker GM130 in the lecture is the gene GOLGA2; TOM20 is TOMM20.",
+    "section": "Part B: in R",
+    "text": "Part B: in R\nDownload the template bioinfo-protein-atlas.Rmd into a new folder. You need the packages rmarkdown and ggplot2. All code that fetches and cleans the data is given; you fill three blanks marked ___.\n\nR Markdown in five minutes\nAn .Rmd file mixes text and R code. Knitting runs all code from top to bottom and writes one HTML report with text, tables and plots.\n\nYAML header between the --- lines: title, author, output. Put your name in author:.\nCode chunks start with ```{r name} and end with ```.\nInline R in text, such as `r round(ratio)`, is replaced by its value.\nKnit in RStudio with the Knit button, or in a terminal:\nRscript -e 'rmarkdown::render(\"bioinfo-protein-atlas.Rmd\")'\n\nKnitting starts from an empty R session: objects made in the console do not exist.\n\n\nB1. Knit it untouched\nYou get an HTML with red Error messages. Each points at a ___ that is not filled yet; errors further down follow from the first one.\n\n\nB2. Fill the blanks, knitting after each\n\nBlank 1: calnexin’s accession from A1, in quotes. You then see a table of 13 proteins with their length and mass.\nBlank 2: which.max finds the heaviest; change ___ so the next line finds the lightest. The sentence below the chunk now shows a number.\nBlank 3: the column that holds the compartment. The plot appears, with coloured dots and a legend.\n\nT6 [ELO 1] In your plot, which protein is the lightest, and which compartment is it coloured as?\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nHistone H4, Nucleus (11.4 kDa). The heaviest is titin, 3816 kDa.\n\n\n\nT7 [ELO 1] How many times heavier than the lightest is the heaviest protein (the inline R number in your report)?\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nAbout 336 (titin 3816 kDa / histone H4 11.4 kDa). This is why the x axis is logarithmic: on a linear axis all other proteins would be squeezed near zero.\n\n\n\nIf UniProt is down, set use_snapshot &lt;- TRUE in the setup chunk and knit again. The report then reads the course’s saved copy (put it in a data/ folder next to the .Rmd, or the report downloads it). Data: UniProtKB release 2026_04 (CC BY 4.0), retrieved 2026-11-18.",
     "crumbs": [
       "Home",
       "The cell and how we study it",
@@ -5693,103 +5082,15 @@
     ]
   },
   {
-    "objectID": "bioinfo-protein-atlas/index.html#work-through-the-module",
-    "href": "bioinfo-protein-atlas/index.html#work-through-the-module",
+    "objectID": "bioinfo-protein-atlas/index.html#hand-in",
+    "href": "bioinfo-protein-atlas/index.html#hand-in",
     "title": "Bioinformatics: where does a protein live?",
-    "section": "Work through the module",
-    "text": "Work through the module\n\nBrowser activities: UniProt, the Human Protein Atlas and Cellosaurus.\nR Markdown report: a short introduction, then protein-size data and a plot.\nCheck your answers: six tasks with worked explanations.",
+    "section": "Hand in",
+    "text": "Hand in\n\nThe knitted HTML (not the .Rmd), with your name in the header.\nNo red error messages left.\nThe plot has coloured dots and a legend; the sentence shows a number, not NA.",
     "crumbs": [
       "Home",
       "The cell and how we study it",
       "Bioinformatics: where does a protein live?"
-    ]
-  },
-  {
-    "objectID": "bioinfo-protein-atlas/index.html#sources-and-licences",
-    "href": "bioinfo-protein-atlas/index.html#sources-and-licences",
-    "title": "Bioinformatics: where does a protein live?",
-    "section": "Sources and licences",
-    "text": "Sources and licences\n\nUniProt — The UniProt Consortium, UniProt: the Universal Protein Knowledgebase, Nucleic Acids Research (latest database issue). https://www.uniprot.org, data CC BY 4.0. The snapshot data/uniprot-proteins-2026-11-18.csv is UniProtKB release 2026_04, retrieved 2026-11-18.\nHuman Protein Atlas — version 26.0, https://www.proteinatlas.org, CC BY 4.0. Subcellular section: Thul et al., Science 2017, 356:eaal3321. Single cell section: Karlsson et al., Science Advances 2021, 7:eabh2169.\nCellosaurus — Bairoch A., J Biomol Tech 2018, 29:25–38. https://www.cellosaurus.org, CC BY 4.0.",
-    "crumbs": [
-      "Home",
-      "The cell and how we study it",
-      "Bioinformatics: where does a protein live?"
-    ]
-  },
-  {
-    "objectID": "bioinfo-protein-atlas/report.html",
-    "href": "bioinfo-protein-atlas/report.html",
-    "title": "Where does a protein live? R Markdown report",
-    "section": "",
-    "text": "Module overview · Browser activities · R Markdown report · Check your answers"
-  },
-  {
-    "objectID": "bioinfo-protein-atlas/report.html#r-markdown-in-five-minutes",
-    "href": "bioinfo-protein-atlas/report.html#r-markdown-in-five-minutes",
-    "title": "Where does a protein live? R Markdown report",
-    "section": "R Markdown in five minutes",
-    "text": "R Markdown in five minutes\nAn R Markdown file (.Rmd) is a plain text file that mixes text and R code. Knitting runs all the code from top to bottom and writes one HTML file with your text, code, tables and plots. Instead of copying numbers by hand into a spreadsheet and a document, the report is the analysis: anyone can re-run it and get the same result, and if the data change, the numbers in your text change with them. Every later bioinformatics module uses this format.\nThe parts of the template:\n\nYAML header between the two --- lines at the top: title, author, date and output format. Put your name in author:.\nText in Markdown: # Heading, **bold**, *italic*, lists with -, tables with |.\nCode chunks start with ```{r chunk-name} and end with ```. Options go after the name, for example fig.width = 7.\nInline R in text: a backtick, r, a space, an R expression and a backtick. Writing `r 2 + 2` in your text gives 4 in the HTML.\n\nHow to knit:\n\nIn RStudio: open the file and click Knit (or Ctrl/Cmd+Shift+K).\nFrom the command line, in the folder with the file:\nRscript -e 'rmarkdown::render(\"bioinfo-protein-atlas.Rmd\")'\nThen open bioinfo-protein-atlas.html in a browser.\n\n\n\n\n\n\n\nKnitting starts from an empty R session\n\n\n\nObjects you made in the R console do not exist while knitting. If the report needs an object, a chunk in the report must create it. “object ‘x’ not found” in the HTML almost always means this."
-  },
-  {
-    "objectID": "bioinfo-protein-atlas/report.html#part-b-in-r-markdown",
-    "href": "bioinfo-protein-atlas/report.html#part-b-in-r-markdown",
-    "title": "Where does a protein live? R Markdown report",
-    "section": "Part B: in R Markdown",
-    "text": "Part B: in R Markdown\n\nB1. Knit the template untouched\nOpen bioinfo-protein-atlas.Rmd and knit it before you change anything. You get an HTML report with a hidden setup chunk, the Part A table, a table of 13 proteins and red Error messages where your code is still missing (“object ‘proteins’ not found”). That is expected: the setup chunk sets error = TRUE, so the report knits even when a chunk fails. Look at the HTML and find each part of the .Rmd in it. Put your name in the YAML header and knit again.\n\n\nB2. Fetch the data from UniProt (your chunk 1)\nUniProt has a REST API: an address that returns data instead of a web page. This address returns the length and mass of two proteins as a tab-separated table (TSV). Open it in your browser to see what R will get. The address has three pieces:\nbase:        https://rest.uniprot.org/uniprotkb/accessions?accessions=\naccessions:  P27824,Q15388,...        (separated by commas, no spaces)\nfields:      &fields=accession,gene_primary,protein_name,length,mass&format=tsv\nIn the chunk uniprot-fetch:\n\nMake the comma-separated accessions from the markers table with paste(markers$accession, collapse = \",\").\nGlue the three pieces together with paste0() into uniprot_url.\nRead it: proteins &lt;- read.delim(uniprot_url). read.delim() reads a tab-separated table from a file or a web address.\nPrint head(proteins) and knit. The next (given) chunk saves a dated copy in a data/ folder, records the UniProt release and adds mass_kda.\n\nLook at the column names R made: Gene.Names..primary. R replaces spaces and brackets in column names with dots. The mass is in daltons (Da).\n\n\nB3. Largest and smallest (your chunk 2)\nIn the chunk largest-smallest, find the heaviest and the lightest protein: which.max(proteins$Mass) gives the row number of the largest value, so proteins[which.max(proteins$Mass), ] is that row. Store the two rows as largest and smallest, and ratio &lt;- largest$Mass / smallest$Mass.\n\n\nB4. Plot on a log scale (your chunk 3)\nIn the chunk mass-plot, make a dot plot with ggplot2:\n\naes(x = mass_kda, y = label, colour = compartment) and geom_point();\nscale_x_log10() for a logarithmic x axis;\nlabs() with an x-axis label with its unit and a caption naming the source, for example paste(\"Data: UniProtKB release\", uniprot_release).\n\nTry the plot without scale_x_log10() first and look at it. Then add it. Optional: y = reorder(label, mass_kda) sorts the rows by mass.\n\n\nB5. Write the result\nUnder “What the plot shows”, write two or three sentences: which protein is largest and smallest, how many times heavier, and why the log axis was needed. Put at least one number in with inline R, for example the ratio as `r round(ratio)`. Knit, read your HTML, and fill in the date you used the websites in the “Data” section.\n\n\n\n\n\n\nIf UniProt is down\n\n\n\nIn the setup chunk, change use_snapshot &lt;- FALSE to use_snapshot &lt;- TRUE and knit again. Your chunk 1 is then skipped and the report reads the course’s saved copy of the same query (made on 2026-11-18, UniProt release 2026_04). It downloads the copy from this site; you can also save the snapshot into a data/ folder next to your .Rmd."
-  },
-  {
-    "objectID": "bioinfo-protein-atlas/report.html#hand-in-optional",
-    "href": "bioinfo-protein-atlas/report.html#hand-in-optional",
-    "title": "Where does a protein live? R Markdown report",
-    "section": "Hand-in (optional)",
-    "text": "Hand-in (optional)\nHand in the knitted HTML (not the .Rmd). Before you do, check: your name is in the header, there are no red error messages, the Part A table is filled, the plot has axis labels with units and a caption, the text has at least one inline R value, and the Data section has the dates.\nSources and licences"
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/index.html",
-    "href": "bioinfo-sorting-signals/index.html",
-    "title": "Bioinformatics: read the zip code",
-    "section": "",
-    "text": "Use sequence features to explain where a protein goes, and distinguish observed locations from predictions. Build a feature table and a tile plot from real human sequences. This module builds on protein sorting, the ER, the Golgi and endocytosis and lysosomes. ELO 4, 5, 9.\n\nIn the browser: signals, pathways and evidence — about 90 minutes.\nIn R: a map of sorting features — about 90–120 minutes.",
-    "crumbs": [
-      "Home",
-      "Protein handling and organelles",
-      "Bioinformatics: read the zip code"
-    ]
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/index.html#what-you-will-learn",
-    "href": "bioinfo-sorting-signals/index.html#what-you-will-learn",
-    "title": "Bioinformatics: read the zip code",
-    "section": "",
-    "text": "Use sequence features to explain where a protein goes, and distinguish observed locations from predictions. Build a feature table and a tile plot from real human sequences. This module builds on protein sorting, the ER, the Golgi and endocytosis and lysosomes. ELO 4, 5, 9.\n\nIn the browser: signals, pathways and evidence — about 90 minutes.\nIn R: a map of sorting features — about 90–120 minutes.",
-    "crumbs": [
-      "Home",
-      "Protein handling and organelles",
-      "Bioinformatics: read the zip code"
-    ]
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/index.html#before-you-start",
-    "href": "bioinfo-sorting-signals/index.html#before-you-start",
-    "title": "Bioinformatics: read the zip code",
-    "section": "Before you start",
-    "text": "Before you start\nNo logins are needed. R packages: rmarkdown, knitr, ggplot2. The report uses base R for table operations; dplyr is optional.\nDownload the student report to a new folder. Make a data subfolder and save:\n\nUniProt sequences and features.\nFASTA sequences.\nUniProt provenance.\nExample CFTR GO evidence rows.\n\nSet use_snapshot &lt;- TRUE in the report to work offline. The browser activities need internet access; the report’s sequence analysis works from the provided files.",
-    "crumbs": [
-      "Home",
-      "Protein handling and organelles",
-      "Bioinformatics: read the zip code"
-    ]
-  },
-  {
-    "objectID": "bioinfo-sorting-signals/index.html#what-counts-as-evidence",
-    "href": "bioinfo-sorting-signals/index.html#what-counts-as-evidence",
-    "title": "Bioinformatics: read the zip code",
-    "section": "What counts as evidence?",
-    "text": "What counts as evidence?\nA sequence motif suggests a route; it does not prove a location. A localisation experiment, a curated pathway and a predicted interaction address different questions. You will record these distinctions as carefully as the protein names.\nData and source credits.",
-    "crumbs": [
-      "Home",
-      "Protein handling and organelles",
-      "Bioinformatics: read the zip code"
     ]
   },
   {
@@ -6810,102 +6111,6 @@
     "title": "Image credits",
     "section": "The journey of a drug through the cell",
     "text": "The journey of a drug through the cell\nAll diagrams in this unit were drawn for this course. Pathways, membranes and proteins are schematic and not to scale. The readout comparisons are teaching predictions, not experimental data or clinical response estimates.\nThe three real images are reused from earlier course units, retaining their original attribution and licence. No additional image processing was performed for this unit.\n\n\n\nFile used\nWhat it shows\nAuthor\nLicence\nOriginal source\n\n\n\n\n../endocytosis-lysosomes/img10-endosomes-em.jpg\nHeLa endocytic compartments after labelled EGF/transferrin uptake; this is not an LNP experiment\nMatthew R G Russell\nCC BY 3.0\nWikimedia Commons\n\n\n../golgi-secretion/img11-golgi-tem.jpg\nHuman-cell Golgi stack and trans-Golgi network, TEM\nJeanOhm\nCC BY-SA 4.0\nWikimedia Commons\n\n\n../kinase-signalling/img16-cml-smear.jpg\nChronic myeloid leukaemia blood smear\nPaulo Mourao\nCC BY-SA 3.0\nWikimedia Commons\n\n\n\nOur diagrams: fig02-two-journeys.svg, fig04-delivery-barriers.svg, fig06-protein-route.svg, fig09-evidence.svg, fig11-kinase-route.svg, fig14-resistance.svg, fig16-compare.svg.\nThe Drug journey demo (demos/src/drugjourney/) is a manually stepped, qualitative explanation. It uses no external dataset and predicts no dose, kinetics or treatment benefit. Its baseline represents a successfully delivered, responsive example cell. Failed ER targeting assumes no alternative functional ER-targeting signal; translation, stability and immune responses need separate measurements.\nPrimary sources supporting the examples (no figures copied):\n\nGilleron et al., 2013: imaging of LNP-mediated siRNA delivery and endosomal escape. Its measured efficiencies are not treated as universal values for mRNA vaccination.\nPardi et al., 2015: reporter expression after mRNA–LNP delivery in mice, distinguishing productive expression from uptake of a carrier label.\nDruker et al., 2001: clinical responses to BCR–ABL kinase inhibition in CML.\nGorre et al., 2001: BCR–ABL mutation or amplification as mechanisms of imatinib resistance in the studied samples.",
-    "crumbs": [
-      "Home",
-      "Course info",
-      "Image credits"
-    ]
-  },
-  {
-    "objectID": "credits.html#bioinfo-protein-atlas",
-    "href": "credits.html#bioinfo-protein-atlas",
-    "title": "Image credits",
-    "section": "Bioinformatics: where does a protein live?",
-    "text": "Bioinformatics: where does a protein live?\nThe page shows no images from other sites; students view the Human Protein Atlas images on the HPA website itself. Data used on the page:\n\n\n\nFile\nWhat it is\nSource\nLicence\n\n\n\n\ndata/uniprot-proteins-2026-11-18.csv\nAccession, gene, name, length and mass of 13 human proteins (snapshot of the REST query in the report template)\nUniProtKB release 2026_04, https://www.uniprot.org, retrieved 2026-11-18\nCC BY 4.0\n\n\nimg-protein-mass-plot.png\nExample plot of the same data, made with ggplot2 for this course\nUniProtKB release 2026_04\nCC BY 4.0 (data)\n\n\n\nAnswers on the page were checked against UniProt 2026_04, Human Protein Atlas 26.0 (https://www.proteinatlas.org, CC BY 4.0) and Cellosaurus (https://www.cellosaurus.org, CC BY 4.0) on 2026-11-18.",
-    "crumbs": [
-      "Home",
-      "Course info",
-      "Image credits"
-    ]
-  },
-  {
-    "objectID": "credits.html#bioinfo-membrane-proteins",
-    "href": "credits.html#bioinfo-membrane-proteins",
-    "title": "Image credits",
-    "section": "Bioinformatics: membrane proteins, tissues and drugs",
-    "text": "Bioinformatics: membrane proteins, tissues and drugs\nThis module copies no external images. Students inspect structures and database pages on the source websites. Data downloaded and checked on 2026-11-18:\n\n\n\nFile\nContents\nSource and version\nLicence / access\n\n\n\n\ndata/uniprot-features-2026-11-18.csv\nOriginal annotation strings, accession, gene and length for eight reviewed human membrane proteins, converted from TSV to CSV\nUniProtKB 2026_04, exact REST URL in data/uniprot-provenance.json\nCC BY 4.0\n\n\ndata/gtex-medians-2026-11-18.csv\nAll 108 gene/tissue median TPM rows returned for SLC5A1 and SLC5A2\nGTEx v8, versioned GENCODE IDs resolved from reference API; exact URLs in data/gtex-provenance.json\nPublic aggregate GTEx data; no controlled-access individual-level data\n\n\n\nThe UniProt Consortium and the GTEx Consortium are the data providers. See the GTEx citation guidance when using these data outside the course. Report plots are generated by students from these data, rather than copied from external sites.\nBrowser evidence: RCSB PDB 6O2P, Liu et al., Science 364:1184–1188 (2019); AlphaFold DB P13569; ClinVar 7105, PubChem CID 16220172.",
-    "crumbs": [
-      "Home",
-      "Course info",
-      "Image credits"
-    ]
-  },
-  {
-    "objectID": "credits.html#bioinfo-sorting-signals",
-    "href": "credits.html#bioinfo-sorting-signals",
-    "title": "Image credits",
-    "section": "Bioinformatics: read the zip code",
-    "text": "Bioinformatics: read the zip code\nNo external images are copied into this module. Plots are made by students from UniProt data. Students view Reactome, STRING and QuickGO on the source websites.\n\n\n\nFile\nContents\nSource and version\nLicence\n\n\n\n\ndata/uniprot-features-2026-11-18.csv\nSequence, accession, gene, signal peptide, transit peptide, transmembrane features and location for 15 reviewed human proteins; TSV converted to CSV\nUniProtKB 2026_04, retrieved 2026-11-18; exact request in data/uniprot-provenance.json\nCC BY 4.0\n\n\ndata/uniprot-sequences-2026-11-18.fasta\nOriginal FASTA response for the same 15 accessions\nUniProtKB 2026_04, retrieved 2026-11-18; exact request in data/uniprot-provenance.json\nCC BY 4.0\n\n\ndata/quickgo-evidence-2026-11-18.csv\nCFTR annotation examples with GO ID, evidence code and reference: IDA/IBA subset of first 100 cellular-component results, not the complete annotation set\nQuickGO annotation API, retrieved 2026-11-18\nGO data CC BY 4.0\n\n\n\nData providers: The UniProt Consortium; Gene Ontology Consortium and contributing annotation groups. Browser checks also used the STRING human LDLR network and Reactome R-HSA-8856825, checked 2026-11-18. STRING associations are not interpreted as proof of direct binding.",
-    "crumbs": [
-      "Home",
-      "Course info",
-      "Image credits"
-    ]
-  },
-  {
-    "objectID": "credits.html#bioinfo-mito-proteasome",
-    "href": "credits.html#bioinfo-mito-proteasome",
-    "title": "Image credits",
-    "section": "Bioinformatics: genomes inside organelles and drugs on machines",
-    "text": "Bioinformatics: genomes inside organelles and drugs on machines\nThe module uses no external images. Structures are viewed on RCSB PDB rather than copied into the course.\n\n\n\nFile\nContent and provenance\nReuse\n\n\n\n\ndata/NC_012920.1-2026-11-18.txt\nOriginal five-column feature table fetched 2026-11-18 through NCBI E-utilities, reference sequence NC_012920.1\nNCBI data policy\n\n\ndata/mtdna-features-2026-11-18.csv\nCDS/tRNA/rRNA features parsed from that feature table; 37 rows, 1-based inclusive coordinates. Complex labels assigned from the gene names; the plotting helper retains opposite-strand coordinates and overlapping genes.\nSame source\n\n\ndata/uniprot-mitochondria-2026-11-18.csv\nAll 1,374 entries from UniProtKB 2026_04 query organism_id:9606 AND reviewed:true AND cc_scl_term:SL-0173; accession and primary gene fields; REST stream endpoint, retrieved 2026-11-18\nCC BY 4.0\n\n\n\nBrowser interpretation checked 2026-11-18: PDB 5LF3, ChEMBL bortezomib CHEMBL325041, ClinVar variation 14500 and GeneReviews: Hutchinson–Gilford progeria. The plotted genome map is generated for the course from the feature data.",
-    "crumbs": [
-      "Home",
-      "Course info",
-      "Image credits"
-    ]
-  },
-  {
-    "objectID": "credits.html#bioinfo-drug-targets",
-    "href": "credits.html#bioinfo-drug-targets",
-    "title": "Image credits",
-    "section": "Bioinformatics: how selective is a kinase inhibitor?",
-    "text": "Bioinformatics: how selective is a kinase inhibitor?\nNo external images are reproduced. Structures are viewed at RCSB PDB, and plots are generated from the following dated records.\n\n\n\nFile\nContent and provenance\nLicence\n\n\n\n\ndata/imatinib-activities-2026-11-18.csv\n161 ChEMBL 37 activity records, selected fields including assay descriptions and source-document IDs. REST query, retrieved 2026-11-18. Target labels added from the five ChEMBL IDs; no potency observations removed from the snapshot.\nCC BY-SA 3.0\n\n\ndata/clinical-candidates-2026-11-18.csv\nAll returned drug/candidate records for EGFR (82), ABL1 (27) and KIT (38), flattened from Open Targets Platform 26.09 drugAndClinicalCandidates GraphQL response, retrieved 2026-11-18. Fields include stable IDs, names and maxClinicalStage.\nCC0 1.0\n\n\ndata/opentargets-query-2026-11-18.txt\nExact query sent to Open Targets GraphQL; metadata and three targets.\nQuery written for this course\n\n\ndata/releases-2026-11-18.csv\nRelease identifiers from ChEMBL /status.json and Open Targets meta.dataVersion, retrieved with the records\nSame sources\n\n\n\nBrowser sources checked 2026-11-18: PDB 3SN6, PDB 1IEP, Reactome signalling by EGFR, and the API records behind Open Targets EGFR and ChEMBL imatinib.\nThe ChEMBL snapshot contains a conflicting EGFR observation (activity 24962906, IC50 0.11 nM) and a censored EGFR result (activity 909964, &gt;100000 nM). They are retained and explicitly discussed. Curves are illustrative Hill-slope-1 calculations, not fitted experimental curves or clinical predictions. Exact numeric assay medians depend on the stated filters.",
-    "crumbs": [
-      "Home",
-      "Course info",
-      "Image credits"
-    ]
-  },
-  {
-    "objectID": "credits.html#bioinfo-cytoskeleton",
-    "href": "credits.html#bioinfo-cytoskeleton",
-    "title": "Image credits",
-    "section": "Bioinformatics: filaments, tissues and a drug for the heart",
-    "text": "Bioinformatics: filaments, tissues and a drug for the heart\nPublic data retrieved 2026-11-18; no external images are reproduced.\n\n\n\n\n\n\n\n\nFiles\nSource and attribution\nTerms\n\n\n\n\ndata/gtex-expression-2026-11-18.csv\nGTEx v8 adult-tissue median TPM; GTEx Consortium, Science 369:1318 (2020), https://doi.org/10.1126/science.aaz1776 ; https://gtexportal.org/api/v2/\nOpen GTEx summary data; retain source attribution\n\n\ndata/mavacamten-trials-2026-11-18.csv\nClinicalTrials.gov API v2 intervention search mavacamten; https://clinicaltrials.gov/data-api/api\nPublic registry records; cite NCT IDs for individual studies\n\n\n\nThe JSON retrieval manifest records exact query URLs and retrieval date. Plots in worked reports are generated from these data by course code. RCSB PDB structure links refer to 1JFF and 5N69 (CC0 coordinates); images are viewed on RCSB, not copied.",
-    "crumbs": [
-      "Home",
-      "Course info",
-      "Image credits"
-    ]
-  },
-  {
-    "objectID": "credits.html#bioinfo-essential-genes",
-    "href": "credits.html#bioinfo-essential-genes",
-    "title": "Image credits",
-    "section": "Bioinformatics: which genes does a cancer cell need?",
-    "text": "Bioinformatics: which genes does a cancer cell need?\nPublic data retrieved 2026-11-18; no external images are reproduced.\n\n\n\n\n\n\n\n\nFiles\nSource and attribution\nTerms\n\n\n\n\ndata/depmap-gene-effect-2026-11-18.csv\nDepMap CRISPR gene effects redistributed by Open Targets Platform 26.09; https://depmap.org/portal/ ; https://api.platform.opentargets.org/api/v4/graphql\nOpen Targets CC0 except contributing data with additional terms; retain DepMap attribution and consult https://depmap.org/portal/terms/\n\n\ndata/release-2026-11-18.json\nOpen Targets meta.dataVersion\nCC0\n\n\n\nThe retrieval manifest records the exact GraphQL selection and date. Plots are made by course code. Cite the Chronos method, https://doi.org/10.1186/s13059-021-02540-7 . HPA/UniProt links provide browser activities; no external image is copied.",
-    "crumbs": [
-      "Home",
-      "Course info",
-      "Image credits"
-    ]
-  },
-  {
-    "objectID": "credits.html#bioinfo-cancer-genomics",
-    "href": "credits.html#bioinfo-cancer-genomics",
-    "title": "Image credits",
-    "section": "Bioinformatics: read the mutations",
-    "text": "Bioinformatics: read the mutations\nPublic data retrieved 2026-11-18; no external images are reproduced.\n\n\n\n\n\n\n\n\nFiles\nSource and attribution\nTerms\n\n\n\n\ndata/skcm-mutations-2026-11-18.csv\ncBioPortal API, TCGA Skin Cutaneous Melanoma, PanCancer Atlas 2018; study skcm_tcga_pan_can_atlas_2018, mutation profile and sequenced sample list\nPublic TCGA somatic calls; retain cBioPortal and study attribution\n\n\ndata/study-metadata-2026-11-18.json\ncBioPortal sample-list metadata (440 mutation-profiled samples)\nSame source and attribution\n\n\n\nThe retrieval manifest records exact URLs and date. Cite cBioPortal, https://doi.org/10.1158/2159-8290.CD-12-0095 , and the TCGA PanCancer Atlas study. The positional plots are made by course code, not copied from the portal. UniProt/HPA annotations linked in browser tasks are CC BY 4.0.",
     "crumbs": [
       "Home",
       "Course info",

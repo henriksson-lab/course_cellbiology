@@ -683,7 +683,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./bioinfo-mito-proteasome/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: genomes inside organelles and drugs on machines</span></a>
+ <span class="menu-text">Bioinformatics: genomes inside organelles, and drugs on machines</span></a>
   </div>
 </li>
       </ul>
@@ -840,7 +840,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./bioinfo-drug-targets/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: how selective is a kinase inhibitor?</span></a>
+ <span class="menu-text">Bioinformatics: how selective is imatinib?</span></a>
   </div>
 </li>
       </ul>
@@ -962,7 +962,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./bioinfo-cytoskeleton/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: filaments, tissues and a drug for the heart</span></a>
+ <span class="menu-text">Bioinformatics: one filament family per tissue</span></a>
   </div>
 </li>
       </ul>
@@ -1276,7 +1276,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./bioinfo-cancer-genomics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bioinformatics: read the mutations</span></a>
+ <span class="menu-text">Bioinformatics: BRAF V600E and vemurafenib</span></a>
   </div>
 </li>
       </ul>
@@ -1322,14 +1322,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#cancer" id="toc-cancer" class="nav-link" data-scroll-target="#cancer">Cancer as a disease of cell biology</a></li>
   <li><a href="#disease-casebook" id="toc-disease-casebook" class="nav-link" data-scroll-target="#disease-casebook">When cell biology goes wrong: a disease casebook</a></li>
   <li><a href="#drug-journey" id="toc-drug-journey" class="nav-link" data-scroll-target="#drug-journey">The journey of a drug through the cell</a></li>
-  <li><a href="#bioinfo-protein-atlas" id="toc-bioinfo-protein-atlas" class="nav-link" data-scroll-target="#bioinfo-protein-atlas">Bioinformatics: where does a protein live?</a></li>
-  <li><a href="#bioinfo-membrane-proteins" id="toc-bioinfo-membrane-proteins" class="nav-link" data-scroll-target="#bioinfo-membrane-proteins">Bioinformatics: membrane proteins, tissues and drugs</a></li>
-  <li><a href="#bioinfo-sorting-signals" id="toc-bioinfo-sorting-signals" class="nav-link" data-scroll-target="#bioinfo-sorting-signals">Bioinformatics: read the zip code</a></li>
-  <li><a href="#bioinfo-mito-proteasome" id="toc-bioinfo-mito-proteasome" class="nav-link" data-scroll-target="#bioinfo-mito-proteasome">Bioinformatics: genomes inside organelles and drugs on machines</a></li>
-  <li><a href="#bioinfo-drug-targets" id="toc-bioinfo-drug-targets" class="nav-link" data-scroll-target="#bioinfo-drug-targets">Bioinformatics: how selective is a kinase inhibitor?</a></li>
-  <li><a href="#bioinfo-cytoskeleton" id="toc-bioinfo-cytoskeleton" class="nav-link" data-scroll-target="#bioinfo-cytoskeleton">Bioinformatics: filaments, tissues and a drug for the heart</a></li>
-  <li><a href="#bioinfo-essential-genes" id="toc-bioinfo-essential-genes" class="nav-link" data-scroll-target="#bioinfo-essential-genes">Bioinformatics: which genes does a cancer cell need?</a></li>
-  <li><a href="#bioinfo-cancer-genomics" id="toc-bioinfo-cancer-genomics" class="nav-link" data-scroll-target="#bioinfo-cancer-genomics">Bioinformatics: read the mutations</a></li>
   </ul>
 </nav>
     </div>
@@ -3009,261 +3001,6 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://pubmed.ncbi.nlm.nih.gov/11287972/">Druker et al., 2001</a>: clinical responses to BCR–ABL kinase inhibition in CML.</li>
 <li><a href="https://pubmed.ncbi.nlm.nih.gov/11423618/">Gorre et al., 2001</a>: BCR–ABL mutation or amplification as mechanisms of imatinib resistance in the studied samples.</li>
 </ul>
-</section>
-<section id="bioinfo-protein-atlas" class="level2">
-<h2 class="anchored" data-anchor-id="bioinfo-protein-atlas">Bioinformatics: where does a protein live?</h2>
-<p>The page shows no images from other sites; students view the Human Protein Atlas images on the HPA website itself. Data used on the page:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>What it is</th>
-<th>Source</th>
-<th>Licence</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>data/uniprot-proteins-2026-11-18.csv</code></td>
-<td>Accession, gene, name, length and mass of 13 human proteins (snapshot of the REST query in the report template)</td>
-<td>UniProtKB release 2026_04, <a href="https://www.uniprot.org" class="uri">https://www.uniprot.org</a>, retrieved 2026-11-18</td>
-<td>CC BY 4.0</td>
-</tr>
-<tr class="even">
-<td><code>img-protein-mass-plot.png</code></td>
-<td>Example plot of the same data, made with ggplot2 for this course</td>
-<td>UniProtKB release 2026_04</td>
-<td>CC BY 4.0 (data)</td>
-</tr>
-</tbody>
-</table>
-<p>Answers on the page were checked against UniProt 2026_04, Human Protein Atlas 26.0 (<a href="https://www.proteinatlas.org" class="uri">https://www.proteinatlas.org</a>, CC BY 4.0) and Cellosaurus (<a href="https://www.cellosaurus.org" class="uri">https://www.cellosaurus.org</a>, CC BY 4.0) on 2026-11-18.</p>
-</section>
-<section id="bioinfo-membrane-proteins" class="level2">
-<h2 class="anchored" data-anchor-id="bioinfo-membrane-proteins">Bioinformatics: membrane proteins, tissues and drugs</h2>
-<p>This module copies no external images. Students inspect structures and database pages on the source websites. Data downloaded and checked on 2026-11-18:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Contents</th>
-<th>Source and version</th>
-<th>Licence / access</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>data/uniprot-features-2026-11-18.csv</code></td>
-<td>Original annotation strings, accession, gene and length for eight reviewed human membrane proteins, converted from TSV to CSV</td>
-<td>UniProtKB 2026_04, exact REST URL in <code>data/uniprot-provenance.json</code></td>
-<td><a href="https://www.uniprot.org/help/license">CC BY 4.0</a></td>
-</tr>
-<tr class="even">
-<td><code>data/gtex-medians-2026-11-18.csv</code></td>
-<td>All 108 gene/tissue median TPM rows returned for SLC5A1 and SLC5A2</td>
-<td>GTEx v8, versioned GENCODE IDs resolved from reference API; exact URLs in <code>data/gtex-provenance.json</code></td>
-<td><a href="https://gtexportal.org/home/datasets">Public aggregate GTEx data</a>; no controlled-access individual-level data</td>
-</tr>
-</tbody>
-</table>
-<p>The UniProt Consortium and the GTEx Consortium are the data providers. See the <a href="https://gtexportal.org/home/documentationPage#staticTextCitations">GTEx citation guidance</a> when using these data outside the course. Report plots are generated by students from these data, rather than copied from external sites.</p>
-<p>Browser evidence: <a href="https://www.rcsb.org/structure/6O2P">RCSB PDB 6O2P</a>, Liu et al., <em>Science</em> 364:1184–1188 (2019); <a href="https://alphafold.ebi.ac.uk/entry/P13569">AlphaFold DB P13569</a>; <a href="https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/">ClinVar 7105</a>, <a href="https://pubchem.ncbi.nlm.nih.gov/compound/16220172">PubChem CID 16220172</a>.</p>
-</section>
-<section id="bioinfo-sorting-signals" class="level2">
-<h2 class="anchored" data-anchor-id="bioinfo-sorting-signals">Bioinformatics: read the zip code</h2>
-<p>No external images are copied into this module. Plots are made by students from UniProt data. Students view Reactome, STRING and QuickGO on the source websites.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Contents</th>
-<th>Source and version</th>
-<th>Licence</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>data/uniprot-features-2026-11-18.csv</code></td>
-<td>Sequence, accession, gene, signal peptide, transit peptide, transmembrane features and location for 15 reviewed human proteins; TSV converted to CSV</td>
-<td>UniProtKB 2026_04, retrieved 2026-11-18; exact request in <code>data/uniprot-provenance.json</code></td>
-<td><a href="https://www.uniprot.org/help/license">CC BY 4.0</a></td>
-</tr>
-<tr class="even">
-<td><code>data/uniprot-sequences-2026-11-18.fasta</code></td>
-<td>Original FASTA response for the same 15 accessions</td>
-<td>UniProtKB 2026_04, retrieved 2026-11-18; exact request in <code>data/uniprot-provenance.json</code></td>
-<td><a href="https://www.uniprot.org/help/license">CC BY 4.0</a></td>
-</tr>
-<tr class="odd">
-<td><code>data/quickgo-evidence-2026-11-18.csv</code></td>
-<td>CFTR annotation examples with GO ID, evidence code and reference: IDA/IBA subset of first 100 cellular-component results, not the complete annotation set</td>
-<td><a href="https://www.ebi.ac.uk/QuickGO/services/annotation/search?geneProductId=UniProtKB:P13569&amp;aspect=cellular_component&amp;limit=100">QuickGO annotation API</a>, retrieved 2026-11-18</td>
-<td><a href="https://geneontology.org/docs/go-citation-policy/">GO data CC BY 4.0</a></td>
-</tr>
-</tbody>
-</table>
-<p>Data providers: The UniProt Consortium; Gene Ontology Consortium and contributing annotation groups. Browser checks also used the <a href="https://string-db.org/cgi/network?identifiers=LDLR&amp;species=9606">STRING human LDLR network</a> and <a href="https://reactome.org/content/detail/R-HSA-8856825">Reactome R-HSA-8856825</a>, checked 2026-11-18. STRING associations are not interpreted as proof of direct binding.</p>
-</section>
-<section id="bioinfo-mito-proteasome" class="level2">
-<h2 class="anchored" data-anchor-id="bioinfo-mito-proteasome">Bioinformatics: genomes inside organelles and drugs on machines</h2>
-<p>The module uses no external images. Structures are viewed on RCSB PDB rather than copied into the course.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Content and provenance</th>
-<th>Reuse</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>data/NC_012920.1-2026-11-18.txt</code></td>
-<td>Original five-column feature table fetched 2026-11-18 through <a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=NC_012920.1&amp;rettype=ft&amp;retmode=text">NCBI E-utilities</a>, reference sequence NC_012920.1</td>
-<td><a href="https://www.ncbi.nlm.nih.gov/home/about/policies/">NCBI data policy</a></td>
-</tr>
-<tr class="even">
-<td><code>data/mtdna-features-2026-11-18.csv</code></td>
-<td>CDS/tRNA/rRNA features parsed from that feature table; 37 rows, 1-based inclusive coordinates. Complex labels assigned from the gene names; the plotting helper retains opposite-strand coordinates and overlapping genes.</td>
-<td>Same source</td>
-</tr>
-<tr class="odd">
-<td><code>data/uniprot-mitochondria-2026-11-18.csv</code></td>
-<td>All 1,374 entries from UniProtKB 2026_04 query <code>organism_id:9606 AND reviewed:true AND cc_scl_term:SL-0173</code>; accession and primary gene fields; <a href="https://rest.uniprot.org/uniprotkb/stream?query=organism_id%3A9606%20AND%20reviewed%3Atrue%20AND%20cc_scl_term%3ASL-0173&amp;format=tsv&amp;fields=accession,gene_primary">REST stream endpoint</a>, retrieved 2026-11-18</td>
-<td><a href="https://www.uniprot.org/help/license">CC BY 4.0</a></td>
-</tr>
-</tbody>
-</table>
-<p>Browser interpretation checked 2026-11-18: <a href="https://www.rcsb.org/structure/5LF3">PDB 5LF3</a>, <a href="https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL325041">ChEMBL bortezomib CHEMBL325041</a>, <a href="https://www.ncbi.nlm.nih.gov/clinvar/variation/14500/">ClinVar variation 14500</a> and <a href="https://www.ncbi.nlm.nih.gov/books/NBK1121/">GeneReviews: Hutchinson–Gilford progeria</a>. The plotted genome map is generated for the course from the feature data.</p>
-</section>
-<section id="bioinfo-drug-targets" class="level2">
-<h2 class="anchored" data-anchor-id="bioinfo-drug-targets">Bioinformatics: how selective is a kinase inhibitor?</h2>
-<p>No external images are reproduced. Structures are viewed at RCSB PDB, and plots are generated from the following dated records.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Content and provenance</th>
-<th>Licence</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>data/imatinib-activities-2026-11-18.csv</code></td>
-<td>161 ChEMBL 37 activity records, selected fields including assay descriptions and source-document IDs. <a href="https://www.ebi.ac.uk/chembl/api/data/activity.json?molecule_chembl_id=CHEMBL941&amp;standard_type=IC50&amp;target_chembl_id__in=CHEMBL1862,CHEMBL1936,CHEMBL2007,CHEMBL267,CHEMBL203&amp;limit=1000">REST query</a>, retrieved 2026-11-18. Target labels added from the five ChEMBL IDs; no potency observations removed from the snapshot.</td>
-<td><a href="https://chembl.gitbook.io/chembl-interface-documentation/about">CC BY-SA 3.0</a></td>
-</tr>
-<tr class="even">
-<td><code>data/clinical-candidates-2026-11-18.csv</code></td>
-<td>All returned drug/candidate records for EGFR (82), ABL1 (27) and KIT (38), flattened from Open Targets Platform 26.09 <code>drugAndClinicalCandidates</code> GraphQL response, retrieved 2026-11-18. Fields include stable IDs, names and <code>maxClinicalStage</code>.</td>
-<td><a href="https://platform-docs.opentargets.org/licence">CC0 1.0</a></td>
-</tr>
-<tr class="odd">
-<td><code>data/opentargets-query-2026-11-18.txt</code></td>
-<td>Exact query sent to <a href="https://api.platform.opentargets.org/api/v4/graphql">Open Targets GraphQL</a>; metadata and three targets.</td>
-<td>Query written for this course</td>
-</tr>
-<tr class="even">
-<td><code>data/releases-2026-11-18.csv</code></td>
-<td>Release identifiers from ChEMBL <code>/status.json</code> and Open Targets <code>meta.dataVersion</code>, retrieved with the records</td>
-<td>Same sources</td>
-</tr>
-</tbody>
-</table>
-<p>Browser sources checked 2026-11-18: <a href="https://www.rcsb.org/structure/3SN6">PDB 3SN6</a>, <a href="https://www.rcsb.org/structure/1IEP">PDB 1IEP</a>, <a href="https://reactome.org/content/detail/R-HSA-177929">Reactome signalling by EGFR</a>, and the API records behind <a href="https://platform.opentargets.org/target/ENSG00000146648">Open Targets EGFR</a> and <a href="https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941">ChEMBL imatinib</a>.</p>
-<p>The ChEMBL snapshot contains a conflicting EGFR observation (activity 24962906, IC50 0.11 nM) and a censored EGFR result (activity 909964, &gt;100000 nM). They are retained and explicitly discussed. Curves are illustrative Hill-slope-1 calculations, not fitted experimental curves or clinical predictions. Exact numeric assay medians depend on the stated filters.</p>
-</section>
-<section id="bioinfo-cytoskeleton" class="level2">
-<h2 class="anchored" data-anchor-id="bioinfo-cytoskeleton">Bioinformatics: filaments, tissues and a drug for the heart</h2>
-<p>Public data retrieved 2026-11-18; no external images are reproduced.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Files</th>
-<th>Source and attribution</th>
-<th>Terms</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>data/gtex-expression-2026-11-18.csv</code></td>
-<td>GTEx v8 adult-tissue median TPM; GTEx Consortium, Science 369:1318 (2020), https://doi.org/10.1126/science.aaz1776 ; https://gtexportal.org/api/v2/</td>
-<td>Open GTEx summary data; retain source attribution</td>
-</tr>
-<tr class="even">
-<td><code>data/mavacamten-trials-2026-11-18.csv</code></td>
-<td>ClinicalTrials.gov API v2 intervention search <code>mavacamten</code>; https://clinicaltrials.gov/data-api/api</td>
-<td>Public registry records; cite NCT IDs for individual studies</td>
-</tr>
-</tbody>
-</table>
-<p>The JSON retrieval manifest records exact query URLs and retrieval date. Plots in worked reports are generated from these data by course code. RCSB PDB structure links refer to 1JFF and 5N69 (CC0 coordinates); images are viewed on RCSB, not copied.</p>
-</section>
-<section id="bioinfo-essential-genes" class="level2">
-<h2 class="anchored" data-anchor-id="bioinfo-essential-genes">Bioinformatics: which genes does a cancer cell need?</h2>
-<p>Public data retrieved 2026-11-18; no external images are reproduced.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Files</th>
-<th>Source and attribution</th>
-<th>Terms</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>data/depmap-gene-effect-2026-11-18.csv</code></td>
-<td>DepMap CRISPR gene effects redistributed by Open Targets Platform 26.09; https://depmap.org/portal/ ; https://api.platform.opentargets.org/api/v4/graphql</td>
-<td>Open Targets CC0 except contributing data with additional terms; retain DepMap attribution and consult https://depmap.org/portal/terms/</td>
-</tr>
-<tr class="even">
-<td><code>data/release-2026-11-18.json</code></td>
-<td>Open Targets <code>meta.dataVersion</code></td>
-<td>CC0</td>
-</tr>
-</tbody>
-</table>
-<p>The retrieval manifest records the exact GraphQL selection and date. Plots are made by course code. Cite the Chronos method, https://doi.org/10.1186/s13059-021-02540-7 . HPA/UniProt links provide browser activities; no external image is copied.</p>
-</section>
-<section id="bioinfo-cancer-genomics" class="level2">
-<h2 class="anchored" data-anchor-id="bioinfo-cancer-genomics">Bioinformatics: read the mutations</h2>
-<p>Public data retrieved 2026-11-18; no external images are reproduced.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Files</th>
-<th>Source and attribution</th>
-<th>Terms</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>data/skcm-mutations-2026-11-18.csv</code></td>
-<td>cBioPortal API, TCGA Skin Cutaneous Melanoma, PanCancer Atlas 2018; study <code>skcm_tcga_pan_can_atlas_2018</code>, mutation profile and sequenced sample list</td>
-<td>Public TCGA somatic calls; retain cBioPortal and study attribution</td>
-</tr>
-<tr class="even">
-<td><code>data/study-metadata-2026-11-18.json</code></td>
-<td>cBioPortal sample-list metadata (440 mutation-profiled samples)</td>
-<td>Same source and attribution</td>
-</tr>
-</tbody>
-</table>
-<p>The retrieval manifest records exact URLs and date. Cite cBioPortal, https://doi.org/10.1158/2159-8290.CD-12-0095 , and the TCGA PanCancer Atlas study. The positional plots are made by course code, not copied from the portal. UniProt/HPA annotations linked in browser tasks are CC BY 4.0.</p>
 
 
 </section>

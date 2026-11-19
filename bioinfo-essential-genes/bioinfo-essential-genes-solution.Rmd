@@ -7,125 +7,126 @@ output:
     toc: true
 ---
 
-
 ```{r setup, include=FALSE}
+# error = TRUE: the report still knits while a blank (___) is unfilled.
+# Before you hand in, there must be no "Error" messages in the HTML.
+knitr::opts_chunk$set(error = TRUE, message = FALSE, warning = FALSE)
 library(ggplot2)
-library(jsonlite)
-library(httr2)
-options(HTTPUserAgent = "3MB001-course", timeout = 90)
-knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+library(httr)
+
+# Set to TRUE if the Open Targets API is down: the report then uses the
+# course's copy of the data (data/ folder or the course website).
 use_snapshot <- identical(Sys.getenv("BIOINFO_SNAPSHOT"), "true")
-dir.create("data", showWarnings = FALSE)
-retrieved <- if (use_snapshot) "2026-11-18" else as.character(Sys.Date())
-get_json <- function(url, ...) {
-  req <- req_url_query(request(url), ...)
-  resp_body_json(req_perform(req_retry(req, max_tries = 3)), simplifyVector = FALSE)
-}
-cache_csv <- function(name, fetch) {
-  file <- file.path("data", paste0(name, "-", retrieved, ".csv"))
-  if (file.exists(file)) return(read.csv(file, stringsAsFactors = FALSE))
-  if (use_snapshot) stop("Missing snapshot: ", file)
-  value <- fetch()
-  write.csv(value, file, row.names = FALSE)
-  value
-}
+
+snapshot_file <- "depmap-gene-effect-2026-11-18.csv"
+snapshot_url  <- paste0("https://henriksson-lab.github.io/course_cellbiology/",
+                        "bioinfo-essential-genes/data/", snapshot_file)
+data_source <- "course snapshot (Open Targets, retrieved 2026-11-18)"
 ```
 
-# Question
+# The data
 
-Which dependencies are broad and which vary across cell lines?
+A CRISPR screen knocks out one gene in many cancer cell lines and measures
+growth. The **gene effect** is 0 when the cells grow normally and about −1 for a
+typical essential gene. This code fetches the gene effects for six genes from
+the Open Targets API (which redistributes the DepMap data). You do not need to
+change it.
 
-# Data
+```{r fetch}
+genes <- c(CDK1 = "ENSG00000170312", CDK4 = "ENSG00000135446",
+           CDK6 = "ENSG00000105810", BCL2 = "ENSG00000171791",
+           MCL1 = "ENSG00000143384", BCL2L1 = "ENSG00000171552")
 
-DepMap gene effects redistributed through Open Targets.
-
-```{r dependencies-fetch}
-target_ids <- c(CDK1 = "ENSG00000170312", CDK4 = "ENSG00000135446",
-                CDK6 = "ENSG00000105810", BCL2 = "ENSG00000171791",
-                MCL1 = "ENSG00000143384", BCL2L1 = "ENSG00000171552")
-endpoint <- "https://api.platform.opentargets.org/api/v4/graphql"
-post_query <- function(query) {
-  response <- request(endpoint) |> req_body_json(list(query = query)) |>
-    req_retry(max_tries = 3) |> req_perform() |>
-    resp_body_json(simplifyVector = FALSE)
-  if (!is.null(response$errors)) stop(toJSON(response$errors, auto_unbox = TRUE))
-  response$data
-}
-release_file <- file.path("data", paste0("release-", retrieved, ".json"))
-if (file.exists(release_file)) {
-  release <- fromJSON(release_file)$data$meta$dataVersion
-} else {
-  if (use_snapshot) stop("Missing release snapshot")
-  metadata <- list(data = post_query("{ meta { dataVersion { year month iteration } } }"))
-  write_json(metadata, release_file, auto_unbox = TRUE)
-  release <- metadata$data$meta$dataVersion
-}
-fetch_dependencies <- function() {
+fetch_gene <- function(symbol, ensembl_id) {
+  query <- sprintf('{ target(ensemblId: "%s") { depMapEssentiality {
+    tissueName screens { cellLineName geneEffect } } } }', ensembl_id)
+  resp <- POST("https://api.platform.opentargets.org/api/v4/graphql",
+               body = list(query = query), encode = "json",
+               user_agent("3MB001-course"), timeout(60))
+  stop_for_status(resp)
+  resp <- content(resp, as = "parsed", simplifyVector = FALSE)
+  or_na <- function(x) if (is.null(x)) NA else x
   rows <- list()
-  for (gene in names(target_ids)) {
-    query <- sprintf('query { target(ensemblId: "%s") { id approvedSymbol depMapEssentiality { tissueId tissueName screens { cellLineName geneEffect } } } }', target_ids[[gene]])
-    target <- post_query(query)$target
-    stopifnot(identical(target$approvedSymbol, gene))
-    for (tissue in target$depMapEssentiality) {
-      for (screen in tissue$screens) {
-        if (is.null(screen$geneEffect)) next
-        rows[[length(rows) + 1]] <- data.frame(
-          gene = gene, ensembl_id = target$id,
-          tissue_id = if (is.null(tissue$tissueId)) "" else tissue$tissueId,
-          tissue = if (is.null(tissue$tissueName)) "Unclassified" else tissue$tissueName,
-          cell_line = if (is.null(screen$cellLineName)) "Unknown" else screen$cellLineName,
-          gene_effect = screen$geneEffect)
-      }
+  for (tissue in resp$data$target$depMapEssentiality) {
+    for (screen in tissue$screens) {
+      if (is.null(screen$geneEffect)) next
+      rows[[length(rows) + 1]] <- data.frame(
+        gene = symbol, tissue = or_na(tissue$tissueName),
+        cell_line = or_na(screen$cellLineName), gene_effect = screen$geneEffect)
     }
   }
   do.call(rbind, rows)
 }
-dependencies <- cache_csv("depmap-gene-effect", fetch_dependencies)
-stopifnot(all(names(target_ids) %in% dependencies$gene), all(is.finite(dependencies$gene_effect)))
+
+read_snapshot <- function() {
+  local_file <- file.path("data", snapshot_file)
+  read.csv(if (file.exists(local_file)) local_file else snapshot_url)
+}
+
+dependencies <- NULL
+if (!use_snapshot) {
+  dependencies <- tryCatch({
+    rows <- lapply(names(genes), function(g) fetch_gene(g, genes[[g]]))
+    do.call(rbind, rows)
+  }, error = function(e) NULL)
+  if (!is.null(dependencies)) data_source <- paste("Open Targets API, retrieved", Sys.Date())
+}
+if (is.null(dependencies)) dependencies <- read_snapshot()
+
+dependencies <- dependencies[, c("gene", "tissue", "cell_line", "gene_effect")]
+head(dependencies)
 ```
 
-Open Targets release `r paste(release$year, release$month, sep = ".")`;
-retrieved `r retrieved`. The six genes have `r nrow(dependencies)` non-missing
-screen results in total. Gene effect is a relative growth measure, not a drug IC50.
+Data: `r data_source`. The table has `r nrow(dependencies)` rows
+(one gene in one cell line per row).
 
-```{r gene-distributions}
-ggplot(dependencies, aes(gene, gene_effect)) +
-  geom_violin(fill = "#d8b5bf", scale = "width") +
-  geom_boxplot(width = 0.12, outlier.shape = NA) +
+# Blank 1: one summary line
+
+Print the **median** gene effect of each gene. Replace `___` with the name of
+the R function that computes a median.
+
+```{r medians}
+aggregate(gene_effect ~ gene, data = dependencies, FUN = median)
+```
+
+# Blank 2: one plot of all six genes
+
+Write **one** `ggplot()` call that draws a violin plot of the gene effect per gene.
+Use these pieces:
+
+- data: `dependencies`
+- x axis: `gene`, y axis: `gene_effect`
+- layers: `geom_violin()` and `geom_hline(yintercept = -1, linetype = 2)`
+- labels: `labs(x = "Gene", y = "Gene effect (0 = no effect, -1 = essential)")`
+
+Example of the same shape with other pieces: `ggplot(df, aes(x = a, y = b)) + geom_boxplot()`.
+
+```{r violin}
+ggplot(dependencies, aes(x = gene, y = gene_effect)) +
+  geom_violin() +
   geom_hline(yintercept = -1, linetype = 2) +
-  labs(x = "Target gene", y = "CRISPR gene effect (relative growth)",
-       caption = paste("DepMap via Open Targets", paste(release$year, release$month, sep = "."),
-                       "; retrieved", retrieved, "; −1 = reference essential-gene effect")) + theme_minimal()
-aggregate(gene_effect ~ gene, dependencies, function(x) c(n = length(x), median = median(x)))
+  labs(x = "Gene", y = "Gene effect (0 = no effect, -1 = essential)")
 ```
 
-```{r bcl2-by-tissue, fig.width=8, fig.height=9}
+# Blank 3: BCL2 by tissue
+
+Keep only the rows of **BCL2**, the target of venetoclax. Replace `___` with
+the gene name, in quotes.
+
+```{r bcl2, fig.height = 8}
 bcl2 <- dependencies[dependencies$gene == "BCL2", ]
-# Show every observed tissue, including small groups, and label each sample size.
-tissue_n <- table(bcl2$tissue)
-bcl2$tissue_label <- paste0(bcl2$tissue, " (n=", as.integer(tissue_n[bcl2$tissue]), ")")
-ggplot(bcl2, aes(reorder(tissue_label, gene_effect, FUN = median), gene_effect)) +
-  geom_boxplot(outlier.shape = NA) + geom_jitter(width = 0.15, alpha = 0.3, size = 0.6) +
-  coord_flip() + geom_hline(yintercept = -1, linetype = 2) +
-  labs(x = "Tissue group", y = "BCL2 CRISPR gene effect",
-       caption = paste("DepMap via Open Targets; retrieved", retrieved,
-                       "— tissue groups are unbalanced")) + theme_minimal()
+
+ggplot(bcl2, aes(x = reorder(tissue, gene_effect, FUN = min), y = gene_effect)) +
+  geom_jitter(width = 0.15, alpha = 0.5, size = 0.8) +
+  geom_hline(yintercept = -1, linetype = 2) +
+  coord_flip() +
+  labs(x = "Tissue of origin", y = "BCL2 gene effect")
+
+# Cell lines that strongly need BCL2 (gene effect below -1), per tissue:
+sort(table(bcl2$tissue[bcl2$gene_effect < -1]), decreasing = TRUE)
 ```
 
-# Interpretation and limitations
-
-CDK1 is broadly required in the screened cultures. BCL2 has a near-zero overall
-median with sensitive subsets. Blood and lymphoid lines include strongly affected
-models, but dependency is not determined by tissue alone. These are culture-based
-growth assays; drugs and patient tumours can behave differently.
-
-# Sources
-
-https://api.platform.opentargets.org/api/v4/graphql ; https://depmap.org/portal/ ;
-Chronos method, doi:10.1186/s13059-021-02540-7 . Browser annotations: HPA CCNB1,
-https://www.proteinatlas.org/ENSG00000134057-CCNB1/subcellular ; UniProt TP53 P04637.
-
-# Reproducibility
+# Session info
 
 ```{r session-info}
 sessionInfo()
